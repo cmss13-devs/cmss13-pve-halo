@@ -157,8 +157,8 @@
 /// Turret holder for dropship automated sentries
 /obj/structure/dropship_equipment/sentry_holder
 	equip_categories = list(DROPSHIP_WEAPON, DROPSHIP_CREW_WEAPON)
-	name = "\improper A/A-32-P Sentry Defense System"
-	desc = "A box that deploys a sentry turret. Fits on both the external weapon and crew compartment attach points of dropships. You need a powerloader to lift it."
+	name = "\improper AN/TWQ-15 perimeter control system"
+	desc = "A ruggedized container for storing a single UA/571 series sentry gun system, intended for protecting the dropship against unwanted intrusions."
 	density = FALSE
 	health = null
 	icon_state = "sentry_system"
@@ -483,7 +483,8 @@
 	equip_categories = list(DROPSHIP_ELECTRONICS)
 
 /obj/structure/dropship_equipment/electronics/chaff_launcher
-	name = "\improper AN/ALE-203 Chaff Launcher"
+	name = "\improper AN/ALE-203 countermeasure dispenser"
+	desc = "The Lascor ELVIRA II rotary countermeasure dispenser is a bulkier version of the AN/ALE-132 with datalink capability, allowing it to fit the ALE-106 expendable RADAR decoy and ALE-72 expendable IR decoy alongside regular chaff and flares."
 	icon_state = "chaff_launcher"
 	point_cost = 0
 
@@ -535,7 +536,8 @@
 
 
 /obj/structure/dropship_equipment/electronics/flare_launcher
-	name = "\improper AN/ALE-557 Flare Launcher"
+	name = "\improper AN/ALE-132 compact countermeasure dispenser"
+	desc = "The Lascor CARVER is a lightweight self-contained complex for ejecting flares and chaff. Lacking datalink capability, it cannot fire advanced countermeasures."
 	icon_state = "flare_launcher"
 	point_cost = 0
 
@@ -730,8 +732,8 @@
 	SA.detonate_on(impact, src)
 
 /obj/structure/dropship_equipment/weapon/heavygun
-	name = "\improper GAU-21 30mm cannon"
-	desc = "A dismounted GAU-21 'Rattler' 30mm rotary cannon. It seems to be missing its feed links and has exposed connection wires. Capable of firing 5200 rounds a minute, feared by many for its power. Earned the nickname 'Rattler' from the vibrations it would cause on dropships in its initial production run. Accepts PGU-100/PGU-105 ammo crates"
+	name = "\improper GAU-113/D 25mm rotary autocannon"
+	desc = "GAU-113/D 25mm rotary autocannon system. It operates off of binary hypergolic propellant, with the D variant being capable of being mounted to the pylon mounts with self contained ammunition load. The explosion risk is reduced by blowout panels and antifragmentation housing."
 	icon_state = "30mm_cannon"
 	firing_sound = 'sound/effects/gau_incockpit.ogg'
 	point_cost = 400
@@ -748,9 +750,9 @@
 
 
 /obj/structure/dropship_equipment/weapon/rocket_pod
-	name = "\improper LAU-444 Guided Missile Launcher"
+	name = "\improper LAU-132/B guided missile launcher"
 	icon_state = "rocket_pod" //I want to force whoever used rocket and missile interchangeably to come back and look at this god damn mess.
-	desc = "A missile pod weapon system capable of launching a single laser-guided missile. Moving this will require some sort of lifter. Accepts AGM, AIM, BLU, and GBU missile systems."
+	desc = "A new retrofit system to fit additional missiles and bombs into the pylon slots of the UD-4 Cheyenne. Once fitted, it can then mount a single weapon to the station with complete datalink functionality."
 	firing_sound = 'sound/effects/rocketpod_fire.ogg'
 	firing_delay = 5
 	point_cost = 600
@@ -769,9 +771,9 @@
 
 
 /obj/structure/dropship_equipment/weapon/minirocket_pod
-	name = "\improper LAU-229 Rocket Pod"
+	name = "\improper Mk.10 Zeus multiple rocket launcher"
 	icon_state = "minirocket_pod"
-	desc = "A rocket pod capable of launching six laser-guided mini rockets. Moving this will require some sort of lifter. Accepts the AGR-59 series of minirockets."
+	desc = "Rocket pod used to fire and launch the Zeus 70mm family of unguided rockets. A legacy improvement program has extended its service life, but it's still being phased out for the Mk.16 Banshee system."
 	icon = 'icons/obj/structures/props/almayer_props64.dmi'
 	firing_sound = 'sound/effects/rocketpod_fire.ogg'
 	firing_delay = 10 //1 seconds
@@ -791,9 +793,9 @@
 		ammo_equipped = null
 
 /obj/structure/dropship_equipment/weapon/laser_beam_gun
-	name = "\improper LWU-6B Laser Cannon"
+	name = "\improper AN/AEQ-23 free electron laser system"
 	icon_state = "laser_beam"
-	desc = "State of the art technology recently acquired by the USCM, it fires a battery-fed pulsed laser beam at near lightspeed setting on fire everything it touches. Moving this will require some sort of lifter. Accepts the BTU-17/LW Hi-Cap Laser Batteries."
+	desc = "A cutting edge pulsed Free Electron Laser. Useful for airborne selfprotection and ultra high precision antimateriel fire."
 	icon = 'icons/obj/structures/props/almayer_props64.dmi'
 	firing_sound = 'sound/effects/phasein.ogg'
 	firing_delay = 50 //5 seconds
