@@ -166,3 +166,92 @@
 	icon = 'icons/obj/structures/doors/1x2blast_vert.dmi'
 	openspeed = 17
 	unacidable = TRUE
+
+/obj/structure/machinery/door/poddoor/almayer
+	icon = 'icons/obj/structures/doors/blastdoors_shutters.dmi'
+	openspeed = 4 //shorter open animation.
+	var/vehicle_resistant = TRUE
+	tiles_with = list(
+		/obj/structure/window/framed/almayer,
+		/obj/structure/machinery/door/airlock,
+	)
+
+/obj/structure/machinery/door/poddoor/almayer/open
+	density = FALSE
+
+/obj/structure/machinery/door/poddoor/almayer/blended
+	icon_state = "almayer_pdoor1"
+	base_icon_state = "almayer_pdoor"
+
+/obj/structure/machinery/door/poddoor/almayer/blended/open
+	density = FALSE
+
+/obj/structure/machinery/door/poddoor/almayer/blended/white
+	icon_state = "w_almayer_pdoor1"
+	base_icon_state = "w_almayer_pdoor"
+
+/obj/structure/machinery/door/poddoor/almayer/blended/white/open
+	density = FALSE
+
+/obj/structure/machinery/door/poddoor/almayer/Initialize()
+	. = ..()
+	addtimer(CALLBACK(src, TYPE_PROC_REF(/atom, relativewall_neighbours)), 10)
+
+/obj/structure/machinery/door/poddoor/almayer/locked
+	unacidable = TRUE
+
+/obj/structure/machinery/door/poddoor/almayer/locked/attackby(obj/item/C as obj, mob/user as mob)
+	if(HAS_TRAIT(C, TRAIT_TOOL_CROWBAR))
+		return
+	..()
+
+/obj/structure/machinery/door/poddoor/almayer/closed
+	density = TRUE
+	opacity = TRUE
+
+/obj/structure/machinery/door/poddoor/almayer/planet_side_blastdoor
+	density = TRUE
+	opacity = TRUE
+
+// Hybrisa Shutters
+
+/obj/structure/machinery/door/poddoor/hybrisa
+	icon = 'icons/obj/structures/doors/hybrisashutters.dmi'
+	icon_state = "almayer_pdoor1"
+	base_icon_state = "almayer_pdoor"
+	openspeed = 4
+
+/obj/structure/machinery/door/poddoor/almayer/hybrisa/open_shutters/Initialize()
+	. = ..()
+	if(opacity)
+		set_opacity(0)
+
+/obj/structure/machinery/door/poddoor/almayer/hybrisa/open_shutters
+	name = "\improper Shutters"
+	desc = null
+	icon = 'icons/obj/structures/doors/hybrisashutters.dmi'
+	icon_state = "almayer_pdoor1"
+	base_icon_state = "almayer_pdoor"
+	opacity = FALSE
+	vehicle_resistant = FALSE
+
+/obj/structure/machinery/door/poddoor/almayer/hybrisa/shutters
+	name = "\improper Shutters"
+	desc = null
+	icon = 'icons/obj/structures/doors/hybrisashutters.dmi'
+	icon_state = "shutter1"
+	base_icon_state = "shutter"
+	vehicle_resistant = FALSE
+
+/obj/structure/machinery/door/poddoor/hybrisa/white
+	name = null
+	desc = "That looks like it doesn't open easily."
+	icon_state = "w_almayer_pdoor1"
+	base_icon_state = "w_almayer_pdoor"
+	unslashable = TRUE
+
+/obj/structure/machinery/door/poddoor/hybrisa/secure_red_door
+	desc = "That looks like it doesn't open easily."
+	icon_state = "pdoor1"
+	base_icon_state = "pdoor"
+	unslashable = TRUE

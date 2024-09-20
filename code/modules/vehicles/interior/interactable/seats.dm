@@ -480,6 +480,10 @@
 
 	handle_rotation()
 
+/obj/structure/bed/chair/vehicle/white
+	name = "passenger seat"
+	desc = "A sturdy chair with a brace that lowers over your body. Prevents being flung around in vehicle during crash being injured as a result. Fasten your seatbelts, kids! Fix with welding tool in case of damage."
+	icon = 'icons/obj/vehicles/interiors/whitechair.dmi'
 /obj/structure/bed/chair/vehicle/dropship_cockpit
 	name = "cockpit seat"
 	desc = "A sturdy metal chair with a brace that lowers over your body. Holds you in place during high altitude drops."

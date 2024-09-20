@@ -76,4 +76,10 @@
 	prefix = "Director"
 	ranking = 9
 	pay_multiplier = 10
-	officer_grade = GRADE_FLAG
+
+/datum/paygrade/wy_ranks/wycPO
+	paygrade = "WYPO2"
+	name = "Captain"
+	prefix = "Capt."
+	ranking = 1
+	pay_multiplier = 2

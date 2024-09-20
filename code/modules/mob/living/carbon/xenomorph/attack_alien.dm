@@ -515,6 +515,11 @@
 	healthcheck()
 	return XENO_ATTACK_ACTION
 
+/obj/structure/fence/electrified/attack_alien(mob/living/carbon/xenomorph/M)
+	if(electrified && !cut)
+		electrocute_mob(M, get_area(breaker_switch), src, 0.75)
+	return ..()
+
 //Slashin mirrors
 /obj/structure/mirror/attack_alien(mob/living/carbon/xenomorph/M)
 	M.animation_attack_on(src)
@@ -858,7 +863,7 @@
 	return attack_hand(M)
 
 /obj/structure/machinery/colony_floodlight/attack_alien(mob/living/carbon/xenomorph/M)
-	if(!is_lit)
+	if(!is_on)
 		to_chat(M, "Why bother? It's just some weird metal thing.")
 		return XENO_NO_DELAY_ACTION
 	if(damaged)
@@ -868,7 +873,11 @@
 	M.visible_message("[M] slashes away at [src]!","We slash and claw at the bright light!", max_distance = 5, message_flags = CHAT_TYPE_XENO_COMBAT)
 	health  = max(health - rand(M.melee_damage_lower, M.melee_damage_upper), 0)
 	if(!health)
-		set_damaged()
+		playsound(src, "glassbreak", 70, 1)
+		damaged = TRUE
+		if(is_on)
+			set_light(0)
+		update_icon()
 	else
 		playsound(loc, 'sound/effects/Glasshit.ogg', 25, 1)
 	return XENO_ATTACK_ACTION
