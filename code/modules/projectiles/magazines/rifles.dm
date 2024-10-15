@@ -539,3 +539,13 @@
 	item_state = "aug_dmr"
 	default_ammo = /datum/ammo/bullet/rifle/heap
 	ammo_band_color = AMMO_BAND_COLOR_HEAP
+
+/obj/item/ammo_magazine/rifle/g11
+	name = "\improper g11 magazine"
+	desc = "A long rectangular box magazine for the g11. "
+	icon = 'icons/obj/items/weapons/guns/ammo_by_faction/upp.dmi'
+	icon_state = "g11"
+	item_state = "g11"
+	max_rounds = 60
+	gun_type = /obj/item/weapon/gun/rifle/g11
+	default_ammo = /datum/ammo/bullet/rifle

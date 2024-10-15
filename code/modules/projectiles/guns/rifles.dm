@@ -1962,3 +1962,41 @@
 	f90_shotgun_barrel.Attach(src)
 	update_attachable(f90_shotgun.slot)
 	update_attachable(f90_shotgun_barrel.slot)
+/obj/item/weapon/gun/rifle/g11
+	name = "\improper GG110 rifle"
+	desc = "Frontier Rifle Model 110 from the Precision Machines Foundry #21. Made from the UPP for frontier self-defense measures."
+	icon = 'icons/obj/items/weapons/guns/guns_by_faction/upp.dmi'
+	icon_state = "g11"
+	item_state = "g11"
+
+	fire_sound = 'sound/weapons/gun_type71.ogg'
+	reload_sound = 'sound/weapons/handling/m41_reload.ogg'
+	unload_sound = 'sound/weapons/handling/m41_unload.ogg'
+	current_mag = /obj/item/ammo_magazine/rifle/g11
+	wield_delay = WIELD_DELAY_FAST
+	flags_gun_features =GUN_CAN_POINTBLANK
+	start_automatic = FALSE
+	attachable_allowed = list(
+		/obj/item/attachable/stock/g11
+	)
+/obj/item/weapon/gun/rifle/g11/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_8)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_9)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_6
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT+BULLET_DAMAGE_MULT_TIER_1
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+	recoil = RECOIL_AMOUNT_TIER_4
+
+/obj/item/weapon/gun/rifle/g11/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/stock/g11/STOCK = new(src)
+	STOCK.flags_attach_features &= ~ATTACH_REMOVABLE
+	STOCK.Attach(src)
+	update_attachable(STOCK.slot)
+ //I'm tweaking when I realized the stock becomes the weapon itself. SO I have to fucking redo-it again, I hate it.//
