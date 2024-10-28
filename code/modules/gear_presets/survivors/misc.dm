@@ -306,8 +306,7 @@ Everything below isn't used or out of place.
 	var/suitpath = pick(
 		/obj/item/clothing/suit/storage/militia,
 		/obj/item/clothing/suit/storage/militia/vest,
-		/obj/item/clothing/suit/storage/militia/brace,
-		/obj/item/clothing/suit/storage/militia/partial,
+		/obj/item/clothing/suit/storage/militia/knockoff,
 		)
 	human.equip_to_slot_or_del(new suitpath, WEAR_JACKET)
 
@@ -316,7 +315,6 @@ Everything below isn't used or out of place.
 	if(!istype(human))
 		return
 	var/helmetpath = pick(
-		/obj/item/clothing/head/militia,
 		/obj/item/clothing/head/militia/bucket,
 		/obj/item/clothing/head/helmet,
 		/obj/item/clothing/head/helmet/skullcap,
