@@ -1177,6 +1177,26 @@ Defined in conflicts.dm of the #defines folder.
 	desc = "SADAR sight system."
 	zoom_offset = 3
 
+// PVE tech-man compliant mini scope, planned to have togglable vision modes for shitty night-vision when scoped in
+
+/obj/item/attachable/scope/pve
+	name = "AN/RVS-52 CCD Television Sight System"
+	desc = "An ARMAT designed 3x magnification weapon sight, allows for greater accuracy at range and under low-light conditions."
+	icon_state = "pvescope"
+	zoom_offset = 3
+	zoom_viewsize = 7
+	allows_movement = TRUE
+	var/dynamic_aim_slowdown = SLOWDOWN_ADS_MINISCOPE_DYNAMIC
+
+/obj/item/attachable/scope/pve/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
+	. = ..()
+	if(G.zoom)
+		G.slowdown += dynamic_aim_slowdown
+
+/obj/item/attachable/scope/pve/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	G.slowdown -= dynamic_aim_slowdown
+	..()
+
 /obj/item/attachable/scope/mini_iff
 	name = "B8 Smart-Scope"
 	icon_state = "iffbarrel"
