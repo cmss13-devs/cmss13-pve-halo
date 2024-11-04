@@ -412,6 +412,10 @@
 	desc = "A fire-resistant shoulder patch, worn by the men and women of the UPP Naval Infantry."
 	icon_state = "navalpatch"
 
+/obj/item/clothing/accessory/patch/upp/reddawn
+	name = "UPP Red Dawn patch"
+	desc = "A fire-resistant shoulder patch, worn by the members of the 4th platoon named 'Red Dawn' with the Russian V in the middle."
+	icon_state = "reddawnpatch"
 /obj/item/clothing/accessory/poncho
 	name = "USCM Poncho"
 	desc = "The standard USCM poncho has variations for every climate. Custom fitted to be attached to standard USCM armor variants it is comfortable, warming or cooling as needed, and well-fit. A marine couldn't ask for more. Affectionately referred to as a \"woobie\"."
