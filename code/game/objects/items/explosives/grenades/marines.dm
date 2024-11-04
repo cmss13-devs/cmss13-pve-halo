@@ -10,7 +10,7 @@
 
 /obj/item/explosive/grenade/high_explosive
 	name = "\improper M40 HEDP grenade"
-	desc = "High-Explosive Dual-Purpose. A small, but deceptively strong blast grenade that has been phasing out the M15 HE grenades alongside the M40 HEFA. Capable of being loaded in the M92 Launcher, or thrown by hand."
+	desc = "High-Explosive Dual-Purpose. A small, but deceptively strong grenade that has been phasing out the M15 HE grenade. Explodes with a powerful blast, releasing shrapnel in a casualty radius of five meters. Capable of being loaded in the M92 Launcher, or thrown by hand."
 	icon_state = "grenade"
 	det_time = 40
 	item_state = "grenade_hedp"
@@ -18,9 +18,9 @@
 	underslug_launchable = TRUE
 	var/explosion_power = 100
 	var/explosion_falloff = 25
-	var/shrapnel_count = 0
+	var/shrapnel_count = 48
 	var/shrapnel_type = /datum/ammo/bullet/shrapnel
-	var/fire_resistance = 30 //to prevent highly controlled massive explosions
+	var/fire_resistance = 15 //to prevent highly controlled massive explosions
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL
 
 /obj/item/explosive/grenade/high_explosive/New()
@@ -52,7 +52,7 @@
 
 /obj/item/explosive/grenade/high_explosive/super
 	name = "\improper M40/2 HEDP grenade"
-	desc = "High-Explosive Dual-Purpose. A small, but deceptively strong blast grenade that has been phasing out the M15 HE grenades alongside the M40 HEFA. This version is stronger."
+	desc = "High-Explosive Dual-Purpose. A small, but deceptively strong grenade that has been phasing out the M15 HE grenade. This version is stronger."
 	icon_state = "m40_2"
 	item_state = "grenade_hedp2"
 	explosion_power = 150
@@ -65,6 +65,7 @@
 	item_state = "grenade_ex"
 	underslug_launchable = FALSE
 	explosion_power = 200
+	shrapnel_count = 0
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL_HALF
 
 /obj/item/explosive/grenade/high_explosive/stick
@@ -79,6 +80,7 @@
 	throw_range = 7
 	underslug_launchable = FALSE
 	explosion_power = 100
+	shrapnel_count = 0
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_LINEAR
 
 /obj/item/explosive/grenade/high_explosive/upp
@@ -116,6 +118,17 @@
 	shrapnel_type = /datum/ammo/bullet/shrapnel/rubber
 	antigrief_protection = FALSE
 
+/obj/item/explosive/grenade/high_explosive/tmfrag
+	name = "\improper M51A BFAB grenade"
+	desc = "Bounding Fragmentation, Air-Burst. Rather than traditionally detonating on impact, this round propels itself up into the air prior to exploding into a lethal hail of shrapnel a second later. Effective against troops in the open or in foxholes. Not a hand-grenade, as marked by the yellow color-band on its hull, launcher-fired only."
+	icon_state = "grenade_bfab"
+	item_state = "grenade_bfab"
+	hand_throwable = FALSE
+	det_time = 10
+	explosion_power = 40
+	shrapnel_count = 64
+	shrapnel_type = /datum/ammo/bullet/shrapnel/heavy
+	falloff_mode = EXPLOSION_FALLOFF_SHAPE_LINEAR
 
 /obj/item/explosive/grenade/high_explosive/m15
 	name = "\improper M15 fragmentation grenade"
@@ -128,6 +141,37 @@
 	explosion_power = 120
 	shrapnel_count = 48
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_LINEAR
+
+/*
++//================================================
++				Canister Grenades
++//================================================
++*/
+
+/obj/item/explosive/grenade/high_explosive/airburst/canister
+	name = "\improper M108 canister grenade"
+	desc = "30mm canister grenade, effectively low velocity buckshot. Substantial close combat impact when paired with the 5 round PN pump action grenade launcher. No, you can't set it off with a hammer, moron. Not a hand-grenade, as marked by the yellow color-band on its hull, launcher-fired only."
+	icon_state = "grenade_buck"
+	item_state = "grenade_buck"
+	hand_throwable = FALSE
+	underslug_launchable = TRUE
+	explosion_power = 0
+	explosion_falloff = 25
+	det_time = 0 //this should mean that it will explode instantly when fired and thus generate the shotshell effect.
+	shrapnel_count = 10
+	shrapnel_type = /datum/ammo/bullet/shrapnel/canister
+	dispersion_angle = 15 //hopefully this means the cone spread is pretty small
+/obj/item/explosive/grenade/high_explosive/airburst/canister/proc/canister_fire(mob/living/user, target)
+	var/direction = Get_Compass_Dir(user, target)
+	var/position = get_step(user, direction) //otherwise we buckshot ourselves
+	create_shrapnel(position, min(direct_hit_shrapnel, shrapnel_count), direction , dispersion_angle, shrapnel_type, cause_data, FALSE, 100)
+	if(shrapnel_count)
+		create_shrapnel(loc, shrapnel_count, direction, dispersion_angle, shrapnel_type, cause_data, FALSE, 0)
+	qdel(src)
+// canister has no impact explosion.
+/obj/item/explosive/grenade/high_explosive/airburst/canister/launch_impact(atom/hit_atom)
+	return
+
 
 /*
 //================================================
@@ -249,6 +293,7 @@
 	dangerous = TRUE
 	underslug_launchable = TRUE
 	explosion_power = 100 //hedp
+	shrapnel_count = 0
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_LINEAR
 
 /obj/item/explosive/grenade/high_explosive/impact/prime()
@@ -278,13 +323,29 @@
 
 /*
 //================================================
+				Impact HEAP Grenades
+//================================================
+*/
+
+/obj/item/explosive/grenade/high_explosive/impact/heap
+	name = "\improper M38 HEAP blast grenade"
+	desc = "High-Explosive, Armour Piercing. A small, but deceptively strong blast grenade that can penetrate appreciable quantities of armor, whilst retaining a similar casualty radius as the standard M40. Not a hand-grenade, as marked by the yellow color-band on its hull, launcher-fired only. Due to faulty primers, it is inadvisable to fire them directly at hard surfaces like walls, landing them just in front is recommended."
+	icon_state = "grenade_chem"
+	item_state = "grenade_chem"
+	explosion_power = 250
+	explosion_falloff = 40
+	shrapnel_count = 0
+	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL
+
+/*
+//================================================
 				Incendiary Grenades
 //================================================
 */
 
 /obj/item/explosive/grenade/incendiary
-	name = "\improper M40 HIDP incendiary grenade"
-	desc = "The M40 HIDP is a small, but deceptively strong incendiary grenade designed to disrupt enemy mobility with long-lasting Type B napalm. It is set to detonate in 4 seconds."
+	name = "\improper M77 HIAM incendiary grenade"
+	desc = "High-explosive-Incendiary, Anti-Mobility. The M77 is a small, but deceptively strong incendiary grenade designed to disrupt enemy mobility with long-lasting Type B napalm spread by a small explosive charge within the casing. It is set to detonate in 4 seconds."
 	icon_state = "grenade_fire"
 	det_time = 40
 	item_state = "grenade_fire"
@@ -339,6 +400,7 @@
 	playsound(src.loc, 'sound/effects/hit_on_shattered_glass.ogg', 35, 1, 4)
 	..()
 
+
 /*
 //================================================
 				Airburst Incendiary Grenades
@@ -391,8 +453,8 @@
 */
 
 /obj/item/explosive/grenade/smokebomb
-	name = "\improper M40 HSDP smoke grenade"
-	desc = "The M40 HSDP is a small, but powerful smoke grenade. Based off the same platform as the M40 HEDP. It is set to detonate in 2 seconds."
+	name = "\improper M47 HSDP smoke grenade"
+	desc = "The M47 HSDP is a small, but powerful smoke grenade. Based off the same platform as the M40 HEDP. It is set to detonate in 2 seconds."
 	icon_state = "grenade_smoke"
 	det_time = 20
 	item_state = "grenade_smoke"
@@ -418,16 +480,16 @@
 	qdel(src)
 
 /obj/item/explosive/grenade/phosphorus
-	name = "\improper M40 CCDP grenade"
-	desc = "The M40 CCDP is a small, but powerful chemical compound grenade, similar in effect to WPDP. Word on the block says that the CCDP doesn't actually release White Phosphorus, but some other chemical developed in W-Y labs."
-	icon_state = "grenade_chem"
+	name = "\improper M60 WPSI grenade"
+	desc = "The M60 WPSI is a small, but powerful chemical compound grenade, designated as such with a white cap. Usable for both smoke-screen purposes and as an incendiary device."
+	icon_state = "training_grenade"
 	det_time = 20
-	item_state = "grenade_phos"
+	item_state = "grenade_training"
 	underslug_launchable = TRUE
 	var/datum/effect_system/smoke_spread/phosphorus/smoke
 	dangerous = TRUE
 	harmful = TRUE
-	var/smoke_radius = 3
+	var/smoke_radius = 4
 
 /obj/item/explosive/grenade/phosphorus/Destroy()
 	QDEL_NULL(smoke)
