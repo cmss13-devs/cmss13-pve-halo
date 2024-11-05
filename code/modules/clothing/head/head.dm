@@ -372,15 +372,15 @@
 	name = "\improper USCM formal Commanding Officer's black cap"
 	icon_state = "co_formalhat_black"
 
-/obj/item/clothing/head/cmcap/req/ro
+/obj/item/clothing/head/cmcap/khaki/ro
 	name = "\improper USCM quartermaster cap"
 	desc = "It's a fancy hat for a not-so-fancy military supply clerk."
 	icon_state = "rocap"
 	flags_atom = NO_SNOW_TYPE
 
-/obj/item/clothing/head/cmcap/req
-	name = "\improper USCM requisition cap"
-	desc = "It's a not-so-fancy hat for a not-so-fancy military supply clerk."
+/obj/item/clothing/head/cmcap/khaki
+	name = "\improper khaki patrol cap"
+	desc = "A khaki patrol cap."
 	icon_state = "cargocap"
 	flags_atom = FPRINT|NO_SNOW_TYPE
 
@@ -412,6 +412,13 @@
 	item_icons = list(
 		WEAR_HEAD = 'icons/mob/humans/onmob/head_1.dmi'
 	)
+
+/obj/item/clothing/head/cmcap/corrections
+	name = "dark blue patrol cap"
+	desc = "A dark blue patrol cap."
+	icon_state = "corrections"
+	item_state = "corrections"
+	flags_marine_hat = HAT_GARB_OVERLAY
 
 //============================//BERETS\\=================================\\
 //=======================================================================\\
