@@ -423,14 +423,14 @@
 	else
 		. += SPAN_NOTICE("The injection rod is folded up.")
 
-/obj/item/reagent_container/hypospray/autoinjector/biofoam/attack(mob/living/user, mob/M/target)
+/obj/item/reagent_container/hypospray/autoinjector/biofoam/attack(mob/living/user, mob/living/carbon/target)
 	if(primed == TRUE)
 		if(uses_left == 0)
 			to_chat(user, SPAN_NOTICE("The [src] is empty."))
 			return
 		to_chat(user, SPAN_NOTICE("You begin to insert the biofoam injection rod into [target]."))
 		playsound(loc, 'sound/items/biofoam_spray.ogg', 25, 1)
-		if(!do_after(user, (2 * user.get_skill_duration_multiplier(SKILL_MEDICAL)) SECONDS, INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_MEDICAL, target, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
+		if(!do_after(user, 2 SECONDS * user.get_skill_duration_multiplier(SKILL_MEDICAL), INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_MEDICAL, target, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
 			to_chat(user, SPAN_NOTICE("You were interrupted! Try to stay still."))
 			return
 		..()
