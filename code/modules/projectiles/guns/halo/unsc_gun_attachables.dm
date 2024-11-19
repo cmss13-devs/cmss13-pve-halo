@@ -42,3 +42,39 @@
 	attach_icon = "ma5c_barrel"
 	slot = "muzzle"
 	size_mod = 0
+
+/obj/item/attachable/srs_barrel
+	name = "\improper SRS99-AM sniper rifle barrel"
+	desc = "The detachable barrel of an SRS-99AM sniper rifle featuring a large muzzle brake at the end. Essential to the operation of the rifle. It's detachable nature allows it to be swapped out with other barrels featuring alternative integrated attachments. "
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "srs_barrel"
+	attach_icon = "srs_barrel"
+	slot = "muzzle"
+	size_mod = 0
+
+/obj/item/attachable/scope/variable_zoom/oracle
+	name = "\improper N-Variant oracle scope"
+	desc= "One of the most common sniper optic systems utilized by the UNSC."
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "oracle_scope"
+	attach_icon = "oracle_scope"
+	slot = "rail"
+
+/obj/item/attachable/srs_assembly
+	name = "\improper SRS99-AM assembly"
+	desc = "That's not supposed to come off. You should probably report it to your supervisor..."
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "srs_assembly"
+	attach_icon = "srs_assembly"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0
+	size_mod = 0
+
+/obj/item/attachable/bipod/srs_bipod
+	name = "\improper SRS99-AM bipod"
+	desc = "A detachable bipod system belonging to the SRS99-AM sniper rifle. Why you would detach it from such an unwieldy rifle is a mystery."
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "srs_bipod"
+	attach_icon = "srs_bipod"

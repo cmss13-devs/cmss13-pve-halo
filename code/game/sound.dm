@@ -438,6 +438,12 @@
 				sound = pick('sound/weapons/gun_pkd_fire01.ogg','sound/weapons/gun_pkd_fire02.ogg','sound/weapons/gun_pkd_fire03.ogg')
 			if("gun_ma5c")
 				sound = pick ('sound/weapons/gun_ma5c_1.ogg','sound/weapons/gun_ma5c_2.ogg','sound/weapons/gun_ma5c_3.ogg')
+			if("gun_m6c")
+				sound = pick ('sound/weapons/gun_m6c_1.ogg','sound/weapons/gun_m6c_2.ogg','sound/weapons/gun_m6c_3.ogg', 'sound/weapons/gun_m6c_4.ogg')
+			if("gun_m6g")
+				sound = pick ('sound/weapons/gun_m6g_1.ogg','sound/weapons/gun_m6g_2.ogg','sound/weapons/gun_m6g_3.ogg','sound/weapons/gun_m6g_4.ogg')
+			if("gun_srs99")
+				sound = pick ('sound/weapons/gun_srs99_1.ogg','sound/weapons/gun_srs99_2.ogg','sound/weapons/gun_srs99_3.ogg','sound/weapons/gun_srs99_4.ogg')
 
 			// Xeno
 			if("acid_hit")
