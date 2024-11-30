@@ -24,6 +24,32 @@
 	max_range = 10
 	attachment_firing_delay = 5
 
+/obj/item/attachable/br55_muzzle
+	name = "\improper BR55 muzzle"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "br55_muzzle"
+	attach_icon = "br55_muzzle"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -7
+
+/obj/item/attachable/m90_muzzle
+	name = "\improper M90 CAWS muzzle"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "m90_muzzle"
+	attach_icon = "m90_muzzle"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -7
+
 /obj/item/attachable/flashlight/ma5c
 	name = "\improper M2C integrated flashlight"
 	desc = "The M2C integrated flashlight, standard-issue to any MA5C assault rifle and essential to handling it."
@@ -41,6 +67,31 @@
 	icon_state = "ma5c_barrel"
 	attach_icon = "ma5c_barrel"
 	slot = "muzzle"
+	size_mod = 0
+
+/obj/item/attachable/br55_barrel
+	name = "\improper BR55 barrel"
+	desc = "The barrel to an BR55 battle rifle. Better not leave without it."
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "br55_barrel"
+	attach_icon = "br55_barrel"
+	slot = "muzzle"
+	size_mod = 0
+
+/obj/item/attachable/scope/mini/spankr
+	name = "\improper SPANKr scope"
+	desc = "This shouldn't be able to come off the SPANKr..."
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "spankr_scope"
+	attach_icon = null
+	size_mod = 0
+
+/obj/item/attachable/scope/mini/br55
+	name = "\improper A2 scope"
+	desc = "A telescopic sight with 2x zoom capability. While typically reliable, it often needs adjustment and fine tuning to maintain perfect accuracy."
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_attachments.dmi'
+	icon_state = "br55_scope"
+	attach_icon = "br55_scope"
 	size_mod = 0
 
 /obj/item/attachable/srs_barrel

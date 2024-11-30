@@ -436,14 +436,22 @@
 				sound = pick('sound/weapons/gun_nsg23_1.ogg','sound/weapons/gun_nsg23_2.ogg')
 			if("gun_pkd")
 				sound = pick('sound/weapons/gun_pkd_fire01.ogg','sound/weapons/gun_pkd_fire02.ogg','sound/weapons/gun_pkd_fire03.ogg')
+
+			// halo guns
 			if("gun_ma5c")
-				sound = pick ('sound/weapons/gun_ma5c_1.ogg','sound/weapons/gun_ma5c_2.ogg','sound/weapons/gun_ma5c_3.ogg')
+				sound = pick('sound/weapons/gun_ma5c_1.ogg','sound/weapons/gun_ma5c_2.ogg','sound/weapons/gun_ma5c_3.ogg')
 			if("gun_m6c")
-				sound = pick ('sound/weapons/gun_m6c_1.ogg','sound/weapons/gun_m6c_2.ogg','sound/weapons/gun_m6c_3.ogg', 'sound/weapons/gun_m6c_4.ogg')
+				sound = pick('sound/weapons/gun_m6c_1.ogg','sound/weapons/gun_m6c_2.ogg','sound/weapons/gun_m6c_3.ogg', 'sound/weapons/gun_m6c_4.ogg')
 			if("gun_m6g")
-				sound = pick ('sound/weapons/gun_m6g_1.ogg','sound/weapons/gun_m6g_2.ogg','sound/weapons/gun_m6g_3.ogg','sound/weapons/gun_m6g_4.ogg')
+				sound = pick('sound/weapons/gun_m6g_1.ogg','sound/weapons/gun_m6g_2.ogg','sound/weapons/gun_m6g_3.ogg','sound/weapons/gun_m6g_4.ogg')
 			if("gun_srs99")
-				sound = pick ('sound/weapons/gun_srs99_1.ogg','sound/weapons/gun_srs99_2.ogg','sound/weapons/gun_srs99_3.ogg','sound/weapons/gun_srs99_4.ogg')
+				sound = pick('sound/weapons/gun_srs99_1.ogg','sound/weapons/gun_srs99_2.ogg','sound/weapons/gun_srs99_3.ogg','sound/weapons/gun_srs99_4.ogg')
+			if("gun_br55")
+				sound = pick('sound/weapons/gun_br55_1.ogg','sound/weapons/gun_br55_2.ogg','sound/weapons/gun_br55_3.ogg','sound/weapons/gun_br55_4.ogg')
+			if("gun_m90")
+				sound = pick('sound/weapons/gun_m90_1.ogg','sound/weapons/gun_m90_2.ogg','sound/weapons/gun_m90_3.ogg')
+			if("gun_spankr")
+				sound = pick('sound/weapons/gun_spankr_1.ogg','sound/weapons/gun_spankr_2.ogg','sound/weapons/gun_spankr_3.ogg')
 
 			// Xeno
 			if("acid_hit")

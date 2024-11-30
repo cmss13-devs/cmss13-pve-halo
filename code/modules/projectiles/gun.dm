@@ -186,6 +186,7 @@
 	var/has_open_icon = FALSE
 	var/bonus_overlay_x = 0
 	var/bonus_overlay_y = 0
+	var/bonus_overlay_layer = 3.02
 
 	/// How much recoil_buildup is lost per second. Builds up as time passes, and is set to 0 when a single shot is fired
 	var/recoil_loss_per_second = 10

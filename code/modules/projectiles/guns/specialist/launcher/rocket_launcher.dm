@@ -45,9 +45,9 @@
 
 /obj/item/weapon/gun/launcher/rocket/set_gun_config_values()
 	..()
-	set_fire_delay(FIRE_DELAY_TIER_6*2)
+	set_fire_delay(FIRE_DELAY_TIER_9)
 	accuracy_mult = BASE_ACCURACY_MULT
-	scatter = SCATTER_AMOUNT_TIER_6
+	scatter = SCATTER_AMOUNT_NONE
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil = RECOIL_AMOUNT_TIER_3
 

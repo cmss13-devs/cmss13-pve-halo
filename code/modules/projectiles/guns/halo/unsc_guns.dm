@@ -59,6 +59,120 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 
+/obj/item/weapon/gun/rifle/halo/br55
+	name = "BR55 battle rifle"
+	desc = "A standard-issue marksman rifle in use by the UNSC Marine Corps, the BR55 battle rifle has a reasonably high power, acceptable rate of fire, and high accuracy. It comes with a standard 36-round detachable box magazine of 9.5x40mm experimental HP-SAP-HE rounds, allowing it to reach higher velocities than the MA5 series despite the smaller propellant."
+	icon_state = "br55"
+	item_state = "br55"
+	caliber = "9.5x40mm"
+
+	fire_sound = "gun_br55"
+	reload_sound = 'sound/weapons/gun_br55_reload.ogg'
+	cocked_sound = 'sound/weapons/gun_br55_cocked.ogg'
+	unload_sound = 'sound/weapons/gun_br55_unload.ogg'
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+
+	starting_attachment_types = list(/obj/item/attachable/br55_barrel, /obj/item/attachable/scope/mini/br55)
+	current_mag = /obj/item/ammo_magazine/rifle/halo/br55
+	attachable_allowed = list(
+		/obj/item/attachable/br55_barrel,
+		/obj/item/attachable/br55_muzzle,
+	)
+
+/obj/item/weapon/gun/rifle/halo/br55/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 22, "rail_y" = 21, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/halo/br55/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/br55_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/rifle/halo/br55/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_7)
+	set_burst_amount(BURST_AMOUNT_TIER_3)
+	set_burst_delay(FIRE_DELAY_TIER_SMG)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_8
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+
+// SMGs
+
+/obj/item/weapon/gun/smg/halo
+	name = "halo smg holder"
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_weapons.dmi'
+	item_icons = list(
+		WEAR_BACK = 'icons/mob/humans/onmob/back_slot_halo.dmi',
+        WEAR_J_STORE = 'icons/mob/humans/onmob/suit_slot_halo.dmi',
+        WEAR_L_HAND = 'icons/mob/humans/onmob/items_lefthand_halo.dmi',
+        WEAR_R_HAND = 'icons/mob/humans/onmob/items_righthand_halo.dmi'
+    )
+
+/obj/item/weapon/gun/smg/halo/m7
+	name = "M7 submachine gun"
+	icon_state = "m7"
+	item_state = "m7"
+	caliber = "5x23mm"
+
+	fire_sound = "gun_m7"
+
+// shotguns
+
+/obj/item/weapon/gun/shotgun/pump/halo
+	name = "Halo shotgun holder"
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_weapons.dmi'
+	item_icons = list(
+		WEAR_BACK = 'icons/mob/humans/onmob/back_slot_halo.dmi',
+        WEAR_J_STORE = 'icons/mob/humans/onmob/suit_slot_halo.dmi',
+        WEAR_L_HAND = 'icons/mob/humans/onmob/items_lefthand_halo.dmi',
+        WEAR_R_HAND = 'icons/mob/humans/onmob/items_righthand_halo.dmi'
+    )
+
+/obj/item/weapon/gun/shotgun/pump/halo/m90
+	name = "\improper M90 CAWS"
+	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSC for CQC scenarios. It feeds twelve 8-gauge shotgun shells from it's internal tubular magazine."
+	icon_state = "m90"
+	item_state = "m90"
+	fire_sound = "gun_m90"
+	pump_sound = 'sound/weapons/gun_m90_pump.ogg'
+	reload_sound = 'sound/weapons/gun_m90_reload.ogg'
+	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90
+	attachable_allowed = list(/obj/item/attachable/stock/type23/wood)
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG
+	flags_equip_slot = SLOT_BACK
+	gauge = "8g"
+
+/obj/item/weapon/gun/shotgun/pump/halo/m90/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 13, "rail_y" = 21, "under_x" = 24, "under_y" = 15, "stock_x" = 16, "stock_y" = 15, "special_x" = 32, "special_y" = 16)
+
+/obj/item/weapon/gun/shotgun/pump/halo/m90/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_8)
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_4
+	scatter_unwielded = SCATTER_AMOUNT_TIER_1
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil = RECOIL_AMOUNT_TIER_1
+	recoil_unwielded = RECOIL_AMOUNT_TIER_1
+
+/obj/item/weapon/gun/shotgun/pump/halo/m90/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/m90_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
 // snipers
 
 /obj/item/weapon/gun/rifle/sniper/halo
@@ -121,6 +235,86 @@
 	scatter = SCATTER_AMOUNT_TIER_8
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil = RECOIL_AMOUNT_TIER_5
+
+// rocket launchers
+
+/obj/item/weapon/gun/halo_launcher // im a lazy bastard and dont want to deal with killing all of the dumb procs sorry :)
+	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_weapons.dmi'
+
+/obj/item/weapon/gun/halo_launcher/spankr
+	name = "\improper M41 SPNKr"
+	desc = "The M41 SPNKr is a reusable rocket launcher system with multi-role capabilities, including the ability to lock onto air and ground targets. Commonly referred to as the Jackhammer by the UNSC forces equipped with it."
+	icon_state = "spankr"
+	item_state = "spankr"
+	layer = ABOVE_OBJ_LAYER
+	bonus_overlay_layer = UPPER_ITEM_LAYER
+	bonus_overlay_x = -2
+	bonus_overlay_y = 1
+	var/cover_open = FALSE
+	current_mag = /obj/item/ammo_magazine/spankr
+	aim_slowdown = SLOWDOWN_ADS_SUPERWEAPON
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY
+	fire_sound = "gun_spankr"
+	reload_sound = 'sound/weapons/gun_spankr_reload.ogg'
+	unload_sound = 'sound/weapons/gun_spankr_unload.ogg'
+
+/obj/item/weapon/gun/halo_launcher/spankr/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_5)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
+	scatter = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil = RECOIL_AMOUNT_TIER_3
+
+/obj/item/weapon/gun/halo_launcher/spankr/clicked(mob/user, list/mods)
+	if(!mods["alt"] || !CAN_PICKUP(user, src))
+		return ..()
+	else
+		if(!locate(src) in list(user.get_active_hand(), user.get_inactive_hand()))
+			return TRUE
+		if(user.get_active_hand() && user.get_inactive_hand())
+			to_chat(user, SPAN_WARNING("You can't do that with your hands full!"))
+			return TRUE
+		if(!cover_open)
+			playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
+			to_chat(user, SPAN_NOTICE("You open [src]'s feed cover, allowing the [current_mag.name] to be removed."))
+			cover_open = TRUE
+		else
+			playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
+			to_chat(user, SPAN_NOTICE("You close [src]'s feed cover."))
+			cover_open = FALSE
+		update_icon()
+		return TRUE
+
+/obj/item/weapon/gun/halo_launcher/spankr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
+	if(!cover_open)
+		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't put a new [current_mag.name] tube in! d<b>(alt-click to open it)</b>"))
+		return
+	return ..()
+
+/obj/item/weapon/gun/halo_launcher/spankr/unload(mob/user, reload_override, drop_override, loc_override)
+	if(!cover_open)
+		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't take out the [current_mag.name]! <b>(alt-click to open it)</b>"))
+		return
+	else if(in_chamber)
+		to_chat(user, SPAN_WARNING("The safety mechanism prevents you from removing the [current_mag.name] from the [src] until all rounds have been fired."))
+		return
+	return ..()
+
+/obj/item/weapon/gun/halo_launcher/spankr/update_icon()
+	. = ..()
+	if(cover_open)
+		overlays += image("+[base_gun_icon]_cover_open")
+	else
+		overlays += image("+[base_gun_icon]_cover_closed")
+
+/obj/item/weapon/gun/halo_launcher/spankr/able_to_fire(mob/living/user)
+	. = ..()
+	if(.)
+		if(cover_open)
+			to_chat(user, SPAN_WARNING("You can't fire [src] with the feed cover open! <b>(alt-click to close)</b>"))
+			return FALSE
+
 
 // Pistols
 
