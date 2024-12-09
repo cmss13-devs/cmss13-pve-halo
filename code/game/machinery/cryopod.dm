@@ -190,6 +190,11 @@ GLOBAL_LIST_INIT(frozen_items, list(SQUAD_MARINE_1 = list(), SQUAD_MARINE_2 = li
 /obj/structure/machinery/cryopod/right
 	dir = WEST
 
+/obj/structure/machinery/cryopod/halo
+	name = "cryo chamber"
+	desc = "A large rectangular cryo chamber intended to store human occupants. Although slipspace doesn't typically take more than a few months at worst, using cryosleep prevents it from building up."
+	icon = 'icons/obj/structures/machinery/halo_machinery_x48.dmi'
+
 /obj/structure/machinery/cryopod/Initialize()
 	. = ..()
 	announce = new /obj/item/device/radio/intercom(src)
