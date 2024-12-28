@@ -403,3 +403,42 @@
 	name = "Medic Autoinjector (M-L)"
 	volume = 180
 	amount_per_transfer_from_this = 30
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam
+	name = "biofoam canister"
+	chemname = "biofoam"
+	desc = "An olive-drab canister full of a stabilizing biomedical polymer foam, otherwise known as biofoam. Fold open the injection rod to prime it, then stick it into your target's wounds."
+	icon = 'icons/obj/items/halo/halo_objects.dmi'
+	icon_state = "biofoam"
+	amount_per_transfer_from_this = MED_REAGENTS_OVERDOSE
+	volume = MED_REAGENTS_OVERDOSE
+	uses_left = 1
+	injectSFX = 'sound/items/biofoam.ogg'
+	drop_sound = 'sound/items/smg_drop.ogg'
+	var/primed = FALSE
+	var/target
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam/get_examine_text(mob/user)
+	. = ..()
+	if(primed == FALSE)
+		. += SPAN_NOTICE("The injection rod is folded down.")
+	else
+		. += SPAN_NOTICE("The injection rod is folded up.")
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam/attack(mob/living/carbon/target, mob/living/user)
+	if(primed == TRUE)
+		if(uses_left == 0)
+			to_chat(user, SPAN_NOTICE("The [src] is empty."))
+			return
+		to_chat(user, SPAN_NOTICE("You begin to insert the biofoam injection rod into [target]."))
+		if(!do_after(user, 2 SECONDS * user.get_skill_duration_multiplier(SKILL_MEDICAL), INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_MEDICAL, target, INTERRUPT_MOVED, BUSY_ICON_FRIENDLY))
+			to_chat(user, SPAN_NOTICE("You were interrupted! Try to stay still."))
+			return
+		..()
+		target.emote("pain")
+		icon_state = "biofoam_spent"
+	else
+		to_chat(user, SPAN_NOTICE("You fold open the injecting rod on the [src]."))
+		src.primed = TRUE
+		src.icon_state = "biofoam_primed"
+		playsound(loc, 'sound/items/unfold.ogg', 25, 1)
