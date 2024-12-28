@@ -383,6 +383,7 @@
 #define WALL_DEVWALL_R "devwall_r"
 #define WALL_HUNTERSHIP "metal"//DMI specific name
 #define WALL_AICORE "aiwall"
+#define WALL_UNSC "unsc"
 
 //Defines for dropship weapon gimbals
 #define GIMBAL_LEFT -1
