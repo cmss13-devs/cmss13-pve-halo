@@ -16,6 +16,7 @@
 #define SQUAD_SOLAR "Solar Devils"
 #define SQUAD_UPP "Red Dawn"
 #define SQUAD_LRRP "Snake Eaters"
+#define SQUAD_UNSC_MARINE "Alpha 1-1" //place holder name
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -402,6 +403,28 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_DUTCH_MEDIC "Dutch's Dozen - Medic"
 
 #define DUTCH_JOB_LIST list(JOB_DUTCH_ARNOLD, JOB_DUTCH_RIFLEMAN, JOB_DUTCH_MINIGUNNER, JOB_DUTCH_FLAMETHROWER, JOB_DUTCH_MEDIC)
+
+//-------- HALO --------//
+
+// UNSC
+#define JOB_UNSC_MARINE "Rifleman"
+#define JOB_UNSC_MEDIC "Corpsman"
+#define JOB_UNSC_RTO "Radio Telephone Operator"
+#define JOB_UNSC_SPECIALIST "Weapons Specialist"
+#define JOB_UNSC_TEAM_LEADER "Fire Team Leader"
+#define JOB_UNSC_LEADER "Squad Sergeant"
+#define JOB_UNSC_SO "Platoon Commander"
+#define JOB_UNSC_PO "Pilot"
+
+//Covenant
+#define JOB_COV_MINOR "Minor"
+#define JOB_COV_MAJOR "Major"
+#define JOB_COV_ULTRA "Ultra"
+#define JOB_COV_ZEALOT "Zealot"
+#define JOB_COV_COMMANDER "Sub-Commander"
+#define JOB_COV_COMANDER "Commander"
+
+//-------- HALO Ends Here --------//
 
 #define JOB_PREDATOR "Predator"
 #define JOB_XENOMORPH    "Xenomorph"
