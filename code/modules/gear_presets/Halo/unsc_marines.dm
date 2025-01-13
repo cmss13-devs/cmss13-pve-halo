@@ -178,9 +178,9 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/silver
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
-	assignment = JOB_COV_ZEALOT
-	rank = JOB_COV_ZEALOT
-	paygrades = list(PAY_SHORT_COV_ZEALOT = JOB_PLAYTIME_TIER_0)
+	assignment = JOB_UNSC_PO
+	rank = JOB_UNSC_PO
+	paygrades = list(PAY_SHORT_UNSC_MO1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "DP"
 	skills = /datum/skills/pilot
 	minimap_icon = "pilot"
