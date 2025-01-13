@@ -60,7 +60,7 @@
 	assignment = JOB_UNSC_MEDIC
 	rank = JOB_UNSC_MEDIC
 	paygrades = list(PAY_SHORT_NE5 = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "HM"
+	role_comm_title = "HC"
 	skills = /datum/skills/combat_medic
 	minimap_icon = "medic"
 
@@ -110,7 +110,7 @@
 	assignment = JOB_UNSC_TEAM_LEADER
 	rank = JOB_UNSC_TEAM_LEADER
 	paygrades = list(PAY_SHORT_UNSC_ME5 = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "SqSgt"
+	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 	minimap_icon = "tl"
 
@@ -126,7 +126,7 @@
 	assignment = JOB_UNSC_LEADER
 	rank = JOB_UNSC_LEADER
 	paygrades = list(PAY_SHORT_UNSC_ME7 = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "SctSgt"
+	role_comm_title = "SqdSgt"
 	minimum_age = 27
 	skills = /datum/skills/SL
 	minimap_icon = "leader"
@@ -181,6 +181,6 @@
 	assignment = JOB_UNSC_PO
 	rank = JOB_UNSC_PO
 	paygrades = list(PAY_SHORT_UNSC_MO1 = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "DP"
+	role_comm_title = "PO"
 	skills = /datum/skills/pilot
 	minimap_icon = "pilot"
