@@ -54,7 +54,7 @@
 
 /// Marine Corpsman
 /datum/equipment_preset/unsc/medic
-	name = "UNSC Navy Corpsman"
+	name = "UNSC Hospital Corpsman"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
 	assignment = JOB_UNSC_MEDIC
@@ -103,7 +103,7 @@
 
 /// Fire Team Leader
 /datum/equipment_preset/unsc/tl
-	name = "UNSC Fire Team Leader "
+	name = "UNSC Fireteam Leader "
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)

@@ -34,7 +34,7 @@
 /datum/paygrade/covenant/sub_commander
 	paygrade = PAY_SHORT_COV_SUB_COMMANDER
 	name = "Sub-Commander"
-	prefix = "Scmdr"
+	prefix = "S-Cmdr"
 	ranking = 4
 	pay_multiplier = 2.4
 
