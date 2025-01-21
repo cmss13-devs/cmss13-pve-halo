@@ -159,16 +159,6 @@
 	minimap_color = "#32CD32"
 	usable = TRUE
 
-/datum/squad/marine/unsc
-	name = SQUAD_UNSC_MARINE
-	access = list(ACCESS_MARINE_ALPHA)
-	radio_freq = UNSC_FREQ
-	use_stripe_overlay = FALSE
-	equipment_color = "#32CD32" ///change if you want
-	chat_color = "#32CD32"		///change if you want
-	minimap_color = "#32CD32"	///change if you want
-	usable = TRUE
-
 /datum/squad/marine/bravo
 	name = SQUAD_MARINE_2
 	equipment_color = "#ffc32d"
