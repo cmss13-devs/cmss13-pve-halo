@@ -3,13 +3,13 @@
 #define GYSGT_VARIANT "Gunnery Sergeant"
 
 /datum/job/marine/leader
-	title = JOB_SQUAD_LEADER
+	title = JOB_UNSC_LEADER
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the acting commanding officer"
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
-	gear_preset = /datum/equipment_preset/uscm/leader
-	gear_preset_secondary = /datum/equipment_preset/uscm/leader/lesser_rank
+	gear_preset = /datum/equipment_preset/unsc/leader
+	gear_preset_secondary = /datum/equipment_preset/unsc/leader/lesser_rank
 	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'>You are responsible for the men and women of your entire section.</a> Make sure they are on task, working together, and communicating. You are also in charge of communicating with command and letting them know about the situation first hand. Keep out of harm's way.<br><b>You remember that you've stored your personal gear and uniform are located in the dorm or locker rooms.</b>"
 
 	job_options = list(GYSGT_VARIANT = "GYSGT", SSGT_VARIANT = "SSGT")

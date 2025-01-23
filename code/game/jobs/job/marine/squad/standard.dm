@@ -2,14 +2,16 @@
 
 #define PVT_VARIANT "Private"
 #define PFC_VARIANT "Private First Class"
+#define CPL_VARIANT "Corporal"
+#define LCPL_VARIANT "Lance Corporal"
 
 /datum/job/marine/standard
-	title = JOB_SQUAD_MARINE
+	title = JOB_UNSC_MARINE
 	total_positions = -1
 	spawn_positions = -1
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
-	gear_preset = /datum/equipment_preset/uscm/pfc
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/lesser_rank
+	gear_preset = /datum/equipment_preset/unsc/pfc
+	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/lesser_rank
 	job_options = list(PFC_VARIANT = "PFC", PVT_VARIANT = "PVT")
 
 /datum/job/marine/standard/on_config_load()
@@ -71,11 +73,19 @@
 	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
 
 /datum/job/marine/standard/ai/rto
+	title = JOB_UNSC_RTO
 	total_positions = 1
 	spawn_positions = 1
-	title = JOB_SQUAD_RTO
-	gear_preset = /datum/equipment_preset/uscm/rto
-	gear_preset_secondary = /datum/equipment_preset/uscm/rto/lesser_rank
+	title = JOB_UNSC_RTO
+	gear_preset = /datum/equipment_preset/unsc/rto
+	gear_preset_secondary = /datum/equipment_preset/unsc/rto/lesser_rank
+	job_options = list(CPL_VARIANT = "CPL", LCPL_VARIANT = "LCPL")
+
+/datum/job/marine/standard/ai/rto/handle_job_options(option)
+	if(option != CPL_VARIANT)
+		gear_preset = gear_preset_secondary
+	else
+		gear_preset = initial(gear_preset)
 
 /obj/effect/landmark/start/marine/upp
 	name = JOB_SQUAD_MARINE_UPP
@@ -94,3 +104,5 @@
 
 #undef PVT_VARIANT
 #undef PFC_VARIANT
+#undef CPL_VARIANT
+#undef LCPL_VARIANT
