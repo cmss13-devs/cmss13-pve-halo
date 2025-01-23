@@ -8,7 +8,8 @@
 	allow_additional = 1
 	scaled = 1
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
-	gear_preset = /datum/equipment_preset/uscm/specialist_equipped
+	gear_preset = /datum/equipment_preset/unsc/spec
+	gear_preset_secondary = /datum/equipment_preset/unsc/spec/lesser_rank
 	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'>You are the very rare and valuable weapon expert</a>, trained to use special equipment. You can serve a variety of roles, so choose carefully."
 	job_options = list(LCPL_VARIANT = "LCPL", PFC_VARIANT = "PFC")
 
