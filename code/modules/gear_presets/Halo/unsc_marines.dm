@@ -4,35 +4,9 @@
 	faction_group = FACTION_LIST_UNSC
 	languages = list(LANGUAGE_ENGLISH)
 	idtype = /obj/item/card/id/dogtag
-	var/auto_squad_name
-	var/ert_squad = FALSE
 
 /datum/equipment_preset/unsc/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_VERYLOW
-
-/datum/equipment_preset/unsc/load_preset(mob/living/carbon/human/new_human, randomise, count_participant)
-	. = ..()
-	if(!auto_squad_name || (should_block_game_interaction(new_human) && !ert_squad))
-		return
-	if(!GLOB.data_core.manifest_modify(new_human.real_name, WEAKREF(new_human), assignment, rank))
-		GLOB.data_core.manifest_inject(new_human)
-
-	var/obj/item/card/id/ID = new_human.get_idcard()
-	var/datum/money_account/acct = create_account(new_human, rand(30, 50), GLOB.paygrades[ID.paygrade])
-	ID.associated_account_number = acct.account_number
-
-	var/datum/squad/auto_squad = get_squad_by_name(auto_squad_name)
-	if(auto_squad)
-		transfer_marine_to_squad(new_human, auto_squad, new_human.assigned_squad, ID)
-	if(!ert_squad && !auto_squad.active)
-		auto_squad.engage_squad(FALSE)
-
-	if(!auto_squad)
-		transfer_marine_to_squad(new_human, pick(GLOB.RoleAuthority.squads), new_human.assigned_squad, new_human.wear_id)
-
-	new_human.marine_buyable_categories[MARINE_CAN_BUY_EAR] = 0
-	new_human.sec_hud_set_ID()
-	new_human.hud_set_squad()
 
 ///Equipped Presets need doing///
 
@@ -43,14 +17,14 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_UNSC_MARINE
 	rank = JOB_UNSC_MARINE
-	paygrades = list(PAY_SHORT_UNSCT_ME2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
 	minimap_icon = "private"
 
 /datum/equipment_preset/unsc/pfc/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_UNSCT_ME3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 /// Marine Corpsman
 /datum/equipment_preset/unsc/medic
@@ -75,14 +49,14 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_UNSC_RTO
 	rank = JOB_UNSC_RTO
-	paygrades = list(PAY_SHORT_UNSC_ME4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RTO"
 	skills = /datum/skills/pfc
 	minimap_icon = "rto"
 
 /datum/equipment_preset/unsc/rto/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_UNSC_ME3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 /// Marine Spec
 /datum/equipment_preset/unsc/spec
@@ -92,14 +66,14 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
 	assignment = JOB_UNSC_SPECIALIST
 	rank = JOB_UNSC_SPECIALIST
-	paygrades = list(PAY_SHORT_UNSC_ME2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Spc"
 	skills = /datum/skills/specialist
 	minimap_icon = "spec"
 
 /datum/equipment_preset/unsc/spec/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_UNSC_ME3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 
 /// Fire Team Leader
 /datum/equipment_preset/unsc/tl
@@ -109,14 +83,14 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
 	assignment = JOB_UNSC_TEAM_LEADER
 	rank = JOB_UNSC_TEAM_LEADER
-	paygrades = list(PAY_SHORT_UNSC_ME5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 	minimap_icon = "tl"
 
 /datum/equipment_preset/unsc/tl/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_UNSC_ME4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 
 /// Marine Squad Sergeant
 /datum/equipment_preset/unsc/leader
@@ -125,7 +99,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_UNSC_LEADER
 	rank = JOB_UNSC_LEADER
-	paygrades = list(PAY_SHORT_UNSC_ME7 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SqdSgt"
 	minimum_age = 27
 	skills = /datum/skills/SL
@@ -133,7 +107,7 @@
 
 /datum/equipment_preset/unsc/leader/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_UNSC_ME6 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc/pc
 	name = "UNSC Platoon Commander"
@@ -141,7 +115,7 @@
 	idtype = /obj/item/card/id/silver
 	assignment = JOB_UNSC_SO
 	rank = JOB_UNSC_SO
-	paygrades = list(PAY_SHORT_UNSC_MO2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltCo"
 	minimum_age = 25
 	skills = /datum/skills/SO
@@ -171,7 +145,7 @@
 
 /datum/equipment_preset/unsc/pc/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_UNSC_MO1 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc/pilot
 	name = "UNSC Pilot"
@@ -180,7 +154,7 @@
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
 	assignment = JOB_UNSC_PO
 	rank = JOB_UNSC_PO
-	paygrades = list(PAY_SHORT_UNSC_MO1 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PO"
 	skills = /datum/skills/pilot
 	minimap_icon = "pilot"

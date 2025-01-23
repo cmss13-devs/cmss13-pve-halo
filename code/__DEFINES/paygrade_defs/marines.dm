@@ -1,6 +1,6 @@
 // Paygrade shorthand defines, to allow clearer designation.
 
-// USCM MARINES
+// UNSC MARINES
 /// ME1, Private
 #define PAY_SHORT_ME1 "ME1"
 
