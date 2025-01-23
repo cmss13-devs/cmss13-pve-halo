@@ -127,7 +127,6 @@
 		list("M3 Pattern Shoulder Pauldrons", round(scale * 10), /obj/item/clothing/accessory/pads, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Groin Plate", round(scale * 10), /obj/item/clothing/accessory/pads/groin, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Greaves", round(scale * 15), /obj/item/clothing/accessory/pads/greaves, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Knee Pads", round(scale * 15), /obj/item/clothing/accessory/pads/kneepads, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Arm Bracers", round(scale * 10), /obj/item/clothing/accessory/pads/bracers, VENDOR_ITEM_REGULAR),
 		list("M3 Pattern Neck Brace", round(scale * 15), /obj/item/clothing/accessory/pads/neckguard, VENDOR_ITEM_REGULAR),
 
@@ -198,7 +197,6 @@
 	new /obj/item/clothing/accessory/pads(src)
 	new /obj/item/clothing/accessory/pads/groin(src)
 	new /obj/item/clothing/accessory/pads/greaves(src)
-	new /obj/item/clothing/accessory/pads/kneepads(src)
 /obj/effect/essentials_set/m3
 	spawned_gear_list = list(
 		/obj/item/clothing/suit/marine,
