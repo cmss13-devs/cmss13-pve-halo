@@ -122,12 +122,13 @@
 	lead_icon = "leader"
 
 /datum/squad/marine/alpha
-	name = SQUAD_MARINE_1
+	name = SQUAD_UNSC_MARINE
 	equipment_color = "#4148c8"
 	chat_color = "#828cff"
 	access = list(ACCESS_MARINE_ALPHA)
-	radio_freq = ALPHA_FREQ
+	radio_freq = UNSC_FREQ
 	minimap_color = MINIMAP_SQUAD_ALPHA
+	faction = FACTION_UNSC
 	use_stripe_overlay = FALSE
 	usable = TRUE
 

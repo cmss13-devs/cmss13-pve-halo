@@ -33,13 +33,13 @@
 	gear_preset = /datum/equipment_preset/wo/marine/pfc
 
 /obj/effect/landmark/start/marine
-	name = JOB_SQUAD_MARINE
+	name = JOB_UNSC_MARINE
 	icon_state = "marine_spawn"
 	job = /datum/job/marine/standard
 
 /obj/effect/landmark/start/marine/alpha
 	icon_state = "marine_spawn_alpha"
-	squad = SQUAD_MARINE_1
+	squad = SQUAD_UNSC_MARINE
 
 /obj/effect/landmark/start/marine/bravo
 	icon_state = "marine_spawn_bravo"

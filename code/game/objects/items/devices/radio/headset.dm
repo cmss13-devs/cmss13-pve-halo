@@ -633,7 +633,7 @@
 	desc = "A standard marine radio headset. When worn, grants access to Squad Leader tracker. Click tracker with empty hand to open Squad Info window."
 	icon_state = "generic_headset"
 	item_state = "headset"
-	frequency = ALPHA_FREQ
+	frequency = UNSC_FREQ
 
 //############################## VISIBLE HEADSETS ###############################
 /obj/item/device/radio/headset/almayer/marine/solardevils
@@ -647,7 +647,7 @@
 		WEAR_L_EAR = 'icons/mob/humans/onmob/head_1.dmi',
 		WEAR_R_EAR = 'icons/mob/humans/onmob/head_1.dmi',
 		)
-	frequency = ALPHA_FREQ
+	frequency = UNSC_FREQ
 
 /obj/item/device/radio/headset/almayer/marine/solardevils/forecon
 	name = "USCM SOF headset"
@@ -908,7 +908,7 @@
 				name = "[GLOB.main_platoon_name] radio headset"
 				desc = "This is used by [GLOB.main_platoon_name] squad members."
 				icon_state = "alpha_headset"
-				frequency = ALPHA_FREQ
+				frequency = UNSC_FREQ
 
 			switch(GET_DEFAULT_ROLE(H.job))
 				if(JOB_SQUAD_LEADER)
