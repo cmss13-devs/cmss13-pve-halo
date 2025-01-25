@@ -3,7 +3,7 @@
 #define GYSGT_VARIANT "Gunnery Sergeant"
 
 /datum/job/marine/leader
-	title = JOB_UNSC_LEADER
+	title = JOB_SQUAD_LEADER
 	total_positions = 4
 	spawn_positions = 4
 	supervisors = "the acting commanding officer"

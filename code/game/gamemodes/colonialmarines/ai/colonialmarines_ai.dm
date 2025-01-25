@@ -16,12 +16,12 @@
 	var/game_started = FALSE
 
 	role_mappings = list(
-		/datum/job/marine/leader/ai = JOB_UNSC_LEADER,
-		/datum/job/marine/standard/ai/rto = JOB_UNSC_RTO,
-		/datum/job/marine/medic/ai = JOB_UNSC_MEDIC,
-		/datum/job/marine/tl/ai = JOB_UNSC_TEAM_LEADER,
-		/datum/job/marine/specialist/ai = JOB_UNSC_SPECIALIST,
-		/datum/job/marine/standard/ai = JOB_UNSC_MARINE,
+		/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,
+		/datum/job/marine/standard/ai/rto = JOB_SQUAD_RTO,
+		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,
+		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
+		/datum/job/marine/specialist/ai = JOB_SQUAD_SPECIALIST,
+		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE,
 	)
 
 	static_comms_amount = 0
@@ -80,11 +80,11 @@
 /datum/game_mode/colonialmarines/ai/check_queen_status()
 	return
 
-GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/job/marine/leader/ai = JOB_UNSC_LEADER,\
-		/datum/job/marine/standard/ai/rto = JOB_UNSC_RTO,\
-		/datum/job/marine/medic/ai = JOB_UNSC_MEDIC,\
-		/datum/job/marine/tl/ai = JOB_UNSC_TEAM_LEADER,
-		/datum/job/marine/specialist/ai = JOB_UNSC_SPECIALIST,\
-		/datum/job/marine/standard/ai = JOB_UNSC_MARINE)))
+GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,\
+		/datum/job/marine/standard/ai/rto = JOB_SQUAD_RTO,\
+		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,\
+		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,
+		/datum/job/marine/specialist/ai = JOB_SQUAD_SPECIALIST,\
+		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE)))
 
 GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI))

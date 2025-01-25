@@ -15,8 +15,8 @@
 	name = "UNSC Squad Rifleman"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP)
-	assignment = JOB_UNSC_MARINE
-	rank = JOB_UNSC_MARINE
+	assignment = JOB_SQUAD_MARINE
+	rank = JOB_SQUAD_MARINE
 	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RFN"
 	skills = /datum/skills/pfc
@@ -31,8 +31,8 @@
 	name = "UNSC Hospital Corpsman"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_MEDPREP, ACCESS_MARINE_MEDBAY)
-	assignment = JOB_UNSC_MEDIC
-	rank = JOB_UNSC_MEDIC
+	assignment = JOB_SQUAD_MEDIC
+	rank = JOB_SQUAD_MEDIC
 	paygrades = list(PAY_SHORT_NE5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "HC"
 	skills = /datum/skills/combat_medic
@@ -47,8 +47,8 @@
 	name = "UNSC Radio Telephone Operator"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
-	assignment = JOB_UNSC_RTO
-	rank = JOB_UNSC_RTO
+	assignment = JOB_SQUAD_RTO
+	rank = JOB_SQUAD_RTO
 	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RTO"
 	skills = /datum/skills/pfc
@@ -64,8 +64,8 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
-	assignment = JOB_UNSC_SPECIALIST
-	rank = JOB_UNSC_SPECIALIST
+	assignment = JOB_SQUAD_SPECIALIST
+	rank = JOB_SQUAD_SPECIALIST
 	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Spc"
 	skills = /datum/skills/specialist
@@ -81,8 +81,8 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
-	assignment = JOB_UNSC_TEAM_LEADER
-	rank = JOB_UNSC_TEAM_LEADER
+	assignment = JOB_SQUAD_TEAM_LEADER
+	rank = JOB_SQUAD_TEAM_LEADER
 	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
@@ -97,8 +97,8 @@
 	name = "UNSC Squad Sergeant"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
-	assignment = JOB_UNSC_LEADER
-	rank = JOB_UNSC_LEADER
+	assignment = JOB_SQUAD_LEADER
+	rank = JOB_SQUAD_LEADER
 	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SqdSgt"
 	minimum_age = 27
@@ -113,8 +113,8 @@
 	name = "UNSC Platoon Commander"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/silver
-	assignment = JOB_UNSC_SO
-	rank = JOB_UNSC_SO
+	assignment = JOB_SO
+	rank = JOB_SO
 	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PltCo"
 	minimum_age = 25
@@ -152,8 +152,8 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/silver
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
-	assignment = JOB_UNSC_PO
-	rank = JOB_UNSC_PO
+	assignment = JOB_DROPSHIP_PILOT
+	rank = JOB_DROPSHIP_PILOT
 	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PO"
 	skills = /datum/skills/pilot

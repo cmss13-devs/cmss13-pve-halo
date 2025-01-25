@@ -6,7 +6,7 @@
 #define LCPL_VARIANT "Lance Corporal"
 
 /datum/job/marine/standard
-	title = JOB_UNSC_MARINE
+	title = JOB_SQUAD_MARINE
 	total_positions = -1
 	spawn_positions = -1
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
@@ -33,13 +33,13 @@
 	gear_preset = /datum/equipment_preset/wo/marine/pfc
 
 /obj/effect/landmark/start/marine
-	name = JOB_UNSC_MARINE
+	name = JOB_SQUAD_MARINE
 	icon_state = "marine_spawn"
 	job = /datum/job/marine/standard
 
 /obj/effect/landmark/start/marine/alpha
 	icon_state = "marine_spawn_alpha"
-	squad = SQUAD_UNSC_MARINE
+	squad = SQUAD_MARINE_1
 
 /obj/effect/landmark/start/marine/bravo
 	icon_state = "marine_spawn_bravo"
@@ -73,10 +73,10 @@
 	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
 
 /datum/job/marine/standard/ai/rto
-	title = JOB_UNSC_RTO
+	title = JOB_SQUAD_RTO
 	total_positions = 1
 	spawn_positions = 1
-	title = JOB_UNSC_RTO
+	title = JOB_SQUAD_RTO
 	gear_preset = /datum/equipment_preset/unsc/rto
 	gear_preset_secondary = /datum/equipment_preset/unsc/rto/lesser_rank
 	job_options = list(CPL_VARIANT = "CPL", LCPL_VARIANT = "LCPL")
@@ -99,7 +99,7 @@
 
 /obj/effect/landmark/start/marine/rto
 	name = JOB_SQUAD_RTO
-	squad = SQUAD_LRRP
+	squad = SQUAD_MARINE_1
 	job = /datum/job/marine/standard/ai/rto
 
 #undef PVT_VARIANT

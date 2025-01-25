@@ -3,7 +3,7 @@
 #define CPL_VARIANT "Corporal"
 
 /datum/job/marine/tl
-	title = JOB_UNSC_TEAM_LEADER
+	title = JOB_SQUAD_TEAM_LEADER
 	total_positions = 8
 	spawn_positions = 8
 	allow_additional = 1

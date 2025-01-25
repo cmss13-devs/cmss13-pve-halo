@@ -3,7 +3,7 @@
 #define FIRST_LT_VARIANT "First Lieutenant"
 
 /datum/job/command/bridge
-	title = JOB_UNSC_SO
+	title = JOB_SO
 	total_positions = 4
 	spawn_positions = 4
 	allow_additional = 1

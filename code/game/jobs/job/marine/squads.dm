@@ -48,7 +48,7 @@
 	/// maximum # of squad medics allowed in the squad
 	var/max_medics = 4
 	/// maximum # of specs allowed in the squad
-	var/max_specialists = 1
+	var/max_specialists = 2
 	/// maximum # of fireteam leaders allowed in the suqad
 	var/max_tl = 2
 	/// maximum # of smartgunners allowed in the squad
@@ -122,7 +122,7 @@
 	lead_icon = "leader"
 
 /datum/squad/marine/alpha
-	name = SQUAD_UNSC_MARINE
+	name = SQUAD_MARINE_1
 	equipment_color = "#4148c8"
 	chat_color = "#828cff"
 	access = list(ACCESS_MARINE_ALPHA)
@@ -546,10 +546,15 @@
 		if(JOB_SQUAD_MEDIC)
 			assignment = JOB_SQUAD_MEDIC
 			num_medics++
+			var/squad_number = (num_medics > 2) ? pick(1, 2) : num_medics
+			assign_fireteam("SQ[squad_number]", M)
 			C.claimedgear = FALSE
 		if(JOB_SQUAD_SPECIALIST)
 			assignment = JOB_SQUAD_SPECIALIST
 			num_specialists++
+			var/squad_number = (num_specialists > 2) ? pick(1, 2) : num_specialists
+			assign_fireteam("SQ[squad_number]", M)
+			C.claimedgear = FALSE
 		if(JOB_SQUAD_TEAM_LEADER)
 			assignment = JOB_SQUAD_TEAM_LEADER
 			num_tl++
@@ -697,12 +702,12 @@
 		if(JOB_SQUAD_MEDIC)
 			old_lead.comm_title = "HM"
 		if(JOB_SQUAD_TEAM_LEADER)
-			old_lead.comm_title = "SqSgt"
+			old_lead.comm_title = "FTL"
 		if(JOB_SQUAD_SMARTGUN)
 			old_lead.comm_title = "SG"
 		if(JOB_SQUAD_LEADER)
 			if(!leader_killed)
-				old_lead.comm_title = "SctSgt"
+				old_lead.comm_title = "SqSgt"
 		if(JOB_SQUAD_RTO)
 			old_lead.comm_title = "RTO"
 		if(JOB_MARINE_RAIDER)

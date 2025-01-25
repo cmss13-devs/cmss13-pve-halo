@@ -3,7 +3,7 @@
 #define CPL_VARIANT "Petty Officer 2nd Class"
 
 /datum/job/marine/medic
-	title = JOB_UNSC_MEDIC
+	title = JOB_SQUAD_MEDIC
 	total_positions = 16
 	spawn_positions = 16
 	allow_additional = 1
