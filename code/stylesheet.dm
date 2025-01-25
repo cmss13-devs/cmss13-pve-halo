@@ -65,6 +65,7 @@ em {font-style: normal; font-weight: bold;}
 .cryoradio {color: #4a4740;}
 .hcradio {color: #318779;}
 .pvstradio {color: #9b0612;}
+.unscradio {color: #828cff;}
 
 .medium { font-size: 2}
 .big { font-size: 2}

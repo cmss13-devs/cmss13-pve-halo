@@ -3,7 +3,7 @@
 #define GET_DEFAULT_ROLE(title) (GLOB.RoleAuthority?.default_roles[title] ? GLOB.RoleAuthority.default_roles[title] : title)
 
 // Squad name defines
-#define SQUAD_MARINE_1 "Sun Riders"
+#define SQUAD_MARINE_1 "Alpha 1-1" //place holder name
 #define SQUAD_MARINE_2 "Bravo"
 #define SQUAD_MARINE_3 "Charlie"
 #define SQUAD_MARINE_4 "Delta"
@@ -19,11 +19,11 @@
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
-#define JOB_SQUAD_LEADER "Section Sergeant"
+#define JOB_SQUAD_LEADER "Squad Sergeant"
 #define JOB_SQUAD_ENGI "Combat Technician"
 #define JOB_SQUAD_MEDIC "Corpsman"
 #define JOB_SQUAD_SPECIALIST "Weapons Specialist"
-#define JOB_SQUAD_TEAM_LEADER "Squad Sergeant"
+#define JOB_SQUAD_TEAM_LEADER "Fire Team Leader"
 #define JOB_SQUAD_SMARTGUN "Smartgunner"
 #define JOB_SQUAD_ROLES /datum/timelock/squad
 #define JOB_SQUAD_ROLES_LIST list(JOB_SQUAD_MARINE, JOB_SQUAD_LEADER, JOB_SQUAD_ENGI, JOB_SQUAD_MEDIC, JOB_SQUAD_SPECIALIST, JOB_SQUAD_SMARTGUN, JOB_SQUAD_TEAM_LEADER)
@@ -94,7 +94,7 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define JOB_AUXILIARY_OFFICER "Auxiliary Support Officer"
 #define JOB_CAS_PILOT "Gunship Pilot"
-#define JOB_DROPSHIP_PILOT "Dropship Pilot"
+#define JOB_DROPSHIP_PILOT "Pilot"
 #define JOB_TANK_CREW "Tank Crew"
 #define JOB_DROPSHIP_CREW_CHIEF "Dropship Crew Chief"
 #define JOB_INTEL "Intelligence Officer"
@@ -410,6 +410,16 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_DUTCH_MEDIC "Dutch's Dozen - Medic"
 
 #define DUTCH_JOB_LIST list(JOB_DUTCH_ARNOLD, JOB_DUTCH_RIFLEMAN, JOB_DUTCH_MINIGUNNER, JOB_DUTCH_FLAMETHROWER, JOB_DUTCH_MEDIC)
+
+//Covenant
+#define JOB_COV_MINOR "Minor"
+#define JOB_COV_MAJOR "Major"
+#define JOB_COV_ULTRA "Ultra"
+#define JOB_COV_ZEALOT "Zealot"
+#define JOB_COV_COMMANDER "Sub-Commander"
+#define JOB_COV_COMANDER "Commander"
+
+//-------- HALO Ends Here --------//
 
 #define JOB_PREDATOR "Predator"
 #define JOB_XENOMORPH    "Xenomorph"

@@ -411,12 +411,12 @@
 /obj/item/device/radio/headset/almayer/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 
-	if((user == user.assigned_squad?.fireteam_leaders["SQ1"] || user == user.assigned_squad?.fireteam_leaders["SQ2"]) && ("Section Sergeant" in tracking_options))
-		locate_setting = tracking_options["Section Sergeant"]
+	if((user == user.assigned_squad?.fireteam_leaders["SQ1"] || user == user.assigned_squad?.fireteam_leaders["SQ2"]) && ("Squad Sergeant" in tracking_options))
+		locate_setting = tracking_options["Squad Sergeant"]
 		return
 
-	if(((user in user.assigned_squad?.fireteams["SQ1"]) || (user in user.assigned_squad?.fireteams["SQ2"])) && ("Squad Sergeant" in tracking_options))
-		locate_setting = tracking_options["Squad Sergeant"]
+	if(((user in user.assigned_squad?.fireteams["SQ1"]) || (user in user.assigned_squad?.fireteams["SQ2"])) && ("Fire Team Leader" in tracking_options))
+		locate_setting = tracking_options["Fire Team Leader"]
 		return
 
 /obj/item/device/radio/headset/almayer/verb/enter_tree()
@@ -633,7 +633,7 @@
 	desc = "A standard marine radio headset. When worn, grants access to Squad Leader tracker. Click tracker with empty hand to open Squad Info window."
 	icon_state = "generic_headset"
 	item_state = "headset"
-	frequency = ALPHA_FREQ
+	frequency = UNSC_FREQ
 
 //############################## VISIBLE HEADSETS ###############################
 /obj/item/device/radio/headset/almayer/marine/solardevils
@@ -647,7 +647,9 @@
 		WEAR_L_EAR = 'icons/mob/humans/onmob/head_1.dmi',
 		WEAR_R_EAR = 'icons/mob/humans/onmob/head_1.dmi',
 		)
-	frequency = ALPHA_FREQ
+	frequency = UNSC_FREQ
+	has_hud = TRUE
+	hud_type = MOB_HUD_FACTION_UNSC
 
 /obj/item/device/radio/headset/almayer/marine/solardevils/forecon
 	name = "USCM SOF headset"
@@ -908,7 +910,7 @@
 				name = "[GLOB.main_platoon_name] radio headset"
 				desc = "This is used by [GLOB.main_platoon_name] squad members."
 				icon_state = "alpha_headset"
-				frequency = ALPHA_FREQ
+				frequency = UNSC_FREQ
 
 			switch(GET_DEFAULT_ROLE(H.job))
 				if(JOB_SQUAD_LEADER)

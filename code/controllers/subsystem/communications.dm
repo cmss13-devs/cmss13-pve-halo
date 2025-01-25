@@ -148,6 +148,10 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 
 #define AI_FREQ 1500
 
+//Halo channels
+#define UNSC_FREQ 1501
+#define COV_FREQ 1502
+
 #define MAX_FREE_FREQ 1599 // -------------------------------------------------
 
 GLOBAL_LIST_INIT(radiochannels, list(
@@ -172,7 +176,7 @@ GLOBAL_LIST_INIT(radiochannels, list(
 	RADIO_CHANNEL_JTAC = JTAC_FREQ,
 	RADIO_CHANNEL_INTEL = INTEL_FREQ,
 
-	SQUAD_MARINE_1 = ALPHA_FREQ,
+	SQUAD_MARINE_1 = UNSC_FREQ,
 	SQUAD_MARINE_2 = BRAVO_FREQ,
 	SQUAD_MARINE_3 = CHARLIE_FREQ,
 	SQUAD_MARINE_4 = DELTA_FREQ,
@@ -214,6 +218,8 @@ GLOBAL_LIST_INIT(radiochannels, list(
 
 	RADIO_CHANNEL_BUG_A = BUG_A_FREQ,
 	RADIO_CHANNEL_BUG_B = BUG_B_FREQ,
+
+	RADIO_CHANNEL_COV = COV_FREQ,
 ))
 
 // Response Teams
@@ -312,6 +318,8 @@ SUBSYSTEM_DEF(radio)
 		"[CLF_ENGI_FREQ]" = "opforeng",
 		"[CLF_MED_FREQ]" = "opformed",
 		"[CLF_CCT_FREQ]" = "opforcct",
+		"[UNSC_FREQ]" = "unscradio",
+		"[COV_FREQ]" = "covradio",
 	)
 
 /datum/controller/subsystem/radio/proc/add_object(obj/device as obj, new_frequency as num, filter = null as text|null)
