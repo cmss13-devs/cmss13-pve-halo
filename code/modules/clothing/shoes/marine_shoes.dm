@@ -1,8 +1,8 @@
 
 
 /obj/item/clothing/shoes/marine
-	name = "\improper USCM combat boots"
-	desc = "A pair of standard issue black United States Colonial Marine combat boots."
+	name = "\improper UNSC combat boots"
+	desc = "A pair of standard issue black United Nations Space Command Marine Corps combat boots."
 	icon_state = "marine"
 	item_state = "marine"
 	armor_melee = CLOTHING_ARMOR_MEDIUM
@@ -48,20 +48,20 @@
 
 /obj/item/clothing/shoes/marine/brown
 	icon_state = "marine_brown"
-	desc = "A pair of standard issue brown United States Colonial Marine combat boots."
+	desc = "A pair of standard issue brown United Nations Space Command Marine Corps combat boots."
 
 /obj/item/clothing/shoes/marine/brown/knife
 	spawn_item_type = /obj/item/attachable/bayonet
 
 /obj/item/clothing/shoes/marine/jungle
 	icon_state = "marine_jungle"
-	desc = "A pair of standard issue United States Colonial Marine jungle boots. Don't go walkin' slow, the devil's on the loose."
+	desc = "A pair of standard issue United Nations Space Command Marine Corps jungle boots. Don't go walkin' slow, the devil's on the loose."
 
 /obj/item/clothing/shoes/marine/jungle/knife
 	spawn_item_type = /obj/item/attachable/bayonet
 
 /obj/item/clothing/shoes/marine/army
-	name = "\improper US Army combat boots"
+	name = "\improper UNSC Army combat boots"
 	desc = "A pair of standard issue black United States Army combat boots."
 
 /obj/item/clothing/shoes/marine/army/knife

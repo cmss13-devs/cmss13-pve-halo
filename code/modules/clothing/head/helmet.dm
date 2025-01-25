@@ -1905,3 +1905,14 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
 	flags_inventory = BLOCKSHARPOBJ
 	clothing_traits = list(TRAIT_EAR_PROTECTION) //So I don't have to make another subtype for the rocketeers
+
+/obj/item/clothing/head/helmet/marine/unsc
+	name = "CH252 helmet"
+	desc = "Standard-issue helmet to the UNSC Marine Corps. Various attachment points on the helmet allow for various equipment to be fitted to the helmet."
+	icon = 'icons/halo/obj/items/clothing/cm_hats.dmi'
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	built_in_visors = null
+	start_down_visor_type = null
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/head_1.dmi'
+	)
