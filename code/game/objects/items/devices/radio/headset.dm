@@ -411,12 +411,12 @@
 /obj/item/device/radio/headset/almayer/equipped(mob/living/carbon/human/user, slot)
 	. = ..()
 
-	if((user == user.assigned_squad?.fireteam_leaders["SQ1"] || user == user.assigned_squad?.fireteam_leaders["SQ2"]) && ("Section Sergeant" in tracking_options))
-		locate_setting = tracking_options["Section Sergeant"]
+	if((user == user.assigned_squad?.fireteam_leaders["SQ1"] || user == user.assigned_squad?.fireteam_leaders["SQ2"]) && ("Squad Sergeant" in tracking_options))
+		locate_setting = tracking_options["Squad Sergeant"]
 		return
 
-	if(((user in user.assigned_squad?.fireteams["SQ1"]) || (user in user.assigned_squad?.fireteams["SQ2"])) && ("Squad Sergeant" in tracking_options))
-		locate_setting = tracking_options["Squad Sergeant"]
+	if(((user in user.assigned_squad?.fireteams["SQ1"]) || (user in user.assigned_squad?.fireteams["SQ2"])) && ("Fire Team Leader" in tracking_options))
+		locate_setting = tracking_options["Fire Team Leader"]
 		return
 
 /obj/item/device/radio/headset/almayer/verb/enter_tree()
@@ -648,6 +648,8 @@
 		WEAR_R_EAR = 'icons/mob/humans/onmob/head_1.dmi',
 		)
 	frequency = UNSC_FREQ
+	has_hud = TRUE
+	hud_type = MOB_HUD_FACTION_UNSC
 
 /obj/item/device/radio/headset/almayer/marine/solardevils/forecon
 	name = "USCM SOF headset"

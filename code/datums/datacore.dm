@@ -47,7 +47,7 @@ GLOBAL_DATUM_INIT(data_core, /datum/datacore, new)
 		departments += marines_by_squad
 		var/list/manifest_out = list()
 		for(var/datum/data/record/record_entry in GLOB.data_core.general)
-			if(record_entry.fields["mob_faction"] != FACTION_MARINE) //we process only USCM humans
+			if(record_entry.fields["mob_faction"] != FACTION_UNSC) //we process only UNSC humans
 				continue
 			var/name = record_entry.fields["name"]
 			var/rank = record_entry.fields["rank"]
@@ -100,7 +100,7 @@ GLOBAL_DATUM_INIT(data_core, /datum/datacore, new)
 	var/list/squad_sublists = GLOB.ROLES_SQUAD_ALL.Copy() //Are there any marines in the squad?
 
 	for(var/datum/data/record/record_entry in GLOB.data_core.general)
-		if(record_entry.fields["mob_faction"] != FACTION_MARINE) //we process only USCM humans
+		if(record_entry.fields["mob_faction"] != FACTION_UNSC) //we process only UNSC humans
 			continue
 
 		var/name = record_entry.fields["name"]
@@ -168,7 +168,6 @@ GLOBAL_DATUM_INIT(data_core, /datum/datacore, new)
 				dat += "<tr[even ? " class='alt'" : ""]><td>[name]</td><td>[auxil[real_rank][name]]</td><td>[isactive[name]]</td></tr>"
 				even = !even
 	if(dept_flags & FLAG_SHOW_MARINES)
-		dat += "<tr><th colspan=3>Marines</th></tr>"
 		for(var/squad_name in GLOB.ROLES_SQUAD_ALL)
 			if(!squad_sublists[squad_name])
 				continue
