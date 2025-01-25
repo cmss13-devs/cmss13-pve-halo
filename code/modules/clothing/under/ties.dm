@@ -1091,11 +1091,14 @@
 //===========================//CUSTOM ARMOR COSMETIC PLATES\\================================\\
 
 /obj/item/clothing/accessory/pads
-	name = "\improper M3 Shoulder Pads"
+	name = "\improper M52B Shoulder Pads"
 	desc = "A set shoulder pads attachable to the M3 armor set worn by the USCM."
+	icon = 'icons/halo/obj/items/clothing/ties.dmi'
 	icon_state = "pads"
 	item_state = "pads"
 	slot = ACCESSORY_SLOT_DECORARMOR
+	flags_atom = NO_SNOW_TYPE
+	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/ties.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/ties.dmi')
 
 /obj/item/clothing/accessory/pads/Initialize(mapload)
 	. = ..()
@@ -1104,51 +1107,34 @@
 	update_icon()
 
 /obj/item/clothing/accessory/pads/bracers
-	name = "\improper M3 Arm Bracers"
-	desc = "A set arm bracers worn in conjunction to the M3 armor set of the USCMC."
+	name = "\improper M52B Arm Bracers"
+	desc = "A set arm bracers worn in conjunction to the M52B body armor of the UNSC."
 	icon_state = "bracers"
 	item_state = "bracers"
 	slot = ACCESSORY_SLOT_DECORBRACER
+	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/neckguard
-	name = "\improper M3 Neck Guard"
-	desc = "An attachable neck guard option for the M3 armor set worn by the USCMC."
+	name = "\improper M52B Neck Guard"
+	desc = "An attachable neck guard option for the M52B body armor worn by the UNSC."
 	icon_state = "neckguard"
 	item_state = "neckguard"
 	slot = ACCESSORY_SLOT_DECORNECK
-
-/obj/item/clothing/accessory/pads/neckguard/uacg
-	desc = "An attachable neck guard option for the M3 armor set worn by the UACG."
-	icon_state = "neckguard_uacg"
-	item_state = "neckguard_uacg"
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/greaves
-	name = "\improper M3 Shin Guards"
-	desc = "A set shinguards designed to be worn in conjuction with M3 pattern armor."
+	name = "\improper M52B Shin Guards"
+	desc = "A set shinguards designed to be worn in conjuction with M52B body armor."
 	icon_state = "shinguards"
 	item_state = "shinguards"
 	slot = ACCESSORY_SLOT_DECORSHIN
-
-/obj/item/clothing/accessory/pads/kneepads
-	name = "\improper M3 Knee Guards"
-	desc = "A set knee guards designed to be worn in conjuction with M3 pattern armor."
-	icon_state = "thighguards"
-	item_state = "thighguards"
-	slot = ACCESSORY_SLOT_DECORKNEE
+	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/groin
-	name = "\improper M3 Groin Plate"
-	desc = "A plate designed to attach to M3 chestpiece to protect the babymakers of the Corps. Standardized protection of the USCMC often seen worn than not."
+	name = "\improper M52B Groin Plate"
+	desc = "A plate designed to attach to M52B body armor to protect the babymakers of the Corps. Standardized protection of the UNSC often seen worn than not."
 	icon_state = "groinplate"
 	item_state = "groinplate"
-	slot = ACCESSORY_SLOT_DECORGROIN
-
-/obj/item/clothing/accessory/pads/groin/uacg
-	name = "\improper M3 Groin Plate"
-	desc = "A plate designed to attach to M3 chestpiece to protect the babymakers of the Corps. Standardized protection of the UACG often seen worn than not."
-	icon_state = "groinplate_uacg"
-	item_state = "groinplate_uacg"
 	slot = ACCESSORY_SLOT_DECORGROIN
 	flags_atom = NO_SNOW_TYPE
 
@@ -1188,15 +1174,17 @@
 
 //===========================//CUSTOM ARMOR WEBBING\\================================\\
 
-/obj/item/clothing/accessory/storage/webbing/m3
-	name = "\improper M3 Pattern Webbing"
-	desc = "A sturdy mess of synthcotton belts and buckles designed to attach to the M3 Pattern Marine armor standard for the USCMC. This one is the slimmed down model designed for general purpose storage."
-	icon_state = "m3webbing"
+/obj/item/clothing/accessory/storage/webbing/m52b
+	name = "\improper M52B Pattern Webbing"
+	desc = "A sturdy mess of synthcotton belts and buckles designed to attach to the M52B body armor armor standard for the UNSC. This one is the slimmed down model designed for general purpose storage."
+	icon = 'icons/halo/obj/items/clothing/ties.dmi'
+	icon_state = "m52b_webbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m3generic
 	slot = ACCESSORY_SLOT_M3UTILITY
 	flags_atom = NO_SNOW_TYPE
+	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/ties.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/ties.dmi')
 
-/obj/item/clothing/accessory/storage/webbing/m3/Initialize(mapload)
+/obj/item/clothing/accessory/storage/webbing/m52b/Initialize(mapload)
 	. = ..()
 	if(!(flags_atom & NO_SNOW_TYPE))
 		select_gamemode_skin(type)
@@ -1209,10 +1197,10 @@
 		/obj/item/ammo_magazine/rifle,
 	)
 
-/obj/item/clothing/accessory/storage/webbing/m3/mag
-	name = "\improper M3 Pattern Magazine Webbing"
-	desc = "A variant of the M3 Pattern webbing that features pouches for pulse rifle magazines."
-	icon_state = "m3webbingmag"
+/obj/item/clothing/accessory/storage/webbing/m52b/mag
+	name = "\improper M52B Pattern Magazine Webbing"
+	desc = "A variant of the M52B pattern webbing that features pouches for pulse rifle magazines."
+	icon_state = "m52b_magwebbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag
 
 /obj/item/storage/internal/accessory/webbing/m3mag
@@ -1223,7 +1211,7 @@
 
 //Partial Pre-load For Props
 
-/obj/item/clothing/accessory/storage/webbing/m3/mag/mk1
+/obj/item/clothing/accessory/storage/webbing/m52b/mag/mk1
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/mk1
 
 /obj/item/storage/internal/accessory/webbing/m3mag/mk1/fill_preset_inventory()
@@ -1232,10 +1220,10 @@
 
 //===
 
-/obj/item/clothing/accessory/storage/webbing/m3/shotgun
-	name = "\improper M3 Pattern Shell Webbing"
-	desc = "A slightly modified variant of the M3 Pattern grenade webbing, fitted for 12 gauge shotgun shells."
-	icon_state = "m3webbingshotgun"
+/obj/item/clothing/accessory/storage/webbing/m52b/shotgun
+	name = "\improper M52B Pattern Shell Webbing"
+	desc = "A slightly modified variant of the M52B pattern webbing, fitted for 12 gauge shotgun shells."
+	icon_state = "m52b_shotgunwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m3shotgun
 
 /obj/item/storage/internal/accessory/black_vest/m3shotgun
@@ -1243,10 +1231,10 @@
 		/obj/item/ammo_magazine/handful,
 	)
 
-/obj/item/clothing/accessory/storage/webbing/m3/small
-	name = "\improper M3 Pattern Small Pouch Webbing"
-	desc = "A set of M3 pattern webbing fully outfitted with pouches and pockets to carry a while array of small items."
-	icon_state = "m3webbingsmall"
+/obj/item/clothing/accessory/storage/webbing/m52b/small
+	name = "\improper M52B Pattern Small Pouch Webbing"
+	desc = "A set of M52B pattern webbing fully outfitted with pouches and pockets to carry a while array of small items."
+	icon_state = "m52b_smallwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m3generic
 	slot = ACCESSORY_SLOT_M3UTILITY
 
@@ -1255,10 +1243,10 @@
 		/obj/item/ammo_magazine/handful/shotgun,
 	)
 
-/obj/item/clothing/accessory/storage/webbing/m3/m40
-	name = "\improper M3 Pattern Grenade Webbing"
-	desc = "A variation of the M3 Pattern webbing fitted with loops for storing M40 grenades."
-	icon_state = "m3webbingm40"
+/obj/item/clothing/accessory/storage/webbing/m52b/grenade
+	name = "\improper M52B Pattern Grenade Webbing"
+	desc = "A variation of the M52B pattern webbing fitted with loops for storing M40 grenades."
+	icon_state = "m52b_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m3grenade
 
 /obj/item/storage/internal/accessory/black_vest/m3grenade
@@ -1273,10 +1261,10 @@
 		/obj/item/explosive/grenade/slug/baton,
 	)
 
-/obj/item/clothing/accessory/storage/webbing/m3/recon
-	name = "\improper M3-R Pattern Magazine Webbing"
+/obj/item/clothing/accessory/storage/webbing/m52b/recon
+	name = "\improper M52B-R Pattern Magazine Webbing"
 	desc = "A set of magazine webbing made in an alternative configuration for standard M3 Pattern armor. This one is exclusively issued to Force Reconnoissance units."
-	icon_state = "m3rwebbing"
+	icon_state = "m52b_r_webbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/recon
 
 /obj/item/storage/internal/accessory/webbing/m3mag/recon
@@ -1284,7 +1272,7 @@
 
 //Partial Pre-load For Props
 //===
-/obj/item/clothing/accessory/storage/webbing/m3/recon/mk1
+/obj/item/clothing/accessory/storage/webbing/m52b/recon/mk1
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/recon/mk1
 
 /obj/item/storage/internal/accessory/webbing/m3mag/recon/mk1/fill_preset_inventory()
@@ -1293,28 +1281,28 @@
 
 //===
 
-/obj/item/clothing/accessory/storage/webbing/m3/recon/m40
-	name = "\improper M3-R Pattern Grenade Webbing"
-	desc = "An alternative to the M3-R Pattern webbing fitted to store M40 grenades."
-	icon_state = "m3rwebbingm40"
+/obj/item/clothing/accessory/storage/webbing/m52b/recon/grenade
+	name = "\improper M52B-R Pattern Grenade Webbing"
+	desc = "An alternative to the M52B-R Pattern webbing fitted to store grenades."
+	icon_state = "m52b_r_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m3grenade/recon
 
 /obj/item/storage/internal/accessory/black_vest/m3grenade/recon
 	storage_slots = 10
 
-/obj/item/clothing/accessory/storage/webbing/m3/recon/shotgun
-	name = "\improper M3-R Pattern Shell Webbing"
-	desc = "A modified variant of the M3-R Pattern grenade webbing for FORECON units, this one accepting 12 gauge."
-	icon_state = "m3rwebbingshotgun"
+/obj/item/clothing/accessory/storage/webbing/m52b/recon/shotgun
+	name = "\improper M52B-R Pattern Shell Webbing"
+	desc = "A modified variant of the M52B-R Pattern grenade webbing for FORECON units, this one accepting 12 gauge."
+	icon_state = "m52b_r_shotgunwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m3shotgun/recon
 
 /obj/item/storage/internal/accessory/black_vest/m3shotgun/recon
 	storage_slots = 7
 
-/obj/item/clothing/accessory/storage/webbing/m3/recon/medic
-	name = "\improper M3-R Pattern Corpsman Webbing"
+/obj/item/clothing/accessory/storage/webbing/m52b/recon/medic
+	name = "\improper M52B-R Pattern Corpsman Webbing"
 	desc = "A large pouch with M3-R Pattern webbing clips designed to house surgical tools for Corpsmen attached to FORECON units, where field hospitals are not readily available."
-	icon_state = "m3rwebbingmedic"
+	icon_state = "m52b_r_medicwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m3generic/recon
 
 /obj/item/storage/internal/accessory/black_vest/m3generic/recon
