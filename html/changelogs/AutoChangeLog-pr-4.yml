@@ -1,0 +1,7 @@
+author: "Joe Lampost"
+delete-after: True
+changes:
+  - rscadd: "Basic UNSC presents"
+  - rscadd: "Covy and UNSC paygrades"
+  - rscadd: "Adds basic foundation for roles that can be changed accordingly"
+  - rscadd: "Covy and UNSC factions"
