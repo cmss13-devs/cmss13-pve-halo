@@ -14,7 +14,7 @@
 		if(JOB_DROPSHIP_PILOT)
 			hud_icon_state = "dp"
 		if(JOB_SO)
-			hud_icon_state = "lt
+			hud_icon_state = "lt"
 	if(hud_icon_state)
 		holder.overlays += image('icons/mob/hud/marine_hud.dmi', H, "hudsquad_[hud_icon_state]")
 
