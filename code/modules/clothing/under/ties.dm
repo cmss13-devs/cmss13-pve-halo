@@ -1264,7 +1264,7 @@
 /obj/item/clothing/accessory/storage/webbing/m52b/recon
 	name = "\improper M52B-R Pattern Magazine Webbing"
 	desc = "A set of magazine webbing made in an alternative configuration for standard M3 Pattern armor. This one is exclusively issued to Force Reconnoissance units."
-	icon_state = "m3rwebbing"
+	icon_state = "m52b_r_webbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/recon
 
 /obj/item/storage/internal/accessory/webbing/m3mag/recon
