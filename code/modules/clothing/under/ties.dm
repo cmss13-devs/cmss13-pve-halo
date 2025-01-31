@@ -1250,7 +1250,7 @@
 	hold = /obj/item/storage/internal/accessory/black_vest/m3grenade
 
 /obj/item/storage/internal/accessory/black_vest/m3grenade
-	storage_slots = 7
+	storage_slots = 5
 	can_hold = list(
 		/obj/item/explosive/grenade/high_explosive,
 		/obj/item/explosive/grenade/incendiary,
@@ -1260,6 +1260,16 @@
 		/obj/item/explosive/grenade/phosphorus/weak,
 		/obj/item/explosive/grenade/slug/baton,
 	)
+
+/obj/item/clothing/accessory/storage/webbing/m52b/grenade/m9_frag
+	hold = /obj/item/storage/internal/accessory/black_vest/m3grenade/unsc
+
+/obj/item/storage/internal/accessory/black_vest/m3grenade/unsc/fill_preset_inventory()
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
 
 /obj/item/clothing/accessory/storage/webbing/m52b/recon
 	name = "\improper M52B-R Pattern Magazine Webbing"

@@ -2,7 +2,7 @@
 
 /obj/item/ammo_magazine/rifle/halo
 	name = "halo magazine"
-	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	ammo_band_icon = null
 	ammo_band_icon_empty = null
 
@@ -49,7 +49,7 @@
 /obj/item/ammo_magazine/shotgun/buckshot/unsc
 	name = "UNSC 8-gauge shotgun shell box"
 	desc = "A box filled with 8-gauge MAG 15P-00B buckshot shells."
-	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = "8g"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
 	transfer_handful_amount = 6
@@ -62,7 +62,7 @@
 	name = "\improper M19 SSM tube assembly"
 	desc = "A 102mm dual-tubed rocket assembly intended to be loaded into an M41 SPANKr."
 	caliber = "102mm"
-	icon = 'icons/obj/items/weapons/guns/halo/unsc/special.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/special.dmi'
 	icon_state = "spankr_rockets"
 	bonus_overlay = "spankr_rockets"
 	max_rounds = 2
@@ -80,7 +80,7 @@
 
 /obj/item/ammo_magazine/pistol/halo
 	name = "halo magazine"
-	icon = 'icons/obj/items/weapons/guns/halo/unsc/unsc_magazines.dmi'
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	ammo_band_icon = null
 	ammo_band_icon_empty = null
 	caliber = "12.7x40mm"

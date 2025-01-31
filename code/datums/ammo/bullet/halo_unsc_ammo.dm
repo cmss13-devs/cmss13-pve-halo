@@ -28,7 +28,7 @@
 // shotgun ammo
 
 /datum/ammo/bullet/shotgun/buckshot/unsc
-	name = "8-gauge MAG 15P-00B"
+	name = "MAG 15P-00B"
 	handful_state = "8g_shell"
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread/unsc
 	accurate_range = 8
@@ -49,9 +49,13 @@
 
 /datum/ammo/rocket/spankr
 	name = "M19 missile"
-	icon = 'icons/obj/items/weapons/guns/halo/unsc/halo_projectiles.dmi'
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	icon_state = "spankr_missile"
-	damage = 50
+	damage = 200
+	shell_speed = AMMO_SPEED_TIER_6
+	accuracy = HIT_ACCURACY_TIER_4
+	accurate_range = 14
+	max_range = 14
 
 
 // sniper ammo
@@ -67,6 +71,7 @@
 	effective_range_max = 24
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 48
+	shell_speed = AMMO_SPEED_TIER_6 + AMMO_SPEED_TIER_2
 
 // pistol ammo
 
