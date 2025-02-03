@@ -10,7 +10,7 @@
 	name = "\improper MA5C magazine (7.62x51mm FMJ)"
 	desc = "A rectangular box magazine for the MA5C holding 32 rounds of 7.62x51 FMJ ammunitions."
 	icon_state = "ma5c"
-	max_rounds = 32
+	max_rounds = 60
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
 	default_ammo = /datum/ammo/bullet/rifle/ma5c
 	caliber = "7.62x51"
@@ -85,18 +85,18 @@
 	ammo_band_icon_empty = null
 	caliber = "12.7x40mm"
 
-/obj/item/ammo_magazine/pistol/halo/magnum
+/obj/item/ammo_magazine/pistol/halo/m6c
 	name = "\improper M6C magazine (12.7x40mm SAP-HE)"
 	desc = "A rectangular and slanted magazine for the M6C, holding 12 rounds of 12.7x40mm SAP-HE ammunition."
 	icon_state = "m6c"
-	gun_type = /obj/item/weapon/gun/pistol/halo/magnum
+	gun_type = /obj/item/weapon/gun/pistol/halo/m6c
 	default_ammo = /datum/ammo/bullet/pistol/magnum
 	max_rounds = 12
 
-/obj/item/ammo_magazine/pistol/halo/magnum/m6g
+/obj/item/ammo_magazine/pistol/halo/m6g
 	name = "\improper M6G magazine (12.7x40mm SAP-HE)"
 	desc = "A rectangular slanted magazine for the M6G, holding 8 rounds of 12.7x40mm SAP-HE ammunition"
 	icon_state = "m6g"
-	gun_type = /obj/item/weapon/gun/pistol/halo/magnum/m6g
+	gun_type = /obj/item/weapon/gun/pistol/halo/m6g
 	default_ammo = /datum/ammo/bullet/pistol/magnum
 	max_rounds = 8

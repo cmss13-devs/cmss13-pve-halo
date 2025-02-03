@@ -59,6 +59,8 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 	recoil = RECOIL_AMOUNT_TIER_3
+	fa_scatter_peak = 2
+	fa_max_scatter = 30
 
 /obj/item/weapon/gun/rifle/halo/br55
 	name = "BR55 battle rifle"
@@ -74,7 +76,7 @@
 	empty_sound = null
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
-	start_automatic = TRUE
+	start_automatic = FALSE
 	map_specific_decoration = FALSE
 
 	starting_attachment_types = list(/obj/item/attachable/br55_barrel, /obj/item/attachable/scope/mini/br55)
@@ -156,7 +158,7 @@
 	gauge = "8g"
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 13, "rail_y" = 21, "under_x" = 24, "under_y" = 15, "stock_x" = 16, "stock_y" = 15, "special_x" = 16, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 33, "muzzle_y" = 19,"rail_x" = 13, "rail_y" = 21, "under_x" = 29, "under_y" = 15, "stock_x" = 16, "stock_y" = 15, "special_x" = 27, "special_y" = 16)
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90/set_gun_config_values()
 	..()
@@ -211,6 +213,7 @@
 	map_specific_decoration = FALSE
 	skill_locked = FALSE
 	flags_item = TWOHANDED
+	var/can_change_barrel = TRUE
 
 /obj/item/weapon/gun/rifle/sniper/halo/verb/toggle_scope_zoom_level()
 	set name = "Toggle Scope Zoom Level"
@@ -369,28 +372,28 @@
         WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
         WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
     )
+	reload_sound = 'sound/weapons/halo/gun_magnum_reload.ogg'
+	unload_sound = 'sound/weapons/halo/gun_magnum_unload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
+	drop_sound = 'sound/items/halo/drop_lightweapon.ogg'
+	pickup_sound = 'sound/items/halo/grab_lightweapon.ogg'
+	empty_sound = null
 
-/obj/item/weapon/gun/pistol/halo/magnum
+/obj/item/weapon/gun/pistol/halo/m6c
 	name = "M6C service magnum"
 	desc = "The M6C is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. It's set apart from other M6 platform sidearms in that it does not come equipped with a smart-link scope attached to the top of it. Some marines reportedly prefer it due to the less cumbersome nature."
 	icon_state = "m6c"
 	item_state = "vp70"
 	caliber = "12.7x40mm"
-	current_mag = /obj/item/ammo_magazine/pistol/halo/magnum
-
-	drop_sound = 'sound/items/halo/drop_lightweapon.ogg'
-	pickup_sound = 'sound/items/halo/grab_lightweapon.ogg'
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
+	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6c, /obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6c"
-	reload_sound = 'sound/weapons/halo/gun_magnum_reload.ogg'
-	unload_sound = 'sound/weapons/halo/gun_magnum_unload.ogg'
-	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
-	empty_sound = null
 
-/obj/item/weapon/gun/pistol/halo/magnum/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 3, "rail_y" = 14, "under_x" = 21, "under_y" = 30, "stock_x" = 18, "stock_y" = 15)
+/obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
 
-/obj/item/weapon/gun/pistol/halo/magnum/set_gun_config_values()
+/obj/item/weapon/gun/pistol/halo/m6c/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_12)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
@@ -399,12 +402,18 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 
-/obj/item/weapon/gun/pistol/halo/magnum/m6g
+/obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"
 	desc = "The M6G service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
 	icon_state = "m6g"
-	current_mag = /obj/item/ammo_magazine/pistol/halo/magnum/m6g
+	item_state = "vp70"
+	caliber = "12.7x40mm"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6g
+	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6g, /obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6g"
+
+/obj/item/weapon/gun/pistol/halo/m6g/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
 /obj/item/weapon/gun/pistol/halo/m6g/set_gun_config_values()
 	..()
@@ -413,7 +422,7 @@
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT
 	scatter = SCATTER_AMOUNT_TIER_8
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
-	damage_mult = BASE_BULLET_DAMAGE_MULT * BULLET_DAMAGE_MULT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
 	velocity_add = AMMO_SPEED_TIER_1
 
 // Grenades
@@ -425,3 +434,14 @@
 	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
 	icon_state = "m9"
 	item_state = "m9"
+
+/obj/item/explosive/grenade/high_explosive/m15/unsc/launchable
+	name = "40mm explosive grenade"
+	desc = "A 40mm explosive grenade. It's unable to be primed by hand and must be loaded into the bottom of a rifle's grenade launcher."
+	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
+	icon_state = "he_40mm"
+	item_state = "he_40mm"
+	hand_throwable = FALSE
+	has_arm_sound = FALSE
+	dangerous = FALSE
+	dual_purpose = TRUE

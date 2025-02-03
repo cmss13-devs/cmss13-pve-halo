@@ -11,14 +11,14 @@
 	flags_attach_features = NO_FLAGS
 	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
 	size_mod = 0
-	hud_offset_mod = -7
+	hud_offset_mod = -3
 
 /obj/item/attachable/attached_gun/grenade/ma5c
 	name = "\improper M301C 40mm grenade launcher"
 	desc = "A 40mm underslung grenade launcher. The C variant of the M301 is purpose built for the MA5C ICWS to serve as a grip for the weapon much like the standard-issue flashlight of the MA5C."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_gl"
-	attach_icon = "ma5c_gl_a"
+	attach_icon = "ma5c_gl"
 	current_rounds = 0
 	max_rounds = 1
 	max_range = 10
@@ -59,9 +59,9 @@
 	desc = "The MA5 integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_flashlight"
-	attach_icon = "ma5c_flashlight_a"
+	attach_icon = "ma5c_flashlight"
 	original_state = "ma5c_flashlight"
-	original_attach = "ma5c_flashlight_a"
+	original_attach = "ma5c_flashlight"
 	slot = "under"
 
 /obj/item/attachable/flashlight/ma5c/New()
@@ -78,6 +78,10 @@
 	original_attach = "m90_flashlight_a"
 	slot = "under"
 
+/obj/item/attachable/flashlight/ma5c/New()
+	..()
+	recoil_mod = -RECOIL_AMOUNT_TIER_2
+
 /obj/item/attachable/ma5c_barrel
 	name = "\improper MA5C barrel"
 	desc = "The barrel to an MA5C ICWS assault rifle. Better not leave without it."
@@ -90,6 +94,8 @@
 /obj/item/attachable/ma5c_barrel/New()
 	..()
 	scatter_mod = -SCATTER_AMOUNT_TIER_3
+	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
+
 
 /obj/item/attachable/br55_barrel
 	name = "\improper BR55 barrel"
@@ -103,6 +109,7 @@
 /obj/item/attachable/br55_barrel/New()
 	..()
 	scatter_mod = -SCATTER_AMOUNT_TIER_3
+	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
 /obj/item/attachable/scope/spankr
 	name = "\improper SPANKr scope"
@@ -131,10 +138,13 @@
 	size_mod = 0
 	flags_attach_features = NO_FLAGS
 
+/obj/item/attachable/srs_barrel/New()
+	..()
+	scatter_mod = -SCATTER_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/variable_zoom/oracle
 	name = "\improper N-Variant oracle scope"
-	desc= "One of the most common sniper optic systems utilized by the UNSC."
+	desc= "One of the most common sniper optic systems utilized by the UNSC. Able to switch between different zoom modes. Some models even provide night vision optics."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "oracle_scope"
 	attach_icon = "oracle_scope"
@@ -158,9 +168,13 @@
 	flags_attach_features = NO_FLAGS
 
 /obj/item/attachable/scope/mini/smartscope
+	name = "\improper KFA-2 x2 smart-linked scope"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = null
+
+/obj/item/attachable/scope/mini/smartscope/m6g
 	name = "\improper KFA-2/G x2 smart-linked scope"
 	desc = "A smart-linked scope designed to attach to the M6G magnum, allowing for advanced magnification and linking with UNSC optics to provide the HUD a reticle and ammunition counter."
-	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m6c_smartscope_obj"
 	attach_icon = "m6g_smartscope"
 	slot = "rail"
@@ -168,15 +182,14 @@
 /obj/item/attachable/scope/mini/smartscope/m6c
 	name = "\improper KFA-2/C x2 smart-linked scope"
 	desc = "A smart-linked scope designed to attach to the M6C magnum, allowing for advanced magnification and linking with UNSC optics to provide the HUD a reticle and ammunition counter."
-	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m6c_smartscope_obj"
 	attach_icon = "m6c_smartscope"
 	slot = "rail"
 
 /obj/item/attachable/flashlight/m6
-	name = "\improper M6C integrated flashlight"
-	desc = "The MA5 integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
-	icon = 'icons/obj/items/weapons/guns/attachments/rail.dmi'
+	name = "\improper M6 flashlight"
+	desc = "The M6 Flashlight. Not much can be said about it, it turns on and off."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "flashlight"
 	attach_icon = "m6g_light"
 	original_state = "flashlight"
@@ -184,11 +197,11 @@
 	slot = "under"
 
 /obj/item/attachable/flashlight/m6/Attach(obj/item/weapon/gun/subject)
-	if(istype(subject, /obj/item/weapon/gun/pistol/halo/magnum/m6g))
+	if(istype(subject, /obj/item/weapon/gun/pistol/halo/m6g))
 		attach_icon = "m6g_light"
 		original_attach = "m6g_light"
 		..()
-	if(istype(subject, /obj/item/weapon/gun/pistol/halo/magnum))
+	if(istype(subject, /obj/item/weapon/gun/pistol/halo/m6c))
 		attach_icon = "m6c_light"
 		original_attach = "m6c_light"
 		..()

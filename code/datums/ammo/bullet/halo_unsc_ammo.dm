@@ -39,7 +39,6 @@
 
 /datum/ammo/bullet/shotgun/spread/unsc
 	name = "additional buckshot, USCM special type"
-
 	accurate_range = 8
 	max_range = 8
 	damage = 90

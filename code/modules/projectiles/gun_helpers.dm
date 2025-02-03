@@ -716,6 +716,9 @@ DEFINES in setup.dm, referenced here.
 	var/old_firemode = gun_firemode
 	gun_firemode_list.len = 0
 
+	if(start_burst)
+		gun_firemode_list |= GUN_FIREMODE_BURSTFIRE
+
 	if(start_automatic)
 		gun_firemode_list |= GUN_FIREMODE_AUTOMATIC
 
