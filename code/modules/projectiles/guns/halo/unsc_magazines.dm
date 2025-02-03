@@ -3,6 +3,7 @@
 /obj/item/ammo_magazine/rifle/halo
 	name = "halo magazine"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon_state = null
 	ammo_band_icon = null
 	ammo_band_icon_empty = null
 
@@ -81,6 +82,7 @@
 /obj/item/ammo_magazine/pistol/halo
 	name = "halo magazine"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon_state = null
 	ammo_band_icon = null
 	ammo_band_icon_empty = null
 	caliber = "12.7x40mm"

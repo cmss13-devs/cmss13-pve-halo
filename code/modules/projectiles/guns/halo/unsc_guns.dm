@@ -3,6 +3,7 @@
 /obj/item/weapon/gun/rifle/halo
 	name = "Halo rifle holder"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
+	icon_state = null
 	item_icons = list(
 		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
@@ -115,6 +116,7 @@
 /obj/item/weapon/gun/smg/halo
 	name = "halo smg holder"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
+	icon_state = null
 	item_icons = list(
 		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
@@ -135,6 +137,7 @@
 /obj/item/weapon/gun/shotgun/pump/halo
 	name = "Halo shotgun holder"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
+	icon_state = null
 	item_icons = list(
 		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
@@ -278,6 +281,7 @@
 
 /obj/item/weapon/gun/halo_launcher // im a lazy bastard and dont want to deal with killing all of the dumb procs sorry :)
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
+	icon_state = null
 
 /obj/item/weapon/gun/halo_launcher/spankr
 	name = "\improper M41 SPNKr"
@@ -366,6 +370,7 @@
 /obj/item/weapon/gun/pistol/halo
 	name = "Halo pistol holder"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
+	icon_state = null
 	item_icons = list(
 		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
