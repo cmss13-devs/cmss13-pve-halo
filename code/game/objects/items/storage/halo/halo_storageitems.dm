@@ -8,9 +8,9 @@
 	item_state = "m6_holster"
 	item_icons = list(
 		WEAR_WAIST = 'icons/halo/mob/humans/onmob/belt.dmi',
-        WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
-        WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
-        WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi')
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi')
 	storage_slots = 7
 	can_hold = list(
 		/obj/item/weapon/gun/pistol/halo,
