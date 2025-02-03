@@ -980,5 +980,5 @@
 		/obj/item/device/walkman,
 		/obj/item/storage/belt/gun/m39,
 		/obj/item/storage/belt/gun/xm51,
-		/obj/item/storage/belt/gun/m6
+		/obj/item/storage/belt/gun/m6,
 	)
