@@ -9,7 +9,7 @@
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
-    )
+	)
 
 /obj/item/weapon/gun/rifle/halo/ma5c
 	name = "MA5C ICWS assault rifle"
@@ -122,7 +122,7 @@
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
-    )
+	)
 
 /obj/item/weapon/gun/smg/halo/m7
 	name = "M7 submachine gun"
@@ -143,7 +143,7 @@
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
-    )
+	)
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90
 	name = "\improper M90 CAWS"
@@ -198,7 +198,7 @@
 		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo_64.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo_64.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo_64.dmi'
-    )
+	)
 
 	fire_sound = "gun_srs99"
 	reload_sound = 'sound/weapons/halo/gun_srs99_reload.ogg'
@@ -376,7 +376,7 @@
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
-    )
+	)
 	reload_sound = 'sound/weapons/halo/gun_magnum_reload.ogg'
 	unload_sound = 'sound/weapons/halo/gun_magnum_unload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
