@@ -388,7 +388,7 @@
 	name = "M6C service magnum"
 	desc = "The M6C is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. It's set apart from other M6 platform sidearms in that it does not come equipped with a smart-link scope attached to the top of it. Some marines reportedly prefer it due to the less cumbersome nature."
 	icon_state = "m6c"
-	item_state = "vp70"
+	item_state = "m6"
 	caliber = "12.7x40mm"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6c, /obj/item/attachable/flashlight/m6)
@@ -411,7 +411,7 @@
 	name = "M6G service magnum"
 	desc = "The M6G service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
 	icon_state = "m6g"
-	item_state = "vp70"
+	item_state = "m6"
 	caliber = "12.7x40mm"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6g
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6g, /obj/item/attachable/flashlight/m6)
