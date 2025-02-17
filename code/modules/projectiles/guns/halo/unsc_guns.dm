@@ -283,24 +283,30 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 
-/obj/item/weapon/gun/halo_launcher/spankr
+/obj/item/weapon/gun/halo_launcher/spnkr
 	name = "\improper M41 SPNKr"
 	desc = "The M41 SPNKr is a reusable rocket launcher system with multi-role capabilities, including the ability to lock onto air and ground targets. Commonly referred to as the Jackhammer by the UNSC forces equipped with it."
-	icon_state = "spankr"
-	item_state = "spankr"
+	icon_state = "spnkr"
+	item_state = "spnkr"
 	layer = ABOVE_OBJ_LAYER
 	bonus_overlay_layer = UPPER_ITEM_LAYER
 	bonus_overlay_x = -2
 	bonus_overlay_y = 1
 	var/cover_open = FALSE
-	current_mag = /obj/item/ammo_magazine/spankr
+	current_mag = /obj/item/ammo_magazine/spnkr
 	aim_slowdown = SLOWDOWN_ADS_RIFLE
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY
-	fire_sound = "gun_spankr"
-	reload_sound = 'sound/weapons/halo/gun_spankr_reload.ogg'
-	unload_sound = 'sound/weapons/halo/gun_spankr_unload.ogg'
+	fire_sound = "gun_spnkr"
+	reload_sound = 'sound/weapons/halo/gun_spnkr_reload.ogg'
+	unload_sound = 'sound/weapons/halo/gun_spnkr_unload.ogg'
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+	)
 
-/obj/item/weapon/gun/halo_launcher/spankr/set_gun_config_values()
+/obj/item/weapon/gun/halo_launcher/spnkr/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_5)
 	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
@@ -308,14 +314,14 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil = RECOIL_AMOUNT_TIER_1
 
-/obj/item/weapon/gun/halo_launcher/spankr/handle_starting_attachment()
+/obj/item/weapon/gun/halo_launcher/spnkr/handle_starting_attachment()
 	..()
-	var/obj/item/attachable/scope/spankr/integrated = new(src)
+	var/obj/item/attachable/scope/spnkr/integrated = new(src)
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
 
-/obj/item/weapon/gun/halo_launcher/spankr/clicked(mob/user, list/mods)
+/obj/item/weapon/gun/halo_launcher/spnkr/clicked(mob/user, list/mods)
 	if(!mods["alt"] || !CAN_PICKUP(user, src))
 		return ..()
 	else
@@ -335,13 +341,13 @@
 		update_icon()
 		return TRUE
 
-/obj/item/weapon/gun/halo_launcher/spankr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
+/obj/item/weapon/gun/halo_launcher/spnkr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
 	if(!cover_open)
 		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't put a new [current_mag.name] tube in! d<b>(alt-click to open it)</b>"))
 		return
 	return ..()
 
-/obj/item/weapon/gun/halo_launcher/spankr/unload(mob/user, reload_override, drop_override, loc_override)
+/obj/item/weapon/gun/halo_launcher/spnkr/unload(mob/user, reload_override, drop_override, loc_override)
 	if(!cover_open)
 		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't take out the [current_mag.name]! <b>(alt-click to open it)</b>"))
 		return
@@ -350,14 +356,14 @@
 		return
 	return ..()
 
-/obj/item/weapon/gun/halo_launcher/spankr/update_icon()
+/obj/item/weapon/gun/halo_launcher/spnkr/update_icon()
 	. = ..()
 	if(cover_open)
 		overlays += image("+[base_gun_icon]_cover_open")
 	else
 		overlays += image("+[base_gun_icon]_cover_closed")
 
-/obj/item/weapon/gun/halo_launcher/spankr/able_to_fire(mob/living/user)
+/obj/item/weapon/gun/halo_launcher/spnkr/able_to_fire(mob/living/user)
 	. = ..()
 	if(.)
 		if(cover_open)

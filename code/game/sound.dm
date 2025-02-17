@@ -450,8 +450,8 @@
 				sound = pick('sound/weapons/halo/gun_br55_1.ogg','sound/weapons/halo/gun_br55_2.ogg','sound/weapons/halo/gun_br55_3.ogg','sound/weapons/halo/gun_br55_4.ogg')
 			if("gun_m90")
 				sound = pick('sound/weapons/halo/gun_m90_1.ogg','sound/weapons/halo/gun_m90_2.ogg','sound/weapons/halo/gun_m90_3.ogg')
-			if("gun_spankr")
-				sound = pick('sound/weapons/halo/gun_spankr_1.ogg','sound/weapons/halo/gun_spankr_2.ogg','sound/weapons/halo/gun_spankr_3.ogg')
+			if("gun_spnkr")
+				sound = pick('sound/weapons/halo/gun_spnkr_1.ogg','sound/weapons/halo/gun_spnkr_2.ogg','sound/weapons/halo/gun_spnkr_3.ogg')
 
 			// Xeno
 			if("acid_hit")

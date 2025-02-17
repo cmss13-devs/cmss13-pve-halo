@@ -46,10 +46,10 @@
 
 // rocket ammo
 
-/datum/ammo/rocket/spankr
+/datum/ammo/rocket/spnkr
 	name = "M19 missile"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
-	icon_state = "spankr_missile"
+	icon_state = "spnkr_missile"
 	damage = 200
 	shell_speed = AMMO_SPEED_TIER_6
 	accuracy = HIT_ACCURACY_TIER_4

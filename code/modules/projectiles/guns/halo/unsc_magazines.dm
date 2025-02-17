@@ -59,23 +59,23 @@
 
 // rockets
 
-/obj/item/ammo_magazine/spankr
+/obj/item/ammo_magazine/spnkr
 	name = "\improper M19 SSM tube assembly"
-	desc = "A 102mm dual-tubed rocket assembly intended to be loaded into an M41 SPANKr."
+	desc = "A 102mm dual-tubed rocket assembly intended to be loaded into an M41 spnkr."
 	caliber = "102mm"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/special.dmi'
-	icon_state = "spankr_rockets"
-	bonus_overlay = "spankr_rockets"
+	icon_state = "spnkr_rockets"
+	bonus_overlay = "spnkr_rockets"
 	max_rounds = 2
-	default_ammo = /datum/ammo/rocket/spankr
-	gun_type = /obj/item/weapon/gun/halo_launcher/spankr
+	default_ammo = /datum/ammo/rocket/spnkr
+	gun_type = /obj/item/weapon/gun/halo_launcher/spnkr
 	reload_delay = 30
 
-/obj/item/ammo_magazine/spankr/update_icon()
+/obj/item/ammo_magazine/spnkr/update_icon()
 	..()
 	if(current_rounds <= 0)
 		name = "\improper spent M19 SSM tube assembly"
-		desc = "A spent 102mm dual-tubed rocket assembly previously loaded into a SPANKr. Of no use to you now..."
+		desc = "A spent 102mm dual-tubed rocket assembly previously loaded into a spnkr. Of no use to you now..."
 
 // pistol magazines
 

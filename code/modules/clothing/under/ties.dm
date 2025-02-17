@@ -1211,12 +1211,13 @@
 
 //Partial Pre-load For Props
 
-/obj/item/clothing/accessory/storage/webbing/m52b/mag/mk1
-	hold = /obj/item/storage/internal/accessory/webbing/m3mag/mk1
+/obj/item/clothing/accessory/storage/webbing/m52b/mag/ma5c
+	hold = /obj/item/storage/internal/accessory/webbing/m3mag/ma5c
 
-/obj/item/storage/internal/accessory/webbing/m3mag/mk1/fill_preset_inventory()
-	new /obj/item/ammo_magazine/rifle/m41aMK1(src)
-	new /obj/item/ammo_magazine/rifle/m41aMK1(src)
+/obj/item/storage/internal/accessory/webbing/m3mag/ma5c/fill_preset_inventory()
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 
 //===
 

@@ -36,9 +36,7 @@
 	icon_state = "m6"
 	gun_underlay_path = 'icons/halo/obj/items/clothing/belts.dmi'
 	icon_x = 5
-	can_hold = list(
-		/obj/item/ammo_magazine/pistol/halo,
-	)
+	can_hold = list(/obj/item/ammo_magazine/pistol/halo)
 
 /obj/item/storage/pouch/magazine/pistol/unsc
 	name = "pistol magazine pouch"
@@ -49,3 +47,60 @@
 	name = "large pistol magazine pouch"
 	icon_state = "pistolmag_large"
 	storage_slots = 6
+
+//========== BACKPACKS ==========
+
+/obj/item/storage/backpack/marine/satchel/rto/unsc
+	name = "UNSC radio backpack"
+	icon = 'icons/halo/obj/items/clothing/back.dmi'
+	icon_state = "radiopack"
+	item_state = "radiopack"
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi')
+	networks_receive = list(FACTION_UNSC)
+	networks_transmit = list(FACTION_UNSC)
+	phone_category = PHONE_UNSC
+
+/obj/item/storage/backpack/marine/satchel/unsc
+	name = "UNSC buttpack"
+	desc = "A standard-issue buttpack for the infantry of the UNSC."
+	icon = 'icons/halo/obj/items/clothing/back.dmi'
+	icon_state = "buttpack"
+	item_state = "buttpack"
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi')
+
+/obj/item/storage/backpack/marine/unsc
+	name = "UNSC rucksack"
+	desc = "A large tan rucksack that attaches directly to the M52B armor's attachment points. Standard issue, used by just about every UNSC branch since the 25th century."
+	icon = 'icons/halo/obj/items/clothing/back.dmi'
+	icon_state = "rucksack"
+	item_state = "rucksack"
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi')
+
+/obj/item/storage/backpack/marine/ammo_rack/spnkr
+	name = "SPNKr tube storage backpack"
+	desc = "Two individual cloth bags, each capable of storing one M19 twin-tube unit for the M41 SPNKr."
+	icon = 'icons/halo/obj/items/clothing/back.dmi'
+	icon_state = "spnkrpack_0"
+	base_icon_state = "spnkrpack"
+	item_state = "spnkrpack"
+	storage_slots = 2
+	can_hold = list(/obj/item/ammo_magazine/spnkr)
+	has_gamemode_skin = FALSE
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi')
+
+/obj/item/storage/backpack/marine/ammo_rack/spnkr/filled/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/ammo_magazine/spnkr(src)
+	update_icon()

@@ -111,11 +111,11 @@
 	scatter_mod = -SCATTER_AMOUNT_TIER_3
 	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
-/obj/item/attachable/scope/spankr
-	name = "\improper SPANKr scope"
-	desc = "This shouldn't be able to come off the SPANKr..."
+/obj/item/attachable/scope/spnkr
+	name = "\improper spnkr scope"
+	desc = "This shouldn't be able to come off the spnkr..."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "spankr_scope"
+	icon_state = "spnkr_scope"
 	attach_icon = null
 	size_mod = 0
 	hidden = TRUE

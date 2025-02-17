@@ -364,7 +364,7 @@
 
 /obj/item/device/binoculars/range/designator/sergeant
 	name = "tactical binoculars"
-	desc = "A laser designator issued to USCM command elements. It has two modes: target marking for CAS with IR laser and rangefinding. Ctrl + Click turf to target something. Ctrl + Click designator to stop lasing. Alt + Click designator to switch modes."
+	desc = "A laser designator issued to UNSC command elements. It has two modes: target marking for CAS with IR laser and rangefinding. Ctrl + Click turf to target something. Ctrl + Click designator to stop lasing. Alt + Click designator to switch modes."
 	icon_state = "advanced_binoculars"
 	range_laser_overlay = "adv_laser_range"
 	cas_laser_overlay = "adv_laser_cas"
