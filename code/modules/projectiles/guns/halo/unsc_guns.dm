@@ -123,7 +123,8 @@
 		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
-		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi',
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi'
 	)
 
 /obj/item/weapon/gun/smg/halo/m7
@@ -179,7 +180,6 @@
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
-		WEAR_WAIST = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi'
 	)
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90
