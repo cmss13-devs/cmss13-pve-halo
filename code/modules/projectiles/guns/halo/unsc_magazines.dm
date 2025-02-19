@@ -9,7 +9,7 @@
 
 /obj/item/ammo_magazine/rifle/halo/ma5c
 	name = "\improper MA5C magazine (7.62x51mm FMJ)"
-	desc = "A rectangular box magazine for the MA5C holding 32 rounds of 7.62x51 FMJ ammunitions."
+	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 FMJ ammunitions."
 	icon_state = "ma5c"
 	max_rounds = 60
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
@@ -18,12 +18,29 @@
 
 /obj/item/ammo_magazine/rifle/halo/br55
 	name = "\improper BR55 magazine (9.5x40mm X-HP SAP-HE)"
-	desc = "A rectangular box magazine for the BR55 holding 36 rounds of 9.5x40mm X-HP SAP-HE ammunitions."
+	desc = "A rectangular box magazine for the BR55 holding 48 rounds of 9.5x40mm X-HP SAP-HE ammunitions."
 	icon_state = "br55"
-	max_rounds = 36
+	max_rounds = 48
 	gun_type = /obj/item/weapon/gun/rifle/halo/br55
 	default_ammo = /datum/ammo/bullet/rifle/br55
 	caliber = "9.5x40mm"
+
+// smg magazines
+/obj/item/ammo_magazine/smg/halo
+	name = "halo smg magazine"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon_state = null
+	ammo_band_icon = null
+	ammo_band_icon_empty = null
+
+/obj/item/ammo_magazine/smg/halo/m7
+	name = "\improper M7 magazine (5×23mm M443 Caseless FMJ)"
+	desc = "A rectangular magazine to be inserted into the side of the M7 submachine gun. It holds 60 rounds of 5×23mm M443 Caseless FMJ."
+	icon_state = "m7"
+	max_rounds = 60
+	gun_type = /obj/item/weapon/gun/smg/halo/
+	default_ammo = /datum/ammo/bullet/smg/m7
+	caliber = "5x23mm"
 
 // sniper magazines
 

@@ -108,7 +108,7 @@
 
 /obj/item/attachable/br55_barrel/New()
 	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_3
+	scatter_mod = -9
 	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
 /obj/item/attachable/scope/spnkr
@@ -206,3 +206,110 @@
 		original_attach = "m6c_light"
 		..()
 	else return
+
+/obj/item/attachable/stock/m7
+	name = "M7 SMG collapsable stock"
+	desc = "A collapsable stock for the M7 SMG. Extending it makes it more difficult to fire with one and unable to fit into belts, but improves the accuracy and scatter of the weapon."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m7_stock"
+	attach_icon = "m7_stock"
+	w_class = SIZE_TINY
+	flags_attach_features = ATTACH_ACTIVATION
+	collapsible = TRUE
+	stock_activated = FALSE
+	collapse_delay  = 0.5 SECONDS
+	attachment_action_type = /datum/action/item_action/toggle
+	slot = "stock"
+
+/obj/item/attachable/stock/m7/New()
+	..()
+
+	accuracy_mod = 0
+	scatter_mod = 0
+	movement_onehanded_acc_penalty_mod = 0
+	accuracy_unwielded_mod = 0
+	scatter_unwielded_mod = 0
+	wield_delay_mod = 0
+	recoil_unwielded_mod = 0
+
+/obj/item/attachable/stock/m7/apply_on_weapon(obj/item/weapon/gun/gun)
+	if(stock_activated)
+		//folded up
+		accuracy_mod = -HIT_ACCURACY_MULT_TIER_2
+		scatter_mod = -SCATTER_AMOUNT_TIER_9
+		movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+		accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_4
+		scatter_unwielded_mod = SCATTER_AMOUNT_TIER_6
+		recoil_unwielded_mod = RECOIL_AMOUNT_TIER_5
+		icon_state = "m7_stock-on"
+		attach_icon = "m7_stock-on"
+		wield_delay_mod = WIELD_DELAY_NONE
+
+	else
+		accuracy_mod = 0
+		recoil_mod = 0
+		scatter_mod = 0
+		movement_onehanded_acc_penalty_mod = 0
+		accuracy_unwielded_mod = 0
+		scatter_unwielded_mod = 0
+		icon_state = "m7_stock"
+		attach_icon = "m7_stock"
+		wield_delay_mod = 0 //stock is folded so no wield delay
+		recoil_unwielded_mod = 0
+
+	gun.recalculate_attachment_bonuses()
+	gun.update_overlays(src, "stock")
+
+/obj/item/attachable/stock/m7/grip
+	name = "M7 SMG folding grip"
+	desc = "A folding grip that comes standard with the M7 SMG. Folding it up makes it more portable and quicker to wield but as a downside becomes slightly less accurate and has worse scatter."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m7_grip"
+	attach_icon = "m7_grip"
+	flags_attach_features = ATTACH_ACTIVATION
+	collapsible = TRUE
+	stock_activated = FALSE
+	collapse_delay  = 0.5 SECONDS
+	attachment_action_type = /datum/action/item_action/toggle
+	slot = "under"
+
+/obj/item/attachable/stock/m7/grip/New()
+	..()
+
+	accuracy_mod = 0
+	scatter_mod = 0
+	movement_onehanded_acc_penalty_mod = 0
+	accuracy_unwielded_mod = 0
+	scatter_unwielded_mod = 0
+	wield_delay_mod = 0
+	recoil_unwielded_mod = 0
+
+/obj/item/attachable/stock/m7/grip/apply_on_weapon(obj/item/weapon/gun/gun)
+	if(stock_activated)
+		//folded up
+		accuracy_mod = -HIT_ACCURACY_MULT_TIER_2
+		scatter_mod = -SCATTER_AMOUNT_TIER_9
+		movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+		accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_3
+		scatter_unwielded_mod = SCATTER_AMOUNT_TIER_7
+		recoil_unwielded_mod = -RECOIL_AMOUNT_TIER_5
+		icon_state = "m7_grip-on"
+		attach_icon = "m7_grip-on"
+		wield_delay_mod = WIELD_DELAY_NONE
+
+	else
+		accuracy_mod = 0
+		recoil_mod = 0
+		scatter_mod = 0
+		movement_onehanded_acc_penalty_mod = 0
+		accuracy_unwielded_mod = 0
+		scatter_unwielded_mod = 0
+		icon_state = "m7_grip"
+		attach_icon = "m7_grip"
+		wield_delay_mod = 0 //stock is folded so no wield delay
+		recoil_unwielded_mod = 0
+
+	gun.recalculate_attachment_bonuses()
+	gun.update_overlays(src, "under")
+
+

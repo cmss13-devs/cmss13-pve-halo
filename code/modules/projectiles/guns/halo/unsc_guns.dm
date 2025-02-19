@@ -60,8 +60,8 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 	recoil = RECOIL_AMOUNT_TIER_3
-	fa_scatter_peak = 2
-	fa_max_scatter = 30
+	fa_scatter_peak = 30
+	fa_max_scatter = 2
 
 /obj/item/weapon/gun/rifle/halo/br55
 	name = "BR55 battle rifle"
@@ -103,13 +103,15 @@
 	set_fire_delay(FIRE_DELAY_TIER_7)
 	set_burst_amount(BURST_AMOUNT_TIER_3)
 	set_burst_delay(FIRE_DELAY_TIER_SMG)
-	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_2
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
-	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_5
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_5
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT
-	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4
+	fa_scatter_peak = 16
+	fa_max_scatter = 2
 
 // SMGs
 
@@ -126,11 +128,45 @@
 
 /obj/item/weapon/gun/smg/halo/m7
 	name = "M7 submachine gun"
+	desc = "The M7 SMG is a relatively small caseless SMG that fires 5mm rounds. Coming with a folding stock and foldable grip, the M7 SMG has found its home in boarding action and special operations units for its compact size and low caliber."
 	icon_state = "m7"
 	item_state = "m7"
 	caliber = "5x23mm"
 
 	fire_sound = "gun_m7"
+	fire_rattle = "gun_m7"
+	reload_sound = 'sound/weapons/halo/gun_m7_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_m7_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_m7_unload.ogg'
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+	current_mag = /obj/item/ammo_magazine/smg/halo/m7
+	starting_attachment_types = list(/obj/item/attachable/stock/m7, /obj/item/attachable/stock/m7/grip)
+	attachable_allowed = list(
+		/obj/item/attachable/stock/m7,
+		/obj/item/attachable/stock/m7/grip,
+	)
+
+/obj/item/weapon/gun/smg/halo/m7/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 16, "muzzle_y" = 16,"rail_x" = 16, "rail_y" = 16, "under_x" = 30, "under_y" = 15, "stock_x" = 13, "stock_y" = 14)
+
+/obj/item/weapon/gun/smg/halo/m7/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_12)
+	set_burst_delay(FIRE_DELAY_TIER_12)
+	set_burst_amount(BURST_AMOUNT_TIER_3)
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_8
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_8
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+	fa_scatter_peak = 40
+	fa_max_scatter = 3
 
 // shotguns
 
@@ -208,7 +244,8 @@
 
 	current_mag = /obj/item/ammo_magazine/rifle/halo/sniper
 	force = 12
-	wield_delay = WIELD_DELAY_HORRIBLE //Ends up being 1.6 seconds due to scope
+	wield_delay = WIELD_DELAY_HORRIBLE
+	flags_equip_slot = SLOT_BACK
 	zoomdevicename = "scope"
 	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
 	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
@@ -289,6 +326,7 @@
 	icon_state = "spnkr"
 	item_state = "spnkr"
 	layer = ABOVE_OBJ_LAYER
+	flags_equip_slot = SLOT_BACK
 	bonus_overlay_layer = UPPER_ITEM_LAYER
 	bonus_overlay_x = -2
 	bonus_overlay_y = 1
@@ -408,7 +446,7 @@
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_12)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_2
 	scatter = SCATTER_AMOUNT_TIER_7
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
@@ -430,7 +468,7 @@
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_9)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
 	scatter = SCATTER_AMOUNT_TIER_8
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
@@ -445,6 +483,8 @@
 	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
 	icon_state = "m9"
 	item_state = "m9"
+	var/explosion_falloff = 20
+	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL_HALF
 
 /obj/item/explosive/grenade/high_explosive/m15/unsc/launchable
 	name = "40mm explosive grenade"
@@ -456,3 +496,4 @@
 	has_arm_sound = FALSE
 	dangerous = FALSE
 	dual_purpose = TRUE
+	underslug_launchable = TRUE

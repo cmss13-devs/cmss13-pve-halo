@@ -25,6 +25,12 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+// smg ammo
+/datum/ammo/bullet/smg/m7
+	name = "5×23mm M443 FMJ"
+	penetration = 0
+	damage = 25
+
 // shotgun ammo
 
 /datum/ammo/bullet/shotgun/buckshot/unsc

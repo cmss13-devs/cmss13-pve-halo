@@ -44,6 +44,7 @@
 	var/fire_rattle = null
 	var/unload_sound = 'sound/weapons/flipblade.ogg'
 	var/empty_sound = 'sound/weapons/smg_empty_alarm.ogg'
+	var/empty_click = 'sound/weapons/gun_empty.ogg'
 	//We don't want these for guns that don't have them.
 	var/reload_sound = null
 	var/cocked_sound = null
@@ -1639,9 +1640,9 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 /obj/item/weapon/gun/proc/click_empty(mob/user)
 	if(user)
 		to_chat(user, SPAN_WARNING("<b>*click*</b>"))
-		playsound(user, 'sound/weapons/gun_empty.ogg', 25, 1, 5) //5 tile range
+		playsound(user, "[empty_click]", 25, 1, 5) //5 tile range
 	else
-		playsound(src, 'sound/weapons/gun_empty.ogg', 25, 1, 5)
+		playsound(src, "[empty_click]", 25, 1, 5)
 
 /obj/item/weapon/gun/proc/display_ammo(mob/user)
 	// Do not display ammo if you have an attachment
