@@ -440,6 +440,7 @@ DEFINES in setup.dm, referenced here.
 		gun_image = image(current_mag.icon,src,current_mag.bonus_overlay)
 		gun_image.pixel_x += bonus_overlay_x
 		gun_image.pixel_y += bonus_overlay_y
+		gun_image.layer += bonus_overlay_layer
 		attachable_overlays["mag"] = gun_image
 		overlays += gun_image
 	else
@@ -714,6 +715,9 @@ DEFINES in setup.dm, referenced here.
 /obj/item/weapon/gun/proc/setup_firemodes()
 	var/old_firemode = gun_firemode
 	gun_firemode_list.len = 0
+
+	if(start_burst)
+		gun_firemode_list |= GUN_FIREMODE_BURSTFIRE
 
 	if(start_automatic)
 		gun_firemode_list |= GUN_FIREMODE_AUTOMATIC
