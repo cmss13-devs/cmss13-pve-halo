@@ -140,7 +140,7 @@
 	unload_sound = 'sound/weapons/halo/gun_m7_unload.ogg'
 	empty_sound = null
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_CAN_POINTBLANK
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/smg/halo/m7
@@ -179,6 +179,7 @@
 		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
 	)
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90
@@ -370,11 +371,11 @@
 			return TRUE
 		if(!cover_open)
 			playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You open [src]'s feed cover, allowing the [current_mag.name] to be removed."))
+			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the [current_mag.name] to be removed."))
 			cover_open = TRUE
 		else
 			playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You close [src]'s feed cover."))
+			to_chat(user, SPAN_NOTICE("You close [src]'s tube cover."))
 			cover_open = FALSE
 		update_icon()
 		return TRUE
@@ -426,6 +427,7 @@
 	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
 	drop_sound = 'sound/items/halo/drop_lightweapon.ogg'
 	pickup_sound = 'sound/items/halo/grab_lightweapon.ogg'
+	flags_gun_features = GUN_CAN_POINTBLANK
 	empty_sound = null
 
 /obj/item/weapon/gun/pistol/halo/m6c
@@ -437,6 +439,7 @@
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6c, /obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6c"
+	flags_gun_features = GUN_CAN_POINTBLANK
 
 /obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
