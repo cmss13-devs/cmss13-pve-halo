@@ -1,0 +1,8 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Guns"
+  - rscadd: "MA5C, M90, BR55, M6C, M6G, SRS99, SPNKR. I think that's it."
+  - rscadd: "Belts"
+  - rscadd: "Equipped presets for roles"
+  - imageadd: "All the stuff for the above"
