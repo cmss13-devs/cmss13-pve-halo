@@ -448,9 +448,8 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
 "bZ" = (
-/obj/structure/cargo_container/unsc/main_2/b{
-	pixel_x = 0;
-	pixel_y = 0
+/obj/structure/cargo_container/unsc/main_1{
+	pixel_y = 6
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
@@ -1349,8 +1348,8 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/one)
 "gD" = (
-/obj/structure/cargo_container/unsc/main_1{
-	pixel_y = 6
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 5.1
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
@@ -2357,7 +2356,8 @@
 /area/dark_was_the_night/lower_hallway)
 "lr" = (
 /obj/structure/cargo_container/unsc/main_2/b{
-	pixel_y = 6
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
@@ -3096,7 +3096,7 @@
 /obj/structure/bed/chair/comfy/bench/south/east{
 	pixel_x = -6;
 	pixel_y = 0;
-	buckling_x = -6\
+	buckling_x = -6
 	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -3174,9 +3174,7 @@
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
 "or" = (
-/obj/structure/prop/unsc_crate/big/stack/alt{
-	layer = 5.1
-	},
+/obj/structure/cargo_container/unsc/main_2/c,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "ou" = (
@@ -3657,7 +3655,12 @@
 /turf/open/floor/almayer/test_floor4,
 /area/space)
 "qD" = (
-/obj/structure/cargo_container/unsc/main_2/c,
+/obj/structure/cargo_container/unsc/main_1,
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 5.11;
+	pixel_x = -5;
+	pixel_y = 0
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "qE" = (
@@ -3923,14 +3926,9 @@
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/supply)
 "rY" = (
-/obj/structure/cargo_container/unsc/main_1,
-/obj/structure/prop/unsc_crate/big/stack/alt{
-	layer = 5.11;
-	pixel_x = -5;
-	pixel_y = 0
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
+/obj/structure/machinery/vending/dinnerware/unsc,
+/turf/closed/wall/unsc,
+/area/dark_was_the_night/kitchen)
 "sa" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/prop,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -6838,8 +6836,7 @@
 /turf/open/floor/almayer/plating,
 /area/dark_was_the_night/motor_pool)
 "Fe" = (
-/obj/structure/cargo_container/unsc/main_2/c{
-	pixel_x = 0;
+/obj/structure/cargo_container/unsc/main_2/b{
 	pixel_y = 6
 	},
 /turf/open/floor/almayer,
@@ -7660,6 +7657,10 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
+"Jf" = (
+/obj/structure/cargo_container/unsc/main_2/d,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
 "Jn" = (
 /turf/open/floor/almayer/edge/smooth/northeast,
 /area/dark_was_the_night/cryo_bay/one)
@@ -8159,7 +8160,10 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "LA" = (
-/obj/structure/cargo_container/unsc/main_2/d,
+/obj/structure/cargo_container/unsc/main_2/c{
+	pixel_x = 0;
+	pixel_y = 6
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "LB" = (
@@ -18160,7 +18164,7 @@ Xe
 ws
 el
 nl
-mi
+rY
 Qo
 Qo
 DW
@@ -32044,9 +32048,9 @@ KX
 KX
 KX
 KX
+bZ
+qD
 gD
-rY
-or
 KX
 KX
 KX
@@ -32196,8 +32200,8 @@ KX
 KX
 KX
 KX
+Fe
 lr
-bZ
 ne
 KX
 KX
@@ -32348,8 +32352,8 @@ KX
 KX
 KX
 KX
-Fe
-qD
+LA
+or
 KX
 KX
 KX
@@ -32501,7 +32505,7 @@ KX
 KX
 KX
 tu
-LA
+Jf
 KX
 KX
 KX
