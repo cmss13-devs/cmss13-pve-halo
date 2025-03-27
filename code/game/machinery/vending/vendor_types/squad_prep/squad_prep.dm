@@ -133,7 +133,7 @@
 
 		list("BELTS", -1, null, null),
 		list("M276 Pattern Ammo Load Rig", floor(scale * 15), /obj/item/storage/belt/marine, VENDOR_ITEM_REGULAR),
-		list("M276 Pattern M40 Grenade Rig", floor(scale * 10), /obj/item/storage/belt/grenade, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Grenade Webbing", floor(scale * 10), /obj/item/storage/belt/grenade, VENDOR_ITEM_REGULAR),
 		list("M6 General Pistol Holster Rig", floor(scale * 15), /obj/item/storage/belt/gun/m6, VENDOR_ITEM_REGULAR),
 		list("M276 Pattern M82F Holster Rig", floor(scale * 5), /obj/item/storage/belt/gun/flaregun, VENDOR_ITEM_REGULAR),
 		list("M276 G8-A General Utility Pouch", floor(scale * 15), /obj/item/storage/backpack/general_belt, VENDOR_ITEM_REGULAR),
@@ -171,17 +171,17 @@
 
 /obj/item/storage/box/guncase/m52barmor //forgive me, father
 	name = "\improper M52B Body Armor case"
-	desc = "A case containing the standard issue parts of the M3 Pattern Armor set of the USCMC. No parts sold separately."
+	desc = "A case containing the standard issue parts of the M52B body armor set of the UNSC. No parts sold separately."
 	can_hold = list(/obj/item/clothing/suit/marine/unsc, /obj/item/clothing/accessory/pads, /obj/item/clothing/accessory/pads/greaves)
 	storage_slots = 3
 
 /obj/item/storage/box/guncase/m52barmor/fill_preset_inventory()
-	new /obj/item/clothing/suit/marine(src)
+	new /obj/item/clothing/suit/marine/unsc(src)
 	new /obj/item/clothing/accessory/pads(src)
 	new /obj/item/clothing/accessory/pads/greaves(src)
 /obj/effect/essentials_set/m52b
 	spawned_gear_list = list(
-		/obj/item/clothing/suit/marine,
+		/obj/item/clothing/suit/marine/unsc,
 		/obj/item/clothing/accessory/pads/greaves,
 		/obj/item/clothing/accessory/pads,
 	)

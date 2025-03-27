@@ -1179,8 +1179,8 @@
 	name = "UNSC magazine box (M6C x 14)"
 	desc = "An ammo box storing 14 magazines of M6C ammunition."
 	icon_state = "base_ammosmall"
-	overlay_ammo_type = "_small"
-	overlay_content = "_regsmall"
+	overlay_ammo_type = "_regsmall"
+	overlay_content = "_small"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6c
 	num_of_magazines = 14
 
@@ -1189,7 +1189,7 @@
 	name = "UNSC magazine box (M6G x 14)"
 	desc = "An ammo box storing 14 magazines of M6G ammunition."
 	icon_state = "base_ammosmall2"
-	overlay_ammo_type = "_small"
-	overlay_content = "_regsmall"
+	overlay_ammo_type = "_regsmall"
+	overlay_content = "_small"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6g
 	num_of_magazines = 14

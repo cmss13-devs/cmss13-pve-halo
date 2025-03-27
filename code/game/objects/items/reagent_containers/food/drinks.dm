@@ -381,7 +381,7 @@
 /obj/item/reagent_container/food/drinks/coffeecup/uscm
 	name = "UNSC coffee mug"
 	desc = "A red, white and blue coffee mug depicting the emblem of the UNSC. Patriotic and bold, and commonly seen among veterans as a novelty."
-	icon_state = "UNSCcup"
+	icon_state = "uscmcup"
 
 /obj/item/reagent_container/food/drinks/coffeecup/wy
 	name = "Weyland-Yutani coffee mug"

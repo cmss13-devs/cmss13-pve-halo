@@ -448,12 +448,12 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
 "bZ" = (
-/obj/structure/cargo_container/unsc/main_2/c{
+/obj/structure/cargo_container/unsc/main_2/b{
 	pixel_x = 0;
-	pixel_y = 6
+	pixel_y = 0
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "cc" = (
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
@@ -1349,9 +1349,11 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/one)
 "gD" = (
-/obj/structure/cargo_container/unsc/main_2/c,
+/obj/structure/cargo_container/unsc/main_1{
+	pixel_y = 6
+	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "gF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -2354,12 +2356,11 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "lr" = (
-/obj/structure/cargo_container/unsc/main_2/d{
-	pixel_x = 0;
+/obj/structure/cargo_container/unsc/main_2/b{
 	pixel_y = 6
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "ls" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
@@ -2854,11 +2855,18 @@
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
 "ne" = (
-/obj/structure/cargo_container/unsc/main_2/b{
-	pixel_y = 6
+/obj/structure/prop/unsc_crate/standard/green{
+	pixel_x = -2;
+	pixel_y = 7;
+	layer = 3.2
+	},
+/obj/structure/prop/unsc_crate/standard/green{
+	pixel_x = -3;
+	pixel_y = 20;
+	layer = 5.1
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "nf" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/upper_hallway)
@@ -3166,20 +3174,13 @@
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
 "or" = (
-/obj/structure/prop/unsc_crate/standard/green{
-	pixel_x = -2;
-	pixel_y = 7;
-	layer = 3.2
-	},
-/obj/structure/prop/unsc_crate/standard/green{
-	pixel_x = -3;
-	pixel_y = 20;
+/obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 5.1
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "ou" = (
-/obj/structure/gun_rack/halo/ma5c/unloaded,
+/obj/structure/gun_rack/halo/armory/ma5c/unloaded,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "ow" = (
@@ -3656,11 +3657,9 @@
 /turf/open/floor/almayer/test_floor4,
 /area/space)
 "qD" = (
-/obj/structure/cargo_container/unsc/main_1{
-	pixel_y = 6
-	},
+/obj/structure/cargo_container/unsc/main_2/c,
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "qE" = (
 /obj/structure/machinery/firealarm{
 	dir = 8;
@@ -3924,8 +3923,14 @@
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/supply)
 "rY" = (
+/obj/structure/cargo_container/unsc/main_1,
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 5.11;
+	pixel_x = -5;
+	pixel_y = 0
+	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "sa" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/prop,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -4270,9 +4275,12 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/dark_was_the_night/medical)
 "tu" = (
-/obj/structure/cargo_container/unsc/main_2/d,
+/obj/structure/cargo_container/unsc/main_2/d{
+	pixel_x = 0;
+	pixel_y = 6
+	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "tw" = (
 /obj/structure/bed/chair/comfy/bench/mid/west{
 	pixel_x = 6;
@@ -6830,11 +6838,12 @@
 /turf/open/floor/almayer/plating,
 /area/dark_was_the_night/motor_pool)
 "Fe" = (
-/obj/structure/prop/unsc_crate/big/stack/alt{
-	layer = 5.1
+/obj/structure/cargo_container/unsc/main_2/c{
+	pixel_x = 0;
+	pixel_y = 6
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "Fh" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
@@ -7651,13 +7660,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
-"Jf" = (
-/obj/structure/cargo_container/unsc/main_2/b{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/turf/open/floor/almayer,
-/area/space)
 "Jn" = (
 /turf/open/floor/almayer/edge/smooth/northeast,
 /area/dark_was_the_night/cryo_bay/one)
@@ -8157,14 +8159,9 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "LA" = (
-/obj/structure/cargo_container/unsc/main_1,
-/obj/structure/prop/unsc_crate/big/stack/alt{
-	layer = 5.11;
-	pixel_x = -5;
-	pixel_y = 0
-	},
+/obj/structure/cargo_container/unsc/main_2/d,
 /turf/open/floor/almayer,
-/area/space)
+/area/dark_was_the_night/hangar)
 "LB" = (
 /obj/structure/platform{
 	dir = 1
@@ -8794,11 +8791,11 @@
 /turf/open/floor/almayer/plating_striped/north,
 /area/dark_was_the_night/engineering)
 "Os" = (
-/obj/structure/gun_rack/halo/ma5c/unloaded,
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 1
 	},
+/obj/structure/gun_rack/halo/armory/ma5c/unloaded,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "Ot" = (
@@ -9518,6 +9515,11 @@
 "RZ" = (
 /obj/structure/desertdam/decals/road_stop{
 	icon_state = "stop_decal3"
+	},
+/obj/structure/machinery/door_control/brbutton{
+	pixel_x = 1;
+	pixel_y = 27;
+	id = "hangar_door_vehicle"
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
@@ -11026,11 +11028,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/supply)
-"YZ" = (
-/obj/structure/gun_rack/halo/ma5c/unloaded,
-/obj/structure/gun_rack/halo/ma5c/unloaded,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/armory)
 "Za" = (
 /obj/structure/platform,
 /obj/structure/barricade/handrail{
@@ -21932,7 +21929,7 @@ tG
 tG
 tG
 WN
-YZ
+ou
 nb
 qO
 Zw
@@ -23987,7 +23984,7 @@ tG
 tG
 tG
 vG
-Wh
+WR
 Wh
 vG
 vG
@@ -25789,9 +25786,9 @@ cD
 cD
 cD
 cD
-qD
-LA
-Fe
+cD
+cD
+cD
 cD
 cD
 cD
@@ -25941,9 +25938,9 @@ cD
 cD
 cD
 cD
-ne
-Jf
-or
+cD
+cD
+cD
 cD
 cD
 cD
@@ -26093,9 +26090,9 @@ cD
 cD
 cD
 cD
-bZ
-gD
-rY
+cD
+cD
+cD
 cD
 cD
 cD
@@ -26245,9 +26242,9 @@ cD
 cD
 cD
 cD
-lr
-tu
-rY
+cD
+cD
+cD
 cD
 cD
 cD
@@ -31732,19 +31729,19 @@ KX
 KX
 KX
 KX
-KX
+uU
 KX
 KX
 Zf
 YS
 YS
-YS
+Lj
 Nx
 KX
 KX
 KX
 Zf
-YS
+Lj
 YS
 YS
 Nx
@@ -31883,21 +31880,21 @@ KX
 KX
 KX
 KX
+dL
+dL
+dL
 KX
 KX
 KX
+dL
+dL
+dL
 KX
 KX
 KX
-KX
-KX
-KX
-KX
-KX
-KX
-KX
-KX
-KX
+dL
+dL
+dL
 KX
 KX
 KX
@@ -32047,9 +32044,9 @@ KX
 KX
 KX
 KX
-KX
-KX
-KX
+gD
+rY
+or
 KX
 KX
 KX
@@ -32199,9 +32196,9 @@ KX
 KX
 KX
 KX
-KX
-KX
-KX
+lr
+bZ
+ne
 KX
 KX
 KX
@@ -32351,8 +32348,8 @@ KX
 KX
 KX
 KX
-KX
-KX
+Fe
+qD
 KX
 KX
 KX
@@ -32503,8 +32500,8 @@ KX
 KX
 KX
 KX
-KX
-KX
+tu
+LA
 KX
 KX
 KX

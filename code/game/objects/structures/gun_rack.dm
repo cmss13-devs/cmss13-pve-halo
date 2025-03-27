@@ -162,6 +162,7 @@
 /obj/structure/gun_rack/halo
 	name = "halo gun rack holder"
 	icon = 'icons/halo/obj/structures/gun_racks.dmi'
+	icon_state = "template"
 
 /obj/structure/gun_rack/halo/medkit
 	name = "medkit station"
@@ -172,7 +173,17 @@
 	allowed_type = /obj/item/storage/firstaid/unsc
 	populate_type = /obj/item/storage/firstaid/unsc
 
-/obj/structure/gun_rack/halo/ma5c
+/obj/structure/gun_rack/halo/armory/Initialize()
+	. = ..()
+	if(prob(50))
+		var/image/picked_image
+		picked_image = pick("+decorator_1","+decorator_2","+decorator_3")
+		overlays += picked_image
+	else
+		return
+
+
+/obj/structure/gun_rack/halo/armory/ma5c
 	name = "MA5C weapon rack"
 	icon_state = "ma5c"
 	max_stored = 6
@@ -180,8 +191,8 @@
 	allowed_type = /obj/item/weapon/gun/rifle/halo/ma5c
 	populate_type = /obj/item/weapon/gun/rifle/halo/ma5c
 
-/obj/structure/gun_rack/halo/ma5c/unloaded
+/obj/structure/gun_rack/halo/armory/ma5c/unloaded
 	populate_type = /obj/item/weapon/gun/rifle/halo/ma5c/unloaded
 
-/obj/structure/gun_rack/halo/ma5c/empty
+/obj/structure/gun_rack/halo/armory/ma5c/empty
 	initial_stored = 0
