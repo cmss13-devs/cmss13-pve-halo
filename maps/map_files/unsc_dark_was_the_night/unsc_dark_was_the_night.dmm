@@ -7176,18 +7176,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
-"GR" = (
-/obj/structure/machinery/door/firedoor/border_only/almayer{
-	dir = 2
-	},
-/obj/structure/machinery/door/firedoor/border_only/almayer{
-	dir = 2
-	},
-/obj/structure/machinery/door/airlock/unsc{
-	dir = 1
-	},
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "GS" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff"
@@ -9007,15 +8995,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
-"Pr" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/space)
 "Pz" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -17149,7 +17128,7 @@ pj
 KT
 mQ
 mQ
-Pr
+qA
 qA
 qA
 qA
@@ -22729,7 +22708,7 @@ Wy
 LJ
 yL
 Iz
-GR
+LJ
 mT
 mt
 WS
