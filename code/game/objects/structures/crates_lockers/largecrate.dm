@@ -385,7 +385,6 @@ GLOBAL_LIST_INIT(rbarrel_color_list, list(COLOR_SILVER,
 		icon_state = "secure_crate"
 		strapped = 0
 
-
 /obj/structure/largecrate/guns
 	name = "\improper USCM firearms crate (x3)"
 	fill_from_loc = FALSE

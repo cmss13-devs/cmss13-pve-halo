@@ -189,3 +189,83 @@
 
 /obj/item/ammo_box/magazine/misc/power_cell/empty
 	empty = TRUE
+
+//-----------------------Halo Boxes-----------------------
+
+/obj/item/ammo_box/magazine/misc/unsc
+	name = "\improper UNSC storage crate"
+	desc = "A generic storage crate for the UNSC. Looks like it holds...nothing? You shouldn't be seeing this..."
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	magazines_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	deployed_object = /obj/structure/magazine_box/unsc
+	icon_state = "base"
+	magazine_type = null
+	limit_per_tile = 1
+	num_of_magazines = 0
+	overlay_content = null
+
+/obj/item/ammo_box/magazine/misc/unsc/mre
+	name = "\improper UNSC storage crate - (MRE x 14)"
+	desc = "A generic storage crate for the UNSC holding MREs."
+	icon_state = "base_mre"
+	magazine_type = /obj/item/storage/box/MRE
+	num_of_magazines = 14
+	overlay_content = "_mre"
+
+/obj/item/ammo_box/magazine/misc/unsc/mre/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/flare
+	name = "\improper UNSC storage crate  (Flares x 14)"
+	desc = "A generic storage crate for the UNSC holding flares."
+	icon_state = "base_flare"
+	magazine_type = /obj/item/storage/box/m94
+	num_of_magazines = 14
+	overlay_content = "_flare"
+
+/obj/item/ammo_box/magazine/misc/unsc/flare/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/flare/signal
+	name = "\improper UNSC storage crate - (Signal Flares x 14)"
+	desc = "A generic storage crate for the UNSC holding signal flares."
+	icon_state = "base_flare"
+	magazine_type = /obj/item/storage/box/m94/signal
+	num_of_magazines = 14
+	overlay_content = "_signal"
+
+/obj/item/ammo_box/magazine/misc/unsc/flare/signal/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade
+	name = "\improper UNSC storage crate - (Grenades x 9)"
+	desc = "A generic storage crate for the UNSC holding fragmentation grenades."
+	icon_state = "base_frag"
+	magazine_type = /obj/item/explosive/grenade/high_explosive/m15/unsc
+	num_of_magazines = 9
+	overlay_content = "_frag"
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable
+	name = "\improper UNSC storage crate - (40mm Grenades x 30)"
+	desc = "A generic storage crate for the UNSC holding 40MM grenades."
+	icon_state = "base_40mm"
+	magazine_type = /obj/item/explosive/grenade/high_explosive/m15/unsc/launchable
+	num_of_magazines = 30
+	overlay_content = "_40mm"
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets
+	name = "\improper UNSC storage crate - (First Aid Packets x 10)"
+	desc = "A generic storage crate for the UNSC holding MREs."
+	icon_state = "base_medpack"
+	magazine_type = /obj/item/storage/box/medical_packet
+	num_of_magazines = 10
+	overlay_content = "_medpack"
+
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets/empty
+	empty = TRUE

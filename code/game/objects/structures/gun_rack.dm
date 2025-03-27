@@ -155,4 +155,33 @@
 /obj/structure/gun_rack/m20a/unloaded
 	initial_stored = 5
 	allowed_type = /obj/item/weapon/gun/rifle/m20a/unloaded
-	populate_type = /obj/item/weapon/gun/rifle/m20a/unloaded
+	populate_type = /obj/item/weapon/gun/rifle/m20a/
+
+// halo
+
+/obj/structure/gun_rack/halo
+	name = "halo gun rack holder"
+	icon = 'icons/halo/obj/structures/gun_racks.dmi'
+
+/obj/structure/gun_rack/halo/medkit
+	name = "medkit station"
+	icon_state = "medkit"
+	max_stored = 1
+	initial_stored = 1
+	density = FALSE
+	allowed_type = /obj/item/storage/firstaid/unsc
+	populate_type = /obj/item/storage/firstaid/unsc
+
+/obj/structure/gun_rack/halo/ma5c
+	name = "MA5C weapon rack"
+	icon_state = "ma5c"
+	max_stored = 6
+	initial_stored = 6
+	allowed_type = /obj/item/weapon/gun/rifle/halo/ma5c
+	populate_type = /obj/item/weapon/gun/rifle/halo/ma5c
+
+/obj/structure/gun_rack/halo/ma5c/unloaded
+	populate_type = /obj/item/weapon/gun/rifle/halo/ma5c/unloaded
+
+/obj/structure/gun_rack/halo/ma5c/empty
+	initial_stored = 0

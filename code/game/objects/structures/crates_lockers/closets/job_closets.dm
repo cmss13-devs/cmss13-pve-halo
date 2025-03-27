@@ -161,3 +161,41 @@
 	new /obj/item/device/radio/headset/almayer/marine(src)
 	new /obj/item/device/radio/headset/almayer/marine(src)
 	new /obj/item/clothing/glasses/night/m56_goggles/no_nightvision(src)
+
+/obj/structure/closet/secure_closet/halo
+
+/obj/structure/closet/secure_closet/halo/job_locker
+	name = "occupation locker"
+
+/obj/structure/closet/secure_closet/halo/job_locker/squad_leader
+	name = "Squad Leader locker"
+	desc = "Contains the equipment for a squad leader."
+	req_access = list(ACCESS_MARINE_LEADER)
+
+/obj/structure/closet/secure_closet/halo/job_locker/rto
+	name = "Radio Telephone Operator locker"
+	req_access = list(ACCESS_MARINE_TL_PREP)
+
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec
+	name = "Weapons Specialist locker"
+	req_access = list(ACCESS_MARINE_SPECPREP)
+
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1
+	name = "fireteam one Weapons Specialist locker"
+	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_SQUAD_ONE)
+
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2
+	name = "fireteam two Weapons Specialist locker"
+	req_access = list(ACCESS_MARINE_SPECPREP, ACCESS_SQUAD_TWO)
+
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader
+	name = "Fireteam Leader locker"
+	req_access = list(ACCESS_MARINE_TL_PREP)
+
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1
+	name = "fireteam one Fireteam Leader locker"
+	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_SQUAD_ONE)
+
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2
+	name = "fireteam two Fireteam Leader locker"
+	req_access = list(ACCESS_MARINE_TL_PREP, ACCESS_SQUAD_TWO)

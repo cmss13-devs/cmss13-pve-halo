@@ -12,17 +12,17 @@
 /obj/structure/machinery/cm_vending/sorted/marine_food/populate_product_list(scale)
 	listed_products = list(
 		list("PREPARED MEALS", -1, null, null),
-		list("USCM Prepared Meal (Chicken)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal5, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Cornbread)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal1, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Pasta)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal3, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Pizza)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal4, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Pork)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal2, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Tofu)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal6, VENDOR_ITEM_REGULAR),
-		list("USCM Protein Bar", 50, /obj/item/reagent_container/food/snacks/protein_pack, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Chicken)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal5, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Cornbread)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal1, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Pasta)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal3, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Pizza)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal4, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Pork)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal2, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Tofu)", 15, /obj/item/reagent_container/food/snacks/mre_pack/meal6, VENDOR_ITEM_REGULAR),
+		list("UNSC Protein Bar", 50, /obj/item/reagent_container/food/snacks/protein_pack, VENDOR_ITEM_REGULAR),
 		list("FLASKS", -1, null, null),
 		list("Canteen", 10, /obj/item/reagent_container/food/drinks/flask/canteen, VENDOR_ITEM_REGULAR),
 		list("Metal Flask", 10, /obj/item/reagent_container/food/drinks/flask, VENDOR_ITEM_REGULAR),
-		list("USCM Flask", 5, /obj/item/reagent_container/food/drinks/flask/marine, VENDOR_ITEM_REGULAR),
+		list("UNSC Flask", 5, /obj/item/reagent_container/food/drinks/flask/marine, VENDOR_ITEM_REGULAR),
 		list("W-Y Flask", 5, /obj/item/reagent_container/food/drinks/flask/weylandyutani, VENDOR_ITEM_REGULAR)
 	)
 
@@ -34,17 +34,17 @@
 /obj/structure/machinery/cm_vending/sorted/marine_food/tutorial/populate_product_list(scale)
 	listed_products = list(
 		list("PREPARED MEALS", -1, null, null),
-		list("USCM Prepared Meal (Chicken)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal5, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Cornbread)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal1, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Pasta)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal3, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Pizza)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal4, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Pork)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal2, VENDOR_ITEM_REGULAR),
-		list("USCM Prepared Meal (Tofu)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal6, VENDOR_ITEM_REGULAR),
-		list("USCM Protein Bar", 1, /obj/item/reagent_container/food/snacks/protein_pack, VENDOR_ITEM_RECOMMENDED),
+		list("UNSC Prepared Meal (Chicken)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal5, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Cornbread)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal1, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Pasta)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal3, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Pizza)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal4, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Pork)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal2, VENDOR_ITEM_REGULAR),
+		list("UNSC Prepared Meal (Tofu)", 0, /obj/item/reagent_container/food/snacks/mre_pack/meal6, VENDOR_ITEM_REGULAR),
+		list("UNSC Protein Bar", 1, /obj/item/reagent_container/food/snacks/protein_pack, VENDOR_ITEM_RECOMMENDED),
 		list("FLASKS", -1, null, null),
 		list("Canteen", 0, /obj/item/reagent_container/food/drinks/flask/canteen, VENDOR_ITEM_REGULAR),
 		list("Metal Flask", 0, /obj/item/reagent_container/food/drinks/flask, VENDOR_ITEM_REGULAR),
-		list("USCM Flask", 0, /obj/item/reagent_container/food/drinks/flask/marine, VENDOR_ITEM_REGULAR),
+		list("UNSC Flask", 0, /obj/item/reagent_container/food/drinks/flask/marine, VENDOR_ITEM_REGULAR),
 		list("W-Y Flask", 0, /obj/item/reagent_container/food/drinks/flask/weylandyutani, VENDOR_ITEM_REGULAR)
 	)
 
@@ -137,4 +137,15 @@
 		list("Rook", 2, /obj/item/reagent_container/food/drinks/bottle/vodka/chess/b_rook, VENDOR_ITEM_REGULAR),
 		list("King", 2, /obj/item/reagent_container/food/drinks/bottle/vodka/chess/b_king, VENDOR_ITEM_REGULAR),
 		list("Queen", 2, /obj/item/reagent_container/food/drinks/bottle/vodka/chess/b_queen, VENDOR_ITEM_REGULAR)
+	)
+
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc
+	name = "military food dispenser"
+	desc = "An automated food prep and dispensing station. It pre-prepares meals and beverages for UNSC personnel and automatically cleans itself and any trays fed back into it. The self-cleaning option is often disabled to encourage discipline among marines."
+	icon = 'icons/halo/obj/structures/machinery/vending.dmi'
+	icon_state = "unsc_food"
+	tiles_with = list(
+		/obj/structure/window/framed/unsc,
+		/obj/structure/machinery/door/airlock,
+		/turf/closed/wall/unsc,
 	)

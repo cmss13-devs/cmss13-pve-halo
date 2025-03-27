@@ -16,6 +16,12 @@
 	var/magazines_icon = 'icons/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
 	var/flames_icon = 'icons/obj/items/weapons/guns/ammo_boxes/misc.dmi'
 
+/obj/structure/magazine_box/unsc
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon_state = "base"
+	text_markings_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
+	magazines_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+
 //---------------------GENERAL PROCS
 
 /obj/structure/magazine_box/Destroy()

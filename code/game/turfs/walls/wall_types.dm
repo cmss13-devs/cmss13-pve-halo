@@ -1344,3 +1344,24 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	color = "#c5beb4"
 	desc = "Ancient beyond measure, these walls make up the hull of a vessel of non human origin. Despite this, they can be felled with plastic explosives like any other opaque blocker."
 	hull = 0
+
+/turf/closed/wall/unsc
+	name = "interior ship wall"
+	desc = "A bog-standard wall. It's not titanium-A, but it's pretty strong."
+	icon = 'icons/halo/turf/walls/unsc.dmi'
+	icon_state = "unsc"
+	walltype = WALL_UNSC
+
+/turf/closed/wall/unsc/reinforced
+	name = "reinforced interior ship wall"
+	icon_state = "unsc_reinforced"
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/unsc/reinforced/hull
+	hull =  1
+	icon_state = "unsc_hull"
+
+/turf/closed/wall/unsc/reinforced/hull/titanium_a
+	name = "Titanium-A hull plating"
+	desc = "The best battle plating the UNSC has to offer to it's fleet of ships. It's starship grade and can take a helluva punch - nothing short of a ship to ship weapon is gonna puncture this."
+	icon_state = "unsc_hull_ext"

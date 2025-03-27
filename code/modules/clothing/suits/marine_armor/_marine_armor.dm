@@ -697,15 +697,9 @@
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO, ACCESSORY_SLOT_DECORKNEE)
 	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_DECORKNEE)
 
-	light_power = 3
-	light_range = 4
-	light_system = MOVABLE_LIGHT
-
-	var/flashlight_cooldown = 0 //Cooldown for toggling the light
 	var/locate_cooldown = 0 //Cooldown for SL locator
-	var/armor_overlays[]
 	actions_types = list(/datum/action/item_action/toggle)
-	var/flags_marine_armor = ARMOR_SQUAD_OVERLAY|ARMOR_LAMP_OVERLAY
+	var/flags_marine_armor = ARMOR_SQUAD_OVERLAY
 	var/specialty = "M3 pattern marine" //Same thing here. Give them a specialty so that they show up correctly in vendors. speciality does NOTHING if you have NO_NAME_OVERRIDE
 	w_class = SIZE_HUGE
 	uniform_restricted = null
@@ -720,8 +714,6 @@
 	/// The dmi where the grayscale squad overlays are contained
 	var/squad_overlay_icon = 'icons/mob/humans/onmob/suit_1.dmi'
 
-	var/atom/movable/marine_light/light_holder
-
 /obj/item/clothing/suit/marine/Initialize(mapload)
 	. = ..()
 	if(!(flags_atom & NO_NAME_OVERRIDE))
@@ -729,29 +721,9 @@
 
 	if(!(flags_atom & NO_SNOW_TYPE))
 		select_gamemode_skin(type)
-	armor_overlays = list("lamp") //Just one for now, can add more later.
 	if(armor_variation && mapload)
 		post_vendor_spawn_hook()
 	update_icon()
-
-	light_holder = new(src)
-
-/obj/item/clothing/suit/marine/Destroy()
-	QDEL_NULL(light_holder)
-	return ..()
-
-/obj/item/clothing/suit/marine/update_icon(mob/user)
-	var/image/I
-	armor_overlays["lamp"] = null
-	if(flags_marine_armor & ARMOR_LAMP_OVERLAY)
-		if(flags_marine_armor & ARMOR_LAMP_ON)
-			I = image('icons/obj/items/clothing/cm_suits.dmi', src, "lamp-on")
-		else
-			I = image('icons/obj/items/clothing/cm_suits.dmi', src, "lamp-off")
-		armor_overlays["lamp"] = I
-		overlays += I
-	else armor_overlays["lamp"] = null
-	if(user) user.update_inv_wear_suit()
 
 /obj/item/clothing/suit/marine/MouseDrop(obj/over_object as obj)
 	if (ishuman(usr))
@@ -785,54 +757,12 @@
 	icon_state = replacetext(icon_state,"1","[new_look]")
 	update_icon(user)
 
-/obj/item/clothing/suit/marine/attack_self(mob/user)
-	..()
-
-	if(!isturf(user.loc))
-		to_chat(user, SPAN_WARNING("You cannot turn the light [light_on ? "off" : "on"] while in [user.loc].")) //To prevent some lighting anomalies.
-		return
-
-	if(flashlight_cooldown > world.time)
-		return
-	if(!ishuman(user))
-		return
-
-	var/mob/living/carbon/human/H = user
-	if(H.wear_suit != src)
-		return
-
-	turn_light(user, !light_on)
-
 /obj/item/clothing/suit/marine/item_action_slot_check(mob/user, slot)
 	if(!ishuman(user))
 		return FALSE
 	if(slot != WEAR_JACKET)
 		return FALSE
 	return TRUE //only give action button when armor is worn.
-
-/obj/item/clothing/suit/marine/turn_light(mob/user, toggle_on)
-	. = ..()
-	if(. != CHECKS_PASSED)
-		return
-	set_light_range(initial(light_range))
-	set_light_power(FLOOR(initial(light_power) * 0.5, 1))
-	set_light_on(toggle_on)
-	flags_marine_armor ^= ARMOR_LAMP_ON
-
-	light_holder.set_light_flags(LIGHT_ATTACHED)
-	light_holder.set_light_range(initial(light_range))
-	light_holder.set_light_power(initial(light_power))
-	light_holder.set_light_on(toggle_on)
-
-	if(!toggle_on)
-		playsound(src, 'sound/handling/click_2.ogg', 50, 1)
-
-	playsound(src, 'sound/handling/suitlight_on.ogg', 50, 1)
-	update_icon(user)
-
-	for(var/X in actions)
-		var/datum/action/A = X
-		A.update_button_icon()
 
 /obj/item/clothing/suit/marine/mob_can_equip(mob/living/carbon/human/M, slot, disable_warning = 0)
 	. = ..()
@@ -912,7 +842,6 @@
 	desc = "A well tinkered and crafted hybrid of Smart-Gunner mesh and M3 pattern plates. Robust, yet nimble, with room for all your pouches."
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_MEDIUM
-	light_range = 5 //slightly higher
 	specialty = "M4 pattern marine"
 
 /obj/item/clothing/suit/marine/rto/intel

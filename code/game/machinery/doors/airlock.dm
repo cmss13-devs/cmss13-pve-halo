@@ -56,6 +56,7 @@ GLOBAL_LIST_INIT(airlock_wire_descriptions, list(
 	var/damage = 0
 	var/damage_cap = HEALTH_DOOR // Airlock gets destroyed
 	var/autoname = FALSE
+	var/prop_door
 
 	var/list/obj/item/device/assembly/signaller/attached_signallers = list()
 
@@ -811,6 +812,15 @@ GLOBAL_LIST_INIT(airlock_wire_descriptions, list(
 	if(autoname)
 		var/area/A = get_area(loc)
 		name = A.name
+
+	if(prop_door)
+		lock()
+		no_panel = TRUE
+		not_weldable = TRUE
+		unslashable = TRUE
+		unacidable = TRUE
+		damage_cap = INFINITY
+
 
 	return INITIALIZE_HINT_LATELOAD
 

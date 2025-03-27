@@ -63,6 +63,10 @@
 	fa_scatter_peak = 30
 	fa_max_scatter = 2
 
+/obj/item/weapon/gun/rifle/halo/ma5c/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
 /obj/item/weapon/gun/rifle/halo/br55
 	name = "BR55 battle rifle"
 	desc = "A standard-issue marksman rifle in use by the UNSC Marine Corps, the BR55 battle rifle has a reasonably high power, acceptable rate of fire, and high accuracy. It comes with a standard 36-round detachable box magazine of 9.5x40mm experimental HP-SAP-HE rounds, allowing it to reach higher velocities than the MA5 series despite the smaller propellant."
@@ -441,6 +445,9 @@
 	fire_sound = "gun_m6c"
 	flags_gun_features = GUN_CAN_POINTBLANK
 
+/obj/item/weapon/gun/pistol/halo/m6c/unloaded
+	current_mag = null
+
 /obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
@@ -463,6 +470,9 @@
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6g
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6g, /obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6g"
+
+/obj/item/weapon/gun/pistol/halo/m6g/unloaded
+	current_mag = null
 
 /obj/item/weapon/gun/pistol/halo/m6g/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)

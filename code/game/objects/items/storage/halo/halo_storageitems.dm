@@ -63,6 +63,7 @@
 	icon_state = "m6"
 	gun_underlay_path = 'icons/halo/obj/items/clothing/belts.dmi'
 	icon_x = 5
+	icon_y = 0
 	can_hold = list(
 		/obj/item/weapon/gun/pistol/halo,
 		/obj/item/ammo_magazine/pistol/halo,

@@ -430,3 +430,20 @@
 	density = TRUE
 	icon_opened = "open_mcart_y"
 	icon_closed = "closed_mcart_y"
+
+/obj/structure/closet/crate/supply
+	name = "supply crate"
+	desc = "A supply crate."
+	icon_state = "closed_supply"
+	icon_opened = "open_supply"
+	icon_closed = "closed_supply"
+
+//------------- UNSC CRATES -------------
+
+/obj/structure/closet/crate/unsc
+	name = "UNSC supply crate"
+	desc = "Standard issue supply crate for UNSC forces capable of storing a variety of objects."
+	icon = 'icons/halo/obj/structures/crates.dmi'
+	icon_state = "closed_unsc"
+	icon_opened = "open_unsc"
+	icon_closed = "closed_unsc"

@@ -252,6 +252,24 @@
 /obj/item/storage/firstaid/surgical/empty/fill_preset_inventory()
 	return
 
+/obj/item/storage/firstaid/unsc
+	name = "UNSC health pack"
+	desc = "First-class military medical aid is typically found in these octogon-shaped health packs."
+	icon = 'icons/halo/obj/items/storage/medical.dmi'
+	icon_state = "healthpack"
+	open_state = "healthpack_empty"
+	storage_slots = 9
+
+/obj/item/storage/firstaid/unsc/fill_preset_inventory()
+	new /obj/item/device/healthanalyzer(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/skillless(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/kelotane(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/dexalinp(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine(src)
+
 //---------SOFT PACKS---------
 /obj/item/storage/firstaid/softpack
 	name = "first-aid pack"
@@ -303,7 +321,6 @@
 	new /obj/item/reagent_container/pill/russianRed(src)
 	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine(src)
 	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine(src)
-
 
 //---------SYRINGE CASE---------
 
