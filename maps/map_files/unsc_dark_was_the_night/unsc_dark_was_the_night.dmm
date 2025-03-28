@@ -308,13 +308,6 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/southeast,
 /area/dark_was_the_night/medical)
-"bz" = (
-/obj/structure/machinery/door/firedoor/border_only/almayer,
-/obj/structure/machinery/door/airlock/multi_tile/unsc/prop{
-	dir = 1
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night)
 "bA" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1205,8 +1198,12 @@
 /turf/open/shuttle/escapepod/west,
 /area/dark_was_the_night/hangar)
 "fO" = (
-/turf/closed/wall/unsc,
-/area/space)
+/obj/structure/machinery/door/firedoor/border_only/almayer,
+/obj/structure/machinery/door/airlock/multi_tile/unsc/prop{
+	dir = 1
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night)
 "fP" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.4;
@@ -1655,6 +1652,12 @@
 /area/dark_was_the_night/canteen)
 "hK" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/item/weapon/gun/rifle/sniper/halo,
+/obj/item/ammo_magazine/rifle/halo/sniper,
+/obj/item/ammo_magazine/rifle/halo/sniper,
+/obj/item/ammo_magazine/rifle/halo/sniper,
+/obj/item/ammo_magazine/rifle/halo/sniper,
+/obj/item/ammo_magazine/rifle/halo/sniper,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "hM" = (
@@ -5434,6 +5437,10 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
+"yr" = (
+/obj/structure/machinery/door/firedoor/border_only/almayer,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night)
 "yt" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
@@ -6904,13 +6911,8 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
 "Fi" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1
-	},
-/obj/structure/pipes/vents/pump,
-/turf/open/floor/almayer,
-/area/dark_was_the_night)
+/turf/closed/wall/unsc,
+/area/space)
 "Fk" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/space)
@@ -7458,6 +7460,14 @@
 /area/dark_was_the_night/cryo_hall)
 "HU" = (
 /turf/open/floor/almayer/mono,
+/area/dark_was_the_night)
+"HZ" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/obj/structure/pipes/vents/pump,
+/turf/open/floor/almayer,
 /area/dark_was_the_night)
 "Id" = (
 /obj/effect/decal/warning_stripes{
@@ -8120,10 +8130,6 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/two)
-"Le" = (
-/obj/structure/machinery/door/firedoor/border_only/almayer,
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night)
 "Lf" = (
 /obj/structure/platform{
 	dir = 8
@@ -8960,6 +8966,8 @@
 /area/dark_was_the_night/lower_hallway)
 "ON" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
+/obj/item/weapon/gun/halo_launcher/spnkr,
+/obj/item/storage/backpack/marine/ammo_rack/spnkr/filled,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "OS" = (
@@ -10282,17 +10290,8 @@
 /turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/medical)
 "Vt" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/platform{
-	dir = 4
-	},
-/obj/structure/platform_decoration{
-	dir = 9
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/cryo_bay/two)
+/turf/open/floor/almayer,
+/area/dark_was_the_night)
 "Vu" = (
 /obj/structure/platform{
 	dir = 1
@@ -10678,8 +10677,17 @@
 /turf/open/floor/almayer/no_build/plate,
 /area/dark_was_the_night/hangar)
 "Xc" = (
-/turf/open/floor/almayer,
-/area/dark_was_the_night)
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/cryo_bay/two)
 "Xd" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/engineering)
@@ -14269,13 +14277,13 @@ tG
 tG
 tG
 uI
-Le
-bz
+yr
+fO
 uI
 uI
 uI
-Le
-bz
+yr
+fO
 uI
 tG
 tG
@@ -14421,13 +14429,13 @@ tG
 tG
 tG
 uI
-Xc
-Xc
+Vt
+Vt
 uI
 tG
 uI
-Xc
-Xc
+Vt
+Vt
 uI
 tG
 tG
@@ -14573,12 +14581,12 @@ tG
 tG
 tG
 uI
-Fi
-Xc
+HZ
+Vt
 uI
 tG
 uI
-Xc
+Vt
 Gr
 uI
 tG
@@ -14725,13 +14733,13 @@ tG
 tG
 tG
 uI
-Xc
-Xc
+Vt
+Vt
 uI
 tG
 uI
-Xc
-Xc
+Vt
+Vt
 uI
 tG
 tG
@@ -16534,12 +16542,12 @@ Lc
 wk
 LN
 Rh
-Vt
+Xc
 zz
 ml
 Rh
 Rh
-Vt
+Xc
 Lc
 Lc
 wk
@@ -25466,16 +25474,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (94,1,1) = {"
 cD
@@ -25618,16 +25626,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (95,1,1) = {"
 cD
@@ -25770,16 +25778,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (96,1,1) = {"
 cD
@@ -25922,16 +25930,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (97,1,1) = {"
 cD
@@ -26074,16 +26082,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (98,1,1) = {"
 cD
@@ -26226,16 +26234,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (99,1,1) = {"
 cD
@@ -26378,16 +26386,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (100,1,1) = {"
 cD
@@ -26530,16 +26538,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (101,1,1) = {"
 cD
@@ -26682,16 +26690,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (102,1,1) = {"
 cD
@@ -26834,16 +26842,16 @@ ho
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (103,1,1) = {"
 cD
@@ -26986,16 +26994,16 @@ WE
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (104,1,1) = {"
 cD
@@ -27138,16 +27146,16 @@ WE
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (105,1,1) = {"
 cD
@@ -27290,16 +27298,16 @@ WE
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (106,1,1) = {"
 cD
@@ -27442,16 +27450,16 @@ WE
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (107,1,1) = {"
 cD
@@ -27594,16 +27602,16 @@ WE
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (108,1,1) = {"
 cD
@@ -27746,16 +27754,16 @@ ZO
 WE
 WE
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (109,1,1) = {"
 cD
@@ -27898,16 +27906,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (110,1,1) = {"
 cD
@@ -28050,16 +28058,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (111,1,1) = {"
 cD
@@ -28202,16 +28210,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (112,1,1) = {"
 cD
@@ -28354,16 +28362,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (113,1,1) = {"
 cD
@@ -28506,16 +28514,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (114,1,1) = {"
 cD
@@ -28658,16 +28666,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (115,1,1) = {"
 cD
@@ -28810,16 +28818,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (116,1,1) = {"
 cD
@@ -28962,16 +28970,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (117,1,1) = {"
 cD
@@ -29114,16 +29122,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (118,1,1) = {"
 cD
@@ -29266,16 +29274,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (119,1,1) = {"
 cD
@@ -29418,16 +29426,16 @@ KL
 ZM
 zD
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (120,1,1) = {"
 cD
@@ -29570,16 +29578,16 @@ KL
 ZM
 zD
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (121,1,1) = {"
 cD
@@ -29722,16 +29730,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (122,1,1) = {"
 cD
@@ -29874,16 +29882,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (123,1,1) = {"
 cD
@@ -30026,16 +30034,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (124,1,1) = {"
 cD
@@ -30178,16 +30186,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (125,1,1) = {"
 cD
@@ -30330,16 +30338,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (126,1,1) = {"
 cD
@@ -30482,16 +30490,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (127,1,1) = {"
 cD
@@ -30634,16 +30642,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (128,1,1) = {"
 cD
@@ -30786,16 +30794,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (129,1,1) = {"
 cD
@@ -30938,16 +30946,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (130,1,1) = {"
 cD
@@ -31090,16 +31098,16 @@ QW
 zW
 pa
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (131,1,1) = {"
 cD
@@ -31242,16 +31250,16 @@ ZO
 WE
 WE
 WE
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (132,1,1) = {"
 cD
@@ -31394,16 +31402,16 @@ WE
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (133,1,1) = {"
 cD
@@ -31546,16 +31554,16 @@ WE
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (134,1,1) = {"
 cD
@@ -31698,16 +31706,16 @@ WE
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (135,1,1) = {"
 cD
@@ -31850,16 +31858,16 @@ dL
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (136,1,1) = {"
 cD
@@ -32002,16 +32010,16 @@ WE
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (137,1,1) = {"
 cD
@@ -32154,16 +32162,16 @@ BB
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (138,1,1) = {"
 cD
@@ -32306,16 +32314,16 @@ pM
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (139,1,1) = {"
 cD
@@ -32458,16 +32466,16 @@ pM
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (140,1,1) = {"
 cD
@@ -32610,16 +32618,16 @@ GN
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (141,1,1) = {"
 cD
@@ -32762,16 +32770,16 @@ QW
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (142,1,1) = {"
 cD
@@ -32914,16 +32922,16 @@ QW
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (143,1,1) = {"
 cD
@@ -33066,16 +33074,16 @@ BB
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (144,1,1) = {"
 cD
@@ -33218,16 +33226,16 @@ pM
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (145,1,1) = {"
 cD
@@ -33370,16 +33378,16 @@ pM
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (146,1,1) = {"
 cD
@@ -33522,16 +33530,16 @@ GN
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (147,1,1) = {"
 cD
@@ -33674,16 +33682,16 @@ WE
 WE
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (148,1,1) = {"
 cD
@@ -33826,16 +33834,16 @@ dL
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (149,1,1) = {"
 cD
@@ -33978,16 +33986,16 @@ dL
 dL
 dL
 dL
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
-fO
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
+Fi
 "}
 (150,1,1) = {"
 cD
