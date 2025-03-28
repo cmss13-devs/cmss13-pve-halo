@@ -308,6 +308,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/southeast,
 /area/dark_was_the_night/medical)
+"bz" = (
+/obj/structure/machinery/door/firedoor/border_only/almayer,
+/obj/structure/machinery/door/airlock/multi_tile/unsc/prop{
+	dir = 1
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night)
 "bA" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1198,14 +1205,8 @@
 /turf/open/shuttle/escapepod/west,
 /area/dark_was_the_night/hangar)
 "fO" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/platform{
-	dir = 1
-	},
-/turf/open/shuttle/escapepod/floor1,
-/area/dark_was_the_night/cryo_bay/two)
+/turf/closed/wall/unsc,
+/area/space)
 "fP" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.4;
@@ -1860,6 +1861,7 @@
 "iP" = (
 /obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
+/obj/item/device/binoculars/range/monocular,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "iT" = (
@@ -2599,6 +2601,9 @@
 	dir = 4
 	},
 /obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6
+	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/two)
 "mm" = (
@@ -3344,6 +3349,7 @@
 "pr" = (
 /obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
+/obj/item/device/binoculars/range/designator/sergeant,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "pu" = (
@@ -4096,6 +4102,7 @@
 /area/dark_was_the_night/hangar)
 "sJ" = (
 /obj/structure/closet/secure_closet/halo/job_locker/rto,
+/obj/item/storage/backpack/marine/satchel/rto/unsc,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "sM" = (
@@ -4692,6 +4699,9 @@
 	dir = 8
 	},
 /obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 10
+	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/two)
 "vp" = (
@@ -5179,6 +5189,9 @@
 	},
 /obj/structure/platform{
 	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
 	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/two)
@@ -6220,9 +6233,6 @@
 /obj/effect/landmark/late_join/alpha,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
-"Cf" = (
-/turf/closed/wall/unsc,
-/area/space)
 "Cg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -6759,10 +6769,13 @@
 /area/dark_was_the_night/armory)
 "EF" = (
 /obj/structure/platform{
-	dir = 8
+	dir = 1
 	},
 /obj/structure/platform{
-	dir = 1
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
 	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/one)
@@ -6891,14 +6904,13 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
 "Fi" = (
-/obj/structure/platform{
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
 	dir = 1
 	},
-/obj/structure/platform{
-	dir = 4
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/cryo_bay/one)
+/obj/structure/pipes/vents/pump,
+/turf/open/floor/almayer,
+/area/dark_was_the_night)
 "Fk" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/space)
@@ -7114,14 +7126,12 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "Gr" = (
-/obj/structure/platform{
-	dir = 1
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff"
 	},
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/floor1,
-/area/dark_was_the_night/cryo_bay/one)
+/obj/structure/pipes/vents/pump,
+/turf/open/floor/almayer,
+/area/dark_was_the_night)
 "Gs" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -8110,6 +8120,10 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/two)
+"Le" = (
+/obj/structure/machinery/door/firedoor/border_only/almayer,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night)
 "Lf" = (
 /obj/structure/platform{
 	dir = 8
@@ -8393,6 +8407,9 @@
 	dir = 4
 	},
 /obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6
+	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/one)
 "Mo" = (
@@ -9561,6 +9578,7 @@
 "RS" = (
 /obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
+/obj/item/device/binoculars/range/monocular,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "RZ" = (
@@ -10045,6 +10063,9 @@
 	dir = 8
 	},
 /obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 10
+	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/one)
 "Uk" = (
@@ -10267,6 +10288,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/two)
 "Vu" = (
@@ -10295,10 +10319,13 @@
 /area/dark_was_the_night/medical)
 "VA" = (
 /obj/structure/platform{
-	dir = 4
+	dir = 1
 	},
 /obj/structure/platform{
-	dir = 1
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/one)
@@ -10651,14 +10678,8 @@
 /turf/open/floor/almayer/no_build/plate,
 /area/dark_was_the_night/hangar)
 "Xc" = (
-/obj/structure/platform{
-	dir = 4
-	},
-/obj/structure/platform{
-	dir = 1
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/cryo_bay/two)
+/turf/open/floor/almayer,
+/area/dark_was_the_night)
 "Xd" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/engineering)
@@ -13943,15 +13964,15 @@ tG
 tG
 tG
 tG
+uI
 tG
 tG
+uI
+uI
+uI
 tG
 tG
-tG
-tG
-tG
-tG
-tG
+uI
 tG
 tG
 tG
@@ -14095,15 +14116,15 @@ tG
 tG
 tG
 tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
+uI
+NU
+NU
+uI
+uI
+uI
+NU
+NU
+uI
 tG
 tG
 tG
@@ -14247,15 +14268,15 @@ tG
 tG
 tG
 tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
+uI
+Le
+bz
+uI
+uI
+uI
+Le
+bz
+uI
 tG
 tG
 tG
@@ -14399,15 +14420,15 @@ tG
 tG
 tG
 tG
+uI
+Xc
+Xc
+uI
 tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
+uI
+Xc
+Xc
+uI
 tG
 tG
 tG
@@ -14551,15 +14572,15 @@ tG
 tG
 tG
 tG
+uI
+Fi
+Xc
+uI
 tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
-tG
+uI
+Xc
+Gr
+uI
 tG
 tG
 tG
@@ -14704,13 +14725,13 @@ tG
 tG
 tG
 uI
+Xc
+Xc
+uI
 tG
-tG
-tG
-tG
-tG
-tG
-tG
+uI
+Xc
+Xc
 uI
 tG
 tG
@@ -14856,13 +14877,13 @@ tG
 tG
 tG
 uI
-TQ
-TQ
+CE
+CE
 qg
+cC
 qg
-qg
-TQ
-TQ
+CE
+CE
 uI
 tG
 tG
@@ -16214,7 +16235,7 @@ it
 vl
 Rh
 Rh
-fO
+xk
 av
 Ds
 wk
@@ -16243,7 +16264,7 @@ XI
 xN
 zT
 YN
-Gr
+EF
 Zt
 Uj
 YN
@@ -16518,7 +16539,7 @@ zz
 ml
 Rh
 Rh
-Xc
+Vt
 Lc
 Lc
 wk
@@ -16547,7 +16568,7 @@ WL
 xN
 Ki
 YN
-Fi
+VA
 dH
 Mm
 YN
@@ -25445,16 +25466,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (94,1,1) = {"
 cD
@@ -25597,16 +25618,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (95,1,1) = {"
 cD
@@ -25749,16 +25770,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (96,1,1) = {"
 cD
@@ -25901,16 +25922,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (97,1,1) = {"
 cD
@@ -26053,16 +26074,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (98,1,1) = {"
 cD
@@ -26205,16 +26226,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (99,1,1) = {"
 cD
@@ -26357,16 +26378,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (100,1,1) = {"
 cD
@@ -26509,16 +26530,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (101,1,1) = {"
 cD
@@ -26661,16 +26682,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (102,1,1) = {"
 cD
@@ -26813,16 +26834,16 @@ ho
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (103,1,1) = {"
 cD
@@ -26965,16 +26986,16 @@ WE
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (104,1,1) = {"
 cD
@@ -27117,16 +27138,16 @@ WE
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (105,1,1) = {"
 cD
@@ -27269,16 +27290,16 @@ WE
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (106,1,1) = {"
 cD
@@ -27421,16 +27442,16 @@ WE
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (107,1,1) = {"
 cD
@@ -27573,16 +27594,16 @@ WE
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (108,1,1) = {"
 cD
@@ -27725,16 +27746,16 @@ ZO
 WE
 WE
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (109,1,1) = {"
 cD
@@ -27877,16 +27898,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (110,1,1) = {"
 cD
@@ -28029,16 +28050,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (111,1,1) = {"
 cD
@@ -28181,16 +28202,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (112,1,1) = {"
 cD
@@ -28333,16 +28354,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (113,1,1) = {"
 cD
@@ -28485,16 +28506,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (114,1,1) = {"
 cD
@@ -28637,16 +28658,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (115,1,1) = {"
 cD
@@ -28789,16 +28810,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (116,1,1) = {"
 cD
@@ -28941,16 +28962,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (117,1,1) = {"
 cD
@@ -29093,16 +29114,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (118,1,1) = {"
 cD
@@ -29245,16 +29266,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (119,1,1) = {"
 cD
@@ -29397,16 +29418,16 @@ KL
 ZM
 zD
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (120,1,1) = {"
 cD
@@ -29549,16 +29570,16 @@ KL
 ZM
 zD
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (121,1,1) = {"
 cD
@@ -29701,16 +29722,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (122,1,1) = {"
 cD
@@ -29853,16 +29874,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (123,1,1) = {"
 cD
@@ -30005,16 +30026,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (124,1,1) = {"
 cD
@@ -30157,16 +30178,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (125,1,1) = {"
 cD
@@ -30309,16 +30330,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (126,1,1) = {"
 cD
@@ -30461,16 +30482,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (127,1,1) = {"
 cD
@@ -30613,16 +30634,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (128,1,1) = {"
 cD
@@ -30765,16 +30786,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (129,1,1) = {"
 cD
@@ -30917,16 +30938,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (130,1,1) = {"
 cD
@@ -31069,16 +31090,16 @@ QW
 zW
 pa
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (131,1,1) = {"
 cD
@@ -31221,16 +31242,16 @@ ZO
 WE
 WE
 WE
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (132,1,1) = {"
 cD
@@ -31373,16 +31394,16 @@ WE
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (133,1,1) = {"
 cD
@@ -31525,16 +31546,16 @@ WE
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (134,1,1) = {"
 cD
@@ -31677,16 +31698,16 @@ WE
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (135,1,1) = {"
 cD
@@ -31829,16 +31850,16 @@ dL
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (136,1,1) = {"
 cD
@@ -31981,16 +32002,16 @@ WE
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (137,1,1) = {"
 cD
@@ -32133,16 +32154,16 @@ BB
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (138,1,1) = {"
 cD
@@ -32285,16 +32306,16 @@ pM
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (139,1,1) = {"
 cD
@@ -32437,16 +32458,16 @@ pM
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (140,1,1) = {"
 cD
@@ -32589,16 +32610,16 @@ GN
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (141,1,1) = {"
 cD
@@ -32741,16 +32762,16 @@ QW
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (142,1,1) = {"
 cD
@@ -32893,16 +32914,16 @@ QW
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (143,1,1) = {"
 cD
@@ -33045,16 +33066,16 @@ BB
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (144,1,1) = {"
 cD
@@ -33197,16 +33218,16 @@ pM
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (145,1,1) = {"
 cD
@@ -33349,16 +33370,16 @@ pM
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (146,1,1) = {"
 cD
@@ -33501,16 +33522,16 @@ GN
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (147,1,1) = {"
 cD
@@ -33653,16 +33674,16 @@ WE
 WE
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (148,1,1) = {"
 cD
@@ -33805,16 +33826,16 @@ dL
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (149,1,1) = {"
 cD
@@ -33957,16 +33978,16 @@ dL
 dL
 dL
 dL
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
-Cf
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
+fO
 "}
 (150,1,1) = {"
 cD
