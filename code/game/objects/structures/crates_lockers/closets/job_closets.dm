@@ -174,7 +174,7 @@
 
 /obj/structure/closet/secure_closet/halo/job_locker/rto
 	name = "Radio Telephone Operator locker"
-	req_access = list(ACCESS_MARINE_TL_PREP)
+	req_access = list(ACCESS_MARINE_SMARTPREP)
 
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec
 	name = "Weapons Specialist locker"

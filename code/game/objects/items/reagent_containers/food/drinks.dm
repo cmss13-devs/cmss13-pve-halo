@@ -190,7 +190,7 @@
 	reagents.add_reagent("coffee", 20)
 
 /obj/item/reagent_container/food/drinks/coffee/marine
-	desc = "Recycled water, lab-grown coffee plants genetically designed for minimum expense and maximum production, and re-recycled coffee grounds have mixed together to create this insultingly cheap UNSC culinary 'wonder'. You're just glad the troops get issued water for free."
+	desc = "Recycled water, lab-grown coffee plants genetically designed for minimum expense and maximum production, and re-recycled coffee grounds have mixed together to create this insultingly cheap UNSC culinary 'wonder'."
 
 /obj/item/reagent_container/food/drinks/tea
 	name = "\improper Duke Purple Tea"

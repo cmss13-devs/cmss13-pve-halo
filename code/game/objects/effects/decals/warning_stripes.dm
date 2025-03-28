@@ -166,3 +166,15 @@
 
 /obj/effect/decal/unsc/bridge
 	icon_state = "bridge"
+
+/obj/effect/decal/unsc/cryo
+	icon_state = "cryo"
+
+/obj/effect/decal/unsc/cryo/a
+	icon_state = "cryo_a"
+
+/obj/effect/decal/unsc/cryo/b
+	icon_state = "cryo_b"
+
+/obj/effect/decal/unsc/cryo/c
+	icon_state = "cryo_c"

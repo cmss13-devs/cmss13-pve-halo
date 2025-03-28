@@ -691,7 +691,7 @@
 	volume = 240
 	can_be_placed_into = null
 	splashable = FALSE
-	flags_atom = FPRINT
+	flags_atom = FPRINT|OPENCONTAINER
 
 /obj/item/reagent_container/glass/barrel/water
 	name = "water canister"
