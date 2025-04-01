@@ -127,7 +127,7 @@ GLOBAL_LIST_INIT(cm_vending_gear_medic, list(
 GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 
 		list("ESSENTIALS", 0, null, null, null),
-		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY)
+		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("M276 Ammo Load Rig", 0, /obj/item/storage/belt/marine, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
