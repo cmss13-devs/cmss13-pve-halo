@@ -403,3 +403,59 @@
 	name = "Medic Autoinjector (M-L)"
 	volume = 180
 	amount_per_transfer_from_this = 30
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam
+	name = "biofoam canister"
+	chemname = "biofoam"
+	desc = "An olive-drab canister full of a stabilizing biomedical polymer foam, otherwise known as biofoam. Fold open the injection rod to prime it, then stick it into your target's wounds."
+	icon = 'icons/halo/obj/items/medical.dmi'
+	icon_state = "biofoam"
+	amount_per_transfer_from_this = MED_REAGENTS_OVERDOSE
+	volume = MED_REAGENTS_OVERDOSE
+	uses_left = 1
+	injectSFX = 'sound/items/biofoam.ogg'
+	drop_sound = 'sound/handling/tape_drop.ogg'
+	var/primed = FALSE
+	var/prime_sound = 'sound/items/unfold.ogg'
+	var/prime_text = "You fold open the injection rod."
+	var/fluff_text = "insert the injection rod into"
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam/get_examine_text(mob/user)
+	. = ..()
+	if(primed == FALSE)
+		. += SPAN_NOTICE("The injection rod is folded down.")
+	else
+		. += SPAN_NOTICE("The injection rod is folded up.")
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam/attack(mob/living/carbon/target, mob/living/user)
+	if(primed == TRUE)
+		if(uses_left == 0)
+			to_chat(user, SPAN_NOTICE("The [src] is empty."))
+			return
+		to_chat(user, SPAN_NOTICE("You begin to [fluff_text] [target]"))
+		if(!do_after(user, 50 * user.get_skill_duration_multiplier(SKILL_MEDICAL), INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_FRIENDLY, target, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
+			to_chat(user, SPAN_NOTICE("You were interrupted! Try to stay still."))
+			return FALSE
+		..()
+		target.emote("pain")
+		icon_state = "[initial(icon_state)]_spent"
+	else
+		to_chat(user, SPAN_NOTICE(prime_text))
+		primed = TRUE
+		icon_state = "[initial(icon_state)]_primed"
+		playsound(loc, prime_sound, 25, 1)
+
+/obj/item/reagent_container/hypospray/autoinjector/biofoam/small
+	name = "biofoam pen"
+	chemname = "biofoam_ext"
+	desc = "A small silver pen containing a easy to apply biofoam spray. This is intended to be sprayed on the outside of wounds rather than put directly into the wound."
+	icon = 'icons/halo/obj/items/medical.dmi'
+	icon_state = "syrette"
+	amount_per_transfer_from_this = MED_REAGENTS_OVERDOSE
+	volume = MED_REAGENTS_OVERDOSE
+	uses_left = 1
+	injectSFX = 'sound/items/biofoam_syrette.ogg'
+	drop_sound = null
+	prime_sound = "rip"
+	prime_text = "You tear the protective wrapper off of the biofoam pen."
+	fluff_text = "spray the biofoam onto"

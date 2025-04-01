@@ -125,35 +125,16 @@ GLOBAL_LIST_INIT(cm_vending_gear_medic, list(
 //------------CLOTHING VENDOR---------------
 
 GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
-		list("STANDARD EQUIPMENT (TAKE ALL)", 0, null, null, null),
-		list("Standard Marine Apparel", 0, list(/obj/item/clothing/under/marine/medic, /obj/item/clothing/shoes/marine/knife, /obj/item/clothing/gloves/marine, /obj/item/device/radio/headset/almayer/marine), MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_MANDATORY),
-		list("MRE", 0, /obj/item/storage/box/MRE, MARINE_CAN_BUY_MRE, VENDOR_ITEM_MANDATORY),
 
-
-		list("ARMOR (CHOOSE 1)", 0, null, null, null),
-		list("Medium Armor", 0, /obj/item/clothing/suit/marine, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_RECOMMENDED),
-
-		list("ARMOR PAINT (CHOOSE 1)", 0, null, null, null),
-		list("Red Cross Paint", 0, /obj/item/clothing/accessory/paint/medic, MARINE_CAN_BUY_PAINT, VENDOR_ITEM_RECOMMENDED),
-
-		list("HELMET (CHOOSE 1)", 0, null, null, null),
-		list("M10 Corpsman Helmet", 0, /obj/item/clothing/head/helmet/marine/medic, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
-		list("M10 Helmet", 0, /obj/item/clothing/head/helmet/marine, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
-
-		list("BACKPACK (CHOOSE 1)", 0, null, null, null),
-		list("Medical Backpack", 0, /obj/item/storage/backpack/marine/medic, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_REGULAR),
-		list("Medical Satchel", 0, /obj/item/storage/backpack/marine/satchel/medic, MARINE_CAN_BUY_BACKPACK, VENDOR_ITEM_RECOMMENDED),
+		list("ESSENTIALS", 0, null, null, null),
+		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY)
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
 		list("M276 Ammo Load Rig", 0, /obj/item/storage/belt/marine, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
-		list("M276 General Pistol Holster Rig", 0, /obj/item/storage/belt/gun/m4a3, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+		list("M6 General Pistol Holster Rig", 0, /obj/item/storage/belt/gun/m6, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
 		list("M276 Lifesaver Bag (Full)", 0, /obj/item/storage/belt/medical/lifesaver/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
 		list("M276 Medical Storage Rig (Full)", 0, /obj/item/storage/belt/medical/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
-		list("M276 M39 Holster Rig", 0, /obj/item/storage/belt/gun/m39, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
-		list("M276 General Revolver Holster Rig", 0, /obj/item/storage/belt/gun/m44, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
-		list("M276 M82F Holster Rig", 0, /obj/item/storage/belt/gun/flaregun, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
-		list("M276 Shotgun Shell Loading Rig", 0, /obj/item/storage/belt/shotgun, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
-		list("M276 M40 Grenade Rig", 0, /obj/item/storage/belt/grenade, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+		list("M276 Grenade Rig", 0, /obj/item/storage/belt/grenade, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
 
 		list("POUCHES (CHOOSE 2)", 0, null, null, null),
 		list("Autoinjector Pouch", 0, /obj/item/storage/pouch/autoinjector, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
@@ -171,15 +152,15 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		list("Pressurized Reagent Canister Pouch (Bicaridine)", 0, /obj/item/storage/pouch/pressurized_reagent_canister/bicaridine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
 		list("Pressurized Reagent Canister Pouch (Kelotane)", 0, /obj/item/storage/pouch/pressurized_reagent_canister/kelotane, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
 		list("Pressurized Reagent Canister Pouch (Tricordrazine)", 0, /obj/item/storage/pouch/pressurized_reagent_canister/tricordrazine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
-		list("Pistol Pouch", 0, /obj/item/storage/pouch/pistol, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Pistol Pouch", 0, /obj/item/storage/pouch/pistol/unsc, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Vial Pouch (Full)", 0, /obj/item/storage/pouch/vials/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 
 		list("ACCESSORIES (CHOOSE 1)", 0, null, null, null),
-		list("M3 Pattern Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Magazine Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/mag, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Shotgun Shell Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/shotgun, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern M40 Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/grenade, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
-		list("M3 Pattern Small Pouch Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/small, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("M52B Pattern Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Magazine Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/mag, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Shotgun Shell Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/shotgun, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Grenade Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/grenade, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Small Pouch Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m52b/small, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
 		list("Shoulder Holster", 0, /obj/item/clothing/accessory/storage/holster, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
 		list("Drop Pouch", 0, /obj/item/clothing/accessory/storage/droppouch, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
 	))
@@ -217,10 +198,9 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 
 /obj/effect/essentials_set/medic
 	spawned_gear_list = list(
-		/obj/item/storage/firstaid/adv,
-		/obj/item/storage/firstaid/adv,
+		/obj/item/storage/firstaid/unsc/corpsman,
+		/obj/item/storage/firstaid/unsc/corpsman,
 		/obj/item/device/healthanalyzer,
-		/obj/item/roller/medevac,
 		/obj/item/roller,
 		/obj/item/tool/surgery/surgical_line,
 		/obj/item/tool/surgery/synthgraft,
@@ -229,8 +209,6 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		/obj/item/reagent_container/blood/OMinus,
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/accessory/stethoscope,
-		/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated,
-		/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated,
 	)
 
 GLOBAL_LIST_INIT(cm_vending_clothing_upp_medic, list(

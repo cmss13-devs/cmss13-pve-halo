@@ -55,11 +55,24 @@
 	name = "roll of gauze"
 	singular_name = "medical gauze"
 	desc = "Some sterile gauze to wrap around bloody stumps and lacerations."
-	icon_state = "brutepack"
+	icon = 'icons/halo/obj/items/medical.dmi'
+	icon_state = "brutepack_packaged"
+	var/wrapped = TRUE
 
 	stack_id = "bruise pack"
 
+/obj/item/stack/medical/bruise_pack/attack_self(mob/user)
+	. = ..()
+	if(wrapped)
+		wrapped = FALSE
+		icon_state = "brutepack"
+		to_chat(user, SPAN_NOTICE("You tear the seal off of the [src]."))
+		playsound(user, "rip", 25, 1, 2)
+
 /obj/item/stack/medical/bruise_pack/attack(mob/living/carbon/M as mob, mob/user as mob)
+	if(wrapped)
+		to_chat(user, SPAN_NOTICE("You can't use the [src] while it's still packaged!"))
+		return
 	if(..())
 		return 1
 
@@ -145,15 +158,29 @@
 				return TRUE
 
 /obj/item/stack/medical/advanced/bruise_pack
-	name = "trauma kit"
-	singular_name = "trauma kit"
-	desc = "A trauma kit for severe injuries."
-	icon_state = "traumakit"
+	name = "MediGel bandages"
+	singular_name = "MediGel bandages"
+	desc = "Not quite gauze, the bandage has a slim MediGel layer on the inside of it to aid in the healing of wounds while the rest of the bandage seals it. Although intended for standard trauma, the medigel does heal burns."
+	icon = 'icons/halo/obj/items/medical.dmi'
+	icon_state = "traumakit_packaged"
 	heal_brute = 12
+	heal_burn = 8
+	var/wrapped = TRUE
 
 	stack_id = "advanced bruise pack"
 
+/obj/item/stack/medical/advanced/bruise_pack/attack_self(mob/user)
+	. = ..()
+	if(wrapped)
+		wrapped = FALSE
+		icon_state = "traumakit"
+		to_chat(user, SPAN_NOTICE("You tear the seal off of the [src]."))
+		playsound(user, "rip", 25, 1, 2)
+
 /obj/item/stack/medical/advanced/bruise_pack/attack(mob/living/carbon/M, mob/user)
+	if(wrapped)
+		to_chat(user, SPAN_NOTICE("You can't use the [src] while it's still packaged!"))
+		return
 	if(..())
 		return 1
 
@@ -162,15 +189,17 @@
 
 		var/obj/limb/affecting = H.get_limb(user.zone_selected)
 		var/heal_amt = heal_brute
+		var/heal_amt_burn = heal_burn
 		if(user.skills)
 			if(!skillcheck(user, SKILL_MEDICAL, SKILL_MEDICAL_MEDIC)) //untrained marines have a hard time using it
 				to_chat(user, SPAN_WARNING("You start fumbling with [src]."))
-				if(!do_after(user, 30, INTERRUPT_NO_NEEDHAND, BUSY_ICON_FRIENDLY, M, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
+				if(!do_after(user, 15, INTERRUPT_NO_NEEDHAND, BUSY_ICON_FRIENDLY, M, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
 					return
-				heal_amt = 3 //non optimal application means less healing
+				heal_amt = 10 //non optimal application means less healing
+				heal_amt_burn = 6
 
 		if(affecting.get_incision_depth())
-			to_chat(user, SPAN_NOTICE("[M]'s [affecting.display_name] is cut open, you'll need more than a trauma kit!"))
+			to_chat(user, SPAN_NOTICE("[M]'s [affecting.display_name] is cut open, you'll need more than [src]!"))
 			return TRUE
 
 		var/possessive = "[user == M ? "your" : "\the [M]'s"]"
@@ -178,13 +207,17 @@
 		switch(affecting.bandage(TRUE))
 			if(WOUNDS_BANDAGED)
 				user.affected_message(M,
-					SPAN_HELPFUL("You <b>clean and seal</b> the wounds on [possessive] <b>[affecting.display_name]</b> with bioglue."),
-					SPAN_HELPFUL("[user] <b>cleans and seals</b> the wounds on your <b>[affecting.display_name]</b> with bioglue."),
-					SPAN_NOTICE("[user] cleans and seals the wounds on [possessive_their] [affecting.display_name] with bioglue."))
+					SPAN_HELPFUL("You <b>bandage</b> the wounds on [possessive] <b>[affecting.display_name]</b> with [src]."),
+					SPAN_HELPFUL("[user] <b>bandages</b> the wounds on your <b>[affecting.display_name]</b> with [src]."),
+					SPAN_NOTICE("[user] bandages the wounds on [possessive_their] [affecting.display_name] with [src]."))
 				//If a suture datum exists, apply half the damage as sutures. This ensures consistency in healing amounts.
 				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, TRUE, FALSE, heal_amt * 0.5))
 					heal_amt *= 0.5
+				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, FALSE, TRUE, heal_amt * 0.5))
+					heal_amt_burn *= 0.5
 				affecting.heal_damage(brute = heal_amt)
+				affecting.heal_damage(burn = heal_amt_burn)
+				playsound(user, 'sound/handling/bandage.ogg', 25, 1, 2)
 				use(1)
 			if(WOUNDS_ALREADY_TREATED)
 				to_chat(user, SPAN_WARNING("The wounds on [possessive] [affecting.display_name] have already been treated."))
@@ -212,11 +245,13 @@
 	stack_id = "soothing herbs"
 	alien = TRUE
 /obj/item/stack/medical/advanced/ointment
-	name = "burn kit"
-	singular_name = "burn kit"
-	desc = "A treatment kit for severe burns."
+	name = "MediGel burn spray"
+	singular_name = "MediGel burn spray"
+	desc = "A small canister of Opticans MediGel burn spray."
 	icon_state = "burnkit"
+	icon = 'icons/halo/obj/items/medical.dmi'
 	heal_burn = 12
+	heal_brute = 8
 
 	stack_id = "burn kit"
 
@@ -228,16 +263,18 @@
 		var/mob/living/carbon/human/H = M
 
 		var/heal_amt = heal_burn
+		var/heal_amt_brute
 		var/obj/limb/affecting = H.get_limb(user.zone_selected)
 		if(user.skills)
 			if(!skillcheck(user, SKILL_MEDICAL, SKILL_MEDICAL_MEDIC)) //untrained marines have a hard time using it
 				to_chat(user, SPAN_WARNING("You start fumbling with [src]."))
-				if(!do_after(user, 30, INTERRUPT_NO_NEEDHAND, BUSY_ICON_FRIENDLY, M, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
+				if(!do_after(user, 15, INTERRUPT_NO_NEEDHAND, BUSY_ICON_FRIENDLY, M, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
 					return
-				heal_amt = 3 //non optimal application means less healing
+				heal_amt = 10 //non optimal application means less healing
+				heal_amt_brute = 6
 
 		if(affecting.get_incision_depth())
-			to_chat(user, SPAN_NOTICE("[M]'s [affecting.display_name] is cut open, you'll need more than a burn kit!"))
+			to_chat(user, SPAN_NOTICE("[M]'s [affecting.display_name] is cut open, you'll need more than [src]!"))
 			return TRUE
 
 		var/possessive = "[user == M ? "your" : "\the [M]'s"]"
@@ -245,14 +282,18 @@
 		switch(affecting.salve(TRUE))
 			if(WOUNDS_BANDAGED)
 				user.affected_message(M,
-					SPAN_HELPFUL("You <b>cover the burns</b> on [possessive] <b>[affecting.display_name]</b> with regenerative membrane."),
-					SPAN_HELPFUL("[user] <b>covers the burns</b> on your <b>[affecting.display_name]</b> with regenerative membrane."),
-					SPAN_NOTICE("[user] covers the burns on [possessive_their] [affecting.display_name] with regenerative membrane."))
+					SPAN_HELPFUL("You <b>spray the burns</b> on [possessive] <b>[affecting.display_name]</b> with [src]."),
+					SPAN_HELPFUL("[user] <b>sprays the burns</b> on your <b>[affecting.display_name]</b> with [src]."),
+					SPAN_NOTICE("[user] sprays the burns on [possessive_their] [affecting.display_name] with [src]."))
 				//If a suture datum exists, apply half the damage as grafts. This ensures consistency in healing amounts.
 				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, FALSE, TRUE, heal_amt * 0.5))
 					heal_amt *= 0.5
+				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, TRUE, FALSE, heal_amt * 0.5))
+					heal_amt_brute *= 0.5
 				affecting.heal_damage(burn = heal_amt)
+				affecting.heal_damage(brute = heal_amt_brute)
 				use(1)
+				playsound(src.loc, 'sound/effects/spray.ogg', 25, 1, 3)
 			if(WOUNDS_ALREADY_TREATED)
 				to_chat(user, SPAN_WARNING("The burns on [possessive] [affecting.display_name] have already been treated."))
 				return TRUE
@@ -269,7 +310,7 @@
 	max_amount = 5
 	stack_id = "splint"
 
-	var/indestructible_splints = FALSE
+	var/indestructible_splints = TRUE
 
 /obj/item/stack/medical/splint/attack(mob/living/carbon/M, mob/user)
 	if(..()) return 1

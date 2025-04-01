@@ -208,3 +208,11 @@
 	result = "paroxetine"
 	required_reagents = list("mindbreaker" = 1, "oxygen" = 1, "inaprovaline" = 1)
 	result_amount = 3
+
+/datum/chemical_reaction/nullfoam
+	name = "Nullfoam"
+	id = "nullfoam"
+	result = "nullfoam"
+	required_reagents = list("biofoam_ext" = 1)
+	required_catalysts = list("biofoam" = 1)
+	result_amount = 1

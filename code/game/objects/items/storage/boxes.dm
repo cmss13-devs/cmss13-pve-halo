@@ -917,12 +917,22 @@
 	icon = 'icons/halo/obj/items/storage/packets.dmi'
 	w_class = SIZE_SMALL
 	can_hold = list()
-	storage_slots = 6
+	storage_slots = 5
 	max_w_class = 0
 	use_sound = "rip"
 	var/isopened = FALSE
 
 /obj/item/storage/box/medical_packet/fill_preset_inventory()
+	new /obj/item/reagent_container/hypospray/autoinjector/biofoam/small(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/splint(src)
+
+/obj/item/storage/box/medical_packet/Initialize()
+	. = ..()
+	isopened = FALSE
+	icon_state = "medical_packet"
 
 /obj/item/storage/box/medical_packet/update_icon()
 	if(!isopened)

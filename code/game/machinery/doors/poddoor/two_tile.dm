@@ -192,10 +192,27 @@
 
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/Initialize()
 	. = ..()
-	f5 = new/obj/structure/machinery/door/poddoor/filler_object (get_step(f5,dir))
+	f5 = new/obj/structure/machinery/door/poddoor/filler_object (get_step(f4,dir))
 	f5.density = density
 	f5.set_opacity(opacity)
 
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/Destroy()
 	QDEL_NULL(f5)
 	return ..()
+
+
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/start_opening()
+	. = ..()
+	f5.set_opacity(0)
+
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/open_fully()
+	. = ..()
+	f5.density = FALSE
+
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/start_closing()
+	. = ..()
+	f5.density = TRUE
+
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/close_fully()
+	. = ..()
+	f5.set_opacity(initial(opacity))

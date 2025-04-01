@@ -250,7 +250,7 @@
 	current_mag = /obj/item/ammo_magazine/rifle/halo/sniper
 	force = 12
 	wield_delay = WIELD_DELAY_HORRIBLE
-	flags_equip_slot = SLOT_BACK
+	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	zoomdevicename = "scope"
 	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
 	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
@@ -286,6 +286,10 @@
 	scatter = SCATTER_AMOUNT_TIER_3
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil = RECOIL_AMOUNT_TIER_5
+
+/obj/item/weapon/gun/rifle/sniper/halo/unloaded
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
 
 /obj/item/weapon/mateba_key/halo_sniper
 	name = "SRS99 barrel key"
@@ -331,7 +335,7 @@
 	icon_state = "spnkr"
 	item_state = "spnkr"
 	layer = ABOVE_OBJ_LAYER
-	flags_equip_slot = SLOT_BACK
+	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	bonus_overlay_layer = UPPER_ITEM_LAYER
 	bonus_overlay_x = -2
 	bonus_overlay_y = 1
@@ -412,6 +416,10 @@
 		if(cover_open)
 			to_chat(user, SPAN_WARNING("You can't fire [src] with the feed cover open! <b>(alt-click to close)</b>"))
 			return FALSE
+
+/obj/item/weapon/gun/halo_launcher/spnkr/unloaded
+	current_mag = null
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY
 
 
 // Pistols

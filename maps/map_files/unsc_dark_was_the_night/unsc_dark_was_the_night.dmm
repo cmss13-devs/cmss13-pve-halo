@@ -90,12 +90,6 @@
 	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/two)
-"aw" = (
-/obj/structure/prop{
-	icon = 'icons/halo/placeholders/placeholders.dmi'
-	},
-/turf/open/floor/plating,
-/area/dark_was_the_night/hangar)
 "ax" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -1652,12 +1646,6 @@
 /area/dark_was_the_night/canteen)
 "hK" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
-/obj/item/weapon/gun/rifle/sniper/halo,
-/obj/item/ammo_magazine/rifle/halo/sniper,
-/obj/item/ammo_magazine/rifle/halo/sniper,
-/obj/item/ammo_magazine/rifle/halo/sniper,
-/obj/item/ammo_magazine/rifle/halo/sniper,
-/obj/item/ammo_magazine/rifle/halo/sniper,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "hM" = (
@@ -1862,9 +1850,9 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/supply)
 "iP" = (
-/obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
 /obj/item/device/binoculars/range/monocular,
+/obj/item/weapon/gun/rifle/halo/br55,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "iT" = (
@@ -3353,6 +3341,7 @@
 /obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
+/obj/item/attachable/attached_gun/grenade/ma5c,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "pu" = (
@@ -4106,6 +4095,8 @@
 "sJ" = (
 /obj/structure/closet/secure_closet/halo/job_locker/rto,
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
+/obj/item/device/binoculars/range/designator/sergeant,
+/obj/item/ammo_box/magazine/misc/unsc/flare/signal,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "sM" = (
@@ -8966,8 +8957,6 @@
 /area/dark_was_the_night/lower_hallway)
 "ON" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
-/obj/item/weapon/gun/halo_launcher/spnkr,
-/obj/item/storage/backpack/marine/ammo_rack/spnkr/filled,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "OS" = (
@@ -28038,7 +28027,7 @@ ka
 ka
 ka
 ka
-aw
+ka
 ka
 ka
 ka
