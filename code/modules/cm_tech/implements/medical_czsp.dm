@@ -45,6 +45,7 @@
 	singular_name = "upgraded burn kit"
 	stack_id = "upgraded burn kit"
 
+	icon = 'icons/obj/items/items.dmi'
 	icon_state = "burnkit_upgraded"
 	desc = "An upgraded burn treatment kit. Three times as effective as standard-issue, and non-replenishable. Use sparingly on only the most critical burns."
 
@@ -60,6 +61,7 @@
 	singular_name = "upgraded trauma kit"
 	stack_id = "upgraded trauma kit"
 
+	icon = 'icons/obj/items/items.dmi'
 	icon_state = "traumakit_upgraded"
 	desc = "An upgraded trauma treatment kit. Three times as effective as standard-issue, and non-replenishable. Use sparingly on only the most critical wounds."
 
