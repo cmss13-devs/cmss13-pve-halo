@@ -242,6 +242,12 @@
 
 	custom_metabolism = AMOUNT_PER_TIME(1, 200 SECONDS)
 
+/datum/reagent/hydrogen/liquid
+	name = "Liquid Hydrogen"
+	id = "liquidhydrogen"
+	reagent_state = LIQUID
+
+
 /datum/reagent/potassium
 	name = "Potassium"
 	id = "potassium"

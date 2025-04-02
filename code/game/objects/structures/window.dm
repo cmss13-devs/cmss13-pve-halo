@@ -1050,3 +1050,13 @@
 	icon_state = "paddedsec_rwindow0"
 	basestate = "paddedsec_rwindow"
 	window_frame = /obj/structure/window_frame/corsat/security
+
+/obj/structure/window/framed/unsc
+	name = "reinforced window"
+	desc = "A glass window with a special rod matrix inside a wall frame. It looks rather strong. Might take a few good hits to shatter it."
+	icon = 'icons/halo/turf/walls/unsc_window.dmi'
+	icon_state = "unsc_window0"
+	basestate = "unsc_window"
+	health = 300
+	reinf = TRUE
+	window_frame = /obj/structure/window_frame/unsc

@@ -45,6 +45,8 @@
 
 /obj/item/clothing/under/marine/standard
 	flags_atom = NO_SNOW_TYPE
+	icon_state = "d_marine_jumpsuit"
+	item_state = "d_marine_jumpsuit"
 
 /obj/item/clothing/under/marine/medic
 	name = "\improper UNSC corpsman uniform"

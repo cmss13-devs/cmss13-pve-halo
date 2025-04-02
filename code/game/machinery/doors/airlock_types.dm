@@ -935,4 +935,25 @@
 /obj/structure/machinery/door/airlock/prison/horizontal
 	dir = SOUTH
 
+// UNSC airlocks
+
+/obj/structure/machinery/door/airlock/unsc
+	name = "\improper airlock"
+	icon = 'icons/halo/obj/structures/doors/standard.dmi'
+	opacity = TRUE
+	glass = FALSE
+	openspeed = 6
+
+/obj/structure/machinery/door/airlock/unsc/prop
+	prop_door = TRUE
+	icon_state = "door_locked"
+
+/obj/structure/machinery/door/airlock/unsc/glass
+	icon = 'icons/halo/obj/structures/doors/standard_glass.dmi'
+	opacity = FALSE
+	glass = TRUE
+
+/obj/structure/machinery/door/airlock/unsc/glass/prop
+	prop_door = TRUE
+	icon_state = "door_locked"
 

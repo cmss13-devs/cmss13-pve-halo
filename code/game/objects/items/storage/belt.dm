@@ -999,8 +999,8 @@
 		return FALSE
 
 /obj/item/storage/belt/grenade
-	name="\improper M276 pattern M40 Grenade rig"
-	desc="The M276 is the standard load-bearing equipment of the UA armed forces. It consists of a modular belt with various clips. This version is designed to carry bulk quantities of M40 pattern and AGM pattern Grenades."
+	name="\improper M276 pattern grenade rig"
+	desc="The M276 is the standard load-bearing equipment of the UNSC. It consists of a modular belt with various clips. This version is designed to carry bulk quantities of 40mm grenades."
 	icon_state = "grenadebelt" // temp
 	item_state = "grenadebelt"
 	item_state_slots = list(
@@ -1034,7 +1034,7 @@
 		return ..()
 
 /obj/item/storage/belt/grenade/large
-	name="\improper M276 pattern M40 Grenade rig Mk. II"
+	name="\improper M276 pattern grenade rig Mk. II"
 	desc="The M276 Mk. II is is an upgraded version of the M276 grenade rig, with more storage capacity."
 	storage_slots = 18
 	max_storage_space = 54

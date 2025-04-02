@@ -190,7 +190,7 @@
 	reagents.add_reagent("coffee", 20)
 
 /obj/item/reagent_container/food/drinks/coffee/marine
-	desc = "Recycled water, lab-grown coffee plants genetically designed for minimum expense and maximum production, and re-recycled coffee grounds have mixed together to create this insultingly cheap USCM culinary 'wonder'. You're just glad the troops get issued water for free."
+	desc = "Recycled water, lab-grown coffee plants genetically designed for minimum expense and maximum production, and re-recycled coffee grounds have mixed together to create this insultingly cheap UNSC culinary 'wonder'."
 
 /obj/item/reagent_container/food/drinks/tea
 	name = "\improper Duke Purple Tea"
@@ -306,8 +306,8 @@
 	center_of_mass = "x=17;y=8"
 
 /obj/item/reagent_container/food/drinks/flask/marine
-	name = "\improper USCM flask"
-	desc = "A metal flask embossed with the USCM logo and probably filled with a slurry of water, motor oil, and medicinal alcohol."
+	name = "\improper UNSC flask"
+	desc = "A metal flask embossed with the UNSC logo and probably filled with a slurry of water, motor oil, and medicinal alcohol."
 	icon_state = "flask_uscm"
 	volume = 60
 	center_of_mass = "x=17;y=8"
@@ -379,8 +379,8 @@
 	center_of_mass = "x=15;y=13"
 
 /obj/item/reagent_container/food/drinks/coffeecup/uscm
-	name = "USCM coffee mug"
-	desc = "A red, white and blue coffee mug depicting the emblem of the USCM. Patriotic and bold, and commonly seen among veterans as a novelty."
+	name = "UNSC coffee mug"
+	desc = "A red, white and blue coffee mug depicting the emblem of the UNSC. Patriotic and bold, and commonly seen among veterans as a novelty."
 	icon_state = "uscmcup"
 
 /obj/item/reagent_container/food/drinks/coffeecup/wy

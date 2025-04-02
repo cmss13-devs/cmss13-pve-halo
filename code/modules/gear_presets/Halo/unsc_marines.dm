@@ -107,7 +107,7 @@
 /datum/equipment_preset/unsc/rto
 	name = "UNSC Radio Telephone Operator"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
-	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SPECPREP)
+	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_RTO
 	rank = JOB_SQUAD_RTO
 	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)

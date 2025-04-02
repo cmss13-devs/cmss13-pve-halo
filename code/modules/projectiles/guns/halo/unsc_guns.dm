@@ -63,6 +63,10 @@
 	fa_scatter_peak = 30
 	fa_max_scatter = 2
 
+/obj/item/weapon/gun/rifle/halo/ma5c/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
 /obj/item/weapon/gun/rifle/halo/br55
 	name = "BR55 battle rifle"
 	desc = "A standard-issue marksman rifle in use by the UNSC Marine Corps, the BR55 battle rifle has a reasonably high power, acceptable rate of fire, and high accuracy. It comes with a standard 36-round detachable box magazine of 9.5x40mm experimental HP-SAP-HE rounds, allowing it to reach higher velocities than the MA5 series despite the smaller propellant."
@@ -112,6 +116,10 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_4
 	fa_scatter_peak = 16
 	fa_max_scatter = 2
+
+/obj/item/weapon/gun/rifle/halo/br55/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
 
 // SMGs
 
@@ -218,6 +226,10 @@
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
 
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded
+	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRIGGER_SAFETY
+
 // snipers
 
 /obj/item/weapon/gun/rifle/sniper/halo
@@ -246,7 +258,7 @@
 	current_mag = /obj/item/ammo_magazine/rifle/halo/sniper
 	force = 12
 	wield_delay = WIELD_DELAY_HORRIBLE
-	flags_equip_slot = SLOT_BACK
+	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	zoomdevicename = "scope"
 	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
 	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
@@ -282,6 +294,10 @@
 	scatter = SCATTER_AMOUNT_TIER_3
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil = RECOIL_AMOUNT_TIER_5
+
+/obj/item/weapon/gun/rifle/sniper/halo/unloaded
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
 
 /obj/item/weapon/mateba_key/halo_sniper
 	name = "SRS99 barrel key"
@@ -327,7 +343,7 @@
 	icon_state = "spnkr"
 	item_state = "spnkr"
 	layer = ABOVE_OBJ_LAYER
-	flags_equip_slot = SLOT_BACK
+	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	bonus_overlay_layer = UPPER_ITEM_LAYER
 	bonus_overlay_x = -2
 	bonus_overlay_y = 1
@@ -409,6 +425,10 @@
 			to_chat(user, SPAN_WARNING("You can't fire [src] with the feed cover open! <b>(alt-click to close)</b>"))
 			return FALSE
 
+/obj/item/weapon/gun/halo_launcher/spnkr/unloaded
+	current_mag = null
+	flags_gun_features = GUN_WIELDED_FIRING_ONLY
+
 
 // Pistols
 
@@ -441,6 +461,9 @@
 	fire_sound = "gun_m6c"
 	flags_gun_features = GUN_CAN_POINTBLANK
 
+/obj/item/weapon/gun/pistol/halo/m6c/unloaded
+	current_mag = null
+
 /obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
@@ -463,6 +486,9 @@
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6g
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6g, /obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6g"
+
+/obj/item/weapon/gun/pistol/halo/m6g/unloaded
+	current_mag = null
 
 /obj/item/weapon/gun/pistol/halo/m6g/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)

@@ -321,3 +321,12 @@
 
 /obj/structure/window_frame/corsat/security
 	window_type = /obj/structure/window/framed/corsat/security
+
+// UNSC frames
+
+/obj/structure/window_frame/unsc
+	icon = 'icons/halo/turf/walls/unsc_window.dmi'
+	icon_state = "unsc_window0_frame"
+	basestate = "unsc_window"
+	reinforced = TRUE
+	window_type = /obj/structure/window/framed/unsc

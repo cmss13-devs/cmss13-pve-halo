@@ -703,4 +703,6 @@
 	icon_state = "hudglasses"
 	item_state = "hudglasses"
 	item_icons = list(
-		WEAR_EYES = 'icons/halo/mob/humans/onmob/eyes.dmi')
+		WEAR_EYES = 'icons/halo/mob/humans/onmob/eyes.dmi',
+		WEAR_FACE = 'icons/halo/mob/humans/onmob/eyes.dmi'
+		)

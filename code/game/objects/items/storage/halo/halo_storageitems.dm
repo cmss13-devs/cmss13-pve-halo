@@ -63,6 +63,7 @@
 	icon_state = "m6"
 	gun_underlay_path = 'icons/halo/obj/items/clothing/belts.dmi'
 	icon_x = 5
+	icon_y = 0
 	can_hold = list(
 		/obj/item/weapon/gun/pistol/halo,
 		/obj/item/ammo_magazine/pistol/halo,
@@ -135,3 +136,77 @@
 	for(var/i = 1 to storage_slots)
 		new /obj/item/ammo_magazine/spnkr(src)
 	update_icon()
+
+//========== BOXES ==========
+
+/obj/item/storage/unsc_speckit
+	name = "UNSC specialist kit box"
+	desc = "An unlabeled, unmarked specialist equipment box. You can only wonder as to what the contents are."
+	icon = 'icons/halo/obj/items/storage/spec_kits.dmi'
+	icon_state = "template"
+	var/open_state = "template_o"
+	var/icon_full = "template" //icon state to use when kit is full
+	var/possible_icons_full
+	can_hold = list()
+	max_w_class = SIZE_MASSIVE
+	storage_flags = STORAGE_FLAGS_BOX
+
+/obj/item/storage/unsc_speckit/Initialize()
+	. = ..()
+
+	if(possible_icons_full)
+		icon_full = pick(possible_icons_full)
+	else
+		icon_full = initial(icon_state)
+
+	update_icon()
+
+/obj/item/storage/unsc_speckit/update_icon()
+	if(content_watchers || !length(contents))
+		icon_state = open_state
+	else
+		icon_state = icon_full
+
+/obj/item/storage/unsc_speckit/attack_self(mob/living/user)
+	..()
+
+	if(iscarbon(user))
+		var/mob/living/carbon/C = user
+		C.swap_hand()
+		open(user)
+
+/obj/item/storage/unsc_speckit/spnkr
+	name = "SPNKr equipment case"
+	desc = "A case containing the essentials for a UNSC weapons specialist. This one has the emblem of a SPNKr on its lid."
+	icon_state = "spnkr"
+	open_state = "spnkr_o"
+	icon_full = "spnkr"
+	can_hold = list(/obj/item/ammo_magazine/spnkr, /obj/item/storage/backpack/marine/ammo_rack/spnkr, /obj/item/weapon/gun/halo_launcher/spnkr)
+	storage_slots = 5
+
+/obj/item/storage/unsc_speckit/spnkr/fill_preset_inventory()
+	new /obj/item/ammo_magazine/spnkr(src)
+	new /obj/item/ammo_magazine/spnkr(src)
+	new /obj/item/ammo_magazine/spnkr(src)
+	new /obj/item/storage/backpack/marine/ammo_rack/spnkr(src)
+	new /obj/item/weapon/gun/halo_launcher/spnkr/unloaded(src)
+
+/obj/item/storage/unsc_speckit/srs99
+	name = "SRS99-AM equipment case"
+	desc = "A case containing the essentials for a UNSC weapons specialist. This one has the emblem of an SRS99-AM on its lid."
+	icon_state = "srs99"
+	open_state = "srs99_o"
+	icon_full = "srs99"
+	can_hold = list(/obj/item/weapon/gun/rifle/sniper/halo/unloaded, /obj/item/ammo_magazine/rifle/halo/sniper)
+	storage_slots = 7
+
+/obj/item/storage/unsc_speckit/srs99/fill_preset_inventory()
+	new /obj/item/weapon/gun/rifle/sniper/halo/unloaded(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+
+

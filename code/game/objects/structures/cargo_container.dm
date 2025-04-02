@@ -331,3 +331,86 @@
 
 /obj/structure/cargo_container/horizontal/blue/bottom
 	icon_state = "blue_b"
+
+// unsc containers
+
+/obj/structure/cargo_container/unsc
+	name = "UNSC cargo container"
+	desc = "A large olive drab cargo container. It's intended to store a whole lot of anything you can think of with a loading dock on one end and a pair of doors on the other."
+	icon = 'icons/halo/obj/structures/props/containers.dmi'
+	icon_state = "main_1"
+	density = TRUE
+	health = 400
+	opacity = FALSE
+	layer = 5
+
+// container 1
+
+/obj/structure/cargo_container/unsc/main_1
+	icon_state = "main_1a"
+
+/obj/structure/cargo_container/unsc/main_1/b
+	icon_state = "main_1b"
+
+/obj/structure/cargo_container/unsc/main_1/c
+	icon_state = "main_1c"
+
+/obj/structure/cargo_container/unsc/main_1/d
+	icon_state = "main_1d"
+
+/obj/structure/cargo_container/unsc/main_1/e
+	icon_state = "main_1e"
+
+// container 2
+
+/obj/structure/cargo_container/unsc/main_2
+	icon_state = "main_2a"
+
+/obj/structure/cargo_container/unsc/main_2/b
+	icon_state = "main_2b"
+
+/obj/structure/cargo_container/unsc/main_2/c
+	icon_state = "main_2c"
+
+/obj/structure/cargo_container/unsc/main_2/d
+	icon_state = "main_2d"
+
+// container 3
+
+/obj/structure/cargo_container/unsc/main_3
+	icon_state = "main_3a"
+
+/obj/structure/cargo_container/unsc/main_3/b
+	icon_state = "main_3b"
+
+/obj/structure/cargo_container/unsc/main_3/c
+	icon_state = "main_3c"
+
+/obj/structure/cargo_container/unsc/main_3/d
+	icon_state = "main_3d"
+
+/obj/structure/cargo_container/unsc/vertical // ACTUALLY THE RIGHT THING!!! NOOOT HORIZONTAL, ITS VEEERTICAL. HORIZONTAL IS LIKE HORIIIZON. VERTICAL IS LIKE WOOOOW THATS A REAL VERTICAL CLIFF. STUPID FUCKING CM DEV 9 YEARS AGO.
+	bound_width = 64
+	bound_height = 32
+
+/obj/structure/cargo_container/unsc/vertical/south_1
+	icon_state = "south_1"
+	bound_height = 64
+
+/obj/structure/cargo_container/unsc/vertical/south_1/alt
+	icon_state = "south_1b"
+
+/obj/structure/cargo_container/unsc/vertical/south_2
+	icon_state = "south_2"
+
+/obj/structure/cargo_container/unsc/vertical/south_3
+	icon_state = "south_3"
+
+/obj/structure/cargo_container/unsc/vertical/south_3/endcap_1
+	icon_state = "south_3b"
+
+/obj/structure/cargo_container/unsc/vertical/south_3/endcap_2
+	icon_state = "south_3c"
+
+/obj/structure/cargo_container/unsc/vertical/south_4
+	icon_state = "south_4"
