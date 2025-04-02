@@ -471,9 +471,9 @@
 		list("SIDEARMS", -1, null, null),
 		list("M6C Service Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/unloaded, VENDOR_ITEM_REGULAR),
 		list("M6G Service Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6g/unloaded, VENDOR_ITEM_REGULAR),
-		list("KFA-2/G smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6g, VENDOR_ITEM_REGULAR)
-		list("KFA-2/C smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6c, VENDOR_ITEM_REGULAR)
-		list("M6 flashlight", round(scale * 4), /obj/item/attachable/flashlight/m6, VENDOR_ITEM_REGULAR)
+		list("KFA-2/G smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6g, VENDOR_ITEM_REGULAR),
+		list("KFA-2/C smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6c, VENDOR_ITEM_REGULAR),
+		list("M6 flashlight", round(scale * 4), /obj/item/attachable/flashlight/m6, VENDOR_ITEM_REGULAR),
 		list("M82F Flare Gun", round(scale * 1), /obj/item/weapon/gun/flare, VENDOR_ITEM_REGULAR),
 
 		list("MISCELLANEOUS", -1, null, null),
