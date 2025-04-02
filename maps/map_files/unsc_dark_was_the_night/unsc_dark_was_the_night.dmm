@@ -1852,7 +1852,7 @@
 "iP" = (
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
 /obj/item/device/binoculars/range/monocular,
-/obj/item/weapon/gun/rifle/halo/br55,
+/obj/item/weapon/gun/rifle/halo/br55/unloaded,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "iT" = (
@@ -2729,10 +2729,6 @@
 	pixel_x = 0;
 	pixel_y = 17
 	},
-/obj/item/weapon/gun/shotgun/pump/halo/m90{
-	pixel_x = -1;
-	pixel_y = 0
-	},
 /obj/item/ammo_magazine/shotgun/buckshot/unsc{
 	pixel_x = -7;
 	pixel_y = 20
@@ -2741,6 +2737,7 @@
 	pixel_x = 6;
 	pixel_y = 19
 	},
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "mM" = (
@@ -3338,10 +3335,10 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/engineering)
 "pr" = (
-/obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/attachable/attached_gun/grenade/ma5c,
+/obj/item/weapon/gun/rifle/halo/br55/unloaded,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "pu" = (
@@ -9573,9 +9570,9 @@
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/canteen)
 "RS" = (
-/obj/item/weapon/gun/rifle/halo/br55,
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
 /obj/item/device/binoculars/range/monocular,
+/obj/item/weapon/gun/rifle/halo/br55/unloaded,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "RZ" = (

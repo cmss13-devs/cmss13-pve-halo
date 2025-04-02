@@ -117,6 +117,10 @@
 	fa_scatter_peak = 16
 	fa_max_scatter = 2
 
+/obj/item/weapon/gun/rifle/halo/br55/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
 // SMGs
 
 /obj/item/weapon/gun/smg/halo
@@ -221,6 +225,10 @@
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded
+	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRIGGER_SAFETY
 
 // snipers
 

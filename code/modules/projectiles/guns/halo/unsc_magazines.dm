@@ -62,6 +62,9 @@
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
 	caliber = "8g"
 
+/obj/item/ammo_magazine/internal/shotgun/m90/unloaded
+	current_rounds = 0
+
 // shotgun shells
 
 /obj/item/ammo_magazine/shotgun/buckshot/unsc

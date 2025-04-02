@@ -171,20 +171,20 @@
 	name = "\improper KFA-2 x2 smart-linked scope"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = null
+	slot = "rail"
+	zoom_offset = 3
 
 /obj/item/attachable/scope/mini/smartscope/m6g
-	name = "\improper KFA-2/G x2 smart-linked scope"
+	name = "\improper KFA-2/G smart-linked scope"
 	desc = "A smart-linked scope designed to attach to the M6G magnum, allowing for advanced magnification and linking with UNSC optics to provide the HUD a reticle and ammunition counter."
 	icon_state = "m6c_smartscope_obj"
 	attach_icon = "m6g_smartscope"
-	slot = "rail"
 
 /obj/item/attachable/scope/mini/smartscope/m6c
-	name = "\improper KFA-2/C x2 smart-linked scope"
+	name = "\improper KFA-2/C smart-linked scope"
 	desc = "A smart-linked scope designed to attach to the M6C magnum, allowing for advanced magnification and linking with UNSC optics to provide the HUD a reticle and ammunition counter."
 	icon_state = "m6c_smartscope_obj"
 	attach_icon = "m6c_smartscope"
-	slot = "rail"
 
 /obj/item/attachable/flashlight/m6
 	name = "\improper M6 flashlight"
