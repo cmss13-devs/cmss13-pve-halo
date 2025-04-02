@@ -164,7 +164,6 @@
 	icon = 'icons/halo/obj/items/medical.dmi'
 	icon_state = "traumakit_packaged"
 	heal_brute = 12
-	heal_burn = 8
 	var/wrapped = TRUE
 
 	stack_id = "advanced bruise pack"
@@ -189,14 +188,12 @@
 
 		var/obj/limb/affecting = H.get_limb(user.zone_selected)
 		var/heal_amt = heal_brute
-		var/heal_amt_burn = heal_burn
 		if(user.skills)
 			if(!skillcheck(user, SKILL_MEDICAL, SKILL_MEDICAL_MEDIC)) //untrained marines have a hard time using it
 				to_chat(user, SPAN_WARNING("You start fumbling with [src]."))
 				if(!do_after(user, 15, INTERRUPT_NO_NEEDHAND, BUSY_ICON_FRIENDLY, M, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
 					return
 				heal_amt = 10 //non optimal application means less healing
-				heal_amt_burn = 6
 
 		if(affecting.get_incision_depth())
 			to_chat(user, SPAN_NOTICE("[M]'s [affecting.display_name] is cut open, you'll need more than [src]!"))
@@ -213,10 +210,7 @@
 				//If a suture datum exists, apply half the damage as sutures. This ensures consistency in healing amounts.
 				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, TRUE, FALSE, heal_amt * 0.5))
 					heal_amt *= 0.5
-				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, FALSE, TRUE, heal_amt * 0.5))
-					heal_amt_burn *= 0.5
 				affecting.heal_damage(brute = heal_amt)
-				affecting.heal_damage(burn = heal_amt_burn)
 				playsound(user, 'sound/handling/bandage.ogg', 25, 1, 2)
 				use(1)
 			if(WOUNDS_ALREADY_TREATED)
@@ -251,7 +245,6 @@
 	icon_state = "burnkit"
 	icon = 'icons/halo/obj/items/medical.dmi'
 	heal_burn = 12
-	heal_brute = 8
 
 	stack_id = "burn kit"
 
@@ -263,7 +256,6 @@
 		var/mob/living/carbon/human/H = M
 
 		var/heal_amt = heal_burn
-		var/heal_amt_brute
 		var/obj/limb/affecting = H.get_limb(user.zone_selected)
 		if(user.skills)
 			if(!skillcheck(user, SKILL_MEDICAL, SKILL_MEDICAL_MEDIC)) //untrained marines have a hard time using it
@@ -271,7 +263,6 @@
 				if(!do_after(user, 15, INTERRUPT_NO_NEEDHAND, BUSY_ICON_FRIENDLY, M, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
 					return
 				heal_amt = 10 //non optimal application means less healing
-				heal_amt_brute = 6
 
 		if(affecting.get_incision_depth())
 			to_chat(user, SPAN_NOTICE("[M]'s [affecting.display_name] is cut open, you'll need more than [src]!"))
@@ -288,10 +279,7 @@
 				//If a suture datum exists, apply half the damage as grafts. This ensures consistency in healing amounts.
 				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, FALSE, TRUE, heal_amt * 0.5))
 					heal_amt *= 0.5
-				if(SEND_SIGNAL(affecting, COMSIG_LIMB_ADD_SUTURES, TRUE, FALSE, heal_amt * 0.5))
-					heal_amt_brute *= 0.5
 				affecting.heal_damage(burn = heal_amt)
-				affecting.heal_damage(brute = heal_amt_brute)
 				use(1)
 				playsound(src.loc, 'sound/effects/spray.ogg', 25, 1, 3)
 			if(WOUNDS_ALREADY_TREATED)
