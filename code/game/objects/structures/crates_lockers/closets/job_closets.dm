@@ -187,13 +187,13 @@
 		to_chat(user, SPAN_WARNING("You do not have access to the contents of the locker."))
 		return
 	if(claimed)
-		return . = ..()
+		return ..()
 	if(role_lock && ishuman(user))
 		var/mob/living/carbon/human/human = user
 		var/obj/item/card/id/card = human.get_idcard()
 		if(card)
 			if(human.job != "Weapons Specialist")
-				to_chat(user, SPAN_WARNING("You aren't the right occupation for this locker.."))
+				to_chat(user, SPAN_WARNING("You aren't the right occupation for this locker."))
 				return
 			equipment_giver()
 		else if(!role_lock && ishuman(user))
@@ -202,7 +202,7 @@
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/proc/equipment_giver(mob/living/user)
 	var/static/list/spec_equipment_list = list(
 		"SPNKr kit" = /obj/item/storage/unsc_speckit/spnkr,
-		"SRS-99AM kit" = /obj/item/storage/unsc_speckit/srs99/,
+		"SRS-99AM kit" = /obj/item/storage/unsc_speckit/srs99,
 		)
 	var/chosen_kit = tgui_input_list(user, "Equipment Selection", "Select your equipment",spec_equipment_list)
 	if (!chosen_kit)

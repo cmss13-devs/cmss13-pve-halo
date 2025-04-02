@@ -436,7 +436,7 @@
 		if(!do_after(user, 50 * user.get_skill_duration_multiplier(SKILL_MEDICAL), INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_FRIENDLY, target, INTERRUPT_MOVED, BUSY_ICON_MEDICAL))
 			to_chat(user, SPAN_NOTICE("You were interrupted! Try to stay still."))
 			return FALSE
-		..()
+		. = ..()
 		target.emote("pain")
 		icon_state = "[initial(icon_state)]_spent"
 	else
