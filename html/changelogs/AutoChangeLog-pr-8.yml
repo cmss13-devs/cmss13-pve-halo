@@ -1,0 +1,6 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Some code to support the map"
+  - imageadd: "Some crate props and other stuff I forgot. Also doors. And walls."
+  - mapadd: "Adds the UNSC Dark was the night"
