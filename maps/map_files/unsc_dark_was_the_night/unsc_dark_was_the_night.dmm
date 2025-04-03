@@ -114,12 +114,6 @@
 	pixel_y = 1;
 	pixel_x = 1
 	},
-/obj/structure/surface/table/reinforced/almayer_B{
-	density = 0;
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = 17
-	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/cryo_bay/one)
 "aH" = (
@@ -910,13 +904,6 @@
 /obj/structure/machinery/door/airlock/unsc/prop,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/upper_hallway)
-"et" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = 13;
-	plane = -7
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/canteen)
 "eu" = (
 /obj/structure/platform,
 /obj/structure/barricade/handrail{
@@ -1529,10 +1516,6 @@
 /area/dark_was_the_night/dorms)
 "hq" = (
 /obj/structure/pipes/vents/pump,
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = -13;
-	plane = -7
-	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 8
@@ -2801,10 +2784,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/surface/table/reinforced/almayer_B{
-	plane = -7;
-	pixel_y = -15
-	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/cryo_bay/one)
 "mY" = (
@@ -2827,16 +2806,10 @@
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	dir = 8
 	},
-/obj/structure/surface/table/reinforced/prison{
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = -10
-	},
 /obj/structure/sink{
 	pixel_y = -13;
 	dir = 1;
-	pixel_x = 0;
-	plane = -7
+	pixel_x = 0
 	},
 /obj/structure/mirror{
 	pixel_y = -26;
@@ -3149,12 +3122,6 @@
 	pixel_y = 29;
 	serial_number = 16
 	},
-/obj/structure/surface/table/reinforced/almayer_B{
-	density = 0;
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = 17
-	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/cryo_bay/two)
 "om" = (
@@ -3319,10 +3286,6 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/supply)
 "pl" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	plane = -7;
-	pixel_y = -15
-	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/cryo_bay/one)
 "pq" = (
@@ -3519,10 +3482,6 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
 "pX" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	plane = -7;
-	pixel_y = -15
-	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/cryo_bay/two)
 "pY" = (
@@ -4321,12 +4280,6 @@
 	icon_state = "NW-out";
 	pixel_y = 1
 	},
-/obj/structure/surface/table/reinforced/almayer_B{
-	density = 0;
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = 17
-	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/cryo_bay/one)
 "tE" = (
@@ -4986,10 +4939,6 @@
 /area/dark_was_the_night/dorms)
 "wu" = (
 /obj/structure/pipes/vents/pump,
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = -13;
-	plane = -7
-	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 8
@@ -5524,13 +5473,6 @@
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
-"yN" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	plane = -7;
-	pixel_y = -15
-	},
-/turf/open/floor/almayer/edge/smooth/corner/north,
-/area/dark_was_the_night/cryo_bay/two)
 "yQ" = (
 /obj/structure/pipes/vents/pump,
 /obj/effect/decal/warning_stripes{
@@ -5597,10 +5539,6 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay/two)
 "zc" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = -13;
-	plane = -7
-	},
 /obj/structure/phone_base{
 	phone_category = "Dark was the Night";
 	pixel_x = -19;
@@ -5681,12 +5619,6 @@
 	freerange = 1;
 	name = "General Listening Channel";
 	pixel_y = 26
-	},
-/obj/structure/surface/table/reinforced/almayer_B{
-	density = 0;
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = 17
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/cryo_bay/two)
@@ -5919,20 +5851,10 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
 "AH" = (
-/obj/structure/surface/table/reinforced/prison{
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = -10
-	},
 /obj/structure/sink{
 	pixel_y = -13;
 	dir = 1;
-	pixel_x = 0;
-	plane = -7
-	},
-/obj/item/storage/pill_bottle/paracetamol{
-	pixel_x = 15;
-	pixel_y = -6
+	pixel_x = 0
 	},
 /obj/structure/mirror{
 	pixel_y = -26;
@@ -7884,12 +7806,6 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/canteen)
 "Ki" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	density = 0;
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = 17
-	},
 /obj/structure/phone_base{
 	phone_category = "Dark was the Night";
 	pixel_x = -1;
@@ -8099,10 +8015,6 @@
 /area/dark_was_the_night/hangar)
 "KY" = (
 /obj/structure/pipes/vents/pump,
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = 13;
-	plane = -7
-	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 4
@@ -8294,12 +8206,6 @@
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/medical)
 "LN" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	density = 0;
-	plane = -7;
-	pixel_x = 0;
-	pixel_y = 17
-	},
 /obj/structure/phone_base{
 	phone_category = "Dark was the Night";
 	pixel_x = -1;
@@ -8861,10 +8767,6 @@
 /area/dark_was_the_night/armory)
 "Ot" = (
 /obj/structure/pipes/vents/pump,
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = 13;
-	plane = -7
-	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 4
@@ -11160,13 +11062,6 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/dark_was_the_night/medical)
-"Zr" = (
-/obj/structure/surface/table/reinforced/almayer_B{
-	pixel_x = -13;
-	plane = -7
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/canteen)
 "Zs" = (
 /obj/structure/machinery/floodlight/landing/floor{
 	color = "#dae2ff";
@@ -16541,7 +16436,7 @@ ol
 zK
 Ir
 Ux
-yN
+lH
 wk
 Ug
 Dr
@@ -18215,7 +18110,7 @@ TW
 qs
 NN
 wu
-Zr
+Ly
 zc
 hq
 NN
@@ -19735,8 +19630,8 @@ ty
 Xm
 Ov
 KY
-et
-et
+Ly
+Ly
 Ot
 ip
 Xm
