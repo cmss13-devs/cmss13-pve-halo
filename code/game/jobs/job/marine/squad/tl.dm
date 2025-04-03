@@ -52,21 +52,37 @@
 /datum/job/marine/tl/ai/upp
 	title = JOB_SQUAD_TEAM_LEADER_UPP
 	gear_preset = /datum/equipment_preset/uscm/tl/upp
+	gear_preset_secondary = /datum/equipment_preset/uscm/tl/upp/lesser_rank
 
 /datum/job/marine/tl/ai/forecon
 	total_positions = 1
 	spawn_positions = 1
 	title = JOB_SQUAD_TEAM_LEADER_FORECON
 	gear_preset = /datum/equipment_preset/uscm/tl/forecon
+	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/lesser_rank
 
 /obj/effect/landmark/start/marine/tl/upp
 	name = JOB_SQUAD_TEAM_LEADER_UPP
 	squad = SQUAD_UPP
 	job = /datum/job/marine/tl/ai/upp
 
+
+/datum/job/marine/tl/ai/pmc
+	title = JOB_PMCPLAT_FTL
+	gear_preset = /datum/equipment_preset/uscm/pmc/tl
+	gear_preset_secondary = /datum/equipment_preset/uscm/pmc/tl
+
+/obj/effect/landmark/start/marine/tl/pmc
+	name = JOB_PMCPLAT_FTL
+	squad = SQUAD_PMCPLT
+	job = /datum/job/marine/tl/ai/pmc
+
+
 /obj/effect/landmark/start/marine/tl/forecon
 	name = JOB_SQUAD_TEAM_LEADER_FORECON
 	squad = SQUAD_LRRP
 	job = /datum/job/marine/tl/ai/forecon
 
+
 #undef SGT_VARIANT
+#undef CPL_VARIANT

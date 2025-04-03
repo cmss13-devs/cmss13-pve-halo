@@ -84,6 +84,7 @@
 
 	light_power = 3
 	light_range = 4
+	light_color = LIGHT_COLOR_TUNGSTEN
 	light_system = MOVABLE_LIGHT
 
 	var/flashlight_cooldown = 0 //Cooldown for toggling the light
@@ -608,28 +609,6 @@
 	desc = "Body armor used by war correspondents in battles and wars across the universe."
 	icon_state = "cc_armor"
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
-
-//==================PLU Lamp Rig==================\\
-
-/obj/item/clothing/suit/storage/marine/veteran/lamp
-	name = "\improper PLU lamp rig"
-	icon_state = "lamp_rig"
-	desc = "A lightweight rig designed to support a shoulder lamp."
-	blood_overlay_type = "coat"
-	flags_armor_protection = BODY_FLAG_CHEST
-	flags_cold_protection = BODY_FLAG_CHEST
-	min_cold_protection_temperature = null
-	armor_melee = CLOTHING_ARMOR_NONE
-	armor_bullet = CLOTHING_ARMOR_NONE
-	armor_laser = CLOTHING_ARMOR_NONE
-	armor_energy = CLOTHING_ARMOR_NONE
-	armor_bomb = CLOTHING_ARMOR_LOW //marginally better against shrapnel.
-	armor_bio = CLOTHING_ARMOR_NONE
-	armor_rad = CLOTHING_ARMOR_NONE
-	armor_internaldamage = CLOTHING_ARMOR_NONE
-	storage_slots = 1
-	time_to_unequip = 10
-	time_to_equip = 10
 
 //==================USASF & ARMY==================\\
 /obj/item/clothing/suit/storage/marine/medium/rto/navy

@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/item/explosive/grenade/tear/marine,
+/turf/open/floor/prison,
+/area/fiorina/station/security)
 "am" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/storage/donut_box{
@@ -919,7 +923,6 @@
 /obj/structure/reagent_dispensers/peppertank{
 	pixel_y = 30
 	},
-/obj/item/explosive/grenade/custom/teargas,
 /turf/open/floor/prison/redfull,
 /area/fiorina/station/security)
 "MX" = (
@@ -1393,7 +1396,7 @@ vq
 qQ
 sq
 sq
-sq
+aa
 FH
 PA
 sq

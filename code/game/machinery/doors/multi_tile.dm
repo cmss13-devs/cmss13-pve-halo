@@ -358,9 +358,17 @@
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/dropshipside/ds2/cyclone
 	name = "\improper Cyclone crew hatch"
 
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/dropshipside/pmc
+	name = "\improper Cash Flow crew hatch"
+	icon = 'icons/obj/structures/doors/dropshippmc_side2.dmi'
+
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/upp
 	name = "\improper Akademia Nauk cargo door"
 	icon = 'icons/obj/structures/doors/dropshipupp_cargo.dmi'
+
+/obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/pmc
+	name = "\improper Cash Flow cargo door"
+	icon = 'icons/obj/structures/doors/dropshippmc_cargo.dmi'
 
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/blastdoor
 	name = "bulkhead blast door"
@@ -646,6 +654,41 @@
 	opacity = FALSE
 	glass = TRUE
 
+/obj/structure/machinery/door/airlock/multi_tile/strata
+	name = "Secure Airlock"
+	icon = 'icons/obj/structures/doors/strata/strata_2x1.dmi'
+	opacity = TRUE
+	glass = FALSE
+	openspeed = 4
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_green
+	name = "Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_green.dmi'
+	opacity = FALSE
+	glass = FALSE
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_green/glass
+	name = "Glass Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_glass_green.dmi'
+	glass = TRUE
+
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey
+	name = "Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_grey.dmi'
+	opacity = FALSE
+	glass = FALSE
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass
+	name = "Glass Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_glass_grey.dmi'
+	glass = TRUE
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_utility
+	name = "Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_utility.dmi'
+	openspeed = 6
+
 /obj/structure/machinery/door/airlock/multi_tile/unsc
 	name = "\improper airlock"
 	icon = 'icons/halo/obj/structures/doors/2x1_standard.dmi'
@@ -682,3 +725,38 @@
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass/prop
 	prop_door = TRUE
 	icon_state = "door_locked"
+
+/obj/structure/machinery/door/airlock/multi_tile/strata
+	name = "Secure Airlock"
+	icon = 'icons/obj/structures/doors/strata/strata_2x1.dmi'
+	opacity = TRUE
+	glass = FALSE
+	openspeed = 4
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_green
+	name = "Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_green.dmi'
+	opacity = FALSE
+	glass = FALSE
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_green/glass
+	name = "Glass Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_glass_green.dmi'
+	glass = TRUE
+
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey
+	name = "Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_grey.dmi'
+	opacity = FALSE
+	glass = FALSE
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_grey/glass
+	name = "Glass Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_glass_grey.dmi'
+	glass = TRUE
+
+/obj/structure/machinery/door/airlock/multi_tile/upp_utility
+	name = "Airlock"
+	icon = 'icons/obj/structures/doors/upp/2x1upp_utility.dmi'
+	openspeed = 6

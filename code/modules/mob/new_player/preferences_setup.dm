@@ -246,24 +246,26 @@
 
 	switch(highest_priority_job)
 		if(JOB_SQUAD_MARINE)
-			return /datum/equipment_preset/uscm/private_equipped
+			return /datum/equipment_preset/unsc/pfc/equipped
 		if(JOB_SQUAD_ENGI)
 			return /datum/equipment_preset/uscm/engineer_equipped
+		if(JOB_SQUAD_RTO)
+			return /datum/equipment_preset/unsc/rto/equipped
 		if(JOB_SQUAD_LEADER)
-			return /datum/equipment_preset/uscm/leader_equipped
+			return /datum/equipment_preset/unsc/leader/equipped
 		if(JOB_SQUAD_MEDIC)
-			return /datum/equipment_preset/uscm/medic_equipped
+			return /datum/equipment_preset/unsc/medic/equipped
 		if(JOB_SQUAD_SPECIALIST)
-			return /datum/equipment_preset/uscm/specialist_equipped
+			return /datum/equipment_preset/unsc/spec/equipped_spnkr
 		if(JOB_SQUAD_SMARTGUN)
 			return /datum/equipment_preset/uscm/smartgunner_equipped
 		if(JOB_SQUAD_TEAM_LEADER)
-			return /datum/equipment_preset/uscm/tl_equipped
+			return /datum/equipment_preset/unsc/tl/equipped
 		if(JOB_CO)
 			var/datum/job/J = GLOB.RoleAuthority.roles_by_name[JOB_CO]
 			return J.gear_preset_whitelist["[JOB_CO][J.get_whitelist_status(owner)]"]
 		if(JOB_SO)
-			return /datum/equipment_preset/uscm_ship/so
+			/datum/equipment_preset/unsc/platco/equipped
 		if(JOB_XO)
 			return /datum/equipment_preset/uscm_ship/xo
 		if(JOB_AUXILIARY_OFFICER)

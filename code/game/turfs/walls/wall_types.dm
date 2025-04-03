@@ -1345,6 +1345,38 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	desc = "Ancient beyond measure, these walls make up the hull of a vessel of non human origin. Despite this, they can be felled with plastic explosives like any other opaque blocker."
 	hull = 0
 
+/turf/closed/wall/upp_wall
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/upp_green.dmi'
+	icon_state = "uppwall_interior"
+	desc = "A thick and chunky metal wall covered in jagged ribs."
+	walltype = WALL_UPP_GREEN
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/upp_wall/hull
+	name = "ribbed hull walls"
+	icon = 'icons/turf/walls/upp_green.dmi'
+	icon_state = "uppwall_hull"
+	desc = "A thick and chunky metal wall covered in jagged ribs."
+	hull = 1
+
+/turf/closed/wall/upp_wall/grey
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/upp_grey.dmi'
+	icon_state = "uppwall_interior"
+	desc = "A thick and chunky metal wall. The surface is barren and imposing."
+	walltype = WALL_UPP_GREY
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/upp_wall/grey/hull
+	name = "ribbed hull walls"
+	icon = 'icons/turf/walls/upp_grey.dmi'
+	icon_state = "uppwall_hull"
+	desc = "A thick and chunky metal wall. The surface is barren and imposing."
+	hull = 1
+
+// UNSC
+
 /turf/closed/wall/unsc
 	name = "interior ship wall"
 	desc = "A bog-standard wall. It's not titanium-A, but it's pretty strong."
