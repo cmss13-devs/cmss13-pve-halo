@@ -1375,6 +1375,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	desc = "A thick and chunky metal wall. The surface is barren and imposing."
 	hull = 1
 
+// UNSC
 
 /turf/closed/wall/unsc
 	name = "interior ship wall"

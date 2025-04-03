@@ -1,7 +1,6 @@
 
 #define SGT_VARIANT "Sergeant"
 #define CPL_VARIANT "Corporal"
-#define CPL_VARIANT "Corporal"
 
 /datum/job/marine/tl
 	title = JOB_SQUAD_TEAM_LEADER

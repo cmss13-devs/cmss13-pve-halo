@@ -28,6 +28,10 @@ endmap
 map firefly
 endmap
 
+
+map firefly
+endmap
+
 map rover
 	disabled
 endmap

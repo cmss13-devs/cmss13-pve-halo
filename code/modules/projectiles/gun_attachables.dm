@@ -282,7 +282,7 @@ Defined in conflicts.dm of the #defines folder.
 	icon = 'icons/obj/items/weapons/guns/attachments/barrel.dmi'
 	icon_state = "bayonet"
 	item_state = "combat_knife"
-	desc = "UNSC standard issue combat knife. Can be put into boot holster or affixed to the bayonet lug of a rifle. Can also be used to extract shrapnel..."
+	desc = "An outdated rifle bayonet issued by the UNSC. Neatly fits into boot-mounted holsters, and can- in emergencies- be utilized to dig out shrapnel."
 	sharp = IS_SHARP_ITEM_ACCURATE
 	force = MELEE_FORCE_NORMAL
 	throwforce = MELEE_FORCE_WEAK

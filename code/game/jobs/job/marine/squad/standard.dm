@@ -1,5 +1,6 @@
 #define STANDARD_MARINE_TO_TOTAL_SPAWN_RATIO 0.4
 
+#define PVT_VARIANT "Private"
 #define PFC_VARIANT "Private First Class"
 #define CPL_VARIANT "Corporal"
 #define LCPL_VARIANT "Lance Corporal"
@@ -112,7 +113,6 @@
 	squad = SQUAD_MARINE_1
 	job = /datum/job/marine/standard/ai/rto
 
-#undef PFC_VARIANT
 #undef PVT_VARIANT
 #undef PFC_VARIANT
 #undef CPL_VARIANT

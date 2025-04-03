@@ -828,10 +828,10 @@
 			id.access += squad_two_access
 
 	for(var/obj/item/device/radio/headset/cycled_headset in H)
-		if(!("Squad Leader" in cycled_headset.tracking_options))
+		if(!("Fireteam Leader" in cycled_headset.tracking_options))
 			continue
 
-		cycled_headset.locate_setting = cycled_headset.tracking_options["Squad Leader"]
+		cycled_headset.locate_setting = cycled_headset.tracking_options["Fireteam Leader"]
 
 /datum/squad/proc/unassign_fireteam(mob/living/carbon/human/H, upd_ui = TRUE)
 	fireteams[H.assigned_fireteam].Remove(H)

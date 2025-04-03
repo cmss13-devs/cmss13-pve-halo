@@ -7,6 +7,7 @@
 
 //Game defining directives.
 #define MAIN_AI_SYSTEM "TITAN 1200" //Previously ARES v3.2
+#define MAIN_AI_SYSTEM "TITAN 1200" //Previously ARES v3.2
 
 // Maploader bounds indices
 #define MAP_MINX 1
@@ -40,6 +41,9 @@
 #define MAP_NEW_VARADERO_REPAIRED "New Varadero Repaired"
 #define MAP_CHINOOK "Chinook 91 GSO" //admin level
 #define MAP_DERELICT_ALMAYER "Derelict Almayer"
+#define MAP_LV295_BLACKSITE "LV295 Blacksite"
+#define MAP_BMG290_OTOGI_EGRESS_POINT "BMG-290 Otogi Egress Point" //mapjam
+#define MAP_CANYON_32B "Canyon 32B"
 #define MAP_LV295_BLACKSITE "LV295 Blacksite"
 #define MAP_BMG290_OTOGI_EGRESS_POINT "BMG-290 Otogi Egress Point" //mapjam
 #define MAP_CANYON_32B "Canyon 32B"
@@ -387,6 +391,8 @@
 #define WALL_DEVWALL_R "devwall_r"
 #define WALL_HUNTERSHIP "metal"//DMI specific name
 #define WALL_AICORE "aiwall"
+#define WALL_UPP_GREEN "uppwall_interior"
+#define WALL_UPP_GREY "uppwall_interior"
 #define WALL_UNSC "unsc"
 #define WALL_UPP_GREEN "uppwall_interior"
 #define WALL_UPP_GREY "uppwall_interior"

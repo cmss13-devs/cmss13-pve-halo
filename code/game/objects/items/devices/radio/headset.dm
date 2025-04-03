@@ -23,7 +23,7 @@
 	var/list/inbuilt_tracking_options = list(
 		"Platoon Commander" = TRACKER_PLTCO,
 		"Section Sergeant" = TRACKER_SL,
-		"Squad Leader" = TRACKER_FTL,
+		"Fireteam Leader" = TRACKER_FTL,
 		"Landing Zone" = TRACKER_LZ
 	)
 	var/list/tracking_options = list()

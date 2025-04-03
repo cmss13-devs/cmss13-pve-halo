@@ -552,7 +552,7 @@
 		list("Roller Bed", round(scale * 2), /obj/item/roller, VENDOR_ITEM_REGULAR),
 		list("Machete Scabbard (Full)", round(scale * 5), /obj/item/storage/large_holster/machete/full, VENDOR_ITEM_REGULAR),
 		list("Tactical Monocular", round(scale * 2), /obj/item/device/binoculars/range/monocular, VENDOR_ITEM_REGULAR),
-		list("M5 'Night Raider' bayonet", round(scale * 5), /obj/item/attachable/bayonet, VENDOR_ITEM_REGULAR),
+		list("M13 Fighting Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
 		)
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/upp

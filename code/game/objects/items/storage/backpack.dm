@@ -418,9 +418,9 @@
 
 /obj/item/storage/backpack/marine
 	name = "\improper lightweight IMP backpack"
-	desc = "The standard-issue pack of the UNSC and US Army forces. Designed to lug gear into the battlefield using the Intuitive Mounting Point system on M3 armor."
-	icon_state = "marinepack"
-	item_state = "marinepack"
+	desc = "The standard-issue pack of the USCM and US Army forces. Designed to lug gear into the battlefield using the Intuitive Mounting Point system on M3 armor."
+	icon_state = "imp"
+	item_state = "imp"
 	has_gamemode_skin = FALSE //replace this with the atom_flag NO_SNOW_TYPE at some point, just rename it to like, NO_MAP_VARIANT_SKIN
 
 /obj/item/storage/backpack/marine/standard

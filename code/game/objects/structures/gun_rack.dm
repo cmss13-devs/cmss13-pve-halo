@@ -169,7 +169,7 @@
 
 /obj/structure/gun_rack/m20a/unloaded
 	initial_stored = 5
-	populate_type = /obj/item/weapon/gun/rifle/m20a/
+	populate_type = /obj/item/weapon/gun/rifle/m20a/unloaded
 
 // halo
 
