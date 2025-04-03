@@ -1,4 +1,8 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/item/explosive/grenade/tear/marine,
+/turf/open/floor/prison,
+/area/fiorina/station/security)
 "am" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/storage/donut_box{
@@ -117,10 +121,6 @@
 "fh" = (
 /obj/structure/machinery/photocopier,
 /turf/open/floor/prison/floor_plate,
-/area/fiorina/station/security)
-"fl" = (
-/obj/item/explosive/grenade/tear/marine,
-/turf/open/floor/prison,
 /area/fiorina/station/security)
 "fs" = (
 /obj/structure/window/reinforced{
@@ -1396,7 +1396,7 @@ vq
 qQ
 sq
 sq
-fl
+aa
 FH
 PA
 sq

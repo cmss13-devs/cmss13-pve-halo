@@ -83,6 +83,14 @@
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aal" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/storage/box/nade_box/smoke/red{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/supply)
+"aam" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	dir = 2;
 	name = "\improper Hangar Lockdown Blast Door"
@@ -15451,14 +15459,6 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
-"cMX" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/item/storage/box/nade_box/smoke/red{
-	pixel_x = 4;
-	pixel_y = 7
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/supply)
 "cQH" = (
 /obj/structure/machinery/door/poddoor/almayer{
 	name = "\improper Lower Storage Bay Five Blast Door";
@@ -32955,7 +32955,7 @@ aLe
 ati
 roZ
 odS
-cMX
+aal
 rdX
 btA
 rTJ
@@ -34891,7 +34891,7 @@ aEG
 aEG
 aEG
 atb
-aal
+aam
 aBg
 alK
 aUD
