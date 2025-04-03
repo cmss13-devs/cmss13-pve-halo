@@ -1,6 +1,5 @@
 #define STANDARD_MARINE_TO_TOTAL_SPAWN_RATIO 0.4
 
-#define PVT_VARIANT "Private"
 #define PFC_VARIANT "Private First Class"
 #define CPL_VARIANT "Corporal"
 #define LCPL_VARIANT "Lance Corporal"
@@ -22,10 +21,10 @@
 	spawn_positions = max((floor(count * STANDARD_MARINE_TO_TOTAL_SPAWN_RATIO)), 8)
 
 /datum/job/marine/standard/handle_job_options(option)
-	if(option != PFC_VARIANT)
-		gear_preset = gear_preset_secondary
-	else
+	if(option != PVT_VARIANT)
 		gear_preset = initial(gear_preset)
+	else
+		gear_preset = gear_preset_secondary
 
 /datum/job/marine/standard/whiskey
 	title = JOB_WO_SQUAD_MARINE
@@ -92,6 +91,17 @@
 	squad = SQUAD_UPP
 	job = /datum/job/marine/standard/ai/upp
 
+
+/datum/job/marine/standard/ai/pmc
+	title = JOB_PMCPLAT_STANDARD
+	gear_preset = /datum/equipment_preset/uscm/pmc
+	gear_preset_secondary = /datum/equipment_preset/uscm/pmc
+
+/obj/effect/landmark/start/marine/pmc
+	name = JOB_PMCPLAT_STANDARD
+	squad = SQUAD_PMCPLT
+	job = /datum/job/marine/standard/ai/pmc
+
 /obj/effect/landmark/start/marine/forecon
 	name = JOB_SQUAD_MARINE_FORECON
 	squad = SQUAD_LRRP
@@ -102,6 +112,7 @@
 	squad = SQUAD_MARINE_1
 	job = /datum/job/marine/standard/ai/rto
 
+#undef PFC_VARIANT
 #undef PVT_VARIANT
 #undef PFC_VARIANT
 #undef CPL_VARIANT

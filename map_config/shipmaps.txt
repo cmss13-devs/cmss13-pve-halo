@@ -24,6 +24,10 @@ map chapaev
 	disabled
 endmap
 
+
+map firefly
+endmap
+
 map rover
 	disabled
 endmap

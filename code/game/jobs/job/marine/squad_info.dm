@@ -178,7 +178,7 @@
 					rank = "RTO"
 				else
 					rank = ""
-			squad_info_data["fireteams"][team]["sqsgt"] += list("rank" = rank)
+			squad_info_data["fireteams"][team]["sqldr"] += list("rank" = rank)
 		else
 			squad_info_data["fireteams"][team]["sqsgt"] += list("paygrade" = "N/A")
 			squad_info_data["fireteams"][team]["sqsgt"] += list("rank" = "")
