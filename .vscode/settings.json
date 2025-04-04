@@ -42,5 +42,9 @@
 	},
 	"workbench.editorAssociations": {
 		"*.dmi": "dmiEditor.dmiEditor"
-	}
+	},
+    "dreammaker.byondPath": [
+		// "C:\\Users\\Bluecloud\\Documents\\byondzip\\byond_514.1589"
+		"C:\\Users\\Bluecloud\\Documents\\byondzip\\515.1647_byond"
+	]
 }

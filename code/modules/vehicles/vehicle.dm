@@ -261,7 +261,7 @@
 
 /obj/vehicle/afterbuckle(mob/M)
 	. = ..()
-	if(seats[VEHICLE_DRIVER] == null)
+	if(length(seats) == 1 && seats[VEHICLE_DRIVER] == null)
 		seats[VEHICLE_DRIVER] = M
 
 /obj/vehicle/unbuckle()
