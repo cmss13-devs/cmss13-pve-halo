@@ -266,7 +266,8 @@
 
 /obj/vehicle/unbuckle()
 	. = ..()
-	seats[VEHICLE_DRIVER] = null
+	if(length(seats) == 1)
+		seats[VEHICLE_DRIVER] = null
 
 //-------------------------------------------------------
 // Stat update procs

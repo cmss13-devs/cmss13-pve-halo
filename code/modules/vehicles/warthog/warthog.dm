@@ -159,15 +159,14 @@
 
 	if(density)
 		density = FALSE
-		if(!step(M, get_dir(M, src)) && loc != M.loc)
+		if(!step(M, get_dir(M, locs[locs_positions[target_seat]["[dir]"]])) && !is_valid_seat_locs_turf(M, target_seat))
 			density = TRUE
-			// uhh fuck it we continue??? if this lets you go through walls bring this back. Currently mobs buckled to this also block you from getting in
-			// return
+			return
 		density = TRUE
 	else
-		if(M.loc != src.loc)
-			step_towards(M, src) //buckle if you're right next to it
-			if(M.loc != src.loc)
+		if(!is_valid_seat_locs_turf(M, target_seat))
+			step_towards(M, locs[locs_positions[target_seat]["[dir]"]]) //buckle if you're right next to it
+			if(!is_valid_seat_locs_turf(M, target_seat))
 				return
 			. = buckle_mob(M)
 
@@ -175,7 +174,7 @@
 		if (HAS_TRAIT(M, TRAIT_OPPOSABLE_THUMBS))
 			do_buckle(M, user, target_seat)
 			return
-	if ((M.mob_size > MOB_SIZE_HUMAN))
+	if (M.mob_size > MOB_SIZE_HUMAN)
 		to_chat(user, SPAN_WARNING("[M] is too big to buckle in."))
 		return
 	do_buckle(M, user, target_seat)
@@ -189,9 +188,9 @@
 	target.forceMove(loc)
 	target.setDir(dir)
 	buckled_mob = null
+	set_seated_mob(seat, target)
 	add_fingerprint(user)
 	afterbuckle(target)
-	set_seated_mob(seat, target)
 	switch(seat)
 		if(VEHICLE_DRIVER)
 			vehicle_faction = target.faction
@@ -204,7 +203,6 @@
 /obj/vehicle/multitile/warthog/afterbuckle(mob/M)
 	. = ..()
 	update_mob_offsets()
-	update_icon()
 
 /obj/vehicle/multitile/warthog/update_icon()
 	. = ..()
@@ -241,14 +239,13 @@
 	var/mob/the_mob = buckled_mob
 	. = ..()
 	if(unbuckle_seat == VEHICLE_DRIVER)
-		qdel(the_steering_wheel)
+		QDEL_NULL(the_steering_wheel)
 		vehicle_faction = ""
 	the_mob.pixel_w = 0
 	the_mob.pixel_z = 0
 	the_mob.layer = MOB_LAYER
-	seats[unbuckle_seat] = null
-	active_hp[unbuckle_seat] = null
 	set_seated_mob(unbuckle_seat, null)
+	active_hp[unbuckle_seat] = null
 	INVOKE_ASYNC(src, PROC_REF(exit_animation), the_mob, unbuckle_seat)
 
 /obj/vehicle/multitile/warthog/proc/exit_animation(mob/living/the_mob, unbuckle_seat)
@@ -325,9 +322,11 @@
 
 /obj/vehicle/multitile/warthog/relaymove(mob/user, direction)
 	if(user == seats[VEHICLE_GUNNER])
-		user.setDir(direction)
 		for(var/obj/item/hardpoint/special/vulcan/vulcan in hardpoints)
-			vulcan.setDir(direction)
+			if(!vulcan.target)
+				user.setDir(direction)
+				vulcan.setDir(direction)
+				return
 		return
 
 	if(user != seats[VEHICLE_DRIVER])
@@ -349,7 +348,10 @@
 			move_delay = VEHICLE_SPEED_FAST
 			if(prob(5) && user.get_active_hand())
 				direction = pick(turn(direction, 90), turn(direction, -90))
-				user.visible_message(SPAN_WARNING("[user]'s hand slips causing the warthog to swerve!"), SPAN_WARNING("Your off-hand grip on [wheel] slips, causing the warthog to swerve!"))
+				user.visible_message(
+					SPAN_WARNING("[user]'s hand slips causing the warthog to swerve!"),
+					SPAN_WARNING("Your off-hand grip on [wheel] slips, causing the warthog to swerve!")
+				)
 		return ..()
 	the_steering_wheel = new /obj/item/steering_wheel(loc)
 	RegisterSignal(the_steering_wheel, COMSIG_PARENT_QDELETING, PROC_REF(null_steering_wheel))
@@ -363,20 +365,12 @@
 
 /obj/vehicle/multitile/warthog/proc/get_target_seat(mob/M, ignore_full_seats = TRUE)
 	var/bucklee_dir = get_dir(M, src)
-	var/turf/mob_turf = get_turf(M)
-	if(mob_turf in locs)
+	if(get_turf(M) in locs)
 		for(var/seat in locs_positions)
 			if(seats[seat] && ignore_full_seats)
 				continue
-			var/list/position = locs_positions[seat]["[dir]"]
-
-			if(islist(position))
-				for(var/turf_key in position)
-					if(mob_turf == locs[turf_key])
-						return seat
-			else
-				if(mob_turf == locs[position])
-					return seat
+			if(is_valid_seat_locs_turf(M, seat))
+				return seat
 		return
 	if(bucklee_dir & turn(dir, 180))
 		return null
@@ -386,6 +380,18 @@
 		return VEHICLE_DRIVER
 	else if(bucklee_dir & turn(dir, 90))
 		return VEHICLE_SUPPORT_GUNNER_ONE
+
+/obj/vehicle/multitile/warthog/proc/is_valid_seat_locs_turf(mob/M, target_seat)
+	var/list/position = locs_positions[target_seat]["[dir]"]
+	var/turf/mob_turf = get_turf(M)
+	if(islist(position))
+		for(var/turf_key in position)
+			if(mob_turf == locs[turf_key])
+				return TRUE
+	else
+		if(mob_turf == locs[position])
+			return TRUE
+	return FALSE
 
 /obj/vehicle/multitile/warthog/BlockedPassDirs(atom/movable/mover, target_dir)
 	if(isliving(mover))
@@ -512,7 +518,7 @@
 
 /obj/item/steering_wheel
 	name = "steering wheel"
-	desc = "Use it to drive, dumbass."
+	desc = "Use it to drive. Supposedly using both hands makes you go faster."
 	icon = 'icons/obj/vehicles/hardpoints/warthog.dmi'
 	icon_state = "steering_wheel"
 	w_class = SIZE_LARGE

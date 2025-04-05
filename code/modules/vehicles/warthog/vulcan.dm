@@ -117,6 +117,7 @@
 	if(reloading)
 		to_chat(user, SPAN_NOTICE("\The [name] is reloading. Wait [SPAN_HELPFUL("[((reload_time_started + reload_time - world.time) / 10)]")] seconds."))
 		setDir(get_cardinal_dir(get_origin_turf(), target))
+		click_empty()
 		return NONE
 
 	if(ammo && ammo.current_rounds <= 0)
@@ -125,13 +126,17 @@
 		else
 			start_auto_reload(user)
 		setDir(get_cardinal_dir(get_origin_turf(), target))
+		click_empty()
 		return NONE
 
 	return handle_fire(target, user, params)
 
 /obj/item/hardpoint/special/vulcan/handle_fire(atom/target, mob/living/user, params)
-	setDir(get_cardinal_dir(get_origin_turf(), target))
-	. = ..()
+	var/turf/origin_turf = get_origin_turf()
+	var/dx = (32 * (target.x - origin_turf.x)) - px_offsets["[loc.dir]"][1]
+	var/dy = (32 * (target.y - origin_turf.y)) - px_offsets["[loc.dir]"][2]
+	setDir(angle2cardinaldir(delta_to_angle(dx, dy)))
+	return ..()
 
 /obj/item/hardpoint/special/vulcan/get_icon_image(x_offset, y_offset, new_dir)
 	var/is_broken = health <= 0
