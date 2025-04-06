@@ -19,6 +19,9 @@
 	var/blood_overlay_type = "" //which type of blood overlay to use on the mob when bloodied
 	var/list/clothing_traits // Trait modification, lazylist of traits to add/take away, on equipment/drop in the correct slot
 	var/clothing_traits_active = TRUE //are the clothing traits that are applied to the item active (acting on the mob) or not?
+	var/list/allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA)
+
+/obj/item/clothing/
 
 /obj/item/clothing/get_examine_line(mob/user)
 	. = ..()
@@ -86,6 +89,18 @@
 	if(armor_count == 0)
 		return 0
 	return armor_total/armor_count
+
+/obj/item/clothing/mob_can_equip(mob/M, slot, disable_warning = 0)
+	if (!..())
+		return FALSE
+	if(ishuman(M))
+		var/mob/living/carbon/human/H = M
+		if(!(H.species.name in allowed_species_list))
+			to_chat(usr, "You cannot equip \the [src] as a [H.species].")
+			return FALSE
+		else
+			return TRUE
+	return TRUE
 
 //Updates the icons of the mob wearing the clothing item, if any.
 /obj/item/clothing/proc/update_clothing_icon()

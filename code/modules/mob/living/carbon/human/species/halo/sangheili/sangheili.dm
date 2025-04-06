@@ -1,0 +1,94 @@
+/datum/species/sangheili
+	group = SPECIES_SANGHEILI
+	name = "Sangheili"
+	name_plural = "Sangheili"
+	mob_flags = KNOWS_TECHNOLOGY
+	uses_skin_color = FALSE
+	special_body_types = FALSE
+	flags = HAS_HARDCRIT|HAS_SKIN_COLOR|SPECIAL_BONEBREAK|NO_SHRAPNEL
+	mob_inherent_traits = list(
+		TRAIT_COV_TECH,
+		TRAIT_SUPER_STRONG,
+		TRAIT_FOREIGN_BIO,
+		TRAIT_DEXTROUS,
+		TRAIT_EMOTE_CD_EXEMPT,
+		TRAIT_IRON_TEETH,
+	)
+	unarmed_type = /datum/unarmed_attack/punch/sangheili
+	pain_type = /datum/pain/sangheili
+	blood_color = BLOOD_COLOR_SANGHEILI
+	flesh_color = "#4d4b46"
+
+	total_health = 250
+	burn_mod = 0.9
+	brute_mod = 0.9
+	slowdown = -0.2
+
+	dodge_pool = 20
+	dodge_pool_max = 20
+	dodge_pool_regen = 2
+
+	heat_level_1 = 500
+	heat_level_2 = 700
+	heat_level_3 = 1000
+
+	knock_down_reduction = 1.5
+	stun_reduction = 1.5
+	knock_out_reduction = 1.5
+
+	icobase = 'icons/halo/mob/humans/species/sangheili/r_sangheili.dmi'
+	deform = 'icons/halo/mob/humans/species/sangheili/r_sangheili.dmi'
+	eye_icon = 'icons/halo/mob/humans/species/sangheili/eyes.dmi'
+
+/datum/species/sangheili/post_species_loss(mob/living/carbon/human/H)
+	..()
+	var/datum/mob_hud/medical/advanced/A = GLOB.huds[MOB_HUD_MEDICAL_ADVANCED]
+	A.add_to_hud(H)
+	H.blood_type = pick("A+","A-","B+","B-","O-","O+","AB+","AB-")
+	H.h_style = "Bald"
+	GLOB.yautja_mob_list -= H
+	for(var/obj/limb/limb in H.limbs)
+		switch(limb.name)
+			if("groin","chest")
+				limb.min_broken_damage = 40
+				limb.max_damage = 200
+			if("head")
+				limb.min_broken_damage = 40
+				limb.max_damage = 60
+			if("l_hand","r_hand","r_foot","l_foot")
+				limb.min_broken_damage = 25
+				limb.max_damage = 30
+			if("r_leg","r_arm","l_leg","l_arm")
+				limb.min_broken_damage = 30
+				limb.max_damage = 35
+		limb.time_to_knit = -1
+
+/datum/species/sangheili/handle_post_spawn(mob/living/carbon/human/sangheili)
+	GLOB.alive_human_list -= sangheili
+
+	sangheili.blood_type = "S*"
+	sangheili.h_style = "Bald"
+	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
+	GLOB.sangheili_mob_list += sangheili
+	#endif
+	for(var/obj/limb/limb in sangheili.limbs)
+		switch(limb.name)
+			if("groin","chest")
+				limb.min_broken_damage = 120
+				limb.max_damage = 150
+				limb.time_to_knit = 1200 // 2 minutes to self heal bone break, time is in tenths of a second to auto heal this
+			if("head")
+				limb.min_broken_damage = 120
+				limb.max_damage = 150
+				limb.time_to_knit = 600 // 1 minute to self heal bone break, time is in tenths of a second
+			if("l_hand","r_hand","r_foot","l_foot")
+				limb.min_broken_damage = 120
+				limb.max_damage = 150
+				limb.time_to_knit = 600 // 1 minute to self heal bone break, time is in tenths of a second
+			if("r_leg","r_arm","l_leg","l_arm")
+				limb.min_broken_damage = 120
+				limb.max_damage = 150
+				limb.time_to_knit = 600 // 1 minute to self heal bone break, time is in tenths of a second
+
+	sangheili.set_languages(list(LANGUAGE_SANGHEILI))
+	return ..()

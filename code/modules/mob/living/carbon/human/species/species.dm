@@ -14,6 +14,7 @@
 	var/icobase_source // if we want to use sourcing system
 	var/deform_source
 	var/eyes = "eyes_s"   // Icon for eyes.
+	var/eye_icon = 'icons/mob/humans/onmob/human_face.dmi'
 	var/uses_skin_color = FALSE  //Set to TRUE to load proper skin_colors and what have you
 	var/special_body_types = FALSE
 
@@ -61,6 +62,15 @@
 
 	var/body_temperature = 310.15 //non-IS_SYNTHETIC species will try to stabilize at this temperature. (also affects temperature processing)
 	var/reagent_tag  //Used for metabolizing reagents.
+
+	/// The current dodge pool
+	var/dodge_pool
+	/// The maximum dodge pool
+	var/dodge_pool_max
+	/// The regeneration rate of a dodge pool
+	var/dodge_pool_regen
+	/// Whether or not the dodge pool is regenerating or not
+	var/dodge_pool_regen_enabled = FALSE
 
 	var/darksight = 2
 	var/default_lighting_alpha = LIGHTING_PLANE_ALPHA_VISIBLE
@@ -505,3 +515,16 @@
 
 /datum/species/proc/handle_paygrades(paygrade, size, gender)
 	return get_paygrades(paygrade, size, gender)
+
+/datum/species/proc/initialize_dodgepool()
+	if(dodge_pool_regen_enabled)
+		START_PROCESSING(SSobj, src)
+		to_chat(world,"Started dodge pool!")
+
+/datum/species/process()
+	if(dodge_pool_regen||dodge_pool_regen_enabled)
+		dodge_pool = min(dodge_pool + dodge_pool_regen, dodge_pool_max)
+		to_chat(world,"Regenerated dodge pool!")
+	else
+		STOP_PROCESSING(SSobj, src)
+		to_chat(world,"Stopped dodge pool!")

@@ -533,6 +533,11 @@
 			if(firer)
 				SEND_SIGNAL(firer, COMSIG_BULLET_DIRECT_HIT, L)
 
+		if (istype(L, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = L
+			if(H.species.dodge_pool)
+				H.species.dodge_pool -= 1
+
 		// At present, Xenos have no inherent effects or localized damage stemming from limb targeting
 		// Therefore we exempt the shooter from direct hit accuracy penalties as well,
 		// simply to avoid them from resetting target to chest every time they want to shoot a xeno
@@ -868,6 +873,8 @@
 			return FALSE
 		if(mobility_aura)
 			. -= mobility_aura * 5
+		if(species.dodge_pool)
+			. -= species.dodge_pool * 10
 		var/mob/living/carbon/human/shooter_human = P.firer
 		if(istype(shooter_human))
 			if(shooter_human.faction == faction && !(ammo_flags & AMMO_ALWAYS_FF))
