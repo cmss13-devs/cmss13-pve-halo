@@ -21,7 +21,6 @@
 	var/clothing_traits_active = TRUE //are the clothing traits that are applied to the item active (acting on the mob) or not?
 	var/list/allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA)
 
-/obj/item/clothing/
 
 /obj/item/clothing/get_examine_line(mob/user)
 	. = ..()
