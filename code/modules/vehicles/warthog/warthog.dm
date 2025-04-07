@@ -66,7 +66,7 @@
 	seats = list(
 		VEHICLE_DRIVER = null,
 		VEHICLE_SUPPORT_GUNNER_ONE = null,
-		VEHICLE_GUNNER = null
+		VEHICLE_GUNNER = null,
 	)
 	silent_hardpoint_warning = TRUE
 
@@ -490,6 +490,14 @@
 /obj/effect/vehicle_spawner/warthog/load_hardpoints(obj/vehicle/multitile/warthog/V)
 	// V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels)
 
+/obj/effect/vehicle_spawner/warthog/marines/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
+	. = ..()
+	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan)
+
+/**
+ * For easier debugging, a preset that has marines in it
+ */
+
 /obj/effect/vehicle_spawner/warthog/marines/spawn_vehicle()
 	var/obj/vehicle/multitile/warthog/hog = ..()
 	var/mob/living/carbon/human/next_passenger = new /mob/living/carbon/human(loc)
@@ -509,10 +517,6 @@
 
 // //PRESET: wheels installed
 /obj/effect/vehicle_spawner/warthog/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
-	. = ..()
-	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan)
-
-/obj/effect/vehicle_spawner/warthog/marines/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
 	. = ..()
 	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan)
 
