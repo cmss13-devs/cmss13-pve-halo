@@ -98,8 +98,6 @@
 		if(!(H.species.name in allowed_species_list))
 			to_chat(usr, "You cannot equip \the [src] as a [H.species].")
 			return FALSE
-		else
-			return TRUE
 	return TRUE
 
 //Updates the icons of the mob wearing the clothing item, if any.
