@@ -64,13 +64,19 @@
 	var/reagent_tag  //Used for metabolizing reagents.
 
 	/// The current dodge pool
-	var/dodge_pool
+	var/dodge_pool = 5
 	/// The maximum dodge pool
-	var/dodge_pool_max
+	var/dodge_pool_max = 5
 	/// The regeneration rate of a dodge pool
-	var/dodge_pool_regen
+	var/dodge_pool_regen = 0.2
+	/// Maximum regeneration rate of a dodge pool
+	var/dodge_pool_regen_max = 0.2
+	/// Rate at which the dodge pool regen restores itself after the mob is fired at
+	var/dodge_pool_regen_restoration = 0.1
 	/// Whether or not the dodge pool is regenerating or not
-	var/dodge_pool_regen_enabled = FALSE
+	var/dodge_pool_regen_enabled = TRUE
+	/// Base time until regeneration restarts after being fired at
+	var/dp_regen_base_reactivation_time = 30
 
 	var/darksight = 2
 	var/default_lighting_alpha = LIGHTING_PLANE_ALPHA_VISIBLE
@@ -515,16 +521,3 @@
 
 /datum/species/proc/handle_paygrades(paygrade, size, gender)
 	return get_paygrades(paygrade, size, gender)
-
-/datum/species/proc/initialize_dodgepool()
-	if(dodge_pool_regen_enabled)
-		START_PROCESSING(SSobj, src)
-		to_chat(world,"Started dodge pool!")
-
-/datum/species/process()
-	if(dodge_pool_regen||dodge_pool_regen_enabled)
-		dodge_pool = min(dodge_pool + dodge_pool_regen, dodge_pool_max)
-		to_chat(world,"Regenerated dodge pool!")
-	else
-		STOP_PROCESSING(SSobj, src)
-		to_chat(world,"Stopped dodge pool!")

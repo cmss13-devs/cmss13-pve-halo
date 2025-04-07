@@ -19,14 +19,18 @@
 	blood_color = BLOOD_COLOR_SANGHEILI
 	flesh_color = "#4d4b46"
 
-	total_health = 250
+	total_health = 3
 	burn_mod = 0.9
 	brute_mod = 0.9
 	slowdown = -0.2
 
 	dodge_pool = 20
 	dodge_pool_max = 20
-	dodge_pool_regen = 2
+	dodge_pool_regen = 1
+	dodge_pool_regen_max = 1
+	dodge_pool_regen_restoration = 0.1
+	dodge_pool_regen_enabled = TRUE
+	dp_regen_base_reactivation_time = 20
 
 	heat_level_1 = 500
 	heat_level_2 = 700

@@ -80,6 +80,22 @@
 	var/list/brute_mod_override
 	var/list/burn_mod_override
 
+	// dodge pool stuff
+	/// The current dodge pool
+	var/dodge_pool
+	/// The maximum dodge pool
+	var/dodge_pool_max
+	/// The regeneration rate of a dodge pool
+	var/dodge_pool_regen
+	/// Maximum regeneration rate of a dodge pool
+	var/dodge_pool_regen_max
+	/// Rate at which the dodge pool regen restores itself after the mob is fired at
+	var/dodge_pool_regen_restoration
+	/// Whether or not the dodge pool is regenerating or not
+	var/dodge_pool_regen_enabled
+	/// Time until dodge pool regen is re-enabled
+	var/time_to_dodge_pool_regen
+
 	//Life variables
 	var/oxygen_alert = 0
 	var/fire_alert = 0

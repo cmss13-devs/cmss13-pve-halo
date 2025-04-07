@@ -1073,7 +1073,6 @@
 	species.initialize_pain(src)
 	species.initialize_stamina(src)
 	species.handle_post_spawn(src)
-	species.initialize_dodgepool(src)
 
 	INVOKE_ASYNC(src, PROC_REF(regenerate_icons))
 	INVOKE_ASYNC(src, PROC_REF(restore_blood))

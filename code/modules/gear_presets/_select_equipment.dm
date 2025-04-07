@@ -294,6 +294,15 @@
 /datum/equipment_preset/proc/load_languages(mob/living/carbon/human/new_human, client/mob_client)
 	new_human.set_languages(languages)
 
+/datum/equipment_preset/proc/load_dodgeroll(mob/living/carbon/human/new_human)
+	new_human.dodge_pool = new_human.species.dodge_pool
+	new_human.dodge_pool_max = new_human.species.dodge_pool_max
+	new_human.dodge_pool_regen = new_human.species.dodge_pool_regen
+	new_human.dodge_pool_regen_max = new_human.species.dodge_pool_regen_max
+	new_human.dodge_pool_regen_restoration = new_human.species.dodge_pool_regen_restoration
+	new_human.dodge_pool_regen_enabled = new_human.species.dodge_pool_regen_enabled
+
+
 /datum/equipment_preset/proc/load_preset(mob/living/carbon/human/new_human, randomise = FALSE, count_participant = FALSE, client/mob_client, show_job_gear = TRUE, late_join)
 	if(!new_human.hud_used)
 		new_human.create_hud()
@@ -310,6 +319,7 @@
 	load_languages(new_human, mob_client)
 	load_age(new_human, mob_client)
 	load_id(new_human, mob_client)
+	load_dodgeroll(new_human)
 	if(show_job_gear)
 		load_gear(new_human, mob_client)
 	load_status(new_human, mob_client)

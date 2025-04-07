@@ -535,8 +535,11 @@
 
 		if (istype(L, /mob/living/carbon/human))
 			var/mob/living/carbon/human/H = L
-			if(H.species.dodge_pool)
-				H.species.dodge_pool -= 1
+			if(H.dodge_pool)
+				H.dodge_pool = max(H.dodge_pool - 0.5, 0)
+			if(H.dodge_pool_regen)
+				H.dodge_pool_regen = max(H.dodge_pool_regen - 1, 0)
+			H.time_to_dodge_pool_regen = H.species.dp_regen_base_reactivation_time
 
 		// At present, Xenos have no inherent effects or localized damage stemming from limb targeting
 		// Therefore we exempt the shooter from direct hit accuracy penalties as well,
@@ -873,8 +876,8 @@
 			return FALSE
 		if(mobility_aura)
 			. -= mobility_aura * 5
-		if(species.dodge_pool)
-			. -= species.dodge_pool * 10
+		if(dodge_pool)
+			. -= dodge_pool * 6
 		var/mob/living/carbon/human/shooter_human = P.firer
 		if(istype(shooter_human))
 			if(shooter_human.faction == faction && !(ammo_flags & AMMO_ALWAYS_FF))

@@ -16,6 +16,7 @@
 	var/clone_l = getCloneLoss()
 
 	health = ((species != null)? species.total_health : 200) - oxy_l - tox_l - clone_l - total_burn - total_brute
+	maxHealth = species.total_health
 
 	recalculate_move_delay = TRUE
 
