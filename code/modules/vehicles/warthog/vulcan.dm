@@ -24,7 +24,7 @@
 	scatter = 3
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(
-		GUN_FIREMODE_AUTOMATIC
+		GUN_FIREMODE_AUTOMATIC,
 	)
 	fire_delay = 0.2 SECONDS
 
