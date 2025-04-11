@@ -78,7 +78,6 @@ map lv295_blacksite
 endmap
 map bmg290_otogi_egress_point
 endmap
-map cop_sierra
-endmap
+
 map canyon_32b
 endmap
