@@ -81,14 +81,6 @@
 /obj/item/clothing/glasses/sunglasses/aviator,
 /turf/open/floor/almayer,
 /area/space)
-"ba" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/barricade/sandbags/wired{
-	dir = 4;
-	icon_state = "sandbag_0"
-	},
-/turf/open/auto_turf/sand/layer1,
-/area/space)
 "bc" = (
 /turf/open/floor/almayer/pod_landing_floor,
 /area/space)
@@ -145,7 +137,7 @@
 /obj/structure/ladder{
 	icon_state = "ladder10";
 	id = "frontline_tunnel";
-	height = -1
+	height = -2
 	},
 /obj/structure/machinery/light/small{
 	light_color = "#C02526";
@@ -211,7 +203,7 @@
 /obj/structure/ladder{
 	icon_state = "ladder10";
 	id = "backline_tunnel";
-	height = -1
+	height = -2
 	},
 /obj/structure/machinery/light/small{
 	light_color = "#C02526";
@@ -391,7 +383,7 @@
 "dR" = (
 /obj/structure/ladder{
 	id = "backline_tunnel";
-	height = 1
+	height = -1
 	},
 /obj/structure/machinery/light/small{
 	light_color = "#C02526";
@@ -3450,10 +3442,6 @@
 	},
 /turf/open/asphalt,
 /area/space)
-"HM" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/auto_turf/sand/layer1,
-/area/space)
 "HN" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 1
@@ -3856,14 +3844,6 @@
 /obj/structure/platform/kutjevo/rock,
 /obj/structure/machinery/m56d_hmg/auto,
 /turf/open/auto_turf/sand/layer0,
-/area/space)
-"LF" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/barricade/sandbags/wired{
-	dir = 1;
-	icon_state = "sandbag_0"
-	},
-/turf/open/auto_turf/sand/layer1,
 /area/space)
 "LJ" = (
 /turf/open/floor/almayer/sterile_green_side/southwest,
@@ -4698,9 +4678,6 @@
 /obj/structure/flora/bush/desert,
 /turf/open/auto_turf/sand/layer1,
 /area/space)
-"UU" = (
-/turf/open/space/basic,
-/area/space)
 "UX" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/door_control/brbutton/alt{
@@ -4960,7 +4937,7 @@
 "Xb" = (
 /obj/structure/ladder{
 	id = "frontline_tunnel";
-	height = 1
+	height = -1
 	},
 /obj/structure/machinery/door_control/brbutton{
 	pixel_y = 27;
@@ -183748,11 +183725,11 @@ DH
 XL
 XL
 XL
-ba
-ba
-ba
+re
+re
+re
 XL
-ba
+re
 mE
 VN
 DH
@@ -184254,8 +184231,8 @@ jL
 qY
 jL
 fG
-HM
-LF
+ER
+CC
 SA
 DH
 DH
@@ -185259,7 +185236,7 @@ jL
 jL
 jL
 jL
-LF
+CC
 SA
 DH
 DH
@@ -185761,7 +185738,7 @@ dC
 jL
 jL
 KS
-LF
+CC
 SA
 DH
 DH
@@ -186263,7 +186240,7 @@ XL
 Fe
 jL
 jL
-LF
+CC
 SA
 DH
 DH
@@ -186720,7 +186697,7 @@ xv
 xv
 xv
 xv
-UU
+xv
 xv
 xv
 xv
