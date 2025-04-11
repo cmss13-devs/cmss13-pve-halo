@@ -2183,6 +2183,10 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/space)
+"uQ" = (
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/almayer/plate,
+/area/space)
 "uT" = (
 /obj/structure/prop/unsc_crate/corrugated/red{
 	pixel_x = -8;
@@ -3249,6 +3253,7 @@
 	pixel_x = 1;
 	pixel_y = 8
 	},
+/obj/structure/machinery/power/apc/no_power/north,
 /turf/open/floor/almayer/sterile_green,
 /area/space)
 "FD" = (
@@ -3309,6 +3314,20 @@
 	dir = 4
 	},
 /turf/open/floor/almayer_hull/blackfull,
+/area/space)
+"Gj" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/paper,
+/obj/item/paper{
+	pixel_y = 4;
+	pixel_x = 3
+	},
+/obj/item/tool/pen{
+	pixel_x = -7;
+	pixel_y = 4
+	},
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/almayer,
 /area/space)
 "Gk" = (
 /turf/open/floor/almayer/sterile_green_side/west,
@@ -3386,6 +3405,10 @@
 	pixel_y = 0
 	},
 /turf/open/auto_turf/sand/layer1,
+/area/space)
+"GZ" = (
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/strata/white_cyan2/west,
 /area/space)
 "Hf" = (
 /obj/structure/platform{
@@ -3575,6 +3598,10 @@
 	},
 /turf/open/asphalt,
 /area/space)
+"IS" = (
+/obj/structure/largecrate/supply/explosives/mortar_he,
+/turf/open/floor/almayer,
+/area/space)
 "IU" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 8;
@@ -3660,6 +3687,13 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"Js" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/plating/plating_catwalk,
+/area/space)
 "Jt" = (
 /obj/structure/surface/table/almayer,
 /obj/item/reagent_container/food/drinks/plasticcup{
@@ -3676,6 +3710,14 @@
 "Jy" = (
 /obj/structure/cargo_container/unsc/main_2/b,
 /turf/open/auto_turf/sand/layer1,
+/area/space)
+"JB" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/almayer,
 /area/space)
 "JD" = (
 /obj/structure/flora/bush/desert{
@@ -3830,6 +3872,15 @@
 "Lj" = (
 /obj/structure/bed/chair/office/dark,
 /turf/open/floor/almayer,
+/area/space)
+"Lp" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "1-4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/space)
 "Lw" = (
 /obj/structure/machinery/colony_floodlight,
@@ -4395,6 +4446,10 @@
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
 /turf/open/auto_turf/sand/layer1,
 /area/space)
+"Su" = (
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/almayer/mono,
+/area/space)
 "Sx" = (
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/space)
@@ -4553,6 +4608,14 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"TC" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/obj/structure/machinery/power/apc/no_power/east,
+/turf/open/floor/almayer/mono,
+/area/space)
 "TD" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
@@ -4616,6 +4679,12 @@
 "Ur" = (
 /obj/structure/prop/dam/boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
+/area/space)
+"Uy" = (
+/obj/structure/machinery/colony_floodlight_switch{
+	pixel_x = 25
+	},
+/turf/open/floor/almayer/plate,
 /area/space)
 "Uz" = (
 /obj/structure/machinery/light/double/blue{
@@ -5168,6 +5237,10 @@
 /obj/structure/machinery/gear,
 /turf/open/floor/almayer_hull,
 /area/space)
+"Yr" = (
+/obj/structure/machinery/power/apc/no_power/east,
+/turf/open/floor/almayer,
+/area/space)
 "Yy" = (
 /obj/structure/machinery/door_control/brbutton{
 	id = "backline_main_tunnel";
@@ -5218,6 +5291,10 @@
 "YO" = (
 /obj/structure/machinery/iv_drip,
 /turf/open/floor/almayer/sterile_green_side/east,
+/area/space)
+"YP" = (
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/almayer,
 /area/space)
 "YS" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/four,
@@ -5302,6 +5379,10 @@
 	pixel_x = -12
 	},
 /turf/open/asphalt,
+/area/space)
+"Zq" = (
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/plating,
 /area/space)
 "Zr" = (
 /obj/effect/decal/sand_overlay/sand1/corner1{
@@ -96484,7 +96565,7 @@ Hf
 Hf
 Hf
 VN
-DH
+Lw
 DH
 DH
 DH
@@ -136935,7 +137016,7 @@ xv
 xv
 XL
 XL
-jL
+YP
 jL
 jL
 DD
@@ -138982,7 +139063,7 @@ xP
 Yf
 Qq
 ju
-jL
+IS
 XL
 XL
 xv
@@ -158050,7 +158131,7 @@ xv
 xv
 xv
 XL
-Sp
+Js
 jL
 XL
 GV
@@ -160007,7 +160088,7 @@ Ty
 Ty
 Ty
 Ty
-ZH
+Su
 Uh
 ZH
 Ty
@@ -160539,7 +160620,7 @@ Ty
 xX
 DH
 XL
-Zz
+Gj
 jL
 jL
 jL
@@ -161028,12 +161109,12 @@ Ur
 DH
 Ty
 Ty
-Sh
+uQ
 DA
 DA
 Ty
 xR
-Sh
+Uy
 da
 Pl
 Ty
@@ -163098,7 +163179,7 @@ DH
 DH
 DH
 XL
-WM
+JB
 jL
 jL
 ek
@@ -170533,7 +170614,7 @@ xv
 DH
 DH
 Ty
-uG
+GZ
 Ty
 Ty
 Ty
@@ -172114,7 +172195,7 @@ QI
 Cw
 GV
 XL
-jL
+YP
 jL
 jL
 jL
@@ -173624,7 +173705,7 @@ kC
 Rp
 gA
 Rp
-Yk
+Lp
 XL
 xv
 xv
@@ -174061,7 +174142,7 @@ Ty
 Cr
 ZH
 wS
-xM
+TC
 wS
 ZH
 wS
@@ -174087,7 +174168,7 @@ xM
 wS
 ZH
 wS
-xM
+TC
 wS
 ZH
 wS
@@ -178861,7 +178942,7 @@ oH
 oH
 oH
 QC
-DH
+Lw
 DH
 DH
 DH
@@ -182181,7 +182262,7 @@ xv
 xv
 XL
 XL
-Wk
+Zq
 jL
 jL
 XL
@@ -184111,7 +184192,7 @@ jL
 Uh
 jL
 ZH
-jL
+Yr
 ZH
 jL
 Uh
@@ -187740,7 +187821,7 @@ DH
 Bp
 jL
 jL
-jL
+Yr
 jL
 Uh
 su
