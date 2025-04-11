@@ -144,6 +144,12 @@
 	html_link = "images/5/54/USS_Almayer.png"
 	color = "cyan"
 
+/obj/item/map/cop_sierra
+	name = "\improper Sector Sierra map"
+	desc = "An outdated map of Sector Sierra of Arkols IV."
+	html_link = "images/5/54/USS_Almayer.png"
+	color = "red"
+
 /obj/item/map/canyon_32b
 	name = "\improper Blank Map"
 	desc = "A blank map, or at least you THINK there should be a map on this piece of laminated paper."
@@ -176,6 +182,7 @@ GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 		MAP_LV295_BLACKSITE = new /obj/item/map/lv522_map(),
 		MAP_BMG290_OTOGI_EGRESS_POINT = new /obj/item/map/new_varadero(),
 		MAP_CANYON_32B = new /obj/item/map/canyon_32b(),
+		MAP_SECTOR_SIERRA = new /obj/item/map/cop_sierra(),
 	)
 
 //used by marine equipment machines to spawn the correct map.

@@ -1,4 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"ac" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "ae" = (
 /obj/effect/decal/sand_overlay/sand1{
 	dir = 6
@@ -371,6 +377,17 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"dD" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_ew_full_cap";
+	dir = 4
+	},
+/obj/structure/barricade/handrail{
+	layer = 4;
+	pixel_y = -5
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "dR" = (
 /obj/structure/ladder{
 	id = "backline_tunnel";
@@ -395,6 +412,16 @@
 "dX" = (
 /obj/structure/machinery/vending/dinnerware/unsc,
 /turf/open/floor/almayer/mono,
+/area/space)
+"dY" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6
+	},
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "dZ" = (
 /obj/effect/decal/sand_overlay/sand1{
@@ -539,6 +566,16 @@
 	pixel_y = 23
 	},
 /turf/open/floor/strata/white_cyan2/west,
+/area/space)
+"ft" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 10
+	},
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "fu" = (
 /obj/structure/barricade/handrail{
@@ -1461,6 +1498,18 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"ot" = (
+/obj/structure/stairs/perspective{
+	dir = 1;
+	icon_state = "p_stair_full"
+	},
+/obj/structure/barricade/handrail{
+	dir = 8;
+	pixel_x = -7;
+	layer = 3.2
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "ou" = (
 /obj/structure/prop/unsc_crate/standard{
 	color = "#646466";
@@ -1749,6 +1798,23 @@
 "qY" = (
 /obj/structure/machinery/m56d_hmg/auto{
 	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/space)
+"qZ" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/device/binoculars,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/almayer,
+/area/space)
+"re" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
 	},
 /turf/open/floor/almayer,
 /area/space)
@@ -2194,6 +2260,16 @@
 	},
 /turf/open/asphalt,
 /area/space)
+"vq" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 6
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "vr" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/machinery/light/double/blue{
@@ -2574,6 +2650,12 @@
 	dir = 1
 	},
 /turf/open/floor/strata/white_cyan2/west,
+/area/space)
+"zu" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "zw" = (
 /obj/effect/decal/warning_stripes{
@@ -2966,6 +3048,12 @@
 "DY" = (
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/space)
+"Ea" = (
+/obj/docking_port/stationary/marine_dropship/lz1{
+	name = "LZ1: Southern Landing Zone"
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "Ed" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/clothing/head/cmcap/bridge{
@@ -3191,6 +3279,10 @@
 /obj/structure/prop/unsc_crate/big/stack,
 /turf/open/auto_turf/sand/layer1,
 /area/space)
+"FK" = (
+/obj/structure/platform_decoration,
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "FO" = (
 /turf/open/auto_turf/sand/layer0,
 /area/space)
@@ -3245,6 +3337,10 @@
 "Gp" = (
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/almayer/dark_sterile,
+/area/space)
+"Gr" = (
+/obj/item/lightstick/red/spoke/planted,
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "Gv" = (
 /obj/structure/prop/unsc_crate/stack{
@@ -3548,6 +3644,10 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"Jo" = (
+/obj/structure/platform,
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "Jq" = (
 /obj/structure/surface/table/almayer,
 /obj/item/reagent_container/food/drinks/plasticcup{
@@ -3824,6 +3924,16 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/space)
+"Mo" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/storage/fancy/cigarettes/lucky_strikes,
+/obj/item/storage/fancy/cigar/matchbook,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/almayer,
+/area/space)
 "MA" = (
 /obj/structure/barricade/sandbags/wired,
 /obj/structure/barricade/sandbags/wired{
@@ -3955,6 +4065,11 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"OL" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired,
+/turf/open/floor/almayer,
+/area/space)
 "ON" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -4069,6 +4184,18 @@
 /obj/structure/bed,
 /obj/item/bedsheet/ce,
 /turf/open/floor/almayer/sterile_green_side/north,
+/area/space)
+"PE" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
+	},
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "PJ" = (
 /obj/structure/closet/crate/unsc,
@@ -4624,6 +4751,27 @@
 	},
 /turf/open/floor/almayer,
 /area/space)
+"Vp" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_magazine/rifle/halo/br55,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/almayer,
+/area/space)
+"Vt" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "Vu" = (
 /obj/structure/machinery/power/terminal{
 	dir = 4
@@ -4681,6 +4829,16 @@
 	pixel_y = 22
 	},
 /turf/open/floor/almayer,
+/area/space)
+"VX" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 10
+	},
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "VZ" = (
 /obj/item/ammo_box/magazine/unsc/ma5c{
@@ -4747,6 +4905,18 @@
 /obj/item/explosive/mine/active,
 /turf/open/auto_turf/sand/layer1,
 /area/space)
+"WA" = (
+/obj/structure/stairs/perspective{
+	dir = 1;
+	icon_state = "p_stair_full"
+	},
+/obj/structure/barricade/handrail{
+	dir = 4;
+	pixel_x = 7;
+	layer = 3.2
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/space)
 "WD" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -4769,6 +4939,12 @@
 	light_color = "#dae2ff";
 	dir = 1
 	},
+/turf/open/floor/almayer,
+/area/space)
+"WU" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/weapon/gun/rifle/halo/br55,
+/obj/structure/barricade/sandbags/wired,
 /turf/open/floor/almayer,
 /area/space)
 "WV" = (
@@ -5023,6 +5199,15 @@
 	},
 /turf/open/auto_turf/sand/layer1,
 /area/space)
+"YG" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/device/binoculars,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/almayer,
+/area/space)
 "YH" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 12;
@@ -5034,6 +5219,19 @@
 	pixel_y = 6
 	},
 /turf/open/floor/almayer,
+/area/space)
+"YI" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_ew_full_cap";
+	dir = 8;
+	layer = 3
+	},
+/obj/structure/barricade/handrail{
+	dir = 1;
+	pixel_y = 10;
+	layer = 3.2
+	},
+/turf/open/auto_turf/sand/layer1,
 /area/space)
 "YN" = (
 /obj/structure/closet/crate/unsc,
@@ -6575,7 +6773,7 @@ xv
 xv
 xv
 xv
-DH
+xv
 DH
 GV
 GV
@@ -21159,27 +21357,27 @@ DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+Gr
 DH
 DH
 DH
@@ -23669,6 +23867,7 @@ DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
@@ -23688,8 +23887,7 @@ DH
 DH
 DH
 DH
-DH
-DH
+Gr
 DH
 DH
 DH
@@ -26179,6 +26377,7 @@ DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
@@ -26188,6 +26387,7 @@ DH
 DH
 DH
 DH
+Ea
 DH
 DH
 DH
@@ -26197,9 +26397,7 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
+Gr
 DH
 DH
 DH
@@ -28689,6 +28887,7 @@ DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
@@ -28708,8 +28907,7 @@ DH
 DH
 DH
 DH
-DH
-DH
+Gr
 DH
 DH
 DH
@@ -31199,27 +31397,27 @@ DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
+Gr
 DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+Gr
 DH
 DH
 DH
@@ -57752,7 +57950,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 DH
 GV
 GV
@@ -58254,7 +58452,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -72807,7 +73005,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -95383,7 +95581,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 DH
 GV
 GV
@@ -96303,12 +96501,12 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
+FK
+Hf
+Hf
+Hf
+Hf
+VN
 DH
 DH
 DH
@@ -96804,14 +97002,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+FK
+dY
+re
+qZ
+re
+re
+Vt
+VN
 DH
 DH
 DH
@@ -97306,14 +97504,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+OL
+Ty
+jL
+jL
+Ty
+CC
+zu
 DH
 DH
 DH
@@ -97808,14 +98006,14 @@ xv
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+OL
+jL
+jL
+jL
+jL
+Vp
+zu
 DH
 DH
 DH
@@ -98310,14 +98508,14 @@ xv
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+WU
+jL
+jL
+jL
+jL
+CC
+zu
 DH
 DH
 DH
@@ -98812,14 +99010,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+Ty
+Ty
+jL
+jL
+Ty
+Ty
+zu
 DH
 DH
 DH
@@ -99314,14 +99512,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+ac
+ft
+Ty
+jL
+jL
+Ty
+PE
+QC
 DH
 DH
 DH
@@ -99817,12 +100015,12 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
+ac
+oH
+YI
+dD
+oH
+QC
 DH
 DH
 DH
@@ -156503,7 +156701,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -157004,8 +157202,8 @@ DH
 DH
 DH
 DH
-GV
-GV
+DH
+DH
 GV
 GV
 GV
@@ -157505,8 +157703,8 @@ DH
 DH
 DH
 DH
-GV
-GV
+DH
+DH
 GV
 GV
 GV
@@ -158007,7 +158205,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -158508,8 +158706,8 @@ DH
 DH
 DH
 DH
-GV
-GV
+DH
+DH
 GV
 GV
 GV
@@ -159009,7 +159207,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -159510,7 +159708,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -160011,7 +160209,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -162517,7 +162715,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -163018,7 +163216,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -163519,7 +163717,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -164522,7 +164720,7 @@ DH
 DH
 DH
 DH
-GV
+DH
 GV
 GV
 GV
@@ -175166,12 +175364,12 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
+FK
+Hf
+Hf
+Hf
+Hf
+VN
 DH
 DH
 DH
@@ -175667,14 +175865,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+FK
+dY
+Ty
+Mo
+re
+re
+Vt
+VN
 DH
 DH
 DH
@@ -176169,14 +176367,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+vq
+Ty
+Ty
+jL
+jL
+Ty
+CC
+zu
 DH
 DH
 DH
@@ -176671,14 +176869,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+ot
+jL
+jL
+jL
+jL
+jL
+CC
+zu
 DH
 DH
 DH
@@ -177173,14 +177371,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+WA
+jL
+jL
+jL
+jL
+jL
+YG
+zu
 DH
 DH
 DH
@@ -177675,14 +177873,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+VX
+Ty
+Ty
+jL
+jL
+Ty
+CC
+zu
 DH
 DH
 DH
@@ -178177,14 +178375,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+ac
+ft
+Ty
+VF
+VF
+VF
+PE
+QC
 DH
 DH
 DH
@@ -178680,12 +178878,12 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
+ac
+oH
+oH
+oH
+oH
+QC
 DH
 DH
 DH
