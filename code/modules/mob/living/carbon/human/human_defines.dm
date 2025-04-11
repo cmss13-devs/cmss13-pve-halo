@@ -92,9 +92,9 @@
 	/// Rate at which the dodge pool regen restores itself after the mob is fired at
 	var/dodge_pool_regen_restoration
 	/// Whether or not the dodge pool is regenerating or not
-	var/dodge_pool_regen_enabled
+	var/dodge_pool_enabled
 	/// Time until dodge pool regen is re-enabled
-	var/time_to_dodge_pool_regen
+	COOLDOWN_DECLARE(cd_dodge_pool_regen)
 
 	//Life variables
 	var/oxygen_alert = 0

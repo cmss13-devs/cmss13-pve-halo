@@ -73,8 +73,6 @@
 	var/dodge_pool_regen_max = 0.2
 	/// Rate at which the dodge pool regen restores itself after the mob is fired at
 	var/dodge_pool_regen_restoration = 0.1
-	/// Whether or not the dodge pool is regenerating or not
-	var/dodge_pool_regen_enabled = TRUE
 	/// Base time until regeneration restarts after being fired at
 	var/dp_regen_base_reactivation_time = 30
 

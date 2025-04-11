@@ -10,12 +10,9 @@
 
 	feels_pain = TRUE
 
-/datum/pain/yautja/activate_horrible()
+/datum/pain/sangheili/activate_horrible()
 	pain_slowdown = PAIN_SPEED_MED
 	new /datum/effects/pain/human/distressing(source_mob)
 
-/datum/pain/yautja/handle_devour(mob/living/source)
-	return
-
-/datum/pain/yautja/oxy_kill(mob/living/source)
+/datum/pain/sangheili/oxy_kill(mob/living/source)
 	return

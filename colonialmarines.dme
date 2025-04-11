@@ -1766,6 +1766,7 @@
 #include "code\modules\cm_tech\techs\marine\tier3\cryorine.dm"
 #include "code\modules\cm_tech\techs\marine\tier4\nuke.dm"
 #include "code\modules\cm_tech\trees\marine.dm"
+#include "code\modules\covenant\species\sangheili\sangheili_actions.dm"
 #include "code\modules\customitems\item_spawning.dm"
 #include "code\modules\decorators\admin_runtime_decorator.dm"
 #include "code\modules\decorators\cassette_decorator.dm"

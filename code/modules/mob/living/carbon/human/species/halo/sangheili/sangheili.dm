@@ -29,7 +29,6 @@
 	dodge_pool_regen = 1
 	dodge_pool_regen_max = 1
 	dodge_pool_regen_restoration = 0.1
-	dodge_pool_regen_enabled = TRUE
 	dp_regen_base_reactivation_time = 20
 
 	heat_level_1 = 500
@@ -80,19 +79,22 @@
 			if("groin","chest")
 				limb.min_broken_damage = 120
 				limb.max_damage = 150
-				limb.time_to_knit = 1200 // 2 minutes to self heal bone break, time is in tenths of a second to auto heal this
+				limb.time_to_knit = 2 MINUTES // 2 minutes to self heal bone break, time is in tenths of a second to auto heal this
 			if("head")
 				limb.min_broken_damage = 120
 				limb.max_damage = 150
-				limb.time_to_knit = 600 // 1 minute to self heal bone break, time is in tenths of a second
+				limb.time_to_knit = 1 MINUTES // 1 minute to self heal bone break, time is in tenths of a second
 			if("l_hand","r_hand","r_foot","l_foot")
 				limb.min_broken_damage = 120
 				limb.max_damage = 150
-				limb.time_to_knit = 600 // 1 minute to self heal bone break, time is in tenths of a second
+				limb.time_to_knit = 1 MINUTES // 1 minute to self heal bone break, time is in tenths of a second
 			if("r_leg","r_arm","l_leg","l_arm")
 				limb.min_broken_damage = 120
 				limb.max_damage = 150
-				limb.time_to_knit = 600 // 1 minute to self heal bone break, time is in tenths of a second
+				limb.time_to_knit = 1 MINUTES // 1 minute to self heal bone break, time is in tenths of a second
+
+	give_action(sangheili, /datum/action/human_action/activable/covenant/sangheili_kick)
 
 	sangheili.set_languages(list(LANGUAGE_SANGHEILI))
 	return ..()
+
