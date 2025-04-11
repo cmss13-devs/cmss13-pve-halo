@@ -2661,6 +2661,13 @@
 	},
 /turf/open/auto_turf/sand/layer1,
 /area/space)
+"zx" = (
+/mob/living/simple_animal/mouse{
+	name = "halo 3 rat";
+	desc = "my beloved"
+	},
+/turf/open/floor/almayer,
+/area/space)
 "zD" = (
 /obj/item/tool/wirecutters,
 /turf/open/auto_turf/sand/layer1,
@@ -157634,7 +157641,7 @@ xv
 xv
 XL
 Sp
-jL
+zx
 Bp
 GV
 GV
