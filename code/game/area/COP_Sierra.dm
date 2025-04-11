@@ -38,6 +38,9 @@
 	icon_state = "syndie-ship"
 
 /area/cop_sierra/interior/quarters
+	icon_state = "gruntrnr"
+
+/area/cop_sierra/interior/tunnel
 	icon_state = "hallC2"
 
 /area/cop_sierra/interior/quarters/alpha
