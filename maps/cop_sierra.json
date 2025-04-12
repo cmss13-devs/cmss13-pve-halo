@@ -2,9 +2,9 @@
     "map_name": "Combat Outpost Sierra 9",
     "map_path": "map_files/COP_Sierra",
     "map_file": "COP_Sierra.dmm",
-    "webmap_url": "COP_Sierra",
+    "webmap_url": "NewVaradero",
 
-    "map_item_type": "/obj/item/map/cop_sierra",
+    "map_item_type": "/obj/item/map/new_varadero",
     "announce_text": "We've lost contact with the regional Combat Outpost of \"Sector Sierra\" on Arkols IV. The ###SHIPNAME### has been dispatched to investigate.",
 
     "traits": [{ "Ground": true }],
