@@ -65,6 +65,13 @@
 	},
 /turf/open/asphalt,
 /area/cop_sierra/motor_pool)
+"aw" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "ay" = (
 /obj/effect/decal/sand_overlay/sand1{
 	dir = 1
@@ -912,6 +919,13 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/cop_sierra/exterior)
+"hq" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer,
+/area/cop_sierra/interior)
 "hu" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8
@@ -1355,6 +1369,13 @@
 	},
 /turf/open/asphalt,
 /area/cop_sierra/exterior)
+"lf" = (
+/obj/item/tool/warning_cone{
+	pixel_y = 3;
+	pixel_x = -7
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "lg" = (
 /obj/effect/decal/sand_overlay/sand1{
 	dir = 4
@@ -1548,6 +1569,17 @@
 /obj/structure/bed/chair/comfy/bench/mid/west,
 /turf/open/floor/almayer,
 /area/cop_sierra/interior/messhall)
+"nh" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "nk" = (
 /obj/structure/bedsheetbin{
 	pixel_y = 16;
@@ -1606,6 +1638,13 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/cop_sierra/interior/medical)
+"nB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	layer = 3.3
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "nE" = (
 /obj/structure/machinery/vending/coffee,
 /turf/open/floor/almayer,
@@ -1647,6 +1686,13 @@
 /obj/structure/flora/grass/desert/lightgrass_12,
 /turf/open/auto_turf/sand/layer1,
 /area/cop_sierra/exterior)
+"oc" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 4;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer,
+/area/cop_sierra/interior)
 "od" = (
 /obj/structure/platform/kutjevo/rock,
 /obj/structure/platform/kutjevo/rock{
@@ -3712,6 +3758,12 @@
 	},
 /turf/open/floor/almayer,
 /area/cop_sierra/interior)
+"Ff" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/turf/open/floor/almayer,
+/area/cop_sierra/exterior)
 "Fj" = (
 /obj/structure/cargo_container/unsc/main_1,
 /turf/open/floor/almayer,
@@ -4127,6 +4179,18 @@
 	},
 /turf/open/floor/almayer,
 /area/cop_sierra/interior)
+"IJ" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
+	},
+/turf/open/auto_turf/sand/layer0,
+/area/cop_sierra/exterior)
 "IK" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8
@@ -4177,6 +4241,17 @@
 	},
 /turf/open/floor/almayer,
 /area/cop_sierra/interior/bunker)
+"IW" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_x = 1;
+	pixel_y = 1
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "IY" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 1
@@ -4921,6 +4996,14 @@
 	},
 /turf/open/floor/almayer,
 /area/cop_sierra/interior)
+"PW" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_y = 0;
+	pixel_x = -1
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "Qa" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo{
 	id = "vehicle_storage";
@@ -5299,6 +5382,13 @@
 	},
 /turf/open/asphalt,
 /area/cop_sierra/motor_pool)
+"Td" = (
+/obj/structure/stairs/perspective{
+	dir = 1;
+	icon_state = "p_stair_full"
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "Tl" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/weapon/gun/smg/halo/m7,
@@ -5471,6 +5561,16 @@
 	},
 /turf/open/floor/almayer,
 /area/cop_sierra/storage)
+"UI" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "UM" = (
 /obj/structure/prop/unsc_crate/standard/blue{
 	pixel_x = -6;
@@ -5566,6 +5666,13 @@
 	},
 /turf/open/floor/almayer,
 /area/cop_sierra/storage)
+"Vj" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/cop_sierra/exterior)
 "Vp" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_magazine/rifle/halo/br55,
@@ -5576,16 +5683,11 @@
 /turf/open/floor/almayer,
 /area/cop_sierra/interior)
 "Vt" = (
-/obj/structure/platform{
-	dir = 1
+/obj/structure/machinery/sensortower,
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/obj/structure/platform{
-	dir = 4
-	},
-/obj/structure/platform_decoration{
-	dir = 9
-	},
-/turf/open/auto_turf/sand/layer1,
+/turf/open/floor/almayer,
 /area/cop_sierra/exterior)
 "Vu" = (
 /obj/structure/machinery/power/terminal{
@@ -9596,13 +9698,13 @@ DH
 DH
 DH
 xv
-DH
 xv
-DH
-DH
-DH
-xv
-xv
+GW
+GW
+GW
+GW
+GW
+GW
 xv
 xv
 DH
@@ -10097,16 +10199,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+aw
+GW
+GW
+sG
+hq
+sG
+sG
+GW
+GW
+zu
 DH
 DH
 DH
@@ -10599,16 +10701,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Td
+Az
+sG
+sG
+sG
+sG
+sG
+dM
+GW
+zu
 DH
 DH
 DH
@@ -11101,16 +11203,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Vj
+GW
+Ev
+sG
+sG
+sG
+sG
+dM
+GW
+zu
 DH
 DH
 DH
@@ -11603,16 +11705,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+GW
+zm
+sG
+sG
+sG
+sG
+dM
+GW
+zu
 DH
 DH
 DH
@@ -12105,16 +12207,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+GW
+vf
+sG
+sG
+sG
+sG
+dM
+GW
+zu
 DH
 DH
 DH
@@ -12607,16 +12709,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+Jo
+GW
+GW
+sG
+sG
+oc
+sG
+GW
+GW
+zu
 DH
 DH
 DH
@@ -13109,16 +13211,16 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+ac
+ft
+GW
+GW
+GW
+GW
+GW
+GW
+PE
+QC
 DH
 DH
 DH
@@ -13612,14 +13714,14 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
-DH
+ac
+oH
+nh
+UI
+UI
+UI
+IW
+QC
 DH
 DH
 DH
@@ -14116,11 +14218,11 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+nB
+Eq
+Pf
+Eq
+CQ
 DH
 DH
 DH
@@ -14618,11 +14720,11 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+nB
+Pf
+Vt
+Pf
+CQ
 DH
 DH
 DH
@@ -15120,11 +15222,11 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+nB
+Pf
+Ff
+Pf
+CQ
 DH
 DH
 DH
@@ -15622,11 +15724,11 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+nB
+Eq
+Pf
+Eq
+CQ
 DH
 DH
 DH
@@ -16124,11 +16226,11 @@ DH
 DH
 DH
 DH
-DH
-DH
-DH
-DH
-DH
+PW
+AG
+AG
+AG
+nt
 DH
 DH
 DH
@@ -28065,7 +28167,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -32085,7 +32187,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -39000,7 +39102,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -44722,7 +44824,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -46167,7 +46269,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -97871,7 +97973,7 @@ re
 qZ
 re
 re
-Vt
+mE
 VN
 DH
 DH
@@ -98374,7 +98476,7 @@ sG
 sG
 GW
 CC
-zu
+SA
 DH
 DH
 DH
@@ -98876,7 +98978,7 @@ sG
 sG
 sG
 Vp
-zu
+SA
 DH
 DH
 DH
@@ -99378,7 +99480,7 @@ sG
 sG
 sG
 CC
-zu
+SA
 DH
 DH
 DH
@@ -99880,7 +99982,7 @@ sG
 sG
 GW
 GW
-zu
+SA
 DH
 DH
 DH
@@ -100381,7 +100483,7 @@ GW
 sG
 sG
 GW
-PE
+IJ
 QC
 DH
 DH
@@ -103949,7 +104051,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -130519,7 +130621,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -145621,7 +145723,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -148799,7 +148901,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 xv
 xv
@@ -163566,7 +163668,7 @@ xv
 xv
 DH
 DH
-DH
+lf
 DH
 DH
 DH
@@ -165074,7 +165176,7 @@ DH
 DH
 DH
 DH
-DH
+lf
 DH
 DH
 DH
@@ -166586,7 +166688,7 @@ DH
 DH
 DH
 DH
-DH
+GV
 GV
 GV
 GV
@@ -167087,7 +167189,7 @@ DH
 DH
 DH
 DH
-DH
+GV
 GV
 GV
 GV
@@ -167587,8 +167689,8 @@ DH
 DH
 DH
 DH
-DH
-DH
+lf
+GV
 GV
 GV
 GV
@@ -168089,7 +168191,7 @@ DH
 DH
 DH
 DH
-DH
+GV
 GV
 GV
 GV
@@ -168590,7 +168692,7 @@ DH
 DH
 DH
 DH
-DH
+GV
 GV
 GV
 GV
@@ -169091,7 +169193,6 @@ DH
 DH
 zw
 Cb
-DH
 GV
 GV
 GV
@@ -169101,7 +169202,8 @@ GV
 GV
 GV
 GV
-DH
+GV
+GV
 DH
 DH
 DH
@@ -176734,7 +176836,7 @@ GW
 Mo
 re
 re
-Vt
+mE
 VN
 DH
 DH
@@ -177125,7 +177227,7 @@ DH
 DH
 DH
 DH
-DH
+lf
 DH
 DH
 DH
@@ -177237,7 +177339,7 @@ sG
 sG
 GW
 CC
-zu
+SA
 DH
 DH
 DH
@@ -177739,7 +177841,7 @@ sG
 sG
 sG
 CC
-zu
+SA
 DH
 DH
 DH
@@ -178241,7 +178343,7 @@ sG
 sG
 sG
 YG
-zu
+SA
 DH
 DH
 DH
@@ -178743,7 +178845,7 @@ sG
 sG
 GW
 CC
-zu
+SA
 DH
 DH
 DH
@@ -179244,7 +179346,7 @@ GW
 VF
 VF
 VF
-PE
+IJ
 QC
 DH
 DH
@@ -179638,7 +179740,7 @@ DH
 DH
 DH
 DH
-DH
+lf
 DH
 DH
 DH
@@ -181403,7 +181505,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -189850,7 +189952,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -190299,7 +190401,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -203449,7 +203551,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
@@ -216947,7 +217049,7 @@ DH
 DH
 DH
 DH
-DH
+KN
 DH
 DH
 DH
