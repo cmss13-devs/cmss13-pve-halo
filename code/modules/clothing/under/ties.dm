@@ -1239,10 +1239,10 @@
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/bracers/police
-	name = "\improper Police Arm Bracers"
+	name = "\improper Police Shoulder Bracers"
 	desc = "A set arm bracers worn in conjunction to an armoured vest, commonly issued to Police forces."
-	icon_state = "police_shoulders"
-	item_state = "police_shoulders"
+	icon_state = "police_shoulder"
+	item_state = "police_shoulder"
 
 /obj/item/clothing/accessory/pads/neckguard
 	name = "\improper M52B Neck Guard"
@@ -1275,7 +1275,7 @@
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/groin/police
-	name = "\improper M52B Groin Plate"
+	name = "\improper Police Groin Plate"
 	desc = "A plate designed to attach to an armoured Vest to protect the babymakers. Most commonly attached to Police Vests."
 	icon_state = "police_groin"
 	item_state = "police_groin"
