@@ -1238,6 +1238,12 @@
 	slot = ACCESSORY_SLOT_DECORBRACER
 	flags_atom = NO_SNOW_TYPE
 
+/obj/item/clothing/accessory/pads/bracers/police
+	name = "\improper Police Arm Bracers"
+	desc = "A set arm bracers worn in conjunction to an armoured vest, commonly issued to Police forces."
+	icon_state = "police_shoulders"
+	item_state = "police_shoulders"
+
 /obj/item/clothing/accessory/pads/neckguard
 	name = "\improper M52B Neck Guard"
 	desc = "An attachable neck guard option for the M52B body armor worn by the UNSC."
@@ -1245,6 +1251,12 @@
 	item_state = "neckguard"
 	slot = ACCESSORY_SLOT_DECORNECK
 	flags_atom = NO_SNOW_TYPE
+
+/obj/item/clothing/accessory/pads/neckguard/police
+	name = "\improper Police Neck Guard"
+	desc = "An attachable neck guard option for basic ballistic vests, commonly issued to the Police."
+	icon_state = "police_neck"
+	item_state = "police_neck"
 
 /obj/item/clothing/accessory/pads/greaves
 	name = "\improper M52B Shin Guards"
@@ -1261,6 +1273,12 @@
 	item_state = "groinplate"
 	slot = ACCESSORY_SLOT_DECORGROIN
 	flags_atom = NO_SNOW_TYPE
+
+	/obj/item/clothing/accessory/pads/groin/police
+	name = "\improper M52B Groin Plate"
+	desc = "A plate designed to attach to an armoured Vest to protect the babymakers. Most commonly attached to Police Vests."
+	icon_state = "police_groin"
+	item_state = "police_groin"
 
 //===========================//UPP CUSTOM ARMOR PLATES\\================================\\
 
