@@ -1274,7 +1274,7 @@
 	slot = ACCESSORY_SLOT_DECORGROIN
 	flags_atom = NO_SNOW_TYPE
 
-	/obj/item/clothing/accessory/pads/groin/police
+obj/item/clothing/accessory/pads/groin/police
 	name = "\improper M52B Groin Plate"
 	desc = "A plate designed to attach to an armoured Vest to protect the babymakers. Most commonly attached to Police Vests."
 	icon_state = "police_groin"
