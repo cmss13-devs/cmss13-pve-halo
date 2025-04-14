@@ -891,8 +891,8 @@
 	)
 
 /obj/item/clothing/suit/marine/unsc/police
-	name = "Police body armour"
-	desc = "A standard police vest issued to most colonies under control of the UNSC. Though it may not protect as well against ballistics compared to other vests, it still holds it's own against basic small-arms and knives."
+	name = "police body armor"
+	desc = "A standard police vest issued to most colonies under control of the UNSC. Though it may not protect as well against ballistics compared to other vests, it still holds its own against basic small-arms and knives."
 	icon = 'icons/halo/obj/items/clothing/cm_suits.dmi'
 	icon_state = "police"
 	item_state = "police_armour"
