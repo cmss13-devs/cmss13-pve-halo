@@ -1116,6 +1116,10 @@
 	desc = "A special headset used by small groups of trained operatives. Or terrorists. Channels are as follows: :o - colony, #a - medical, #b - engineering, #c - command, #d - combat controller, #g clf general"
 	initial_keys = list(/obj/item/device/encryptionkey/colony, /obj/item/device/encryptionkey/clf/command)
 
+/obj/item/device/radio/headset/distress/CLF/insurgent
+	name = "Insurgent headset"
+	has_hud = FALSE
+
 //WY Headsets
 /obj/item/device/radio/headset/distress/commando
 	name = "Commando headset"
