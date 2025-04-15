@@ -233,7 +233,7 @@
 /obj/item/weapon/gun/shotgun/pump/halo/m90/police
 	name = "\improper WMT Law Enforcement Shotgun"
 	desc = "Made and produced by WMT, it is a civilian variation of the M90 CAWS for use by Law Enforcement... though can sometimes be found in the hands of civilians."
-	item_state = "m90_police"
+	icon_state = "m90_police"
 
 // snipers
 
@@ -485,8 +485,8 @@
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
 	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template."
-	icon_state = "m6"
-	item_state = "m6a"
+	icon_state = "m6a"
+	item_state = "m6"
 	caliber = "12.7x40mm"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
