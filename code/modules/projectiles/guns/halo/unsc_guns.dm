@@ -485,8 +485,8 @@
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
 	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template."
-	icon_state = "m6a"
-	item_state = "m6"
+	icon_state = "m6"
+	item_state = "m6a"
 	caliber = "12.7x40mm"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
