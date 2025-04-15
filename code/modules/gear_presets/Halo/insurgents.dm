@@ -53,7 +53,7 @@
 	name = "Partisan"
 	assignment = JOB_INSURGENT
 	rank = JOB_INSURGENT
-	paygrades = list(PAY_SHORT_CDOC = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "PRT"
 	flags = EQUIPMENT_PRESET_EXTRA
 	skills = /datum/skills/clf
