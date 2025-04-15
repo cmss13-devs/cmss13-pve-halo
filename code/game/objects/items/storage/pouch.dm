@@ -598,10 +598,6 @@
 	for(var/i = 1 to storage_slots)
 		new /obj/item/ammo_magazine/handful/shotgun/buckshot(src)
 
-/obj/item/storage/pouch/shotgun/large/buckshot/unsc/fill_preset_inventory()
-	for(var/i = 1 to storage_slots)
-		new /datum/ammo/bullet/shotgun/buckshot/unsc(src)
-
 /obj/item/storage/pouch/explosive
 	name = "explosive pouch"
 	desc = "It can carry grenades, plastic explosives, mine boxes, and other explosives."
