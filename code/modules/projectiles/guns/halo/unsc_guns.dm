@@ -490,7 +490,7 @@
 	icon_state = "m6a"
 	item_state = "m6"
 	caliber = "12.7x40mm"
-	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6a
 	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6c"
 
@@ -503,9 +503,9 @@
 /obj/item/weapon/gun/pistol/halo/m6a/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_11)
-	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_2
-	scatter = SCATTER_AMOUNT_TIER_5
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	scatter = SCATTER_AMOUNT_TIER_7
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT - BULLET_DAMAGE_MULT_TIER_2
 	velocity_add = AMMO_SPEED_TIER_1
