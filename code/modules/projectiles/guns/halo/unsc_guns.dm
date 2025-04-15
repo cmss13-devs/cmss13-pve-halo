@@ -234,6 +234,8 @@
 	name = "\improper WMT Law Enforcement Shotgun"
 	desc = "Made and produced by WMT, it is a civilian variation of the M90 CAWS for use by Law Enforcement... though can sometimes be found in the hands of civilians."
 	icon_state = "m90_police"
+	attachable_allowed = list(/obj/item/attachable/flashlight/m90/police)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/m90/police)
 
 // snipers
 
