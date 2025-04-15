@@ -92,16 +92,15 @@
 	skills = /datum/skills/clf/leader
 
 /datum/equipment_preset/insurgent/partisan/lead/load_gear(mob/living/carbon/human/new_human)
-	var/vest_mix = rand(1,3)
 	add_worker_uniform(new_human)
 	spawn_rebel_shoes(new_human)
 	spawn_rebel_gloves(new_human)
 
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/pump/halo/m90/police, WEAR_J_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
-
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections, WEAR_HEAD)
+
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/pump/halo/m90/police, WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/shotgun/large/buckshot/unsc, WEAR_R_STORE)
