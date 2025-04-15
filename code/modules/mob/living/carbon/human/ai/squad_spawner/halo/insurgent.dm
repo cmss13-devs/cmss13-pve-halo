@@ -13,5 +13,5 @@
 	desc = "A squad of untrained and underequipped partisans, lead by a leader."
 	ai_to_spawn = list(
 		/datum/equipment_preset/insurgent/partisan = 4,
-		/datum/equipment_preset/insurgent/partisan/lead = 1,
+		/datum/equipment_preset/insurgent/partisan/lead = 1
 	)
