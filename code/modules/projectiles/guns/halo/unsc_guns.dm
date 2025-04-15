@@ -230,6 +230,11 @@
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRIGGER_SAFETY
 
+/obj/item/weapon/gun/shotgun/pump/halo/m90/police
+	name = "\improper WMT Law Enforcement Shotgun"
+	desc = "Made and produced by WMT, it is a civilian variation of the M90 CAWS for use by Law Enforcement... though can sometimes be found in the hands of civilians."
+	item_state = "m90_police"
+
 // snipers
 
 /obj/item/weapon/gun/rifle/sniper/halo
@@ -476,6 +481,32 @@
 	scatter = SCATTER_AMOUNT_TIER_7
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
+
+/obj/item/weapon/gun/pistol/halo/m6a
+	name = "M6A service magnum"
+	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template."
+	icon_state = "m6a"
+	item_state = "m6"
+	caliber = "12.7x40mm"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
+	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
+	fire_sound = "gun_m6c"
+
+/obj/item/weapon/gun/pistol/halo/m6a/unloaded
+	current_mag = null
+
+/obj/item/weapon/gun/pistol/halo/m6a/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
+
+/obj/item/weapon/gun/pistol/halo/m6a/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_5
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT - BULLET_DAMAGE_MULT_TIER_2
+	velocity_add = AMMO_SPEED_TIER_1
 
 /obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"

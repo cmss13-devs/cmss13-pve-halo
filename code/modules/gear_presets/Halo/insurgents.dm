@@ -68,11 +68,7 @@
 
 	if(prob(10))
 		new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe, WEAR_J_STORE)
-
-	if(prob(10))
-		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6g, WEAR_WAIST)
-	else
-		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6c, WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/flashlight, WEAR_R_STORE)
