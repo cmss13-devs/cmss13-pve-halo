@@ -59,28 +59,25 @@
 	skills = /datum/skills/clf
 
 /datum/equipment_preset/insurgent/partisan/load_gear(mob/living/carbon/human/new_human)
-	new_human.equip_to_slot_or_del(new headset_type, WEAR_L_EAR)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/rto/army, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/darkblue, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/brown, WEAR_HANDS)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/army/knife, WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/army, WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/patch/army/infantry, WEAR_ACCESSORY)
+	spawn_rebel_shoes(new_human)
+	spawn_rebel_gloves(new_human)
+	spawn_rebel_helmet(new_human)
+	if(prob(40))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
 
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/box/MRE, WEAR_IN_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/canteen, WEAR_IN_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/tool/crowbar/tactical, WEAR_IN_JACKET)
+	if(prob(10))
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe, WEAR_J_STORE)
 
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/m41aMK1/army, WEAR_J_STORE)
-
-	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/m41amk1, WEAR_WAIST)
+	if(prob(10))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6g, WEAR_WAIST)
+	else
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6c, WEAR_WAIST)
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/explosive/full, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/device/flashlight, WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/MRE, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/m94, WEAR_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/box/m94, WEAR_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/box/packet/high_explosive, WEAR_BACK)
-	spawn_army_fluff_items(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/smokebomb, WEAR_BACK)
+

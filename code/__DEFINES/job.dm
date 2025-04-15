@@ -427,7 +427,7 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_INSURGENT "Parisan"
 #define JOB_INSURGENT_LEAD "Parisan Leader"
 
-#define CLF_JOB_LIST list(JOB_INSURGENT, JOB_INSURGENT_LEAD)
+#define INSURGENT_JOB_LIST list(JOB_INSURGENT, JOB_INSURGENT_LEAD)
 
 //Covenant
 #define JOB_COV_MINOR "Minor"
