@@ -59,15 +59,8 @@
 	skills = /datum/skills/clf
 
 /datum/equipment_preset/insurgent/partisan/load_gear(mob/living/carbon/human/new_human)
-	var/clothes_mix = rand(1,3)
 	var/vest_mix = rand(1,3)
-	switch(clothes_mix)
-		if(1)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/workwear, WEAR_BODY)
-		if(2)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/khaki, WEAR_BODY)
-		if(3)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/darkblue, WEAR_BODY)
+	add_worker_uniform(new_human)
 	spawn_rebel_shoes(new_human)
 	spawn_rebel_gloves(new_human)
 	spawn_rebel_helmet(new_human)
@@ -77,12 +70,10 @@
 				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest, WEAR_JACKET)
 			if(2)
 				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
-		if(3)
+			if(3)
 				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/militia, WEAR_JACKET)
-
 	if(prob(10))
 		new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe, WEAR_J_STORE)
-
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
