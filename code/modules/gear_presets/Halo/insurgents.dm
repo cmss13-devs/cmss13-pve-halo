@@ -82,3 +82,32 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/MRE, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/smokebomb, WEAR_IN_BACK)
 
+/datum/equipment_preset/insurgent/partisan/lead
+	name = "Partisan Leader"
+	assignment = JOB_INSURGENT_LEAD
+	rank = JOB_INSURGENT_LEAD
+	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "PRTL"
+	flags = EQUIPMENT_PRESET_EXTRA
+	skills = /datum/skills/clf/leader
+
+/datum/equipment_preset/insurgent/partisan/lead/load_gear(mob/living/carbon/human/new_human)
+	var/vest_mix = rand(1,3)
+	add_worker_uniform(new_human)
+	spawn_rebel_shoes(new_human)
+	spawn_rebel_gloves(new_human)
+
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/pump/halo/m90/police, WEAR_J_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
+
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections, WEAR_HEAD)
+
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/shotgun/large/buckshot/unsc, WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel, WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/MRE, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/smokebomb, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/smokebomb, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/civ, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio, WEAR_IN_BACK)
