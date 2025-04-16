@@ -121,6 +121,51 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
+/obj/item/weapon/gun/rifle/halo/ma2b
+	name = "MA2B battle rifle"
+	desc = "A common rifle, previously used by the UNSC but often found in the hands of terrorists and insurgents. It is known to be a powerful weapon... if it could shoot straight."
+	icon_state = "ma2b"
+	item_state = "ma2b"
+	caliber = ".390 AP"
+
+	fire_sound = "gun_br55"
+	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_br55_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_br55_unload.ogg'
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+
+	starting_attachment_types = list(/obj/item/attachable/ma2b_barrel)
+	current_mag = /obj/item/ammo_magazine/rifle/halo/ma2b
+	attachable_allowed = list(
+		/obj/item/attachable/ma2b_barrel,
+	)
+
+/obj/item/weapon/gun/rifle/halo/ma2b/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/halo/ma2b/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_8)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_2
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_8
+	scatter = SCATTER_AMOUNT_TIER_5
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
+	scatter_unwielded = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+	recoil = RECOIL_AMOUNT_TIER_3
+	fa_scatter_peak = 30
+	fa_max_scatter = 2
+
+/obj/item/weapon/gun/rifle/halo/ma5c/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
 // SMGs
 
 /obj/item/weapon/gun/smg/halo
@@ -533,7 +578,7 @@
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
 	scatter = SCATTER_AMOUNT_TIER_8
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_7
 	velocity_add = AMMO_SPEED_TIER_1
 
 // Grenades

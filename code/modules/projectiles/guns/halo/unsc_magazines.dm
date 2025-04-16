@@ -25,6 +25,15 @@
 	default_ammo = /datum/ammo/bullet/rifle/br55
 	caliber = "9.5x40mm"
 
+/obj/item/ammo_magazine/rifle/halo/ma2b
+	name = "\improper MA2B magazine (.390 AP)"
+	desc = "A rectangular box magazine for the MA2B holding 60 rounds of .390 AP ammunitions."
+	icon_state = "ma2b"
+	max_rounds = 20
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma2b
+	default_ammo = /datum/ammo/bullet/rifle/ma2b
+	caliber = ".390 AP"
+
 // smg magazines
 /obj/item/ammo_magazine/smg/halo
 	name = "halo smg magazine"
