@@ -150,6 +150,12 @@
 	html_link = ""
 	color = "white"
 
+/obj/item/map/Skyhammer
+	name = "\improper Blank Map"
+	desc = "A blank map, or at least you THINK there should be a map on this piece of laminated paper."
+	html_link = ""
+	color = "white"
+
 GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 
 /proc/setup_all_maps()
