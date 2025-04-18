@@ -1,8 +1,8 @@
 {
-    "map_name": "Sky Hammer",
+    "map_name": "SkyHammer",
     "map_path": "map_files/Skyhammer",
     "map_file": "Skyhammer.dmm",
-    "announce_text": "Communication has gone dark with Defence Matrix Bravo-2, also known as 'Sky Hammer', which is integral to the primary military space port in the area's safety and operation. The ###SHIPNAME### has been dispatched to investigate.",
+    "announce_text": "Communication has gone dark with Defence Matrix Bravo-2, also known as 'Sky Hammer', which is integral to the primary military space port in the area's safety and defence. The ###SHIPNAME### has been dispatched to investigate.",
     "environment_traits": {
         "COLD": true
     },
