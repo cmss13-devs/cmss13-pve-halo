@@ -72,6 +72,12 @@
 	},
 /turf/open/floor/strata/orange_edge,
 /area/skyhammer/interior/bunker/storage)
+"aV" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/mac_controls)
 "aW" = (
 /turf/open/asphalt/cement,
 /area/skyhammer/interior/gatehouse/a)
@@ -274,6 +280,7 @@
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/hallway)
 "dh" = (
+/obj/structure/machinery/light/double/blue,
 /turf/open/asphalt/cement/cement12,
 /area/skyhammer/interior/gatehouse/b)
 "do" = (
@@ -554,6 +561,12 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/skyhammer/interior/bunker/medbay)
+"gb" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff"
+	},
+/turf/open/snow/layer2,
+/area/skyhammer/exterior)
 "gc" = (
 /obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/machinery/door/poddoor/almayer{
@@ -1054,6 +1067,13 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/hallway)
+"mf" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/snow/layer2,
+/area/skyhammer/exterior)
 "mo" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "2-4"
@@ -1113,6 +1133,13 @@
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata,
 /area/skyhammer/interior/scout_posts)
+"mJ" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
+/turf/open/snow/layer3,
+/area/skyhammer/exterior)
 "mQ" = (
 /obj/structure/machinery/iv_drip,
 /turf/open/floor/almayer/sterile_green_side/east,
@@ -1246,6 +1273,13 @@
 "ou" = (
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/storage)
+"ow" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
 "oy" = (
 /obj/structure/cargo_container/unsc/vertical/south_1/alt,
 /turf/open/snow/layer2,
@@ -1434,6 +1468,10 @@
 /obj/structure/bed/chair{
 	dir = 4
 	},
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/a)
 "rm" = (
@@ -1565,6 +1603,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/skyhammer/interior/bunker/medbay)
+"sl" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 4;
+	light_color = "#dae2ff"
+	},
+/turf/open/snow/layer3,
+/area/skyhammer/exterior)
 "sB" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams")
@@ -1624,6 +1669,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/skyhammer/interior/bunker/medbay)
+"tl" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/skyhammer/exterior)
 "to" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 8
@@ -1757,6 +1809,7 @@
 /area/skyhammer/interior)
 "vy" = (
 /obj/structure/bed/chair/wood/normal,
+/obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/tdome,
 /area/skyhammer/interior)
 "vB" = (
@@ -1805,6 +1858,12 @@
 "wa" = (
 /turf/open/floor/strata,
 /area/skyhammer/interior/scout_posts)
+"wb" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "0-2"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/mac_controls)
 "wd" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -2035,6 +2094,10 @@
 	network = list("Site_Cams", "Entrance_Cams");
 	dir = 4
 	},
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
 /turf/open/snow/layer2,
 /area/skyhammer/exterior)
 "zt" = (
@@ -2102,6 +2165,13 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/skyhammer/interior/bunker/bathroom)
+"AK" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/skyhammer/exterior)
 "Be" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 1;
@@ -2388,6 +2458,9 @@
 	pixel_y = 10;
 	pixel_x = 7
 	},
+/obj/item/cell/high{
+	pixel_x = 5
+	},
 /turf/open/floor/tdome,
 /area/skyhammer/interior)
 "EZ" = (
@@ -2663,6 +2736,7 @@
 	pixel_x = 7;
 	pixel_y = 7
 	},
+/obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/b)
 "HB" = (
@@ -2675,6 +2749,7 @@
 	pixel_y = 5;
 	pixel_x = 14
 	},
+/obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/strata/red2,
 /area/skyhammer/interior)
 "HG" = (
@@ -2826,6 +2901,10 @@
 	},
 /turf/open/floor/plating,
 /area/skyhammer/exterior)
+"JS" = (
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/strata,
+/area/skyhammer/interior/scout_posts)
 "Kg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -3008,6 +3087,10 @@
 /obj/structure/bed/chair{
 	dir = 8
 	},
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/a)
 "Mi" = (
@@ -3187,6 +3270,16 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/bunks)
+"Oo" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
+/obj/structure/machinery/camera/autoname{
+	network = list("Site_Cams", "Entrance_Cams")
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/skyhammer/exterior)
 "Oq" = (
 /turf/open/snow/layer3,
 /area/skyhammer/exterior)
@@ -3308,6 +3401,10 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/bunks)
+"PG" = (
+/obj/structure/machinery/light/double/blue,
+/turf/open/snow/layer3,
+/area/skyhammer/exterior)
 "PI" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -3369,6 +3466,16 @@
 "Qq" = (
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/b)
+"Qy" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4"
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
+/turf/open/asphalt/cement/cement4,
+/area/skyhammer/exterior)
 "QA" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 8;
@@ -3584,6 +3691,10 @@
 /turf/open/floor/almayer/dark_sterile,
 /area/skyhammer/interior/bunker/medbay)
 "Tz" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
 /turf/open/asphalt/cement/cement3,
 /area/skyhammer/interior/gatehouse/a)
 "TC" = (
@@ -17486,11 +17597,11 @@ Oq
 Oq
 Oq
 Oq
+sl
 Oq
 Oq
 Oq
-Oq
-Oq
+sl
 Oq
 Oq
 Oq
@@ -18495,7 +18606,7 @@ oP
 oP
 ae
 Vv
-wa
+JS
 wa
 wa
 Vv
@@ -37671,7 +37782,7 @@ ae
 ae
 ae
 ae
-Oq
+mJ
 cQ
 Oq
 qB
@@ -37794,14 +37905,14 @@ NW
 ae
 ae
 ae
-KH
+ae
 pv
 qU
 ww
-ww
-ww
-ww
-oT
+wb
+aV
+aV
+CS
 UX
 UX
 UX
@@ -38215,6 +38326,7 @@ Oq
 Oq
 Oq
 Oq
+CQ
 Oq
 Oq
 Oq
@@ -38251,8 +38363,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+CQ
 Oq
 Oq
 Oq
@@ -39429,7 +39540,7 @@ Oq
 cQ
 Oq
 Oq
-Oq
+PG
 iF
 iF
 iF
@@ -39475,7 +39586,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+CQ
 Oq
 Oq
 Oq
@@ -39512,7 +39623,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+CQ
 Oq
 Oq
 Oq
@@ -39692,7 +39803,7 @@ iF
 Nz
 fc
 iF
-qB
+Oo
 Oq
 Oq
 Oq
@@ -40700,7 +40811,7 @@ iF
 Nz
 oD
 iF
-qB
+AK
 Oq
 Oq
 Oq
@@ -40951,7 +41062,7 @@ iF
 iF
 qB
 qB
-qB
+tl
 qB
 Oq
 qJ
@@ -58500,7 +58611,7 @@ Oq
 Oq
 Oq
 cQ
-Oq
+sl
 WP
 Mr
 Mr
@@ -59527,7 +59638,7 @@ oP
 oP
 ae
 Vv
-wa
+JS
 wa
 wa
 Vv
@@ -60018,7 +60129,7 @@ cC
 cC
 oj
 cQ
-cQ
+mf
 cQ
 cQ
 Oq
@@ -60261,9 +60372,9 @@ Oq
 Oq
 cQ
 yF
-Qq
+ow
 ft
-Qq
+ow
 SE
 vH
 QT
@@ -60763,13 +60874,13 @@ Oq
 Oq
 Oq
 Oq
-cQ
+gb
 kx
 hk
 hk
 hk
 kx
-vH
+Qy
 QT
 QT
 wj
@@ -61016,7 +61127,7 @@ Oq
 Oq
 Oq
 cQ
-cQ
+mf
 cQ
 cQ
 cQ
@@ -69588,12 +69699,12 @@ Oq
 Oq
 Oq
 Oq
-Oq
+CQ
 vH
 QT
 QT
 wj
-Oq
+CQ
 Oq
 Oq
 Oq
