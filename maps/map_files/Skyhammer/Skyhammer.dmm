@@ -70,7 +70,7 @@
 	density = 0;
 	pixel_y = 18
 	},
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/storage)
 "aV" = (
 /obj/structure/cable/heavyduty{
@@ -355,7 +355,7 @@
 /turf/open/floor/almayer/sterile_green_side,
 /area/skyhammer/interior/bunker/medbay)
 "dR" = (
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/storage)
 "dU" = (
 /obj/structure/machinery/firealarm{
@@ -374,7 +374,7 @@
 	req_one_access_txt = "19;12";
 	pixel_x = 24
 	},
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/storage)
 "ej" = (
 /obj/structure/platform/strata{
@@ -454,9 +454,7 @@
 	pixel_y = 3;
 	layer = 3.1
 	},
-/turf/open/floor/strata/orange_edge{
-	dir = 1
-	},
+/turf/open/floor/strata/red3/north,
 /area/skyhammer/interior/bunker/storage)
 "eX" = (
 /obj/structure/platform_decoration/strata{
@@ -480,6 +478,7 @@
 	icon_state = "SW-out";
 	pixel_y = -3
 	},
+/obj/structure/machinery/colony_floodlight,
 /turf/open/snow/layer3,
 /area/skyhammer/exterior)
 "fg" = (
@@ -493,7 +492,7 @@
 	dir = 4;
 	light_color = "#dae2ff"
 	},
-/turf/open/floor/strata/orange_icorner/west,
+/turf/open/floor/strata/red4/west,
 /area/skyhammer/interior/bunker/storage)
 "fi" = (
 /obj/structure/stairs/perspective{
@@ -612,6 +611,7 @@
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/bunks)
 "gx" = (
+/obj/structure/machinery/power/apc/almayer/east,
 /turf/open/floor/almayer/dark_sterile,
 /area/skyhammer/interior/bunker/bathroom)
 "gC" = (
@@ -632,7 +632,7 @@
 	pixel_y = 15;
 	pixel_x = -14
 	},
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/armory)
 "gT" = (
 /obj/structure/closet/secure_closet/freezer/fridge/groceries,
@@ -694,9 +694,7 @@
 	pixel_y = 2;
 	pixel_x = -3
 	},
-/turf/open/floor/strata/orange_icorner{
-	dir = 4
-	},
+/turf/open/floor/strata/red4/east,
 /area/skyhammer/interior/bunker/armory)
 "hS" = (
 /obj/effect/decal/warning_stripes{
@@ -715,9 +713,7 @@
 	pixel_x = 1;
 	pixel_y = 2
 	},
-/turf/open/floor/strata/orange_edge{
-	dir = 1
-	},
+/turf/open/floor/strata/red3/north,
 /area/skyhammer/interior/bunker/armory)
 "id" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -887,7 +883,7 @@
 /obj/structure/cargo_container/unsc/vertical/south_1{
 	layer = 4.9
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/storage)
 "jY" = (
 /turf/open/floor/almayer/sterile_green_corner/east,
@@ -909,6 +905,7 @@
 	pixel_x = 8;
 	pixel_y = -4
 	},
+/obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/strata,
 /area/skyhammer/interior)
 "ki" = (
@@ -1004,7 +1001,7 @@
 /area/skyhammer/interior/bunker/hallway)
 "lz" = (
 /obj/structure/machinery/light/double/blue,
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/storage)
 "lD" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -1039,7 +1036,7 @@
 	dir = 8;
 	light_color = "#dae2ff"
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/storage)
 "lN" = (
 /obj/structure/barricade/sandbags/wired{
@@ -1127,7 +1124,7 @@
 	dir = 8;
 	layer = 2.98
 	},
-/turf/open/floor/strata/orange_icorner/north,
+/turf/open/floor/strata/red4/north,
 /area/skyhammer/interior/bunker/armory)
 "mI" = (
 /obj/structure/machinery/light/double/blue,
@@ -1477,7 +1474,7 @@
 "rm" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/closet/crate/unsc,
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/armory)
 "ro" = (
 /obj/structure/machinery/conveyor{
@@ -1541,7 +1538,7 @@
 /area/skyhammer/interior/bunker/armory)
 "rP" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/armory)
 "rS" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile{
@@ -1745,7 +1742,7 @@
 /turf/open/asphalt/cement/cement1,
 /area/skyhammer/exterior)
 "uk" = (
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/storage)
 "up" = (
 /obj/effect/decal/warning_stripes{
@@ -1875,7 +1872,7 @@
 	network = list("Site_Cams");
 	dir = 1
 	},
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/storage)
 "wj" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -2248,9 +2245,7 @@
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/ammo_loader)
 "BU" = (
-/turf/open/floor/strata/orange_edge{
-	dir = 1
-	},
+/turf/open/floor/strata/red3/north,
 /area/skyhammer/interior/bunker/storage)
 "BW" = (
 /turf/closed/wall/shiva/ice,
@@ -2526,9 +2521,7 @@
 	pixel_x = 12;
 	pixel_y = -7
 	},
-/turf/open/floor/strata/orange_edge{
-	dir = 1
-	},
+/turf/open/floor/strata/red3/north,
 /area/skyhammer/interior/bunker/storage)
 "FA" = (
 /obj/structure/machinery/computer3/server/rack,
@@ -2594,7 +2587,7 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/storage)
 "GF" = (
 /obj/structure/bed/chair/comfy/bench/south/east{
@@ -2602,9 +2595,7 @@
 	pixel_y = 0;
 	buckling_x = -6
 	},
-/turf/open/floor/strata/orange_icorner{
-	dir = 4
-	},
+/turf/open/floor/strata/red4/east,
 /area/skyhammer/interior/bunker/armory)
 "GH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -2616,7 +2607,7 @@
 	network = list("Site_Cams");
 	dir = 1
 	},
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/armory)
 "GI" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo,
@@ -2650,7 +2641,7 @@
 	pixel_x = 10;
 	pixel_y = -10
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/storage)
 "GY" = (
 /obj/structure/cargo_container/unsc/main_1/d,
@@ -2775,7 +2766,7 @@
 	pixel_x = -3;
 	pixel_y = 13
 	},
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red4/west,
 /area/skyhammer/interior/bunker/armory)
 "HJ" = (
 /obj/structure/prop/dam/crane,
@@ -2923,7 +2914,7 @@
 	pixel_x = -7;
 	pixel_y = 0
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/armory)
 "Kn" = (
 /obj/structure/machinery/power/apc/almayer/north,
@@ -3103,7 +3094,7 @@
 	pixel_y = 0;
 	pixel_x = 1
 	},
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/storage)
 "Mk" = (
 /obj/structure/gun_rack/halo/medkit{
@@ -3115,7 +3106,7 @@
 	light_color = "#dae2ff"
 	},
 /obj/structure/flora/pottedplant/random,
-/turf/open/floor/strata/orange_icorner/north,
+/turf/open/floor/strata/red4/north,
 /area/skyhammer/interior/bunker/storage)
 "Mr" = (
 /obj/effect/decal/warning_stripes{
@@ -3204,7 +3195,7 @@
 	pixel_y = 18;
 	layer = 3.2
 	},
-/turf/open/floor/strata/orange_icorner,
+/turf/open/floor/strata/red4,
 /area/skyhammer/interior/bunker/armory)
 "Ne" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -3236,7 +3227,7 @@
 	dir = 4;
 	light_color = "#dae2ff"
 	},
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/armory)
 "NP" = (
 /obj/structure/cargo_container/unsc/main_1/b,
@@ -3255,7 +3246,7 @@
 /area/skyhammer/interior/bunker/medbay)
 "Oa" = (
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
-/turf/open/floor/strata/orange_icorner,
+/turf/open/floor/strata/red4,
 /area/skyhammer/interior/bunker/storage)
 "Oh" = (
 /obj/structure/gun_rack/halo/medkit{
@@ -3339,7 +3330,7 @@
 /obj/item/ammo_box/magazine/misc/flashlight{
 	pixel_y = 13
 	},
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/storage)
 "OR" = (
 /obj/structure/tent/big,
@@ -3420,7 +3411,7 @@
 	pixel_x = -2;
 	pixel_y = 8
 	},
-/turf/open/floor/strata/orange_edge/east,
+/turf/open/floor/strata/red3/east,
 /area/skyhammer/interior/bunker/armory)
 "PU" = (
 /obj/structure/cable/heavyduty{
@@ -3488,7 +3479,7 @@
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/skyhammer/interior/bunker/medbay)
 "QL" = (
-/turf/open/floor/strata/orange_edge,
+/turf/open/floor/strata/red3,
 /area/skyhammer/interior/bunker/storage)
 "QQ" = (
 /obj/structure/surface/rack,
@@ -3496,9 +3487,7 @@
 	density = 0;
 	pixel_y = 18
 	},
-/turf/open/floor/strata/orange_icorner{
-	dir = 4
-	},
+/turf/open/floor/strata/red4/east,
 /area/skyhammer/interior/bunker/storage)
 "QT" = (
 /turf/open/asphalt/cement,
@@ -3544,7 +3533,7 @@
 	dir = 8;
 	light_color = "#dae2ff"
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/armory)
 "RD" = (
 /turf/open/floor/almayer/sterile_green_side/north,
@@ -3849,11 +3838,6 @@
 "VF" = (
 /turf/open/snow/layer2,
 /area/skyhammer/interior/scout_posts)
-"VG" = (
-/turf/open/floor/strata/orange_edge/west{
-	dir = 10
-	},
-/area/skyhammer/interior/bunker/armory)
 "VL" = (
 /obj/structure/tunnel,
 /turf/open/snow/layer2,
@@ -3946,7 +3930,7 @@
 	pixel_y = 22;
 	pixel_x = 2
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/storage)
 "WT" = (
 /obj/structure/bed{
@@ -4030,6 +4014,7 @@
 	pixel_x = 1;
 	pixel_y = 2
 	},
+/obj/structure/machinery/colony_floodlight,
 /turf/open/snow/layer2,
 /area/skyhammer/exterior)
 "XA" = (
@@ -4066,7 +4051,7 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
-/turf/open/floor/strata/orange_edge/west,
+/turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/armory)
 "Yq" = (
 /obj/structure/machinery/firealarm{
@@ -4124,9 +4109,7 @@
 /area/skyhammer/exterior)
 "ZD" = (
 /obj/structure/machinery/power/apc/almayer/north,
-/turf/open/floor/strata/orange_edge{
-	dir = 1
-	},
+/turf/open/floor/strata/red3/north,
 /area/skyhammer/interior/bunker/storage)
 "ZP" = (
 /obj/structure/machinery/landinglight/ds1/delayone,
@@ -6368,7 +6351,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -7229,7 +7212,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -9075,7 +9058,7 @@ xN
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -10127,7 +10110,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -10807,6 +10790,7 @@ Oq
 Oq
 Oq
 Oq
+fm
 Oq
 Oq
 Oq
@@ -10878,8 +10862,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -12837,7 +12820,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -14260,7 +14243,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -15052,7 +15035,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -17652,7 +17635,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -17728,7 +17711,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -17935,7 +17918,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -19179,7 +19162,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -22332,7 +22315,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -24722,6 +24705,7 @@ Oq
 Oq
 Oq
 Oq
+fm
 Oq
 Oq
 Oq
@@ -24758,8 +24742,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -25627,13 +25610,13 @@ Oq
 Oq
 Oq
 Oq
-Oq
+CQ
 Oq
 Oq
 cQ
 cQ
 Oq
-Oq
+CQ
 Oq
 Oq
 Oq
@@ -26906,7 +26889,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 cQ
@@ -27008,7 +26991,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -27139,13 +27122,13 @@ Oq
 Oq
 Oq
 Oq
-Oq
+CQ
 ha
 QT
 QT
 QT
 og
-Oq
+CQ
 Oq
 Oq
 Oq
@@ -29258,7 +29241,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -29448,7 +29431,7 @@ Oq
 Oq
 xN
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -29551,7 +29534,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -32055,7 +32038,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -32768,7 +32751,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -34183,7 +34166,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -34305,7 +34288,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -35342,7 +35325,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -36839,7 +36822,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -37250,7 +37233,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -37443,7 +37426,7 @@ nc
 FN
 Oq
 Oq
-Oq
+CQ
 ha
 yL
 yL
@@ -38227,13 +38210,13 @@ Oq
 Oq
 Oq
 Oq
-Oq
+CQ
 ha
 QT
 QT
 QT
 og
-Oq
+CQ
 Oq
 Oq
 Oq
@@ -38375,7 +38358,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -38451,7 +38434,7 @@ nc
 FN
 Oq
 Oq
-Oq
+CQ
 xz
 uz
 uz
@@ -39196,7 +39179,7 @@ ib
 KS
 LO
 LO
-VG
+LO
 hR
 ae
 Vl
@@ -39971,7 +39954,7 @@ Xy
 Lc
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -41411,7 +41394,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -43051,7 +43034,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -44116,7 +44099,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -44658,7 +44641,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -45020,7 +45003,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -45795,7 +45778,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -46420,7 +46403,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -47265,7 +47248,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -48971,7 +48954,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -50114,7 +50097,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -51928,7 +51911,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -52107,7 +52090,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -53980,7 +53963,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -54246,7 +54229,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -56179,7 +56162,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -56855,7 +56838,7 @@ wj
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -57283,7 +57266,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 xN
@@ -58211,7 +58194,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -58686,7 +58669,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -59445,7 +59428,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -60066,7 +60049,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -60469,7 +60452,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -61500,7 +61483,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -63896,7 +63879,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -64981,6 +64964,7 @@ Oq
 Oq
 Oq
 Oq
+fm
 Oq
 Oq
 Oq
@@ -65014,8 +64998,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -65754,6 +65737,7 @@ Oq
 Oq
 Oq
 Oq
+fm
 Oq
 Oq
 Oq
@@ -65781,8 +65765,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -66601,7 +66584,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -67436,7 +67419,7 @@ vH
 QT
 QT
 wj
-Oq
+fm
 Oq
 Oq
 Oq
@@ -67728,7 +67711,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -69381,7 +69364,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -69549,6 +69532,7 @@ Oq
 Oq
 Oq
 Oq
+fm
 Oq
 Oq
 Oq
@@ -69563,8 +69547,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -69602,7 +69585,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -69944,7 +69927,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -72606,7 +72589,7 @@ Oq
 Oq
 IK
 wz
-Oq
+fm
 Oq
 Oq
 Oq
@@ -73981,7 +73964,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 vH
@@ -74229,7 +74212,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -74362,7 +74345,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -74650,7 +74633,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -75255,7 +75238,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -76771,7 +76754,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -77040,7 +77023,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -77155,7 +77138,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
@@ -77285,7 +77268,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+fm
 Oq
 Oq
 Oq
