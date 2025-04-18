@@ -6,10 +6,10 @@
 /obj/item/stack/snow,
 /obj/item/stack/snow,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "ae" = (
 /turf/closed/wall/unsc/reinforced/hull,
-/area/space)
+/area/skyhammer/interior)
 "ai" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired{
@@ -18,7 +18,7 @@
 	},
 /obj/item/device/binoculars/civ,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
 "as" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -27,7 +27,13 @@
 	},
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
+"at" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/turf/open/asphalt/cement,
+/area/skyhammer/interior/gatehouse/b)
 "ax" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	id = "entrance_primary_b"
@@ -36,17 +42,20 @@
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "aC" = (
 /obj/structure/machinery/computer/crew/unsc/big{
 	pixel_y = 9
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "aK" = (
 /obj/structure/cargo_container/unsc/vertical/south_4,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"aM" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
 "aN" = (
 /obj/structure/machinery/computer/cameras/wooden_tv/broadcast{
 	dir = 4;
@@ -54,7 +63,7 @@
 	pixel_x = -24
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "aQ" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -62,13 +71,16 @@
 	pixel_y = 18
 	},
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
+"aW" = (
+/turf/open/asphalt/cement,
+/area/skyhammer/interior/gatehouse/a)
 "aX" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams")
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "aZ" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/cameras/wooden_tv{
@@ -82,7 +94,7 @@
 	pixel_x = -4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "bk" = (
 /obj/structure/machinery/light/small{
 	dir = 4;
@@ -90,41 +102,48 @@
 	},
 /obj/structure/machinery/vending/dinnerware,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
+"bp" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
 "bv" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 4;
 	icon_state = "sandbag_0"
 	},
 /turf/open/auto_turf/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "by" = (
 /obj/structure/platform,
 /obj/structure/barricade/handrail{
 	layer = 4
 	},
 /turf/open/shuttle/escapepod/east,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "bI" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "bN" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 8;
 	icon_state = "sandbag_0"
 	},
 /turf/open/auto_turf/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "bY" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
 	pixel_y = -3
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "ca" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -1;
@@ -132,7 +151,7 @@
 	density = 0
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "cf" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
@@ -143,30 +162,30 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "cj" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "co" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 1
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "cp" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 8;
 	network = list("Site_Cams")
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "cu" = (
 /obj/structure/cargo_container/unsc/main_2/d,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "cw" = (
 /obj/structure/platform/strata{
 	dir = 4
@@ -179,19 +198,19 @@
 	desc = "A wooden trench board to keep soldier's feet off the dirt."
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "cC" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "cD" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "cE" = (
 /obj/structure/desertdam/decals/road_edge,
 /obj/structure/desertdam/decals/road_stop{
@@ -199,7 +218,10 @@
 	icon_state = "stop_decal5"
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
+"cG" = (
+/turf/open/asphalt/cement,
+/area/skyhammer/interior)
 "cI" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 26
@@ -212,18 +234,18 @@
 	name = "Ammunition Loading Access"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "cL" = (
 /obj/structure/platform_decoration/strata,
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "cQ" = (
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "cV" = (
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "cW" = (
 /obj/structure/toilet{
 	dir = 4;
@@ -235,17 +257,20 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/bathroom)
 "cZ" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "0-4"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
+"dh" = (
+/turf/open/asphalt/cement/cement12,
+/area/skyhammer/interior/gatehouse/b)
 "do" = (
 /obj/structure/machinery/m56d_hmg/mg_turret,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "dq" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/cameras/wooden_tv{
@@ -263,7 +288,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "du" = (
 /obj/item/storage/belt/gun/m6/full_m6c,
 /obj/structure/closet,
@@ -272,14 +297,27 @@
 /obj/item/clothing/suit/storage/snow_suit/survivor/parka,
 /obj/item/clothing/head/beret,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "dw" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/almayer/sterile_green_side/northeast,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"dA" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
+"dD" = (
+/obj/structure/bed/chair{
+	dir = 4;
+	pixel_x = 15
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/scout_posts)
 "dM" = (
 /obj/structure/platform_decoration/strata,
 /obj/structure/platform_decoration/strata{
@@ -292,36 +330,36 @@
 	desc = "A wooden trench board to keep soldier's feet off the dirt."
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "dQ" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams");
 	dir = 1
 	},
 /turf/open/floor/almayer/sterile_green_side,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "dR" = (
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "dU" = (
 /obj/structure/machinery/firealarm{
 	pixel_y = 27;
 	pixel_x = 11
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "dX" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 8
 	},
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "ej" = (
 /obj/structure/platform/strata{
 	dir = 4
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "ek" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -348,34 +386,34 @@
 	pixel_y = -7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "eo" = (
 /obj/structure/flora/pottedplant{
 	icon_state = "pottedplant_22"
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "ep" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 8
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "eu" = (
 /obj/structure/machinery/vending/dinnerware/unsc,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "ey" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "eK" = (
 /obj/structure/platform/strata{
 	dir = 8
 	},
 /obj/structure/platform/strata,
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "eN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -383,7 +421,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "eO" = (
 /obj/structure/prop/unsc_crate/standard/red{
 	pixel_x = 3;
@@ -397,7 +435,7 @@
 /turf/open/floor/strata/orange_edge{
 	dir = 1
 	},
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "eX" = (
 /obj/structure/platform_decoration/strata{
 	dir = 8
@@ -406,51 +444,59 @@
 	dir = 1
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
+"fc" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
 "ff" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out";
 	pixel_y = -3
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "fg" = (
 /obj/structure/bed/chair{
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "fh" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/orange_icorner/west,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "fi" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full";
 	dir = 4
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "fm" = (
 /obj/structure/flora/bush/snow,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "ft" = (
 /obj/structure/bed/chair{
 	dir = 4;
 	pixel_x = 15
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "fw" = (
 /obj/structure/platform_decoration/strata{
 	dir = 1
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "fB" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired{
@@ -458,7 +504,15 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
+"fD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_x = 1;
+	pixel_y = 2
+	},
+/turf/open/asphalt/cement,
+/area/skyhammer/exterior)
 "fX" = (
 /obj/effect/spawner/random/toolbox{
 	pixel_y = 11;
@@ -469,7 +523,7 @@
 	icon_state = "screwdriver4"
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "fY" = (
 /obj/structure/surface/rack{
 	pixel_y = 20;
@@ -484,7 +538,7 @@
 	pixel_y = 20
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "gc" = (
 /obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/machinery/door/poddoor/almayer{
@@ -496,7 +550,14 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
+"gn" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/hallway)
 "go" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -504,7 +565,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "gr" = (
 /obj/structure/bed{
 	can_buckle = 0
@@ -521,7 +582,10 @@
 	pixel_y = 12
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
+"gx" = (
+/turf/open/floor/almayer/dark_sterile,
+/area/skyhammer/interior/bunker/bathroom)
 "gC" = (
 /obj/structure/machinery/m56d_hmg/mg_turret{
 	dir = 4;
@@ -529,7 +593,7 @@
 	pixel_x = 13
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "gG" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/tool/screwdriver{
@@ -541,29 +605,37 @@
 	pixel_x = -14
 	},
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "gT" = (
 /obj/structure/closet/secure_closet/freezer/fridge/groceries,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "ha" = (
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
 "hj" = (
 /obj/structure/machinery/landinglight/ds2/spoke,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"hk" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
 "hn" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "hq" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
 	dir = 5
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "hs" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
@@ -571,23 +643,23 @@
 	},
 /obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "hI" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
 	dir = 8
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "hK" = (
 /obj/structure/machinery/colony_floodlight,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "hP" = (
 /obj/structure/flora/tree/pine,
 /obj/structure/flora/tree/pine,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "hR" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/tool/hand_labeler{
@@ -597,7 +669,7 @@
 /turf/open/floor/strata/orange_icorner{
 	dir = 4
 	},
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "hS" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -608,7 +680,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/almayer/sterile_green_corner,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "ib" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -618,7 +690,7 @@
 /turf/open/floor/strata/orange_edge{
 	dir = 1
 	},
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "id" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -629,11 +701,11 @@
 	pixel_x = 1
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "ii" = (
 /obj/structure/cargo_container/unsc/vertical/south_2,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "ij" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
@@ -644,7 +716,14 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"iF" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/interior/gatehouse/a)
+"iG" = (
+/obj/structure/desertdam/decals/road_edge,
+/turf/open/asphalt/cement/cement3,
+/area/skyhammer/interior)
 "iI" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
@@ -654,11 +733,19 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
+"iJ" = (
+/obj/structure/machinery/door/airlock/unsc,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
+"iM" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "iN" = (
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "iO" = (
 /obj/structure/machinery/light/small{
 	dir = 1
@@ -666,7 +753,10 @@
 /obj/structure/machinery/computer3/server/rack,
 /obj/structure/window/reinforced,
 /turf/open/floor/tdome/tcomms,
-/area/space)
+/area/skyhammer/interior)
+"iR" = (
+/turf/open/floor/strata,
+/area/skyhammer/exterior)
 "iX" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 12;
@@ -675,7 +765,7 @@
 	layer = 5
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "iY" = (
 /obj/structure/gun_rack/halo/armory/ma5c/empty,
 /obj/effect/decal/warning_stripes{
@@ -683,7 +773,7 @@
 	pixel_y = -3
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "jc" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -691,20 +781,20 @@
 	pixel_y = 2
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "ji" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 1
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "jl" = (
 /obj/structure/machinery/shower{
 	dir = 8
 	},
 /obj/item/tool/soap/weyland_yutani,
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior/bunker/bathroom)
 "jp" = (
 /obj/item/ammo_casing{
 	icon_state = "cartridge_2_1";
@@ -713,14 +803,14 @@
 	pixel_y = -11
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "jr" = (
 /obj/structure/machinery/floodlight/landing,
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 8
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/skyhammer/exterior)
 "jE" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = -7;
@@ -728,39 +818,39 @@
 	layer = 3.9
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "jG" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams");
 	dir = 1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "jI" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "jK" = (
 /obj/structure/machinery/camera/autoname/lz_camera,
 /turf/open/floor/plating,
-/area/space)
+/area/skyhammer/exterior)
 "jN" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement2,
-/area/space)
+/area/skyhammer/exterior)
 "jT" = (
 /obj/structure/cargo_container/unsc/vertical/south_1{
 	layer = 4.9
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "jY" = (
 /turf/open/floor/almayer/sterile_green_corner/east,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "kb" = (
 /obj/structure/dartboard{
 	pixel_y = 33
@@ -779,33 +869,44 @@
 	pixel_y = -4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior)
 "ki" = (
 /obj/structure/prop/unsc_crate/big{
 	pixel_x = 0;
 	pixel_y = -7
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "ko" = (
 /obj/structure/platform_decoration/strata{
 	dir = 4
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "kp" = (
 /obj/structure/machinery/light/small/red{
 	dir = 1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "ku" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
+"kw" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
+"kx" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/interior/gatehouse/b)
 "kL" = (
 /obj/structure/platform/strata,
 /obj/structure/platform/strata{
@@ -818,24 +919,30 @@
 	desc = "A wooden trench board to keep soldier's feet off the dirt."
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "kO" = (
 /obj/structure/machinery/floodlight/landing,
 /turf/open/floor/plating,
-/area/space)
+/area/skyhammer/exterior)
 "kR" = (
 /obj/item/tool/wrench{
 	pixel_y = 11;
 	pixel_x = 16
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
+"kS" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior)
 "kU" = (
 /obj/item/ammo_box/magazine/m56d{
 	pixel_y = -6
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior)
 "lj" = (
 /obj/structure/gun_rack/halo/armory/ma5c/unloaded,
 /obj/effect/decal/warning_stripes{
@@ -843,11 +950,17 @@
 	pixel_y = -3
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
+"lp" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/hallway)
 "lz" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "lD" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/door_control/brbutton/alt{
@@ -863,14 +976,14 @@
 	pixel_y = 7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "lH" = (
 /obj/structure/machinery/vending/cigarette{
 	pixel_x = 4;
 	pixel_y = 1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "lJ" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 5;
@@ -882,14 +995,14 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "lN" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "lT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -897,7 +1010,7 @@
 	pixel_y = 2
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "ma" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -908,37 +1021,37 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "mo" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "2-4"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior)
 "mr" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
 	pixel_y = -3
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "mt" = (
 /obj/structure/cable/heavyduty,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "mu" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "mw" = (
 /obj/structure/prop/unsc_crate/standard/blue{
 	pixel_x = 4;
 	pixel_y = 1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "mA" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -946,7 +1059,7 @@
 	pixel_y = 18
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "mF" = (
 /obj/structure/machinery/door_control/brbutton{
 	pixel_y = 28;
@@ -963,15 +1076,18 @@
 	layer = 2.98
 	},
 /turf/open/floor/strata/orange_icorner/north,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "mI" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
 "mQ" = (
 /obj/structure/machinery/iv_drip,
 /turf/open/floor/almayer/sterile_green_side/east,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"nc" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
 "nf" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 1;
@@ -979,35 +1095,35 @@
 	pixel_x = -17
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "nh" = (
 /obj/structure/machinery/colony_floodlight,
 /turf/open/auto_turf/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "nr" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt"
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "nu" = (
 /obj/item/storage/toolbox/traxus/big,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "nx" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
 	icon_state = "sandbag_0"
 	},
 /turf/open/auto_turf/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "nA" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
 	pixel_y = -3
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "nD" = (
 /obj/structure/filingcabinet/medical{
 	pixel_x = -8;
@@ -1020,7 +1136,7 @@
 	req_access = list(9)
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "nF" = (
 /obj/structure/closet/secure_closet{
 	pixel_x = -7
@@ -1033,26 +1149,30 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "nG" = (
 /obj/docking_port/stationary/marine_dropship/lz2{
 	name = "Makeshift Landing zone"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"nV" = (
+/obj/structure/cable/heavyduty,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "nZ" = (
 /obj/structure/machinery/door/airlock/unsc{
 	dir = 1
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/bathroom)
 "oc" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 4;
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "of" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 5.11;
@@ -1060,10 +1180,10 @@
 	pixel_y = 0
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "og" = (
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "oj" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -1072,7 +1192,7 @@
 	icon_state = "W"
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "ol" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/cameras/wooden_tv{
@@ -1086,56 +1206,77 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
+"oq" = (
+/obj/structure/machinery/door/airlock/unsc,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
+"ou" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
 "oy" = (
 /obj/structure/cargo_container/unsc/vertical/south_1/alt,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
+"oD" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 8;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
+"oH" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
 "oP" = (
 /turf/closed/wall/unsc/reinforced,
-/area/space)
+/area/skyhammer/interior)
 "oS" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "0-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "oT" = (
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "oV" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 4;
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "oW" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
 	dir = 6
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "oZ" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "pa" = (
 /turf/open/asphalt/cement/cement1/north,
-/area/space)
+/area/skyhammer/exterior)
 "pb" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2-4"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "ph" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 1
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "pj" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -10;
@@ -1143,13 +1284,13 @@
 	layer = 3.1
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "pq" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "pv" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -1157,7 +1298,7 @@
 	pixel_y = 26
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "pB" = (
 /obj/structure/machinery/vending/cigarette{
 	pixel_y = 25;
@@ -1165,7 +1306,7 @@
 	pixel_x = -1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
 "pE" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff"
@@ -1175,35 +1316,41 @@
 	dir = 1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "pU" = (
 /obj/structure/bed/chair/comfy/black{
 	pixel_x = -17
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "pX" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /obj/structure/cable/heavyduty{
 	icon_state = "0-8"
 	},
 /turf/open/floor/almayer/sterile_green_side/north,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"qb" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "0-4"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
 "qe" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2-8"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior)
 "qB" = (
 /turf/open/auto_turf/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "qJ" = (
 /obj/structure/flora/bush/snow{
 	icon_state = "snowbush_2"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "qQ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -1214,7 +1361,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "qS" = (
 /obj/structure/prop/unsc_crate/standard/green{
 	pixel_x = -7;
@@ -1227,25 +1374,25 @@
 	layer = 5.1
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "qU" = (
 /obj/item/notepad/black{
 	pixel_y = -3;
 	pixel_x = -6
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "ra" = (
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "rb" = (
 /obj/structure/platform/strata,
 /obj/structure/platform/strata{
 	dir = 8
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "rf" = (
 /obj/structure/machinery/m56d_hmg/mg_turret{
 	dir = 4;
@@ -1256,12 +1403,12 @@
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "rm" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/closet/crate/unsc,
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "ro" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt"
@@ -1270,13 +1417,21 @@
 	dir = 8
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"rr" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 4;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/scout_posts)
 "rs" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "rF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -1288,7 +1443,15 @@
 	pixel_y = 7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
+"rK" = (
+/obj/structure/machinery/m56d_hmg/mg_turret{
+	dir = 8;
+	icon_state = "towergun";
+	pixel_x = -13
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "rL" = (
 /obj/structure/bedsheetbin{
 	pixel_y = -10;
@@ -1299,42 +1462,42 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/bathroom)
 "rO" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "rP" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "rS" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile,
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "rV" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams")
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "rX" = (
 /obj/structure/platform/strata{
 	dir = 8
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "rY" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /turf/open/shuttle/escapepod,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "sa" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 1;
@@ -1344,13 +1507,22 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"sb" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 4
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/mac_controls)
 "se" = (
 /obj/structure/barricade/handrail{
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
+"si" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "sj" = (
 /obj/structure/gun_rack/halo/medkit{
 	dir = 4;
@@ -1358,13 +1530,19 @@
 	pixel_y = 2
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"sB" = (
+/obj/structure/machinery/camera/autoname{
+	network = list("Site_Cams")
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/hallway)
 "sG" = (
 /obj/structure/barricade/handrail{
 	dir = 8
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "sK" = (
 /obj/structure/machinery/m56d_hmg/mg_turret{
 	dir = 8;
@@ -1372,11 +1550,11 @@
 	pixel_x = -13
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "sM" = (
 /obj/structure/bookcase,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "sN" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -1385,7 +1563,7 @@
 	icon_state = "W"
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
 "sQ" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access{
 	pixel_y = 24;
@@ -1395,29 +1573,29 @@
 	icon_state = "cargo"
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "sU" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "th" = (
 /obj/structure/barricade/sandbags/wired,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "ti" = (
 /obj/structure/machinery/medical_pod/bodyscanner{
 	pixel_y = 6
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "to" = (
 /obj/structure/machinery/landinglight/ds1{
 	dir = 8
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "tt" = (
 /obj/structure/platform_decoration/strata{
 	dir = 1
@@ -1426,24 +1604,24 @@
 	dir = 8
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "tv" = (
 /obj/structure/flora/tree/pine,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "tw" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
 	dir = 4
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "ty" = (
 /obj/structure/bed/chair/wood/normal{
 	dir = 1
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "tz" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 0;
@@ -1451,7 +1629,7 @@
 	layer = 3.1
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "tL" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -1459,13 +1637,13 @@
 	pixel_y = 2
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "tQ" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "tX" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -1473,29 +1651,36 @@
 	pixel_y = 2
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "ue" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 8
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "uk" = (
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "up" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
+"us" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 1;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "ux" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "uy" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 5.11;
@@ -1503,7 +1688,7 @@
 	pixel_y = 0
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "uz" = (
 /obj/structure/desertdam/decals/road_stop{
 	dir = 8;
@@ -1511,45 +1696,45 @@
 	},
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "uN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
 	pixel_y = -3
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "uP" = (
 /obj/structure/cargo_container/unsc/main_1,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "vl" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2-4-8"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "vm" = (
 /obj/structure/prop/unsc_crate/big/stack,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "vv" = (
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "vy" = (
 /obj/structure/bed/chair/wood/normal,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "vB" = (
 /obj/structure/cargo_container/unsc/main_1/c,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "vC" = (
 /obj/structure/machinery/m56d_hmg/mg_turret{
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "vF" = (
 /obj/structure/platform/strata{
 	dir = 1
@@ -1559,13 +1744,13 @@
 	},
 /obj/structure/platform/strata,
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "vH" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
 "vQ" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
@@ -1575,27 +1760,36 @@
 	dir = 1
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "vY" = (
 /obj/structure/bed/chair{
 	dir = 1;
 	pixel_y = 13
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
+"wa" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/scout_posts)
+"wd" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/asphalt/cement,
+/area/skyhammer/interior/gatehouse/b)
 "wi" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams");
 	dir = 1
 	},
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "wj" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "wm" = (
 /obj/structure/sign/poster/pinup{
 	pixel_x = 6;
@@ -1614,26 +1808,51 @@
 	pixel_y = 2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "wv" = (
 /obj/structure/bed/chair/comfy/black,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
+"ww" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/mac_controls)
 "wz" = (
 /turf/open/snow/layer1,
-/area/space)
+/area/skyhammer/exterior)
+"wJ" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior/bunker/ammo_loader)
+"wP" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/bunks)
+"wU" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior/bunker/hallway)
 "wX" = (
 /obj/structure/machinery/light/small{
 	dir = 1
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "wZ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
+"xm" = (
+/obj/structure/prop/unsc_crate/standard/blue{
+	pixel_x = 4;
+	pixel_y = 1
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
 "xq" = (
 /obj/structure/filingcabinet{
 	pixel_y = 17;
@@ -1649,7 +1868,7 @@
 	pixel_x = 26
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "xz" = (
 /obj/structure/desertdam/decals/road_stop{
 	dir = 8;
@@ -1659,24 +1878,30 @@
 	icon_state = "road_edge_decal9"
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
+"xA" = (
+/obj/structure/machinery/door/airlock/unsc{
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
 "xF" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "xK" = (
 /obj/structure/closet/secure_closet/fridge/meat,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "xN" = (
 /obj/structure/flora/tree/pine,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "xQ" = (
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "xZ" = (
 /obj/structure/prop/unsc_crate/big/stack/alt,
 /obj/structure/prop/unsc_crate/standard/green{
@@ -1685,7 +1910,7 @@
 	layer = 3.2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "yb" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -10;
@@ -1696,7 +1921,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "ys" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/cameras/wooden_tv{
@@ -1705,7 +1930,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "yA" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo,
 /obj/effect/decal/warning_stripes{
@@ -1715,16 +1940,31 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
+"yF" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
+"yH" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 4;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "yK" = (
 /obj/structure/platform{
 	dir = 1
 	},
 /turf/open/shuttle/escapepod/west,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "yL" = (
 /turf/open/asphalt/cement/cement7,
-/area/space)
+/area/skyhammer/exterior)
 "yN" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -10;
@@ -1732,25 +1972,31 @@
 	layer = 3.2
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "yO" = (
 /obj/structure/cargo_container/unsc/vertical/south_3,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "yX" = (
 /obj/structure/platform_decoration/strata,
 /obj/structure/platform_decoration/strata{
 	dir = 4
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "zb" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams");
 	dir = 4
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
+"zt" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4"
+	},
+/turf/open/asphalt/cement/cement4,
+/area/skyhammer/interior)
 "zv" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -1758,44 +2004,44 @@
 	},
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "zD" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
 	pixel_y = 2
 	},
 /turf/open/floor/almayer/sterile_green_side/north,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "zV" = (
 /obj/structure/platform_decoration/strata{
 	dir = 8
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "Aa" = (
 /obj/structure/extinguisher_cabinet{
 	pixel_x = -27
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Ad" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer/sterile_green_side,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "Ae" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Af" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Aj" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
@@ -1803,37 +2049,37 @@
 	},
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "Aq" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 8
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/bathroom)
 "Be" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 1;
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
 "Bf" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 7;
 	pixel_y = 0
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "Bi" = (
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "Bo" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo,
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/interior)
 "Bq" = (
 /obj/structure/machinery/power/apc/almayer/west,
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -1844,7 +2090,7 @@
 	},
 /obj/item/reagent_container/food/snacks/applepie,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "Bw" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -7;
@@ -1852,35 +2098,74 @@
 	density = 0
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
+"BH" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
+"BL" = (
+/obj/structure/filingcabinet/medical{
+	pixel_x = -8;
+	pixel_y = 17
+	},
+/obj/structure/closet/secure_closet{
+	pixel_y = 14;
+	pixel_x = 8;
+	name = "Confiscated Items Locker";
+	req_access = list(9)
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
 "BQ" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full"
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
+"BT" = (
+/obj/structure/machinery/computer/crew/unsc/big{
+	pixel_y = 9
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "BU" = (
 /turf/open/floor/strata/orange_edge{
 	dir = 1
 	},
-/area/space)
+/area/skyhammer/interior/bunker/storage)
+"BW" = (
+/turf/closed/wall/shiva/ice,
+/area/skyhammer/exterior)
 "Cn" = (
 /turf/open/asphalt/cement/cement14,
-/area/space)
+/area/skyhammer/exterior)
 "Co" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 2;
 	pixel_y = 26
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "Cp" = (
 /turf/open/floor/plating,
-/area/space)
+/area/skyhammer/exterior)
+"Cq" = (
+/obj/structure/machinery/door/airlock/unsc{
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "Cy" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
+"CD" = (
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
 "CJ" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/paper_bin{
@@ -1892,7 +2177,7 @@
 	pixel_y = 8
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "CM" = (
 /obj/structure/machinery/optable{
 	pixel_x = 0;
@@ -1901,28 +2186,28 @@
 	density = 0
 	},
 /turf/open/floor/almayer/sterile_green,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "CN" = (
 /obj/structure/sink{
 	dir = 8;
 	pixel_x = -11
 	},
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "CQ" = (
 /obj/structure/machinery/colony_floodlight,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "CS" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "CX" = (
 /obj/structure/cargo_container/unsc/main_1/e,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Da" = (
 /obj/structure/mirror{
 	pixel_x = -32
@@ -1932,7 +2217,7 @@
 	pixel_x = -11
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/bathroom)
 "Db" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = -5;
@@ -1940,19 +2225,22 @@
 	layer = 3.2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
+"De" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/interior/scout_posts)
 "Du" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement14,
-/area/space)
+/area/skyhammer/exterior)
 "Dw" = (
 /obj/structure/machinery/medical_pod/bodyscanner{
 	pixel_y = 6
 	},
 /turf/open/floor/almayer/sterile_green_corner/west,
-/area/space)
+/area/skyhammer/interior)
 "Dx" = (
 /obj/structure/flora/pottedplant{
 	desc = "It is made of Fiberbush(tm). It contains asbestos. Studies say that greenery calms the mind due to some sort evolved mechanism in the brain. This plant is not calming.";
@@ -1966,7 +2254,7 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "Dz" = (
 /obj/structure/bed/chair{
 	dir = 8;
@@ -1974,37 +2262,43 @@
 	pixel_x = -7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
 "DC" = (
 /obj/structure/window/framed/unsc,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "DD" = (
 /obj/structure/ladder{
 	id = "ammo_loading";
 	height = -1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"DE" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "DM" = (
 /obj/item/tool/weldingtool,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "DW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "Ee" = (
 /turf/closed/wall/unsc,
-/area/space)
+/area/skyhammer/interior)
 "Eg" = (
 /obj/structure/bed/chair/comfy/black{
 	dir = 8
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
+"Eq" = (
+/turf/open/asphalt/cement,
+/area/skyhammer/interior/gatehouse/b)
 "EF" = (
 /obj/structure/closet/secure_closet{
 	pixel_x = 7
@@ -2017,7 +2311,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "EJ" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/camera/autoname{
@@ -2025,17 +2319,23 @@
 	dir = 1
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "EK" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "EM" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"ER" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior/bunker/hallway)
 "ES" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/device/flashlight/lamp/on{
@@ -2043,13 +2343,13 @@
 	pixel_x = 7
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "EZ" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4-8"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior)
 "Fa" = (
 /obj/structure/platform/strata{
 	dir = 1
@@ -2058,13 +2358,13 @@
 	dir = 4
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "Fc" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 1
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "Fd" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 1;
@@ -2075,14 +2375,14 @@
 	pixel_x = 0
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "Fr" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 2;
 	pixel_y = 0
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Fv" = (
 /obj/structure/prop/unsc_crate/standard/green{
 	pixel_x = -7;
@@ -2110,7 +2410,7 @@
 /turf/open/floor/strata/orange_edge{
 	dir = 1
 	},
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "FA" = (
 /obj/structure/machinery/computer3/server/rack,
 /obj/structure/window/reinforced{
@@ -2120,29 +2420,39 @@
 	},
 /obj/structure/machinery/door/window/southleft,
 /turf/open/floor/tdome/tcomms,
-/area/space)
+/area/skyhammer/interior)
 "FH" = (
 /obj/structure/machinery/door/airlock/unsc{
 	dir = 1
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "FI" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "FN" = (
 /turf/open/floor/strata/floor3,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
+"FT" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/skyhammer/interior/gatehouse/b)
+"FX" = (
+/obj/structure/machinery/door/airlock/unsc,
+/turf/open/floor/strata,
+/area/skyhammer/interior/scout_posts)
+"Gc" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/exterior)
 "Gi" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 4
 	},
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "Gp" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -2151,7 +2461,7 @@
 	},
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "Gq" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -2166,7 +2476,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "GF" = (
 /obj/structure/bed/chair/comfy/bench/south/east{
 	pixel_x = -6;
@@ -2176,7 +2486,7 @@
 /turf/open/floor/strata/orange_icorner{
 	dir = 4
 	},
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "GH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/storage/toolbox/traxus/alt{
@@ -2188,11 +2498,17 @@
 	dir = 1
 	},
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "GI" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo,
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
+"GJ" = (
+/obj/structure/ladder{
+	id = "ammo_loading"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "GP" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired{
@@ -2201,7 +2517,7 @@
 	},
 /obj/item/device/binoculars/civ,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/scout_posts)
 "GT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -2209,7 +2525,7 @@
 	pixel_x = 1
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "GW" = (
 /obj/structure/cargo_container/unsc/vertical/south_2,
 /obj/structure/prop/unsc_crate/big{
@@ -2218,14 +2534,14 @@
 	pixel_y = -10
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "GY" = (
 /obj/structure/cargo_container/unsc/main_1/d,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "GZ" = (
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "Ha" = (
 /obj/item/ammo_casing{
 	dir = 5;
@@ -2236,7 +2552,7 @@
 	pixel_y = -6
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Hb" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
@@ -2246,29 +2562,49 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "Hf" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "Hk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
 	pixel_y = -3
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Hm" = (
 /obj/structure/machinery/light/small{
 	dir = 4;
 	light_range = 4
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
+"Hn" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "Ho" = (
 /obj/structure/machinery/landinglight/ds1/delaythree,
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
+"Hu" = (
+/obj/structure/machinery/door/airlock/unsc,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
+"Hy" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 8;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "HA" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/door_control/brbutton/alt{
@@ -2284,11 +2620,11 @@
 	pixel_y = 7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "HB" = (
 /obj/item/tool/pickaxe/diamonddrill,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "HF" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/reagent_container/glass/bucket{
@@ -2296,14 +2632,14 @@
 	pixel_x = 14
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "HG" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 1;
 	network = list("Site_Cams", "Entrance_Cams")
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "HH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/effect/spawner/prop_gun{
@@ -2321,23 +2657,23 @@
 	pixel_y = 13
 	},
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "HJ" = (
 /obj/structure/prop/dam/crane,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "HN" = (
 /obj/structure/machinery/body_scanconsole{
 	pixel_y = 6
 	},
 /turf/open/floor/almayer/sterile_green_side,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "Ib" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement7,
-/area/space)
+/area/skyhammer/exterior)
 "Ik" = (
 /obj/structure/platform/strata{
 	dir = 8
@@ -2350,20 +2686,32 @@
 	desc = "A wooden trench board to keep soldier's feet off the dirt."
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
+"In" = (
+/obj/structure/pipes/vents/pump,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
 "Iu" = (
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "IB" = (
 /turf/closed/void,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "IK" = (
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "IL" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"IN" = (
+/obj/structure/bed/chair/comfy/black{
+	dir = 1;
+	pixel_y = 24;
+	pixel_x = -17
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "IO" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 2;
@@ -2371,7 +2719,7 @@
 	layer = 3.2
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "IT" = (
 /obj/structure/gun_rack/halo/medkit{
 	dir = 8;
@@ -2379,11 +2727,11 @@
 	pixel_y = 2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "IX" = (
 /obj/item/tool/shovel/snow,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "IY" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.1;
@@ -2391,14 +2739,14 @@
 	pixel_y = -25
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "Jg" = (
 /obj/structure/closet/crate/unsc{
 	pixel_y = 10;
 	pixel_x = 9
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Jh" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo{
 	id = "entrance_secondary_b"
@@ -2407,7 +2755,7 @@
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "Ji" = (
 /obj/structure/prop/unsc_crate/corrugated/blue{
 	pixel_x = -3;
@@ -2427,13 +2775,13 @@
 	pixel_y = -4
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Jx" = (
 /obj/docking_port/stationary/marine_dropship/lz1{
 	name = "Primary LZ - Site Interior"
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/skyhammer/exterior)
 "Kg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -2441,7 +2789,7 @@
 	pixel_y = -3
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "Ki" = (
 /obj/structure/bed/chair/comfy/bench/north/east{
 	pixel_x = -6;
@@ -2453,7 +2801,11 @@
 	pixel_y = 0
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
+"Kn" = (
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
 "Kq" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = -5;
@@ -2461,14 +2813,17 @@
 	layer = 3.2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "Kw" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 8;
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"KH" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/skyhammer/exterior)
 "KI" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
@@ -2478,17 +2833,23 @@
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"KS" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/armory)
 "La" = (
 /obj/item/explosive/plastic/breaching_charge,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "Lc" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal7"
 	},
 /turf/open/asphalt/cement/cement15,
-/area/space)
+/area/skyhammer/exterior)
 "Lg" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	id = "entrance_primary_a"
@@ -2497,7 +2858,7 @@
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Lh" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
@@ -2508,18 +2869,26 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Li" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/effect/spawner/random/toolbox,
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
+"Lq" = (
+/obj/structure/machinery/m56d_hmg/mg_turret{
+	dir = 4;
+	icon_state = "towergun";
+	pixel_x = 13
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior)
 "Lu" = (
 /obj/structure/machinery/body_scanconsole{
 	pixel_y = 6
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "Lv" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -2527,7 +2896,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "Ly" = (
 /obj/structure/platform/strata,
 /obj/item/stack/sheet/wood{
@@ -2537,12 +2906,12 @@
 	desc = "A wooden trench board to keep soldier's feet off the dirt."
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "LB" = (
 /obj/structure/surface/table/reinforced,
 /obj/structure/machinery/microwave,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "LK" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/phone_base{
@@ -2553,7 +2922,10 @@
 	},
 /obj/item/map/Skyhammer,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"LO" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/armory)
 "LW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -2564,11 +2936,11 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Ma" = (
 /obj/structure/cargo_container/unsc/main_2/c,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Mb" = (
 /obj/structure/prop/unsc_crate/standard/medical{
 	pixel_x = -4;
@@ -2576,7 +2948,7 @@
 	layer = 3.2
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "Me" = (
 /obj/structure/machinery/m56d_hmg/mg_turret{
 	dir = 8;
@@ -2587,7 +2959,7 @@
 	dir = 8
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Mi" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -2599,7 +2971,7 @@
 	pixel_x = 1
 	},
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "Mk" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_y = 25;
@@ -2611,14 +2983,22 @@
 	},
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/strata/orange_icorner/north,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
+"Mr" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_y = 0;
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement,
+/area/skyhammer/exterior)
 "Mx" = (
 /obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "MB" = (
 /obj/structure/stairs/perspective{
 	dir = 1;
@@ -2633,7 +3013,7 @@
 	pixel_x = 3
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "MD" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/emails{
@@ -2645,18 +3025,18 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "MG" = (
 /obj/structure/machinery/door/airlock/unsc,
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "MM" = (
 /obj/structure/prop/tower,
 /turf/open/floor/plating/kutjevo,
-/area/space)
+/area/skyhammer/exterior)
 "MQ" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = -5;
@@ -2664,7 +3044,7 @@
 	layer = 3.2
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Nc" = (
 /obj/structure/prop/unsc_crate/standard/blue{
 	pixel_x = -8;
@@ -2686,7 +3066,15 @@
 	layer = 3.2
 	},
 /turf/open/floor/strata/orange_icorner,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
+"Ne" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 8;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
 "No" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired{
@@ -2694,7 +3082,15 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior)
+"Nz" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
+"ND" = (
+/obj/structure/desertdam/decals/road_edge,
+/turf/open/asphalt/cement/cement1,
+/area/skyhammer/interior)
 "NL" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -2702,14 +3098,14 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "NP" = (
 /obj/structure/cargo_container/unsc/main_1/b,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "NW" = (
 /turf/closed/wall/shiva/ice,
-/area/space)
+/area/skyhammer/interior)
 "NZ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -2717,28 +3113,34 @@
 	pixel_y = 2
 	},
 /turf/open/floor/almayer/sterile_green_side/northeast,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "Oa" = (
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
 /turf/open/floor/strata/orange_icorner,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "Oh" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_y = 25;
 	pixel_x = 0
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"Om" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "0-4"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/bunks)
 "Oq" = (
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "OA" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 18;
 	pixel_y = 3
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "OH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -2746,13 +3148,13 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/red2,
-/area/space)
+/area/skyhammer/interior)
 "OI" = (
 /obj/structure/barricade/handrail{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement15,
-/area/space)
+/area/skyhammer/exterior)
 "OJ" = (
 /obj/structure/surface/table/woodentable/fancy,
 /obj/item/reagent_container/food/drinks/bottle/rum{
@@ -2770,7 +3172,11 @@
 	pixel_y = 13
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
+"OK" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/ammo_loader)
 "OO" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -2782,15 +3188,15 @@
 	pixel_y = 13
 	},
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "OR" = (
 /obj/structure/tent/big,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "OS" = (
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "OT" = (
 /obj/structure/machinery/computer/communications{
 	dir = 8;
@@ -2798,33 +3204,39 @@
 	},
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "OV" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 8
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "OW" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "Pa" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams");
 	dir = 8
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "Pf" = (
 /obj/structure/platform/strata{
 	dir = 4
 	},
 /obj/structure/platform/strata,
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
+"Pg" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior/bunker/ammo_loader)
 "Pr" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 1;
@@ -2836,7 +3248,7 @@
 	pixel_x = -7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "PI" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -2845,7 +3257,7 @@
 	},
 /obj/item/weapon/gun/pistol/halo/m6g/unloaded,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "PS" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -2853,25 +3265,25 @@
 	pixel_y = 8
 	},
 /turf/open/floor/strata/orange_edge/east,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "PU" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "PW" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior)
 "PY" = (
 /obj/structure/bed/chair/office/light{
 	dir = 4
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "Qe" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 5;
@@ -2879,11 +3291,11 @@
 	layer = 5
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Qn" = (
 /obj/structure/girder,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/interior)
 "Qo" = (
 /obj/structure/machinery/cm_vending/sorted/medical/blood{
 	req_access = list();
@@ -2894,21 +3306,24 @@
 	icon_state = "cargo"
 	},
 /turf/open/floor/almayer,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"Qq" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
 "QA" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 8;
 	network = list("Site_Cams", "Entrance_Cams")
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "QE" = (
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/sterile_green_side/east,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "QL" = (
 /turf/open/floor/strata/orange_edge,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "QQ" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -2918,26 +3333,26 @@
 /turf/open/floor/strata/orange_icorner{
 	dir = 4
 	},
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "QT" = (
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "Rc" = (
 /turf/open/floor/plating/kutjevo,
-/area/space)
+/area/skyhammer/exterior)
 "Ri" = (
 /obj/structure/barricade/handrail{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "Rj" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Rn" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired{
@@ -2945,13 +3360,13 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "Ro" = (
 /obj/structure/ladder{
 	id = "ammo_loading"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Rs" = (
 /obj/structure/bed/chair/comfy/bench/mid/east{
 	pixel_x = -6;
@@ -2964,16 +3379,16 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "RD" = (
 /turf/open/floor/almayer/sterile_green_side/north,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "RH" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
 	},
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/exterior)
 "RN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -2981,12 +3396,12 @@
 	},
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "RP" = (
 /obj/structure/surface/table/reinforced,
 /obj/item/tool/kitchen/knife/butcher,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "RR" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -2995,7 +3410,7 @@
 	},
 /obj/effect/spawner/random/tool,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "RY" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo{
 	id = "entrance_secondary_a"
@@ -3004,30 +3419,43 @@
 	icon_state = "cargo"
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "Sa" = (
 /obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "Sb" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "Sc" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams")
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
+"Sm" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4"
+	},
+/turf/open/asphalt/cement/cement12,
+/area/skyhammer/interior)
 "Ss" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/almayer/sterile_green_corner/north,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"Sz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -3
+	},
+/turf/open/asphalt/cement,
+/area/skyhammer/exterior)
 "SA" = (
 /obj/structure/coatrack{
 	pixel_x = 7;
@@ -3038,12 +3466,12 @@
 	pixel_x = 1
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "SE" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "ST" = (
 /obj/structure/machinery/conveyor_switch{
 	pixel_x = 0;
@@ -3051,57 +3479,68 @@
 	id = "ammobelt"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
+"SU" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/barricade/sandbags/wired{
+	dir = 1;
+	icon_state = "sandbag_0"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/a)
 "SX" = (
 /obj/structure/machinery/landinglight/ds1,
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
 "Ta" = (
 /obj/structure/machinery/sensortower{
 	pixel_x = -8
 	},
 /turf/open/floor/plating/kutjevo,
-/area/space)
+/area/skyhammer/exterior)
 "Tf" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /turf/open/shuttle/escapepod/north,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "To" = (
 /turf/closed/wall/shiva/prefabricated,
-/area/space)
+/area/skyhammer/interior)
 "Tp" = (
 /obj/structure/barricade/handrail{
 	pixel_y = -4;
 	layer = 3.1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Tq" = (
 /obj/structure/bed/chair{
 	pixel_y = -12
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Tt" = (
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/almayer/dark_sterile,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"Tz" = (
+/turf/open/asphalt/cement/cement3,
+/area/skyhammer/interior/gatehouse/a)
 "TC" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_y = 25;
 	pixel_x = 0
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "TE" = (
 /obj/structure/platform/strata,
 /obj/structure/platform/strata{
 	dir = 4
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "TK" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -3109,16 +3548,16 @@
 	pixel_x = 1
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "TV" = (
 /obj/structure/surface/table/reinforced,
 /obj/structure/machinery/reagentgrinder,
 /turf/open/floor/prison/sterile_white,
-/area/space)
+/area/skyhammer/interior)
 "TZ" = (
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/exterior)
 "Ud" = (
 /obj/structure/closet/secure_closet{
 	pixel_x = -7
@@ -3127,7 +3566,7 @@
 	pixel_x = 7
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "Uf" = (
 /obj/item/ammo_casing{
 	icon_state = "cartridge_2_1";
@@ -3135,22 +3574,25 @@
 	pixel_x = 3
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "Ui" = (
 /obj/structure/cargo_container/unsc/main_2/b,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
+"Ur" = (
+/turf/open/snow/layer3,
+/area/skyhammer/interior)
 "Ut" = (
 /obj/structure/machinery/floodlight/landing,
 /obj/structure/machinery/landinglight/ds1{
 	dir = 4
 	},
 /turf/open/floor/plating,
-/area/space)
+/area/skyhammer/exterior)
 "Uu" = (
 /obj/structure/girder/displaced,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "UK" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -3158,22 +3600,28 @@
 	pixel_y = 2
 	},
 /turf/open/asphalt/cement/cement1,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
+"UM" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/storage)
 "UN" = (
 /obj/structure/platform/strata,
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "UX" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Va" = (
 /obj/structure/bed,
 /obj/item/bedsheet/orange,
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "Vf" = (
 /obj/structure/platform/strata{
 	dir = 1
@@ -3185,20 +3633,23 @@
 	dir = 8
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
+"Vl" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/interior/bunker/entrance)
 "Vp" = (
 /obj/structure/bookcase{
 	icon_state = "book-5"
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "Vr" = (
 /obj/structure/stairs/perspective{
 	dir = 1;
 	icon_state = "p_stair_full"
 	},
 /turf/open/floor/tdome,
-/area/space)
+/area/skyhammer/interior)
 "Vs" = (
 /obj/structure/gun_rack/halo/medkit{
 	dir = 4;
@@ -3207,29 +3658,35 @@
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
+"Vv" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/skyhammer/interior/scout_posts)
 "Vz" = (
 /obj/structure/prop/unsc_crate/big{
 	pixel_x = 0;
 	pixel_y = -9
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
+"VF" = (
+/turf/open/snow/layer2,
+/area/skyhammer/interior/scout_posts)
 "VG" = (
 /turf/open/floor/strata/orange_edge/west{
 	dir = 10
 	},
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "VL" = (
 /obj/structure/tunnel,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "VX" = (
 /obj/structure/platform/strata{
 	dir = 1
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
 "Wk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -3237,7 +3694,7 @@
 	pixel_x = 1
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/interior/gatehouse/b)
 "Wl" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -3246,11 +3703,11 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "Wn" = (
 /obj/structure/cargo_container/unsc/main_2,
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "Wu" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -3261,18 +3718,18 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "WE" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 1
 	},
 /turf/open/asphalt/cement/cement12,
-/area/space)
+/area/skyhammer/exterior)
 "WK" = (
 /obj/structure/machinery/computer3/server/rack,
 /obj/structure/window/reinforced,
 /turf/open/floor/tdome/tcomms,
-/area/space)
+/area/skyhammer/interior)
 "WL" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -3282,7 +3739,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "WP" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -3293,7 +3750,7 @@
 	pixel_x = 1
 	},
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
 "WQ" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -3313,7 +3770,7 @@
 	pixel_x = 2
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "WT" = (
 /obj/structure/bed{
 	can_buckle = 0
@@ -3338,13 +3795,13 @@
 	pixel_x = -25
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "WU" = (
 /obj/structure/machinery/door/airlock/unsc{
 	dir = 1
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/gatehouse/a)
 "WV" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 1;
@@ -3355,23 +3812,23 @@
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "WY" = (
 /obj/structure/machinery/conveyor{
 	id = "ammobelt";
 	dir = 9
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/space)
+/area/skyhammer/interior/bunker/ammo_loader)
 "Xh" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo,
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement/cement3,
-/area/space)
+/area/skyhammer/interior)
 "Xk" = (
 /obj/structure/girder/reinforced,
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "Xp" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -3383,13 +3840,13 @@
 	pixel_y = 26
 	},
 /turf/open/floor/almayer/sterile_green_corner,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
 "Xy" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal9"
 	},
 /turf/open/asphalt/cement,
-/area/space)
+/area/skyhammer/exterior)
 "Xz" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -3397,21 +3854,28 @@
 	pixel_y = 2
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "XA" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 8;
 	icon_state = "sandbag_0"
 	},
 /turf/open/snow/layer2,
-/area/space)
+/area/skyhammer/exterior)
 "XP" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 8;
 	layer = 2.98
 	},
 /turf/open/floor/almayer/sterile_green_side/northwest,
-/area/space)
+/area/skyhammer/interior/bunker/medbay)
+"XQ" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 4;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/entrance)
 "XW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -3420,31 +3884,31 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/hallway)
 "Ym" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata/orange_edge/west,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "Yq" = (
 /obj/structure/machinery/firealarm{
 	dir = 8;
 	pixel_x = -19
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/mac_controls)
 "YG" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	pixel_y = 2;
 	id = "site_armoury"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/armory)
 "YS" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/bunks)
 "Ze" = (
 /obj/structure/platform/strata{
 	dir = 1
@@ -3453,7 +3917,13 @@
 	dir = 8
 	},
 /turf/open/snow/layer0,
-/area/space)
+/area/skyhammer/exterior)
+"Zf" = (
+/obj/item/ammo_box/magazine/m56d{
+	pixel_y = -6
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/gatehouse/b)
 "Zj" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -3461,30 +3931,30 @@
 	pixel_x = 1
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "Zk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
 /turf/open/floor/strata,
-/area/space)
+/area/skyhammer/interior/bunker/entrance)
 "Zy" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NW-out";
 	pixel_y = 2
 	},
 /turf/open/snow/layer3,
-/area/space)
+/area/skyhammer/exterior)
 "ZD" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/strata/orange_edge{
 	dir = 1
 	},
-/area/space)
+/area/skyhammer/interior/bunker/storage)
 "ZP" = (
 /obj/structure/machinery/landinglight/ds1/delayone,
 /turf/open/asphalt/cement/cement4,
-/area/space)
+/area/skyhammer/exterior)
 
 (1,1,1) = {"
 NW
@@ -12338,7 +12808,7 @@ NW
 NW
 NW
 NW
-NW
+BW
 xN
 Oq
 Oq
@@ -17202,11 +17672,11 @@ Oq
 Oq
 Xk
 ae
-ae
+Vv
 GP
 fB
 fB
-ae
+Vv
 ae
 Xk
 Oq
@@ -17454,11 +17924,11 @@ oP
 oP
 oP
 ae
-ae
-oT
-oT
-oT
-ae
+Vv
+wa
+wa
+wa
+Vv
 ae
 oP
 oP
@@ -17706,11 +18176,11 @@ oP
 oP
 oP
 ae
-ae
+Vv
 Be
 Dz
 mI
-ae
+Vv
 ae
 oP
 oP
@@ -17958,11 +18428,11 @@ oP
 oP
 oP
 ae
-ae
-oT
-oT
-oT
-ae
+Vv
+wa
+wa
+wa
+Vv
 ae
 oP
 oP
@@ -18210,11 +18680,11 @@ Oq
 Oq
 Xk
 ae
-ae
-oP
-Hf
-oP
-ae
+Vv
+De
+FX
+De
+Vv
 ae
 Xk
 Oq
@@ -18463,9 +18933,9 @@ Oq
 Oq
 Oq
 Oq
-oP
-cQ
-oP
+De
+VF
+De
 Oq
 Oq
 Oq
@@ -19742,7 +20212,7 @@ oP
 oP
 oP
 oP
-oP
+Gc
 xN
 Oq
 Oq
@@ -22688,11 +23158,11 @@ Oq
 Oq
 Ee
 HF
-UX
+kS
 EZ
 PW
 vv
-WU
+Cq
 cQ
 cQ
 Oq
@@ -22922,7 +23392,7 @@ NW
 NW
 NW
 NW
-Oq
+Ur
 xN
 Oq
 Oq
@@ -33750,9 +34220,9 @@ ae
 ae
 ae
 Ro
-ae
+KH
 Ro
-ae
+KH
 ae
 ae
 ae
@@ -34254,7 +34724,7 @@ ae
 ae
 by
 oT
-PW
+ER
 Tp
 yK
 ae
@@ -34506,7 +34976,7 @@ ae
 ae
 ae
 kp
-PW
+ER
 hn
 ae
 Oa
@@ -34758,17 +35228,17 @@ ae
 ae
 ae
 oT
-PW
+ER
 jG
 ae
 BU
-oT
-oT
-oT
+ou
+ou
+ou
 iX
-oT
+ou
 mA
-oT
+ou
 OO
 ae
 ae
@@ -35018,9 +35488,9 @@ cj
 xZ
 tQ
 Mb
-oT
+ou
 RR
-oT
+ou
 aQ
 ae
 ae
@@ -35254,9 +35724,9 @@ ae
 ae
 ae
 Pr
-oT
+wP
 nZ
-Iu
+gx
 Aq
 jl
 ae
@@ -35266,21 +35736,21 @@ gc
 ae
 ae
 eO
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+ou
+ou
+ou
+ou
+ou
+ou
+ou
 QL
 ae
 ae
-oP
-No
+Vl
+kw
 Sb
-No
-oP
+kw
+Vl
 Oq
 Oq
 Oq
@@ -35505,8 +35975,8 @@ ae
 ae
 ae
 eu
-oT
-cZ
+wP
+Om
 ae
 ae
 ae
@@ -35516,22 +35986,22 @@ by
 oT
 XW
 oT
-ae
+KH
 Fv
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+ou
+ou
+ou
+ou
+ou
+ou
+ou
 lz
 ae
 ae
-oP
-oT
+Vl
+nc
 sK
-oT
+nc
 Rn
 Oq
 Oq
@@ -35757,7 +36227,7 @@ ae
 ae
 ae
 YS
-oT
+wP
 PU
 WT
 nF
@@ -35766,24 +36236,24 @@ Ud
 ae
 by
 oT
-PU
+lp
 oT
-ae
+KH
 ZD
-oT
-oT
-oT
-cV
-cZ
-oT
-oT
+ou
+ou
+ou
+In
+qb
+ou
+ou
 wi
 ae
 ae
-oP
-oT
-oT
-oT
+Vl
+nc
+nc
+nc
 Rn
 Oq
 Oq
@@ -36011,31 +36481,31 @@ ae
 ae
 Fd
 PU
-oT
-oT
-oT
+wP
+wP
+wP
 pE
 ae
 ae
-aX
-PW
+sB
+ER
 oT
-WU
+xA
 BU
-oT
-oT
-oT
-oT
-PU
-oT
-oT
+ou
+ou
+ou
+ou
+dA
+ou
+ou
 QL
 ae
 ae
-oP
-oT
-Af
-oT
+Vl
+nc
+XQ
+nc
 Rn
 Oq
 Oq
@@ -36270,7 +36740,7 @@ Ud
 ae
 ae
 dU
-PW
+ER
 oT
 ae
 Mk
@@ -36284,10 +36754,10 @@ dR
 fh
 ae
 ae
-oP
-Hf
-oP
-fB
+Vl
+Hu
+Vl
+Ne
 Sb
 Oq
 Oq
@@ -36522,22 +36992,22 @@ ae
 ae
 ae
 oT
-PW
+ER
 oT
 ae
 ae
 ae
-Zk
-Zk
-Zk
+UM
+UM
+UM
 yA
 ae
-Hf
+oq
 ae
 ae
-Be
-oT
-oT
+bp
+nc
+nc
 CQ
 Oq
 Oq
@@ -36755,28 +37225,28 @@ ae
 ae
 ae
 aC
-oT
-oT
-oT
+ww
+ww
+ww
 Eg
-oT
+ww
 ae
 oT
 sG
 sG
-Rj
+gn
 oT
-PU
+lp
 oT
 oT
 oT
 Aa
-Rj
+gn
 oT
 oT
-PU
+lp
 oT
-Rj
+gn
 oT
 oT
 pq
@@ -36788,11 +37258,11 @@ oT
 ma
 rS
 go
-oT
-oT
-oT
-oT
-oT
+nc
+nc
+nc
+nc
+nc
 FN
 Oq
 Oq
@@ -37006,19 +37476,19 @@ NW
 ae
 ae
 ae
-oT
+ww
 nf
-oT
+ww
 Cy
-oT
-oT
+ww
+ww
 EK
 oT
 oT
 oT
 oT
 oT
-PU
+lp
 oT
 oT
 oT
@@ -37026,7 +37496,7 @@ oT
 oT
 oT
 oT
-PU
+lp
 oT
 oT
 oT
@@ -37034,21 +37504,21 @@ oT
 oT
 oT
 oT
-PU
+lp
 oT
 oT
 bY
 Zk
 go
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+nc
+nc
+nc
+nc
+nc
+nc
+iR
+iR
+iR
 ha
 yL
 yL
@@ -37258,13 +37728,13 @@ NW
 ae
 ae
 ae
-ae
+KH
 pv
 qU
-oT
-oT
-oT
-oT
+ww
+ww
+ww
+ww
 oT
 UX
 UX
@@ -37278,7 +37748,7 @@ UX
 CS
 pb
 CS
-qe
+wU
 UX
 UX
 CS
@@ -37292,15 +37762,15 @@ CS
 WL
 Wl
 qQ
-CS
+oH
 mt
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+nc
+nc
+nc
+nc
+iR
+iR
+iR
 ha
 yL
 yL
@@ -37511,6 +37981,12 @@ ae
 ae
 ae
 aC
+ww
+ww
+ww
+ww
+ww
+ww
 oT
 oT
 oT
@@ -37522,13 +37998,7 @@ oT
 oT
 oT
 oT
-oT
-oT
-oT
-oT
-oT
-oT
-PU
+lp
 oT
 oT
 oT
@@ -37538,21 +38008,21 @@ oT
 oT
 oT
 oT
-PU
+lp
 oT
 oT
 bY
 Zk
 go
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
-oT
+nc
+nc
+nc
+nc
+nc
+nc
+iR
+iR
+iR
 ha
 yL
 yL
@@ -37634,11 +38104,11 @@ xN
 Oq
 Oq
 HG
-oP
-oP
-oP
-oP
-oP
+iF
+iF
+iF
+iF
+iF
 Sc
 cQ
 Oq
@@ -37762,12 +38232,12 @@ ae
 ae
 ae
 ae
-oT
+ww
 nf
-oT
-oT
-rO
-oT
+ww
+ww
+sb
+ww
 ae
 oT
 oT
@@ -37780,7 +38250,7 @@ se
 oT
 IT
 Af
-PU
+lp
 oT
 oT
 oT
@@ -37790,17 +38260,17 @@ se
 oT
 oT
 oT
-PU
+lp
 oT
 oT
 LW
 Zk
 go
-oT
-oT
-oT
-oT
-oT
+nc
+nc
+nc
+nc
+nc
 FN
 Oq
 Oq
@@ -37888,7 +38358,7 @@ OS
 zv
 ax
 tX
-GZ
+Tz
 Hk
 Lg
 Gp
@@ -38001,13 +38471,13 @@ OS
 OS
 OS
 Xh
-OS
-OS
-OS
-OS
-OS
-OS
-OS
+iG
+iG
+iG
+iG
+iG
+iG
+iG
 ae
 "}
 (138,1,1) = {"
@@ -38016,7 +38486,7 @@ ae
 ae
 ae
 hs
-oT
+ww
 cI
 ol
 ae
@@ -38033,8 +38503,8 @@ ae
 ae
 ae
 Mx
-ae
-ae
+KH
+KH
 ae
 ae
 rY
@@ -38047,9 +38517,9 @@ ae
 ae
 ae
 ae
-Be
-oT
-oT
+bp
+nc
+nc
 CQ
 Oq
 Oq
@@ -38137,13 +38607,13 @@ QT
 QT
 QT
 QT
-uN
+Sz
 up
 lT
-QT
+aW
 uN
 up
-lT
+fD
 QT
 QT
 QT
@@ -38252,14 +38722,14 @@ QT
 QT
 QT
 QT
-QT
-QT
-QT
-QT
-QT
-QT
-QT
-QT
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 ae
 "}
 (139,1,1) = {"
@@ -38300,10 +38770,10 @@ Rs
 GF
 ae
 ae
-oP
-Hf
-oP
-No
+Gc
+Hu
+Vl
+kw
 Sb
 Oq
 Oq
@@ -38389,13 +38859,13 @@ QT
 QT
 QT
 QT
-uN
+Sz
 up
 lT
-QT
+aW
 uN
 up
-lT
+fD
 QT
 QT
 QT
@@ -38504,14 +38974,14 @@ QT
 QT
 QT
 QT
-QT
-QT
-QT
-QT
-QT
-QT
-QT
-QT
+cG
+cG
+cG
+cG
+cG
+cG
+cG
+cG
 ae
 "}
 (140,1,1) = {"
@@ -38528,9 +38998,9 @@ ae
 ae
 aX
 Hb
-oT
-oT
-Ro
+si
+si
+GJ
 ae
 ae
 ae
@@ -38546,16 +39016,16 @@ ae
 iY
 YG
 ib
-PU
-oT
-oT
+KS
+LO
+LO
 VG
 hR
 ae
-oP
-oT
-Rj
-oT
+Gc
+nc
+BH
+nc
 Rn
 Oq
 Oq
@@ -38756,14 +39226,14 @@ TZ
 TZ
 TZ
 TZ
-TZ
-TZ
-TZ
-TZ
-TZ
-TZ
-TZ
-TZ
+ND
+ND
+ND
+ND
+ND
+ND
+ND
+ND
 ae
 "}
 (141,1,1) = {"
@@ -38779,10 +39249,10 @@ ae
 ae
 ae
 sa
-qe
-UX
-mt
-ae
+Pg
+wJ
+nV
+KH
 ae
 ae
 ae
@@ -38796,18 +39266,18 @@ ae
 ae
 ae
 lj
-oT
+LO
 ib
-PU
+KS
 cV
-oT
+LO
 wv
 gG
 ae
-oP
-oT
-oT
-oT
+Gc
+nc
+nc
+nc
 Rn
 Oq
 Oq
@@ -38894,13 +39364,13 @@ cQ
 Oq
 Oq
 Oq
-oP
-oP
-oP
-oP
-oP
-oP
-oP
+iF
+iF
+iF
+iF
+iF
+iF
+iF
 qB
 qB
 nh
@@ -39031,9 +39501,9 @@ ae
 ae
 ae
 oZ
-Af
-oT
-oT
+yH
+si
+si
 DD
 ae
 ae
@@ -39048,18 +39518,18 @@ ae
 ae
 ae
 ek
-oT
+LO
 ib
 oS
-oT
-oT
-oT
+LO
+LO
+LO
 GH
 ae
-oP
-oT
+Gc
+nc
 gC
-oT
+nc
 Rn
 Oq
 Oq
@@ -39147,15 +39617,15 @@ cQ
 Oq
 Oq
 Oq
-oP
+iF
 Db
 rs
 Rj
 ku
-oP
-Sb
-No
-oP
+iF
+Nz
+fc
+iF
 qB
 Oq
 Oq
@@ -39282,11 +39752,11 @@ ae
 ae
 ae
 ae
-Hf
-ae
+iJ
+KH
 DC
 DC
-ae
+KH
 ae
 ae
 ae
@@ -39300,19 +39770,19 @@ ae
 ae
 ae
 rF
-oT
+LO
 ib
-oT
+LO
 rO
-oT
-oT
+LO
+LO
 HH
 ae
-oP
-fB
+Gc
+Ne
 Sb
-fB
-oP
+Ne
+Vl
 Oq
 Oq
 Oq
@@ -39355,8 +39825,8 @@ Oq
 oP
 oP
 No
-Sb
-Sb
+iM
+iM
 cQ
 Oq
 Oq
@@ -39399,15 +39869,15 @@ cQ
 cQ
 cQ
 Oq
-oP
+iF
 nD
-oT
-oT
-mw
-oP
+aM
+aM
+xm
+iF
 Me
 Uf
-Rn
+SU
 qB
 Oq
 Oq
@@ -39536,8 +40006,8 @@ ae
 ae
 Oh
 KI
-oT
-oT
+si
+si
 MD
 ae
 ae
@@ -39605,10 +40075,10 @@ cQ
 cQ
 Oq
 oP
-oT
-oT
-sK
-Rn
+DE
+DE
+rK
+Hn
 cQ
 Oq
 Oq
@@ -39652,14 +40122,14 @@ Oq
 cQ
 cQ
 WU
-oT
-oT
-oT
+aM
+aM
+aM
 MB
 WU
 Tq
 do
-Rn
+SU
 qB
 Oq
 Oq
@@ -39786,9 +40256,9 @@ nr
 nr
 oW
 DC
-aC
-oT
-oT
+BT
+si
+si
 pU
 CJ
 ae
@@ -39856,9 +40326,9 @@ Oq
 Oq
 cQ
 cQ
-WU
-oT
-oT
+Cq
+DE
+DE
 kU
 oP
 cQ
@@ -39903,15 +40373,15 @@ Oq
 Oq
 Oq
 Oq
-oP
-oZ
-oT
+iF
+Kn
+aM
 fg
-oT
-oP
+aM
+iF
 rf
 Ha
-Rn
+SU
 qB
 Oq
 Oq
@@ -40038,11 +40508,11 @@ nr
 oW
 tw
 DC
-oT
-nf
-oT
-oT
-Sb
+si
+IN
+si
+si
+OK
 ae
 ae
 ae
@@ -40110,9 +40580,9 @@ Oq
 Oq
 oP
 kb
-oT
-gC
-Rn
+DE
+Lq
+Hn
 cQ
 Oq
 Oq
@@ -40155,15 +40625,15 @@ Oq
 Oq
 Oq
 Oq
-oP
+iF
 wm
 lD
 dq
 aZ
-oP
-Sb
-fB
-oP
+iF
+Nz
+oD
+iF
 qB
 Oq
 Oq
@@ -40362,9 +40832,9 @@ Oq
 Oq
 oP
 oP
-fB
-Sb
-Sb
+Hy
+iM
+iM
 cQ
 Oq
 Oq
@@ -40407,12 +40877,12 @@ Oq
 Oq
 Oq
 Xk
-oP
-oP
-oP
-oP
-oP
-oP
+iF
+iF
+iF
+iF
+iF
+iF
 qB
 qB
 qB
@@ -41544,7 +42014,7 @@ ae
 ae
 ae
 ae
-Be
+us
 ST
 ae
 WY
@@ -46691,8 +47161,8 @@ Oq
 xN
 Oq
 Xk
-ae
-ae
+KH
+KH
 Xk
 Oq
 Oq
@@ -47699,8 +48169,8 @@ Oq
 Oq
 Oq
 Xk
-ae
-ae
+KH
+KH
 Xk
 Oq
 Oq
@@ -57966,8 +58436,8 @@ Oq
 cQ
 Oq
 WP
-TK
-TK
+Mr
+Mr
 id
 Pa
 Oq
@@ -57982,11 +58452,11 @@ Oq
 Oq
 Oq
 Oq
-oP
-oP
-cQ
-oP
-oP
+De
+De
+VF
+De
+De
 Oq
 Oq
 Oq
@@ -58216,17 +58686,17 @@ Xk
 Oq
 cQ
 Oq
-oP
+kx
 jI
-up
-up
+at
+at
 Jh
+FT
+ae
+Xk
 ae
 ae
 Xk
-ae
-ae
-Xk
 Oq
 Oq
 Oq
@@ -58234,11 +58704,11 @@ Oq
 Oq
 Xk
 ae
-ae
-oP
-Hf
-oP
-ae
+Vv
+De
+FX
+De
+Vv
 ae
 Xk
 Oq
@@ -58464,21 +58934,21 @@ oP
 oP
 ae
 ae
-oP
-oP
+kx
+kx
 Hf
-oP
-oP
+kx
+kx
 wZ
-cC
-cC
+wd
+wd
 DW
+FT
+ae
+oP
 ae
 ae
 oP
-ae
-ae
-oP
 oP
 oP
 oP
@@ -58486,11 +58956,11 @@ oP
 oP
 oP
 ae
-ae
+Vv
 pB
-oT
-oT
-ae
+wa
+wa
+Vv
 ae
 oP
 oP
@@ -58716,21 +59186,21 @@ oP
 oP
 ae
 ae
-oP
+kx
 HA
-oT
+Qq
 Kq
-oP
+kx
 rV
-QT
-QT
-og
+Eq
+Eq
+dh
+FT
+ae
+oP
 ae
 ae
 oP
-ae
-ae
-oP
 oP
 oP
 oP
@@ -58738,11 +59208,11 @@ oP
 oP
 oP
 ae
-ae
+Vv
 Be
-ft
+dD
 mI
-ae
+Vv
 ae
 oP
 oP
@@ -58968,21 +59438,21 @@ oP
 oP
 ae
 ae
-oP
+kx
 ys
 vY
-mI
-oP
+CD
+kx
 Wk
 TK
 TK
 GT
+FT
+ae
+oP
 ae
 ae
 oP
-ae
-ae
-oP
 oP
 oP
 oP
@@ -58990,11 +59460,11 @@ oP
 oP
 oP
 ae
-ae
-oT
-oT
-oT
-ae
+Vv
+wa
+wa
+wa
+Vv
 ae
 oP
 oP
@@ -59220,21 +59690,21 @@ Oq
 Xk
 ae
 ae
-oP
-nD
-oT
+kx
+BL
+Qq
 mw
-oP
+kx
 jI
-up
-up
+at
+at
 RY
+FT
+ae
+Xk
 ae
 ae
 Xk
-ae
-ae
-Xk
 Oq
 Oq
 Oq
@@ -59242,11 +59712,11 @@ Oq
 Oq
 Xk
 ae
-ae
+Vv
 ai
-No
-No
-ae
+rr
+rr
+Vv
 ae
 Xk
 Oq
@@ -59472,11 +59942,11 @@ Oq
 Oq
 Oq
 cQ
-oP
-oP
+kx
+kx
 Hf
-oP
-oP
+kx
+kx
 sN
 cC
 cC
@@ -59724,10 +60194,10 @@ Oq
 Oq
 Oq
 cQ
-Rn
-oT
+yF
+Qq
 ft
-oT
+Qq
 SE
 vH
 QT
@@ -59976,10 +60446,10 @@ Oq
 Oq
 Oq
 cQ
-Rn
+yF
 jp
 vC
-kU
+Zf
 SE
 vH
 QT
@@ -60228,11 +60698,11 @@ Oq
 Oq
 Oq
 cQ
-oP
-No
-No
-No
-oP
+kx
+hk
+hk
+hk
+kx
 vH
 QT
 QT
@@ -65510,7 +65980,7 @@ NW
 NW
 NW
 NW
-NW
+BW
 Oq
 Oq
 Oq
@@ -76865,9 +77335,9 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
+zt
+cG
+cG
 Bo
 ae
 Oq
@@ -77117,10 +77587,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 Oq
 Oq
@@ -77369,10 +77839,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 NW
 NW
@@ -77621,10 +78091,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 NW
 NW
@@ -77873,10 +78343,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 NW
 NW
@@ -78125,10 +78595,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 NW
 NW
@@ -78171,7 +78641,7 @@ NW
 NW
 NW
 NW
-Oq
+NW
 NW
 NW
 NW
@@ -78377,10 +78847,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 NW
 NW
@@ -78629,10 +79099,10 @@ NW
 NW
 NW
 ae
-vH
-QT
-QT
-wj
+zt
+cG
+cG
+Sm
 ae
 NW
 NW
