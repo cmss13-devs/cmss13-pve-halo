@@ -24,7 +24,7 @@
 /area/skyhammer/interior/scout_posts)
 "ar" = (
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "as" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -115,6 +115,16 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/a)
+"bf" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior/bunker/engineering)
+"bj" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering/garage)
 "bk" = (
 /obj/structure/machinery/light/small{
 	dir = 4;
@@ -140,7 +150,7 @@
 "bx" = (
 /obj/structure/machinery/cm_vending/sorted/tech/comtech_tools,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "by" = (
 /obj/structure/platform,
 /obj/structure/barricade/handrail{
@@ -290,7 +300,7 @@
 	icon_state = "1-2-4"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "cL" = (
 /obj/structure/platform_decoration/strata,
 /turf/open/snow/layer0,
@@ -336,7 +346,7 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "dh" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/asphalt/cement/cement12,
@@ -367,7 +377,7 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/effect/spawner/random/toolbox,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "du" = (
 /obj/item/storage/belt/gun/m6/full_m6c,
 /obj/structure/closet,
@@ -485,7 +495,7 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "eo" = (
 /obj/structure/flora/pottedplant{
 	icon_state = "pottedplant_22"
@@ -511,11 +521,18 @@
 /obj/item/fuel_cell,
 /obj/item/fuel_cell,
 /turf/open/floor/plating,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "ey" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/tdome,
 /area/skyhammer/interior)
+"eB" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 8;
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering)
 "eK" = (
 /obj/structure/platform/strata{
 	dir = 8
@@ -543,6 +560,12 @@
 	},
 /turf/open/floor/strata/red3/north,
 /area/skyhammer/interior/bunker/storage)
+"eU" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/skyhammer/interior/bunker/engineering/garage)
 "eW" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/phone_base{
@@ -552,7 +575,7 @@
 	phone_id = "Garage"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "eX" = (
 /obj/structure/platform_decoration/strata{
 	dir = 8
@@ -613,12 +636,22 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/b)
+"fv" = (
+/obj/structure/machinery/door/airlock/unsc,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering/garage)
 "fw" = (
 /obj/structure/platform_decoration/strata{
 	dir = 1
 	},
 /turf/open/snow/layer0,
 /area/skyhammer/exterior)
+"fA" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering/garage)
 "fB" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/barricade/sandbags/wired{
@@ -645,6 +678,9 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/mac_controls)
+"fQ" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering)
 "fW" = (
 /turf/open/asphalt/cement/cement1,
 /area/skyhammer/interior)
@@ -685,7 +721,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "gc" = (
 /obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/machinery/door/poddoor/almayer{
@@ -703,14 +739,14 @@
 	id = "garage_1"
 	},
 /turf/open/asphalt/cement,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "gf" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_y = 25;
 	pixel_x = 0
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "gj" = (
 /obj/item/snowball,
 /turf/open/snow/layer3,
@@ -806,7 +842,7 @@
 	amount = 25
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "hn" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/strata,
@@ -838,7 +874,7 @@
 	density = 0
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "hF" = (
 /turf/open/asphalt/cement/cement1,
 /area/skyhammer/exterior)
@@ -864,7 +900,7 @@
 	layer = 3.1
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "hR" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/tool/hand_labeler{
@@ -897,7 +933,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "id" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -934,7 +970,7 @@
 	dir = 1
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "iF" = (
 /turf/closed/wall/unsc/reinforced,
 /area/skyhammer/interior/gatehouse/a)
@@ -1067,6 +1103,10 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/entrance)
+"jM" = (
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering)
 "jN" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -1110,7 +1150,7 @@
 	req_one_access_txt = "19;12"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "ki" = (
 /obj/structure/prop/unsc_crate/big{
 	pixel_x = 0;
@@ -1127,18 +1167,18 @@
 /obj/item/fuel_cell,
 /obj/item/fuel_cell,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "kl" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/plating,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "km" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams");
 	dir = 1
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "ko" = (
 /obj/structure/platform_decoration/strata{
 	dir = 4
@@ -1174,11 +1214,11 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "kD" = (
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "kL" = (
 /obj/structure/platform/strata,
 /obj/structure/platform/strata{
@@ -1239,7 +1279,7 @@
 	},
 /obj/structure/machinery/power/reactor/colony,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "lz" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata/red3,
@@ -1305,6 +1345,9 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/hallway)
+"mc" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/skyhammer/interior/bunker/engineering/power)
 "mf" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
@@ -1550,7 +1593,7 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/plating,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "oH" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -1562,7 +1605,7 @@
 	pixel_x = 26
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "oP" = (
 /turf/closed/wall/unsc/reinforced,
 /area/skyhammer/interior)
@@ -1653,7 +1696,7 @@
 	pixel_x = 15
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "pM" = (
 /obj/structure/desertdam/decals/road_stop{
 	icon_state = "stop_decal5";
@@ -1675,7 +1718,7 @@
 	req_one_access_txt = "19;12"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "pX" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /obj/structure/cable/heavyduty{
@@ -1709,7 +1752,7 @@
 	icon_state = "0-2"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "qQ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -1897,7 +1940,7 @@
 /obj/item/fuel_cell,
 /obj/item/fuel_cell,
 /turf/open/floor/plating,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "si" = (
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/ammo_loader)
@@ -1962,6 +2005,9 @@
 	},
 /turf/open/asphalt/cement/cement4,
 /area/skyhammer/exterior)
+"sP" = (
+/turf/open/asphalt/cement,
+/area/skyhammer/interior/bunker/engineering/garage)
 "sQ" = (
 /obj/structure/machinery/cm_vending/sorted/medical/no_access{
 	pixel_y = 24;
@@ -2063,10 +2109,10 @@
 "ub" = (
 /obj/structure/cable/heavyduty,
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "ud" = (
 /turf/open/floor/plating/burnt_platingdmg3,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "ue" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 8
@@ -2081,7 +2127,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "uk" = (
 /turf/open/floor/strata/red3/west,
 /area/skyhammer/interior/bunker/storage)
@@ -2166,7 +2212,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "vk" = (
 /obj/structure/machinery/power/terminal{
 	dir = 1
@@ -2175,7 +2221,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "vl" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2-4-8"
@@ -2189,7 +2235,7 @@
 "vu" = (
 /obj/structure/machinery/power/reactor/colony,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "vv" = (
 /turf/open/floor/strata/red2,
 /area/skyhammer/interior)
@@ -2308,6 +2354,12 @@
 	},
 /turf/open/snow/layer3,
 /area/skyhammer/exterior)
+"wI" = (
+/obj/structure/machinery/door/airlock/unsc{
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering/garage)
 "wJ" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -2363,7 +2415,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/asphalt/cement,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "xz" = (
 /obj/structure/desertdam/decals/road_stop{
 	dir = 8;
@@ -2383,7 +2435,7 @@
 "xB" = (
 /obj/structure/machinery/cm_vending/sorted/tech/comp_storage,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "xF" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 4
@@ -2457,7 +2509,7 @@
 	pixel_y = 2
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "yA" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo{
 	id = "storage_access"
@@ -2523,7 +2575,7 @@
 	pixel_x = -17
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "zb" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams");
@@ -2553,7 +2605,7 @@
 	phone_id = "Scythe Anti-Air Control"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "zD" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -2665,7 +2717,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "Bo" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo,
 /obj/structure/desertdam/decals/road_edge{
@@ -2748,6 +2800,12 @@
 "BW" = (
 /turf/closed/wall/shiva/ice,
 /area/skyhammer/exterior)
+"Cf" = (
+/obj/structure/machinery/door/airlock/unsc{
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering)
 "Ck" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/structure/bed/bedroll{
@@ -2755,7 +2813,7 @@
 	},
 /obj/effect/vehicle_spawner/van/decrepit,
 /turf/open/asphalt/cement,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Cn" = (
 /turf/open/asphalt/cement/cement14,
 /area/skyhammer/exterior)
@@ -2794,7 +2852,7 @@
 	icon_state = "1-2-4"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "CJ" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/paper_bin{
@@ -2864,7 +2922,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "Du" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -2943,6 +3001,10 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/mac_controls)
+"Eo" = (
+/obj/structure/machinery/door/airlock/unsc,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering)
 "Eq" = (
 /turf/open/asphalt/cement,
 /area/skyhammer/interior/gatehouse/b)
@@ -2959,6 +3021,12 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/bunks)
+"EI" = (
+/obj/structure/machinery/door/airlock/unsc{
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/antiair_controls)
 "EJ" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/camera/autoname{
@@ -2994,6 +3062,9 @@
 	},
 /turf/open/floor/tdome,
 /area/skyhammer/interior)
+"EX" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/skyhammer/interior/bunker/engineering)
 "EZ" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4-8"
@@ -3096,7 +3167,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Gc" = (
 /turf/closed/wall/unsc/reinforced,
 /area/skyhammer/exterior)
@@ -3113,7 +3184,7 @@
 	pixel_x = -27
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Gp" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -3224,7 +3295,7 @@
 /obj/structure/machinery/light/small/red,
 /obj/structure/machinery/power/reactor/colony,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "Hf" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/strata,
@@ -3326,6 +3397,9 @@
 /obj/structure/prop/dam/crane,
 /turf/open/snow/layer3,
 /area/skyhammer/exterior)
+"HM" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/antiair_controls)
 "HN" = (
 /obj/structure/machinery/body_scanconsole{
 	pixel_y = 6
@@ -3345,7 +3419,7 @@
 "Ij" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/asphalt/cement,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Ik" = (
 /obj/structure/platform/strata{
 	dir = 8
@@ -3362,7 +3436,7 @@
 "Il" = (
 /obj/structure/closet/secure_closet/engineering_welding,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "In" = (
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/strata,
@@ -3483,7 +3557,7 @@
 	pixel_y = 7
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "JS" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/strata,
@@ -3559,7 +3633,7 @@
 	pixel_y = 20
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "La" = (
 /obj/item/explosive/plastic/breaching_charge,
 /turf/open/snow/layer3,
@@ -3595,6 +3669,9 @@
 /obj/effect/spawner/random/toolbox,
 /turf/open/floor/strata/red2,
 /area/skyhammer/interior)
+"Ll" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/interior/bunker/engineering/garage)
 "Lo" = (
 /obj/item/ammo_casing{
 	icon_state = "cartridge_2_1";
@@ -3669,7 +3746,7 @@
 "LU" = (
 /obj/structure/weapons_loader,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "LW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -3719,7 +3796,7 @@
 	icon_state = "4-8"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "Mi" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -3747,7 +3824,7 @@
 "Mm" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/plating/panelscorched,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Mr" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -3860,7 +3937,7 @@
 	pixel_x = 17
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Nt" = (
 /obj/structure/platform,
 /obj/structure/platform{
@@ -3882,10 +3959,10 @@
 "NI" = (
 /obj/structure/machinery/power/port_gen/pacman,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "NJ" = (
 /turf/open/floor/plating,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "NL" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -3898,6 +3975,9 @@
 /obj/structure/cargo_container/unsc/main_1/b,
 /turf/open/snow/layer2,
 /area/skyhammer/exterior)
+"NU" = (
+/turf/closed/wall/unsc/reinforced,
+/area/skyhammer/interior/bunker/engineering)
 "NW" = (
 /turf/closed/wall/shiva/ice,
 /area/skyhammer/interior)
@@ -3913,6 +3993,9 @@
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
 /turf/open/floor/strata/red4,
 /area/skyhammer/interior/bunker/storage)
+"Of" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/skyhammer/interior/bunker/antiair_controls)
 "Og" = (
 /obj/structure/machinery/door_control/brbutton{
 	name = "back door";
@@ -3934,7 +4017,7 @@
 	pixel_x = 16
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "Om" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "0-4"
@@ -3969,11 +4052,11 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Ow" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/platebot,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "OA" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 18;
@@ -4069,7 +4152,7 @@
 /area/skyhammer/exterior)
 "OZ" = (
 /turf/open/floor/tdome/test_floor4,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Pa" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams");
@@ -4117,7 +4200,7 @@
 	network = list("Site_Cams")
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "PG" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/snow/layer3,
@@ -4156,7 +4239,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "PU" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -4183,7 +4266,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "Qe" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 5;
@@ -4212,20 +4295,20 @@
 	pixel_x = -19
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Qq" = (
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/b)
 "Qr" = (
 /obj/structure/surface/rack,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Qy" = (
 /obj/structure/platform{
 	dir = 1
 	},
 /turf/open/shuttle/escapepod/west,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "QA" = (
 /obj/structure/machinery/camera/autoname{
 	dir = 8;
@@ -4233,6 +4316,12 @@
 	},
 /turf/open/asphalt/cement/cement1,
 /area/skyhammer/interior/gatehouse/a)
+"QB" = (
+/obj/structure/extinguisher_cabinet{
+	pixel_x = 26
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/antiair_controls)
 "QE" = (
 /obj/structure/flora/pottedplant/random,
 /turf/open/floor/almayer/sterile_green_side/east,
@@ -4442,7 +4531,7 @@
 	icon_state = "1-2-8"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "Tf" = (
 /obj/structure/platform{
 	dir = 4
@@ -4479,7 +4568,10 @@
 	icon_state = "1-2-4-8"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
+"Ts" = (
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/engineering/garage)
 "Tt" = (
 /obj/structure/surface/table/reinforced,
 /turf/open/floor/almayer/dark_sterile,
@@ -4489,7 +4581,7 @@
 	id = "thermal_power"
 	},
 /turf/open/floor/plating,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Tz" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
@@ -4516,7 +4608,7 @@
 	icon_state = "1-2-4-8"
 	},
 /turf/open/floor/plating/plating_catwalk,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "TK" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -4557,7 +4649,7 @@
 /area/skyhammer/exterior)
 "Un" = (
 /turf/open/floor/plating/platingdmg1,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Up" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/prop/almayer/minigun_crate{
@@ -4574,7 +4666,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/antiair_controls)
 "Ur" = (
 /turf/open/snow/layer3,
 /area/skyhammer/interior)
@@ -4597,7 +4689,7 @@
 	icon_state = "1-2"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "UK" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -4645,18 +4737,18 @@
 "Vm" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/tdome/test_floor4,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "Vn" = (
 /obj/structure/machinery/power/apc/almayer/hardened/west,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
 /turf/open/floor/podhatchfloor,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/power)
 "Vo" = (
 /obj/structure/machinery/cm_vending/sorted/tech/electronics_storage,
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "Vp" = (
 /obj/structure/bookcase{
 	icon_state = "book-5"
@@ -4741,12 +4833,16 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/hallway)
+"Ww" = (
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/antiair_controls)
 "Wx" = (
 /obj/structure/machinery/light/small/red{
 	dir = 1
 	},
 /turf/open/floor/tdome/test_floor4,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "WE" = (
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 1
@@ -4906,7 +5002,7 @@
 	id = "thermal_power_main"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "XP" = (
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 8;
@@ -4955,13 +5051,13 @@
 	layer = 4
 	},
 /turf/open/shuttle/escapepod/east,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering)
 "YD" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	id = "garage_2"
 	},
 /turf/open/asphalt/cement,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "YG" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	pixel_y = 2;
@@ -4980,7 +5076,7 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata,
-/area/skyhammer/interior)
+/area/skyhammer/interior/bunker/engineering/garage)
 "YS" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
 /turf/open/floor/strata,
@@ -20417,11 +20513,11 @@ NW
 NW
 NW
 NW
-ae
-ae
-ae
-ae
-ae
+EX
+EX
+EX
+EX
+EX
 NW
 NW
 NW
@@ -20668,13 +20764,13 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 OZ
 XF
 OZ
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -20920,13 +21016,13 @@ NW
 NW
 NW
 NW
-ae
+EX
 Yz
-DE
-PW
+fQ
+bf
 hQ
 Qy
-ae
+EX
 NW
 NW
 NW
@@ -21172,13 +21268,13 @@ NW
 NW
 NW
 NW
-ae
+EX
 Yz
-DE
-PW
+fQ
+bf
 hQ
 Qy
-ae
+EX
 NW
 NW
 NW
@@ -21424,13 +21520,13 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 el
-PW
-DE
-ae
-ae
+bf
+fQ
+EX
+EX
 NW
 NW
 NW
@@ -21677,11 +21773,11 @@ NW
 NW
 NW
 NW
-ae
+EX
 Wx
 Gb
 Vm
-ae
+EX
 NW
 NW
 NW
@@ -21927,15 +22023,15 @@ NW
 NW
 NW
 NW
-ae
-ae
-ae
-ae
-nw
-ae
-ae
-ae
-ae
+mc
+mc
+EX
+EX
+Eo
+EX
+EX
+mc
+mc
 NW
 NW
 NW
@@ -22179,7 +22275,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 qM
 cK
 Vn
@@ -22187,7 +22283,7 @@ Td
 UH
 cK
 ub
-ae
+mc
 NW
 NW
 NW
@@ -22431,7 +22527,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 vu
 Mh
 vu
@@ -22439,7 +22535,7 @@ ar
 vu
 Mh
 vu
-ae
+mc
 NW
 NW
 NW
@@ -22683,7 +22779,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 lu
 Mh
 vu
@@ -22691,7 +22787,7 @@ ar
 vu
 Mh
 Hd
-ae
+mc
 NW
 NW
 NW
@@ -22935,7 +23031,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 vu
 Mh
 vu
@@ -22943,7 +23039,7 @@ ar
 vu
 Mh
 vu
-ae
+mc
 NW
 NW
 NW
@@ -23187,7 +23283,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 iB
 vk
 ar
@@ -23195,7 +23291,7 @@ ar
 ar
 Do
 iB
-ae
+mc
 NW
 NW
 NW
@@ -23439,7 +23535,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 iB
 vk
 ar
@@ -23447,7 +23543,7 @@ ar
 ar
 Do
 iB
-ae
+mc
 NW
 NW
 NW
@@ -23691,7 +23787,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 vu
 Mh
 vu
@@ -23699,7 +23795,7 @@ ar
 vu
 Mh
 vu
-ae
+mc
 NW
 NW
 NW
@@ -23943,7 +24039,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 lu
 Mh
 vu
@@ -23951,7 +24047,7 @@ ar
 vu
 Mh
 Hd
-ae
+mc
 NW
 NW
 NW
@@ -24195,7 +24291,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 vu
 Mh
 vu
@@ -24203,7 +24299,7 @@ ar
 vu
 Mh
 vu
-ae
+mc
 NW
 NW
 NW
@@ -24447,7 +24543,7 @@ NW
 NW
 NW
 NW
-ae
+mc
 qM
 Tr
 Qd
@@ -24455,7 +24551,7 @@ Pt
 kz
 Td
 ub
-ae
+mc
 NW
 NW
 NW
@@ -24699,15 +24795,15 @@ NW
 NW
 NW
 NW
-ae
-ae
+mc
+mc
 Ow
-ae
-ae
-ae
-ae
-ae
-ae
+mc
+mc
+mc
+mc
+mc
+mc
 NW
 NW
 NW
@@ -24952,10 +25048,10 @@ NW
 NW
 NW
 NW
-ae
+EX
 NJ
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -25204,11 +25300,11 @@ NW
 NW
 NW
 NW
-ae
+EX
 NJ
 kl
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -25456,12 +25552,12 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 NJ
 NJ
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -25709,11 +25805,11 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 NJ
 NJ
-ae
+EX
 NW
 NW
 NW
@@ -25962,11 +26058,11 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 ud
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -26215,11 +26311,11 @@ NW
 NW
 NW
 NW
-ae
+EX
 oF
 kl
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -26467,13 +26563,13 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 NJ
 NJ
-ae
-ae
-ae
+EX
+EX
+EX
 NW
 NW
 NW
@@ -26720,12 +26816,12 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 NJ
 NJ
 NJ
-ae
+EX
 NW
 NW
 NW
@@ -26969,15 +27065,15 @@ NW
 NW
 NW
 NW
-ae
-ae
-ae
-ae
-ae
-ae
-ae
+EX
+EX
+EX
+EX
+EX
+EX
+EX
 NJ
-ae
+EX
 NW
 NW
 NW
@@ -27063,11 +27159,11 @@ Oq
 Oq
 cQ
 cQ
-ae
-ae
-ae
-ae
-ae
+Of
+Of
+Of
+Of
+Of
 Oq
 Oq
 Oq
@@ -27220,16 +27316,16 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 ex
 sh
-ae
-ae
-ae
+EX
+EX
+EX
 NJ
 Mm
-ae
+EX
 NW
 NW
 NW
@@ -27314,13 +27410,13 @@ Oq
 Oq
 cQ
 cQ
-ae
-ae
+Of
+Of
 JE
 Up
 JE
-ae
-ae
+Of
+Of
 Oq
 Oq
 Oq
@@ -27472,7 +27568,7 @@ NW
 NW
 NW
 NW
-ae
+EX
 Tx
 NJ
 NJ
@@ -27480,8 +27576,8 @@ NJ
 NJ
 NJ
 NJ
-ae
-ae
+EX
+EX
 NW
 NW
 NW
@@ -27566,13 +27662,13 @@ Oq
 Oq
 cQ
 cQ
-ae
+Of
 gf
-DE
-DE
-DE
+HM
+HM
+HM
 JE
-ae
+Of
 Oq
 Oq
 xN
@@ -27724,15 +27820,15 @@ NW
 NW
 NW
 NW
-ae
-ae
+EX
+EX
 oF
 Un
-ae
-ae
-ae
-ae
-ae
+EX
+EX
+EX
+EX
+EX
 NW
 NW
 NW
@@ -27818,13 +27914,13 @@ Oq
 cQ
 cQ
 Oq
-ae
+Of
 zB
-DE
+HM
 Ok
-DE
+HM
 vi
-ae
+Of
 Oq
 Oq
 Oq
@@ -27977,10 +28073,10 @@ NW
 NW
 NW
 NW
-ae
-ae
-ae
-ae
+EX
+EX
+EX
+EX
 NW
 NW
 NW
@@ -28070,13 +28166,13 @@ cQ
 cQ
 cQ
 cQ
-Cq
-DE
-DE
-DE
+EI
+HM
+HM
+HM
 KW
-DE
-ae
+HM
+Of
 Oq
 Oq
 Oq
@@ -28322,13 +28418,13 @@ cQ
 Oq
 Oq
 Oq
-ae
-kW
-DE
-DE
-DE
+Of
+Ww
+HM
+HM
+HM
 ic
-ae
+Of
 Oq
 Oq
 Oq
@@ -28574,13 +28670,13 @@ Oq
 Oq
 Oq
 Oq
-ae
-oI
-DE
+Of
+QB
+HM
 Bn
-DE
-DE
-ae
+HM
+HM
+Of
 Oq
 Oq
 Oq
@@ -28826,13 +28922,13 @@ Oq
 Oq
 Oq
 Oq
-ae
-ae
+Of
+Of
 LU
-ae
+Of
 LU
-ae
-ae
+Of
+Of
 Oq
 Oq
 Oq
@@ -29079,11 +29175,11 @@ Oq
 Oq
 Oq
 Oq
-ae
-ae
-ae
-ae
-ae
+Of
+Of
+Of
+Of
+Of
 Oq
 Oq
 Oq
@@ -34353,12 +34449,12 @@ QT
 og
 Oq
 Oq
-oP
-oP
-oP
-oP
-oP
-oP
+Ll
+Ll
+Ll
+Ll
+Ll
+Ll
 Oq
 Oq
 Oq
@@ -34604,14 +34700,14 @@ QT
 QT
 og
 tx
-oP
-oP
+Ll
+Ll
 uf
 Gk
 dt
-iM
-oP
-oP
+bj
+Ll
+Ll
 Oq
 Oq
 Oq
@@ -34857,13 +34953,13 @@ QT
 QT
 GZ
 YD
-cG
-cG
-cG
-cG
-cG
-cG
-oP
+sP
+sP
+sP
+sP
+sP
+sP
+Ll
 Oq
 Oq
 Oq
@@ -35108,14 +35204,14 @@ QT
 QT
 QT
 QT
-cG
-cG
-cG
+sP
+sP
+sP
 Ij
 Ck
-cG
+sP
 xv
-oP
+Ll
 Oq
 Oq
 Oq
@@ -35360,14 +35456,14 @@ QT
 QT
 QT
 QT
-cG
-cG
-cG
+sP
+sP
+sP
 Ij
-cG
-cG
-cG
-oP
+sP
+sP
+sP
+Ll
 Oq
 Oq
 Oq
@@ -35612,14 +35708,14 @@ QT
 QT
 QT
 hF
-cG
-cG
-cG
-cG
-cG
-cG
-cG
-oP
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+Ll
 Oq
 Oq
 xN
@@ -35864,14 +35960,14 @@ QT
 QT
 og
 Oq
-oP
+Ll
 kh
 Qp
-DE
+Ts
 Qp
-DE
+Ts
 Qp
-oP
+Ll
 Oq
 Oq
 Oq
@@ -36116,20 +36212,20 @@ QT
 QT
 og
 Oq
-oP
+Ll
 gb
-DE
+Ts
 TH
 CH
-DE
-ic
-oP
-oP
-oP
-oP
-oP
-oP
-oP
+Ts
+fA
+Ll
+Ll
+Ll
+Ll
+Ll
+Ll
+Ll
 Oq
 Oq
 Oq
@@ -36368,21 +36464,21 @@ QT
 QT
 og
 Oq
-oP
+Ll
 PT
-DE
-PW
-PW
-DE
-ic
-oP
+Ts
+eU
+eU
+Ts
+fA
+Ll
 Vo
 bx
 xB
 Il
 yz
-oP
-oP
+Ll
+Ll
 Oq
 Oq
 Oq
@@ -36620,21 +36716,21 @@ QT
 QT
 og
 Oq
-oP
+Ll
 pV
 pI
-DE
+Ts
 pI
-DE
+Ts
 pI
-Cq
-DE
-DE
-DE
-DE
-DE
-DE
-oP
+wI
+Ts
+Ts
+Ts
+Ts
+Ts
+Ts
+Ll
 Oq
 Oq
 Oq
@@ -36873,20 +36969,20 @@ QT
 QT
 GZ
 gd
-cG
-cG
-cG
-cG
-cG
-cG
-oP
+sP
+sP
+sP
+sP
+sP
+sP
+Ll
 hv
-DE
-DE
-DE
-DE
-ic
-oP
+Ts
+Ts
+Ts
+Ts
+fA
+Ll
 Oq
 Oq
 Oq
@@ -37124,21 +37220,21 @@ QT
 QT
 QT
 QT
-cG
-cG
-cG
-cG
-cG
-cG
-cG
-oP
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+Ll
 Np
-DE
-DE
-DE
-DE
+Ts
+Ts
+Ts
+Ts
 km
-oP
+Ll
 Oq
 Oq
 Oq
@@ -37376,21 +37472,21 @@ QT
 QT
 QT
 QT
-cG
-cG
-cG
-cG
-cG
-cG
+sP
+sP
+sP
+sP
+sP
+sP
 xv
-oP
-iM
+Ll
+bj
 za
-DE
-DE
-DE
+Ts
+Ts
+Ts
 kD
-oP
+Ll
 Oq
 Oq
 Oq
@@ -37628,21 +37724,21 @@ QT
 QT
 QT
 hF
-cG
-cG
-cG
-cG
-cG
-cG
-cG
-oP
+sP
+sP
+sP
+sP
+sP
+sP
+sP
+Ll
 eW
 Ot
 oI
-DE
-DE
-oP
-oP
+Ts
+Ts
+Ll
+Ll
 Oq
 Oq
 Oq
@@ -37880,20 +37976,20 @@ QT
 QT
 og
 tx
-oP
-oP
+Ll
+Ll
 YL
-iM
+bj
 de
-iM
-oP
-oP
-oP
-oP
-oP
-oP
-nw
-oP
+bj
+Ll
+Ll
+Ll
+Ll
+Ll
+Ll
+fv
+Ll
 Oq
 Oq
 Oq
@@ -38133,12 +38229,12 @@ QT
 og
 Oq
 Oq
-oP
-oP
-oP
-oP
-oP
-oP
+Ll
+Ll
+Ll
+Ll
+Ll
+Ll
 Oq
 Oq
 Oq
@@ -45412,10 +45508,10 @@ QT
 wj
 Oq
 Oq
-oP
-oP
-oP
-oP
+NU
+NU
+NU
+NU
 Oq
 Oq
 Oq
@@ -45664,10 +45760,10 @@ QT
 wj
 cQ
 cQ
-Cq
-yi
-DE
-oP
+Cf
+eB
+fQ
+NU
 Oq
 Oq
 Oq
@@ -45916,10 +46012,10 @@ QT
 wj
 cQ
 Oq
-oP
-DE
+NU
+fQ
 Qr
-oP
+NU
 Oq
 Oq
 Oq
@@ -46168,10 +46264,10 @@ QT
 wj
 Oq
 Oq
-oP
-kW
+NU
+jM
 kk
-oP
+NU
 Oq
 Oq
 Oq
@@ -46420,10 +46516,10 @@ QT
 wj
 Oq
 Oq
-oP
+NU
 NI
 hl
-oP
+NU
 Oq
 Oq
 Oq
@@ -46672,10 +46768,10 @@ QT
 wj
 CQ
 Oq
-oP
-oP
-oP
-oP
+NU
+NU
+NU
+NU
 Oq
 Oq
 Oq
