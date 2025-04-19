@@ -81,3 +81,17 @@
 /area/skyhammer/interior/bunker/mac_controls
 	name = "Sky Hammer - MACs Control Room"
 	icon_state = "captain"
+
+/area/skyhammer/interior/bunker/anti-air_controls
+	name = "Sky Hammer - M71 Scythe Controls"
+	icon_state = "captain"
+
+/area/skyhammer/interior/bunker/engineering
+	name = "Sky Hammer - Engineering"
+	icon_state = "engine_smes"
+
+/area/skyhammer/interior/bunker/engineering/power
+	name = "Sky Hammer - Thermal Generators"
+
+/area/skyhammer/interior/bunker/engineering/garage
+	name = "Sky Hammer - Garage"
