@@ -82,7 +82,7 @@
 	name = "Sky Hammer - MACs Control Room"
 	icon_state = "captain"
 
-/area/skyhammer/interior/bunker/anti-air_controls
+/area/skyhammer/interior/bunker/antiair_controls
 	name = "Sky Hammer - M71 Scythe Controls"
 	icon_state = "captain"
 
