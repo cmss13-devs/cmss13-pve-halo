@@ -5,7 +5,6 @@
 	powernet_name = "ground"
 	temperature = ICE_COLONY_TEMPERATURE
 	minimap_color = MINIMAP_AREA_COLONY
-	requires_power = 0 //Location powered by thermal energy via volcano, no power needed
 
 /area/skyhammer
 	icon = 'icons/turf/area_shiva.dmi'
