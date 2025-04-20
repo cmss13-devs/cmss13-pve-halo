@@ -1738,6 +1738,12 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/skyhammer/interior)
+"qn" = (
+/obj/structure/sign/safety/storage{
+	pixel_x = -21
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/hallway)
 "qB" = (
 /turf/open/auto_turf/snow/layer2,
 /area/skyhammer/exterior)
@@ -2179,6 +2185,12 @@
 /obj/structure/desertdam/decals/road_edge,
 /turf/open/asphalt/cement,
 /area/skyhammer/exterior)
+"uA" = (
+/obj/structure/sign/safety/landingzone{
+	pixel_y = 30
+	},
+/turf/open/snow/layer3,
+/area/skyhammer/exterior)
 "uN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S";
@@ -2366,6 +2378,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/skyhammer/interior/bunker/ammo_loader)
+"wL" = (
+/obj/item/storage/bible/hefa,
+/turf/open/snow/layer3,
+/area/skyhammer/exterior)
 "wP" = (
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/bunks)
@@ -3176,6 +3192,9 @@
 	dir = 4
 	},
 /obj/structure/flora/pottedplant/random,
+/obj/structure/sign/safety/bathunisex{
+	pixel_y = -25
+	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/bunks)
 "Gk" = (
@@ -3601,6 +3620,15 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/gatehouse/b)
+"Kv" = (
+/obj/structure/sign/safety/bridge{
+	pixel_y = 39
+	},
+/obj/structure/sign/safety/airtraffictower{
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/hallway)
 "Kw" = (
 /obj/structure/barricade/sandbags/wired{
 	dir = 8;
@@ -3867,6 +3895,12 @@
 	},
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/ammo_loader)
+"ME" = (
+/obj/structure/sign/safety/medical{
+	pixel_x = 35
+	},
+/turf/open/floor/strata,
+/area/skyhammer/interior/bunker/hallway)
 "MG" = (
 /obj/structure/machinery/door/airlock/unsc,
 /obj/structure/cable/heavyduty{
@@ -4791,6 +4825,10 @@
 "VF" = (
 /turf/open/snow/layer2,
 /area/skyhammer/interior/scout_posts)
+"VI" = (
+/obj/effect/decal/hefa_cult_decals/d96,
+/turf/open/snow/layer3,
+/area/skyhammer/exterior)
 "VL" = (
 /obj/structure/tunnel,
 /turf/open/snow/layer2,
@@ -7134,7 +7172,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+VI
 Oq
 Oq
 Oq
@@ -7385,7 +7423,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+wL
 Oq
 Oq
 Oq
@@ -25097,7 +25135,7 @@ Ee
 Ee
 Ee
 Ee
-Oq
+uA
 Oq
 Oq
 Oq
@@ -38410,7 +38448,7 @@ ww
 Eg
 ww
 ae
-oT
+Kv
 sG
 sG
 gn
@@ -38432,7 +38470,7 @@ pq
 pq
 pq
 XW
-oT
+qn
 oT
 ma
 rS
@@ -39430,7 +39468,7 @@ xV
 oT
 Af
 lp
-oT
+ME
 oT
 oT
 Af
@@ -40538,7 +40576,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+cQ
 cQ
 Oq
 Oq
@@ -47172,7 +47210,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -47954,7 +47992,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -48944,7 +48982,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -53477,7 +53515,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -54199,7 +54237,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -58493,7 +58531,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -58777,7 +58815,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -59053,7 +59091,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 NW
@@ -59968,7 +60006,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -61686,7 +61724,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -62476,7 +62514,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -63302,7 +63340,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -63946,7 +63984,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -69056,7 +69094,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -69342,7 +69380,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -70238,7 +70276,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -70542,7 +70580,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -72884,6 +72922,7 @@ Oq
 Oq
 Oq
 Oq
+xN
 Oq
 Oq
 Oq
@@ -72903,8 +72942,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -73330,7 +73368,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -73766,7 +73804,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -75553,7 +75591,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
@@ -77300,7 +77338,7 @@ Oq
 Oq
 Oq
 Oq
-Oq
+xN
 Oq
 Oq
 Oq
