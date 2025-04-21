@@ -16,6 +16,24 @@
 	default_ammo = /datum/ammo/bullet/rifle/ma5c
 	caliber = "7.62x51"
 
+/obj/item/ammo_magazine/rifle/halo/ma3a
+	name = "\improper MA3A magazine (7.62x51mm FMJ)"
+	desc = "A rectangular box magazine for the MA3A holding 32 rounds of 7.62x51 FMJ ammunitions."
+	icon_state = "ma3a"
+	max_rounds = 32
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma3a
+	default_ammo = /datum/ammo/bullet/rifle/ma3a
+	caliber = "7.62x51"
+
+/obj/item/ammo_magazine/rifle/halo/vk78
+	name = "\improper VK78 magazine (6.5x48mm FMJ)"
+	desc = "An angular box magazine for the MA5C holding 60 rounds of 6.5x48mm FMJ ammunitions."
+	icon_state = "vk78"
+	max_rounds = 20
+	gun_type = /obj/item/weapon/gun/rifle/halo/vk78
+	default_ammo = /datum/ammo/bullet/rifle/vk78
+	caliber = "6.5x48"
+
 /obj/item/ammo_magazine/rifle/halo/br55
 	name = "\improper BR55 magazine (9.5x40mm X-HP SAP-HE)"
 	desc = "A rectangular box magazine for the BR55 holding 48 rounds of 9.5x40mm X-HP SAP-HE ammunitions."

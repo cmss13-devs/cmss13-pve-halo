@@ -67,6 +67,118 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
+/obj/item/weapon/gun/rifle/halo/ma3a
+	name = "MA3A ICWS assault rifle"
+	desc = "An older, less robust rifle previously used by the UNSC before the MA5 series came around. Still often found in the hands of insurgents and partisans."
+	icon_state = "ma3a"
+	item_state = "ma5c"
+	caliber = "7.62x51mm"
+
+	fire_sound = "gun_ma5c"
+	reload_sound = 'sound/weapons/halo/gun_ma5c_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+
+	starting_attachment_types = list(/obj/item/attachable/ma3a_underbarrel, /obj/item/attachable/ma3a_barrel)
+	current_mag = /obj/item/ammo_magazine/rifle/halo/ma3a
+	attachable_allowed = list(
+		/obj/item/attachable/ma3a_shroud,
+		/obj/item/attachable/ma3a_underbarrel,
+		/obj/item/attachable/ma3a_barrel,
+	)
+
+/obj/item/weapon/gun/rifle/halo/ma3a/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/halo/ma3a/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/ma3a_shroud/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/rifle/halo/ma3a/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	set_burst_delay(FIRE_DELAY_TIER_10)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2 - 2*HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_8 - 2*HIT_ACCURACY_MULT_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_3
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
+	scatter_unwielded = SCATTER_AMOUNT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_1
+	recoil = RECOIL_AMOUNT_TIER_2
+	fa_scatter_peak = 30
+	fa_max_scatter = 2
+
+/obj/item/weapon/gun/rifle/halo/ma3a/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
+
+/obj/item/weapon/gun/rifle/halo/vk78
+	name = "VK78 Commando assault rifle"
+	desc = "Also previously used by the UNSC, but more commonly found in the hands of partisans. Whilst it "
+	icon_state = "vk78"
+	item_state = "ma5c"
+	caliber = "6.5x48mm"
+
+	fire_sound = "gun_ma5c"
+	reload_sound = 'sound/weapons/halo/gun_ma5c_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+
+	starting_attachment_types = list(/obj/item/attachable/ma3a_underbarrel, /obj/item/attachable/ma3a_barrel)
+	current_mag = /obj/item/ammo_magazine/rifle/halo/ma3a
+	attachable_allowed = list(
+		/obj/item/attachable/ma3a_shroud,
+		/obj/item/attachable/ma3a_underbarrel,
+		/obj/item/attachable/ma3a_barrel,
+	)
+
+/obj/item/weapon/gun/rifle/halo/ma3a/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/halo/ma3a/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/ma3a_shroud/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/rifle/halo/ma3a/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	set_burst_delay(FIRE_DELAY_TIER_10)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2 - 2*HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_8 - 2*HIT_ACCURACY_MULT_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_3
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
+	scatter_unwielded = SCATTER_AMOUNT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_1
+	recoil = RECOIL_AMOUNT_TIER_2
+	fa_scatter_peak = 30
+	fa_max_scatter = 2
+
+/obj/item/weapon/gun/rifle/halo/ma3a/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
+
 /obj/item/weapon/gun/rifle/halo/br55
 	name = "BR55 battle rifle"
 	desc = "A standard-issue marksman rifle in use by the UNSC Marine Corps, the BR55 battle rifle has a reasonably high power, acceptable rate of fire, and high accuracy. It comes with a standard 36-round detachable box magazine of 9.5x40mm experimental HP-SAP-HE rounds, allowing it to reach higher velocities than the MA5 series despite the smaller propellant."
