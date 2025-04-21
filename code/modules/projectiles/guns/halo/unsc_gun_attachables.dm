@@ -213,7 +213,7 @@
 	..()
 	scatter_mod = -SCATTER_AMOUNT_TIER_3
 	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
-	accuracy_mult = -HIT_ACCURACY_MULT_TIER_4
+	accuracy_mod = -HIT_ACCURACY_MULT_TIER_4
 
 /obj/item/attachable/srs_barrel
 	name = "\improper SRS99-AM sniper rifle barrel"
