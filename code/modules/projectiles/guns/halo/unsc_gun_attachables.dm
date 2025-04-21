@@ -28,6 +28,32 @@
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
+/obj/item/attachable/ma3a_shroud
+	name = "\improper MA3A shroud"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma3a_shroud"
+	attach_icon = "ma3a_shroud"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -3
+
+/obj/item/attachable/vk78_front
+	name = "\improper VK78 Front"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "vk78_front"
+	attach_icon = "vk78_front"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0
+	size_mod = 0
+	hud_offset_mod = -3
+
 /obj/item/attachable/br55_muzzle
 	name = "\improper BR55 muzzle"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
@@ -68,6 +94,18 @@
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
+/obj/item/attachable/ma3a_underbarrel
+	name = "\improper MA3A Underbarrel"
+	desc = "An underbarrel grip for the MA3A, later used as a flashlight for the MA5."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma3a_underbarrel"
+	attach_icon = "ma3a_underbarrel"
+	slot = "under"
+
+/obj/item/attachable/flashlight/ma3a/New()
+	..()
+	recoil_mod = -RECOIL_AMOUNT_TIER_2
+
 /obj/item/attachable/flashlight/m90
 	name = "\improper M90 integrated flashlight"
 	desc = "The M90 integrated flashlight, standard-issue to any M90 series shotgun and built into the pump. You shouldn't see this, actually."
@@ -96,6 +134,33 @@
 	scatter_mod = -SCATTER_AMOUNT_TIER_3
 	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
+/obj/item/attachable/vk78_barrel
+	name = "\improper VK78 barrel"
+	desc = "The barrel to an VK78 Commando rifle. Better not leave without it."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "vk78_barrel"
+	attach_icon = "vk78_barrel"
+	slot = "muzzle"
+	size_mod = 0
+
+/obj/item/attachable/vk78_barrel/New()
+	..()
+	scatter_mod = -SCATTER_AMOUNT_TIER_2
+	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
+
+/obj/item/attachable/ma3a_barrel
+	name = "\improper MA3A barrel"
+	desc = "The barrel to an MA3A ICWS assault rifle. Better not leave without it."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma3a_barrel"
+	attach_icon = "ma3a_barrel"
+	slot = "muzzle"
+	size_mod = 0
+
+/obj/item/attachable/ma5c_barrel/New()
+	..()
+	scatter_mod = -SCATTER_AMOUNT_TIER_3
+	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
 /obj/item/attachable/br55_barrel
 	name = "\improper BR55 barrel"
@@ -127,6 +192,28 @@
 	icon_state = "br55_scope"
 	attach_icon = "br55_scope"
 	size_mod = 0
+
+/obj/item/attachable/scope/mini/vk78
+	name = "\improper VK78 scope"
+	desc = "An old telescopic sight, often paired with the VK78 Commando."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "vk78_scope"
+	attach_icon = "vk78_scope"
+	size_mod = 0
+
+/obj/item/attachable/scope/mini/ma3a
+	name = "\improper MA3A scope"
+	desc = "An MA3A scope, unintregrated but often attached due to the accuracy increase."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma3a_scope"
+	attach_icon = "ma3a_scope"
+	size_mod = 0
+
+/obj/item/attachable/scope/mini/ma3a/New()
+	..()
+	scatter_mod = -SCATTER_AMOUNT_TIER_3
+	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
+	accuracy_mult = -HIT_ACCURACY_MULT_TIER_4
 
 /obj/item/attachable/srs_barrel
 	name = "\improper SRS99-AM sniper rifle barrel"

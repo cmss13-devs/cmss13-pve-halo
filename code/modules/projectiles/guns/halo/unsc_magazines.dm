@@ -27,7 +27,7 @@
 
 /obj/item/ammo_magazine/rifle/halo/vk78
 	name = "\improper VK78 magazine (6.5x48mm FMJ)"
-	desc = "An angular box magazine for the MA5C holding 60 rounds of 6.5x48mm FMJ ammunitions."
+	desc = "An angular box magazine for the VK78 holding 20 rounds of 6.5x48mm FMJ ammunitions."
 	icon_state = "vk78"
 	max_rounds = 20
 	gun_type = /obj/item/weapon/gun/rifle/halo/vk78
