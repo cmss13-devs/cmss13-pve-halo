@@ -272,7 +272,8 @@
 	layer = 2;
 	pixel_x = -6;
 	name = "trench board";
-	desc = "A wooden trench board to keep soldier's feet off the dirt."
+	desc = "A wooden trench board to keep soldier's feet off the dirt.";
+	anchored = 1
 	},
 /turf/open/snow/layer0,
 /area/skyhammer/exterior)
@@ -450,7 +451,8 @@
 	layer = 2;
 	pixel_x = 16;
 	name = "trench board";
-	desc = "A wooden trench board to keep soldier's feet off the dirt."
+	desc = "A wooden trench board to keep soldier's feet off the dirt.";
+	anchored = 1
 	},
 /turf/open/snow/layer0,
 /area/skyhammer/exterior)
@@ -932,7 +934,7 @@
 	light_color = "#dae2ff"
 	},
 /obj/structure/machinery/power/apc/almayer/north,
-/obj/effect/decal/cleanable/cobweb2/dynamic,
+/obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/strata,
 /area/skyhammer/interior/bunker/mac_controls)
 "hv" = (
@@ -1330,7 +1332,8 @@
 	layer = 2;
 	pixel_x = 16;
 	name = "trench board";
-	desc = "A wooden trench board to keep soldier's feet off the dirt."
+	desc = "A wooden trench board to keep soldier's feet off the dirt.";
+	anchored = 1
 	},
 /turf/open/snow/layer0,
 /area/skyhammer/exterior)
@@ -3742,7 +3745,8 @@
 	layer = 2;
 	pixel_x = 6;
 	name = "trench board";
-	desc = "A wooden trench board to keep soldier's feet off the dirt."
+	desc = "A wooden trench board to keep soldier's feet off the dirt.";
+	anchored = 1
 	},
 /turf/open/snow/layer0,
 /area/skyhammer/exterior)
@@ -4054,7 +4058,8 @@
 	layer = 2;
 	pixel_x = 16;
 	name = "trench board";
-	desc = "A wooden trench board to keep soldier's feet off the dirt."
+	desc = "A wooden trench board to keep soldier's feet off the dirt.";
+	anchored = 1
 	},
 /turf/open/snow/layer0,
 /area/skyhammer/exterior)
@@ -4534,8 +4539,16 @@
 /turf/open/asphalt/cement/cement12,
 /area/skyhammer/exterior)
 "OZ" = (
-/turf/open/floor/tdome/test_floor4,
-/area/skyhammer/interior/bunker/engineering)
+/obj/structure/platform/strata,
+/obj/item/stack/sheet/wood{
+	layer = 2;
+	pixel_x = -15;
+	name = "trench board";
+	desc = "A wooden trench board to keep soldier's feet off the dirt.";
+	anchored = 1
+	},
+/turf/open/snow/layer0,
+/area/skyhammer/exterior)
 "Pa" = (
 /obj/structure/machinery/camera/autoname{
 	network = list("Site_Cams", "Entrance_Cams");
@@ -4890,6 +4903,7 @@
 /area/skyhammer/exterior)
 "Se" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/small/red,
 /turf/open/floor/tdome/test_floor4,
 /area/skyhammer/interior/bunker/engineering)
 "Sj" = (
@@ -21250,7 +21264,7 @@ NW
 NW
 EX
 EX
-OZ
+Wx
 XF
 Se
 EX
@@ -38265,7 +38279,7 @@ fm
 Oq
 Oq
 VX
-Ly
+UN
 nx
 Oq
 Oq
@@ -38517,7 +38531,7 @@ Oq
 Oq
 Oq
 Fa
-UN
+OZ
 nx
 Oq
 Oq
