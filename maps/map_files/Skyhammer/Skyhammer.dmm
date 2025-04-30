@@ -3693,13 +3693,6 @@
 /area/skyhammer/exterior)
 "HH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/effect/spawner/prop_gun{
-	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi';
-	icon_state = "m90";
-	name = "broken M90";
-	pixel_x = -7;
-	desc = "An M90 Shotgun, broken. It's had several parts removed and mechanics stripped."
-	},
 /obj/item/attachable/m90_muzzle{
 	pixel_y = 6
 	},
@@ -3707,6 +3700,7 @@
 	pixel_x = -3;
 	pixel_y = 13
 	},
+/obj/effect/spawner/prop_gun/unsc_shotgun,
 /turf/open/floor/strata/red4/west,
 /area/skyhammer/interior/bunker/armory)
 "HJ" = (
