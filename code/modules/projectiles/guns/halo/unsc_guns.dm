@@ -128,7 +128,7 @@
 	name = "VK78 Commando assault rifle"
 	desc = "Also previously used by the UNSC, but much less often and has found to be much less reliable compared to modern rifles. However, it's still used by Partisans and Insurgents."
 	icon_state = "vk78"
-	item_state = "ma5c"
+	item_state = "vk78"
 	caliber = "6.5x48mm"
 
 	fire_sound = "gun_ma5c"
