@@ -90,7 +90,7 @@
 		/obj/item/attachable/ma3a_shroud,
 		/obj/item/attachable/ma3a_underbarrel,
 		/obj/item/attachable/ma3a_barrel,
-		/obj/item/attachable/scope/mini/ma3a
+		/obj/item/attachable/scope/mini/ma3a,
 	)
 
 /obj/item/weapon/gun/rifle/halo/ma3a/set_gun_attachment_offsets()
@@ -146,7 +146,7 @@
 	attachable_allowed = list(
 		/obj/item/attachable/vk78_front,
 		/obj/item/attachable/vk78_barrel,
-		/obj/item/attachable/scope/mini/vk78
+		/obj/item/attachable/scope/mini/vk78,
 	)
 
 /obj/item/weapon/gun/rifle/halo/vk78/set_gun_attachment_offsets()
