@@ -17,8 +17,8 @@
 		/datum/equipment_preset/unsc/spec/equipped_spnkr = 1,
 	)
 /datum/human_ai_squad_preset/unsc/squad
-	name = "UNSC, Squad"
-	desc = "UNSC Patrol Squad, armed with basic rifles and IFAKs."
+	name = "UNSC, Fireteam"
+	desc = "UNSC Patrol Fireteam, armed with basic rifles and IFAKs."
 	ai_to_spawn = list(
 		/datum/equipment_preset/unsc/pfc/equipped = 2,
 		/datum/equipment_preset/unsc/tl/equipped = 1,
