@@ -13,7 +13,7 @@
 	/// The current heat of the weapon
 	var/heat = 0
 	/// The time it takes for overheating to cool down the weapon
-	var/overheat_time = 5 SECONDS
+	var/overheat_time = 8 SECONDS
 	/// Heat gained per shot fired
 	var/heat_per_shot = 4
 	/// Whether or not the weapon has support for overheating overlays
@@ -22,42 +22,80 @@
 	COOLDOWN_DECLARE(cooldown)
 
 	// Heat dispersion
+	/// The amount of time it takes to manually vent the heat from the weapon
+	var/manual_dispersion_delay = 4 SECONDS
+	COOLDOWN_DECLARE(manual_cooldown)
 	/// The amount of heat passively dispersed every second
-	var/passive_dispersion = 4
-	/// The amount of heat dispersed when the weapon has not fired for the duration of the dispersion_delay
-	var/heat_dispersion = 5
-	/// The delay until heat begins to disperse since the last shot
-	var/dispersion_delay = 3 SECONDS
+	var/passive_dispersion = 3
+	/// The amount of additional heat dispersed when the weapon has not fired for the duration of the dispersion_delay
+	var/active_dispersion = 5
+	/// The delay until additional heat begins to disperse since the last shot
+	var/dispersion_delay = 5 SECONDS
+	COOLDOWN_DECLARE(dispersion_cooldown)
 
+	// Overlays
+	var/image/overheat_overlay
+	var/image/venting_overlay
+
+/obj/item/weapon/gun/energy/plasma/Initialize()
+	. = ..()
+	overheat_overlay = image(icon, icon_state = "+overheat")
+	venting_overlay = image(icon, icon_state = "+venting")
+	start_process()
+
+/obj/item/weapon/gun/energy/plasma/get_examine_text(mob/user)
+	. = ..()
+	. += SPAN_NOTICE("The heat reads [100.0*heat/max_heat]%.")
 
 /obj/item/weapon/gun/energy/plasma/gun_safety_handle(mob/user)
 	to_chat(user, SPAN_NOTICE("You toggle the power on the [src] [SPAN_BOLD(flags_gun_features & GUN_TRIGGER_SAFETY ? "off" : "on")]."))
 	playsound(user, 'sound/weapons/handling/safety_toggle.ogg', 25, 1)
 
+/obj/item/weapon/gun/energy/plasma/proc/cooldown_check()
+	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
+		to_chat(usr, SPAN_NOTICE("The [src] is still cooling down."))
+		return FALSE
+
 /obj/item/weapon/gun/energy/plasma/Fire(atom/target, mob/living/user, params, reflex, dual_wield)
-	if(!COOLDOWN_FINISHED(src, cooldown))
-		to_chat(user, SPAN_NOTICE("The [src] is still cooling down."))
-		return
+	cooldown_check()
 	. = ..()
 	if(.)
 		heat += heat_per_shot
+		COOLDOWN_START(src, dispersion_cooldown, dispersion_delay)
 		if(heat >= max_heat)
 			overheat()
 
-/obj/item/weapon/gun/energy/plasma/proc/overheat()
-	usr.visible_message(SPAN_NOTICE("[usr]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! Its hot!"))
-	src.heat = 0
+/obj/item/weapon/gun/energy/plasma/unload()
+	cooldown_check()
+	if(heat <= 0)
+		to_chat(usr, SPAN_NOTICE("Your [src] doesn't need to be purged of heat."))
+	usr.visible_message(SPAN_NOTICE("[usr] manually vents their [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent your [src], carefully expelling the hot plasma into the air."))
 	playsound(src, 'sound/weapons/halo/plasma_overheat.ogg')
+	heat = 0
+	COOLDOWN_START(src, manual_cooldown, manual_dispersion_delay)
+	if(has_overheat_icon_state)
+		icon_state = "plasma_pistol_open"
+		addtimer(CALLBACK(src, PROC_REF(reset_icon), src), manual_dispersion_delay)
+		flick_overlay(src, venting_overlay, manual_dispersion_delay)
+
+/obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user = usr)
 	COOLDOWN_START(src, cooldown, overheat_time)
-	if(src.has_overheat_icon_state)
-		icon_state = "[icon_state]_overheating"
+	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! Its hot!"))
+	user.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
+	heat = 0
+	playsound(src, 'sound/weapons/halo/plasma_overheat.ogg')
+	if(has_overheat_icon_state)
+		icon_state = "plasma_pistol_open"
 		addtimer(CALLBACK(src, PROC_REF(reset_icon), src), overheat_time)
+		flick_overlay(src, overheat_overlay, overheat_time)
 
 /obj/item/weapon/gun/energy/plasma/proc/start_process()
 	START_PROCESSING(SSdcs, src)
 
 /obj/item/weapon/gun/energy/plasma/process()
-
+	heat = max(heat - passive_dispersion, 0)
+	if(COOLDOWN_FINISHED(src, dispersion_cooldown))
+		heat = max(heat - active_dispersion)
 
 /obj/item/weapon/gun/energy/plasma/proc/reset_icon()
 	icon_state = initial(icon_state)
@@ -69,7 +107,7 @@
 	gun_category = GUN_CATEGORY_HANDGUN
 	muzzle_flash_color = COLOR_PLASMA_TEAL
 	flags_equip_slot = SLOT_WAIST
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED|GUN_UNUSUAL_DESIGN
 	ammo = /datum/ammo/energy/plasma/plasma_pistol
 
 	fire_sound = "gun_lightplasma"
