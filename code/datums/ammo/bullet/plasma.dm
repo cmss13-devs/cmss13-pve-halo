@@ -10,3 +10,8 @@
 	accurate_range = 14
 	max_range = 22
 	damage = 35
+
+/datum/ammo/energy/plasma/plasma_pistol/overcharge
+	name = "overcharged light plasma bolt"
+	damage = 55
+	shell_speed = AMMO_SPEED_TIER_4

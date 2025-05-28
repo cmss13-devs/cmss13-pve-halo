@@ -26,9 +26,9 @@
 	var/manual_dispersion_delay = 4 SECONDS
 	COOLDOWN_DECLARE(manual_cooldown)
 	/// The amount of heat passively dispersed every second
-	var/passive_dispersion = 3
+	var/passive_dispersion = 2
 	/// The amount of additional heat dispersed when the weapon has not fired for the duration of the dispersion_delay
-	var/active_dispersion = 5
+	var/active_dispersion = 3
 	/// The delay until additional heat begins to disperse since the last shot
 	var/dispersion_delay = 5 SECONDS
 	COOLDOWN_DECLARE(dispersion_cooldown)
@@ -36,6 +36,11 @@
 	// Overlays
 	var/image/overheat_overlay
 	var/image/venting_overlay
+
+	// Sounds
+	var/overheat_sound = 'sound/weapons/halo/plasma_overheat.ogg'
+	var/manual_vent_sound = 'sound/weapons/halo/plasma_overheat.ogg'
+	var/close_vent_sound = 'sound/weapons/handling/safety_toggle.ogg'
 
 /obj/item/weapon/gun/energy/plasma/Initialize()
 	. = ..()
@@ -51,13 +56,10 @@
 	to_chat(user, SPAN_NOTICE("You toggle the power on the [src] [SPAN_BOLD(flags_gun_features & GUN_TRIGGER_SAFETY ? "off" : "on")]."))
 	playsound(user, 'sound/weapons/handling/safety_toggle.ogg', 25, 1)
 
-/obj/item/weapon/gun/energy/plasma/proc/cooldown_check()
+/obj/item/weapon/gun/energy/plasma/Fire(atom/target, mob/living/user, params, reflex, dual_wield)
 	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
 		to_chat(usr, SPAN_NOTICE("The [src] is still cooling down."))
-		return FALSE
-
-/obj/item/weapon/gun/energy/plasma/Fire(atom/target, mob/living/user, params, reflex, dual_wield)
-	cooldown_check()
+		return
 	. = ..()
 	if(.)
 		heat += heat_per_shot
@@ -66,28 +68,32 @@
 			overheat()
 
 /obj/item/weapon/gun/energy/plasma/unload()
-	cooldown_check()
-	if(heat <= 0)
+	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
+		to_chat(usr, SPAN_NOTICE("The [src] is still cooling down."))
+		return
+	if(!heat >= 1)
 		to_chat(usr, SPAN_NOTICE("Your [src] doesn't need to be purged of heat."))
 	usr.visible_message(SPAN_NOTICE("[usr] manually vents their [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent your [src], carefully expelling the hot plasma into the air."))
-	playsound(src, 'sound/weapons/halo/plasma_overheat.ogg')
+	playsound(src, manual_vent_sound)
 	heat = 0
 	COOLDOWN_START(src, manual_cooldown, manual_dispersion_delay)
 	if(has_overheat_icon_state)
 		icon_state = "plasma_pistol_open"
 		addtimer(CALLBACK(src, PROC_REF(reset_icon), src), manual_dispersion_delay)
 		flick_overlay(src, venting_overlay, manual_dispersion_delay)
+		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), manual_dispersion_delay)
 
 /obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user = usr)
 	COOLDOWN_START(src, cooldown, overheat_time)
 	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! Its hot!"))
 	user.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
 	heat = 0
-	playsound(src, 'sound/weapons/halo/plasma_overheat.ogg')
+	playsound(src, overheat_sound)
 	if(has_overheat_icon_state)
 		icon_state = "plasma_pistol_open"
 		addtimer(CALLBACK(src, PROC_REF(reset_icon), src), overheat_time)
 		flick_overlay(src, overheat_overlay, overheat_time)
+		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), overheat_time)
 
 /obj/item/weapon/gun/energy/plasma/proc/start_process()
 	START_PROCESSING(SSdcs, src)
@@ -99,6 +105,9 @@
 
 /obj/item/weapon/gun/energy/plasma/proc/reset_icon()
 	icon_state = initial(icon_state)
+
+/obj/item/weapon/gun/energy/plasma/proc/play_close_sound()
+	playsound(src, close_vent_sound)
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol
 	name = "Eos'Mak-pattern plasma pistol"
@@ -113,6 +122,10 @@
 	fire_sound = "gun_lightplasma"
 	empty_click = 'sound/weapons/halo/plasma_dryfire.ogg'
 
+	var/datum/ammo/plasma_bolt = /datum/ammo/energy/plasma/plasma_pistol
+	var/datum/ammo/overcharged_bolt = /datum/ammo/energy/plasma/plasma_pistol/overcharge
+	var/overcharged = FALSE
+
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_SMG)
@@ -126,3 +139,38 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/Initialize()
+	plasma_bolt = GLOB.ammo_list[plasma_bolt] //Gun initialize calls replace_ammo() so we need to set these first.
+	overcharged_bolt = GLOB.ammo_list[overcharged_bolt]
+
+	. = ..()
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/unique_action(mob/living/carbon/human/user = usr)
+	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
+		to_chat(usr, SPAN_NOTICE("The [src] is still cooling down."))
+		return
+	if(overcharged)
+		user.visible_message(SPAN_NOTICE("[user] releases the trigger on the [src], no longer overcharging it.!"), SPAN_DANGER("You stop overcharging the [src]"))
+		overcharged = FALSE
+		toggle_ammo()
+	else if(!overcharged)
+		user.visible_message(SPAN_NOTICE("[user] holds down on the [src]s trigger and begins to overcharge it!"), SPAN_DANGER("You hold down on the [src]s trigger and begin to overcharge it!"))
+		toggle_ammo()
+		overcharged = TRUE
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/Fire(atom/target, mob/living/user, params, reflex, dual_wield)
+	. = ..()
+	if(.)
+		if(overcharged)
+			overheat()
+			overcharged = FALSE
+			toggle_ammo()
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/proc/toggle_ammo()
+	if(ammo == plasma_bolt)
+		ammo = overcharged_bolt
+		charge_cost = 100
+	else if(ammo == overcharged_bolt)
+		ammo = plasma_bolt
+		charge_cost = 10
