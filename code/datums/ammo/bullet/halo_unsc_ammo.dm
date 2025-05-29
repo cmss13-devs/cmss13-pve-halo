@@ -25,6 +25,19 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/ma2b
+	name = "large AP bullet"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 60
+	penetration = ARMOR_PENETRATION_TIER_5
+	accurate_range = 14
+	accuracy = HIT_ACCURACY_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = AMMO_SPEED_TIER_6
+	effective_range_max = 7
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 18
+
 // smg ammo
 /datum/ammo/bullet/smg/m7
 	name = "5×23mm M443 FMJ"
