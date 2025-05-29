@@ -93,6 +93,10 @@ Contains most of the procs that are called when a mob is attacked by something
 				return TRUE
 	return FALSE
 
+/mob/living/carbon/human/proc/check_energy_shield(damage = 0, attack_text = "the attack")
+	if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
+
+
 /mob/living/carbon/human/proc/check_shields(damage = 0, attack_text = "the attack", combistick=0)
 	if(l_hand && istype(l_hand, /obj/item/weapon))//Current base is the prob(50-d/3)
 		if(combistick && istype(l_hand,/obj/item/weapon/yautja/combistick) && prob(66))
