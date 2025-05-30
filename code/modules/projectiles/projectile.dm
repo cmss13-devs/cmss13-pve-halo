@@ -992,6 +992,10 @@
 			bullet_ping(P)
 			return
 
+	if(!(ammo_flags & AMMO_ROCKET))
+		if(check_energy_shield)
+
+
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.
 	if(!organ)
 		return//Nope. Gotta shoot something!
