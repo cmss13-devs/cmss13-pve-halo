@@ -1445,7 +1445,7 @@ treat_grafted var tells it to apply to grafted but unsalved wounds, for burn kit
 /obj/limb/head/get_limb_icon()
 	. = ..()
 
-	var/image/eyes = image('icons/mob/humans/onmob/human_face.dmi', species.eyes, layer = -BODYPARTS_LAYER)
+	var/image/eyes = image(species.eye_icon, species.eyes, layer = -BODYPARTS_LAYER)
 	eyes.color = list(null, null, null, null, rgb(owner.r_eyes, owner.g_eyes, owner.b_eyes))
 	. += eyes
 
