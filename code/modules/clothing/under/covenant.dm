@@ -4,6 +4,7 @@
 	icon = 'icons/halo/obj/items/clothing/covenant/under.dmi'
 	icon_state = "undersuit"
 	item_state = "undersuit"
+	worn_state = "undersuit"
 	flags_jumpsuit = null
 	flags_atom = NO_SNOW_TYPE
 	drop_sound = "armorequip"
@@ -15,6 +16,7 @@
 	icon = 'icons/halo/obj/items/clothing/covenant/under.dmi'
 	icon_state = "undersuit"
 	item_state = "undersuit"
+	worn_state = "undersuit"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	flags_atom = NO_SNOW_TYPE
 	drop_sound = "armorequip"

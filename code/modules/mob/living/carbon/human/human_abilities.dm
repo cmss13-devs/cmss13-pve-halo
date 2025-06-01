@@ -150,6 +150,7 @@ CULT
 */
 /datum/action/human_action/activable
 	var/ability_used_time = 0
+	button_icon_state = "template"
 
 /datum/action/human_action/activable/can_use_action()
 	var/mob/living/carbon/human/H = owner
@@ -165,7 +166,7 @@ CULT
 	if(H.selected_ability == src)
 		to_chat(H, "You will no longer use [name] with \
 			[H.client && H.client.prefs && H.client.prefs.toggle_prefs & TOGGLE_MIDDLE_MOUSE_CLICK ? "middle-click" : "shift-click"].")
-		button.icon_state = "template"
+		button.icon_state = initial(button_icon_state)
 		H.selected_ability = null
 	else
 		to_chat(H, "You will now use [name] with \
@@ -173,7 +174,7 @@ CULT
 		if(H.selected_ability)
 			H.selected_ability.button.icon_state = "template"
 			H.selected_ability = null
-		button.icon_state = "template_on"
+		button.icon_state = initial(button_icon_state) + "on"
 		H.selected_ability = src
 
 /datum/action/human_action/activable/remove_from(mob/living/carbon/human/H)

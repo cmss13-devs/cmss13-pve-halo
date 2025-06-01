@@ -20,24 +20,17 @@
 
 	// sounds
 	COOLDOWN_DECLARE(shield_noise_cd)
-	var/datum/looping_sound/shield_down/soundloop
 
 // ------------------ PROCS ------------------
 
 /obj/item/clothing/suit/marine/shielded/Initialize()
 	. = ..()
 	start_process()
-	var/user = src.loc
-	soundloop = new(user)
 	shield_strength = shield.max_shield_strength
 	max_shield_strength = shield.max_shield_strength
 	recovery_time = shield.recovery_time
 	shield_regen_rate = ((max_shield_strength / recovery_time) * 0.5) * 10
 	to_chat(world, SPAN_BOLD("Shield initialized!"))
-
-/obj/item/clothing/suit/marine/shielded/Destroy()
-	QDEL_NULL(soundloop)
-	return ..()
 
 /obj/item/clothing/suit/marine/shielded/proc/toggle_shield()
 	if(shield_enabled)
@@ -70,7 +63,6 @@
 	to_chat(world, SPAN_BOLD("Shield popped!"))
 	playsound(src, "shield_pop", falloff = 5)
 	flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
-	soundloop.start()
 
 // ------------------ PROCESS PROCS ------------------
 
@@ -95,7 +87,6 @@
 			shield_strength = min(shield_strength + shield_regen_rate, max_shield_strength)
 			shield_broken = FALSE
 			to_chat(world, SPAN_BOLD("Shield processed, regenerated shielding for [shield_regen_rate] health."))
-			soundloop.stop()
 			if(COOLDOWN_FINISHED(src, shield_noise_cd))
 				playsound(src, "shield_charge", vary = TRUE)
 				COOLDOWN_START(src, shield_noise_cd, shield.time_to_regen)

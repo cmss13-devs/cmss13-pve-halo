@@ -23,6 +23,7 @@
 	name = "Covenant Actions sangheiliolder"
 	icon_file = 'icons/halo/mob/hud/actions.dmi'
 	button_icon_state = "cov_template"
+	var/active = FALSE
 
 /datum/action/human_action/activable/covenant/sangheili_kick
 	name = "kick"
@@ -38,6 +39,7 @@
 /datum/action/human_action/activable/covenant/sangheili_kick/New(mob/living/user, obj/item/holder)
 	..()
 	name = "kick"
+	button.icon = icon_file
 	button.name = name
 	button.overlays.Cut()
 	var/image/IMG = image('icons/halo/mob/hud/actions.dmi', button, "kick")
@@ -97,20 +99,3 @@
 		owner.flick_attack_overlay(target, "punch")
 		enter_cooldown(cd_kick)
 	return
-
-/datum/action/human_action/activatable/covenant/sangheili_kick/action_activate()
-	. = ..()
-	var/mob/living/carbon/human/sangheili = owner
-	if(sangheili.selected_ability == src)
-		to_chat(sangheili, "You will no longer use [name] with \
-			[sangheili.client && sangheili.client.prefs && sangheili.client.prefs.toggle_prefs & TOGGLE_MIDDLE_MOUSE_CLICK ? "middle-click" : "shift-click"].")
-		sangheili.selected_ability.button.icon = 'icons/halo/mob/hud/actions.dmi'
-		button.icon_state = "cov_template"
-		sangheili.selected_ability = null
-	else
-		to_chat(sangheili, "You will now use [name] with \
-			[sangheili.client && sangheili.client.prefs && sangheili.client.prefs.toggle_prefs & TOGGLE_MIDDLE_MOUSE_CLICK ? "middle-click" : "shift-click"].")
-		sangheili.selected_ability.button.icon = 'icons/halo/mob/hud/actions.dmi'
-		sangheili.selected_ability = null
-		button.icon_state = "cov_template_on"
-		sangheili.selected_ability = src

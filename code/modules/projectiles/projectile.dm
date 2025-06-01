@@ -536,7 +536,7 @@
 		if (istype(L, /mob/living/carbon/human))
 			var/mob/living/carbon/human/H = L
 			if(H.dodge_pool)
-				H.dodge_pool = max(H.dodge_pool - 0.5, 0)
+				H.dodge_pool = max(H.dodge_pool - 1, 0)
 			if(H.dodge_pool_regen)
 				H.dodge_pool_regen = max(H.dodge_pool_regen - 1, 0)
 			if(!H.cd_dodge_pool_regen)
@@ -996,8 +996,12 @@
 		if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
 			var/obj/item/clothing/suit/marine/shielded/shield = wear_suit
 			if(check_energy_shield(shield.shield_strength >= 1))
-				check_energy_shield(P.damage, "[P]", shield.shield_strength)
-				to_chat(world, SPAN_BOLD("Shield successfully damaged by [P] for [damage] damage. Shield strength at [shield.shield_strength]"))
+				if(ammo_flags & AMMO_LASER)
+					check_energy_shield(P.damage, "[P]", shield.shield_strength)
+					to_chat(world, SPAN_BOLD("Shield successfully damaged by [P] for [damage] damage. Shield strength at [shield.shield_strength]"))
+				else
+					check_energy_shield(P.damage * 0.5, "[P]", shield.shield_strength)
+					to_chat(world, SPAN_BOLD("Shield successfully damaged by [P] for [damage] damage. Shield strength at [shield.shield_strength]"))
 				return
 
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.

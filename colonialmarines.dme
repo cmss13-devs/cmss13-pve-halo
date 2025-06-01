@@ -656,6 +656,7 @@
 #include "code\datums\skills\cmb.dm"
 #include "code\datums\skills\commando.dm"
 #include "code\datums\skills\contractor.dm"
+#include "code\datums\skills\covenant.dm"
 #include "code\datums\skills\dutch.dm"
 #include "code\datums\skills\forecon.dm"
 #include "code\datums\skills\freelancer.dm"

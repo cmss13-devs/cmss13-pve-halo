@@ -419,6 +419,13 @@
 			msg += "<br>[i]. \"[fallen_names[i]] - [fallen_assgns[i]] - [fallen_blood_types[i]]\""
 		. += SPAN_NOTICE("[msg]")
 
+/obj/item/card/id/covenant
+	name = "Covenant identity disk"
+	desc = "An identitiy disk forged from nanolaminate. Four holoprojectors, two on each arm, display the personal identification readout of its owner."
+	icon = 'icons/halo/obj/items/card.dmi'
+	icon_state = "cov"
+	item_state = null
+
 // Used to authenticate to CORSAT machines. Doesn't do anything except have its type variable
 /obj/item/card/data/corsat
 	name = "CORSAT administration code"
