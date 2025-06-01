@@ -14,10 +14,10 @@
 
 /datum/halo_shield/tester_shield
 	max_shield_strength = 100
-	time_to_regen = 5
+	time_to_regen = 5 SECONDS
 
 /datum/halo_shield/sangheili
-	time_to_regen = 15
+	time_to_regen = 15 SECONDS
 
 /datum/halo_shield/sangheili/minor
 	max_shield_strength = 150
@@ -37,6 +37,6 @@
 
 /datum/halo_shield/sangheili/stealth
 	max_shield_strength = 100
-	time_to_regen = 12
+	time_to_regen = 10 SECONDS
 	recovery_time = 2 SECONDS
 

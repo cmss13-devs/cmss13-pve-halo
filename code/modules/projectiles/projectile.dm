@@ -993,8 +993,12 @@
 			return
 
 	if(!(ammo_flags & AMMO_ROCKET))
-		if(check_energy_shield)
-
+		if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
+			var/obj/item/clothing/suit/marine/shielded/shield = wear_suit
+			if(check_energy_shield(shield.shield_strength >= 1))
+				check_energy_shield(P.damage, "[P]", shield.shield_strength)
+				to_chat(world, SPAN_BOLD("Shield successfully damaged by [P] for [damage] damage. Shield strength at [shield.shield_strength]"))
+				return
 
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.
 	if(!organ)

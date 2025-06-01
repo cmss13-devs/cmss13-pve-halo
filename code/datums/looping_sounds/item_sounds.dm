@@ -10,3 +10,7 @@
 	extra_range = 14
 	mid_length = (3 SECONDS)
 	max_loops = 10
+
+/datum/looping_sound/shield_down
+	mid_sounds = list('sound/effects/shields/shield_down.ogg')
+	volume = 25

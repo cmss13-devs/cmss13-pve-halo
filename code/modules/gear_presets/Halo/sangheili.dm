@@ -31,3 +31,10 @@
 	new_human.r_eyes = eye_color_list[eye_color][1]
 	new_human.g_eyes = eye_color_list[eye_color][2]
 	new_human.b_eyes = eye_color_list[eye_color][3]
+
+/datum/equipment_preset/covenant/sangheili/testing_preset
+	name = "Sang"
+
+/datum/equipment_preset/covenant/sangheili/testing_preset/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/sangheili(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/minor(new_human), WEAR_JACKET)
