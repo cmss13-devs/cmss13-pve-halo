@@ -8,6 +8,7 @@
 
 /datum/equipment_preset/covenant/sangheili
 	name = "Sangheili"
+	rank = JOB_COV_MINOR
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = PAY_SHORT_COV_MINOR
 	faction = FACTION_COVENANT

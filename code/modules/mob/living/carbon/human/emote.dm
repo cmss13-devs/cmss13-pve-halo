@@ -149,16 +149,19 @@
 
 /datum/emote/living/carbon/human/medic
 	key = "medic"
-	message = "calls for a Corpsman!"
+	message = "calls for aid!"
 	alt_message = "shouts something"
 	cooldown = 10 SECONDS
 	emote_type = EMOTE_AUDIBLE|EMOTE_VISIBLE
 
 /datum/emote/living/carbon/human/medic/get_sound(mob/living/user)
-	if(user.gender == MALE)
-		return pick('sound/voice/corpsman.ogg', 'sound/voice/corpsman_up.ogg', 'sound/voice/corpsman_over_here.ogg', 'sound/voice/i_need_a_corpsman_1.ogg', 'sound/voice/i_need_a_corpsman_2.ogg', 'sound/voice/im_hit_get_doc_up_here.ogg', 'sound/voice/get_doc_up_here_im_hit.ogg', 20;'sound/voice/i_cant_feel_my_legs_corpsman.ogg', 0.5;'sound/voice/human_male_medic_rare_1.ogg', 0.5;'sound/voice/human_male_medic.ogg', 1;'sound/voice/human_male_medic_rare_2.ogg')
-	else
-		return 'sound/voice/human_female_medic.ogg'
+	if(ishuman_strict(user))
+		if(user.gender == MALE)
+			return pick('sound/voice/corpsman.ogg', 'sound/voice/corpsman_up.ogg', 'sound/voice/corpsman_over_here.ogg', 'sound/voice/i_need_a_corpsman_1.ogg', 'sound/voice/i_need_a_corpsman_2.ogg', 'sound/voice/im_hit_get_doc_up_here.ogg', 'sound/voice/get_doc_up_here_im_hit.ogg', 20;'sound/voice/i_cant_feel_my_legs_corpsman.ogg', 0.5;'sound/voice/human_male_medic_rare_1.ogg', 0.5;'sound/voice/human_male_medic.ogg', 1;'sound/voice/human_male_medic_rare_2.ogg')
+		else
+			return 'sound/voice/human_female_medic.ogg'
+	if(issangheili(user))
+		return get_sfx("pain_sangheili")
 
 /datum/emote/living/carbon/human/medic/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -205,6 +208,8 @@
 
 	if(isyautja(user))
 		return get_sfx("pred_pain")
+	if(issangheili(user))
+		return get_sfx("pain_sangheili")
 
 /datum/emote/living/carbon/human/pain/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -244,6 +249,8 @@
 			return get_sfx("female_scream")
 	if(isyautja(user))
 		return get_sfx("pred_pain")
+	if(issangheili(user))
+		return get_sfx("pain_sangheili")
 
 /datum/emote/living/carbon/human/scream/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -370,6 +377,8 @@
 				return get_sfx("female_upp_warcry")
 			else
 				return get_sfx("female_warcry")
+	if(issangheili(user))
+		return get_sfx("warcry_sangheili")
 
 /datum/emote/living/carbon/human/whimper
 	key = "whimper"

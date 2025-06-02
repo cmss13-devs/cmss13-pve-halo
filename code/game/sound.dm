@@ -467,6 +467,12 @@
 			if("shield_pop")
 				sound = pick('sound/effects/shields/shield_pop_1.ogg', 'sound/effects/shields/shield_pop_2.ogg', 'sound/effects/shields/shield_pop_3.ogg')
 
+			// Covenant audio
+			if("pain_sangheili")
+				sound = pick('sound/voice/sangheili/pain_1.ogg', 'sound/voice/sangheili/pain_2.ogg', 'sound/voice/sangheili/pain_3.ogg', 'sound/voice/sangheili/pain_4.ogg', 'sound/voice/sangheili/pain_5.ogg')
+			if("warcry_sangheili")
+				sound = pick('sound/voice/sangheili/warcry_1.ogg', 'sound/voice/sangheili/warcry_2.ogg')
+
 
 
 			// Xeno

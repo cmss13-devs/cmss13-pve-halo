@@ -19,7 +19,7 @@
 	blood_color = BLOOD_COLOR_SANGHEILI
 	flesh_color = "#4d4b46"
 
-	total_health = 3
+	total_health = 200
 	burn_mod = 0.9
 	brute_mod = 0.9
 	slowdown = -0.2
