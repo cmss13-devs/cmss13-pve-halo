@@ -19,7 +19,7 @@
 	blood_color = BLOOD_COLOR_SANGHEILI
 	flesh_color = "#4d4b46"
 
-	total_health = 250
+	total_health = 300
 	burn_mod = 0.8
 	brute_mod = 0.8
 	slowdown = -0.2
@@ -42,6 +42,8 @@
 	icobase = 'icons/halo/mob/humans/species/sangheili/r_sangheili.dmi'
 	deform = 'icons/halo/mob/humans/species/sangheili/r_sangheili.dmi'
 	eye_icon = 'icons/halo/mob/humans/species/sangheili/eyes.dmi'
+	dam_icon = 'icons/halo/mob/humans/species/sangheili/dam_sangheili.dmi'
+	blood_mask = 'icons/halo/mob/humans/species/sangheili/blood_mask.dmi'
 
 /datum/species/sangheili/post_species_loss(mob/living/carbon/human/H)
 	..()
