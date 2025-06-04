@@ -99,7 +99,7 @@ Contains most of the procs that are called when a mob is attacked by something
 		if(!shield.shield_strength)
 			return FALSE
 		else
-			src.visible_message(SPAN_NOTICE("[src]s energy shield shimmers as it withstands [attack_text]."), SPAN_DANGER("Your energy shield shimmers as it withstands [attack_text]!"))
+			src.visible_message(SPAN_NOTICE("[src]s energy shield shimmers from [attack_text]."), SPAN_DANGER("Your energy shield shimmers from [attack_text]!"))
 			shield.take_damage(damage)
 			return TRUE
 
@@ -194,6 +194,10 @@ Contains most of the procs that are called when a mob is attacked by something
 		visible_message(SPAN_DANGER("[user] misses [src] with \the [I]!"), null, null, 5)
 		return FALSE
 
+	if(prob(dodge_pool * 1.2))
+		visible_message(SPAN_DANGER("[user] misses [src] with \the [I]!"), SPAN_DANGER("[user] barely misses you with the [I]!"))
+		return FALSE
+
 	var/obj/limb/affecting = get_limb(target_zone)
 	if (!affecting)
 		return FALSE
@@ -205,7 +209,7 @@ Contains most of the procs that are called when a mob is attacked by something
 	if((user != src) && check_shields(I.force, "the [I.name]"))
 		return FALSE
 
-	if((user != src) && check_energy_shield(damage = I.force, attack_text = "the [I.name]"))
+	if(check_energy_shield(damage = I.force, attack_text = "the [I.name]"))
 		return FALSE
 
 	if(LAZYLEN(I.attack_verb))

@@ -21,6 +21,10 @@
 	// sounds
 	COOLDOWN_DECLARE(shield_noise_cd)
 
+	actions_types = list(/datum/action/item_action/toggle_shield)
+
+	var/mob/living/carbon/human/user
+
 // ------------------ PROCS ------------------
 
 /obj/item/clothing/suit/marine/shielded/Initialize()
@@ -30,39 +34,54 @@
 	max_shield_strength = shield.max_shield_strength
 	recovery_time = shield.recovery_time
 	shield_regen_rate = ((max_shield_strength / recovery_time) * 0.5) * 10
-	to_chat(world, SPAN_BOLD("Shield initialized!"))
 
 /obj/item/clothing/suit/marine/shielded/proc/toggle_shield()
-	if(shield_enabled)
+	user = src.loc
+	if(ishuman(user))
+		if(shield_enabled)
+			shield_enabled = FALSE
+			shield_strength = 0
+			playsound(src, 'sound/effects/shields/shield_manual_down.ogg')
+			end_process()
+			to_chat(user, SPAN_NOTICE("You hear a low hum and a hiss as your shield powers off."))
+			return
+		if(!shield_enabled)
+			shield_enabled = TRUE
+			playsound(src, 'sound/effects/shields/shield_manual_up.ogg')
+			COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
+			start_process()
+			to_chat(user, SPAN_NOTICE("You hear a low hum as your shield powers on."))
+			return
+
+/obj/item/clothing/suit/marine/shielded/proc/disable_shield()
+	user = src.loc
+	if(ishuman(user))
 		shield_enabled = FALSE
 		shield_strength = 0
-		to_chat(world, SPAN_BOLD("Shield toggled off!"))
+		playsound(src, 'sound/effects/shields/shield_manual_down.ogg')
+		to_chat(user, SPAN_NOTICE("You hear a low hum and a hiss as your shield powers off."))
 		end_process()
-	if(!shield_enabled)
-		shield_enabled = TRUE
-		to_chat(world, SPAN_BOLD("Shield toggled on!"))
-		COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
-		start_process()
-
+		return
 
 /obj/item/clothing/suit/marine/shielded/proc/take_damage(damage_taken, mob/living/carbon/human/user)
-	if(damage_taken)
-		user = src.loc
-		to_chat(world, SPAN_BOLD("Shield damaged for [damage_taken] in shield_armor.dm"))
-		playsound(src, "shield_hit")
-		flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+flicker"), 4)
-		shield_strength = max(shield_strength - damage_taken, 0)
-		COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
-		if(shield_strength <= 0 && !shield_broken)
-			shield_pop(user)
-			shield_broken = TRUE
+	user = src.loc
+	if(ishuman(user))
+		if(damage_taken)
+			playsound(src, "shield_hit")
+			flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+flicker"), 4)
+			shield_strength = max(shield_strength - damage_taken, 0)
+			COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
+			if(shield_strength <= 0 && !shield_broken)
+				shield_pop(user)
+				shield_broken = TRUE
 
 
 /obj/item/clothing/suit/marine/shielded/proc/shield_pop(mob/living/carbon/human/user)
 	user = src.loc
-	to_chat(world, SPAN_BOLD("Shield popped!"))
-	playsound(src, "shield_pop", falloff = 5)
-	flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
+	if(ishuman(user))
+		playsound(src, "shield_pop", falloff = 5)
+		flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
+		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!."), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
 
 // ------------------ PROCESS PROCS ------------------
 
@@ -74,22 +93,23 @@
 	COOLDOWN_RESET(src, time_to_regen)
 
 /obj/item/clothing/suit/marine/shielded/process(delta_time)
-	var/user = src.loc
-	if(!shield_enabled)
-		to_chat(world, SPAN_BOLD("Shield processed, but the shield is disabled, so it has not regenerated!"))
-		return
-	if(shield_broken)
-		if(COOLDOWN_FINISHED(src, shield_sparks))
-			flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+flicker"), 4)
-			COOLDOWN_START(src, shield_sparks, rand(1, 4) SECONDS)
-	if(COOLDOWN_FINISHED(src, time_to_regen))
-		if(shield_strength < max_shield_strength)
-			shield_strength = min(shield_strength + shield_regen_rate, max_shield_strength)
-			shield_broken = FALSE
-			to_chat(world, SPAN_BOLD("Shield processed, regenerated shielding for [shield_regen_rate] health."))
-			if(COOLDOWN_FINISHED(src, shield_noise_cd))
-				playsound(src, "shield_charge", vary = TRUE)
-				COOLDOWN_START(src, shield_noise_cd, shield.time_to_regen)
+	user = src.loc
+	if(ishuman(user))
+		if(!shield_enabled)
+			return
+		if(shield_broken || user.stat == DEAD)
+			if(COOLDOWN_FINISHED(src, shield_sparks))
+				flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+flicker"), 4)
+				COOLDOWN_START(src, shield_sparks, rand(1, 4) SECONDS)
+		if(user.stat == DEAD)
+			disable_shield()
+		if(COOLDOWN_FINISHED(src, time_to_regen))
+			if(shield_strength < max_shield_strength)
+				shield_strength = min(shield_strength + shield_regen_rate, max_shield_strength)
+				shield_broken = FALSE
+				if(COOLDOWN_FINISHED(src, shield_noise_cd))
+					playsound(src, "shield_charge", vary = TRUE)
+					COOLDOWN_START(src, shield_noise_cd, shield.time_to_regen)
 
 // ------------------ ARMOR ------------------
 

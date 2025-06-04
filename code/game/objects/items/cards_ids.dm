@@ -424,7 +424,10 @@
 	desc = "An identitiy disk forged from nanolaminate. Four holoprojectors, two on each arm, display the personal identification readout of its owner."
 	icon = 'icons/halo/obj/items/card.dmi'
 	icon_state = "cov"
-	item_state = null
+	item_state = "cov_id"
+	item_icons = list(
+		WEAR_ID = 'icons/halo/mob/humans/onmob/id.dmi'
+	)
 
 // Used to authenticate to CORSAT machines. Doesn't do anything except have its type variable
 /obj/item/card/data/corsat

@@ -19,10 +19,34 @@
 
 // EVERYTHING ELSE (ALSO LAZY)
 
-/datum/action/human_action/activable/covenant
-	name = "Covenant Actions sangheiliolder"
+/datum/action/item_action/toggle_shield
+	name = "Toggle Shield"
+	action_icon_state = "shield"
 	icon_file = 'icons/halo/mob/hud/actions.dmi'
-	button_icon_state = "cov_template"
+
+/datum/action/item_action/toggle_shield/New(mob/living/user, obj/item/holder)
+	..()
+	name = "Toggle Shield"
+	button.name = name
+	button.overlays.Cut()
+	button.icon = 'icons/halo/mob/hud/actions.dmi'
+	var/image/IMG = image('icons/halo/mob/hud/actions.dmi', button, "shield")
+	button.overlays += IMG
+
+/datum/action/item_action/toggle_shield/can_use_action()
+	var/mob/living/carbon/human/H = owner
+	if(istype(H) && !H.is_mob_incapacitated() && holder_item == H.wear_suit)
+		return TRUE
+
+/datum/action/item_action/toggle_shield/action_activate()
+	. = ..()
+	var/obj/item/clothing/suit/marine/shielded/shield = holder_item
+	shield.toggle_shield()
+
+/datum/action/human_action/activable/covenant
+	name = "Covenant Actions"
+	icon_file = 'icons/halo/mob/hud/actions.dmi'
+	button_icon_state = "template"
 	var/active = FALSE
 
 /datum/action/human_action/activable/covenant/sangheili_kick
