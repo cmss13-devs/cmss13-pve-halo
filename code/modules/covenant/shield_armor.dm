@@ -81,7 +81,7 @@
 	if(ishuman(user))
 		playsound(src, "shield_pop", falloff = 5)
 		flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
-		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!."), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
+		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!"), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
 
 // ------------------ PROCESS PROCS ------------------
 
@@ -109,6 +109,7 @@
 				shield_broken = FALSE
 				if(COOLDOWN_FINISHED(src, shield_noise_cd))
 					playsound(src, "shield_charge", vary = TRUE)
+					user.visible_message(SPAN_NOTICE("[user]s energy shield emitters hum, regenerating the shield around them!"), SPAN_DANGER("Your energy shields hum and begin to regenerate."))
 					COOLDOWN_START(src, shield_noise_cd, shield.time_to_regen)
 
 // ------------------ ARMOR ------------------
