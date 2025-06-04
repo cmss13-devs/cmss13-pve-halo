@@ -13,6 +13,7 @@
 	var/deform = 'icons/mob/humans/species/r_def_human.dmi' // Mutated icon set.
 	var/icobase_source // if we want to use sourcing system
 	var/deform_source
+	var/dam_icon = 'icons/mob/humans/dam_human.dmi'
 	var/eyes = "eyes_s"   // Icon for eyes.
 	var/eye_icon = 'icons/mob/humans/onmob/human_face.dmi'
 	var/uses_skin_color = FALSE  //Set to TRUE to load proper skin_colors and what have you
