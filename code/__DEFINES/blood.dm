@@ -20,4 +20,4 @@
 
 // halo
 
-#define BLOOD_COLOR_SANGHEILI "#642294"
+#define BLOOD_COLOR_SANGHEILI "#5b3278"
