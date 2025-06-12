@@ -3,6 +3,13 @@
 	pay_multiplier = 1.4
 	default_faction = FACTION_COVENANT
 
+/datum/paygrade/covenant/civilian
+	paygrade = PAY_SHORT_COV_CIV
+	name = "Civilian"
+	prefix = "Civ"
+	ranking = 0
+	pay_multiplier = 1
+
 /datum/paygrade/covenant/minor
 	paygrade = PAY_SHORT_COV_MINOR
 	name = "Minor"
