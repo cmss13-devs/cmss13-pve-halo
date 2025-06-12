@@ -3,8 +3,7 @@
 	name = "Sangheili"
 	name_plural = "Sangheili"
 	mob_flags = KNOWS_TECHNOLOGY
-	uses_skin_color = FALSE
-	special_body_types = FALSE
+	uses_skin_color = TRUE
 	flags = HAS_HARDCRIT|HAS_SKIN_COLOR|SPECIAL_BONEBREAK|NO_SHRAPNEL
 	mob_inherent_traits = list(
 		TRAIT_COV_TECH,
@@ -44,6 +43,16 @@
 	eye_icon = 'icons/halo/mob/humans/species/sangheili/eyes.dmi'
 	dam_icon = 'icons/halo/mob/humans/species/sangheili/dam_sangheili.dmi'
 	blood_mask = 'icons/halo/mob/humans/species/sangheili/blood_mask.dmi'
+
+	has_organ = list(
+		"heart" = /datum/internal_organ/heart/sangheili,
+		"secondary_heart" = /datum/internal_organ/heart/sangheili/secondary,
+		"lungs" = /datum/internal_organ/lungs/sangheili,
+		"liver" = /datum/internal_organ/liver/sangheili,
+		"kidneys" =  /datum/internal_organ/kidneys/sangheili,
+		"brain" = /datum/internal_organ/brain/sangheili,
+		"eyes" =  /datum/internal_organ/eyes
+		)
 
 /datum/species/sangheili/post_species_loss(mob/living/carbon/human/H)
 	..()

@@ -11,6 +11,7 @@
 
 /proc/get_limb_icon_name(datum/species/S, body_size, body_type, gender, limb_name, skin_color)
 	if(S.uses_skin_color)
+
 		if(S.special_body_types)
 			switch(limb_name)
 				if("torso")

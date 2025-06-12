@@ -21,6 +21,8 @@
 	var/final_name = random_name
 	new_human.change_real_name(new_human, final_name)
 	new_human.gender = MALE
+	new_human.body_type = "sang"
+	new_human.skin_color = pick("sang1", "sang2")
 	var/static/list/eye_color_list = list("Magenta" = list(141, 39, 85), "Orange" = list(158, 67, 28), "Green" = list(24, 105, 17))
 	eye_color = pick(eye_color_list)
 	new_human.r_eyes = eye_color_list[eye_color][1]
@@ -35,6 +37,8 @@
 	var/final_name = random_name
 	new_human.change_real_name(new_human, final_name)
 	new_human.gender = MALE
+	new_human.body_type = "sang"
+	new_human.skin_color = pick("sang1", "sang2")
 	var/static/list/eye_color_list = list("Magenta" = list(141, 39, 85), "Orange" = list(158, 67, 28), "Green" = list(24, 105, 17))
 	eye_color = pick(eye_color_list)
 	new_human.r_eyes = eye_color_list[eye_color][1]
