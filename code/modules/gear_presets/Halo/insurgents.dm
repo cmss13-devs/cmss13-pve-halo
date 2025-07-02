@@ -72,7 +72,7 @@
 			if(3)
 				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/utility_vest, WEAR_JACKET)
 		if(prob(10))
-			new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe, WEAR_J_STORE)
+			new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe, WEAR_L_HAND)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
 
 	if(prob(80))
