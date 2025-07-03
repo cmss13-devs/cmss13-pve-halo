@@ -1,0 +1,4 @@
+author: "thecountofs"
+delete-after: True
+changes:
+  - imageadd: "New lobby art"
