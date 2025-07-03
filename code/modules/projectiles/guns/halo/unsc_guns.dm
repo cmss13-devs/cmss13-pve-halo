@@ -668,7 +668,7 @@
 
 /obj/item/weapon/gun/rifle/halo/dmr/set_gun_config_values()
 	..()
-	set_fire_delay(FIRE_DELAY_TIER_6)
+	set_fire_delay(FIRE_DELAY_TIER_5)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT
 	scatter = SCATTER_AMOUNT_TIER_6
