@@ -46,7 +46,7 @@
 /obj/item/ammo_magazine/rifle/halo/dmr
 	name = "\improper M392 DMR magazine (7.62x51mm FMJ)"
 	desc = "A rectangular 15 round box magazine for the M392 DMR filled with 7.62x51mm FMJ ammo."
-	icon_state = "br55"
+	icon_state = "dmr"
 	max_rounds = 15
 	gun_type = /obj/item/weapon/gun/rifle/halo/dmr
 	default_ammo = /datum/ammo/bullet/rifle/br55
