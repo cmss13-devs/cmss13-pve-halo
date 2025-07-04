@@ -55,7 +55,7 @@
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 60
-	penetration = ARMOR_PENETRATION_TIER_3
+	penetration = ARMOR_PENETRATION_TIER_4
 	accurate_range = 24
 	accuracy = HIT_ACCURACY_TIER_8
 	scatter = SCATTER_AMOUNT_TIER_10
