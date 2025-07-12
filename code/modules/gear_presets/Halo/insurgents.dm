@@ -59,7 +59,7 @@
 	skills = /datum/skills/clf
 
 /datum/equipment_preset/insurgent/partisan/load_gear(mob/living/carbon/human/new_human)
-	var/vest_mix = rand(1,3)
+	var/vest_mix = rand(1,4)
 	var/weapon_mix = rand(1,6)
 	add_worker_uniform(new_human)
 	spawn_rebel_shoes(new_human)
@@ -72,6 +72,8 @@
 				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
 			if(3)
 				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/utility_vest, WEAR_JACKET)
+			if(4)
+				new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/police, WEAR_JACKET)
 		if(prob(10))
 			new_human.equip_to_slot_or_del(new /obj/item/weapon/twohanded/fireaxe, WEAR_L_HAND)
 	switch(weapon_mix)
@@ -107,7 +109,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/device/flashlight, WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel, WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/MRE, WEAR_IN_BACK)
-	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/smokebomb, WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov, WEAR_IN_BACK)
 
 /datum/equipment_preset/insurgent/partisan/lead
 	name = "Partisan Leader"
@@ -123,8 +125,11 @@
 	spawn_rebel_shoes(new_human)
 	spawn_rebel_gloves(new_human)
 
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections, WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/police, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/neckguard/police, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/groin/police, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/bracers/police, WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/police, WEAR_HEAD)
 
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/shotgun/pump/halo/m90/police, WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
