@@ -95,3 +95,8 @@
 	prop_gun_type = /obj/item/weapon/gun/launcher/rocket/anti_tank
 	custom_gun_name = "\improper Spent M83A2 SADAR"
 	custom_gun_desc = "A spent M83A2 tube. It's been kept as a trophy after a lucky tank kill nearly a thousand meters out. Someone has engraved a single tally-mark on the side to begin recording a kill-count."
+
+/obj/effect/spawner/prop_gun/unsc_shotgun
+	prop_gun_type = /obj/item/weapon/gun/shotgun/pump/halo/m90
+	custom_gun_name = "\improper Broken M90 CAWS"
+	custom_gun_desc = "A broken and beaten M90 CAWS, with several components stripped from it's internals."
