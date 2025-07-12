@@ -26,9 +26,9 @@
 	max_range = 24
 
 /datum/ammo/bullet/rifle/ma2b
-	name = "large AP bullet"
+	name = "AP bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 60
+	damage = 30
 	penetration = ARMOR_PENETRATION_TIER_5
 	accurate_range = 14
 	accuracy = HIT_ACCURACY_TIER_2
