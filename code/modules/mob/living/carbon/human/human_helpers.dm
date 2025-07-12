@@ -11,6 +11,7 @@
 
 /proc/get_limb_icon_name(datum/species/S, body_size, body_type, gender, limb_name, skin_color)
 	if(S.uses_skin_color)
+
 		if(S.special_body_types)
 			switch(limb_name)
 				if("torso")
@@ -166,6 +167,11 @@
 		body_type_icon = set_body_type.icon_name
 
 	if(isspeciesyautja(src))
+		skin_color_icon = skin_color
+		body_size_icon = body_size
+		body_type_icon = body_type
+
+	if(isspeciessangheili(src))
 		skin_color_icon = skin_color
 		body_size_icon = body_size
 		body_type_icon = body_type

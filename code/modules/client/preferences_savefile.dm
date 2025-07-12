@@ -285,6 +285,8 @@
 	S["pred_skin_color"] >> predator_skin_color
 	S["pred_flavor_text"] >> predator_flavor_text
 
+	S["sang_skin_color"] >> sang_skin_color
+
 	S["commander_status"] >> commander_status
 	S["co_sidearm"] >> commander_sidearm
 	S["co_affiliation"] >> affiliation
@@ -373,6 +375,10 @@
 	affiliation = sanitize_inlist(affiliation, FACTION_ALLEGIANCE_USCM_COMMANDER, initial(affiliation))
 	yautja_status = sanitize_inlist(yautja_status, GLOB.whitelist_hierarchy + list("Elder"), initial(yautja_status))
 	synth_status = sanitize_inlist(synth_status, GLOB.whitelist_hierarchy, initial(synth_status))
+
+	//halo
+
+	sang_skin_color = sanitize_inlist(sang_skin_color, SANG_SKIN_COLOR, initial(sang_skin_color))
 
 	window_scale = sanitize_integer(window_scale, FALSE, TRUE, initial(window_scale))
 	tgui_lock = sanitize_integer(tgui_lock, FALSE, TRUE, initial(tgui_lock))
@@ -492,6 +498,10 @@
 	S["pred_h_style"] << predator_h_style
 	S["pred_skin_color"] << predator_skin_color
 	S["pred_flavor_text"] << predator_flavor_text
+
+	//halo
+
+	S["sang_skin_color"] << sang_skin_color
 
 	S["commander_status"] << commander_status
 	S["co_sidearm"] << commander_sidearm
