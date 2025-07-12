@@ -1948,3 +1948,18 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	item_state = "pilot"
 	flags_atom = ALLOWINTERNALS|NO_SNOW_TYPE|NO_NAME_OVERRIDE|BLOCKGASEFFECT|ALLOWREBREATH|ALLOWCPR
 
+/obj/item/clothing/head/helmet/marine/unsc/police
+	name = "CH252 police helmet"
+	desc = "A UNSC Standard Helmet converted for the Police, able to resist more damage from up-close at the expense against range."
+	icon = 'icons/halo/obj/items/clothing/cm_hats.dmi'
+	icon_state = "police"
+	item_state = "police"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_LOW
+	armor_laser = CLOTHING_ARMOR_NONE
+	armor_energy = CLOTHING_ARMOR_NONE
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_bio = CLOTHING_ARMOR_MEDIUMLOW
+	armor_rad = CLOTHING_ARMOR_MEDIUMLOW
+	armor_internaldamage = CLOTHING_ARMOR_LOW

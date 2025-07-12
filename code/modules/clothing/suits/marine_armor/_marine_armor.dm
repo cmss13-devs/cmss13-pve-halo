@@ -889,3 +889,20 @@
 		/obj/item/storage/belt/gun/xm51,
 		/obj/item/storage/belt/gun/m6,
 	)
+
+/obj/item/clothing/suit/marine/unsc/police
+	name = "police body armor"
+	desc = "A standard police vest issued to most colonies under control of the UNSC. Though it may not protect as well against ballistics compared to other vests, it still holds its own against basic small-arms and knives."
+	icon = 'icons/halo/obj/items/clothing/cm_suits.dmi'
+	icon_state = "police"
+	item_state = "police_armour"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_LOW
+	armor_energy = CLOTHING_ARMOR_NONE
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bio = CLOTHING_ARMOR_LOW
+	armor_internaldamage = CLOTHING_ARMOR_LOW
+
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
