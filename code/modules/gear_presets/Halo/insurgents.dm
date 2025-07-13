@@ -60,7 +60,7 @@
 
 /datum/equipment_preset/insurgent/partisan/load_gear(mob/living/carbon/human/new_human)
 	var/vest_mix = rand(1,4)
-	var/weapon_mix = rand(1,6)
+	var/weapon_mix = rand(1,3)
 	add_worker_uniform(new_human)
 	spawn_rebel_shoes(new_human)
 	spawn_rebel_gloves(new_human)
@@ -81,14 +81,6 @@
 			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
 		if(2 to 3)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m7/full, WEAR_WAIST)
-		if(4 to 6)
-			new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma2b, WEAR_L_HAND)
-			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine, WEAR_WAIST)
-			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma2b(new_human), WEAR_IN_BELT)
-			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma2b(new_human), WEAR_IN_BELT)
-			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma2b(new_human), WEAR_IN_BELT)
-			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma2b(new_human), WEAR_IN_BELT)
-			new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma2b(new_human), WEAR_IN_BELT)
 
 
 	if(prob(80))
