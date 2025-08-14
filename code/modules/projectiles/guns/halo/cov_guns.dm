@@ -85,7 +85,7 @@
 
 /obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user = usr)
 	COOLDOWN_START(src, cooldown, overheat_time)
-	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! Its hot!"))
+	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
 	user.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
 	heat = 0
 	playsound(src, overheat_sound)
