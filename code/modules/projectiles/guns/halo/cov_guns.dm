@@ -151,7 +151,7 @@
 		to_chat(usr, SPAN_NOTICE("The [src] is still cooling down."))
 		return
 	if(overcharged)
-		user.visible_message(SPAN_NOTICE("[user] releases the trigger on the [src], no longer overcharging it.!"), SPAN_DANGER("You stop overcharging the [src]"))
+		user.visible_message(SPAN_NOTICE("[user] releases the trigger on the [src], no longer overcharging it!"), SPAN_DANGER("You stop overcharging the [src]!"))
 		overcharged = FALSE
 		toggle_ammo()
 	else if(!overcharged)
