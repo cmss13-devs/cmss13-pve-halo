@@ -155,7 +155,7 @@
 		overcharged = FALSE
 		toggle_ammo()
 	else if(!overcharged)
-		user.visible_message(SPAN_NOTICE("[user] holds down on the [src]s trigger and begins to overcharge it!"), SPAN_DANGER("You hold down on the [src]s trigger and begin to overcharge it!"))
+		user.visible_message(SPAN_NOTICE("[user] holds down on the [src]'s trigger and begins to overcharge it!"), SPAN_DANGER("You hold down on the [src]'s trigger and begin to overcharge it!"))
 		toggle_ammo()
 		overcharged = TRUE
 
