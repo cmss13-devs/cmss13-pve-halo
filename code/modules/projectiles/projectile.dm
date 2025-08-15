@@ -533,6 +533,15 @@
 			if(firer)
 				SEND_SIGNAL(firer, COMSIG_BULLET_DIRECT_HIT, L)
 
+		if (istype(L, /mob/living/carbon/human))
+			var/mob/living/carbon/human/H = L
+			if(H.dodge_pool)
+				H.dodge_pool = max(H.dodge_pool - 1, 0)
+			if(H.dodge_pool_regen)
+				H.dodge_pool_regen = max(H.dodge_pool_regen - 1, 0)
+			if(!H.cd_dodge_pool_regen)
+				COOLDOWN_START(H, cd_dodge_pool_regen, H.species.dp_regen_base_reactivation_time)
+
 		// At present, Xenos have no inherent effects or localized damage stemming from limb targeting
 		// Therefore we exempt the shooter from direct hit accuracy penalties as well,
 		// simply to avoid them from resetting target to chest every time they want to shoot a xeno
@@ -868,6 +877,8 @@
 			return FALSE
 		if(mobility_aura)
 			. -= mobility_aura * 5
+		if(dodge_pool)
+			. -= dodge_pool * 8
 		var/mob/living/carbon/human/shooter_human = P.firer
 		if(istype(shooter_human))
 			if(shooter_human.faction == faction && !(ammo_flags & AMMO_ALWAYS_FF))
@@ -980,6 +991,16 @@
 			P.ammo.on_shield_block(src)
 			bullet_ping(P)
 			return
+
+	if(!(ammo_flags & AMMO_ROCKET))
+		if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
+			var/obj/item/clothing/suit/marine/shielded/shield = wear_suit
+			if(shield.shield_strength >= 1)
+				if(ammo_flags & AMMO_LASER)
+					check_energy_shield(P.damage, "[P]", shield.shield_strength)
+				else
+					check_energy_shield(P.damage * 0.25, "[P]", shield.shield_strength)
+				return
 
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.
 	if(!organ)

@@ -2,6 +2,9 @@
 
 ///Covenant
 
+///COV-C, Civilian
+#define PAY_SHORT_COV_CIV "COV-C"
+
 /// COV1, Minor
 #define PAY_SHORT_COV_MINOR "COV1"
 
