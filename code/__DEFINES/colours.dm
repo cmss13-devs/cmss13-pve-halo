@@ -166,3 +166,5 @@
 #define COLOR_LASER_RED "#FF8D8D"
 #define COLOR_MUZZLE_BLUE "#2CB2E8"
 
+/// Covenant weapons
+#define COLOR_PLASMA_TEAL "#76c89f"
