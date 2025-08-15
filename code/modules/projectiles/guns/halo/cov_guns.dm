@@ -101,7 +101,7 @@
 /obj/item/weapon/gun/energy/plasma/process()
 	heat = max(heat - passive_dispersion, 0)
 	if(COOLDOWN_FINISHED(src, dispersion_cooldown))
-		heat = max(heat - active_dispersion)
+		heat = max(heat - active_dispersion, 0)
 
 /obj/item/weapon/gun/energy/plasma/proc/reset_icon()
 	icon_state = initial(icon_state)
@@ -112,7 +112,7 @@
 /obj/item/weapon/gun/energy/plasma/plasma_pistol
 	name = "Eos'Mak-pattern plasma pistol"
 	desc = "An advanced plasma pistol belonging to the Covenant military. It fires bolts of superheated plasma using its internal supply."
-	charge_cost = 10
+	charge_cost = 20
 	gun_category = GUN_CATEGORY_HANDGUN
 	muzzle_flash_color = COLOR_PLASMA_TEAL
 	flags_equip_slot = SLOT_WAIST
@@ -170,7 +170,7 @@
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/proc/toggle_ammo()
 	if(ammo == plasma_bolt)
 		ammo = overcharged_bolt
-		charge_cost = 100
+		charge_cost = 1000
 	else if(ammo == overcharged_bolt)
 		ammo = plasma_bolt
-		charge_cost = 10
+		charge_cost = 20

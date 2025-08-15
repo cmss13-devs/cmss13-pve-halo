@@ -13,5 +13,5 @@
 
 /datum/ammo/energy/plasma/plasma_pistol/overcharge
 	name = "overcharged light plasma bolt"
-	damage = 55
+	damage = 80
 	shell_speed = AMMO_SPEED_TIER_4
