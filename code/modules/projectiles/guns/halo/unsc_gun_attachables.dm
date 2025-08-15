@@ -107,17 +107,19 @@
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
-/obj/item/attachable/ma3a_underbarrel
-	name = "\improper MA3A Underbarrel"
-	desc = "An underbarrel grip for the MA3A, later used as a flashlight for the MA5."
+/obj/item/attachable/flashlight/ma5c/ma3a
+	name = "\improper MA3A integrated flashlight"
+	desc = "An underbarrel grip for the MA3A, integrated as a flashlight."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma3a_underbarrel"
-	attach_icon = "ma3a_underbarrel"
+	icon_state = "ma3a_flashlight"
+	attach_icon = "ma3a_flashlight"
+	original_state = "ma3a_flashlight"
+	original_attach = "ma3a_flashlight"
 	slot = "under"
 
-/obj/item/attachable/flashlight/ma3a/New()
+/obj/item/attachable/flashlight/ma5c/ma3a/New()
 	..()
-	recoil_mod = -RECOIL_AMOUNT_TIER_2
+	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
 /obj/item/attachable/flashlight/m90
 	name = "\improper M90 integrated flashlight"
@@ -128,10 +130,6 @@
 	original_state = "m90_flashlight"
 	original_attach = "m90_flashlight_a"
 	slot = "under"
-
-/obj/item/attachable/flashlight/ma5c/New()
-	..()
-	recoil_mod = -RECOIL_AMOUNT_TIER_2
 
 /obj/item/attachable/ma5c_barrel
 	name = "\improper MA5C barrel"

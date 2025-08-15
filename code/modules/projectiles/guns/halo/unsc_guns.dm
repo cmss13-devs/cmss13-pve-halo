@@ -84,11 +84,11 @@
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/ma3a_underbarrel, /obj/item/attachable/ma3a_barrel)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c/ma3a, /obj/item/attachable/ma3a_barrel)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma3a
 	attachable_allowed = list(
 		/obj/item/attachable/ma3a_shroud,
-		/obj/item/attachable/ma3a_underbarrel,
+		/obj/item/attachable/flashlight/ma5c/ma3a,
 		/obj/item/attachable/ma3a_barrel,
 		/obj/item/attachable/scope/mini/ma3a,
 	)
@@ -141,7 +141,7 @@
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/vk78_barrel)
+	starting_attachment_types = list(/obj/item/attachable/vk78_barrel, /obj/item/attachable/scope/mini/vk78)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/vk78
 	attachable_allowed = list(
 		/obj/item/attachable/vk78_front,
@@ -162,6 +162,8 @@
 /obj/item/weapon/gun/rifle/halo/vk78/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_7)
+	set_burst_amount(BURST_AMOUNT_TIER_2)
+	set_burst_delay(FIRE_DELAY_TIER_10)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2 - 2*HIT_ACCURACY_MULT_TIER_1
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_8 - 2*HIT_ACCURACY_MULT_TIER_1
 	scatter = SCATTER_AMOUNT_TIER_3
@@ -614,6 +616,32 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
 	velocity_add = AMMO_SPEED_TIER_1
 
+/obj/item/weapon/gun/pistol/halo/m4a
+	name = "M4A service pistol"
+	desc = "The M4A service pistol is an older version of the current service pistol, the M6C. Whilst being "
+	icon_state = "m4a"
+	item_state = "m6"
+	caliber = "12.7x40mm"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
+	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
+	fire_sound = "gun_m4a"
+
+/obj/item/weapon/gun/pistol/halo/m4a/unloaded
+	current_mag = null
+
+/obj/item/weapon/gun/pistol/halo/m4a/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
+
+/obj/item/weapon/gun/pistol/halo/m4a/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_8)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_7
+	scatter_unwielded = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	velocity_add = AMMO_SPEED_TIER_1
+
 // Grenades
 
 /obj/item/explosive/grenade/high_explosive/m15/unsc
@@ -645,7 +673,7 @@
 	item_state = "dmr"
 	caliber = "7.62x51mm"
 
-	fire_sound = "gun_br55"
+	fire_sound = "gun_m392"
 	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_br55_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_br55_unload.ogg'
