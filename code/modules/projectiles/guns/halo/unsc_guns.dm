@@ -84,7 +84,7 @@
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c/ma3a, /obj/item/attachable/ma3a_barrel)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c/ma3a, /obj/item/attachable/ma3a_barrel, /obj/item/attachable/scope/mini/ma3a)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma3a
 	attachable_allowed = list(
 		/obj/item/attachable/ma3a_shroud,
@@ -624,7 +624,7 @@
 	caliber = "12.7x40mm"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
-	fire_sound = "gun_m4a"
+	fire_sound = "gun_m6c"
 
 /obj/item/weapon/gun/pistol/halo/m4a/unloaded
 	current_mag = null
@@ -673,7 +673,7 @@
 	item_state = "dmr"
 	caliber = "7.62x51mm"
 
-	fire_sound = "gun_m392"
+	fire_sounds = list('sound/weapons/halo/gun_m392_1.ogg', 'sound/weapons/halo/gun_m392_2.ogg', 'sound/weapons/halo/gun_m392_3.ogg')
 	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_br55_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_br55_unload.ogg'
