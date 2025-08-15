@@ -244,14 +244,14 @@
 
 	name = "sangheili primary heart"
 	icon = 'icons/halo/obj/items/organs.dmi'
-	icon_state = "sang_primary_heart"
-	dead_icon = "sang_primary_heart"
+	icon_state = "sang_heart_primary"
+	dead_icon = "sang_heart_primary"
 	organ_type = /datum/internal_organ/heart/sangheili
 
 /obj/item/organ/heart/sangheili/secondary
 	name = "sangheili secondary heart"
-	icon_state = "sang_secondary_heart"
-	dead_icon = "sang_secondary_heart"
+	icon_state = "sang_heart_secondary"
+	dead_icon = "sang_heart_secondary"
 	organ_type = /datum/internal_organ/heart/sangheili/secondary
 	organ_tag = "secondary_heart"
 
