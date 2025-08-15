@@ -439,7 +439,7 @@
 			if("gun_pkd")
 				sound = pick('sound/weapons/gun_pkd_fire01.ogg','sound/weapons/gun_pkd_fire02.ogg','sound/weapons/gun_pkd_fire03.ogg')
 
-			// halo guns
+			// halo guns unsc
 			if("gun_ma5c")
 				sound = pick('sound/weapons/halo/gun_ma5c_1.ogg','sound/weapons/halo/gun_ma5c_2.ogg','sound/weapons/halo/gun_ma5c_3.ogg')
 			if("gun_m6c")
@@ -457,6 +457,7 @@
 			if("gun_m7")
 				sound = pick('sound/weapons/halo/gun_m7_1.ogg','sound/weapons/halo/gun_m7_2.ogg')
 
+
 			// Halo misc
 			if("shield_hit")
 				sound = pick('sound/effects/shields/shield_hit_1.ogg', 'sound/effects/shields/shield_hit_2.ogg', 'sound/effects/shields/shield_hit_3.ogg', 'sound/effects/shields/shield_hit_4.ogg', 'sound/effects/shields/shield_hit_5.ogg', 'sound/effects/shields/shield_hit_6.ogg')
@@ -473,6 +474,15 @@
 			if("warcry_sangheili")
 				sound = pick('sound/voice/sangheili/warcry_1.ogg', 'sound/voice/sangheili/warcry_2.ogg')
 
+
+
+			// halo guns cov
+			if("gun_lightplasma")
+				sound = pick('sound/weapons/halo/gun_lightplasma_1.ogg','sound/weapons/halo/gun_lightplasma_2.ogg','sound/weapons/halo/gun_lightplasma_3.ogg','sound/weapons/halo/gun_lightplasma_4.ogg','sound/weapons/halo/gun_lightplasma_5.ogg')
+			if("gun_plasma")
+				sound = pick('sound/weapons/halo/gun_plasma_1.ogg','sound/weapons/halo/gun_plasma_2.ogg','sound/weapons/halo/gun_plasma_3.ogg')
+			if("gun_heavyplasma")
+				sound = pick('sound/weapons/halo/gun_heavyplasma_1.ogg','sound/weapons/halo/gun_heavyplasma_2.ogg','sound/weapons/halo/gun_heavyplasma_3.ogg')
 
 
 			// Xeno
