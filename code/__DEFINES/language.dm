@@ -10,6 +10,7 @@
 #define LANGUAGE_FILIPINO "Filipino"
 #define LANGUAGE_TSL "Tactical Sign Language"
 #define LANGUAGE_YAUTJA "Sainja"
+#define LANGUAGE_SANGHEILI "Sangheili"
 #define LANGUAGE_MONKEY "Primitive" // nanu
 #define LANGUAGE_HELLHOUND "Hellhound"
 

@@ -1,0 +1,9 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Sangheili"
+  - rscadd: "Sangheili undersuit"
+  - rscadd: "Dodge pool mechanic"
+  - code_imp: "Changed some things to support different .dmi paths for different species"
+  - imageadd: "Sangheili species"
+  - imageadd: "Sangheili undersuit"
