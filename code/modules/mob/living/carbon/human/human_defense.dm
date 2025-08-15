@@ -96,11 +96,9 @@ Contains most of the procs that are called when a mob is attacked by something
 /mob/living/carbon/human/proc/check_energy_shield(damage = 0, attack_text = "the attack")
 	if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
 		var/obj/item/clothing/suit/marine/shielded/shield = wear_suit
-		if(!shield.shield_strength)
-			return FALSE
-		else
-			src.visible_message(SPAN_NOTICE("[src]s energy shield shimmers from [attack_text]."), SPAN_DANGER("Your energy shield shimmers from [attack_text]!"))
+		if(shield.shield_strength)
 			shield.take_damage(damage)
+			src.visible_message(SPAN_NOTICE("[src]s energy shield shimmers from [attack_text]."), SPAN_DANGER("Your energy shield shimmers from [attack_text]!"))
 			return TRUE
 
 
