@@ -250,7 +250,7 @@
 
 /obj/item/organ/heart/sangheili/secondary
 	name = "sangheili secondary heart"
-	icon_state = "sang_secndary_heart"
+	icon_state = "sang_secondary_heart"
 	dead_icon = "sang_secondary_heart"
 	organ_type = /datum/internal_organ/heart/sangheili/secondary
 	organ_tag = "secondary_heart"
@@ -264,7 +264,7 @@
 /obj/item/organ/kidneys/sangheili
 	name = "sangheili kidneys"
 	icon = 'icons/halo/obj/items/organs.dmi'
-	icon_state = "sang_kidneys"
+	icon_state = "sang_kidney"
 	organ_type = /datum/internal_organ/kidneys/sangheili
 
 /obj/item/organ/liver/sangheili
