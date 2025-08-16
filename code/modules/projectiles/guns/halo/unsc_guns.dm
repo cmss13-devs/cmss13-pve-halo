@@ -68,8 +68,8 @@
 	current_mag = null
 
 /obj/item/weapon/gun/rifle/halo/ma3a
-	name = "MA3A ICWS assault rifle"
-	desc = "An older, less robust rifle previously used by the UNSC before the MA5 series came around. Still often found in the hands of insurgents and partisans."
+	name = "MA3A assault rifle"
+	desc = "An old predecessor to the MA5 line, the MA3A had a notably short service history before being replaced by the more comprehensively designed MA5 series, nonetheless, enough were made to feed the private-security and would-be rebel markets for decades to come. Lacking the integrated combat suite of the MA5 rifles, the MA3A instead most commonly featured a over-designed and prone to malfunction multi-mode conventional computer optic. While robust in its capabilities, the constant adjustments and poor battery-life led to its quick abandonment by mainline UNSCDF units."
 	icon_state = "ma3a"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
