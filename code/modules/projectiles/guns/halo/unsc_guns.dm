@@ -125,8 +125,8 @@
 
 
 /obj/item/weapon/gun/rifle/halo/vk78
-	name = "VK78 Commando assault rifle"
-	desc = "Also previously used by the UNSC, but much less often and has found to be much less reliable compared to modern rifles. However, it's still used by Partisans and Insurgents."
+	name = "VK78 surplus rifle"
+	desc = "The Colonial-Military-Authorities replacement for the ageing HMG-38, this 6.5x48mm rifle spent more of its life-time shooting targets than it had any combatant. Benefiting from a more ergonomically conventional layout, and exceptional mechanical simplicity, the Vk78 has long survived the CMA's downfall in the hands of militia-men, criminals, homesteaders and rebels alike. Listen for that distinct bark on patrol, it's probably not friendly."
 	icon_state = "vk78"
 	item_state = "vk78"
 	caliber = "6.5x48mm"
@@ -617,8 +617,8 @@
 	velocity_add = AMMO_SPEED_TIER_1
 
 /obj/item/weapon/gun/pistol/halo/m4a
-	name = "M4A service pistol"
-	desc = "The M4A service pistol is an older version of the current service pistol, the M6C. Whilst being "
+	name = "M4A pistol"
+	desc = "An antiquated 12.7x40mm pistol, popular among civilians and criminals alike. The M4A is a predecessor to the more commonly recognized M6 series of pistols by Misriah, removed from official service in 2414 when the M6 took stage.  It's regarded as being inaccurate with a blinding muzzle flash and deafening report, making it unsuited for most practical purposes, features that make it even more attractive to its most common users."
 	icon_state = "m4a"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -668,7 +668,7 @@
 //DMR
 /obj/item/weapon/gun/rifle/halo/dmr
 	name = "M392 DMR"
-	desc = "A precision rifle used by both UNSC Army and rarely insurgent forces, gas operated and manufactured by Misriah Armory."
+	desc = "  The M392 Designated-Marksman-Rifle is a 7.62x51mm bullpup rifle featuring a 15 round magazine and commonly, a scope. The weapon was most notably used by UNSCDF Army units and the defunct Colonial-Military-Authority before and during the Insurrection. The rifle is mechanically simple compared to its contemporary brethren and this has led to its popularity on the black market, alongside its greater availability ever since the shuttering of the CMA."
 	icon_state = "dmr"
 	item_state = "dmr"
 	caliber = "7.62x51mm"
