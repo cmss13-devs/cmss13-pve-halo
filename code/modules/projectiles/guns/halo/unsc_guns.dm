@@ -590,6 +590,30 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 
+/obj/item/weapon/gun/pistol/halo/m6c/m4a
+	name = "M4A pistol"
+	desc = "An antiquated 12.7x40mm pistol, popular among civilians and criminals alike. The M4A is a predecessor to the more commonly recognized M6 series of pistols by Misriah, removed from official service in 2414 when the M6 took stage.  It's regarded as being inaccurate with a blinding muzzle flash and deafening report, making it unsuited for most practical purposes, features that make it even more attractive to its most common users."
+	icon_state = "m4a"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
+	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
+	fire_sound = "gun_m6c"
+
+/obj/item/weapon/gun/pistol/halo/m6c/m4a/unloaded
+	current_mag = null
+
+/obj/item/weapon/gun/pistol/halo/m6c/m4a/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
+
+/obj/item/weapon/gun/pistol/halo/m6c/m4a/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_8)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_7
+	scatter_unwielded = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
+	velocity_add = AMMO_SPEED_TIER_1
+
 /obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"
 	desc = "The M6G service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
@@ -614,32 +638,6 @@
 	scatter = SCATTER_AMOUNT_TIER_8
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
-	velocity_add = AMMO_SPEED_TIER_1
-
-/obj/item/weapon/gun/pistol/halo/m4a
-	name = "M4A pistol"
-	desc = "An antiquated 12.7x40mm pistol, popular among civilians and criminals alike. The M4A is a predecessor to the more commonly recognized M6 series of pistols by Misriah, removed from official service in 2414 when the M6 took stage.  It's regarded as being inaccurate with a blinding muzzle flash and deafening report, making it unsuited for most practical purposes, features that make it even more attractive to its most common users."
-	icon_state = "m4a"
-	item_state = "m6"
-	caliber = "12.7x40mm"
-	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
-	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
-	fire_sound = "gun_m6c"
-
-/obj/item/weapon/gun/pistol/halo/m4a/unloaded
-	current_mag = null
-
-/obj/item/weapon/gun/pistol/halo/m4a/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
-
-/obj/item/weapon/gun/pistol/halo/m4a/set_gun_config_values()
-	..()
-	set_fire_delay(FIRE_DELAY_TIER_8)
-	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_1
-	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
-	scatter = SCATTER_AMOUNT_TIER_7
-	scatter_unwielded = SCATTER_AMOUNT_TIER_5
-	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
 	velocity_add = AMMO_SPEED_TIER_1
 
 // Grenades
