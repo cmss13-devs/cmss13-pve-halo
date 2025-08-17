@@ -162,6 +162,8 @@
 			return 'sound/voice/human_female_medic.ogg'
 	if(issangheili(user))
 		return get_sfx("pain_sangheili")
+	if(isunggoy(user))
+		return get_sfx("pain_unggoy")
 
 /datum/emote/living/carbon/human/medic/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -251,6 +253,8 @@
 		return get_sfx("pred_pain")
 	if(issangheili(user))
 		return get_sfx("pain_sangheili")
+	if(isunggoy(user))
+		return get_sfx("pain_unggoy")
 
 /datum/emote/living/carbon/human/scream/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -379,6 +383,8 @@
 				return get_sfx("female_warcry")
 	if(issangheili(user))
 		return get_sfx("warcry_sangheili")
+	if(isunggoy(user))
+		return get_sfx("warcry_unggoy")
 
 /datum/emote/living/carbon/human/whimper
 	key = "whimper"

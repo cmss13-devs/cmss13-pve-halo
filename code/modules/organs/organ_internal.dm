@@ -345,9 +345,6 @@
 /datum/internal_organ/heart/unggoy
 	removed_type = /obj/item/organ/heart/unggoy
 
-/datum/internal_organ/heart/unggoy/secondary
-	removed_type = /obj/item/organ/heart/unggoy/secondary
-
 /datum/internal_organ/lungs/unggoy
 	removed_type = /obj/item/organ/lungs/unggoy
 

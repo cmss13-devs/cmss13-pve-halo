@@ -423,14 +423,6 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define DUTCH_JOB_LIST list(JOB_DUTCH_ARNOLD, JOB_DUTCH_RIFLEMAN, JOB_DUTCH_MINIGUNNER, JOB_DUTCH_FLAMETHROWER, JOB_DUTCH_MEDIC)
 
-//Covenant
-#define JOB_COV_MINOR "Minor"
-#define JOB_COV_MAJOR "Major"
-#define JOB_COV_ULTRA "Ultra"
-#define JOB_COV_ZEALOT "Zealot"
-#define JOB_COV_COMMANDER "Sub-Commander"
-#define JOB_COV_COMANDER "Commander"
-
 //-------- HALO Ends Here --------//
 
 #define JOB_PREDATOR "Predator"

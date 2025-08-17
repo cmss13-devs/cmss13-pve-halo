@@ -1,5 +1,5 @@
-/datum/species/sangheili
-	group = SPECIES_SANGHEILI
+/datum/species/unggoy
+	group = SPECIES_UNGGOY
 	name = "Unggoy"
 	name_plural = "Unggoy"
 	mob_flags = KNOWS_TECHNOLOGY
@@ -30,7 +30,7 @@
 	dp_regen_base_reactivation_time = 35
 
 	icobase = 'icons/halo/mob/humans/species/unggoy/r_unggoy.dmi'
-	deform = 'icons/halo/mob/humans/species/unggoy/r_unggoy	.dmi'
+	deform = 'icons/halo/mob/humans/species/unggoy/r_unggoy.dmi'
 	eye_icon = 'icons/halo/mob/humans/species/unggoy/eyes.dmi'
 	dam_icon = 'icons/halo/mob/humans/species/unggoy/dam_unggoy.dmi'
 	blood_mask = 'icons/halo/mob/humans/species/unggoy/blood_mask.dmi'

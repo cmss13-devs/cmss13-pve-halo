@@ -11,6 +11,7 @@
 #define ismonkey(A) (ishuman(A) && istype(A?:species, /datum/species/monkey))
 #define isyautja(A) (ishuman(A) && istype(A?:species, /datum/species/yautja))
 #define issangheili(A) (ishuman(A) && istype(A?:species, /datum/species/sangheili))
+#define isunggoy(A) (ishuman(A) && istype(A?:species, /datum/species/unggoy))
 #define isresearcher(A) (ishuman(A) && A.job == "Researcher")
 #define isSEA(A) (ishuman(A) && A.job == "Senior Enlisted Advisor")
 #define issynth(A) (ishuman(A) && istype(A?:species, /datum/species/synthetic))

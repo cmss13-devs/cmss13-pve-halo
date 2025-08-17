@@ -17,8 +17,8 @@
 /datum/pain/sangheili/oxy_kill(mob/living/source)
 	return
 
-/datum/pain/sangheili/unggoy
-	threshold = 225
+/datum/pain/unggoy
+	max_pain = 225
 
 	threshold_mild = 25
 	threshold_discomforting = 50
