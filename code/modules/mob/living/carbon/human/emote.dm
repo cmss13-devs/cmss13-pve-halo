@@ -3,7 +3,7 @@
 	keybind_category = CATEGORY_HUMAN_EMOTE
 
 	/// Species that can use this emote.
-	var/list/species_type_allowed_typecache = list(/datum/species/human, /datum/species/synthetic, /datum/species/yautja, /datum/species/sangheili)
+	var/list/species_type_allowed_typecache = list(/datum/species/human, /datum/species/synthetic, /datum/species/yautja, /datum/species/sangheili, /datum/species/unggoy)
 	/// Species that can't use this emote.
 	var/list/species_type_blacklist_typecache = list(/datum/species/monkey)
 

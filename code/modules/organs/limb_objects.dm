@@ -52,6 +52,7 @@
 	if(isspeciessangheili(H))
 		skin_color_icon = H.skin_color
 		body_type_icon = H.body_type
+
 	if(isspeciesunggoy(H))
 		skin_color_icon = H.skin_color
 		body_type_icon = H.body_type
