@@ -472,7 +472,12 @@
 			if("pain_sangheili")
 				sound = pick('sound/voice/sangheili/pain_1.ogg', 'sound/voice/sangheili/pain_2.ogg', 'sound/voice/sangheili/pain_3.ogg', 'sound/voice/sangheili/pain_4.ogg', 'sound/voice/sangheili/pain_5.ogg')
 			if("warcry_sangheili")
-				sound = pick('sound/voice/sangheili/warcry_1.ogg', 'sound/voice/sangheili/warcry_2.ogg')
+				sound = pick('sound/voice/sangheili/warcry_1.ogg', 'sound/voice/sangheili/warcry_2.ogg', 'sound/voice/sangheili/warcry_3.ogg')
+
+			if("pain_unggoy")
+				sound = pick('sound/voice/unggoy/pain_1.ogg', 'sound/voice/unggoy/pain_2.ogg', 'sound/voice/unggoy/pain_3.ogg', 'sound/voice/unggoy/pain_4.ogg')
+			if("warcry_unggoy")
+				sound = pick('sound/voice/unggoy/warcry_1.ogg', 'sound/voice/unggoy/warcry_2.ogg', 'sound/voice/unggoy/warcry_3.ogg')
 
 
 

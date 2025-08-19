@@ -8,10 +8,10 @@
 
 /datum/equipment_preset/covenant/sangheili
 	name = "Sangheili"
-	rank = JOB_COV_MINOR
-	assignment = JOB_COV_MINOR
+	rank = JOB_COV_CIV
+	assignment = JOB_COV_CIV
 	flags = EQUIPMENT_PRESET_EXTRA
-	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
 	faction = FACTION_COVENANT
 	skills = /datum/skills/covenant/sangheili
 
@@ -46,7 +46,7 @@
 	new_human.b_eyes = eye_color_list[eye_color][3]
 
 /datum/equipment_preset/covenant/sangheili/testing_preset
-	name = "Sang"
+	name = "Sangheili Quicktest"
 
 /datum/equipment_preset/covenant/sangheili/testing_preset/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/sangheili(new_human), WEAR_BODY)

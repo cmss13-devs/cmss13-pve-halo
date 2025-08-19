@@ -10,7 +10,6 @@
 		TRAIT_SUPER_STRONG,
 		TRAIT_FOREIGN_BIO,
 		TRAIT_DEXTROUS,
-		TRAIT_EMOTE_CD_EXEMPT,
 		TRAIT_IRON_TEETH,
 	)
 	unarmed_type = /datum/unarmed_attack/punch/sangheili
