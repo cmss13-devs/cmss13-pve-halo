@@ -7,3 +7,5 @@
 #define JOB_COV_ZEALOT "Zealot"
 #define JOB_COV_COMMANDER "Sub-Commander"
 #define JOB_COV_COMANDER "Commander"
+
+#define JOB_COV_MENIAL "Menial"

@@ -36,3 +36,24 @@
 	new_human.r_eyes = eye_color_list[eye_color][1]
 	new_human.g_eyes = eye_color_list[eye_color][2]
 	new_human.b_eyes = eye_color_list[eye_color][3]
+
+// BASIC ROLES
+
+/datum/equipment_preset/covenant/unggoy/minor
+	name = parent_type::name + " Minor"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+	idtype = /obj/item/card/id/covenant
+	access = list(ACCESS_MARINE_PREP)
+	assignment = JOB_COV_MENIAL
+	rank = JOB_COV_MENIAL
+	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "Menial"
+	skills = /datum/skills/covenant/unggoy
+
+/datum/equipment_preset/covenant/unggoy/minor/equipped
+	name = parent_type::name + " (Equipped)"
+
+/datum/equipment_preset/covenant/unggoy/minor/equipped/load_gear(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)

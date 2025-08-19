@@ -118,8 +118,8 @@
 	name = "YOU SHOULDN'T SEE THIS"
 	desc = "The central piece to a set of advanced combat armor manufactured by the Covenant. Made with nanolaminate and equipped with shielding, the armor is much more durable than any other species' equipment."
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
-	icon_state = "chestpiece"
-	item_state = "chestpiece"
+	icon_state = "sangheili_base"
+	item_state = "sangheili_base"
 
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/sangheili/armor.dmi'
