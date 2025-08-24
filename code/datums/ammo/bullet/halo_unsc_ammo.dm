@@ -56,6 +56,14 @@
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
 
+/datum/ammo/bullet/shotgun/beanbag/unsc
+	name = "MAG LLHB"
+	handful_state = "8g_beanbag"
+	accurate_range = 10
+	max_range = 10
+	stamina_damage = 120
+	damage = 35
+
 /datum/ammo/bullet/shotgun/spread/unsc
 	name = "additional buckshot, USCM special type"
 	accurate_range = 8
