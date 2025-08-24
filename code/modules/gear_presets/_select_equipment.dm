@@ -1516,14 +1516,12 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 
 //Halo Insurgents
 /datum/equipment_preset/proc/add_insurgent_weapon(mob/living/carbon/human/new_human)
-	var/weapon_mix = rand(1,5)
+	var/weapon_mix = rand(1,2)
 	switch(weapon_mix)
-		if(1 to 2)
+		if(1)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
-		if(3 to 4)
+		if(2)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m7/full, WEAR_WAIST)
-		if(5)
-			new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6c, WEAR_WAIST)
 
 
 /datum/equipment_preset/proc/add_insurgent_armor(mob/living/carbon/human/new_human)
