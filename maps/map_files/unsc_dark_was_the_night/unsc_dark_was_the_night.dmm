@@ -8082,13 +8082,6 @@
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/kitchen)
-"EY" = (
-/obj/effect/decal/unsc/cryo{
-	dir = 8;
-	pixel_x = -32
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_hall)
 "Fb" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
@@ -13230,7 +13223,7 @@
 	req_one_access_txt = "8";
 	id = "autodoc"
 	},
-/turf/open/floor/almayer/sterile,
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
 "ZM" = (
 /obj/structure/machinery/door/poddoor/almayer,
@@ -19736,8 +19729,8 @@ lf
 AE
 ZW
 CE
-CE
-EY
+ha
+lf
 ow
 RO
 Ly
@@ -23118,7 +23111,7 @@ tG
 tG
 GI
 IQ
-QF
+cc
 aR
 We
 WA
@@ -24174,9 +24167,9 @@ tG
 GI
 eR
 UO
-QF
+nU
 Iv
-QF
+cc
 cc
 rD
 aQ
@@ -24478,10 +24471,10 @@ tG
 GI
 Zq
 ht
-QF
+nU
 Iv
-QF
-QF
+cc
+cc
 uD
 Yd
 nU
