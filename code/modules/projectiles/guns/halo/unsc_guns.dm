@@ -387,7 +387,7 @@
 			return TRUE
 		if(!cover_open)
 			playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the [current_mag.name] to be removed."))
+			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the tubes to be removed."))
 			cover_open = TRUE
 		else
 			playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
@@ -397,18 +397,20 @@
 		return TRUE
 
 /obj/item/weapon/gun/halo_launcher/spnkr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
-	if(!cover_open)
-		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't put a new [current_mag.name] tube in! d<b>(alt-click to open it)</b>"))
+	if(!cover_open && current_mag)
+		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't put a new [current_mag.name] tube in! <b>(alt-click to open it)</b>"))
 		return
 	return ..()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/unload(mob/user, reload_override, drop_override, loc_override)
-	if(!cover_open)
+	if(!cover_open && current_mag)
 		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't take out the [current_mag.name]! <b>(alt-click to open it)</b>"))
 		return
+
 	else if(in_chamber)
 		to_chat(user, SPAN_WARNING("The safety mechanism prevents you from removing the [current_mag.name] from the [src] until all rounds have been fired."))
 		return
+
 	return ..()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/update_icon()
