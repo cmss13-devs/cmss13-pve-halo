@@ -1,4 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/open/floor/almayer/edge/smooth/northwest,
+/area/dark_was_the_night/canteen)
 "af" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -2960,7 +2963,7 @@
 /area/dark_was_the_night/kitchen)
 "lL" = (
 /obj/structure/surface/table/almayer,
-/turf/open/floor/almayer/edge/smooth/north,
+/turf/open/floor/almayer/edge/smooth/northeast,
 /area/dark_was_the_night/canteen)
 "lM" = (
 /obj/structure/platform{
@@ -4224,16 +4227,6 @@
 /obj/structure/machinery/landinglight/ds1/delayone,
 /turf/open/floor/almayer/red/southwest,
 /area/dark_was_the_night/hangar)
-"qs" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 8
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/canteen)
 "qt" = (
 /obj/structure/platform{
 	dir = 1
@@ -4512,7 +4505,7 @@
 	icon_state = "door_warning";
 	dir = 1
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/kitchen)
 "rt" = (
 /obj/structure/platform{
@@ -6004,7 +5997,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "wR" = (
 /obj/structure/machinery/light/double/blue{
@@ -6087,7 +6080,11 @@
 	pixel_x = 0;
 	pixel_y = -7
 	},
-/turf/open/floor/almayer,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/canteen)
 "xj" = (
 /obj/structure/prop/unsc_crate/standard/blue{
@@ -10887,7 +10884,11 @@
 	pixel_y = 11;
 	layer = 3.1
 	},
-/turf/open/floor/almayer,
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/canteen)
 "Qi" = (
 /obj/structure/pipes/unary/freezer,
@@ -11788,13 +11789,6 @@
 "TU" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/briefing)
-"TW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 8
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/canteen)
 "Ua" = (
 /obj/structure/machinery/autodoc_console{
 	dir = 4;
@@ -20036,8 +20030,8 @@ dF
 Ba
 ow
 ow
-NN
-Hn
+mA
+mA
 mi
 Zv
 Qo
@@ -20176,8 +20170,8 @@ ow
 MK
 iJ
 Xe
-TW
-qs
+yL
+nJ
 NN
 wu
 Ly
@@ -20189,7 +20183,7 @@ yL
 Xe
 ws
 el
-nl
+aa
 rY
 Qo
 Qo
