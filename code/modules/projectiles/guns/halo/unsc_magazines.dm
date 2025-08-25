@@ -25,6 +25,15 @@
 	default_ammo = /datum/ammo/bullet/rifle/br55
 	caliber = "9.5x40mm"
 
+/obj/item/ammo_magazine/rifle/halo/ma2b
+	name = "\improper MA2B magazine (.390 AP)"
+	desc = "A rectangular box magazine for the MA2B holding 60 rounds of .390 AP ammunitions."
+	icon_state = "ma2b"
+	max_rounds = 20
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma2b
+	default_ammo = /datum/ammo/bullet/rifle/ma2b
+	caliber = ".390 AP"
+
 // smg magazines
 /obj/item/ammo_magazine/smg/halo
 	name = "halo smg magazine"
@@ -65,6 +74,9 @@
 /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
 	current_rounds = 0
 
+/obj/item/ammo_magazine/internal/shotgun/m90/police
+	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
+
 // shotgun shells
 
 /obj/item/ammo_magazine/shotgun/buckshot/unsc
@@ -73,6 +85,16 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = "8g"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
+	transfer_handful_amount = 6
+	max_rounds = 24
+	caliber = "8g"
+
+/obj/item/ammo_magazine/shotgun/beanbag/unsc
+	name = "UNSC 8-gauge shotgun beanbag box"
+	desc = "A box filled with 8-gauge MAG LLHB beanbag shells."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon_state = "8g_beanbag"
+	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
 	transfer_handful_amount = 6
 	max_rounds = 24
 	caliber = "8g"
@@ -112,6 +134,14 @@
 	desc = "A rectangular and slanted magazine for the M6C, holding 12 rounds of 12.7x40mm SAP-HE ammunition."
 	icon_state = "m6c"
 	gun_type = /obj/item/weapon/gun/pistol/halo/m6c
+	default_ammo = /datum/ammo/bullet/pistol/magnum
+	max_rounds = 12
+
+/obj/item/ammo_magazine/pistol/halo/m6a
+	name = "\improper M6A magazine (12.7x40mm SAP-HE)"
+	desc = "A rectangular and slanted magazine for the M6A, holding 16 rounds of 12.7x40mm SAP-HE ammunition."
+	icon_state = "m6c"
+	gun_type = /obj/item/weapon/gun/pistol/halo/m6a
 	default_ammo = /datum/ammo/bullet/pistol/magnum
 	max_rounds = 12
 

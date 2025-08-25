@@ -78,6 +78,13 @@
 	original_attach = "m90_flashlight_a"
 	slot = "under"
 
+/obj/item/attachable/flashlight/m90/police
+	icon_state = "m90_police_flashlight"
+	attach_icon = "m90_police_flashlight_a"
+	original_state = "m90_police_flashlight"
+	original_attach = "m90_police_flashlight_a"
+	slot = "under"
+
 /obj/item/attachable/flashlight/ma5c/New()
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_2
@@ -107,6 +114,20 @@
 	size_mod = 0
 
 /obj/item/attachable/br55_barrel/New()
+	..()
+	scatter_mod = -9
+	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
+
+/obj/item/attachable/ma2b_barrel
+	name = "\improper MA2B barrel"
+	desc = "The barrel to an MA2B assault rifle. Better not leave without it."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma2b_barrel"
+	attach_icon = "ma2b_barrel"
+	slot = "muzzle"
+	size_mod = 0
+
+/obj/item/attachable/ma2b_barrel/New()
 	..()
 	scatter_mod = -9
 	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3

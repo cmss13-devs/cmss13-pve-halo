@@ -25,6 +25,19 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/ma2b
+	name = "AP bullet"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 30
+	penetration = ARMOR_PENETRATION_TIER_5
+	accurate_range = 14
+	accuracy = HIT_ACCURACY_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = AMMO_SPEED_TIER_6
+	effective_range_max = 7
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 18
+
 // smg ammo
 /datum/ammo/bullet/smg/m7
 	name = "5×23mm M443 FMJ"
@@ -42,6 +55,14 @@
 	damage = 60
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
+
+/datum/ammo/bullet/shotgun/beanbag/unsc
+	name = "MAG LLHB"
+	handful_state = "8g_beanbag"
+	accurate_range = 10
+	max_range = 10
+	stamina_damage = 120
+	damage = 35
 
 /datum/ammo/bullet/shotgun/spread/unsc
 	name = "additional buckshot, USCM special type"
