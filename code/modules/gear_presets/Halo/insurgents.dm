@@ -50,7 +50,7 @@
 //*****************************************************************************************************/
 
 /datum/equipment_preset/insurgent/partisan
-	name = "Partisan"
+	name = "Partisan (Pistol)"
 	assignment = JOB_INSURGENT
 	rank = JOB_INSURGENT
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
@@ -86,6 +86,9 @@
 	if(prob(60))
 		new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov, WEAR_IN_BACK)
 
+/datum/equipment_preset/insurgent/partisan/smg
+	name = "Partisan (SMG)"
+
 /datum/equipment_preset/insurgent/partisan/smg/load_gear(mob/living/carbon/human/new_human)
 	add_worker_uniform(new_human)
 	spawn_rebel_shoes(new_human)
@@ -112,6 +115,9 @@
 	if(prob(60))
 		new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/incendiary/molotov, WEAR_IN_BACK)
 
+/datum/equipment_preset/insurgent/partisan/plainclothes
+	name = "Partisan (Plainclothes, Pistol)"
+
 /datum/equipment_preset/insurgent/partisan/plainclothes/load_gear(mob/living/carbon/human/new_human)
 	add_worker_uniform(new_human)
 	add_worker_shoe(new_human)
@@ -125,6 +131,9 @@
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/halo/m6a, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6a, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6a, WEAR_IN_BACK)
+
+/datum/equipment_preset/insurgent/partisan/plainclothes/smg
+	name = "Partisan (Plainclothes, SMG)"
 
 /datum/equipment_preset/insurgent/partisan/plainclothes/smg/load_gear(mob/living/carbon/human/new_human)
 	add_worker_uniform(new_human)
