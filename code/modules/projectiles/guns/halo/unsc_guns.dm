@@ -5,8 +5,8 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns by type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage by faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
@@ -128,11 +128,11 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns by type/smgs_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage by faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi',
-		WEAR_WAIST = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi'
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage by faction/suit_slot_unsc.dmi'
 	)
 
 /obj/item/weapon/gun/smg/halo/m7
@@ -184,8 +184,8 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns by type/shotguns_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage by faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
@@ -244,7 +244,7 @@
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo_64.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns by type/marksman_rifles_64.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo_64.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo_64.dmi'
 	)
@@ -355,8 +355,8 @@
 	reload_sound = 'sound/weapons/halo/gun_spnkr_reload.ogg'
 	unload_sound = 'sound/weapons/halo/gun_spnkr_unload.ogg'
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns by type/heavy_weapons_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage by faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
@@ -437,8 +437,8 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns by type/pistols_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage by faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
