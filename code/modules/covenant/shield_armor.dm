@@ -68,7 +68,7 @@
 	if(ishuman(user))
 		if(damage_taken)
 			playsound(src, "shield_hit")
-			flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+flicker"), 4)
+			flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 4)
 			shield_strength = max(shield_strength - damage_taken, 0)
 			COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
 			if(shield_strength <= 0 && !shield_broken)
@@ -80,7 +80,7 @@
 	user = src.loc
 	if(ishuman(user))
 		playsound(src, "shield_pop", falloff = 5)
-		flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
+		flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
 		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!"), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
 
 // ------------------ PROCESS PROCS ------------------
@@ -99,7 +99,7 @@
 			return
 		if(shield_broken || user.stat == DEAD)
 			if(COOLDOWN_FINISHED(src, shield_sparks))
-				flick_overlay(user, image('icons/halo/mob/humans/onmob/sangheili/armor.dmi', null, "+flicker"), 4)
+				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 4)
 				COOLDOWN_START(src, shield_sparks, rand(1, 4) SECONDS)
 		if(user.stat == DEAD)
 			disable_shield()
@@ -122,7 +122,7 @@
 	item_state = "chestpiece"
 
 	item_icons = list(
-		WEAR_JACKET = 'icons/halo/mob/humans/onmob/sangheili/armor.dmi'
+		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi'
 	)
 	allowed_species_list = list(SPECIES_SANGHEILI)
 

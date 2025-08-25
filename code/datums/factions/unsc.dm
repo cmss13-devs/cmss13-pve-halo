@@ -14,7 +14,7 @@
 		if(JOB_DROPSHIP_PILOT)
 			hud_icon_state = "dp"
 		if(JOB_SO)
-			hud_icon_state = "lt"
+			hud_icon_state = "wo_co"
 	if(hud_icon_state)
 		holder.overlays += image('icons/mob/hud/marine_hud.dmi', H, "hudsquad_[hud_icon_state]")
 
@@ -24,7 +24,7 @@
 		switch(GET_DEFAULT_ROLE(_role))
 			if(JOB_SQUAD_MEDIC) hud_icon_state = "med"
 			if(JOB_SQUAD_SPECIALIST) hud_icon_state = "spec"
-			if(JOB_SQUAD_RTO) hud_icon_state = "ftl"
+			if(JOB_SQUAD_RTO) hud_icon_state = "rto"
 			if(JOB_SQUAD_TEAM_LEADER) hud_icon_state = "tl"
 			if(JOB_SQUAD_LEADER) hud_icon_state = "leader_a"
 		if(squad.fireteam_leaders["SQ1"] == H || squad.fireteam_leaders["SQ2"] == H)
