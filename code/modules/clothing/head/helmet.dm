@@ -1933,12 +1933,12 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 /obj/item/clothing/head/helmet/marine/unsc
 	name = "CH252 helmet"
 	desc = "Standard-issue helmet to the UNSC Marine Corps. Various attachment points on the helmet allow for various equipment to be fitted to the helmet."
-	icon = 'icons/halo/obj/items/clothing/hats/hats by faction/hat_unsc.dmi'
+	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	built_in_visors = null
 	start_down_visor_type = null
 	item_icons = list(
-		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats by faction/hat_unsc.dmi'
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	)
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot
