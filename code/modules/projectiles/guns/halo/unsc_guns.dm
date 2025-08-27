@@ -74,18 +74,15 @@
     item_state = "ma5c"
     caliber = "7.62x51mm"
 
-
     fire_sound = "gun_ma5c"
     reload_sound = 'sound/weapons/halo/gun_ma5c_reload.ogg'
     cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
     unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
     empty_sound = null
 
-
     flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
     start_automatic = TRUE
     map_specific_decoration = FALSE
-
 
     starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c/ma3a, /obj/item/attachable/ma3a_barrel, /obj/item/attachable/scope/mini/ma3a)
     current_mag = /obj/item/ammo_magazine/rifle/halo/ma3a
@@ -96,10 +93,8 @@
         /obj/item/attachable/scope/mini/ma3a,
     )
 
-
 /obj/item/weapon/gun/rifle/halo/ma3a/set_gun_attachment_offsets()
     attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16, "rail_x" = 16, "rail_y" = 16, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
-
 
 /obj/item/weapon/gun/rifle/halo/ma3a/handle_starting_attachment()
     ..()
@@ -107,7 +102,6 @@
     integrated.flags_attach_features &= ~ATTACH_REMOVABLE
     integrated.Attach(src)
     update_attachable(integrated.slot)
-
 
 /obj/item/weapon/gun/rifle/halo/ma3a/set_gun_config_values()
     ..()
@@ -125,13 +119,9 @@
     fa_scatter_peak = 30
     fa_max_scatter = 2
 
-
 /obj/item/weapon/gun/rifle/halo/ma3a/unloaded
     flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
     current_mag = null
-
-
-
 
 /obj/item/weapon/gun/rifle/halo/vk78
     name = "VK78 surplus rifle"
@@ -140,18 +130,15 @@
     item_state = "vk78"
     caliber = "6.5x48mm"
 
-
     fire_sound = "gun_ma5c"
     reload_sound = 'sound/weapons/halo/gun_ma5c_reload.ogg'
     cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
     unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
     empty_sound = null
 
-
     flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
     start_automatic = TRUE
     map_specific_decoration = FALSE
-
 
     starting_attachment_types = list(/obj/item/attachable/vk78_barrel, /obj/item/attachable/scope/mini/vk78)
     current_mag = /obj/item/ammo_magazine/rifle/halo/vk78
@@ -160,7 +147,6 @@
         /obj/item/attachable/vk78_barrel,
         /obj/item/attachable/scope/mini/vk78,
     )
-
 
 /obj/item/weapon/gun/rifle/halo/vk78/set_gun_attachment_offsets()
     attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 16, "rail_y" = 16, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
