@@ -889,3 +889,26 @@
 		/obj/item/storage/belt/gun/xm51,
 		/obj/item/storage/belt/gun/m6,
 	)
+
+/obj/item/clothing/suit/marine/unsc/police
+	name = "police RD90 ballistic armor"
+	desc = "An older model of the M52B body armor, designated as the RD90 by local police and security forces. Whilst not as comfortable, it still does the job for most of it's users, and has added protection against melee attacks."
+	icon = 'icons/halo/obj/items/clothing/suits/suits_by_faction/suit_unsc.dmi'
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
+	icon_state = "police"
+	item_state = "police"
+	item_icons = list(
+		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/suits/suits_by_faction/suit_unsc.dmi')
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+
+/obj/item/clothing/suit/marine/unsc/insurrection
+	name = "irregular M52B body armor"
+	desc = "A piece of M52B body armor, though in more disrepair than most standard issue ones. It has been painted in brown and dark red."
+	icon = 'icons/halo/obj/items/clothing/suits/suits_by_faction/suit_unsc.dmi'
+	icon_state = "insurgent"
+	item_state = "insurgent"
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW

@@ -65,6 +65,9 @@
 /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
 	current_rounds = 0
 
+/obj/item/ammo_magazine/internal/shotgun/m90/police
+	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
+
 // shotgun shells
 
 /obj/item/ammo_magazine/shotgun/buckshot/unsc

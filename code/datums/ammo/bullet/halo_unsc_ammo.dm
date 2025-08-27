@@ -50,6 +50,14 @@
 	damage = 90
 	firing_freq_offset = SOUND_FREQ_LOW
 
+/datum/ammo/bullet/shotgun/beanbag/unsc
+	name = "MAG LLHB"
+	handful_state = "8g_beanbag"
+	accurate_range = 10
+	max_range = 10
+	stamina_damage = 100
+	damage = 35
+
 // rocket ammo
 
 /datum/ammo/rocket/spnkr
