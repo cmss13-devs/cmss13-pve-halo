@@ -1,0 +1,13 @@
+{
+    "map_name": "SkyHammer",
+    "map_path": "map_files/Skyhammer",
+    "map_file": "Skyhammer.dmm",
+    "announce_text": "Communication has gone dark with the MAC Defense Matrix hub for the area, also known as 'Sky Hammer', which is integral to the primary military space port in the area's safety and defence. The ###SHIPNAME### has been dispatched to investigate.",
+    "environment_traits": {
+        "COLD": true
+    },
+    "weather_holder": "/datum/weather_ss_map_holder/shivas_snowball",
+    "map_item_type": "/obj/item/map/Skyhammer",
+    "traits": [{ "Ground": true }],
+    "camouflage": "snow"
+}
