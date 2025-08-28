@@ -5,8 +5,8 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
@@ -128,11 +128,11 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/smgs_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi',
-		WEAR_WAIST = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi'
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi'
 	)
 
 /obj/item/weapon/gun/smg/halo/m7
@@ -184,8 +184,8 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/shotguns_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
@@ -244,7 +244,7 @@
 	worn_x_dimension = 64
 	worn_y_dimension = 64
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo_64.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/marksman_rifles_64.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo_64.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo_64.dmi'
 	)
@@ -355,8 +355,8 @@
 	reload_sound = 'sound/weapons/halo/gun_spnkr_reload.ogg'
 	unload_sound = 'sound/weapons/halo/gun_spnkr_unload.ogg'
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/heavy_weapons_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
@@ -387,7 +387,7 @@
 			return TRUE
 		if(!cover_open)
 			playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the [current_mag.name] to be removed."))
+			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the tubes to be removed."))
 			cover_open = TRUE
 		else
 			playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
@@ -398,17 +398,19 @@
 
 /obj/item/weapon/gun/halo_launcher/spnkr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
 	if(!cover_open)
-		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't put a new [current_mag.name] tube in! d<b>(alt-click to open it)</b>"))
+		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't put a new [current_mag ? current_mag.name : "rocket"] tube in! <b>(alt-click to open it)</b>"))
 		return
 	return ..()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/unload(mob/user, reload_override, drop_override, loc_override)
 	if(!cover_open)
-		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't take out the [current_mag.name]! <b>(alt-click to open it)</b>"))
+		to_chat(user, SPAN_WARNING("[src]'s cover is closed! You can't take out the [current_mag ? current_mag.name : "rocket tubes"]! <b>(alt-click to open it)</b>"))
 		return
+
 	else if(in_chamber)
-		to_chat(user, SPAN_WARNING("The safety mechanism prevents you from removing the [current_mag.name] from the [src] until all rounds have been fired."))
+		to_chat(user, SPAN_WARNING("The safety mechanism prevents you from removing the [current_mag ? current_mag.name : "rocket tubes"] from the [src] until all rounds have been fired."))
 		return
+
 	return ..()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/update_icon()
@@ -437,8 +439,8 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
-		WEAR_BACK = 'icons/halo/mob/humans/onmob/back_slot_halo.dmi',
-		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/suit_slot_halo.dmi',
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/pistols_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
