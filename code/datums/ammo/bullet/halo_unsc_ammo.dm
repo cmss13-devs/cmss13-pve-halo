@@ -94,7 +94,7 @@
 	handful_state = "8g_beanbag"
 	accurate_range = 10
 	max_range = 10
-	stamina_damage = 100
+	stamina_damage = 80
 	damage = 35
 
 // rocket ammo
