@@ -228,8 +228,23 @@
 	item_state = "command_jumpsuit"
 	worn_state = "command_jumpsuit"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
-	flags_atom = NO_SNOW_TYPE
-	specialty = "marine operations"
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+
+/obj/item/clothing/under/marine/officer/qm_suit
+	name = "logistics officer uniform"
+	desc = "A nicely-fitting military uniform for a logistics officer, combining style & practicality. It has shards of light Kevlar to help protect against stabbing weapons and bullets."
+	icon_state = "RO_jumpsuit"
+	worn_state = "RO_jumpsuit"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+
+/obj/item/clothing/under/marine/officer/cargo
+	name = "support uniform"
+	desc = "A pair of hard-wearing BDU pants & a short-sleeve breathable shirt. Perfect for those who work to support the frontline troops in various ways."
+	icon_state = "cargotech"
+	worn_state = "cargotech"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 
 /obj/item/clothing/under/marine/officer/command
 	name = "\improper UNSC officer uniform"
@@ -264,7 +279,7 @@
 	armor_rad = CLOTHING_ARMOR_LOW
 	icon_state = "mt_jumpsuit"
 	worn_state = "mt_jumpsuit"
-	specialty = "engineer"
+	specialty = "crew"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	flags_atom = NO_SNOW_TYPE
 	item_state_slots = list(WEAR_BODY = "mt_jumpsuit")
@@ -389,33 +404,7 @@
 	icon_state = "provost_marshal"
 	worn_state = "provost_marshal"
 
-//==================//UNITED AMERICAS ALLIED COMMAND\\===================\\
-//=======================================================================\\
-
-/obj/item/clothing/under/uaac/tis
-	name = "\improper UAAC-TIS Special Agent Uniform"
-	desc = "A modified UNSC Provost uniform, with its original insignia replaced by those of the UAAC-TIS Intelligence Service. TIS Special Agents are often recruited from the upper echelons of law enforcement agencies in various UA armed forces. These recruits often take all their gear, uniform included with them and later modify them to include TIS and UAAC insignia."
-	flags_jumpsuit = FALSE
-	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
-	siemens_coefficient = 0.9
-	icon_state = "tis"
-	worn_state = "tis"
-	armor_melee = CLOTHING_ARMOR_LOW
-	armor_bullet = CLOTHING_ARMOR_LOW
-	armor_laser = CLOTHING_ARMOR_NONE
-	armor_energy = CLOTHING_ARMOR_NONE
-	armor_bomb = CLOTHING_ARMOR_NONE
-	armor_bio = CLOTHING_ARMOR_NONE
-	armor_rad = CLOTHING_ARMOR_NONE
-	armor_internaldamage = CLOTHING_ARMOR_LOW
-
-/obj/item/clothing/under/uaac/tis/io
-	name = "\improper UAAC-TIS Intelligence Officer uniform"
-	desc = "Originally a UNSC officer uniform, all insignia have been carefully removed and replaced by a simple TIS pin worn over the right breast. Like their Special Agent counterparts, TIS Intel Officers are typically transplants from UA aligned armed forces, often initially recruited on a temporary basis then transferred permanently. As such, officers are often forced to adapt their original uniforms."
-	icon_state = "service_uniform"
-	worn_state = "service_uniform"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
-//=========================//UNSC Survivors\\================================\\
+//=========================//USCM Survivors\\================================\\
 //=======================================================================\\
 
 /obj/item/clothing/under/marine/reconnaissance
@@ -463,6 +452,7 @@
 	worn_state = "pmc_jumpsuit"
 	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	undershirt = TRUE
 
 /obj/item/clothing/under/marine/veteran/pmc/leader
 	name = "\improper PMC command fatigues"
@@ -476,6 +466,7 @@
 	desc = "An armored uniform worn by Weyland-Yutani elite commandos. It is well protected while remaining light and comfortable."
 	icon_state = "commando_jumpsuit"
 	worn_state = "commando_jumpsuit"
+	flags_inventory = BLOCKGASEFFECT
 
 /obj/item/clothing/under/marine/veteran/pmc/corporate
 	name = "\improper WY corporate security uniform"
@@ -549,6 +540,18 @@
 	worn_state = "upp_uniform_naval"
 	flags_jumpsuit = UNIFORM_SLEEVE_CUT
 	valid_accessory_slots = list(ACCESSORY_SLOT_UTILITY, ACCESSORY_SLOT_ARMBAND, ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_UTILITY, ACCESSORY_SLOT_HOLSTER)
+
+
+/obj/item/clothing/under/marine/veteran/canc
+	name = "\improper CANC fatigues"
+	desc = "It's a set of standard-issue CANC combat fatigues featuring venlar armor inserts at critical areas to protect from blades and low caliber ballistics."
+	icon_state = "canc_uniform"
+	worn_state = "canc_uniform"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE
+	min_cold_protection_temperature = ICE_PLANET_MIN_COLD_PROT
+	has_sensor = UNIFORM_HAS_SENSORS
+	sensor_faction = FACTION_CANC
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMLOW
 
 //=========================//Freelancer\\================================\\
 
@@ -952,13 +955,6 @@
 	desc = "A formal white undersuit."
 	flags_jumpsuit = FALSE
 
-/obj/item/clothing/under/rank/qm_suit
-	name = "quartermaster suit"
-	desc = "A nicely-fitting military suit for a quartermaster. It has shards of light Kevlar to help protect against stabbing weapons and bullets."
-	icon_state = "RO_jumpsuit"
-	worn_state = "RO_jumpsuit"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
-
 /obj/item/clothing/under/rank/synthetic
 	name = "\improper UNSC Support Uniform"
 	desc = "A simple uniform made for Synthetic crewmembers."
@@ -1098,6 +1094,7 @@
 	desc = "M2 MOPP suits are purpose built to defend the wearer against biological and radioactive contaminants, from nerve gas to nuclear fallout."
 	desc_lore = "The several-paragraph long expository pamphlet that usually comes with these is missing."
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	flags_inventory = BLOCKGASEFFECT
 	flags_jumpsuit = NO_FLAGS
 	icon_state = "cbrn"
 	worn_state = "cbrn"
@@ -1112,6 +1109,7 @@
 	desc = "M3 MOPP suits are specially designed and engineered to protect the wearer from unshielded exposure to any Chemical, Biological, Radiological, or Nuclear (CBRN) threats in the field. The suit has a recommended lifespan of twenty-four hours once contact with a toxic environment is made, but depending on the severity this can be shortened to eight hours or less."
 	desc_lore = "Since the outbreak of the New Earth Plague in 2157 and the subsequent Interstellar Commerce Commission (ICC) sanctioned decontamination of the colony and its 40 million inhabitants, the abandoned colony has been left under a strict quarantine blockade to prevent any potential scavengers from spreading what’s left of the highly-durable airborne flesh-eating bacteria. Following those events, the three major superpowers have been investing heavily in the development and procurement of CBRN equipment, in no small part due to the extensive damage that the plague and other similar bioweapons could do. The \"Marine 70\" upgrade package and the launch of the M3 pattern armor series saw the first M3-M prototypes approved for CBRN usage."
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	flags_inventory = BLOCKGASEFFECT
 	icon_state = "cbrn"
 	worn_state = "cbrn"
 	flags_jumpsuit = NO_FLAGS
@@ -1291,6 +1289,14 @@
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	item_state_slots = list(WEAR_BODY = "mt_jumpsuit")
 
+/obj/item/clothing/under/marine/standard/navy
+	name = "\improper USASF combat uniform"
+	icon_state = "navy_jumpsuit"
+	item_state = "navy_jumpsuit"
+	worn_state = "navy_jumpsuit"
+	desc = "Standard-issue USASF Security Forces uniform in a distintive blue steel color scheme, complete with venlar armor inserts at critical areas to protect from blades and ballistics."
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+
 /obj/item/clothing/under/marine/officer/engi/OT/navy
 	name = "\improper damage-control crew uniform"
 	desc = "The uniform of an aerospace force crewman. Specially treated for hazardous materials handing and hostile conditions. This one has the color-flashes of a member of the ship damage-control teams on it."
@@ -1309,15 +1315,23 @@
 /obj/item/clothing/under/marine/officer/pilot/flight/para
 	name = "\improper para-rescue flightsuit"
 	desc = "A flightsuit worn by the elite para-rescue forces of the USASF, with all the necessary straps and rigging for supporting the sheer balls these servicemen have. Looks badass."
+	suit_restricted = null
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
 /obj/item/clothing/under/marine/officer/intel/navy
 	name = "\improper USASF combat uniform"
 	desc = "Forward-observation work is dangerous, but it's slightly less dangerous when your duty uniform can almost stop a bullet. Also features many pockets and attachment points for all storage needs."
+	icon_state = "jfo"
+	item_state = "jfo"
+	worn_state = "jfo"
+	suit_restricted = null
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
 /obj/item/clothing/under/marine/standard/army
 	name = "\improper army combat uniform"
-	desc = "Standard-issue Army uniform, complete with venlar armor inserts at critical areas to protect from blades and ballistics."
+	icon_state = "army_jumpsuit"
+	item_state = "army_jumpsuit"
+	worn_state = "army_jumpsuit"
+	desc = "Standard-issue Army uniform in a two-tone desert/temperate color scheme, complete with venlar armor inserts at critical areas to protect from blades and ballistics."
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 

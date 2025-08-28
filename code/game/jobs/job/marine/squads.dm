@@ -171,6 +171,7 @@
 	access = list(ACCESS_MARINE_BRAVO)
 	radio_freq = BRAVO_FREQ
 	minimap_color = MINIMAP_SQUAD_BRAVO
+	usable = TRUE
 
 /datum/squad/marine/charlie
 	name = SQUAD_MARINE_3
@@ -267,6 +268,18 @@
 	roundstart = FALSE
 	locked = TRUE
 
+/datum/squad/army
+	name = SQUAD_ARMY
+	equipment_color = "#349c30"
+	chat_color = "#349c30"
+	radio_freq = ARM_FREQ
+	minimap_color = "#349c30"
+	use_stripe_overlay = FALSE
+	faction = FACTION_ARMY
+	active = TRUE
+	roundstart = FALSE
+	usable = TRUE
+	locked = TRUE
 
 //############################### UPP Squads
 /datum/squad/upp
@@ -301,6 +314,7 @@
 	chat_color = "#c47a50"
 	squad_type = "Team"
 	locked = TRUE
+
 //###############################
 /datum/squad/pmc
 	name = "Root"
@@ -336,6 +350,14 @@
 	squad_one_access = ACCESS_PMC_SQUAD_ONE
 	squad_two_access = ACCESS_PMC_SQUAD_TWO
 	faction = FACTION_PMC
+
+/datum/squad/marine/pmc/small
+	name = SQUAD_PMCPLT_SMALL
+
+/datum/squad/marine/pmc/New()
+	. = ..()
+
+	UnregisterSignal(SSdcs, COMSIG_GLOB_PLATOON_NAME_CHANGE, PROC_REF(rename_platoon))
 
 //###############################
 /datum/squad/clf
@@ -718,7 +740,7 @@
 		if(JOB_SQUAD_SPECIALIST)
 			old_lead.comm_title = "Spc"
 		if(JOB_SQUAD_ENGI)
-			old_lead.comm_title = "ComTech"
+			old_lead.comm_title = "ComEng"
 		if(JOB_SQUAD_MEDIC)
 			old_lead.comm_title = "HM"
 		if(JOB_SQUAD_TEAM_LEADER)

@@ -150,7 +150,7 @@
 		list("UTILITIES", -1, null, null),
 		list("M5 Bayonet", floor(scale * 25), /obj/item/attachable/bayonet, VENDOR_ITEM_REGULAR),
 		list("M11 Throwing Knife", floor(scale * 10), /obj/item/weapon/throwing_knife, VENDOR_ITEM_REGULAR),
-		list("M94 Marking Flare Pack", floor(scale * 10), /obj/item/storage/box/m94, VENDOR_ITEM_REGULAR),
+		list("M94 Marking Flare Pack", floor(scale * 10), /obj/item/storage/box/flare, VENDOR_ITEM_REGULAR),
 		list("Plastic Explosive", floor(scale * 2), /obj/item/explosive/plastic, VENDOR_ITEM_REGULAR),
 	)
 
@@ -163,7 +163,7 @@
 	..()
 	listed_products += list(
 		list("EXTRA SCOUT AMMUNITION", -1, null, null, null),
-		list("A19 High Velocity Impact Magazine (10x24mm)", floor(scale * 1), /obj/item/ammo_magazine/rifle/m49a/custom/impact, VENDOR_ITEM_REGULAR),
+		list("A19 High Velocity Impact Magazine (10x24mm)", floor(scale * 1), /obj/item/ammo_magazine/rifle/m49a/custom/explosive, VENDOR_ITEM_REGULAR),
 		list("A19 High Velocity Incendiary Magazine (10x24mm)", floor(scale * 1), /obj/item/ammo_magazine/rifle/m49a/custom/incendiary, VENDOR_ITEM_REGULAR),
 		list("A19 High Velocity Magazine (10x24mm)", floor(scale * 1.5), /obj/item/ammo_magazine/rifle/m49a/custom, VENDOR_ITEM_REGULAR),
 

@@ -1,6 +1,10 @@
-
-#define LCPL_VARIANT "Petty Officer 3nd Class"
+#define SGT_VARIANT "Sergeant"
+#define JSGT_VARIANT "Junior Sergeant"
 #define CPL_VARIANT "Petty Officer 2nd Class"
+#define LCPL_VARIANT "Petty Officer 3rd Class"
+#define PFC_VARIANT "Private First Class"
+#define SR_PVT_VARIANT "Senior Private"
+#define PVT_VARIANT "Private"
 
 /datum/job/marine/medic
 	title = JOB_SQUAD_MEDIC
@@ -35,9 +39,12 @@
 	return (slots*4)
 
 /datum/job/marine/medic/handle_job_options(option)
-	if(option != LCPL_VARIANT)
-		gear_preset = initial(gear_preset)
-	else
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_quaternary
+	if(option == PFC_VARIANT)
+		gear_preset = gear_preset_tertiary
+	if(option == LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
 
 /datum/job/marine/medic/whiskey
@@ -79,12 +86,36 @@
 /datum/job/marine/medic/ai/upp
 	title = JOB_SQUAD_MEDIC_UPP
 	gear_preset = /datum/equipment_preset/uscm/medic/upp
-	gear_preset_secondary = /datum/equipment_preset/uscm/medic/upp/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/medic/upp/corporal
+	gear_preset_tertiary = /datum/equipment_preset/uscm/medic/upp/senior_private
+	gear_preset_quaternary = /datum/equipment_preset/uscm/medic/upp/private
+	job_options = list(PVT_VARIANT = "PVT", SR_PVT_VARIANT = "SrPVT", CPL_VARIANT = "CPL", JSGT_VARIANT = "JrSGT")
+
+/datum/job/marine/medic/ai/upp/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_quaternary
+	if(option == SR_PVT_VARIANT)
+		gear_preset = gear_preset_tertiary
+	if(option == CPL_VARIANT)
+		gear_preset = gear_preset_secondary
 
 /datum/job/marine/medic/ai/forecon
 	title = JOB_SQUAD_MEDIC_FORECON
 	gear_preset = /datum/equipment_preset/uscm/medic/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/medic/forecon/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/medic/forecon/corporal
+	gear_preset_tertiary = /datum/equipment_preset/uscm/medic/forecon/lance_corporal
+	gear_preset_quaternary = /datum/equipment_preset/uscm/medic/forecon/pfc
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL", SGT_VARIANT = "SGT")
+
+/datum/job/marine/medic/ai/forecon/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PFC_VARIANT)
+		gear_preset = gear_preset_quaternary
+	if(option == LCPL_VARIANT)
+		gear_preset = gear_preset_tertiary
+	if(option == CPL_VARIANT)
+		gear_preset = gear_preset_secondary
 
 /obj/effect/landmark/start/marine/medic/upp
 	name = JOB_SQUAD_MEDIC_UPP
@@ -95,17 +126,32 @@
 /datum/job/marine/medic/ai/pmc
 	title = JOB_PMCPLAT_MEDIC
 	gear_preset = /datum/equipment_preset/uscm/pmc/med
-	gear_preset_secondary = /datum/equipment_preset/uscm/pmc/med
+	job_options = null
 
 /obj/effect/landmark/start/marine/medic/pmc
 	name = JOB_PMCPLAT_MEDIC
 	squad = SQUAD_PMCPLT
 	job = /datum/job/marine/medic/ai/pmc
 
+/datum/job/marine/medic/ai/pmc/small
+	title = JOB_PMCPLAT_SMALL_MEDIC
+	gear_preset = /datum/equipment_preset/uscm/pmc/med
+	job_options = null
+
+/obj/effect/landmark/start/marine/medic/pmc/small
+	name = JOB_PMCPLAT_SMALL_MEDIC
+	squad = SQUAD_PMCPLT_SMALL
+	job = /datum/job/marine/medic/ai/pmc/small
+
 /obj/effect/landmark/start/marine/medic/forecon
 	name = JOB_SQUAD_MEDIC_FORECON
 	squad = SQUAD_LRRP
 	job = /datum/job/marine/medic/ai/forecon
 
+#undef SGT_VARIANT
+#undef JSGT_VARIANT
 #undef CPL_VARIANT
 #undef LCPL_VARIANT
+#undef PFC_VARIANT
+#undef SR_PVT_VARIANT
+#undef PVT_VARIANT

@@ -16,6 +16,10 @@ map almayer
 	disabled
 endmap
 
+map firefly
+	disabled
+endmap
+
 map golden_arrow
 	disabled
 endmap
@@ -42,4 +46,10 @@ endmap
 
 map unsc_dark_was_the_night
 	default
+endmap
+
+map uscss_obsidian_falk
+endmap
+
+map uscss_onyx_karain
 endmap

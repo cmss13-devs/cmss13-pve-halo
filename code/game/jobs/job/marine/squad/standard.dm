@@ -1,9 +1,10 @@
 #define STANDARD_MARINE_TO_TOTAL_SPAWN_RATIO 0.4
 
-#define PVT_VARIANT "Private"
-#define PFC_VARIANT "Private First Class"
 #define CPL_VARIANT "Corporal"
 #define LCPL_VARIANT "Lance Corporal"
+#define PFC_VARIANT "Private First Class"
+#define SR_PVT_VARIANT "Senior Private"
+#define PVT_VARIANT "Private"
 
 /datum/job/marine/standard
 	title = JOB_SQUAD_MARINE
@@ -11,8 +12,9 @@
 	spawn_positions = -1
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
 	gear_preset = /datum/equipment_preset/unsc/pfc
-	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/lesser_rank
-	job_options = list(PFC_VARIANT = "PFC", PVT_VARIANT = "PVT")
+	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/private
+	gear_preset_tertiary = /datum/equipment_preset/unsc/pfc/lance_corporal
+	job_options = list(PVT_VARIANT = "PVT", PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /datum/job/marine/standard/on_config_load()
 	entry_message_body = "You are a rank-and-file <a href='[CONFIG_GET(string/wikiarticleurl)]/[URL_WIKI_MARINE_QUICKSTART]'>Soldier of your standing army</a>, and that is your strength. What you lack alone, you gain standing shoulder to shoulder with the men and women of the platoon. Ooh-rah!<br><b>You remember that you've stored your personal gear and uniform are located in the dorm or locker rooms.</b>"
@@ -22,10 +24,11 @@
 	spawn_positions = max((floor(count * STANDARD_MARINE_TO_TOTAL_SPAWN_RATIO)), 8)
 
 /datum/job/marine/standard/handle_job_options(option)
-	if(option != PVT_VARIANT)
-		gear_preset = initial(gear_preset)
-	else
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
 		gear_preset = gear_preset_secondary
+	if(option == LCPL_VARIANT)
+		gear_preset = gear_preset_tertiary
 
 /datum/job/marine/standard/whiskey
 	title = JOB_WO_SQUAD_MARINE
@@ -63,14 +66,29 @@
 /datum/job/marine/standard/ai/upp
 	title = JOB_SQUAD_MARINE_UPP
 	gear_preset = /datum/equipment_preset/uscm/pfc/upp
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/upp/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/upp/private
+	job_options = list(PVT_VARIANT = "PVT", SR_PVT_VARIANT = "SrPVT")
+
+/datum/job/marine/standard/ai/upp/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_secondary
 
 /datum/job/marine/standard/ai/forecon
 	title = JOB_SQUAD_MARINE_FORECON
 	total_positions = 2
 	spawn_positions = 2
 	gear_preset = /datum/equipment_preset/uscm/pfc/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/pfc
+	gear_preset_tertiary = /datum/equipment_preset/uscm/pfc/forecon/corporal
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL")
+
+/datum/job/marine/standard/ai/forecon/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PFC_VARIANT)
+		gear_preset = gear_preset_secondary
+	if(option == CPL_VARIANT)
+		gear_preset = gear_preset_tertiary
 
 /datum/job/marine/standard/ai/rto
 	title = JOB_SQUAD_RTO
@@ -78,14 +96,16 @@
 	spawn_positions = 1
 	title = JOB_SQUAD_RTO
 	gear_preset = /datum/equipment_preset/unsc/rto
-	gear_preset_secondary = /datum/equipment_preset/unsc/rto/lesser_rank
-	job_options = list(CPL_VARIANT = "CPL", LCPL_VARIANT = "LCPL")
+	gear_preset_secondary = /datum/equipment_preset/unsc/rto/lance_corporal
+	gear_preset_quaternary = /datum/equipment_preset/unsc/rto/pfc
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL")
 
 /datum/job/marine/standard/ai/rto/handle_job_options(option)
-	if(option != CPL_VARIANT)
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_tertiary
+	if(option == LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
-	else
-		gear_preset = initial(gear_preset)
 
 /obj/effect/landmark/start/marine/upp
 	name = JOB_SQUAD_MARINE_UPP
@@ -96,12 +116,24 @@
 /datum/job/marine/standard/ai/pmc
 	title = JOB_PMCPLAT_STANDARD
 	gear_preset = /datum/equipment_preset/uscm/pmc
-	gear_preset_secondary = /datum/equipment_preset/uscm/pmc
+	job_options = null
 
 /obj/effect/landmark/start/marine/pmc
 	name = JOB_PMCPLAT_STANDARD
 	squad = SQUAD_PMCPLT
 	job = /datum/job/marine/standard/ai/pmc
+
+/datum/job/marine/standard/ai/pmc/small
+	title = JOB_PMCPLAT_SMALL_STANDARD
+	gear_preset = /datum/equipment_preset/uscm/pmc
+	job_options = null
+	total_positions = 3
+	spawn_positions = 3
+
+/obj/effect/landmark/start/marine/pmc/small
+	name = JOB_PMCPLAT_SMALL_STANDARD
+	squad = SQUAD_PMCPLT_SMALL
+	job = /datum/job/marine/standard/ai/pmc/small
 
 /obj/effect/landmark/start/marine/forecon
 	name = JOB_SQUAD_MARINE_FORECON
@@ -113,7 +145,8 @@
 	squad = SQUAD_MARINE_1
 	job = /datum/job/marine/standard/ai/rto
 
-#undef PVT_VARIANT
-#undef PFC_VARIANT
 #undef CPL_VARIANT
 #undef LCPL_VARIANT
+#undef PFC_VARIANT
+#undef SR_PVT_VARIANT
+#undef PVT_VARIANT
