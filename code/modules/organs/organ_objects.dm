@@ -262,7 +262,7 @@
 	organ_type = /datum/internal_organ/lungs/sangheili
 
 /obj/item/organ/kidneys/sangheili
-	name = "sangheili kidneys"
+	name = "sangheili kidney"
 	icon = 'icons/halo/obj/items/organs.dmi'
 	icon_state = "sang_kidney"
 	organ_type = /datum/internal_organ/kidneys/sangheili
@@ -272,3 +272,31 @@
 	icon = 'icons/halo/obj/items/organs.dmi'
 	icon_state = "sang_liver"
 	organ_type = /datum/internal_organ/liver/sangheili
+
+// unggoy organs
+
+/obj/item/organ/heart/unggoy
+
+	name = "unggoy heart"
+	icon = 'icons/halo/obj/items/organs.dmi'
+	icon_state = "unggoy_heart"
+	dead_icon = "unggoy_heart"
+	organ_type = /datum/internal_organ/heart/unggoy
+
+/obj/item/organ/lungs/unggoy
+	name = "unggoy lungs"
+	icon = 'icons/halo/obj/items/organs.dmi'
+	icon_state = "unggoy_lungs"
+	organ_type = /datum/internal_organ/lungs/unggoy
+
+/obj/item/organ/kidneys/unggoy
+	name = "unggoy kidney"
+	icon = 'icons/halo/obj/items/organs.dmi'
+	icon_state = "unggoy_kidney"
+	organ_type = /datum/internal_organ/kidneys/unggoy
+
+/obj/item/organ/liver/unggoy
+	name = "unggoy liver"
+	icon = 'icons/halo/obj/items/organs.dmi'
+	icon_state = "unggoy_liver"
+	organ_type = /datum/internal_organ/liver/unggoy
