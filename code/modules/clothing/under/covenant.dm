@@ -2,9 +2,9 @@
 	name = "undersuit"
 	desc = "Covenant undersuit. You shouldn't see this."
 	icon = 'icons/halo/obj/items/clothing/covenant/under.dmi'
-	icon_state = "undersuit"
-	item_state = "undersuit"
-	worn_state = "undersuit"
+	icon_state = "sangheili_undersuit"
+	item_state = "sangheili_undersuit"
+	worn_state = "sangheili_undersuit"
 	flags_jumpsuit = null
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	drop_sound = "armorequip"
