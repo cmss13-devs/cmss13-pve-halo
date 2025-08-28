@@ -904,9 +904,6 @@
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
 
 /obj/item/clothing/suit/marine/unsc/insurrection
-	name = "irregular M52B body armor"
-	desc = "A piece of M52B body armor, though in more disrepair than most standard issue ones. It has been painted in brown and dark red."
-	icon = 'icons/halo/obj/items/clothing/suits/suits_by_faction/suit_unsc.dmi'
 	icon_state = "insurgent"
 	item_state = "insurgent"
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW

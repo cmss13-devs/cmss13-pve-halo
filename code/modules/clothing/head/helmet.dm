@@ -1951,13 +1951,9 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 /obj/item/clothing/head/helmet/marine/unsc/police
 	name = "police CH252 helmet"
 	desc = "Standard-issue helmet to the UNSC Marine Corps, this one given to the local police and security forces across the colonies for riot suppression during the days of the insurrection."
-	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	icon_state = "police"
 	item_state = "police"
 
 /obj/item/clothing/head/helmet/marine/unsc/insurrection
-	name = "irregular CH252 helmet"
-	desc = "Standard-issue helmet to the UNSC Marine Corps, though this one has been re-painted brown and has several of it's key attachment points stripped out."
-	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	icon_state = "insurgent"
 	item_state = "insurgent"
