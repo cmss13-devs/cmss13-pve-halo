@@ -2720,7 +2720,7 @@
 "cop" = (
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/prison,
 /area/taipei/telecomms)
@@ -2875,7 +2875,7 @@
 	},
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor/north,
@@ -4326,7 +4326,7 @@
 "dFK" = (
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet7_3/west,
@@ -7399,7 +7399,7 @@
 	},
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -7671,7 +7671,7 @@
 	},
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/plating/asteroidfloor/north,
 /area/taipei/hangar)
@@ -8664,7 +8664,7 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/strata/faux_wood,
 /area/taipei/atrium/bookstore)
@@ -12547,7 +12547,7 @@
 "lqv" = (
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/kutjevo/colors/red/inner_corner/east,
 /area/taipei/atrium)
@@ -12848,7 +12848,7 @@
 "lCh" = (
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/kutjevo/colors/red/inner_corner,
 /area/taipei/atrium)
@@ -13439,7 +13439,7 @@
 	dir = 8;
 	light_color = "#dae2ff";
 	pixel_x = -5;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/prison,
 /area/taipei/club)
@@ -14681,7 +14681,7 @@
 "nkj" = (
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/carpet7_3/west,
 /area/taipei/theatre)
@@ -16603,7 +16603,7 @@
 	},
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -17581,7 +17581,7 @@
 	dir = 8;
 	light_color = "#dae2ff";
 	pixel_x = -5;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/prison,
 /area/taipei/club)
@@ -19926,7 +19926,7 @@
 	},
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/prison,
 /area/taipei/telecomms)
@@ -20683,7 +20683,7 @@
 "skO" = (
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison,
@@ -24502,7 +24502,7 @@
 "vIZ" = (
 /obj/structure/machinery/light{
 	dir = 4;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/carpet11_12/west,
 /area/taipei/theatre)
@@ -25874,7 +25874,7 @@
 "wWR" = (
 /obj/structure/machinery/light{
 	dir = 4;
-	light_power = .25
+	light_power = 0.25
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/carpet11_12/west,
