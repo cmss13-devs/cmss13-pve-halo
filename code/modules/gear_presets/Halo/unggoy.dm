@@ -6,6 +6,7 @@
 	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
 	faction = FACTION_COVENANT
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/load_race(mob/living/carbon/human/new_human, client/mob_client)
 	new_human.set_species(SPECIES_UNGGOY)
@@ -50,6 +51,7 @@
 	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Minor"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/minor/equipped
 	name = parent_type::name + " (Equipped)"
@@ -70,6 +72,7 @@
 	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Major"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/major/equipped
 	name = parent_type::name + " (Equipped)"
@@ -90,6 +93,7 @@
 	paygrades = list(PAY_SHORT_COV_HEAVY = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Heavy"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/heavy/equipped
 	name = parent_type::name + " (Equipped)"
@@ -110,6 +114,7 @@
 	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Ultra"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/ultra/equipped
 	name = parent_type::name + " (Equipped)"
@@ -130,6 +135,7 @@
 	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/specops/equipped
 	name = parent_type::name + " (Equipped)"
@@ -149,6 +155,7 @@
 	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser/equipped
 	name = parent_type::name + " (Equipped)"
@@ -169,6 +176,7 @@
 	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps Ultra"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/equipped
 	name = parent_type::name + " (Equipped)"
@@ -189,6 +197,7 @@
 	paygrades = list(PAY_SHORT_COV_DEACON = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Deacon"
 	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/deacon/equipped
 	name = parent_type::name + " (Equipped)"
