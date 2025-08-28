@@ -13,6 +13,19 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/ma3a
+	name = "FMJ bullet"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 35
+	penetration = ARMOR_PENETRATION_TIER_2
+	accurate_range = 16
+	accuracy = HIT_ACCURACY_TIER_4
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = AMMO_SPEED_TIER_6
+	effective_range_max = 10
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 24
+
 /datum/ammo/bullet/rifle/br55
 	name = "X-HP SAP-HE bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM

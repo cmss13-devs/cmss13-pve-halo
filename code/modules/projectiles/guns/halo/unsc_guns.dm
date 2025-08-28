@@ -660,14 +660,11 @@
     attachable_allowed = list(/obj/item/attachable/flashlight/m6)
     fire_sound = "gun_m6c"
 
-
 /obj/item/weapon/gun/pistol/halo/m6c/m4a/unloaded
     current_mag = null
 
-
 /obj/item/weapon/gun/pistol/halo/m6c/m4a/set_gun_attachment_offsets()
     attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
-
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a/set_gun_config_values()
     ..()
@@ -678,7 +675,6 @@
     scatter_unwielded = SCATTER_AMOUNT_TIER_5
     damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_2
     velocity_add = AMMO_SPEED_TIER_1
-
 
 /obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"
@@ -716,10 +712,8 @@
     attachable_allowed = list(/obj/item/attachable/flashlight/m6)
     fire_sound = "gun_m6c"
 
-
 /obj/item/weapon/gun/pistol/halo/m6a/unloaded
     current_mag = null
-
 
 /obj/item/weapon/gun/pistol/halo/m6a/set_gun_attachment_offsets()
     attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)

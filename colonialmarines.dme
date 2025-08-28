@@ -1858,6 +1858,7 @@
 #include "code\modules\gear_presets\wy.dm"
 #include "code\modules\gear_presets\wy_goons.dm"
 #include "code\modules\gear_presets\yautja.dm"
+#include "code\modules\gear_presets\Halo\insurgent.dm"
 #include "code\modules\gear_presets\Halo\sangheili.dm"
 #include "code\modules\gear_presets\Halo\unsc_marines.dm"
 #include "code\modules\gear_presets\survivors\misc.dm"
