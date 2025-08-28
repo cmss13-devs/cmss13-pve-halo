@@ -8,8 +8,8 @@
 	path = /datum/equipment_preset/insurgent/partisan
 
 /datum/human_ai_equipment_preset/insurgent/partisan/smg
-	name = "Local Partisan (SMG)"
-	desc = "A very under-equipped and mostly untrained Partisan. This one has an SMG."
+	name = "Local Partisan (SMG/Rifles)"
+	desc = "A very under-equipped and mostly untrained Partisan. This one has an SMG or a Rifle."
 	path = /datum/equipment_preset/insurgent/partisan/smg
 
 /datum/human_ai_equipment_preset/insurgent/partisan/plainclothes
@@ -18,8 +18,8 @@
 	path = /datum/equipment_preset/insurgent/partisan/plainclothes
 
 /datum/human_ai_equipment_preset/insurgent/partisan/plainclothes/smg
-	name = "Local Partisan (Plainclothes, SMG)"
-	desc = "A very under-equipped and mostly untrained Partisan. This one has an SMG and is in plain clothes."
+	name = "Local Partisan (Plainclothes, SMG/Rifle)"
+	desc = "A very under-equipped and mostly untrained Partisan. This one has an SMG or a rifle and is in plain clothes."
 	path = /datum/equipment_preset/insurgent/partisan/plainclothes/smg
 
 /datum/human_ai_equipment_preset/insurgent/partisan/lead
