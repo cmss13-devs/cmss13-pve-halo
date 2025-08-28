@@ -31,7 +31,7 @@
 	icon_state = "vk78"
 	max_rounds = 20
 	gun_type = /obj/item/weapon/gun/rifle/halo/vk78
-	default_ammo = /datum/ammo/bullet/rifle/ar10
+	default_ammo = /datum/ammo/bullet/rifle/vk78
 	caliber = "6.5x48"
 
 /obj/item/ammo_magazine/rifle/halo/br55
@@ -49,7 +49,7 @@
 	icon_state = "dmr"
 	max_rounds = 15
 	gun_type = /obj/item/weapon/gun/rifle/halo/dmr
-	default_ammo = /datum/ammo/bullet/rifle/br55
+	default_ammo = /datum/ammo/bullet/rifle/dmr
 	caliber = "7.62x51"
 
 // smg magazines
