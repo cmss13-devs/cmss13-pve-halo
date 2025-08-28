@@ -2355,7 +2355,7 @@
 	},
 /obj/structure/machinery/light{
 	dir = 8;
-	light_power = .25
+	light_power = 0.25
 	},
 /turf/open/floor/prison,
 /area/taipei/telecomms)
