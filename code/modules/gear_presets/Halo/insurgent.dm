@@ -159,7 +159,7 @@
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/flashlight, WEAR_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel, WEAR_BACK)
+	add_random_satchel(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/halo/m6a, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6a, WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/pistol/halo/m6a, WEAR_IN_BACK)
@@ -183,7 +183,7 @@
 
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate, WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/flashlight, WEAR_R_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel, WEAR_BACK)
+	add_random_satchel(new_human)
 	var/random_longarms_plain = rand(1,2)
 	switch(random_longarms_plain)
 		if(1)
@@ -291,7 +291,7 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CLF(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/insurrection(new_human), WEAR_HEAD)
+	add_insurgent_helmet(new_human)
 	if(prob(20))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/military, WEAR_FACE)
 	//uniform
@@ -383,7 +383,7 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CLF(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/insurrection(new_human), WEAR_HEAD)
+	add_insurgent_helmet(new_human)
 	if(prob(20))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 	//uniform
@@ -414,7 +414,7 @@
 	assignment = JOB_INSURGENT_SL
 	rank = JOB_INSURGENT_SL
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "SLDR"
+	role_comm_title = "SLDR-SL"
 	flags = EQUIPMENT_PRESET_EXTRA
 	skills = /datum/skills/snco
 
@@ -428,7 +428,7 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CLF(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/insurrection(new_human), WEAR_HEAD)
+	add_insurgent_helmet(new_human)
 	if(prob(20))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 	//uniform
@@ -453,3 +453,43 @@
 	//pockets
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+
+/datum/equipment_preset/insurgent/officer
+	name = "Insurgent Officer"
+	assignment = JOB_INSURGENT_LEAD
+	rank = JOB_INSURGENT_LEAD
+	paygrades = list(PAY_SHORT_REBC = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "SLDR-O"
+	flags = EQUIPMENT_PRESET_EXTRA
+	skills = /datum/skills/lt
+
+/datum/equipment_preset/insurgent/officer/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "undershirt"
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel(new_human), WEAR_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/tool/shovel/etool/folded(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/MRE(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/civ(new_human), WEAR_IN_BACK)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CLF(new_human), WEAR_L_EAR)
+	//head
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/black(new_human), WEAR_HEAD)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/khaki, WEAR_BODY)
+	//jacket
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/insurrection(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma3a(new_human), WEAR_J_STORE)
+	//accessories
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/insurrection(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/greaves/insurrection(new_human), WEAR_ACCESSORY)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6c(new_human), WEAR_WAIST)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/civilian/knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma3a(new_human), WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma3a(new_human), WEAR_IN_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma3a(new_human), WEAR_IN_R_STORE)

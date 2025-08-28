@@ -1529,7 +1529,7 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 	var/vest_mix = rand(1,6)
 	switch(vest_mix)
 		if(1)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/black, WEAR_HEAD)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/tan, WEAR_HEAD)
 		if(2 to 5)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/insurrection, WEAR_HEAD)
 		if(6)

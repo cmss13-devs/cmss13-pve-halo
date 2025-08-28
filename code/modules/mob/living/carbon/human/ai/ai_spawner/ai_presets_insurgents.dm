@@ -41,10 +41,15 @@
 
 /datum/human_ai_equipment_preset/insurgent/specialist
 	name = "Insurgent Soldier (Specialist, SPNKr)"
-	desc = "A soldier of the insurgency, trained to use the M41 SPNKr for combat. They also have a MA3A for backup."
+	desc = "A soldier of the insurgency, trained to use the M41 SPNKr for combat. They also have an MA3A for backup."
 	path = /datum/equipment_preset/insurgent/specialist
 
 /datum/human_ai_equipment_preset/insurgent/sl
 	name = "Insurgent Soldier (Squad Leader)"
-	desc = "A soldier of the insurgency, trained in leadership and assigned to a squad to lead into battle. They are equipped with a MA3A rifle."
+	desc = "A soldier of the insurgency, trained in leadership and assigned to a squad to lead into battle. They are equipped with an MA3A rifle."
 	path = /datum/equipment_preset/insurgent/rifleman/sl
+
+/datum/human_ai_equipment_preset/insurgent/officer
+	name = "Insurgent Soldier (Officer)"
+	desc = "A soldier of the insurgency, a paticularly high ranking one at that. They are equipped with an MA3A rifle and M6C pistol for backup."
+	path = /datum/equipment_preset/insurgent/officer
