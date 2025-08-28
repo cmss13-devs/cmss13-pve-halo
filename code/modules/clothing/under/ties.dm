@@ -1322,12 +1322,12 @@
 /obj/item/clothing/accessory/pads
 	name = "\improper M52B Shoulder Pads"
 	desc = "A set shoulder pads attachable to the M3 armor set worn by the USCM."
-	icon = 'icons/halo/obj/items/clothing/ties.dmi'
+	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "pads"
 	item_state = "pads"
 	slot = ACCESSORY_SLOT_DECORARMOR
 	flags_atom = NO_SNOW_TYPE
-	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/ties.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/ties.dmi')
+	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi')
 
 /obj/item/clothing/accessory/pads/Initialize(mapload)
 	. = ..()
@@ -1514,12 +1514,12 @@
 /obj/item/clothing/accessory/storage/webbing/m52b
 	name = "\improper M52B Pattern Webbing"
 	desc = "A sturdy mess of synthcotton belts and buckles designed to attach to the M52B body armor armor standard for the UNSC. This one is the slimmed down model designed for general purpose storage."
-	icon = 'icons/halo/obj/items/clothing/ties.dmi'
+	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "m52b_webbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m3generic
 	slot = ACCESSORY_SLOT_M3UTILITY
 	flags_atom = NO_SNOW_TYPE
-	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/ties.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/ties.dmi')
+	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi')
 
 /obj/item/clothing/accessory/storage/webbing/m52b/Initialize(mapload)
 	. = ..()
