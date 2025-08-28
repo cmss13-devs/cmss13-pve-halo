@@ -42,7 +42,7 @@
 	hud_offset_mod = -3
 
 /obj/item/attachable/vk78_front
-	name = "\improper VK78 Front"
+	name = "\improper VK78 fore"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "vk78_front"
@@ -81,7 +81,7 @@
 	hud_offset_mod = -7
 
 /obj/item/attachable/dmr_front
-	name = "\improper M392 DMR Front"
+	name = "\improper M392 DMR fore"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "dmr_front"

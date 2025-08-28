@@ -22,10 +22,10 @@
 	desc = "A very under-equipped and mostly untrained Partisan. This one has an SMG or a rifle and is in plain clothes."
 	path = /datum/equipment_preset/insurgent/partisan/plainclothes/smg
 
-/datum/human_ai_equipment_preset/insurgent/partisan/lead
-	name = "Local Partisan Leader (Shotgun + Armour)"
+/datum/human_ai_equipment_preset/insurgent/partisan/breach
+	name = "Local Partisan Breacher (Shotgun + Armour)"
 	desc = "A slightly better trained and equipped Partisan, dressed in Police armour and sporting a beanbag shotgun."
-	path = /datum/equipment_preset/insurgent/partisan/lead
+	path = /datum/equipment_preset/insurgent/partisan/breach
 
 // -------------- INSURGENTS --------------
 
@@ -33,6 +33,11 @@
 	name = "Insurgent Soldier (Rifle)"
 	desc = "A soldier of the insurgency, decently equipped and properly trained for combat. This one has a VK78 Rifle."
 	path = /datum/equipment_preset/insurgent/rifleman
+
+/datum/human_ai_equipment_preset/insurgent/breacher
+	name = "Insurgent Soldier (Shotgun)"
+	desc = "A soldier of the insurgency, decently equipped and properly trained for combat. This one has a M90 shotgun."
+	path = /datum/equipment_preset/insurgent/rifleman/breacher
 
 /datum/human_ai_equipment_preset/insurgent/technician
 	name = "Insurgent Soldier (Technician)"

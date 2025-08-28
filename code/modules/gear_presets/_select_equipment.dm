@@ -1524,13 +1524,3 @@ GLOBAL_LIST_INIT(rebel_rifles, list(
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/armor/vest/ballistic, WEAR_JACKET)
 		if(3)
 			new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/police, WEAR_JACKET)
-
-/datum/equipment_preset/proc/add_insurgent_helmet(mob/living/carbon/human/new_human)
-	var/vest_mix = rand(1,6)
-	switch(vest_mix)
-		if(1)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/beret/cm/tan, WEAR_HEAD)
-		if(2 to 5)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/insurrection, WEAR_HEAD)
-		if(6)
-			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/khaki, WEAR_HEAD)
