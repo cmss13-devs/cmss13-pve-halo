@@ -9806,14 +9806,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
-"ym" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/item/device/flashlight/lamp{
-	pixel_x = -6;
-	pixel_y = 7
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/outdoors)
 "yn" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/item/newspaper,
@@ -9854,7 +9846,7 @@
 	pixel_x = 0
 	},
 /turf/open/floor/prison/sterile_white,
-/area/new_irvine/outdoors)
+/area/new_irvine/indoors)
 "yt" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -13698,10 +13690,6 @@
 /obj/structure/roof/cargocrane_tracks/vertical,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine/indoors)
-"HV" = (
-/obj/structure/window/framed/upp/grey,
-/turf/open/floor/corsat/marked,
-/area/new_irvine/outdoors)
 "HW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -13714,24 +13702,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/grass,
 /area/new_irvine/indoors)
-"HY" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/structure/machinery/prop/almayer/computer/PC{
-	pixel_y = 3;
-	dir = 1
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/outdoors)
 "HZ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
 /obj/item/newspaper,
 /turf/open/floor/carpet,
 /area/new_irvine/indoors)
-"Ia" = (
-/obj/structure/gun_rack/halo/armory/ma5c/unloaded,
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/outdoors)
 "Ib" = (
 /obj/structure/platform,
 /obj/structure/closet/crate/trashcart,
@@ -13785,15 +13761,6 @@
 /obj/structure/closet/crate/trashcart,
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/indoors)
-"Ii" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/item/paper_bin{
-	pixel_x = 8;
-	pixel_y = 6
-	},
-/obj/item/tool/pen/blue/clicky,
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/outdoors)
 "Ij" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes{
@@ -13805,10 +13772,6 @@
 "Ik" = (
 /obj/structure/machinery/colony_floodlight,
 /turf/open/asphalt/cement/cement15,
-/area/new_irvine/outdoors)
-"Il" = (
-/obj/structure/bed/chair/office/dark,
-/turf/open/floor/prison/sterile_white,
 /area/new_irvine/outdoors)
 "Im" = (
 /obj/structure/platform/stair_cut,
@@ -13837,13 +13800,6 @@
 /obj/effect/decal/cleanable/generic,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
-"Iq" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
-	},
-/turf/open/floor/prison/sterile_white,
 /area/new_irvine/outdoors)
 "Ir" = (
 /obj/effect/decal/warning_stripes{
@@ -27110,9 +27066,9 @@ cZ
 bs
 fA
 cb
-DV
-DV
-DV
+br
+br
+br
 Ip
 DA
 DD
@@ -27361,10 +27317,10 @@ Ec
 xK
 DF
 Ek
-DV
-DV
-DV
-DV
+br
+br
+br
+br
 jI
 DA
 DD
@@ -27613,10 +27569,10 @@ Ec
 en
 DF
 Ek
-HV
-Ii
-ym
-HV
+bO
+AN
+IK
+bO
 DF
 DA
 DD
@@ -27865,10 +27821,10 @@ zc
 bs
 fA
 cb
-HV
-Il
-HY
-HV
+bO
+eW
+fI
+bO
 DF
 DA
 DD
@@ -28116,11 +28072,11 @@ Ex
 Ar
 DF
 zl
-DV
-DV
+br
+br
 ys
-Ia
-DV
+fJ
+br
 DF
 DA
 DD
@@ -28368,11 +28324,11 @@ Ar
 bs
 Fm
 zm
-Fw
-Iq
-Gw
-DV
-DV
+ay
+mX
+bu
+br
+br
 jI
 DA
 DD
@@ -28620,10 +28576,10 @@ km
 Fm
 fc
 zs
-DV
-DV
-DV
-DV
+br
+br
+br
+br
 EE
 Fm
 vZ
