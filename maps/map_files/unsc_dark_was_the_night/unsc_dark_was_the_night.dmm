@@ -2,6 +2,10 @@
 "aa" = (
 /turf/open/floor/almayer/edge/smooth/northwest,
 /area/dark_was_the_night/canteen)
+"ab" = (
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/strata/white_cyan2/west,
+/area/dark_was_the_night/bathroom)
 "af" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -4997,18 +5001,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
-"tl" = (
-/obj/structure/pipes/vents/pump,
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/obj/structure/machinery/shower{
-	dir = 4
-	},
-/obj/structure/curtain/shower,
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "to" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -6620,18 +6612,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
-"zh" = (
-/obj/structure/pipes/vents/pump,
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8
-	},
-/obj/structure/machinery/shower{
-	dir = 8
-	},
-/obj/structure/curtain/shower,
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "zi" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/motor_pool)
@@ -11686,6 +11666,7 @@
 /obj/structure/gun_rack/halo/medkit{
 	pixel_y = 23
 	},
+/obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
 "TE" = (
@@ -24447,7 +24428,7 @@ mT
 qE
 mt
 bX
-tl
+bX
 bX
 bX
 mt
@@ -24600,7 +24581,7 @@ Rr
 mt
 TD
 mt
-rA
+KI
 rA
 yv
 FF
@@ -24902,9 +24883,9 @@ mt
 KI
 AH
 mt
-rA
+ab
 mt
-rA
+KI
 rA
 yv
 FF
@@ -25055,7 +25036,7 @@ mT
 mZ
 mt
 dP
-zh
+dP
 dP
 dP
 mt
