@@ -17,7 +17,7 @@
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 	damage = 35
-	penetration = ARMOR_PENETRATION_TIER_1
+	penetration = ARMOR_PENETRATION_TIER_2
 	accurate_range = 16
 	accuracy = HIT_ACCURACY_TIER_5
 	scatter = SCATTER_AMOUNT_TIER_10
@@ -34,8 +34,8 @@
 	accurate_range = 14
 	accuracy = HIT_ACCURACY_TIER_6
 	scatter = SCATTER_AMOUNT_TIER_7
-	shell_speed = AMMO_SPEED_TIER_4
-	effective_range_max = 5
+	shell_speed = AMMO_SPEED_TIER_5
+	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_5
 	max_range = 22
 
@@ -60,7 +60,7 @@
 	accuracy = HIT_ACCURACY_TIER_8
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = AMMO_SPEED_TIER_6
-	effective_range_max = 7
+	effective_range_max = 12
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 36
 
@@ -94,7 +94,7 @@
 	handful_state = "8g_beanbag"
 	accurate_range = 10
 	max_range = 10
-	stamina_damage = 80
+	stamina_damage = 75
 	damage = 35
 
 // rocket ammo

@@ -109,7 +109,7 @@
     set_burst_amount(BURST_AMOUNT_TIER_2)
     set_burst_delay(FIRE_DELAY_TIER_10)
     accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
-    accuracy_mult_unwielded = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_8 + 2*HIT_ACCURACY_MULT_TIER_1
+    accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_8
     scatter = SCATTER_AMOUNT_TIER_2
     burst_scatter_mult = SCATTER_AMOUNT_TIER_3
     scatter_unwielded = SCATTER_AMOUNT_TIER_3
@@ -162,11 +162,11 @@
 
 /obj/item/weapon/gun/rifle/halo/vk78/set_gun_config_values()
     ..()
-    set_fire_delay(FIRE_DELAY_TIER_7)
+    set_fire_delay(FIRE_DELAY_TIER_9)
     set_burst_amount(BURST_AMOUNT_TIER_2)
     set_burst_delay(FIRE_DELAY_TIER_10)
-    accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2 - 2*HIT_ACCURACY_MULT_TIER_1
-    accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_8 - 2*HIT_ACCURACY_MULT_TIER_1
+    accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2
+    accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
     scatter = SCATTER_AMOUNT_TIER_3
     burst_scatter_mult = SCATTER_AMOUNT_TIER_2
     scatter_unwielded = SCATTER_AMOUNT_TIER_3
@@ -237,54 +237,54 @@
 	current_mag = null
 
 /obj/item/weapon/gun/rifle/halo/dmr
-    name = "M392 DMR"
-    desc = "The M392 Designated-Marksman-Rifle is a 7.62x51mm bullpup rifle featuring a 15 round magazine and commonly, a scope. The weapon was most notably used by UNSCDF Army units and the defunct Colonial-Military-Authority before and during the Insurrection. The rifle is mechanically simple compared to its contemporary brethren and this has led to its popularity on the black market, alongside its greater availability ever since the shuttering of the CMA."
-    icon_state = "dmr"
-    item_state = "dmr"
-    caliber = "7.62x51mm"
+	name = "M392 DMR"
+	desc = "The M392 Designated-Marksman-Rifle is a 7.62x51mm bullpup rifle featuring a 15 round magazine and commonly, a scope. The weapon was most notably used by UNSCDF Army units and the defunct Colonial-Military-Authority before and during the Insurrection. The rifle is mechanically simple compared to its contemporary brethren and this has led to its popularity on the black market, alongside its greater availability ever since the shuttering of the CMA."
+	icon_state = "dmr"
+	item_state = "dmr"
+	caliber = "7.62x51mm"
 
 
-    fire_sounds = list('sound/weapons/halo/gun_m392_1.ogg', 'sound/weapons/halo/gun_m392_2.ogg', 'sound/weapons/halo/gun_m392_3.ogg')
-    reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
-    cocked_sound = 'sound/weapons/halo/gun_br55_cocked.ogg'
-    unload_sound = 'sound/weapons/halo/gun_br55_unload.ogg'
-    empty_sound = null
+	fire_sounds = list('sound/weapons/halo/gun_m392_1.ogg', 'sound/weapons/halo/gun_m392_2.ogg', 'sound/weapons/halo/gun_m392_3.ogg')
+	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_br55_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_br55_unload.ogg'
+	empty_sound = null
 
 
-    flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
-    start_automatic = FALSE
-    map_specific_decoration = FALSE
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = FALSE
+	map_specific_decoration = FALSE
 
 
-    starting_attachment_types = list(/obj/item/attachable/dmr_front, /obj/item/attachable/dmr_barrel, /obj/item/attachable/scope/mini/dmr)
-    current_mag = /obj/item/ammo_magazine/rifle/halo/dmr
-    attachable_allowed = list(
-        /obj/item/attachable/dmr_front,
-        /obj/item/attachable/dmr_barrel,
-        /obj/item/attachable/scope/mini/dmr,
-    )
+	starting_attachment_types = list(/obj/item/attachable/dmr_front, /obj/item/attachable/dmr_barrel, /obj/item/attachable/scope/mini/dmr)
+	current_mag = /obj/item/ammo_magazine/rifle/halo/dmr
+	attachable_allowed = list(
+		/obj/item/attachable/dmr_front,
+		/obj/item/attachable/dmr_barrel,
+		/obj/item/attachable/scope/mini/dmr,
+	)
 
 
 /obj/item/weapon/gun/rifle/halo/dmr/set_gun_attachment_offsets()
-    attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 28, "rail_y" = 16, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 28, "rail_y" = 16, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
 
 
 /obj/item/weapon/gun/rifle/halo/dmr/set_gun_config_values()
-    ..()
-    set_fire_delay(FIRE_DELAY_TIER_5)
-    accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
-    accuracy_mult_unwielded = BASE_ACCURACY_MULT
-    scatter = SCATTER_AMOUNT_TIER_6
-    scatter_unwielded = SCATTER_AMOUNT_TIER_5
-    damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
-    recoil_unwielded = RECOIL_AMOUNT_TIER_4
-    fa_scatter_peak = 16
-    fa_max_scatter = 2
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_5)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_6
+	scatter_unwielded = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4
+	fa_scatter_peak = 16
+	fa_max_scatter = 2
 
 
 /obj/item/weapon/gun/rifle/halo/dmr/unloaded
-    flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
-    current_mag = null
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
 
 // SMGs
 
@@ -669,12 +669,11 @@
 /obj/item/weapon/gun/pistol/halo/m6c/m4a/set_gun_config_values()
     ..()
     set_fire_delay(FIRE_DELAY_TIER_8)
-    accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_1
-    accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+    accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2
+    accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_4
     scatter = SCATTER_AMOUNT_TIER_7
     scatter_unwielded = SCATTER_AMOUNT_TIER_5
-    damage_mult = BASE_BULLET_DAMAGE_MULT - BULLET_DAMAGE_MULT_TIER_2
-    velocity_add = AMMO_SPEED_TIER_1
+    damage_mult = BASE_BULLET_DAMAGE_MULT - BULLET_DAMAGE_MULT_TIER_1
 
 /obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"
@@ -721,13 +720,12 @@
 
 /obj/item/weapon/gun/pistol/halo/m6a/set_gun_config_values()
     ..()
-    set_fire_delay(FIRE_DELAY_TIER_11)
+    set_fire_delay(FIRE_DELAY_TIER_9)
     accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_2
     accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
     scatter = SCATTER_AMOUNT_TIER_7
     scatter_unwielded = SCATTER_AMOUNT_TIER_6
-    damage_mult =  BULLET_DAMAGE_MULT_TIER_4 + BULLET_DAMAGE_MULT_TIER_8
-    velocity_add = AMMO_SPEED_TIER_1
+    damage_mult =  BASE_BULLET_DAMAGE_MULT
 
 // Grenades
 
