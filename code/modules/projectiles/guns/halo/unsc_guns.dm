@@ -725,7 +725,7 @@
     accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
     scatter = SCATTER_AMOUNT_TIER_7
     scatter_unwielded = SCATTER_AMOUNT_TIER_6
-    damage_mult =  BASE_BULLET_DAMAGE_MULT
+    damage_mult =  BASE_BULLET_DAMAGE_MULT - BULLET_DAMAGE_MULT_TIER_2
 
 // Grenades
 

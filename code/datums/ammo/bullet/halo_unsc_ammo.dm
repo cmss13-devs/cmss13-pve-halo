@@ -29,7 +29,7 @@
 /datum/ammo/bullet/rifle/vk78
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 30
+	damage = 35
 	penetration = ARMOR_PENETRATION_TIER_1
 	accurate_range = 14
 	accuracy = HIT_ACCURACY_TIER_6
