@@ -1,0 +1,12 @@
+author: "Detective-Google"
+delete-after: True
+changes:
+  - bugfix: "RTO & PltCo HUD icons"
+  - bugfix: "spnkr rocket launcher inhands"
+  - bugfix: "spnkr rocket launcher runtimes/failure to load"
+  - bugfix: "M6C missing inhand icons"
+  - bugfix: "RTO phone having no destinations to call and being uncallable"
+  - bugfix: "lint failures for SIGNAL_HANDLER being in the improper place in a proc"
+  - bugfix: "being able to dupe spec kits by spamming the spec locker"
+  - rscadd: "corpsman vendor now gives out a medhud"
+  - code_imp: "some halo specific icons have been reorganized"
