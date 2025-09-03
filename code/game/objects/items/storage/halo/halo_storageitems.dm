@@ -27,6 +27,16 @@
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6g())
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+
+/obj/item/storage/belt/gun/m6/full_m6c/m4a/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6c/m4a())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+
+/obj/item/storage/belt/gun/m6/full_m6a/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6a())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/halo/m6a(src)
 //========== SPECIAL BELTS ==========
 
 /obj/item/storage/belt/gun/m7
