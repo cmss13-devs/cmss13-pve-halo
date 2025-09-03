@@ -410,11 +410,6 @@
 "bk" = (
 /turf/open/floor/plating/asteroidwarning/west,
 /area/new_irvine/indoors)
-"bl" = (
-/obj/structure/platform,
-/obj/structure/platform,
-/turf/open/gm/river,
-/area/new_irvine/outdoors)
 "bm" = (
 /obj/structure/platform{
 	dir = 4
@@ -4028,19 +4023,6 @@
 "kl" = (
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
-"km" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "kn" = (
 /turf/closed/wall/shiva/prefabricated/blue,
 /area/new_irvine/indoors)
@@ -5455,6 +5437,16 @@
 	},
 /obj/structure/machinery/colony_floodlight,
 /turf/open/asphalt/cement/cement12,
+/area/new_irvine/outdoors)
+"nH" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/largecrate/random/barrel/true_random{
+	pixel_x = -1;
+	pixel_y = -4
+	},
+/turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
 "nI" = (
 /obj/effect/decal/cleanable/dirt,
@@ -8421,6 +8413,16 @@
 /obj/structure/largecrate/supply,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
+"uZ" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/largecrate/random/barrel/true_random{
+	pixel_x = -3;
+	pixel_y = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "va" = (
 /obj/structure/platform{
 	dir = 8
@@ -8465,6 +8467,14 @@
 	density = 0;
 	pixel_x = 7;
 	pixel_y = 16
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"ve" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/trash/ceramic_plate,
+/obj/item/trash/ceramic_plate{
+	pixel_y = 2
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
@@ -8967,6 +8977,21 @@
 "wm" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/grass,
+/area/new_irvine/outdoors)
+"wn" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/backpack/marine/satchel{
+	desc = "It's the heavy-duty black polymer kind. Time to take out the trash!";
+	icon = 'icons/obj/janitor.dmi';
+	icon_state = "trashbag3";
+	name = "trash bag";
+	pixel_x = 1;
+	pixel_y = -5
+	},
+/turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
 "wo" = (
 /obj/structure/platform_decoration,
@@ -11573,6 +11598,20 @@
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass,
 /turf/open/floor/corsat/marked,
 /area/new_irvine/indoors)
+"CC" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/storage/backpack/marine/satchel{
+	desc = "It's the heavy-duty black polymer kind. Time to take out the trash!";
+	icon = 'icons/obj/janitor.dmi';
+	icon_state = "trashbag3";
+	name = "trash bag";
+	pixel_x = 10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "CD" = (
 /obj/structure/bookcase{
 	density = 0;
@@ -12842,18 +12881,6 @@
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
-"FK" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/platform{
-	dir = 4
-	},
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "FL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/platform_decoration,
@@ -24511,8 +24538,8 @@ ML
 bw
 bw
 bw
-LC
-LC
+uZ
+nH
 IJ
 IJ
 bw
@@ -28124,7 +28151,7 @@ br
 br
 br
 br
-FK
+bq
 bw
 cb
 br
@@ -30736,7 +30763,7 @@ EW
 Ee
 Ei
 XE
-km
+Cj
 Fm
 fc
 zs
@@ -31052,7 +31079,7 @@ br
 br
 eM
 ff
-eP
+ve
 bu
 tg
 tg
@@ -44878,8 +44905,8 @@ br
 kA
 kA
 br
-Md
-pu
+jI
+yi
 br
 Ye
 uR
@@ -45130,8 +45157,8 @@ br
 kG
 kG
 br
-Md
-pu
+jI
+yi
 br
 SR
 uf
@@ -46390,7 +46417,7 @@ fu
 pu
 br
 br
-DF
+VQ
 Ek
 br
 Hd
@@ -46640,8 +46667,8 @@ jR
 jR
 jR
 JJ
-FZ
-FZ
+CC
+wn
 bi
 Ek
 br
@@ -63944,7 +63971,7 @@ Wn
 Wn
 Wn
 Wn
-bl
+KP
 bj
 fu
 DA
