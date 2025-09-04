@@ -6,6 +6,17 @@
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
+"ac" = (
+/obj/effect/decal/medical_decals{
+	icon_state = "triagedecaldir";
+	pixel_y = 19;
+	dir = 2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/briefing)
 "af" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -24710,7 +24721,7 @@ zS
 QO
 Vv
 aH
-bc
+ac
 Jc
 Kx
 Kx
