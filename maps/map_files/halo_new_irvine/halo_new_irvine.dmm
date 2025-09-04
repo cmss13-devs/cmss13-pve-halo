@@ -410,6 +410,19 @@
 "bk" = (
 /turf/open/floor/plating/asteroidwarning/west,
 /area/new_irvine/indoors)
+"bl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/reagent_container/food/condiment/hotsauce/tabasco{
+	pixel_y = 12;
+	pixel_x = -12
+	},
+/obj/item/reagent_container/food/condiment/hotsauce/tabasco{
+	pixel_x = -2;
+	pixel_y = 9
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
 "bm" = (
 /obj/structure/platform{
 	dir = 4
@@ -4023,6 +4036,34 @@
 "kl" = (
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"km" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/tool/kitchen/tray{
+	pixel_x = -3;
+	pixel_y = 3
+	},
+/obj/item/trash/plate{
+	pixel_x = -5;
+	pixel_y = 3
+	},
+/obj/item/trash/plate{
+	pixel_x = -3;
+	pixel_y = 5
+	},
+/obj/item/trash/plate{
+	pixel_x = -4;
+	pixel_y = 7
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
 "kn" = (
 /turf/closed/wall/shiva/prefabricated/blue,
 /area/new_irvine/indoors)
@@ -5818,8 +5859,8 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/new_irvine/indoors)
 "oD" = (
-/obj/structure/surface/rack,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/curtain/red,
 /turf/open/floor/carpet,
 /area/new_irvine/indoors)
 "oE" = (
@@ -6054,6 +6095,14 @@
 	pixel_x = -6
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
 "po" = (
@@ -6398,6 +6447,11 @@
 	},
 /obj/structure/surface/table/reinforced/black,
 /obj/item/tool/kitchen/knife,
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11;
+	pixel_y = 7
+	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
 "qk" = (
@@ -9710,14 +9764,15 @@
 /area/new_irvine/outdoors)
 "yb" = (
 /obj/structure/surface/table/reinforced/black,
-/obj/structure/machinery/microwave{
-	pixel_y = 9
-	},
-/obj/structure/machinery/microwave{
-	pixel_y = 22;
-	pixel_x = 0
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
 "yc" = (
@@ -11803,6 +11858,10 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	pixel_y = 3;
+	dir = 4
+	},
 /turf/open/floor/carpet,
 /area/new_irvine/indoors)
 "CX" = (
@@ -12041,6 +12100,14 @@
 /obj/structure/surface/table/reinforced/black,
 /obj/item/tool/kitchen/utensil/fork,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
 "Dz" = (
@@ -12881,6 +12948,20 @@
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"FK" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/newspaper{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/newspaper,
+/obj/item/tool/pen/blue/clicky{
+	pixel_x = -8;
+	pixel_y = 4
+	},
+/turf/open/floor/carpet,
+/area/new_irvine/indoors)
 "FL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/platform_decoration,
@@ -13447,6 +13528,13 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"Hl" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/device/flashlight/lamp{
+	pixel_x = 7
+	},
+/turf/open/floor/carpet,
+/area/new_irvine/indoors)
 "Hm" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full"
@@ -13573,6 +13661,15 @@
 	pixel_y = 15
 	},
 /turf/open/floor/corsat/plate,
+/area/new_irvine/indoors)
+"HD" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/office/light,
+/turf/open/floor/carpet,
 /area/new_irvine/indoors)
 "HE" = (
 /obj/structure/platform_decoration{
@@ -14278,8 +14375,16 @@
 "JF" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/sink{
-	pixel_y = 24;
+	pixel_y = 14;
 	layer = 3.1
+	},
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
@@ -14371,6 +14476,14 @@
 	},
 /obj/item/tool/kitchen/knife{
 	pixel_x = 9
+	},
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
@@ -15297,12 +15410,20 @@
 /obj/structure/surface/table/reinforced/black,
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_container/food/condiment/juice/milk{
-	pixel_y = 13;
+	pixel_y = 6;
 	pixel_x = 8
 	},
 /obj/item/storage/box/milk{
-	pixel_y = 4;
+	pixel_y = -5;
 	pixel_x = 5
+	},
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
@@ -18759,6 +18880,52 @@
 /obj/structure/closet/crate/trashcart,
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"Ub" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/pottedplant{
+	desc = "It is made of Fiberbush(tm). It contains asbestos. Studies say that greenery calms the mind due to some sort evolved mechanism in the brain. This plant is not calming.";
+	icon_state = "pottedplant_21";
+	layer = 3.1;
+	name = "synthethic potted plant";
+	pixel_y = 9;
+	pixel_x = 1
+	},
+/turf/open/floor/carpet,
+/area/new_irvine/indoors)
+"Uc" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/newspaper{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/item/newspaper,
+/turf/open/floor/carpet,
+/area/new_irvine/indoors)
+"Ud" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/ashtray/plastic{
+	icon_state = "ashtray_full_bl";
+	pixel_x = 7;
+	pixel_y = -3
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"Ue" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/sink{
+	pixel_y = 24;
+	layer = 3.1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ashtray/glass{
+	pixel_x = 8;
+	pixel_y = 5
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
 "Uf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -18770,11 +18937,31 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"Ug" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/office/light{
+	dir = 8
+	},
+/turf/open/floor/carpet,
+/area/new_irvine/indoors)
 "Uh" = (
 /obj/structure/platform_decoration,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"Ui" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed{
+	can_buckle = 0
+	},
+/obj/item/bedsheet/brown{
+	layer = 3.1
+	},
+/obj/item/bedsheet/brown{
+	layer = 3.1
+	},
+/turf/open/floor/carpet,
+/area/new_irvine/indoors)
 "Uj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/almayer/computers/sensor_computer1,
@@ -18804,6 +18991,16 @@
 /obj/structure/machinery/colony_floodlight,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"Um" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_17";
+	pixel_x = 9;
+	pixel_y = 19
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "Un" = (
 /obj/structure/platform_decoration,
 /obj/structure/machinery/colony_floodlight,
@@ -18837,6 +19034,10 @@
 	pixel_y = 19
 	},
 /turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"Ur" = (
+/obj/structure/curtain/red,
+/turf/open/floor/carpet,
 /area/new_irvine/indoors)
 "Us" = (
 /obj/effect/decal/cleanable/dirt,
@@ -18873,6 +19074,30 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"Uw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/curtain/red,
+/turf/open/floor/wood/ship,
+/area/new_irvine/indoors)
+"Ux" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/dartboard{
+	pixel_x = -29
+	},
+/turf/open/floor/wood/ship,
+/area/new_irvine/indoors)
+"Uy" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/obj/structure/bookcase{
+	density = 0;
+	icon_state = "book-5";
+	pixel_y = 16
+	},
+/turf/open/floor/wood/ship,
+/area/new_irvine/indoors)
 "Uz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -18886,6 +19111,15 @@
 	pixel_y = 22
 	},
 /turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"UA" = (
+/obj/structure/bookcase{
+	density = 0;
+	icon_state = "book-5";
+	pixel_y = 16;
+	pixel_x = -5
+	},
+/turf/open/floor/carpet,
 /area/new_irvine/indoors)
 "UB" = (
 /obj/structure/platform/stair_cut/alt,
@@ -18929,6 +19163,47 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
+"UF" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
+"UG" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ashtray/bronze{
+	icon_state = "ashtray_full_bl";
+	pixel_x = -8;
+	pixel_y = 7
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
+"UH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/trash/ceramic_plate{
+	pixel_y = 9
+	},
+/obj/item/trash/ceramic_plate{
+	pixel_y = 12
+	},
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
 "UI" = (
 /obj/structure/platform{
 	dir = 4
@@ -18945,6 +19220,23 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"UJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/tool/kitchen/tray{
+	pixel_x = -7;
+	pixel_y = 9
+	},
+/obj/structure/vehicle_locker/cabinet/cups/flip{
+	pixel_x = 7;
+	pixel_y = 27
+	},
+/obj/structure/vehicle_locker/cabinet/cups{
+	pixel_y = 27;
+	pixel_x = -8
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/indoors)
 "UL" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo,
 /turf/open/floor/corsat/marked,
@@ -27507,7 +27799,7 @@ jR
 jR
 IO
 br
-kD
+UJ
 kA
 kl
 uq
@@ -29044,11 +29336,11 @@ br
 br
 Xo
 br
-Ro
-Ro
-yf
-yf
-AK
+br
+Ur
+oD
+oD
+br
 br
 Uo
 VU
@@ -29293,14 +29585,14 @@ Vw
 br
 br
 br
-yd
+Uy
 Xo
 ay
 tg
 tg
 SY
 yf
-yf
+mM
 br
 JF
 kl
@@ -29545,14 +29837,14 @@ mZ
 br
 br
 br
+UA
 tg
+br
+br
+br
+br
 tg
-br
-br
-br
-br
-Yd
-ul
+Ui
 br
 zw
 kA
@@ -30827,7 +31119,7 @@ DT
 bO
 Xm
 fe
-eP
+NS
 bu
 tg
 tg
@@ -31320,7 +31612,7 @@ Ok
 bu
 br
 eM
-gS
+Ud
 bO
 DF
 vf
@@ -31811,7 +32103,7 @@ cS
 Ek
 br
 br
-JF
+UF
 Eg
 yJ
 Kw
@@ -34580,7 +34872,7 @@ DA
 DD
 FB
 bO
-Ag
+lQ
 kl
 qQ
 br
@@ -34588,7 +34880,7 @@ fz
 Gh
 br
 br
-yJ
+Ux
 yJ
 ww
 br
@@ -34870,8 +35162,8 @@ aV
 br
 br
 ul
-WT
-kY
+HD
+FK
 br
 jI
 Ym
@@ -35123,7 +35415,7 @@ br
 br
 ul
 yf
-Ro
+Hl
 br
 jI
 pu
@@ -35351,7 +35643,7 @@ ay
 mX
 eM
 br
-TD
+Ue
 qh
 Xo
 Ro
@@ -35559,7 +35851,7 @@ gB
 gx
 go
 br
-kE
+UH
 kl
 kl
 kA
@@ -35610,9 +35902,9 @@ OS
 OS
 br
 br
-kY
+Uc
 CW
-kY
+Ub
 br
 br
 eM
@@ -35863,7 +36155,7 @@ Xo
 ay
 yf
 yf
-yf
+Ta
 yf
 yf
 br
@@ -36626,7 +36918,7 @@ bu
 eM
 eM
 br
-oD
+sJ
 oD
 br
 br
@@ -36859,7 +37151,7 @@ br
 tg
 tg
 br
-gS
+Um
 eM
 eM
 LG
@@ -37618,7 +37910,7 @@ ay
 tg
 yf
 yf
-yf
+Ug
 yf
 br
 br
@@ -37864,8 +38156,8 @@ JJ
 Pt
 br
 br
-yJ
-yJ
+Uw
+Uw
 br
 Yd
 Yd
@@ -41888,7 +42180,7 @@ KH
 br
 br
 VX
-lV
+UG
 kA
 kA
 kC
@@ -42203,7 +42495,7 @@ jR
 En
 br
 sf
-HR
+bl
 ob
 br
 br
@@ -42454,7 +42746,7 @@ jR
 jR
 En
 br
-rI
+km
 kA
 kl
 br
@@ -44144,7 +44436,7 @@ jR
 ap
 Pt
 br
-kE
+UH
 kl
 kA
 kD
