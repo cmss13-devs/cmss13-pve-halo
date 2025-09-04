@@ -1823,6 +1823,14 @@
 /obj/structure/bed/sofa/south/grey/left,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"eR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
 "eS" = (
 /obj/structure/bed/sofa/south/grey/right,
 /turf/open/floor/prison/sterile_white,
@@ -13395,9 +13403,30 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"GR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair/office/dark{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "GS" = (
 /obj/structure/fence,
 /turf/open/floor/corsat/marked,
+/area/new_irvine/indoors)
+"GT" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/corsat/plate,
 /area/new_irvine/indoors)
 "GU" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16219,6 +16248,9 @@
 	name = "trash bag";
 	pixel_x = -7;
 	pixel_y = 18
+	},
+/obj/structure/machinery/light/small/red{
+	dir = 8
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
@@ -43837,7 +43869,7 @@ lg
 lg
 ky
 br
-HI
+GT
 HI
 br
 au
@@ -44856,7 +44888,7 @@ bT
 mS
 PQ
 Hm
-af
+mj
 br
 br
 af
@@ -45362,7 +45394,7 @@ PQ
 Hm
 Ye
 Ye
-Ye
+Xp
 af
 Ye
 qT
@@ -53425,12 +53457,12 @@ sq
 eM
 br
 br
-DG
+eR
 DG
 Ze
 Ze
 DG
-DG
+eR
 oI
 Qk
 fc
@@ -53929,12 +53961,12 @@ Ok
 bu
 bu
 br
-uN
+GR
 uN
 lz
 lz
 uN
-fQ
+QI
 br
 br
 DU
@@ -55192,7 +55224,7 @@ br
 mB
 bu
 DQ
-eM
+AC
 eM
 eM
 eM
@@ -55696,7 +55728,7 @@ br
 Hy
 bu
 lz
-eM
+yx
 uN
 My
 br
