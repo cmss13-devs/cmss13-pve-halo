@@ -290,13 +290,13 @@
 	organ_type = /datum/internal_organ/lungs/unggoy
 
 /obj/item/organ/kidneys/unggoy
-	name = "unggoy kidney"
+	name = "unggoy kidneys"
 	icon = 'icons/halo/obj/items/organs.dmi'
 	icon_state = "unggoy_kidney"
 	organ_type = /datum/internal_organ/kidneys/unggoy
 
 /obj/item/organ/liver/unggoy
-	name = "unggoy liver"
+	name = "unggoy livers"
 	icon = 'icons/halo/obj/items/organs.dmi'
 	icon_state = "unggoy_liver"
 	organ_type = /datum/internal_organ/liver/unggoy

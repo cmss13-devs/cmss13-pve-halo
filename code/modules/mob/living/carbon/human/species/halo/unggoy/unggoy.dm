@@ -43,3 +43,53 @@
 		"brain" = /datum/internal_organ/brain/unggoy,
 		"eyes" =  /datum/internal_organ/eyes
 		)
+
+/datum/species/unggoy/post_species_loss(mob/living/carbon/human/H)
+	..()
+	var/datum/mob_hud/medical/advanced/A = GLOB.huds[MOB_HUD_MEDICAL_ADVANCED]
+	A.add_to_hud(H)
+	H.blood_type = pick("A+","A-","B+","B-","O-","O+","AB+","AB-")
+	H.h_style = "Bald"
+	GLOB.yautja_mob_list -= H
+	for(var/obj/limb/limb in H.limbs)
+		switch(limb.name)
+			if("groin","chest")
+				limb.min_broken_damage = 40
+				limb.max_damage = 200
+			if("head")
+				limb.min_broken_damage = 40
+				limb.max_damage = 60
+			if("l_hand","r_hand","r_foot","l_foot")
+				limb.min_broken_damage = 25
+				limb.max_damage = 30
+			if("r_leg","r_arm","l_leg","l_arm")
+				limb.min_broken_damage = 30
+				limb.max_damage = 35
+		limb.time_to_knit = -1
+
+/datum/species/unggoy/handle_post_spawn(mob/living/carbon/human/unggoy)
+	GLOB.alive_human_list -= unggoy
+
+	unggoy.blood_type = "S*"
+	unggoy.h_style = "Bald"
+	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
+	GLOB.unggoy_mob_list += unggoy
+	#endif
+	for(var/obj/limb/limb in unggoy.limbs)
+		switch(limb.name)
+			if("groin","chest")
+				limb.min_broken_damage = 100
+				limb.max_damage = 150 // 2 minutes to self heal bone break, time is in tenths of a second to auto heal this
+			if("head")
+				limb.min_broken_damage = 100
+				limb.max_damage = 150 // 1 minute to self heal bone break, time is in tenths of a second
+			if("l_hand","r_hand","r_foot","l_foot")
+				limb.min_broken_damage = 150
+				limb.max_damage = 150 // 1 minute to self heal bone break, time is in tenths of a second
+			if("r_leg","r_arm","l_leg","l_arm")
+				limb.min_broken_damage = 150
+				limb.max_damage = 150 // 1 minute to self heal bone break, time is in tenths of a second
+
+	unggoy.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY))
+	return ..()
+
