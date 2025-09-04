@@ -10,7 +10,7 @@
 	name = "Sangheili"
 	rank = JOB_COV_CIV
 	assignment = JOB_COV_CIV
-	flags = EQUIPMENT_PRESET_EXTRA
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
 	faction = FACTION_COVENANT
 	skills = /datum/skills/covenant/sangheili
