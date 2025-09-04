@@ -14,3 +14,6 @@
 		SKILL_PILOT = SKILL_PILOT_TRAINED,
 		SKILL_ENDURANCE = SKILL_ENDURANCE_TRAINED,
 	)
+
+/datum/skills/covenant/unggoy
+	name = "Covenant, Menial"
