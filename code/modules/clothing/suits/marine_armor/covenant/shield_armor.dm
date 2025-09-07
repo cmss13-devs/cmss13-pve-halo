@@ -118,17 +118,27 @@
 	name = "YOU SHOULDN'T SEE THIS"
 	desc = "The central piece to a set of advanced combat armor manufactured by the Covenant. Made with nanolaminate and equipped with shielding, the armor is much more durable than any other species' equipment."
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
-	icon_state = "sangheili_base"
-	item_state = "sangheili_base"
-
+	icon_state = "sang_minor"
+	item_state = "chest_minor"
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi'
 	)
-	allowed_species_list = list(SPECIES_SANGHEILI)
 
+	allowed_species_list = list(SPECIES_SANGHEILI)
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+
+	valid_accessory_slots = list(ACCESSORY_SLOT_SANG_SHOULDER, ACCESSORY_SLOT_SANG_WEBBING)
+
+// Minor
 
 /obj/item/clothing/suit/marine/shielded/sangheili/minor
 	name = "Sangheili Minor combat harness"
+	desc = "A blue coloured harness worn by 'Minors', the lowest rank of Sangheili warrior. Worn over a 'tech-suit' the armour consists of a thoracic-cage over the torso, with pauldrons, vambraces, cuisses, and greaves attached, providing a high level of protection, though the most important defensive feature of the harness is its energy-shielding."
+	desc_lore = "Though Minor is the lowest rank a Sangheili can hold, this blue marks them out as still superior to any lesser-caste species. A fact that some abuse."
 
 	shield = SANG_SHIELD_MINOR
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM

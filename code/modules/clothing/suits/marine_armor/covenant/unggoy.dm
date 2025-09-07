@@ -8,7 +8,7 @@
 	item_state = "unggoy_minor"
 
 	item_icons = list(
-		WEAR_JACKET = 'icons/halo/mob/humans/onmob/unggoy/armor.dmi'
+		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/armor.dmi'
 	)
 	allowed_species_list = list(SPECIES_UNGGOY)
 
@@ -70,7 +70,7 @@
 
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
 	item_icons = list(
-		WEAR_JACKET = 'icons/halo/mob/humans/onmob/unggoy/armor.dmi'
+		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/armor.dmi'
 	)
 	allowed_species_list = list(SPECIES_UNGGOY)
 

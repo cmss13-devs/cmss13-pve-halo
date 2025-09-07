@@ -210,3 +210,19 @@
 	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
 
 
+//======================
+// COVIE BELTS
+//======================
+
+/obj/item/storage/belt/marine/covenant
+	name = "Covenant ammunition belt"
+	desc = "Placeholder."
+	icon = 'icons/halo/obj/items/clothing/covenant/belts.dmi'
+	icon_state = "sangbelt_minor"
+
+/obj/item/storage/belt/marine/covenant/sangheili
+	name = "Sangheili Minor ammunition belt"
+	desc = "A blue ammunition belt for Sangheili Minors"
+	item_state = "belt_minor"
+	item_icons = list(
+		WEAR_BELT = 'icons/halo/mob/humans/onmob/clothing/sangheili/belts.dmi')
