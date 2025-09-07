@@ -3,7 +3,7 @@
 	desc = "Standard pattern of Sangheili helmet. Usually paired with a combat harness."
 	icon = 'icons/halo/obj/items/clothing/covenant/helmets.dmi'
 	icon_state = "sanghelmet_minor"
-	item_state = "helmet_minor"
+	item_state = "sanghelmet_minor"
 
 	item_icons = list(
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/sangheili/hat.dmi'

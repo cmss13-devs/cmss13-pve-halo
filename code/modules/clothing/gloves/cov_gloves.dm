@@ -3,7 +3,7 @@
 	desc = "A pair of Sangheili gauntlets to go with a combat harness."
 	icon = 'icons/halo/obj/items/clothing/covenant/gloves.dmi'
 	icon_state = "sanggauntlets_minor"
-	item_state = "gauntlets_minor"
+	item_state = "sangauntlets_minor"
 
 	item_icons = list(
 		WEAR_HANDS = 'icons/halo/mob/humans/onmob/clothing/sangheili/gloves.dmi'

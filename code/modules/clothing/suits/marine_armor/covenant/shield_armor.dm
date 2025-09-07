@@ -119,7 +119,8 @@
 	desc = "The central piece to a set of advanced combat armor manufactured by the Covenant. Made with nanolaminate and equipped with shielding, the armor is much more durable than any other species' equipment."
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
 	icon_state = "sang_minor"
-	item_state = "chest_minor"
+	item_state = "sang_minor"
+
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi'
 	)

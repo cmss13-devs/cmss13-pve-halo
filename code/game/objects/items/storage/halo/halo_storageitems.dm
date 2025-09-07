@@ -223,6 +223,8 @@
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "Sangheili Minor ammunition belt"
 	desc = "A blue ammunition belt for Sangheili Minors"
-	item_state = "belt_minor"
+	icon_state = "sangbelt_minor"
+	item_state = "sangbelt_minor"
 	item_icons = list(
-		WEAR_BELT = 'icons/halo/mob/humans/onmob/clothing/sangheili/belts.dmi')
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/sangheili/belts.dmi'
+		)

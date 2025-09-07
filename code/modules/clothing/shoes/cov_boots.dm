@@ -3,7 +3,7 @@
 	desc = "A pair of sangheili combat boots and greaves to go with a combat harness."
 	icon = 'icons/halo/obj/items/clothing/covenant/shoes.dmi'
 	icon_state = "sangboots_minor"
-	item_state = "boots_minor"
+	item_state = "sangboots_minor"
 
 	drop_sound = "armorequip"
 
@@ -13,7 +13,6 @@
 
 	allowed_species_list = list(SPECIES_SANGHEILI)
 
-	allowed_items_typecache = null
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
