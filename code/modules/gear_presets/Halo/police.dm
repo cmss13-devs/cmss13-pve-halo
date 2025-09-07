@@ -58,7 +58,8 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CMB/limited(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
+	if(prob(60))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/darkblue, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster/waist, WEAR_ACCESSORY)
@@ -88,7 +89,8 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CMB/limited(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
+	if(prob(60))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/police, WEAR_JACKET)
 	//uniform
@@ -121,7 +123,8 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CMB/limited(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
+	if(prob(60))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/police, WEAR_JACKET)
 	//uniform
@@ -191,7 +194,8 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CMB/limited(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
+	if(prob(60))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/darkblue, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/holster/waist, WEAR_ACCESSORY)
@@ -222,7 +226,8 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/CMB/limited(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
+	if(prob(60))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/corrections(new_human), WEAR_HEAD)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/police, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/groin/police, WEAR_ACCESSORY)
@@ -261,6 +266,8 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/marine/peaked/service/ueg, WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/darkblue, WEAR_BODY)
+	//jacket
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/jacket/marine/corporate/black, WEAR_JACKET)
 	//waist
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6a, WEAR_WAIST)
 	//limbs

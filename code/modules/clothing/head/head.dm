@@ -850,5 +850,4 @@
 
 /obj/item/clothing/head/marine/peaked/service/ueg
 	name = "\improper UEG police chief peaked cap"
-	icon_state = "warden"
 	desc = "A peaked cap used within the UEG Police forces to denote rank and authority of some kind."
