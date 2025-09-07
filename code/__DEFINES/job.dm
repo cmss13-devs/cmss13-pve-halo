@@ -435,16 +435,6 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define INSURGENT_JOB_LIST list(JOB_INSURGENT_PARTISAN, JOB_INSURGENT_PARTISAN_BREACH, JOB_INSURGENT, JOB_INSURGENT_TECHNICIAN, JOB_INSURGENT_SPECIALIST, JOB_INSURGENT_SL, JOB_INSURGENT_LEAD)
 
-//Covenant
-#define JOB_COV_MINOR "Minor"
-#define JOB_COV_MAJOR "Major"
-#define JOB_COV_ULTRA "Ultra"
-#define JOB_COV_ZEALOT "Zealot"
-#define JOB_COV_COMMANDER "Sub-Commander"
-#define JOB_COV_COMANDER "Commander"
-
-//-------- HALO Ends Here --------//
-
 #define JOB_PREDATOR "Predator"
 #define JOB_XENOMORPH    "Xenomorph"
 #define JOB_XENOMORPH_QUEEN  "Queen"
