@@ -54,6 +54,10 @@
 	size_mod = 0
 	hud_offset_mod = -3
 
+/obj/item/attachable/vk78_front/New()
+	..()
+	recoil_mod = -RECOIL_AMOUNT_TIER_2
+
 /obj/item/attachable/br55_muzzle
 	name = "\improper BR55 muzzle"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
