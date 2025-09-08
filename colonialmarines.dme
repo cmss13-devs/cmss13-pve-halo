@@ -638,6 +638,7 @@
 #include "code\datums\paygrades\helper.dm"
 #include "code\datums\paygrades\paygrade.dm"
 #include "code\datums\paygrades\factions\halo\covenant_ranks.dm"
+#include "code\datums\paygrades\factions\halo\ueg_police.dm"
 #include "code\datums\paygrades\factions\other\civilian.dm"
 #include "code\datums\paygrades\factions\other\cmb.dm"
 #include "code\datums\paygrades\factions\other\contractors.dm"
