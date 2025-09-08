@@ -847,3 +847,7 @@
 /obj/item/clothing/head/beret/royal_marine/team_leader
 	icon_state = "rmc_beret_tl"
 	item_state = "rmc_beret_tl"
+
+/obj/item/clothing/head/marine/peaked/service/ueg
+	name = "\improper UEG police chief peaked cap"
+	desc = "A peaked cap used within the UEG Police forces to denote rank and authority of some kind."

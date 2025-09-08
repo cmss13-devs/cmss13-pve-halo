@@ -16,6 +16,24 @@
 	default_ammo = /datum/ammo/bullet/rifle/ma5c
 	caliber = "7.62x51"
 
+/obj/item/ammo_magazine/rifle/halo/ma3a
+	name = "\improper MA3A magazine (7.62x51mm FMJ)"
+	desc = "A rectangular box magazine for the MA3A holding 32 rounds of 7.62x51 FMJ ammunitions."
+	icon_state = "ma3a"
+	max_rounds = 32
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma3a
+	default_ammo = /datum/ammo/bullet/rifle/ma3a
+	caliber = "7.62x51"
+
+/obj/item/ammo_magazine/rifle/halo/vk78
+	name = "\improper VK78 magazine (6.5x48mm FMJ)"
+	desc = "An angular box magazine for the VK78 holding 20 rounds of 6.5x48mm FMJ ammunitions."
+	icon_state = "vk78"
+	max_rounds = 20
+	gun_type = /obj/item/weapon/gun/rifle/halo/vk78
+	default_ammo = /datum/ammo/bullet/rifle/vk78
+	caliber = "6.5x48"
+
 /obj/item/ammo_magazine/rifle/halo/br55
 	name = "\improper BR55 magazine (9.5x40mm X-HP SAP-HE)"
 	desc = "A rectangular box magazine for the BR55 holding 48 rounds of 9.5x40mm X-HP SAP-HE ammunitions."
@@ -24,6 +42,15 @@
 	gun_type = /obj/item/weapon/gun/rifle/halo/br55
 	default_ammo = /datum/ammo/bullet/rifle/br55
 	caliber = "9.5x40mm"
+
+/obj/item/ammo_magazine/rifle/halo/dmr
+	name = "\improper M392 DMR magazine (7.62x51mm FMJ)"
+	desc = "A rectangular 15 round box magazine for the M392 DMR filled with 7.62x51mm FMJ ammo."
+	icon_state = "dmr"
+	max_rounds = 15
+	gun_type = /obj/item/weapon/gun/rifle/halo/dmr
+	default_ammo = /datum/ammo/bullet/rifle/dmr
+	caliber = "7.62x51"
 
 // smg magazines
 /obj/item/ammo_magazine/smg/halo
@@ -65,6 +92,9 @@
 /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
 	current_rounds = 0
 
+/obj/item/ammo_magazine/internal/shotgun/m90/police
+	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
+
 // shotgun shells
 
 /obj/item/ammo_magazine/shotgun/buckshot/unsc
@@ -73,6 +103,16 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
 	icon_state = "8g"
 	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
+	transfer_handful_amount = 6
+	max_rounds = 24
+	caliber = "8g"
+
+/obj/item/ammo_magazine/shotgun/beanbag/unsc
+	name = "UNSC 8-gauge shotgun beanbag box"
+	desc = "A box filled with 8-gauge MAG LLHB beanbag shells."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_magazines.dmi'
+	icon_state = "8g_beanbag"
+	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
 	transfer_handful_amount = 6
 	max_rounds = 24
 	caliber = "8g"
@@ -112,6 +152,14 @@
 	desc = "A rectangular and slanted magazine for the M6C, holding 12 rounds of 12.7x40mm SAP-HE ammunition."
 	icon_state = "m6c"
 	gun_type = /obj/item/weapon/gun/pistol/halo/m6c
+	default_ammo = /datum/ammo/bullet/pistol/magnum
+	max_rounds = 12
+
+/obj/item/ammo_magazine/pistol/halo/m6a
+	name = "\improper M6A magazine (12.7x40mm SAP-HE)"
+	desc = "A rectangular and slanted magazine for the M6A, holding 12 rounds of 12.7x40mm SAP-HE ammunition."
+	icon_state = "m6c"
+	gun_type = /obj/item/weapon/gun/pistol/halo/m6a
 	default_ammo = /datum/ammo/bullet/pistol/magnum
 	max_rounds = 12
 
