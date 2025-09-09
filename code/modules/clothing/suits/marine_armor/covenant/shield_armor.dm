@@ -130,6 +130,7 @@
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 	valid_accessory_slots = list(ACCESSORY_SLOT_SANG_SHOULDER, ACCESSORY_SLOT_SANG_WEBBING)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_SANG_SHOULDER, ACCESSORY_SLOT_SANG_WEBBING)
 
 // Minor
 
