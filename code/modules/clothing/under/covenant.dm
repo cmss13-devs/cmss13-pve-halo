@@ -41,7 +41,7 @@
 	item_state_slots = list()
 
 	item_icons = list(
-		WEAR_BODY = 'icons/halo/mob/humans/onmob/unggoy/uniforms.dmi',
+		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/unggoy/uniforms.dmi',
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
