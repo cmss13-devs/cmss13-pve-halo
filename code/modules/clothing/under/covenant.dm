@@ -11,7 +11,7 @@
 	allowed_species_list = list()
 
 /obj/item/clothing/under/marine/covenant/sangheili
-	name = "Sangheili undersuit"
+	name = "\improper Sangheili undersuit"
 	desc = "A high-tech jumpsuit that for the most part conforms to the users body. Interlaced with nanolaminate armoring, it provides ample protection for how flexible it is - enabling the wearer to be aggressive while still protecting themselves. Advanced magnetic projectors on the undersuit are capable of locking armor to it with considerable force."
 	icon = 'icons/halo/obj/items/clothing/covenant/under.dmi'
 	icon_state = "sangheili_undersuit"
@@ -29,7 +29,7 @@
 	)
 
 /obj/item/clothing/under/marine/covenant/unggoy
-	name = "Unggoy magnetic webbing"
+	name = "\improper Unggoy magnetic webbing"
 	desc = "Issued to Unggoy as a part of their combat kit, the webbing is a series of straps fitted with magnetic locks intended to be worn with their issued armor. Although uncomfortable and doesn't prevent any armor chafing, Unggoy skin is pretty tough."
 
 	icon_state = "unggoy_harness"

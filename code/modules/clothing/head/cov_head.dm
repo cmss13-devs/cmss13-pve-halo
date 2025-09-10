@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet/marine/sangheili
-	name = "Sangheili helmet"
-	desc = "Standard pattern of Sangheili helmet. Usually paired with a combat harness."
+	name = "\improper Sangheili helmet"
+	desc = "  A nanolaminate helmet inspired by ancient Sangheili armours of the Pre-Covenant, having not changed its design in fifty generations. Fitted with comprehensive communications and smart-link systems allowing the wearer to maintain both control of their levies and fine operation of their weapons."
 	icon = 'icons/halo/obj/items/clothing/covenant/helmets.dmi'
 	icon_state = "sanghelmet_minor"
 	item_state = "sanghelmet_minor"
@@ -23,5 +23,4 @@
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 
 /obj/item/clothing/head/helmet/marine/sangheili/minor
-	name = "Sangheili Minor helmet"
-	desc = "Standard blue Sangheili Minor helmet. Usually paired with a combat harness."
+	name = "\improper Sangheili Minor helmet"

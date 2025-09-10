@@ -215,16 +215,19 @@
 //======================
 
 /obj/item/storage/belt/marine/covenant
-	name = "Covenant ammunition belt"
+	name = "\improper Covenant ammunition belt"
 	desc = "Placeholder."
 	icon = 'icons/halo/obj/items/clothing/covenant/belts.dmi'
 	icon_state = "sangbelt_minor"
 
 /obj/item/storage/belt/marine/covenant/sangheili
-	name = "Sangheili Minor ammunition belt"
-	desc = "A blue ammunition belt for Sangheili Minors"
+	name = "\improper Sangheili ammunition belt"
+	desc = "A modular attachment for a warrior's combat harness that accepts several hard case blister units for personal storage, and to holster weaponry. Thanks to advancements in smart-materials, the belt is theoretically a true "one size fits all" design."
 	icon_state = "sangbelt_minor"
 	item_state = "sangbelt_minor"
 	item_icons = list(
 		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/sangheili/belts.dmi'
 		)
+
+/obj/item/storage/belt/marine/covenant/sangheili/minor
+	name = "\improper Sangheili Minor ammunition belt"

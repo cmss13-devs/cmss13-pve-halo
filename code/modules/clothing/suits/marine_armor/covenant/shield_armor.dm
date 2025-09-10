@@ -135,7 +135,7 @@
 // Minor
 
 /obj/item/clothing/suit/marine/shielded/sangheili/minor
-	name = "Sangheili Minor combat harness"
+	name = "\improper Sangheili Minor combat harness"
 	desc = "A blue coloured harness worn by 'Minors', the lowest rank of Sangheili warrior. Worn over a 'tech-suit' the armour consists of a thoracic-cage over the torso, with pauldrons, vambraces, cuisses, and greaves attached, providing a high level of protection, though the most important defensive feature of the harness is its energy-shielding."
 	desc_lore = "Though Minor is the lowest rank a Sangheili can hold, this blue marks them out as still superior to any lesser-caste species. A fact that some abuse."
 
@@ -144,3 +144,8 @@
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/suit/marine/shielded/sangheili/minor/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/pads/sangheili/minor/pads = new()
+	src.attach_accessory(null, pads, TRUE)

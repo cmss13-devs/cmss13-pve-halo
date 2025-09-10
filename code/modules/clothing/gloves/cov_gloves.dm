@@ -1,6 +1,6 @@
 /obj/item/clothing/gloves/marine/sangheili
-	name = "Sangheili gauntlets"
-	desc = "A pair of Sangheili gauntlets to go with a combat harness."
+	name = "\improper Sangheili gauntlets"
+	desc = "Simple gauntlets worn over the wrists of a Sangheili, made of common nanolaminate composites. Fitted precisely, these gauntlets do not interfere whatsoever with the warriors work, and in the case where pure brute strength is needed, prove sufficient as improvised weapons."
 	icon = 'icons/halo/obj/items/clothing/covenant/gloves.dmi'
 	icon_state = "sanggauntlets_minor"
 	item_state = "sangauntlets_minor"
@@ -17,5 +17,4 @@
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 
 /obj/item/clothing/gloves/marine/sangheili/minor
-	name = "Sangheili Minor gauntlets"
-	desc = "A pair of blue Sangheili Minor gauntlets to go with a combat harness."
+	name = "\improper Sangheili Minor gauntlets"
