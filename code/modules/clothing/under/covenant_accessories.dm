@@ -10,3 +10,18 @@
 
 /obj/item/clothing/accessory/pads/sangheili/minor
 	name = "\improper Sangheili Minor shoulder pads"
+
+/obj/item/clothing/accessory/pads/sangheili/major
+	name = "\improper Sangheili Major shoulder pads"
+	icon_state = "sangpads_major"
+	item_state = "sangpads_major"
+
+/obj/item/clothing/accessory/pads/sangheili/ultra
+	name = "\improper Sangheili Ultra shoulder pads"
+	icon_state = "sangpads_ultra"
+	item_state = "sangpads_ultra"
+
+/obj/item/clothing/accessory/pads/sangheili/zealot
+	name = "\improper Sangheili Zealot shoulder pads"
+	icon_state = "sangpads_zealot"
+	item_state = "sangpads_zealot"

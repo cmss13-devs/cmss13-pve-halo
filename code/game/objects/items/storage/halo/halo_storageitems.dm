@@ -222,7 +222,7 @@
 
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
-	desc = "A modular attachment for a warrior's combat harness that accepts several hard case blister units for personal storage, and to holster weaponry. Thanks to advancements in smart-materials, the belt is theoretically a true "one size fits all" design."
+	desc = "A modular attachment for a warrior's combat harness that accepts several hard case blister units for personal storage, and to holster weaponry. Thanks to advancements in smart-materials, the belt is theoretically a true 'one size fits all' design."
 	icon_state = "sangbelt_minor"
 	item_state = "sangbelt_minor"
 	item_icons = list(
@@ -231,3 +231,18 @@
 
 /obj/item/storage/belt/marine/covenant/sangheili/minor
 	name = "\improper Sangheili Minor ammunition belt"
+
+/obj/item/storage/belt/marine/covenant/sangheili/major
+	name = "\improper Sangheili Major ammunition belt"
+	icon_state = "sangbelt_major"
+	item_state = "sangbelt_major"
+
+/obj/item/storage/belt/marine/covenant/sangheili/ultra
+	name = "\improper Sangheili Ultra ammunition belt"
+	icon_state = "sangbelt_ultra"
+	item_state = "sangbelt_ultra"
+
+/obj/item/storage/belt/marine/covenant/sangheili/zealot
+	name = "\improper Sangheili Zealot ammunition belt"
+	icon_state = "sangbelt_zealot"
+	item_state = "sangbelt_zealot"
