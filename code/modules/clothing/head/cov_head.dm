@@ -1,6 +1,6 @@
 /obj/item/clothing/head/helmet/marine/sangheili
 	name = "\improper Sangheili helmet"
-	desc = "  A nanolaminate helmet inspired by ancient Sangheili armours of the Pre-Covenant, having not changed its design in fifty generations. Fitted with comprehensive communications and smart-link systems allowing the wearer to maintain both control of their levies and fine operation of their weapons."
+	desc = "A nanolaminate helmet inspired by ancient Sangheili armours of the Pre-Covenant, having not changed its design in fifty generations. Fitted with comprehensive communications and smart-link systems allowing the wearer to maintain both control of their levies and fine operation of their weapons."
 	icon = 'icons/halo/obj/items/clothing/covenant/helmets.dmi'
 	icon_state = "sanghelmet_minor"
 	item_state = "sanghelmet_minor"
