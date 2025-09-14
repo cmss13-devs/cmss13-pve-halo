@@ -245,6 +245,7 @@
 	caliber = "7.62x51mm"
 
 
+	fire_sound = null
 	fire_sounds = list('sound/weapons/halo/gun_m392_1.ogg', 'sound/weapons/halo/gun_m392_2.ogg', 'sound/weapons/halo/gun_m392_3.ogg')
 	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_br55_cocked.ogg'
