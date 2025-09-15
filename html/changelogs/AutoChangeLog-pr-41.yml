@@ -1,0 +1,6 @@
+author: "Verbs, Gentlefood, Chrome"
+delete-after: True
+changes:
+  - rscadd: "Added Sangheili Minor, Major, Ultra, Zealot armors"
+  - rscadd: "Added Sangheili Minor, Major, Ultra, and Zealot equipment presets."
+  - rscdel: "Removed Sangheili Quicktest preset"
