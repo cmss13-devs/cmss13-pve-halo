@@ -8,5 +8,5 @@
 	allowed_species_list = list(SPECIES_UNGGOY)
 
 	item_icons = list(
-		WEAR_FACE = 'icons/halo/mob/humans/onmob/unggoy/mask.dmi'
+		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/unggoy/mask.dmi'
 	)
