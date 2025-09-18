@@ -223,6 +223,7 @@
 	desc = "An advanced plasma rifle belonging to the Covenant military. It fires bolts of superheated plasma using its internal supply."
 	icon_state = "plasma_rifle"
 
+	heat_per_shot = 3
 	charge_cost = 10
 	ammo = /datum/ammo/energy/plasma/plasma_rifle
 	has_heat_overlay = TRUE
@@ -237,9 +238,43 @@
 	set_burst_amount(BURST_AMOUNT_TIER_2)
 	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_5
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_7
-	scatter_unwielded = SCATTER_AMOUNT_TIER_4
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_8
+	scatter_unwielded = SCATTER_AMOUNT_TIER_7
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
-	fa_scatter_peak = SCATTER_AMOUNT_TIER_4
+	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
+
+/obj/item/weapon/gun/smg/needler
+	name = "Eket'Vauh-pattern needler"
+	desc = " A automatic guided munitions launcher, firing charged Subanese crystals shaved from a central core. The Eket'Vauh pattern is produced on High Charity, within the Sacred Promissory's Assembly-Forges. A less common variant used by those given favour by the High Council, the purple-pink shards fired by this weapon ensure efficient judgement in a violent detonation."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
+	icon_state = "needler"
+	fire_sound = "gun_needler"
+	reload_sound = 'sound/weapons/halo/gun_needler_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_needler_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_needler_reload.ogg'
+	flags_gun_features = GUN_CAN_POINTBLANK
+	start_automatic = TRUE
+	empty_sound = null
+	current_mag = /obj/item/ammo_magazine/needler_crystal
+
+/obj/item/weapon/gun/smg/needler/unique_action(mob/user)
+	return
+
+/obj/item/weapon/gun/smg/needler/unload_chamber(mob/user)
+	return
+
+/obj/item/weapon/gun/smg/needler/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_amount(BURST_AMOUNT_TIER_3)
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_10
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_8
+	scatter_unwielded = SCATTER_AMOUNT_TIER_7
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2

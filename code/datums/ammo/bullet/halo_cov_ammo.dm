@@ -22,3 +22,18 @@
 	accurate_range = 14
 	max_range = 24
 	damage = 34
+
+/datum/ammo/needler
+	name = "needle"
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	icon_state = "needle"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 26
+	penetration = ARMOR_PENETRATION_TIER_3
+	accurate_range = 16
+	accuracy = HIT_ACCURACY_TIER_MAX
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = AMMO_SPEED_TIER_3
+	effective_range_max = 7
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 24
