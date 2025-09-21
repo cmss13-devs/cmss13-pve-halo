@@ -245,7 +245,7 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
 
-/obj/item/weapon/gun/smg/needler
+/obj/item/weapon/gun/smg/covenant_needler
 	name = "Eket'Vauh-pattern needler"
 	desc = " A automatic guided munitions launcher, firing charged Subanese crystals shaved from a central core. The Eket'Vauh pattern is produced on High Charity, within the Sacred Promissory's Assembly-Forges. A less common variant used by those given favour by the High Council, the purple-pink shards fired by this weapon ensure efficient judgement in a violent detonation."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
@@ -259,13 +259,13 @@
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
 
-/obj/item/weapon/gun/smg/needler/unique_action(mob/user)
+/obj/item/weapon/gun/smg/covenant_needler/unique_action(mob/user)
 	return
 
-/obj/item/weapon/gun/smg/needler/unload_chamber(mob/user)
+/obj/item/weapon/gun/smg/covenant_needler/unload_chamber(mob/user)
 	return
 
-/obj/item/weapon/gun/smg/needler/set_gun_config_values()
+/obj/item/weapon/gun/smg/covenant_needler/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_SMG)
 	set_burst_delay(FIRE_DELAY_TIER_SMG)
@@ -278,3 +278,71 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
+
+/obj/item/weapon/gun/smg/covenant_needler/cock(mob/user)
+	if(flags_gun_features & (GUN_BURST_FIRING|GUN_UNUSUAL_DESIGN|GUN_INTERNAL_MAG))
+		return
+
+	cock_gun(user)
+	ready_in_chamber()
+
+/obj/item/weapon/gun/smg/covenant_needler/unload(mob/user, reload_override = 0, drop_override = 0, loc_override = 0) //Override for reloading mags after shooting, so it doesn't interrupt burst. Drop is for dropping the magazine on the ground.
+	if(!reload_override && (flags_gun_features & (GUN_BURST_FIRING|GUN_UNUSUAL_DESIGN|GUN_INTERNAL_MAG)))
+		return
+
+	if(!current_mag || QDELETED(current_mag) || (current_mag.loc != src && !loc_override))
+		current_mag = null
+		update_icon()
+		return
+
+	if(drop_override || !user) //If we want to drop it on the ground or there's no user.
+		current_mag.forceMove(get_turf(src))//Drop it on the ground.
+	else
+		user.put_in_hands(current_mag)
+
+	playsound(user, unload_sound, 25, 1, 5)
+	user.visible_message(SPAN_NOTICE("[user] unloads [current_mag] from [src]."),
+	SPAN_NOTICE("You unload [current_mag] from [src]."), null, 4, CHAT_TYPE_COMBAT_ACTION)
+	current_mag.update_icon()
+	current_mag = null
+
+	update_icon()
+
+/obj/item/weapon/gun/rifle/covenant_carbine
+	name = "Vostu-pattern carbine"
+	desc = "The Vostu-pattern carbine serves as one of the Covenant's primary medium to long-range weapons."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
+	icon_state = "carbine"
+	fire_sound = "gun_carbine"
+	reload_sound = 'sound/weapons/halo/gun_carbine_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/gun_carbine_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/gun_carbine_unload.ogg'
+	empty_sound = 'sound/weapons/halo/gun_carbine_dryfire.ogg'
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AUTO_EJECTOR|GUN_AMMO_COUNTER
+	current_mag = /obj/item/ammo_magazine/carbine
+	map_specific_decoration = FALSE
+	attachable_allowed = list(/obj/item/attachable/carbine_muzzle)
+
+/obj/item/weapon/gun/rifle/covenant_carbine/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 22, "rail_y" = 20, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/covenant_carbine/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/carbine_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/rifle/covenant_carbine/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_7)
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4
+	fa_scatter_peak = 16
+	fa_max_scatter = 2
+
+
