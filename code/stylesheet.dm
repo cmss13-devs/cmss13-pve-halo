@@ -163,4 +163,7 @@ h1.alert, h2.alert {color: #000000;}
 .retro_translator {font-weight: bold;}
 .yautja_translator {color: #aa0000; font-weight: bold;}
 
+.sangheili {color: #642294;}
+.unggoy {color: #26d9dc;}
+
 </style>"}

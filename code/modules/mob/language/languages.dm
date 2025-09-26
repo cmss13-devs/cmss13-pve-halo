@@ -248,3 +248,29 @@
 	color = "tajaran"
 	key = "8"
 	flags = RESTRICTED|HIVEMIND
+
+// halo languages
+
+/datum/language/sangheili
+	name = LANGUAGE_SANGHEILI
+	desc = "An ancient language utilized by the sangheili, though finds itself in common use by all members of the Covenant."
+	speech_verb = "speaks"
+	ask_verb = "queries"
+	exclaim_verb = "shouts"
+	color = "sangheili"
+	key = "n"
+
+	syllables = list("aul","äasa","ra","aray","a'rae","boo","bee","hu","bah","chr","ch'ee","chkt","wort","noh","dah","dha","d'jha","ee","ea","eu","ha","hlan","hog","ay","ee","fah","ghi","gho","gh'e","ie","h'ia","j'ho","r'in","dz","dz'ho","kha","kh'o","kho","khr","km","lo","luh","ln","o'ui","ou","oo","ou","pk","pk'ie","qa","qo","qum","rho","rhoa","r'yal","sho","so'am","su'am","tu","ta","te","uom","ua","uo","uo'am","vah","v'ra","worb","wort","wo'am","cks","xa","yo","ya'u","zo","qom","q'oam")
+	space_chance = 30
+
+/datum/language/unggoy
+	name = LANGUAGE_UNGGOY
+	desc = "Although since their indoctrination into the Covennat has put the use of the Unggoy language among the general population into decline, it is still frequently utilized by the Unggoy who wish for more private conversation."
+	speech_verb = "barks"
+	ask_verb = "questions"
+	exclaim_verb = "yells"
+	color = "unggoy"
+	key = "u"
+
+	syllables = list("wrab","gub","zub","graf","wraf","grub","wr","af","ah","wa","snr","ne","uh")
+	space_chance = 40

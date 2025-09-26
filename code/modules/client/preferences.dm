@@ -108,6 +108,9 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 	var/affiliation = "Unaligned"
 	//SEA specific preferences
 
+	// halo specific prefs
+	var/sang_skin_color = "1"
+
 	///holds our preferred job options for jobs
 	var/list/pref_special_job_options = list()
 	///Holds assignment of character slots to jobs.

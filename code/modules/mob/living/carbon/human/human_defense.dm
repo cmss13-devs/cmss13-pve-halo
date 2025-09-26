@@ -93,6 +93,15 @@ Contains most of the procs that are called when a mob is attacked by something
 				return TRUE
 	return FALSE
 
+/mob/living/carbon/human/proc/check_energy_shield(damage = 0, attack_text = "the attack")
+	if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
+		var/obj/item/clothing/suit/marine/shielded/shield = wear_suit
+		if(shield.shield_strength)
+			shield.take_damage(damage)
+			src.visible_message(SPAN_NOTICE("[src]s energy shield shimmers from [attack_text]."), SPAN_DANGER("Your energy shield shimmers from [attack_text]!"))
+			return TRUE
+
+
 /mob/living/carbon/human/proc/check_shields(damage = 0, attack_text = "the attack", combistick=0)
 	if(l_hand && istype(l_hand, /obj/item/weapon))//Current base is the prob(50-d/3)
 		if(combistick && istype(l_hand,/obj/item/weapon/yautja/combistick) && prob(66))
@@ -183,6 +192,10 @@ Contains most of the procs that are called when a mob is attacked by something
 		visible_message(SPAN_DANGER("[user] misses [src] with \the [I]!"), null, null, 5)
 		return FALSE
 
+	if(prob(dodge_pool * 1.2))
+		visible_message(SPAN_DANGER("[user] misses [src] with \the [I]!"), SPAN_DANGER("[user] barely misses you with the [I]!"))
+		return FALSE
+
 	var/obj/limb/affecting = get_limb(target_zone)
 	if (!affecting)
 		return FALSE
@@ -192,6 +205,9 @@ Contains most of the procs that are called when a mob is attacked by something
 	var/hit_area = affecting.display_name
 
 	if((user != src) && check_shields(I.force, "the [I.name]"))
+		return FALSE
+
+	if(check_energy_shield(damage = I.force, attack_text = "the [I.name]"))
 		return FALSE
 
 	if(LAZYLEN(I.attack_verb))
@@ -301,6 +317,9 @@ Contains most of the procs that are called when a mob is attacked by something
 
 	if ((LM.thrower != src) && check_shields(impact_damage, "[O]"))
 		return
+
+	if ((LM.thrower != src) && check_energy_shield(damage = impact_damage, attack_text = "[O]"))
+		return FALSE
 
 	var/obj/limb/affecting = get_limb(zone)
 	var/hit_area = affecting.display_name

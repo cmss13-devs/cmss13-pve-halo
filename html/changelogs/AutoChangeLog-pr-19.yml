@@ -1,0 +1,6 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - code_imp: "Framework for plasma weapons."
+  - rscadd: "Plasma pistol basis."
+  - rscadd: "Recharger station (covenant)"
