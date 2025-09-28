@@ -1,16 +1,17 @@
-"a" = (/turf/closed/wall/unsc/reinforced/hull,/area/space)
-"g" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/light/double/blue,/turf/open/floor/almayer/edge/smooth/southwest,/area/space)
-"t" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/northwest,/area/space)
-"C" = (/turf/open/floor/almayer/pod_landing_floor,/area/space)
-"D" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/space)
-"J" = (/turf/open/floor/almayer/edge/smooth/corner/east,/area/space)
-"L" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/space)
-"N" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/turf/open/floor/almayer/edge/smooth/north,/area/space)
-"S" = (/obj/structure/machinery/door/airlock/multi_tile/unsc/prop{dir = 1},/turf/open/floor/almayer/pod_landing_floor,/area/space)
-"U" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/light/double/blue,/turf/open/floor/almayer/edge/smooth/southeast,/area/space)
-"V" = (/turf/open/floor/almayer/edge/smooth/corner/north,/area/space)
-"X" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call/trijent{shuttleId = "ice_classic_shuttle2"; dockId = "ice_dorm_lower"; dir = 8; pixel_y = 32; pixel_x = 08},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/northeast,/area/space)
-"Y" = (/turf/open/floor/plating/plating_catwalk,/area/space)
+"a" = (/turf/closed/wall/unsc/reinforced/hull,/area/mackay_station/elevator/fire_control)
+"g" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/light/double/blue,/turf/open/floor/almayer/edge/smooth/southwest,/area/mackay_station/elevator/fire_control)
+"t" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/northwest,/area/mackay_station/elevator/fire_control)
+"C" = (/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/fire_control)
+"D" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/mackay_station/elevator/fire_control)
+"J" = (/turf/open/floor/almayer/edge/smooth/corner/east,/area/mackay_station/elevator/fire_control)
+"K" = (/obj/docking_port/mobile/fire_control,/turf/closed/wall/unsc/reinforced/hull,/area/mackay_station/elevator/fire_control)
+"L" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/fire_control)
+"N" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/structure/machinery/computer/shuttle/elevator_controller{pixel_x = 3; pixel_y = 34},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/fire_control)
+"S" = (/obj/structure/machinery/door/airlock/multi_tile/unsc/prop{dir = 1},/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/fire_control)
+"U" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/light/double/blue,/turf/open/floor/almayer/edge/smooth/southeast,/area/mackay_station/elevator/fire_control)
+"V" = (/turf/open/floor/almayer/edge/smooth/corner/north,/area/mackay_station/elevator/fire_control)
+"X" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/northeast,/area/mackay_station/elevator/fire_control)
+"Y" = (/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/fire_control)
 
 (1,1,1) = {"
 aaaaa
@@ -18,5 +19,5 @@ atNXa
 aDYVC
 aDYJS
 agLUa
-aaaaa
+Kaaaa
 "}

@@ -102,7 +102,7 @@
 	id = STAT_STATION_OCCUPIED
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/map_template/shuttle/mackay_station_tram
+	roundstart_template = /datum/map_template/shuttle/mackay_station_golf
 
 /obj/docking_port/stationary/station_tram_golf/empty
 	name = "empty"
@@ -116,7 +116,7 @@
 	airlock_area = /area/mackay_station/elevator/tram_golf
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/map_template/shuttle/mackay_station_tram
+	roundstart_template = /datum/map_template/shuttle/mackay_station_golf
 
 /obj/docking_port/stationary/station_tram_golf/exit
 	name = "Golf Exit"
@@ -211,7 +211,7 @@
 	id = STAT_STATION_OCCUPIED
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/map_template/shuttle/mackay_station_tram
+	roundstart_template = /datum/map_template/shuttle/mackay_station_romeo
 
 /obj/docking_port/stationary/station_tram_romeo/empty
 	name = "empty"
@@ -225,7 +225,7 @@
 	airlock_area = /area/mackay_station/elevator/tram_romeo
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/map_template/shuttle/mackay_station_tram
+	roundstart_template = /datum/map_template/shuttle/mackay_station_romeo
 
 /obj/docking_port/stationary/station_tram_romeo/exit
 	name = "Romeo Exit"
@@ -320,7 +320,7 @@
 	id = STAT_STATION_OCCUPIED
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/map_template/shuttle/mackay_station_tram
+	roundstart_template = /datum/map_template/shuttle/mackay_station_bravo
 
 /obj/docking_port/stationary/station_tram_bravo/empty
 	name = "empty"
@@ -334,7 +334,7 @@
 	airlock_area = /area/mackay_station/elevator/tram_bravo
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/map_template/shuttle/mackay_station_tram
+	roundstart_template = /datum/map_template/shuttle/mackay_station_bravo
 
 /obj/docking_port/stationary/station_tram_bravo/exit
 	name = "Bravo Exit"
