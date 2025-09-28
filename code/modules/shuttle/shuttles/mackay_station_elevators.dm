@@ -101,7 +101,7 @@
 	name = "Golf Exit"
 	id=STAT_STATION_SECTOR_GOLF_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_golf/exit
-	airlock_exit = "south"
+	airlock_exit = "north"
 
 /obj/docking_port/mobile/station_tram_romeo
 	name="Tram Romeo"
@@ -311,7 +311,7 @@
 	name = "Bravo Exit"
 	id=STAT_STATION_SECTOR_BRAVO_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_bravo/exit
-	airlock_exit = "south"
+	airlock_exit = "north"
 
 /obj/docking_port/mobile/fire_control
 	name="Fire Control Elevator"
@@ -481,13 +481,6 @@
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/hangar))
 		var/obj/docking_port/mobile/hangar/elevator = arriving_shuttle
 		elevator.door_control.control_doors("open", airlock_exit)
-
-	// open dock doors
-	var/datum/door_controller/single/door_control = new()
-	door_control.doors = get_doors()
-	door_control.control_doors("unlock", FALSE, TRUE)
-	door_control.control_doors("open", FALSE, TRUE)
-	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
 	playsound(arriving_shuttle, 'sound/machines/ping.ogg', 25, 1)
