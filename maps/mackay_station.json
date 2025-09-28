@@ -1,0 +1,7 @@
+{
+    "map_name": "Mackay Station",
+    "map_path": "map_files/Mackay_Station",
+    "map_file": "Mackay_Station.dmm",
+    "webmap_url": "MackayStation",
+    "map_item_type": "/obj/item/map/mackay_station"
+}
