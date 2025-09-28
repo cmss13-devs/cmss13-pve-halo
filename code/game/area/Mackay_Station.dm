@@ -96,11 +96,17 @@
 /area/mackay_station/elevator/fire_control
 	name = "\improper Fire Control Elevator"
 
+/area/mackay_station/elevator/fire_control/entry
+	name = "\improper Fire Control Elevator Entry"
+
 /area/mackay_station/elevator/fire_control/exit
 	name = "\improper Fire Control Elevator Exit"
 
 /area/mackay_station/elevator/hangar
 	name = "\improper Hangar Elevator"
+
+/area/mackay_station/elevator/hangar/entry
+	name = "\improper Hangar Elevator Entry"
 
 /area/mackay_station/elevator/hangar/exit
 	name = "\improper Hangar Elevator Exit"
@@ -108,17 +114,26 @@
 /area/mackay_station/elevator/tram_golf
 	name = "\improper Sector Golf Tram"
 
+/area/mackay_station/elevator/tram_golf/entry
+	name = "\improper Sector Golf Tram Entry"
+
 /area/mackay_station/elevator/tram_golf/exit
 	name = "\improper Sector Golf Tram Exit"
 
 /area/mackay_station/elevator/tram_romeo
 	name = "\improper Sector Romeo Tram"
 
+/area/mackay_station/elevator/tram_romeo/entry
+	name = "\improper Sector Romeo Tram Entry"
+
 /area/mackay_station/elevator/tram_romeo/exit
 	name = "\improper Sector Romeo Tram Exit"
 
 /area/mackay_station/elevator/tram_bravo/
 	name = "\improper Sector Bravo Tram"
+
+/area/mackay_station/elevator/tram_bravo/entry
+	name = "\improper Sector Bravo Tram Entry"
 
 /area/mackay_station/elevator/tram_bravo/exit
 	name = "\improper Sector Bravo Tram Exit"

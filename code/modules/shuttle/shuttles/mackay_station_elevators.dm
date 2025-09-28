@@ -82,21 +82,18 @@
 /obj/docking_port/stationary/station_tram_golf/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "south"
 	airlock_exit = "north"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/golf
 
 /obj/docking_port/stationary/station_tram_golf/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "south"
 	airlock_exit = "north"
 
 /obj/docking_port/stationary/station_tram_golf/arrival
 	name = "Golf Arrival"
 	id=STAT_STATION_SECTOR_GOLF
 	airlock_area = /area/mackay_station/elevator/tram_golf
-	airlock_exit = "south"
 	airlock_exit = "north"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/golf
 
@@ -105,7 +102,6 @@
 	id=STAT_STATION_SECTOR_GOLF_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_golf/exit
 	airlock_exit = "south"
-	airlock_exit = "north"
 
 /obj/docking_port/mobile/station_tram_romeo
 	name="Tram Romeo"
@@ -192,21 +188,18 @@
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
 	airlock_exit = "south"
-	airlock_exit = "north"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/romeo
 
 /obj/docking_port/stationary/station_tram_romeo/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
 	airlock_exit = "south"
-	airlock_exit = "north"
 
 /obj/docking_port/stationary/station_tram_romeo/arrival
 	name = "Romeo Arrival"
 	id=STAT_STATION_SECTOR_ROMEO
 	airlock_area = /area/mackay_station/elevator/tram_romeo
 	airlock_exit = "south"
-	airlock_exit = "north"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/romeo
 
 /obj/docking_port/stationary/station_tram_romeo/exit
@@ -214,7 +207,6 @@
 	id=STAT_STATION_SECTOR_ROMEO_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_romeo/exit
 	airlock_exit = "south"
-	airlock_exit = "north"
 
 /obj/docking_port/mobile/station_tram_bravo
 	name="Tram Bravo"
@@ -300,21 +292,18 @@
 /obj/docking_port/stationary/station_tram_bravo/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "south"
 	airlock_exit = "north"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/bravo
 
 /obj/docking_port/stationary/station_tram_bravo/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "south"
 	airlock_exit = "north"
 
 /obj/docking_port/stationary/station_tram_bravo/arrival
 	name = "Bravo Arrival"
 	id=STAT_STATION_SECTOR_BRAVO
 	airlock_area = /area/mackay_station/elevator/tram_bravo
-	airlock_exit = "south"
 	airlock_exit = "north"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/bravo
 
@@ -323,7 +312,6 @@
 	id=STAT_STATION_SECTOR_BRAVO_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_bravo/exit
 	airlock_exit = "south"
-	airlock_exit = "north"
 
 /obj/docking_port/mobile/fire_control
 	name="Fire Control Elevator"
@@ -515,28 +503,24 @@
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
 	airlock_exit = "north"
-	airlock_exit = "south"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/hangar
 
 /obj/docking_port/stationary/hangar/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
 	airlock_exit = "north"
-	airlock_exit = "south"
 
 /obj/docking_port/stationary/hangar/arrival
 	name = "Hangar Arrival"
 	id=STAT_STATION_HANGAR
 	airlock_area = /area/mackay_station/elevator/hangar
 	airlock_exit = "north"
-	airlock_exit = "south"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/hangar
 
 /obj/docking_port/stationary/hangar/exit
 	name = "Hangar Exit"
 	id=STAT_STATION_HANGAR_EXIT
 	airlock_area = /area/mackay_station/elevator/hangar/exit
-	airlock_exit = "north"
 	airlock_exit = "south"
 
 /datum/map_template/shuttle/mackay_station/golf/post_load(obj/docking_port/mobile/M)
@@ -545,11 +529,17 @@
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
+/area/mackay_station/elevator/tram_golf/entry
+/area/mackay_station/elevator/tram_golf/exit
+
 /datum/map_template/shuttle/mackay_station/romeo/post_load(obj/docking_port/mobile/M)
 	. = ..()
 	var/datum/map_template/shuttle/mackay_station/romeo/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
+
+/area/mackay_station/elevator/tram_romeo/entry
+/area/mackay_station/elevator/tram_romeo/exit
 
 /datum/map_template/shuttle/mackay_station/bravo/post_load(obj/docking_port/mobile/M)
 	. = ..()
@@ -557,17 +547,26 @@
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
+/area/mackay_station/elevator/tram_bravo/entry
+/area/mackay_station/elevator/tram_bravo/exit
+
 /datum/map_template/shuttle/mackay_station/fire_control/post_load(obj/docking_port/mobile/M)
 	. = ..()
 	var/datum/map_template/shuttle/mackay_station/fire_control/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
+/area/mackay_station/elevator/fire_control/entry
+/area/mackay_station/elevator/fire_control/exit
+
 /datum/map_template/shuttle/mackay_station/hangar/post_load(obj/docking_port/mobile/M)
 	. = ..()
 	var/datum/map_template/shuttle/mackay_station/hangar/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
+
+/area/mackay_station/elevator/hangar/entry
+/area/mackay_station/elevator/hangar/exit
 
 /obj/structure/machinery/computer/shuttle/elevator_controller/station_tram_golf/get_landing_zones()
 	. = list()

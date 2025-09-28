@@ -29,7 +29,7 @@
 "D" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/mackay_station/elevator/hangar)
 "E" = (/obj/structure/platform_decoration{dir = 8},/obj/structure/platform_decoration,/turf/open/shuttle/escapepod{dir = 1},/area/mackay_station/elevator/hangar)
 "F" = (/obj/structure/platform_decoration{dir = 8},/turf/open/floor/almayer/edge/smooth/southeast,/area/mackay_station/elevator/hangar)
-"G" = (/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile,/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/hangar)
+"G" = (/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile{id = ""},/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/hangar)
 "H" = (/obj/structure/barricade/handrail{dir = 1},/obj/structure/barricade/handrail{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
 "I" = (/turf/open/shuttle/escapepod{dir = 8},/area/mackay_station/elevator/hangar)
 "J" = (/obj/structure/platform{dir = 1},/obj/structure/platform_decoration,/turf/open/floor/almayer/edge/smooth/northeast,/area/mackay_station/elevator/hangar)
@@ -46,7 +46,7 @@
 "V" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/structure/machinery/light/double/blue{dir = 8},/turf/open/floor/almayer/edge/smooth/west,/area/mackay_station/elevator/hangar)
 "W" = (/obj/docking_port/mobile/hangar,/turf/closed/wall/unsc/reinforced/hull,/area/mackay_station/elevator/hangar)
 "X" = (/obj/structure/barricade/handrail{dir = 8},/obj/structure/barricade/handrail{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
-"Y" = (/obj/structure/surface/table/reinforced/almayer_B,/obj/structure/machinery/computer/shuttle/elevator_controller{pixel_x = 3; pixel_y = 12},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
+"Y" = (/obj/structure/surface/table/reinforced/almayer_B,/obj/structure/machinery/computer/shuttle/elevator_controller/hangar{pixel_x = 3; pixel_y = 12},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
 "Z" = (/obj/structure/platform{dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/hangar)
 
 (1,1,1) = {"
