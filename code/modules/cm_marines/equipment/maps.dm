@@ -150,6 +150,12 @@
 	html_link = ""
 	color = "white"
 
+/obj/item/map/mackay_station
+	name = "\improper Station Map"
+	desc = "A labeled blueprint of OWP Mackay Station."
+	html_link = ""
+	color = "white"
+
 GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 
 /proc/setup_all_maps()
