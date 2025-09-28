@@ -93,33 +93,33 @@
 	unlimited_power = TRUE
 	requires_power = FALSE
 
-/area/mackay_station/elevator/firecontrol
+/area/mackay_station/elevator/fire_control
 	name = "\improper Fire Control Elevator"
 
-/area/mackay_station/elevator/firecontrol/upper
-	name = "\improper Fire Control Elevator Upper"
+/area/mackay_station/elevator/fire_control/exit
+	name = "\improper Fire Control Elevator Exit"
 
 /area/mackay_station/elevator/hangar
 	name = "\improper Hangar Elevator"
 
-/area/mackay_station/elevator/hangar/upper
-	name = "\improper Hangar Elevator Upper"
+/area/mackay_station/elevator/hangar/exit
+	name = "\improper Hangar Elevator Exit"
 
-/area/mackay_station/elevator/greentram
+/area/mackay_station/elevator/tram_golf
 	name = "\improper Sector Golf Tram"
 
-/area/mackay_station/elevator/greentram/upper
-	name = "\improper Sector Golf Tram Upper"
+/area/mackay_station/elevator/tram_golf/exit
+	name = "\improper Sector Golf Tram Exit"
 
-/area/mackay_station/elevator/redtram
+/area/mackay_station/elevator/tram_romeo
 	name = "\improper Sector Romeo Tram"
 
-/area/mackay_station/elevator/redtram/upper
-	name = "\improper Sector Romeo Tram Upper"
+/area/mackay_station/elevator/tram_romeo/exit
+	name = "\improper Sector Romeo Tram Exit"
 
-/area/mackay_station/elevator/bluetram
+/area/mackay_station/elevator/tram_bravo/
 	name = "\improper Sector Bravo Tram"
 
-/area/mackay_station/elevator/bluetram/upper
-	name = "\improper Sector Bravo Tram Upper"
+/area/mackay_station/elevator/tram_bravo/exit
+	name = "\improper Sector Bravo Tram Exit"
 

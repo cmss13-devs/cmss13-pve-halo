@@ -2450,6 +2450,7 @@
 #include "code\modules\shuttle\shuttles\ert.dm"
 #include "code\modules\shuttle\shuttles\shipmap_elevator.dm"
 #include "code\modules\shuttle\shuttles\trijent_elevator.dm"
+#include "code\modules\shuttle\shuttles\mackay_station_elevators.dm"
 #include "code\modules\shuttle\shuttles\crashable\crashable.dm"
 #include "code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
 #include "code\modules\shuttle\shuttles\crashable\lifeboats.dm"

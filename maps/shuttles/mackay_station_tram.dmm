@@ -1,0 +1,18 @@
+"a" = (/obj/structure/shuttle/window,/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,/area/space)
+"k" = (/turf/closed/shuttle/transit/horizontal,/area/space)
+"m" = (/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,/area/space)
+"s" = (/obj/structure/bed/sofa/vert/grey/top,/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call/trijent{shuttleId = "ice_classic_shuttle2"; dockId = "ice_dorm_lower"; dir = 8; pixel_y = 32; pixel_x = 08},/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,/area/space)
+"z" = (/turf/closed/shuttle/transit/tr_corner,/area/space)
+"D" = (/obj/structure/bed/sofa/vert/grey/top,/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,/area/space)
+"F" = (/turf/closed/shuttle/transit/bl_corner,/area/space)
+"J" = (/obj/structure/machinery/door/airlock/multi_tile/almayer/generic2/glass,/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,/area/space)
+"L" = (/turf/closed/shuttle/transit/tl_corner,/area/space)
+"P" = (/turf/closed/shuttle/transit/br_corner,/area/space)
+"Y" = (/obj/structure/bed/sofa/vert/grey/bot,/turf/open/shuttle/dropship/medium_grey_single_wide_left_to_right,/area/space)
+
+(1,1,1) = {"
+LkJmaz
+asmmDa
+aYmmYa
+FaJmaP
+"}

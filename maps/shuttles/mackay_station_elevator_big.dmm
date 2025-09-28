@@ -1,0 +1,64 @@
+"a" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/space)
+"b" = (/obj/structure/platform,/turf/open/shuttle/escapepod{dir = 4},/area/space)
+"c" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/southwest,/area/space)
+"d" = (/turf/open/shuttle/escapepod/floor0{dir = 1},/area/space)
+"e" = (/obj/structure/barricade/handrail{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/space)
+"f" = (/obj/structure/platform_decoration{dir = 8},/turf/open/shuttle/escapepod{dir = 1},/area/space)
+"g" = (/obj/structure/barricade/handrail,/turf/open/floor/plating/plating_catwalk,/area/space)
+"h" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/structure/machinery/light/double/blue{dir = 4},/turf/open/floor/almayer/edge/smooth/east,/area/space)
+"i" = (/obj/structure/platform{dir = 4},/turf/open/floor/almayer/edge/smooth/east,/area/space)
+"j" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/southeast,/area/space)
+"k" = (/obj/structure/platform_decoration,/turf/open/shuttle/escapepod/floor0{dir = 4},/area/space)
+"l" = (/obj/structure/platform{dir = 4},/turf/open/shuttle/escapepod{dir = 1},/area/space)
+"m" = (/obj/structure/barricade/handrail{dir = 1},/turf/open/floor/plating/plating_catwalk,/area/space)
+"n" = (/obj/structure/barricade/handrail{dir = 4},/obj/structure/barricade/handrail{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/space)
+"o" = (/obj/structure/stairs,/turf/open/floor/almayer/plate,/area/space)
+"p" = (/obj/structure/platform{dir = 8},/turf/open/floor/almayer/edge/smooth/west,/area/space)
+"q" = (/obj/structure/platform{dir = 8},/turf/open/shuttle/escapepod,/area/space)
+"r" = (/obj/structure/platform{dir = 1},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/space)
+"s" = (/turf/open/shuttle/escapepod/floor0{dir = 8},/area/space)
+"t" = (/obj/structure/platform_decoration{dir = 4},/turf/open/shuttle/escapepod,/area/space)
+"u" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/northeast,/area/space)
+"v" = (/obj/structure/platform_decoration{dir = 4},/turf/open/floor/almayer/edge/smooth/southwest,/area/space)
+"w" = (/obj/structure/barricade/handrail{dir = 1},/obj/structure/barricade/handrail{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/space)
+"x" = (/obj/structure/platform_decoration{dir = 1},/turf/open/shuttle/escapepod/floor0,/area/space)
+"y" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/northwest,/area/space)
+"z" = (/obj/structure/platform_decoration{dir = 4},/obj/structure/platform_decoration{dir = 1},/turf/open/shuttle/escapepod,/area/space)
+"B" = (/obj/structure/barricade/handrail{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/space)
+"C" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/light/double/blue,/turf/open/floor/almayer/edge/smooth,/area/space)
+"D" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/space)
+"E" = (/obj/structure/platform_decoration{dir = 8},/obj/structure/platform_decoration,/turf/open/shuttle/escapepod{dir = 1},/area/space)
+"F" = (/obj/structure/platform_decoration{dir = 8},/turf/open/floor/almayer/edge/smooth/southeast,/area/space)
+"G" = (/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile,/turf/open/floor/almayer/pod_landing_floor,/area/space)
+"H" = (/obj/structure/barricade/handrail{dir = 1},/obj/structure/barricade/handrail{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/space)
+"I" = (/turf/open/shuttle/escapepod{dir = 8},/area/space)
+"J" = (/obj/structure/platform{dir = 1},/obj/structure/platform_decoration,/turf/open/floor/almayer/edge/smooth/northeast,/area/space)
+"K" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/space)
+"L" = (/turf/open/floor/almayer/edge/smooth,/area/space)
+"M" = (/turf/open/floor/almayer/pod_landing_floor,/area/space)
+"N" = (/turf/open/floor/almayer/research,/area/space)
+"O" = (/obj/structure/platform{dir = 1},/obj/structure/platform_decoration{dir = 1},/turf/open/floor/almayer/edge/smooth/northwest,/area/space)
+"P" = (/turf/closed/wall/unsc/reinforced/hull,/area/space)
+"Q" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/space)
+"R" = (/obj/structure/platform,/obj/structure/machinery/light/double/blue,/turf/open/shuttle/escapepod{dir = 4},/area/space)
+"S" = (/turf/open/floor/plating/plating_catwalk,/area/space)
+"T" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/turf/open/floor/almayer/edge/smooth/north,/area/space)
+"V" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/structure/machinery/light/double/blue{dir = 8},/turf/open/floor/almayer/edge/smooth/west,/area/space)
+"X" = (/obj/structure/barricade/handrail{dir = 8},/obj/structure/barricade/handrail{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/space)
+"Y" = (/obj/structure/barricade/handrail{dir = 1},/obj/structure/machinery/computer/shuttle/elevator_controller/railing,/turf/open/floor/plating/plating_catwalk,/area/space)
+"Z" = (/obj/structure/platform{dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/space)
+
+(1,1,1) = {"
+PPPPGMMMMPPPP
+PyTKTTTTTKTuP
+PakbbRbRbbxDP
+PVlHmmYmmwqhP
+PalBSSSSSeqDP
+PalBgggggeqDP
+PaEoOrZrJozDP
+PVlXpNNNinqhP
+PafovLLLFotDP
+PadIIIIIIIsDP
+PcQCQQQQQCQjP
+PPPPGMMMMPPPP
+"}
