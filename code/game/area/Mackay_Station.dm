@@ -36,42 +36,42 @@
 /area/mackay_station/golf
 	minimap_color = MINIMAP_AREA_MEDBAY
 
-/area/mackay_station/greentram
+/area/mackay_station/golf/greentram
 	name = "\improper Green Tram Station"
 	icon_state = "lifeboat"
 
-/area/mackay_station/greenmedical
+/area/mackay_station/golf/greenmedical
 	name = "\improper Green Medical"
 	icon_state = "medical"
 
-/area/mackay_station/greenquarters1
+/area/mackay_station/golf/greenquarters1
 	name = "\improper Green Dorms 1"
 	icon_state = "gruntrnr"
 
-/area/mackay_station/greenquarters2
+/area/mackay_station/golf/greenquarters2
 	name = "\improper Green Dorms 2"
 	icon_state = "gruntrnr"
 
-/area/mackay_station/greenrec
+/area/mackay_station/golf/greenrec
 	name = "\improper Green Recreation"
 	icon_state = "food"
 
-/area/mackay_station/greenarmory
+/area/mackay_station/golf/greenarmory
 	name = "\improper Green Armory"
 	icon_state = "alpha"
 
 /area/mackay_station/bravo
 	minimap_color = MINIMAP_AREA_COMMAND
 
-/area/mackay_station/bluebridge
+/area/mackay_station/bravo/bluebridge
 	name = "\improper Blue Bridge"
 	icon_state = "briefing"
 
-/area/mackay_station/bluetram
+/area/mackay_station/bravo/bluetram
 	name = "\improper Blue Tram Station"
 	icon_state = "lifeboat"
 
-/area/mackay_station/blueengi
+/area/mackay_station/bravo/blueengi
 	name = "\improper Blue Engineering"
 	icon_state = "upperengineering"
 
