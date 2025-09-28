@@ -102,7 +102,7 @@
 	id = STAT_STATION_OCCUPIED
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/maps/shuttles/mackay_station_golf.dmm
+	roundstart_template = /datum/maps/shuttles/mackay_station_golf
 
 /obj/docking_port/stationary/station_tram_golf/empty
 	name = "empty"
@@ -116,7 +116,7 @@
 	airlock_area = /area/mackay_station/elevator/tram_golf
 	airlock_exit = "south"
 	airlock_exit = "north"
-	roundstart_template = /datum/maps/shuttles/mackay_station_golf.dmm
+	roundstart_template = /datum/maps/shuttles/mackay_station_golf
 
 /obj/docking_port/stationary/station_tram_golf/exit
 	name = "Golf Exit"
@@ -557,33 +557,33 @@
 	airlock_exit = "north"
 	airlock_exit = "south"
 
-/datum/map_template/shuttle/mackay_station_golf/post_load(obj/docking_port/mobile/M)
+/datum/maps/shuttles/mackay_station_golf/post_load(obj/docking_port/mobile/M)
 	. = ..()
-	var/datum/map_template/shuttle/mackay_station_golf/elev = M
+	var/datum/maps/shuttles/mackay_station_golf/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
-/datum/map_template/shuttle/mackay_station_romeo/post_load(obj/docking_port/mobile/M)
+/datum/maps/shuttles/mackay_station_romeo/post_load(obj/docking_port/mobile/M)
 	. = ..()
-	var/datum/map_template/shuttle/mackay_station_romeo/elev = M
+	var/datum/maps/shuttles/mackay_station_romeo/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
-/datum/map_template/shuttle/mackay_station_bravo/post_load(obj/docking_port/mobile/M)
+/datum/maps/shuttles/mackay_station_bravo/post_load(obj/docking_port/mobile/M)
 	. = ..()
-	var/datum/map_template/shuttle/mackay_station_bravo/elev = M
+	var/datum/maps/shuttles/mackay_station_bravo/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
-/datum/map_template/shuttle/mackay_station_elevator_small/post_load(obj/docking_port/mobile/M)
+/datum/maps/shuttles/mackay_station_elevator_small/post_load(obj/docking_port/mobile/M)
 	. = ..()
-	var/datum/map_template/shuttle/mackay_station_elevator_small/elev = M
+	var/datum/maps/shuttles/mackay_station_elevator_small/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
-/datum/map_template/shuttle/mackay_station_elevator_big/post_load(obj/docking_port/mobile/M)
+/datum/maps/shuttles/mackay_station_elevator_big/post_load(obj/docking_port/mobile/M)
 	. = ..()
-	var/datum/map_template/shuttle/mackay_station_elevator_big/elev = M
+	var/datum/maps/shuttles/mackay_station_elevator_big/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
