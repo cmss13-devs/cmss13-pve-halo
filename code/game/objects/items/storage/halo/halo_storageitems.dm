@@ -233,14 +233,14 @@
 		/obj/item/explosive/grenade,
 		/obj/item/explosive/mine,
 		/obj/item/reagent_container/food/snacks,
-		/obj/item/ammo_magazine/needler_crystal
-		/obj/item/ammo_magazine/carbine
+		/obj/item/ammo_magazine/needler_crystal,
+		/obj/item/ammo_magazine/carbine,
 	)
 	bypass_w_limit = list(
 		/obj/item/ammo_magazine/rifle,
 		/obj/item/ammo_magazine/smg,
-		/obj/item/ammo_magazine/needler_crystal
-		/obj/item/ammo_magazine/carbine
+		/obj/item/ammo_magazine/needler_crystal,
+		/obj/item/ammo_magazine/carbine,
 	)
 
 /obj/item/storage/belt/marine/covenant/sangheili
