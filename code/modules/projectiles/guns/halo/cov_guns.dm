@@ -67,13 +67,13 @@
 		if(heat >= max_heat)
 			overheat(user)
 
-/obj/item/weapon/gun/energy/plasma/unload()
+/obj/item/weapon/gun/energy/plasma/unload(mob/living/user)
 	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
 		to_chat(usr, SPAN_NOTICE("The [src] is still cooling down."))
 		return
 	if(!heat >= 1)
 		to_chat(usr, SPAN_NOTICE("Your [src] doesn't need to be purged of heat."))
-	usr.visible_message(SPAN_NOTICE("[usr] manually vents their [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent your [src], carefully expelling the hot plasma into the air."))
+	user.visible_message(SPAN_NOTICE("[user] manually vents their [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent your [src], carefully expelling the hot plasma into the air."))
 	playsound(src, manual_vent_sound)
 	heat = 0
 	COOLDOWN_START(src, manual_cooldown, manual_dispersion_delay)
