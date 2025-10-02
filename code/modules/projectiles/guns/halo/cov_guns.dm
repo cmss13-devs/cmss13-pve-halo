@@ -345,4 +345,8 @@
 	fa_scatter_peak = 16
 	fa_max_scatter = 2
 
+/obj/item/weapon/gun/smg/covenant_needler/unique_action(mob/user)
+	return
 
+/obj/item/weapon/gun/smg/covenant_needler/unload_chamber(mob/user)
+	return
