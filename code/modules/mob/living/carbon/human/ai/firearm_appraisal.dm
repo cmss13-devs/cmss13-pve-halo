@@ -226,15 +226,18 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	primary_weight = 7
 	disposable = FALSE
 
+#define PLASMA_VENT_CHANCE_DIRECT_COMBAT 5
+#define PLASMA_VENT_CHANCE_INDIRECT_COMBAT 10
+
 /datum/firearm_appraisal/plasma/before_fire(obj/item/weapon/gun/energy/plasma/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
 	. = ..()
 	if(firearm.heat >= 60)
 		var/vent_decision = 0
 		if(AI.current_target)
-			vent_decision = max(0, -20+(5*get_dist(AI.tied_human, AI.current_target)))
+			vent_decision = max(0, -20+(PLASMA_VENT_CHANCE_DIRECT_COMBAT*get_dist(AI.tied_human, AI.current_target)))
 		else
 			if(AI.target_turf)
-				vent_decision = max(0, -20+(10*get_dist(AI.tied_human, AI.target_turf)))
+				vent_decision = max(0, -20+(PLASMA_VENT_CHANCE_INDIRECT_COMBAT*get_dist(AI.tied_human, AI.target_turf)))
 		vent_decision += max(0,firearm.heat-60)
 		if(prob(max(0, vent_decision)))
 			AI.unholster_primary()
