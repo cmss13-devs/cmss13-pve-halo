@@ -7,8 +7,8 @@
 	item_state = "blamite"
 	w_class = SIZE_MEDIUM
 	default_ammo = /datum/ammo/needler
-	current_rounds = 120
-	max_rounds = 120
+	current_rounds = 60
+	max_rounds = 60
 	gun_type = /obj/item/weapon/gun/smg/covenant_needler
 	flags_magazine = NO_FLAGS
 

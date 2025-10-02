@@ -9,26 +9,27 @@
 	icon_state = "plasma_teal"
 	accurate_range = 10
 	max_range = 20
-	damage = 32
+	damage = 34
 
 /datum/ammo/energy/plasma/plasma_pistol/overcharge
 	name = "overcharged light plasma bolt"
 	damage = 80
-	shell_speed = AMMO_SPEED_TIER_1
+	shell_speed = AMMO_SPEED_TIER_2
 
 /datum/ammo/energy/plasma/plasma_rifle
 	name = "plasma bolt"
 	icon_state = "plasma_blue"
+	shell_speed = AMMO_SPEED_TIER_3
 	accurate_range = 14
 	max_range = 24
-	damage = 34
+	damage = 38
 
 /datum/ammo/needler
 	name = "needle"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	icon_state = "needle"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 26
+	damage = 28
 	penetration = ARMOR_PENETRATION_TIER_3
 	accurate_range = 16
 	accuracy = HIT_ACCURACY_TIER_MAX

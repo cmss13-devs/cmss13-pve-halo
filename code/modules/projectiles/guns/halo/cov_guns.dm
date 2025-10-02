@@ -3,7 +3,7 @@
 	desc = "An alien weapon that shoots plasma. You shouldn't be seeing this one though."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "plasma_pistol"
-	flags_gun_features = GUN_UNUSUAL_DESIGN|GUN_CAN_POINTBLANK
+	flags_gun_features = GUN_CAN_POINTBLANK
 	works_in_recharger = FALSE
 	empty_click = 'sound/weapons/halo/plasma_dryfire.ogg'
 
@@ -76,7 +76,7 @@
 		if(heat >= max_heat)
 			overheat()
 
-/obj/item/weapon/gun/energy/plasma/unload(mob/user, reload_override, drop_override, loc_override)
+/obj/item/weapon/gun/energy/plasma/unload(mob/living/user)
 	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
 		to_chat(user, SPAN_NOTICE("The [src] is still cooling down."))
 		return
@@ -92,11 +92,11 @@
 		flick_overlay(src, venting_overlay, manual_dispersion_delay)
 		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), manual_dispersion_delay)
 
-/obj/item/weapon/gun/energy/plasma/proc/overheat()
+/obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user)
 	COOLDOWN_START(src, cooldown, overheat_time)
-	gun_user.visible_message(SPAN_NOTICE("[gun_user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
-	if(ishuman(gun_user))
-		var/mob/living/carbon/human/human = gun_user
+	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
+	if(ishuman(user))
+		var/mob/living/carbon/human/human = user
 		human.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
 	heat = 0
 	playsound(src, overheat_sound)
@@ -160,7 +160,7 @@
 	gun_category = GUN_CATEGORY_HANDGUN
 	muzzle_flash_color = COLOR_PLASMA_TEAL
 	flags_equip_slot = SLOT_WAIST
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED|GUN_UNUSUAL_DESIGN
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED
 	ammo = /datum/ammo/energy/plasma/plasma_pistol
 
 	fire_sound = "gun_lightplasma"
@@ -280,14 +280,14 @@
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
 
 /obj/item/weapon/gun/smg/covenant_needler/cock(mob/user)
-	if(flags_gun_features & (GUN_BURST_FIRING|GUN_UNUSUAL_DESIGN|GUN_INTERNAL_MAG))
+	if(flags_gun_features & (GUN_BURST_FIRING|GUN_INTERNAL_MAG))
 		return
 
 	cock_gun(user)
 	ready_in_chamber()
 
 /obj/item/weapon/gun/smg/covenant_needler/unload(mob/user, reload_override = 0, drop_override = 0, loc_override = 0) //Override for reloading mags after shooting, so it doesn't interrupt burst. Drop is for dropping the magazine on the ground.
-	if(!reload_override && (flags_gun_features & (GUN_BURST_FIRING|GUN_UNUSUAL_DESIGN|GUN_INTERNAL_MAG)))
+	if(!reload_override && (flags_gun_features & (GUN_BURST_FIRING|GUN_INTERNAL_MAG)))
 		return
 
 	if(!current_mag || QDELETED(current_mag) || (current_mag.loc != src && !loc_override))
@@ -345,8 +345,8 @@
 	fa_scatter_peak = 16
 	fa_max_scatter = 2
 
-/obj/item/weapon/gun/smg/covenant_needler/unique_action(mob/user)
+/obj/item/weapon/gun/rifle/covenant_carbine/unique_action(mob/user)
 	return
 
-/obj/item/weapon/gun/smg/covenant_needler/unload_chamber(mob/user)
+/obj/item/weapon/gun/rifle/covenant_carbine/unload_chamber(mob/user)
 	return

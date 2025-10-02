@@ -216,13 +216,35 @@
 
 /obj/item/storage/belt/marine/covenant
 	name = "\improper Covenant ammunition belt"
-	desc = "Placeholder."
+	desc = "A modular attachment for a warrior's combat harness that accepts several hard case blister units for personal storage, and to holster weaponry. Thanks to advancements in smart-materials, the belt is theoretically a true 'one size fits all' design."
 	icon = 'icons/halo/obj/items/clothing/covenant/belts.dmi'
 	icon_state = "sangbelt_minor"
+	has_gamemode_skin = FALSE
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	can_hold = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/device/flashlight/flare,
+		/obj/item/ammo_magazine/rifle,
+		/obj/item/ammo_magazine/smg,
+		/obj/item/ammo_magazine/pistol,
+		/obj/item/ammo_magazine/revolver,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/handful,
+		/obj/item/explosive/grenade,
+		/obj/item/explosive/mine,
+		/obj/item/reagent_container/food/snacks,
+		/obj/item/ammo_magazine/needler_crystal
+		/obj/item/ammo_magazine/carbine
+	)
+	bypass_w_limit = list(
+		/obj/item/ammo_magazine/rifle,
+		/obj/item/ammo_magazine/smg,
+		/obj/item/ammo_magazine/needler_crystal
+		/obj/item/ammo_magazine/carbine
+	)
 
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
-	desc = "A modular attachment for a warrior's combat harness that accepts several hard case blister units for personal storage, and to holster weaponry. Thanks to advancements in smart-materials, the belt is theoretically a true 'one size fits all' design."
 	icon_state = "sangbelt_minor"
 	item_state = "sangbelt_minor"
 	item_icons = list(
@@ -232,10 +254,14 @@
 /obj/item/storage/belt/marine/covenant/sangheili/minor
 	name = "\improper Sangheili Minor ammunition belt"
 
+/obj/item/storage/belt/marine/covenant/sangheili/minor/stored_needles
+
 /obj/item/storage/belt/marine/covenant/sangheili/major
 	name = "\improper Sangheili Major ammunition belt"
 	icon_state = "sangbelt_major"
 	item_state = "sangbelt_major"
+
+/obj/item/storage/belt/marine/covenant/sangheili/major/stored_needles
 
 /obj/item/storage/belt/marine/covenant/sangheili/ultra
 	name = "\improper Sangheili Ultra ammunition belt"
@@ -246,3 +272,41 @@
 	name = "\improper Sangheili Zealot ammunition belt"
 	icon_state = "sangbelt_zealot"
 	item_state = "sangbelt_zealot"
+
+/obj/item/storage/belt/marine/covenant/unggoy
+	name = "\improper Unggoy ammunition belt"
+	icon_state = "gruntbelt_minor"
+	item_state = "gruntbelt_minor"
+	item_icons = list(
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/unggoy/belts.dmi'
+		)
+
+/obj/item/storage/belt/marine/covenant/unggoy/minor
+	name = "\improper Unggoy Minor ammunition belt"
+	icon_state = "gruntbelt_minor"
+	item_state = "gruntbelt_minor"
+
+/obj/item/storage/belt/marine/covenant/unggoy/major
+	name = "\improper Unggoy Major ammunition belt"
+	icon_state = "gruntbelt_major"
+	item_state = "gruntbelt_major"
+
+/obj/item/storage/belt/marine/covenant/unggoy/heavy
+	name = "\improper Unggoy ammunition belt"
+	icon_state = "gruntbelt_heavy"
+	item_state = "gruntbelt_heavy"
+
+/obj/item/storage/belt/marine/covenant/unggoy/ultra
+	name = "\improper Unggoy Ultra ammunition belt"
+	icon_state = "gruntbelt_ultra"
+	item_state = "gruntbelt_ultra"
+
+/obj/item/storage/belt/marine/covenant/unggoy/specops
+	name = "\improper Unggoy SpecOps ammunition belt"
+	icon_state = "gruntbelt_specops"
+	item_state = "gruntbelt_specops"
+
+/obj/item/storage/belt/marine/covenant/unggoy/specops_ultra
+	name = "\improper Unggoy SpecOps ammunition belt"
+	icon_state = "gruntbelt_specops_ultra"
+	item_state = "gruntbelt_specops_ultra"
