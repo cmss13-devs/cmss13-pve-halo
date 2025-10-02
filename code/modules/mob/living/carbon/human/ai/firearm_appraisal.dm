@@ -218,3 +218,33 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 		/obj/item/weapon/gun/revolver,
 	)
 	primary_weight = 1
+
+/datum/firearm_appraisal/plasma
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma,
+	)
+	primary_weight = 7
+	disposable = FALSE
+/*
+/datum/firearm_appraisal/plasma/before_fire(obj/item/weapon/gun/energy/plasma/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
+	. = ..()
+	if(firearm.heat >= 60)
+		var/vent_decision = 0
+		if(AI.current_target)
+			vent_decision5*get_dist(AI.tied_human, AI.current_target)
+		else
+			if(AI.target_turf)
+		if(prob(max(0, vent_decision)))
+			AI.unholster_primary()
+			AI.ensure_primary_hand(firearm)
+			firearm.unwield(user)
+			sleep(AI.micro_action_delay * AI.action_delay_mult)g
+			user.swap_hand()
+			sleep(AI.short_action_delay * AI.action_delay_mult)
+			firearm.attackby(user.hand, user)
+			sleep(AI.micro_action_delay * AI.action_delay_mult)
+			user.swap_hand()
+			firearm.unique_action()
+			AI.wield_primary_sleep()
+	else
+		world.log(max(0, [AI.current_target ? 20*(get_dist(AI.tied_human, AI.target_turf)) : 10*(get_dist(AI.tied_human, AI.current_target))])) */

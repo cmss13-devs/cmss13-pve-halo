@@ -65,7 +65,7 @@
 		heat += heat_per_shot
 		COOLDOWN_START(src, dispersion_cooldown, dispersion_delay)
 		if(heat >= max_heat)
-			overheat()
+			overheat(user)
 
 /obj/item/weapon/gun/energy/plasma/unload()
 	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
@@ -83,7 +83,7 @@
 		flick_overlay(src, venting_overlay, manual_dispersion_delay)
 		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), manual_dispersion_delay)
 
-/obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user = usr)
+/obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user)
 	COOLDOWN_START(src, cooldown, overheat_time)
 	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
 	user.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
@@ -163,7 +163,7 @@
 	. = ..()
 	if(.)
 		if(overcharged)
-			overheat()
+			overheat(user)
 			overcharged = FALSE
 			toggle_ammo()
 
