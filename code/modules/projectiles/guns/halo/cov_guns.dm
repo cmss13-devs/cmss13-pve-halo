@@ -92,11 +92,11 @@
 		flick_overlay(src, venting_overlay, manual_dispersion_delay)
 		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), manual_dispersion_delay)
 
-/obj/item/weapon/gun/energy/plasma/proc/overheat(mob/living/carbon/human/user)
+/obj/item/weapon/gun/energy/plasma/proc/overheat()
 	COOLDOWN_START(src, cooldown, overheat_time)
-	user.visible_message(SPAN_NOTICE("[user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
-	if(ishuman(user))
-		var/mob/living/carbon/human/human = user
+	gun_user.visible_message(SPAN_NOTICE("[gun_user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
+	if(ishuman(gun_user))
+		var/mob/living/carbon/human/human = gun_user
 		human.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
 	heat = 0
 	playsound(src, overheat_sound)
