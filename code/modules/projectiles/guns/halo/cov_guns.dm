@@ -114,6 +114,7 @@
 	desc = "An advanced plasma pistol belonging to the Covenant military. It fires bolts of superheated plasma using its internal supply."
 	charge_cost = 20
 	gun_category = GUN_CATEGORY_HANDGUN
+	muzzleflash_iconstate = "muzzle_flash_teal"
 	muzzle_flash_color = COLOR_PLASMA_TEAL
 	flags_equip_slot = SLOT_WAIST
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED|GUN_UNUSUAL_DESIGN
