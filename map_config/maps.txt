@@ -81,6 +81,3 @@ endmap
 
 map canyon_32b
 endmap
-
-map halo_new_irvine
-endmap
