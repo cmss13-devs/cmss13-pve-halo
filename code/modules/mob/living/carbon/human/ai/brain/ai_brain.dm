@@ -136,6 +136,10 @@ GLOBAL_LIST_EMPTY(human_ai_brains)
 
 	// List all allowed action types for AI to consider
 	var/list/allowed_actions = action_whitelist || (GLOB.AI_actions.Copy() - action_blacklist)
+	for(var/datum/ai_action/act in allowed_actions)
+		if(act.species_restricted)
+			if(act.species_restricted != tied_human.get_species())
+				allowed_actions -= act
 	for(var/datum/ongoing_action as anything in ongoing_actions)
 		if(is_type_in_list(ongoing_action, allowed_actions))
 			allowed_actions -= ongoing_action.type
