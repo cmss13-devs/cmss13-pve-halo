@@ -2041,6 +2041,8 @@
 #include "code\modules\mob\living\carbon\human\ai\action_datums\walk_melee.dm"
 #include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_presets_clf.dm"
 #include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_presets_freelancer.dm"
+#include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_presets_sangheili.dm"
+#include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_presets_unggoy.dm"
 #include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_presets_upp.dm"
 #include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_presets_uscm.dm"
 #include "code\modules\mob\living\carbon\human\ai\ai_spawner\ai_spawner.dm"
