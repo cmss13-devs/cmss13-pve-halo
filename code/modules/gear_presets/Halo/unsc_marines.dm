@@ -255,7 +255,7 @@
 
 //weapon spec (sniper)
 /datum/equipment_preset/unsc/spec/equipped_sniper
-	name = "UNSC Squad Weapons Specialist (Sniper, Equipped)" //machine gods don't like having it set to the Parent for some reason
+	name = parent_type::name + " (Sniper, Equipped)"
 
 /datum/equipment_preset/unsc/spec/equipped_sniper/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"
