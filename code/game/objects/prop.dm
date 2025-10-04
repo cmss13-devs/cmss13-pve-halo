@@ -418,5 +418,3 @@
 	desc = "A monitor intended to depict the station's current status. It appears to have frozen."
 	anchored = TRUE
 	density = FALSE
-	use_power = FALSE
-	idle_power_usage = 10
