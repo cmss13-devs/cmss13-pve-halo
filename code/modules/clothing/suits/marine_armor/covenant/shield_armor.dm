@@ -118,17 +118,91 @@
 	name = "YOU SHOULDN'T SEE THIS"
 	desc = "The central piece to a set of advanced combat armor manufactured by the Covenant. Made with nanolaminate and equipped with shielding, the armor is much more durable than any other species' equipment."
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
-	icon_state = "sangheili_base"
-	item_state = "sangheili_base"
+	icon_state = "sang_minor"
+	item_state = "sang_minor"
 
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi'
 	)
-	allowed_species_list = list(SPECIES_SANGHEILI)
 
+	allowed_species_list = list(SPECIES_SANGHEILI)
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+
+	valid_accessory_slots = list(ACCESSORY_SLOT_SANG_SHOULDER, ACCESSORY_SLOT_SANG_WEBBING)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_SANG_SHOULDER, ACCESSORY_SLOT_SANG_WEBBING)
+
+// Minor
 
 /obj/item/clothing/suit/marine/shielded/sangheili/minor
-	name = "Sangheili Minor combat harness"
+	name = "\improper Sangheili Minor combat harness"
+	desc = "A blue coloured harness worn by 'Minors', the lowest rank of Sangheili warrior. Worn over a 'tech-suit' the armour consists of a thoracic-cage over the torso, with pauldrons, vambraces, cuisses, and greaves attached, providing a high level of protection, though the most important defensive feature of the harness is its energy-shielding."
+	desc_lore = "Though Minor is the lowest rank a Sangheili can hold, this blue marks them out as still superior to any lesser-caste species. A fact that some abuse."
 
 	shield = SANG_SHIELD_MINOR
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/suit/marine/shielded/sangheili/minor/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/pads/sangheili/minor/pads = new()
+	src.attach_accessory(null, pads, TRUE)
+
+/obj/item/clothing/suit/marine/shielded/sangheili/major
+
+	name = "\improper Sangheili Major combat harness"
+	desc = "This red harness denotes the wearer as a 'Major', a veteran and more experienced Sangheili warrior. While the only true difference between the harness of a Major and the harness of a Minor is its colouration, the Major's harness does benefit from superior shielding."
+	desc_lore = "Given a greater breadth of experience, Majors command both Minors of their own species, and all of the lesser rates as field officers."
+
+	icon_state = "sang_major"
+
+	shield = SANG_SHIELD_MAJOR
+	armor_melee = CLOTHING_ARMOR_HIGHPLUS
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
+	armor_laser = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
+
+/obj/item/clothing/suit/marine/shielded/sangheili/major/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/pads/sangheili/major/pads = new()
+	src.attach_accessory(null, pads, TRUE)
+
+/obj/item/clothing/suit/marine/shielded/sangheili/ultra
+
+	name = "\improper Sangheili Ultra combat harness"
+	desc = "The white harness worn by a Sangheili 'Ultra', an exceptionally veteran warrior who exists outside of a Legions regular ranks as a member of the Evocati. Features  superior technology in comparison to the more standard harnesses worn by other rates, designed for shock assaults and brutal single combat, with vastly stronger energy shielding."
+	desc_lore = "An Evocatii may of served over a century or more in the Covenant's forces, and provide critical advice and tactical experience to younger officers or those seeking council, though they excel most readily in direct combat, leading vicious charges and undertaking special taskings."
+
+	icon_state = "sang_ultra"
+
+	shield = SANG_SHIELD_ULTRA
+	armor_melee = CLOTHING_ARMOR_VERYHIGH
+	armor_bullet = CLOTHING_ARMOR_VERYHIGH
+	armor_laser = CLOTHING_ARMOR_HIGHPLUS
+	armor_bomb = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/suit/marine/shielded/sangheili/ultra/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/pads/sangheili/ultra/pads = new()
+	src.attach_accessory(null, pads, TRUE)
+
+/obj/item/clothing/suit/marine/shielded/sangheili/zealot
+
+	name = "\improper Sangheili Zealot combat harness"
+	desc = "The golden sheen of this harness marks the proud Sangheili out as one of the vaunted Zealots, warriors belonging to honourable Orders. Vastly superior to any lesser harness, the nanolaminate alloys used in it are said to be imbued with holy-metals directly, allowing it to be not only exceptionally light, but absurdly sturdy as well. This conventional strength is paired with powerful energy-shields, turning the warrior into an unstoppable object as they pursue their goals."
+	desc_lore = "Be it leading troops directly in glorious combat, or securing Holy Relics in daring and softly spoken of operations, the bearer of this harness is not to be trifled with, let alone crossed."
+
+	icon_state = "sang_zealot"
+
+	shield = SANG_SHIELD_ZEALOT
+	armor_melee = CLOTHING_ARMOR_ULTRAHIGH
+	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
+	armor_laser = CLOTHING_ARMOR_VERYHIGH
+	armor_bomb = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/suit/marine/shielded/sangheili/zealot/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/pads/sangheili/zealot/pads = new()
+	src.attach_accessory(null, pads, TRUE)
