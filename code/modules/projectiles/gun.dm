@@ -6,13 +6,17 @@
 	icon_state = "muzzle_flash"
 	layer = ABOVE_LYING_MOB_LAYER
 	plane = GAME_PLANE
-	appearance_flags = KEEP_APART|TILE_BOUND
+	appearance_flags = KEEP_APART|TILE_BOUND|KEEP_TOGETHER
 	var/applied = FALSE
 
 /atom/movable/vis_obj/effect/muzzle_flash/Initialize(mapload, new_icon_state)
 	. = ..()
 	if(new_icon_state)
 		icon_state = new_icon_state
+	update_icon()
+
+/atom/movable/vis_obj/effect/muzzle_flash/proc/update_icon()
+	overlays += emissive_appearance(icon, icon_state, src, layer, reset_transform = FALSE)
 
 /obj/item/weapon/gun
 	name = "gun"
