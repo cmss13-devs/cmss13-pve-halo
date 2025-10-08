@@ -1,0 +1,5 @@
+author: "CactusMouth"
+delete-after: True
+changes:
+  - rscadd: "adds new HAI, the UNSC Marines"
+  - code_imp: "adds new HAI, the UNSC Marines"
