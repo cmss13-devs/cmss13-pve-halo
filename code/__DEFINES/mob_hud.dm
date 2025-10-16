@@ -6,6 +6,7 @@
 #define STATUS_HUD "2" // alive, dead, diseased, etc.
 #define ID_HUD "3" // the job asigned to your ID
 #define WANTED_HUD "4" // wanted, released, parroled, security status
+#define HALO_HUD "5" // the job asigned to your ID
 #define FACTION_HUD "8" // Any faction related HUD on humans
 #define STATUS_HUD_OOC "10" // STATUS_HUD without virus db check for someone being ill.
 #define STATUS_HUD_XENO_INFECTION "11" // STATUS_HUD without virus db check for someone being ill.
@@ -48,7 +49,7 @@
 #define MOB_HUD_HUNTER 17
 #define MOB_HUD_HUNTER_CLAN 18
 #define MOB_HUD_EXECUTE 19
-
+#define MOB_HUD_HALO 20
 //for SL/FTL/LZ targeting on locator huds
 #define TRACKER_SL "track_sl"
 #define TRACKER_FTL "track_ftl"

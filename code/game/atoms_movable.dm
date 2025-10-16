@@ -246,8 +246,6 @@
 	var/proj_z = 0
 	unacidable = TRUE
 
-	var/list/image/hud_list
-
 //REDIRECT TO MASTER//
 /atom/movable/clone/attack_remote(mob/user)
 	return src.mstr.attack_remote(user)
