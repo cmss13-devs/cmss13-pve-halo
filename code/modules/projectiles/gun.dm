@@ -40,6 +40,7 @@
 	flags_item = TWOHANDED
 	light_system = DIRECTIONAL_LIGHT
 
+	hud_possible = list(HALO_HUD)
 	///A custom mouse pointer icon to use when wielded
 	var/mouse_pointer = 'icons/effects/mouse_pointer/rifle_mouse.dmi'
 
@@ -309,6 +310,17 @@
 	update_icon() //for things like magazine overlays
 	gun_firemode = gun_firemode_list[1] || GUN_FIREMODE_SEMIAUTO
 	AddComponent(/datum/component/automatedfire/autofire, fire_delay, burst_delay, burst_amount, gun_firemode, autofire_slow_mult, CALLBACK(src, PROC_REF(set_bursting)), CALLBACK(src, PROC_REF(reset_fire)), CALLBACK(src, PROC_REF(fire_wrapper)), CALLBACK(src, PROC_REF(display_ammo)), CALLBACK(src, PROC_REF(set_auto_firing))) //This should go after handle_starting_attachment() and setup_firemodes() to get the proper values set.
+	prepare_huds()
+	set_halo_hud()
+
+/obj/item/weapon/gun/prepare_huds()
+	hud_list = new
+	for(var/hud in hud_possible)
+		var/image/I = image('icons/mob/hud/hud.dmi', src, "")
+		I.appearance_flags |= NO_CLIENT_COLOR|KEEP_APART|RESET_COLOR
+		hud_list[hud] = I
+	var/datum/mob_hud/hud = GLOB.huds[MOB_HUD_HALO]
+	hud.add_to_hud(src)
 
 /obj/item/weapon/gun/proc/set_gun_attachment_offsets()
 	attachable_offset = null
