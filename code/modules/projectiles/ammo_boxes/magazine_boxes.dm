@@ -1234,24 +1234,24 @@
 	flags_equip_slot = null
 
 /obj/item/ammo_box/magazine/unsc/ma5c
-	name = "UNSC magazine box (MA5C x 26)"
-	desc = "An ammo box storing 26 magazines of MA5C ammunition"
+	name = "UNSC magazine box (MA5C x 48)"
+	desc = "An ammo box storing 48 magazines of MA5C ammunition"
 	icon_state = "base_ammo"
 	overlay_ammo_type = "_reg"
 	overlay_content = "_reg"
 	overlay_gun_type = "_ma5c"
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5c
-	num_of_magazines = 26
+	num_of_magazines = 48
 
 /obj/item/ammo_box/magazine/unsc/br55
-	name = "UNSC magazine box (BR55 x 26)"
-	desc = "An ammo box storing 26 magazines of BR55 ammunition"
+	name = "UNSC magazine box (BR55 x 32)"
+	desc = "An ammo box storing 32 magazines of BR55 ammunition"
 	icon_state = "base_ammo"
 	overlay_ammo_type = "_reg"
 	overlay_content = "_reg"
 	overlay_gun_type = "_br55"
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/br55
-	num_of_magazines = 26
+	num_of_magazines = 32
 
 /obj/item/ammo_box/magazine/unsc/small
 	name = "UNSC magazine box"
@@ -1260,20 +1260,20 @@
 	overlay_gun_type = null
 
 /obj/item/ammo_box/magazine/unsc/small/m6c
-	name = "UNSC magazine box (M6C x 14)"
-	desc = "An ammo box storing 14 magazines of M6C ammunition."
+	name = "UNSC magazine box (M6C x 22)"
+	desc = "An ammo box storing 22 magazines of M6C ammunition."
 	icon_state = "base_ammosmall"
 	overlay_ammo_type = "_regsmall"
 	overlay_content = "_small"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6c
-	num_of_magazines = 14
+	num_of_magazines = 22
 
 
 /obj/item/ammo_box/magazine/unsc/small/m6g
-	name = "UNSC magazine box (M6G x 14)"
-	desc = "An ammo box storing 14 magazines of M6G ammunition."
+	name = "UNSC magazine box (M6G x 22)"
+	desc = "An ammo box storing 22 magazines of M6G ammunition."
 	icon_state = "base_ammosmall2"
 	overlay_ammo_type = "_regsmall"
 	overlay_content = "_small"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6g
-	num_of_magazines = 14
+	num_of_magazines = 22

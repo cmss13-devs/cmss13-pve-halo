@@ -1391,9 +1391,15 @@
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag
 
 /obj/item/storage/internal/accessory/webbing/m3mag
+	storage_slots = 5
 	can_hold = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/device/flashlight/flare,
 		/obj/item/ammo_magazine/rifle,
-		/obj/item/ammo_magazine/smg/m39,
+		/obj/item/ammo_magazine/smg,
+		/obj/item/ammo_magazine/pistol,
+		/obj/item/ammo_magazine/revolver,
+		/obj/item/ammo_magazine/sniper,
 	)
 
 //Partial Pre-load For Props
@@ -1402,6 +1408,8 @@
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/ma5c
 
 /obj/item/storage/internal/accessory/webbing/m3mag/ma5c/fill_preset_inventory()
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
