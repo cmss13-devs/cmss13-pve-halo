@@ -40,6 +40,6 @@ map unsc_dark_was_the_night
 	default
 endmap
 
-map	unsc_dark_was_the_night_odst
+map unsc_dark_was_the_night_odst
 
 endmap
