@@ -24,12 +24,8 @@ map chapaev
 	disabled
 endmap
 
-
 map firefly
-endmap
-
-
-map firefly
+	disabled
 endmap
 
 map rover
@@ -42,4 +38,7 @@ endmap
 
 map unsc_dark_was_the_night
 	default
+endmap
+
+map	unsc_dark_was_the_night_odst
 endmap

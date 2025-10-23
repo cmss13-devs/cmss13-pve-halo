@@ -16,6 +16,15 @@
 	default_ammo = /datum/ammo/bullet/rifle/ma5c
 	caliber = "7.62x51"
 
+/obj/item/ammo_magazine/rifle/halo/ma5c/shredder
+	name = "\improper MA5C magazine (7.62x51mm Shredder)"
+	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 shredder ammunitions, a specialized ammunition that pierces armor and splinters in the target."
+	icon_state = "ma5c_shredder"
+	max_rounds = 60
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
+	default_ammo = /datum/ammo/bullet/rifle/ma5c/shredder
+	caliber = "7.62x51"
+
 /obj/item/ammo_magazine/rifle/halo/ma3a
 	name = "\improper MA3A magazine (7.62x51mm FMJ)"
 	desc = "A rectangular box magazine for the MA3A holding 32 rounds of 7.62x51 FMJ ammunitions."
@@ -42,6 +51,14 @@
 	gun_type = /obj/item/weapon/gun/rifle/halo/br55
 	default_ammo = /datum/ammo/bullet/rifle/br55
 	caliber = "9.5x40mm"
+	bonus_overlay = "br55_overlay"
+
+/obj/item/ammo_magazine/rifle/halo/br55/extended
+	name = "\improper quad-stack BR55 magazine (9.5x40mm X-HP SAP-HE)"
+	desc = "A quad-stack rectangular box magazine for the BR55 holding 60 rounds of 9.5x40mm X-HP SAP-HE ammunitions."
+	icon_state = "br55_quadstack"
+	max_rounds = 60
+	bonus_overlay = "br55_ext_overlay"
 
 /obj/item/ammo_magazine/rifle/halo/dmr
 	name = "\improper M392 DMR magazine (7.62x51mm FMJ)"

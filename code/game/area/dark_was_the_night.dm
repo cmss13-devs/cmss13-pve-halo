@@ -14,6 +14,13 @@
 	soundscape_playlist = SCAPE_PL_HANGAR
 	soundscape_interval = 50
 
+/area/dark_was_the_night/pod_bay
+	name = "\improper Pod Bay"
+	icon_state = "hangar"
+
+/area/dark_was_the_night/ready_bay
+	name = "\improper Ready Bay"
+
 /area/dark_was_the_night/medical
 	name = "\improper Emergency Medbay"
 	icon_state = "medical"
@@ -29,6 +36,12 @@
 /area/dark_was_the_night/briefing
 	name = "\improper Briefing Room"
 	icon_state = "briefing"
+
+/area/dark_was_the_night/briefing/one
+	name = "\improper Briefing Room One"
+
+/area/dark_was_the_night/briefing/two
+	name = "\improper Briefing Room Two"
 
 /area/dark_was_the_night/dorms
 	name = "\improper Dorms"

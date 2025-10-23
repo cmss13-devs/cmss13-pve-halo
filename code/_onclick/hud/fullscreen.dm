@@ -103,6 +103,9 @@
 /atom/movable/screen/fullscreen/brute/nvg
 	color = COLOR_BLACK
 
+/atom/movable/screen/fullscreen/brute/visr
+	color = LIGHT_COLOR_TUNGSTEN
+
 /atom/movable/screen/fullscreen/oxy
 	icon_state = "oxydamageoverlay"
 	layer = FULLSCREEN_DAMAGE_LAYER

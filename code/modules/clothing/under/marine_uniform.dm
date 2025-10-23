@@ -48,6 +48,16 @@
 	icon_state = "d_marine_jumpsuit"
 	item_state = "d_marine_jumpsuit"
 
+/obj/item/clothing/under/marine/odst
+	name = "ODST bodyglove"
+	icon = 'icons/halo/obj/items/clothing/undersuit.dmi'
+	icon_state = "odst"
+	worn_state = "odst"
+	flags_jumpsuit = null
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	item_icons = list(
+		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
+
 /obj/item/clothing/under/marine/medic
 	name = "\improper UNSC corpsman uniform"
 	desc = "Standard-issue Marine hospital corpsman fatigues with venlar armor inserts at critical areas to protect from blades and ballistics."

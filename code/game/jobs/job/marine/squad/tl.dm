@@ -61,11 +61,20 @@
 	gear_preset = /datum/equipment_preset/uscm/tl/forecon
 	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/lesser_rank
 
+/datum/job/marine/tl/ai/odst
+	title = JOB_SQUAD_TEAM_LEADER_UPP
+	gear_preset = /datum/equipment_preset/unsc/tl/odst
+	gear_preset_secondary = /datum/equipment_preset/unsc/tl/odst/lesser_rank
+
 /obj/effect/landmark/start/marine/tl/upp
 	name = JOB_SQUAD_TEAM_LEADER_UPP
 	squad = SQUAD_UPP
 	job = /datum/job/marine/tl/ai/upp
 
+/obj/effect/landmark/start/marine/tl/odst
+	name = JOB_SQUAD_TEAM_LEADER_ODST
+	squad = SQUAD_ODST
+	job = /datum/job/marine/tl/ai/odst
 
 /datum/job/marine/tl/ai/pmc
 	title = JOB_PMCPLAT_FTL

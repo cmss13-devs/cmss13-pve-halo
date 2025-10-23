@@ -13,6 +13,11 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/ma5c/shredder
+	name = "shredder bullet"
+	damage = 52
+	penetration = ARMOR_PENETRATION_TIER_2
+
 /datum/ammo/bullet/rifle/ma3a
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM

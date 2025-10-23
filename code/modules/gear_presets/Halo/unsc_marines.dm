@@ -85,7 +85,19 @@
 
 /datum/equipment_preset/unsc/pfc/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_ME1 = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/unsc/pfc/odst
+	name = "ODST Squad Rifleman"
+	assignment = JOB_SQUAD_MARINE_ODST
+	rank = JOB_SQUAD_MARINE_ODST
 	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "ODST-RFN"
+	skills = /datum/skills/pfc
+
+/datum/equipment_preset/unsc/pfc/odst/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 
 /// Marine Corpsman
 /datum/equipment_preset/unsc/medic
@@ -103,6 +115,17 @@
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_NE4 = JOB_PLAYTIME_TIER_0)
 
+/datum/equipment_preset/unsc/medic/odst
+	name = "ODST Hospital Corpsman"
+	assignment = JOB_SQUAD_MEDIC_ODST
+	rank = JOB_SQUAD_MEDIC_ODST
+	role_comm_title = "ODST-HC"
+	skills = /datum/skills/combat_medic
+
+/datum/equipment_preset/unsc/medic/odst/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_NE4 = JOB_PLAYTIME_TIER_0)
+
 /// Marine RTO
 /datum/equipment_preset/unsc/rto
 	name = "UNSC Radio Telephone Operator"
@@ -116,6 +139,17 @@
 	minimap_icon = "rto"
 
 /datum/equipment_preset/unsc/rto/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/unsc/rto/odst
+	name = "ODST Radio Telephone Operator"
+	assignment = JOB_SQUAD_RTO_ODST
+	rank = JOB_SQUAD_RTO_ODST
+	role_comm_title = "ODST-RTO"
+	skills = /datum/skills/pfc
+
+/datum/equipment_preset/unsc/rto/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
@@ -136,6 +170,17 @@
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 
+/datum/equipment_preset/unsc/spec/odst
+	name = "ODST Squad Weapons Specialist"
+	assignment = JOB_SQUAD_SPECIALIST_ODST
+	rank = JOB_SQUAD_SPECIALIST_ODST
+	role_comm_title = "ODST-Spc"
+	skills = /datum/skills/specialist
+
+/datum/equipment_preset/unsc/spec/odst/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
+
 /// Fire Team Leader
 /datum/equipment_preset/unsc/tl
 	name = "UNSC Fireteam Leader"
@@ -153,6 +198,17 @@
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 
+/datum/equipment_preset/unsc/tl/odst
+	name = "ODST Fireteam Leader"
+	assignment = JOB_SQUAD_TEAM_LEADER_ODST
+	rank = JOB_SQUAD_TEAM_LEADER_ODST
+	role_comm_title = "ODST-FTL"
+	skills = /datum/skills/tl
+
+/datum/equipment_preset/unsc/tl/odst/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
+
 /// Marine Squad Sergeant
 /datum/equipment_preset/unsc/leader
 	name = "UNSC Squad Sergeant"
@@ -161,7 +217,7 @@
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
 	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "SqdSgt"
+	role_comm_title = "SL"
 	minimum_age = 27
 	skills = /datum/skills/SL
 	minimap_icon = "leader"
@@ -170,6 +226,19 @@
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
 
+/datum/equipment_preset/unsc/leader/odst
+	name = "ODST Squad Sergeant"
+	assignment = JOB_SQUAD_LEADER_ODST
+	rank = JOB_SQUAD_LEADER_ODST
+	role_comm_title = "ODST-SL"
+	minimum_age = 27
+	skills = /datum/skills/SL
+
+/datum/equipment_preset/unsc/leader/odst/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
+
+// PlatCo
 /datum/equipment_preset/unsc/platco
 	name = "UNSC Platoon Commander"
 	flags = EQUIPMENT_PRESET_START_OF_ROUND|EQUIPMENT_PRESET_MARINE
@@ -192,6 +261,17 @@
 	name = parent_type::name + " (Lesser Rank)"
 	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
 
+/datum/equipment_preset/unsc/platco/odst
+	name = "ODST Platoon Commander"
+	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "PltCo-ODST"
+	skills = /datum/skills/SO
+
+/datum/equipment_preset/unsc/platco/lesser_rank
+	name = parent_type::name + " (Lesser Rank)"
+	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
+
+// Pilot
 /datum/equipment_preset/unsc/pilot
 	name = "UNSC Pilot"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
@@ -225,7 +305,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5c(new_human), WEAR_J_STORE)
@@ -268,7 +348,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5c(new_human), WEAR_J_STORE)
@@ -310,7 +390,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5c(new_human), WEAR_J_STORE)
@@ -357,7 +437,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/mag/ma5c(new_human), WEAR_ACCESSORY)
@@ -395,7 +475,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5c(new_human), WEAR_J_STORE)
@@ -441,7 +521,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/br55(new_human), WEAR_J_STORE)
@@ -490,7 +570,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/br55(new_human), WEAR_J_STORE)
@@ -538,7 +618,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/br55(new_human), WEAR_J_STORE)
@@ -583,7 +663,7 @@
 	//head
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot(new_human), WEAR_HEAD)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/standard(new_human), WEAR_BODY)
 	//jacket
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	//accessories
@@ -600,4 +680,50 @@
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/halo/m6g(new_human), WEAR_IN_R_STORE)
 
 /datum/equipment_preset/unsc/pilot/equipped/load_status(mob/living/carbon/human/new_human)
+	new_human.nutrition = NUTRITION_HIGH
+
+// ODST
+
+//rifleman
+/datum/equipment_preset/unsc/pfc/odst/equipped
+	name = parent_type::name + " (Equipped)"
+
+/datum/equipment_preset/unsc/pfc/odst/equipped/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "Marine Undershirt"
+	new_human.underwear = "Marine Boxers"
+	//back
+	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/odst(new_human), WEAR_L_EAR)
+	//head
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/odst(new_human), WEAR_HEAD)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/odst(new_human), WEAR_BODY)
+	//jacket
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/odst(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/br55(new_human), WEAR_J_STORE)
+	//accessories
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/odst(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/greaves/odst(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/bracers/odst(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/groin/odst(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/greaves/odst(new_human), WEAR_ACCESSORY)
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55/extended(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55/extended(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+
+	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
+
+/datum/equipment_preset/unsc/pfc/odst/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH

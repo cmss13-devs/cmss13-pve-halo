@@ -665,6 +665,14 @@
 	has_hud = TRUE
 	hud_type = MOB_HUD_FACTION_MARINE
 
+/obj/item/device/radio/headset/almayer/marine/solardevils/odst
+	name = "ODST headset"
+	desc = "Issued to members of the ODST."
+	frequency = ODST_FREQ
+	volume = RADIO_VOLUME_QUIET
+	has_hud = TRUE
+	hud_type = MOB_HUD_FACTION_UNSC
+
 /obj/item/device/radio/headset/almayer/marine/solardevils/foxtrot
 	frequency = CRYO_FREQ
 
