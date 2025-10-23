@@ -62,7 +62,7 @@
 	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/lesser_rank
 
 /datum/job/marine/tl/ai/odst
-	title = JOB_SQUAD_TEAM_LEADER_UPP
+	title = JOB_SQUAD_TEAM_LEADER_ODST
 	gear_preset = /datum/equipment_preset/unsc/tl/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/tl/odst/lesser_rank
 

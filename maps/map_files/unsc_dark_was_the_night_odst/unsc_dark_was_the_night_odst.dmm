@@ -1,8 +1,80 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
+	pixel_x = 5;
+	pixel_y = 36;
+	layer = 3.5;
+	dockId = "garrow_cargo_elevator_storage"
+	},
+/turf/open/floor/almayer/red,
+/area/dark_was_the_night/lower_hallway)
+"ab" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/turf/open/floor/almayer/silverfull,
+/area/dark_was_the_night/dorms)
+"ac" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
+"ad" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/computer/shuttle/elevator_controller/elevator_call{
+	pixel_x = 5;
+	pixel_y = 36;
+	layer = 3.5;
+	dockId = "garrow_cargo_elevator_upper"
+	},
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/armory)
+"ae" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	light_power = 0.5;
+	pixel_x = 16
+	},
+/turf/open/floor/almayer/edge/smooth/southeast,
+/area/dark_was_the_night/dorms)
+"af" = (
+/obj/structure/stairs,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/upper_hallway)
 "ag" = (
 /obj/structure/machinery/vending/dinnerware/unsc,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/canteen)
+"ah" = (
+/obj/structure/stairs,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/step_trigger/teleporter_vector{
+	name = "StairsUpper";
+	vector_y = 9;
+	vector_x = 46
+	},
+/obj/structure/prop/invuln/darkness{
+	layer = 4.01
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_hall)
 "al" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -299,6 +371,7 @@
 /obj/effect/landmark/start/marine/tl/odst,
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
 "dB" = (
@@ -381,7 +454,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /turf/open/floor/almayer/plate,
@@ -642,6 +715,7 @@
 /obj/effect/landmark/start/marine/spec/odst,
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
 "hm" = (
@@ -829,7 +903,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /turf/open/floor/almayer/plate,
@@ -838,7 +912,7 @@
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /obj/structure/prop/invuln/darkness{
@@ -1334,6 +1408,7 @@
 /obj/effect/landmark/start/marine/medic/odst,
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
 "pv" = (
@@ -1393,6 +1468,7 @@
 /obj/effect/landmark/start/marine/leader/odst,
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
 "qa" = (
@@ -1410,7 +1486,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /turf/open/floor/almayer,
@@ -1444,7 +1520,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /turf/open/floor/almayer,
@@ -1769,6 +1845,10 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
 "tU" = (
@@ -2089,6 +2169,10 @@
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
@@ -2542,6 +2626,7 @@
 /obj/effect/landmark/start/marine/odst,
 /obj/effect/landmark/late_join,
 /obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
 "BW" = (
@@ -2997,7 +3082,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /turf/open/floor/almayer/plate,
@@ -4103,7 +4188,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
-	vector_y = 10;
+	vector_y = 9;
 	vector_x = 46
 	},
 /turf/open/floor/almayer,
@@ -4150,6 +4235,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
 "Ue" = (
@@ -4345,6 +4431,7 @@
 	name = "General Listening Channel";
 	pixel_y = 26
 	},
+/obj/effect/landmark/late_join/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
 "Wv" = (
@@ -7161,7 +7248,7 @@ MJ
 MJ
 gz
 ca
-HD
+ah
 HD
 qx
 qx
@@ -8252,9 +8339,9 @@ QW
 Io
 uM
 Uf
-ee
+ab
 uM
-ee
+ab
 Uf
 uM
 Di
@@ -8858,7 +8945,7 @@ sD
 mn
 Io
 yr
-yr
+ac
 yr
 yr
 yr
@@ -9159,7 +9246,7 @@ Gm
 LC
 LP
 LP
-sN
+ae
 Io
 MZ
 uE
@@ -10055,7 +10142,7 @@ RW
 tn
 RW
 BK
-BK
+af
 Cz
 vL
 WS
@@ -11440,7 +11527,7 @@ ej
 gA
 bJ
 qV
-yT
+ad
 Be
 sF
 mp
@@ -11480,7 +11567,7 @@ RM
 tE
 fx
 fx
-ex
+aa
 cZ
 vO
 Bo

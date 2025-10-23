@@ -81,7 +81,6 @@
 	title = JOB_SQUAD_RTO
 	total_positions = 1
 	spawn_positions = 1
-	title = JOB_SQUAD_RTO
 	gear_preset = /datum/equipment_preset/unsc/rto
 	gear_preset_secondary = /datum/equipment_preset/unsc/rto/lesser_rank
 	job_options = list(CPL_VARIANT = "CPL", LCPL_VARIANT = "LCPL")

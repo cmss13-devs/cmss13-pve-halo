@@ -89,8 +89,6 @@
 
 /datum/equipment_preset/unsc/pfc/odst
 	name = "ODST Squad Rifleman"
-	assignment = JOB_SQUAD_MARINE_ODST
-	rank = JOB_SQUAD_MARINE_ODST
 	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ODST-RFN"
 	skills = /datum/skills/pfc
@@ -117,8 +115,6 @@
 
 /datum/equipment_preset/unsc/medic/odst
 	name = "ODST Hospital Corpsman"
-	assignment = JOB_SQUAD_MEDIC_ODST
-	rank = JOB_SQUAD_MEDIC_ODST
 	role_comm_title = "ODST-HC"
 	skills = /datum/skills/combat_medic
 
@@ -144,8 +140,6 @@
 
 /datum/equipment_preset/unsc/rto/odst
 	name = "ODST Radio Telephone Operator"
-	assignment = JOB_SQUAD_RTO_ODST
-	rank = JOB_SQUAD_RTO_ODST
 	role_comm_title = "ODST-RTO"
 	skills = /datum/skills/pfc
 
@@ -172,8 +166,6 @@
 
 /datum/equipment_preset/unsc/spec/odst
 	name = "ODST Squad Weapons Specialist"
-	assignment = JOB_SQUAD_SPECIALIST_ODST
-	rank = JOB_SQUAD_SPECIALIST_ODST
 	role_comm_title = "ODST-Spc"
 	skills = /datum/skills/specialist
 
@@ -200,8 +192,6 @@
 
 /datum/equipment_preset/unsc/tl/odst
 	name = "ODST Fireteam Leader"
-	assignment = JOB_SQUAD_TEAM_LEADER_ODST
-	rank = JOB_SQUAD_TEAM_LEADER_ODST
 	role_comm_title = "ODST-FTL"
 	skills = /datum/skills/tl
 
@@ -228,8 +218,6 @@
 
 /datum/equipment_preset/unsc/leader/odst
 	name = "ODST Squad Sergeant"
-	assignment = JOB_SQUAD_LEADER_ODST
-	rank = JOB_SQUAD_LEADER_ODST
 	role_comm_title = "ODST-SL"
 	minimum_age = 27
 	skills = /datum/skills/SL

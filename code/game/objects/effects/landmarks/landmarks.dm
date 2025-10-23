@@ -469,6 +469,10 @@
 	name = "forecon late join"
 	squad = SQUAD_LRRP
 
+/obj/effect/landmark/late_join/odst
+	name = "ODST late join"
+	squad = SQUAD_ODST
+
 
 /obj/effect/landmark/late_join/Initialize(mapload, ...)
 	. = ..()
