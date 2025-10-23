@@ -4424,13 +4424,6 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
-"Yc" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/landmark/observer_start,
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/cryo_bay)
 "Yd" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/almayer,
@@ -6855,7 +6848,7 @@ qa
 eZ
 AF
 qa
-ea
+qa
 ny
 qa
 qa
@@ -7310,7 +7303,7 @@ rR
 rR
 wT
 JR
-qa
+ea
 qb
 ny
 qa
@@ -7919,7 +7912,7 @@ qa
 hG
 AF
 qa
-Yc
+qb
 ny
 qa
 qa
@@ -8012,12 +8005,12 @@ rR
 rR
 rR
 rR
-Yk
-Yk
-Yk
-Yk
-Yk
-Yk
+rD
+rD
+rD
+rD
+rD
+rD
 rR
 rR
 rR

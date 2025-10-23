@@ -41,4 +41,5 @@ map unsc_dark_was_the_night
 endmap
 
 map	unsc_dark_was_the_night_odst
+
 endmap
