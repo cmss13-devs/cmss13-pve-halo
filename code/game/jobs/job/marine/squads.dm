@@ -168,6 +168,7 @@
 	name = SQUAD_ODST
 	access = list(ACCESS_MARINE_ALPHA)
 	radio_freq = ODST_FREQ
+	faction = FACTION_UNSC
 	use_stripe_overlay = FALSE
 	equipment_color = "#32CD32"
 	chat_color = "#32CD32"
