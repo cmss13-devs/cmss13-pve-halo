@@ -9,9 +9,9 @@
 
 /obj/item/ammo_magazine/rifle/halo/ma5c
 	name = "\improper MA5C magazine (7.62x51mm FMJ)"
-	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 FMJ ammunitions."
+	desc = "A rectangular box magazine for the MA5C holding 48 rounds of 7.62x51 FMJ ammunitions."
 	icon_state = "ma5c"
-	max_rounds = 60
+	max_rounds = 48
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
 	default_ammo = /datum/ammo/bullet/rifle/ma5c
 	caliber = "7.62x51"
@@ -47,9 +47,9 @@
 
 /obj/item/ammo_magazine/rifle/halo/br55
 	name = "\improper BR55 magazine (9.5x40mm X-HP SAP-HE)"
-	desc = "A rectangular box magazine for the BR55 holding 48 rounds of 9.5x40mm X-HP SAP-HE ammunitions."
+	desc = "A rectangular box magazine for the BR55 holding 36 rounds of 9.5x40mm X-HP SAP-HE ammunitions."
 	icon_state = "br55"
-	max_rounds = 48
+	max_rounds = 36
 	gun_type = /obj/item/weapon/gun/rifle/halo/br55
 	default_ammo = /datum/ammo/bullet/rifle/br55
 	caliber = "9.5x40mm"
