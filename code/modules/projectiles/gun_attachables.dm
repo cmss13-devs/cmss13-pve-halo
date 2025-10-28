@@ -261,6 +261,7 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_y = 15
 	attach_icon = "suppressor_a"
 	hud_offset_mod = -3
+	var/new_fire_sound = "gun_silenced"
 	gun_traits = list(TRAIT_GUN_SILENCED)
 
 /obj/item/attachable/suppressor/New()

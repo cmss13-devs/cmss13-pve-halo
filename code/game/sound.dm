@@ -456,6 +456,10 @@
 				sound = pick('sound/weapons/halo/gun_spnkr_1.ogg','sound/weapons/halo/gun_spnkr_2.ogg','sound/weapons/halo/gun_spnkr_3.ogg')
 			if("gun_m7")
 				sound = pick('sound/weapons/halo/gun_m7_1.ogg','sound/weapons/halo/gun_m7_2.ogg')
+			if("gun_socom")
+				sound = pick('sound/weapons/halo/gun_socom_1.ogg', 'sound/weapons/halo/gun_socom_2.ogg', 'sound/weapons/halo/gun_socom_3.ogg', 'sound/weapons/halo/gun_socom_4.ogg')
+			if("gun_socom_smg")
+				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg', 'sound/weapons/halo/gun_silenced_smg_3.ogg')
 
 
 			// Halo misc

@@ -645,6 +645,25 @@
 /obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
 
+/obj/item/weapon/gun/pistol/halo/m6c/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_12)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_7
+	scatter_unwielded = SCATTER_AMOUNT_TIER_5
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+
+/obj/item/weapon/gun/pistol/halo/m6c/socom
+	name = "M6C/SOCOM \"Automag\" pistol"
+	desc = "A Special Operations Command modified M6C, otherwise known as the M6C/SOCOM. This sidearm features a variety of fine-tuned adjustments to better improve its performance in the field, while also receiving a slick new paintjob."
+	icon_state = "m6c_socom"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c/socom
+	attachable_allowed = list(/obj/item/attachable/flashlight/m6c_socom, /obj/item/attachable/suppressor/m6c_socom)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/m6c_socom, /obj/item/attachable/suppressor/m6c_socom)
+
+/obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded
+	current_mag = null
 
 /obj/item/weapon/gun/pistol/halo/m6c/set_gun_config_values()
 	..()
@@ -654,6 +673,9 @@
 	scatter = SCATTER_AMOUNT_TIER_7
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
+
+/obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 3, "muzzle_y" = 0,"rail_x" = 0, "rail_y" = 0, "under_x" = 0, "under_y" = 0, "stock_x" = 0, "stock_y" = 0)
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a
 	name = "M4A pistol"

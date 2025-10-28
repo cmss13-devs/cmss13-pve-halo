@@ -337,6 +337,37 @@
 		..()
 	else return
 
+/obj/item/attachable/flashlight/m6c_socom
+	name = "\improper M6C/SOCOM flashlight/laser-sight"
+	desc = "Standard to all M6C/SOCOM models, it is both a combination of the flashlight and laser-sight. Only able to be attached to the M6C/SOCOM series of pistols, due to its modified attachment points."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "socom_under"
+	attach_icon = "socom_under"
+	original_state = "socom_under"
+	original_attach = "socom_under"
+	slot = "under"
+
+/obj/item/attachable/flashlight/m6c_socom/New()
+	..()
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_1
+	movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	scatter_mod = -SCATTER_AMOUNT_TIER_10
+	scatter_unwielded_mod = -SCATTER_AMOUNT_TIER_9
+	accuracy_unwielded_mod = HIT_ACCURACY_MULT_TIER_1
+
+/obj/item/attachable/suppressor/m6c_socom
+	name = "\improper M6C/SOCOM suppressor"
+	desc = "An attachable suppressor, only able to be attached to the M6C/SOCOM series of pistols, due to its modified attachment points."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "socom_barrel"
+	attach_icon = "socom_barrel"
+	hud_offset_mod = -3
+	new_fire_sound = "gun_socom"
+
+/obj/item/attachable/suppressor/m6c_socom/New()
+	return
+
+
 /obj/item/attachable/stock/m7
 	name = "M7 SMG collapsable stock"
 	desc = "A collapsable stock for the M7 SMG. Extending it makes it more difficult to fire with one and unable to fit into belts, but improves the accuracy and scatter of the weapon."

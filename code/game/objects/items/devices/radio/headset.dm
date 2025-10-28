@@ -668,6 +668,7 @@
 /obj/item/device/radio/headset/almayer/marine/solardevils/odst
 	name = "ODST headset"
 	desc = "Issued to members of the ODST."
+	initial_keys = list(/obj/item/device/encryptionkey/soc/forecon)
 	frequency = ODST_FREQ
 	volume = RADIO_VOLUME_QUIET
 	has_hud = TRUE

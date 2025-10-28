@@ -75,10 +75,95 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_hall)
+"ai" = (
+/obj/structure/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aj" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"ak" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/ready_bay)
 "al" = (
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/cryo_hall)
+"am" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/dark_was_the_night/upper_hallway)
+"an" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/dark_was_the_night/upper_hallway)
+"ao" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/cryo_bay)
+"ap" = (
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
+/obj/effect/landmark/start/marine/spec/odst,
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/cryo_bay)
+"aq" = (
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/engineering)
+"ar" = (
+/obj/effect/landmark/late_join,
+/obj/effect/landmark/late_join/alpha,
+/obj/effect/landmark/late_join/odst,
+/obj/effect/landmark/start/marine/medic/odst,
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/cryo_bay)
+"as" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 5
+	},
+/turf/open/shuttle/escapepod,
+/area/dark_was_the_night/cryo_bay)
+"at" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 9
+	},
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/cryo_bay)
 "au" = (
 /obj/structure/curtain/red,
 /turf/open/floor/almayer/silverfull,
@@ -89,9 +174,82 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
+"aw" = (
+/obj/effect/step_trigger/clone_cleaner,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/engineering)
+"ax" = (
+/obj/effect/step_trigger/clone_cleaner,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4;
+	pixel_y = -16
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/engineering)
+"ay" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1;
+	pixel_x = 16
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = -8
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_bay)
 "az" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/briefing/one)
+"aA" = (
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = -8
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_bay)
+"aB" = (
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = -8;
+	job = "Weapons Specialist"
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8;
+	job = "Weapons Specialist"
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_bay)
+"aC" = (
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8;
+	job = "Radio Telephone Operator"
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = -8;
+	job = "Squad Sergeant"
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_bay)
+"aD" = (
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = -8;
+	job = "Fire Team Leader"
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8;
+	job = "Fire Team Leader"
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_bay)
 "aJ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -840,7 +998,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsLower";
-	vector_y = -10;
+	vector_y = -9;
 	vector_x = -46
 	},
 /obj/effect/projector{
@@ -1107,7 +1265,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/shuttle/escapepod/floor4,
+/turf/open/shuttle/escapepod,
 /area/dark_was_the_night/cryo_bay)
 "mn" = (
 /obj/structure/bed/chair{
@@ -1461,6 +1619,10 @@
 /obj/item/ammo_magazine/shotgun/buckshot/unsc{
 	pixel_x = -7;
 	pixel_y = 14
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -2046,7 +2208,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/almayer,
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
 "vG" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
@@ -3244,11 +3406,13 @@
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/upper_hallway)
 "JR" = (
-/obj/structure/closet/secure_closet/marine_personal{
-	pixel_x = -7
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = -8;
+	job = "Corpsman"
 	},
-/obj/structure/closet/secure_closet/marine_personal{
-	pixel_x = 7
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8;
+	job = "Corpsman"
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
@@ -3347,7 +3511,11 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod/floor4,
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 6
+	},
+/turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay)
 "KL" = (
 /obj/effect/decal/warning_stripes{
@@ -3402,12 +3570,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/dark_was_the_night/lower_hallway)
-"Lm" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay)
 "Lr" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -3527,7 +3689,11 @@
 	light_power = 0.5;
 	pixel_x = 16
 	},
-/turf/open/shuttle/escapepod/floor4,
+/obj/structure/platform,
+/obj/structure/platform_decoration{
+	dir = 10
+	},
+/turf/open/shuttle/escapepod,
 /area/dark_was_the_night/cryo_bay)
 "Mr" = (
 /obj/structure/stairs,
@@ -3537,7 +3703,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsLower";
-	vector_y = -10;
+	vector_y = -9;
 	vector_x = -46
 	},
 /obj/effect/projector{
@@ -4169,7 +4335,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsLower";
-	vector_y = -10;
+	vector_y = -9;
 	vector_x = -46
 	},
 /obj/effect/projector{
@@ -6785,7 +6951,7 @@ MP
 qa
 qa
 ny
-hl
+ar
 pt
 wT
 rR
@@ -7083,13 +7249,13 @@ wT
 wT
 wT
 wT
-JR
+aC
 MJ
 MJ
 So
 MP
 MJ
-mj
+as
 mj
 Mq
 MJ
@@ -7241,8 +7407,8 @@ JR
 qa
 qb
 MJ
-KH
-KH
+at
+ao
 KH
 MJ
 MJ
@@ -7389,7 +7555,7 @@ rR
 rR
 rR
 wT
-JR
+ay
 ea
 qb
 ny
@@ -7541,7 +7707,7 @@ rR
 rR
 rR
 wT
-JR
+aA
 qa
 qb
 ny
@@ -7693,11 +7859,11 @@ rR
 wT
 wT
 wT
-JR
+aB
 qb
 qa
 MJ
-mj
+as
 mj
 Mq
 MJ
@@ -7843,14 +8009,14 @@ wT
 wT
 wT
 wT
-JR
+aD
 MJ
 MJ
 vF
-Lm
+MP
 MJ
-KH
-KH
+at
+ao
 KH
 MJ
 hW
@@ -8154,7 +8320,7 @@ qa
 qb
 MP
 hl
-pt
+ap
 MJ
 ED
 dS
@@ -9856,9 +10022,9 @@ gC
 ZK
 gO
 gC
-Ue
-Ue
-Ue
+vk
+vk
+vk
 Ue
 ZK
 RW
@@ -10005,7 +10171,7 @@ lc
 lc
 lc
 lc
-TQ
+am
 Qp
 lc
 lc
@@ -10066,7 +10232,7 @@ RL
 RL
 Fy
 sL
-sL
+ak
 sL
 sL
 Tc
@@ -10151,21 +10317,21 @@ lc
 xH
 GP
 Po
-bG
+fi
+an
 QB
 QB
 QB
-QB
+zH
+nv
+fi
+zH
+zH
+zH
+zH
 zH
 GP
-bG
-zH
-zH
-zH
-zH
-zH
-GP
-RW
+tn
 cI
 Rm
 nr
@@ -10673,7 +10839,7 @@ zO
 zO
 zO
 rD
-wi
+wp
 Km
 Hh
 LX
@@ -11746,7 +11912,7 @@ rR
 rR
 rR
 Vc
-by
+ai
 by
 Ky
 by
@@ -12354,7 +12520,7 @@ rR
 rR
 rR
 Vc
-by
+ai
 Yd
 xK
 Vb
@@ -12962,7 +13128,7 @@ rR
 rR
 rR
 Vc
-by
+ai
 Ky
 by
 Ky
@@ -13874,7 +14040,7 @@ rR
 rR
 rR
 Vc
-by
+ai
 by
 by
 Ky
@@ -13929,8 +14095,8 @@ rR
 uW
 uW
 uW
-wF
-NP
+aw
+aq
 mf
 rR
 rR
@@ -14482,7 +14648,7 @@ rR
 rR
 rR
 Vc
-Ky
+aj
 SG
 xK
 Vb
@@ -14841,7 +15007,7 @@ rR
 uW
 Mr
 Ka
-GM
+ax
 SV
 dB
 mf
@@ -15090,7 +15256,7 @@ rR
 rR
 rR
 Vc
-by
+ai
 by
 Ky
 Ky
