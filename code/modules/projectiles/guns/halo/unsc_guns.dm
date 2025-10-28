@@ -675,7 +675,7 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 
 /obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 3, "muzzle_y" = 0,"rail_x" = 0, "rail_y" = 0, "under_x" = 0, "under_y" = 0, "stock_x" = 0, "stock_y" = 0)
+	attachable_offset = list("muzzle_x" = 19, "muzzle_y" = 15,"rail_x" = 16, "rail_y" = 16, "under_x" = 19, "under_y" = 16, "stock_x" = 0, "stock_y" = 0)
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a
 	name = "M4A pistol"
