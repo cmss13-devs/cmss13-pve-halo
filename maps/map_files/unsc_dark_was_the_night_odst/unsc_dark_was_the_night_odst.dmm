@@ -998,7 +998,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsLower";
-	vector_y = -9;
+	vector_y = -8;
 	vector_x = -46
 	},
 /obj/effect/projector{
@@ -3383,7 +3383,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Js" = (
-/obj/structure/machinery/door/airlock/unsc/prop{
+/obj/structure/machinery/door/airlock/unsc{
 	dir = 1
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -3703,7 +3703,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsLower";
-	vector_y = -9;
+	vector_y = -8;
 	vector_x = -46
 	},
 /obj/effect/projector{
@@ -4335,7 +4335,7 @@
 	},
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsLower";
-	vector_y = -9;
+	vector_y = -8;
 	vector_x = -46
 	},
 /obj/effect/projector{

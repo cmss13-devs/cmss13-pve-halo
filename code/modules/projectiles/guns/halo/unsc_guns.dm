@@ -316,19 +316,26 @@
 	cocked_sound = 'sound/weapons/halo/gun_m7_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_m7_unload.ogg'
 	empty_sound = null
+	w_class = SIZE_LARGE
 
 	flags_gun_features = GUN_CAN_POINTBLANK
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/smg/halo/m7
-	starting_attachment_types = list(/obj/item/attachable/stock/m7, /obj/item/attachable/stock/m7/grip)
+	starting_attachment_types = list(/obj/item/attachable/stock/m7, /obj/item/attachable/stock/m7/grip/folded_down)
 	attachable_allowed = list(
-		/obj/item/attachable/stock/m7,
-		/obj/item/attachable/stock/m7/grip,
+	/obj/item/attachable/stock/m7,
+	/obj/item/attachable/stock/m7/grip,
+	/obj/item/attachable/flashlight/m7,
+	/obj/item/attachable/reddot/m7,
+	/obj/item/attachable/suppressor/m7
 	)
 
+/obj/item/weapon/gun/smg/halo/m7/folded_up
+	starting_attachment_types = list(/obj/item/attachable/stock/m7, /obj/item/attachable/stock/m7/grip)
+
 /obj/item/weapon/gun/smg/halo/m7/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 16, "muzzle_y" = 16,"rail_x" = 16, "rail_y" = 16, "under_x" = 30, "under_y" = 15, "stock_x" = 13, "stock_y" = 14)
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 15,"rail_x" = 16, "rail_y" = 16, "under_x" = 30, "under_y" = 15, "stock_x" = 13, "stock_y" = 14, "special_x" = 11, "special_y" = 16)
 
 /obj/item/weapon/gun/smg/halo/m7/set_gun_config_values()
 	..()
@@ -344,6 +351,25 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 	fa_scatter_peak = 40
 	fa_max_scatter = 3
+
+/obj/item/weapon/gun/smg/halo/m7/socom
+	name = "M7 submachine gun"
+	starting_attachment_types = list(
+	/obj/item/attachable/stock/m7,
+	/obj/item/attachable/stock/m7/grip/folded_down,
+	/obj/item/attachable/flashlight/m7,
+	/obj/item/attachable/reddot/m7,
+	/obj/item/attachable/suppressor/m7
+	)
+
+/obj/item/weapon/gun/smg/halo/m7/socom/folded_up
+	starting_attachment_types = list(
+	/obj/item/attachable/stock/m7,
+	/obj/item/attachable/stock/m7/grip,
+	/obj/item/attachable/flashlight/m7,
+	/obj/item/attachable/reddot/m7,
+	/obj/item/attachable/suppressor/m7
+	)
 
 // shotguns
 

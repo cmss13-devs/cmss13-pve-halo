@@ -367,6 +367,35 @@
 /obj/item/attachable/suppressor/m6c_socom/New()
 	return
 
+/obj/item/attachable/suppressor/m7
+	name = "\improper M7/SOCOM suppressor"
+	desc = "An attachable suppressor for the M7/SOCOM upgrade package."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m7_suppressor"
+	attach_icon = "m7_suppressor"
+	hud_offset_mod = -3
+	new_fire_sound = "gun_socom_smg"
+
+/obj/item/attachable/suppressor/m7/New()
+	return
+
+/obj/item/attachable/reddot/m7
+	name = "\improper M7/SOCOM red-dot sight"
+	desc = "A red-dot sight for the M7/SOCOM upgrade package."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m7_red_dot"
+	attach_icon = "m7_red_dot"
+
+/obj/item/attachable/flashlight/m7
+	name = "\improper M7 flashlight"
+	desc = "A side-mounted flashlight to attach to the M7 SMG."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m7_flashlight"
+	attach_icon = "m7_flashlight"
+	original_state = "m7_flashlight"
+	original_attach = "m7_flashlight"
+	slot = "special"
+	layer_addition = 0.1
 
 /obj/item/attachable/stock/m7
 	name = "M7 SMG collapsable stock"
@@ -392,11 +421,12 @@
 	scatter_unwielded_mod = 0
 	wield_delay_mod = 0
 	recoil_unwielded_mod = 0
+	size_mod = 2
 
 /obj/item/attachable/stock/m7/apply_on_weapon(obj/item/weapon/gun/gun)
 	if(stock_activated)
 		//folded up
-		accuracy_mod = -HIT_ACCURACY_MULT_TIER_2
+		accuracy_mod = HIT_ACCURACY_MULT_TIER_2
 		scatter_mod = -SCATTER_AMOUNT_TIER_9
 		movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
 		accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_4
@@ -404,7 +434,8 @@
 		recoil_unwielded_mod = RECOIL_AMOUNT_TIER_5
 		icon_state = "m7_stock-on"
 		attach_icon = "m7_stock-on"
-		wield_delay_mod = WIELD_DELAY_NONE
+		size_mod = 2
+		wield_delay_mod = WIELD_DELAY_VERY_FAST
 
 	else
 		accuracy_mod = 0
@@ -415,7 +446,8 @@
 		scatter_unwielded_mod = 0
 		icon_state = "m7_stock"
 		attach_icon = "m7_stock"
-		wield_delay_mod = 0 //stock is folded so no wield delay
+		size_mod = 0
+		wield_delay_mod = WIELD_DELAY_NONE //stock is folded so no wield delay
 		recoil_unwielded_mod = 0
 
 	gun.recalculate_attachment_bonuses()
@@ -447,16 +479,17 @@
 
 /obj/item/attachable/stock/m7/grip/apply_on_weapon(obj/item/weapon/gun/gun)
 	if(stock_activated)
-		//folded up
-		accuracy_mod = -HIT_ACCURACY_MULT_TIER_2
+		//folded down
+		accuracy_mod = HIT_ACCURACY_MULT_TIER_2
 		scatter_mod = -SCATTER_AMOUNT_TIER_9
 		movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
 		accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_3
 		scatter_unwielded_mod = SCATTER_AMOUNT_TIER_7
 		recoil_unwielded_mod = -RECOIL_AMOUNT_TIER_5
-		icon_state = "m7_grip-on"
-		attach_icon = "m7_grip-on"
+		icon_state = "m7_grip"
+		attach_icon = "m7_grip"
 		wield_delay_mod = WIELD_DELAY_NONE
+		size_mod = 1
 
 	else
 		accuracy_mod = 0
@@ -465,12 +498,14 @@
 		movement_onehanded_acc_penalty_mod = 0
 		accuracy_unwielded_mod = 0
 		scatter_unwielded_mod = 0
-		icon_state = "m7_grip"
-		attach_icon = "m7_grip"
-		wield_delay_mod = 0 //stock is folded so no wield delay
+		icon_state = "m7_grip-on"
+		attach_icon = "m7_grip-on"
+		wield_delay_mod = 0 //stock is folded up so no wield delay
 		recoil_unwielded_mod = 0
+		size_mod = 0
 
 	gun.recalculate_attachment_bonuses()
 	gun.update_overlays(src, "under")
 
-
+/obj/item/attachable/stock/m7/grip/folded_down
+	stock_activated = TRUE
