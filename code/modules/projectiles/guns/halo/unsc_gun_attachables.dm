@@ -509,3 +509,4 @@
 
 /obj/item/attachable/stock/m7/grip/folded_down
 	stock_activated = TRUE
+	attach_icon = "m7_grip-on"

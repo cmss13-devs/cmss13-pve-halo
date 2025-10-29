@@ -20,6 +20,9 @@
 	light_color = "#dae2ff";
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
 "ad" = (
@@ -250,12 +253,46 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
+"aE" = (
+/obj/structure/barricade/handrail,
+/turf/open/floor/almayer/edge/smooth/endcap_left,
+/area/dark_was_the_night/ready_bay)
+"aF" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/ready_bay)
+"aG" = (
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/pod_bay)
+"aH" = (
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/pod_bay)
+"aI" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/pod_bay)
 "aJ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/lower_hallway)
+"aK" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/pod_bay)
+"aL" = (
+/obj/structure/stairs{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
 "aM" = (
 /obj/structure/stairs,
 /obj/structure/platform{
@@ -263,6 +300,13 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
+"aN" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
 "aO" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/dark_was_the_night/lower_hallway)
@@ -273,10 +317,90 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/lower_hallway)
+"aQ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/platform,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aR" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aS" = (
+/obj/structure/platform,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aT" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 6
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aU" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 10
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aV" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aW" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/pod_bay)
+"aX" = (
+/obj/item/ammo_box/magazine/unsc/ma5c/shredder{
+	pixel_x = -2;
+	pixel_y = 12
+	},
+/obj/item/ammo_magazine/shotgun/buckshot/unsc{
+	pixel_x = -4;
+	pixel_y = 14
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "aY" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/five,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/briefing/two)
+"aZ" = (
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_x = -9;
+	pixel_y = 11
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
+"ba" = (
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/halo,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/golden_arrow/cargo_shuttle/lower)
 "bb" = (
 /obj/structure/prop/unsc_crate/big{
 	pixel_x = -2;
@@ -292,6 +416,41 @@
 	},
 /turf/open/floor/almayer/red/east,
 /area/dark_was_the_night/lower_hallway)
+"bc" = (
+/turf/open/floor/almayer/pod_landing_floor,
+/area/golden_arrow/cargo_shuttle/lower)
+"bd" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/medical)
+"be" = (
+/obj/structure/surface/table/almayer,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
+"bf" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/silverfull,
+/area/dark_was_the_night/dorms)
+"bg" = (
+/obj/structure/bed/chair/office/light{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "bh" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -299,6 +458,22 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay)
+"bi" = (
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
+	id = "ship_armory2"
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/golden_arrow/cargo_shuttle/upper)
+"bj" = (
+/turf/open/floor/almayer/pod_landing_floor,
+/area/golden_arrow/cargo_shuttle/upper)
+"bk" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/cryo_hall)
 "bm" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -456,7 +631,7 @@
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 0;
 	pixel_y = 15;
-	layer = 5.1
+	layer = 5.12
 	},
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 16;
@@ -518,7 +693,8 @@
 	name = "Cargo Elevator Upper";
 	elevator_network = "ArrowCargo";
 	airlock_exit = "north";
-	airlock_area = /area/golden_arrow/cargo_shuttle/upper
+	airlock_area = /area/golden_arrow/cargo_shuttle/upper;
+	roundstart_template = /datum/map_template/shuttle/trijent_elevator/golden_arrow/cargo
 	},
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/golden_arrow/cargo_shuttle/upper)
@@ -752,7 +928,7 @@
 /area/dark_was_the_night/upper_hallway)
 "gn" = (
 /obj/structure/barricade/handrail,
-/turf/open/floor/almayer,
+/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/pod_bay)
 "go" = (
 /obj/structure/platform{
@@ -1082,7 +1258,7 @@
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 0;
 	pixel_y = 15;
-	layer = 5.1
+	layer = 5.12
 	},
 /obj/structure/prop/unsc_crate/standard/green{
 	layer = 5.2;
@@ -1375,7 +1551,7 @@
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 0;
 	pixel_y = 15;
-	layer = 5.1
+	layer = 5.12
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1624,6 +1800,10 @@
 	light_color = "#dae2ff";
 	dir = 1
 	},
+/obj/item/ammo_magazine/shotgun/buckshot/unsc{
+	pixel_x = 7;
+	pixel_y = 13
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "pZ" = (
@@ -1745,13 +1925,9 @@
 	pixel_x = -3;
 	pixel_y = 0
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -4;
-	pixel_y = 16
-	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -7;
-	pixel_y = 0
+/obj/item/ammo_box/magazine/unsc/br55/extended{
+	pixel_x = -2;
+	pixel_y = 13
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -1910,7 +2086,11 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/briefing/two)
 "sR" = (
-/obj/structure/cargo_container/unsc/main_2/d,
+/obj/structure/cargo_container/unsc/main_2/d{
+	density = 0;
+	layer = 5.11
+	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
 "sS" = (
@@ -2061,10 +2241,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/ladder{
-	id = "engi";
-	height = -2
-	},
 /turf/open/floor/almayer/plating_striped/north,
 /area/dark_was_the_night/engineering)
 "ut" = (
@@ -2104,6 +2280,9 @@
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer/PC{
 	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
@@ -2447,6 +2626,9 @@
 /obj/structure/machinery/prop/almayer/computer/PC{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
 "xJ" = (
@@ -2470,6 +2652,10 @@
 	freerange = 1;
 	name = "General Listening Channel";
 	pixel_y = 26
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_x = -9;
+	pixel_y = 11
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
@@ -2538,7 +2724,11 @@
 /area/dark_was_the_night/armory)
 "yX" = (
 /obj/structure/machinery/light/double/blue,
-/obj/structure/cargo_container/unsc/main_2,
+/obj/structure/cargo_container/unsc/main_2{
+	density = 0;
+	layer = 5.11
+	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
 "zc" = (
@@ -2969,6 +3159,9 @@
 /obj/structure/prop/unsc_crate/stack{
 	pixel_y = 15;
 	density = 0
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
 /turf/open/floor/almayer/silverfull,
 /area/dark_was_the_night/dorms)
@@ -3440,6 +3633,14 @@
 /area/dark_was_the_night/lower_hallway)
 "Ke" = (
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -6;
+	pixel_y = 1
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -7;
+	pixel_y = 8
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Kk" = (
@@ -3733,7 +3934,11 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/engineering)
 "MB" = (
-/obj/structure/cargo_container/unsc/main_2/b,
+/obj/structure/cargo_container/unsc/main_2/b{
+	density = 0;
+	layer = 5.11
+	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
 "MC" = (
@@ -4306,6 +4511,14 @@
 	pixel_x = 6;
 	pixel_y = -6
 	},
+/obj/item/ammo_box/magazine/unsc/small/m6g{
+	pixel_x = 6;
+	pixel_y = 23
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6g{
+	pixel_x = 6;
+	pixel_y = 13
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Tz" = (
@@ -4480,7 +4693,11 @@
 /turf/open/shuttle/escapepod/floor4,
 /area/dark_was_the_night/canteen)
 "US" = (
-/obj/structure/cargo_container/unsc/main_2/c,
+/obj/structure/cargo_container/unsc/main_2/c{
+	density = 0;
+	layer = 5.11
+	},
+/obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
 "Vb" = (
@@ -4492,7 +4709,7 @@
 	pixel_y = 26;
 	pixel_x = 0
 	},
-/turf/open/floor/almayer,
+/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/pod_bay)
 "Vc" = (
 /turf/closed/wall/unsc/reinforced/hull,
@@ -4574,7 +4791,6 @@
 /obj/docking_port/stationary/trijent_elevator/shipmap_elevator/cargo{
 	id = "garrow_cargo_elevator_storage";
 	name = "Cargo Elevator Storage";
-	roundstart_template = /datum/map_template/shuttle/trijent_elevator/golden_arrow/cargo;
 	elevator_network = "ArrowCargo";
 	airlock_area = /area/golden_arrow/cargo_shuttle/lower;
 	airlock_exit = "north"
@@ -8505,7 +8721,7 @@ QW
 Io
 uM
 Uf
-ab
+bf
 uM
 ab
 Uf
@@ -8659,7 +8875,7 @@ uM
 DC
 ee
 uM
-ee
+Py
 HQ
 uM
 Di
@@ -8780,7 +8996,7 @@ rR
 UI
 dS
 CF
-HL
+bk
 Cv
 UI
 zG
@@ -9110,7 +9326,7 @@ sD
 sD
 mn
 Io
-yr
+Yf
 ac
 yr
 yr
@@ -9168,7 +9384,7 @@ rR
 rR
 rD
 Tn
-wi
+aX
 yq
 yq
 wi
@@ -9265,7 +9481,7 @@ iE
 yr
 wB
 yr
-wB
+bg
 MZ
 Di
 Di
@@ -9320,7 +9536,7 @@ rR
 rR
 rD
 pW
-wi
+aZ
 yq
 yq
 wi
@@ -9334,7 +9550,7 @@ rD
 rD
 rD
 rD
-rR
+Yk
 rR
 rR
 rR
@@ -9418,7 +9634,7 @@ MZ
 uE
 yr
 xI
-MZ
+be
 Di
 rR
 rR
@@ -9484,9 +9700,9 @@ Cl
 Fy
 Fy
 wp
-wi
-rD
-rR
+aE
+SW
+Yk
 rR
 rR
 rR
@@ -9636,9 +9852,9 @@ wA
 Fy
 wA
 wi
-wi
-rD
-rR
+xD
+YG
+Yk
 rR
 rR
 rR
@@ -9788,9 +10004,9 @@ wA
 Or
 wA
 yq
-wi
-rD
-rR
+xD
+SW
+Yk
 rR
 rR
 rR
@@ -9940,9 +10156,9 @@ wA
 cj
 wA
 yq
-wi
-rD
-rR
+xD
+SW
+Yk
 rR
 rR
 rR
@@ -9986,7 +10202,7 @@ nY
 WQ
 lD
 lD
-lD
+bS
 lD
 Pz
 lD
@@ -10092,9 +10308,9 @@ wA
 cj
 wA
 yq
-yq
+aF
 rD
-rR
+Yk
 rR
 rR
 rR
@@ -10137,7 +10353,7 @@ rR
 nY
 RW
 RW
-RW
+tn
 RW
 RW
 vL
@@ -10244,9 +10460,9 @@ sx
 Fy
 wA
 wi
-yq
-rD
-rR
+xD
+SW
+Yk
 rR
 rR
 rR
@@ -10396,9 +10612,9 @@ oo
 Fy
 Fy
 VZ
-yq
-rD
-rR
+xD
+YG
+Yk
 rR
 rR
 rR
@@ -10548,9 +10764,9 @@ GN
 Ae
 Fy
 wi
-wi
-rD
-rR
+xD
+SW
+Yk
 rR
 rR
 rR
@@ -10700,9 +10916,9 @@ xD
 sh
 Fy
 wi
-wi
-rD
-rR
+xD
+SW
+Yk
 rR
 rR
 rR
@@ -10852,7 +11068,7 @@ xD
 Ae
 Fy
 wi
-wi
+Cl
 rD
 rD
 rD
@@ -11083,7 +11299,7 @@ ej
 ej
 ej
 zh
-sF
+bi
 qq
 qL
 Be
@@ -11123,7 +11339,7 @@ RM
 RM
 RM
 il
-zC
+ba
 pa
 ex
 if
@@ -11235,7 +11451,7 @@ ej
 ej
 ej
 zh
-sF
+bj
 hT
 gP
 Nc
@@ -11246,7 +11462,7 @@ Lf
 Jm
 zt
 nC
-UM
+bd
 GV
 GV
 GV
@@ -11275,7 +11491,7 @@ RM
 RM
 RM
 il
-zC
+bc
 pa
 ex
 QY
@@ -11387,7 +11603,7 @@ ej
 ej
 ej
 zh
-sF
+bj
 qq
 yT
 Be
@@ -11427,7 +11643,7 @@ RM
 RM
 RM
 il
-zC
+bc
 pa
 ex
 QY
@@ -11539,7 +11755,7 @@ ej
 ej
 ej
 zh
-sF
+bj
 qq
 yT
 Be
@@ -11579,7 +11795,7 @@ RM
 RM
 RM
 il
-zC
+bc
 pa
 ex
 aO
@@ -11610,9 +11826,9 @@ Yk
 Vc
 by
 by
-by
-by
-by
+aL
+aG
+aG
 Vc
 Vc
 rR
@@ -11762,8 +11978,8 @@ rR
 Vc
 pE
 by
-by
-by
+aN
+aG
 gn
 kr
 Vc
@@ -11914,8 +12130,8 @@ rR
 Vc
 ai
 by
-Ky
-by
+aQ
+aG
 gn
 kr
 Vc
@@ -12066,8 +12282,8 @@ rR
 Vc
 pE
 Ky
-Ky
-by
+aQ
+aG
 gn
 kr
 Vc
@@ -12218,8 +12434,8 @@ rR
 Vc
 by
 Ky
-Ky
-Ky
+aR
+aI
 gn
 kr
 Vc
@@ -12370,9 +12586,9 @@ rR
 Vc
 pE
 by
-by
-by
-by
+aL
+aG
+aG
 xK
 Vc
 rR
@@ -12524,7 +12740,7 @@ ai
 Yd
 xK
 Vb
-by
+aG
 xK
 Vc
 rR
@@ -12674,9 +12890,9 @@ rR
 Vc
 pE
 by
-by
-by
-by
+aL
+aG
+aG
 xK
 Vc
 rR
@@ -12826,8 +13042,8 @@ rR
 Vc
 by
 by
-by
-Ky
+aN
+aI
 gn
 kr
 Vc
@@ -12978,8 +13194,8 @@ rR
 Vc
 pE
 Ky
-by
-Ky
+aS
+aI
 gn
 kr
 Vc
@@ -13130,8 +13346,8 @@ rR
 Vc
 ai
 Ky
-by
-Ky
+aS
+aI
 gn
 kr
 Vc
@@ -13282,8 +13498,8 @@ rR
 Vc
 pE
 Ky
-by
-by
+aS
+aG
 gn
 kr
 Vc
@@ -13434,9 +13650,9 @@ rR
 Vc
 by
 KA
-by
-by
-by
+aT
+aG
+aG
 xK
 Vc
 rR
@@ -13586,9 +13802,9 @@ rR
 Vc
 xK
 xK
-by
-Ky
-xK
+aH
+aK
+aH
 xK
 Vc
 rR
@@ -13738,9 +13954,9 @@ rR
 Vc
 by
 Vk
-by
-Ky
-by
+aU
+aI
+aG
 xK
 Vc
 rR
@@ -13890,8 +14106,8 @@ rR
 Vc
 pE
 by
-by
-Ky
+aS
+aI
 gn
 kr
 Vc
@@ -14042,8 +14258,8 @@ rR
 Vc
 ai
 by
-by
-Ky
+aS
+aI
 gn
 kr
 Vc
@@ -14194,8 +14410,8 @@ rR
 Vc
 pE
 by
-by
-by
+aS
+aG
 gn
 kr
 Vc
@@ -14346,8 +14562,8 @@ rR
 Vc
 by
 by
-by
-by
+aV
+aG
 gn
 kr
 Vc
@@ -14498,9 +14714,9 @@ rR
 Vc
 pE
 by
-by
-by
-by
+aL
+aG
+aG
 xK
 Vc
 rR
@@ -14652,7 +14868,7 @@ aj
 SG
 xK
 Vb
-by
+aG
 xK
 Vc
 rR
@@ -14802,9 +15018,9 @@ rR
 Vc
 pE
 by
-by
-by
-by
+aL
+aG
+aG
 xK
 Vc
 rR
@@ -14954,8 +15170,8 @@ rR
 Vc
 by
 by
-Ky
-by
+aW
+aG
 gn
 kr
 Vc
@@ -15106,8 +15322,8 @@ rR
 Vc
 pE
 by
-Ky
-Ky
+aQ
+aI
 gn
 kr
 Vc
@@ -15258,8 +15474,8 @@ rR
 Vc
 ai
 by
-Ky
-Ky
+aQ
+aI
 gn
 kr
 Vc
@@ -15410,8 +15626,8 @@ rR
 Vc
 pE
 by
-Ky
-Ky
+aR
+aI
 gn
 kr
 xK
@@ -15562,9 +15778,9 @@ rR
 Vc
 Ky
 Ky
-by
-by
-by
+aL
+aG
+aG
 Vc
 Vc
 rR

@@ -25,7 +25,7 @@
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
 	default_ammo = /datum/ammo/bullet/rifle/ma5c/shredder
 	caliber = "7.62x51"
-	ammo_band_color = COLOR_YELLOW
+	ammo_band_color = "#994545"
 
 /obj/item/ammo_magazine/rifle/halo/ma3a
 	name = "\improper MA3A magazine (7.62x51mm FMJ)"
