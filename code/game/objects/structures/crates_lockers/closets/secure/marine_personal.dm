@@ -33,6 +33,9 @@
 
 /obj/structure/closet/secure_closet/marine_personal/Initialize()
 	. = ..()
+	spawn_gear()
+
+/obj/structure/closet/secure_closet/marine_personal/proc/spawn_gear()
 	if(has_cryo_gear)
 		new /obj/item/clothing/under/marine(src)
 		new /obj/item/clothing/shoes/marine/knife(src)
@@ -41,8 +44,7 @@
 /obj/structure/closet/secure_closet/marine_personal/odst
 	name = "ODST personal locker"
 
-/obj/structure/closet/secure_closet/marine_personal/odst/Initialize()
-	. = ..()
+/obj/structure/closet/secure_closet/marine_personal/odst/spawn_gear()
 	if(has_cryo_gear)
 		new /obj/item/clothing/under/marine/odst(src)
 		new /obj/item/clothing/shoes/marine/knife(src)

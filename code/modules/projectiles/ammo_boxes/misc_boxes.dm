@@ -263,7 +263,7 @@
 	name = "\improper UNSC storage crate - (First Aid Packets x 10)"
 	desc = "A generic storage crate for the UNSC holding MREs."
 	icon_state = "base_medpack"
-	magazine_type = /obj/item/storage/box/packet/medical_packet
+	magazine_type = /obj/item/storage/box/tear_packet/medical_packet
 	num_of_magazines = 10
 	overlay_content = "_medpack"
 
@@ -273,9 +273,9 @@
 /obj/item/ammo_box/magazine/misc/unsc/m7_ammo
 	name = "UNSC storage crate - (M7 Magazine Packets x 16)"
 	desc = "A generic UNSC storage crate for holding M7 magazine packets."
-	magazine_type = /obj/item/storage/box/packet/m7
+	magazine_type = /obj/item/storage/box/tear_packet/m7
 	num_of_magazines = 16
 	overlay_content = "_riflepack"
 
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo/empty
 	empty = TRUE

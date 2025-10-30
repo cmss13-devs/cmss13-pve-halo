@@ -1263,6 +1263,7 @@
 	icon_state = "base_ammosmall"
 	limit_per_tile = 2
 	overlay_gun_type = null
+	overlay_content = "_small"
 
 /obj/item/ammo_box/magazine/unsc/small/m6c
 	name = "UNSC magazine box (M6C x 22)"
@@ -1271,6 +1272,11 @@
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6c
 	num_of_magazines = 22
 
+/obj/item/ammo_box/magazine/unsc/small/m6c/socom
+	name = "UNSC magazine box (M6C/SOCOM x 22)"
+	desc = "An ammo box storing 22 magazines of M6C/SOCOM ammunition."
+	overlay_ammo_type = "_extsmall"
+	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6c/socom
 
 /obj/item/ammo_box/magazine/unsc/small/m6g
 	name = "UNSC magazine box (M6G x 22)"

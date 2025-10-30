@@ -3578,15 +3578,15 @@
 /area/dark_was_the_night/cryo_bay/one)
 "iy" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/item/storage/box/packet/medical_packet{
+/obj/item/storage/box/tear_packet/medical_packet{
 	pixel_x = -1;
 	pixel_y = 10
 	},
-/obj/item/storage/box/packet/medical_packet{
+/obj/item/storage/box/tear_packet/medical_packet{
 	pixel_x = 0;
 	pixel_y = 1
 	},
-/obj/item/storage/box/packet/medical_packet{
+/obj/item/storage/box/tear_packet/medical_packet{
 	pixel_x = 1;
 	pixel_y = 8
 	},

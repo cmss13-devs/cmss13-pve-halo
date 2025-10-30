@@ -459,9 +459,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay)
 "bi" = (
-/obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
-	id = "ship_armory2"
-	},
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/halo,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/golden_arrow/cargo_shuttle/upper)
 "bj" = (
@@ -474,16 +472,36 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
+"bl" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/machinery/light/small/red{
+	pixel_x = 16
+	},
+/turf/open/shuttle/escapepod/east,
+/area/dark_was_the_night/pod_bay)
 "bm" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
+"bn" = (
+/obj/structure/gun_rack/halo/big/br55/unloaded,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "bo" = (
 /obj/structure/machinery/cryopod/big/halo,
 /turf/open/floor/almayer/plating_striped/west,
 /area/dark_was_the_night/cryo_bay)
+"bp" = (
+/obj/structure/gun_rack/halo/big/br55/unloaded,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "bq" = (
 /obj/structure/machinery/door_control/brbutton{
 	pixel_y = 28;
@@ -509,6 +527,40 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
+"bs" = (
+/obj/structure/gun_rack/halo/big/ma5c/unloaded,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
+"bt" = (
+/obj/structure/gun_rack/halo/big/ma5c/unloaded,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
+"bu" = (
+/obj/structure/gun_rack/halo/big/ma5c/unloaded,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
+"bv" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/unsc/small/m6c/socom{
+	pixel_y = 9;
+	layer = 3
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c/socom{
+	pixel_y = -1;
+	layer = 3.01
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c/socom{
+	pixel_y = 19;
+	pixel_x = 0
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/ready_bay)
 "bw" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -533,6 +585,18 @@
 "by" = (
 /turf/open/floor/almayer,
 /area/dark_was_the_night/pod_bay)
+"bz" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/unsc/small/m6c/socom{
+	pixel_y = 15;
+	pixel_x = 0
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c/socom{
+	pixel_y = 5;
+	pixel_x = 0
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/ready_bay)
 "bG" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
@@ -993,6 +1057,9 @@
 /area/dark_was_the_night/armory)
 "gQ" = (
 /obj/structure/pipes/vents/pump,
+/obj/effect/decal/unsc/armory{
+	pixel_x = -16
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "gR" = (
@@ -1225,6 +1292,12 @@
 	icon_state = "NW-out";
 	pixel_y = 1
 	},
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 28;
+	id = "explosives";
+	name = "armory shutters control";
+	req_one_access_txt = "19;12"
+	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/north,
 /area/dark_was_the_night/ready_bay)
 "jH" = (
@@ -1282,6 +1355,7 @@
 "jV" = (
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
 /obj/item/device/binoculars/range/monocular,
+/obj/structure/machinery/light/small/blue/golden_arrow,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "jW" = (
@@ -1450,10 +1524,7 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/dorms)
 "mp" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
-	req_one_access_txt = "9;12;39;40";
-	req_access = list()
-	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "mq" = (
@@ -1610,6 +1681,7 @@
 "nM" = (
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
+/obj/structure/machinery/light/small/blue/golden_arrow,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "nN" = (
@@ -1706,10 +1778,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "pc" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
-	req_one_access_txt = "9;12;39;40";
-	req_one_access = list()
-	},
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "pe" = (
@@ -1874,10 +1943,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qJ" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
-	req_one_access_txt = "9;12;39;40";
-	req_one_access = list()
-	},
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qL" = (
@@ -2104,10 +2170,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/upper_hallway)
 "sU" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
-	req_one_access_txt = "9;12;39;40";
-	req_access = list()
-	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "sX" = (
@@ -2318,6 +2381,7 @@
 "uP" = (
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
 /obj/item/device/binoculars/range/monocular,
+/obj/structure/machinery/light/small/blue/golden_arrow,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "uW" = (
@@ -2657,6 +2721,7 @@
 	pixel_x = -9;
 	pixel_y = 11
 	},
+/obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
 "xX" = (
@@ -3780,6 +3845,9 @@
 /area/dark_was_the_night/lower_hallway)
 "Lz" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "LB" = (
@@ -4000,6 +4068,9 @@
 /area/dark_was_the_night/armory)
 "Nz" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "NG" = (
@@ -4646,6 +4717,9 @@
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "Uy" = (
@@ -4856,21 +4930,6 @@
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/canteen)
-"Xn" = (
-/obj/structure/closet/crate/unsc{
-	pixel_x = 0;
-	pixel_y = 7
-	},
-/obj/item/ammo_magazine/spnkr{
-	pixel_x = -5;
-	pixel_y = 0
-	},
-/obj/item/ammo_magazine/spnkr{
-	pixel_x = -5;
-	pixel_y = 9
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/ready_bay)
 "XE" = (
 /obj/structure/platform,
 /turf/open/shuttle/escapepod/west,
@@ -4995,9 +5054,9 @@
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
 "ZE" = (
-/obj/structure/gun_rack/halo/armory/ma5c/unloaded,
-/obj/structure/gun_rack/halo/armory/ma5c/unloaded{
-	pixel_y = 24
+/obj/structure/gun_rack/halo/big/br55/unloaded,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 8
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -9238,7 +9297,7 @@ yq
 yq
 oR
 Fy
-ZE
+bn
 wi
 xD
 YG
@@ -9390,7 +9449,7 @@ yq
 wi
 FW
 Fy
-ZE
+bp
 wi
 xD
 SW
@@ -9550,7 +9609,7 @@ rD
 rD
 rD
 rD
-Yk
+rD
 rR
 rR
 rR
@@ -9702,7 +9761,7 @@ Fy
 wp
 aE
 SW
-Yk
+rD
 rR
 rR
 rR
@@ -9840,8 +9899,8 @@ Kc
 Kc
 Fy
 xM
-sL
-sL
+bz
+bv
 sL
 WN
 kR
@@ -9854,7 +9913,7 @@ wA
 wi
 xD
 YG
-Yk
+rD
 rR
 rR
 rR
@@ -10006,7 +10065,7 @@ wA
 yq
 xD
 SW
-Yk
+rD
 rR
 rR
 rR
@@ -10158,7 +10217,7 @@ wA
 yq
 xD
 SW
-Yk
+rD
 rR
 rR
 rR
@@ -10310,7 +10369,7 @@ wA
 yq
 aF
 rD
-Yk
+rD
 rR
 rR
 rR
@@ -10462,7 +10521,7 @@ wA
 wi
 xD
 SW
-Yk
+rD
 rR
 rR
 rR
@@ -10614,7 +10673,7 @@ Fy
 VZ
 xD
 YG
-Yk
+rD
 rR
 rR
 rR
@@ -10766,7 +10825,7 @@ Fy
 wi
 xD
 SW
-Yk
+rD
 rR
 rR
 rR
@@ -10903,14 +10962,14 @@ kL
 kL
 kL
 rD
-Xn
+wi
 Km
 Hh
 LX
 wi
 qJ
 Fy
-ZE
+bs
 wi
 xD
 sh
@@ -10918,7 +10977,7 @@ Fy
 wi
 xD
 SW
-Yk
+rD
 rR
 rR
 rR
@@ -11062,7 +11121,7 @@ LX
 wi
 sU
 Fy
-ZE
+bt
 yq
 xD
 Ae
@@ -11214,7 +11273,7 @@ jz
 wi
 qJ
 Fy
-ZE
+bu
 wi
 xD
 Ae
@@ -11455,9 +11514,9 @@ bj
 hT
 gP
 Nc
-qV
-qV
-qV
+bJ
+bJ
+bJ
 Lf
 Jm
 zt
@@ -11818,11 +11877,11 @@ kL
 rR
 rR
 rR
-Yk
-Yk
-Yk
-Yk
-Yk
+rD
+rD
+rD
+rD
+rD
 Vc
 by
 by
@@ -12069,8 +12128,8 @@ sF
 Be
 hb
 GV
-GV
-GV
+Na
+Na
 Na
 Na
 Na
@@ -12133,7 +12192,7 @@ by
 aQ
 aG
 gn
-kr
+bl
 Vc
 rR
 rR
@@ -12373,8 +12432,8 @@ sF
 BJ
 IP
 qq
-qV
-qV
+bJ
+bJ
 bJ
 rR
 rR
@@ -12514,14 +12573,14 @@ rR
 rR
 rR
 bJ
-qV
-qV
+bJ
+bJ
 mq
 ts
 PP
-qV
-qV
-qV
+bJ
+bJ
+bJ
 rf
 Lc
 Nm
@@ -12677,8 +12736,8 @@ bq
 Be
 qL
 qq
-qV
-qV
+bJ
+bJ
 bJ
 rR
 rR
@@ -12971,7 +13030,7 @@ rR
 rR
 bJ
 bJ
-qV
+bJ
 xl
 qL
 nG
@@ -12981,7 +13040,7 @@ bm
 bm
 qq
 ls
-qV
+bJ
 bJ
 bJ
 rR
@@ -13197,7 +13256,7 @@ Ky
 aS
 aI
 gn
-kr
+bl
 Vc
 rR
 rR
@@ -13279,11 +13338,11 @@ rR
 rR
 bJ
 MT
-qV
+bJ
 BM
-qV
+bJ
 BM
-qV
+bJ
 bJ
 bJ
 rR
@@ -13431,9 +13490,9 @@ rR
 rR
 bJ
 Um
-qV
+bJ
 Lz
-qV
+bJ
 Nz
 bJ
 bJ
@@ -13800,8 +13859,8 @@ rR
 rR
 rR
 Vc
-xK
-xK
+Vc
+Vc
 aH
 aK
 aH
@@ -14261,7 +14320,7 @@ by
 aS
 aI
 gn
-kr
+bl
 Vc
 rR
 rR
@@ -15325,7 +15384,7 @@ by
 aQ
 aI
 gn
-kr
+bl
 Vc
 rR
 rR
@@ -15630,7 +15689,7 @@ aR
 aI
 gn
 kr
-xK
+Vc
 rR
 rR
 rR

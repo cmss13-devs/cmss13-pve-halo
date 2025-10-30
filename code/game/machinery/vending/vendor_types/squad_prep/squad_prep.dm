@@ -841,21 +841,10 @@
 		list("Fairbairn-Sykes Fighting Knife", round(scale * 25), /obj/item/weapon/knife/marine/sas, VENDOR_ITEM_REGULAR),
 		)
 
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst
 	name = "\improper Squad Utilities Vendor"
-	desc = "An automated supply rack hooked up to a small storage of various utilities and tools. Can be accessed by any marine."
-	req_access = list()
-	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_SPECPREP, ACCESS_MARINE_RO, ACCESS_MARINE_PREP)
-	hackable = TRUE
 
-	vend_x_offset = 2
-	vend_y_offset = 1
-	vend_flags = VEND_CLUTTER_PROTECTION | VEND_LIMITED_INVENTORY | VEND_TO_HAND | VEND_STOCK_DYNAMIC
-
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/ui_state(mob/user)
-	return GLOB.not_incapacitated_and_adjacent_strict_state
-
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/populate_product_list(scale)
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst/populate_product_list(scale)
 	listed_products = list(
 		list("FOOD", -1, null, null),
 		list("MRE", floor(scale * 5), /obj/item/storage/box/MRE, VENDOR_ITEM_REGULAR),
@@ -887,11 +876,10 @@
 		list("M89-S Signal Flare Pack", round(scale * 1), /obj/item/storage/box/m94/signal, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARMS", -1, null, null),
-		list("M6C Service Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/unloaded, VENDOR_ITEM_REGULAR),
 		list("M6G Service Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6g/unloaded, VENDOR_ITEM_REGULAR),
-		list("M7/SOCOM submachine gun", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6g/unloaded, VENDOR_ITEM_REGULAR),
+		list("M6C/SOOM Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded, VENDOR_ITEM_REGULAR),
+		list("M7/SOCOM Submachine Gun", round(scale * 4), /obj/item/weapon/gun/smg/halo/m7/socom/folded_up, VENDOR_ITEM_REGULAR),
 		list("KFA-2/G smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6g, VENDOR_ITEM_REGULAR),
-		list("KFA-2/C smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6c, VENDOR_ITEM_REGULAR),
 		list("M6 flashlight", round(scale * 4), /obj/item/attachable/flashlight/m6, VENDOR_ITEM_REGULAR),
 		list("M82F Flare Gun", round(scale * 1), /obj/item/weapon/gun/flare, VENDOR_ITEM_REGULAR),
 

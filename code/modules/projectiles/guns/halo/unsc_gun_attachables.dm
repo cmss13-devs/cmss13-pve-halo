@@ -458,7 +458,7 @@
 	desc = "A folding grip that comes standard with the M7 SMG. Folding it up makes it more portable and quicker to wield but as a downside becomes slightly less accurate and has worse scatter."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "m7_grip"
-	attach_icon = "m7_grip"
+	attach_icon = "m7_grip-on"
 	flags_attach_features = ATTACH_ACTIVATION
 	collapsible = TRUE
 	stock_activated = FALSE
@@ -509,4 +509,5 @@
 
 /obj/item/attachable/stock/m7/grip/folded_down
 	stock_activated = TRUE
-	attach_icon = "m7_grip-on"
+	size_mod = 0
+	attach_icon = "m7_grip"

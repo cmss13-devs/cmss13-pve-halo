@@ -21,7 +21,7 @@
 /obj/item/ammo_magazine/rifle/halo/ma5c/shredder
 	name = "\improper MA5C magazine (7.62x51mm Shredder)"
 	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 shredder ammunitions, a specialized ammunition that pierces armor and splinters in the target."
-	max_rounds = 60
+	max_rounds = 48
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
 	default_ammo = /datum/ammo/bullet/rifle/ma5c/shredder
 	caliber = "7.62x51"
