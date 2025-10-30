@@ -324,11 +324,11 @@
 	current_mag = /obj/item/ammo_magazine/smg/halo/m7
 	starting_attachment_types = list(/obj/item/attachable/stock/m7, /obj/item/attachable/stock/m7/grip/folded_down)
 	attachable_allowed = list(
-	/obj/item/attachable/stock/m7,
-	/obj/item/attachable/stock/m7/grip,
-	/obj/item/attachable/flashlight/m7,
-	/obj/item/attachable/reddot/m7,
-	/obj/item/attachable/suppressor/m7
+		/obj/item/attachable/stock/m7,
+		/obj/item/attachable/stock/m7/grip,
+		/obj/item/attachable/flashlight/m7,
+		/obj/item/attachable/reddot/m7,
+		/obj/item/attachable/suppressor/m7
 	)
 
 /obj/item/weapon/gun/smg/halo/m7/folded_up
@@ -355,20 +355,20 @@
 /obj/item/weapon/gun/smg/halo/m7/socom
 	name = "M7 submachine gun"
 	starting_attachment_types = list(
-	/obj/item/attachable/stock/m7,
-	/obj/item/attachable/stock/m7/grip/folded_down,
-	/obj/item/attachable/flashlight/m7,
-	/obj/item/attachable/reddot/m7,
-	/obj/item/attachable/suppressor/m7
+		/obj/item/attachable/stock/m7,
+		/obj/item/attachable/stock/m7/grip/folded_down,
+		/obj/item/attachable/flashlight/m7,
+		/obj/item/attachable/reddot/m7,
+		/obj/item/attachable/suppressor/m7
 	)
 
 /obj/item/weapon/gun/smg/halo/m7/socom/folded_up
 	starting_attachment_types = list(
-	/obj/item/attachable/stock/m7,
-	/obj/item/attachable/stock/m7/grip,
-	/obj/item/attachable/flashlight/m7,
-	/obj/item/attachable/reddot/m7,
-	/obj/item/attachable/suppressor/m7
+		/obj/item/attachable/stock/m7,
+		/obj/item/attachable/stock/m7/grip,
+		/obj/item/attachable/flashlight/m7,
+		/obj/item/attachable/reddot/m7,
+		/obj/item/attachable/suppressor/m7
 	)
 
 // shotguns
