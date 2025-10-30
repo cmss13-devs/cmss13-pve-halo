@@ -328,7 +328,7 @@
 		/obj/item/attachable/stock/m7/grip,
 		/obj/item/attachable/flashlight/m7,
 		/obj/item/attachable/reddot/m7,
-		/obj/item/attachable/suppressor/m7
+		/obj/item/attachable/suppressor/m7,
 	)
 
 /obj/item/weapon/gun/smg/halo/m7/folded_up
@@ -359,7 +359,7 @@
 		/obj/item/attachable/stock/m7/grip/folded_down,
 		/obj/item/attachable/flashlight/m7,
 		/obj/item/attachable/reddot/m7,
-		/obj/item/attachable/suppressor/m7
+		/obj/item/attachable/suppressor/m7,
 	)
 
 /obj/item/weapon/gun/smg/halo/m7/socom/folded_up
@@ -368,7 +368,7 @@
 		/obj/item/attachable/stock/m7/grip,
 		/obj/item/attachable/flashlight/m7,
 		/obj/item/attachable/reddot/m7,
-		/obj/item/attachable/suppressor/m7
+		/obj/item/attachable/suppressor/m7,
 	)
 
 // shotguns
