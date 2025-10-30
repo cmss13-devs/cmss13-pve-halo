@@ -597,6 +597,24 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
+"bA" = (
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/halo,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/lower_hallway)
+"bB" = (
+/obj/effect/step_trigger/clone_cleaner,
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/cryo_hall)
+"bC" = (
+/obj/effect/step_trigger/clone_cleaner,
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/cryo_hall)
 "bG" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
@@ -1497,6 +1515,10 @@
 /area/dark_was_the_night/engineering)
 "lZ" = (
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2,
+/obj/structure/machinery/iv_drip{
+	pixel_y = 22;
+	layer = 5.1
+	},
 /turf/open/floor/almayer/sterile_green_corner/east,
 /area/dark_was_the_night/medical)
 "ma" = (
@@ -2950,6 +2972,10 @@
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2{
 	dir = 1
 	},
+/obj/structure/machinery/iv_drip{
+	pixel_y = 22;
+	layer = 5.1
+	},
 /turf/open/floor/almayer/sterile_green_corner/west,
 /area/dark_was_the_night/medical)
 "AU" = (
@@ -4105,9 +4131,6 @@
 "Oh" = (
 /turf/open/floor/almayer/redfull,
 /area/dark_was_the_night/lower_hallway)
-"Oi" = (
-/turf/open/floor/almayer/redfull,
-/area/space)
 "Or" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -4673,6 +4696,10 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/cm_vending/sorted/medical/vehicle{
+	pixel_y = 20;
+	pixel_x = -4
+	},
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
 "Ua" = (
@@ -4962,9 +4989,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
-"Yk" = (
-/turf/closed/wall/unsc/reinforced/hull,
-/area/space)
 "Yn" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
@@ -6175,7 +6199,7 @@ rR
 rR
 rR
 rR
-Yk
+xt
 xt
 xt
 xt
@@ -6327,7 +6351,7 @@ rR
 rR
 rR
 rR
-Yk
+xt
 xt
 xt
 TC
@@ -6479,7 +6503,7 @@ rR
 rR
 rR
 rR
-Oi
+nY
 dn
 bw
 bS
@@ -6631,7 +6655,7 @@ rR
 rR
 rR
 rR
-Oi
+nY
 cI
 KL
 RW
@@ -6783,7 +6807,7 @@ rR
 rR
 rR
 rR
-Oi
+nY
 cI
 Rm
 nr
@@ -6935,7 +6959,7 @@ rR
 rR
 rR
 rR
-Yk
+xt
 xt
 xt
 sX
@@ -7087,7 +7111,7 @@ rR
 rR
 rR
 rR
-Yk
+xt
 AZ
 AZ
 PJ
@@ -7841,10 +7865,10 @@ MP
 zs
 xA
 XG
-XG
-XG
-XG
-XG
+bB
+bB
+bB
+bB
 pV
 gL
 ZG
@@ -7993,10 +8017,10 @@ ny
 Wc
 xA
 XG
-XG
-XG
-XG
-XG
+bC
+bC
+bC
+bC
 XS
 gL
 Dz
@@ -9241,7 +9265,7 @@ Io
 yr
 Di
 Di
-Yk
+Di
 rR
 rR
 rR
@@ -11409,7 +11433,7 @@ JS
 TR
 MB
 cK
-zC
+bA
 Pf
 zO
 zO

@@ -476,6 +476,9 @@
 	scatter_unwielded_mod = 0
 	wield_delay_mod = 0
 	recoil_unwielded_mod = 0
+	size_mod = 0
+	icon_state = "m7_grip-on"
+	attach_icon = "m7_grip-on"
 
 /obj/item/attachable/stock/m7/grip/apply_on_weapon(obj/item/weapon/gun/gun)
 	if(stock_activated)
@@ -509,5 +512,18 @@
 
 /obj/item/attachable/stock/m7/grip/folded_down
 	stock_activated = TRUE
-	size_mod = 0
 	attach_icon = "m7_grip"
+
+/obj/item/attachable/stock/m7/grip/folded_down/New()
+	..()
+
+	accuracy_mod = HIT_ACCURACY_MULT_TIER_2
+	scatter_mod = -SCATTER_AMOUNT_TIER_9
+	movement_onehanded_acc_penalty_mod = -MOVEMENT_ACCURACY_PENALTY_MULT_TIER_5
+	accuracy_unwielded_mod = -HIT_ACCURACY_MULT_TIER_3
+	scatter_unwielded_mod = SCATTER_AMOUNT_TIER_7
+	recoil_unwielded_mod = -RECOIL_AMOUNT_TIER_5
+	icon_state = "m7_grip"
+	attach_icon = "m7_grip"
+	wield_delay_mod = WIELD_DELAY_NONE
+	size_mod = 1

@@ -1243,6 +1243,7 @@
 	name = "UNSC magazine box (MA5C x 48, shredder)"
 	desc = "An ammo box storing 48 magazines of MA5C ammunition"
 	overlay_ammo_type = "_shred"
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5c/shredder
 
 /obj/item/ammo_box/magazine/unsc/br55
 	name = "UNSC magazine box (BR55 x 32)"
