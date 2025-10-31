@@ -11,3 +11,7 @@
 #define POD_READY 1
 #define POD_INFLIGHT 2
 #define POD_LANDED 3
+
+#define CHUTE_READY 1
+#define CHUTE_DEPLOYED 2
+#define CHUTE_GONE 3
