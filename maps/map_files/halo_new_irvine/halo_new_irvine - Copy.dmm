@@ -1779,24 +1779,19 @@
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
 "eJ" = (
+/mob/living/simple_animal/mouse,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "eK" = (
 /obj/structure/bed/alien,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
 "eL" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
+/mob/living/simple_animal/mouse,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement3,
+/area/new_irvine/outdoors)
 "eM" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/sterile_white,
@@ -1869,12 +1864,13 @@
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
 "eY" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
+/mob/living/simple_animal/mouse,
+/obj/structure/platform{
+	dir = 8
 	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "eZ" = (
 /obj/structure/bed/chair/comfy/bench/south/east,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -1949,28 +1945,20 @@
 /turf/open/asphalt/cement/cement9,
 /area/new_irvine/outdoors)
 "fk" = (
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
+/mob/living/simple_animal/mouse,
+/obj/structure/platform_decoration{
+	dir = 1
 	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "fl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
+/mob/living/simple_animal/mouse,
+/obj/structure/platform{
+	dir = 8
 	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
-"fm" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "fn" = (
 /obj/structure/bed/chair/comfy/bench/north/east,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -2198,14 +2186,6 @@
 "fQ" = (
 /obj/structure/bed/chair/office/dark{
 	dir = 4
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
-"fR" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/structure/machinery/prop/almayer/computer/PC{
-	dir = 8;
-	pixel_y = 3
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
@@ -4141,6 +4121,15 @@
 /obj/structure/platform,
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"kz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
+	pixel_x = 26
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "kA" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/kitchen,
@@ -4191,6 +4180,15 @@
 	dir = 1;
 	pixel_x = 3;
 	pixel_y = -13
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"kI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
@@ -4498,6 +4496,13 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"lq" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "lr" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/flora/pottedplant{
@@ -4513,15 +4518,6 @@
 "ls" = (
 /turf/open/gm/coast/beachcorner2/south_west,
 /area/new_irvine/outdoors)
-"lt" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/surface/table/reinforced/black,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
 "lu" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue{
@@ -5680,17 +5676,6 @@
 /obj/structure/largecrate/random/barrel/true_random,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
-"ok" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 8
-	},
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 1;
-	light_power = 0.7
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
 "ol" = (
 /obj/structure/machinery/disposal,
 /obj/structure/machinery/light/double/blue{
@@ -5754,6 +5739,17 @@
 "ot" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cargo_container/lockmart/right,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"ou" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"ov" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/largecrate/random/secure,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "ow" = (
@@ -5828,6 +5824,11 @@
 /obj/structure/curtain/red,
 /turf/open/floor/carpet,
 /area/new_irvine/indoors)
+"oE" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/cargo_container/grant/rightmid,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "oF" = (
 /obj/structure/bed/chair{
 	dir = 1;
@@ -5844,6 +5845,11 @@
 /obj/structure/closet/crate/trashcart,
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"oH" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/cargo_container/grant/right,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "oI" = (
 /obj/structure/barricade/handrail/wire,
 /obj/effect/decal/cleanable/dirt,
@@ -5874,6 +5880,23 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"oM" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_y = -16
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"oN" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/closet,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"oO" = (
+/obj/structure/roof/cargocrane_tracks/tjoint2,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "oP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -6043,6 +6066,22 @@
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"po" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 1
+	},
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"pp" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
+	pixel_y = 16
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "pq" = (
 /obj/structure/platform,
 /obj/structure/platform{
@@ -6088,6 +6127,24 @@
 /obj/structure/prop/almayer/computers/sensor_computer3,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"py" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"pz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_y = -16
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "pA" = (
 /obj/structure/platform{
 	dir = 4
@@ -6108,6 +6165,7 @@
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
 "pD" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
 /obj/structure/cargo_container/grant/rightmid,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
@@ -6132,6 +6190,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"pH" = (
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap1{
+	pixel_x = -24
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "pI" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -6285,6 +6351,14 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"qd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "qe" = (
 /obj/structure/platform{
 	dir = 4
@@ -6375,6 +6449,7 @@
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
 "qp" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /obj/structure/cargo_container/horizontal/blue/bottom{
 	pixel_x = 20
 	},
@@ -6388,8 +6463,14 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
+"qr" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "qs" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 4
@@ -6399,10 +6480,20 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "qt" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 8
 	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"qu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
+	pixel_x = 26
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /obj/structure/largecrate/random/barrel/true_random,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
@@ -6459,6 +6550,13 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"qB" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "qC" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 4
@@ -6610,17 +6708,6 @@
 /obj/structure/cargo_container/grant/right,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
-"qX" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 4;
-	light_power = 0.7
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/prison/sterile_white,
-/area/new_irvine/indoors)
 "qY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/colony_floodlight,
@@ -6736,6 +6823,15 @@
 /obj/structure/machinery/vending/generic,
 /turf/open/asphalt/cement/cement3,
 /area/new_irvine/outdoors)
+"rn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
+	pixel_y = 16
+	},
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "ro" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen,
@@ -6794,6 +6890,10 @@
 	light_power = 0.7
 	},
 /turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"rv" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "rw" = (
 /obj/structure/bed{
@@ -6996,6 +7096,14 @@
 /obj/structure/barricade/handrail/wire,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"rS" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
 "rT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -7061,6 +7169,11 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine/indoors)
+"rZ" = (
+/obj/structure/roof/cargocrane_tracks/tjoint3,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "sa" = (
 /obj/structure/platform{
@@ -7135,6 +7248,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement1/north,
 /area/new_irvine/outdoors)
+"sh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
 "si" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -7155,6 +7273,13 @@
 /obj/structure/machinery/prop/almayer/computer/PC{
 	dir = 1;
 	pixel_y = 2
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"sl" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
@@ -7230,9 +7355,39 @@
 	},
 /turf/open/asphalt/cement/cement12,
 /area/new_irvine/outdoors)
+"sv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "sw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/lasertag,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"sx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"sy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/prop/static_tank/water,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"sz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
+	pixel_x = 26
+	},
+/obj/structure/prop/static_tank/water,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "sA" = (
@@ -7336,6 +7491,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/indoors)
+"sN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_y = -16
+	},
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "sO" = (
 /obj/structure/cargo_container/unsc/vertical/south_1/alt,
 /turf/open/floor/plating/asteroidfloor,
@@ -7426,6 +7590,11 @@
 /obj/structure/surface/table/reinforced/black,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
+"sY" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "sZ" = (
 /obj/structure/platform,
 /obj/structure/platform{
@@ -7447,6 +7616,7 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "tc" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_1,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
@@ -7460,6 +7630,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer_hull,
 /area/new_irvine/outdoors)
+"te" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/cross,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "tf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -7472,12 +7648,44 @@
 "tg" = (
 /turf/open/floor/carpet,
 /area/new_irvine/indoors)
+"th" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"ti" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
+	pixel_x = 26
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "tj" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 8
 	},
 /obj/structure/surface/table/reinforced/black,
 /turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"tk" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 4
+	},
+/obj/structure/platform/stair_cut,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "tl" = (
 /obj/effect/decal/cleanable/dirt,
@@ -7497,6 +7705,12 @@
 	layer = 3.5;
 	pixel_y = 15
 	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"to" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/largecrate/random/barrel/true_random,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "tp" = (
@@ -7537,6 +7751,13 @@
 	icon_state = "p_stair_full"
 	},
 /turf/open/floor/strata/multi_tiles,
+/area/new_irvine/indoors)
+"tw" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full"
+	},
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "ty" = (
 /obj/structure/platform,
@@ -7740,6 +7961,14 @@
 /obj/structure/machinery/colony_floodlight,
 /turf/open/asphalt/cement/cement1/north,
 /area/new_irvine/outdoors)
+"tW" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 4
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "tX" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 8
@@ -7804,6 +8033,11 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
+"uf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/cross,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "ug" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes{
@@ -7839,6 +8073,15 @@
 "uj" = (
 /obj/structure/closet/secure_closet/fridge/dry/stock,
 /turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine/indoors)
+"uk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/corsat/plate,
 /area/new_irvine/indoors)
 "ul" = (
 /obj/structure/closet/secure_closet/personal/cabinet,
@@ -7935,6 +8178,16 @@
 "uv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/case/small,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"uw" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap1{
+	pixel_x = -24
+	},
+/obj/structure/platform{
+	dir = 8
+	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "ux" = (
@@ -8115,12 +8368,26 @@
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"uR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "uS" = (
 /obj/structure/platform_decoration,
 /obj/structure/platform_decoration{
 	dir = 8
 	},
 /turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"uT" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "uU" = (
 /obj/structure/largecrate/random/case/small,
@@ -8217,6 +8484,15 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"vg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
+	pixel_y = 16
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "vh" = (
 /obj/structure/platform{
 	dir = 8
@@ -8355,6 +8631,13 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"vx" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	dir = 2
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/corsat/marked,
+/area/new_irvine/indoors)
 "vy" = (
 /obj/structure/platform_decoration{
 	dir = 8
@@ -8783,6 +9066,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"wz" = (
+/obj/structure/roof/cargocrane_tracks/cross,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"wA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
+	pixel_x = 26
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "wB" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -8865,6 +9160,17 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement4,
 /area/new_irvine/outdoors)
+"wM" = (
+/obj/structure/roof/cargocrane_tracks/vertical{
+	pixel_y = 14
+	},
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_y = -16
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "wN" = (
 /obj/structure/bed/chair/office/dark,
 /obj/effect/decal/cleanable/dirt,
@@ -8876,17 +9182,6 @@
 	dir = 1
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/new_irvine/indoors)
-"wP" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double/blue/golden_arrow{
-	dir = 8;
-	light_power = 0.7
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
-	},
-/turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
 "wQ" = (
 /obj/structure/platform{
@@ -9132,6 +9427,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidwarning/east,
 /area/new_irvine/indoors)
+"xs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap1{
+	pixel_x = -24
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine/indoors)
 "xt" = (
 /obj/structure/platform{
 	dir = 1
@@ -9191,6 +9494,14 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/almayer/computers/sensor_computer2,
 /turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"xB" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/turf/open/floor/corsat/plate,
 /area/new_irvine/indoors)
 "xC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -9488,13 +9799,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
-"ym" = (
-/mob/living/simple_animal/mouse,
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "yn" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/item/newspaper,
@@ -9513,6 +9817,7 @@
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
 	dir = 2
 	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "yq" = (
@@ -9522,6 +9827,12 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"yr" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "ys" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_x = 0;
@@ -9885,6 +10196,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine/indoors)
+"zk" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/grant/left,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "zl" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
@@ -9922,6 +10239,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement3,
 /area/new_irvine/outdoors)
+"zr" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "zs" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
@@ -10281,6 +10605,11 @@
 /obj/structure/bed/chair/office/dark,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"Aj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine/indoors)
 "Ak" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/effect/decal/cleanable/dirt,
@@ -10613,6 +10942,10 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/outdoors)
+"AZ" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Ba" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -10836,6 +11169,15 @@
 /obj/structure/closet/crate/trashcart,
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"BD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "BE" = (
 /obj/structure/machinery/atm{
 	name = "Automatic Teller Machine";
@@ -11731,6 +12073,12 @@
 "DD" = (
 /turf/open/floor/almayer_hull,
 /area/new_irvine/outdoors)
+"DE" = (
+/mob/living/simple_animal/bat{
+	name = "irvine"
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "DF" = (
 /obj/structure/platform{
 	dir = 1
@@ -11878,6 +12226,14 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
+"DZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_y = -16
+	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
 "Ea" = (
@@ -12245,6 +12601,14 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"EY" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	dir = 8;
+	pixel_y = 3
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "EZ" = (
 /obj/structure/platform{
 	dir = 1
@@ -12541,6 +12905,14 @@
 /obj/structure/platform,
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/indoors)
+"FN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "FO" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4"
@@ -12576,6 +12948,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer_hull,
 /area/new_irvine/outdoors)
+"FS" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/corsat/marked,
+/area/new_irvine/indoors)
 "FT" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full";
@@ -12839,6 +13215,10 @@
 /obj/structure/machinery/vending/cola,
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"GE" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
 "GF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -12870,6 +13250,11 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
+"GJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "GK" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full";
@@ -12897,6 +13282,11 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"GN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
 "GO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -12916,6 +13306,14 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/almayer_hull,
+/area/new_irvine/outdoors)
+"GQ" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
 "GR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13027,6 +13425,11 @@
 /obj/structure/bed/chair/comfy/bench/north/east,
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"Hf" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/cargo_container/grant/rightmid,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Hg" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -13039,6 +13442,10 @@
 	dir = 1
 	},
 /turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"Hi" = (
+/obj/structure/roof/cargocrane_tracks/tjoint3,
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "Hj" = (
 /obj/structure/platform{
@@ -13131,6 +13538,14 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"Hw" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Hx" = (
 /obj/structure/barricade/handrail/wire,
 /obj/structure/barricade/handrail/wire{
@@ -13268,6 +13683,14 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"HP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "HQ" = (
 /obj/structure/platform{
 	dir = 4
@@ -13290,14 +13713,10 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
-"HV" = (
-/mob/living/simple_animal/mouse,
-/obj/structure/platform_decoration{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
+"HU" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine/indoors)
 "HW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -13501,6 +13920,10 @@
 	},
 /turf/open/floor/grass,
 /area/new_irvine/outdoors)
+"Iz" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/corsat/marked,
+/area/new_irvine/indoors)
 "IA" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
@@ -13603,11 +14026,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/indoors)
-"IQ" = (
-/mob/living/simple_animal/mouse,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "IR" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -13849,6 +14267,14 @@
 /obj/structure/machinery/photocopier,
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"JC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_y = -16
+	},
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "JD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/secure_closet{
@@ -13955,14 +14381,6 @@
 	},
 /turf/open/floor/plating/kutjevo,
 /area/new_irvine/indoors)
-"JN" = (
-/mob/living/simple_animal/mouse,
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "JO" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/item/tool/kitchen/rollingpin{
@@ -13995,6 +14413,15 @@
 	pixel_y = 5
 	},
 /turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
+"JR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap1{
+	pixel_x = -24
+	},
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "JS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -14490,6 +14917,10 @@
 	},
 /turf/open/asphalt/cement/cement12,
 /area/new_irvine/outdoors)
+"KX" = (
+/obj/structure/roof/cargocrane_tracks/tjoint2,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "KY" = (
 /obj/structure/platform{
 	dir = 1
@@ -15052,6 +15483,14 @@
 /obj/structure/bed/sofa/south/grey/left,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"Mr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "Ms" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal11";
@@ -15076,11 +15515,6 @@
 	dir = 8
 	},
 /turf/open/floor/plating/asteroidfloor,
-/area/new_irvine/outdoors)
-"Mw" = (
-/mob/living/simple_animal/mouse,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt/cement/cement3,
 /area/new_irvine/outdoors)
 "Mx" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -15305,6 +15739,7 @@
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
 "MW" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
 	},
@@ -15998,6 +16433,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/outdoors)
+"Ox" = (
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Oy" = (
 /obj/structure/prop/turbine_extras/left,
 /obj/effect/decal/warning_stripes{
@@ -17497,6 +17937,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement4,
 /area/new_irvine/outdoors)
+"Sc" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Sd" = (
 /obj/structure/platform{
 	dir = 8
@@ -17533,6 +17981,17 @@
 /obj/structure/cargo_container/grant/rightmid,
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"Sj" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
+	pixel_y = 16
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Sk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cargo_container/horizontal/blue/bottom{
@@ -17693,6 +18152,17 @@
 /obj/structure/machinery/colony_floodlight,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"SD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "SE" = (
 /obj/structure/platform,
 /obj/structure/stairs/perspective{
@@ -17800,6 +18270,14 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"SR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
+	pixel_y = 16
+	},
+/obj/structure/roof/cargocrane_tracks/vertical,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "SS" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
@@ -18018,6 +18496,17 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outdoors)
+"Tr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
+	},
+/turf/open/floor/prison/sterile_white,
+/area/new_irvine/indoors)
 "Ts" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/effect/decal/cleanable/dirt,
@@ -18577,6 +19066,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"UE" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "UF" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/vehicle_locker/cabinet/cups{
@@ -18751,6 +19248,17 @@
 	dir = 1
 	},
 /turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"UZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
 "Va" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19204,6 +19712,13 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
+"Wd" = (
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/obj/structure/machinery/light/small/red{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "We" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/small/red{
@@ -19424,12 +19939,6 @@
 /obj/structure/machinery/colony_floodlight,
 /turf/open/asphalt/cement/cement4,
 /area/new_irvine/outdoors)
-"WE" = (
-/mob/living/simple_animal/bat{
-	name = "irvine"
-	},
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "WF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -19439,14 +19948,6 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/new_irvine/indoors)
-"WG" = (
-/obj/structure/machinery/power/apc/almayer/hardened/north,
-/turf/open/asphalt/cement,
-/area/new_irvine/indoors)
-"WH" = (
-/obj/structure/machinery/power/apc/almayer/hardened/north,
-/turf/open/asphalt/cement,
-/area/new_irvine/outdoors)
 "WI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -19650,6 +20151,10 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outdoors)
+"Xt" = (
+/obj/structure/machinery/power/apc/almayer/hardened/north,
+/turf/open/asphalt/cement,
+/area/new_irvine/outdoors)
 "Xu" = (
 /obj/structure/platform{
 	dir = 8
@@ -19738,6 +20243,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/indoors)
+"XK" = (
+/obj/structure/roof/cargocrane_tracks/tjoint3,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outdoors)
 "XL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/unsc_crate/corrugated/red,
@@ -19828,6 +20337,12 @@
 	},
 /turf/open/auto_turf/sand_white/layer1,
 /area/new_irvine/outdoors)
+"Yg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/vertical,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "Yh" = (
 /obj/structure/machinery/vending/cola,
 /obj/effect/decal/cleanable/dirt,
@@ -19924,6 +20439,13 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
 	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
+"YA" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/roof/cargocrane_tracks/horizontal,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/indoors)
 "YC" = (
@@ -20171,6 +20693,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement1,
 /area/new_irvine/outdoors)
+"ZN" = (
+/obj/structure/machinery/power/apc/almayer/hardened/north,
+/turf/open/asphalt/cement,
+/area/new_irvine/indoors)
+"ZO" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/roof/cargocrane_tracks/horizontal,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/indoors)
 "ZP" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
@@ -24349,7 +24884,7 @@ FI
 Zt
 MC
 Jh
-Mw
+eL
 df
 df
 Jh
@@ -24899,20 +25434,20 @@ AS
 br
 br
 eM
-fm
+FN
 eM
 eM
 eM
-eY
+lq
 bu
 eM
 eM
-fm
+FN
 eM
 hA
 by
 eM
-fm
+FN
 eM
 eM
 br
@@ -25250,7 +25785,7 @@ jR
 jR
 Ni
 jR
-WG
+ZN
 mE
 jR
 Ni
@@ -25315,7 +25850,7 @@ ar
 mX
 bu
 bu
-eJ
+qd
 LT
 eM
 br
@@ -25486,7 +26021,7 @@ bF
 Cy
 lz
 lz
-wP
+Tr
 bF
 GC
 nT
@@ -25562,7 +26097,7 @@ bO
 br
 br
 xN
-eJ
+qd
 br
 br
 bO
@@ -25666,7 +26201,7 @@ VH
 Hb
 bu
 br
-fl
+Mr
 bu
 bu
 bu
@@ -25732,7 +26267,7 @@ AM
 eM
 bu
 eM
-eJ
+qd
 oe
 ar
 Hk
@@ -25755,7 +26290,7 @@ jR
 Ni
 jR
 fu
-WE
+DE
 jR
 Ni
 Ni
@@ -25996,7 +26531,7 @@ bR
 WN
 GK
 br
-fk
+qB
 eM
 GO
 br
@@ -26006,7 +26541,7 @@ jR
 jR
 Ni
 jR
-WH
+Xt
 fu
 jR
 Ni
@@ -26159,10 +26694,10 @@ br
 br
 br
 br
-fl
+Mr
 eM
 br
-lt
+sv
 yf
 tg
 br
@@ -26422,7 +26957,7 @@ Mp
 yf
 yf
 br
-fl
+Mr
 eM
 br
 br
@@ -27167,7 +27702,7 @@ br
 br
 br
 br
-fl
+Mr
 bu
 br
 ny
@@ -27239,7 +27774,7 @@ Jh
 fc
 Ek
 br
-eJ
+qd
 DQ
 LT
 uL
@@ -27508,7 +28043,7 @@ br
 br
 br
 br
-fl
+Mr
 fg
 br
 br
@@ -27682,7 +28217,7 @@ cT
 AS
 br
 br
-ok
+UZ
 Hb
 br
 Tj
@@ -28175,7 +28710,7 @@ br
 br
 br
 br
-fl
+Mr
 eM
 br
 Mp
@@ -28682,7 +29217,7 @@ br
 eM
 eM
 br
-fl
+Mr
 Ab
 br
 br
@@ -28942,7 +29477,7 @@ cz
 br
 br
 br
-fl
+Mr
 LG
 ar
 lG
@@ -28962,7 +29497,7 @@ br
 br
 eM
 br
-eY
+lq
 Hb
 AN
 fY
@@ -28972,7 +29507,7 @@ br
 fD
 br
 br
-fl
+Mr
 bu
 bu
 bu
@@ -29464,7 +29999,7 @@ gP
 br
 br
 LT
-eJ
+qd
 br
 MG
 bu
@@ -29758,7 +30293,7 @@ br
 bs
 cV
 br
-fl
+Mr
 bu
 eM
 tO
@@ -29953,7 +30488,7 @@ DU
 hw
 Pt
 br
-fl
+Mr
 eM
 br
 Ab
@@ -29974,7 +30509,7 @@ eM
 eM
 bu
 bu
-fR
+EY
 AN
 br
 br
@@ -30208,7 +30743,7 @@ br
 eM
 eM
 br
-fl
+Mr
 uN
 bO
 EV
@@ -30222,7 +30757,7 @@ br
 eM
 gu
 br
-eJ
+qd
 LT
 LT
 JB
@@ -30231,7 +30766,7 @@ br
 br
 br
 Cj
-JN
+eY
 so
 so
 FZ
@@ -30461,7 +30996,7 @@ eM
 LG
 ay
 lG
-fR
+EY
 bO
 EV
 DD
@@ -30514,7 +31049,7 @@ jI
 fc
 Yk
 br
-fl
+Mr
 bu
 oe
 bF
@@ -30726,7 +31261,7 @@ br
 br
 br
 br
-fl
+Mr
 Hb
 Hb
 br
@@ -30774,10 +31309,10 @@ Hk
 bu
 bu
 bu
-eY
+lq
 Hb
 Hb
-eY
+lq
 bu
 eM
 eM
@@ -30978,7 +31513,7 @@ br
 br
 br
 br
-fl
+Mr
 LT
 DQ
 br
@@ -31030,13 +31565,13 @@ bu
 bu
 bu
 eM
-eJ
+qd
 LT
-eJ
+qd
 eM
 eM
 br
-fl
+Mr
 eM
 fh
 br
@@ -31158,7 +31693,7 @@ tO
 gS
 br
 jI
-IQ
+eJ
 yi
 PS
 RT
@@ -31465,7 +32000,7 @@ br
 jI
 Ek
 br
-fk
+qB
 tG
 ay
 lG
@@ -31529,14 +32064,14 @@ br
 UC
 VH
 eM
-eJ
+qd
 br
 DV
 bK
 br
-fm
+FN
 lz
-fm
+FN
 br
 bK
 br
@@ -31746,7 +32281,7 @@ br
 br
 br
 br
-fk
+qB
 fg
 br
 br
@@ -32215,7 +32750,7 @@ br
 aV
 br
 br
-fl
+Mr
 eM
 br
 jI
@@ -32224,7 +32759,7 @@ br
 bu
 bu
 br
-fl
+Mr
 Mp
 bO
 EV
@@ -32247,7 +32782,7 @@ ar
 fK
 br
 br
-eL
+sl
 bu
 bN
 Hk
@@ -32286,7 +32821,7 @@ bp
 fu
 fu
 fu
-IQ
+eJ
 fc
 pu
 bO
@@ -32298,7 +32833,7 @@ jI
 CR
 FZ
 bv
-ym
+fl
 bi
 fc
 jR
@@ -32502,7 +33037,7 @@ br
 br
 br
 br
-fl
+Mr
 fh
 br
 br
@@ -32542,9 +33077,9 @@ fc
 Je
 Gh
 br
-eJ
+qd
 DQ
-eL
+sl
 br
 DU
 HQ
@@ -32725,7 +33260,7 @@ br
 wS
 hu
 br
-fl
+Mr
 eM
 br
 br
@@ -32971,7 +33506,7 @@ br
 aV
 br
 br
-fl
+Mr
 eM
 br
 DT
@@ -33034,7 +33569,7 @@ br
 sQ
 eM
 eM
-eL
+sl
 bu
 bu
 vJ
@@ -33232,7 +33767,7 @@ ax
 lG
 eM
 br
-fl
+Mr
 LA
 bO
 EV
@@ -33299,7 +33834,7 @@ br
 br
 br
 qw
-eJ
+qd
 bu
 TX
 ar
@@ -33431,7 +33966,7 @@ fc
 FE
 fu
 fu
-IQ
+eJ
 zL
 fc
 Io
@@ -33751,7 +34286,7 @@ nW
 Tm
 uF
 by
-eL
+sl
 tG
 ar
 CE
@@ -33979,7 +34514,7 @@ br
 br
 br
 br
-fk
+qB
 eM
 br
 DG
@@ -34250,7 +34785,7 @@ DD
 DA
 IO
 br
-eY
+lq
 bu
 bu
 bu
@@ -34266,7 +34801,7 @@ br
 br
 ft
 bu
-eL
+sl
 DQ
 eX
 AN
@@ -34294,7 +34829,7 @@ DV
 br
 tO
 bu
-eY
+lq
 bu
 AM
 br
@@ -34477,7 +35012,7 @@ jR
 jR
 Ek
 br
-fk
+qB
 xN
 bu
 DQ
@@ -34504,7 +35039,7 @@ NP
 br
 DQ
 DQ
-eL
+sl
 br
 br
 Cj
@@ -34760,7 +35295,7 @@ br
 DV
 Cj
 Fm
-IQ
+eJ
 fc
 fc
 fc
@@ -34770,7 +35305,7 @@ br
 br
 br
 br
-fm
+FN
 IR
 OZ
 br
@@ -35316,7 +35851,7 @@ bu
 eM
 eM
 eM
-qX
+SD
 ar
 NX
 kl
@@ -35510,14 +36045,14 @@ de
 gW
 tR
 br
-fl
+Mr
 fg
 br
 DF
 Vw
 br
 br
-wP
+Tr
 ay
 mX
 br
@@ -35548,14 +36083,14 @@ bv
 FZ
 FZ
 Fm
-IQ
+eJ
 fu
 fu
 Ek
 bO
-eJ
+qd
 eM
-eJ
+qd
 bO
 cd
 Ia
@@ -36021,7 +36556,7 @@ DF
 Ek
 br
 AN
-fR
+EY
 br
 bu
 ft
@@ -36275,7 +36810,7 @@ br
 br
 br
 br
-fk
+qB
 bu
 bu
 br
@@ -36773,8 +37308,8 @@ br
 bu
 bu
 br
-fm
-fm
+FN
+FN
 br
 eM
 bu
@@ -36829,7 +37364,7 @@ wr
 br
 jI
 fc
-HV
+fk
 bG
 br
 br
@@ -37038,7 +37573,7 @@ br
 DF
 qD
 fc
-IQ
+eJ
 Je
 bw
 cb
@@ -37277,8 +37812,8 @@ br
 bu
 bu
 br
-eL
-eL
+sl
+sl
 br
 gf
 fZ
@@ -37329,7 +37864,7 @@ vd
 ur
 DC
 ES
-eJ
+qd
 br
 LK
 fc
@@ -37535,7 +38070,7 @@ br
 br
 br
 br
-fl
+Mr
 bu
 bu
 br
@@ -37824,7 +38359,7 @@ DU
 cQ
 br
 br
-fl
+Mr
 eM
 mk
 Pu
@@ -37833,7 +38368,7 @@ yf
 Ej
 eM
 eM
-fm
+FN
 br
 br
 DF
@@ -38276,7 +38811,7 @@ Yw
 Je
 hj
 hf
-eJ
+qd
 eM
 Kz
 gS
@@ -38289,7 +38824,7 @@ jI
 OK
 br
 br
-qX
+SD
 ay
 mX
 mP
@@ -41814,19 +42349,19 @@ EC
 ED
 br
 br
-fl
+Mr
 fh
 br
 br
-fl
+Mr
 LG
 bF
 lG
-fm
+FN
 eM
 eM
 eM
-eY
+lq
 bu
 bu
 br
@@ -41990,7 +42525,7 @@ fu
 fu
 fu
 ap
-JN
+eY
 FZ
 rP
 rP
@@ -42294,7 +42829,7 @@ bl
 ob
 br
 br
-lt
+sv
 eM
 eM
 eP
@@ -42728,7 +43263,7 @@ ks
 kr
 ax
 Wf
-mS
+xs
 mS
 PQ
 Vk
@@ -42980,7 +43515,7 @@ ks
 Uu
 ar
 Ir
-mS
+Aj
 mS
 mS
 kk
@@ -43197,11 +43732,11 @@ DT
 DG
 II
 ar
-eJ
+qd
 eM
 eM
 bu
-eL
+sl
 bu
 Ad
 mR
@@ -43232,7 +43767,7 @@ GT
 HI
 br
 au
-pk
+tW
 pk
 ai
 br
@@ -43334,7 +43869,7 @@ eM
 bu
 bO
 eM
-eJ
+qd
 br
 br
 Ex
@@ -43484,7 +44019,7 @@ ar
 ag
 br
 af
-af
+AZ
 af
 aj
 bS
@@ -43579,10 +44114,10 @@ EI
 Qj
 Qj
 br
-ok
+UZ
 Kf
 br
-fl
+Mr
 bu
 br
 eM
@@ -43736,7 +44271,7 @@ iO
 iK
 br
 af
-oj
+qr
 oj
 af
 bT
@@ -43774,7 +44309,7 @@ yx
 br
 Vj
 Uk
-cy
+uw
 av
 af
 UR
@@ -43988,7 +44523,7 @@ jI
 pu
 br
 af
-oj
+qr
 oj
 oj
 bT
@@ -44026,7 +44561,7 @@ zf
 bO
 Mz
 Ye
-pa
+zk
 af
 af
 oj
@@ -44058,7 +44593,7 @@ HR
 kA
 br
 br
-fk
+qB
 Wh
 bu
 eM
@@ -44240,7 +44775,7 @@ jI
 pu
 br
 af
-af
+AZ
 oj
 oj
 bT
@@ -44278,7 +44813,7 @@ gS
 bO
 Mz
 Ye
-qV
+oE
 af
 oj
 om
@@ -44492,7 +45027,7 @@ jI
 pu
 br
 xz
-af
+AZ
 af
 oj
 bT
@@ -44530,7 +45065,7 @@ eM
 br
 ck
 af
-qW
+oH
 af
 kZ
 kZ
@@ -44744,7 +45279,7 @@ jI
 pu
 br
 Ye
-Ye
+uR
 af
 oj
 bT
@@ -44782,7 +45317,7 @@ eM
 br
 Vj
 oX
-oX
+oN
 af
 kZ
 US
@@ -44996,7 +45531,7 @@ jI
 yi
 br
 Ye
-Ye
+uR
 af
 af
 bT
@@ -45034,7 +45569,7 @@ eP
 bO
 Mz
 af
-af
+AZ
 Ye
 Ye
 kZ
@@ -45247,20 +45782,20 @@ br
 jI
 yi
 br
-Ye
-Ye
-af
-af
-bT
-PQ
-PQ
-Hm
-af
-qV
-kZ
-Sf
-af
-af
+SR
+uf
+rv
+rv
+po
+HU
+HU
+tw
+rv
+Hf
+Yg
+Ox
+rv
+oM
 br
 DF
 Ek
@@ -45286,7 +45821,7 @@ fI
 bO
 Mz
 oj
-af
+AZ
 Ye
 Ye
 Ye
@@ -45313,13 +45848,13 @@ jR
 jR
 En
 br
-fk
+qB
 bu
 eM
 eM
 br
 br
-fl
+Mr
 bu
 bu
 bO
@@ -45500,7 +46035,7 @@ jI
 pu
 br
 tl
-Ye
+uR
 sO
 af
 bT
@@ -45536,12 +46071,12 @@ bu
 bu
 bu
 br
-Mz
-om
-oj
-af
-Ye
-Ye
+Sj
+yr
+oO
+rv
+rZ
+wM
 br
 Ef
 Ec
@@ -45752,7 +46287,7 @@ jI
 pu
 br
 Ye
-af
+AZ
 af
 af
 bT
@@ -45792,7 +46327,7 @@ Vj
 om
 om
 af
-af
+AZ
 mG
 br
 Ef
@@ -45818,8 +46353,8 @@ jR
 En
 br
 EH
-fR
-fR
+EY
+EY
 eM
 eM
 br
@@ -46004,7 +46539,7 @@ jI
 Ek
 br
 Ye
-af
+AZ
 af
 af
 bT
@@ -46044,7 +46579,7 @@ Mz
 om
 om
 af
-af
+AZ
 Sf
 br
 Ef
@@ -46256,7 +46791,7 @@ jI
 Ek
 br
 qG
-oj
+qr
 af
 af
 bT
@@ -46296,7 +46831,7 @@ Mz
 om
 vB
 af
-Sf
+ou
 kZ
 br
 Lu
@@ -46508,7 +47043,7 @@ VQ
 Ek
 br
 Hd
-oj
+qr
 oj
 af
 bT
@@ -46548,7 +47083,7 @@ ck
 af
 vB
 af
-kZ
+ov
 kZ
 br
 Ef
@@ -46760,7 +47295,7 @@ bi
 Ek
 br
 qV
-oj
+qr
 oj
 af
 bT
@@ -46800,7 +47335,7 @@ Vj
 af
 af
 af
-Ye
+uR
 US
 br
 Ef
@@ -46831,7 +47366,7 @@ eM
 eM
 XF
 br
-lt
+sv
 eM
 eM
 bO
@@ -47012,7 +47547,7 @@ fu
 Ek
 br
 qW
-oj
+qr
 af
 ce
 bU
@@ -47052,7 +47587,7 @@ oZ
 Ye
 af
 af
-af
+AZ
 Ye
 br
 nx
@@ -47264,7 +47799,7 @@ fu
 Ek
 br
 oj
-oj
+qr
 af
 cd
 br
@@ -47304,7 +47839,7 @@ kZ
 kZ
 om
 af
-af
+AZ
 Ye
 br
 Ef
@@ -47516,7 +48051,7 @@ fu
 Ek
 br
 oj
-af
+AZ
 af
 sG
 br
@@ -47556,7 +48091,7 @@ br
 kZ
 kZ
 ow
-GF
+UE
 Ye
 br
 Lz
@@ -47582,7 +48117,7 @@ jR
 Ev
 br
 br
-fl
+Mr
 eM
 bu
 My
@@ -47768,7 +48303,7 @@ fu
 Ek
 br
 tn
-af
+AZ
 Ye
 pa
 br
@@ -47839,7 +48374,7 @@ bu
 bu
 eM
 br
-lt
+sv
 eM
 eM
 eM
@@ -48020,7 +48555,7 @@ fu
 Ek
 br
 tn
-af
+AZ
 Ye
 pe
 bO
@@ -48060,7 +48595,7 @@ oj
 br
 Vc
 oA
-Fh
+Sc
 mG
 br
 Jf
@@ -48272,7 +48807,7 @@ fu
 Ek
 br
 qG
-af
+AZ
 Ye
 pf
 bO
@@ -48312,7 +48847,7 @@ Gj
 UL
 oS
 af
-Ye
+uR
 Ye
 br
 Ef
@@ -48524,7 +49059,7 @@ fu
 Ek
 br
 af
-af
+AZ
 kZ
 kZ
 br
@@ -48564,7 +49099,7 @@ Gj
 ar
 Gi
 Ye
-Ye
+uR
 om
 br
 Ef
@@ -48590,8 +49125,8 @@ jR
 En
 br
 EH
-fR
-fR
+EY
+EY
 eM
 LG
 ar
@@ -48776,7 +49311,7 @@ fu
 Ek
 br
 af
-af
+AZ
 kZ
 kZ
 br
@@ -48816,7 +49351,7 @@ Gj
 ar
 Zg
 Ye
-Ye
+uR
 oq
 br
 nX
@@ -49028,7 +49563,7 @@ Ma
 Ek
 br
 af
-af
+AZ
 kZ
 kZ
 br
@@ -49068,7 +49603,7 @@ Gj
 ar
 Zg
 Ye
-Ye
+uR
 os
 br
 Ef
@@ -49280,7 +49815,7 @@ Ma
 Ek
 br
 af
-af
+AZ
 af
 kZ
 bO
@@ -49320,7 +49855,7 @@ om
 br
 xz
 qq
-qq
+BD
 UT
 br
 Ef
@@ -49345,7 +49880,7 @@ jR
 jR
 En
 br
-fl
+Mr
 eM
 eM
 eM
@@ -49532,7 +50067,7 @@ fc
 pu
 br
 oj
-af
+AZ
 af
 kZ
 bO
@@ -49779,12 +50314,12 @@ fc
 fc
 On
 fu
-IQ
+eJ
 fc
 pu
 br
 om
-oj
+qr
 af
 af
 bO
@@ -49824,7 +50359,7 @@ br
 UY
 kZ
 kU
-kU
+kI
 mG
 br
 iY
@@ -50022,7 +50557,7 @@ AS
 br
 om
 om
-By
+JR
 By
 By
 br
@@ -50036,7 +50571,7 @@ fc
 pu
 br
 om
-om
+sx
 af
 af
 bO
@@ -50071,12 +50606,12 @@ cS
 Ek
 br
 Ye
-oj
+pH
 oj
 Sf
 af
 Ye
-Ye
+uR
 Ye
 br
 Ei
@@ -50274,7 +50809,7 @@ br
 br
 uW
 om
-Ye
+uR
 Ye
 zu
 br
@@ -50288,7 +50823,7 @@ ML
 Gh
 br
 qT
-om
+sx
 af
 af
 br
@@ -50322,14 +50857,14 @@ DA
 cS
 Ek
 br
-Ye
-Ye
-af
-af
-af
-af
-Ye
-Ye
+SR
+uf
+rv
+rv
+rv
+rv
+uf
+JC
 br
 DG
 DG
@@ -50526,7 +51061,7 @@ br
 uW
 uW
 Ye
-nU
+th
 af
 af
 oj
@@ -50540,7 +51075,7 @@ jh
 jh
 br
 qT
-Ye
+uR
 af
 af
 br
@@ -50575,12 +51110,12 @@ cS
 Ek
 br
 Vm
-qq
+BD
 Ye
 af
 af
 af
-GF
+UE
 UU
 br
 RT
@@ -50778,7 +51313,7 @@ br
 uW
 uY
 af
-vB
+uT
 af
 af
 om
@@ -50792,7 +51327,7 @@ EB
 EX
 br
 xz
-Ye
+uR
 Ye
 af
 br
@@ -50827,12 +51362,12 @@ cS
 Ek
 br
 ar
-ag
+vx
 br
 br
 br
 br
-ar
+Iz
 ag
 br
 DG
@@ -51030,7 +51565,7 @@ br
 uY
 oj
 af
-af
+AZ
 af
 om
 om
@@ -51044,7 +51579,7 @@ NR
 At
 br
 Hs
-Ye
+uR
 Ye
 Hn
 br
@@ -51079,12 +51614,12 @@ cS
 Ek
 br
 Vn
-Fh
+Sc
 af
 Vg
 br
 UX
-Fh
+Sc
 UW
 br
 qY
@@ -51282,7 +51817,7 @@ br
 oj
 VC
 af
-af
+AZ
 om
 VB
 om
@@ -51296,7 +51831,7 @@ NU
 At
 br
 DI
-Hq
+ZO
 Hq
 Cf
 br
@@ -51331,12 +51866,12 @@ cS
 pu
 br
 af
-af
+AZ
 om
 om
 br
 om
-af
+AZ
 Sf
 br
 DG
@@ -51534,7 +52069,7 @@ br
 br
 br
 ar
-ar
+Iz
 ar
 br
 br
@@ -51548,7 +52083,7 @@ NV
 At
 br
 FP
-FP
+uk
 FP
 FP
 br
@@ -51583,12 +52118,12 @@ Jl
 pu
 br
 af
-Ye
+uR
 pa
 om
 br
 om
-kZ
+ov
 Sf
 br
 DG
@@ -51786,7 +52321,7 @@ br
 tt
 Wm
 Ye
-Ye
+uR
 Ye
 Wl
 By
@@ -51800,7 +52335,7 @@ NW
 NN
 br
 ar
-ar
+Iz
 ar
 ak
 br
@@ -51835,12 +52370,12 @@ fc
 pu
 br
 xz
-Ye
+uR
 pe
 om
 br
 om
-kZ
+ov
 US
 br
 DG
@@ -51865,7 +52400,7 @@ jR
 jR
 Ev
 br
-lt
+sv
 vz
 br
 br
@@ -52038,7 +52573,7 @@ br
 tt
 af
 af
-Ye
+uR
 Ye
 Ye
 By
@@ -52052,7 +52587,7 @@ NY
 At
 br
 PB
-PB
+xB
 PB
 PB
 br
@@ -52087,12 +52622,12 @@ fc
 pu
 br
 br
-Ye
+wA
 pf
 Vg
 br
 UY
-kZ
+kz
 br
 br
 gs
@@ -52290,7 +52825,7 @@ Tu
 Zg
 Ye
 af
-af
+AZ
 Ye
 Ye
 om
@@ -52304,7 +52839,7 @@ NZ
 At
 br
 br
-au
+tk
 pk
 ai
 br
@@ -52542,7 +53077,7 @@ ar
 Zg
 Ye
 Ye
-af
+AZ
 af
 Ye
 om
@@ -52556,7 +53091,7 @@ Od
 At
 DG
 br
-av
+YA
 af
 Uk
 br
@@ -52779,7 +53314,7 @@ kh
 kh
 kh
 kh
-fR
+EY
 My
 kh
 kh
@@ -52794,7 +53329,7 @@ ar
 Zg
 Ye
 Ye
-af
+AZ
 af
 om
 uv
@@ -52808,7 +53343,7 @@ nm
 JS
 br
 br
-qG
+Wd
 Ye
 oq
 br
@@ -53046,7 +53581,7 @@ br
 Ye
 Ye
 Ye
-Ye
+uR
 af
 oj
 ux
@@ -53060,7 +53595,7 @@ DG
 br
 br
 oj
-af
+AZ
 Ye
 os
 br
@@ -53298,7 +53833,7 @@ br
 Ye
 We
 Ye
-Ye
+uR
 om
 uC
 ux
@@ -53312,7 +53847,7 @@ DG
 br
 Hd
 af
-af
+AZ
 Ye
 ot
 br
@@ -53550,7 +54085,7 @@ br
 br
 br
 ar
-ar
+Iz
 ar
 br
 br
@@ -53564,7 +54099,7 @@ br
 br
 qV
 oj
-af
+AZ
 Ye
 nc
 ax
@@ -53802,7 +54337,7 @@ br
 om
 Wo
 Ye
-Ye
+uR
 af
 Wm
 Ye
@@ -53816,7 +54351,7 @@ Ye
 br
 qW
 af
-af
+AZ
 Ye
 nc
 ar
@@ -54054,7 +54589,7 @@ br
 om
 uv
 Ye
-af
+AZ
 af
 Ye
 nc
@@ -54068,7 +54603,7 @@ nc
 Tu
 Gi
 af
-af
+AZ
 Ye
 By
 br
@@ -54303,26 +54838,26 @@ jR
 gD
 HG
 br
-om
-om
-af
-af
-Ye
-Ye
-nc
-ar
-Zg
-af
-af
-af
-af
-Gj
-ar
-Gi
-af
-af
-zu
-By
+vg
+to
+rv
+KX
+GJ
+GJ
+HP
+FS
+py
+rv
+rv
+rv
+rv
+zr
+FS
+Hw
+rv
+wz
+sY
+sN
 br
 RP
 eM
@@ -54824,7 +55359,7 @@ oj
 br
 qG
 af
-af
+AZ
 af
 Ye
 br
@@ -55076,7 +55611,7 @@ br
 br
 tp
 af
-af
+AZ
 af
 qT
 sw
@@ -55328,7 +55863,7 @@ Pt
 br
 tq
 af
-af
+AZ
 af
 af
 Ye
@@ -55568,7 +56103,7 @@ bp
 PR
 fu
 fu
-IQ
+eJ
 fc
 fc
 Ma
@@ -55580,7 +56115,7 @@ pu
 br
 tr
 om
-af
+AZ
 af
 af
 af
@@ -55832,7 +56367,7 @@ pu
 br
 ts
 om
-oj
+qr
 af
 af
 af
@@ -56082,32 +56617,32 @@ jR
 jR
 Ek
 br
-kZ
-om
-om
-af
-af
-af
-af
-af
-af
-af
-af
-af
-af
+rn
+to
+te
+rv
+rv
+Hi
+rv
+rv
+rv
+rv
+Hi
+rv
+rv
 MW
-ar
-wR
-DT
-DT
-DT
-DG
-DG
-DG
-DG
-DT
+FS
+rS
+GE
+GE
+XK
+sh
+sh
+sh
+sh
+GE
 pD
-DG
+DZ
 DV
 jI
 jR
@@ -56336,15 +56871,15 @@ Ek
 br
 kZ
 kZ
-nU
+th
 Ye
 af
-af
+AZ
 af
 af
 af
 Ye
-Ye
+uR
 Ye
 Mt
 MX
@@ -56352,7 +56887,7 @@ ar
 Gd
 DT
 DT
-DG
+GN
 DG
 DG
 DG
@@ -56588,15 +57123,15 @@ cb
 br
 br
 kZ
-nU
+ti
 qq
 qq
-GF
+UE
 GF
 Wb
 rN
 qq
-qq
+BD
 MA
 Mt
 MX
@@ -56843,12 +57378,12 @@ br
 br
 ar
 ar
-ar
+Iz
 ak
 br
 ar
 ar
-ar
+Iz
 ak
 br
 br
@@ -56856,7 +57391,7 @@ br
 br
 DG
 DG
-Ze
+GQ
 Ze
 DT
 DT
@@ -57095,12 +57630,12 @@ qT
 Xp
 kU
 sR
-kU
+kI
 sr
 br
 kU
 Fh
-Fh
+Sc
 Fh
 VN
 kZ
@@ -57108,7 +57643,7 @@ br
 br
 br
 br
-ar
+Iz
 ag
 br
 br
@@ -57297,7 +57832,7 @@ kh
 kh
 kh
 kh
-fR
+EY
 My
 kh
 kh
@@ -57347,12 +57882,12 @@ Ye
 Ye
 Ye
 Ye
-Ye
+uR
 pe
 br
 om
 Ye
-af
+AZ
 af
 af
 om
@@ -57360,7 +57895,7 @@ kZ
 br
 br
 Xp
-kU
+kI
 Fh
 Mt
 br
@@ -57599,12 +58134,12 @@ af
 af
 af
 Ye
-Ye
+uR
 pf
 br
 kZ
 om
-af
+AZ
 af
 af
 zu
@@ -57612,7 +58147,7 @@ Sf
 br
 Ye
 Ye
-af
+AZ
 af
 Mt
 Mn
@@ -57851,12 +58386,12 @@ af
 af
 af
 af
-oj
+qr
 om
 br
 kZ
 om
-Ye
+uR
 af
 af
 zu
@@ -57864,7 +58399,7 @@ zu
 br
 Ye
 VC
-GF
+UE
 qq
 Mn
 Mn
@@ -58103,12 +58638,12 @@ Ht
 Hr
 tb
 af
-af
+AZ
 oj
 br
 kZ
 Ye
-Ye
+wA
 Ye
 af
 af
@@ -58116,7 +58651,7 @@ By
 br
 br
 br
-ar
+Iz
 ag
 br
 br
@@ -58355,7 +58890,7 @@ Ye
 Ye
 af
 af
-af
+AZ
 oj
 br
 om
@@ -58368,7 +58903,7 @@ By
 br
 br
 Xp
-kU
+kI
 kU
 om
 br
@@ -58607,7 +59142,7 @@ br
 br
 Ye
 Ye
-af
+AZ
 af
 br
 nU
@@ -58620,7 +59155,7 @@ Ye
 br
 Ye
 Ye
-Ye
+uR
 Ye
 oj
 oj
@@ -58859,7 +59394,7 @@ br
 br
 br
 Ye
-af
+AZ
 af
 br
 Fl
@@ -58872,7 +59407,7 @@ nc
 Tu
 Zg
 Ye
-Ye
+uR
 af
 af
 pM
@@ -59111,28 +59646,28 @@ br
 br
 br
 Ye
-af
+AZ
 af
 br
 zu
 af
 br
 br
-oj
-kZ
-nc
-ar
-Zg
-Ye
-af
-af
-Ye
-nc
-ar
-Zg
-af
-af
-om
+pp
+Yg
+HP
+FS
+py
+GJ
+wz
+rv
+GJ
+HP
+FS
+py
+rv
+rv
+pz
 br
 hW
 JW
@@ -59363,7 +59898,7 @@ br
 br
 Ye
 Ye
-af
+AZ
 Ye
 br
 zu
@@ -59376,7 +59911,7 @@ nc
 ar
 Zg
 af
-af
+AZ
 af
 Ye
 nc
@@ -59615,7 +60150,7 @@ qT
 VN
 Ye
 af
-af
+AZ
 nU
 br
 oj
@@ -59628,7 +60163,7 @@ Ye
 br
 pJ
 oj
-oj
+qr
 Mt
 Mt
 Ye
@@ -59867,7 +60402,7 @@ oX
 af
 af
 af
-Ye
+uR
 nU
 br
 om
@@ -60119,7 +60654,7 @@ Hd
 zu
 af
 Ye
-om
+sx
 nU
 br
 om
@@ -60132,7 +60667,7 @@ br
 br
 br
 br
-ar
+Iz
 ag
 br
 br
@@ -60371,7 +60906,7 @@ qV
 zu
 af
 Ye
-om
+sx
 om
 br
 om
@@ -60623,7 +61158,7 @@ qW
 af
 Ye
 om
-om
+sx
 pJ
 br
 om
@@ -60636,7 +61171,7 @@ kZ
 Ye
 af
 af
-Ye
+uR
 Ye
 om
 br
@@ -60875,7 +61410,7 @@ af
 Ye
 Ye
 om
-pJ
+sy
 pJ
 br
 pJ
@@ -60888,7 +61423,7 @@ om
 zu
 zu
 Ye
-Ye
+uR
 om
 br
 br
@@ -61127,7 +61662,7 @@ af
 We
 om
 om
-pJ
+sz
 br
 br
 br
@@ -61140,7 +61675,7 @@ VL
 oj
 By
 By
-om
+qu
 VB
 br
 bs
