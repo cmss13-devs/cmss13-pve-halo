@@ -20,7 +20,6 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 
 // Vars of importance when launching
 	var/landing_scatter = 5 // Scatter from the landing point
-	var/time_to_drop = 5 SECONDS // Time it takes to launch when firing
 	var/time_to_land = 30 SECONDS // time it takes from launching to reach the ground
 	var/landing_time = 1 SECONDS
 	var/time_to_chute
@@ -51,27 +50,40 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 
 	var/image/pod_overlay
 	var/image/rocket_image
-	var/obj/chute_obj
-	var/obj/door_obj
+	var/obj/structure/drop_pod_chute/chute_obj
+	var/obj/item/drop_pod_door/door_obj
 
 /obj/structure/halo_droppod/testpod
 	target_x = 75
 	target_y = 100
 
+/obj/item/drop_pod_door
+	name = "\improper M8823 HEV pod door"
+	icon = 'icons/halo/obj/structures/drop_pod.dmi'
+	icon_state = "pod_door"
+	layer = 5.8
+	anchored = 1
+	drop_sound = "pod_door_clang"
+
+/obj/item/drop_pod_door/launch_impact(hit_atom)
+	. = ..()
+	playsound(src, "pod_door_clang")
+
+/obj/structure/drop_pod_chute
+	name = "\improper M8823 HEV pod chute"
+	icon = 'icons/halo/obj/structures/drop_pod.dmi'
+	icon_state = "chute"
+	layer = 5.7
+
 /obj/structure/halo_droppod/Initialize()
 	. = ..()
 	handle_overlays()
+
 	chute_obj = new()
-	chute_obj.icon = 'icons/halo/obj/structures/drop_pod.dmi'
-	chute_obj.icon_state = "chute"
-	chute_obj.layer = 5.7
 	chute_obj.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
 	vis_contents += chute_obj
 
 	door_obj = new()
-	door_obj.icon = 'icons/halo/obj/structures/drop_pod.dmi'
-	door_obj.icon_state = "pod_door"
-	door_obj.layer = 5.8
 	door_obj.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
 	vis_contents += door_obj
 
@@ -89,6 +101,8 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		overlays += occupant_image
 
 /obj/structure/halo_droppod/proc/toggle_door(mob/living/user)
+	if(pod_state == POD_LANDED)
+		return
 	if(closed)
 		open_door(user)
 		return
@@ -97,6 +111,8 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		return
 
 /obj/structure/halo_droppod/proc/open_door(mob/living/user)
+	if(pod_state == POD_LANDED)
+		return
 	if(closed)
 		if(user)
 			visible_message(SPAN_NOTICE("[user] pulls a lever and opens the [src]s door."), SPAN_NOTICE("You pull a lever and open the [src]s door."))
@@ -108,6 +124,8 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		return
 
 /obj/structure/halo_droppod/proc/close_door(mob/living/user)
+	if(pod_state == POD_LANDED)
+		return
 	if(!closed)
 		if(user)
 			visible_message(SPAN_NOTICE("[user] pulls a lever and closes the [src]s door."), SPAN_NOTICE("You pull a lever and close the [src]s door."))
@@ -120,6 +138,9 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		return
 
 /obj/structure/halo_droppod/proc/enter_pod(mob/living/user)
+	if(!door_obj)
+		to_chat(user, SPAN_NOTICE("Why would you want to enter it now?"))
+		return
 	if(closed)
 		to_chat(user, SPAN_NOTICE("You try to enter the pod, but it's closed."))
 		return
@@ -137,12 +158,17 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	handle_overlays(user)
 
 /obj/structure/halo_droppod/proc/exit_pod(mob/living/user)
+	if(locked)
+		to_chat(user, SPAN_NOTICE("The pod is locked, you can't exit."))
+	if(pod_state == POD_INFLIGHT)
+		to_chat(user, SPAN_BOLDWARNING("Are you crazy!?"))
 	if(closed)
 		open_door(user)
 	if(!occupant)
 		return
 	var/turf/exit_turf = get_step(src, SOUTH)
 	occupant.forceMove(get_turf(exit_turf))
+	occupant.dir = SOUTH
 	occupant = null
 	to_chat(user, SPAN_NOTICE("You exit the pod."))
 	playsound(src, "droppod_enter")
@@ -227,6 +253,8 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 /obj/structure/halo_droppod/proc/start_launch_pod(mob/user, commanded_drop = FALSE)
 	if(!occupant)
 		return
+	user = occupant
+	handle_overlays(user)
 
 	// if(!locate(/obj/structure/drop_pod_launcher) in get_turf(src))
 	//	if(user)
@@ -254,8 +282,8 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		log_game("[key_name(user)] launched pod [src] at [AREACOORD(target)]")
 
 	pod_state = POD_INFLIGHT
-	update_icon()
-	addtimer(CALLBACK(src, PROC_REF(launch_pod), user), 2.5 SECONDS)
+	playsound_client(occupant.client, 'sound/effects/odst_pod/drop_timer.ogg', src, 25)
+	addtimer(CALLBACK(src, PROC_REF(launch_pod), user), 3.5 SECONDS)
 
 /obj/structure/halo_droppod/proc/launch_pod(mob/user)
 	if(!can_launch)
@@ -273,13 +301,15 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		CRASH("No droppod free turf found")
 	forceMove(selectedturf)
 	time_to_chute = time_to_land - 12 SECONDS
+	if(occupant)
+		shake_camera(user, time_to_land, 0.1)
 	addtimer(CALLBACK(src, PROC_REF(chute_deploy), user), time_to_chute)
 	addtimer(CALLBACK(src, PROC_REF(finish_drop), user, selectedturf), time_to_land)
 
 /obj/structure/halo_droppod/proc/chute_deploy(mob/user)
 	playsound(src, 'sound/effects/escape_pod_launch.ogg')
 	if(occupant)
-		shake_camera(user, 3, 1)
+		shake_camera(user, 3, 3)
 	chute_obj.pixel_y = 32
 	chute_obj.icon_state = "chute_open"
 	time_to_thruster = 6 SECONDS
@@ -290,7 +320,6 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		shake_camera(user, 3, 3)
 	animate(chute_obj, pixel_z = 500, time = 1 SECONDS, easing = LINEAR_EASING)
 	sleep(2 SECONDS)
-	shake_camera(user, 3, 1)
 	rocket_image = image(src.icon, loc, "rocket_burn")
 	rocket_image.pixel_y = -32
 	overlays += rocket_image
@@ -298,7 +327,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	playsound(src, 'sound/effects/odst_pod/pod_jet.ogg')
 	sleep(6 SECONDS)
 	qdel(chute_obj)
-	handle_overlays()
+	handle_overlays(user)
 
 
 /obj/structure/halo_droppod/proc/finish_drop(mob/user, turf/reservedturf)
@@ -312,8 +341,10 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		break
 	forceMove(targetturf)
 	animate(src, pixel_z = initial(pixel_z), time = landing_time, easing = LINEAR_EASING)
+	if(occupant)
+		shake_camera(user, landing_time, 1)
 	addtimer(CALLBACK(src, PROC_REF(do_drop), targetturf, user), landing_time)
-	handle_overlays()
+	handle_overlays(user)
 
 /obj/structure/halo_droppod/proc/do_drop(turf/targetturf, mob/user)
 	var/datum/cause_data/cause_data = create_cause_data("[src]", user)
@@ -322,6 +353,25 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	addtimer(CALLBACK(src, PROC_REF(complete_drop), user), 2 SECONDS)
 
 /obj/structure/halo_droppod/proc/complete_drop(mob/user)
+	playsound(src, 'sound/effects/odst_pod/door_kaboom.ogg')
+	addtimer(CALLBACK(src, PROC_REF(door_explode), user), 3 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(exit_pod), user), 4 SECONDS)
+
+/obj/structure/halo_droppod/proc/door_explode(mob/user)
+	qdel(door_obj)
+	var/obj/item/drop_pod_door/new_door_obj
+	new_door_obj = new /obj/item/drop_pod_door(loc)
+	new_door_obj.icon_state = "pod_door_open"
+	new_door_obj.layer = 3
+	new_door_obj.pixel_x = -16
+	var/turf/target = get_offset_target_turf(loc, 0, -5)
+	var/target_turf = get_turf(target)
+	new_door_obj.throw_atom(target_turf, 16, SPEED_FAST, loc, FALSE)
+	if(occupant)
+		shake_camera(user, 3, 1)
 	pod_state = POD_LANDED
-	exit_pod(user)
-	update_icon()
+	new_door_obj.icon_state = "pod_door_floor"
+	sleep(0.8 SECONDS)
+
+	playsound(new_door_obj, "pod_door_clang")
+
