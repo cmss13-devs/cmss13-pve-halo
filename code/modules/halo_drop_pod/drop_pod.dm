@@ -19,7 +19,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	var/chute_state = CHUTE_READY
 
 // Vars of importance when launching
-	var/landing_scatter = 5 // Scatter from the landing point
+	var/landing_scatter = 12 // Scatter from the landing point
 	var/time_to_land = 30 SECONDS // time it takes from launching to reach the ground
 	var/landing_time = 1 SECONDS
 	var/time_to_chute
@@ -282,8 +282,13 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		log_game("[key_name(user)] launched pod [src] at [AREACOORD(target)]")
 
 	pod_state = POD_INFLIGHT
+	var/random_delay = rand(0, 20)*0.1
+	addtimer(CALLBACK(src, PROC_REF(delay_pod), user), random_delay SECONDS)
+
+/obj/structure/halo_droppod/proc/delay_pod(mob/user)
 	playsound_client(occupant.client, 'sound/effects/odst_pod/drop_timer.ogg', src, 25)
 	addtimer(CALLBACK(src, PROC_REF(launch_pod), user), 3.5 SECONDS)
+
 
 /obj/structure/halo_droppod/proc/launch_pod(mob/user)
 	if(!can_launch)
