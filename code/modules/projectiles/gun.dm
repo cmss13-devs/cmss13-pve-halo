@@ -322,7 +322,7 @@
 	var/datum/mob_hud/hud = GLOB.huds[MOB_HUD_HALO]
 	hud.add_to_hud(src)
 
-/obj/item/weapon/gun/remove_from_all_mob_huds()
+/obj/item/weapon/gun/proc/remove_from_all_mob_huds()
 	var/datum/mob_hud/hud = GLOB.huds[MOB_HUD_HALO]
 	hud.remove_from_hud(src)
 
