@@ -295,6 +295,7 @@
 			replace_ammo(null, current_mag)
 	else
 		ammo = GLOB.ammo_list[ammo] //If they don't have a mag, they fire off their own thing.
+
 	set_gun_attachment_offsets()
 	set_gun_config_values()
 	set_bullet_traits()
