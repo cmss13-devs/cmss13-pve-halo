@@ -338,3 +338,9 @@
 
 /obj/item/device/helmet_visor/night_vision/marine_raider/process(delta_time)
 	return PROCESS_KILL
+
+/obj/item/device/helmet_visor/visr
+	name = "VISR"
+	desc = "Halo stuff."
+	icon_state = "nvg_sight"
+	hud_type = MOB_HUD_HALO
