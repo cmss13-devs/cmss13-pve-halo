@@ -38,7 +38,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 		hudusers[user] -= source
 	if(length(hudusers[user]))
 		return FALSE
-	for(var/atom/target in hudmobs)
+	for(var/mob/target in hudmobs)
 		remove_from_single_hud(user, target)
 
 	hudusers -= user
@@ -46,14 +46,14 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 
 // Stop rendering a HUD on a target
 // "unenroll" them so to speak
-/datum/mob_hud/proc/remove_from_hud(atom/target)
+/datum/mob_hud/proc/remove_from_hud(mob/target)
 	for(var/mob/user in hudusers)
 		remove_from_single_hud(user, target)
 	hudmobs -= target
 
 // Always invoked on every 'user'
 // Removes target from user's client's images.
-/datum/mob_hud/proc/remove_from_single_hud(mob/user, atom/target)
+/datum/mob_hud/proc/remove_from_single_hud(mob/user, mob/target)
 	if(!user.client)
 		return
 	for(var/i in hud_icons)
@@ -69,7 +69,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 	else
 		hudusers[user] += list(source)
 
-	for(var/atom/target in hudmobs)
+	for(var/mob/target in hudmobs)
 		add_to_single_hud(user, target)
 
 /// Refreshes the HUD, adding user and sources if missing and then calls to add the HUD
@@ -80,11 +80,11 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 	else
 		hudusers[user] += source
 
-	for(var/atom/target in hudmobs)
+	for(var/mob/target in hudmobs)
 		add_to_single_hud(user, target)
 
 // "Enroll" a target into the HUD. (let others see the HUD on target)
-/datum/mob_hud/proc/add_to_hud(atom/target)
+/datum/mob_hud/proc/add_to_hud(mob/target)
 	hudmobs |= target
 	for(var/mob/user in hudusers)
 		add_to_single_hud(user, target)
@@ -93,7 +93,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 // all time. essentially, OR-ing the images with the client
 // makes the client able to 'see' them whenever they're offscreen
 // somewhat confusingly
-/datum/mob_hud/proc/add_to_single_hud(mob/user, atom/target)
+/datum/mob_hud/proc/add_to_single_hud(mob/user, mob/target)
 	if(!user.client)
 		return
 	for(var/i in hud_icons)
@@ -850,14 +850,8 @@ GLOBAL_DATUM(hud_icon_hudfocus, /image)
 	if (freeze_found)
 		freeze_holder.overlays += image('icons/mob/hud/hud.dmi', src, "xeno_freeze")
 
-/atom/proc/set_halo_hud()
+/mob/proc/set_halo_hud()
 	return
-
-/obj/item/weapon/gun/set_halo_hud()
-	var/image/holder = hud_list[HALO_HUD]
-	holder.appearance_flags |= KEEP_TOGETHER | RESET_COLOR | RESET_ALPHA | RESET_TRANSFORM
-	holder.vis_contents += src
-	holder.filters += filter(type = "outline", size = 1, color = LIGHT_COLOR_BLUE)
 
 /mob/living/carbon/human/set_halo_hud()
 	var/image/holder = hud_list[HALO_HUD]

@@ -93,7 +93,7 @@
 		PF.flags_pass = PASS_MOB_IS_OTHER
 		PF.flags_can_pass_all = PASS_MOB_THRU_OTHER|PASS_AROUND|PASS_HIGH_OVER_ONLY
 
-/mob/prepare_huds()
+/mob/proc/prepare_huds()
 	hud_list = new
 	for(var/hud in hud_possible)
 		var/image/I = image('icons/mob/hud/hud.dmi', src, "")
