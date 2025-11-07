@@ -145,11 +145,3 @@
 	invisa_view = 2
 	toggleable = FALSE
 	actions_types = list()
-
-/obj/item/clothing/glasses/hud/halo
-	name = "visr slop"
-	icon_state = "healthhud"
-	deactive_state = "degoggles"
-	toggleable = TRUE
-	hud_type = MOB_HUD_HALO
-	actions_types = list(/datum/action/item_action/toggle)
