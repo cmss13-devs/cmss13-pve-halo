@@ -877,7 +877,7 @@
 
 		list("SIDEARMS", -1, null, null),
 		list("M6G Service Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6g/unloaded, VENDOR_ITEM_REGULAR),
-		list("M6C/SOOM Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded, VENDOR_ITEM_REGULAR),
+		list("M6C/SOCOM Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded, VENDOR_ITEM_REGULAR),
 		list("M7/SOCOM Submachine Gun", round(scale * 4), /obj/item/weapon/gun/smg/halo/m7/socom/folded_up, VENDOR_ITEM_REGULAR),
 		list("KFA-2/G smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6g, VENDOR_ITEM_REGULAR),
 		list("M6 flashlight", round(scale * 4), /obj/item/attachable/flashlight/m6, VENDOR_ITEM_REGULAR),

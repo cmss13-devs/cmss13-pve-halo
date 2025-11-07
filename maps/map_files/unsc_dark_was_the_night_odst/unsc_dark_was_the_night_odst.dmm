@@ -615,6 +615,26 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_hall)
+"bD" = (
+/obj/effect/decal/unsc/maint{
+	dir = 1;
+	pixel_x = -16
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/upper_hallway)
+"bE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = -9;
+	pixel_x = 10
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = 10;
+	pixel_y = 23
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/dark_was_the_night/upper_hallway)
 "bG" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
@@ -949,14 +969,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
-"fm" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 2;
-	id = "ship_armory2";
-	name = "\improper Fireteam Leader Equipment"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/armory)
 "fx" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/lower_hallway)
@@ -1116,10 +1128,10 @@
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/armory)
 "he" = (
-/obj/structure/barricade/handrail{
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
 	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
+	pixel_x = 16
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/upper_hallway)
@@ -1152,10 +1164,6 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/briefing/two)
-"hw" = (
-/obj/structure/barricade/handrail,
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/upper_hallway)
 "hB" = (
 /obj/effect/decal/unsc/firecontrol{
 	dir = 4
@@ -1192,7 +1200,7 @@
 /turf/open/floor/almayer/test_floor5,
 /area/dark_was_the_night/cryo_hall)
 "hX" = (
-/turf/open/floor/almayer/edge/smooth/endcap_left,
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/upper_hallway)
 "ia" = (
 /obj/structure/platform{
@@ -1370,12 +1378,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
-"jV" = (
-/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
-/obj/item/device/binoculars/range/monocular,
-/obj/structure/machinery/light/small/blue/golden_arrow,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "jW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -1521,15 +1523,6 @@
 	},
 /turf/open/floor/almayer/sterile_green_corner/east,
 /area/dark_was_the_night/medical)
-"ma" = (
-/obj/structure/platform,
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1;
-	pixel_x = 16
-	},
-/turf/open/shuttle/escapepod/west,
-/area/dark_was_the_night/upper_hallway)
 "mf" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/engineering)
@@ -1699,12 +1692,6 @@
 /area/dark_was_the_night/medical)
 "nG" = (
 /turf/open/floor/almayer/mono,
-/area/dark_was_the_night/armory)
-"nM" = (
-/obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
-/obj/item/device/binoculars/range/designator/sergeant,
-/obj/structure/machinery/light/small/blue/golden_arrow,
-/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "nN" = (
 /obj/structure/cable/heavyduty{
@@ -2213,12 +2200,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"to" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_right,
-/area/dark_was_the_night/upper_hallway)
 "tq" = (
 /obj/structure/largecrate/random/barrel/blue{
 	pixel_x = -7;
@@ -2310,14 +2291,6 @@
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"uj" = (
-/obj/structure/barricade/handrail{
-	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
-	},
-/turf/open/floor/almayer/edge/smooth/corner/east,
-/area/dark_was_the_night/upper_hallway)
 "um" = (
 /obj/structure/machinery/light/small{
 	light_color = "#C02526";
@@ -2400,12 +2373,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/lower_hallway)
-"uP" = (
-/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
-/obj/item/device/binoculars/range/monocular,
-/obj/structure/machinery/light/small/blue/golden_arrow,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "uW" = (
 /obj/effect/step_trigger/clone_cleaner,
 /turf/closed/wall/unsc/reinforced/hull,
@@ -2503,22 +2470,19 @@
 /obj/effect/decal/cleanable/cobweb2,
 /turf/open/floor/almayer/plating/northeast,
 /area/dark_was_the_night/engineering)
-"vN" = (
-/obj/structure/barricade/handrail{
-	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_right/north,
-/area/dark_was_the_night/upper_hallway)
 "vO" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/dark_was_the_night/lower_hallway)
 "vU" = (
-/obj/structure/barricade/handrail{
-	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = -9;
+	pixel_x = -10
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = -9;
+	pixel_x = 12
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/upper_hallway)
@@ -2746,14 +2710,6 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
-"xX" = (
-/obj/structure/barricade/handrail{
-	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
-	},
-/turf/open/floor/almayer/edge/smooth/corner,
-/area/dark_was_the_night/upper_hallway)
 "ym" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
 /turf/open/floor/almayer/mono,
@@ -3164,13 +3120,6 @@
 "CX" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/dark_was_the_night/medical)
-"CZ" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	id = "ship_armory2";
-	name = "\improper Squad Leader Equipment"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/armory)
 "Db" = (
 /obj/structure/prop/unsc_crate/standard/medical{
 	pixel_x = -8;
@@ -3310,9 +3259,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/lower_hallway)
-"ES" = (
-/turf/open/floor/almayer/blue,
-/area/dark_was_the_night/armory)
 "EV" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -3406,7 +3352,9 @@
 /area/dark_was_the_night/lower_hallway)
 "FW" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded,
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
+	pixel_x = -9
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "FX" = (
@@ -3569,9 +3517,6 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/dark_was_the_night/engineering)
-"Ii" = (
-/turf/open/floor/almayer/edge/smooth/endcap_left/north,
-/area/dark_was_the_night/upper_hallway)
 "Im" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3679,15 +3624,17 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/lower_hallway)
 "JL" = (
-/obj/structure/barricade/handrail{
-	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = -9;
+	pixel_x = -10
 	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = -10;
+	pixel_y = 23
 	},
-/turf/open/floor/almayer/edge/smooth/north,
+/turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/upper_hallway)
 "JR" = (
 /obj/structure/closet/secure_closet/marine_personal/odst{
@@ -3731,6 +3678,14 @@
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
 	pixel_x = -7;
 	pixel_y = 8
+	},
+/obj/item/attachable/attached_gun/grenade/ma5c{
+	pixel_x = 16;
+	pixel_y = 10
+	},
+/obj/item/attachable/attached_gun/grenade/ma5c{
+	pixel_x = 15;
+	pixel_y = 4
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -4089,9 +4044,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"Nm" = (
-/turf/open/floor/almayer/orange,
-/area/dark_was_the_night/armory)
 "Nz" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
 /obj/structure/machinery/light/small/blue/golden_arrow{
@@ -4412,13 +4364,13 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
 "Rp" = (
-/obj/structure/barricade/handrail{
-	dir = 1;
-	layer = 3.01;
-	pixel_y = 13
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1;
+	pixel_x = 16
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/upper_hallway)
@@ -4958,8 +4910,10 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/canteen)
 "XE" = (
-/obj/structure/platform,
-/turf/open/shuttle/escapepod/west,
+/obj/structure/machinery/door/airlock/unsc/prop{
+	dir = 2
+	},
+/turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "XG" = (
 /obj/effect/step_trigger/clone_cleaner,
@@ -9082,8 +9036,8 @@ CF
 bk
 Cv
 UI
-zG
-zG
+rR
+rR
 AZ
 fE
 ON
@@ -9234,8 +9188,8 @@ UI
 UI
 UI
 UI
-xt
-xt
+rR
+rR
 xt
 fE
 fE
@@ -9383,12 +9337,12 @@ rR
 rR
 rR
 rR
-rR
-rR
-xt
-XE
-vN
-RW
+zG
+zG
+zG
+zG
+zG
+zG
 zG
 fE
 fE
@@ -9535,10 +9489,10 @@ rR
 rR
 rR
 rR
-rR
-rR
-xt
-ma
+RW
+RW
+RW
+zG
 JL
 RW
 hX
@@ -9546,8 +9500,8 @@ zG
 zG
 zG
 zG
-XE
-uj
+zG
+gO
 gC
 ZK
 WS
@@ -9687,18 +9641,18 @@ rR
 rR
 rR
 rR
-rR
-rR
-xt
+RW
+RW
+RW
 XE
 vU
+bD
 RW
-hw
-gR
 zG
 zG
 zG
-ma
+zG
+zG
 Rp
 lc
 TQ
@@ -9839,19 +9793,19 @@ rR
 rR
 rR
 rR
-rR
-rR
-xt
-XE
-vU
-tn
-hw
-gR
+RW
+RW
+RW
+zG
+bE
+RW
+RW
 zG
 zG
 zG
-XE
-Rp
+zG
+zG
+OS
 BE
 qj
 gR
@@ -9995,15 +9949,15 @@ xt
 xt
 xt
 zG
-Ii
-tn
-hw
-gR
+RW
+wL
+RW
 zG
 zG
 zG
-XE
-xX
+zG
+zG
+bG
 GU
 ii
 gR
@@ -10149,7 +10103,7 @@ zG
 zG
 RW
 tn
-to
+tn
 zG
 zG
 zG
@@ -10757,7 +10711,7 @@ eu
 gX
 eu
 eu
-RW
+hX
 zG
 zG
 zG
@@ -10914,8 +10868,8 @@ zG
 zG
 zG
 zG
-XE
-uj
+zG
+gO
 AI
 ZK
 gA
@@ -11066,7 +11020,7 @@ zG
 zG
 zG
 zG
-ma
+zG
 he
 lc
 cy
@@ -11218,8 +11172,8 @@ zG
 zG
 zG
 zG
-XE
-he
+zG
+Qp
 lc
 TQ
 gA
@@ -11370,8 +11324,8 @@ zG
 zG
 zG
 zG
-XE
-he
+zG
+Qp
 lc
 TQ
 gA
@@ -12303,10 +12257,10 @@ mp
 sF
 Be
 IP
-ES
-CZ
-nM
+qq
 bJ
+rR
+rR
 rR
 rR
 rR
@@ -12457,8 +12411,8 @@ BJ
 IP
 qq
 bJ
-bJ
-bJ
+rR
+rR
 rR
 rR
 rR
@@ -12607,10 +12561,10 @@ bJ
 bJ
 rf
 Lc
-Nm
-fm
-uP
+qq
 bJ
+rR
+rR
 rR
 rR
 rR
@@ -12761,8 +12715,8 @@ Be
 qL
 qq
 bJ
-bJ
-bJ
+rR
+rR
 rR
 rR
 rR
@@ -12911,10 +12865,10 @@ km
 bm
 bm
 qL
-Nm
-fm
-jV
+qq
 bJ
+rR
+rR
 rR
 rR
 rR
@@ -13065,8 +13019,8 @@ bm
 qq
 ls
 bJ
-bJ
-bJ
+rR
+rR
 rR
 rR
 rR
@@ -13217,7 +13171,7 @@ CR
 pS
 sm
 bJ
-bJ
+rR
 rR
 rR
 rR

@@ -227,7 +227,7 @@
 /obj/structure/gun_rack/halo/big/ma5c/unloaded
 	populate_type = /obj/item/weapon/gun/rifle/halo/ma5c/unloaded
 
-/obj/structure/gun_rack/halo/big/armory/ma5c/empty
+/obj/structure/gun_rack/halo/big/ma5c/empty
 	initial_stored = 0
 
 /obj/structure/gun_rack/halo/big/br55
@@ -239,7 +239,7 @@
 /obj/structure/gun_rack/halo/big/br55/unloaded
 	populate_type = /obj/item/weapon/gun/rifle/halo/br55/unloaded
 
-/obj/structure/gun_rack/halo/big/armory/br55/empty
+/obj/structure/gun_rack/halo/big/br55/empty
 	initial_stored = 0
 
 /obj/structure/gun_rack/m41/elite
