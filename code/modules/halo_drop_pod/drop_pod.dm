@@ -330,7 +330,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	overlays += rocket_image
 	animate(src, pixel_z = 500, time = 4 SECONDS, easing = LINEAR_EASING)
 	playsound(src, 'sound/effects/odst_pod/pod_jet.ogg')
-	sleep(6 SECONDS)
+	sleep(4 SECONDS)
 	qdel(chute_obj)
 	handle_overlays(user)
 
