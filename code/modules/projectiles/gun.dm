@@ -322,6 +322,10 @@
 	var/datum/mob_hud/hud = GLOB.huds[MOB_HUD_HALO]
 	hud.add_to_hud(src)
 
+/obj/item/weapon/gun/remove_from_all_mob_huds()
+	var/datum/mob_hud/hud = GLOB.huds[MOB_HUD_HALO]
+	hud.remove_from_hud(src)
+
 /obj/item/weapon/gun/proc/set_gun_attachment_offsets()
 	attachable_offset = null
 
@@ -339,6 +343,7 @@
 	QDEL_NULL(muzzle_flash)
 	GLOB.gun_list -= src
 	set_gun_user(null)
+	remove_from_all_mob_huds()
 	. = ..()
 
 /*
