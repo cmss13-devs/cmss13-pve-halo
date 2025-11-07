@@ -345,3 +345,4 @@
 	icon_state = "nvg_sight"
 	hud_type = MOB_HUD_HALO
 	action_icon_string = "visr_on"
+	helmet_overlay = null
