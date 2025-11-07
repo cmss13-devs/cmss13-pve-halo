@@ -160,8 +160,10 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 /obj/structure/halo_droppod/proc/exit_pod(mob/living/user)
 	if(locked)
 		to_chat(user, SPAN_NOTICE("The pod is locked, you can't exit."))
+		return
 	if(pod_state == POD_INFLIGHT)
 		to_chat(user, SPAN_BOLDWARNING("Are you crazy!?"))
+		return
 	if(closed)
 		open_door(user)
 	if(!occupant)
