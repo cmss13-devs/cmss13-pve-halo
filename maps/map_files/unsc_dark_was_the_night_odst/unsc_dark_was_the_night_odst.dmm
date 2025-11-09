@@ -2987,13 +2987,13 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/lower_hallway)
 "BI" = (
-/obj/structure/machinery/cm_vending/sorted/medical/blood/vehicle{
-	pixel_y = 20;
-	pixel_x = 4
-	},
-/obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/cm_vending/sorted/medical/blood{
+	pixel_y = 16;
+	pixel_x = 3;
+	density = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
@@ -4644,13 +4644,12 @@
 /turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/dark_was_the_night/lower_hallway)
 "TY" = (
-/obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/cm_vending/sorted/medical/vehicle{
-	pixel_y = 20;
-	pixel_x = -4
+/obj/structure/machinery/cm_vending/sorted/medical{
+	pixel_y = 16;
+	density = 0
 	},
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
@@ -4705,13 +4704,13 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/ready_bay)
 "UA" = (
-/obj/structure/machinery/cm_vending/sorted/medical/vehicle{
-	pixel_y = 20;
-	pixel_x = -6
-	},
-/obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/cm_vending/sorted/medical{
+	pixel_y = 16;
+	pixel_x = -5;
+	density = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
