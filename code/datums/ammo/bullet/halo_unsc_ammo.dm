@@ -73,8 +73,10 @@
 /datum/ammo/bullet/smg/m7
 	name = "5×23mm M443 FMJ"
 	penetration = 0
-	damage = 32
+	damage = 34
 	penetration = ARMOR_PENETRATION_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_8
+	accuracy = HIT_ACCURACY_TIER_4
 
 // shotgun ammo
 
