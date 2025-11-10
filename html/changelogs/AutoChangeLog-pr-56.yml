@@ -1,0 +1,7 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - balance: "Ammo economy rework"
+  - balance: "MA5C mags now hold 48 rounds instead of 60, BRs hold 36 rounds instead of 48."
+  - balance: "Magazine box storable magazines buffed"
+  - maptweak: "Added more ammo boxes to the armory"

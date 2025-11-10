@@ -1948,3 +1948,12 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	item_state = "pilot"
 	flags_atom = ALLOWINTERNALS|NO_SNOW_TYPE|NO_NAME_OVERRIDE|BLOCKGASEFFECT|ALLOWREBREATH|ALLOWCPR
 
+/obj/item/clothing/head/helmet/marine/unsc/police
+	name = "police CH252 helmet"
+	desc = "Standard-issue helmet to the UNSC Marine Corps, this one given to the local police and security forces across the colonies for riot suppression during the days of the insurrection."
+	icon_state = "police"
+	item_state = "police"
+
+/obj/item/clothing/head/helmet/marine/unsc/insurrection
+	icon_state = "insurgent"
+	item_state = "insurgent"
