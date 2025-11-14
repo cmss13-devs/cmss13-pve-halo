@@ -31,6 +31,8 @@
 /turf/open/space/transit/dropship
 	var/shuttle_tag
 
+/turf/open/space/transit/drop_pod
+
 /turf/open/space/transit/dropship/handle_crosser(atom/movable/crosser)
 	if(QDELETED(crosser))
 		return
