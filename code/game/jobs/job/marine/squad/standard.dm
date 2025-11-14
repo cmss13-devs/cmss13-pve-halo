@@ -64,6 +64,7 @@
 	title = JOB_SQUAD_MARINE_ODST
 	gear_preset = /datum/equipment_preset/unsc/pfc/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/odst/lesser_rank
+	job_options = list(PFC_VARIANT = "LCPL", PVT_VARIANT = "PFC")
 
 /datum/job/marine/standard/ai/upp
 	title = JOB_SQUAD_MARINE_UPP
