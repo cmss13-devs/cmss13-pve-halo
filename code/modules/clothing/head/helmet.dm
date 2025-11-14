@@ -765,7 +765,12 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 
 /// Sets the action overlay to default hud sight up
 /datum/action/item_action/cycle_helmet_huds/proc/set_default_overlay()
-	action_icon_state = "hud_sight_up"
+	var/obj/item/clothing/head/helmet/marine/holder_helmet = holder_item
+	for(var/obj/item/device/helmet_visor/visr/visr in holder_helmet)
+		if(!visr)
+			action_icon_state = "hud_sight_up"
+		else
+			action_icon_state = "visr_off"
 	button.overlays.Cut()
 	button.overlays += image('icons/obj/items/clothing/helmet_visors.dmi', button, action_icon_state)
 

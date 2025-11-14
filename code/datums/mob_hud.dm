@@ -21,6 +21,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 	MOB_HUD_HUNTER = new /datum/mob_hud/hunter_hud(),
 	MOB_HUD_HUNTER_CLAN = new /datum/mob_hud/hunter_clan(),
 	MOB_HUD_EXECUTE = new /datum/mob_hud/execute_hud(),
+	MOB_HUD_HALO = new /datum/mob_hud/halo(),
 	))
 
 /datum/mob_hud
@@ -105,7 +106,12 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 
 
 // MOB HUD TYPES //////////////////////////////////:
+/datum/mob_hud/halo
+	hud_icons = list(HALO_HUD)
 
+/datum/mob_hud/halo/add_to_single_hud(mob/user, mob/target)
+	if(target != user)
+		..()
 
 //Medical
 
@@ -843,3 +849,18 @@ GLOBAL_DATUM(hud_icon_hudfocus, /image)
 	var/freeze_found = HAS_TRAIT(src, TRAIT_IMMOBILIZED) && body_position == STANDING_UP && !buckled // Eligible targets are unable to move but can stand and aren't buckled (eg nested) - This is to convey that they are temporarily unable to move
 	if (freeze_found)
 		freeze_holder.overlays += image('icons/mob/hud/hud.dmi', src, "xeno_freeze")
+
+/mob/proc/set_halo_hud()
+	return
+
+/mob/living/carbon/human/set_halo_hud()
+	var/image/holder = hud_list[HALO_HUD]
+	var/faction_color = COLOR_VERY_SOFT_YELLOW
+	if(faction in list(FACTION_COVENANT, FACTION_INSURGENT))
+		faction_color = COLOR_LASER_RED
+	if(faction in list(FACTION_UNSC, FACTION_UEG_POLICE))
+		faction_color = COLOR_LIGHT_GREEN
+	holder.appearance_flags |= KEEP_TOGETHER | RESET_COLOR | RESET_ALPHA | RESET_TRANSFORM
+	holder.vis_contents += src
+
+	holder.filters += filter(type = "outline", size = 1, color = faction_color)

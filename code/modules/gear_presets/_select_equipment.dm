@@ -282,6 +282,7 @@
 	new_human.equip_to_slot_or_del(ID, WEAR_ID)
 	new_human.faction = faction
 	new_human.faction_group = faction_group.Copy()
+	new_human.set_halo_hud()
 	if(new_human.mind)
 		new_human.mind.name = new_human.real_name
 		// Bank account details handled in generate_money_account()
