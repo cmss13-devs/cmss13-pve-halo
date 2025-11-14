@@ -4,7 +4,8 @@
 	pixel_x = 5;
 	pixel_y = 36;
 	layer = 3.5;
-	dockId = "garrow_cargo_elevator_storage"
+	dockId = "garrow_cargo_elevator_storage";
+	shuttleId = "garrow_cargo_elevator"
 	},
 /turf/open/floor/almayer/red,
 /area/dark_was_the_night/lower_hallway)
@@ -36,7 +37,8 @@
 	pixel_x = 5;
 	pixel_y = 36;
 	layer = 3.5;
-	dockId = "garrow_cargo_elevator_upper"
+	dockId = "garrow_cargo_elevator_upper";
+	shuttleId = "garrow_cargo_elevator"
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/armory)
@@ -635,6 +637,9 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/upper_hallway)
+"bF" = (
+/turf/open/floor/almayer/edge/smooth/corner/north,
+/area/dark_was_the_night/ready_bay)
 "bG" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
@@ -644,8 +649,49 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/briefing/two)
+"bI" = (
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/dark_was_the_night/ready_bay)
 "bJ" = (
 /turf/closed/wall/unsc/reinforced/hull,
+/area/dark_was_the_night/armory)
+"bK" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/ready_bay)
+"bL" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/ready_bay)
+"bM" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/space)
+"bN" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -12;
+	pixel_y = -1
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -12;
+	pixel_y = 6
+	},
+/obj/item/ammo_box/magazine/misc/unsc/mre{
+	pixel_x = 6;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/magazine/misc/unsc/mre{
+	pixel_x = 9;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "bR" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
@@ -763,19 +809,6 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/briefing/two)
-"di" = (
-/obj/structure/plasticflaps{
-	pixel_y = 17;
-	layer = 6
-	},
-/obj/structure/machinery/conveyor{
-	dir = 1;
-	pixel_y = 9;
-	layer = 2.81;
-	id = "food2"
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "dk" = (
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2{
 	dir = 1
@@ -1759,12 +1792,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"oJ" = (
-/obj/structure/machinery/conveyor_switch/oneway{
-	id = "food3"
-	},
-/turf/open/space/basic,
-/area/space)
 "oR" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/tool/hand_labeler{
@@ -1823,12 +1850,6 @@
 /obj/effect/landmark/late_join/odst,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
-"pv" = (
-/obj/structure/machinery/conveyor_switch/oneway{
-	id = "food1"
-	},
-/turf/open/space/basic,
-/area/space)
 "px" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/almayer/mono,
@@ -1847,14 +1868,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/engineering)
-"pS" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/storage/toolbox/traxus{
-	pixel_x = 2;
-	pixel_y = 11
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "pV" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass,
 /obj/effect/step_trigger/clone_cleaner,
@@ -2019,12 +2032,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"rA" = (
-/obj/structure/machinery/conveyor{
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "rB" = (
 /obj/effect/step_trigger/clone_cleaner,
 /turf/closed/wall/unsc,
@@ -2074,26 +2081,6 @@
 /obj/structure/bed/chair,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/dorms)
-"sm" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/mre{
-	pixel_x = 6;
-	pixel_y = 2
-	},
-/obj/item/ammo_box/magazine/misc/unsc/mre{
-	pixel_x = 9;
-	pixel_y = 8
-	},
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -12;
-	pixel_y = -1
-	},
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -12;
-	pixel_y = 6
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "sn" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/dorms)
@@ -2272,12 +2259,6 @@
 	},
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
-"tV" = (
-/obj/structure/machinery/conveyor_switch/oneway{
-	id = "food2"
-	},
-/turf/open/space/basic,
-/area/space)
 "tX" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/dark_was_the_night/medical)
@@ -2319,15 +2300,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/dark_was_the_night/lower_hallway)
-"uA" = (
-/obj/structure/machinery/conveyor{
-	dir = 1;
-	pixel_y = 9;
-	layer = 2.81;
-	id = "food2"
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "uE" = (
 /obj/structure/machinery/computer/cameras/wooden_tv/prop{
 	dir = 8;
@@ -2404,19 +2376,6 @@
 "vm" = (
 /turf/open/floor/almayer/redfull,
 /area/dark_was_the_night)
-"vs" = (
-/obj/structure/plasticflaps{
-	pixel_y = 17;
-	layer = 6
-	},
-/obj/structure/machinery/conveyor{
-	dir = 1;
-	pixel_y = 9;
-	layer = 2.81;
-	id = "food1"
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "vv" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -2634,15 +2593,6 @@
 "xt" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/upper_hallway)
-"xy" = (
-/obj/structure/machinery/conveyor{
-	dir = 1;
-	pixel_y = 9;
-	layer = 2.81;
-	id = "food1"
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "xz" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer,
@@ -2694,6 +2644,10 @@
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 2;
 	pixel_y = 0
+	},
+/obj/item/storage/toolbox/traxus{
+	pixel_x = 5;
+	pixel_y = 26
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
@@ -2848,19 +2802,6 @@
 "zO" = (
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/dark_was_the_night/lower_hallway)
-"zR" = (
-/obj/structure/plasticflaps{
-	pixel_y = 17;
-	layer = 6
-	},
-/obj/structure/machinery/conveyor{
-	dir = 1;
-	pixel_y = 9;
-	layer = 2.81;
-	id = "food3"
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "zZ" = (
 /turf/open/floor/almayer/redfull,
 /area/dark_was_the_night/engineering)
@@ -4107,21 +4048,6 @@
 /obj/structure/prop/unsc_crate/stack{
 	layer = 3.11
 	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	layer = 3.1;
-	pixel_x = 0;
-	pixel_y = 30
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	layer = 3.2;
-	pixel_x = 1;
-	pixel_y = 21
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	layer = 3.2;
-	pixel_x = -1;
-	pixel_y = 12
-	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "ON" = (
@@ -4468,16 +4394,6 @@
 	pixel_y = 9;
 	layer = 3.1
 	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	layer = 3.1;
-	pixel_x = 0;
-	pixel_y = 23
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	layer = 3.1;
-	pixel_x = 0;
-	pixel_y = -6
-	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Sn" = (
@@ -4545,25 +4461,9 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/lower_hallway)
 "Tn" = (
-/obj/item/ammo_box/magazine/unsc/small/m6g{
-	pixel_x = 6;
-	pixel_y = 13
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6g{
-	pixel_x = 6;
-	pixel_y = 4
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6g{
-	pixel_x = 6;
-	pixel_y = -6
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6g{
-	pixel_x = 6;
-	pixel_y = 23
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6g{
-	pixel_x = 6;
-	pixel_y = 13
+/obj/structure/reagent_dispensers/watertank/unsc{
+	pixel_x = 5;
+	pixel_y = 8
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -4735,15 +4635,6 @@
 "UM" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
-"UP" = (
-/obj/structure/machinery/conveyor{
-	dir = 1;
-	pixel_y = 9;
-	layer = 2.81;
-	id = "food3"
-	},
-/turf/open/shuttle/escapepod/floor4,
-/area/dark_was_the_night/canteen)
 "US" = (
 /obj/structure/cargo_container/unsc/main_2/c{
 	density = 0;
@@ -7081,9 +6972,9 @@ xt
 xt
 rR
 rR
-AZ
-AZ
-AZ
+rR
+rR
+rR
 rR
 rR
 rR
@@ -7228,14 +7119,14 @@ fE
 AZ
 rR
 rR
-pv
-tV
-oJ
 rR
 rR
-AZ
-rA
-AZ
+rR
+rR
+rR
+rR
+rR
+rR
 rR
 rR
 rR
@@ -7378,16 +7269,16 @@ Vl
 Vl
 Ld
 AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-AZ
-rA
-AZ
+bM
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
 rR
 rR
 rR
@@ -7530,16 +7421,16 @@ Qn
 DP
 Mc
 av
-cm
-vs
-xy
-xy
-xy
-uA
-uA
-uA
-rA
-AZ
+bM
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
 rR
 rR
 rR
@@ -7682,16 +7573,16 @@ cm
 fE
 fA
 Vl
-cm
-di
-uA
-uA
-uA
-uA
-uA
-uA
-rA
-AZ
+bM
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
 rR
 rR
 rR
@@ -7834,16 +7725,16 @@ cm
 fE
 wu
 sr
-cm
-zR
-UP
-UP
-UP
-UP
-UP
-UP
-rA
-AZ
+bM
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
+rR
 rR
 rR
 rR
@@ -7986,16 +7877,16 @@ nT
 Md
 HF
 Vl
-fE
-fE
-fE
-fE
-fE
-fE
-fE
-fE
 AZ
 AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+AZ
+rR
 rR
 rR
 rR
@@ -10957,12 +10848,12 @@ SW
 rD
 rR
 rR
-rR
-rR
-rR
-rR
-rR
-rR
+Fy
+Fy
+Fy
+Fy
+Fy
+Fy
 rR
 rR
 rR
@@ -11109,15 +11000,15 @@ rD
 rD
 rD
 Fy
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+Fy
+rm
+Ga
+rm
+rm
+Fy
+Fy
+Fy
+Fy
 rR
 rR
 rR
@@ -11260,16 +11151,16 @@ wi
 wi
 wA
 tA
+wi
+kR
+bK
+bL
+bK
+bK
+bF
+wi
+tA
 ZL
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
 rR
 rR
 rR
@@ -11412,16 +11303,16 @@ yq
 wi
 wA
 cj
+wi
+QL
+sL
+sL
+sL
+sL
+dE
+wi
+cj
 ZL
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
 rR
 rR
 rR
@@ -11565,15 +11456,15 @@ rD
 rD
 rD
 Fy
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+mT
+Uy
+Uy
+Uy
+Uy
+bI
+Fy
+Fy
+Fy
 rR
 rR
 rR
@@ -11714,17 +11605,17 @@ Fy
 NM
 Fy
 rD
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+Fy
+Fy
+Fy
+Fy
+NM
+Fy
+rD
+Fy
+Fy
+Fy
+Fy
 rR
 rR
 rR
@@ -11867,13 +11758,13 @@ aG
 aG
 Vc
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+by
+aL
+aG
+aG
+Vc
+Vc
 rR
 rR
 rR
@@ -12019,13 +11910,13 @@ aG
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aN
+aG
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -12105,7 +11996,7 @@ sF
 Be
 hb
 GV
-Na
+GV
 Na
 Na
 Na
@@ -12171,13 +12062,13 @@ aG
 gn
 bl
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+ai
+by
+aQ
+aG
+gn
+bl
+Vc
 rR
 rR
 rR
@@ -12256,9 +12147,9 @@ mp
 sF
 Be
 IP
-qq
 bJ
-rR
+bJ
+bM
 rR
 rR
 rR
@@ -12323,13 +12214,13 @@ aG
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+Ky
+aQ
+aG
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -12408,9 +12299,9 @@ pc
 sF
 BJ
 IP
-qq
-bJ
-rR
+sF
+ls
+bM
 rR
 rR
 rR
@@ -12475,13 +12366,13 @@ aI
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+Ky
+aR
+aI
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -12560,9 +12451,9 @@ bJ
 bJ
 rf
 Lc
-qq
-bJ
-rR
+sF
+bN
+bM
 rR
 rR
 rR
@@ -12627,13 +12518,13 @@ aG
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aL
+aG
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -12712,9 +12603,9 @@ qV
 bq
 Be
 qL
-qq
-bJ
-rR
+sF
+ls
+bM
 rR
 rR
 rR
@@ -12779,13 +12670,13 @@ Vb
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+ai
+Yd
+xK
+Vb
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -12864,9 +12755,9 @@ km
 bm
 bm
 qL
-qq
 bJ
-rR
+bJ
+bM
 rR
 rR
 rR
@@ -12931,13 +12822,13 @@ aG
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aL
+aG
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -13015,8 +12906,8 @@ qL
 bm
 bm
 bm
+qL
 qq
-ls
 bJ
 rR
 rR
@@ -13083,13 +12974,13 @@ aI
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+by
+aN
+aI
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -13167,8 +13058,8 @@ qq
 CR
 qq
 CR
-pS
-sm
+qq
+qq
 bJ
 rR
 rR
@@ -13235,13 +13126,13 @@ aI
 gn
 bl
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+Ky
+aS
+aI
+gn
+bl
+Vc
 rR
 rR
 rR
@@ -13387,13 +13278,13 @@ aI
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+ai
+Ky
+aS
+aI
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -13539,13 +13430,13 @@ aG
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+Ky
+aS
+aG
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -13691,13 +13582,13 @@ aG
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+KA
+aT
+aG
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -13843,13 +13734,13 @@ aK
 aH
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+Vc
+Vc
+aH
+aK
+aH
+xK
+Vc
 rR
 rR
 rR
@@ -13995,13 +13886,13 @@ aI
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+Vk
+aU
+aI
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -14147,13 +14038,13 @@ aI
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aS
+aI
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -14299,13 +14190,13 @@ aI
 gn
 bl
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+ai
+by
+aS
+aI
+gn
+bl
+Vc
 rR
 rR
 rR
@@ -14451,13 +14342,13 @@ aG
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aS
+aG
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -14603,13 +14494,13 @@ aG
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+by
+aV
+aG
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -14755,13 +14646,13 @@ aG
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aL
+aG
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -14907,13 +14798,13 @@ Vb
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+aj
+SG
+xK
+Vb
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -15059,13 +14950,13 @@ aG
 aG
 xK
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aL
+aG
+aG
+xK
+Vc
 rR
 rR
 rR
@@ -15211,13 +15102,13 @@ aG
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+by
+by
+aW
+aG
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -15363,13 +15254,13 @@ aI
 gn
 bl
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aQ
+aI
+gn
+bl
+Vc
 rR
 rR
 rR
@@ -15515,13 +15406,13 @@ aI
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+ai
+by
+aQ
+aI
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -15667,13 +15558,13 @@ aI
 gn
 kr
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+pE
+by
+aR
+aI
+gn
+kr
+Vc
 rR
 rR
 rR
@@ -15819,13 +15710,13 @@ aG
 aG
 Vc
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+Ky
+Ky
+aL
+aG
+aG
+Vc
+Vc
 rR
 rR
 rR
@@ -15970,13 +15861,13 @@ Vc
 Vc
 Vc
 Vc
-rR
-rR
-rR
-rR
-rR
-rR
-rR
+Vc
+Vc
+Vc
+Vc
+Vc
+Vc
+Vc
 rR
 rR
 rR

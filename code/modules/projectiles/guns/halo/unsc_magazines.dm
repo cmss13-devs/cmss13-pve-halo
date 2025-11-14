@@ -179,6 +179,7 @@
 	name = "\improper M6C/SOCOM magazine (12.7x40mm SAP-HE)"
 	desc = "An extended capacity M6C magazine, capable of holding 16 rounds compared to the standard 12. Comes in special-ops black, for the true clandestine operative."
 	max_rounds = 16
+	icon_state = "m6c_socom"
 	bonus_overlay = "m6c_ext_overlay"
 
 /obj/item/ammo_magazine/pistol/halo/m6a
