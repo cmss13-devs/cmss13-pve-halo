@@ -13,6 +13,11 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/ma5c/shredder
+	name = "shredder bullet"
+	damage = 52
+	penetration = ARMOR_PENETRATION_TIER_2
+
 /datum/ammo/bullet/rifle/ma3a
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
@@ -68,7 +73,10 @@
 /datum/ammo/bullet/smg/m7
 	name = "5×23mm M443 FMJ"
 	penetration = 0
-	damage = 25
+	damage = 34
+	penetration = ARMOR_PENETRATION_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_8
+	accuracy = HIT_ACCURACY_TIER_4
 
 // shotgun ammo
 

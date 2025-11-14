@@ -3,7 +3,7 @@
 #define GET_DEFAULT_ROLE(title) (GLOB.RoleAuthority?.default_roles[title] ? GLOB.RoleAuthority.default_roles[title] : title)
 
 // Squad name defines
-#define SQUAD_MARINE_1 "Alpha 1-1" //place holder name
+#define SQUAD_MARINE_1 "Rock Hoppers" //place holder name
 #define SQUAD_MARINE_2 "Bravo"
 #define SQUAD_MARINE_3 "Charlie"
 #define SQUAD_MARINE_4 "Delta"
@@ -17,6 +17,7 @@
 #define SQUAD_UPP "Red Dawn"
 #define SQUAD_PMCPLT "AZURE-15"
 #define SQUAD_LRRP "Snake Eaters"
+#define SQUAD_ODST "The Ferrymen"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -42,6 +43,13 @@
 #define JOB_SQUAD_RTO "Radio Telephone Operator"
 #define JOB_SQUAD_MARINE_FORECON "FORECON Rifleman"
 #define JOB_SQUAD_SMARTGUN_FORECON "FORECON Smartgunner"
+
+#define JOB_SQUAD_MARINE_ODST "ODST Rifleman"
+#define JOB_SQUAD_SPECIALIST_ODST "ODST Weapons Specialist"
+#define JOB_SQUAD_MEDIC_ODST "ODST Hospital Corpsman"
+#define JOB_SQUAD_TEAM_LEADER_ODST "ODST Fireteam Leader"
+#define JOB_SQUAD_RTO_ODST "ODST Radio Telephone Operator"
+#define JOB_SQUAD_LEADER_ODST "ODST Squad Sergeant"
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 
