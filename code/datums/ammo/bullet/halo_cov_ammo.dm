@@ -1,7 +1,6 @@
 /datum/ammo/energy/plasma
 	name = "plasma bolt"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
-	flags_ammo_behavior = AMMO_LASER
 	shell_speed = AMMO_SPEED_TIER_2
 
 /datum/ammo/energy/plasma/plasma_pistol
@@ -9,11 +8,13 @@
 	icon_state = "plasma_teal"
 	accurate_range = 10
 	max_range = 20
-	damage = 34
+	damage = 28
+	accuracy = HIT_ACCURACY_TIER_3
+	scatter = SCATTER_AMOUNT_TIER_7
 
 /datum/ammo/energy/plasma/plasma_pistol/overcharge
 	name = "overcharged light plasma bolt"
-	damage = 80
+	damage = 65
 	shell_speed = AMMO_SPEED_TIER_2
 
 /datum/ammo/energy/plasma/plasma_rifle
@@ -47,7 +48,7 @@
 /datum/ammo/bullet/rifle/carbine
 	name = "carbine bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 60
+	damage = 50
 	penetration = ARMOR_PENETRATION_TIER_3
 	accurate_range = 24
 	scatter = SCATTER_AMOUNT_TIER_10
