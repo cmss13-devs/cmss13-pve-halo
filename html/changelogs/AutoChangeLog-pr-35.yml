@@ -1,0 +1,6 @@
+author: "CactusMouth"
+delete-after: True
+changes:
+  - rscadd: "Added the Partisans and Insurgents, alongside the Police"
+  - soundadd: "added sounds for the DMR"
+  - imageadd: "added armor and weapon sprites for the insurgents/partisans/police"

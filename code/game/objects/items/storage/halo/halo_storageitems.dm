@@ -17,6 +17,10 @@
 		/obj/item/ammo_magazine/pistol/halo,
 	)
 	has_gamemode_skin = FALSE
+	holster_slots = list(
+		"1" = list(
+			"icon_x" = -5,
+			"icon_y" = 0))
 
 /obj/item/storage/belt/gun/m6/full_m6c/fill_preset_inventory()
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6c())
@@ -27,6 +31,16 @@
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6g())
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+
+/obj/item/storage/belt/gun/m6/full_m6c/m4a/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6c/m4a())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+
+/obj/item/storage/belt/gun/m6/full_m6a/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6a())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/halo/m6a(src)
 //========== SPECIAL BELTS ==========
 
 /obj/item/storage/belt/gun/m7
@@ -52,7 +66,12 @@
 		WEAR_R_HAND = 'icons/mob/humans/onmob/items_righthand_1.dmi')
 
 /obj/item/storage/belt/gun/m7/full/fill_preset_inventory()
-	handle_item_insertion(new /obj/item/weapon/gun/smg/halo/m7())
+	handle_item_insertion(new /obj/item/weapon/gun/smg/halo/m7/folded_up())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/smg/halo/m7(src)
+
+/obj/item/storage/belt/gun/m7/full/socom/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/smg/halo/m7/socom/folded_up())
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/smg/halo/m7(src)
 //========== POUCHES ==========

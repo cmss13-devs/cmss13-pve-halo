@@ -3,7 +3,7 @@
 #define GET_DEFAULT_ROLE(title) (GLOB.RoleAuthority?.default_roles[title] ? GLOB.RoleAuthority.default_roles[title] : title)
 
 // Squad name defines
-#define SQUAD_MARINE_1 "Alpha 1-1" //place holder name
+#define SQUAD_MARINE_1 "Rock Hoppers" //place holder name
 #define SQUAD_MARINE_2 "Bravo"
 #define SQUAD_MARINE_3 "Charlie"
 #define SQUAD_MARINE_4 "Delta"
@@ -17,6 +17,7 @@
 #define SQUAD_UPP "Red Dawn"
 #define SQUAD_PMCPLT "AZURE-15"
 #define SQUAD_LRRP "Snake Eaters"
+#define SQUAD_ODST "The Ferrymen"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -42,6 +43,13 @@
 #define JOB_SQUAD_RTO "Radio Telephone Operator"
 #define JOB_SQUAD_MARINE_FORECON "FORECON Rifleman"
 #define JOB_SQUAD_SMARTGUN_FORECON "FORECON Smartgunner"
+
+#define JOB_SQUAD_MARINE_ODST "ODST Rifleman"
+#define JOB_SQUAD_SPECIALIST_ODST "ODST Weapons Specialist"
+#define JOB_SQUAD_MEDIC_ODST "ODST Hospital Corpsman"
+#define JOB_SQUAD_TEAM_LEADER_ODST "ODST Fireteam Leader"
+#define JOB_SQUAD_RTO_ODST "ODST Radio Telephone Operator"
+#define JOB_SQUAD_LEADER_ODST "ODST Squad Sergeant"
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 
@@ -422,6 +430,25 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_DUTCH_MEDIC "Dutch's Dozen - Medic"
 
 #define DUTCH_JOB_LIST list(JOB_DUTCH_ARNOLD, JOB_DUTCH_RIFLEMAN, JOB_DUTCH_MINIGUNNER, JOB_DUTCH_FLAMETHROWER, JOB_DUTCH_MEDIC)
+
+//----------- INSURGENTS ---------//
+#define JOB_INSURGENT_PARTISAN "Partisan"
+#define JOB_INSURGENT_PARTISAN_BREACH "Partisan Breacher"
+
+#define JOB_INSURGENT "Insurgent"
+#define JOB_INSURGENT_TECHNICIAN "Insurgent Technician"
+#define JOB_INSURGENT_SPECIALIST "Insurgent Specialist"
+#define JOB_INSURGENT_SL "Insurgent Squad Leader"
+#define JOB_INSURGENT_LEAD "Insurgent Officer"
+
+#define INSURGENT_JOB_LIST list(JOB_INSURGENT_PARTISAN, JOB_INSURGENT_PARTISAN_BREACH, JOB_INSURGENT, JOB_INSURGENT_TECHNICIAN, JOB_INSURGENT_SPECIALIST, JOB_INSURGENT_SL, JOB_INSURGENT_LEAD)
+
+//----------- UEG POLICE ---------//
+#define JOB_UEG_POLICE "UEG Police Officer"
+#define JOB_UEG_POLICE_SL "UEG Police Sergeant"
+#define JOB_UEG_POLICE_CHIEF "UEG Police Chief"
+
+#define UEG_POLICE_JOB_LIST list(JOB_UEG_POLICE, JOB_UEG_POLICE_SL, JOB_UEG_POLICE_CHIEF)
 
 #define JOB_PREDATOR "Predator"
 #define JOB_XENOMORPH    "Xenomorph"
