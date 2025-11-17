@@ -66,6 +66,8 @@ em {font-style: normal; font-weight: bold;}
 .hcradio {color: #318779;}
 .pvstradio {color: #9b0612;}
 .unscradio {color: #828cff;}
+.covradio {color: #d283ec;}
+.odstradio {color: #32CD32;}
 
 .medium { font-size: 2}
 .big { font-size: 2}

@@ -417,7 +417,7 @@ DEFINES in setup.dm, referenced here.
 		var/item_icon = attachment.icon_state
 		if(attachment.attach_icon)
 			item_icon = attachment.attach_icon
-		gun_image = image(attachment.icon,src, item_icon)
+		gun_image = image(attachment.icon,src, item_icon, src.layer + attachment.layer_addition)
 		gun_image.pixel_x = attachable_offset["[slot]_x"] - attachment.pixel_shift_x + x_offset_by_attachment_type(attachment.type)
 		gun_image.pixel_y = attachable_offset["[slot]_y"] - attachment.pixel_shift_y + y_offset_by_attachment_type(attachment.type)
 		attachable_overlays[slot] = gun_image

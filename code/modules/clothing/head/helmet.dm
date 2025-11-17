@@ -1931,7 +1931,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	clothing_traits = list(TRAIT_EAR_PROTECTION) //So I don't have to make another subtype for the rocketeers
 
 /obj/item/clothing/head/helmet/marine/unsc
-	name = "CH252 helmet"
+	name = "\improper CH252 helmet"
 	desc = "Standard-issue helmet to the UNSC Marine Corps. Various attachment points on the helmet allow for various equipment to be fitted to the helmet."
 	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
@@ -1942,14 +1942,14 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	)
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot
-	name = "FH252 helmet"
+	name = "\improper FH252 helmet"
 	desc = "The typical helmet found used by most UNSC pilots due to it's fully enclosed nature, particularly preferred by pilots in combat situations where their cockpit may end up breached."
 	icon_state = "pilot"
 	item_state = "pilot"
 	flags_atom = ALLOWINTERNALS|NO_SNOW_TYPE|NO_NAME_OVERRIDE|BLOCKGASEFFECT|ALLOWREBREATH|ALLOWCPR
 
 /obj/item/clothing/head/helmet/marine/unsc/police
-	name = "police CH252 helmet"
+	name = "\improper police CH252 helmet"
 	desc = "Standard-issue helmet to the UNSC Marine Corps, this one given to the local police and security forces across the colonies for riot suppression during the days of the insurrection."
 	icon_state = "police"
 	item_state = "police"
@@ -1957,3 +1957,16 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 /obj/item/clothing/head/helmet/marine/unsc/insurrection
 	icon_state = "insurgent"
 	item_state = "insurgent"
+
+/obj/item/clothing/head/helmet/marine/unsc/odst
+	name = "\improper CH381 ODST helmet"
+	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
+	icon_state = "odst"
+	item_state = "odst"
+	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_internaldamage = CLOTHING_ARMOR_HIGH

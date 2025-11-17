@@ -29,6 +29,7 @@ Defined in conflicts.dm of the #defines folder.
 	var/attach_icon //the sprite to show when the attachment is attached when we want it different from the icon_state.
 	var/pixel_shift_x = 16 //Determines the amount of pixels to move the icon state for the overlay.
 	var/pixel_shift_y = 16 //Uses the bottom left corner of the item.
+	var/layer_addition
 
 	flags_atom =  FPRINT|CONDUCT
 	matter = list("metal" = 100)
@@ -261,6 +262,7 @@ Defined in conflicts.dm of the #defines folder.
 	pixel_shift_y = 15
 	attach_icon = "suppressor_a"
 	hud_offset_mod = -3
+	var/new_fire_sound = "gun_silenced"
 	gun_traits = list(TRAIT_GUN_SILENCED)
 
 /obj/item/attachable/suppressor/New()

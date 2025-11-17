@@ -1,0 +1,12 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "ODST platoon"
+  - rscadd: "ODST weapons such as M7/SOCOM, M6C/SOCOM"
+  - rscadd: "ODST armor"
+  - mapadd: "Dark was the night ODST map"
+  - balance: "buffed SMG a bit"
+  - bugfix: "Fixed M7 SMG holster"
+  - rscadd: "Some special magazine types for UNSC guns and ammo boxes"
+  - ui: "Changed something relating to user interfaces"
+  - code_imp: "Changed up some code to allow for suppressors to have unique sounds based on the weapon"
