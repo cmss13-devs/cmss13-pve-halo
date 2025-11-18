@@ -232,6 +232,20 @@
 		organ.take_damage(damage_on_move * count, 0, 0, no_limb_loss = TRUE)
 		embedded_mob.pain.apply_pain(damage_on_move * count)
 
+/obj/item/shard/shrapnel/needler
+	name = "needler shard"
+	desc = "A long, glowing pink and purple needle. It looks especially volatile"
+	icon = 'icons/halo/obj/items/shards.dmi'
+	icon_state = "needle"
+	damage_on_move = 0
+
+/obj/item/shard/shrapnel/needler/proc/remove_needles(mob/embedded_mob)
+	SIGNAL_HANDLER
+	var/mob/living/carbon/human/target = embedded_mob
+	for(var/obj/item/shard/shrapnel/needler/needle in target.embedded_items)
+		qdel(needle)
+
+
 /obj/item/shard/shrapnel/upp
 	name = "small shrapnel"
 	desc = "Some shrapnel that used to be embedded underneath someone's skin."

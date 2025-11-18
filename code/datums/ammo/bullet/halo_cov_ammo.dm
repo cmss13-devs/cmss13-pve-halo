@@ -39,11 +39,8 @@
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
-	var/needle_per_hit = 1
-
-/datum/ammo/needler/on_hit_mob(mob/M, obj/projectile/P)
-	. = ..()
-	M.AddComponent(/datum/component/supercombine, needle_per_hit, P.weapon_cause_data, P.dir)
+	shrapnel_type = /obj/item/shard/shrapnel/needler
+	shrapnel_chance = SHRAPNEL_CHANCE_TIER_10
 
 /datum/ammo/bullet/rifle/carbine
 	name = "carbine bullet"
