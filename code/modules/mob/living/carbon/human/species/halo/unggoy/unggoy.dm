@@ -19,7 +19,7 @@
 
 	total_health = 150
 	burn_mod = 1
-	brute_mod = 0.8
+	brute_mod = 1
 	slowdown = 0.1
 
 	dodge_pool = 10

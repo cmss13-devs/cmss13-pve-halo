@@ -25,6 +25,8 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	var/disposable = FALSE
 	/// The selection weight of the weapon type. If an AI has multiple weapons, it'll use weighting to determine its primary. In short, higher weight = more powerful
 	var/primary_weight = 1
+	/// If this appraisal has preference from covenant species
+	var/covenant_bias = FALSE
 
 /// List of things we do before beginning to spray bullets based off weapon type
 /datum/firearm_appraisal/proc/before_fire(obj/item/weapon/gun/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
@@ -232,6 +234,9 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 
 /datum/firearm_appraisal/plasma/before_fire(obj/item/weapon/gun/energy/plasma/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
 	. = ..()
+	if(firearm.dispersing)
+		AI.try_cover()
+		return
 	if(firearm.heat >= 60)
 		var/vent_decision = 0
 		if(AI.current_target)

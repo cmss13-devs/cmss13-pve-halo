@@ -2,6 +2,9 @@
 	name = "plasma bolt"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	shell_speed = AMMO_SPEED_TIER_2
+	flags_ammo_behavior = AMMO_BALLISTIC
+	sound_hit = "plasma_impact"
+	sound_miss = "plasma_miss"
 
 /datum/ammo/energy/plasma/plasma_pistol
 	name = "light plasma bolt"
@@ -41,6 +44,11 @@
 	max_range = 24
 	shrapnel_type = /obj/item/shard/shrapnel/needler
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_10
+
+/datum/ammo/needler/on_hit_mob(mob/M, obj/projectile/P)
+	. = ..()
+	if(ishuman(M))
+		M.AddComponent(/datum/component/supercombine, M, P.dir)
 
 /datum/ammo/bullet/rifle/carbine
 	name = "carbine bullet"

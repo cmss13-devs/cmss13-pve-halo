@@ -5,11 +5,12 @@
 	icon_state = "plasma_pistol"
 	flags_gun_features = GUN_CAN_POINTBLANK
 	works_in_recharger = FALSE
-	empty_click = 'sound/weapons/halo/plasma_dryfire.ogg'
+	empty_click = null
 
 	var/works_in_cov_recharger = TRUE
 
 	// Heat gain
+	var/dispersing = FALSE
 	/// The maximum heat the weapon can attain. The value of this should remain the same for all weapons.
 	var/max_heat = 100
 	/// The current heat of the weapon
@@ -90,7 +91,8 @@
 		icon_state = "[initial(icon_state)]_open"
 		addtimer(CALLBACK(src, PROC_REF(reset_icon), src), manual_dispersion_delay)
 		flick_overlay(src, venting_overlay, manual_dispersion_delay)
-		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), manual_dispersion_delay)
+	addtimer(CALLBACK(src, PROC_REF(end_overheat), src), manual_dispersion_delay)
+	dispersing = TRUE
 
 /obj/item/weapon/gun/energy/plasma/proc/overheat()
 	COOLDOWN_START(src, cooldown, overheat_time)
@@ -104,7 +106,8 @@
 		icon_state = "[initial(icon_state)]_open"
 		addtimer(CALLBACK(src, PROC_REF(reset_icon), src), overheat_time)
 		flick_overlay(src, overheat_overlay, overheat_time)
-		addtimer(CALLBACK(src, PROC_REF(play_close_sound), src), overheat_time)
+	addtimer(CALLBACK(src, PROC_REF(end_overheat), src), overheat_time)
+	dispersing = TRUE
 
 /obj/item/weapon/gun/energy/plasma/proc/start_process()
 	START_PROCESSING(SSdcs, src)
@@ -130,8 +133,9 @@
 /obj/item/weapon/gun/energy/plasma/proc/reset_icon()
 	icon_state = initial(icon_state)
 
-/obj/item/weapon/gun/energy/plasma/proc/play_close_sound()
+/obj/item/weapon/gun/energy/plasma/proc/end_overheat()
 	playsound(src, close_vent_sound)
+	dispersing = FALSE
 
 /obj/item/weapon/gun/energy/plasma/update_icon()
 	. = ..()

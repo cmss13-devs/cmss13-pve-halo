@@ -28,6 +28,7 @@
 #define isspeciessynth(A) (A.species?.group == SPECIES_SYNTHETIC)
 #define isspeciessangheili(A) (A.species?.group == SPECIES_SANGHEILI)
 #define isspeciesunggoy(A) (A.species?.group == SPECIES_UNGGOY)
+#define isspeciescovenant(A) (A.species?.group == SPECIES_UNGGOY || SPECIES_SANGHEILI)
 
 //Size checks for carbon to use instead of typechecks. (Hellhounds are deprecated)
 #define iscarbonsizexeno(A) (A.mob_size >= MOB_SIZE_XENO_VERY_SMALL)

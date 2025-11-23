@@ -34,7 +34,7 @@
 			continue
 
 		var/datum/firearm_appraisal/this_appraisal = get_firearm_appraisal(secondary)
-		if(this_appraisal.primary_weight > best_secondary_appraisal.primary_weight)
+		if(calculate_weight(this_appraisal) > calculate_weight(best_secondary_appraisal))
 			best_secondary = secondary
 			best_secondary_appraisal = this_appraisal
 			continue
@@ -56,3 +56,10 @@
 	brain.set_primary_weapon(best_secondary)
 	brain.tried_reload = FALSE
 	return best_secondary
+
+/datum/ai_action/select_primary/proc/calculate_weight(datum/firearm_appraisal/appraisal)
+	var/mob/living/carbon/human/tied_human = brain.tied_human
+	var/multiplier = 1
+	if(isspeciescovenant(tied_human) && appraisal.covenant_bias == TRUE)
+		multiplier = 3
+	return appraisal.primary_weight * multiplier
