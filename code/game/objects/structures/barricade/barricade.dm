@@ -95,7 +95,7 @@
 					layer = initial(layer) - 0.01
 			else
 				if(!do_not_adjust)
-				layer = OBJ_LAYER
+					layer = OBJ_LAYER
 		if(!anchored)
 			layer = initial(layer)
 	else
