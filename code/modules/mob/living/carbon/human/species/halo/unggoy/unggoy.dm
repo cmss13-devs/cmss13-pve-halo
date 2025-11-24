@@ -17,7 +17,7 @@
 	blood_color = BLOOD_COLOR_UNGGOY
 	flesh_color = "#317986"
 
-	total_health = 150
+	total_health = 125
 	burn_mod = 1
 	brute_mod = 1
 	slowdown = 0.1

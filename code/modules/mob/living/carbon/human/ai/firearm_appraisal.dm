@@ -221,18 +221,29 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	)
 	primary_weight = 1
 
-/datum/firearm_appraisal/plasma
+/datum/firearm_appraisal/covenant
+	gun_types = null
+	disposable = FALSE
+	covenant_bias = TRUE
+
+/datum/firearm_appraisal/covenant/plasma
 	gun_types = list(
 		/obj/item/weapon/gun/energy/plasma,
 	)
 	primary_weight = 7
-	burst_amount_max = 6
-	disposable = FALSE
+	burst_amount_max = 4
 
-#define PLASMA_VENT_CHANCE_DIRECT_COMBAT 4
-#define PLASMA_VENT_CHANCE_INDIRECT_COMBAT 8
+/datum/firearm_appraisal/covenant/needler
+	gun_types = list(
+		/obj/item/weapon/gun/smg/covenant_needler,
+	)
+	primary_weight = 7
+	burst_amount_max = 2
 
-/datum/firearm_appraisal/plasma/before_fire(obj/item/weapon/gun/energy/plasma/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
+#define PLASMA_VENT_CHANCE_DIRECT_COMBAT 6
+#define PLASMA_VENT_CHANCE_INDIRECT_COMBAT 12
+
+/datum/firearm_appraisal/covenant/plasma/before_fire(obj/item/weapon/gun/energy/plasma/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
 	. = ..()
 	if(firearm.dispersing)
 		AI.try_cover()
