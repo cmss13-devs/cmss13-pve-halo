@@ -970,7 +970,7 @@
 	desc = "A combat-rated first aid medical packet filled with the bare bones basic essentials to ensuring you or your buddies don't die on the battlefield."
 	icon_state = "medical_packet"
 	storage_slots = 5
-	max_w_class = 0
+	max_w_class = 3
 	can_hold = list(
 		/obj/item/reagent_container/hypospray/autoinjector/biofoam/small,
 		/obj/item/stack/medical/advanced/bruise_pack,
