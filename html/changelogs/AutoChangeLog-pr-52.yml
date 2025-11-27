@@ -1,0 +1,5 @@
+author: "SpartanBobby"
+delete-after: True
+changes:
+  - rscadd: "Covenant HAI Presets for grunts and elite"
+  - rscadd: "Covenant HAI Squad presets for levy and lance"
