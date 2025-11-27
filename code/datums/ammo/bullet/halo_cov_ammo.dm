@@ -52,6 +52,8 @@
 
 /datum/ammo/bullet/rifle/carbine
 	name = "carbine bullet"
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	icon_state = "carbine"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 	damage = 50
 	penetration = ARMOR_PENETRATION_TIER_3

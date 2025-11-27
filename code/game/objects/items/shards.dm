@@ -245,6 +245,12 @@
 	for(var/obj/item/shard/shrapnel/needler/needle in target.embedded_items)
 		qdel(needle)
 
+/obj/item/shard/shrapnel/needler/Initialize()
+	. = ..()
+	pixel_x = rand(-12, 12)
+	pixel_y = rand(-12, 12)
+	icon_state = "needle"
+
 
 /obj/item/shard/shrapnel/upp
 	name = "small shrapnel"

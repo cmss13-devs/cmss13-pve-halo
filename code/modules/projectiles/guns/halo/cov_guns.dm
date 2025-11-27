@@ -326,6 +326,7 @@
 	current_mag = /obj/item/ammo_magazine/carbine
 	map_specific_decoration = FALSE
 	attachable_allowed = list(/obj/item/attachable/carbine_muzzle)
+	muzzle_flash_color = LIGHT_COLOR_GREEN
 
 /obj/item/weapon/gun/rifle/covenant_carbine/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 22, "rail_y" = 20, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
