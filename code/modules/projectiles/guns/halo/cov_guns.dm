@@ -159,7 +159,7 @@
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol
 	name = "Eos'Mak-pattern plasma pistol"
-	desc = "An advanced plasma pistol belonging to the Covenant military. It fires bolts of superheated plasma using its internal supply."
+	desc = "The reliable work horse of the Covenant's innumerable host, seen in the hands of the most honoured admirals and councillors, or the lowest menials. A deceptively powerful weapon capable of severing limbs and killing with a singular blow through even strong armours. Has the ability to pool excessive charge into a single bolt, dispelling shields and destroying bodies alike."
 	charge_cost = 20
 	gun_category = GUN_CATEGORY_HANDGUN
 	muzzle_flash_color = COLOR_PLASMA_TEAL
@@ -254,9 +254,9 @@
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle
 	name = "Okarda'phaa-pattern plasma rifle"
-	desc = "An advanced plasma rifle belonging to the Covenant military. It fires bolts of superheated plasma using its internal supply."
+	desc = "An ancient and venerable weapon which has served the Covenant for many centuries in the hands of its most honoured warriors. A truly brutal tool, capable of immense kinetic and raw thermal damage, blasting armour to pieces and rendering flesh nothing but boiled mist."
+	desc_lore = "Most commonly seen in the hands of Sangheili warriors, or the veterans of lesser rates."
 	icon_state = "plasma_rifle"
-
 	heat_per_shot = 3
 	charge_cost = 10
 	ammo = /datum/ammo/energy/plasma/plasma_rifle
@@ -289,6 +289,7 @@
 	cocked_sound = 'sound/weapons/halo/gun_needler_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_needler_reload.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK
+	muzzle_flash_color = LIGHT_COLOR_PINK
 	start_automatic = TRUE
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
