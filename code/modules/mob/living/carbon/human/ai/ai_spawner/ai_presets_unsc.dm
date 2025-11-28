@@ -34,4 +34,4 @@
 /datum/human_ai_equipment_preset/unsc/shipcrew
 	name = "UNSC Shipcrew"
 	desc = "Test"
-	path = /datum/equipment_preset/unsc/shipcrew/equipped
+	path = /datum/equipment_preset/unsc/shipcrew

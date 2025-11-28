@@ -716,7 +716,7 @@
 /datum/equipment_preset/unsc/pfc/odst/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-/datum/equipment_preset/unsc/shipcrew/equipped
+/datum/equipment_preset/unsc/shipcrew
 	name = "UNSC Shipcrew (Equipped)"
 	idtype = /obj/item/card/id/silver
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
@@ -724,7 +724,7 @@
 	rank = "UNSC Navy Crewman"
 	paygrades = list(PAY_SHORT_NE2 = JOB_PLAYTIME_TIER_0)
 
-/datum/equipment_preset/unsc/shipcrew/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/unsc/shipcrew/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"
 	new_human.underwear = "Marine Boxers"
 	//face
