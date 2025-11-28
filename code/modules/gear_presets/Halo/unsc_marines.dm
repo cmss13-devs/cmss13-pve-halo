@@ -715,3 +715,28 @@
 
 /datum/equipment_preset/unsc/pfc/odst/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
+
+/datum/equipment_preset/unsc/shipcrew/equipped
+	name = "UNSC Shipcrew (Equipped)"
+	idtype = /obj/item/card/id/silver
+	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
+	assignment = "UNSC Navy Crewman"
+	rank = "UNSC Navy Crewman"
+	paygrades = list(PAY_SHORT_NE2 = JOB_PLAYTIME_TIER_0)
+
+/datum/equipment_preset/unsc/shipcrew/equipped/load_gear(mob/living/carbon/human/new_human)
+	new_human.undershirt = "Marine Undershirt"
+	new_human.underwear = "Marine Boxers"
+	//face
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/foxtrot(new_human), WEAR_L_EAR)
+	//uniform
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/color/grey/red(new_human), WEAR_BODY)
+	//jacket
+	//accessories
+	//waist
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m6/full_m6c(new_human), WEAR_WAIST)
+	//limbs
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
+	//pockets
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)

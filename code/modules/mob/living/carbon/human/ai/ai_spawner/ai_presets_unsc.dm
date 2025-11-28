@@ -30,3 +30,8 @@
 	name = "UNSC Squad Leader"
 	desc = "Functionally a rifleman. Armed with a MA5C rifle, carries a simple IFAK with gauze, ointment, splints and an injector."
 	path = /datum/equipment_preset/unsc/leader/equipped
+
+/datum/human_ai_equipment_preset/unsc/shipcrew
+	name = "UNSC Shipcrew"
+	desc = "Test"
+	path = /datum/equipment_preset/unsc/shipcrew/equipped
