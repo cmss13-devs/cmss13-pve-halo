@@ -722,7 +722,7 @@
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
 	assignment = "UNSC Navy Crewman"
 	rank = "UNSC Navy Crewman"
-	paygrades = PAY_SHORT_NE2
+	paygrades = list(PAY_SHORT_NE4 = JOB_PLAYTIME_TIER_0)
 	flags = EQUIPMENT_PRESET_MARINE
 
 /datum/equipment_preset/unsc/shipcrew/equipped
