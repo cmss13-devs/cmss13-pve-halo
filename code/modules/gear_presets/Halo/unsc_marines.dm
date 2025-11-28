@@ -717,20 +717,23 @@
 	new_human.nutrition = NUTRITION_HIGH
 
 /datum/equipment_preset/unsc/shipcrew
-	name = "UNSC Shipcrew (Equipped)"
+	name = "UNSC Shipcrew"
 	idtype = /obj/item/card/id/silver
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
 	assignment = "UNSC Navy Crewman"
 	rank = "UNSC Navy Crewman"
-	paygrades = list(PAY_SHORT_NE2 = JOB_PLAYTIME_TIER_0)
+	paygrades = PAY_SHORT_NE2
 
-/datum/equipment_preset/unsc/shipcrew/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/unsc/shipcrew/equipped
+	name = parent_type::name + " (Equipped)"
+
+/datum/equipment_preset/unsc/shipcrew/equipped/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"
 	new_human.underwear = "Marine Boxers"
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/foxtrot(new_human), WEAR_L_EAR)
 	//uniform
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/color/grey/red(new_human), WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/color/white/red(new_human), WEAR_BODY)
 	//jacket
 	//accessories
 	//waist

@@ -26,9 +26,6 @@
 	item_state = "gy_suit"
 	worn_state = "grey"
 
-/obj/item/clothing/under/color/grey/red
-	color = COLOR_RED
-
 /obj/item/clothing/under/color/orange
 	name = "orange jumpsuit"
 	desc = "It's standardised prisoner-wear. Its suit sensors are stuck in the \"Fully On\" position."
@@ -43,6 +40,9 @@
 	icon_state = "white"
 	item_state = "w_suit"
 	worn_state = "white"
+
+/obj/item/clothing/under/color/white/red
+	color = COLOR_RED
 
 /obj/item/clothing/under/color/yellow
 	name = "yellow jumpsuit"
