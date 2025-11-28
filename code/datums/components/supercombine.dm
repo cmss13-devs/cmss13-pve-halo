@@ -14,6 +14,10 @@
 	src.direction = direction
 	parent_carbon = parent
 	generate_overlay()
+	for(var/obj/item/shard/shrapnel/needler/needle in parent_carbon.embedded_items)
+		needles = needle.count
+		needler_overlay.icon_state = needle_overlay(needles)
+
 
 /datum/component/supercombine/InheritComponent(datum/component/supercombine/supercombine_new, i_am_original, shooter_name, direction)
 	. = ..()
@@ -24,12 +28,12 @@
 			needles = needle.count
 		else
 			needles = supercombine_new.needles
-	if(needler_overlay in parent_carbon.vis_contents)
-		needler_overlay.icon_state = needle_overlay(needles)
-	if(!overlay_present)
-		generate_overlay()
-	if(needles >= needles_to_supercombine)
-		supercombine()
+		if(needler_overlay in parent_carbon.vis_contents)
+			needler_overlay.icon_state = needle_overlay(needles)
+		if(!overlay_present)
+			generate_overlay()
+		if(needles >= needles_to_supercombine)
+			supercombine()
 
 /datum/component/supercombine/proc/supercombine()
 	var/turf/turf = get_turf(parent_carbon)
@@ -73,6 +77,8 @@
 
 /datum/component/supercombine/RegisterWithParent()
 	RegisterSignal(parent, COMSIG_HUMAN_SHRAPNEL_REMOVED, PROC_REF(overlay_remove))
+	RegisterSignal(parent, COMSIG_LIVING_REJUVENATED, PROC_REF(overlay_remove))
 
 /datum/component/supercombine/UnregisterFromParent()
 	UnregisterSignal(parent, COMSIG_HUMAN_SHRAPNEL_REMOVED)
+	UnregisterSignal(parent, COMSIG_LIVING_REJUVENATED)

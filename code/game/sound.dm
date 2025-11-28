@@ -500,6 +500,8 @@
 				sound = pick('sound/bullets/plasma/impact_plasma_1.ogg', 'sound/bullets/plasma/impact_plasma_2.ogg', 'sound/bullets/plasma/impact_plasma_3.ogg')
 			if("plasma_miss")
 				sound = pick('sound/bullets/plasma/plasma_miss_1.ogg', 'sound/bullets/plasma/plasma_miss_2.ogg', 'sound/bullets/plasma/plasma_miss_3.ogg', 'sound/bullets/plasma/plasma_miss_4.ogg', 'sound/bullets/plasma/plasma_miss_5.ogg', 'sound/bullets/plasma/plasma_miss_6.ogg', )
+			if("gun_plasma_overcharge")
+				sound = pick('sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_1.ogg', 'sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_2.ogg', 'sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_3.ogg')
 
 
 			// Xeno

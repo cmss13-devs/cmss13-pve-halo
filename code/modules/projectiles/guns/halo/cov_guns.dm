@@ -172,6 +172,8 @@
 	var/datum/ammo/plasma_bolt = /datum/ammo/energy/plasma/plasma_pistol
 	var/datum/ammo/overcharged_bolt = /datum/ammo/energy/plasma/plasma_pistol/overcharge
 	var/overcharged = FALSE
+	var/atom/movable/overlay/overcharge_overlay
+	COOLDOWN_DECLARE(overcharge_cooldown)
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/set_gun_config_values()
 	..()
@@ -180,31 +182,56 @@
 	set_burst_amount(BURST_AMOUNT_TIER_2)
 	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_5
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_5
+	scatter = SCATTER_AMOUNT_TIER_7
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_7
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
-	fa_scatter_peak = SCATTER_AMOUNT_TIER_8
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/get_examine_text(mob/user)
+	. = ..()
+	. += SPAN_NOTICE("You could overcharge this for a powerful shot by holding down the trigger with <b>unique action</b>.")
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/Initialize()
 	plasma_bolt = GLOB.ammo_list[plasma_bolt] //Gun initialize calls replace_ammo() so we need to set these first.
 	overcharged_bolt = GLOB.ammo_list[overcharged_bolt]
-
 	. = ..()
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/unique_action(mob/living/carbon/human/user)
 	if(!COOLDOWN_FINISHED(src, cooldown) || !COOLDOWN_FINISHED(src, manual_cooldown))
 		to_chat(user, SPAN_NOTICE("The [src] is still cooling down."))
 		return
+	if(!COOLDOWN_FINISHED(src, overcharge_cooldown))
+		return
 	if(overcharged)
 		user.visible_message(SPAN_NOTICE("[user] releases the trigger on the [src], no longer overcharging it!"), SPAN_DANGER("You stop overcharging the [src]!"))
 		overcharged = FALSE
 		toggle_ammo()
+		toggle_overcharge_overlay()
+		COOLDOWN_START(src, overcharge_cooldown, 1.5 SECONDS)
 	else if(!overcharged)
 		user.visible_message(SPAN_NOTICE("[user] holds down on the [src]'s trigger and begins to overcharge it!"), SPAN_DANGER("You hold down on the [src]'s trigger and begin to overcharge it!"))
 		toggle_ammo()
 		overcharged = TRUE
+		toggle_overcharge_overlay()
+		playsound(src, 'sound/weapons/halo/plasma_pistol_overcharge/overcharge.ogg', vary = TRUE)
+		COOLDOWN_START(src, overcharge_cooldown, 1.5 SECONDS)
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/proc/toggle_overcharge_overlay()
+	if(overcharged)
+		overcharge_overlay = new()
+		overcharge_overlay.alpha = 0
+		overcharge_overlay.icon = icon
+		overcharge_overlay.icon_state = "plasma_pistol_overcharge"
+		overcharge_overlay.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE | VIS_INHERIT_LAYER
+		vis_contents += overcharge_overlay
+		animate(overcharge_overlay, 1 SECONDS, alpha = 255)
+	else
+		animate(overcharge_overlay, 0.5 SECONDS, alpha = 0)
+		addtimer(CALLBACK(src, PROC_REF(kill_overcharge_overlay)), 0.5 SECONDS)
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/proc/kill_overcharge_overlay()
+	qdel(overcharge_overlay)
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/Fire(atom/target, mob/living/user, params, reflex, dual_wield)
 	. = ..()
@@ -213,14 +240,17 @@
 			overheat()
 			overcharged = FALSE
 			toggle_ammo()
+			qdel(overcharge_overlay)
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/proc/toggle_ammo()
 	if(ammo == plasma_bolt)
 		ammo = overcharged_bolt
 		charge_cost = 1000
+		fire_sound = "gun_plasma_overcharge"
 	else if(ammo == overcharged_bolt)
 		ammo = plasma_bolt
 		charge_cost = 20
+		fire_sound = "gun_lightplasma"
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle
 	name = "Okarda'phaa-pattern plasma rifle"
@@ -314,7 +344,8 @@
 
 /obj/item/weapon/gun/rifle/covenant_carbine
 	name = "Vostu-pattern carbine"
-	desc = "The Vostu-pattern carbine serves as one of the Covenant's primary medium to long-range weapons."
+	desc = "One of the few ballistic weapons in use by the Covenant, the Vostu Pattern Carbine fires a 8x60mm caseless radioactive slug, which commonly fragments upon penetrating a target, potentially turning even minor wounds lethal with the toxic material left behind."
+	desc_lore = "Used by Sangheili warriors and many a Kig'yar marksmen who seek a cruel and precise weapon."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "carbine"
 	fire_sound = "gun_carbine"
@@ -337,6 +368,11 @@
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
+	var/obj/item/attachable/scope/variable_zoom/scope = new(src)
+	scope.flags_attach_features &= ~ATTACH_REMOVABLE
+	scope.Attach(src)
+	scope.hidden = TRUE
+	update_attachable(scope.slot)
 
 /obj/item/weapon/gun/rifle/covenant_carbine/set_gun_config_values()
 	..()

@@ -1,7 +1,7 @@
 /datum/ammo/energy/plasma
 	name = "plasma bolt"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
-	shell_speed = AMMO_SPEED_TIER_2
+	shell_speed = AMMO_SPEED_TIER_3
 	flags_ammo_behavior = AMMO_BALLISTIC
 	sound_hit = "plasma_impact"
 	sound_miss = "plasma_miss"
@@ -13,17 +13,17 @@
 	max_range = 20
 	damage = 28
 	accuracy = HIT_ACCURACY_TIER_3
-	scatter = SCATTER_AMOUNT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_8
 
 /datum/ammo/energy/plasma/plasma_pistol/overcharge
 	name = "overcharged light plasma bolt"
-	damage = 65
-	shell_speed = AMMO_SPEED_TIER_2
+	damage = 80
+	shell_speed = AMMO_SPEED_TIER_4
 
 /datum/ammo/energy/plasma/plasma_rifle
 	name = "plasma bolt"
 	icon_state = "plasma_blue"
-	shell_speed = AMMO_SPEED_TIER_3
+	shell_speed = AMMO_SPEED_TIER_4
 	accurate_range = 14
 	max_range = 24
 	damage = 38
