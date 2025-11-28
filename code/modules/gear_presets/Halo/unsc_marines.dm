@@ -723,6 +723,7 @@
 	assignment = "UNSC Navy Crewman"
 	rank = "UNSC Navy Crewman"
 	paygrades = PAY_SHORT_NE2
+	flags = EQUIPMENT_PRESET_MARINE
 
 /datum/equipment_preset/unsc/shipcrew/equipped
 	name = parent_type::name + " (Equipped)"
