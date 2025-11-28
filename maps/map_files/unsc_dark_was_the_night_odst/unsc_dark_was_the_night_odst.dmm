@@ -167,10 +167,8 @@
 /area/dark_was_the_night/supply)
 "ax" = (
 /obj/effect/step_trigger/clone_cleaner,
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4;
-	pixel_y = -16
+/obj/structure/machinery/light/small/red{
+	dir = 4
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/engineering)
@@ -1672,10 +1670,8 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
 "eZ" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4;
-	pixel_y = -16
+/obj/structure/machinery/light/small/red{
+	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
@@ -2729,17 +2725,6 @@
 /obj/structure/prop/unsc_crate/corrugated/red,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
-"ia" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4;
-	pixel_y = -16
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/upper_hallway)
 "ib" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -9780,10 +9765,8 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4;
-	pixel_y = -16
+/obj/structure/machinery/light/small/red{
+	dir = 4
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/lower_hallway)
@@ -16650,10 +16633,8 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4;
-	pixel_y = -16
+/obj/structure/machinery/light/small/red{
+	dir = 4
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/ready_bay)
@@ -44130,7 +44111,7 @@ ak
 xt
 xt
 sX
-ia
+oi
 sX
 sX
 AB
@@ -44160,7 +44141,7 @@ zG
 zG
 zG
 sX
-ia
+oi
 sX
 sX
 zG
