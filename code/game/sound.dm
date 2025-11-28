@@ -488,8 +488,6 @@
 				sound = pick('sound/weapons/halo/gun_plasma_1.ogg','sound/weapons/halo/gun_plasma_2.ogg','sound/weapons/halo/gun_plasma_3.ogg')
 			if("gun_heavyplasma")
 				sound = pick('sound/weapons/halo/gun_heavyplasma_1.ogg','sound/weapons/halo/gun_heavyplasma_2.ogg','sound/weapons/halo/gun_heavyplasma_3.ogg')
-
-
 			// Xeno
 			if("acid_hit")
 				sound = pick('sound/bullets/acid_impact1.ogg')
