@@ -60,6 +60,6 @@
 /datum/ai_action/select_primary/proc/calculate_weight(datum/firearm_appraisal/appraisal)
 	var/mob/living/carbon/human/tied_human = brain.tied_human
 	var/multiplier = 1
-	if(isspeciescovenant(tied_human) && appraisal.covenant_bias == TRUE)
+	if((isunggoy(tied_human) || issangheili(tied_human)) && appraisal.covenant_bias == TRUE)
 		multiplier = 3
 	return appraisal.primary_weight * multiplier

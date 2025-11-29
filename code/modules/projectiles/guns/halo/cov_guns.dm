@@ -158,8 +158,8 @@
 
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol
-	name = "Eos'Mak-pattern plasma pistol"
-	desc = "The reliable work horse of the Covenant's innumerable host, seen in the hands of the most honoured admirals and councillors, or the lowest menials. A deceptively powerful weapon capable of severing limbs and killing with a singular blow through even strong armours. Has the ability to pool excessive charge into a single bolt, dispelling shields and destroying bodies alike."
+	name = "plasma pistol"
+	desc = null
 	charge_cost = 20
 	gun_category = GUN_CATEGORY_HANDGUN
 	muzzle_flash_color = COLOR_PLASMA_TEAL
@@ -174,6 +174,18 @@
 	var/overcharged = FALSE
 	var/atom/movable/overlay/overcharge_overlay
 	COOLDOWN_DECLARE(overcharge_cooldown)
+
+/obj/item/weapon/gun/energy/plasma/plasma_pistol/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(isunggoy(user) || issangheili(user))
+		origin[1] = "[icon2html(src, user)] This is a Eos'Mak-pattern plasma pistol"
+		insert_line = "The reliable work horse of the Covenant's innumerable host, seen in the hands of the most honoured admirals and councillors, or the lowest menials. A deceptively powerful weapon capable of severing limbs and killing with a singular blow through even strong armours. Has the ability to pool excessive charge into a single bolt, dispelling shields and destroying bodies alike."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-25 plasma pistol"
+		insert_line = "Standard Covenant direct energy weapon, firing magnetically contained balls of high-energy plasma, with significant kinetic punch. Despite being called a \"pistol\", the Type-25 is more than capable of killing fully armoured marines with a single well aimed bolt. Some Covies overcharge this thing, can obliterate a mans whole torso."
+	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/set_gun_config_values()
 	..()
@@ -253,9 +265,8 @@
 		fire_sound = "gun_lightplasma"
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle
-	name = "Okarda'phaa-pattern plasma rifle"
-	desc = "An ancient and venerable weapon which has served the Covenant for many centuries in the hands of its most honoured warriors. A truly brutal tool, capable of immense kinetic and raw thermal damage, blasting armour to pieces and rendering flesh nothing but boiled mist."
-	desc_lore = "Most commonly seen in the hands of Sangheili warriors, or the veterans of lesser rates."
+	name = "plasma rifle"
+	desc = null
 	icon_state = "plasma_rifle"
 	heat_per_shot = 3
 	charge_cost = 10
@@ -264,6 +275,18 @@
 	has_overheat_icon_state = TRUE
 	fire_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
 	start_automatic = TRUE
+
+/obj/item/weapon/gun/energy/plasma/plasma_rifle/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(isunggoy(user) || issangheili(user))
+		origin[1] = "[icon2html(src, user)] This is a Okarda'phaa-pattern plasma rifle"
+		insert_line = "An ancient and venerable weapon which has served the Covenant for many centuries in the hands of its most honoured warriors. A truly brutal tool, capable of immense kinetic and raw thermal damage, blasting armour to pieces and rendering flesh nothing but boiled mist. Most commonly seen in the hands of Sangheili warriors, or the veterans of lesser rates."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-25 plasma rifle"
+		insert_line = "This devastating weapon is in use by Covenant Elites and their more competent troops. The distinct rapid fire report of a plasma rifle is one of the most terrifying things on the battlefield, most marines have seen the violent annihilation of these first hand, in the disfigured corpses of their comrades. Don't let it overheat, gloves won't save your skin."
+	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle/set_gun_config_values()
 	..()
@@ -280,8 +303,8 @@
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
 
 /obj/item/weapon/gun/smg/covenant_needler
-	name = "Eket'Vauh-pattern needler"
-	desc = " A automatic guided munitions launcher, firing charged Subanese crystals shaved from a central core. The Eket'Vauh pattern is produced on High Charity, within the Sacred Promissory's Assembly-Forges. A less common variant used by those given favour by the High Council, the purple-pink shards fired by this weapon ensure efficient judgement in a violent detonation."
+	name = "needler"
+	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "needler"
 	fire_sound = "gun_needler"
@@ -293,6 +316,18 @@
 	start_automatic = TRUE
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
+
+/obj/item/weapon/gun/smg/covenant_needler/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(isunggoy(user) || issangheili(user))
+		origin[1] = "[icon2html(src, user)] This is a Eket'Vauh-pattern needler"
+		insert_line = "Automatic guided munitions launcher, firing charged Subanese crystals shaved from a central core. The Eket'Vauh pattern is produced on High Charity, within the Sacred Promissory's Assembly-Forges. A less common variant used by those given favour by the High Council, the purple-pink shards fired by this weapon ensure efficient judgement in a violent detonation."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-33 needler"
+		insert_line = "An esoteric Covenant \"ballistic\" weapon firing bright pink-purple shards of energized crystal, which home in on targets through currently unknown means. A weapon seemingly developed out of pure cruelty, the \"Needler\"'s every shot is a nigh-lethal explosive, rending armour, flesh and bone, littering the body with microscopic shrapnel and significant burns. God help you if someone gets \"Super-Combined\", nothing but pink mist."
+	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/smg/covenant_needler/unique_action(mob/user)
 	return
@@ -344,9 +379,8 @@
 	update_icon()
 
 /obj/item/weapon/gun/rifle/covenant_carbine
-	name = "Vostu-pattern carbine"
-	desc = "One of the few ballistic weapons in use by the Covenant, the Vostu Pattern Carbine fires a 8x60mm caseless radioactive slug, which commonly fragments upon penetrating a target, potentially turning even minor wounds lethal with the toxic material left behind."
-	desc_lore = "Used by Sangheili warriors and many a Kig'yar marksmen who seek a cruel and precise weapon."
+	name = "carbine"
+	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "carbine"
 	fire_sound = "gun_carbine"
@@ -359,6 +393,18 @@
 	map_specific_decoration = FALSE
 	attachable_allowed = list(/obj/item/attachable/carbine_muzzle)
 	muzzle_flash_color = LIGHT_COLOR_GREEN
+
+/obj/item/weapon/gun/rifle/covenant_carbine/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(isunggoy(user) || issangheili(user))
+		origin[1] = "[icon2html(src, user)] This is a Vostu-pattern carbine"
+		insert_line = "One of the few ballistic weapons in use by the Covenant, the Vostu Pattern Carbine fires a 8x60mm caseless radioactive slug, which commonly fragments upon penetrating a target, potentially turning even minor wounds lethal with the toxic material left behind. Used by Sangheili warriors and many a Kig'yar marksmen who seek a cruel and precise weapon."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-XX carbine"
+		insert_line = "An esoteric Covenant \"ballistic\" weapon firing bright pink-purple shards of energized crystal, which home in on targets through currently unknown means. A weapon seemingly developed out of pure cruelty, the \"Needler\"'s every shot is a nigh-lethal explosive, rending armour, flesh and bone, littering the body with microscopic shrapnel and significant burns. God help you if someone gets \"Super-Combined\", nothing but pink mist."
+	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/rifle/covenant_carbine/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 22, "rail_y" = 20, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
