@@ -31,6 +31,3 @@
 	#define COMPONENT_HARD_CANCEL_GUN_BEFORE_FIRE (1<<1) //hard stop firing
 
 /// Called when IFF is toggled on or off
-#define COMSIG_GUN_IFF_TOGGLED "gun_iff_toggled"
-
-#define COMSIG_GUN_NEEDLER_RESET "gun_needler_reset"

@@ -158,7 +158,7 @@
 
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol
-	name = "plasma pistol"
+	name = "\improper plasma pistol"
 	desc = null
 	charge_cost = 20
 	gun_category = GUN_CATEGORY_HANDGUN
@@ -265,7 +265,7 @@
 		fire_sound = "gun_lightplasma"
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle
-	name = "plasma rifle"
+	name = "\improper plasma rifle"
 	desc = null
 	icon_state = "plasma_rifle"
 	heat_per_shot = 3
@@ -303,7 +303,7 @@
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
 
 /obj/item/weapon/gun/smg/covenant_needler
-	name = "needler"
+	name = "\improper needler"
 	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "needler"
@@ -379,7 +379,7 @@
 	update_icon()
 
 /obj/item/weapon/gun/rifle/covenant_carbine
-	name = "carbine"
+	name = "\improper carbine"
 	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "carbine"
