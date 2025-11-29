@@ -13,7 +13,7 @@
 	max_range = 20
 	damage = 28
 	accuracy = HIT_ACCURACY_TIER_3
-	scatter = SCATTER_AMOUNT_TIER_8
+	scatter = SCATTER_AMOUNT_TIER_10
 
 /datum/ammo/energy/plasma/plasma_pistol/overcharge
 	name = "overcharged light plasma bolt"
