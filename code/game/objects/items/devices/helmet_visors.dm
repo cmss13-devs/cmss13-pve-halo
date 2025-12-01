@@ -338,3 +338,11 @@
 
 /obj/item/device/helmet_visor/night_vision/marine_raider/process(delta_time)
 	return PROCESS_KILL
+
+/obj/item/device/helmet_visor/visr
+	name = "VISR v1.8.2b"
+	desc = "An insertable program chip to enable the use of the VISR system with compatible HUDs."
+	icon_state = "nvg_sight"
+	hud_type = MOB_HUD_HALO
+	action_icon_string = "visr_on"
+	helmet_overlay = null
