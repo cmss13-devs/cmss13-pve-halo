@@ -71,7 +71,8 @@
 	update_button_icon()
 
 /datum/action/human_action/activable/covenant/sangheili_kick/use_ability(atom/target, mob/living/carbon/owner)
-	owner = usr
+	if(owner == null)
+		owner = usr
 
 	if (!owner.Adjacent(target))
 		return
