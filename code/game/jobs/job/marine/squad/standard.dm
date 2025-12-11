@@ -84,10 +84,10 @@
 	spawn_positions = 1
 	gear_preset = /datum/equipment_preset/unsc/rto
 	gear_preset_secondary = /datum/equipment_preset/unsc/rto/lesser_rank
-	job_options = list(CPL_VARIANT = "CPL", LCPL_VARIANT = "LCPL")
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /datum/job/marine/standard/ai/rto/handle_job_options(option)
-	if(option != CPL_VARIANT)
+	if(option != PFC_VARIANT)
 		gear_preset = gear_preset_secondary
 	else
 		gear_preset = initial(gear_preset)
@@ -96,7 +96,7 @@
 	title = JOB_SQUAD_RTO_ODST
 	gear_preset = /datum/equipment_preset/unsc/rto/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/rto/odst/lesser_rank
-	job_options = list(CPL_VARIANT = "CPL", LCPL_VARIANT = "LCPL")
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /obj/effect/landmark/start/marine/upp
 	name = JOB_SQUAD_MARINE_UPP
