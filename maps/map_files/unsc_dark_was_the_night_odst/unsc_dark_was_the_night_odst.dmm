@@ -62,7 +62,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "ag" = (
-/obj/structure/machinery/vending/dinnerware/unsc,
+/obj/structure/machinery/vending/dinnerware/unsc/alt,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/canteen)
 "ah" = (
@@ -3154,7 +3154,7 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
 "DI" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc/alt,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/canteen)
 "DP" = (

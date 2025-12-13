@@ -5899,7 +5899,7 @@
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/supply)
 "rY" = (
-/obj/structure/machinery/vending/dinnerware/unsc,
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/kitchen)
 "sa" = (
@@ -6669,7 +6669,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
 "vu" = (
-/obj/structure/machinery/vending/dinnerware/unsc,
+/obj/structure/machinery/vending/dinnerware/unsc/alt,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/canteen)
 "vv" = (
@@ -11507,7 +11507,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "RQ" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc/alt,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/canteen)
 "RS" = (
