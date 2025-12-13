@@ -268,7 +268,7 @@
 	new /obj/item/stack/medical/bruise_pack(src)
 	new /obj/item/stack/medical/advanced/ointment(src)
 	new /obj/item/stack/medical/splint(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/biofoam/small(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
 	new /obj/item/reagent_container/hypospray/autoinjector/kelotane(src)
 	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine(src)
 
@@ -278,9 +278,9 @@
 	new /obj/item/stack/medical/advanced/ointment(src)
 	new /obj/item/stack/medical/advanced/ointment(src)
 	new /obj/item/stack/medical/splint(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/biofoam/small(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/biofoam/small(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/biofoam(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
 
 //---------SOFT PACKS---------
 /obj/item/storage/firstaid/softpack

@@ -972,7 +972,7 @@
 	storage_slots = 5
 	max_w_class = 3
 	can_hold = list(
-		/obj/item/reagent_container/hypospray/autoinjector/biofoam/small,
+		/obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small,
 		/obj/item/stack/medical/advanced/bruise_pack,
 		/obj/item/stack/medical/bruise_pack,
 		/obj/item/stack/medical/advanced/ointment,
@@ -981,7 +981,7 @@
 	)
 
 /obj/item/storage/box/tear_packet/medical_packet/fill_preset_inventory()
-	new /obj/item/reagent_container/hypospray/autoinjector/biofoam/small(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
 	new /obj/item/stack/medical/advanced/bruise_pack(src)
 	new /obj/item/stack/medical/advanced/bruise_pack(src)
 	new /obj/item/stack/medical/advanced/ointment(src)
