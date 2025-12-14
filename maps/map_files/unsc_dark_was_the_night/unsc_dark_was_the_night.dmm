@@ -2362,10 +2362,8 @@
 /turf/open/floor/almayer/edge/southwest,
 /area/dark_was_the_night/hangar)
 "fx" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 4
-	},
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "fy" = (
@@ -2399,7 +2397,11 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "fC" = (
-/turf/open/floor/almayer/sterile_green_corner/west,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "fD" = (
 /obj/structure/surface/table/reinforced/prison,
@@ -3460,7 +3462,7 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
 "if" = (
-/turf/open/floor/almayer/sterile_green_side,
+/turf/open/floor/almayer/sterile_green_corner/west,
 /area/dark_was_the_night/armory)
 "ig" = (
 /obj/structure/cable/heavyduty{
@@ -3831,7 +3833,7 @@
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/supply)
 "je" = (
-/turf/open/floor/almayer/sterile_green_corner/east,
+/turf/open/floor/almayer/sterile_green_side,
 /area/dark_was_the_night/armory)
 "jf" = (
 /obj/effect/decal/warning_stripes{
@@ -3996,19 +3998,11 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
 "jz" = (
-/obj/structure/machinery/cm_vending/clothing/medic,
-/turf/open/shuttle/escapepod/north,
+/turf/open/floor/almayer/sterile_green_corner/east,
 /area/dark_was_the_night/armory)
 "jA" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "NW-out";
-	pixel_y = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/corner/west,
+/obj/structure/machinery/cm_vending/clothing/medic,
+/turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/armory)
 "jB" = (
 /obj/structure/platform{
@@ -4022,6 +4016,17 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
 "jC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/dark_was_the_night/armory)
+"jD" = (
 /obj/structure/machinery/cm_vending/sorted/medical/unsc{
 	pixel_y = 24;
 	pixel_x = 7;
@@ -4041,14 +4046,14 @@
 	},
 /turf/open/floor/almayer/sterile_green_corner/north,
 /area/dark_was_the_night/armory)
-"jD" = (
+"jE" = (
 /obj/structure/machinery/cm_vending/gear/medic_chemical/halo{
 	pixel_y = 15;
 	density = 0
 	},
 /turf/open/floor/almayer/sterile_green_side/north,
 /area/dark_was_the_night/armory)
-"jE" = (
+"jF" = (
 /obj/structure/machinery/cm_vending/sorted/medical/unsc{
 	pixel_y = 24;
 	pixel_x = -6;
@@ -4061,11 +4066,6 @@
 	pixel_y = 28
 	},
 /turf/open/floor/almayer/sterile_green_corner,
-/area/dark_was_the_night/armory)
-"jF" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/light/double/blue,
-/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "jL" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left,
@@ -24981,8 +24981,8 @@ oN
 oN
 oN
 Va
-jA
-fx
+jC
+fC
 nH
 Ke
 Ke
@@ -25437,8 +25437,8 @@ xU
 xU
 sp
 Yw
-jC
-fC
+jD
+if
 fc
 ve
 tG
@@ -25589,9 +25589,9 @@ fj
 Ac
 wC
 ve
-jD
-if
-jF
+jE
+je
+fx
 ve
 tG
 tG
@@ -25741,8 +25741,8 @@ yh
 fW
 ve
 ve
-jE
-je
+jF
+jz
 fc
 ve
 tG
@@ -25893,8 +25893,8 @@ mP
 uW
 yR
 ve
-jz
-jz
+jA
+jA
 ve
 ve
 tG
