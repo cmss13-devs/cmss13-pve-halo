@@ -10,15 +10,8 @@
 	volume = 240
 	amount_per_transfer_from_this = 15
 
-/obj/item/reagent_container/glass/beaker/unsc/attack_self()
-	..()
-	return
-
 /obj/item/reagent_container/glass/beaker/unsc/update_icon()
 	overlays.Cut()
-	if(label_color)
-		var/image/label = image('icons/halo/obj/items/chemistry.dmi', src, label_color)
-		overlays += label
 
 	if(reagents && reagents.total_volume)
 		var/image/filling = image('icons/halo/obj/items/chemistry.dmi', src, "[icon_state]10")
@@ -34,7 +27,10 @@
 			if(91 to INFINITY) filling.icon_state = "[icon_state]100"
 
 		filling.color = mix_color_from_reagents(reagents.reagent_list)
-		underlays += filling
+		overlays += filling
+	if(label_color)
+		var/image/label = image('icons/halo/obj/items/chemistry.dmi', src, label_color)
+		overlays += label
 
 	if(!is_open_container())
 		var/image/lid = image(icon, src, "lid_[initial(icon_state)]")

@@ -78,7 +78,7 @@
 		list("Health Analyzer", floor(scale * 5), /obj/item/device/healthanalyzer/halo, VENDOR_ITEM_REGULAR),
 		list("M276 Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical, VENDOR_ITEM_REGULAR),
 		list("Medical HUD Glasses", floor(scale * 3), /obj/item/clothing/glasses/hud/health, VENDOR_ITEM_REGULAR),
-		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe, VENDOR_ITEM_REGULAR)
+		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe/halo, VENDOR_ITEM_REGULAR)
 	)
 
 GLOBAL_LIST_INIT(cm_vending_chemical_medic_halo, list(

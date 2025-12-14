@@ -328,12 +328,6 @@
 /obj/item/reagent_container/hypospray/autoinjector/inaprovaline/halo
 	icon = 'icons/halo/obj/items/chemistry.dmi'
 
-/obj/item/reagent_container/hypospray/autoinjector/emergency/halo
-	icon = 'icons/halo/obj/items/chemistry.dmi'
-
-/obj/item/reagent_container/hypospray/autoinjector/ultrazine/halo
-	icon = 'icons/halo/obj/items/chemistry.dmi'
-
 /obj/item/reagent_container/hypospray/autoinjector/dylovene/halo
 	icon = 'icons/halo/obj/items/chemistry.dmi'
 

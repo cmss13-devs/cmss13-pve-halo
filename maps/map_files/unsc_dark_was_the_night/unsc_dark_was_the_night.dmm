@@ -4062,6 +4062,11 @@
 	},
 /turf/open/floor/almayer/sterile_green_corner,
 /area/dark_was_the_night/armory)
+"jF" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "jL" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left,
 /area/dark_was_the_night/armory)
@@ -25586,7 +25591,7 @@ wC
 ve
 jD
 if
-fc
+jF
 ve
 tG
 tG
