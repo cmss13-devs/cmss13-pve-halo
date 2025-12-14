@@ -129,14 +129,14 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_SMARTPREP)
 	assignment = JOB_SQUAD_RTO
 	rank = JOB_SQUAD_RTO
-	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "RTO"
 	skills = /datum/skills/pfc
 	minimap_icon = "rto"
 
 /datum/equipment_preset/unsc/rto/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc/rto/odst
 	name = "ODST Radio Telephone Operator"
@@ -145,7 +145,7 @@
 
 /datum/equipment_preset/unsc/rto/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME2 = JOB_PLAYTIME_TIER_0)
 
 /// Marine Spec
 /datum/equipment_preset/unsc/spec
@@ -181,14 +181,14 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_TL_PREP)
 	assignment = JOB_SQUAD_TEAM_LEADER
 	rank = JOB_SQUAD_TEAM_LEADER
-	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "FTL"
 	skills = /datum/skills/tl
 	minimap_icon = "tl"
 
 /datum/equipment_preset/unsc/tl/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc/tl/odst
 	name = "ODST Fireteam Leader"
@@ -197,7 +197,7 @@
 
 /datum/equipment_preset/unsc/tl/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 
 /// Marine Squad Sergeant
 /datum/equipment_preset/unsc/leader
@@ -206,7 +206,7 @@
 	access = list(ACCESS_MARINE_PREP, ACCESS_MARINE_LEADER, ACCESS_MARINE_DROPSHIP)
 	assignment = JOB_SQUAD_LEADER
 	rank = JOB_SQUAD_LEADER
-	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SL"
 	minimum_age = 27
 	skills = /datum/skills/SL
@@ -214,7 +214,7 @@
 
 /datum/equipment_preset/unsc/leader/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/unsc/leader/odst
 	name = "ODST Squad Sergeant"
@@ -224,7 +224,7 @@
 
 /datum/equipment_preset/unsc/leader/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME6 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
 
 // PlatCo
 /datum/equipment_preset/unsc/platco
