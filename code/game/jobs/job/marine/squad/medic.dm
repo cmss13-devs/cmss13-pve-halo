@@ -1,5 +1,5 @@
 
-#define LCPL_VARIANT "Petty Officer 3nd Class"
+#define LCPL_VARIANT "Petty Officer 3rd Class"
 #define CPL_VARIANT "Petty Officer 2nd Class"
 
 /datum/job/marine/medic
