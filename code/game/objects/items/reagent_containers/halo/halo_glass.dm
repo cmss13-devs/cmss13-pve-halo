@@ -10,6 +10,9 @@
 	volume = 240
 	amount_per_transfer_from_this = 15
 
+/obj/item/reagent_container/glass/beaker/unsc/attack_self()
+	..()
+	return
 
 /obj/item/reagent_container/glass/beaker/unsc/update_icon()
 	overlays.Cut()
@@ -186,3 +189,15 @@
 	. = ..()
 	reagents.add_reagent("chorotazine", 240)
 	update_icon()
+
+/obj/item/reagent_container/glass/beaker/unsc/nitrogenwater
+	name = "\improper nitrogen-water medical vial"
+	label_color = "purple"
+	desc = "A clear, glossy vial of nitrogen-water. Useful to treat tramadol overdoses."
+
+/obj/item/reagent_container/glass/beaker/unsc/nitrogenwater/Initialize()
+	. = ..()
+	reagents.add_reagent("nitrogen", 120)
+	reagents.add_reagent("water", 120)
+	update_icon()
+

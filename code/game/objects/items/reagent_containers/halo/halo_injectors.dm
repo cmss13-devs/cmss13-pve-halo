@@ -1,5 +1,10 @@
+// ----------------------------- Normal Injectors -----------------------------
+
+// ----------------------------- Primeable Injectors -----------------------------
+
 /obj/item/reagent_container/hypospray/autoinjector/primeable
 	icon = 'icons/halo/obj/items/medical.dmi'
+	icon_state = "othercan"
 	var/primed = FALSE
 	var/prime_sound
 	var/prime_text
@@ -113,16 +118,18 @@
 	desc = "An effective and simple to administer first-response burn treatment powder. Previously only seen in niche industrial settings where personnel worked with extreme heat or dangerous chemicals, now adapted for use by the UNSC as a relatively reliable first-aid treatment for the effects of plasma burns."
 	desc_lore = "Application is excruciating as the powder forms a hardened antibacterial \"scab\" over the wound site, encouraging healing."
 	icon_state = "burnguard"
-	amount_per_transfer_from_this = 5
-	volume = REAGENTS_OVERDOSE
-	uses_left = 6
+	amount_per_transfer_from_this = 10
+	volume = HIGH_REAGENTS_OVERDOSE
+	uses_left = 12
 	prime_sound = "rip"
 	injectSFX = 'sound/items/powder_shake.ogg'
 
 	prime_text = "You tear open the Optican Burn Guard package."
 	description_unprimed = "The Optican Burn Guard package is still sealed."
 	description_primed = "The Optican Burn Guard package is torn open."
-	instructions = "OD at 30u. Functionally identical to dermaline along with slightly better painkilling properties than paracetamol, but with a smaller administer amount per \"injection.\""
+	instructions = "OD at 30u. Functionally identical to kelotane along with slightly better painkilling properties than paracetamol, but with a smaller administer amount per \"injection.\""
+
+// ----------------------------- Other -----------------------------
 
 /obj/item/reagent_container/syringe/halo // I HATE SYRINGESTAB. FUCKING SHITCODE but i dont want to override it :>
 	name = "milspec syringe"
@@ -288,3 +295,54 @@
 
 		filling.color = mix_color_from_reagents(reagents.reagent_list)
 		overlays += filling
+
+// ----------------------------- Autoinjectors -----------------------------
+
+/obj/item/reagent_container/hypospray/autoinjector/tricord/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/adrenaline/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/dexalinp/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/chloralhydrate/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/tramadol/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/kelotane/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/inaprovaline/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/emergency/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/ultrazine/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/dylovene/halo
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+
+/obj/item/reagent_container/hypospray/autoinjector/halo_peridaxon
+	icon = 'icons/halo/obj/items/chemistry.dmi'
+	chemname = "peridaxon"
+	desc = "An autoinjector loaded with 3 uses of Peridaxon, the novel blend of drugs that TEMPORARILY halts the symptoms of organ damage."
+	amount_per_transfer_from_this = LOWH_REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD
+	volume = (LOWH_REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD) * INJECTOR_USES
+	uses_left = 3
+	display_maptext = TRUE
+	maptext_label = "Pr"
