@@ -39,22 +39,27 @@
 
 /obj/structure/machinery/cm_vending/sorted/medical/unsc/populate_product_list(scale)
 	listed_products = list(
+		list("ESSENTIAL SUPPLIES", -1, null, null),
+		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe/halo, VENDOR_ITEM_MANDATORY),
+		list("Empty Medkit", floor(scale * 1), /obj/item/storage/firstaid/unsc/empty, VENDOR_ITEM_REGULAR),
+		list("Syringe Case", floor(scale * 2), /obj/item/storage/syringe_case/unsc, VENDOR_ITEM_REGULAR),
+
 		list("FIELD SUPPLIES", -1, null, null),
 		list("Ointment", floor(scale * 10), /obj/item/stack/medical/ointment, VENDOR_ITEM_REGULAR),
 		list("Roll of Gauze", floor(scale * 10), /obj/item/stack/medical/bruise_pack, VENDOR_ITEM_REGULAR),
 		list("Splints", floor(scale * 10), /obj/item/stack/medical/splint, VENDOR_ITEM_REGULAR),\
 
 		list("BRUTE TREATMENT", -1, null, null),
-		list("Trauma Kit", floor(scale * 10), /obj/item/stack/medical/advanced/bruise_pack, VENDOR_ITEM_REGULAR),
+		list("Trauma Kit", floor(scale * 10), /obj/item/stack/medical/advanced/bruise_pack, VENDOR_ITEM_RECOMMENDED),
 		list("Autoinjector (Bicaridine)", floor(scale * 5), /obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo, VENDOR_ITEM_REGULAR),
-		list("Medical Vial (Bicaridine)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/bicaridine, VENDOR_ITEM_REGULAR),
+		list("Medical Vial (Bicaridine)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/bicaridine, VENDOR_ITEM_RECOMMENDED),
 
 		list("BURN TREATMENT", -1, null, null),
-		list("Burn Kit", floor(scale * 10), /obj/item/stack/medical/advanced/ointment, VENDOR_ITEM_REGULAR),
-		list("Optican Burn Guard", floor(scale * 3), /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard, VENDOR_ITEM_REGULAR),
+		list("Burn Kit", floor(scale * 10), /obj/item/stack/medical/advanced/ointment, VENDOR_ITEM_RECOMMENDED),
+		list("Optican Burn Guard", floor(scale * 3), /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard, VENDOR_ITEM_RECOMMENDED),
 
 		list("OXYGEN TREATMENT", -1, null, null),
-		list("Autoinjector (Dexalin+)", floor(scale * 5), /obj/item/reagent_container/hypospray/autoinjector/dexalinp/halo, VENDOR_ITEM_REGULAR),
+		list("Autoinjector (Dexalin+)", floor(scale * 5), /obj/item/reagent_container/hypospray/autoinjector/dexalinp/halo, VENDOR_ITEM_RECOMMENDED),
 		list("Medical Vial (Dexalin)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/dexalin, VENDOR_ITEM_REGULAR),
 
 		list("PAIN TREATMENT", -1, null, null),
@@ -70,15 +75,14 @@
 		list("Medical Vial (Inaprovaline)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/inaprovaline, VENDOR_ITEM_REGULAR),
 		list("Medical Vial (Peridaxon)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/peridaxon, VENDOR_ITEM_REGULAR),
 		list("Medical Vial (Dylovene)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/dylovene, VENDOR_ITEM_REGULAR),
-		list("Medical Vial (Chorotazine)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/chorotazine, VENDOR_ITEM_REGULAR),
+		list("Medical Vial (Chorotazine)", floor(scale * 3), /obj/item/reagent_container/glass/beaker/unsc/chorotazine, VENDOR_ITEM_RECOMMENDED),
 
 		list("MEDICAL UTILITIES", -1, null, null),
 		list("Surgical Line", floor(scale * 2), /obj/item/tool/surgery/surgical_line, VENDOR_ITEM_REGULAR),
 		list("Synth-Graft", floor(scale * 2), /obj/item/tool/surgery/synthgraft, VENDOR_ITEM_REGULAR),
 		list("Health Analyzer", floor(scale * 5), /obj/item/device/healthanalyzer/halo, VENDOR_ITEM_REGULAR),
 		list("M276 Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical, VENDOR_ITEM_REGULAR),
-		list("Medical HUD Glasses", floor(scale * 3), /obj/item/clothing/glasses/hud/health, VENDOR_ITEM_REGULAR),
-		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe/halo, VENDOR_ITEM_REGULAR)
+		list("Medical HUD Glasses", floor(scale * 3), /obj/item/clothing/glasses/hud/health, VENDOR_ITEM_REGULAR)
 	)
 
 GLOBAL_LIST_INIT(cm_vending_chemical_medic_halo, list(
@@ -89,7 +93,7 @@ GLOBAL_LIST_INIT(cm_vending_chemical_medic_halo, list(
 		list("Medical Vial (Dexalin+)", 40, /obj/item/reagent_container/glass/beaker/unsc/dexplus, null, VENDOR_ITEM_REGULAR),
 	))
 
-/obj/structure/machinery/cm_vending/gear/medic_chemical/halo
+/obj/structure/machinery/cm_vending/gear/medic_chemical/unsc
 	name = "\improper Optican Military Chemical Supply"
 	desc = "An automated gear rack for specialized chemicals for the hospital corpsman."
 	icon = 'icons/halo/obj/structures/machinery/vending_32x64.dmi'

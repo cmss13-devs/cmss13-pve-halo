@@ -252,42 +252,6 @@
 /obj/item/storage/firstaid/surgical/empty/fill_preset_inventory()
 	return
 
-//---------UNSC---------
-
-/obj/item/storage/firstaid/unsc
-	name = "UNSC health pack"
-	desc = "First-class military medical aid is typically found in these octogon-shaped health packs."
-	icon = 'icons/halo/obj/items/storage/medical.dmi'
-	icon_state = "healthpack"
-	open_state = "healthpack_empty"
-	storage_slots = 11
-
-/obj/item/storage/firstaid/unsc/fill_preset_inventory()
-	new /obj/item/device/healthanalyzer/halo(src)
-	new /obj/item/stack/medical/bruise_pack(src)
-	new /obj/item/stack/medical/bruise_pack(src)
-	new /obj/item/stack/medical/bruise_pack(src)
-	new /obj/item/stack/medical/advanced/ointment(src)
-	new /obj/item/stack/medical/advanced/ointment(src)
-	new /obj/item/stack/medical/splint(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/tramadol/halo(src)
-
-/obj/item/storage/firstaid/unsc/corpsman/fill_preset_inventory()
-	new /obj/item/stack/medical/advanced/bruise_pack(src)
-	new /obj/item/stack/medical/advanced/bruise_pack(src)
-	new /obj/item/stack/medical/advanced/bruise_pack(src)
-	new /obj/item/stack/medical/advanced/ointment(src)
-	new /obj/item/stack/medical/advanced/ointment(src)
-	new /obj/item/stack/medical/advanced/ointment(src)
-	new /obj/item/stack/medical/splint(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
-	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
-
 //---------SOFT PACKS---------
 /obj/item/storage/firstaid/softpack
 	name = "first-aid pack"

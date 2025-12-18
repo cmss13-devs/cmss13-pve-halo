@@ -1305,6 +1305,8 @@
 #include "code\game\objects\items\storage\toolbox.dm"
 #include "code\game\objects\items\storage\toolkit.dm"
 #include "code\game\objects\items\storage\wallets.dm"
+#include "code\game\objects\items\storage\halo\boxes.dm"
+#include "code\game\objects\items\storage\halo\firstaid.dm"
 #include "code\game\objects\items\storage\halo\halo_storageitems.dm"
 #include "code\game\objects\items\tanks\tank_types.dm"
 #include "code\game\objects\items\tanks\tanks.dm"

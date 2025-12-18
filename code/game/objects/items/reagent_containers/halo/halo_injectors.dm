@@ -97,6 +97,23 @@
 	description_primed = "The biofoam pen is ready to be used."
 	instructions = "OD at 20u. Best used on critically wounded patients before bringing them to medically trained personnel, comparable to tricordrazine but with additional stabilizing properties and painkilling."
 
+/obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/antidote
+	name = "biofoam dissolvent injector"
+	chemname = "biofoam_dissolvent"
+	desc = "A small silver pen containing a slightly acidic compound to dissolve any biofoam injected into someone's system. This can hurt a lot...but it's better than dying from too much foam."
+	icon_state = "antidote"
+	amount_per_transfer_from_this = LOWH_REAGENTS_OVERDOSE
+	volume = LOWH_REAGENTS_OVERDOSE
+	uses_left = 1
+	injectSFX = 'sound/items/hypospray.ogg'
+	prime_sound = "rip"
+	causes_pain = TRUE
+
+	prime_text = "You tear the protective wrapper off of the biofoam dissolvent injector."
+	description_unprimed = "The biofoam dissolvent injector is still sealed inside its packaging."
+	description_primed = "The biofoam dissolvent injector is ready to be used."
+	instructions = "OD at 15u. Used on patients with extreme overdoses on biofoam, gives burn damage as a consequence however. Usually you only get one, try not to waste it."
+
 /obj/item/reagent_container/hypospray/autoinjector/primeable/morphine
 	name = "morphine syrette"
 	chemname = "morphine"
@@ -144,7 +161,7 @@
 		to_chat(user, SPAN_DANGER("This syringe is broken!"))
 		return
 
-	var/injection_time = 10 SECONDS
+	var/injection_time = 5 SECONDS
 	if(user.skills)
 		if(!skillcheck(user, SKILL_MEDICAL, SKILL_MEDICAL_TRAINED))
 			to_chat(user, SPAN_WARNING("You aren't trained to use syringes... better go slow."))
@@ -330,8 +347,11 @@
 
 /obj/item/reagent_container/hypospray/autoinjector/dylovene/halo
 	icon = 'icons/halo/obj/items/chemistry.dmi'
+	amount_per_transfer_from_this = REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD
+	volume = (REAGENTS_OVERDOSE * INJECTOR_PERCENTAGE_OF_OD) * INJECTOR_USES
 
 /obj/item/reagent_container/hypospray/autoinjector/halo_peridaxon
+	name = "\improper peridaxon autoinjector"
 	icon = 'icons/halo/obj/items/chemistry.dmi'
 	chemname = "peridaxon"
 	desc = "An autoinjector loaded with 3 uses of Peridaxon, the novel blend of drugs that TEMPORARILY halts the symptoms of organ damage."

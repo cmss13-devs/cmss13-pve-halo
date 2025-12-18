@@ -141,7 +141,6 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		list("Large Pistol Magazine Pouch", 0, /obj/item/storage/pouch/magazine/pistol/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Magazine Pouch", 0, /obj/item/storage/pouch/magazine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Shotgun Shell Pouch", 0, /obj/item/storage/pouch/shotgun, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
-		list("Medical Pouch", 0, /obj/item/storage/pouch/medical, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
 		list("Medical Kit Pouch", 0, /obj/item/storage/pouch/medkit, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
 		list("Pistol Pouch", 0, /obj/item/storage/pouch/pistol/unsc, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 
@@ -194,10 +193,9 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		/obj/item/tool/surgery/surgical_line,
 		/obj/item/tool/surgery/synthgraft,
 		/obj/item/storage/surgical_case/regular,
-		/obj/item/reagent_container/blood/OMinus,
-		/obj/item/reagent_container/blood/OMinus,
 		/obj/item/device/flashlight/pen,
 		/obj/item/clothing/accessory/stethoscope,
+		/obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/antidote,
 	)
 
 GLOBAL_LIST_INIT(cm_vending_clothing_upp_medic, list(

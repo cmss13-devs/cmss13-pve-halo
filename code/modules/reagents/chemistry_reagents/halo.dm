@@ -1,9 +1,9 @@
 /datum/reagent/medical/biofoam
-	name = "Internal-Application Bio-Foam"
+	name = "Bio-Foam"
 	id = "biofoam"
 	description = "Biofoam is a self-sealing space-filling coagulant and anti-microbial tissue-regenerative polymer foam. It's most commonly utilized in the stabilization of patients who have undergone severe trauma."
 	reagent_state = LIQUID
-	color = "#8e9eb7"
+	color = "#265aae"
 	overdose = MED_REAGENTS_OVERDOSE
 	overdose_critical = MED_REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_UNCOMMON
@@ -27,7 +27,7 @@
 	id = "nullfoam"
 	description = "The effects of the external application biofoam have been nullified by internal application bio-foam."
 	reagent_state = LIQUID
-	color = "#8e9eb7"
+	color = "#787f81"
 	overdose = HIGH_REAGENTS_OVERDOSE_CRITICAL
 	overdose_critical = VHIGH_REAGENTS_OVERDOSE_CRITICAL
 	chemclass = CHEM_CLASS_COMMON
@@ -53,7 +53,8 @@
 	color = "#e5dddd"
 	overdose = MED_REAGENTS_OVERDOSE
 	overdose_critical = MED_REAGENTS_OVERDOSE_CRITICAL
-	chemclass = list(PROPERTY_PAINKILLING = 6)
+	chemclass = CHEM_CLASS_UNCOMMON
+	properties = list(PROPERTY_PAINKILLING = 6)
 	custom_metabolism = AMOUNT_PER_TIME(1, 20 SECONDS)
 
 /datum/reagent/medical/chorotazine
@@ -64,4 +65,16 @@
 	color = "#e5dddd"
 	overdose = LOWH_REAGENTS_OVERDOSE
 	overdose_critical = MED_REAGENTS_OVERDOSE_CRITICAL
-	chemclass = list(PROPERTY_OCULOPEUTIC = 2, PROPERTY_NEUROPEUTIC = 2)
+	chemclass = CHEM_CLASS_UNCOMMON
+	properties = list(PROPERTY_OCULOPEUTIC = 2, PROPERTY_NEUROPEUTIC = 2)
+
+/datum/reagent/medical/biofoam_dissolvent
+	name = "biofoam dissolvent"
+	id = "biofoam_dissolvent"
+	description = "A biofoam dissolvent. Burns."
+	reagent_state = LIQUID
+	color = "#407571"
+	overdose = LOWH_REAGENTS_OVERDOSE
+	overdose_critical = MED_REAGENTS_OVERDOSE_CRITICAL
+	chemclass = CHEM_CLASS_UNCOMMON
+	properties = list(PROPERTY_CORROSIVE = 4)
