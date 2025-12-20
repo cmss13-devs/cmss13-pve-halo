@@ -183,7 +183,8 @@ GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 		MAP_BMG290_OTOGI_EGRESS_POINT = new /obj/item/map/new_varadero(),
 		MAP_CANYON_32B = new /obj/item/map/canyon_32b(),
 		MAP_MACKAY_STATION = new /obj/item/map/mackay_station(),
-	)
+		MAP_HALO_NEW_IRVINE = new /obj/item/map/lv522_map(),
+    MAP_MACKAY_STATION = new /obj/item/map/mackay_station(),
 
 //used by marine equipment machines to spawn the correct map.
 /obj/item/map/current_map

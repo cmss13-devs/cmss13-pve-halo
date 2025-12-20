@@ -1,5 +1,5 @@
 
-#define SGT_VARIANT "Sergeant"
+#define LCPL_VARIANT "Lance Corporal"
 #define CPL_VARIANT "Corporal"
 
 /datum/job/marine/tl
@@ -10,7 +10,7 @@
 	flags_startup_parameters = ROLE_ADD_TO_DEFAULT|ROLE_ADD_TO_SQUAD
 	gear_preset = /datum/equipment_preset/unsc/tl
 	gear_preset_secondary = /datum/equipment_preset/unsc/tl/lesser_rank
-	job_options = list(SGT_VARIANT = "SGT", CPL_VARIANT = "CPL")
+	job_options = list(LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL")
 	entry_message_body = "You are the <a href='"+WIKI_PLACEHOLDER+"'>Squad Leader.</a> Your task is leading the designated squad and utilize available ordnance. If the section sergeant dies, you are expected to lead in their place.<br><b>You remember that you've stored your personal gear and uniform are located in the dorm or locker rooms.</b>"
 
 
@@ -19,7 +19,7 @@
 	spawning_human.important_radio_channels += JTAC_FREQ
 
 /datum/job/marine/tl/handle_job_options(option)
-	if(option != SGT_VARIANT)
+	if(option != CPL_VARIANT)
 		gear_preset = gear_preset_secondary
 	else
 		gear_preset = initial(gear_preset)
@@ -61,11 +61,20 @@
 	gear_preset = /datum/equipment_preset/uscm/tl/forecon
 	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/lesser_rank
 
+/datum/job/marine/tl/ai/odst
+	title = JOB_SQUAD_TEAM_LEADER_ODST
+	gear_preset = /datum/equipment_preset/unsc/tl/odst
+	gear_preset_secondary = /datum/equipment_preset/unsc/tl/odst/lesser_rank
+
 /obj/effect/landmark/start/marine/tl/upp
 	name = JOB_SQUAD_TEAM_LEADER_UPP
 	squad = SQUAD_UPP
 	job = /datum/job/marine/tl/ai/upp
 
+/obj/effect/landmark/start/marine/tl/odst
+	name = JOB_SQUAD_TEAM_LEADER_ODST
+	squad = SQUAD_ODST
+	job = /datum/job/marine/tl/ai/odst
 
 /datum/job/marine/tl/ai/pmc
 	title = JOB_PMCPLAT_FTL
@@ -84,5 +93,5 @@
 	job = /datum/job/marine/tl/ai/forecon
 
 
-#undef SGT_VARIANT
+#undef LCPL_VARIANT
 #undef CPL_VARIANT

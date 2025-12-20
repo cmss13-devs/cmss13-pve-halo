@@ -456,6 +456,10 @@
 				sound = pick('sound/weapons/halo/gun_spnkr_1.ogg','sound/weapons/halo/gun_spnkr_2.ogg','sound/weapons/halo/gun_spnkr_3.ogg')
 			if("gun_m7")
 				sound = pick('sound/weapons/halo/gun_m7_1.ogg','sound/weapons/halo/gun_m7_2.ogg')
+			if("gun_socom")
+				sound = pick('sound/weapons/halo/gun_socom_1.ogg', 'sound/weapons/halo/gun_socom_2.ogg', 'sound/weapons/halo/gun_socom_3.ogg', 'sound/weapons/halo/gun_socom_4.ogg')
+			if("gun_socom_smg")
+				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg')
 
 
 			// Halo misc
@@ -488,6 +492,16 @@
 				sound = pick('sound/weapons/halo/gun_plasma_1.ogg','sound/weapons/halo/gun_plasma_2.ogg','sound/weapons/halo/gun_plasma_3.ogg')
 			if("gun_heavyplasma")
 				sound = pick('sound/weapons/halo/gun_heavyplasma_1.ogg','sound/weapons/halo/gun_heavyplasma_2.ogg','sound/weapons/halo/gun_heavyplasma_3.ogg')
+			if("gun_needler")
+				sound = pick('sound/weapons/halo/gun_needler_1.ogg','sound/weapons/halo/gun_needler_2.ogg','sound/weapons/halo/gun_needler_3.ogg')
+			if("gun_carbine")
+				sound = pick('sound/weapons/halo/gun_carbine_1.ogg','sound/weapons/halo/gun_carbine_2.ogg','sound/weapons/halo/gun_carbine_3.ogg')
+			if("plasma_impact")
+				sound = pick('sound/bullets/plasma/impact_plasma_1.ogg', 'sound/bullets/plasma/impact_plasma_2.ogg', 'sound/bullets/plasma/impact_plasma_3.ogg')
+			if("plasma_miss")
+				sound = pick('sound/bullets/plasma/plasma_miss_1.ogg', 'sound/bullets/plasma/plasma_miss_2.ogg', 'sound/bullets/plasma/plasma_miss_3.ogg', 'sound/bullets/plasma/plasma_miss_4.ogg', 'sound/bullets/plasma/plasma_miss_5.ogg', 'sound/bullets/plasma/plasma_miss_6.ogg', )
+			if("gun_plasma_overcharge")
+				sound = pick('sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_1.ogg', 'sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_2.ogg', 'sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_3.ogg')
 
 
 			// Xeno

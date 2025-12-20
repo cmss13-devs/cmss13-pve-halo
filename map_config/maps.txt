@@ -82,6 +82,8 @@ endmap
 map canyon_32b
 endmap
 
-map mackay_station
+map halo_new_irvine
 endmap
 
+map mackay_station
+endmap

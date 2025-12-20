@@ -1,5 +1,5 @@
 
-#define LCPL_VARIANT "Petty Officer 3nd Class"
+#define LCPL_VARIANT "Petty Officer 3rd Class"
 #define CPL_VARIANT "Petty Officer 2nd Class"
 
 /datum/job/marine/medic
@@ -76,6 +76,11 @@
 /datum/job/marine/medic/ai/get_total_positions(latejoin=0)
 	return latejoin ? total_positions : spawn_positions
 
+/datum/job/marine/medic/ai/odst
+	title = JOB_SQUAD_MEDIC_ODST
+	gear_preset = /datum/equipment_preset/unsc/medic/odst
+	gear_preset_secondary = /datum/equipment_preset/unsc/medic/odst/lesser_rank
+
 /datum/job/marine/medic/ai/upp
 	title = JOB_SQUAD_MEDIC_UPP
 	gear_preset = /datum/equipment_preset/uscm/medic/upp
@@ -91,6 +96,10 @@
 	squad = SQUAD_UPP
 	job = /datum/job/marine/medic/ai/upp
 
+/obj/effect/landmark/start/marine/medic/odst
+	name = JOB_SQUAD_MEDIC_ODST
+	squad = SQUAD_ODST
+	job = /datum/job/marine/medic/ai/odst
 
 /datum/job/marine/medic/ai/pmc
 	title = JOB_PMCPLAT_MEDIC

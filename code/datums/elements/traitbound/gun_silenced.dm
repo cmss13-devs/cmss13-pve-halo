@@ -7,10 +7,18 @@
 	if(. & ELEMENT_INCOMPATIBLE)
 		return
 	var/obj/item/weapon/gun/G = target
-	G.flags_gun_features |= GUN_SILENCED
-	G.muzzleflash_iconstate = null
-	if(!HAS_TRAIT_FROM(G, TRAIT_GUN_SILENCED, TRAIT_SOURCE_INHERENT))
-		G.fire_sound = "gun_silenced"
+	for(var/slot in G.attachments)
+		if(istype(G.attachments[slot], /obj/item/attachable/suppressor))
+			var/obj/item/attachable/suppressor/silencer = G.attachments[slot]
+			G.flags_gun_features |= GUN_SILENCED
+			G.muzzleflash_iconstate = null
+			if(!HAS_TRAIT_FROM(G, TRAIT_GUN_SILENCED, TRAIT_SOURCE_INHERENT))
+				G.fire_sound = silencer.new_fire_sound
+		else
+			G.flags_gun_features |= GUN_SILENCED
+			G.muzzleflash_iconstate = null
+			if(!HAS_TRAIT_FROM(G, TRAIT_GUN_SILENCED, TRAIT_SOURCE_INHERENT))
+				G.fire_sound = "gun_silenced"
 
 /datum/element/traitbound/gun_silenced/Detach(datum/target)
 	var/obj/item/weapon/gun/G = target
