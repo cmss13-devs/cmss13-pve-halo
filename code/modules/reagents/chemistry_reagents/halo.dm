@@ -35,7 +35,7 @@
 	custom_metabolism = AMOUNT_PER_TIME(1, 5 SECONDS)
 
 /datum/reagent/medical/burnguard
-	name = "Optican Burn Guard"
+	name = "Optican BurnGuard"
 	id = "burnguard"
 	description = " An effective and simple to administer first-response burn treatment."
 	reagent_state = SOLID

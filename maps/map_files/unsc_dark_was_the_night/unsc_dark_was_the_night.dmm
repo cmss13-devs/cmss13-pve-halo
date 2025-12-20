@@ -4047,7 +4047,7 @@
 /turf/open/floor/almayer/sterile_green_corner/north,
 /area/dark_was_the_night/armory)
 "jE" = (
-/obj/structure/machinery/cm_vending/gear/medic_chemical/halo{
+/obj/structure/machinery/cm_vending/gear/medic_chemical/unsc{
 	pixel_y = 15;
 	density = 0
 	},

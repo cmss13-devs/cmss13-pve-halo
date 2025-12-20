@@ -182,7 +182,7 @@
 
 /obj/item/reagent_container/glass/beaker/unsc/dermaline
 	name = "\improper dermaline medical vial"
-	desc = "A clear, glossy vial of dermaline. Better than Optican Burn Guard at treating burns. overdoses at 15u."
+	desc = "A clear, glossy vial of dermaline. Better than Optican BurnGuard at treating burns. overdoses at 15u."
 	label_color = "orange-black"
 	maptext_label = "De"
 

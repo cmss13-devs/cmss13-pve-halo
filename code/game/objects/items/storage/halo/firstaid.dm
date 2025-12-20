@@ -40,6 +40,7 @@
 	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
 
 /obj/item/storage/firstaid/unsc/get_examine_text(mob/user)
+	. = ..()
 	. += SPAN_NOTICE("You can re-label it with alt+mmb.")
 
 /obj/item/storage/firstaid/unsc/clicked(mob/living/carbon/human/user, mods)
@@ -106,3 +107,23 @@
 	new /obj/item/reagent_container/hypospray/autoinjector/primeable/morphine(src)
 	new /obj/item/reagent_container/hypospray/autoinjector/primeable/morphine(src)
 	new /obj/item/reagent_container/hypospray/autoinjector/primeable/morphine(src)
+
+/obj/item/storage/syringe_case/unsc/full/fill_preset_inventory()
+	new /obj/item/reagent_container/syringe/halo(src)
+	new /obj/item/reagent_container/syringe/halo(src)
+	new /obj/item/reagent_container/syringe/halo(src)
+
+/obj/item/storage/syringe_case/unsc/burnguard
+	name = "Optican BurnGuard case"
+	desc = "Four-pack case of OptiCan Burn Guard."
+	icon_state = "burnguard"
+	storage_slots = 4
+	can_hold = list(
+		/obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard,
+	)
+
+/obj/item/storage/syringe_case/unsc/burnguard/fill_preset_inventory()
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)

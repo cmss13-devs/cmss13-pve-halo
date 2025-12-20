@@ -56,7 +56,7 @@
 
 		list("BURN TREATMENT", -1, null, null),
 		list("Burn Kit", floor(scale * 10), /obj/item/stack/medical/advanced/ointment, VENDOR_ITEM_RECOMMENDED),
-		list("Optican Burn Guard", floor(scale * 3), /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard, VENDOR_ITEM_RECOMMENDED),
+		list("Optican BurnGuard", floor(scale * 9), /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard, VENDOR_ITEM_RECOMMENDED),
 
 		list("OXYGEN TREATMENT", -1, null, null),
 		list("Autoinjector (Dexalin+)", floor(scale * 5), /obj/item/reagent_container/hypospray/autoinjector/dexalinp/halo, VENDOR_ITEM_RECOMMENDED),
@@ -81,7 +81,8 @@
 		list("Surgical Line", floor(scale * 2), /obj/item/tool/surgery/surgical_line, VENDOR_ITEM_REGULAR),
 		list("Synth-Graft", floor(scale * 2), /obj/item/tool/surgery/synthgraft, VENDOR_ITEM_REGULAR),
 		list("Health Analyzer", floor(scale * 5), /obj/item/device/healthanalyzer/halo, VENDOR_ITEM_REGULAR),
-		list("M276 Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical, VENDOR_ITEM_REGULAR),
+		list("M8A Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical/unsc, VENDOR_ITEM_REGULAR),
+		list("M8A Pattern Medical Storage Rig", floor(scale * 2), /obj/item/storage/belt/medical/lifesaver/unsc, VENDOR_ITEM_REGULAR),
 		list("Medical HUD Glasses", floor(scale * 3), /obj/item/clothing/glasses/hud/health, VENDOR_ITEM_REGULAR)
 	)
 
@@ -103,5 +104,5 @@ GLOBAL_LIST_INIT(cm_vending_chemical_medic_halo, list(
 	vendor_role = list(JOB_SQUAD_MEDIC)
 	req_access = list(ACCESS_MARINE_MEDPREP)
 
-/obj/structure/machinery/cm_vending/gear/medic_chemical/halo/get_listed_products(mob/user)
+/obj/structure/machinery/cm_vending/gear/medic_chemical/unsc/get_listed_products(mob/user)
 	return GLOB.cm_vending_chemical_medic_halo

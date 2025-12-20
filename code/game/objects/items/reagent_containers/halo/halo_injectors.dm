@@ -130,7 +130,7 @@
 	instructions = "OD at 20u. Sitting somewhere between tramadol and oxycodone, this is a fairly good painkiller."
 
 /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard
-	name = "Optican Burn Guard package"
+	name = "Optican BurnGuard package"
 	chemname = "burnguard"
 	desc = "An effective and simple to administer first-response burn treatment powder. Previously only seen in niche industrial settings where personnel worked with extreme heat or dangerous chemicals, now adapted for use by the UNSC as a relatively reliable first-aid treatment for the effects of plasma burns."
 	desc_lore = "Application is excruciating as the powder forms a hardened antibacterial \"scab\" over the wound site, encouraging healing."
@@ -141,9 +141,9 @@
 	prime_sound = "rip"
 	injectSFX = 'sound/items/powder_shake.ogg'
 
-	prime_text = "You tear open the Optican Burn Guard package."
-	description_unprimed = "The Optican Burn Guard package is still sealed."
-	description_primed = "The Optican Burn Guard package is torn open."
+	prime_text = "You tear open the Optican BurnGuard package."
+	description_unprimed = "The Optican BurnGuard package is still sealed."
+	description_primed = "The Optican BurnGuard package is torn open."
 	instructions = "OD at 30u. Functionally identical to kelotane along with slightly better painkilling properties than paracetamol, but with a smaller administer amount per \"injection.\""
 
 // ----------------------------- Other -----------------------------

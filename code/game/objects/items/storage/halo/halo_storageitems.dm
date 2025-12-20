@@ -1,5 +1,7 @@
 
-//========== PISTOL BELTS ==========
+//======================
+// HOLSTER BELTS
+//======================
 /obj/item/storage/belt/gun/m6
 	name = "\improper M6 general pistol holster rig"
 	desc = "The M276 is the standard load-bearing equipment of the UNSC. It consists of a modular belt with various clips. This version has a holster assembly that allows one to carry the most common pistols. It also contains side pouches that can store most pistol magazines."
@@ -41,7 +43,6 @@
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6a())
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/pistol/halo/m6a(src)
-//========== SPECIAL BELTS ==========
 
 /obj/item/storage/belt/gun/m7
 	name = "\improper M7 holster rig"
@@ -74,14 +75,121 @@
 	handle_item_insertion(new /obj/item/weapon/gun/smg/halo/m7/socom/folded_up())
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/smg/halo/m7(src)
-//========== POUCHES ==========
+
+//======================
+// BELTS
+//======================
+
+/obj/item/storage/belt/medical/unsc
+	name = "\improper M8A pattern medical storage rig"
+	icon = 'icons/halo/obj/items/clothing/belts/belts_by_faction/belt_unsc.dmi'
+	desc = "The M8A is one of the standard load-bearing equipment of the UNSC. It consists of a modular belt with various clips. This version is a less common configuration, designed to transport bulkier medical supplies. \nRight click its sprite and click \"toggle belt mode\" to take pills out of bottles by simply clicking them."
+	icon_state = "medicalbelt"
+	item_state = "medicalbelt"
+	has_gamemode_skin = FALSE
+	item_icons = list(
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/belts/belts_by_faction/belt_unsc.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/items_lefthand_1.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/items_righthand_1.dmi')
+	item_state_slots = list(
+		WEAR_L_HAND = "s_marinebelt",
+		WEAR_R_HAND = "s_marinebelt")
+
+/obj/item/storage/belt/medical/unsc/full/fill_preset_inventory()
+	new /obj/item/reagent_container/glass/beaker/unsc/bicaridine(src)
+	new /obj/item/storage/syringe_case/unsc/burnguard(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/tramadol(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/dexalin(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/inaprovaline(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/peridaxon(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/dylovene(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/chorotazine(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+
+/obj/item/storage/belt/medical/lifesaver/unsc
+	name = "\improper M8A pattern lifesaver rig"
+	icon = 'icons/halo/obj/items/clothing/belts/belts_by_faction/belt_unsc.dmi'
+	desc = "The M8A is one of the standard load-bearing equipment of the UNSC. This configuration mounts a duffel bag filled with a range of injectors and light medical supplies, and is common among medics. \nRight click its sprite and click \"toggle belt mode\" to take pills out of bottles by simply clicking them."
+	icon_state = "medicbag"
+	item_state = "medicbag"
+	can_hold = list(
+		/obj/item/device/healthanalyzer,
+		/obj/item/bodybag,
+		/obj/item/reagent_container/glass/bottle,
+		/obj/item/reagent_container/pill,
+		/obj/item/reagent_container/syringe,
+		/obj/item/storage/pill_bottle,
+		/obj/item/clothing/gloves/latex,
+		/obj/item/reagent_container/hypospray/autoinjector,
+		/obj/item/stack/medical,
+		/obj/item/device/defibrillator/compact,
+		/obj/item/device/reagent_scanner,
+		/obj/item/device/analyzer/plant_analyzer,
+		/obj/item/reagent_container/glass/beaker,
+	)
+	has_gamemode_skin = FALSE
+	item_icons = list(
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/belts/belts_by_faction/belt_unsc.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_unsc.dmi',
+		WEAR_L_HAND = 'icons/mob/humans/onmob/items_lefthand_1.dmi',
+		WEAR_R_HAND = 'icons/mob/humans/onmob/items_righthand_1.dmi')
+	item_state_slots = list(
+		WEAR_L_HAND = "medicbag",
+		WEAR_R_HAND = "medicbag")
+
+/obj/item/storage/belt/medical/lifesaver/unsc/full/fill_preset_inventory()
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/dexalinp/halo(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/bicaridine(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/dexalin(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/dylovene(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/inaprovaline(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/tramadol(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/chorotazine(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/peridaxon(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/stack/medical/splint(src)
+
+//======================
+// POUCHES
+//======================
+
+/obj/item/storage/pouch/medkit/unsc
+	name = "UNSC medical kit pouch"
+	icon = 'icons/halo/obj/items/clothing/pouches.dmi'
+	icon_state = "medpouch"
+
+/obj/item/storage/pouch/medkit/unsc/full/fill_preset_inventory()
+	new /obj/item/device/healthanalyzer/halo(src)
+	new /obj/item/storage/syringe_case/unsc/full(src)
+	new /obj/item/storage/syringe_case/unsc/burnguard(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/bicaridine(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/splint(src)
+
+//======================
+// HOLSTER POUCHES
+//======================
 
 /obj/item/storage/pouch/pistol/unsc
 	name = "\improper M6 pistol holster"
 	icon = 'icons/halo/obj/items/clothing/pouches.dmi'
 	icon_state = "m6"
 	gun_underlay_path = 'icons/halo/obj/items/clothing/belts/belts_by_faction/belt_unsc.dmi'
-	icon_x = 5
+	icon_x = 0
 	icon_y = 0
 	can_hold = list(
 		/obj/item/weapon/gun/pistol/halo,
@@ -99,7 +207,9 @@
 	icon_state = "pistolmag_large"
 	storage_slots = 6
 
-//========== BACKPACKS ==========
+//======================
+// BACKPACKS
+//======================
 
 /obj/item/storage/backpack/marine/satchel/rto/unsc
 	name = "UNSC radio backpack"
@@ -156,7 +266,9 @@
 		new /obj/item/ammo_magazine/spnkr(src)
 	update_icon()
 
-//========== BOXES ==========
+//======================
+// BOXES
+//======================
 
 /obj/item/storage/unsc_speckit
 	name = "UNSC specialist kit box"

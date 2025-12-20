@@ -4623,7 +4623,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/cm_vending/gear/medic_chemical/halo{
+/obj/structure/machinery/cm_vending/gear/medic_chemical/unsc{
 	pixel_y = 15;
 	density = 0
 	},
