@@ -137,7 +137,7 @@
 	icon_state = "burnguard"
 	amount_per_transfer_from_this = 10
 	volume = HIGH_REAGENTS_OVERDOSE
-	uses_left = 12
+	uses_left = 6
 	prime_sound = "rip"
 	injectSFX = 'sound/items/powder_shake.ogg'
 

@@ -205,7 +205,7 @@
 /obj/item/reagent_container/glass/beaker/unsc/iron
 	name = "\improper iron medical vial"
 	desc = "A clear, glossy vial of iron. Useful to treat blood loss. Overdoses at 30u."
-	label_color = "pink"
+	label_color = "label"
 	maptext_label = "Fe"
 
 /obj/item/reagent_container/glass/beaker/unsc/iron/Initialize()
