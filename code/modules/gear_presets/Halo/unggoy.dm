@@ -53,14 +53,13 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/minor/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/minor/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/minor/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/minor(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/minor(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 
 // MAJOR
 /datum/equipment_preset/covenant/unggoy/major
@@ -75,14 +74,22 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/major/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/major/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/major/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/major(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	if(prob(20))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/major(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+	else
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/major(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
 
 // HEAVY
 /datum/equipment_preset/covenant/unggoy/heavy
@@ -97,14 +104,22 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/heavy/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/heavy/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/heavy/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/heavy(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	if(prob(50))
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/heavy(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/smg/covenant_needler(new_human), WEAR_J_STORE)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
+	else
+		new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/heavy(new_human), WEAR_WAIST)
+		new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // Ultra
 /datum/equipment_preset/covenant/unggoy/ultra
@@ -119,14 +134,13 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/ultra/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/ultra/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/ultra/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/ultra(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // SpecOps
 /datum/equipment_preset/covenant/unggoy/specops
@@ -141,14 +155,13 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/specops/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/specops/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/specops/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser
 	name = parent_type::name + " (Lesser Rank)"
@@ -162,14 +175,13 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/specops/lesser/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/specops/lesser/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/specops/lesser/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // SpecOps Ultra
 /datum/equipment_preset/covenant/unggoy/specops_ultra
@@ -184,14 +196,13 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/specops_ultra/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/specops_ultra/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/specops_ultra/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
 
 // Deacon
 /datum/equipment_preset/covenant/unggoy/deacon
@@ -206,11 +217,9 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
-/datum/equipment_preset/covenant/unggoy/deacon/equipped
-	name = parent_type::name + " (Equipped)"
-
-/datum/equipment_preset/covenant/unggoy/deacon/equipped/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/unggoy/deacon/load_gear(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/unggoy(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/deacon(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)

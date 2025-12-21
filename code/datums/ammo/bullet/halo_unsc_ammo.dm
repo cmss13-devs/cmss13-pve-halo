@@ -13,6 +13,37 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/ma5c/shredder
+	name = "shredder bullet"
+	damage = 52
+	penetration = ARMOR_PENETRATION_TIER_2
+
+/datum/ammo/bullet/rifle/ma3a
+	name = "FMJ bullet"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 35
+	penetration = ARMOR_PENETRATION_TIER_2
+	accurate_range = 16
+	accuracy = HIT_ACCURACY_TIER_5
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = AMMO_SPEED_TIER_6
+	effective_range_max = 7
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 24
+
+/datum/ammo/bullet/rifle/vk78
+	name = "FMJ bullet"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 35
+	penetration = ARMOR_PENETRATION_TIER_1
+	accurate_range = 14
+	accuracy = HIT_ACCURACY_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_7
+	shell_speed = AMMO_SPEED_TIER_5
+	effective_range_max = 7
+	damage_falloff = DAMAGE_FALLOFF_TIER_5
+	max_range = 22
+
 /datum/ammo/bullet/rifle/br55
 	name = "X-HP SAP-HE bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
@@ -25,11 +56,27 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
 
+/datum/ammo/bullet/rifle/dmr
+	name = "FMJ bullet"
+	headshot_state = HEADSHOT_OVERLAY_HEAVY
+	damage = 60
+	penetration = ARMOR_PENETRATION_TIER_4
+	accurate_range = 24
+	accuracy = HIT_ACCURACY_TIER_8
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = AMMO_SPEED_TIER_6
+	effective_range_max = 12
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 36
+
 // smg ammo
 /datum/ammo/bullet/smg/m7
 	name = "5×23mm M443 FMJ"
 	penetration = 0
-	damage = 25
+	damage = 34
+	penetration = ARMOR_PENETRATION_TIER_1
+	scatter = SCATTER_AMOUNT_TIER_8
+	accuracy = HIT_ACCURACY_TIER_4
 
 // shotgun ammo
 
@@ -49,6 +96,14 @@
 	max_range = 8
 	damage = 90
 	firing_freq_offset = SOUND_FREQ_LOW
+
+/datum/ammo/bullet/shotgun/beanbag/unsc
+	name = "MAG LLHB"
+	handful_state = "8g_beanbag"
+	accurate_range = 10
+	max_range = 10
+	stamina_damage = 75
+	damage = 35
 
 // rocket ammo
 
