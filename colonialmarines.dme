@@ -159,7 +159,6 @@
 #include "code\__DEFINES\paygrade_defs\marines.dm"
 #include "code\__DEFINES\paygrade_defs\mercs.dm"
 #include "code\__DEFINES\paygrade_defs\navy.dm"
-#include "code\__DEFINES\paygrade_defs\oni.dm"
 #include "code\__DEFINES\paygrade_defs\paygrade.dm"
 #include "code\__DEFINES\paygrade_defs\provost.dm"
 #include "code\__DEFINES\paygrade_defs\twe.dm"
