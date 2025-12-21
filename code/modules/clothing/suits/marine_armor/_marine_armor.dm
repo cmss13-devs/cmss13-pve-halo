@@ -891,6 +891,12 @@
 		/obj/item/storage/belt/gun/m7,
 	)
 
+/obj/item/clothing/suit/marine/unsc/oni
+	name = "\improper ONI M52B body armor"
+	desc = "A modified variant of the standard M52B armor, used by ONI security forces. Has no significant differences in protection compared to standard issue armor, but is painted black."
+	icon_state = "oni_sec"
+	item_state = "oni_sec"
+
 /obj/item/clothing/suit/marine/unsc/police
 	name = "\improper police RD90 ballistic armor"
 	desc = "An older model of the M52B body armor, designated as the RD90 by local police and security forces. Whilst not as comfortable, it still does the job for most of it's users, and has added protection against melee attacks."

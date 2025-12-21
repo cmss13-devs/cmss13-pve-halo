@@ -467,6 +467,7 @@
 	friendly_factions = list(
 		FACTION_COLONIST,
 		FACTION_UEG_POLICE,
+		FACTION_ONI
 	)
 	neutral_factions = list(
 		FACTION_CONTRACTOR,
@@ -563,6 +564,17 @@
 	friendly_factions = list(
 		FACTION_COLONIST,
 		FACTION_UNSC,
+	)
+	neutral_factions = list(
+		FACTION_SURVIVOR,
+	)
+
+/datum/human_ai_faction/oni
+	faction = FACTION_ONI
+	friendly_factions = list(
+		FACTION_COLONIST,
+		FACTION_UNSC,
+		FACTION_UEG_POLICE,
 	)
 	neutral_factions = list(
 		FACTION_SURVIVOR,

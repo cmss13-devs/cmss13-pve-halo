@@ -451,6 +451,17 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 
 #define UEG_POLICE_JOB_LIST list(JOB_UEG_POLICE, JOB_UEG_POLICE_SL, JOB_UEG_POLICE_CHIEF)
 
+//----------- ONI ---------//
+#define JOB_ONI_OPERATIVE "ONI Field Operative"
+#define JOB_ONI_AGENT "ONI Field Agent"
+#define JOB_ONI_SAGENT "ONI Senior Field Agent"
+#define JOB_ONI_SEC "ONI Security"
+#define JOB_ONI_SEC_MEDIC "ONI Corpsman"
+#define JOB_ONI_SEC_LEAD "ONI Security Lead"
+
+#define ONI_JOB_LIST list(JOB_ONI_OPERATIVE, JOB_ONI_AGENT, JOB_ONI_SAGENT, JOB_ONI_SEC, JOB_ONI_SEC_MEDIC, JOB_ONI_SEC_LEAD)
+//--------------------//
+
 #define JOB_PREDATOR "Predator"
 #define JOB_XENOMORPH    "Xenomorph"
 #define JOB_XENOMORPH_QUEEN  "Queen"
