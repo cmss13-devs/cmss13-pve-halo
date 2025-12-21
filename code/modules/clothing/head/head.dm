@@ -448,7 +448,7 @@
 /obj/item/clothing/head/cmcap/oni
 	name = "\improper ONI security forces patrol cap"
 	desc = "A black patrol cap, with the insignia of ONI in the center."
-	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hats_unsc.dmi'
+	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	item_icons = list(
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	)

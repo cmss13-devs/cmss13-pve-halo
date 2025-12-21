@@ -127,10 +127,15 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/guard(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big/unsc(new_human), WEAR_EYES)
-	if(prob(20))
+	if(prob(50))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/oni(new_human), WEAR_HEAD)
+	var/oni_helm = rand(1,3)
+	switch(oni_helm)
+		if(1)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/oni(new_human), WEAR_HEAD)
+		if(2 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/oni(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/grey(new_human), WEAR_BODY)
 	//jacket
@@ -176,10 +181,15 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/guard(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big/unsc(new_human), WEAR_EYES)
-	if(prob(20))
+	if(prob(50))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/oni(new_human), WEAR_HEAD)
+	var/oni_helm = rand(1,3)
+	switch(oni_helm)
+		if(1)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/oni(new_human), WEAR_HEAD)
+		if(2 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/oni(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/grey(new_human), WEAR_BODY)
 	//jacket
@@ -221,10 +231,15 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/distress/guard(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/big/unsc(new_human), WEAR_EYES)
-	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/oni(new_human), WEAR_HEAD)
-	if(prob(20))
+	if(prob(50))
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
+	//head
+	var/oni_helm = rand(1,3)
+	switch(oni_helm)
+		if(1)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/cmcap/oni(new_human), WEAR_HEAD)
+		if(2 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/oni(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/colonist/boilersuit/grey(new_human), WEAR_BODY)
 	//jacket
