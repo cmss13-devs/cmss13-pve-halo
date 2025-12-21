@@ -6,6 +6,7 @@
 	flags_gun_features = GUN_CAN_POINTBLANK
 	works_in_recharger = FALSE
 	empty_click = null
+	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 
 	var/works_in_cov_recharger = TRUE
 
@@ -276,6 +277,8 @@
 	has_overheat_icon_state = TRUE
 	fire_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
 	start_automatic = TRUE
+	muzzleflash_iconstate = "muzzle_flash_blue"
+	muzzle_flash_color = COLOR_PLASMA_BLUE
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
@@ -313,6 +316,8 @@
 	cocked_sound = 'sound/weapons/halo/gun_needler_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_needler_reload.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK
+	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	muzzleflash_iconstate = "muzzle_flash_pink"
 	muzzle_flash_color = LIGHT_COLOR_PINK
 	start_automatic = TRUE
 	empty_sound = null
@@ -393,6 +398,8 @@
 	current_mag = /obj/item/ammo_magazine/carbine
 	map_specific_decoration = FALSE
 	attachable_allowed = list(/obj/item/attachable/carbine_muzzle)
+	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	muzzleflash_iconstate = "muzzle_flash_green"
 	muzzle_flash_color = LIGHT_COLOR_GREEN
 
 /obj/item/weapon/gun/rifle/covenant_carbine/get_examine_text(mob/living/carbon/human/user)
