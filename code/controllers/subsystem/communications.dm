@@ -161,7 +161,7 @@ GLOBAL_LIST_INIT(radiochannels, list(
 	RADIO_CHANNEL_CMB = CMB_FREQ,
 	RADIO_CHANNEL_USASF = ASF_FREQ,
 	RADIO_CHANNEL_US_ARMY = ARM_FREQ,
-	RADIO_CHANNEL_ONI_SEC = GRD_FREQ,
+	RADIO_CHANNEL_UA_GUARD = GRD_FREQ,
 	RADIO_CHANNEL_DUTCH_DOZEN = DUT_FREQ,
 	RADIO_CHANNEL_ROYAL_MARINE = RMC_FREQ,
 
@@ -293,7 +293,7 @@ SUBSYSTEM_DEF(radio)
 		"[CMB_FREQ]" = "cmbradio",
 		"[ASF_FREQ]" = "usasfradio",
 		"[ARM_FREQ]" = "armyradio",
-		"[GRD_FREQ]" = "secradio",
+		"[GRD_FREQ]" = "guardradio",
 		"[ALPHA_FREQ]" = "alpharadio",
 		"[BRAVO_FREQ]" = "bravoradio",
 		"[CHARLIE_FREQ]" = "charlieradio",
