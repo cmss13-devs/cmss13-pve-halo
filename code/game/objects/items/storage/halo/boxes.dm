@@ -42,6 +42,7 @@
 		/obj/item/stack/medical/advanced/ointment,
 		/obj/item/stack/medical/ointment,
 		/obj/item/stack/medical/splint,
+		/obj/item/storage/syringe_case/unsc,
 	)
 
 /obj/item/storage/box/tear_packet/medical_packet/fill_preset_inventory()
