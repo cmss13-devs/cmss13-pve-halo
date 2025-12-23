@@ -461,6 +461,12 @@
 			if("gun_socom_smg")
 				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg')
 
+			// Halo drop pods
+			if("droppod_enter")
+				sound = pick('sound/effects/odst_pod/pod_enter_1.ogg', 'sound/effects/odst_pod/pod_enter_2.ogg', 'sound/effects/odst_pod/pod_enter_3.ogg')
+			if("droppod_land")
+				sound = pick('sound/effects/odst_pod/pod_land_1.ogg', 'sound/effects/odst_pod/pod_land_2.ogg', 'sound/effects/odst_pod/pod_land_3.ogg', 'sound/effects/odst_pod/pod_land_4.ogg')
+
 
 			// Halo misc
 			if("shield_hit")
@@ -471,6 +477,8 @@
 				sound = pick('sound/effects/shields/shield_down.ogg')
 			if("shield_pop")
 				sound = pick('sound/effects/shields/shield_pop_1.ogg', 'sound/effects/shields/shield_pop_2.ogg', 'sound/effects/shields/shield_pop_3.ogg')
+			if("pod_door_clang")
+				sound = pick('sound/effects/odst_pod/door_clang_1.ogg', 'sound/effects/odst_pod/door_clang_2.ogg', 'sound/effects/odst_pod/door_clang_3.ogg')
 
 			// Covenant audio
 			if("pain_sangheili")
