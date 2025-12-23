@@ -156,14 +156,3 @@
 		list("King", 2, /obj/item/reagent_container/food/drinks/bottle/vodka/chess/b_king, VENDOR_ITEM_REGULAR),
 		list("Queen", 2, /obj/item/reagent_container/food/drinks/bottle/vodka/chess/b_queen, VENDOR_ITEM_REGULAR)
 	)
-
-/obj/structure/machinery/cm_vending/sorted/marine_food/unsc
-	name = "military food dispenser"
-	desc = "An automated food prep and dispensing station. It pre-prepares meals and beverages for UNSC personnel and automatically cleans itself and any trays fed back into it. The self-cleaning option is often disabled to encourage discipline among marines."
-	icon = 'icons/halo/obj/structures/machinery/vending.dmi'
-	icon_state = "unsc_food"
-	tiles_with = list(
-		/obj/structure/window/framed/unsc,
-		/obj/structure/machinery/door/airlock,
-		/turf/closed/wall/unsc,
-	)
