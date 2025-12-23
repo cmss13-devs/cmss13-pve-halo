@@ -130,14 +130,12 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic, list(
 		list("Medical HUD Glasses", 0, /obj/item/clothing/glasses/hud/health, MARINE_CAN_BUY_GLASSES, VENDOR_ITEM_RECOMMENDED),
 
 		list("BELT (CHOOSE 1)", 0, null, null, null),
-		list("M8 Lifesaver Bag (Full)", 0, /obj/item/storage/belt/medical/lifesaver/unsc/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
-		list("M8 Medical Storage Rig (Full)", 0, /obj/item/storage/belt/medical/unsc/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
-		list("M8 Lifesaver Bag (Empty)", 0, /obj/item/storage/belt/medical/lifesaver/unsc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
-		list("M8 Medical Storage Rig (Empty)", 0, /obj/item/storage/belt/medical/unsc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+		list("M8A Lifesaver Bag (Full)", 0, /obj/item/storage/belt/medical/lifesaver/unsc/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+		list("M8A Medical Storage Rig (Full)", 0, /obj/item/storage/belt/medical/unsc/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+		list("M8A Lifesaver Bag (Empty)", 0, /obj/item/storage/belt/medical/lifesaver/unsc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+		list("M8A Medical Storage Rig (Empty)", 0, /obj/item/storage/belt/medical/unsc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
 
 		list("POUCHES (CHOOSE 2)", 0, null, null, null),
-		list("Autoinjector Pouch", 0, /obj/item/storage/pouch/autoinjector, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
-		list("First Responder Pouch", 0, /obj/item/storage/pouch/first_responder, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Flare Pouch (Full)", 0, /obj/item/storage/pouch/flare/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Sling Pouch", 0, /obj/item/storage/pouch/sling, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
 		list("Large Pistol Magazine Pouch", 0, /obj/item/storage/pouch/magazine/pistol/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
