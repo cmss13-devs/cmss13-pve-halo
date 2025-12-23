@@ -85,8 +85,8 @@
 	chemname = "biofoam_ext"
 	desc = "A small silver pen containing a easy to apply biofoam spray. This is intended to be sprayed on the outside of wounds rather than put directly into the wound."
 	icon_state = "syrette"
-	amount_per_transfer_from_this = MED_REAGENTS_OVERDOSE
-	volume = MED_REAGENTS_OVERDOSE*2
+	amount_per_transfer_from_this = MED_REAGENTS_OVERDOSE/2
+	volume = MED_REAGENTS_OVERDOSE
 	uses_left = 2
 	injectSFX = 'sound/items/biofoam_syrette.ogg'
 	prime_sound = "rip"
