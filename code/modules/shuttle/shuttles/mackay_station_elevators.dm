@@ -24,7 +24,7 @@
 /obj/docking_port/mobile/station_tram_golf/Initialize(mapload, ...)
 	. = ..()
 	door_control = new()
-	door_control.label = "Tram"
+	door_control.label = "elevator"
 	for(var/area/shuttle_area in shuttle_areas)
 		for(var/obj/structure/machinery/door/door in shuttle_area)
 			if(istype(door, /obj/structure/machinery/door/poddoor/filler_object)) //poddoor filler was sneaking in
@@ -60,7 +60,7 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_golf))
 		var/obj/docking_port/mobile/station_tram_golf/elevator = arriving_shuttle
-		Tram.door_control.control_doors("open", airlock_exit)
+		elevator.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
