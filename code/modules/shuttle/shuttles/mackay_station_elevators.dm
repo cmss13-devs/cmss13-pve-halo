@@ -60,7 +60,7 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_golf))
 		var/obj/docking_port/mobile/station_tram_golf/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		Tram.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
