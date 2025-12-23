@@ -116,6 +116,10 @@
 	SSprojectiles.stop_projectile(src)
 	return ..()
 
+/obj/projectile/update_icon()
+	if(ammo.ammo_glowing)
+		overlays += emissive_appearance(icon, icon_state, src, layer, reset_transform = FALSE)
+
 /obj/projectile/proc/apply_bullet_trait(list/entry)
 	bullet_traits += list(entry.Copy())
 	// Need to use the proc instead of the wrapper because each entry is a list
@@ -241,6 +245,7 @@
 	p_x += clamp((rand()-0.5)*scatter*3, -8, 8)
 	p_y += clamp((rand()-0.5)*scatter*3, -8, 8)
 	update_angle(starting, target_turf)
+	update_icon()
 
 	src.speed = speed
 	// Randomize speed by a small factor to help bullet animations look okay
