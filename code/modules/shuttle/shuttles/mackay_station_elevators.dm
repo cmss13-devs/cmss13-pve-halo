@@ -11,9 +11,9 @@
 	area_type = /area/mackay_station/elevator/tram_golf
 
 	// Shuttle timings
-	callTime = 30 SECONDS
-	rechargeTime = 30 SECONDS
-	ignitionTime = 4 SECONDS
+	callTime = 20 SECONDS
+	rechargeTime = 10 SECONDS
+	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
 
@@ -60,8 +60,9 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_golf))
 		var/obj/docking_port/mobile/station_tram_golf/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", airlock_exit)
-		elevator.door_control.control_doors("open", airlock_exit)
+		door_control.doors = get_doors()
+		door_control.control_doors("unlock", FALSE, TRUE)
+		door_control.control_doors("open", FALSE, TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -117,9 +118,9 @@
 	area_type = /area/mackay_station/elevator/tram_romeo
 
 	// Shuttle timings
-	callTime = 30 SECONDS
-	rechargeTime = 30 SECONDS
-	ignitionTime = 4 SECONDS
+	callTime = 20 SECONDS
+	rechargeTime = 10 SECONDS
+	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
 
@@ -166,12 +167,15 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_romeo))
 		var/obj/docking_port/mobile/station_tram_romeo/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		door_control.doors = get_doors()
+		door_control.control_doors("unlock", FALSE, TRUE)
+		door_control.control_doors("open", FALSE, TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("open", FALSE, FALSE)
+	door_control.control_doors("unlock", FALSE, TRUE)
+	door_control.control_doors("open", FALSE, TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -221,9 +225,9 @@
 	area_type = /area/mackay_station/elevator/tram_bravo
 
 	// Shuttle timings
-	callTime = 30 SECONDS
-	rechargeTime = 30 SECONDS
-	ignitionTime = 4 SECONDS
+	callTime = 20 SECONDS
+	rechargeTime = 10 SECONDS
+	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
 
@@ -270,12 +274,15 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_bravo))
 		var/obj/docking_port/mobile/station_tram_bravo/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		door_control.doors = get_doors()
+		door_control.control_doors("unlock", FALSE, TRUE)
+		door_control.control_doors("open", FALSE, TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("open", FALSE, FALSE)
+	door_control.control_doors("unlock", FALSE, TRUE)
+	door_control.control_doors("open", FALSE, TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -325,9 +332,9 @@
 	area_type = /area/mackay_station/elevator/fire_control
 
 	// Shuttle timings
-	callTime = 30 SECONDS
-	rechargeTime = 30 SECONDS
-	ignitionTime = 4 SECONDS
+	callTime = 20 SECONDS
+	rechargeTime = 10 SECONDS
+	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
 
@@ -374,12 +381,15 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/fire_control))
 		var/obj/docking_port/mobile/fire_control/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		door_control.doors = get_doors()
+		door_control.control_doors("unlock", FALSE, TRUE)
+		door_control.control_doors("open", FALSE, TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("open", FALSE, FALSE)
+	door_control.control_doors("unlock", FALSE, TRUE)
+	door_control.control_doors("open", FALSE, TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -429,9 +439,9 @@
 	area_type = /area/mackay_station/elevator/hangar
 
 	// Shuttle timings
-	callTime = 30 SECONDS
-	rechargeTime = 30 SECONDS
-	ignitionTime = 4 SECONDS
+	callTime = 20 SECONDS
+	rechargeTime = 10 SECONDS
+	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
 
