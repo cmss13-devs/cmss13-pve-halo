@@ -60,7 +60,7 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_golf))
 		var/obj/docking_port/mobile/station_tram_golf/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", airlock_exit)
+		elevator.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -165,7 +165,7 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_romeo))
 		var/obj/docking_port/mobile/station_tram_romeo/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", airlock_exit)
+		elevator.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -270,7 +270,7 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_bravo))
 		var/obj/docking_port/mobile/station_tram_bravo/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", airlock_exit)
+		elevator.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -375,7 +375,7 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/fire_control))
 		var/obj/docking_port/mobile/fire_control/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", airlock_exit)
+		elevator.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
