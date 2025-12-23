@@ -1326,6 +1326,27 @@
 	icon_state = "odst_groinplate"
 	item_state = "odst_groinplate"
 
+
+/obj/item/clothing/accessory/pads/oni
+	icon_state = "pads_oni"
+	item_state = "pads_oni"
+
+/obj/item/clothing/accessory/pads/bracers/oni
+	icon_state = "bracers_oni"
+	item_state = "bracers_oni"
+
+/obj/item/clothing/accessory/pads/neckguard/oni
+	icon_state = "neckguard_oni"
+	item_state = "neckguard_oni"
+
+/obj/item/clothing/accessory/pads/greaves/oni
+	icon_state = "shinguards_oni"
+	item_state = "shinguards_oni"
+
+/obj/item/clothing/accessory/pads/groin/insurrection
+	icon_state = "groinplate_insurgent"
+	item_state = "groinplate_insurgent"
+
 //===========================//UPP CUSTOM ARMOR PLATES\\================================\\
 
 /obj/item/clothing/accessory/upppads

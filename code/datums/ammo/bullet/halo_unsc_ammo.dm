@@ -21,10 +21,10 @@
 /datum/ammo/bullet/rifle/ma3a
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 35
+	damage = 40
 	penetration = ARMOR_PENETRATION_TIER_2
 	accurate_range = 16
-	accuracy = HIT_ACCURACY_TIER_5
+	accuracy = HIT_ACCURACY_TIER_4
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = AMMO_SPEED_TIER_6
 	effective_range_max = 7
