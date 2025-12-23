@@ -60,12 +60,14 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_golf))
 		var/obj/docking_port/mobile/station_tram_golf/elevator = arriving_shuttle
+		elevator.door_control.control_doors("unlock", airlock_exit)
 		elevator.door_control.control_doors("open", airlock_exit)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("open", FALSE, FALSE)
+	door_control.control_doors("unlock", FALSE, TRUE)
+	door_control.control_doors("open", FALSE, TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
