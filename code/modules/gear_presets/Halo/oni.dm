@@ -45,7 +45,7 @@
 	name = "ONI Field Operative"
 	assignment = JOB_ONI_OPERATIVE
 	rank = JOB_ONI_OPERATIVE
-	paygrades = list(PAY_SHORT_ME7 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NE7 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ONI-OP"
 	flags = EQUIPMENT_PRESET_EXTRA
 	skills = /datum/skills/SO
@@ -86,24 +86,24 @@
 
 /datum/equipment_preset/oni/field/lesser_rank
 	name = "ONI Field Operative (Lesser Rank)"
-	paygrades = list(PAY_SHORT_ME5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NE5 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/oni/field/agent
 	name = "ONI Field Agent"
 	assignment = JOB_ONI_AGENT
 	rank = JOB_ONI_AGENT
-	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NO3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ONI-A"
 
 /datum/equipment_preset/oni/field/agent/lesser_rank
 	name = "ONI Field Agent (Lesser Rank)"
-	paygrades = list(PAY_SHORT_MO1 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NO2 = JOB_PLAYTIME_TIER_0)
 
 /datum/equipment_preset/oni/field/agent/senior
 	name = "ONI Senior Field Agent"
 	assignment = JOB_ONI_SAGENT
 	rank = JOB_ONI_SAGENT
-	paygrades = list(PAY_SHORT_MO5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NO5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ONI-SA"
 
 //    ONI Security Forces
