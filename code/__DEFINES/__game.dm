@@ -42,7 +42,7 @@
 #define MAP_DERELICT_ALMAYER "Derelict Almayer"
 #define MAP_LV295_BLACKSITE "LV295 Blacksite"
 #define MAP_BMG290_OTOGI_EGRESS_POINT "BMG-290 Otogi Egress Point" //mapjam
-#define MAP_CANYON_32B "Canyon 32B
+#define MAP_CANYON_32B "Canyon 32B"
 #define MAP_HALO_NEW_IRVINE "New Irvine"
 #define MAP_MACKAY_STATION "Mackay Station"
 
