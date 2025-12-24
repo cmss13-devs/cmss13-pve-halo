@@ -60,7 +60,8 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_golf))
 		var/obj/docking_port/mobile/station_tram_golf/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		elevator.door_control.control_doors("unlock", "golf", TRUE)
+		elevator.door_control.control_doors("open", "golf", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -82,26 +83,26 @@
 /obj/docking_port/stationary/station_tram_golf/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "north"
+	airlock_exit = "golf"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/golf
 
 /obj/docking_port/stationary/station_tram_golf/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "north"
+	airlock_exit = "golf"
 
 /obj/docking_port/stationary/station_tram_golf/arrival
 	name = "Golf Arrival"
 	id=STAT_STATION_SECTOR_GOLF
 	airlock_area = /area/mackay_station/elevator/tram_golf
-	airlock_exit = "north"
+	airlock_exit = "golf"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/golf
 
 /obj/docking_port/stationary/station_tram_golf/exit
 	name = "Golf Exit"
 	id=STAT_STATION_SECTOR_GOLF_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_golf/exit
-	airlock_exit = "north"
+	airlock_exit = "golf"
 
 /obj/docking_port/mobile/station_tram_romeo
 	name="Tram Romeo"
@@ -165,7 +166,8 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_romeo))
 		var/obj/docking_port/mobile/station_tram_romeo/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		elevator.door_control.control_doors("unlock", "romeo", TRUE)
+		elevator.door_control.control_doors("open", "romeo", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -187,26 +189,26 @@
 /obj/docking_port/stationary/station_tram_romeo/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "south"
+	airlock_exit = "romeo"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/romeo
 
 /obj/docking_port/stationary/station_tram_romeo/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "south"
+	airlock_exit = "romeo"
 
 /obj/docking_port/stationary/station_tram_romeo/arrival
 	name = "Romeo Arrival"
 	id=STAT_STATION_SECTOR_ROMEO
 	airlock_area = /area/mackay_station/elevator/tram_romeo
-	airlock_exit = "south"
+	airlock_exit = "romeo"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/romeo
 
 /obj/docking_port/stationary/station_tram_romeo/exit
 	name = "Romeo Exit"
 	id=STAT_STATION_SECTOR_ROMEO_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_romeo/exit
-	airlock_exit = "south"
+	airlock_exit = "romeo"
 
 /obj/docking_port/mobile/station_tram_bravo
 	name="Tram Bravo"
@@ -270,7 +272,8 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/station_tram_bravo))
 		var/obj/docking_port/mobile/station_tram_bravo/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		elevator.door_control.control_doors("unlock", "bravo", TRUE)
+		elevator.door_control.control_doors("open", "bravo", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -292,26 +295,26 @@
 /obj/docking_port/stationary/station_tram_bravo/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "north"
+	airlock_exit = "bravo"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/bravo
 
 /obj/docking_port/stationary/station_tram_bravo/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "north"
+	airlock_exit = "bravo"
 
 /obj/docking_port/stationary/station_tram_bravo/arrival
 	name = "Bravo Arrival"
 	id=STAT_STATION_SECTOR_BRAVO
 	airlock_area = /area/mackay_station/elevator/tram_bravo
-	airlock_exit = "north"
+	airlock_exit = "bravo"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/bravo
 
 /obj/docking_port/stationary/station_tram_bravo/exit
 	name = "Bravo Exit"
 	id=STAT_STATION_SECTOR_BRAVO_EXIT
 	airlock_area = /area/mackay_station/elevator/tram_bravo/exit
-	airlock_exit = "north"
+	airlock_exit = "bravo"
 
 /obj/docking_port/mobile/fire_control
 	name="Fire Control Elevator"
@@ -375,7 +378,8 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/fire_control))
 		var/obj/docking_port/mobile/fire_control/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		elevator.door_control.control_doors("unlock", "control", TRUE)
+		elevator.door_control.control_doors("open", "control", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
@@ -397,26 +401,26 @@
 /obj/docking_port/stationary/fire_control/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "east"
+	airlock_exit = "control"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/fire_control
 
 /obj/docking_port/stationary/fire_control/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "east"
+	airlock_exit = "control"
 
 /obj/docking_port/stationary/fire_control/arrival
 	name = "Fire Control Arrival"
 	id=STAT_STATION_FIRE_CONTROL
 	airlock_area = /area/mackay_station/elevator/fire_control
-	airlock_exit = "east"
+	airlock_exit = "control"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/fire_control
 
 /obj/docking_port/stationary/fire_control/exit
 	name = "Fire Control Exit"
 	id=STAT_STATION_FIRE_CONTROL_EXIT
 	airlock_area = /area/mackay_station/elevator/fire_control/exit
-	airlock_exit = "east"
+	airlock_exit = "control"
 
 /obj/docking_port/mobile/hangar
 	name="Hangar Elevator"
