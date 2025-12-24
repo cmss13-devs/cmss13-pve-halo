@@ -435,7 +435,7 @@
 	area_type = /area/mackay_station/elevator/hangar
 
 	// Shuttle timings
-	callTime = 15 SECONDS
+	callTime = 30 SECONDS
 	rechargeTime = 5 SECONDS
 	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
@@ -484,7 +484,13 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/hangar))
 		var/obj/docking_port/mobile/hangar/elevator = arriving_shuttle
-		elevator.door_control.control_doors("open", airlock_exit)
+		elevator.door_control.control_doors("open", "hangar", TRUE)
+
+	// open dock doors
+	var/datum/door_controller/single/door_control = new()
+	door_control.doors = get_doors()
+	door_control.control_doors("open", "hangar", TRUE)
+	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
 	playsound(arriving_shuttle, 'sound/machines/ping.ogg', 25, 1)
@@ -499,26 +505,26 @@
 /obj/docking_port/stationary/hangar/occupied
 	name = "occupied"
 	id = STAT_STATION_OCCUPIED
-	airlock_exit = "north"
+	airlock_exit = "hangar"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/hangar
 
 /obj/docking_port/stationary/hangar/empty
 	name = "empty"
 	id = STAT_STATION_EMPTY
-	airlock_exit = "north"
+	airlock_exit = "hangar"
 
 /obj/docking_port/stationary/hangar/arrival
 	name = "Hangar Arrival"
 	id=STAT_STATION_HANGAR
 	airlock_area = /area/mackay_station/elevator/hangar
-	airlock_exit = "north"
+	airlock_exit = "hangar"
 	roundstart_template = /datum/map_template/shuttle/mackay_station/hangar
 
 /obj/docking_port/stationary/hangar/exit
 	name = "Hangar Exit"
 	id=STAT_STATION_HANGAR_EXIT
 	airlock_area = /area/mackay_station/elevator/hangar/exit
-	airlock_exit = "south"
+	airlock_exit = "hangar"
 
 /datum/map_template/shuttle/mackay_station/golf/post_load(obj/docking_port/mobile/M)
 	. = ..()

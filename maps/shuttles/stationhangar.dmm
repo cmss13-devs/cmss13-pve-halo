@@ -29,7 +29,7 @@
 "D" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/mackay_station/elevator/hangar)
 "E" = (/obj/structure/platform_decoration{dir = 8},/obj/structure/platform_decoration,/turf/open/shuttle/escapepod{dir = 1},/area/mackay_station/elevator/hangar)
 "F" = (/obj/structure/platform{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/mackay_station/elevator/hangar)
-"G" = (/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile{id = ""},/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/hangar)
+"G" = (/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile{id = "hangar"},/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/hangar)
 "H" = (/obj/structure/stairs{dir = 1},/turf/open/floor/almayer/plate,/area/mackay_station/elevator/hangar)
 "I" = (/obj/structure/platform{dir = 1},/turf/open/shuttle/escapepod{dir = 8},/area/mackay_station/elevator/hangar)
 "J" = (/obj/structure/platform{dir = 8},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/mackay_station/elevator/hangar)
