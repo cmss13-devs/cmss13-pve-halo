@@ -11,8 +11,8 @@
 	area_type = /area/mackay_station/elevator/tram_golf
 
 	// Shuttle timings
-	callTime = 20 SECONDS
-	rechargeTime = 10 SECONDS
+	callTime = 15 SECONDS
+	rechargeTime = 5 SECONDS
 	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
@@ -116,8 +116,8 @@
 	area_type = /area/mackay_station/elevator/tram_romeo
 
 	// Shuttle timings
-	callTime = 20 SECONDS
-	rechargeTime = 10 SECONDS
+	callTime = 15 SECONDS
+	rechargeTime = 5 SECONDS
 	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
@@ -221,8 +221,8 @@
 	area_type = /area/mackay_station/elevator/tram_bravo
 
 	// Shuttle timings
-	callTime = 20 SECONDS
-	rechargeTime = 10 SECONDS
+	callTime = 15 SECONDS
+	rechargeTime = 5 SECONDS
 	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
@@ -326,8 +326,8 @@
 	area_type = /area/mackay_station/elevator/fire_control
 
 	// Shuttle timings
-	callTime = 20 SECONDS
-	rechargeTime = 10 SECONDS
+	callTime = 15 SECONDS
+	rechargeTime = 5 SECONDS
 	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
@@ -431,8 +431,8 @@
 	area_type = /area/mackay_station/elevator/hangar
 
 	// Shuttle timings
-	callTime = 20 SECONDS
-	rechargeTime = 10 SECONDS
+	callTime = 15 SECONDS
+	rechargeTime = 5 SECONDS
 	ignitionTime = 5 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
