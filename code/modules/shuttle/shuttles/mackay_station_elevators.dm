@@ -65,8 +65,8 @@
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", FALSE, TRUE)
-	door_control.control_doors("open", FALSE, TRUE)
+	door_control.control_doors("unlock", "golf", TRUE)
+	door_control.control_doors("open", "golf", TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -129,7 +129,7 @@
 /obj/docking_port/mobile/station_tram_romeo/Initialize(mapload, ...)
 	. = ..()
 	door_control = new()
-	door_control.label = "Tram"
+	door_control.label = "elevator"
 	for(var/area/shuttle_area in shuttle_areas)
 		for(var/obj/structure/machinery/door/door in shuttle_area)
 			if(istype(door, /obj/structure/machinery/door/poddoor/filler_object)) //poddoor filler was sneaking in
@@ -170,8 +170,8 @@
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", FALSE, TRUE)
-	door_control.control_doors("open", FALSE, TRUE)
+	door_control.control_doors("unlock", "romeo", TRUE)
+	door_control.control_doors("open", "romeo", TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -234,7 +234,7 @@
 /obj/docking_port/mobile/station_tram_bravo/Initialize(mapload, ...)
 	. = ..()
 	door_control = new()
-	door_control.label = "Tram"
+	door_control.label = "elevator"
 	for(var/area/shuttle_area in shuttle_areas)
 		for(var/obj/structure/machinery/door/door in shuttle_area)
 			if(istype(door, /obj/structure/machinery/door/poddoor/filler_object)) //poddoor filler was sneaking in
@@ -275,8 +275,8 @@
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", FALSE, TRUE)
-	door_control.control_doors("open", FALSE, TRUE)
+	door_control.control_doors("unlock", "bravo", TRUE)
+	door_control.control_doors("open", "bravo", TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -339,7 +339,7 @@
 /obj/docking_port/mobile/fire_control/Initialize(mapload, ...)
 	. = ..()
 	door_control = new()
-	door_control.label = "Tram"
+	door_control.label = "elevator"
 	for(var/area/shuttle_area in shuttle_areas)
 		for(var/obj/structure/machinery/door/door in shuttle_area)
 			if(istype(door, /obj/structure/machinery/door/poddoor/filler_object)) //poddoor filler was sneaking in
@@ -380,8 +380,8 @@
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", FALSE, TRUE)
-	door_control.control_doors("open", FALSE, TRUE)
+	door_control.control_doors("unlock", "control", TRUE)
+	door_control.control_doors("open", "control", TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -444,7 +444,7 @@
 /obj/docking_port/mobile/hangar/Initialize(mapload, ...)
 	. = ..()
 	door_control = new()
-	door_control.label = "Tram"
+	door_control.label = "elevator"
 	for(var/area/shuttle_area in shuttle_areas)
 		for(var/obj/structure/machinery/door/door in shuttle_area)
 			if(istype(door, /obj/structure/machinery/door/poddoor/filler_object)) //poddoor filler was sneaking in
