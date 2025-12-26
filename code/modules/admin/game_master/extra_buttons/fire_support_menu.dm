@@ -1,8 +1,8 @@
 #define FIRE_SUPPORT_CLICK_INTERCEPT_ACTION "fire_support_click_intercept_action"
 
 //Various ordnance selections
-#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
-#define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
+#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam")
+#define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
 #define ORBITAL_ORDNANCE list("High Explosive OB", "Incendiary OB", "Cluster OB")
 #define MORTAR_ORDNANCE list("High Explosive Shell", "Incendiary Shell", "Fragmentation Shell", "Flare Shell", "Willy-Pete Shell", "Smoke Shell")
@@ -13,12 +13,14 @@
 #define FIRESUPPORT_TYPE_WRAITH_PLASMA "wraith_plasma"
 #define FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD "banshee_fuel_rod"
 #define FIRESUPPORT_TYPE_BANSHEE_STRAFE "banshee_strafe"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM "glassing_beam"
 
 ///Assoc list of firesupport types for datum based fire support
 GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_WRAITH_PLASMA = new /datum/fire_support_custom/wraith_plasma,
 	FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD = new /datum/fire_support_custom/banshee_fuel_rod,
-	FIRESUPPORT_TYPE_BANSHEE_STRAFE = new /datum/fire_support_custom/banshee_strafe
+	FIRESUPPORT_TYPE_BANSHEE_STRAFE = new /datum/fire_support_custom/banshee_strafe,
+	FIRESUPPORT_TYPE_GLASSING_BEAM = new /datum/fire_support_custom/glassing_beam
 	))
 
 /client/proc/toggle_fire_support_menu()
@@ -344,6 +346,14 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
+			if("Glassing Beam")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
 			else
 				to_chat(user, SPAN_ANNOUNCEMENT_HEADER_ADMIN("Invalid ordnance selection! If this appears, yell at a coder!"))
 				return TRUE
@@ -460,10 +470,9 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 
 /datum/fire_support_custom/wraith_plasma
 	scatter_range = 0
-	initiate_sound = 'sound/weapons/halo/wraith_plasma_whistle.ogg'
+	initiate_sound = 'sound/weapons/halo/fire_support/wraith_plasma_whistle.ogg'
 	delay_to_impact = 1.5 SECONDS
 	impact_delay = 0.9 SECONDS
-	start_visual = null
 	start_sound = null
 	start_visual = /obj/effect/temp_visual/plasma_incoming
 	warning_chat_message = "PLASMA BLAST"
@@ -482,7 +491,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 /datum/fire_support_custom/banshee_fuel_rod
 	scatter_range = 0
 	start_visual = /obj/effect/temp_visual/banshee_flyby
-	start_sound = 'sound/weapons/halo/banshee_flyby.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
 	warning_chat_message = "BANSHEE"
 	delay_to_impact = 2 SECONDS
 	var/radius = 1
@@ -502,8 +511,8 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	delay_to_impact = 0.4 SECONDS
 	impact_delay = 0.05 SECONDS
 	start_visual = /obj/effect/temp_visual/banshee_flyby
-	initiate_sound = 'sound/weapons/halo/banshee_strafe.ogg'
-	start_sound = 'sound/weapons/halo/banshee_flyby.ogg'
+	initiate_sound = 'sound/weapons/halo/fire_support/banshee_strafe.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
 	warning_chat_message = "BANSHEE"
 
 /datum/fire_support_custom/banshee_strafe/do_impact(turf/target_turf)
@@ -511,8 +520,8 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	for(var/target in target_turf)
 		if(isliving(target))
 			var/mob/living/living_target = target
-			living_target.adjustFireLoss(80)
-			living_target.adjust_fire_stacks(20)
+			living_target.adjustFireLoss(60)
+			living_target.adjust_fire_stacks(10)
 			living_target.IgniteMob()
 		else if(isVehicleMultitile(target))
 			var/obj/vehicle/multitile/vic = target
@@ -525,6 +534,53 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 			if(!(obj_target.indestructible))
 				obj_target.update_health(50)
 	target_turf.ex_act(EXPLOSION_THRESHOLD_VLOW)
+
+/datum/fire_support_custom/glassing_beam
+	scatter_range = 0
+	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/glassing_beam.ogg'
+	delay_to_impact = 30 SECONDS
+	impact_delay = 1.7 SECONDS
+	warning_chat_message = "COVENANT CRUISER"
+	var/clear_power = 1200
+	var/clear_falloff = 400
+	var/standard_power = 600
+	var/standard_falloff = 30
+	var/distance = 18
+	var/fire_level = 70
+	var/burn_level = 80
+	var/fire_color = LIGHT_COLOR_RED
+	var/fire_type = "white"
+
+/datum/fire_support_custom/glassing_beam/do_impact(turf/target_turf)
+	new /obj/effect/temp_visual/glassing_beam(target_turf)
+	var/datum/cause_data/cause_data = create_cause_data("Glassing Beam")
+	cell_explosion(target_turf, clear_power, clear_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data) //break shit around
+	cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
+	handle_shake(target_turf, 15, 3, 3)
+	fire_spread(target_turf, cause_data, distance, fire_level, burn_level, fire_color, fire_type, TURF_PROTECTION_OB)
+	return
+
+/datum/fire_support_custom/proc/handle_shake(turf/epicenter, max_shake_factor, shake_frequency, max_knockdown_time)
+	var/radius_size = 30
+
+	for(var/mob/living/user in urange(radius_size, epicenter))
+
+		var/distance = get_accurate_dist(get_turf(user), epicenter)
+		var/distance_percent = ((radius_size - distance) / radius_size)
+		var/total_shake_factor = abs(max_shake_factor * distance_percent)
+
+		// it's of type cluster.
+		if(!max_knockdown_time)
+			shake_camera(user, 0.5, total_shake_factor, shake_frequency)
+			continue
+
+		shake_camera(user, 3, total_shake_factor, shake_frequency)
+		user.KnockDown(rand(max_knockdown_time * distance_percent, (max_knockdown_time * distance_percent + 1)))
+
+		if(HAS_TRAIT(user, TRAIT_FLOORED))
+			continue
+		to_chat(user, SPAN_WARNING("You are thrown off balance and fall to the ground!"))
 
 #undef ORDNANCE_OPTIONS
 #undef COVENANT_ORDNANCE

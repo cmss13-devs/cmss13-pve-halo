@@ -179,6 +179,17 @@
 	gradient = list("#FFFFFF", "#5dbf67ff", "#328a30ff")
 	velocity = generator(GEN_CIRCLE, 35, 25, NORMAL_RAND)
 
+/particles/plasma_explosion/glassing
+	width = 850
+	height = 850
+	count = 500
+	spawning = 45
+	fade = generator(GEN_NUM, 25, 55)
+	position = list(0, -218)
+	scale = generator(GEN_NUM, 2, 3)
+	gradient = list("#FFFFFF", "#e67d71ff", "#470d0dff")
+	velocity = generator(GEN_CIRCLE, 85, 75, NORMAL_RAND)
+
 /obj/effect/temp_visual/plasma_incoming
 	icon = null
 	duration = 3 SECONDS
@@ -240,3 +251,29 @@
 /obj/effect/temp_visual/banshee_flyby/Initialize()
 	. = ..()
 	animate(src, pixel_z = 960, time = 2 SECONDS)
+
+/obj/effect/temp_visual/glassing_beam
+	icon = 'icons/halo/effects/glassing.dmi'
+	icon_state = "beam"
+	pixel_x = -50
+	duration = 8.5 SECONDS
+	light_on = TRUE
+	light_power = 25
+	light_range = 50
+	light_color = "#e67d71ff"
+	layer = ABOVE_FLY_LAYER
+	indestructible = TRUE
+	var/outline_color = "#c50909ff"
+	var/particles_used = /particles/plasma_explosion/glassing
+
+/obj/effect/temp_visual/glassing_beam/Initialize(mapload)
+	. = ..()
+	particles = new particles_used
+	add_filter("pixel_outline", 1, outline_filter(1, outline_color, OUTLINE_SHARP))
+	add_filter("glow", 2, drop_shadow_filter(0, 0, 3, 1, outline_color))
+	addtimer(CALLBACK(src, PROC_REF(beam_off)), 7.5 SECONDS)
+
+/obj/effect/temp_visual/glassing_beam/proc/beam_off()
+	particles.count = 0
+	icon_state = "off"
+	light_on = FALSE
