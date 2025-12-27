@@ -84,3 +84,6 @@ endmap
 
 map halo_new_irvine
 endmap
+
+map mackay_station
+endmap
