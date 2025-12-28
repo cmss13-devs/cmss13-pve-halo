@@ -2111,6 +2111,7 @@
 #include "code\modules\mob\living\carbon\human\species\species.dm"
 #include "code\modules\mob\living\carbon\human\species\synthetic.dm"
 #include "code\modules\mob\living\carbon\human\species\zombie.dm"
+#include "code\modules\mob\living\carbon\human\species\halo\ruuhtian\ruuhtian.dm"
 #include "code\modules\mob\living\carbon\human\species\halo\sangheili\sangheili.dm"
 #include "code\modules\mob\living\carbon\human\species\halo\unggoy\unggoy.dm"
 #include "code\modules\mob\living\carbon\human\species\working_joe\_emote.dm"
