@@ -274,3 +274,15 @@
 
 	syllables = list("wrab","gub","zub","graf","wraf","grub","wr","af","ah","wa","snr","ne","uh")
 	space_chance = 40
+
+/datum/language/ruuhtian
+	name = LANGUAGE_RUUHTIAN
+	desc = "Kig-Yar language."
+	speech_verb = "snarls"
+	ask_verb = "questions"
+	exclaim_verb = "screeches"
+	color "ruuhtian"
+	key "r"
+
+	syllables = list("hiss","hss","hs","squawk","squk","sqraww","skree","grr","gr","grah","grahh","gruh","k")
+	space_chance = 30

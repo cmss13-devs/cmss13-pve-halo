@@ -67,15 +67,15 @@
 				limb.max_damage = 35
 		limb.time_to_knit = -1
 
-/datum/species/unggoy/handle_post_spawn(mob/living/carbon/human/unggoy)
-	GLOB.alive_human_list -= unggoy
+/datum/species/ruuhtian/handle_post_spawn(mob/living/carbon/human/ruuhtian)
+	GLOB.alive_human_list -= ruuhtian
 
-	unggoy.blood_type = "S*"
-	unggoy.h_style = "Bald"
+	ruuhtian.blood_type = "K*"
+	ruuhtian.h_style = "Bald"
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
-	GLOB.unggoy_mob_list += unggoy
+	GLOB.kigyar_mob_list += ruuhtian
 	#endif
-	for(var/obj/limb/limb in unggoy.limbs)
+	for(var/obj/limb/limb in ruuhtian.limbs)
 		switch(limb.name)
 			if("groin","chest")
 				limb.min_broken_damage = 100
@@ -90,6 +90,6 @@
 				limb.min_broken_damage = 150
 				limb.max_damage = 150 // 1 minute to self heal bone break, time is in tenths of a second
 
-	unggoy.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY))
+	ruuhtian.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_RUUHTIAN))
 	return ..()
 
