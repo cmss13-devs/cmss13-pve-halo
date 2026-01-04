@@ -2044,16 +2044,16 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/ma5c{
 	pixel_x = 4;
-	pixel_y = 9
+	pixel_y = 12
 	},
 /obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_x = 0;
-	pixel_y = 18
+	pixel_y = 23
 	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 1
 	},
+/obj/item/ammo_box/magazine/unsc/ma5c,
 /turf/open/floor/almayer/plating_striped,
 /area/dark_was_the_night/armory)
 "eN" = (
@@ -3578,15 +3578,15 @@
 /area/dark_was_the_night/cryo_bay/one)
 "iy" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/item/storage/box/medical_packet{
+/obj/item/storage/box/tear_packet/medical_packet{
 	pixel_x = -1;
 	pixel_y = 10
 	},
-/obj/item/storage/box/medical_packet{
+/obj/item/storage/box/tear_packet/medical_packet{
 	pixel_x = 0;
 	pixel_y = 1
 	},
-/obj/item/storage/box/medical_packet{
+/obj/item/storage/box/tear_packet/medical_packet{
 	pixel_x = 1;
 	pixel_y = 8
 	},
@@ -4731,7 +4731,9 @@
 	pixel_x = 6;
 	pixel_y = 19
 	},
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded,
+/obj/item/ammo_box/magazine/unsc/br55{
+	pixel_y = 4
+	},
 /turf/open/floor/almayer/plating_striped,
 /area/dark_was_the_night/armory)
 "mM" = (
@@ -6400,13 +6402,15 @@
 	pixel_x = 2;
 	pixel_y = 9
 	},
-/obj/item/ammo_box/magazine/unsc/small/m6g,
+/obj/item/ammo_box/magazine/unsc/small/m6g{
+	pixel_x = 4
+	},
 /obj/item/ammo_box/magazine/unsc/small/m6c{
 	pixel_x = 2;
 	pixel_y = 18
 	},
 /obj/item/ammo_box/magazine/unsc/small/m6g{
-	pixel_x = 0;
+	pixel_x = 5;
 	pixel_y = 9
 	},
 /turf/open/floor/almayer/plating_striped,
@@ -12727,17 +12731,18 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -6;
-	pixel_y = 6
+	pixel_y = 16
 	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = 4;
-	pixel_y = 12;
+	pixel_y = 22;
 	layer = 3
 	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
 	pixel_x = 11;
-	pixel_y = 3
+	pixel_y = 12
 	},
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded,
 /turf/open/floor/almayer/plating_striped,
 /area/dark_was_the_night/armory)
 "XB" = (

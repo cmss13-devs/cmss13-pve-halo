@@ -66,9 +66,19 @@
 	icon_state = "spec_spawn_delta"
 	squad = SQUAD_MARINE_4
 
+/obj/effect/landmark/start/marine/spec/odst
+	name = JOB_SQUAD_SPECIALIST_ODST
+	squad = SQUAD_ODST
+	job = /datum/job/marine/specialist/ai/odst
+
 /datum/job/marine/specialist/ai
 	total_positions = 2
 	spawn_positions = 2
+
+/datum/job/marine/specialist/ai/odst
+	title = JOB_SQUAD_SPECIALIST_ODST
+	gear_preset = /datum/equipment_preset/unsc/spec/odst
+	gear_preset_secondary = /datum/equipment_preset/unsc/spec/odst/lesser_rank
 
 /datum/job/marine/specialist/ai/set_spawn_positions(count)
 	return spawn_positions

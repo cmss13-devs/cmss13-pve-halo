@@ -1214,9 +1214,11 @@
 
 //===========================//CUSTOM ARMOR COSMETIC PLATES\\================================\\
 
+//===========================//CUSTOM ARMOR COSMETIC PLATES\\================================\\
+
 /obj/item/clothing/accessory/pads
 	name = "\improper M52B Shoulder Pads"
-	desc = "A set shoulder pads attachable to the M3 armor set worn by the USCM."
+	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC."
 	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "pads"
 	item_state = "pads"
@@ -1238,6 +1240,12 @@
 	slot = ACCESSORY_SLOT_DECORBRACER
 	flags_atom = NO_SNOW_TYPE
 
+/obj/item/clothing/accessory/pads/bracers/police
+	name = "\improper Police Shoulder Bracers"
+	desc = "A set arm bracers worn in conjunction to an armoured vest, commonly issued to Police forces."
+	icon_state = "bracers_police"
+	item_state = "bracers_police"
+
 /obj/item/clothing/accessory/pads/neckguard
 	name = "\improper M52B Neck Guard"
 	desc = "An attachable neck guard option for the M52B body armor worn by the UNSC."
@@ -1245,6 +1253,12 @@
 	item_state = "neckguard"
 	slot = ACCESSORY_SLOT_DECORNECK
 	flags_atom = NO_SNOW_TYPE
+
+/obj/item/clothing/accessory/pads/neckguard/police
+	name = "\improper Police Neck Guard"
+	desc = "An attachable neck guard option for basic ballistic vests, commonly issued to the Police."
+	icon_state = "neckguard_police"
+	item_state = "neckguard_police"
 
 /obj/item/clothing/accessory/pads/greaves
 	name = "\improper M52B Shin Guards"
@@ -1256,11 +1270,61 @@
 
 /obj/item/clothing/accessory/pads/groin
 	name = "\improper M52B Groin Plate"
-	desc = "A plate designed to attach to M52B body armor to protect the babymakers of the Corps. Standardized protection of the UNSC often seen worn than not."
+	desc = "A plate designed to attach to M52B body armor to protect the babymakers of the Corps. Standardized protection of the UNSC often seen worn more often than not."
 	icon_state = "groinplate"
 	item_state = "groinplate"
 	slot = ACCESSORY_SLOT_DECORGROIN
 	flags_atom = NO_SNOW_TYPE
+
+/obj/item/clothing/accessory/pads/groin/police
+	name = "\improper Police Groin Plate"
+	desc = "A plate designed to attach to an armoured Vest to protect the babymakers. Most commonly attached to Police Vests."
+	icon_state = "groinplate_police"
+	item_state = "groinplate_police"
+
+/obj/item/clothing/accessory/pads/insurrection
+	icon_state = "pads_insurgent"
+	item_state = "pads_insurgent"
+
+/obj/item/clothing/accessory/pads/bracers/insurrection
+	icon_state = "bracers_insurgent"
+	item_state = "bracers_insurgent"
+
+/obj/item/clothing/accessory/pads/neckguard/insurrection
+	icon_state = "neckguard_insurgent"
+	item_state = "neckguard_insurgent"
+
+/obj/item/clothing/accessory/pads/greaves/insurrection
+	icon_state = "shinguards_insurgent"
+	item_state = "shinguards_insurgent"
+
+/obj/item/clothing/accessory/pads/groin/insurrection
+	icon_state = "groinplate_insurgent"
+	item_state = "groinplate_insurgent"
+
+/obj/item/clothing/accessory/pads/odst
+	name = "\improper M70DT Shoulder Pads"
+	desc = "A set shoulder pads attachable to the M70DT armor set worn by the ODSTs."
+	icon_state = "odst_pads"
+	item_state = "odst_pads"
+
+/obj/item/clothing/accessory/pads/bracers/odst
+	name = "\improper M70DT Bracers"
+	desc = "A set arm bracers worn in conjunction to the M70DT body armor of the ODSTs."
+	icon_state = "odst_bracers"
+	item_state = "odst_bracers"
+
+/obj/item/clothing/accessory/pads/greaves/odst
+	name = "\improper M70DT Greaves"
+	desc = "A set greaves designed to be worn in conjuction with M70DT body armor."
+	icon_state = "odst_shinguards"
+	item_state = "odst_shinguards"
+
+/obj/item/clothing/accessory/pads/groin/odst
+	name = "\improper M70DT Groin Plate"
+	desc = "A plate designed to attach to M70DT body armor to protect the babymakers of the Corps. Standardized protection of the ODSTs often seen worn more often than not."
+	icon_state = "odst_groinplate"
+	item_state = "odst_groinplate"
 
 //===========================//UPP CUSTOM ARMOR PLATES\\================================\\
 
@@ -1351,9 +1415,15 @@
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag
 
 /obj/item/storage/internal/accessory/webbing/m3mag
+	storage_slots = 5
 	can_hold = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/device/flashlight/flare,
 		/obj/item/ammo_magazine/rifle,
-		/obj/item/ammo_magazine/smg/m39,
+		/obj/item/ammo_magazine/smg,
+		/obj/item/ammo_magazine/pistol,
+		/obj/item/ammo_magazine/revolver,
+		/obj/item/ammo_magazine/sniper,
 	)
 
 //Partial Pre-load For Props
@@ -1362,6 +1432,8 @@
 	hold = /obj/item/storage/internal/accessory/webbing/m3mag/ma5c
 
 /obj/item/storage/internal/accessory/webbing/m3mag/ma5c/fill_preset_inventory()
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)

@@ -558,7 +558,7 @@
 	icon_state = "marinebelt"
 	item_state = "marinebelt"
 	w_class = SIZE_LARGE
-	storage_slots = 5
+	storage_slots = 10
 	max_w_class = SIZE_MEDIUM
 	max_storage_space = 20
 	can_hold = list(
