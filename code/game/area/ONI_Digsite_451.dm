@@ -18,7 +18,7 @@
 	powernet_name = "Sub Level 2 North"
 
 /area/oni_digsite/sub_level_2/cavern
-	name = "\improper Sub Level 2 North"
+	name = "\improper Sub Level 2 Cavern"
 	icon_state = "green"
 	minimap_color = MINIMAP_AREA_CAVES
 
@@ -99,10 +99,10 @@
 	requires_power = FALSE
 
 /area/oni_digsite/elevator/digsite_elevator
-	name = "\improper Fire Control Elevator"
+	name = "\improper Digsite Elevator"
 
 /area/oni_digsite/elevator/digsite_elevator/entry
-	name = "\improper Fire Control Elevator Entry"
+	name = "\improper Digsite Elevator Entry"
 
 /area/oni_digsite/elevator/digsite_elevator/exit
-	name = "\improper Fire Control Elevator Exit"
+	name = "\improper Digsite Elevator Exit"

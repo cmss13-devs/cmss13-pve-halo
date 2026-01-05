@@ -1,5 +1,5 @@
 /obj/docking_port/mobile/digsite_elevator
-	name="Digsite_Elevator"
+	name="Digsite Elevator"
 	id=MOBILE_DIGSITE_ELEVATOR
 
 	// Map information
@@ -41,12 +41,12 @@
 
 /obj/docking_port/stationary/digsite_elevator
 	dir=NORTH
-	width=6
-	height=4
+	width=8
+	height=6
 	// shutters to clear the area
 	var/airlock_area
 	var/airlock_exit
-	var/elevator_network = "tram_golf"
+	var/elevator_network = "digsite"
 
 /obj/docking_port/stationary/digsite_elevator/proc/get_doors()
 	. = list()
@@ -84,7 +84,7 @@
 	name = "occupied"
 	id = STAT_DIGSITE_OCCUPIED
 	airlock_exit = "digsite"
-	roundstart_template = /datum/map_template/shuttle/mackay_station/golf
+	roundstart_template = /datum/map_template/shuttle/oni_digsite_451/digsite_elevator
 
 /obj/docking_port/stationary/digsite_elevator/empty
 	name = "empty"
@@ -94,14 +94,14 @@
 /obj/docking_port/stationary/digsite_elevator/arrival
 	name = "Digsite Entry"
 	id=STAT_DIGSITE_ELEVATOR
-	airlock_area = /area/oni_digsite/elevator/digsite_elevator
+	airlock_area = /area/oni_digsite/elevator/digsite_elevator/entry
 	airlock_exit = "digsite"
-	roundstart_template = /datum/map_template/shuttle/mackay_station/golf
+	roundstart_template = /datum/map_template/shuttle/oni_digsite_451/digsite_elevator
 
 /obj/docking_port/stationary/digsite_elevator/exit
 	name = "Digsite Exit"
 	id=STAT_DIGSITE_ELEVATOR_EXIT
-	airlock_area = /area/mackay_station/elevator/digsite_elevator/exit
+	airlock_area = /area/oni_digsite/elevator/digsite_elevator/exit
 	airlock_exit = "digsite"
 
 /datum/map_template/shuttle/oni_digsite_451/digsite_elevator/post_load(obj/docking_port/mobile/M)
@@ -136,7 +136,7 @@
 /obj/structure/machinery/computer/shuttle/elevator_controller/digsite_elevator/elevator_call/get_landing_zones()
 	return list(SSshuttle.getDock(dockId))
 
-/obj/structure/machinery/computer/shuttle/elevator_controller/digsite_elevator/elevator_call/sdigsite_elevator/occupied
+/obj/structure/machinery/computer/shuttle/elevator_controller/digsite_elevator/elevator_call/digsite_elevator/occupied
 	dockId = STAT_DIGSITE_OCCUPIED
 
 /obj/structure/machinery/computer/shuttle/elevator_controller/digsite_elevator/elevator_call/digsite_elevator/empty
