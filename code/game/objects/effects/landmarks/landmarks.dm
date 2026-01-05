@@ -584,3 +584,8 @@
 /// Marks the bottom left of the tutorial zone.
 /obj/effect/landmark/tutorial_bottom_left
 	name = "tutorial bottom left"
+
+/obj/effect/landmark/droppod
+	name = "Droppod LZ Point"
+	invisibility_value = SEE_INVISIBLE_OBSERVER
+	icon_state = "o_green"
