@@ -9,8 +9,9 @@
 	harmful = TRUE
 	//antigrief_protection = FALSE
 	arm_sound = 'sound/weapons/halo/firebomb_throw.ogg'
-	explosion_power = 150
-	shrapnel_count = 16
+	explosion_power = 125
+	explosion_falloff = 20
+	shrapnel_count = 32
 	shrapnel_type = /datum/ammo/bullet/shrapnel/incendiary/heavy
 	dual_purpose = FALSE
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL_HALF
@@ -18,6 +19,7 @@
 	var/list/atoms_it_can_stick_to = list(/obj/vehicle, /mob/living, /obj/structure/machinery/defenses)
 	var/attached = FALSE
 	var/attached_icon = "stuck_plasma"
+	var/time_triggered
 
 /obj/item/explosive/grenade/high_explosive/plasma/New()
 	hiss_loop = new(src)
@@ -30,6 +32,7 @@
 /obj/item/explosive/grenade/high_explosive/plasma/activate()
 	..()
 	if(active)
+		time_triggered = world.time
 		hiss_loop.start()
 
 /obj/item/explosive/grenade/high_explosive/plasma/prime(mob/living/user)
@@ -42,7 +45,9 @@
 			if(!check_for_obstacles_projectile(get_turf(src), get_turf(target_living), GLOB.ammo_list[/datum/ammo/bullet/shrapnel/incendiary/heavy]))
 				var/datum/reagent/napalm/blue/reagent = new()
 				target_living.TryIgniteMob(5, reagent)
-
+		if(shrapnel_count)
+			create_shrapnel(loc, shrapnel_count, , ,shrapnel_type, cause_data)
+		apply_explosion_overlay()
 		empulse(src, 1, 2) // mini EMP
 		qdel(src)
 
@@ -72,7 +77,7 @@
 	mid_length = 1 SECONDS
 
 /datum/component/status_effect/plasma_stuck
-	dupe_mode = COMPONENT_DUPE_UNIQUE
+	dupe_mode = COMPONENT_DUPE_ALLOWED
 	var/obj/item/explosive/grenade/high_explosive/plasma/origin_nade
 	var/zone
 	var/stage = 0
@@ -81,6 +86,7 @@
 	var/x_offset
 	var/mutable_appearance/attached_icon_em
 	var/image/attached_icon
+	var/time_triggered
 
 /datum/component/status_effect/plasma_stuck/Initialize(origin_nade, zone)
 	. = ..()
@@ -112,7 +118,24 @@
 	src.origin_nade.attached = TRUE
 	src.origin_nade.forceMove(parent_atom)
 	src.origin_nade.set_light_on(TRUE)
+	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
+	RegisterSignal(parent_atom, list(
+	COMSIG_LIVING_REJUVENATED,
+	), PROC_REF(unstuck))
 	START_PROCESSING(SSdcs, src)
+
+/datum/component/status_effect/plasma_stuck/proc/unstuck(delete_nade = TRUE)
+	var/atom/movable/parent_atom = parent
+	if(delete_nade)
+		qdel(src.origin_nade)
+	else
+		src.origin_nade.forceMove(parent_atom.loc)
+		src.origin_nade.attached = FALSE
+		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
+		src.origin_nade.throw_atom(get_random_turf_in_range_unblocked(parent_atom, 3, 2), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, 1, HIGH_LAUNCH)
+	parent_atom.overlays -= attached_icon
+	parent_atom.overlays -= attached_icon_em
+	qdel(src)
 
 /datum/component/status_effect/plasma_stuck/proc/update_vehicle_icon()
 	var/atom/movable/parent_atom = parent
@@ -176,6 +199,7 @@
 /datum/component/status_effect/plasma_stuck/process(delta_time)
 	var/atom/parent_atom = parent
 	time_running += delta_time
+
 	if(ishuman(parent_atom))
 		var/mob/living/carbon/human/stuck_human = parent_atom
 		stuck_human.apply_damage(10*(delta_time/5), BURN, zone)
@@ -203,7 +227,7 @@
 				mob.interior_crash_effect()
 		stage = 1
 
-	if(time_running >= 1 SECONDS && stage == 1)
+	if(time_running >= 1.5 SECONDS && stage == 1)
 		animation_flash_color(parent_atom, COLOR_BLUE)
 		if(ishuman(parent_atom))
 			var/mob/living/carbon/human/stuck_human = parent_atom
@@ -220,9 +244,10 @@
 				new /obj/flamer_fire(target, create_cause_data("Plasma Nade Cookoff"), reagent, 1)
 				mob.interior_crash_effect()
 		stage = 2
-	if(time_running >= 1.5 SECONDS && stage == 2)
+	if(time_running >= 3 SECONDS && stage == 2)
 		animation_flash_color(parent_atom, COLOR_STRONG_VIOLET)
 		if(ishuman(parent_atom))
+			to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
 			var/mob/living/carbon/human/stuck_human = parent_atom
 			stuck_human.apply_damage(15, BURN, zone)
 			var/obj/limb/stuck_limb = stuck_human.get_limb(zone)
@@ -242,7 +267,6 @@
 				mob.ex_act(300)
 			else
 		stage = 3
-		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
 		origin_nade.hiss_loop.stop()
 		qdel(origin_nade)
 		qdel(src)
