@@ -1,10 +1,10 @@
 /obj/item/explosive/grenade/high_explosive/plasma
 	name = "\improper Anskum-pattern plasma grenade"
 	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
-	desc = "The M47 HSDP is a small, but powerful smoke grenade. Based off the same platform as the M40 HEDP. Can be fired from a PN 30mm UGL for impact detonation, or primed in-hand and thrown to detonate after 2 seconds."
+	desc = "Also referred to as a 'Firebomb', 'Holy Light' and 'Flare', the Anskum-Pattern is the standard issue hand tossed explosive given to Covenant troops. A brutally effective weapon using 'smart-matter' technology, the grenade will adhere to any living target, or vehicle, but may not against structures. A common tool of martyrs."
 	icon_state = "plasma"
 	item_state = "plasma"
-	det_time = 30
+	det_time = 40
 	underslug_launchable = FALSE
 	harmful = TRUE
 	//antigrief_protection = FALSE
@@ -126,13 +126,14 @@
 	RegisterSignal(parent_atom, list(
 	COMSIG_LIVING_REJUVENATED,
 	), PROC_REF(unstuck))
-	START_PROCESSING(SSdcs, src)
+	START_PROCESSING(SSfastobj, src)
 
 /datum/component/status_effect/plasma_stuck/proc/unstuck(delete_nade = TRUE)
 	var/atom/movable/parent_atom = parent
 	if(delete_nade)
 		qdel(src.origin_nade)
 	else
+		to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
 		src.origin_nade.forceMove(parent_atom.loc)
 		src.origin_nade.attached = FALSE
 		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
