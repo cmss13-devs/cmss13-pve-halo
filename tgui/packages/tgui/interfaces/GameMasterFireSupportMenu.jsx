@@ -47,6 +47,21 @@ export const GameMasterFireSupportMenu = (props, context) => {
             ))}
           </Collapsible>
 
+          <Collapsible content="Glassing Beams">
+            {data.glassing_beam_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible>
+
           <Collapsible content="Missiles">
             {data.missile_ordnance_options.map((ordnance, i) => (
               <Button

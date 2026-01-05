@@ -1,8 +1,9 @@
 #define FIRE_SUPPORT_CLICK_INTERCEPT_ACTION "fire_support_click_intercept_action"
 
 //Various ordnance selections
-#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam")
-#define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam")
+#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak", "Glassing Weak Fast", "Glassing Weak Instant")
+#define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
+#define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak", "Glassing Weak Fast", "Glassing Weak Instant")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
 #define ORBITAL_ORDNANCE list("High Explosive OB", "Incendiary OB", "Cluster OB")
 #define MORTAR_ORDNANCE list("High Explosive Shell", "Incendiary Shell", "Fragmentation Shell", "Flare Shell", "Willy-Pete Shell", "Smoke Shell")
@@ -14,13 +15,19 @@
 #define FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD "banshee_fuel_rod"
 #define FIRESUPPORT_TYPE_BANSHEE_STRAFE "banshee_strafe"
 #define FIRESUPPORT_TYPE_GLASSING_BEAM "glassing_beam"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM_FAST "glassing_beam_fast"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
 
 ///Assoc list of firesupport types for datum based fire support
 GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_WRAITH_PLASMA = new /datum/fire_support_custom/wraith_plasma,
 	FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD = new /datum/fire_support_custom/banshee_fuel_rod,
 	FIRESUPPORT_TYPE_BANSHEE_STRAFE = new /datum/fire_support_custom/banshee_strafe,
-	FIRESUPPORT_TYPE_GLASSING_BEAM = new /datum/fire_support_custom/glassing_beam
+	FIRESUPPORT_TYPE_GLASSING_BEAM = new /datum/fire_support_custom/glassing_beam,
+	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support_custom/glassing_beam/fast,
+	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support_custom/glassing_beam/weak,
+	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support_custom/glassing_beam/weak/instant,
 	))
 
 /client/proc/toggle_fire_support_menu()
@@ -69,6 +76,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	data["ordnance_options"] = ORDNANCE_OPTIONS
 
 	data["covenant_ordnance_options"] = COVENANT_ORDNANCE
+	data["glassing_beam_options"] = GLASSING_BEAMS
 	data["missile_ordnance_options"] = MISSILE_ORDNANCE
 	data["orbital_ordnance_options"] = ORBITAL_ORDNANCE
 	data["mortar_ordnance_options"] = MORTAR_ORDNANCE
@@ -353,7 +361,29 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
+			if("Glassing Fast")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM_FAST]
+				selected_mode.initiate_fire_support(target_turf)
 
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("Glassing Weak Fast")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("Glassing Weak Instant")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
 			else
 				to_chat(user, SPAN_ANNOUNCEMENT_HEADER_ADMIN("Invalid ordnance selection! If this appears, yell at a coder!"))
 				return TRUE
@@ -388,6 +418,8 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	var/visual_impact_delay = 0.15 SECONDS
 	///Chat message when initiating fire support
 	var/warning_chat_message = "SHELL"
+	///Max range of warning message
+	var/warning_range = 15
 	///Initiating sound effect
 	var/initiate_sound = null
 	///Delay between initiation and impact
@@ -402,6 +434,8 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	var/start_sound = null
 	///sound per impact
 	var/impact_sound = null
+	///sound ranges
+	var/sound_ranges = null
 	var/datum/cause_data/cause_data
 
 ///Initiates fire support proc chain
@@ -411,14 +445,14 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	if(initiate_visual)
 		new initiate_visual(target_turf)
 	if(initiate_sound)
-		playsound(target_turf, initiate_sound, 100)
+		playsound(target_turf, initiate_sound, 100, sound_range = sound_ranges)
 
 	addtimer(CALLBACK(src, PROC_REF(early_warning), target_turf), delay_to_impact/4)
 	addtimer(CALLBACK(src, PROC_REF(late_warning), target_turf), delay_to_impact/2)
 
 /datum/fire_support_custom/proc/early_warning(turf/target_turf)
 	var/relative_dir
-	for(var/mob/mob in range(15, target_turf))
+	for(var/mob/mob in range(warning_range, target_turf))
 		if(get_turf(mob) == target_turf)
 			relative_dir = 0
 		else
@@ -430,7 +464,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 
 /datum/fire_support_custom/proc/late_warning(turf/target_turf)
 	var/relative_dir
-	for(var/mob/mob in range(10, target_turf))
+	for(var/mob/mob in range(warning_range/1.5, target_turf))
 		if(get_turf(mob) == target_turf)
 			relative_dir = 0
 		else
@@ -447,7 +481,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	if(start_visual)
 		new start_visual(target_turf)
 	if(start_sound)
-		playsound(target_turf, start_sound, 100)
+		playsound(target_turf, start_sound, 100, sound_range = sound_ranges)
 
 ///Selects the final target turf(s) and calls impact procs
 /datum/fire_support_custom/proc/select_target(turf/target_turf)
@@ -463,7 +497,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 
 /datum/fire_support_custom/proc/do_impact_effect(turf/target_turf)
 	if(impact_sound)
-		playsound(target_turf, impact_sound, 100, 1)
+		playsound(target_turf, impact_sound, 100, 1, sound_ranges)
 	if(impact_start_visual)
 		new impact_start_visual(target_turf)
 	return
@@ -541,7 +575,9 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	start_sound = 'sound/weapons/halo/fire_support/glassing_beam.ogg'
 	delay_to_impact = 30 SECONDS
 	impact_delay = 1.7 SECONDS
-	warning_chat_message = "COVENANT CRUISER"
+	warning_chat_message = "COVENANT SHIP"
+	warning_range = 30
+	sound_ranges = 85
 	var/clear_power = 1200
 	var/clear_falloff = 400
 	var/standard_power = 600
@@ -551,6 +587,23 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	var/burn_level = 80
 	var/fire_color = LIGHT_COLOR_RED
 	var/fire_type = "white"
+
+/datum/fire_support_custom/glassing_beam/fast
+	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead_fast.ogg'
+	delay_to_impact = 4 SECONDS
+
+/datum/fire_support_custom/glassing_beam/weak
+	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead_fast.ogg'
+	delay_to_impact = 4 SECONDS
+	clear_power = 300
+	clear_falloff = 100
+	standard_power = 200
+	standard_falloff = 15
+	distance = 7
+
+/datum/fire_support_custom/glassing_beam/weak/instant
+	initiate_sound = null
+	delay_to_impact = 1 SECONDS
 
 /datum/fire_support_custom/glassing_beam/do_impact(turf/target_turf)
 	new /obj/effect/temp_visual/glassing_beam(target_turf)
@@ -584,6 +637,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 
 #undef ORDNANCE_OPTIONS
 #undef COVENANT_ORDNANCE
+#undef GLASSING_BEAMS
 #undef ORBITAL_ORDNANCE
 #undef MORTAR_ORDNANCE
 #undef MISC_ORDNANCE
