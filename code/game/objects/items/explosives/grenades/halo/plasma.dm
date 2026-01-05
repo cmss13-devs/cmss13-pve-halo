@@ -15,6 +15,8 @@
 	shrapnel_type = /datum/ammo/bullet/shrapnel/incendiary/heavy
 	dual_purpose = FALSE
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL_HALF
+	light_power = 0.4
+	light_range = 1.1
 	var/datum/looping_sound/plasma_hiss/hiss_loop
 	var/list/atoms_it_can_stick_to = list(/obj/vehicle, /mob/living, /obj/structure/machinery/defenses)
 	var/attached = FALSE
@@ -34,6 +36,8 @@
 	if(active)
 		time_triggered = world.time
 		hiss_loop.start()
+		set_light_on(TRUE)
+
 
 /obj/item/explosive/grenade/high_explosive/plasma/prime(mob/living/user)
 	set waitfor = 0
@@ -132,7 +136,7 @@
 		src.origin_nade.forceMove(parent_atom.loc)
 		src.origin_nade.attached = FALSE
 		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
-		src.origin_nade.throw_atom(get_random_turf_in_range_unblocked(parent_atom, 3, 2), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, 1, HIGH_LAUNCH)
+		src.origin_nade.throw_atom(get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, 1, HIGH_LAUNCH)
 	parent_atom.overlays -= attached_icon
 	parent_atom.overlays -= attached_icon_em
 	qdel(src)
