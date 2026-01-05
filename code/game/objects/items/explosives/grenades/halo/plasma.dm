@@ -136,7 +136,7 @@
 		src.origin_nade.forceMove(parent_atom.loc)
 		src.origin_nade.attached = FALSE
 		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
-		src.origin_nade.throw_atom(get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, 1, HIGH_LAUNCH)
+		INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom,  HIGH_LAUNCH)
 	parent_atom.overlays -= attached_icon
 	parent_atom.overlays -= attached_icon_em
 	qdel(src)
