@@ -1,0 +1,21 @@
+"a" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/turf/open/floor/almayer/edge/smooth/north,/area/oni_digsite/elevator/digsite_elevator)
+"e" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth/southeast,/area/oni_digsite/elevator/digsite_elevator)
+"j" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/southwest,/area/oni_digsite/elevator/digsite_elevator)
+"m" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/oni_digsite/elevator/digsite_elevator)
+"t" = (/obj/structure/machinery/door/airlock/multi_tile/unsc,/turf/open/floor/almayer/pod_landing_floor,/area/oni_digsite/elevator/digsite_elevator)
+"x" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/northwest,/area/oni_digsite/elevator/digsite_elevator)
+"A" = (/turf/open/floor/plating/plating_catwalk,/area/oni_digsite/elevator/digsite_elevator)
+"F" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/oni_digsite/elevator/digsite_elevator)
+"G" = (/turf/closed/wall/unsc/reinforced/hull,/area/oni_digsite/elevator/digsite_elevator)
+"N" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/northeast,/area/oni_digsite/elevator/digsite_elevator)
+"O" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/oni_digsite/elevator/digsite_elevator)
+"U" = (/turf/open/floor/almayer/pod_landing_floor,/area/oni_digsite/elevator/digsite_elevator)
+
+(1,1,1) = {"
+GGGtUGGG
+GxaaaaNG
+GFAAAAmG
+GFAAAAmG
+GjOOOOeG
+GGGGGGGG
+"}

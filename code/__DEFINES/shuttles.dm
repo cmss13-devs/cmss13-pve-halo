@@ -130,6 +130,12 @@
 #define STAT_STATION_FIRE_CONTROL "station_fire_control"
 #define STAT_STATION_FIRE_CONTROL_EXIT "station_fire_control_exit"
 
+#define MOBILE_DIGSITE_ELEVATOR "digsite_elevator"
+#define STAT_DIGSITE_EMPTY "digsite_empty"
+#define STAT_DIGSITE_OCCUPIED "digsite_occupied"
+#define STAT_DIGSITE_ELEVATOR "digsite"
+#define STAT_DIGSITE_ELEVATOR_EXIT "digsite_exit"
+
 #define DROPSHIP_MIDWAY "dropship_midway"
 #define DROPSHIP_ALAMO "dropship_alamo"
 #define DROPSHIP_NORMANDY "dropship_normandy"

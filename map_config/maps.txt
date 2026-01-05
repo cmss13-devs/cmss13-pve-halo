@@ -87,3 +87,6 @@ endmap
 
 map mackay_station
 endmap
+
+map oni_digsite_451
+endmap
