@@ -1,0 +1,8 @@
+{
+    "map_name": "ONI Digsite 451",
+    "map_path": "map_files/ONI_Digsite_451",
+    "map_file": "oni_digsite_451.dmm",
+    "webmap_url": "ONIDigsite451",
+    "weather_holder": "/datum/weather_ss_map_holder/oni_digsite_451",
+    "map_item_type": "/obj/item/map/oni_digsite_451"
+}

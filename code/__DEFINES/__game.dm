@@ -44,6 +44,8 @@
 #define MAP_BMG290_OTOGI_EGRESS_POINT "BMG-290 Otogi Egress Point" //mapjam
 #define MAP_CANYON_32B "Canyon 32B"
 #define MAP_HALO_NEW_IRVINE "New Irvine"
+#define MAP_MACKAY_STATION "Mackay Station"
+#define MAP_ONI_DIGSITE_451 "ONI Digsite 451"
 
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
