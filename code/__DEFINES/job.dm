@@ -460,6 +460,26 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_ONI_SEC_LEAD "ONI Security Lead"
 
 #define ONI_JOB_LIST list(JOB_ONI_OPERATIVE, JOB_ONI_AGENT, JOB_ONI_SAGENT, JOB_ONI_SEC, JOB_ONI_SEC_MEDIC, JOB_ONI_SEC_LEAD)
+
+//----------- UNSC CREW ---------//
+#define JOB_UNSC_CREW "UNSC Crewman"
+#define JOB_UNSC_CREW_FLIGHT "UNSC Flight-Deck Technician"
+#define JOB_UNSC_CREW_FLIGHT_CHIEF "UNSC Flight-Deck Officer"
+#define JOB_UNSC_CREW_ENGI "UNSC Engineering Technician"
+#define JOB_UNSC_CREW_ENGI_CHIEF "UNSC Engineering Duty Officer"
+#define JOB_UNSC_CREW_MED "UNSC Medical Specialist"
+#define JOB_UNSC_CREW_MED_CHIEF "UNSC Medical Duty Officer"
+#define JOB_UNSC_CREW_OPS "UNSC Operations Specialist"
+#define JOB_UNSC_CREW_OPS_CHIEF "UNSC Operations Duty Officer"
+#define JOB_UNSC_CREW_RND "UNSC Science Officer"
+#define JOB_UNSC_CREW_COM "UNSC Bridge Officer"
+#define JOB_UNSC_CREW_COM_WPN "UNSC Weapons Officer"
+#define JOB_UNSC_CREW_COM_NVG "UNSC Navigations Officer"
+#define JOB_UNSC_CREW_COM_COMM "UNSC Communications Officer"
+#define JOB_UNSC_CREW_COM_XO "UNSC Executive Officer"
+#define JOB_UNSC_CREW_COM_CPT "UNSC Captain"
+
+#define UNSC_CREW_JOB_LIST list(JOB_UNSC_CREW, JOB_UNSC_CREW_FLIGHT, JOB_UNSC_CREW_FLIGHT_CHIEF, JOB_UNSC_CREW_ENGI, JOB_UNSC_CREW_ENGI_CHIEF, JOB_UNSC_CREW_MED, JOB_UNSC_CREW_MED_CHIEF, JOB_UNSC_CREW_OPS, JOB_UNSC_CREW_OPS_CHIEF, JOB_UNSC_CREW_RND, JOB_UNSC_CREW_COM, JOB_UNSC_CREW_COM_WPN, JOB_UNSC_CREW_COM_NVG, JOB_UNSC_CREW_COM_COMM, JOB_UNSC_CREW_COM_XO, JOB_UNSC_CREW_COM_CPT)
 //--------------------//
 
 #define JOB_PREDATOR "Predator"
