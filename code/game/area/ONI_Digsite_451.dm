@@ -156,6 +156,7 @@
 
 /area/oni_digsite/elevator/digsite_elevator
 	name = "\improper Digsite Elevator"
+	base_lighting_alpha = 255
 
 /area/oni_digsite/elevator/digsite_elevator/entry
 	name = "\improper Digsite Elevator Entry"
