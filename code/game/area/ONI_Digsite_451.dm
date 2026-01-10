@@ -12,10 +12,66 @@
 	icon_state = "hangar"
 	powernet_name = "Sub Level 2 South"
 
+/area/oni_digsite/sub_level_2/south/hangar
+	name = "\improper Sub Level 2 South Hangar"
+	icon_state = "hangar"
+
+/area/oni_digsite/sub_level_2/south/storage
+	name = "\improper Sub Level 2 South Storage"
+	icon_state = "hangar"
+
+/area/oni_digsite/sub_level_2/south/commons
+	name = "\improper Sub Level 2 South Commons"
+	icon_state = "hangar"
+
+/area/oni_digsite/sub_level_2/south/checkpoint_alpha
+	name = "\improper Sub Level 2 Checkpoint Alpha"
+	icon_state = "hangar"
+
+/area/oni_digsite/sub_level_2/south/checkpoint_bravo
+	name = "\improper Sub Level 2 Checkpoint Bravo"
+	icon_state = "hangar"
+
+/area/oni_digsite/sub_level_2/south/watchpoint_delta
+	name = "\improper Sub Level 2 Watchpoint Delta"
+	icon_state = "hangar"
+
 /area/oni_digsite/sub_level_2/north
 	name = "\improper Sub Level 2 North"
 	icon_state = "alpha"
 	powernet_name = "Sub Level 2 North"
+
+/area/oni_digsite/sub_level_2/north/garage
+	name = "\improper Sub Level 2 North Garage"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/checkpoint_charlie
+	name = "\improper Sub Level 2 Checkpoint Charlie"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/security
+	name = "\improper Sub Level 2 North Security"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/reception
+	name = "\improper Sub Level 2 North Reception"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/power
+	name = "\improper Sub Level 2 North Power"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/offices
+	name = "\improper Sub Level 2 North Offices"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/research
+	name = "\improper Sub Level 2 North Research"
+	icon_state = "alpha"
+
+/area/oni_digsite/sub_level_2/north/checkpoint_delta
+	name = "\improper Sub Level 2 Checkpoint Delta"
+	icon_state = "alpha"
 
 /area/oni_digsite/sub_level_2/cavern
 	name = "\improper Sub Level 2 Cavern"

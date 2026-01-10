@@ -92,14 +92,14 @@
 	airlock_exit = "digsite"
 
 /obj/docking_port/stationary/digsite_elevator/arrival
-	name = "Digsite Entry"
+	name = "Sub-Level 2"
 	id=STAT_DIGSITE_ELEVATOR
 	airlock_area = /area/oni_digsite/elevator/digsite_elevator/entry
 	airlock_exit = "digsite"
 	roundstart_template = /datum/map_template/shuttle/oni_digsite_451/digsite_elevator
 
 /obj/docking_port/stationary/digsite_elevator/exit
-	name = "Digsite Exit"
+	name = "Sub-Level 9"
 	id=STAT_DIGSITE_ELEVATOR_EXIT
 	airlock_area = /area/oni_digsite/elevator/digsite_elevator/exit
 	airlock_exit = "digsite"
