@@ -236,3 +236,8 @@
 			holder.overlays += image('icons/mob/hud/marine_hud.dmi', current_human, "[icon_prefix][marine_rk]")
 			if(border_rk)
 				holder.overlays += image('icons/mob/hud/marine_hud.dmi', current_human, "hudmarineborder[border_rk]")
+
+
+/datum/faction/unscn
+	name = "United Nations Space Command Navy"
+	faction_tag = FACTION_UNSCN

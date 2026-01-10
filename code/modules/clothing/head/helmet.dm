@@ -1958,6 +1958,12 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "insurgent"
 	item_state = "insurgent"
 
+/obj/item/clothing/head/helmet/marine/unsc/oni
+	name = "\improper ONI CH252 helmet"
+	desc = "Standard-issue helmet to the UNSC Marine Corps. Various attachment points on the helmet allow for various equipment to be fitted to the helmet. This particular variant is used by ONI Security Forces, featuring a distinct black colour scheme."
+	icon_state = "oni"
+	item_state = "oni"
+
 /obj/item/clothing/head/helmet/marine/unsc/odst
 	name = "\improper CH381 ODST helmet"
 	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."

@@ -58,3 +58,8 @@
 	name = "Insurgent Soldier (Officer)"
 	desc = "A soldier of the insurgency, a paticularly high ranking one at that. They are equipped with an MA3A rifle and M6C pistol for backup."
 	path = /datum/equipment_preset/insurgent/officer
+
+/datum/human_ai_equipment_preset/insurgent/cell_leader
+	name = "Insurgent Soldier (Cell Leader)"
+	desc = "The leader of this local insurrection cell. They are equipped with an BR55 rifle and M6G pistol for backup, alongside scavanged ODST armor."
+	path = /datum/equipment_preset/insurgent/cell_leader
