@@ -1,5 +1,5 @@
 /datum/human_ai_equipment_preset/unsc_crew
-	faction = FACTION_UNSC
+	faction = FACTION_UNSCN
 
 /datum/human_ai_equipment_preset/unsc_crew/generic
 	name = "UNSC Crewman"
@@ -11,7 +11,7 @@
 	desc = "An engineering technician assigned to a UNSC site or ship, armed with an M6C magnum pistol."
 	path = /datum/equipment_preset/unsc_crew/engi
 
-/datum/human_ai_equipment_preset/unsc_crew/engineer
+/datum/human_ai_equipment_preset/unsc_crew/engineer/officer
 	name = "UNSC Engineering Officer"
 	desc = "An engineering officer assigned to a UNSC site or ship, armed with an M6C magnum pistol."
 	path = /datum/equipment_preset/unsc_crew/engi/officer
@@ -31,7 +31,7 @@
 	desc = "An operations specialist assigned to a UNSC site or ship, armed with an M6C magnum pistol."
 	path = /datum/equipment_preset/unsc_crew/operations
 
-/datum/human_ai_equipment_preset/unsc_crew/flight/officer
+/datum/human_ai_equipment_preset/unsc_crew/operations/officer
 	name = "UNSC Operations Officer"
 	desc = "An operations officer assigned to a UNSC site or ship, armed with an M6C magnum pistol."
 	path = /datum/equipment_preset/unsc_crew/operations/officer

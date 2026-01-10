@@ -1,6 +1,6 @@
 /datum/equipment_preset/unsc_crew
 	name = "UNSC crewmen personnel"
-	faction = FACTION_UNSC
+	faction = FACTION_UNSCN
 	faction_group = FACTION_LIST_UNSC
 	languages = list(LANGUAGE_ENGLISH)
 	idtype = /obj/item/card/id/dogtag
