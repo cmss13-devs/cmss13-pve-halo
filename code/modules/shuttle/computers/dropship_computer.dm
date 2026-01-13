@@ -631,6 +631,10 @@
 	icon = 'icons/obj/structures/machinery/computer.dmi'
 	icon_state = "cameras_old"
 
+/obj/structure/machinery/computer/shuttle/dropship/flight/pelican
+	icon = 'icons/halo/obj/structures/machinery/64x64computer.dmi'
+	icon_state = "pelican_drive"
+
 /obj/structure/machinery/computer/shuttle/dropship/flight/laptop
 	name = "\improper Dropship Remote-Flight Laptop"
 	desc = "A laptop loaded with flight control software that has a customized keyboard."
