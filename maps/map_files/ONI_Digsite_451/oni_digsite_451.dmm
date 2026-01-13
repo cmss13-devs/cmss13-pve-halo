@@ -2585,7 +2585,7 @@
 "vLE" = (/obj/structure/cargo_container/unsc/main_3/c{layer = 5.1},/turf/open/floor/dark,/area/oni_digsite/sub_level_2/north/checkpoint_charlie)
 "vLW" = (/obj/structure/platform_decoration/strata/metal{dir = 1},/turf/open/floor/prison/floor_plate,/area/oni_digsite/sub_level_9/south)
 "vMJ" = (/turf/open/floor/plating/plating_catwalk,/area/oni_digsite/sub_level_2/north/checkpoint_charlie)
-"vNd" = (/turf/open/jungle/water{icon_state = "seashallow"},/area/oni_digsite/sub_level_2/cavern)
+"vNd" = (/turf/open/nostromowater{desc = "Icy cold water, it seems to have pooled into a natural divet in the cave floor."; name = "cave water"},/area/oni_digsite/sub_level_2/cavern)
 "vNx" = (/obj/structure/surface/table/almayer,/obj/item/reagent_container/food/drinks/flask{pixel_x = -6},/turf/open/floor/prison/floor_plate,/area/oni_digsite/sub_level_2/south/commons)
 "vND" = (/obj/structure/bed/chair/comfy/black,/turf/open/floor/almayer/mono,/area/oni_digsite/sub_level_2/south)
 "vPa" = (/obj/structure/machinery/door/airlock/multi_tile/unsc{name = "Security Checkpoint"},/turf/open/floor/prison/bright_clean,/area/oni_digsite/sub_level_2/north/checkpoint_delta)
