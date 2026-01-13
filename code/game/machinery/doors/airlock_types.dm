@@ -993,7 +993,6 @@
 /obj/structure/machinery/door/airlock/unsc/glass/prop
 	prop_door = TRUE
 	icon_state = "door_locked"
-
 /obj/structure/machinery/door/airlock/upp_green
 	name = "\improper Airlock"
 	icon = 'icons/obj/structures/doors/upp/uppdoor_green.dmi'
