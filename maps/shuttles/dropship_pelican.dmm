@@ -387,7 +387,6 @@
 	pixel_y = -32;
 	opacity = 0
 	},
-/obj/docking_port/mobile/marine_dropship/pelican,
 /obj/structure/roof/pelican_roof,
 /turf/open/shuttle/pelican/paneling/right,
 /area/shuttle/pelican)
