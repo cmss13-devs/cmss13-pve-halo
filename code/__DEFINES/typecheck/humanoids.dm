@@ -12,6 +12,7 @@
 #define isyautja(A) (ishuman(A) && istype(A?:species, /datum/species/yautja))
 #define issangheili(A) (ishuman(A) && istype(A?:species, /datum/species/sangheili))
 #define isunggoy(A) (ishuman(A) && istype(A?:species, /datum/species/unggoy))
+#define isruuhtian(A) (ishuman(A) && istype(A?:species, /datum/species/ruuhtian))
 #define isresearcher(A) (ishuman(A) && A.job == "Researcher")
 #define isSEA(A) (ishuman(A) && A.job == "Senior Enlisted Advisor")
 #define issynth(A) (ishuman(A) && istype(A?:species, /datum/species/synthetic))
@@ -28,6 +29,7 @@
 #define isspeciessynth(A) (A.species?.group == SPECIES_SYNTHETIC)
 #define isspeciessangheili(A) (A.species?.group == SPECIES_SANGHEILI)
 #define isspeciesunggoy(A) (A.species?.group == SPECIES_UNGGOY)
+#define isspeciesruuhtian(A) (A.species?.group == SPECIES_UNGGOY)
 
 //Size checks for carbon to use instead of typechecks. (Hellhounds are deprecated)
 #define iscarbonsizexeno(A) (A.mob_size >= MOB_SIZE_XENO_VERY_SMALL)
