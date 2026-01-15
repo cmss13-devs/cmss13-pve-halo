@@ -29,11 +29,11 @@
 	dodge_pool_regen_restoration = 0.2
 	dp_regen_base_reactivation_time = 30
 
-	icobase = 'icons/halo/mob/humans/species/unggoy/r_unggoy.dmi'
+	icobase = 'icons/halo/mob/humans/species/ruuhtian/r_ruuhtian.dmi'
 	deform = 'icons/halo/mob/humans/species/unggoy/r_unggoy.dmi'
-	eye_icon = 'icons/halo/mob/humans/species/unggoy/eyes.dmi'
-	dam_icon = 'icons/halo/mob/humans/species/unggoy/dam_unggoy.dmi'
-	blood_mask = 'icons/halo/mob/humans/species/unggoy/blood_mask.dmi'
+	eye_icon = 'icons/halo/mob/humans/species/ruuhtian/eyes.dmi'
+	dam_icon = 'icons/halo/mob/humans/species/ruuhtian/dam_ruuhtian.dmi'
+	blood_mask = 'icons/halo/mob/humans/species/ruuhtian/blood_mask.dmi'
 
 	has_organ = list(
 		"heart" = /datum/internal_organ/heart/kigyar,
@@ -93,3 +93,5 @@
 	ruuhtian.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_RUUHTIAN))
 	return ..()
 
+/datum/species/ruuhtian/get_hairstyle(style)
+	return GLOB.ruuhtian_hair_styles_list[style]

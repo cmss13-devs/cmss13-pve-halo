@@ -49,7 +49,7 @@
 	attack_sound = "swing_hit"
 
 /datum/unarmed_attack/punch/kigyar
-	attack_verb = list("scratch","claw","slice")
+	attack_verb = list("scratch","claw","slic")
 	damage = 10
 	attack_sound = 'sound/weapons/bladeslice.ogg'
 	sharp = TRUE

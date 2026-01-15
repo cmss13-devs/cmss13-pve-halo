@@ -167,5 +167,6 @@ h1.alert, h2.alert {color: #000000;}
 
 .sangheili {color: #642294;}
 .unggoy {color: #26d9dc;}
+.ruuhtian {color: #9b0000}
 
 </style>"}

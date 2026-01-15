@@ -281,8 +281,8 @@
 	speech_verb = "snarls"
 	ask_verb = "questions"
 	exclaim_verb = "screeches"
-	color "ruuhtian"
-	key "r"
+	color = "ruuhtian"
+	key = "r"
 
 	syllables = list("hiss","hss","hs","squawk","squk","sqraww","skree","grr","gr","grah","grahh","gruh","k")
 	space_chance = 30
