@@ -8,6 +8,10 @@
 
 	no_weather_turf_icon_state = "strata_clearsky"
 
+	potential_weather_events = list(
+		/datum/weather_event/snow/infinite,
+	)
+
 /datum/weather_ss_map_holder/oni_digsite_451/should_affect_area(area/A)
 	return !CEILING_IS_PROTECTED(A.ceiling, CEILING_GLASS)
 
