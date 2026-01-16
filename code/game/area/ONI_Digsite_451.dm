@@ -6,6 +6,8 @@
 
 /area/oni_digsite/sub_level_2
 	minimap_color = MINIMAP_AREA_SEC
+	ambience_exterior = AMBIENCE_ALMAYER
+	sound_environment = SOUND_ENVIRONMENT_ROOM
 
 /area/oni_digsite/sub_level_2/south
 	name = "\improper Sub Level 2 South"
@@ -76,15 +78,24 @@
 /area/oni_digsite/sub_level_2/cavern
 	name = "\improper Sub Level 2 Cavern"
 	icon_state = "green"
+	//ambience = list('sound/ambience/ambimine.ogg','sound/ambience/ambigen10.ogg','sound/ambience/ambigen12.ogg','sound/ambience/ambisin4.ogg')
+	ambience_exterior = AMBIENCE_CAVE
+	soundscape_playlist = SCAPE_PL_CAVE
+	soundscape_interval = 25
+	sound_environment = SOUND_ENVIRONMENT_AUDITORIUM
 	minimap_color = MINIMAP_AREA_CAVES
 
 /area/oni_digsite/sub_level_9
 	minimap_color = MINIMAP_AREA_SEC
+	ambience_exterior = AMBIENCE_ALMAYER
+	sound_environment = SOUND_ENVIRONMENT_ROOM
 
 /area/oni_digsite/sub_level_9/snow
 	name = "\improper Sub Level 9 Snow"
 	icon_state = "purple"
+	soundscape_playlist = SCAPE_PL_WIND
 	minimap_color = MINIMAP_AREA_CAVES
+	sound_environment = SOUND_ENVIRONMENT_AUDITORIUM
 	ceiling = CEILING_NO_PROTECTION
 
 /area/oni_digsite/sub_level_9/south
