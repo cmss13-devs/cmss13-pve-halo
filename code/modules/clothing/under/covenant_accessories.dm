@@ -1,3 +1,5 @@
+// ================ ELITES ================
+
 /obj/item/clothing/accessory/pads/sangheili
 	name = "\improper Sangheili shoulder pads"
 	desc = "Pauldrons of venerable design, fitted to a warrior's combat harness to protect the upper arms. While simple in function, the strong nanolaminate composites of these pauldrons provide ample protection."
@@ -25,3 +27,5 @@
 	name = "\improper Sangheili Zealot shoulder pads"
 	icon_state = "sangpads_zealot"
 	item_state = "sangpads_zealot"
+
+// ================ JACKALS ================
