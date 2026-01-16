@@ -1686,6 +1686,7 @@
 #include "code\modules\clothing\suits\marine_armor\intel.dm"
 #include "code\modules\clothing\suits\marine_armor\smartgunner.dm"
 #include "code\modules\clothing\suits\marine_armor\spec_fire.dm"
+#include "code\modules\clothing\suits\marine_armor\covenant\ruuhtian.dm"
 #include "code\modules\clothing\suits\marine_armor\covenant\shield_armor.dm"
 #include "code\modules\clothing\suits\marine_armor\covenant\unggoy.dm"
 #include "code\modules\clothing\under\color.dm"

@@ -393,6 +393,8 @@
 		/obj/item/ammo_magazine/carbine,
 	)
 
+// ================ ELITES ================
+
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
 	icon_state = "sangbelt_minor"
@@ -422,6 +424,8 @@
 	name = "\improper Sangheili Zealot ammunition belt"
 	icon_state = "sangbelt_zealot"
 	item_state = "sangbelt_zealot"
+
+// ================ GRUNTS ================
 
 /obj/item/storage/belt/marine/covenant/unggoy
 	name = "\improper Unggoy ammunition belt"
@@ -460,3 +464,5 @@
 	name = "\improper Unggoy SpecOps ammunition belt"
 	icon_state = "gruntbelt_specops_ultra"
 	item_state = "gruntbelt_specops_ultra"
+
+// ================ JACKALS ================

@@ -1,3 +1,5 @@
+// ================ ELITES ================
+
 /obj/item/clothing/head/helmet/marine/sangheili
 	name = "\improper Sangheili helmet"
 	desc = "A nanolaminate helmet inspired by ancient Sangheili armours of the Pre-Covenant, having not changed its design in fifty generations. Fitted with comprehensive communications and smart-link systems allowing the wearer to maintain both control of their levies and fine operation of their weapons."
@@ -51,3 +53,5 @@
 	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
 	armor_laser = CLOTHING_ARMOR_VERYHIGH
 	armor_bomb = CLOTHING_ARMOR_HIGH
+
+// ================ JACKALS ================

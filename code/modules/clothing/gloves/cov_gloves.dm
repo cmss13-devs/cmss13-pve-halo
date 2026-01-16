@@ -1,3 +1,5 @@
+// ================ ELITES ================
+
 /obj/item/clothing/gloves/marine/sangheili
 	name = "\improper Sangheili gauntlets"
 	desc = "Simple gauntlets worn over the wrists of a Sangheili, made of common nanolaminate composites. Fitted precisely, these gauntlets do not interfere whatsoever with the warriors work, and in the case where pure brute strength is needed, prove sufficient as improvised weapons."
@@ -45,3 +47,5 @@
 	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
 	armor_laser = CLOTHING_ARMOR_VERYHIGH
 	armor_bomb = CLOTHING_ARMOR_HIGH
+
+// ================ JACKALS ================
