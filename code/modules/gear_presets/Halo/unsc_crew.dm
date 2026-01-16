@@ -326,18 +326,15 @@
 
 /datum/equipment_preset/unsc_crew/command/weapons
 	name = "UNSC Bridge Officer - Weapons"
-	assignment = JOB_UNSC_CREW_COM_WPN
-	rank = JOB_UNSC_CREW_COM_WPN
+	assignment = "UNSC Bridge Weapons Officer"
 
 /datum/equipment_preset/unsc_crew/command/navigations
 	name = "UNSC Bridge Officer - Navigations"
-	assignment = JOB_UNSC_CREW_COM_NVG
-	rank = JOB_UNSC_CREW_COM_NVG
+	assignment = "UNSC Bridge Navigation Officer"
 
 /datum/equipment_preset/unsc_crew/command/communications
 	name = "UNSC Bridge Officer - Communications"
-	assignment = JOB_UNSC_CREW_COM_COMM
-	rank = JOB_UNSC_CREW_COM_COMM
+	assignment = "UNSC Bridge Communications Officer"
 
 /datum/equipment_preset/unsc_crew/command/xo
 	name = "UNSC Bridge Officer - Executive Officer"
