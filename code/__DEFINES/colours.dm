@@ -115,6 +115,8 @@
 #define LIGHT_COLOR_BLOOD_MAGIC "#D00000"
 /// Warm red color rgb(250, 66, 66)
 #define LIGHT_COLOR_RED "#ff3b3b"
+/// Strong covie purple light color rgb(255, 153, 255)
+#define LIGHT_COLOR_COV_PINK "#ff99ff"
 
 /* These ones aren't a direct color like the ones above, because nothing would fit */
 /// Warm orange color, leaning strongly towards yellow. rgb(250, 160, 25)

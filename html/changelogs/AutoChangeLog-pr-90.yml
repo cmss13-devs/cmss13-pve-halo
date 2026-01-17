@@ -1,0 +1,9 @@
+author: "tyeagg"
+delete-after: True
+changes:
+  - rscadd: "covenant fire support menu options"
+  - code_imp: "added datum based fire support menu options"
+  - soundadd: "wraith plasma whistle"
+  - soundadd: "banshee flyby sound"
+  - soundadd: "banshee strafe sound"
+  - imageadd: "banshee flyby shadow"

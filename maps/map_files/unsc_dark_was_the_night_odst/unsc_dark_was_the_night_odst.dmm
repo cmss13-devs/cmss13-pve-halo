@@ -62,7 +62,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "ag" = (
-/obj/structure/machinery/vending/dinnerware/unsc,
+/obj/structure/machinery/vending/dinnerware/unsc/alt,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/canteen)
 "ah" = (
@@ -693,6 +693,35 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
+"bO" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/medical)
+"bP" = (
+/obj/structure/machinery/cm_vending/clothing/medic,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/medical)
+"bQ" = (
+/obj/structure/machinery/cm_vending/sorted/medical/unsc{
+	pixel_y = 24;
+	pixel_x = -6;
+	density = 0;
+	req_access = list(8,40);
+	name = "\improper Squad Two Optican Military Supply"
+	},
+/obj/structure/sign/safety/two{
+	pixel_x = 17;
+	pixel_y = 28
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/medical)
 "bR" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/dark_was_the_night/lower_hallway)
@@ -705,6 +734,17 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
+"bT" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/almayer/edge/smooth/north,
+/area/dark_was_the_night/armory)
 "bW" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/lower_hallway)
@@ -812,6 +852,11 @@
 "dk" = (
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2{
 	dir = 1
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8;
+	pixel_y = -16
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/dark_was_the_night/medical)
@@ -1149,17 +1194,6 @@
 "ha" = (
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/engineering)
-"hb" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/machinery/power/apc/almayer/south,
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/north,
-/area/dark_was_the_night/armory)
 "he" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -1698,10 +1732,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/upper_hallway)
-"nw" = (
-/obj/structure/machinery/cm_vending/clothing/medic,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "ny" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
@@ -2931,10 +2961,16 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/cm_vending/sorted/medical/blood{
-	pixel_y = 16;
-	pixel_x = 3;
-	density = 0
+/obj/structure/machinery/cm_vending/sorted/medical/unsc{
+	pixel_y = 24;
+	pixel_x = 7;
+	density = 0;
+	req_access = list(8,39);
+	name = "\improper Squad One Optican Military Supply"
+	},
+/obj/structure/sign/safety/one{
+	pixel_x = -2;
+	pixel_y = 28
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
@@ -3154,7 +3190,7 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
 "DI" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc/alt,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/canteen)
 "DP" = (
@@ -3261,10 +3297,6 @@
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/ready_bay)
 "FI" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
 /turf/open/floor/almayer/sterile_green_corner,
 /area/dark_was_the_night/medical)
 "FQ" = (
@@ -4139,10 +4171,6 @@
 "PB" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/dark_was_the_night/lower_hallway)
-"PE" = (
-/obj/structure/machinery/cm_vending/gear/medic_chemical,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "PH" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -4318,14 +4346,6 @@
 /obj/structure/machinery/power/apc/almayer/west,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"RC" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 2;
-	id = "ship_armory2";
-	name = "\improper Medical Equipment"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/armory)
 "RD" = (
 /obj/structure/machinery/computer/cameras/wooden_tv/prop{
 	dir = 8;
@@ -4547,10 +4567,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 16;
-	density = 0
-	},
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
 "Ua" = (
@@ -4607,9 +4623,8 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 16;
-	pixel_x = -5;
+/obj/structure/machinery/cm_vending/gear/medic_chemical/unsc{
+	pixel_y = 15;
 	density = 0
 	},
 /turf/open/floor/almayer/plate,
@@ -4877,6 +4892,11 @@
 /area/dark_was_the_night/lower_hallway)
 "YQ" = (
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4;
+	pixel_y = -16
+	},
 /turf/open/floor/almayer/sterile_green_side/east,
 /area/dark_was_the_night/medical)
 "YS" = (
@@ -11994,10 +12014,10 @@ sF
 pc
 sF
 Be
-hb
+IP
 GV
-GV
-Na
+bQ
+bO
 Na
 Na
 Na
@@ -12146,11 +12166,11 @@ sF
 mp
 sF
 Be
-IP
-bJ
-bJ
-bJ
-rR
+bT
+GV
+bP
+bP
+Na
 rR
 rR
 rR
@@ -12288,8 +12308,8 @@ rR
 rR
 rR
 rR
+rR
 bJ
-qV
 qV
 qV
 db
@@ -12299,10 +12319,10 @@ pc
 sF
 BJ
 IP
-sF
-ls
-bJ
-rR
+Na
+Na
+Na
+Na
 rR
 rR
 rR
@@ -12440,7 +12460,7 @@ rR
 rR
 rR
 rR
-bJ
+rR
 bJ
 bJ
 mq
@@ -12452,7 +12472,7 @@ bJ
 rf
 Lc
 sF
-bN
+ls
 bJ
 rR
 rR
@@ -12592,9 +12612,9 @@ rR
 rR
 rR
 rR
+rR
+rR
 bJ
-PE
-RC
 SI
 bm
 Be
@@ -12604,7 +12624,7 @@ bq
 Be
 qL
 sF
-ls
+bN
 bJ
 rR
 rR
@@ -12744,9 +12764,9 @@ rR
 rR
 rR
 rR
+rR
+rR
 bJ
-nw
-RC
 qq
 qL
 qL
@@ -12755,8 +12775,8 @@ km
 bm
 bm
 qL
-bJ
-bJ
+sF
+ls
 bJ
 rR
 rR
@@ -12896,8 +12916,8 @@ rR
 rR
 rR
 rR
-bJ
-bJ
+rR
+rR
 bJ
 xl
 qL
@@ -12907,9 +12927,9 @@ bm
 bm
 bm
 qL
-qq
 bJ
-rR
+bJ
+bJ
 rR
 rR
 rR
@@ -13049,7 +13069,7 @@ rR
 rR
 rR
 rR
-bJ
+rR
 bJ
 bJ
 bJ
