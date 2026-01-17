@@ -1242,7 +1242,32 @@
 /turf/open/floor/covenant/smooth_plating/corners
 	icon_state = "smooth_plating_corner"
 
+
+/turf/open/floor/covenant/lane
+	icon_state = "smooth_plating_lane"
+
+/turf/open/floor/covenant/endcap
+	icon_state = "smooth_plating_endcap"
+
 // HALO TURF DIRS
+
+/turf/open/floor/covenant/lane/vertical
+	dir = SOUTH
+
+/turf/open/floor/covenant/lane/horizontal
+	dir = EAST
+
+/turf/open/floor/covenant/endcap/east
+	dir = EAST
+
+/turf/open/floor/covenant/endcap/west
+	dir = WEST
+
+/turf/open/floor/covenant/endcap/north
+	dir = NORTH
+
+/turf/open/floor/covenant/endcap/south
+	dir = SOUTH
 
 /turf/open/floor/covenant/paneling/rotated
 	dir = WEST
