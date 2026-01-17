@@ -2187,6 +2187,10 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
+"fc" = (
+/obj/structure/surface/table/reinforced/prison,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "fd" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
@@ -2357,6 +2361,11 @@
 	},
 /turf/open/floor/almayer/edge/southwest,
 /area/dark_was_the_night/hangar)
+"fx" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "fy" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2387,6 +2396,13 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
+"fC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "fD" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/effect/decal/cleanable/dirt{
@@ -3297,6 +3313,9 @@
 /area/dark_was_the_night/canteen)
 "hK" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/sign/safety/one{
+	pixel_x = 32
+	},
 /turf/open/floor/almayer/plating_striped/west,
 /area/dark_was_the_night/armory)
 "hL" = (
@@ -3442,6 +3461,9 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
+"if" = (
+/turf/open/floor/almayer/sterile_green_corner/west,
+/area/dark_was_the_night/armory)
 "ig" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -3714,6 +3736,9 @@
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
 /obj/item/device/binoculars/range/monocular,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
+/obj/structure/sign/safety/one{
+	pixel_x = -16
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "iQ" = (
@@ -3807,6 +3832,9 @@
 /obj/structure/machinery/power/apc/almayer/east,
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/supply)
+"je" = (
+/turf/open/floor/almayer/sterile_green_side,
+/area/dark_was_the_night/armory)
 "jf" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -3969,6 +3997,13 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
+"jz" = (
+/turf/open/floor/almayer/sterile_green_corner/east,
+/area/dark_was_the_night/armory)
+"jA" = (
+/obj/structure/machinery/cm_vending/clothing/medic,
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/armory)
 "jB" = (
 /obj/structure/platform{
 	dir = 4
@@ -3980,6 +4015,58 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
+"jC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/dark_was_the_night/armory)
+"jD" = (
+/obj/structure/machinery/cm_vending/sorted/medical/unsc{
+	pixel_y = 24;
+	pixel_x = 7;
+	density = 0;
+	req_access = list(8,39);
+	name = "\improper Squad One Optican Military Supply"
+	},
+/obj/structure/sign/safety/one{
+	pixel_x = -2;
+	pixel_y = 28
+	},
+/obj/structure/prop/unsc_crate/standard/medical{
+	pixel_x = -12;
+	pixel_y = 13;
+	layer = 3.1;
+	density = 0
+	},
+/turf/open/floor/almayer/sterile_green_corner/north,
+/area/dark_was_the_night/armory)
+"jE" = (
+/obj/structure/machinery/cm_vending/gear/medic_chemical/unsc{
+	pixel_y = 15;
+	density = 0
+	},
+/turf/open/floor/almayer/sterile_green_side/north,
+/area/dark_was_the_night/armory)
+"jF" = (
+/obj/structure/machinery/cm_vending/sorted/medical/unsc{
+	pixel_y = 24;
+	pixel_x = -6;
+	density = 0;
+	req_access = list(8,40);
+	name = "\improper Squad Two Optican Military Supply"
+	},
+/obj/structure/sign/safety/two{
+	pixel_x = 17;
+	pixel_y = 28
+	},
+/turf/open/floor/almayer/sterile_green_corner,
+/area/dark_was_the_night/armory)
 "jL" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left,
 /area/dark_was_the_night/armory)
@@ -4953,10 +5040,8 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/armory)
 "nF" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "ship_armory2";
-	name = "\improper Corpsman Equipment"
+/obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
+	dir = 1
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
@@ -5145,8 +5230,11 @@
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/cryo_bay/two)
 "om" = (
-/obj/structure/machinery/cm_vending/gear/medic_chemical,
-/turf/open/floor/almayer,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/dark_was_the_night/armory)
 "on" = (
 /turf/closed/wall/unsc,
@@ -5530,14 +5618,14 @@
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/cryo_hall)
 "qh" = (
-/obj/structure/machinery/cm_vending/sorted/medical{
-	pixel_y = 21;
-	density = 0;
-	pixel_x = -10
-	},
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_x = 9;
 	pixel_y = 26
+	},
+/obj/structure/machinery/cm_vending/sorted/medical/unsc{
+	pixel_x = -8;
+	pixel_y = 21;
+	density = 0
 	},
 /turf/open/floor/almayer/sterile_green_side/northeast,
 /area/dark_was_the_night/medical)
@@ -5899,7 +5987,7 @@
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/supply)
 "rY" = (
-/obj/structure/machinery/vending/dinnerware/unsc,
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/kitchen)
 "sa" = (
@@ -6669,7 +6757,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
 "vu" = (
-/obj/structure/machinery/vending/dinnerware/unsc,
+/obj/structure/machinery/vending/dinnerware/unsc/alt,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/canteen)
 "vv" = (
@@ -10885,6 +10973,9 @@
 /area/dark_was_the_night/lower_hallway)
 "ON" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
+/obj/structure/sign/safety/two{
+	pixel_x = 32
+	},
 /turf/open/floor/almayer/plating_striped/west,
 /area/dark_was_the_night/armory)
 "OS" = (
@@ -11507,13 +11598,16 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "RQ" = (
-/obj/structure/machinery/cm_vending/sorted/marine_food/unsc,
+/obj/structure/machinery/cm_vending/sorted/marine_food/unsc/alt,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/canteen)
 "RS" = (
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
 /obj/item/device/binoculars/range/monocular,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
+/obj/structure/sign/safety/two{
+	pixel_x = -16
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "RZ" = (
@@ -13283,8 +13377,11 @@
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/supply)
 "ZT" = (
-/obj/structure/machinery/cm_vending/clothing/medic,
-/turf/open/floor/almayer,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/dark_was_the_night/armory)
 "ZU" = (
 /obj/structure/barricade/handrail,
@@ -24884,8 +24981,8 @@ oN
 oN
 oN
 Va
-br
-QO
+jC
+fC
 nH
 Ke
 Ke
@@ -25036,7 +25133,7 @@ BR
 BR
 Wo
 wK
-nF
+nb
 nF
 ve
 Ke
@@ -25191,7 +25288,7 @@ wK
 om
 ZT
 ve
-BJ
+ve
 BJ
 BJ
 BJ
@@ -25340,10 +25437,10 @@ xU
 xU
 sp
 Yw
+jD
+if
+fc
 ve
-ve
-ve
-tG
 tG
 tG
 tG
@@ -25492,10 +25589,10 @@ fj
 Ac
 wC
 ve
-WN
-WN
-WN
-tG
+jE
+je
+fx
+ve
 tG
 tG
 tG
@@ -25644,10 +25741,10 @@ yh
 fW
 ve
 ve
-WN
-WN
-WN
-tG
+jF
+jz
+fc
+ve
 tG
 tG
 tG
@@ -25796,10 +25893,10 @@ mP
 uW
 yR
 ve
-tG
-tG
-tG
-tG
+jA
+jA
+ve
+ve
 tG
 tG
 tG
@@ -25948,9 +26045,9 @@ lc
 zf
 BW
 ve
-tG
-tG
-tG
+uI
+uI
+uI
 tG
 tG
 tG

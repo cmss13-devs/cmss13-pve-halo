@@ -1,5 +1,5 @@
 
-#define GYSGT_VARIANT "Gunnery Sergeant"
+#define SGT_VARIANT "Sergeant"
 #define SSGT_VARIANT "Staff Sergeant"
 
 /datum/job/marine/leader
@@ -12,10 +12,10 @@
 	gear_preset_secondary = /datum/equipment_preset/unsc/leader/lesser_rank
 	entry_message_body = "<a href='"+WIKI_PLACEHOLDER+"'>You are responsible for the men and women of your entire section.</a> Make sure they are on task, working together, and communicating. You are also in charge of communicating with command and letting them know about the situation first hand. Keep out of harm's way.<br><b>You remember that you've stored your personal gear and uniform are located in the dorm or locker rooms.</b>"
 
-	job_options = list(SSGT_VARIANT = "SSGT", GYSGT_VARIANT = "GYSGT")
+	job_options = list(SSGT_VARIANT = "SSGT", SGT_VARIANT = "SGT")
 
 /datum/job/marine/leader/handle_job_options(option)
-	if(option != SSGT_VARIANT)
+	if(option != SGT_VARIANT)
 		gear_preset = initial(gear_preset)
 	else
 		gear_preset = gear_preset_secondary
@@ -95,5 +95,5 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	squad = SQUAD_LRRP
 	job = /datum/job/marine/leader/ai/forecon
 
-#undef GYSGT_VARIANT
+#undef SGT_VARIANT
 #undef SSGT_VARIANT
