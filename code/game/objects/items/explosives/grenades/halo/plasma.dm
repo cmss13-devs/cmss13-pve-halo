@@ -74,7 +74,6 @@
 					hit_atom.AddComponent(/datum/component/status_effect/plasma_stuck, src)
 					return
 
-
 /datum/looping_sound/plasma_hiss
 	start_sound = list('sound/weapons/halo/firebomb_throw.ogg' = 1)
 	mid_sounds = list('sound/weapons/halo/firebomb_loop2.ogg' = 1,'sound/weapons/halo/firebomb_loop1.ogg' = 1)
@@ -211,9 +210,8 @@
 	else
 		if(isVehicle(parent_atom))
 			var/obj/vehicle/multitile/mob = parent_atom
-			update_vehicle_icon()
-			mob.take_damage_type(100*(delta_time/5), "plasma flame", src)
-			update_vehicle_icon()
+			mob.take_damage_type(400*(delta_time/5), "plasma flame", src)
+			INVOKE_ASYNC(src, PROC_REF(update_vehicle_icon))
 	light_tune(max(time_running/5, 1))
 	if(time_running >= 0.5 SECONDS && stage == 0)
 		animation_flash_color(parent_atom, COLOR_CYAN)
@@ -279,20 +277,4 @@
 /datum/component/status_effect/plasma_stuck/proc/light_tune(intensity) // Might as well keep this too.
 	origin_nade.set_light_range(intensity)
 
-/proc/check_for_obstacles_projectile(atom/source, atom/target, obj/projectile/P)
-	var/list/turf/path = get_line(source, target, include_start_atom = FALSE)
-	if(!length(path) || get_dist(source, target) > P.ammo.max_range)
-		return TRUE
 
-	var/blocked = FALSE
-	for(var/turf/T in path)
-		if(T.density)
-			blocked = TRUE
-			break
-
-		for(var/obj/O in T)
-			if(O.get_projectile_hit_boolean(P))
-				blocked = TRUE
-				break
-
-	return blocked
