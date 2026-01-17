@@ -1,24 +1,32 @@
 // Paygrade shorthand defines, to allow clearer designation.
 
-///Covenant
+#define PAY_SHORT_COV_CIV "COV-CIV"
 
-///COV-C, Civilian
-#define PAY_SHORT_COV_CIV "COV-C"
+// Ministry
 
-/// COV1, Minor
-#define PAY_SHORT_COV_MINOR "COV1"
+#define PAY_SHORT_COV_DEACON "COV-DCN"
 
-/// COV2, Major
-#define PAY_SHORT_COV_MAJOR "COV2"
+// Misc. Shit
 
-/// COV3, Ultra
-#define PAY_SHORT_COV_ULTRA "COV3"
+// Standard
 
-/// COV4, Zealot
-#define PAY_SHORT_COV_ZEALOT "COV4"
+#define PAY_SHORT_COV_MINOR "COV-1"
+#define PAY_SHORT_COV_HEAVY "COV-2E"
+#define PAY_SHORT_COV_MAJOR "COV-2"
+#define PAY_SHORT_COV_ULTRA "COV-3"
+#define PAY_SHORT_COV_CHAMPION "COV-3E"
+#define PAY_SHORT_COV_SHIPMISTRESS "COV-4"
 
-/// COV5, Sub-Commander
-#define PAY_SHORT_COV_SUB_COMMANDER "COV5"
+// Sangheili
 
-/// COV6, Commander
-#define PAY_SHORT_COV_COMMANDER "COV6"
+#define PAY_SHORT_SANG_MINOR "COV-S1"
+#define PAY_SHORT_SANG_MAJOR "COV-S2"
+#define PAY_SHORT_SANG_ULTRA "COV-S3"
+#define PAY_SHORT_SANG_ZEALOT "COV-ZEAL"
+
+#define PAY_SHORT_SANG_COMMANDER "COV-O1"
+#define PAY_SHORT_SANG_FIELDMASTER "COV-O2E"
+#define PAY_SHORT_SANG_SHIPMASTER "COV-O2"
+#define PAY_SHORT_SANG_LANDMASTER "COV-O3E"
+#define PAY_SHORT_SANG_FLEETMASTER "COV-O3"
+#define PAY_SHORT_SANG_SUPREME_COM "COV-O4"

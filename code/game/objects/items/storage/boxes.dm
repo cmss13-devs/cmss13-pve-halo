@@ -934,35 +934,6 @@
 		isopened = TRUE
 		icon_state = "mealpackopened"
 
-/obj/item/storage/box/medical_packet
-	name = "\improper UNSC medical packet"
-	desc = "A combat-rated first aid medical packet filled with the bare bones basic essentials to ensuring you or your buddies don't die on the battlefield."
-	icon_state = "medical_packet"
-	icon = 'icons/halo/obj/items/storage/packets.dmi'
-	w_class = SIZE_SMALL
-	can_hold = list()
-	storage_slots = 5
-	max_w_class = 0
-	use_sound = "rip"
-	var/isopened = FALSE
-
-/obj/item/storage/box/medical_packet/fill_preset_inventory()
-	new /obj/item/reagent_container/hypospray/autoinjector/biofoam/small(src)
-	new /obj/item/stack/medical/advanced/bruise_pack(src)
-	new /obj/item/stack/medical/advanced/bruise_pack(src)
-	new /obj/item/stack/medical/advanced/ointment(src)
-	new /obj/item/stack/medical/splint(src)
-
-/obj/item/storage/box/medical_packet/Initialize()
-	. = ..()
-	isopened = FALSE
-	icon_state = "medical_packet"
-
-/obj/item/storage/box/medical_packet/update_icon()
-	if(!isopened)
-		isopened = TRUE
-		icon_state = "medical_packet_o"
-
 //food boxes for storage in bulk
 
 //meat

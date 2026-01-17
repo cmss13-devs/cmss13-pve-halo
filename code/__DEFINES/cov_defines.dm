@@ -1,0 +1,2 @@
+#define ACCESSORY_SLOT_SANG_SHOULDER "Sang Shoulder"
+#define ACCESSORY_SLOT_SANG_WEBBING "Sang Webbing"

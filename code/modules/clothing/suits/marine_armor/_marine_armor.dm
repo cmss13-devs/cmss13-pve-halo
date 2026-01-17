@@ -857,7 +857,7 @@
 	specialty = "M3 pattern"
 
 /obj/item/clothing/suit/marine/unsc
-	name = "M52B body armor"
+	name = "\improper M52B body armor"
 	desc = "Standard-issue to the UNSC Marine Corps, the M52B armor entered service by 2531 for use in the Human Covenant war, coming with improved protection against plasma-based projectiles compared to older models."
 	icon = 'icons/halo/obj/items/clothing/suits/suits_by_faction/suit_unsc.dmi'
 	icon_state = "m52b"
@@ -888,4 +888,36 @@
 		/obj/item/storage/belt/gun/m39,
 		/obj/item/storage/belt/gun/xm51,
 		/obj/item/storage/belt/gun/m6,
+		/obj/item/storage/belt/gun/m7,
 	)
+
+/obj/item/clothing/suit/marine/unsc/police
+	name = "\improper police RD90 ballistic armor"
+	desc = "An older model of the M52B body armor, designated as the RD90 by local police and security forces. Whilst not as comfortable, it still does the job for most of it's users, and has added protection against melee attacks."
+	icon = 'icons/halo/obj/items/clothing/suits/suits_by_faction/suit_unsc.dmi'
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
+	icon_state = "police"
+	item_state = "police"
+	item_icons = list(
+		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/suits/suits_by_faction/suit_unsc.dmi')
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+
+/obj/item/clothing/suit/marine/unsc/insurrection
+	icon_state = "insurgent"
+	item_state = "insurgent"
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+
+/obj/item/clothing/suit/marine/unsc/odst
+	name = "\improper M70DT ODST BDU"
+	desc = "The sum total of the ODST's armour complex, simply called 'Battle-Dress-Uniform'. Designed for several environments, be it in vacuum with its 30 minutes of air, in the racket of a SOEIV or the clamour of a battlefield; this BDU is ready for it all. Consists of heat-dispersing and vacuum rated body glove, and the armour worn over it, which reflects heat and bullets quite well. Do not test shock absorption for recreation."
+	icon_state = "odst"
+	item_state = "odst"
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_internaldamage = CLOTHING_ARMOR_HIGH

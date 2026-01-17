@@ -1,0 +1,9 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Adds Unggoy species"
+  - rscadd: "Unggoy armor & mask"
+  - imageadd: "Unggoy unique organs. Now in BLUE!"
+  - bugfix: "Enables sangheili presets for hAI"
+  - code_imp: "Renames 'Sang' preset to 'Sangheili Quicktest' for better clarification"
+  - code_imp: "Changes up Covenant paygrades & jobs"
