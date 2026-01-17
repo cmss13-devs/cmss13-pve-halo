@@ -416,7 +416,14 @@
 	icon_state = "sec_key"
 	channels = list(RADIO_CHANNEL_US_ARMY = TRUE, RADIO_CHANNEL_COMMAND = TRUE, RADIO_CHANNEL_COLONY = TRUE, RADIO_CHANNEL_JTAC = TRUE, SQUAD_MARINE_1 = TRUE)
 
+
 /obj/item/device/encryptionkey/guard
+	name = "\improper UA Colonial Guard Radio Encryption Key"
+	icon_state = "stripped_key"
+	channels = list(RADIO_CHANNEL_UA_GUARD = TRUE, RADIO_CHANNEL_COLONY = TRUE)
+
+
+/obj/item/device/encryptionkey/oni
 	name = "\improper ONI Security Forces Radio Encryption Key"
 	icon_state = "stripped_key"
 	channels = list(RADIO_CHANNEL_ONI_SEC = TRUE, RADIO_CHANNEL_COLONY = TRUE)

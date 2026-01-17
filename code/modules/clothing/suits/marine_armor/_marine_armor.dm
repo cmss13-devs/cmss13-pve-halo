@@ -929,7 +929,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
 /obj/item/clothing/suit/marine/unsc/odst/insurrection
-	name = "\improper scavanged M70DT ODST BDU"
+	name = "\improper scavenged M70DT ODST BDU"
 	icon_state = "odst_insurgent"
 	item_state = "odst_insurgent"
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)

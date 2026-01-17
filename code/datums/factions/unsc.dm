@@ -241,3 +241,7 @@
 /datum/faction/unscn
 	name = "United Nations Space Command Navy"
 	faction_tag = FACTION_UNSCN
+
+/datum/faction/oni
+	name = "Office of Naval Intelligence"
+	faction_tag = FACTION_ONI
