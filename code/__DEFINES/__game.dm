@@ -391,6 +391,9 @@
 #define WALL_UPP_GREEN "uppwall_interior"
 #define WALL_UPP_GREY "uppwall_interior"
 #define WALL_UNSC "unsc"
+#define WALL_VOI "voiwall"
+#define WALL_COV "covwall"
+#define WALL_COV_LIGHTS "l_covwall"
 
 //Defines for dropship weapon gimbals
 #define GIMBAL_LEFT -1
