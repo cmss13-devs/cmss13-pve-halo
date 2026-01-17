@@ -168,3 +168,6 @@
 
 /// Covenant weapons
 #define COLOR_PLASMA_TEAL "#76c89f"
+
+/// Filters
+#define COLOR_TRANSPARENT_SHADOW "#03020781"

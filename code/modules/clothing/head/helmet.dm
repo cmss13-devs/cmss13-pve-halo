@@ -23,6 +23,7 @@
 	w_class = SIZE_MEDIUM
 	pickup_sound = "armorequip"
 	drop_sound = "armorequip"
+	allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA, SPECIES_SPARTAN)
 
 /obj/item/clothing/head/helmet/verb/hidehair()
 	set name = "Toggle Hair"
@@ -1963,6 +1964,22 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
 	icon_state = "odst"
 	item_state = "odst"
+	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_internaldamage = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/head/helmet/marine/unsc/spartan
+	name = "\improper Mjolnir Mk IV helmet"
+	desc = "Helmet for the Mjolnir Mk IV Powered Assault Armour. An advanced piece of equipment at least a generation ahead of anything else in UNSC use, the Mk IV's helmet is made of the same multilayer alloys as the armour, and features a polarizing orange-gold visor capable of protecting the wearers eyes from even nuclear flashes automatically. Employs the cutting edge of VISR technology, allowing for an unparalleled augmented-reality display."
+	icon_state = "spartan"
+	item_state = "spartan"
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_48.dmi'
+	)
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
 	armor_melee = CLOTHING_ARMOR_HIGH
