@@ -31,3 +31,8 @@
 			new_stat = CLOTHING_ARMOR_HIGHPLUS
 		if(0 to 20)
 			new_stat = CLOTHING_ARMOR_MEDIUM
+	armor_melee = new_stat
+	armor_bullet = new_stat
+	armor_laser = new_stat
+	armor_bomb = new_stat
+	armor_internaldamage = new_stat

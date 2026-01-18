@@ -106,9 +106,9 @@ Contains most of the procs that are called when a mob is attacked by something
 		var/obj/item/clothing/suit/marine/unsc/mjolnir/armor = wear_suit
 		if(armor.armor_status)
 			if(prob(50))
-				armor.armor_status -= 1
+				armor.armor_status -= 0.1
 			else
-				armor.armor_status -= 0.5
+				armor.armor_status -= 0.25
 			armor.armor_check()
 			return TRUE
 
