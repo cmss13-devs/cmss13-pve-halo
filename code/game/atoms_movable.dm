@@ -1,7 +1,5 @@
 /atom/movable
 	layer = OBJ_LAYER
-	glide_size = 8
-	appearance_flags = TILE_BOUND|PIXEL_SCALE|LONG_GLIDE
 	var/last_move_dir = null
 	var/anchored = FALSE
 	var/drag_delay = 3 //delay (in deciseconds) added to mob's move_delay when pulling it.
