@@ -63,16 +63,17 @@
 /client/proc/play_chapter_title()
 	set name = "Play Chapter Title"
 	set category = "Game Master.Extras"
-
 	if(!check_rights(R_ADMIN))
 		return
+
 	var/chapter_title = tgui_input_text(src, "Enter the chapter title.", title = "Chapter Title", multiline = FALSE, encode = TRUE)
 	if(!chapter_title)
 		return
 	for(var/mob/living/carbon/human/human as anything in GLOB.human_mob_list)
-		human.display_chapter_title("<span class='maptext' style=font-size:10pt;font-family:Verdana;text-align:left valign='bottom'>[chapter_title]", /atom/movable/screen/text/screen_text/chapter_title)
-		human.overlay_fullscreen("chapter_title", /atom/movable/screen/fullscreen/chapter_title)
-		addtimer(CALLBACK(src, PROC_REF(clear_chapter_title), human), 8 SECONDS)
+		if(human.client)
+			human.display_chapter_title("<span class='maptext' style=font-size:10pt;font-family:Verdana;text-align:left valign='bottom'>[chapter_title]", /atom/movable/screen/text/screen_text/chapter_title)
+			human.overlay_fullscreen("chapter_title", /atom/movable/screen/fullscreen/chapter_title)
+			addtimer(CALLBACK(src, PROC_REF(clear_chapter_title), human), 8 SECONDS)
 
 /client/proc/clear_chapter_title(mob/living/carbon/human/human)
 	human.clear_fullscreen("chapter_title", 1 SECONDS)
