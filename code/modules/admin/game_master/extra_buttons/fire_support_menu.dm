@@ -1,9 +1,9 @@
 #define FIRE_SUPPORT_CLICK_INTERCEPT_ACTION "fire_support_click_intercept_action"
 
 //Various ordnance selections
-#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak", "Glassing Weak Fast", "Glassing Weak Instant")
+#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
 #define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
-#define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak", "Glassing Weak Fast", "Glassing Weak Instant")
+#define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
 #define ORBITAL_ORDNANCE list("High Explosive OB", "Incendiary OB", "Cluster OB")
 #define MORTAR_ORDNANCE list("High Explosive Shell", "Incendiary Shell", "Fragmentation Shell", "Flare Shell", "Willy-Pete Shell", "Smoke Shell")
