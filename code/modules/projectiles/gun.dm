@@ -6,7 +6,7 @@
 	icon_state = "muzzle_flash"
 	layer = ABOVE_LYING_MOB_LAYER
 	plane = GAME_PLANE
-	appearance_flags = KEEP_APART|TILE_BOUND
+	appearance_flags = KEEP_APART|TILE_BOUND|KEEP_TOGETHER
 	var/applied = FALSE
 
 /atom/movable/vis_obj/effect/muzzle_flash/Initialize(mapload, new_icon_state)
@@ -1766,7 +1766,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 		if(user?.skills?.get_skill_level(SKILL_FIREARMS) == SKILL_FIREARMS_CIVILIAN && !is_civilian_usable(user))
 			skill_accuracy = -1
 		else
-			skill_accuracy = user.skills.get_skill_level(SKILL_FIREARMS)
+			skill_accuracy = user.skills.get_skill_level(SKILL_FIREARMS) * user.skills.get_skill_level(SKILL_GUN_HO)
 		if(skill_accuracy)
 			gun_accuracy_mult += skill_accuracy * HIT_ACCURACY_MULT_TIER_3 // Accuracy mult increase/decrease per level is equal to attaching/removing a red dot sight
 
@@ -1865,7 +1865,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 		if(user?.skills?.get_skill_level(SKILL_FIREARMS) == SKILL_FIREARMS_CIVILIAN && !is_civilian_usable(user))
 			total_recoil += RECOIL_AMOUNT_TIER_5
 		else
-			total_recoil -= user.skills.get_skill_level(SKILL_FIREARMS)*RECOIL_AMOUNT_TIER_5
+			total_recoil -= user.skills.get_skill_level(SKILL_FIREARMS)*user.skills.get_skill_level(SKILL_GUN_HO)*RECOIL_AMOUNT_TIER_5
 
 	if(total_recoil > 0 && (ishuman(user) || HAS_TRAIT(user, TRAIT_OPPOSABLE_THUMBS)))
 		if(total_recoil >= 4)
@@ -1883,7 +1883,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 	if(!istype(gun_user) || !isturf(gun_user.loc))
 		return
 	if(muzzle_flash && !muzzle_flash.applied)
-		var/atom/movable/flash_loc = gun_user.loc
+		var/atom/movable/flash_loc = gun_user
 		var/prev_light = light_range
 		if(!light_on && (light_range <= muzzle_flash_lum))
 			set_light_range(muzzle_flash_lum)

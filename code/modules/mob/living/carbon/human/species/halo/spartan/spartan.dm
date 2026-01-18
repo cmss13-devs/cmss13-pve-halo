@@ -45,13 +45,13 @@
 	equip_adjust = list(
 		WEAR_R_HAND = list("[NORTH]" = list("x" = 1, "y" = 4), "[EAST]" = list("x" = 1, "y" = 4), "[SOUTH]" = list("x" = -1, "y" = 4), "[WEST]" = list("x" = 1, "y" = 4)),
 		WEAR_L_HAND = list("[NORTH]" = list("x" = -1, "y" = 4), "[EAST]" = list("x" = 1, "y" = 4), "[SOUTH]" = list("x" = 1, "y" = 4), "[WEST]" = list("x" = 1, "y" = 4)),
-		WEAR_WAIST = list("[NORTH]" = list("x" = 0, "y" = 6), "[EAST]" = list("x" = 1, "y" = 6), "[SOUTH]" = list("x" = 0, "y" = 6), "[WEST]" = list("x" = 1, "y" = 6)),
-		WEAR_HEAD = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 0, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
+		WEAR_WAIST = list("[NORTH]" = list("x" = 0, "y" = 6), "[EAST]" = list("x" = 0, "y" = 6), "[SOUTH]" = list("x" = 0, "y" = 6), "[WEST]" = list("x" = 1, "y" = 6)),
+		WEAR_HEAD = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 0, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 0, "y" = 7)),
 		WEAR_FACE = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
 		WEAR_EYES = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
 		WEAR_ID = list("[NORTH]" = list("x" = 0, "y" = 6), "[EAST]" = list("x" = 1, "y" = 6), "[SOUTH]" = list("x" = 0, "y" = 6), "[WEST]" = list("x" = 1, "y" = 6)),
-		WEAR_BACK = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
-		WEAR_JACKET = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
+		WEAR_BACK = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = -2, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 3, "y" = 7)),
+		WEAR_IN_JACKET = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
 		WEAR_L_EAR = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7)),
 		WEAR_R_EAR = list("[NORTH]" = list("x" = 0, "y" = 7), "[EAST]" = list("x" = 1, "y" = 7), "[SOUTH]" = list("x" = 0, "y" = 7), "[WEST]" = list("x" = 1, "y" = 7))
 	)

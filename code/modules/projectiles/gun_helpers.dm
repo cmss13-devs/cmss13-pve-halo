@@ -288,7 +288,7 @@ DEFINES in setup.dm, referenced here.
 //tactical reloads
 /obj/item/weapon/gun/MouseDrop_T(atom/dropping, mob/living/carbon/human/user)
 	if(istype(dropping, /obj/item/ammo_magazine))
-		if(!user.Adjacent(dropping) && is_civilian_usable(user))
+		if(!user.Adjacent(dropping))
 			return
 		tactical_reload(dropping, user)
 	else
@@ -300,7 +300,7 @@ DEFINES in setup.dm, referenced here.
 		return
 
 	if(user.skills)
-		if(user.skills.get_skill_level(SKILL_GUN_HO) >= SKILL_GUN_HO_TRAINED && !is_civilian_usable(user))
+		if(user.skills.get_skill_level(SKILL_GUN_HO) >= SKILL_GUN_HO_TRAINED)
 			tactical_reload(target, user)
 	return ..()
 
