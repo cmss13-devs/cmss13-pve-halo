@@ -51,6 +51,8 @@
 #define JOB_SQUAD_RTO_ODST "ODST Radio Telephone Operator"
 #define JOB_SQUAD_LEADER_ODST "ODST Squad Sergeant"
 
+#define JOB_SPARTAN "Spartan"
+
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 
 #define JOB_COLONIST "Colonist"
