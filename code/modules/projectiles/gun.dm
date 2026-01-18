@@ -9,10 +9,16 @@
 	appearance_flags = KEEP_APART|TILE_BOUND|KEEP_TOGETHER
 	var/applied = FALSE
 
-/atom/movable/vis_obj/effect/muzzle_flash/Initialize(mapload, new_icon_state)
+/atom/movable/vis_obj/effect/muzzle_flash/Initialize(mapload, new_icon, new_icon_state)
 	. = ..()
+	if(new_icon)
+		icon = new_icon
 	if(new_icon_state)
 		icon_state = new_icon_state
+	update_icon()
+
+/atom/movable/vis_obj/effect/muzzle_flash/proc/update_icon()
+	overlays += emissive_appearance(icon, icon_state, src, layer, reset_transform = FALSE)
 
 /obj/item/weapon/gun
 	name = "gun"
@@ -48,6 +54,8 @@
 	var/caliber
 	///Effect for the muzzle flash of the gun.
 	var/atom/movable/vis_obj/effect/muzzle_flash/muzzle_flash
+	///Icon of the muzzle flash effect.
+	var/muzzleflash_icon
 	///Icon state of the muzzle flash effect.
 	var/muzzleflash_iconstate
 	///Brightness of the muzzle flash effect.
@@ -281,7 +289,7 @@
 	. = ..() //This only affects guns you can get from vendors for now. Special guns spawn with their own things regardless.
 	base_gun_icon = icon_state
 	attachable_overlays = list("muzzle" = null, "rail" = null, "side_rail" = null, "under" = null, "stock" = null, "mag" = null, "special" = null)
-	muzzle_flash = new(src, muzzleflash_iconstate)
+	muzzle_flash = new(src, muzzleflash_icon, muzzleflash_iconstate)
 
 	LAZYSET(item_state_slots, WEAR_BACK, item_state)
 	LAZYSET(item_state_slots, WEAR_JACKET, item_state)

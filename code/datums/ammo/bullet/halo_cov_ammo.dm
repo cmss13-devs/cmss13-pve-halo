@@ -5,6 +5,8 @@
 	flags_ammo_behavior = AMMO_BALLISTIC
 	sound_hit = "plasma_impact"
 	sound_miss = "plasma_miss"
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_PLASMA_TEAL
 
 /datum/ammo/energy/plasma/plasma_pistol
 	name = "light plasma bolt"
@@ -27,6 +29,8 @@
 	accurate_range = 14
 	max_range = 24
 	damage = 38
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_PLASMA_BLUE
 
 /datum/ammo/needler
 	name = "needle"
@@ -44,6 +48,8 @@
 	max_range = 24
 	shrapnel_type = /obj/item/shard/shrapnel/needler
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_10
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_NEEDLER_PINK
 
 /datum/ammo/needler/on_hit_mob(mob/M, obj/projectile/P)
 	. = ..()
@@ -64,3 +70,5 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 32
 	shrapnel_chance = null
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_CARBINE_GREEN
