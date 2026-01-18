@@ -445,6 +445,15 @@
 	icon_state = "corrections"
 	item_state = "corrections"
 
+/obj/item/clothing/head/cmcap/oni
+	name = "\improper ONI security forces patrol cap"
+	desc = "A black patrol cap, with the insignia of ONI in the center."
+	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	)
+	icon_state = "oni_cap"
+
 //============================//BERETS\\=================================\\
 //=======================================================================\\
 //Berets DO NOT have armor, so they have their own category. PMC caps are helmets, so they're in helmets.dm.

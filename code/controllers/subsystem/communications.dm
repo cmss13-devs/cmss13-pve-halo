@@ -152,6 +152,7 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 #define UNSC_FREQ 1501
 #define COV_FREQ 1502
 #define ODST_FREQ 1503
+#define ONI_FREQ 1504
 
 #define MAX_FREE_FREQ 1599 // -------------------------------------------------
 
@@ -222,6 +223,7 @@ GLOBAL_LIST_INIT(radiochannels, list(
 
 	RADIO_CHANNEL_COV = COV_FREQ,
 	SQUAD_ODST = ODST_FREQ,
+	RADIO_CHANNEL_ONI_SEC = ONI_FREQ,
 ))
 
 // Response Teams
@@ -323,6 +325,7 @@ SUBSYSTEM_DEF(radio)
 		"[UNSC_FREQ]" = "unscradio",
 		"[COV_FREQ]" = "covradio",
 		"[ODST_FREQ]" = "odstradio",
+		"[ONI_FREQ]" = "oniradio",
 	)
 
 /datum/controller/subsystem/radio/proc/add_object(obj/device as obj, new_frequency as num, filter = null as text|null)
