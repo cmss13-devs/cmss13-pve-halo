@@ -112,7 +112,7 @@
 	name = "ONI Security Forces Rifleman"
 	assignment = JOB_ONI_SEC
 	rank = JOB_ONI_SEC
-	paygrades = list(PAY_SHORT_NE3 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NE4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ONI-RFL"
 	flags = EQUIPMENT_PRESET_EXTRA
 	skills = /datum/skills/pfc
@@ -162,7 +162,7 @@
 	name = "ONI Security Forces Corpsman"
 	assignment = JOB_ONI_SEC_MEDIC
 	rank = JOB_ONI_SEC_MEDIC
-	paygrades = list(PAY_SHORT_NE4 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_NE5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ONI-CORP"
 	flags = EQUIPMENT_PRESET_EXTRA
 	skills = /datum/skills/corpsman
