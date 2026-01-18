@@ -1013,7 +1013,6 @@
 					armor_degrade(P.damage)
 				else
 					armor_degrade(P.damage)
-				return
 
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.
 	if(!organ)
