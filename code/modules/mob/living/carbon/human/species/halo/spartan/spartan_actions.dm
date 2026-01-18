@@ -144,7 +144,7 @@ If you make a derivative work from this code, you must include this notification
 /datum/action/human_action/activable/slam
 	name = "slam"
 	icon_file = 'icons/halo/mob/hud/actions.dmi'
-	action_icon_state = "throw"
+	action_icon_state = "slam"
 	var/cooldown_slam = 15 SECONDS
 
 /datum/action/human_action/activable/slam/New(mob/living/user, obj/item/holder)

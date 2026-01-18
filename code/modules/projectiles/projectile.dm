@@ -1005,14 +1005,15 @@
 					check_energy_shield(P.damage, "[P]", shield.shield_strength)
 				else
 					check_energy_shield(P.damage * 0.25, "[P]", shield.shield_strength)
-	if(istype(wear_suit, /obj/item/clothing/suit/marine/unsc/mjolnir))
+
+		if(istype(wear_suit, /obj/item/clothing/suit/marine/unsc/mjolnir))
 			var/obj/item/clothing/suit/marine/unsc/mjolnir/armor = wear_suit
 			if(armor.armor_status)
 				if(ammo_flags & AMMO_LASER)
 					armor_degrade(P.damage)
 				else
 					armor_degrade(P.damage)
-				return
+	return
 
 	var/obj/limb/organ = get_limb(check_zone(P.def_zone)) //Let's finally get what organ we actually hit.
 	if(!organ)
