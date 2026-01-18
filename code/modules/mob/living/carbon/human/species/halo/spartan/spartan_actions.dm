@@ -153,7 +153,7 @@ If you make a derivative work from this code, you must include this notification
 	button.icon = icon_file
 	button.name = name
 	button.overlays.Cut()
-	var/image/IMG = image('icons/halo/mob/hud/actions.dmi', button, "throw")
+	var/image/IMG = image('icons/halo/mob/hud/actions.dmi', button, "slam")
 	button.overlays += IMG
 	update_button_icon()
 
