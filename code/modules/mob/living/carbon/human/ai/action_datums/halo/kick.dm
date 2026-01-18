@@ -12,8 +12,8 @@
 	if(brain.sniper_home)
 		return 0
 
-	//if(!brain.tried_reload && (brain.primary_weapon || length(brain.secondary_weapons)))
-	//	return 0
+	if(!brain.tried_reload && (brain.primary_weapon || length(brain.secondary_weapons)))
+		return 0
 
 	return 5
 
@@ -28,7 +28,7 @@
 	var/mob/tied_human = brain.tied_human
 	if(get_dist(tied_human, brain.current_target) <= 1)
 		if(prob(70))
-			tied_human.a_intent_change(INTENT_HARM)
+			//tied_human.a_intent_change(INTENT_HARM)
 			var/datum/action/human_action/activable/covenant/sangheili_kick/kicking = locate(/datum/action/human_action/activable/covenant/sangheili_kick) in tied_human.actions
 			INVOKE_ASYNC(kicking, TYPE_PROC_REF(/datum/action/human_action/activable/covenant/sangheili_kick, use_ability), brain.current_target, tied_human)
 			tied_human.face_atom(brain.current_target)
