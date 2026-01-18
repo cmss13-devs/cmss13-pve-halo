@@ -129,6 +129,11 @@
 	//RegisterSignal(src, COMSIG_PARENT_QDELETING, GLOBAL_PROC_REF(qdel), src.origin_nade)
 	START_PROCESSING(SSfastobj, src)
 
+/datum/component/status_effect/plasma_stuck/Destroy(force, silent)
+	. = ..()
+	if(origin_nade)
+		origin_nade.hiss_loop.stop()
+
 /datum/component/status_effect/plasma_stuck/proc/unstuck(delete_nade = TRUE)
 	var/atom/movable/parent_atom = parent
 	if(delete_nade)
