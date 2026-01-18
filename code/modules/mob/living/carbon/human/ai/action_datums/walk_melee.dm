@@ -1,6 +1,6 @@
 /datum/ai_action/walk_melee
 	name = "Walk Melee"
-	action_flags = ACTION_USING_LEGS
+	action_flags = ACTION_USING_LEGS|ACTION_USING_HANDS
 
 /datum/ai_action/walk_melee/get_weight(datum/human_ai_brain/brain)
 	if(!brain.current_target)
@@ -48,7 +48,7 @@
 			else
 				if(!istype(tied_human.hand, /obj/item/grab))
 					tied_human.swap_hand()
-				tied_human.throw_item(get_random_turf_in_range(tied_human, 3, 0))
+				tied_human.throw_item(get_random_turf_in_range(tied_human, 3, 1))
 		brain.unholster_any_weapon()
 		INVOKE_ASYNC(tied_human, TYPE_PROC_REF(/mob, do_click), brain.current_target, "", list())
 		tied_human.face_atom(brain.current_target)
@@ -56,4 +56,4 @@
 	if(!brain.move_to_next_turf(get_turf(brain.current_target)))
 		return ONGOING_ACTION_COMPLETED
 
-	return ONGOING_ACTION_COMPLETED
+	return ONGOING_ACTION_UNFINISHED
