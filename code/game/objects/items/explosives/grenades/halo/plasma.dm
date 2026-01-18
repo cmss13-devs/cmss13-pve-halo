@@ -122,9 +122,11 @@
 	src.origin_nade.forceMove(parent_atom)
 	src.origin_nade.set_light_on(TRUE)
 	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
-	RegisterSignal(parent_atom, list(
-	COMSIG_LIVING_REJUVENATED,
-	), PROC_REF(unstuck))
+	if(istype(parent_atom, /mob/living))
+		RegisterSignal(parent_atom, list(
+		COMSIG_LIVING_REJUVENATED,
+		), PROC_REF(unstuck))
+	//RegisterSignal(src, COMSIG_PARENT_QDELETING, GLOBAL_PROC_REF(qdel), src.origin_nade)
 	START_PROCESSING(SSfastobj, src)
 
 /datum/component/status_effect/plasma_stuck/proc/unstuck(delete_nade = TRUE)
