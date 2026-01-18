@@ -1,0 +1,10 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Covenant walls of various types"
+  - rscadd: "Covenant floors"
+  - rscadd: "Factory walls"
+  - rscadd: "Corrugated floors"
+  - rscadd: "Factory door"
+  - bugfix: "Fix white pixel on glass 2x1 unsc door"
+  - imageadd: "All relevant icons for the the added content"

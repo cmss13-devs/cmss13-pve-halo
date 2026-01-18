@@ -75,4 +75,3 @@
 #define RADIO_CHANNEL_ROYAL_MARINE "Royal Marine"
 
 #define RADIO_CHANNEL_YAUTJA "Yautja"
-

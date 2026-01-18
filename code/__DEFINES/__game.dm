@@ -43,6 +43,7 @@
 #define MAP_LV295_BLACKSITE "LV295 Blacksite"
 #define MAP_BMG290_OTOGI_EGRESS_POINT "BMG-290 Otogi Egress Point" //mapjam
 #define MAP_CANYON_32B "Canyon 32B"
+#define MAP_HALO_NEW_IRVINE "New Irvine"
 
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
@@ -390,6 +391,9 @@
 #define WALL_UPP_GREEN "uppwall_interior"
 #define WALL_UPP_GREY "uppwall_interior"
 #define WALL_UNSC "unsc"
+#define WALL_VOI "voiwall"
+#define WALL_COV "covwall"
+#define WALL_COV_LIGHTS "l_covwall"
 
 //Defines for dropship weapon gimbals
 #define GIMBAL_LEFT -1
