@@ -18,7 +18,7 @@
 
 /datum/human_ai_squad_preset/police/squad
 	name = "UEG Police Squad"
-	desc = "A squad ofUEG police officers, all equipped for hostile activity.."
+	desc = "A squad of UEG police officers, all equipped for hostile activity.."
 	ai_to_spawn = list(
 		/datum/equipment_preset/police/officer/sergeant/geared = 1,
 		/datum/equipment_preset/police/officer/geared/smg = 2,
