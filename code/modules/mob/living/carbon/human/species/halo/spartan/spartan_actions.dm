@@ -43,6 +43,22 @@ If you make a derivative work from this code, you must include this notification
 	if(!owner.pulling || owner.pulling != human_target)
 		to_chat(owner, SPAN_WARNING("You need to have [human_target] in a cinch!"))
 		return
+
+	var/block_probability
+	var/target_skill = human_target?.skills?.get_skill_level(SKILL_CQC)
+
+	switch(target_skill)
+		if(SKILL_CQC_SKILLED)
+			block_probability = 35
+		if(SKILL_CQC_EXPERT)
+			block_probability = 65
+	if(owner.grab_level < GRAB_AGGRESSIVE)
+		block_probability = block_probability/2
+
+	if(target_skill >= SKILL_CQC_SKILLED && prob(block_probability))
+		to_chat(owner, SPAN_WARNING("[human_target] blocks your move!"))
+		return
+
 	human_target.forceMove(owner.loc)
 	human_target.setDir(get_dir(human_target, owner))
 	human_target.apply_effects(stun = 5)
@@ -177,6 +193,21 @@ If you make a derivative work from this code, you must include this notification
 
 	if(!owner.pulling || owner.pulling != human_target)
 		to_chat(owner, SPAN_WARNING("You need to have [human_target] in a cinch!"))
+		return
+
+	var/block_probability
+	var/target_skill = human_target?.skills?.get_skill_level(SKILL_CQC)
+
+	switch(target_skill)
+		if(SKILL_CQC_SKILLED)
+			block_probability = 35
+		if(SKILL_CQC_EXPERT)
+			block_probability = 65
+	if(owner.grab_level < GRAB_AGGRESSIVE)
+		block_probability = block_probability/2
+
+	if(target_skill >= SKILL_CQC_SKILLED && prob(block_probability))
+		to_chat(owner, SPAN_WARNING("[human_target] blocks your move!"))
 		return
 
 	human_target.forceMove(owner.loc)
