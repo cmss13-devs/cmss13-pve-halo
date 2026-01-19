@@ -18,6 +18,9 @@
 	burn_mod = 0.5
 	brute_mod = 0.5
 
+	darksight = 2
+	default_lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
+
 	dodge_pool = 20
 	dodge_pool_max = 20
 	dodge_pool_regen = 1
@@ -29,9 +32,9 @@
 	heat_level_2 = 700
 	heat_level_3 = 1000
 
-	knock_down_reduction = 3
-	stun_reduction = 3
-	knock_out_reduction = 3
+	knock_down_reduction = 2
+	stun_reduction = 2
+	knock_out_reduction = 2
 
 	icobase = 'icons/halo/mob/humans/species/spartan/r_spartan.dmi'
 	deform = 'icons/halo/mob/humans/species/spartan/r_spartan.dmi'
@@ -104,7 +107,7 @@
 	give_action(spartan, /datum/action/human_action/activable/covenant/sangheili_kick)
 	give_action(spartan, /datum/action/human_action/activable/throw_wrestle)
 	give_action(spartan, /datum/action/human_action/activable/slam)
-	spartan.AddComponent(/datum/component/leaping, _leap_range = 4, _leap_cooldown = 3 SECONDS, _leaper_allow_pass_flags = PASS_OVER_FIRE|PASS_OVER_ACID_SPRAY|PASS_OVER)
+	spartan.AddComponent(/datum/component/leaping, _leap_range = 4, _leap_cooldown = 4 SECONDS, _leaper_allow_pass_flags = PASS_OVER_FIRE|PASS_OVER_ACID_SPRAY|PASS_OVER)
 	spartan.AddComponent(/datum/component/jump, _jump_duration = 0.75 SECONDS, _jump_cooldown = 1 SECONDS, _jump_height = 32, _jump_sound = 'sound/weapons/thudswoosh.ogg', _jump_flags = JUMP_SPIN, _jumper_allow_pass_flags = PASS_OVER|PASS_MOB_THRU)
 	return ..()
 

@@ -95,7 +95,7 @@
 			if(collateral.body_position == STANDING_UP)
 				playsound(leaper.loc, "swing_hit", 50, TRUE)
 				collateral.emote("scream")
-				collateral.apply_effects(paralyze = 2)
+				collateral.apply_effects(stun = 1)
 				collateral.apply_armoured_damage(25, ARMOR_MELEE, BRUTE)
 				hit = TRUE
 		if(hit)

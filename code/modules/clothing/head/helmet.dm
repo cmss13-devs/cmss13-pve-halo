@@ -1989,14 +1989,13 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	allowed_species_list = list(SPECIES_SPARTAN)
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
 	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
-	armor_melee = CLOTHING_ARMOR_GIGAHIGH
-	armor_bullet = CLOTHING_ARMOR_GIGAHIGH
-	armor_laser = CLOTHING_ARMOR_GIGAHIGH
-	armor_bomb = CLOTHING_ARMOR_GIGAHIGH
-	armor_internaldamage = CLOTHING_ARMOR_GIGAHIGH
+	armor_melee = CLOTHING_ARMOR_VERYHIGH
+	armor_bullet = CLOTHING_ARMOR_VERYHIGH
+	armor_laser = CLOTHING_ARMOR_VERYHIGH
+	armor_bomb = CLOTHING_ARMOR_VERYHIGH
+	armor_internaldamage = CLOTHING_ARMOR_VERYHIGH
 	actions_types = list(/datum/action/item_action/toggle)
 	var/toggleable = TRUE
-	var/armor
 
 /obj/item/clothing/head/helmet/marine/unsc/mjolnir/Initialize()
 	. = ..()

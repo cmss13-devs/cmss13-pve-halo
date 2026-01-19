@@ -12,19 +12,19 @@
 	flags_cold_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS|BODY_FLAG_HANDS|BODY_FLAG_FEET
 	flags_heat_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_ARMS|BODY_FLAG_LEGS|BODY_FLAG_HANDS|BODY_FLAG_FEET
 	allowed_species_list = list(SPECIES_SPARTAN)
-	slowdown = SLOWDOWN_ARMOR_NONE
-	armor_melee = CLOTHING_ARMOR_GIGAHIGH
-	armor_bullet = CLOTHING_ARMOR_GIGAHIGH
-	armor_laser = CLOTHING_ARMOR_GIGAHIGH
-	armor_bomb = CLOTHING_ARMOR_GIGAHIGH
-	armor_internaldamage = CLOTHING_ARMOR_GIGAHIGH
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	armor_melee = CLOTHING_ARMOR_ULTRAHIGHPLUS
+	armor_bullet = CLOTHING_ARMOR_ULTRAHIGHPLUS
+	armor_laser = CLOTHING_ARMOR_ULTRAHIGHPLUS
+	armor_bomb = CLOTHING_ARMOR_ULTRAHIGHPLUS
+	armor_internaldamage = CLOTHING_ARMOR_ULTRAHIGHPLUS
 	var/armor_status = 100
 
 /obj/item/clothing/suit/marine/unsc/mjolnir/proc/armor_check()
 	var/new_stat
 	switch(armor_status)
 		if(80 to 100)
-			new_stat = CLOTHING_ARMOR_GIGAHIGH
+			new_stat = CLOTHING_ARMOR_ULTRAHIGHPLUS
 		if(50 to 80)
 			new_stat = CLOTHING_ARMOR_VERYHIGH
 		if(20 to 50)
