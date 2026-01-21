@@ -194,7 +194,7 @@
 	count = 15
 	spawning = 15
 	velocity = generator(GEN_CIRCLE, 10, 15, NORMAL_RAND)
-	scale = generator(GEN_NUM, 0.75, 1.25)
+	scale = generator(GEN_NUM, 0.65, 1.1)
 
 /particles/plasma_explosion/shield_hit
 	count = 10
@@ -208,15 +208,15 @@
 	icon_state = "circle"
 	width = 150
 	height = 150
-	count = 7
-	spawning = 7
+	count = 12
+	spawning = 12
 	gradient = list("#FFFFFF", "#bce0ff", "#3e308aff")
 	color_change = 0.25
 	lifespan = 5
 	fade = 5
 	scale = list(0.17, 0.17)
 	grow = -0.03
-	velocity = generator(GEN_CIRCLE, 25, 25, NORMAL_RAND)
+	velocity = generator(GEN_CIRCLE, 35, 35, NORMAL_RAND)
 	position = generator(GEN_CIRCLE, 5, 5, NORMAL_RAND)
 	friction = generator(GEN_NUM, 0.5, 0.4)
 

@@ -75,8 +75,9 @@
 				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff", "size" = 1))
 				shield_effect = TRUE
 				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 22)
-			new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
-			new /obj/effect/temp_visual/shield_spark(user.loc)
+			var/obj/shield_hit_fx = new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
+			shield_hit_fx.pixel_x = rand(-5, 5)
+			shield_hit_fx.pixel_y = rand(-16, 16)
 			shield_strength = max(shield_strength - damage_taken, 0)
 			COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
 			if(shield_strength <= 0 && !shield_broken)
