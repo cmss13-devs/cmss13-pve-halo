@@ -67,6 +67,61 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
+/obj/item/weapon/gun/rifle/halo/ma5b
+	name = "MA5B ICWS assault rifle"
+	desc = "Belonging to the MA5 individual combat weapons system platform and produced by Misriah Armory, the MA5B is an older rifle than the MA5C, albeit still fairly common. Features larger magazine capacities and a faster fire rate, it is favored by some marines for its CQC abilities."
+	icon_state = "ma5b"
+	item_state = "ma5b"
+	caliber = "7.62x51mm"
+
+	fire_sound = "gun_ma5b"
+	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
+	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
+	empty_click = "ma5b_dryfire"
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+
+/obj/item/weapon/gun/rifle/halo/ma5b/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5b, /obj/item/attachable/ma5b_muzzle)
+	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5b
+	attachable_allowed = list(
+		/obj/item/attachable/ma5b_muzzle,
+		/obj/item/attachable/flashlight/ma5b,
+	)
+
+/obj/item/weapon/gun/rifle/halo/ma5b/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/ma5b_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+	var/obj/item/attachable/flashlight/ma5b/integrated2 = new(src)
+	integrated2.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated2.Attach(src)
+	update_attachable(integrated2.slot)
+
+/obj/item/weapon/gun/rifle/halo/ma5b/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_12)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_2
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+	recoil = RECOIL_AMOUNT_TIER_3
+	fa_scatter_peak = 20
+	fa_max_scatter = 3
+
 /obj/item/weapon/gun/rifle/halo/ma3a
 	name = "MA3A assault rifle"
 	desc = "An old predecessor to the MA5 line, the MA3A had a notably short service history before being replaced by the more comprehensively designed MA5 series, nonetheless, enough were made to feed the private-security and would-be rebel markets for decades to come. Lacking the integrated combat suite of the MA5 rifles, the MA3A instead most commonly featured a over-designed and prone to malfunction multi-mode conventional computer optic. While robust in its capabilities, the constant adjustments and poor battery-life led to its quick abandonment by mainline UNSCDF units."

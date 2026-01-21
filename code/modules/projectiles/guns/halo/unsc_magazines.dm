@@ -13,17 +13,37 @@
 	icon_state = "ma5c"
 	max_rounds = 48
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
-	default_ammo = /datum/ammo/bullet/rifle/ma5c
+	default_ammo = /datum/ammo/bullet/rifle/ma5
 	caliber = "7.62x51"
 	ammo_band_icon = "+ma5c_band"
 	ammo_band_icon_empty = "+ma5c_band_e"
 
 /obj/item/ammo_magazine/rifle/halo/ma5c/shredder
 	name = "\improper MA5C magazine (7.62x51mm Shredder)"
-	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 shredder ammunitions, a specialized ammunition that pierces armor and splinters in the target."
+	desc = "A rectangular box magazine for the MA5C holding 48 rounds of 7.62x51 shredder ammunitions, a specialized ammunition that pierces armor and splinters in the target."
 	max_rounds = 48
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5c
-	default_ammo = /datum/ammo/bullet/rifle/ma5c/shredder
+	default_ammo = /datum/ammo/bullet/rifle/ma5/shredder
+	caliber = "7.62x51"
+	ammo_band_color = "#994545"
+
+/obj/item/ammo_magazine/rifle/halo/ma5b
+	name = "\improper MA5B magazine (7.62x51mm FMJ)"
+	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 FMJ ammunitions."
+	icon_state = "ma5b"
+	max_rounds = 60
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma5b
+	default_ammo = /datum/ammo/bullet/rifle/ma5
+	caliber = "7.62x51"
+	ammo_band_icon = "+ma5b_band"
+	ammo_band_icon_empty = "+ma5b_band_e"
+
+/obj/item/ammo_magazine/rifle/halo/ma5b/shredder
+	name = "\improper MA5B magazine (7.62x51mm Shredder)"
+	desc = "A rectangular box magazine for the MA5B holding 60 rounds of 7.62x51 shredder ammunitions, a specialized ammunition that pierces armor and splinters in the target."
+	max_rounds = 60
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma5b
+	default_ammo = /datum/ammo/bullet/rifle/ma5/shredder
 	caliber = "7.62x51"
 	ammo_band_color = "#994545"
 

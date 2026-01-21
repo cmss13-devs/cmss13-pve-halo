@@ -71,6 +71,19 @@
 	size_mod = 0
 	hud_offset_mod = -7
 
+/obj/item/attachable/ma5b_muzzle
+	name = "\improper MA5B muzzle"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma5b_muzzle"
+	attach_icon = "ma5b_muzzle"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -7
+
 /obj/item/attachable/m90_muzzle
 	name = "\improper M90 CAWS muzzle"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
@@ -98,8 +111,8 @@
 	hud_offset_mod = -3
 
 /obj/item/attachable/flashlight/ma5c
-	name = "\improper MA5 integrated flashlight"
-	desc = "The MA5 integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
+	name = "\improper MA5C integrated flashlight"
+	desc = "The MA5C integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_flashlight"
 	attach_icon = "ma5c_flashlight"
@@ -110,6 +123,16 @@
 /obj/item/attachable/flashlight/ma5c/New()
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
+
+/obj/item/attachable/flashlight/ma5b
+	name = "\improper MA5B integrated flashlight"
+	desc = "The MA5B integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma5b_flashlight"
+	attach_icon = "ma5b_flashlight"
+	original_state = "ma5b_flashlight"
+	original_attach = "ma5b_flashlight"
+	slot = "under"
 
 /obj/item/attachable/flashlight/ma5c/ma3a
 	name = "\improper MA3A integrated flashlight"

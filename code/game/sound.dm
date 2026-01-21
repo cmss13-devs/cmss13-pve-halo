@@ -442,6 +442,8 @@
 			// halo guns unsc
 			if("gun_ma5c")
 				sound = pick('sound/weapons/halo/gun_ma5c_1.ogg','sound/weapons/halo/gun_ma5c_2.ogg','sound/weapons/halo/gun_ma5c_3.ogg')
+			if("gun_ma5b")
+				sound = pick('sound/weapons/halo/ma5b/gun_ma5b_1.ogg', 'sound/weapons/halo/ma5b/gun_ma5b_2.ogg', 'sound/weapons/halo/ma5b/gun_ma5b_3.ogg', 'sound/weapons/halo/ma5b/gun_ma5b_4.ogg')
 			if("gun_m6c")
 				sound = pick('sound/weapons/halo/gun_m6c_1.ogg','sound/weapons/halo/gun_m6c_2.ogg','sound/weapons/halo/gun_m6c_3.ogg', 'sound/weapons/halo/gun_m6c_4.ogg')
 			if("gun_m6g")
@@ -460,6 +462,10 @@
 				sound = pick('sound/weapons/halo/gun_socom_1.ogg', 'sound/weapons/halo/gun_socom_2.ogg', 'sound/weapons/halo/gun_socom_3.ogg', 'sound/weapons/halo/gun_socom_4.ogg')
 			if("gun_socom_smg")
 				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg')
+
+			//halo dryfire
+			if("ma5b_dryfire")
+				sound = pick('sound/weapons/halo/ma5b/ma5b_dryfire_1.ogg', 'sound/weapons/halo/ma5b/ma5b_dryfire_2.ogg', 'sound/weapons/halo/ma5b/ma5b_dryfire_3.ogg')
 
 
 			// Halo misc
