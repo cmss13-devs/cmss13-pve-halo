@@ -11,6 +11,8 @@
 	var/datum/halo_shield/shield = TESTER_SHIELD
 	/// Whether or not any of the shield features are enabled
 	var/shield_enabled = TRUE
+	///is shield shimmering effect active
+	var/shield_effect = FALSE
 	/// Time in seconds until the shield begins to regenerate after taking damage
 	COOLDOWN_DECLARE(time_to_regen)
 	/// Time that it takes for the shield to reach full strength
@@ -68,7 +70,13 @@
 	if(ishuman(user))
 		if(damage_taken)
 			playsound(src, "shield_hit")
-			flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 4)
+			if(!shield_effect)
+				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 22)
+				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff", "size" = 1))
+				shield_effect = TRUE
+				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 22)
+			new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
+			new /obj/effect/temp_visual/shield_spark(user.loc)
 			shield_strength = max(shield_strength - damage_taken, 0)
 			COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
 			if(shield_strength <= 0 && !shield_broken)
@@ -80,7 +88,8 @@
 	user = src.loc
 	if(ishuman(user))
 		playsound(src, "shield_pop", falloff = 5)
-		flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
+		new /obj/effect/temp_visual/plasma_explosion/shield_pop(user.loc)
+		new /obj/effect/temp_visual/shield_spark(user.loc)
 		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!"), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
 
 // ------------------ PROCESS PROCS ------------------
@@ -99,7 +108,10 @@
 			return
 		if(shield_broken || user.stat == DEAD)
 			if(COOLDOWN_FINISHED(src, shield_sparks))
-				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 4)
+				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 22)
+				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff", "size" = 1))
+				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 21)
+				shield_effect = TRUE
 				COOLDOWN_START(src, shield_sparks, rand(1, 4) SECONDS)
 		if(user.stat == DEAD)
 			disable_shield()
@@ -111,6 +123,11 @@
 					playsound(src, "shield_charge", vary = TRUE)
 					user.visible_message(SPAN_NOTICE("[user]s energy shield emitters hum, regenerating the shield around them!"), SPAN_DANGER("Your energy shields hum and begin to regenerate."))
 					COOLDOWN_START(src, shield_noise_cd, shield.time_to_regen)
+
+/obj/item/clothing/suit/marine/shielded/proc/remove_shield_effect()
+	user = src.loc
+	user.remove_filter("shield")
+	shield_effect = FALSE
 
 // ------------------ ARMOR ------------------
 
