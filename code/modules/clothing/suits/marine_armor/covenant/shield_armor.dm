@@ -72,7 +72,7 @@
 			playsound(src, "shield_hit")
 			if(!shield_effect)
 				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 22)
-				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff", "size" = 1))
+				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff9a", "size" = 1))
 				shield_effect = TRUE
 				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 22)
 			var/obj/shield_hit_fx = new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
@@ -91,6 +91,7 @@
 		playsound(src, "shield_pop", falloff = 5)
 		new /obj/effect/temp_visual/plasma_explosion/shield_pop(user.loc)
 		new /obj/effect/temp_visual/shield_spark(user.loc)
+		remove_shield_effect()
 		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!"), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
 
 // ------------------ PROCESS PROCS ------------------
@@ -110,7 +111,7 @@
 		if(shield_broken || user.stat == DEAD)
 			if(COOLDOWN_FINISHED(src, shield_sparks))
 				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 22)
-				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff", "size" = 1))
+				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff9a", "size" = 1))
 				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 21)
 				shield_effect = TRUE
 				COOLDOWN_START(src, shield_sparks, rand(3, 5) SECONDS)

@@ -197,11 +197,11 @@
 	scale = generator(GEN_NUM, 0.65, 1.1)
 
 /particles/plasma_explosion/shield_hit
-	count = 10
-	spawning = 10
+	count = 5
+	spawning = 5
 	velocity = generator(GEN_CIRCLE, 10, 15, NORMAL_RAND)
 	fade = generator(GEN_NUM, 35, 55)
-	scale = generator(GEN_NUM, 0.3, 0.4)
+	scale = generator(GEN_NUM, 0.2, 0.25)
 
 /particles/shield_spark
 	icon = 'icons/halo/effects/plasma.dmi'
