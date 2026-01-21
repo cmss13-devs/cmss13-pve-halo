@@ -113,7 +113,7 @@
 				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff", "size" = 1))
 				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 21)
 				shield_effect = TRUE
-				COOLDOWN_START(src, shield_sparks, rand(1, 4) SECONDS)
+				COOLDOWN_START(src, shield_sparks, rand(3, 5) SECONDS)
 		if(user.stat == DEAD)
 			disable_shield()
 		if(COOLDOWN_FINISHED(src, time_to_regen))
