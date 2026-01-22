@@ -211,8 +211,16 @@
 
 /obj/item/ammo_magazine/pistol/halo/m6g
 	name = "\improper M6G magazine (12.7x40mm SAP-HE)"
-	desc = "A rectangular slanted magazine for the M6G, holding 8 rounds of 12.7x40mm SAP-HE ammunition"
+	desc = "A rectangular slanted magazine for the M6G, holding 8 rounds of 12.7x40mm SAP-HE ammunition."
 	icon_state = "m6g"
 	gun_type = /obj/item/weapon/gun/pistol/halo/m6g
 	default_ammo = /datum/ammo/bullet/pistol/magnum
 	max_rounds = 8
+
+/obj/item/ammo_magazine/pistol/halo/m6d
+	name = "\improper M6D magazine (12.7x40mm SAP-HE)"
+	desc = "A rectangular slanted magazine for the M6D, holding 12 rounds of 12.7x40mm SAP-HE ammunition. Chrome finish."
+	icon_state = "m6d"
+	gun_type = /obj/item/weapon/gun/pistol/halo/m6d
+	default_ammo = /datum/ammo/bullet/pistol/magnum
+	max_rounds = 12

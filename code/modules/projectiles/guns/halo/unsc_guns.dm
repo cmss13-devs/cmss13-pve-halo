@@ -75,6 +75,7 @@
 	caliber = "7.62x51mm"
 
 	fire_sound = "gun_ma5b"
+	fire_rattle = "gun_ma5b"
 	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
 	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
@@ -84,16 +85,14 @@
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
-
-/obj/item/weapon/gun/rifle/halo/ma5b/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
-
-	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5b, /obj/item/attachable/ma5b_muzzle)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5b
 	attachable_allowed = list(
 		/obj/item/attachable/ma5b_muzzle,
 		/obj/item/attachable/flashlight/ma5b,
 	)
+
+/obj/item/weapon/gun/rifle/halo/ma5b/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 48, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
 
 /obj/item/weapon/gun/rifle/halo/ma5b/handle_starting_attachment()
 	..()
@@ -109,18 +108,19 @@
 /obj/item/weapon/gun/rifle/halo/ma5b/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_12)
-	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_amount(BURST_AMOUNT_TIER_5)
 	set_burst_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
 	scatter = SCATTER_AMOUNT_TIER_2
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
-	scatter_unwielded = SCATTER_AMOUNT_TIER_2
-	damage_mult = BASE_BULLET_DAMAGE_MULT
-	recoil_unwielded = RECOIL_AMOUNT_TIER_2
-	recoil = RECOIL_AMOUNT_TIER_3
-	fa_scatter_peak = 20
-	fa_max_scatter = 3
+	scatter_unwielded = SCATTER_AMOUNT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT * 0.85
+	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+	recoil = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = 60
+	fa_max_scatter = SCATTER_AMOUNT_TIER_3
+	effective_range_max = EFFECTIVE_RANGE_MAX_TIER_2
 
 /obj/item/weapon/gun/rifle/halo/ma3a
 	name = "MA3A assault rifle"
@@ -806,6 +806,44 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
 	velocity_add = AMMO_SPEED_TIER_1
+
+/obj/item/weapon/gun/pistol/halo/m6d
+	name = "M6D service magnum"
+	desc = "The M6D service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
+	icon_state = "m6d"
+	item_state = "m6"
+	caliber = "12.7x40mm"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6d
+	attachable_allowed = list(/obj/item/attachable/scope/variable_zoom/m6d, /obj/item/attachable/flashlight/m6)
+	fire_sound = "gun_m6d"
+	unload_sound = 'sound/weapons/halo/m6d/gun_m6d_unload.ogg'
+	reload_sound = 'sound/weapons/halo/m6d/gun_m6d_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/m6d/gun_m6d_cock.ogg'
+	empty_click = 'sound/weapons/halo/m6d/gun_m6d_dryfire.ogg'
+
+/obj/item/weapon/gun/pistol/halo/m6g/unloaded
+	current_mag = null
+
+/obj/item/weapon/gun/pistol/halo/m6d/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
+
+/obj/item/weapon/gun/pistol/halo/m6d/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_9)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_6
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_9
+	damage_mult = BASE_BULLET_DAMAGE_MULT * 2
+	velocity_add = AMMO_SPEED_TIER_2
+
+/obj/item/weapon/gun/pistol/halo/m6d/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/scope/variable_zoom/m6d/scope = new(src)
+	scope.flags_attach_features &= ~ATTACH_REMOVABLE
+	scope.Attach(src)
+	scope.hidden = TRUE
+	update_attachable(scope.slot)
 
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"

@@ -303,6 +303,11 @@
 	attach_icon = "oracle_scope"
 	slot = "rail"
 
+/obj/item/attachable/scope/variable_zoom/m6d
+	name = "\improper KFA-2/D Model II smart-linked scope"
+	desc = "A smart-linked scope designed to attach to the M6D magnum. The Model II is much more precise and allows the scope to switch between 2x and 4x modes. Links with UNSC optics to provide the HUD a reticle and ammunition counter."
+	slot = "rail"
+
 /obj/item/attachable/srs_assembly
 	name = "\improper SRS99-AM assembly"
 	desc = "That's not supposed to come off. You should probably report it to your supervisor..."
@@ -357,6 +362,10 @@
 	if(istype(subject, /obj/item/weapon/gun/pistol/halo/m6c))
 		attach_icon = "m6c_light"
 		original_attach = "m6c_light"
+		..()
+	if(istype(subject, /obj/item/weapon/gun/pistol/halo/m6d))
+		attach_icon = "m6d_light"
+		original_attach = "m6d_light"
 		..()
 	else return
 
