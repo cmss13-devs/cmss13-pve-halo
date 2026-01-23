@@ -1398,10 +1398,75 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	damage_cap = HEALTH_WALL_REINFORCED
 
 /turf/closed/wall/unsc/reinforced/hull
-	hull =  1
+	hull = TRUE
 	icon_state = "unsc_hull"
 
 /turf/closed/wall/unsc/reinforced/hull/titanium_a
 	name = "Titanium-A hull plating"
 	desc = "The best battle plating the UNSC has to offer to it's fleet of ships. It's starship grade and can take a helluva punch - nothing short of a ship to ship weapon is gonna puncture this."
 	icon_state = "unsc_hull_ext"
+
+/turf/closed/wall/voi
+	name = "paneled wall"
+	desc = "Cheap and replaceable paneling for your average industrial needs, be it factory, warehouse, or other."
+	icon_state = "voiwall"
+	walltype = WALL_VOI
+	icon = 'icons/halo/turf/walls/voi_wall.dmi'
+
+/turf/closed/wall/voi/reinforced
+	name = "reinforced paneled wall"
+	desc = "Although difficult to discern, this wall is in fact reinforced. The majority of the reinforcement is hidden underneath the mostly cosmetic paneling."
+	icon_state = "voiwall_r"
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/voi/reinforced/hull
+	name = "ultra-reinforced paneled wall"
+	desc = "Although difficult to discern, this wall is in fact reinforced with extremely high grade materials beneath its cheap paneling. You'd need more than a tank to blast past this."
+	icon_state = "voiwall_h"
+	hull = TRUE
+
+/turf/closed/wall/covenant
+	name = "weak nanolaminate wall"
+	desc = "A lighter variation of nanolaminate that allows it to be easily moved, thus susceptible to damage."
+	icon_state = "covwall"
+	walltype = WALL_COV
+	damage_cap = HEALTH_WALL_REINFORCED
+	icon = 'icons/halo/turf/walls/cov_standard.dmi'
+
+/turf/closed/wall/covenant/hull
+	name = "nanolaminate wall"
+	desc = "Standard nanolaminate structure throughout the Covenant, impervious to most light arms fire and small explosions."
+	icon_state = "covwall_h"
+	hull = TRUE
+
+/turf/closed/wall/covenant/hull/ship
+	name = "starship-grade nanolaminate"
+	desc = "The strongest of Covenant materials, impervious to all but starship grade weaponry. Very difficult to damage, if at all."
+	icon_state = "covwall_h_ext"
+
+/turf/closed/wall/covenant/lights
+	name = "weak nanolaminate wall"
+	desc = "A lighter variation of nanolaminate that allows it to be easily moved, thus susceptible to damage. There are several low-power lights on the bottom of the walls."
+	icon_state = "l_covwall"
+	walltype = WALL_COV_LIGHTS
+	damage_cap = HEALTH_WALL_REINFORCED
+
+	light_on = TRUE
+	light_range = 3
+	light_power = 0.25
+	light_color = LIGHT_COLOR_PINK
+
+/turf/closed/wall/covenant/lights/brighter
+	light_range = 4
+	light_power = 0.5
+
+
+/turf/closed/wall/covenant/lights/hull
+	name = "nanolaminate wall"
+	desc = "Standard nanolaminate structure throughout the Covenant, impervious to most light arms fire and small explosions. There are several low-power lights on the bottom of the walls."
+	icon_state = "l_covwall_h"
+	hull = TRUE
+
+/turf/closed/wall/covenant/lights/hull/brighter
+	light_range = 4
+	light_power = 0.5

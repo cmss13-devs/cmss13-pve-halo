@@ -1285,3 +1285,12 @@
 	initial_keys = list(/obj/item/device/encryptionkey/guard)
 	has_hud = TRUE
 	hud_type = MOB_HUD_FACTION_MARINE
+
+/obj/item/device/radio/headset/distress/oni
+	name = "\improper ONI Security Forces radio headset"
+	desc = "A robust headset used by members of the ONI's Security Forces. Built to outlast those it's issued to. Featured channels include: ; - ONI Security Forces, :o - Colony."
+	frequency = ONI_FREQ
+	icon_state = "generic_headset"
+	initial_keys = list(/obj/item/device/encryptionkey/oni)
+	has_hud = TRUE
+	hud_type = MOB_HUD_FACTION_MARINE
