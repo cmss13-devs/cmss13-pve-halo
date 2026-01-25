@@ -22,27 +22,27 @@
 	reload_sound = 'sound/weapons/halo/gun_ma5c_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
+	empty_click = "ma5b_dryfire"
 	empty_sound = null
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c, /obj/item/attachable/ma5c_barrel)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5c
 	attachable_allowed = list(
-		/obj/item/attachable/ma5c_shroud,
 		/obj/item/attachable/attached_gun/grenade/ma5c,
 		/obj/item/attachable/flashlight/ma5c,
-		/obj/item/attachable/ma5c_barrel,
+		/obj/item/attachable/ma5c_muzzle,
 	)
 
 /obj/item/weapon/gun/rifle/halo/ma5c/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 27, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
 
 /obj/item/weapon/gun/rifle/halo/ma5c/handle_starting_attachment()
 	..()
-	var/obj/item/attachable/ma5c_shroud/integrated = new(src)
+	var/obj/item/attachable/ma5c_muzzle/integrated = new(src)
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
@@ -54,14 +54,14 @@
 	set_burst_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_9
 	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
-	recoil = RECOIL_AMOUNT_TIER_3
-	fa_scatter_peak = 30
-	fa_max_scatter = 2
+	recoil = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = 60
+	fa_max_scatter = SCATTER_AMOUNT_TIER_8
 
 /obj/item/weapon/gun/rifle/halo/ma5c/unloaded
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
@@ -76,6 +76,7 @@
 
 	fire_sound = "gun_ma5b"
 	fire_rattle = "gun_ma5b"
+	firesound_volume = 30
 	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
 	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
@@ -112,14 +113,14 @@
 	set_burst_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_2
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_8
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
 	scatter_unwielded = SCATTER_AMOUNT_TIER_3
 	damage_mult = BASE_BULLET_DAMAGE_MULT * 0.85
 	recoil_unwielded = RECOIL_AMOUNT_TIER_3
 	recoil = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = 60
-	fa_max_scatter = SCATTER_AMOUNT_TIER_3
+	fa_max_scatter = SCATTER_AMOUNT_TIER_7
 	effective_range_max = EFFECTIVE_RANGE_MAX_TIER_2
 
 /obj/item/weapon/gun/rifle/halo/ma3a

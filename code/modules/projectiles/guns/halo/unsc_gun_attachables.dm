@@ -1,11 +1,11 @@
 
 
-/obj/item/attachable/ma5c_shroud
+/obj/item/attachable/ma5c_muzzle
 	name = "\improper MA5C shroud"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma5c_shroud"
-	attach_icon = "ma5c_shroud"
+	icon_state = "ma5c_muzzle"
+	attach_icon = "ma5c_muzzle"
 	slot = "special"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
@@ -23,10 +23,7 @@
 	max_rounds = 1
 	max_range = 10
 	attachment_firing_delay = 5
-
-/obj/item/attachable/attached_gun/grenade/New()
-	..()
-	recoil_mod = -RECOIL_AMOUNT_TIER_4
+	layer_addition = 0.1
 
 /obj/item/attachable/ma3a_shroud
 	name = "\improper MA3A shroud"
@@ -112,17 +109,13 @@
 
 /obj/item/attachable/flashlight/ma5c
 	name = "\improper MA5C integrated flashlight"
-	desc = "The MA5C integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
+	desc = "The MA5C integrated flashlight, standard-issue to any MA5-model assault rifle."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_flashlight"
 	attach_icon = "ma5c_flashlight"
 	original_state = "ma5c_flashlight"
 	original_attach = "ma5c_flashlight"
 	slot = "under"
-
-/obj/item/attachable/flashlight/ma5c/New()
-	..()
-	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
 /obj/item/attachable/flashlight/ma5b
 	name = "\improper MA5B integrated flashlight"
@@ -163,20 +156,6 @@
 	attach_icon = "m90_police_flashlight_a"
 	original_state = "m90_police_flashlight"
 	original_attach = "m90_police_flashlight_a"
-
-/obj/item/attachable/ma5c_barrel
-	name = "\improper MA5C barrel"
-	desc = "The barrel to an MA5C ICWS assault rifle. Better not leave without it."
-	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma5c_barrel"
-	attach_icon = "ma5c_barrel"
-	slot = "muzzle"
-	size_mod = 0
-
-/obj/item/attachable/ma5c_barrel/New()
-	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_3
-	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
 /obj/item/attachable/vk78_barrel
 	name = "\improper VK78 barrel"
