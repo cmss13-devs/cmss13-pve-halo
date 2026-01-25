@@ -180,11 +180,6 @@
 	slot = "muzzle"
 	size_mod = 0
 
-/obj/item/attachable/ma5c_barrel/New()
-	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_3
-	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
-
 /obj/item/attachable/br55_barrel
 	name = "\improper BR55 barrel"
 	desc = "The barrel to an BR55 battle rifle. Better not leave without it."
