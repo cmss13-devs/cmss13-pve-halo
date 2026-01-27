@@ -2,7 +2,7 @@
 #define ishuman(A) (istype(A, /mob/living/carbon/human) )
 
 //Check if the mob is an actual human (and not Yautja or Synth)
-#define ishuman_strict(A) (ishuman(A) && istype(A?:species, /datum/species/human))
+#define ishuman_strict(A) (ishuman(A) && istype(A?:species, /datum/species/human) || istype(A?:species, /datum/species/spartan))
 
 //Check if the mob is an actual human or Synth
 #define ishumansynth_strict(A)   (ishuman(A) && (istype(A?:species, /datum/species/human) || istype(A?:species, /datum/species/synthetic)))

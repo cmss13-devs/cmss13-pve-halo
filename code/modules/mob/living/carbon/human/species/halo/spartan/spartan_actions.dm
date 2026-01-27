@@ -61,7 +61,7 @@ If you make a derivative work from this code, you must include this notification
 
 	human_target.forceMove(owner.loc)
 	human_target.setDir(get_dir(human_target, owner))
-	human_target.apply_effects(stun = 5)
+	human_target.apply_effects(weaken = 5)
 	human_target.visible_message(SPAN_DANGER("[owner] starts spinning around with [human_target]!"), \
 					SPAN_USERDANGER("You're spun around by [owner]!"), SPAN_COMBAT("You hear aggressive shuffling!"), null, owner)
 	to_chat(owner, SPAN_DANGER("You start spinning around with [human_target]!"))
@@ -120,7 +120,7 @@ If you make a derivative work from this code, you must include this notification
 				if(collateral.body_position == STANDING_UP)
 					playsound(owner.loc, "swing_hit", 50, TRUE)
 					collateral.emote("scream")
-					collateral.apply_effects(stun = 3)
+					collateral.apply_effects(weaken = 3)
 					collateral.apply_armoured_damage(75, ARMOR_MELEE, BRUTE)
 			animate(human_target, pixel_x = target_x, pixel_y = target_y, time = 5, easing = LINEAR_EASING, flags = ANIMATION_END_NOW|ANIMATION_PARALLEL)
 		else
@@ -152,7 +152,7 @@ If you make a derivative work from this code, you must include this notification
 			human_target.pixel_x = 0
 			human_target.pixel_y = 0
 			owner.throw_carbon(human_target, owner.dir, 10)
-			human_target.apply_effects(stun = 8, weaken = 10)
+			human_target.apply_effects(weaken = 8, weaken = 10)
 			human_target.apply_armoured_damage(100, ARMOR_MELEE, BRUTE)
 	enter_cooldown(cooldown_throw)
 	return
@@ -285,7 +285,7 @@ If you make a derivative work from this code, you must include this notification
 		playsound(owner.loc, "swing_hit", 50, TRUE)
 		if(!human_target.stat)
 			human_target.emote("scream")
-		human_target.apply_effects(stun = 10, weaken = 15)
+		human_target.apply_effects(weaken = 10)
 		human_target.apply_armoured_damage(175, ARMOR_MELEE, BRUTE)
 	else
 		if (owner)
