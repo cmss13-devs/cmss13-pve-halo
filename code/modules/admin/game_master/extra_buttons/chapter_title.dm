@@ -69,6 +69,8 @@
 	var/chapter_title = tgui_input_text(src, "Enter the chapter title.", title = "Chapter Title", multiline = FALSE, encode = TRUE)
 	if(!chapter_title)
 		return
+	message_admins("[src] has displayed a chapter title; '[chapter_title]'")
+	notify_ghosts(message = "<span style='font-weight: bold;'>The chapter title '[chapter_title]' has been played.\n</span>")
 	for(var/mob/living/carbon/human/human as anything in GLOB.human_mob_list)
 		if(human.client)
 			human.display_chapter_title("<span class='maptext' style=font-size:10pt;font-family:Verdana;text-align:left valign='bottom'>[chapter_title]", /atom/movable/screen/text/screen_text/chapter_title)
