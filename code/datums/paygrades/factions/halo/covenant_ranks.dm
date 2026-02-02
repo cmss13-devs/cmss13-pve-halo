@@ -1,7 +1,7 @@
 // BASE
 
 /datum/paygrade/covenant
-	name = "Covy paygrades"
+	name = "Civilian"
 	default_faction = FACTION_COVENANT
 	paygrade = PAY_SHORT_COV_CIV
 	prefix = "Civ"
@@ -51,14 +51,14 @@
 
 // KIG-YAR
 
-/datum/paygrade/covenant/jackal_champion
+/datum/paygrade/covenant/kigyar_champion
 	paygrade = PAY_SHORT_COV_CHAMPION
 	name = "Champion"
 	prefix = "Champion"
 	ranking = 4
 	pay_multiplier = 2.2
 
-/datum/paygrade/covenant/jackal_shipmistress
+/datum/paygrade/covenant/kigyar_shipmistress
 	paygrade = PAY_SHORT_COV_SHIPMISTRESS
 	name = "Shipmistress"
 	prefix = "Shipmistress"
