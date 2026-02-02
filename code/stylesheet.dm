@@ -68,6 +68,7 @@ em {font-style: normal; font-weight: bold;}
 .unscradio {color: #828cff;}
 .covradio {color: #d283ec;}
 .odstradio {color: #32CD32;}
+.oniradio {color: #6700d1;}
 
 .medium { font-size: 2}
 .big { font-size: 2}

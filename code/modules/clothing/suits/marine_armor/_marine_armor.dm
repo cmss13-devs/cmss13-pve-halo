@@ -891,6 +891,12 @@
 		/obj/item/storage/belt/gun/m7,
 	)
 
+/obj/item/clothing/suit/marine/unsc/oni
+	name = "\improper ONI M52B body armor"
+	desc = "A modified variant of the standard M52B armor, used by ONI security forces. Has no significant differences in protection compared to standard issue armor, but is painted black."
+	icon_state = "oni_sec"
+	item_state = "oni_sec"
+
 /obj/item/clothing/suit/marine/unsc/police
 	name = "\improper police RD90 ballistic armor"
 	desc = "An older model of the M52B body armor, designated as the RD90 by local police and security forces. Whilst not as comfortable, it still does the job for most of it's users, and has added protection against melee attacks."
@@ -921,3 +927,15 @@
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/suit/marine/unsc/odst/insurrection
+	name = "\improper scavenged M70DT ODST BDU"
+	icon_state = "odst_insurgent"
+	item_state = "odst_insurgent"
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORNECK, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_DECORBRACER)
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH

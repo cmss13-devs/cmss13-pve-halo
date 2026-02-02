@@ -1,0 +1,6 @@
+author: "tyeagg"
+delete-after: True
+changes:
+  - rscadd: "emissive projectiles"
+  - rscadd: "glow to covenant projectiles"
+  - imageadd: "muzzle flash icons for covenant guns"
