@@ -394,6 +394,7 @@
 #define WALL_VOI "voiwall"
 #define WALL_COV "covwall"
 #define WALL_COV_LIGHTS "l_covwall"
+#define WALL_UNSC_WEAK "unsc_w"
 
 //Defines for dropship weapon gimbals
 #define GIMBAL_LEFT -1

@@ -244,6 +244,7 @@
 //=================================================
 
 //Health of various items
+#define HEALTH_WALL_WEAK 500
 #define HEALTH_WALL 3000
 #define HEALTH_WALL_REINFORCED 9000
 #define HEALTH_WALL_XENO 900

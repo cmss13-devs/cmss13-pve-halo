@@ -30,6 +30,18 @@
 	icon = 'icons/obj/structures/machinery/computer.dmi'
 	icon_state = "terminal"
 
+/obj/structure/machinery/prop/halo/computer
+	name = "desktop computer"
+	desc = "A desktop computer, that edge seems a bit too sharp."
+
+	density = FALSE
+	anchored = TRUE
+	use_power = USE_POWER_IDLE
+	idle_power_usage = 20
+
+	icon = 'icons/halo/obj/structures/machinery/32x32computer.dmi'
+	icon_state = "desktop"
+
 /obj/structure/machinery/prop/almayer/computer/ex_act(severity)
 	switch(severity)
 		if(0 to EXPLOSION_THRESHOLD_LOW)

@@ -1384,6 +1384,14 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	icon_state = "unsc"
 	walltype = WALL_UNSC
 
+/turf/closed/wall/unsc/weak
+	name = "frail interior ship wall"
+	desc = "A weathered wall that seems to be a bit corrded. Maybe shooting it will have some effect?."
+	icon = 'icons/halo/turf/walls/unsc.dmi'
+	icon_state = "unsc_weak"
+	walltype = WALL_UNSC_WEAK
+	damage_cap = HEALTH_WALL_WEAK
+
 /turf/closed/wall/unsc/reinforced
 	name = "reinforced interior ship wall"
 	icon_state = "unsc_reinforced"

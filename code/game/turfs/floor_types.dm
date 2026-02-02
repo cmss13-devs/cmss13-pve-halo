@@ -1209,6 +1209,23 @@
 	icon_state = "blackfull"
 
 //HaloTurf - HUMIE
+/turf/open/floor/halo/segmented
+	name = "segmented paneling"
+	icon = 'icons/halo/turf/floors/covenant.dmi'
+	icon_state = "segmented_4"
+
+/turf/open/floor/halo/segmented/tiled
+	name = "segmented paneling"
+	icon_state = "segmented_5"
+
+/turf/open/floor/halo/segmented/edge
+	name = "segmented paneling"
+	icon_state = "segmented_6"
+
+/turf/open/floor/halo/segmented/lateral
+	name = "segmented paneling"
+	icon_state = "segmented_7"
+
 /turf/open/floor/corrugated
 	name = "corrugated paneling"
 	icon = 'icons/halo/turf/floors/floor.dmi'
@@ -1226,6 +1243,18 @@
 	icon = 'icons/halo/turf/floors/covenant.dmi'
 	icon_state = "pattern"
 	hull_floor = TRUE
+
+/turf/open/floor/covenant/plate
+	icon_state = "plate_prototype"
+
+/turf/open/floor/covenant/maint
+	icon_state = "cov_tech_0"
+
+/turf/open/floor/covenant/maint/alt
+	icon_state = "cov_tech_1"
+
+/turf/open/floor/covenant/maint/blt
+	icon_state = "cov_tech_2"
 
 /turf/open/floor/covenant/paneling
 	icon_state = "paneling"

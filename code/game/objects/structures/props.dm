@@ -279,6 +279,16 @@
 
 //biomass turbine
 
+/obj/structure/prop/halo/laptop
+	name = "Laptop"
+	desc = "A portable computer, has 'UNSC' engraved on the back of it. Looks like it could survive a nuclear blast."
+	icon = 'icons/halo/obj/structures/machinery/32x32computer.dmi'
+	icon_state = "laptop_s_b"
+	health = 300
+
+/obj/structure/prop/halo/laptop/on
+	icon_state = "laptop_s"
+
 /obj/structure/prop/turbine //maybe turn this into an actual power generation device? Would be cool!
 	name = "power turbine"
 	icon = 'icons/obj/structures/props/biomass_turbine.dmi'
