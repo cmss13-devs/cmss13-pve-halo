@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <base href="../" />
+    <link rel="stylesheet" href="dmdoc.css" />
+    <title>&#x2F;datum&#x2F;fire_support_custom - byond</title>
+</head>
+<body>
+<header>
+    <a href="index.html">byond</a> -
+    <a href="index.html#modules">Modules</a> -
+    <a href="index.html#types">Types</a>
+ &mdash; <a href="datum/fire_support_custom.html#var">Var Details</a> - <a href="datum/fire_support_custom.html#proc">Proc Details</a></header>
+<main>
+<h1>/<a href="datum.html">datum</a>/<a href="datum/fire_support_custom.html">fire_support_custom</a>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L410">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 410"/></a></h1>
+
+<table class="summary" cellspacing="0"><tr><td colspan="2"><h2>Vars</h2></td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/delay_to_impact">delay_to_impact</a></th><td>Delay between initiation and impact</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/impact_delay">impact_delay</a></th><td>How much delay between impacts</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/impact_quantity">impact_quantity</a></th><td>How many impacts per use</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/impact_sound">impact_sound</a></th><td>sound per impact</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/impact_start_visual">impact_start_visual</a></th><td>visual for every impact</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/initiate_sound">initiate_sound</a></th><td>Initiating sound effect</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/initiate_visual">initiate_visual</a></th><td>visual when initiated</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/scatter_range">scatter_range</a></th><td>How far the fire support can land from the target turf</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/sound_ranges">sound_ranges</a></th><td>sound ranges</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/start_sound">start_sound</a></th><td>sound when impact starts</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/start_visual">start_visual</a></th><td>visual when impact starts</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/visual_impact_delay">visual_impact_delay</a></th><td>How much delay between visual effect of impacts</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/warning_chat_message">warning_chat_message</a></th><td>Chat message when initiating fire support</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#var/warning_range">warning_range</a></th><td>Max range of warning message</td></tr><tr><td colspan="2"><h2>Procs</h2></td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#proc/do_impact">do_impact</a></th><td>The actual impact of the fire support</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#proc/initiate_fire_support">initiate_fire_support</a></th><td>Initiates fire support proc chain</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#proc/select_target">select_target</a></th><td>Selects the final target turf(s) and calls impact procs</td></tr>
+            <tr><th><a href="datum/fire_support_custom.html#proc/start_fire_support">start_fire_support</a></th><td>Actually begins the fire support attack</td></tr></table>
+    <h2 id="var">Var Details</h2><h3 id="var/delay_to_impact"><aside class="declaration">var </aside>delay_to_impact
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L426">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 426"/></a></h3>
+        <p>Delay between initiation and impact</p><h3 id="var/impact_delay"><aside class="declaration">var </aside>impact_delay
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L416">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 416"/></a></h3>
+        <p>How much delay between impacts</p><h3 id="var/impact_quantity"><aside class="declaration">var </aside>impact_quantity
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L414">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 414"/></a></h3>
+        <p>How many impacts per use</p><h3 id="var/impact_sound"><aside class="declaration">var </aside>impact_sound
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L436">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 436"/></a></h3>
+        <p>sound per impact</p><h3 id="var/impact_start_visual"><aside class="declaration">var </aside>impact_start_visual
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L432">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 432"/></a></h3>
+        <p>visual for every impact</p><h3 id="var/initiate_sound"><aside class="declaration">var </aside>initiate_sound
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L424">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 424"/></a></h3>
+        <p>Initiating sound effect</p><h3 id="var/initiate_visual"><aside class="declaration">var </aside>initiate_visual
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L428">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 428"/></a></h3>
+        <p>visual when initiated</p><h3 id="var/scatter_range"><aside class="declaration">var </aside>scatter_range
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L412">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 412"/></a></h3>
+        <p>How far the fire support can land from the target turf</p><h3 id="var/sound_ranges"><aside class="declaration">var </aside>sound_ranges
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L438">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 438"/></a></h3>
+        <p>sound ranges</p><h3 id="var/start_sound"><aside class="declaration">var </aside>start_sound
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L434">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 434"/></a></h3>
+        <p>sound when impact starts</p><h3 id="var/start_visual"><aside class="declaration">var </aside>start_visual
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L430">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 430"/></a></h3>
+        <p>visual when impact starts</p><h3 id="var/visual_impact_delay"><aside class="declaration">var </aside>visual_impact_delay
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L418">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 418"/></a></h3>
+        <p>How much delay between visual effect of impacts</p><h3 id="var/warning_chat_message"><aside class="declaration">var </aside>warning_chat_message
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L420">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 420"/></a></h3>
+        <p>Chat message when initiating fire support</p><h3 id="var/warning_range"><aside class="declaration">var </aside>warning_range
+            <aside>&ndash; </aside>
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L422">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 422"/></a></h3>
+        <p>Max range of warning message</p><h2 id="proc">Proc Details</h2><h3 id="proc/do_impact"><aside class="declaration">proc </aside>do_impact<aside>(/<a href="turf.html">turf</a>/target_turf) 
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L495">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 495"/></a></aside>
+        </h3>
+        <p>The actual impact of the fire support</p><h3 id="proc/initiate_fire_support"><aside class="declaration">proc </aside>initiate_fire_support<aside>(/<a href="turf.html">turf</a>/target_turf) 
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L442">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 442"/></a></aside>
+        </h3>
+        <p>Initiates fire support proc chain</p><h3 id="proc/select_target"><aside class="declaration">proc </aside>select_target<aside>(/<a href="turf.html">turf</a>/target_turf) 
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L487">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 487"/></a></aside>
+        </h3>
+        <p>Selects the final target turf(s) and calls impact procs</p><h3 id="proc/start_fire_support"><aside class="declaration">proc </aside>start_fire_support<aside>(/<a href="turf.html">turf</a>/target_turf) 
+        
+    
+            <a href="https://github.com/cmss13-devs/cmss13-pve-halo/blob/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2/code/modules/admin/game_master/extra_buttons/fire_support_menu.dm#L478">
+        <img src="git.png" width="16" height="16" title="code&#x2F;modules&#x2F;admin&#x2F;game_master&#x2F;extra_buttons&#x2F;fire_support_menu.dm 478"/></a></aside>
+        </h3>
+        <p>Actually begins the fire support attack</p></main>
+<footer>
+    colonialmarines.dme
+    <a href="https://github.com/cmss13-devs/cmss13-pve-halo/tree/f25df6f487d3a1055b1de7ae019cb7daaf8fb5e2">f25df6f</a>
+        (master) &mdash; <a href="https://github.com/SpaceManiac/SpacemanDMM/blob/master/crates/dmdoc/README.md">dmdoc 1.8.0</a></footer>
+</body>
+</html>
