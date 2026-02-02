@@ -276,6 +276,10 @@
 	shuttle_tag = DROPSHIP_CYCLONE
 	dir = SOUTH
 
+/turf/open/space/transit/dropship/pelican
+	shuttle_tag = DROPSHIP_PELICAN
+	dir = SOUTH
+
 /turf/open/space/transit/dropship/tornado
 	shuttle_tag = DROPSHIP_TORNADO
 	dir = SOUTH

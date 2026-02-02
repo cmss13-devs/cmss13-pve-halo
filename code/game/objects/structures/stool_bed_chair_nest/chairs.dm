@@ -389,6 +389,57 @@
 	can_rotate = FALSE
 	picked_up_item = null
 
+/obj/structure/bed/chair/dropship/pelican
+	name = "pelican seat"
+	desc = "A sturdy metal chair with a brace that lowers over your body. Holds you in place during high altitude drops and high-G maneuvers."
+	icon = 'icons/halo/obj/objects.dmi'
+	icon_state = "pelican_seat"
+	var/image/chairbar = null
+	buildstacktype = 0
+	unslashable = TRUE
+	unacidable = TRUE
+	buckling_sound = 'sound/effects/metal_close.ogg'
+
+/obj/structure/bed/chair/dropship/pelican/east
+	dir = EAST
+	buckling_x = 3
+
+/obj/structure/bed/chair/dropship/pelican/west
+	dir = WEST
+	buckling_x = -3
+
+/obj/structure/bed/chair/dropship/pelican/handle_rotation()
+	if(dir == NORTH)
+		layer = north_layer
+	else
+		layer = non_north_layer
+	if(buckled_mob)
+		buckled_mob.setDir(dir)
+
+/obj/structure/bed/chair/dropship/pelican/Initialize()
+	. = ..()
+	chairbar = image('icons/halo/obj/objects.dmi', "hotseat_bars")
+	chairbar.layer = 4.2
+
+/obj/structure/bed/chair/dropship/pelican/afterbuckle()
+	. = ..()
+	if(buckled_mob)
+		icon_state = initial(icon_state) + "_buckled"
+		overlays += chairbar
+		if(dir == NORTH)
+			buckled_mob.layer = north_layer - 0.1
+		else
+			buckled_mob.layer = layer + 0.01
+	else
+		icon_state = initial(icon_state)
+		overlays -= chairbar
+
+
+/obj/structure/bed/chair/dropship/pelican/unbuckle()
+	if(buckled_mob && buckled_mob.buckled == src)
+		buckled_mob.layer = MOB_LAYER
+	return ..()
+
 /obj/structure/bed/chair/dropship/pilot
 	icon_state = "pilot_chair"
 	anchored = TRUE
