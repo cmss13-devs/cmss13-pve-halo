@@ -202,7 +202,7 @@
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/proc/equipment_giver(mob/living/user)
 	var/static/list/spec_equipment_list = list(
 		"SPNKr kit" = /obj/item/storage/unsc_speckit/spnkr,
-		"SRS-99AM kit" = /obj/item/storage/unsc_speckit/srs99,
+		"SRS99-AM kit" = /obj/item/storage/unsc_speckit/srs99,
 		)
 
 	var/chosen_kit = tgui_input_list(user, "Equipment Selection", "Select your equipment", spec_equipment_list)

@@ -2,6 +2,7 @@
 
 /obj/item/weapon/gun/rifle/halo
 	name = "Halo rifle holder"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5c.dmi'
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
@@ -73,6 +74,7 @@
 	icon_state = "ma5b"
 	item_state = "ma5b"
 	caliber = "7.62x51mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5b.dmi'
 
 	fire_sound = "gun_ma5b"
 	fire_rattle = "gun_ma5b"
@@ -122,6 +124,10 @@
 	fa_scatter_peak = 60
 	fa_max_scatter = SCATTER_AMOUNT_TIER_7
 	effective_range_max = EFFECTIVE_RANGE_MAX_TIER_2
+
+/obj/item/weapon/gun/rifle/halo/ma5b/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
 
 /obj/item/weapon/gun/rifle/halo/ma3a
 	name = "MA3A assault rifle"
@@ -244,6 +250,7 @@
 	icon_state = "br55"
 	item_state = "br55"
 	caliber = "9.5x40mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/br55.dmi'
 
 	fire_sound = "gun_br55"
 	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
@@ -299,7 +306,7 @@
 	icon_state = "dmr"
 	item_state = "dmr"
 	caliber = "7.62x51mm"
-
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/br55.dmi'
 
 	fire_sound = null
 	fire_sounds = list('sound/weapons/halo/gun_m392_1.ogg', 'sound/weapons/halo/gun_m392_2.ogg', 'sound/weapons/halo/gun_m392_3.ogg')
@@ -365,6 +372,7 @@
 	icon_state = "m7"
 	item_state = "m7"
 	caliber = "5x23mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5b.dmi'
 
 	fire_sound = "gun_m7"
 	fire_rattle = "gun_m7"
@@ -448,6 +456,7 @@
 	fire_sound = "gun_m90"
 	pump_sound = 'sound/weapons/halo/gun_m90_pump.ogg'
 	reload_sound = 'sound/weapons/halo/gun_m90_reload.ogg'
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/shotgun.dmi'
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90
 	attachable_allowed = list(/obj/item/attachable/flashlight/m90)
 	starting_attachment_types = list(/obj/item/attachable/flashlight/m90)
@@ -497,6 +506,7 @@
 	icon_state = "srs99"
 	item_state = "srs99"
 	caliber = "14.5x114mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/srs99.dmi'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
 	worn_x_dimension = 64
@@ -603,8 +613,10 @@
 	layer = ABOVE_OBJ_LAYER
 	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	bonus_overlay_layer = UPPER_ITEM_LAYER
+	w_class = SIZE_LARGE
 	bonus_overlay_x = -2
 	bonus_overlay_y = 1
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/spnkr.dmi'
 	var/cover_open = FALSE
 	current_mag = /obj/item/ammo_magazine/spnkr
 	aim_slowdown = SLOWDOWN_ADS_RIFLE
@@ -643,16 +655,21 @@
 		if(user.get_active_hand() && user.get_inactive_hand())
 			to_chat(user, SPAN_WARNING("You can't do that with your hands full!"))
 			return TRUE
-		if(!cover_open)
-			playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the tubes to be removed."))
-			cover_open = TRUE
 		else
-			playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You close [src]'s tube cover."))
-			cover_open = FALSE
-		update_icon()
-		return TRUE
+			toggle_cover()
+			return TRUE
+
+
+/obj/item/weapon/gun/halo_launcher/spnkr/proc/toggle_cover(mob/user)
+	if(!cover_open)
+		playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
+		to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the tubes to be removed."))
+		cover_open = TRUE
+	else
+		playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
+		to_chat(user, SPAN_NOTICE("You close [src]'s tube cover."))
+		cover_open = FALSE
+	update_icon()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
 	if(!cover_open)
@@ -702,6 +719,7 @@
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/magnum.dmi'
 	reload_sound = 'sound/weapons/halo/gun_magnum_reload.ogg'
 	unload_sound = 'sound/weapons/halo/gun_magnum_unload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
@@ -810,7 +828,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6d
 	name = "M6D service magnum"
-	desc = "The M6D service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
+	desc = "The M6D service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 12 round magazine."
 	icon_state = "m6d"
 	item_state = "m6"
 	caliber = "12.7x40mm"
