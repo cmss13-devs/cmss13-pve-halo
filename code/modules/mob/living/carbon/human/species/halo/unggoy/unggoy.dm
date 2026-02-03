@@ -44,6 +44,13 @@
 		"eyes" =  /datum/internal_organ/eyes
 		)
 
+/datum/species/unggoy/New()
+	equip_adjust = list(
+		WEAR_R_HAND = list("[NORTH]" = list("x" = 5, "y" = -5), "[EAST]" = list("x" = 7, "y" = -5), "[SOUTH]" = list("x" = -4, "y" = -5), "[WEST]" = list("x" = 0, "y" = -5)),
+		WEAR_L_HAND = list("[NORTH]" = list("x" = -4, "y" = -5), "[EAST]" = list("x" = 0, "y" = -5), "[SOUTH]" = list("x" = 5, "y" = -5), "[WEST]" = list("x" = -7, "y" = -5))
+	)
+	..()
+
 /datum/species/unggoy/post_species_loss(mob/living/carbon/human/H)
 	..()
 	var/datum/mob_hud/medical/advanced/A = GLOB.huds[MOB_HUD_MEDICAL_ADVANCED]

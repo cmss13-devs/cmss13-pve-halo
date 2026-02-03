@@ -322,6 +322,7 @@
 	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "needler"
+	item_state = "needler"
 	fire_sound = "gun_needler"
 	reload_sound = 'sound/weapons/halo/gun_needler_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_needler_cocked.ogg'
@@ -334,6 +335,12 @@
 	start_automatic = TRUE
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_cov.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+	)
 
 /obj/item/weapon/gun/smg/covenant_needler/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
@@ -401,6 +408,7 @@
 	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "carbine"
+	item_state = "carbine"
 	fire_sound = "gun_carbine"
 	reload_sound = 'sound/weapons/halo/gun_carbine_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_carbine_cocked.ogg'
@@ -414,6 +422,16 @@
 	muzzleflash_iconstate = "muzzle_flash_green"
 	muzzle_flash_color = LIGHT_COLOR_GREEN
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/carbine.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_cov.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo_64.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo_64.dmi'
+	)
 
 /obj/item/weapon/gun/rifle/covenant_carbine/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
