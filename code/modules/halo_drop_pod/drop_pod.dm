@@ -153,7 +153,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	to_chat(user, SPAN_NOTICE("You enter the pod."))
 	user.forceMove(src)
 	occupant = user
-	playsound(src, "droppod_enter")
+	playsound(src, 'sound/effects/odst_pod/pod_enter_1.ogg')
 	addtimer(CALLBACK(src, PROC_REF(close_door), user), 2.5 SECONDS)
 	handle_overlays(user)
 
@@ -173,7 +173,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	occupant.dir = SOUTH
 	occupant = null
 	to_chat(user, SPAN_NOTICE("You exit the pod."))
-	playsound(src, "droppod_enter")
+	playsound(src, 'sound/effects/odst_pod/pod_enter_1.ogg')
 	handle_overlays(user)
 
 /obj/structure/halo_droppod/attack_hand(mob/living/user)
@@ -356,7 +356,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 /obj/structure/halo_droppod/proc/do_drop(turf/targetturf, mob/user)
 	var/datum/cause_data/cause_data = create_cause_data("[src]", user)
 	explosion(targetturf, light_impact_range = 2, explosion_cause_data = cause_data)
-	playsound(targetturf, "droppod_land", 100)
+	playsound(targetturf, 'sound/effects/odst_pod/pod_land_1.ogg', 100)
 	addtimer(CALLBACK(src, PROC_REF(complete_drop), user), 2 SECONDS)
 
 /obj/structure/halo_droppod/proc/complete_drop(mob/user)

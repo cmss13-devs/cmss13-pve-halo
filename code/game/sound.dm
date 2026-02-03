@@ -461,12 +461,6 @@
 			if("gun_socom_smg")
 				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg')
 
-			// Halo drop pods
-			if("droppod_enter")
-				sound = pick('sound/effects/odst_pod/pod_enter_1.ogg', 'sound/effects/odst_pod/pod_enter_2.ogg', 'sound/effects/odst_pod/pod_enter_3.ogg')
-			if("droppod_land")
-				sound = pick('sound/effects/odst_pod/pod_land_1.ogg', 'sound/effects/odst_pod/pod_land_2.ogg', 'sound/effects/odst_pod/pod_land_3.ogg', 'sound/effects/odst_pod/pod_land_4.ogg')
-
 
 			// Halo misc
 			if("shield_hit")
