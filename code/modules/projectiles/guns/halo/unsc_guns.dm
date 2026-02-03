@@ -70,7 +70,8 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5b
 	name = "MA5B ICWS assault rifle"
-	desc = "Belonging to the MA5 individual combat weapons system platform and produced by Misriah Armory, the MA5B is an older rifle than the MA5C, albeit still fairly common. Features larger magazine capacities and a faster fire rate, it is favored by some marines for its CQC abilities."
+	desc = "The MA5B is an older member of the MA5 line produced by Misriah Armory, though still in use by the Marine Corps and Army. Fires a standard 7.62x51mm round in 60 round magazines, with superior firerate to the MA5C, though less stability and accuracy."
+	desc_lore = "While the MA5C was developed to meet many of the issues the UNSC Marine Corps found with the MA5B rifle, primarily its unreliable magazines and poor long-range performance, it remains popular among veterans and close quarter specialists. Especially when paired with 'shredder' ammunition."
 	icon_state = "ma5b"
 	item_state = "ma5b"
 	caliber = "7.62x51mm"
@@ -834,7 +835,8 @@
 
 /obj/item/weapon/gun/pistol/halo/m6d
 	name = "M6D service magnum"
-	desc = "The M6D service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 12 round magazine."
+	desc = "The M6D service magnum is a high-power sidearm in use by the UNSC, particularly with officers and some special forces troops. Fires 12.7x40mm Semi-Armour-Piercing-High-Explosive (SAPHE) rounds out of a 12 round magazine."
+	desco_lore = "Its extended magazine and custom grip give it a striking profile which many consider unwieldy and bulky, though others will swear on the weapons power and accuracy with its integrated KFA-2 scope."
 	icon_state = "m6d"
 	item_state = "m6"
 	caliber = "12.7x40mm"
