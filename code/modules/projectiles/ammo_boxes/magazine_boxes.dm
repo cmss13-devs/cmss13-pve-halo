@@ -1244,7 +1244,7 @@
 	desc = "An ammo box storing 48 magazines of MA5B ammunition"
 	icon_state = "base_ammo3"
 	overlay_gun_type = "_ma5b"
-	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5c
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5b
 	num_of_magazines = 48
 
 /obj/item/ammo_box/magazine/unsc/ma5c/shredder
@@ -1252,6 +1252,12 @@
 	desc = "An ammo box storing 48 magazines of MA5C ammunition"
 	overlay_ammo_type = "_shred"
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5c/shredder
+
+/obj/item/ammo_box/magazine/unsc/ma5b/shredder
+	name = "UNSC magazine box (MA5B x 48)"
+	desc = "An ammo box storing 48 magazines of MA5B ammunition"
+	overlay_ammo_type = "_shred"
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5b/shredder
 
 /obj/item/ammo_box/magazine/unsc/br55
 	name = "UNSC magazine box (BR55 x 32)"
