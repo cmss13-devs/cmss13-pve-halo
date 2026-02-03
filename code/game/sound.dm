@@ -477,8 +477,6 @@
 				sound = pick('sound/effects/shields/shield_down.ogg')
 			if("shield_pop")
 				sound = pick('sound/effects/shields/shield_pop_1.ogg', 'sound/effects/shields/shield_pop_2.ogg', 'sound/effects/shields/shield_pop_3.ogg')
-			if("pod_door_clang")
-				sound = pick('sound/effects/odst_pod/door_clang_1.ogg', 'sound/effects/odst_pod/door_clang_2.ogg', 'sound/effects/odst_pod/door_clang_3.ogg')
 
 			// Covenant audio
 			if("pain_sangheili")

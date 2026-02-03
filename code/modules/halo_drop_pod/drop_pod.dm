@@ -63,11 +63,11 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	icon_state = "pod_door"
 	layer = 5.8
 	anchored = 1
-	drop_sound = "pod_door_clang"
+	drop_sound = 'sound/effects/odst_pod/door_clang_1.ogg'
 
 /obj/item/drop_pod_door/launch_impact(hit_atom)
 	. = ..()
-	playsound(src, "pod_door_clang")
+	playsound(src, 'sound/effects/odst_pod/door_clang_1.ogg')
 
 /obj/structure/drop_pod_chute
 	name = "\improper M8823 HEV pod chute"
@@ -207,7 +207,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 /obj/structure/halo_droppod/proc/set_target(mob/living/user, new_x, new_y)
 	target_x = new_x
 	target_y = new_y
-	var/mob/notified_user = LAZYACCESS(occupant, 1)
+	var/mob/notified_user = occupant
 	. = checklanding(notified_user)
 	if(notified_user && .)
 		to_chat(user, SPAN_NOTICE("Coordinates set!"))
@@ -380,5 +380,5 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	new_door_obj.icon_state = "pod_door_floor"
 	sleep(0.8 SECONDS)
 
-	playsound(new_door_obj, "pod_door_clang")
+	playsound(new_door_obj, 'sound/effects/odst_pod/door_clang_1.ogg')
 
