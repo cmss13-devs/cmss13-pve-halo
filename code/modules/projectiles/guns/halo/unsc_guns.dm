@@ -78,7 +78,7 @@
 
 	fire_sound = "gun_ma5b"
 	fire_rattle = "gun_ma5b"
-	firesound_volume = 30
+	firesound_volume = 20
 	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
 	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
@@ -701,6 +701,12 @@
 		if(cover_open)
 			to_chat(user, SPAN_WARNING("You can't fire [src] with the feed cover open! <b>(alt-click to close)</b>"))
 			return FALSE
+
+/obj/item/weapon/gun/halo_launcher/spnkr/cock(mob/user)
+	if(in_chamber)
+		return
+	else
+		ready_in_chamber()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/unloaded
 	current_mag = null
