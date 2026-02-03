@@ -4052,18 +4052,6 @@
 /turf/open/floor/almayer/sterile_green_corner,
 /area/dark_was_the_night/armory)
 "jG" = (
-/obj/structure/gun_rack/halo/big/ma5b/unloaded,
-/turf/open/floor/almayer/plating_striped,
-/area/dark_was_the_night/armory)
-"jH" = (
-/obj/structure/gun_rack/halo/big/ma5b/unloaded,
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/turf/open/floor/almayer/plating_striped,
-/area/dark_was_the_night/armory)
-"jI" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -6;
@@ -4085,7 +4073,7 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/space)
-"jJ" = (
+"jH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/small/m6c{
 	pixel_x = -3;
@@ -4112,7 +4100,7 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/space)
-"jK" = (
+"jI" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/ma5c{
 	pixel_x = 4;
@@ -4128,20 +4116,7 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/space)
-"jL" = (
-/turf/open/floor/almayer/edge/smooth/endcap_left,
-/area/dark_was_the_night/armory)
-"jM" = (
-/turf/open/floor/almayer,
-/area/dark_was_the_night/lower_hallway)
-"jN" = (
-/obj/structure/platform_decoration{
-	dir = 8
-	},
-/obj/structure/platform_decoration,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/briefing)
-"jO" = (
+"jJ" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/br55{
 	pixel_x = 0;
@@ -4164,6 +4139,31 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/space)
+"jK" = (
+/obj/structure/gun_rack/halo/big/ma5b/unloaded,
+/turf/open/floor/almayer/plating_striped,
+/area/dark_was_the_night/armory)
+"jL" = (
+/turf/open/floor/almayer/edge/smooth/endcap_left,
+/area/dark_was_the_night/armory)
+"jM" = (
+/turf/open/floor/almayer,
+/area/dark_was_the_night/lower_hallway)
+"jN" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/platform_decoration,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/briefing)
+"jO" = (
+/obj/structure/gun_rack/halo/big/ma5b/unloaded,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer/plating_striped,
+/area/dark_was_the_night/armory)
 "jP" = (
 /obj/structure/stairs/perspective{
 	dir = 4
@@ -24156,7 +24156,7 @@ tG
 tG
 tG
 ve
-jG
+jK
 nb
 qO
 Zw
@@ -24308,7 +24308,7 @@ tG
 tG
 tG
 ve
-jH
+jO
 nb
 bA
 wC
@@ -27805,7 +27805,7 @@ cD
 cD
 cD
 cD
-jI
+jG
 cD
 cD
 cD
@@ -27957,7 +27957,7 @@ cD
 cD
 cD
 cD
-jJ
+jH
 cD
 cD
 cD
@@ -28109,7 +28109,7 @@ cD
 cD
 cD
 cD
-jK
+jI
 cD
 cD
 cD
@@ -28261,7 +28261,7 @@ cD
 cD
 cD
 cD
-jO
+jJ
 cD
 cD
 cD
