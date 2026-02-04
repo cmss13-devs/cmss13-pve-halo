@@ -21,8 +21,8 @@
 	darksight = 2
 	default_lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
 
-	dodge_pool = 20
-	dodge_pool_max = 20
+	dodge_pool = 10
+	dodge_pool_max = 10
 	dodge_pool_regen = 1
 	dodge_pool_regen_max = 1
 	dodge_pool_regen_restoration = 0.1
