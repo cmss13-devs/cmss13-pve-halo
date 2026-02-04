@@ -110,9 +110,11 @@
 			return
 		if(shield_broken || user.stat == DEAD)
 			if(COOLDOWN_FINISHED(src, shield_sparks))
-				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 22)
+				var/obj/shield_sparkle = new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
+				shield_sparkle.pixel_x = rand(-5, 5)
+				shield_sparkle.pixel_y = rand(-16, 16)
 				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff9a", "size" = 1))
-				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 21)
+				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 5)
 				shield_effect = TRUE
 				COOLDOWN_START(src, shield_sparks, rand(3, 5) SECONDS)
 		if(user.stat == DEAD)
