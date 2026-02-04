@@ -111,6 +111,7 @@
 		if(shield_broken || user.stat == DEAD)
 			if(COOLDOWN_FINISHED(src, shield_sparks))
 				var/obj/shield_sparkle = new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
+				new /obj/effect/temp_visual/shield_spark(user.loc)
 				shield_sparkle.pixel_x = rand(-5, 5)
 				shield_sparkle.pixel_y = rand(-16, 16)
 				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff9a", "size" = 1))
