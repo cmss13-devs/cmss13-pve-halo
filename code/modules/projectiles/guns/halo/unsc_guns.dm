@@ -836,7 +836,7 @@
 /obj/item/weapon/gun/pistol/halo/m6d
 	name = "M6D service magnum"
 	desc = "The M6D service magnum is a high-power sidearm in use by the UNSC, particularly with officers and some special forces troops. Fires 12.7x40mm Semi-Armour-Piercing-High-Explosive (SAPHE) rounds out of a 12 round magazine."
-	desco_lore = "Its extended magazine and custom grip give it a striking profile which many consider unwieldy and bulky, though others will swear on the weapons power and accuracy with its integrated KFA-2 scope."
+	desc_lore = "Its extended magazine and custom grip give it a striking profile which many consider unwieldy and bulky, though others will swear on the weapons power and accuracy with its integrated KFA-2 scope."
 	icon_state = "m6d"
 	item_state = "m6"
 	caliber = "12.7x40mm"
