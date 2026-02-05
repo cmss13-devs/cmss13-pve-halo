@@ -1239,16 +1239,30 @@
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5c
 	num_of_magazines = 48
 
+/obj/item/ammo_box/magazine/unsc/ma5b
+	name = "UNSC magazine box (MA5B x 48)"
+	desc = "An ammo box storing 48 magazines of MA5B ammunition"
+	icon_state = "base_ammo3"
+	overlay_gun_type = "_ma5b"
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5b
+	num_of_magazines = 48
+
 /obj/item/ammo_box/magazine/unsc/ma5c/shredder
 	name = "UNSC magazine box (MA5C x 48, shredder)"
 	desc = "An ammo box storing 48 magazines of MA5C ammunition"
 	overlay_ammo_type = "_shred"
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5c/shredder
 
+/obj/item/ammo_box/magazine/unsc/ma5b/shredder
+	name = "UNSC magazine box (MA5B x 48)"
+	desc = "An ammo box storing 48 magazines of MA5B ammunition"
+	overlay_ammo_type = "_shred"
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5b/shredder
+
 /obj/item/ammo_box/magazine/unsc/br55
 	name = "UNSC magazine box (BR55 x 32)"
 	desc = "An ammo box storing 32 magazines of BR55 ammunition"
-	icon_state = "base_ammo"
+	icon_state = "base_ammo2"
 	overlay_gun_type = "_br55"
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/br55
 	num_of_magazines = 32
@@ -1276,6 +1290,7 @@
 /obj/item/ammo_box/magazine/unsc/small/m6c/socom
 	name = "UNSC magazine box (M6C/SOCOM x 22)"
 	desc = "An ammo box storing 22 magazines of M6C/SOCOM ammunition."
+	icon_state = "base_ammosmall4"
 	overlay_ammo_type = "_extsmall"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6c/socom
 
@@ -1284,4 +1299,11 @@
 	desc = "An ammo box storing 22 magazines of M6G ammunition."
 	icon_state = "base_ammosmall2"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6g
+	num_of_magazines = 22
+
+/obj/item/ammo_box/magazine/unsc/small/m6d
+	name = "UNSC magazine box (M6D x 22)"
+	desc = "An ammo box storing 22 magazines of M6D ammunition."
+	icon_state = "base_ammosmall3"
+	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6d
 	num_of_magazines = 22

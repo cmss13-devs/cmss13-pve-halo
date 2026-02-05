@@ -1,11 +1,11 @@
 
 
-/obj/item/attachable/ma5c_shroud
+/obj/item/attachable/ma5c_muzzle
 	name = "\improper MA5C shroud"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma5c_shroud"
-	attach_icon = "ma5c_shroud"
+	icon_state = "ma5c_muzzle"
+	attach_icon = "ma5c_muzzle"
 	slot = "special"
 	wield_delay_mod = WIELD_DELAY_NONE
 	flags_attach_features = NO_FLAGS
@@ -23,10 +23,7 @@
 	max_rounds = 1
 	max_range = 10
 	attachment_firing_delay = 5
-
-/obj/item/attachable/attached_gun/grenade/New()
-	..()
-	recoil_mod = -RECOIL_AMOUNT_TIER_4
+	layer_addition = 0.1
 
 /obj/item/attachable/ma3a_shroud
 	name = "\improper MA3A shroud"
@@ -71,6 +68,19 @@
 	size_mod = 0
 	hud_offset_mod = -7
 
+/obj/item/attachable/ma5b_muzzle
+	name = "\improper MA5B muzzle"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma5b_muzzle"
+	attach_icon = "ma5b_muzzle"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -7
+
 /obj/item/attachable/m90_muzzle
 	name = "\improper M90 CAWS muzzle"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
@@ -98,8 +108,8 @@
 	hud_offset_mod = -3
 
 /obj/item/attachable/flashlight/ma5c
-	name = "\improper MA5 integrated flashlight"
-	desc = "The MA5 integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
+	name = "\improper MA5C integrated flashlight"
+	desc = "The MA5C integrated flashlight, standard-issue to any MA5-model assault rifle."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_flashlight"
 	attach_icon = "ma5c_flashlight"
@@ -107,9 +117,15 @@
 	original_attach = "ma5c_flashlight"
 	slot = "under"
 
-/obj/item/attachable/flashlight/ma5c/New()
-	..()
-	recoil_mod = -RECOIL_AMOUNT_TIER_4
+/obj/item/attachable/flashlight/ma5b
+	name = "\improper MA5B integrated flashlight"
+	desc = "The MA5B integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma5b_flashlight"
+	attach_icon = "ma5b_flashlight"
+	original_state = "ma5b_flashlight"
+	original_attach = "ma5b_flashlight"
+	slot = "under"
 
 /obj/item/attachable/flashlight/ma5c/ma3a
 	name = "\improper MA3A integrated flashlight"
@@ -141,20 +157,6 @@
 	original_state = "m90_police_flashlight"
 	original_attach = "m90_police_flashlight_a"
 
-/obj/item/attachable/ma5c_barrel
-	name = "\improper MA5C barrel"
-	desc = "The barrel to an MA5C ICWS assault rifle. Better not leave without it."
-	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma5c_barrel"
-	attach_icon = "ma5c_barrel"
-	slot = "muzzle"
-	size_mod = 0
-
-/obj/item/attachable/ma5c_barrel/New()
-	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_3
-	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
-
 /obj/item/attachable/vk78_barrel
 	name = "\improper VK78 barrel"
 	desc = "The barrel to an VK78 Commando rifle. Better not leave without it."
@@ -177,11 +179,6 @@
 	attach_icon = "ma3a_barrel"
 	slot = "muzzle"
 	size_mod = 0
-
-/obj/item/attachable/ma5c_barrel/New()
-	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_3
-	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3
 
 /obj/item/attachable/br55_barrel
 	name = "\improper BR55 barrel"
@@ -260,7 +257,7 @@
 
 /obj/item/attachable/srs_barrel
 	name = "\improper SRS99-AM sniper rifle barrel"
-	desc = "The detachable barrel of an SRS-99AM sniper rifle featuring a large muzzle brake at the end. Essential to the operation of the rifle. It's detachable nature allows it to be swapped out with other barrels featuring alternative integrated attachments. "
+	desc = "The detachable barrel of an SRS99-AM sniper rifle featuring a large muzzle brake at the end. Essential to the operation of the rifle. It's detachable nature allows it to be swapped out with other barrels featuring alternative integrated attachments. "
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "srs_barrel"
 	attach_icon = "srs_barrel"
@@ -278,6 +275,11 @@
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "oracle_scope"
 	attach_icon = "oracle_scope"
+	slot = "rail"
+
+/obj/item/attachable/scope/variable_zoom/m6d
+	name = "\improper KFA-2/D Model II smart-linked scope"
+	desc = "A smart-linked scope designed to attach to the M6D magnum. The Model II is much more precise and allows the scope to switch between 2x and 4x modes. Links with UNSC optics to provide the HUD a reticle and ammunition counter."
 	slot = "rail"
 
 /obj/item/attachable/srs_assembly
@@ -334,6 +336,10 @@
 	if(istype(subject, /obj/item/weapon/gun/pistol/halo/m6c))
 		attach_icon = "m6c_light"
 		original_attach = "m6c_light"
+		..()
+	if(istype(subject, /obj/item/weapon/gun/pistol/halo/m6d))
+		attach_icon = "m6d_light"
+		original_attach = "m6d_light"
 		..()
 	else return
 

@@ -2,6 +2,7 @@
 
 /obj/item/weapon/gun/rifle/halo
 	name = "Halo rifle holder"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5c.dmi'
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
 	item_icons = list(
@@ -22,27 +23,27 @@
 	reload_sound = 'sound/weapons/halo/gun_ma5c_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
+	empty_click = "ma5b_dryfire"
 	empty_sound = null
 
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c, /obj/item/attachable/ma5c_barrel)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5c
 	attachable_allowed = list(
-		/obj/item/attachable/ma5c_shroud,
 		/obj/item/attachable/attached_gun/grenade/ma5c,
 		/obj/item/attachable/flashlight/ma5c,
-		/obj/item/attachable/ma5c_barrel,
+		/obj/item/attachable/ma5c_muzzle,
 	)
 
 /obj/item/weapon/gun/rifle/halo/ma5c/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 32, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 27, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
 
 /obj/item/weapon/gun/rifle/halo/ma5c/handle_starting_attachment()
 	..()
-	var/obj/item/attachable/ma5c_shroud/integrated = new(src)
+	var/obj/item/attachable/ma5c_muzzle/integrated = new(src)
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
@@ -54,16 +55,78 @@
 	set_burst_delay(FIRE_DELAY_TIER_11)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
-	scatter = SCATTER_AMOUNT_TIER_2
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_2
+	scatter = SCATTER_AMOUNT_TIER_10
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
-	recoil = RECOIL_AMOUNT_TIER_3
+	recoil = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = 30
-	fa_max_scatter = 2
+	fa_max_scatter = SCATTER_AMOUNT_TIER_8
 
 /obj/item/weapon/gun/rifle/halo/ma5c/unloaded
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
+/obj/item/weapon/gun/rifle/halo/ma5b
+	name = "MA5B ICWS assault rifle"
+	desc = "The MA5B is an older member of the MA5 line produced by Misriah Armory, though still in use by the Marine Corps and Army. Fires a standard 7.62x51mm round in 60 round magazines, with superior firerate to the MA5C, though less stability and accuracy."
+	desc_lore = "While the MA5C was developed to meet many of the issues the UNSC Marine Corps found with the MA5B rifle, primarily its unreliable magazines and poor long-range performance, it remains popular among veterans and close quarter specialists. Especially when paired with 'shredder' ammunition."
+	icon_state = "ma5b"
+	item_state = "ma5b"
+	caliber = "7.62x51mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5b.dmi'
+
+	fire_sound = "gun_ma5b"
+	fire_rattle = "gun_ma5b"
+	firesound_volume = 20
+	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
+	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
+	empty_click = "ma5b_dryfire"
+	empty_sound = null
+
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5b
+	attachable_allowed = list(
+		/obj/item/attachable/ma5b_muzzle,
+		/obj/item/attachable/flashlight/ma5b,
+	)
+
+/obj/item/weapon/gun/rifle/halo/ma5b/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 48, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/halo/ma5b/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/ma5b_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+	var/obj/item/attachable/flashlight/ma5b/integrated2 = new(src)
+	integrated2.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated2.Attach(src)
+	update_attachable(integrated2.slot)
+
+/obj/item/weapon/gun/rifle/halo/ma5b/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_12)
+	set_burst_amount(BURST_AMOUNT_TIER_5)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_3
+	damage_mult = BASE_BULLET_DAMAGE_MULT * 0.85
+	recoil_unwielded = RECOIL_AMOUNT_TIER_3
+	recoil = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = 60
+	fa_max_scatter = SCATTER_AMOUNT_TIER_7
+	effective_range_max = EFFECTIVE_RANGE_MAX_TIER_2
+
+/obj/item/weapon/gun/rifle/halo/ma5b/unloaded
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
@@ -188,6 +251,7 @@
 	icon_state = "br55"
 	item_state = "br55"
 	caliber = "9.5x40mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/br55.dmi'
 
 	fire_sound = "gun_br55"
 	reload_sound = 'sound/weapons/halo/gun_br55_reload.ogg'
@@ -243,7 +307,7 @@
 	icon_state = "dmr"
 	item_state = "dmr"
 	caliber = "7.62x51mm"
-
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/br55.dmi'
 
 	fire_sound = null
 	fire_sounds = list('sound/weapons/halo/gun_m392_1.ogg', 'sound/weapons/halo/gun_m392_2.ogg', 'sound/weapons/halo/gun_m392_3.ogg')
@@ -309,6 +373,7 @@
 	icon_state = "m7"
 	item_state = "m7"
 	caliber = "5x23mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5b.dmi'
 
 	fire_sound = "gun_m7"
 	fire_rattle = "gun_m7"
@@ -392,6 +457,7 @@
 	fire_sound = "gun_m90"
 	pump_sound = 'sound/weapons/halo/gun_m90_pump.ogg'
 	reload_sound = 'sound/weapons/halo/gun_m90_reload.ogg'
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/shotgun.dmi'
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90
 	attachable_allowed = list(/obj/item/attachable/flashlight/m90)
 	starting_attachment_types = list(/obj/item/attachable/flashlight/m90)
@@ -441,6 +507,7 @@
 	icon_state = "srs99"
 	item_state = "srs99"
 	caliber = "14.5x114mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/srs99.dmi'
 	inhand_x_dimension = 64
 	inhand_y_dimension = 64
 	worn_x_dimension = 64
@@ -547,8 +614,10 @@
 	layer = ABOVE_OBJ_LAYER
 	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	bonus_overlay_layer = UPPER_ITEM_LAYER
+	w_class = SIZE_LARGE
 	bonus_overlay_x = -2
 	bonus_overlay_y = 1
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/spnkr.dmi'
 	var/cover_open = FALSE
 	current_mag = /obj/item/ammo_magazine/spnkr
 	aim_slowdown = SLOWDOWN_ADS_RIFLE
@@ -587,16 +656,21 @@
 		if(user.get_active_hand() && user.get_inactive_hand())
 			to_chat(user, SPAN_WARNING("You can't do that with your hands full!"))
 			return TRUE
-		if(!cover_open)
-			playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the tubes to be removed."))
-			cover_open = TRUE
 		else
-			playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
-			to_chat(user, SPAN_NOTICE("You close [src]'s tube cover."))
-			cover_open = FALSE
-		update_icon()
-		return TRUE
+			toggle_cover()
+			return TRUE
+
+
+/obj/item/weapon/gun/halo_launcher/spnkr/proc/toggle_cover(mob/user)
+	if(!cover_open)
+		playsound(src.loc, 'sound/handling/smartgun_open.ogg', 50, TRUE, 3)
+		to_chat(user, SPAN_NOTICE("You open [src]'s tube cover, allowing the tubes to be removed."))
+		cover_open = TRUE
+	else
+		playsound(src.loc, 'sound/handling/smartgun_close.ogg', 50, TRUE, 3)
+		to_chat(user, SPAN_NOTICE("You close [src]'s tube cover."))
+		cover_open = FALSE
+	update_icon()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/replace_magazine(mob/user, obj/item/ammo_magazine/magazine)
 	if(!cover_open)
@@ -629,6 +703,12 @@
 			to_chat(user, SPAN_WARNING("You can't fire [src] with the feed cover open! <b>(alt-click to close)</b>"))
 			return FALSE
 
+/obj/item/weapon/gun/halo_launcher/spnkr/cock(mob/user)
+	if(in_chamber)
+		return
+	else
+		ready_in_chamber()
+
 /obj/item/weapon/gun/halo_launcher/spnkr/unloaded
 	current_mag = null
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY
@@ -646,6 +726,7 @@
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/magnum.dmi'
 	reload_sound = 'sound/weapons/halo/gun_magnum_reload.ogg'
 	unload_sound = 'sound/weapons/halo/gun_magnum_unload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
@@ -751,6 +832,45 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
 	velocity_add = AMMO_SPEED_TIER_1
+
+/obj/item/weapon/gun/pistol/halo/m6d
+	name = "M6D service magnum"
+	desc = "The M6D service magnum is a high-power sidearm in use by the UNSC, particularly with officers and some special forces troops. Fires 12.7x40mm Semi-Armour-Piercing-High-Explosive (SAPHE) rounds out of a 12 round magazine."
+	desc_lore = "Its extended magazine and custom grip give it a striking profile which many consider unwieldy and bulky, though others will swear on the weapons power and accuracy with its integrated KFA-2 scope."
+	icon_state = "m6d"
+	item_state = "m6"
+	caliber = "12.7x40mm"
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6d
+	attachable_allowed = list(/obj/item/attachable/scope/variable_zoom/m6d, /obj/item/attachable/flashlight/m6)
+	fire_sound = "gun_m6d"
+	unload_sound = 'sound/weapons/halo/m6d/gun_m6d_unload.ogg'
+	reload_sound = 'sound/weapons/halo/m6d/gun_m6d_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/m6d/gun_m6d_cock.ogg'
+	empty_click = 'sound/weapons/halo/m6d/gun_m6d_dryfire.ogg'
+
+/obj/item/weapon/gun/pistol/halo/m6g/unloaded
+	current_mag = null
+
+/obj/item/weapon/gun/pistol/halo/m6d/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 27, "muzzle_y" = 21,"rail_x" = 16, "rail_y" = 16, "under_x" = 16, "under_y" = 16, "stock_x" = 18, "stock_y" = 15)
+
+/obj/item/weapon/gun/pistol/halo/m6d/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_9)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_6
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_6
+	scatter = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_9
+	damage_mult = BASE_BULLET_DAMAGE_MULT * 2
+	velocity_add = AMMO_SPEED_TIER_2
+
+/obj/item/weapon/gun/pistol/halo/m6d/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/scope/variable_zoom/m6d/scope = new(src)
+	scope.flags_attach_features &= ~ATTACH_REMOVABLE
+	scope.Attach(src)
+	scope.hidden = TRUE
+	update_attachable(scope.slot)
 
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"

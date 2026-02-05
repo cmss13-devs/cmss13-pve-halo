@@ -6,7 +6,14 @@
 	flags_gun_features = GUN_CAN_POINTBLANK
 	works_in_recharger = FALSE
 	empty_click = null
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_pistol.dmi'
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_cov.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+	)
 
 	var/works_in_cov_recharger = TRUE
 
@@ -161,6 +168,8 @@
 /obj/item/weapon/gun/energy/plasma/plasma_pistol
 	name = "\improper plasma pistol"
 	desc = null
+	icon_state = "plasma_pistol"
+	item_state = "plasma_pistol"
 	charge_cost = 20
 	gun_category = GUN_CATEGORY_HANDGUN
 	muzzleflash_iconstate = "muzzle_flash_teal"
@@ -270,6 +279,7 @@
 	name = "\improper plasma rifle"
 	desc = null
 	icon_state = "plasma_rifle"
+	item_state = "plasma_rifle"
 	heat_per_shot = 3
 	charge_cost = 10
 	ammo = /datum/ammo/energy/plasma/plasma_rifle
@@ -279,6 +289,7 @@
 	start_automatic = TRUE
 	muzzleflash_iconstate = "muzzle_flash_blue"
 	muzzle_flash_color = COLOR_PLASMA_BLUE
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_rifle.dmi'
 
 /obj/item/weapon/gun/energy/plasma/plasma_rifle/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
@@ -311,6 +322,7 @@
 	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "needler"
+	item_state = "needler"
 	fire_sound = "gun_needler"
 	reload_sound = 'sound/weapons/halo/gun_needler_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_needler_cocked.ogg'
@@ -319,9 +331,16 @@
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	muzzleflash_iconstate = "muzzle_flash_pink"
 	muzzle_flash_color = LIGHT_COLOR_PINK
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/needler.dmi'
 	start_automatic = TRUE
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_cov.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+	)
 
 /obj/item/weapon/gun/smg/covenant_needler/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
@@ -389,6 +408,7 @@
 	desc = null
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
 	icon_state = "carbine"
+	item_state = "carbine"
 	fire_sound = "gun_carbine"
 	reload_sound = 'sound/weapons/halo/gun_carbine_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_carbine_cocked.ogg'
@@ -401,6 +421,17 @@
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	muzzleflash_iconstate = "muzzle_flash_green"
 	muzzle_flash_color = LIGHT_COLOR_GREEN
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/carbine.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_cov.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo_64.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo_64.dmi'
+	)
 
 /obj/item/weapon/gun/rifle/covenant_carbine/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
