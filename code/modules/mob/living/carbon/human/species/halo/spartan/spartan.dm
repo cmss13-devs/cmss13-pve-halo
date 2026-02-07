@@ -14,9 +14,9 @@
 	unarmed_type = /datum/unarmed_attack/punch/spartan
 	pain_type = /datum/pain/spartan
 
-	total_health = 300
-	burn_mod = 0.5
-	brute_mod = 0.5
+	total_health = 250
+	burn_mod = 0.8
+	brute_mod = 0.8
 
 	darksight = 2
 	default_lighting_alpha = LIGHTING_PLANE_ALPHA_MOSTLY_VISIBLE
