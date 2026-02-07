@@ -191,3 +191,5 @@
 #define COMSIG_MOB_END_TUTORIAL "mob_end_tutorial"
 
 #define COMSIG_MOB_NESTED "mob_nested"
+
+#define COMSIG_MOB_THROW "mob_throw"							//from base of /mob/throw_item(): (atom/target)

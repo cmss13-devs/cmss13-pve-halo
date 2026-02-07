@@ -286,6 +286,7 @@
 	S["pred_flavor_text"] >> predator_flavor_text
 
 	S["sang_skin_color"] >> sang_skin_color
+	S["spartan_skin_color"] >> spartan_skin_color
 
 	S["commander_status"] >> commander_status
 	S["co_sidearm"] >> commander_sidearm
@@ -379,6 +380,7 @@
 	//halo
 
 	sang_skin_color = sanitize_inlist(sang_skin_color, SANG_SKIN_COLOR, initial(sang_skin_color))
+	spartan_skin_color = sanitize_inlist(spartan_skin_color, SPARTAN_SKIN_COLOR, initial(spartan_skin_color))
 
 	window_scale = sanitize_integer(window_scale, FALSE, TRUE, initial(window_scale))
 	tgui_lock = sanitize_integer(tgui_lock, FALSE, TRUE, initial(tgui_lock))
@@ -502,6 +504,7 @@
 	//halo
 
 	S["sang_skin_color"] << sang_skin_color
+	S["spartan_skin_color"] << spartan_skin_color
 
 	S["commander_status"] << commander_status
 	S["co_sidearm"] << commander_sidearm

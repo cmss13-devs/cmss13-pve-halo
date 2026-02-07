@@ -110,6 +110,7 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 
 	// halo specific prefs
 	var/sang_skin_color = "1"
+	var/spartan_skin_color = "1"
 
 	///holds our preferred job options for jobs
 	var/list/pref_special_job_options = list()

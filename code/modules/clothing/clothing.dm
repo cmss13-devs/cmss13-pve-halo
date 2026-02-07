@@ -258,6 +258,7 @@
 	flags_equip_slot = SLOT_FACE
 	flags_armor_protection = BODY_FLAG_HEAD|BODY_FLAG_FACE|BODY_FLAG_EYES
 	blood_overlay_type = "mask"
+	allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA, SPECIES_SPARTAN)
 	var/anti_hug = 0
 
 /obj/item/clothing/mask/update_clothing_icon()

@@ -93,3 +93,15 @@
 		var/mob/living/living_mob = used_mob
 		if(living_mob.cameraFollow)
 			living_mob.cameraFollow = null
+
+/datum/keybinding/living/jump
+	hotkey_keys = list("C")
+	name = "jump"
+	full_name = "Jump"
+	description = "Jump."
+	keybind_signal = COMSIG_KB_LIVING_JUMP_DOWN
+
+/datum/keybinding/living/jump/up(client/user)
+	. = ..()
+	SEND_SIGNAL(user.mob, COMSIG_KB_LIVING_JUMP_UP)
+	return TRUE
