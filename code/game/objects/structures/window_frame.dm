@@ -345,3 +345,60 @@
 	basestate = "unsc_window"
 	reinforced = TRUE
 	window_type = /obj/structure/window/framed/unsc
+
+// NEW VARADERO frame
+/obj/structure/window_frame/new_varadero/foundation
+	icon = 'icons/turf/walls/new_varadero/new_varadero_windows.dmi'
+	icon_state = "new_varadero_window0_frame"
+	basestate = "new_varadero_window"
+	window_type = /obj/structure/window/framed/new_varadero/foundation
+
+/obj/structure/window_frame/new_varadero/foundation/reinforced
+	icon = 'icons/turf/walls/new_varadero/new_varadero_windows.dmi'
+	icon_state = "new_varadero_r_window0_frame"
+	basestate = "new_varadero_r_window"
+	reinforced = TRUE
+	window_type = /obj/structure/window/framed/new_varadero/foundation/reinforced
+
+/obj/structure/window_frame/new_varadero/foundation/reinforced/hull
+	icon = 'icons/turf/walls/new_varadero/new_varadero_windows.dmi'
+	icon_state = "new_varadero_r_window0_frame"
+	basestate = "new_varadero_r_window"
+	unslashable = TRUE
+	unacidable = TRUE
+	window_type = /obj/structure/window/framed/new_varadero/foundation/reinforced/hull
+
+/obj/structure/window_frame/new_varadero/concrete_frame
+	icon = 'icons/turf/walls/new_varadero/concrete_windows.dmi'
+	icon_state = "concrete_window0_frame"
+	basestate = "concrete_window"
+	reinforced = TRUE
+	unslashable = TRUE
+	density = FALSE
+	window_type = /obj/structure/window/framed/new_varadero/concrete
+
+// NEW VARADERO SHIP HULL frame
+/obj/structure/window_frame/shipwall/yellow
+	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
+	icon_state = "shipwall0_frame"
+	basestate = "shipwall0_frame"
+
+/obj/structure/window_frame/shipwall/yellow/reinforced
+	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
+	icon_state = "shipwall_r_window0_frame"
+	basestate = "shipwall_r_window0_frame"
+
+/obj/structure/window_frame/shipwall/yellow/hull
+	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
+	icon_state = "shipwall_hull_window0_frame"
+	basestate = "shipwall_hull_window0_frame"
+
+/obj/structure/window_frame/shipwall/yellow/hull/north
+	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
+	icon_state = "shipwall_hull_n_window0_frame"
+	basestate = "shipwall_hull_n_window0_frame"
+
+/obj/structure/window_frame/shipwall/yellow/hull/south
+	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
+	icon_state = "shipwall_hull_s_window0_frame"
+	basestate = "shipwall_hull_s_window0_frame"

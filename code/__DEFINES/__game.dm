@@ -44,6 +44,7 @@
 #define MAP_BMG290_OTOGI_EGRESS_POINT "BMG-290 Otogi Egress Point" //mapjam
 #define MAP_CANYON_32B "Canyon 32B"
 #define MAP_HALO_NEW_IRVINE "New Irvine"
+#define MAP_TRAXUS_GAMMA_ZONE "Gamma Sector" //HALO
 
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
@@ -390,6 +391,10 @@
 #define WALL_AICORE "aiwall"
 #define WALL_UPP_GREEN "uppwall_interior"
 #define WALL_UPP_GREY "uppwall_interior"
+#define WALL_CONCRETE "concrete"
+#define WALL_FOUNDATION "new_varadero"
+#define WALL_BASALT_COLUMN "nv_rock"
+#define WALL_BASALT_COLUMN_SOLID "nv_rock_alt"
 #define WALL_UNSC "unsc"
 #define WALL_VOI "voiwall"
 #define WALL_COV "covwall"

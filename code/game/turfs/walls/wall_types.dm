@@ -1462,3 +1462,63 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 /turf/closed/wall/covenant/lights/hull/brighter
 	light_range = 4
 	light_power = 0.5
+
+//================================================================== NEW VARADERO WALL TYPES
+
+//---------------BASALT ROCK COLUMNS
+
+/turf/closed/wall/rock_column
+	name = "rock wall"
+	desc = "A set of near-hexagonal rocks."
+	icon = 'icons/turf/walls/new_varadero/nv_rock_wall.dmi'
+	icon_state = "nv_rock"
+	walltype = WALL_CAVE
+	hull = 1
+
+/turf/closed/wall/rock_column/solid
+	name = "rock wall"
+	desc = "A set of near-hexagonal rocks."
+	icon = 'icons/turf/walls/new_varadero/nv_rock_wall_alt.dmi'
+	icon_state = "nv_rock"
+	walltype = WALL_CAVE
+	hull = 1
+
+//---------------FOUNDATION WALLS
+
+/turf/closed/wall/new_varadero
+	name = "foundation wall"
+	desc = "A concrete wall with metal reinforcements."
+	icon = 'icons/turf/walls/new_varadero/new_varadero_wall.dmi'
+	icon_state = "new_varadero"
+	walltype = WALL_FOUNDATION
+
+/turf/closed/wall/new_varadero/reinforced
+	name = "secured foundation wall"
+	desc = "A concrete wall with metal reinforcements. The plating seems to have more rivets giving a daunting finish."
+	icon_state = "new_varadero_r"
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/new_varadero/reinforced/hull
+	desc = "A concrete wall with metal reinforcements. The plating seems to have more rivets giving a daunting finish. This seems impenetrable to most conventional stands."
+	icon_state = "new_varadero_r"
+	hull = 1
+
+//---------------CONCRETE WALL
+/turf/closed/wall/new_varadero/concrete
+	name = "concrete wall"
+	desc = "What's inside here? That's concrete, baby!"
+	icon_state = "concrete"
+	walltype = WALL_CONCRETE
+	icon = 'icons/turf/walls/new_varadero/new_varadero_wall.dmi'
+
+/turf/closed/wall/new_varadero/concrete/reinforced
+	name = "concrete wall"
+	desc = "What's inside here? That's concrete, baby!"
+	icon_state = "concrete"
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/new_varadero/concrete/hull
+	name = "concrete wall"
+	desc = "What's inside here? That's concrete, baby with that roman regeneration techniques that are still used even now."
+	icon_state = "concrete"
+	hull = 1

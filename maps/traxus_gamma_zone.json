@@ -1,0 +1,12 @@
+{
+    "map_name": "Traxus Gamma Zone",
+    "short_name": "Gamma",
+    "map_path": "map_files/traxus_gamma_zone",
+    "map_file": "traxus_gamma_zone.dmm",
+    "webmap_url": "Solaris",
+    "weather_holder": "/datum/weather_ss_map_holder/traxus_gamma_zone",
+    "map_item_type": "/obj/item/map/big_red_map",
+
+    "camouflage": "desert"
+
+}
