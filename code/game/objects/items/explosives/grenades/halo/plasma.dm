@@ -12,13 +12,14 @@
 	explosion_power = 125
 	explosion_falloff = 20
 	shrapnel_count = 32
-	shrapnel_type = /datum/ammo/bullet/shrapnel/incendiary/heavy
+	shrapnel_type = /datum/ammo/bullet/shrapnel/metal
+	throw_range = 6
 	dual_purpose = FALSE
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL_HALF
 	light_power = 0.4
 	light_range = 1.1
 	var/datum/looping_sound/plasma_hiss/hiss_loop
-	var/list/atoms_it_can_stick_to = list(/obj/vehicle, /mob/living, /obj/structure/machinery/defenses)
+	var/list/atoms_it_can_stick_to = list(/obj/vehicle/multitile, /mob/living/carbon/human, /mob/living)
 	var/attached = FALSE
 	var/attached_icon = "stuck_plasma"
 	var/time_triggered
@@ -38,6 +39,21 @@
 		hiss_loop.start()
 		set_light_on(TRUE)
 
+/obj/item/explosive/grenade/high_explosive/plasma/attack(mob/living/M, mob/living/user)
+	if(M == user)
+		if(isunggoy(user))
+			if(active)
+				to_chat(user, SPAN_HIGHDANGER("You strengthen your grip on the [src]! It burns!"))
+				launch_impact(user)
+			else
+				to_chat(user, SPAN_HIGHDANGER("You begin to activate the [src] and stick it to your palms!"))
+				if(!do_after(user, 30, INTERRUPT_ALL, BUSY_ICON_HOSTILE, user, INTERRUPT_NEEDHAND, BUSY_ICON_HOSTILE))
+					return
+				to_chat(user, SPAN_HIGHDANGER("You strengthen your grip on the [src]! It burns!"))
+				var/mob/living/carbon/thrower = user
+				thrower.toggle_throw_mode(THROW_MODE_NORMAL)
+				activate()
+				INVOKE_ASYNC(thrower, TYPE_PROC_REF(/mob, throw_item), thrower)
 
 /obj/item/explosive/grenade/high_explosive/plasma/prime(mob/living/user)
 	set waitfor = 0
@@ -46,9 +62,12 @@
 		new /obj/effect/overlay/temp/sebb(get_turf(src))
 		new /obj/effect/overlay/temp/emp_sparks(get_turf(src))
 		for(var/mob/living/target_living in range(3, get_turf(src)))
-			if(!check_for_obstacles_projectile(get_turf(src), get_turf(target_living), GLOB.ammo_list[/datum/ammo/bullet/shrapnel/incendiary/heavy]))
+			var/obj/projectile/P = new /obj/projectile(src)
+			P.generate_bullet(GLOB.ammo_list[/datum/ammo/bullet/shrapnel/metal], 0, NO_FLAGS)
+			if(!check_for_obstacles_projectile(get_turf(src), get_turf(target_living), P))
 				var/datum/reagent/napalm/blue/reagent = new()
-				target_living.TryIgniteMob(5, reagent)
+				target_living.TryIgniteMob(9, reagent)
+			qdel(P)
 		if(shrapnel_count)
 			create_shrapnel(loc, shrapnel_count, , ,shrapnel_type, cause_data)
 		apply_explosion_overlay()
@@ -60,8 +79,8 @@
 	if(active)
 		for(var/atomtype in atoms_it_can_stick_to)
 			if(istype(hit_atom, atomtype))
-				var/datum/launch_metadata/LM = launch_metadata
 				var/zone
+				var/datum/launch_metadata/LM = launch_metadata
 				if (istype(LM.thrower, /mob/living))
 					var/mob/living/L = LM.thrower
 					zone = check_zone(L.zone_selected)
@@ -98,11 +117,11 @@
 	if(src.origin_nade.attached)
 		qdel(src)
 		return
-	//to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
 	var/atom/movable/parent_atom = parent
 
-	if(ismob(parent_atom))
+	if(isliving(parent_atom))
 		update_human_icon()
+		to_chat(parent, SPAN_HIGHDANGER("Roll it off! The [origin_nade] sticks to your [zone]!"))
 	else
 		if(isVehicle(parent_atom))
 			update_vehicle_icon()
@@ -121,7 +140,10 @@
 	src.origin_nade.attached = TRUE
 	src.origin_nade.forceMove(parent_atom)
 	src.origin_nade.set_light_on(TRUE)
+	animation_flash_color(parent_atom, COLOR_BLUE)
 	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
+	if(time_running >= 2.5 SECONDS)
+		time_running = time_running-5
 	if(istype(parent_atom, /mob/living))
 		RegisterSignal(parent_atom, list(
 		COMSIG_LIVING_REJUVENATED,
@@ -129,10 +151,12 @@
 	//RegisterSignal(src, COMSIG_PARENT_QDELETING, GLOBAL_PROC_REF(qdel), src.origin_nade)
 	START_PROCESSING(SSfastobj, src)
 
+/*
 /datum/component/status_effect/plasma_stuck/Destroy(force, silent)
 	. = ..()
-	if(origin_nade)
+	if(origin_nade && !parent)
 		origin_nade.hiss_loop.stop()
+		*/
 
 /datum/component/status_effect/plasma_stuck/proc/unstuck(delete_nade = TRUE)
 	var/atom/movable/parent_atom = parent
@@ -207,81 +231,98 @@
 			else
 				y_offset = rand(-7, -9)
 
-/datum/component/status_effect/plasma_stuck/process(delta_time)
-	var/atom/parent_atom = parent
-	time_running += delta_time
-
-	if(ishuman(parent_atom))
-		var/mob/living/carbon/human/stuck_human = parent_atom
-		stuck_human.apply_damage(10*(delta_time/5), BURN, zone)
-	else
-		if(isVehicle(parent_atom))
-			var/obj/vehicle/multitile/mob = parent_atom
-			mob.take_damage_type(400*(delta_time/5), "plasma flame", src)
-			INVOKE_ASYNC(src, PROC_REF(update_vehicle_icon))
-	light_tune(max(time_running/5, 1))
-	if(time_running >= 0.5 SECONDS && stage == 0)
-		animation_flash_color(parent_atom, COLOR_CYAN)
-		if(ishuman(parent_atom))
-			var/mob/living/carbon/human/stuck_human = parent_atom
-			stuck_human.apply_damage(10, BURN, zone)
-			INVOKE_ASYNC(stuck_human, TYPE_PROC_REF(/mob, emote), "pain")
-			to_chat(parent, SPAN_HIGHDANGER("An agonizingly bright light burns into your [parse_zone(zone)]!"))
-		else
-			if(isVehicleMultitile(parent_atom))
-				var/obj/vehicle/multitile/mob = parent_atom
-				var/turf/centre = mob.interior.get_middle_turf()
-				var/turf/target = get_random_turf_in_range(centre, 2, 0)
-				var/datum/reagent/napalm/blue/reagent = new()
-				new /obj/flamer_fire(target, create_cause_data("Plasma Nade Cookoff"), reagent, 1)
-				mob.interior_crash_effect()
-		stage = 1
-
-	if(time_running >= 1.5 SECONDS && stage == 1)
-		animation_flash_color(parent_atom, COLOR_BLUE)
-		if(ishuman(parent_atom))
-			var/mob/living/carbon/human/stuck_human = parent_atom
-			stuck_human.apply_damage(15, BURN, zone)
-			var/obj/limb/stuck_limb = stuck_human.get_limb(zone)
-			to_chat(parent, SPAN_HIGHDANGER("Your bones start to melt!"))
-			stuck_limb.fracture(100)
-		else
-			if(isVehicleMultitile(parent_atom))
-				var/obj/vehicle/multitile/mob = parent_atom
-				var/turf/centre = mob.interior.get_middle_turf()
-				var/turf/target = get_random_turf_in_range(centre, 2, 0)
-				var/datum/reagent/napalm/blue/reagent = new()
-				new /obj/flamer_fire(target, create_cause_data("Plasma Nade Cookoff"), reagent, 1)
-				mob.interior_crash_effect()
-		stage = 2
-	if(time_running >= 3 SECONDS && stage == 2)
-		animation_flash_color(parent_atom, COLOR_STRONG_VIOLET)
-		if(ishuman(parent_atom))
-			to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
-			var/mob/living/carbon/human/stuck_human = parent_atom
-			stuck_human.apply_damage(15, BURN, zone)
-			var/obj/limb/stuck_limb = stuck_human.get_limb(zone)
-			stuck_limb.droplimb()
-			origin_nade.attached = FALSE
-			origin_nade.prime()
-			stuck_human.gib()
-		else
-			if(isVehicleMultitile(parent_atom))
-				var/obj/vehicle/multitile/mob = parent_atom
-				var/turf/centre = mob.interior.get_middle_turf()
-				var/turf/target = get_random_turf_in_range(centre, 2, 0)
-				var/datum/reagent/napalm/blue/reagent = new()
-				new /obj/flamer_fire(target,create_cause_data("Plasma Nade Cookoff"),reagent, 1)
-				mob.at_munition_interior_explosion_effect(cause_data = create_cause_data("Plasma Nade Cookoff"))
-				mob.interior_crash_effect()
-				mob.ex_act(300)
-			else
-		stage = 3
-		origin_nade.hiss_loop.stop()
-		qdel(origin_nade)
-		qdel(src)
-
 /datum/component/status_effect/plasma_stuck/proc/light_tune(intensity) // Might as well keep this too.
 	origin_nade.set_light_range(intensity)
+
+/datum/component/status_effect/plasma_stuck/process(delta_time)
+	time_running += delta_time
+	light_tune(max(time_running/5, 1))
+	if(ishuman(parent))
+		process_human(delta_time)
+	else
+		if(isliving(parent))
+			process_living(delta_time)
+	if(isVehicleMultitile(parent))
+		process_vehicle(delta_time)
+
+/datum/component/status_effect/plasma_stuck/proc/process_human(delta_time)
+	var/atom/parent_atom = parent
+	var/mob/living/carbon/human/stuck_human = parent_atom
+	stuck_human.apply_damage(15*(delta_time/5), BURN, zone)
+	if(time_running >= 0.5 SECONDS && stage == 0)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		INVOKE_ASYNC(stuck_human, TYPE_PROC_REF(/mob, emote), "pain")
+		to_chat(parent, SPAN_HIGHDANGER("An agonizingly bright light burns into your [parse_zone(zone)]!"))
+		stage = 1
+	if(time_running >= 1.5 SECONDS && stage == 1)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		var/obj/limb/stuck_limb = stuck_human.get_limb(zone)
+		to_chat(parent, SPAN_HIGHDANGER("Your bones start to melt!"))
+		stuck_limb.fracture(100)
+		stage = 2
+	if(time_running >= 2.5 SECONDS && stage == 2)
+		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
+		var/obj/limb/stuck_limb = stuck_human.get_limb(zone)
+		stuck_limb.droplimb()
+		origin_nade.attached = FALSE
+		origin_nade.prime()
+		stuck_human.gib()
+		stage = 3
+
+/datum/component/status_effect/plasma_stuck/proc/process_living(delta_time)
+	var/atom/parent_atom = parent
+	var/mob/living/stuck_mob = parent_atom
+	stuck_mob.apply_damage(15*(delta_time/5), BURN)
+	stuck_mob.Superslow(1)
+	if(time_running >= 0.5 SECONDS && stage == 0)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		stuck_mob.KnockDown(1)
+		to_chat(parent, SPAN_HIGHDANGER("An agonizingly bright light burns into your flesh!"))
+		stage = 1
+	if(time_running >= 1.5 SECONDS && stage == 1)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		stuck_mob.KnockDown(1)
+		to_chat(parent, SPAN_HIGHDANGER("Your bones start to melt!"))
+		stage = 2
+	if(time_running >= 2.5 SECONDS && stage == 2)
+		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
+		origin_nade.attached = FALSE
+		origin_nade.prime()
+		stuck_mob.gib()
+		stage = 3
+
+/datum/component/status_effect/plasma_stuck/proc/process_vehicle(delta_time)
+	var/atom/parent_atom = parent
+	var/obj/vehicle/multitile/mob = parent_atom
+	mob.take_damage_type(400*(delta_time/5), "plasma flame", src)
+	INVOKE_ASYNC(src, PROC_REF(update_vehicle_icon))
+	if(time_running >= 0.5 SECONDS && stage == 0)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		var/turf/centre = mob.interior.get_middle_turf()
+		var/turf/target = get_random_turf_in_range(centre, 2, 0)
+		var/datum/reagent/napalm/blue/reagent = new()
+		new /obj/flamer_fire(target, create_cause_data("Plasma Nade Cookoff"), reagent, 0)
+		mob.interior_crash_effect()
+		stage = 1
+	if(time_running >= 1.5 SECONDS && stage == 1)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		var/turf/centre = mob.interior.get_middle_turf()
+		var/turf/target = get_random_turf_in_range(centre, 2, 0)
+		var/datum/reagent/napalm/blue/reagent = new()
+		new /obj/flamer_fire(target, create_cause_data("Plasma Nade Cookoff"), reagent, 1)
+		mob.interior_crash_effect()
+		stage = 2
+	if(time_running >= 2.5 SECONDS && stage == 2)
+		animation_flash_color(parent_atom, COLOR_BLUE)
+		var/turf/centre = mob.interior.get_middle_turf()
+		var/turf/target = get_random_turf_in_range(centre, 2, 0)
+		var/datum/reagent/napalm/blue/reagent = new()
+		new /obj/flamer_fire(target,create_cause_data("Plasma Nade Cookoff"),reagent, 1)
+		mob.at_munition_interior_explosion_effect(cause_data = create_cause_data("Plasma Nade Cookoff"))
+		mob.interior_crash_effect()
+		mob.ex_act(300)
+		origin_nade.attached = FALSE
+		origin_nade.prime()
+		qdel(src)
 
 
