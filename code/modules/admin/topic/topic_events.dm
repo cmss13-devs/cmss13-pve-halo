@@ -170,19 +170,27 @@
 
 	var/free_the_humans = FALSE
 	var/offer_as_ert = FALSE
+	var/make_hai = FALSE
 	if(href_list["spawn_as"] == "freed")
 		free_the_humans = TRUE
 
 	else if(href_list["spawn_as"] == "ert")
 		offer_as_ert = TRUE
 
+	if(href_list["spawn_as"] == "hai")
+		make_hai = TRUE
+
 	var/strip_the_humans = FALSE
 	var/strip_weapons = FALSE
+	var/paradropping = FALSE
 	if(href_list["equip_with"] == "no_weapons")
 		strip_weapons = TRUE
 
 	if(href_list["equip_with"] == "no_equipment")
 		strip_the_humans = TRUE
+
+	if(href_list["equip_with"] == "parachute")
+		paradropping = TRUE
 
 	var/kill_the_humans = FALSE
 	var/burst_the_humans = FALSE
@@ -214,52 +222,24 @@
 		for(var/i = 0 to humans_to_spawn-1)
 			spawn_turf = pick(turfs)
 			spawned_human = new(spawn_turf)
-
+			arm_equipment(spawned_human, job_name, TRUE, FALSE)
 			if(!spawned_human.hud_used)
 				spawned_human.create_hud()
-
 			if(free_the_humans)
 				owner.free_for_ghosts(spawned_human)
-
-			arm_equipment(spawned_human, job_name, TRUE, FALSE)
+			if(make_hai)
+				spawned_human.AddComponent(/datum/component/human_ai)
+				spawned_human.get_ai_brain().appraise_inventory(armor = TRUE)
+			if(paradropping)
+				spawned_human.paradrop()
 
 			humans += spawned_human
 
 			if(strip_the_humans)
-				for(var/obj/item/current_item in spawned_human)
-					//no more deletion of ID cards
-					if(istype(current_item, /obj/item/card/id/))
-						continue
-					qdel(current_item)
-				continue
+				spawned_human.strip_all()
 
 			if(strip_weapons)
-				var/obj/item_storage
-				for(var/obj/item/current_item in spawned_human.GetAllContents(3))
-					if(istype(current_item, /obj/item/ammo_magazine))
-
-						item_storage = current_item.loc
-						qdel(current_item)
-
-						if(istype(item_storage, /obj/item/storage))
-							item_storage.update_icon()
-
-						continue
-
-					if(istype(current_item, /obj/item/weapon))
-						qdel(current_item)
-						continue
-
-					if(istype(current_item, /obj/item/explosive))
-						qdel(current_item)
-
-				for(var/obj/item/hand_item in spawned_human.hands)
-					if(istype(hand_item, /obj/item/weapon))
-						qdel(hand_item)
-						continue
-
-					if(istype(hand_item, /obj/item/explosive))
-						qdel(hand_item)
+				spawned_human.strip_weapons()
 
 			if(kill_the_humans)
 				spawned_human.death(create_cause_data("existing"), TRUE)
@@ -285,12 +265,12 @@
 			em_call.owner = owner
 
 			var/quiet_launch = TRUE
-			var/ql_prompt = tgui_alert(usr, "Would you like to broadcast the beacon launch? This will reveal the distress beacon to all players.", "Announce distress beacon?", list("Yes", "No"), 20 SECONDS)
+			var/ql_prompt = tgui_alert(usr, "Would you like to broadcast the beacon launch? This will reveal the distress beacon to all players.", "Announce distress beacon?", list("No", "Yes"), 20 SECONDS)
 			if(ql_prompt == "Yes")
 				quiet_launch = FALSE
 
 			var/announce_receipt = FALSE
-			var/ar_prompt = tgui_alert(usr, "Would you like to announce the beacon received message? This will reveal the distress beacon to all players.", "Announce beacon received?", list("Yes", "No"), 20 SECONDS)
+			var/ar_prompt = tgui_alert(usr, "Would you like to announce the beacon received message? This will reveal the distress beacon to all players.", "Announce beacon received?", list("No", "Yes"), 20 SECONDS)
 			if(ar_prompt == "Yes")
 				announce_receipt = TRUE
 
