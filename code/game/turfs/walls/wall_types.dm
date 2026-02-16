@@ -1463,6 +1463,47 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	light_range = 4
 	light_power = 0.5
 
+//==============================Generic Ship Model
+
+
+/turf/closed/wall/Shipwall_yellow
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/yellow_ship_wall.dmi'
+	icon_state = "shipwall_yellow"
+	desc = "A mash up of reinforced metals that are made to withstand the dangers of space. These feature some cushioning in the event you trip onto the wall."
+	walltype = WALL_SHIPWALL_YELLOW
+	damage_cap = HEALTH_WALL_REINFORCED
+
+/turf/closed/wall/Shipwall_yellow/hull
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/yellow_ship_wall.dmi'
+	icon_state = "shipwall_h_yellow"
+	walltype = WALL_SHIPWALL_HULL_YELLOW
+
+/turf/closed/wall/Shipwall_yellow/hull/right
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/yellow_ship_wall.dmi'
+	icon_state = "shipwall_nr_yellow"
+	walltype = WALL_SHIPWALL_NORTH_RIGHT_YELLOW
+
+/turf/closed/wall/Shipwall_yellow/hull/left
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/yellow_ship_wall.dmi'
+	icon_state = "shipwall_nl_yellow"
+	walltype = WALL_SHIPWALL_NORTH_LEFT_YELLOW
+
+/turf/closed/wall/Shipwall_yellow/hull/southright
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/yellow_ship_wall.dmi'
+	icon_state = "shipwall_sr_yellow"
+	walltype = WALL_SHIPWALL_SOUTH_RIGHT_YELLOW
+
+/turf/closed/wall/Shipwall_yellow/hull/southleft
+	name = "reinforced walls"
+	icon = 'icons/turf/walls/yellow_ship_wall.dmi'
+	icon_state = "shipwall_sl_yellow"
+	walltype = WALL_SHIPWALL_SOUTH_LEFT_YELLOW
+
 //================================================================== NEW VARADERO WALL TYPES
 
 //---------------BASALT ROCK COLUMNS
@@ -1472,7 +1513,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	desc = "A set of near-hexagonal rocks."
 	icon = 'icons/turf/walls/new_varadero/nv_rock_wall.dmi'
 	icon_state = "nv_rock"
-	walltype = WALL_CAVE
+	walltype = WALL_BASALT_COLUMN
 	hull = 1
 
 /turf/closed/wall/rock_column/solid
@@ -1480,7 +1521,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	desc = "A set of near-hexagonal rocks."
 	icon = 'icons/turf/walls/new_varadero/nv_rock_wall_alt.dmi'
 	icon_state = "nv_rock"
-	walltype = WALL_CAVE
+	walltype = WALL_BASALT_COLUMN_SOLID
 	hull = 1
 
 //---------------FOUNDATION WALLS
