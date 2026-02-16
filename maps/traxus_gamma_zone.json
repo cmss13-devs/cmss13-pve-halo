@@ -5,7 +5,7 @@
     "map_file": "traxus_gamma_zone.dmm",
     "webmap_url": "Solaris",
     "weather_holder": "/datum/weather_ss_map_holder/traxus_gamma_zone",
-    "map_item_type": "/obj/item/map/big_red_map",
+    "map_item_type": "/obj/item/map/lazarus_landing_map",
 
     "camouflage": "desert"
 
