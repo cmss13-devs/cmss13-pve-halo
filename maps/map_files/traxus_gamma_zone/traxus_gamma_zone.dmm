@@ -56,17 +56,6 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/unsc_base/auxiliary_wing)
-"abK" = (
-/obj/structure/machinery/computer3/server/rack,
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_power = 0.25
-	},
-/turf/open/floor/podhatchfloor,
-/area/gamma_sector/unsc_base/command_office)
 "aca" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -83,10 +72,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_main)
-"act" = (
-/obj/structure/machinery/colony_floodlight,
-/turf/open/floor/strata/floor3,
-/area/gamma_sector/highway/southeastern_roadway)
 "acu" = (
 /obj/item/stool,
 /turf/open/floor/prison/floor_plate,
@@ -100,35 +85,11 @@
 "acT" = (
 /turf/open/floor/prison/cell_stripe/east,
 /area/gamma_sector/highway/traxus_highway_maint)
-"ade" = (
-/obj/structure/prop/invuln/darkness,
-/obj/structure/machinery/light/small{
-	light_power = 0.25
-	},
-/turf/open/asphalt/tile,
-/area/gamma_sector/traxus_base/water_filtration)
 "adi" = (
 /obj/structure/prop/invuln/darkness,
 /obj/structure/prop/dam/boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/closed_hard/overheads)
-"adD" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
-"adF" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
-	},
-/turf/open/floor/strata,
-/area/gamma_sector/traxus_base/monitor_station)
 "aex" = (
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_y = 30;
@@ -1168,12 +1129,6 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/inner_region)
-"aHd" = (
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "aHm" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#ffe6e6"
@@ -1337,14 +1292,6 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/coastal_beach)
-"aJu" = (
-/obj/structure/platform,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/plating/kutjevo,
-/area/gamma_sector/traxus_base/main_facility)
 "aJC" = (
 /obj/structure/surface/table/almayer,
 /turf/open/floor/prison/floor_plate,
@@ -1645,6 +1592,12 @@
 /obj/item/stool,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/maintenance_station)
+"aQB" = (
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "aQM" = (
 /turf/closed/wall/rock{
 	color = "#967e73"
@@ -2028,12 +1981,6 @@
 /obj/item/newspaper,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/engineering_wing)
-"bdq" = (
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/auxiliary_wing)
 "bdK" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/floor_plate,
@@ -2103,13 +2050,6 @@
 /obj/structure/window/framed/new_varadero/foundation/reinforced,
 /turf/open/floor/plating,
 /area/gamma_sector/unsc_base/medbay)
-"bfL" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "bfQ" = (
 /obj/structure/platform{
 	dir = 1
@@ -2228,6 +2168,16 @@
 /obj/item/ammo_magazine/pistol/halo/m6c,
 /turf/open/floor/plating,
 /area/gamma_sector/closed_hard/overheads)
+"bir" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/supply_section_a)
 "bix" = (
 /obj/structure/prop/dam/boulder/boulder2,
 /obj/structure/prop/invuln/darkness,
@@ -2955,12 +2905,18 @@
 /turf/open/floor/prison/cell_stripe/north,
 /area/gamma_sector/unsc_base/large_garage)
 "bCE" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
+/obj/structure/surface/table/reinforced/prison{
+	color = "#ffe6e6"
+	},
+/obj/structure/machinery/prop/almayer/computer/PC{
 	dir = 4
 	},
-/turf/open/floor/strata,
-/area/gamma_sector/traxus_base/supply_entryway)
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "bCP" = (
 /obj/structure/surface/table/almayer,
 /obj/item/storage/beer_pack{
@@ -3475,16 +3431,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/east_plaza)
-"bOp" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/almayer/plating,
-/area/gamma_sector/unsc_base/central_vent)
 "bOB" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 0;
@@ -3784,13 +3730,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_a)
-"bVX" = (
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/maintenance_station)
 "bWd" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer/PC{
@@ -4236,6 +4175,17 @@
 /obj/structure/prop/dam/boulder/boulder2,
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/western_clearing)
+"cjs" = (
+/obj/structure/platform_decoration/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 1
+	},
+/turf/open/shuttle/escapepod/east,
+/area/gamma_sector/unsc_base/engineering_wing)
 "cjt" = (
 /turf/open/floor/plating/asteroidwarning/northwest,
 /area/gamma_sector/highway/southern_way)
@@ -4452,6 +4402,16 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/coastal_beach)
+"crx" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "crK" = (
 /obj/structure/prop/almayer/whiteboard/clear{
 	pixel_y = 18;
@@ -4659,20 +4619,19 @@
 "cwG" = (
 /turf/open/floor/almayer/plating,
 /area/gamma_sector/traxus_base/supply_maint)
+"cwN" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/monitor_station)
 "cxj" = (
 /obj/structure/prop/dam/boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/open/inner_region)
-"cxn" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "cxt" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -5537,18 +5496,15 @@
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/open/dried_river)
 "cZK" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#ffe6e6"
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/obj/structure/machinery/prop/almayer/computer/PC{
-	dir = 4
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
 	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
+/turf/open/floor/strata,
+/area/gamma_sector/traxus_base/monitor_station)
 "cZN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/platform{
@@ -5803,13 +5759,6 @@
 /obj/structure/machinery/door/airlock/unsc,
 /turf/open/floor/corsat/marked,
 /area/gamma_sector/traxus_base/transfer_primary)
-"dgQ" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/monitor_station)
 "dgT" = (
 /obj/structure/machinery/constructable_frame,
 /turf/open/floor/prison/floor_plate,
@@ -7078,13 +7027,6 @@
 "dVJ" = (
 /turf/open/floor/prison/cell_stripe/west,
 /area/gamma_sector/traxus_base/garage)
-"dVZ" = (
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/asphalt/tile,
-/area/gamma_sector/open/shorline)
 "dWp" = (
 /turf/closed/wall/rock{
 	color = "#967e73"
@@ -7274,16 +7216,6 @@
 /obj/structure/machinery/power/apc/power/south,
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/engineering_wing)
-"dZO" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#ffe6e6"
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "dZR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/prison{
@@ -7549,16 +7481,6 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/dried_river)
-"eht" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "ehx" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#6b675e"
@@ -7973,6 +7895,13 @@
 /obj/item/folder/white,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/traxus_office)
+"etN" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/prison,
+/area/gamma_sector/traxus_base/lockers)
 "etX" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
@@ -7992,12 +7921,6 @@
 /obj/structure/surface/table/almayer,
 /turf/open/floor/prison,
 /area/gamma_sector/traxus_base/main_filtration)
-"euj" = (
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/auxiliary_office)
 "eun" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 8
@@ -8323,14 +8246,6 @@
 /obj/item/stool,
 /turf/open/floor/almayer/plating_striped/north,
 /area/gamma_sector/traxus_base/monitor_station)
-"eGR" = (
-/obj/structure/prop/invuln/darkness,
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/auto_turf/sand/layer1,
-/area/gamma_sector/traxus_base/water_filtration)
 "eHb" = (
 /obj/structure/prop/invuln/darkness,
 /turf/open/desert/desert_shore/desert_shore1/north,
@@ -8512,13 +8427,6 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/eastern_ridge)
-"eMD" = (
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "eMF" = (
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
@@ -8629,13 +8537,9 @@
 /turf/open/floor/prison/bright_clean,
 /area/gamma_sector/unsc_base/mess_hall)
 "ePU" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/lockers)
+/obj/structure/machinery/colony_floodlight,
+/turf/open/auto_turf/sand/layer2,
+/area/gamma_sector/open/eastern_ridge)
 "ePW" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/effect/decal/cleanable/dirt,
@@ -8777,6 +8681,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/tile,
 /area/gamma_sector/unsc_base/small_garage)
+"eUB" = (
+/obj/item/stool,
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/shuttle/escapepod/floor4,
+/area/gamma_sector/unsc_base/central_vent)
 "eUI" = (
 /obj/structure/prop/invuln/darkness,
 /turf/open/desert/desert_shore/shore_edge1,
@@ -8984,11 +8896,15 @@
 /turf/open/asphalt/cement_sunbleached_darkened,
 /area/gamma_sector/open/coastal_beach)
 "fad" = (
-/turf/open/gm/river/desert/deep,
-/turf/closed/wall/rock{
-	color = "#967e73"
+/obj/effect/decal/warning_stripes{
+	icon_state = "warning_s"
 	},
-/area/gamma_sector/closed_hard/coastal_caves)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/unsc_base/engineering_wing)
 "fas" = (
 /turf/open/floor/prison/cell_stripe,
 /area/gamma_sector/closed_hard/facility_caves)
@@ -9312,6 +9228,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/traxus_base/supply_section_a)
+"fkB" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "fkF" = (
 /obj/structure/barricade/handrail/strata,
 /obj/effect/decal/cleanable/dirt{
@@ -9373,13 +9296,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/traxus_base/main_filtration)
-"fmg" = (
-/obj/structure/machinery/floodlight/landing/floor{
-	color = "#dae2ff";
-	light_color = "#dae2ff"
-	},
-/turf/open/asphalt/cement_sunbleached_darkened,
-/area/gamma_sector/highway/southern_way)
 "fmh" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal9";
@@ -9423,6 +9339,14 @@
 /obj/structure/closet/crate/unsc,
 /turf/open/floor/plating,
 /area/gamma_sector/closed_hard/overheads)
+"fnc" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/maintenance_station)
 "fnn" = (
 /obj/structure/machinery/light{
 	light_power = 0.75
@@ -9667,6 +9591,13 @@
 	},
 /turf/open/shuttle/escapepod/floor1,
 /area/gamma_sector/traxus_base/transfer_primary)
+"fvb" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "fvn" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -10381,6 +10312,10 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/desert/shallow_edge/north,
 /area/gamma_sector/open/coastal_beach)
+"fMI" = (
+/obj/structure/machinery/colony_floodlight,
+/turf/open/floor/strata/floor3,
+/area/gamma_sector/highway/southeastern_roadway)
 "fMJ" = (
 /obj/structure/platform/strata/metal,
 /turf/open/auto_turf/sand/layer0,
@@ -10586,6 +10521,13 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/desert/deep,
 /area/gamma_sector/open/coastal_ridge)
+"fUf" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/traxus_base/monitor_station)
 "fUg" = (
 /obj/structure/machinery/light/small{
 	dir = 4;
@@ -11312,6 +11254,14 @@
 "grz" = (
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/gamma_sector/open/coastal_ridge)
+"grM" = (
+/obj/structure/prop/invuln/darkness,
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/auto_turf/sand/layer1,
+/area/gamma_sector/traxus_base/water_filtration)
 "gsd" = (
 /obj/structure/window/framed/new_varadero/foundation/reinforced,
 /turf/open/floor/plating,
@@ -12138,16 +12088,16 @@
 "gTy" = (
 /turf/closed/wall/new_varadero/reinforced,
 /area/gamma_sector/unsc_base/maintenance_substation)
-"gTC" = (
+"gTD" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#ffe6e6"
 	},
 /obj/structure/machinery/light{
 	light_power = 0.75;
-	dir = 4
+	dir = 8
 	},
 /turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/auxiliary_wing)
+/area/gamma_sector/traxus_base/main_facility)
 "gTQ" = (
 /obj/structure/platform{
 	dir = 1
@@ -12228,16 +12178,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/engineering_wing)
-"gVn" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
-	},
-/turf/open/floor/strata,
-/area/gamma_sector/traxus_base/supply_entryway)
 "gVL" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stool,
@@ -12534,13 +12474,6 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/inner_region)
-"hft" = (
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_power = 0.25
-	},
-/turf/open/floor/almayer/plating,
-/area/gamma_sector/unsc_base/central_vent)
 "hfU" = (
 /obj/structure/machinery/power/port_gen/pacman{
 	name = "Portable Generator"
@@ -13302,7 +13235,7 @@
 	dir = 4
 	},
 /turf/open/floor/strata,
-/area/gamma_sector/traxus_base/monitor_station)
+/area/gamma_sector/traxus_base/main_facility)
 "hCx" = (
 /obj/structure/roof/cargocrane_tracks/horizontal,
 /obj/effect/decal/cleanable/dirt{
@@ -13658,6 +13591,13 @@
 	},
 /turf/open/gm/river/desert/shallow,
 /area/gamma_sector/open/coastal_beach)
+"hMs" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/auxiliary_wing)
 "hMI" = (
 /obj/structure/prop/unsc_crate/corrugated/green{
 	pixel_x = 7;
@@ -14203,13 +14143,12 @@
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/traxus_base/transfer_storage)
 "icY" = (
-/obj/item/stool,
 /obj/structure/machinery/light/small{
 	dir = 8;
 	light_power = 0.25
 	},
-/turf/open/shuttle/escapepod/floor4,
-/area/gamma_sector/unsc_base/central_vent)
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/shuttles/drop2)
 "ide" = (
 /turf/open/floor/prison/cell_stripe/east,
 /area/gamma_sector/unsc_base/communications)
@@ -14545,16 +14484,6 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/shuttles/drop5)
-"imQ" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#ffe6e6"
-	},
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/main_facility)
 "inm" = (
 /obj/structure/closet/hydrant{
 	pixel_y = -32;
@@ -15112,14 +15041,6 @@
 /obj/item/ammo_magazine/pistol/halo/m6c,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/west_wing)
-"iCT" = (
-/obj/structure/prop/invuln/darkness,
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/asphalt/tile,
-/area/gamma_sector/traxus_base/water_filtration)
 "iDA" = (
 /turf/open/gm/river/desert/deep,
 /area/gamma_sector/closed_hard/cliff_caves)
@@ -15755,6 +15676,12 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/closed_hard/overheads)
+"iXJ" = (
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/auxiliary_office)
 "iXS" = (
 /obj/structure/urinal{
 	pixel_x = 31;
@@ -15977,6 +15904,10 @@
 	pixel_y = -4;
 	id = "gro_TRAX_transfermainEXT"
 	},
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_security)
 "jdT" = (
@@ -16173,6 +16104,17 @@
 /obj/structure/bed/chair/comfy/bench/south/west,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/closed_soft/observation_hab)
+"jiD" = (
+/obj/structure/machinery/computer3/server/rack,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/small{
+	dir = 4;
+	light_power = 0.25
+	},
+/turf/open/floor/podhatchfloor,
+/area/gamma_sector/unsc_base/command_office)
 "jjL" = (
 /turf/open/desert/desert_shore/shore_corner2/north,
 /area/gamma_sector/open/eastern_ridge)
@@ -16830,6 +16772,14 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_main)
+"jDv" = (
+/obj/structure/platform,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/plating/kutjevo,
+/area/gamma_sector/traxus_base/main_facility)
 "jDX" = (
 /obj/structure/prop/dam/wide_boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
@@ -16954,6 +16904,13 @@
 /obj/structure/machinery/door/airlock/multi_tile/unsc/prop,
 /turf/open/floor/corsat/marked,
 /area/gamma_sector/highway/eastern_way)
+"jFZ" = (
+/obj/structure/prop/invuln/darkness,
+/obj/structure/machinery/light/small{
+	light_power = 0.25
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/traxus_base/water_filtration)
 "jGg" = (
 /obj/structure/platform/kutjevo/smooth{
 	color = "#85a3e0";
@@ -17450,6 +17407,16 @@
 "jXX" = (
 /turf/open/gm/river/desert/shallow_edge/southwest,
 /area/gamma_sector/open/abandoned_area)
+"jYi" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "jYx" = (
 /obj/structure/barricade/metal{
 	dir = 8
@@ -17632,6 +17599,13 @@
 /obj/structure/window/framed/new_varadero/foundation/reinforced,
 /turf/open/floor/plating,
 /area/gamma_sector/unsc_base/auxiliary_wing)
+"kcY" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/traxus_base/supply_entryway)
 "kdd" = (
 /obj/item/stool,
 /obj/structure/cable/heavyduty{
@@ -17786,6 +17760,13 @@
 /obj/structure/flora/bush/ausbushes/var3/fernybush,
 /turf/open/auto_turf/sand/layer0,
 /area/space)
+"kio" = (
+/obj/structure/machinery/light/small{
+	dir = 4;
+	light_power = 0.25
+	},
+/turf/open/floor/almayer/plating,
+/area/gamma_sector/unsc_base/central_vent)
 "kiT" = (
 /turf/open/floor/plating,
 /area/gamma_sector/unsc_base/west_wing)
@@ -17833,6 +17814,14 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/engineering_wing)
+"kkx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/transfer_primary)
 "kky" = (
 /obj/structure/flora/tree/joshua{
 	pixel_x = -13;
@@ -18048,6 +18037,16 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/closed_soft/observation_hab)
+"kqk" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/almayer/plating,
+/area/gamma_sector/unsc_base/central_vent)
 "kqH" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/effect/decal/cleanable/dirt,
@@ -18859,6 +18858,13 @@
 /obj/structure/flora/bush/ausbushes/reedbush,
 /turf/open/gm/river/desert/shallow,
 /area/gamma_sector/open/coastal_beach)
+"kRT" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/monitor_station)
 "kRY" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -18869,9 +18875,13 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/traxus_base/tertiary_hub)
 "kSa" = (
-/obj/structure/machinery/colony_floodlight,
-/turf/open/auto_turf/sand/layer2,
-/area/gamma_sector/open/eastern_ridge)
+/obj/effect/decal/strata_decals/catwalk/prison,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/gm/river/desert/shallow/covered,
+/area/gamma_sector/traxus_base/main_facility)
 "kSb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/small{
@@ -19504,6 +19514,12 @@
 	color = "#967e73"
 	},
 /area/gamma_sector/closed_hard/overheads)
+"llt" = (
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/auxiliary_wing)
 "llw" = (
 /obj/structure/surface/rack{
 	color = "#6b675e";
@@ -20336,6 +20352,13 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/gamma_sector/traxus_base/transfer_storage)
+"lIh" = (
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "lIG" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
@@ -21188,12 +21211,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/armory)
-"mji" = (
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
-/turf/open/floor/strata,
-/area/gamma_sector/traxus_base/monitor_station)
 "mjC" = (
 /obj/structure/platform_decoration/kutjevo/rock,
 /turf/open/auto_turf/sand/layer0,
@@ -22029,14 +22046,6 @@
 /obj/structure/machinery/portable_atmospherics/canister/carbon_dioxide,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/maintenance_shack)
-"mLl" = (
-/obj/effect/decal/strata_decals/catwalk/prison,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/gm/river/desert/shallow/covered,
-/area/gamma_sector/traxus_base/main_facility)
 "mLR" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
 	dir = 1
@@ -23085,13 +23094,13 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/west_wing)
 "npj" = (
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/almayer,
 /obj/structure/machinery/light{
 	light_power = 0.75;
-	dir = 8
+	dir = 1
 	},
 /turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/auxiliary_office)
+/area/gamma_sector/traxus_base/monitor_station)
 "npy" = (
 /obj/structure/platform{
 	dir = 4;
@@ -23099,6 +23108,16 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/gamma_sector/shuttles/drop5)
+"npD" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#ffe6e6"
+	},
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/auxiliary_wing)
 "npE" = (
 /obj/structure/prop/structure_lattice{
 	dir = 6
@@ -23963,6 +23982,14 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/gamma_sector/traxus_base/traxus_office)
+"nNt" = (
+/obj/item/stool,
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/transfer_storage)
 "nNF" = (
 /obj/structure/machinery/power/apc/power/east,
 /obj/effect/decal/cleanable/dirt{
@@ -24572,6 +24599,16 @@
 /obj/structure/platform_decoration,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/engineering_wing)
+"oeI" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/traxus_base/supply_entryway)
 "ofq" = (
 /obj/structure/prop/structure_lattice{
 	dir = 6
@@ -25324,13 +25361,6 @@
 /obj/structure/prop/invuln/darkness,
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/gamma_sector/unsc_base/engineering_wing)
-"oya" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/prison,
-/area/gamma_sector/traxus_base/lockers)
 "oyk" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -27048,14 +27078,6 @@
 "pAl" = (
 /turf/open/floor/plating/asteroidfloor,
 /area/gamma_sector/highway/eastern_way)
-"pAv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
-	},
-/turf/open/floor/prison,
-/area/gamma_sector/traxus_base/lockers)
 "pAx" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 1;
@@ -27477,10 +27499,10 @@
 	},
 /obj/structure/machinery/light{
 	light_power = 0.75;
-	dir = 1
+	dir = 4
 	},
 /turf/open/floor/strata,
-/area/gamma_sector/traxus_base/monitor_station)
+/area/gamma_sector/traxus_base/supply_entryway)
 "pMT" = (
 /obj/structure/closet/crate/unsc,
 /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard{
@@ -27502,13 +27524,6 @@
 /obj/item/stack/medical/splint,
 /turf/open/floor/plating,
 /area/gamma_sector/closed_hard/overheads)
-"pNo" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/strata,
-/area/gamma_sector/traxus_base/main_facility)
 "pNv" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 4
@@ -29181,6 +29196,14 @@
 "qMk" = (
 /turf/open/desert/desert_shore/shore_corner1,
 /area/gamma_sector/open/abandoned_area)
+"qMn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/lockers)
 "qMt" = (
 /turf/open/desert/desert_shore/shore_edge1,
 /area/gamma_sector/open/western_clearing)
@@ -29952,13 +29975,6 @@
 "rdP" = (
 /turf/open/floor/prison/cell_stripe,
 /area/gamma_sector/unsc_base/auxiliary_wing)
-"rec" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/shuttles/drop2)
 "red" = (
 /obj/structure/prop/invuln/darkness,
 /turf/open/auto_turf/sand/layer2,
@@ -30063,13 +30079,12 @@
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/traxus_base/supply_maint)
 "rhq" = (
-/obj/structure/surface/table/almayer,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 1
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
 	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/monitor_station)
+/turf/open/asphalt/tile,
+/area/gamma_sector/open/shorline)
 "rhB" = (
 /obj/structure/platform/kutjevo/smooth{
 	color = "#85a3e0";
@@ -30746,14 +30761,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_primary)
-"rCx" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 1
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/auxiliary_wing)
 "rCG" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/strata/multi_tiles/west,
@@ -30854,13 +30861,6 @@
 /obj/effect/spawner/random/tool,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_primary)
-"rEb" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/highway/eastern_way)
 "rEq" = (
 /obj/structure/machinery/power/port_gen/pacman{
 	name = "Portable Generator"
@@ -32132,6 +32132,14 @@
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_storage)
+"ssb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/auxiliary_office)
 "ssH" = (
 /obj/structure/surface/table/almayer,
 /obj/effect/decal/cleanable/dirt{
@@ -32828,14 +32836,6 @@
 	},
 /turf/open/asphalt/cement_sunbleached_darkened,
 /area/gamma_sector/open/dried_river)
-"sQA" = (
-/obj/structure/surface/table/almayer,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/maintenance_station)
 "sQK" = (
 /obj/structure/prop/unsc_crate/corrugated/blue{
 	pixel_x = -7;
@@ -33404,6 +33404,13 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/western_clearing)
+"tgO" = (
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/kitchen,
+/area/gamma_sector/unsc_base/mess_hall)
 "tht" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/cell_stripe,
@@ -34590,9 +34597,13 @@
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/inner_region)
 "tPQ" = (
-/obj/structure/machinery/colony_floodlight,
-/turf/open/floor/strata/floor3,
-/area/gamma_sector/open/abandoned_area)
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 1
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/auxiliary_wing)
 "tPT" = (
 /turf/open/floor/plating/asteroidwarning/northeast,
 /area/gamma_sector/highway/southern_way)
@@ -35112,16 +35123,6 @@
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/engineering_wing)
-"ufw" = (
-/obj/structure/platform/strata/metal{
-	dir = 1
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/supply_section_a)
 "uge" = (
 /obj/structure/prop/dam/large_boulder/boulder2,
 /turf/open/auto_turf/sand/layer1,
@@ -35334,15 +35335,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/main_filtration)
-"ulH" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/monitor_station)
 "umf" = (
 /obj/structure/prop/invuln/darkness,
 /obj/structure/platform_decoration/kutjevo/rock{
@@ -35584,6 +35576,16 @@
 	},
 /turf/open/floor/almayer/plating,
 /area/gamma_sector/traxus_base/supply_maint)
+"utz" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/traxus_base/monitor_station)
 "utD" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
@@ -36044,13 +36046,21 @@
 /obj/structure/platform_decoration/strata/metal,
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/inner_region)
-"uIH" = (
+"uIv" = (
+/obj/structure/prop/invuln/darkness,
 /obj/structure/machinery/light{
 	light_power = 0.75;
-	dir = 8
+	dir = 1
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/traxus_base/water_filtration)
+"uIH" = (
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
 	},
 /turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/auxiliary_wing)
+/area/gamma_sector/highway/eastern_way)
 "uIV" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/light{
@@ -37050,14 +37060,6 @@
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/desert/shallow_edge/north,
 /area/gamma_sector/open/western_clearing)
-"vjY" = (
-/obj/structure/prop/invuln/darkness,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 1
-	},
-/turf/open/asphalt/tile,
-/area/gamma_sector/traxus_base/water_filtration)
 "vkk" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -37311,6 +37313,10 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/coastal_beach)
+"vsH" = (
+/obj/structure/machinery/colony_floodlight,
+/turf/open/floor/strata/floor3,
+/area/gamma_sector/open/abandoned_area)
 "vsN" = (
 /obj/structure/bed/chair{
 	dir = 8
@@ -37425,6 +37431,16 @@
 	},
 /turf/open/shuttle/escapepod/floor4,
 /area/gamma_sector/highway/traxus_highway_maint)
+"vvw" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#ffe6e6"
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/main_facility)
 "vvL" = (
 /obj/structure/prop/invuln/darkness,
 /obj/structure/machinery/colony_floodlight,
@@ -38254,6 +38270,12 @@
 /obj/structure/barricade/handrail/strata,
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/closed_soft/observation_hab)
+"vTS" = (
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/traxus_base/monitor_station)
 "vUx" = (
 /obj/structure/prop/dam/boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
@@ -39174,14 +39196,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/tertiary_hub)
-"wut" = (
-/obj/item/stool,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/transfer_storage)
 "wux" = (
 /obj/structure/platform/kutjevo,
 /obj/structure/blocker/invisible_wall,
@@ -39255,6 +39269,13 @@
 /obj/structure/window/framed/new_varadero/foundation/reinforced,
 /turf/open/floor/plating,
 /area/gamma_sector/unsc_base/communication_office)
+"wvR" = (
+/obj/structure/machinery/light/small{
+	dir = 4;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/maintenance_station)
 "wvV" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/desert/shallow_edge/northeast,
@@ -39650,6 +39671,14 @@
 "wGA" = (
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/closed_hard/overheads)
+"wGK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/turf/open/floor/prison,
+/area/gamma_sector/traxus_base/lockers)
 "wGU" = (
 /obj/structure/platform/strata/metal{
 	dir = 8
@@ -39859,13 +39888,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_a)
-"wNk" = (
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/kitchen,
-/area/gamma_sector/unsc_base/mess_hall)
 "wNJ" = (
 /obj/structure/platform/kutjevo/smooth{
 	dir = 4;
@@ -40004,6 +40026,14 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/gamma_sector/traxus_base/transfer_primary)
+"wSB" = (
+/obj/structure/prop/invuln/darkness,
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/traxus_base/water_filtration)
 "wSK" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 8
@@ -40762,16 +40792,6 @@
 "xnx" = (
 /turf/open/asphalt/tile,
 /area/gamma_sector/shuttles/drop5)
-"xnB" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "warning_s"
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
-/turf/open/asphalt/tile,
-/area/gamma_sector/unsc_base/engineering_wing)
 "xoW" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#ffe6e6"
@@ -41070,14 +41090,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/north_plaza)
-"xzf" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/traxus_base/transfer_primary)
 "xzi" = (
 /obj/structure/platform/kutjevo{
 	dir = 1
@@ -41529,16 +41541,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/monitor_station)
-"xJX" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
-	},
-/turf/open/floor/strata,
-/area/gamma_sector/traxus_base/supply_entryway)
 "xKf" = (
 /obj/structure/machinery/light/small{
 	dir = 8;
@@ -42261,16 +42263,12 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/highway/southern_maintenance)
 "yeM" = (
-/obj/structure/platform_decoration/strata/metal{
-	dir = 8
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
 	},
-/obj/structure/platform,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 1
-	},
-/turf/open/shuttle/escapepod/east,
-/area/gamma_sector/unsc_base/engineering_wing)
+/turf/open/asphalt/cement_sunbleached_darkened,
+/area/gamma_sector/highway/southern_way)
 "yfc" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
@@ -52961,7 +52959,7 @@ cde
 cde
 cLM
 cLM
-icY
+eUB
 xMc
 owY
 cLM
@@ -53353,7 +53351,7 @@ vGn
 pQX
 kgj
 lQY
-dVZ
+rhq
 dLB
 hPQ
 mUM
@@ -55044,7 +55042,7 @@ mhS
 eHF
 kcW
 qZR
-uIH
+hMs
 dTX
 tWM
 tWM
@@ -55935,7 +55933,7 @@ ciu
 byn
 qOk
 qOk
-bOp
+kqk
 qOk
 fNX
 fNX
@@ -56106,7 +56104,7 @@ kcW
 snu
 dXm
 vrC
-gTC
+npD
 qZR
 bRY
 bRY
@@ -56996,7 +56994,7 @@ byn
 qOk
 fNX
 fNX
-hft
+kio
 qOk
 qOk
 byn
@@ -58661,14 +58659,14 @@ nXv
 nXv
 qIr
 bRY
-rCx
+tPQ
 qZR
 qZR
 qZR
 vFm
 cXT
 chO
-bdq
+llt
 bRY
 jAf
 aFf
@@ -58894,7 +58892,7 @@ qLM
 pfs
 lfJ
 raE
-npj
+ssb
 pyS
 smy
 qcp
@@ -59744,7 +59742,7 @@ omf
 iId
 iId
 dlR
-euj
+iXJ
 qcp
 qcp
 qcp
@@ -60542,7 +60540,7 @@ txN
 rEs
 oTq
 wwz
-xnB
+fad
 ybK
 qzc
 mHZ
@@ -62514,7 +62512,7 @@ cLM
 vWp
 vWp
 lPp
-abK
+jiD
 dcg
 jmW
 whV
@@ -64778,7 +64776,7 @@ cYY
 xUV
 wIC
 wIC
-yeM
+cjs
 uuF
 odT
 pLd
@@ -66503,7 +66501,7 @@ aFf
 aFf
 kIH
 kBn
-sQA
+fnc
 btL
 nLV
 gGs
@@ -67141,7 +67139,7 @@ kIH
 xNu
 onN
 onN
-bVX
+wvR
 ohH
 tqY
 onN
@@ -67962,7 +67960,7 @@ txN
 rEs
 oTq
 oTq
-xnB
+fad
 ybK
 qzc
 mHZ
@@ -68439,7 +68437,7 @@ rJY
 aGB
 aGB
 jcz
-wNk
+tgO
 nhC
 xbX
 cqU
@@ -71168,11 +71166,11 @@ aFf
 aFf
 hhc
 mVk
-pAv
+wGK
 uhJ
 hLY
 uhJ
-pAv
+wGK
 iSd
 hhc
 hhc
@@ -72016,7 +72014,7 @@ ivD
 ivD
 hhc
 stN
-oya
+etN
 cZS
 nOW
 xKl
@@ -72232,7 +72230,7 @@ sLB
 cZS
 cZS
 trC
-ePU
+qMn
 fMp
 nae
 jXP
@@ -75556,7 +75554,7 @@ tBx
 tBx
 tBx
 srD
-rec
+icY
 tBx
 tBx
 tBx
@@ -78219,10 +78217,10 @@ aGB
 aGB
 aGB
 wuE
-ade
+jFZ
 ylH
 ylH
-iCT
+wSB
 wuE
 aGB
 aGB
@@ -81184,7 +81182,7 @@ oLV
 oLV
 hfY
 gxI
-vjY
+uIv
 wuE
 wuE
 wuE
@@ -82883,10 +82881,10 @@ sXl
 aGB
 wuE
 wuE
-ade
+jFZ
 ylH
 ylH
-eGR
+grM
 wuE
 wuE
 aGB
@@ -91256,9 +91254,9 @@ ble
 ble
 eNI
 eNI
-fad
 ble
-fad
+ble
+eNI
 eNI
 "}
 (231,1,1) = {"
@@ -91468,9 +91466,9 @@ ble
 eNI
 eNI
 eNI
-fad
-fad
-fad
+eNI
+eNI
+eNI
 eNI
 "}
 (232,1,1) = {"
@@ -91680,9 +91678,9 @@ bRR
 eNI
 eNI
 eNI
-fad
-fad
-fad
+eNI
+eNI
+eNI
 eNI
 "}
 (233,1,1) = {"
@@ -91892,9 +91890,9 @@ eNI
 eNI
 eNI
 eNI
-fad
-ble
-fad
+eNI
+eNI
+eNI
 eNI
 "}
 (234,1,1) = {"
@@ -92183,7 +92181,7 @@ vLy
 vwE
 sCv
 sCv
-wut
+nNt
 jSc
 pPj
 brs
@@ -95461,7 +95459,7 @@ boq
 sui
 sui
 sui
-fmg
+yeM
 sui
 sui
 sui
@@ -100026,7 +100024,7 @@ vLy
 gBP
 cZs
 wNh
-ufw
+bir
 cpq
 sEY
 buY
@@ -101080,7 +101078,7 @@ hhw
 hhw
 hhw
 hZW
-xzf
+kkx
 wwX
 wVj
 vLy
@@ -107235,7 +107233,7 @@ vLy
 nma
 bvA
 pNH
-rhq
+npj
 kHL
 kHL
 pNH
@@ -107253,7 +107251,7 @@ ycm
 hva
 vWu
 pPF
-gVn
+oeI
 uhe
 vWu
 vWu
@@ -107873,7 +107871,7 @@ hZW
 pNH
 xMe
 tnT
-ulH
+cwN
 pNH
 xWZ
 dPp
@@ -108022,7 +108020,7 @@ fYS
 pDr
 kxV
 hXq
-tPQ
+vsH
 tJa
 jxs
 jxs
@@ -108091,17 +108089,17 @@ grv
 mmb
 dPp
 njf
-xJX
+pMR
 uhe
 uhe
 uhe
 cwq
 cwq
-bCE
+kcY
 uhe
 jen
 jen
-xJX
+pMR
 cip
 vWu
 kiY
@@ -108523,7 +108521,7 @@ iIV
 iIV
 ktJ
 xlU
-imQ
+gTD
 jJN
 tji
 luU
@@ -108722,15 +108720,15 @@ pNH
 eAP
 lxR
 lxR
-adF
+cZK
 eAP
 pnf
 ktJ
 khe
-bfL
+fvb
 khe
 khe
-eht
+crx
 ktJ
 ktJ
 pxQ
@@ -109167,7 +109165,7 @@ nxf
 ghz
 alt
 khe
-aHd
+aQB
 vWu
 jpE
 ctd
@@ -109560,7 +109558,7 @@ cog
 dWT
 bsu
 pNH
-pMR
+utz
 tnT
 fea
 tRg
@@ -109573,7 +109571,7 @@ rPs
 tnT
 tCn
 pnf
-eMD
+lIh
 xlU
 pAY
 wbZ
@@ -109798,10 +109796,10 @@ ktJ
 wMh
 jJN
 tji
-aJu
+jDv
 wMh
 xlU
-adD
+fkB
 ktJ
 tXp
 ais
@@ -109997,11 +109995,11 @@ nBs
 gpP
 fpu
 pnf
-cxn
+jYi
 ktJ
 mrv
 yei
-cZK
+bCE
 dfk
 pnf
 xus
@@ -110217,15 +110215,15 @@ khe
 agL
 mrv
 yei
-cZK
+bCE
 wMh
 mrv
 yei
-dZO
+vvw
 dfk
 mrv
 yei
-cZK
+bCE
 wMh
 vWu
 vWu
@@ -111262,30 +111260,30 @@ ozK
 eAP
 eAP
 pCN
-hCe
+fUf
 eAP
 eAP
 ggh
 ggh
-mji
+vTS
 pnf
 tbG
 tbG
 lpL
 lpL
-pNo
+hCe
 oiS
 lpL
 lpL
 oiS
 diz
-mLl
+kSa
 lpL
 uul
 diz
 lpL
 lpL
-pNo
+hCe
 oiS
 pnf
 oRs
@@ -112326,7 +112324,7 @@ sPX
 sPX
 pNH
 tnT
-dgQ
+kRT
 gNO
 pnf
 ouR
@@ -113887,7 +113885,7 @@ oPA
 oPA
 oPA
 oPA
-act
+fMI
 iAl
 vfL
 vfL
@@ -117280,7 +117278,7 @@ mPK
 nAl
 wMR
 qIr
-kSa
+ePU
 wMR
 ksr
 pim
@@ -117405,7 +117403,7 @@ cEV
 qvO
 cEV
 kpa
-rEb
+uIH
 kKc
 gHT
 cEV
@@ -117825,7 +117823,7 @@ cEV
 cEV
 cEV
 kpa
-rEb
+uIH
 kKc
 sLm
 ebD
