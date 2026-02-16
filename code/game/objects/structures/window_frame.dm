@@ -380,8 +380,8 @@
 // NEW VARADERO SHIP HULL frame
 /obj/structure/window_frame/shipwall/yellow
 	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
-	icon_state = "shipwall0_frame"
-	basestate = "shipwall0_frame"
+	icon_state = "shipwall_window0_frame"
+	basestate = "shipwall_window0_frame"
 
 /obj/structure/window_frame/shipwall/yellow/reinforced
 	icon = 'icons/turf/walls/yellow_ship_windows.dmi'
