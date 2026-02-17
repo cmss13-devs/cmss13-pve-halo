@@ -118,7 +118,7 @@
 	icon_state = "fsmaint"
 /area/gamma_sector/traxus_base/refiller
 	name = "Refiller Station"
-	icon_state = "emergencystation"
+	icon_state = "bunker01_storage"
 /area/gamma_sector/traxus_base/lockers
 	name = "Locker"
 	icon_state = "locker"
@@ -294,7 +294,7 @@
 //CAVES AND UNDERHANGS
 /area/gamma_sector/closed_hard/overheads
 	name = "Rocky Overhead"
-	icon_state = "blue-red-d"
+	icon_state = "bunker01_caves"
 /area/gamma_sector/closed_hard/coastal_caves
 	name = "Beach Cavern"
 	icon_state = "caves_sw"

@@ -182,10 +182,18 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_b)
 "agD" = (
-/turf/closed/wall/rock{
-	color = "#967e73"
+/obj/structure/prop/unsc_crate/standard{
+	pixel_x = 8;
+	pixel_y = 11;
+	color = "#b3b27d"
 	},
-/area/gamma_sector/open/eastern_ridge)
+/obj/structure/prop/unsc_crate/standard{
+	pixel_x = -8;
+	pixel_y = -1;
+	color = "#b3b27d"
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "agL" = (
 /obj/item/stool,
 /obj/effect/decal/cleanable/dirt{
@@ -297,7 +305,9 @@
 	pixel_x = -1;
 	pixel_y = 18
 	},
-/obj/item/clothing/accessory/limb/skeleton/head,
+/obj/item/clothing/accessory/limb/skeleton/head{
+	name = "Blindfolded Skull"
+	},
 /obj/item/device/camera/broadcasting{
 	pixel_x = -3;
 	pixel_y = 27;
@@ -4038,7 +4048,9 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/small_garage)
 "ccC" = (
-/obj/item/clothing/accessory/limb/skeleton/head,
+/obj/item/clothing/accessory/limb/skeleton/head{
+	name = "Cratered Skull"
+	},
 /obj/item/explosive/grenade/high_explosive/m15/unsc{
 	pixel_x = -11;
 	pixel_y = -7
@@ -4330,7 +4342,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_primary)
 "ckl" = (
-/obj/structure/window/framed/solaris/reinforced/hull,
+/obj/structure/window_frame/new_varadero/concrete_frame,
 /turf/open/floor/plating,
 /area/gamma_sector/closed_soft/oob_hab)
 "ckp" = (
@@ -6605,8 +6617,9 @@
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/gamma_sector/traxus_base/supply_section_b)
 "dCv" = (
-/turf/open/gm/river/desert/shallow,
-/area/space)
+/obj/structure/window/framed/new_varadero/concrete,
+/turf/open/floor/plating,
+/area/gamma_sector/closed_soft/oob_hab)
 "dCU" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -10911,6 +10924,10 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/main_facility)
+"fYo" = (
+/obj/structure/closet/crate/trashcart,
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "fYD" = (
 /obj/structure/platform_decoration/strata/metal,
 /turf/open/asphalt/tile,
@@ -12630,8 +12647,8 @@
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/inner_region)
 "gYk" = (
-/turf/open/auto_turf/sand/layer2,
-/area/space)
+/turf/closed/wall/new_varadero/concrete,
+/area/gamma_sector/closed_soft/oob_hab)
 "gYp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cable/heavyduty{
@@ -17782,8 +17799,9 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_entryway)
 "jRX" = (
-/turf/open/auto_turf/sand/layer0,
-/area/space)
+/obj/structure/machinery/portable_atmospherics/canister/carbon_dioxide,
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "jSc" = (
 /obj/structure/surface/table/almayer,
 /obj/item/ammo_box/magazine/misc/power_cell,
@@ -18354,9 +18372,12 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_primary)
 "khA" = (
-/obj/structure/flora/bush/ausbushes/var3/fernybush,
-/turf/open/auto_turf/sand/layer0,
-/area/space)
+/obj/structure/prop/unsc_crate/standard/blue{
+	pixel_x = -5;
+	pixel_y = 0
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "kiO" = (
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/gamma_sector/shuttles/drop4)
@@ -21938,8 +21959,16 @@
 /turf/open/gm/river/desert,
 /area/gamma_sector/open/eastern_ridge)
 "mir" = (
+/obj/item/clothing/accessory/limb/skeleton/head{
+	name = "Crosshair Marked Skull";
+	pixel_y = 12;
+	pixel_x = 10
+	},
+/obj/structure/flora/bush/desert{
+	icon_state = "tree_3"
+	},
 /turf/open/auto_turf/sand/layer1,
-/area/space)
+/area/gamma_sector/open/western_clearing)
 "miy" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/power/apc/power/north,
@@ -24778,11 +24807,10 @@
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/open/inner_region)
 "nKK" = (
-/obj/structure/flora/bush/desert{
-	icon_state = "tree_3"
-	},
-/turf/open/auto_turf/sand/layer1,
-/area/space)
+/obj/structure/prop/invuln/darkness,
+/obj/structure/prop/dam/boulder/boulder2,
+/turf/open/auto_turf/sand/layer2,
+/area/gamma_sector/closed_hard/overheads)
 "nLf" = (
 /obj/structure/platform_decoration/kutjevo/smooth{
 	layer = 2.99;
@@ -25753,9 +25781,10 @@
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/closed_soft/armory_hab)
 "okW" = (
-/obj/structure/prop/dam/wide_boulder/boulder1,
+/obj/structure/prop/invuln/darkness,
+/obj/structure/prop/dam/large_boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
-/area/space)
+/area/gamma_sector/closed_hard/overheads)
 "okX" = (
 /turf/open/desert/desert_shore/desert_shore1,
 /area/gamma_sector/open/dried_river)
@@ -26534,8 +26563,9 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_primary)
 "oHw" = (
-/turf/open/desert/desert_shore/shore_corner2/east,
-/area/space)
+/obj/structure/prop/unsc_crate/stack,
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "oHZ" = (
 /turf/closed/shuttle/elevator{
 	dir = 5
@@ -30676,9 +30706,12 @@
 /turf/open/shuttle/escapepod/floor4,
 /area/gamma_sector/traxus_base/transfer_primary)
 "qWe" = (
-/obj/structure/prop/dam/boulder/boulder2,
-/turf/open/auto_turf/sand/layer1,
-/area/space)
+/obj/structure/prop/unsc_crate/big{
+	pixel_x = -8;
+	pixel_y = -4
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "qWr" = (
 /turf/open/desert/desert_shore/shore_corner2/east,
 /area/gamma_sector/open/inner_region)
@@ -31961,9 +31994,17 @@
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/closed_soft/observation_hab)
 "rDx" = (
-/obj/structure/prop/dam/boulder/boulder1,
-/turf/open/auto_turf/sand/layer1,
-/area/space)
+/obj/structure/closet/crate/unsc,
+/obj/item/storage/backpack/marine/unsc{
+	pixel_x = 6;
+	pixel_y = -1
+	},
+/obj/item/storage/firstaid/unsc{
+	pixel_x = -5;
+	pixel_y = -2
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "rDz" = (
 /turf/closed/wall/voi,
 /area/gamma_sector/traxus_base/main_filtration)
@@ -35791,11 +35832,9 @@
 /turf/open/floor/prison/darkred2/east,
 /area/gamma_sector/unsc_base/large_garage)
 "tMP" = (
-/obj/structure/flora/bush/desert{
-	icon_state = "tree_3"
-	},
-/turf/open/auto_turf/sand/layer0,
-/area/space)
+/obj/structure/surface/table/almayer,
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "tNl" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 8
@@ -38575,9 +38614,12 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/engineering_wing)
 "vmt" = (
-/obj/structure/flora/tree/joshua,
-/turf/open/auto_turf/sand/layer1,
-/area/space)
+/obj/structure/prop/unsc_crate/standard/red{
+	pixel_x = -4;
+	pixel_y = 4
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/closed_soft/oob_hab)
 "vnc" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
@@ -39667,7 +39709,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/lockers)
 "vRx" = (
-/turf/closed/wall/solaris/reinforced/hull,
+/turf/closed/wall/new_varadero/concrete/hull,
 /area/gamma_sector/closed_soft/oob_hab)
 "vRz" = (
 /obj/structure/extinguisher_cabinet/alt{
@@ -44495,7 +44537,7 @@ qIr
 qIr
 qIr
 qIr
-mir
+lkZ
 nFP
 mwv
 knn
@@ -44506,7 +44548,7 @@ qIr
 mwv
 efV
 nFP
-mir
+lkZ
 qIr
 qIr
 qIr
@@ -44705,21 +44747,21 @@ qIr
 qIr
 qIr
 qIr
-jRX
-mir
-mir
-mir
-khA
+ljY
+lkZ
+lkZ
+lkZ
+vjD
 nFP
-kPR
+nKK
 mwv
 mwv
 mwv
 mwv
 mwv
-jRX
-jRX
-mir
+ljY
+ljY
+lkZ
 qIr
 qIr
 qIr
@@ -44918,21 +44960,21 @@ qIr
 qIr
 qIr
 qIr
-jRX
-jRX
-jRX
-jRX
-jRX
+ljY
+ljY
+ljY
+ljY
+ljY
+okW
 mwv
-mwv
-mir
-vmt
-mir
-mir
-gYk
-tMP
-jRX
-jRX
+lkZ
+eeE
+lkZ
+lkZ
+irD
+fGe
+ljY
+ljY
 qIr
 qIr
 qIr
@@ -45131,20 +45173,20 @@ qIr
 qIr
 qIr
 qIr
-mir
-jRX
-jRX
-mir
-mir
-okW
-mir
-mir
-jRX
-mir
-mir
-jRX
-jRX
-jRX
+lkZ
+ljY
+ljY
+lkZ
+lkZ
+cHb
+lkZ
+lkZ
+ljY
+lkZ
+lkZ
+ljY
+ljY
+ljY
 qIr
 qIr
 qIr
@@ -45343,19 +45385,19 @@ qIr
 qIr
 qIr
 qIr
-mir
-jRX
-mir
-mir
-nKK
-mir
-mir
-jRX
-mir
-jRX
-jRX
-qWe
-gYk
+lkZ
+ljY
+lkZ
+lkZ
+weB
+lkZ
+lkZ
+ljY
+lkZ
+ljY
+ljY
+dUY
+irD
 qIr
 qIr
 qIr
@@ -45555,21 +45597,21 @@ qIr
 qIr
 qIr
 qIr
-mir
-mir
-mir
-mir
+lkZ
+lkZ
+lkZ
+lkZ
 vRx
 vRx
-ckl
-ckl
-ckl
-ckl
-ckl
-ckl
-vRx
-vRx
-vRx
+dCv
+dCv
+dCv
+dCv
+dCv
+dCv
+gYk
+gYk
+gYk
 qIr
 qIr
 qIr
@@ -45768,20 +45810,20 @@ qIr
 qIr
 qIr
 qIr
-mir
+lkZ
+irD
+lkZ
+vRx
+jRX
+tMP
+bHl
+bHl
+bHl
+bHl
+vmt
+khA
 gYk
-mir
-vRx
-bHl
-bHl
-bHl
-bHl
-bHl
-bHl
-bHl
-bHl
-vRx
-vRx
+gYk
 qIr
 qIr
 qIr
@@ -45980,20 +46022,20 @@ qIr
 qIr
 qIr
 qIr
-mir
-rDx
-mir
+lkZ
+kZj
+eeE
 vRx
+tMP
+tMP
 bHl
 bHl
 bHl
 bHl
 bHl
-bHl
-bHl
-bHl
+qWe
 ctC
-vRx
+gYk
 qIr
 qIr
 qIr
@@ -46196,16 +46238,16 @@ cde
 cde
 mir
 vRx
+tMP
 bHl
 bHl
 bHl
 bHl
 bHl
+rDx
+oHw
 bHl
-bHl
-bHl
-bHl
-vRx
+gYk
 qIr
 qIr
 qIr
@@ -46408,16 +46450,16 @@ cde
 cde
 cde
 vRx
+fYo
 bHl
 bHl
 bHl
 bHl
 bHl
 bHl
-bHl
-bHl
-vRx
-vRx
+agD
+gYk
+gYk
 cde
 cde
 cde
@@ -46455,7 +46497,7 @@ ljY
 lkZ
 lkZ
 lkZ
-mir
+lkZ
 lkZ
 lkZ
 lkZ
@@ -46620,16 +46662,16 @@ cde
 cde
 cde
 vRx
-vRx
+gYk
+dCv
 ckl
 ckl
 ckl
 ckl
-ckl
-ckl
-vRx
-vRx
-vRx
+dCv
+gYk
+gYk
+gYk
 cde
 cde
 cde
@@ -49266,8 +49308,8 @@ qgv
 qgv
 qgv
 qIr
-dCv
-oHw
+vGn
+qrC
 qNX
 mUM
 ksV
@@ -116209,7 +116251,7 @@ wMR
 gpz
 gpz
 qIr
-agD
+qIr
 gpz
 sOP
 xpJ
