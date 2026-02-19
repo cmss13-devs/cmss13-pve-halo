@@ -1520,7 +1520,7 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	name = "rock wall"
 	desc = "A set of near-hexagonal rocks."
 	icon = 'icons/turf/walls/new_varadero/nv_rock_wall_alt.dmi'
-	icon_state = "nv_rock"
+	icon_state = "nv_rock_alt"
 	walltype = WALL_BASALT_COLUMN_SOLID
 	hull = 1
 

@@ -1099,7 +1099,7 @@
 	window_frame = /obj/structure/window_frame/new_varadero/foundation/reinforced
 
 /obj/structure/window/framed/new_varadero/foundation/reinforced/hull
-	icon_state = "new_varadero_r_window"
+	icon_state = "new_varadero_r_window_hh"
 	basestate = "new_varadero_r_window"
 	desc = "A glass window. Something tells you this one is somehow indestructible."
 	not_damageable = TRUE
@@ -1119,6 +1119,18 @@
 	icon_state = "concrete_window"
 	basestate = "concrete_window"
 	window_frame = /obj/structure/window_frame/new_varadero/concrete_frame
+
+/obj/structure/window/framed/new_varadero/concrete/hull
+
+	name = "dense picture window"
+	icon = 'icons/turf/walls/new_varadero/concrete_windows.dmi'
+	desc = "A fully sized window pane meant to have full view of the outside world. The window looks thick enough to stop anything!"
+	icon_state = "concrete_window_h"
+	not_damageable = TRUE
+	not_deconstructable = TRUE
+	unslashable = TRUE
+	unacidable = TRUE
+	health = 1000000
 
 /obj/structure/window/framed/shipwall
 	name = "ship window"
