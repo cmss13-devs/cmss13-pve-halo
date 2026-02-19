@@ -94,6 +94,16 @@
 /obj/structure/prop/dam/boulder/boulder1,
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/closed_hard/overheads)
+"aem" = (
+/obj/structure/platform_decoration/strata/metal{
+	dir = 4
+	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = 28
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/open/western_clearing)
 "aex" = (
 /obj/structure/extinguisher_cabinet/alt{
 	pixel_y = 30;
@@ -1013,6 +1023,13 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/monitor_station)
+"aCg" = (
+/obj/structure/sign/safety/east{
+	pixel_x = 14;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/west_wing)
 "aCj" = (
 /obj/structure/platform/strata/metal{
 	dir = 1
@@ -2889,6 +2906,10 @@
 "byz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/almayer,
+/obj/structure/sign/safety/storage{
+	pixel_x = 34;
+	pixel_y = 1
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/auxiliary_wing)
 "byF" = (
@@ -3197,6 +3218,17 @@
 	},
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/open/inner_region)
+"bGv" = (
+/obj/structure/sign/safety/bridge{
+	pixel_x = 32;
+	pixel_y = -6
+	},
+/obj/structure/sign/safety/north{
+	pixel_x = 32;
+	pixel_y = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "bGF" = (
 /obj/structure/platform,
 /obj/structure/machinery/light{
@@ -4374,6 +4406,11 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_primary)
+"clj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/gamma_sector/unsc_base/west_wing)
 "cmx" = (
 /obj/structure/prop/dam/boulder/boulder3,
 /turf/open/auto_turf/sand/layer1,
@@ -5279,6 +5316,12 @@
 /obj/structure/prop/invuln/darkness,
 /turf/open/asphalt/tile,
 /area/gamma_sector/traxus_base/main_filtration)
+"cNI" = (
+/obj/effect/decal/unsc/armory{
+	dir = 8
+	},
+/turf/open/floor/prison/cell_stripe/west,
+/area/gamma_sector/unsc_base/east_wing)
 "cOc" = (
 /obj/structure/platform/kutjevo/rock{
 	layer = 2.99
@@ -6353,6 +6396,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 1
 	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = -18
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/joint_wing)
 "dsr" = (
@@ -6399,6 +6445,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = -18
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/joint_wing)
 "duJ" = (
@@ -6602,6 +6651,26 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/maintenance_substation)
+"dBX" = (
+/obj/structure/surface/table/almayer,
+/obj/structure/machinery/computer/communications/simple{
+	dir = 4
+	},
+/obj/structure/machinery/light{
+	light_power = 0.75
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/communication_office)
+"dCf" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = -25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/transfer_primary)
 "dCs" = (
 /obj/structure/platform{
 	dir = 8;
@@ -6700,6 +6769,13 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/main_filtration)
+"dFR" = (
+/obj/structure/sign/safety/maint{
+	pixel_x = -16;
+	pixel_y = 0
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/small_garage)
 "dGg" = (
 /obj/structure/platform{
 	dir = 1
@@ -6755,6 +6831,13 @@
 /obj/structure/closet/crate/unsc,
 /turf/open/floor/prison/cell_stripe/east,
 /area/gamma_sector/closed_soft/observation_hab)
+"dHo" = (
+/obj/structure/sign/safety/medical{
+	pixel_x = 35;
+	pixel_y = 0
+	},
+/turf/open/floor/prison/sterile_white,
+/area/gamma_sector/unsc_base/medbay)
 "dHq" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 1
@@ -6830,6 +6913,14 @@
 "dJa" = (
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/unsc_base/small_garage)
+"dJl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/east_wing)
 "dJx" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -7075,6 +7166,10 @@
 	dir = 6;
 	layer = 3.1
 	},
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = 25
+	},
 /turf/open/shuttle/escapepod/east,
 /area/gamma_sector/unsc_base/armory)
 "dRJ" = (
@@ -7247,11 +7342,18 @@
 	},
 /turf/open/floor/prison/cell_stripe/west,
 /area/gamma_sector/traxus_base/main_filtration)
-"dWp" = (
-/turf/closed/wall/rock{
-	color = "#967e73"
+"dWa" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/area/gamma_sector/unsc_base/joint_wing)
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
+"dWp" = (
+/turf/closed/wall/new_varadero,
+/area/gamma_sector/unsc_base/command_office)
 "dWr" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -7729,6 +7831,17 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/armory)
+"ehY" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_x = 0;
+	pixel_y = -13
+	},
+/obj/structure/machinery/light/small{
+	light_power = 0.25
+	},
+/turf/open/floor/prison/cell_stripe/north,
+/area/gamma_sector/open/dried_river)
 "eit" = (
 /obj/structure/cargo_container/unsc/vertical/south_1/alt,
 /turf/open/asphalt/cement_sunbleached_darkened,
@@ -8811,10 +8924,11 @@
 "ePW" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light{
-	light_power = 0.75
-	},
 /obj/item/stool,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = -24
+	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/communication_office)
 "eQb" = (
@@ -9235,6 +9349,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 4
 	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = -18
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/joint_wing)
 "fcp" = (
@@ -9381,6 +9498,9 @@
 "ffT" = (
 /turf/open/desert/desert_shore/shore_corner2/west,
 /area/gamma_sector/open/coastal_ridge)
+"ffX" = (
+/turf/closed/wall/new_varadero/concrete/reinforced,
+/area/gamma_sector/open/abandoned_area)
 "ffY" = (
 /obj/structure/flora/bush/desert{
 	icon_state = "tree_3"
@@ -9525,6 +9645,12 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/traxus_base/supply_section_a)
+"fkB" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "fkF" = (
 /obj/structure/barricade/handrail/strata,
 /obj/effect/decal/cleanable/dirt{
@@ -10002,7 +10128,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/closed_soft/observation_hab)
 "fwV" = (
-/turf/closed/wall/new_varadero/concrete,
+/turf/closed/wall/new_varadero/concrete/reinforced,
 /area/gamma_sector/open/dried_river)
 "fxd" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
@@ -10266,6 +10392,10 @@
 	pixel_y = -4;
 	id = "gro_UNSC_HAB_A"
 	},
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 34;
+	pixel_y = 0
+	},
 /turf/open/floor/strata/floor3,
 /area/gamma_sector/closed_soft/armory_hab)
 "fDg" = (
@@ -10510,6 +10640,9 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/inner_region)
+"fJv" = (
+/turf/closed/wall/new_varadero/concrete/reinforced,
+/area/gamma_sector/open/shorline)
 "fJD" = (
 /obj/item/stool,
 /turf/open/shuttle/escapepod/floor4,
@@ -10731,6 +10864,10 @@
 	dir = 10;
 	layer = 3.1
 	},
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = 25
+	},
 /turf/open/shuttle/escapepod/east,
 /area/gamma_sector/unsc_base/armory)
 "fPC" = (
@@ -10894,6 +11031,13 @@
 	},
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
+"fXm" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 33;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
 /area/gamma_sector/unsc_base/west_wing)
 "fXr" = (
 /obj/structure/cargo_container/unsc/vertical/south_2,
@@ -11164,6 +11308,13 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/transfer_storage)
+"gfC" = (
+/obj/structure/sign/safety/commline_connection{
+	pixel_x = 8;
+	pixel_y = -25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/east_wing)
 "gfD" = (
 /obj/structure/surface/rack{
 	color = "#6b675e";
@@ -12509,6 +12660,10 @@
 	dir = 4;
 	layer = 3.01
 	},
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = -25
+	},
 /turf/open/shuttle/escapepod/west,
 /area/gamma_sector/unsc_base/command)
 "gTR" = (
@@ -13385,6 +13540,17 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/unsc_base/small_garage)
+"htN" = (
+/obj/structure/sign/safety/medical{
+	pixel_x = -18;
+	pixel_y = 8
+	},
+/obj/structure/sign/safety/south{
+	pixel_x = -18;
+	pixel_y = -6
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/east_wing)
 "htP" = (
 /obj/structure/blocker/forcefield/multitile_vehicles,
 /turf/open/gm/river/desert/deep,
@@ -13460,6 +13626,10 @@
 	},
 /obj/structure/flora/pottedplant{
 	icon_state = "pottedplant_21"
+	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = 28
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/west_wing)
@@ -13879,6 +14049,9 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = -18
+	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/small_garage)
 "hJR" = (
@@ -14870,6 +15043,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/gamma_sector/highway/southern_maintenance)
+"ikq" = (
+/obj/structure/sign/safety/security,
+/turf/closed/wall/new_varadero/reinforced,
+/area/gamma_sector/unsc_base/north_wing)
 "ikF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -16239,9 +16416,9 @@
 /turf/open/gm/river/desert/deep,
 /area/gamma_sector/open/western_clearing)
 "iWI" = (
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
+/obj/structure/sign/safety/medical{
+	pixel_x = 37;
+	pixel_y = 1
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/east_wing)
@@ -16779,6 +16956,10 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/auxiliary_storage)
 "jmW" = (
+/obj/structure/sign/safety/maint{
+	pixel_x = 33;
+	pixel_y = -9
+	},
 /turf/open/floor/almayer/plating_striped/east,
 /area/gamma_sector/unsc_base/command_office)
 "jnr" = (
@@ -17035,6 +17216,13 @@
 /obj/structure/bed/chair/comfy/bench/north/east,
 /obj/effect/spawner/random/tool,
 /turf/open/floor/strata,
+/area/gamma_sector/unsc_base/west_wing)
+"jtf" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/west_wing)
 "jtg" = (
 /obj/structure/platform_decoration/kutjevo/rock{
@@ -17402,6 +17590,12 @@
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/traxus_base/monitor_station)
+"jEd" = (
+/obj/effect/decal/unsc/armory{
+	dir = 1
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/armory)
 "jEk" = (
 /obj/structure/platform/kutjevo/rock{
 	layer = 2.99
@@ -18088,6 +18282,10 @@
 	},
 /turf/open/floor/prison/bright_clean,
 /area/gamma_sector/unsc_base/mess_hall)
+"jZw" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "jZB" = (
 /obj/structure/platform/kutjevo/rock{
 	dir = 1;
@@ -18270,6 +18468,17 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/engineering_wing)
+"keb" = (
+/obj/structure/sign/safety/bridge{
+	pixel_x = -18;
+	pixel_y = -5
+	},
+/obj/structure/sign/safety/north{
+	pixel_x = -18;
+	pixel_y = 9
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/east_wing)
 "kee" = (
 /obj/structure/platform/strata/metal{
 	dir = 1
@@ -18656,6 +18865,10 @@
 /area/gamma_sector/traxus_base/transfer_primary)
 "kpY" = (
 /obj/structure/surface/table/almayer,
+/obj/structure/sign/safety/maint{
+	pixel_x = 2;
+	pixel_y = 28
+	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/command_office)
 "kqe" = (
@@ -19969,6 +20182,10 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/pipes/vents/pump,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = 28
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/west_wing)
 "ldu" = (
@@ -20127,6 +20344,18 @@
 	},
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/open/inner_region)
+"lje" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/commline_connection{
+	pixel_x = -18;
+	pixel_y = 7
+	},
+/obj/structure/sign/safety/south{
+	pixel_x = -18;
+	pixel_y = -6
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/east_wing)
 "ljn" = (
 /turf/open/desert/desert_shore/desert_shore1/north,
 /area/gamma_sector/open/eastern_ridge)
@@ -21170,6 +21399,10 @@
 	pixel_y = -4;
 	id = "gro_UNSC_supplystorage_C"
 	},
+/obj/structure/sign/safety/storage{
+	pixel_x = -19;
+	pixel_y = 0
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/auxiliary_wing)
 "lKJ" = (
@@ -21678,6 +21911,14 @@
 	},
 /turf/open/gm/dirt2,
 /area/gamma_sector/closed_hard/overheads)
+"lYn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/maint{
+	pixel_x = 15;
+	pixel_y = -24
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/maintenance_substation)
 "lYq" = (
 /obj/structure/machinery/light/small{
 	dir = 8;
@@ -21755,6 +21996,16 @@
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/shuttles/drop5)
+"mbg" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "mby" = (
 /obj/structure/closet/secure_closet/guncabinet{
 	req_access = null
@@ -22010,6 +22261,10 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/armory)
+"mjr" = (
+/obj/structure/sign/safety/security,
+/turf/closed/wall/new_varadero/reinforced/hull,
+/area/gamma_sector/unsc_base/west_wing)
 "mjC" = (
 /obj/structure/platform_decoration/kutjevo/rock,
 /turf/open/auto_turf/sand/layer0,
@@ -22848,6 +23103,12 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/shuttles/drop1)
+"mIx" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/gamma_sector/unsc_base/west_wing)
 "mIC" = (
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/traxus_central_storage)
@@ -23386,6 +23647,10 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_entryway)
+"mZU" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/gamma_sector/unsc_base/west_wing)
 "naa" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer/PC{
@@ -23472,6 +23737,12 @@
 /obj/item/stool,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_a)
+"ncf" = (
+/obj/effect/decal/unsc/armory{
+	dir = 4
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "ncj" = (
 /obj/structure/machinery/light{
 	light_power = 0.75;
@@ -23708,6 +23979,18 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/inner_region)
+"niP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/medical{
+	pixel_x = 1;
+	pixel_y = -25
+	},
+/obj/structure/sign/safety/east{
+	pixel_x = 15;
+	pixel_y = -25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/armory)
 "niT" = (
 /obj/structure/machinery/door_control{
 	id = "gro_UNSC_sidelobby"
@@ -24834,6 +25117,13 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/traxus_central_storage)
+"nLr" = (
+/obj/structure/sign/safety/maint{
+	pixel_x = 2;
+	pixel_y = -24
+	},
+/turf/open/floor/prison/cell_stripe/west,
+/area/gamma_sector/unsc_base/north_wing)
 "nLw" = (
 /obj/structure/window/framed/prefab,
 /turf/open/floor/plating,
@@ -24980,6 +25270,9 @@
 "nOA" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/unsc_base/west_wing)
 "nOP" = (
@@ -26152,6 +26445,17 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_main)
+"ouo" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 15;
+	pixel_y = -25
+	},
+/obj/structure/sign/safety/south{
+	pixel_x = 0;
+	pixel_y = -25
+	},
+/turf/open/floor/prison/cell_stripe/east,
+/area/gamma_sector/unsc_base/command)
 "out" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal9";
@@ -26238,6 +26542,10 @@
 "oww" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 8
+	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = 28
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/east_wing)
@@ -26367,6 +26675,13 @@
 	},
 /turf/open/floor/prison/bright_clean,
 /area/gamma_sector/unsc_base/mess_hall)
+"oAc" = (
+/obj/structure/sign/safety/rewire{
+	pixel_x = 34;
+	pixel_y = 0
+	},
+/turf/open/floor/almayer/plating,
+/area/gamma_sector/unsc_base/central_vent)
 "oAh" = (
 /obj/structure/platform/strata/metal{
 	dir = 1
@@ -26524,8 +26839,8 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/command)
 "oGk" = (
-/turf/closed/wall/new_varadero/reinforced/hull,
-/area/gamma_sector/unsc_base/mess_hall)
+/turf/closed/wall/new_varadero,
+/area/gamma_sector/unsc_base/north_wing)
 "oGp" = (
 /obj/structure/platform{
 	dir = 4;
@@ -26540,6 +26855,13 @@
 	},
 /turf/open/floor/prison/cell_stripe/west,
 /area/gamma_sector/traxus_base/supply_section_main)
+"oGz" = (
+/obj/structure/sign/safety/west{
+	pixel_x = 1;
+	pixel_y = 26
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/east_wing)
 "oGD" = (
 /obj/structure/platform{
 	dir = 4;
@@ -26580,6 +26902,10 @@
 	dir = 8
 	},
 /obj/structure/machinery/disposal,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 32;
+	pixel_y = 7
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/east_wing)
 "oII" = (
@@ -27163,6 +27489,17 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/main_filtration)
+"paA" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = -25
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/strata/floor3,
+/area/gamma_sector/open/eastern_ridge)
 "paI" = (
 /obj/structure/surface/table/almayer,
 /obj/item/clothing/head/hardhat/orange,
@@ -27329,6 +27666,9 @@
 	},
 /turf/open/floor/asteroidfloor,
 /area/gamma_sector/highway/southern_way)
+"pfk" = (
+/turf/closed/wall/new_varadero/concrete/reinforced,
+/area/gamma_sector/closed_hard/overheads)
 "pfs" = (
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/north_wing)
@@ -27555,6 +27895,9 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/north_plaza)
+"pka" = (
+/turf/closed/wall/new_varadero,
+/area/gamma_sector/unsc_base/medbay)
 "pko" = (
 /obj/structure/platform/strata/metal{
 	dir = 1
@@ -28064,6 +28407,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 4
 	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = -18
+	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/small_garage)
 "pzZ" = (
@@ -28110,6 +28456,9 @@
 /area/gamma_sector/traxus_base/main_facility)
 "pBj" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/unsc_base/west_wing)
 "pBC" = (
@@ -28346,6 +28695,10 @@
 	dir = 8;
 	layer = 3.01
 	},
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = -25
+	},
 /turf/open/shuttle/escapepod/west,
 /area/gamma_sector/unsc_base/command)
 "pGq" = (
@@ -28381,6 +28734,13 @@
 	},
 /turf/open/floor/prison/cell_stripe/west,
 /area/gamma_sector/closed_soft/road_hab)
+"pHG" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 34;
+	pixel_y = 0
+	},
+/turf/open/floor/strata/floor3,
+/area/gamma_sector/closed_soft/armory_hab)
 "pHJ" = (
 /obj/structure/machinery/light/small{
 	dir = 1;
@@ -28434,6 +28794,10 @@
 "pJO" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 4
+	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = 28
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/east_wing)
@@ -28563,9 +28927,11 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = -18
+	},
 /obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 8
+	light_power = 0.75
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/joint_wing)
@@ -30920,6 +31286,10 @@
 	light_power = 0.75;
 	dir = 8
 	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = -24
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/north_wing)
 "rbj" = (
@@ -31767,6 +32137,13 @@
 "rvk" = (
 /turf/open/desert/desert_shore/desert_shore1/north,
 /area/gamma_sector/open/coastal_ridge)
+"rvn" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/gamma_sector/unsc_base/west_wing)
 "rvt" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
@@ -32131,6 +32508,10 @@
 /area/gamma_sector/traxus_base/supply_section_main)
 "rFQ" = (
 /obj/effect/decal/cleanable/generic,
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/unsc_base/west_wing)
 "rFU" = (
@@ -32755,6 +33136,10 @@
 	},
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/abandoned_area)
+"sbo" = (
+/obj/structure/sign/safety/security,
+/turf/closed/wall/new_varadero/reinforced,
+/area/gamma_sector/unsc_base/east_wing)
 "sbw" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -33015,6 +33400,18 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/water_filtration)
+"siw" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_x = 0;
+	pixel_y = 9
+	},
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/floor/prison/cell_stripe,
+/area/gamma_sector/open/dried_river)
 "siE" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal9";
@@ -34704,6 +35101,7 @@
 /area/gamma_sector/open/western_clearing)
 "tht" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/unsc/armory,
 /turf/open/floor/prison/cell_stripe,
 /area/gamma_sector/unsc_base/command)
 "thJ" = (
@@ -35138,6 +35536,10 @@
 /obj/structure/flora/pottedplant{
 	icon_state = "pottedplant_21"
 	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = -24
+	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/communication_office)
 "tto" = (
@@ -35460,6 +35862,10 @@
 	pixel_x = 9;
 	pixel_y = -4;
 	id = "gro_UNSC_supplystorage_A"
+	},
+/obj/structure/sign/safety/storage{
+	pixel_x = 7;
+	pixel_y = 25
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/north_wing)
@@ -35835,6 +36241,13 @@
 /obj/structure/surface/table/almayer,
 /turf/open/asphalt/tile,
 /area/gamma_sector/closed_soft/oob_hab)
+"tMZ" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = -18;
+	pixel_y = 26
+	},
+/turf/open/floor/strata,
+/area/gamma_sector/unsc_base/east_wing)
 "tNl" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 8
@@ -37513,6 +37926,9 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/large_garage)
+"uJb" = (
+/turf/closed/wall/new_varadero,
+/area/gamma_sector/unsc_base/east_wing)
 "uJj" = (
 /obj/structure/platform{
 	dir = 1
@@ -38651,6 +39067,13 @@
 "vnE" = (
 /turf/open/floor/prison/cell_stripe/east,
 /area/gamma_sector/unsc_base/west_wing)
+"vnG" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "vnP" = (
 /obj/structure/fence,
 /turf/open/floor/strata/floor3,
@@ -39127,6 +39550,13 @@
 	},
 /turf/open/shuttle/escapepod/floor4,
 /area/gamma_sector/highway/southern_maintenance)
+"vzR" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = -25
+	},
+/turf/open/floor/strata/floor3,
+/area/gamma_sector/open/eastern_ridge)
 "vzV" = (
 /obj/structure/barricade/handrail/strata,
 /obj/structure/barricade/handrail/strata{
@@ -39367,6 +39797,13 @@
 	},
 /turf/open/auto_turf/sand/layer1,
 /area/gamma_sector/open/abandoned_area)
+"vIv" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 8;
+	pixel_y = -25
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/traxus_base/transfer_primary)
 "vIN" = (
 /obj/structure/platform/strata/metal,
 /turf/open/auto_turf/sand/layer1,
@@ -39697,6 +40134,17 @@
 	},
 /turf/open/auto_turf/sand/layer2,
 /area/gamma_sector/open/western_clearing)
+"vQP" = (
+/obj/structure/sign/safety/ammunition{
+	pixel_x = 15;
+	pixel_y = -25
+	},
+/obj/structure/sign/safety/south{
+	pixel_x = 0;
+	pixel_y = -25
+	},
+/turf/open/floor/prison/cell_stripe/west,
+/area/gamma_sector/unsc_base/command)
 "vQS" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4-8"
@@ -39709,7 +40157,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/lockers)
 "vRx" = (
-/turf/closed/wall/new_varadero/concrete/hull,
+/turf/closed/wall/new_varadero/concrete/reinforced/hull,
 /area/gamma_sector/closed_soft/oob_hab)
 "vRz" = (
 /obj/structure/extinguisher_cabinet/alt{
@@ -39844,6 +40292,9 @@
 /obj/structure/machinery/conveyor,
 /turf/open/floor/prison/cell_stripe/north,
 /area/gamma_sector/traxus_base/supply_entryway)
+"vWn" = (
+/turf/closed/wall/new_varadero,
+/area/gamma_sector/unsc_base/joint_wing)
 "vWp" = (
 /turf/open/shuttle/escapepod/floor4,
 /area/gamma_sector/unsc_base/central_vent)
@@ -40632,6 +41083,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/traxus_base/main_filtration)
+"wqr" = (
+/obj/structure/sign/safety/storage{
+	pixel_x = 32;
+	pixel_y = 0
+	},
+/turf/open/asphalt/tile,
+/area/gamma_sector/open/shorline)
 "wqw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/meter{
@@ -41292,6 +41750,10 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = -24
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/north_wing)
 "wHW" = (
@@ -41615,6 +42077,10 @@
 "wSK" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 8
+	},
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 8;
+	pixel_y = 28
 	},
 /turf/open/asphalt/tile,
 /area/gamma_sector/open/western_clearing)
@@ -42561,6 +43027,13 @@
 	},
 /turf/open/floor/strata,
 /area/gamma_sector/traxus_base/monitor_station)
+"xsr" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/gamma_sector/unsc_base/west_wing)
 "xsx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/sofa/vert/grey/top,
@@ -43012,6 +43485,13 @@
 "xET" = (
 /turf/open/gm/river/desert/shallow,
 /area/gamma_sector/open/dried_river)
+"xFe" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/prison/floor_plate,
+/area/gamma_sector/unsc_base/west_wing)
 "xFp" = (
 /obj/structure/machinery/photocopier,
 /turf/open/floor/strata/floor3,
@@ -43579,6 +44059,10 @@
 "xVn" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/sign/safety/exhaust{
+	pixel_x = 32;
+	pixel_y = -4
+	},
 /turf/open/floor/strata,
 /area/gamma_sector/unsc_base/east_wing)
 "xVq" = (
@@ -43739,6 +44223,9 @@
 /obj/item/clothing/gloves/yellow,
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/main_facility)
+"yaB" = (
+/turf/closed/wall/new_varadero,
+/area/gamma_sector/unsc_base/mess_hall)
 "yaF" = (
 /obj/structure/roof/cargocrane_tracks/horizontal,
 /turf/open/floor/strata/multi_tiles/west,
@@ -45822,8 +46309,8 @@ bHl
 bHl
 vmt
 khA
-gYk
-gYk
+vRx
+vRx
 qIr
 qIr
 qIr
@@ -46035,7 +46522,7 @@ bHl
 bHl
 qWe
 ctC
-gYk
+vRx
 qIr
 qIr
 qIr
@@ -46247,7 +46734,7 @@ bHl
 rDx
 oHw
 bHl
-gYk
+vRx
 qIr
 qIr
 qIr
@@ -46458,8 +46945,8 @@ bHl
 bHl
 bHl
 agD
-gYk
-gYk
+vRx
+vRx
 cde
 cde
 cde
@@ -51864,8 +52351,8 @@ mUM
 alX
 alX
 qIr
-lQY
-lQY
+fJv
+fJv
 mtp
 mUM
 mUM
@@ -52076,8 +52563,8 @@ hPQ
 hPQ
 alX
 qIr
-lQY
-lQY
+fJv
+fJv
 wYv
 mUM
 mUM
@@ -54481,7 +54968,7 @@ cLM
 cLM
 pgu
 jIZ
-cgq
+aem
 xDN
 rTD
 vPU
@@ -56140,7 +56627,7 @@ dLB
 dLB
 dLB
 dLB
-dLB
+wqr
 dVm
 mUM
 mUM
@@ -56152,7 +56639,7 @@ oYC
 opU
 opU
 tqJ
-opU
+lYn
 gTy
 ciu
 tLE
@@ -57669,7 +58156,7 @@ eiJ
 sHG
 sHG
 mGc
-mGc
+mjr
 mGc
 ggC
 gsd
@@ -57875,7 +58362,7 @@ tiH
 bgW
 psX
 myY
-eiJ
+fkB
 fOD
 eiJ
 lTS
@@ -58299,7 +58786,7 @@ pgu
 mGc
 ldl
 myY
-eiJ
+fkB
 uTu
 myY
 nEM
@@ -58511,7 +58998,7 @@ tiH
 bgW
 iii
 eiJ
-eiJ
+fkB
 fOD
 eiJ
 qGC
@@ -58529,11 +59016,11 @@ qGC
 tto
 vNd
 eiJ
-eiJ
-wlA
-pBj
-pBj
-eiJ
+jZw
+mZU
+clj
+clj
+jZw
 eiJ
 myY
 eiJ
@@ -58935,7 +59422,7 @@ pgu
 mGc
 gpD
 eiJ
-myY
+xFe
 uTu
 eiJ
 sHG
@@ -59147,7 +59634,7 @@ pgu
 mGc
 hvN
 eiJ
-myY
+xFe
 rbs
 eiJ
 oMT
@@ -59359,7 +59846,7 @@ tiH
 bgW
 iii
 eiJ
-wlA
+mIx
 uTu
 eiJ
 eei
@@ -59546,7 +60033,7 @@ qVE
 dgp
 pfs
 pfs
-jOj
+nLr
 lfJ
 pgu
 pgu
@@ -59558,7 +60045,7 @@ qOk
 fNX
 qDE
 jGm
-fNX
+oAc
 fNX
 xIa
 ciu
@@ -59571,7 +60058,7 @@ tiH
 bgW
 iii
 eiJ
-eiJ
+fkB
 eiJ
 eiJ
 eei
@@ -59770,7 +60257,7 @@ nCK
 nCK
 cLM
 cLM
-wyt
+cLM
 wyt
 cLM
 ciu
@@ -60251,7 +60738,7 @@ kee
 npf
 npf
 npf
-npf
+dWa
 rKv
 mJk
 ggC
@@ -60463,7 +60950,7 @@ app
 eiJ
 npf
 jgY
-wlA
+mIx
 eiJ
 tlC
 ggC
@@ -60626,11 +61113,11 @@ vWp
 wyt
 wyt
 wyt
-xJa
-xJa
-xJa
-xJa
-xJa
+dWp
+dWp
+dWp
+dWp
+dWp
 cBh
 ltB
 ltB
@@ -60660,23 +61147,23 @@ qGC
 nEM
 npf
 npf
-pkw
-bHq
-ctB
+jtf
+xsr
+mbg
 eiJ
 eiJ
 eiJ
 eiJ
-ctB
-bHq
-pkw
+jtf
+rvn
+vnG
 hzK
 tkX
 eiJ
-eiJ
-wlA
+jZw
+mZU
 rFQ
-eiJ
+jZw
 fZr
 lnp
 hYm
@@ -60837,12 +61324,12 @@ vWp
 vWp
 nCK
 nCK
-xJa
-xJa
+dWp
+dWp
 rqJ
 ubd
 kPW
-xJa
+dWp
 mmw
 hPm
 hPm
@@ -60865,16 +61352,16 @@ eiJ
 ujb
 npf
 eiJ
-eiJ
+bGv
 ujb
 cez
 fPI
 nEM
 oMy
 giY
-nEM
+fXm
 eiJ
-eiJ
+ncf
 nEM
 tlO
 oMy
@@ -60887,7 +61374,7 @@ iVB
 npf
 eiJ
 eiJ
-eiJ
+fkB
 npf
 npf
 rKE
@@ -61048,13 +61535,13 @@ vWp
 vWp
 vWp
 nCK
-xJa
-xJa
+dWp
+dWp
 ylD
 jvf
 isk
 rkh
-xJa
+dWp
 oCJ
 mYO
 mYO
@@ -61084,7 +61571,7 @@ nES
 nES
 nES
 oDv
-nEM
+aCg
 vnE
 vnE
 nEM
@@ -61259,14 +61746,14 @@ xGF
 vWp
 ciu
 vWp
-xJa
-xJa
+dWp
+dWp
 bdK
 cRO
 bdK
 bdK
-xJa
-xJa
+dWp
+dWp
 cBh
 tzT
 mYO
@@ -61471,7 +61958,7 @@ xAy
 vWp
 ciu
 vWp
-xJa
+dWp
 qqp
 bdK
 cRO
@@ -61688,7 +62175,7 @@ lKJ
 cRO
 cRO
 cRO
-vVg
+kPW
 dSN
 mOP
 nyO
@@ -61895,7 +62382,7 @@ xzi
 aAO
 vWp
 mxu
-xJa
+dWp
 kpY
 rrY
 isk
@@ -62107,8 +62594,8 @@ pgu
 wnN
 vWp
 cLM
-xJa
-xJa
+dWp
+dWp
 dvY
 cRO
 cRO
@@ -62320,12 +62807,12 @@ bzp
 vWp
 cLM
 pgu
-xJa
+dWp
 dQb
 cRO
 cRO
-xJa
-xJa
+dSN
+dSN
 bIg
 mYO
 hUf
@@ -62339,7 +62826,7 @@ iOf
 glR
 cnw
 iOf
-iBo
+ouo
 cBh
 rwF
 mGh
@@ -62495,12 +62982,12 @@ aGB
 aGB
 aGB
 rmd
-lfJ
+oGk
 dbz
 omf
 sUu
 dbz
-lfJ
+oGk
 rmd
 aGB
 cmH
@@ -62532,7 +63019,7 @@ vWp
 vWp
 cLM
 pgu
-xJa
+dWp
 cvy
 cRO
 cRO
@@ -62706,14 +63193,14 @@ aFf
 fuf
 ezk
 ruH
-lfJ
-lfJ
+oGk
+oGk
 qVE
 jOj
 jOj
 pfs
-lfJ
-lfJ
+oGk
+oGk
 aFf
 cxj
 aFf
@@ -62744,7 +63231,7 @@ vWp
 nuG
 cLM
 pgu
-xJa
+dWp
 dHZ
 cRO
 bdK
@@ -62769,7 +63256,7 @@ pYA
 mYO
 jkd
 weX
-jkd
+mYO
 tht
 oFc
 gHq
@@ -62780,10 +63267,10 @@ xQX
 qPv
 oFc
 gHq
-gHq
+jEd
 tTT
 lNI
-qPv
+niP
 nES
 ngk
 hYm
@@ -62918,14 +63405,14 @@ aFf
 ruH
 ruH
 ruH
-lfJ
+oGk
 aOk
 qVE
 dgp
 dgp
 pfs
 nhq
-lfJ
+oGk
 qIr
 qIr
 qIr
@@ -62956,11 +63443,11 @@ vWp
 vWp
 cLM
 pgu
-xJa
-xJa
+dWp
+vVg
 bdK
 bdK
-xJa
+dWp
 iJt
 nyO
 mYO
@@ -63130,14 +63617,14 @@ ruH
 ruH
 lfJ
 lfJ
-lfJ
+oGk
 pfs
 dgp
 dgp
 dgp
 dgp
 pfs
-lfJ
+oGk
 lfJ
 lfJ
 lfJ
@@ -63168,11 +63655,11 @@ vWp
 vWp
 lPp
 xJa
-xJa
-xJa
+dWp
+dWp
 mia
-xJa
-xJa
+dWp
+dWp
 fRa
 oJL
 nBl
@@ -63399,7 +63886,7 @@ ecq
 lLZ
 tNC
 iOs
-iOs
+vQP
 cBh
 qCn
 iNe
@@ -63978,14 +64465,14 @@ iJE
 eCk
 eCk
 lfJ
-lfJ
-lfJ
-lfJ
+oGk
+oGk
+oGk
 omf
 sUu
-lfJ
-lfJ
-lfJ
+oGk
+oGk
+oGk
 lfJ
 lfJ
 ngL
@@ -64450,13 +64937,13 @@ igy
 igy
 igy
 igy
-igy
-igy
-igy
-igy
-igy
-igy
-igy
+cBh
+cBh
+cBh
+cBh
+cBh
+cBh
+cBh
 cBh
 cBh
 cBh
@@ -64688,9 +65175,9 @@ nES
 nES
 oDv
 oDv
-tvk
+oGz
 flO
-mZy
+cNI
 tvk
 lFq
 aGd
@@ -64893,25 +65380,25 @@ tvk
 tvk
 tvk
 oYB
-tvk
-tvk
+keb
+htN
 tvk
 tvk
 oYB
 tvk
 tvk
-tvk
+tMZ
 sQp
 mRa
 tvk
 tvk
-tvk
+oYB
 pHX
 hdZ
 aza
+keb
+lje
 tvk
-hdZ
-oYB
 tvk
 tvk
 hdZ
@@ -65065,7 +65552,7 @@ ciu
 ciu
 ciu
 vWp
-vWp
+jEE
 vWp
 vWp
 vWp
@@ -65547,7 +66034,7 @@ iWI
 tvk
 hdZ
 hdZ
-hdZ
+dJl
 tvk
 hdZ
 tvk
@@ -65705,11 +66192,11 @@ vFc
 vFc
 mOz
 vFc
-oky
-oky
-oky
-oky
-oky
+vWn
+vWn
+vWn
+vWn
+vWn
 nCK
 cLM
 cLM
@@ -65742,7 +66229,7 @@ bkb
 bkb
 aGd
 tED
-aGd
+sbo
 aGd
 aGd
 aGd
@@ -65755,10 +66242,10 @@ tvk
 beB
 beB
 beB
-tnm
+pka
 beB
-tnm
-tnm
+pka
+pka
 aGd
 ozj
 ozj
@@ -65916,12 +66403,12 @@ vFc
 vFc
 oSj
 oSj
-oSj
-oky
+dFR
+vWn
 aWW
 axu
 iut
-oky
+vWn
 nCK
 pgu
 pgu
@@ -65970,7 +66457,7 @@ dPQ
 rjG
 vPt
 iar
-tnm
+pka
 qIr
 ozj
 uDq
@@ -66100,7 +66587,7 @@ eCk
 lfJ
 lfJ
 lsJ
-lfJ
+ikq
 lfJ
 eOe
 dgp
@@ -66129,11 +66616,11 @@ muJ
 oSj
 hhb
 iqC
-oky
+vWn
 aWW
 axu
 ydW
-oky
+vWn
 wyt
 pgu
 pgu
@@ -66182,7 +66669,7 @@ vNi
 vNi
 fCS
 rDL
-tnm
+pka
 qIr
 ozj
 fyp
@@ -66341,11 +66828,11 @@ oSj
 loQ
 ujK
 mPH
-oky
+vWn
 rMe
 axu
 gRz
-oky
+vWn
 wyt
 oYm
 ciu
@@ -66389,12 +66876,12 @@ mRa
 srl
 qSl
 beB
-vNi
+dHo
 bmq
 vNi
 vNi
 vNi
-tnm
+pka
 qIr
 ozj
 iQy
@@ -66553,11 +67040,11 @@ rie
 oSj
 oSj
 vbn
-oky
+vWn
 hPa
 axu
 gRz
-oky
+vWn
 wyt
 oYm
 ciu
@@ -66599,14 +67086,14 @@ aGd
 nIU
 mRa
 tvk
-aGd
-tnm
-tnm
-tnm
-tnm
+uJb
+pka
+pka
+pka
+pka
 mGv
 vNi
-tnm
+pka
 qIr
 ozj
 ozj
@@ -66765,11 +67252,11 @@ goQ
 xHF
 aGS
 pvH
-oky
-oky
+vWn
+vWn
 haP
-oky
-oky
+vWn
+vWn
 ePy
 ePy
 pgu
@@ -66812,13 +67299,13 @@ mUg
 mRa
 tvk
 pjS
-tnm
+pka
 lUq
 xwu
 vQr
 vNi
 vNi
-tnm
+pka
 qIr
 qIr
 ozj
@@ -67024,13 +67511,13 @@ igt
 mRa
 mRa
 opW
-tnm
+pka
 baL
 tlo
 aRN
 vNi
 avW
-tnm
+pka
 qIr
 qIr
 qIr
@@ -67236,13 +67723,13 @@ rug
 mRa
 mRa
 hdZ
-tnm
+pka
 uHs
 heS
-tnm
+pka
 qqe
 bQl
-tnm
+pka
 qIr
 qIr
 qIr
@@ -67448,13 +67935,13 @@ xVn
 pDP
 eZv
 oIG
+pka
+pka
+pka
+pka
+pka
 tnm
-tnm
-tnm
-tnm
-tnm
-tnm
-tnm
+pka
 qIr
 qIr
 qIr
@@ -68043,15 +68530,15 @@ jeD
 jeD
 sig
 oUA
-jcz
-jcz
+yaB
+yaB
 elg
 elg
 mMi
 wZz
 elg
 elg
-jcz
+yaB
 knb
 vdH
 vdH
@@ -68243,19 +68730,19 @@ vqJ
 vFc
 aGB
 aGB
-oGk
+jcz
 xpb
 hKV
 raH
 uQw
-dWp
-oGk
-elg
-elg
+ePy
 jcz
 elg
 elg
-jcz
+yaB
+elg
+elg
+yaB
 oix
 uSK
 nJp
@@ -68455,13 +68942,13 @@ lNq
 wvD
 aGB
 iuc
-oGk
-oGk
-oGk
-oGk
-oGk
-oGk
-oGk
+jcz
+jcz
+jcz
+jcz
+jcz
+jcz
+jcz
 aFY
 qUu
 ycf
@@ -69323,7 +69810,7 @@ twD
 ozA
 rCh
 jbL
-jcz
+yaB
 orR
 vdH
 vdH
@@ -69535,7 +70022,7 @@ ePQ
 ktP
 ktP
 ktP
-jcz
+yaB
 pJa
 vdH
 vdH
@@ -69746,8 +70233,8 @@ ktP
 ktP
 mqA
 ktP
-jcz
-jcz
+yaB
+yaB
 izy
 vdH
 vdH
@@ -69957,8 +70444,8 @@ ktP
 dhD
 dhD
 sAr
-jcz
-jcz
+yaB
+yaB
 fPN
 jeD
 vdH
@@ -70169,7 +70656,7 @@ dhD
 dhD
 ktP
 oDo
-jcz
+yaB
 kGz
 gYp
 puB
@@ -70381,7 +70868,7 @@ mUN
 mTc
 dhD
 cXs
-jcz
+yaB
 pJa
 dcf
 vdH
@@ -70404,13 +70891,13 @@ qSW
 aGd
 iGS
 mRa
-mRa
+gfC
 pTt
 moX
 moX
 xZK
 bMu
-xZK
+dBX
 pTt
 geh
 geh
@@ -70592,8 +71079,8 @@ vgO
 qig
 mTc
 ieH
-jcz
-jcz
+yaB
+yaB
 szm
 rEG
 vdH
@@ -76844,8 +77331,8 @@ alX
 qIr
 qIr
 qIr
-svY
-svY
+pfk
+pfk
 qIr
 qIr
 tBx
@@ -77056,8 +77543,8 @@ tBx
 mRD
 xNe
 qIr
-svY
-svY
+pfk
+pfk
 qIr
 tBx
 tBx
@@ -80713,11 +81200,11 @@ uhW
 uhW
 uhW
 uhW
-pYL
+siw
 mag
 mag
 mag
-oVQ
+ehY
 uhW
 uhW
 uhW
@@ -81349,11 +81836,11 @@ uhW
 uhW
 uhW
 uhW
-pYL
+siw
 mag
 mag
 mag
-oVQ
+ehY
 uhW
 uhW
 uhW
@@ -81985,11 +82472,11 @@ qIr
 uhW
 uhW
 uhW
-pYL
+siw
 mag
 mag
 mag
-oVQ
+ehY
 uhW
 uhW
 uhW
@@ -94952,7 +95439,7 @@ vLy
 vLy
 sDn
 sDn
-cbh
+dCf
 wlG
 lqd
 bHY
@@ -95588,7 +96075,7 @@ fGA
 dpF
 vLy
 vLy
-vLy
+vIv
 wlG
 wZZ
 bHY
@@ -100189,7 +100676,7 @@ cde
 cde
 qIr
 tBf
-rgO
+ffX
 nNa
 tBf
 jxs
@@ -117732,7 +118219,7 @@ vOq
 fCY
 pfx
 pfx
-vOq
+pHG
 vOq
 vOq
 wWh
@@ -118361,7 +118848,7 @@ gpz
 gpz
 tDY
 lQr
-wxS
+paA
 wWh
 sTc
 okT
@@ -119209,7 +119696,7 @@ wMR
 wMR
 tDY
 lQr
-lQr
+vzR
 wWh
 wWh
 wWh
@@ -119316,7 +119803,7 @@ noY
 noY
 noY
 noY
-tEp
+noY
 nBD
 hsE
 ukk

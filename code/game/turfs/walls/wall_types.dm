@@ -1536,12 +1536,14 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 /turf/closed/wall/new_varadero/reinforced
 	name = "secured foundation wall"
 	desc = "A concrete wall with metal reinforcements. The plating seems to have more rivets giving a daunting finish."
-	icon_state = "new_varadero_r"
+	icon_state = "new_varadero_rh"
+	walltype = WALL_FOUNDATIONR
 	damage_cap = HEALTH_WALL_REINFORCED
 
 /turf/closed/wall/new_varadero/reinforced/hull
-	desc = "A concrete wall with metal reinforcements. The plating seems to have more rivets giving a daunting finish. This seems impenetrable to most conventional stands."
-	icon_state = "new_varadero_r"
+	name = "heavily-secured foundation wall"
+	desc = "A concrete wall with metal reinforcements. The plating seems to have more rivets giving a daunting finish. This seems impenetrable to most conventional standards."
+	icon_state = "new_varadero_hh"
 	hull = 1
 
 //---------------CONCRETE WALL
@@ -1555,11 +1557,11 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 /turf/closed/wall/new_varadero/concrete/reinforced
 	name = "concrete wall"
 	desc = "What's inside here? That's concrete, baby!"
-	icon_state = "concrete"
+	icon_state = "concrete_rh"
 	damage_cap = HEALTH_WALL_REINFORCED
 
-/turf/closed/wall/new_varadero/concrete/hull
+/turf/closed/wall/new_varadero/concrete/reinforced/hull
 	name = "concrete wall"
 	desc = "What's inside here? That's concrete, baby with that roman regeneration techniques that are still used even now."
-	icon_state = "concrete"
+	icon_state = "concrete_hh"
 	hull = 1

@@ -393,6 +393,7 @@
 #define WALL_UPP_GREY "uppwall_interior"
 #define WALL_CONCRETE "concrete"
 #define WALL_FOUNDATION "new_varadero"
+#define WALL_FOUNDATIONR "new_varadero_r"
 #define WALL_SHIPWALL_YELLOW "shipwall_yellow"
 #define WALL_SHIPWALL_HULL_YELLOW "shipwall_hull_yellow"
 #define WALL_SHIPWALL_NORTH_RIGHT_YELLOW "shipwall_nr_yellow"
