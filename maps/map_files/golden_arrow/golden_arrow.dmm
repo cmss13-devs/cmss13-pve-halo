@@ -23,6 +23,10 @@
 	icon_state = "1-4-8"
 	},
 /obj/structure/pipes/standard/manifold/hidden/supply,
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
 "aad" = (
@@ -83,14 +87,6 @@
 /turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "aal" = (
-/obj/structure/surface/table/reinforced/black,
-/obj/item/storage/box/nade_box/smoke/red{
-	pixel_x = 4;
-	pixel_y = 7
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/supply)
-"aam" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	dir = 2;
 	name = "\improper Hangar Lockdown Blast Door"
@@ -98,6 +94,15 @@
 /obj/structure/machinery/vending/cigarette/wy,
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
+"aam" = (
+/obj/structure/closet/secure_closet/marine_personal/platoon_leader{
+	pixel_x = -7
+	},
+/obj/structure/closet/secure_closet/marine_personal/corpsman{
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/cryo_cells)
 "aan" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -160,6 +165,28 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
+"aar" = (
+/obj/structure/closet/secure_closet/marine_personal{
+	pixel_x = 8;
+	job = "Smartgunner"
+	},
+/obj/structure/closet/secure_closet/marine_personal{
+	pixel_x = -7;
+	job = "Squad Leader"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/closet/secure_closet/marine_personal/smartgunner{
+	pixel_x = 8
+	},
+/obj/structure/closet/secure_closet/marine_personal/squad_leader{
+	pixel_x = -7
+	},
+/turf/open/floor/almayer/plate,
+/area/golden_arrow/cryo_cells)
 "aas" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -181,6 +208,29 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/briefing)
+"aau" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/item/trash/cigbutt{
+	pixel_y = 19;
+	pixel_x = -6
+	},
+/obj/item/trash/cigbutt{
+	pixel_y = 6;
+	pixel_x = -16
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/supply)
+"aav" = (
+/obj/item/trash/snack_bowl{
+	pixel_x = -7;
+	pixel_y = 14;
+	name = "water bowl";
+	desc = "A standard-issue bowl, fashioned into a makeshift water bowl for a stowaway. Despite being scratched on with what looks like a boot knife, the word 'KOMARU' is printed with surprisingly decent penmanship for a Marine."
+	},
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/supply)
 "aaw" = (
 /obj/structure/disposalpipe/segment,
 /turf/closed/wall/almayer/outer,
@@ -219,9 +269,122 @@
 /obj/effect/decal/strata_decals/grime/grime3,
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
+"aaB" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/surface/table/almayer,
+/obj/item/clothing/accessory/medal/silver/valor{
+	pixel_x = -8;
+	pixel_y = 1;
+	desc = "A silver medal issued by the USCM to reward acts of courage and effectiveness exemplifying the ideal United States Colonial Marine. The citation's been scratched to illegibility."
+	},
+/obj/item/prop{
+	icon = 'icons/obj/items/clothing/cm_hats.dmi';
+	icon_state = "helmet";
+	desc = "A helmet once belonging to some unnamed Marine- now missing it's owner. On the front of it, written in harsh white, lies the words 'REMEMBER SHACKLETON'.";
+	pixel_y = 6;
+	pixel_x = 3;
+	name = "\improper damaged M10 pattern ballistic helmet"
+	},
+/obj/item/card/id/dogtag{
+	layer = 3.001;
+	pixel_x = 2
+	},
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/golden_arrow/supply)
+"aaC" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/cryo_cells)
+"aaD" = (
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/obj/effect/decal/strata_decals/grime/grime1{
+	dir = 8
+	},
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/cryo_cells)
+"aaE" = (
+/obj/structure/machinery/shower{
+	dir = 4
+	},
+/obj/structure/barricade/handrail/type_b{
+	layer = 3.2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 2;
+	pixel_x = 1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/cryo_cells)
+"aaF" = (
+/obj/effect/decal/strata_decals/grime/grime1{
+	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/mono,
+/area/golden_arrow/cryo_cells)
+"aaG" = (
+/obj/structure/machinery/shower{
+	dir = 8
+	},
+/obj/item/toy/bikehorn/rubberducky{
+	pixel_x = -9;
+	pixel_y = -6
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail/type_b{
+	layer = 3.2
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	layer = 2.5;
+	pixel_y = 2;
+	pixel_x = -1
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/cryo_cells)
+"aaH" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "aaI" = (
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/medical)
+"aaJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/dark_sterile,
+/area/golden_arrow/cryo_cells)
 "aaK" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/pipes/standard/simple/hidden/supply,
@@ -249,6 +412,57 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/motor_pool)
+"aaN" = (
+/obj/structure/barricade/metal{
+	dir = 8
+	},
+/obj/structure/barricade/metal{
+	dir = 4
+	},
+/obj/structure/barricade/metal{
+	dir = 8;
+	pixel_y = 8
+	},
+/obj/structure/barricade/metal{
+	dir = 4;
+	pixel_y = 8
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/obj/structure/curtain/open/shower,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/obj/effect/decal/cleanable/cobweb2,
+/obj/structure/barricade/metal{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/structure/barricade/metal{
+	dir = 8;
+	pixel_x = -1
+	},
+/obj/structure/barricade/metal{
+	dir = 4;
+	pixel_x = 1;
+	pixel_y = 11
+	},
+/obj/structure/barricade/metal{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = 11
+	},
+/obj/structure/curtain/open/shower{
+	pixel_y = -6
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/cryo_cells)
 "aaO" = (
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	light_power = 0.5;
@@ -256,6 +470,13 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/motor_pool)
+"aaP" = (
+/obj/structure/disposalpipe/down/almayer{
+	id = "rubbish";
+	dir = 1
+	},
+/turf/open/space/basic,
+/area/space)
 "aaQ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -276,6 +497,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/hangar)
+"aaS" = (
+/obj/structure/disposalpipe/segment,
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/dorms)
 "aaT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -313,16 +538,67 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
+"aaX" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/closed/wall/almayer,
+/area/golden_arrow/hangar)
+"aaY" = (
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "aaZ" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 6
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
+"aba" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/closed/wall/almayer/outer,
+/area/golden_arrow/hangar)
 "abb" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/almayer,
 /area/golden_arrow/engineering)
+"abc" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/prep_hallway)
+"abd" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/golden_arrow/cryo_cells)
+"abe" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "abf" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -330,6 +606,12 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/golden_arrow/hangar)
+"abg" = (
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/golden_arrow/cryo_cells)
 "abh" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -345,18 +627,62 @@
 /area/golden_arrow/cryo_cells)
 "abi" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
 	},
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
+	},
 /turf/open/floor/almayer/edge,
+/area/golden_arrow/cryo_cells)
+"abj" = (
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "abk" = (
 /turf/closed/wall/almayer,
 /area/golden_arrow/platoonarmory)
+"abl" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/golden_arrow/platoonprep)
+"abm" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/golden_arrow/platoonprep)
+"abn" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/platoonprep)
 "abo" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -374,6 +700,20 @@
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
+"abq" = (
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
+	},
+/turf/open/space/basic,
+/area/space)
+"abr" = (
+/obj/structure/disposalpipe/up/almayer{
+	id = "rubbish";
+	dir = 8
+	},
+/turf/open/space/basic,
+/area/space)
 "abs" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -384,6 +724,19 @@
 	light_color = "#dae2ff"
 	},
 /turf/open/floor/almayer/plate,
+/area/golden_arrow/hangar)
+"abt" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/item/ammo_box/rounds/smartgun{
+	pixel_y = 13;
+	pixel_x = 7
+	},
+/turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "abu" = (
 /obj/effect/decal/cleanable/dirt{
@@ -698,6 +1051,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "acz" = (
@@ -779,9 +1135,15 @@
 /obj/structure/machinery/shower{
 	dir = 4
 	},
-/obj/structure/barricade/handrail{
-	layer = 3.1;
-	pixel_y = -1
+/obj/item/tool/soap{
+	pixel_x = -6;
+	pixel_y = -6
+	},
+/obj/structure/barricade/handrail/type_b{
+	layer = 3.2
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
@@ -947,19 +1309,11 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/hangar)
 "adt" = (
-/obj/structure/closet/wardrobe{
-	name = "PT uniform"
+/obj/structure/sign/safety/water{
+	pixel_y = 7;
+	pixel_x = 11
 	},
-/obj/item/clothing/under/shorts/blue,
-/obj/item/clothing/under/shorts/red,
-/obj/item/clothing/under/shorts/blue,
-/obj/item/clothing/head/headband/red,
-/obj/item/clothing/under/shorts/red,
-/obj/structure/barricade/handrail{
-	layer = 3.1;
-	pixel_y = -1
-	},
-/turf/open/floor/almayer/mono,
+/turf/closed/wall/almayer,
 /area/golden_arrow/cryo_cells)
 "adv" = (
 /obj/structure/disposalpipe/segment,
@@ -1074,6 +1428,10 @@
 /obj/structure/machinery/firealarm{
 	dir = 4;
 	pixel_x = 21
+	},
+/obj/structure/machinery/disposal,
+/obj/structure/disposalpipe/trunk{
+	dir = 8
 	},
 /turf/open/floor/almayer/edge/southeast,
 /area/golden_arrow/cryo_cells)
@@ -1289,6 +1647,14 @@
 	},
 /obj/item/storage/pill_bottle/paracetamol{
 	pixel_x = -5
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/item/reagent_container/glass/rag/polishing_rag{
+	pixel_x = 7;
+	pixel_y = -1;
+	name = "towel"
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
@@ -1654,6 +2020,35 @@
 	pixel_y = 16
 	},
 /obj/structure/curtain/open/shower,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/shower{
+	pixel_y = 16
+	},
+/obj/structure/barricade/metal{
+	dir = 4;
+	pixel_x = 1
+	},
+/obj/structure/barricade/metal{
+	dir = 8;
+	pixel_x = -1
+	},
+/obj/structure/barricade/metal{
+	dir = 8;
+	pixel_x = -1;
+	pixel_y = 11
+	},
+/obj/structure/barricade/metal{
+	dir = 4;
+	pixel_x = 1;
+	pixel_y = 11
+	},
+/obj/structure/curtain/open/shower{
+	pixel_y = -6
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "afJ" = (
@@ -1707,6 +2102,9 @@
 /obj/structure/pipes/standard/manifold/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/prep_hallway)
@@ -1822,6 +2220,12 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "agj" = (
@@ -1902,6 +2306,14 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1;
+	pixel_y = -1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/golden_arrow/cryo_cells)
@@ -2125,17 +2537,17 @@
 /turf/closed/wall/almayer/outer,
 /area/golden_arrow/supply)
 "ahm" = (
-/obj/item/reagent_container/food/condiment/sugar,
-/obj/item/reagent_container/food/condiment/enzyme,
-/obj/item/reagent_container/food/snacks/flour,
-/obj/item/reagent_container/food/snacks/flour,
-/obj/item/reagent_container/food/snacks/flour,
-/obj/item/reagent_container/food/snacks/flour,
 /obj/structure/closet{
 	desc = "It's a fancy storage unit for long-life foodstuffs.";
 	name = "long-life foodstuff storage"
 	},
+/obj/item/reagent_container/food/condiment/sugar,
+/obj/item/reagent_container/food/snacks/flour,
+/obj/item/reagent_container/food/snacks/flour,
+/obj/item/reagent_container/food/snacks/flour,
+/obj/item/reagent_container/food/snacks/flour,
 /obj/item/storage/box/powderedmilk,
+/obj/item/storage/box/cheeseslices,
 /obj/item/reagent_container/food/condiment/juice/egg,
 /obj/item/reagent_container/food/snacks/flour,
 /obj/item/reagent_container/food/snacks/flour,
@@ -2301,7 +2713,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/junction,
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "aia" = (
@@ -2310,7 +2722,6 @@
 	anchored = 1;
 	density = 0
 	},
-/obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/platoonprep)
 "aib" = (
@@ -2683,6 +3094,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/prep_hallway)
 "ajk" = (
@@ -2777,6 +3191,9 @@
 /obj/structure/cable{
 	icon_state = "0-8";
 	layer = 2.36
+	},
+/obj/structure/disposalpipe/trunk{
+	dir = 4
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -2999,12 +3416,12 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "2-4"
 	},
-/obj/structure/disposalpipe/junction{
-	dir = 2;
-	icon_state = "pipe-j2"
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
@@ -3086,7 +3503,6 @@
 /area/golden_arrow/dorms)
 "akL" = (
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	pixel_y = 11;
 	layer = 3.2;
 	pixel_x = -5
@@ -3182,13 +3598,11 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/hangar)
 "alc" = (
-/obj/structure/closet/secure_closet/marine_personal{
-	pixel_x = -7;
-	job = "Section Sergeant"
+/obj/structure/closet/secure_closet/marine_personal/corpsman{
+	pixel_x = 8
 	},
-/obj/structure/closet/secure_closet/marine_personal{
-	pixel_x = 8;
-	job = "Corpsman"
+/obj/structure/closet/secure_closet/marine_personal/platoon_leader{
+	pixel_x = -7
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -3335,10 +3749,6 @@
 	pixel_x = -5;
 	pixel_y = -5
 	},
-/obj/item/clothing/head/cmcap/bridge{
-	pixel_y = 6;
-	pixel_x = 5
-	},
 /turf/open/floor/almayer/edge/smooth/southwest,
 /area/golden_arrow/platoon_commander_rooms)
 "alK" = (
@@ -3372,6 +3782,10 @@
 	},
 /obj/structure/cable{
 	layer = 2.36
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -3437,6 +3851,9 @@
 "ama" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/cryo_cells)
@@ -3514,6 +3931,9 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -3781,6 +4201,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonprep)
 "anm" = (
@@ -3924,6 +4347,10 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "anE" = (
@@ -3961,7 +4388,6 @@
 	pixel_x = -10
 	},
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	layer = 3.1;
 	pixel_x = -5
 	},
@@ -4066,6 +4492,10 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
 	},
 /turf/open/floor/almayer/edge/southeast,
 /area/golden_arrow/prep_hallway)
@@ -4221,6 +4651,10 @@
 /obj/structure/machinery/photocopier{
 	pixel_y = 4
 	},
+/obj/structure/disposalpipe/junction{
+	dir = 8;
+	icon_state = "pipe-j2"
+	},
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/golden_arrow/platoon_commander_rooms)
 "aoA" = (
@@ -4285,9 +4719,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/supply)
-"aoO" = (
-/turf/open/floor/almayer/edge/east,
-/area/golden_arrow/cryo_cells)
 "aoR" = (
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer,
@@ -4306,10 +4737,10 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/engineering)
 "aoU" = (
-/obj/structure/closet/secure_closet/marine_personal{
+/obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = -7
 	},
-/obj/structure/closet/secure_closet/marine_personal{
+/obj/structure/closet/secure_closet/marine_personal/rifleman{
 	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
@@ -4578,6 +5009,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "0-4"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "apY" = (
@@ -4748,6 +5182,10 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
+	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/cryo_cells)
 "aqC" = (
@@ -4784,6 +5222,9 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/platoon_commander_rooms)
@@ -4828,6 +5269,9 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 1
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/golden_arrow/cryo_cells)
@@ -5415,6 +5859,12 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/cryo_cells)
 "asP" = (
@@ -5440,6 +5890,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/cryo_cells)
 "asU" = (
@@ -5448,6 +5901,10 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "2-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/open/floor/almayer/edge/east,
 /area/golden_arrow/prep_hallway)
@@ -5546,11 +6003,16 @@
 /turf/open/floor/almayer/black/north,
 /area/golden_arrow/vehicle_shuttle/upper)
 "atm" = (
-/turf/open/floor/almayer/edge/northwest,
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_sn_full_cap";
+	color = "grey"
+	},
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "ato" = (
-/obj/structure/surface/table/almayer,
-/turf/open/floor/almayer/edge,
+/obj/effect/decal/strata_decals/grime/grime3,
+/obj/structure/bed/chair/comfy/bench/north,
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "atq" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
@@ -5682,6 +6144,10 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1;
+	icon_state = "pipe-c"
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "atN" = (
@@ -5691,6 +6157,9 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -6065,6 +6534,7 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "avH" = (
@@ -6163,6 +6633,7 @@
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "avY" = (
@@ -6285,6 +6756,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
 "awx" = (
@@ -6386,6 +6860,22 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
@@ -6729,6 +7219,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "axL" = (
@@ -6745,6 +7238,9 @@
 /area/golden_arrow/platoon_commander_rooms)
 "axN" = (
 /obj/effect/landmark/observer_start,
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "axO" = (
@@ -6977,6 +7473,10 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "ayw" = (
@@ -7018,6 +7518,12 @@
 	icon = 'icons/obj/structures/props/almayer_props.dmi';
 	icon_state = "wallpipe_2";
 	pixel_y = -1
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
@@ -7276,6 +7782,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoon_commander_rooms)
 "azl" = (
@@ -7337,6 +7846,10 @@
 /obj/structure/machinery/shower{
 	dir = 8
 	},
+/obj/item/tool/soap{
+	pixel_x = -6;
+	pixel_y = -6
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "azr" = (
@@ -7375,6 +7888,9 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/golden_arrow/cryo_cells)
@@ -7807,6 +8323,9 @@
 	pixel_x = 16;
 	pixel_y = -10
 	},
+/obj/structure/disposalpipe/trunk{
+	dir = 8
+	},
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/dorms)
 "aAI" = (
@@ -7818,6 +8337,17 @@
 	pixel_x = -7;
 	job = "Squad Leader"
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/closet/secure_closet/marine_personal/squad_leader{
+	pixel_x = -7
+	},
+/obj/structure/closet/secure_closet/marine_personal/smartgunner{
+	pixel_x = 8
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aAJ" = (
@@ -7828,7 +8358,6 @@
 /area/golden_arrow/hangar)
 "aAK" = (
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	layer = 3.1;
 	pixel_x = -5
 	},
@@ -7954,6 +8483,21 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow,
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aBe" = (
@@ -8049,14 +8593,20 @@
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/medical)
 "aBw" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
@@ -8187,6 +8737,9 @@
 	icon_state = "0-4";
 	layer = 2.36
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
 "aBQ" = (
@@ -8232,6 +8785,7 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2-8"
 	},
+/obj/structure/disposalpipe/junction,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aBY" = (
@@ -8592,6 +9146,10 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 9
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	icon_state = "pipe-c"
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aDj" = (
@@ -8771,6 +9329,9 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/cryo_cells)
 "aDU" = (
@@ -8869,6 +9430,17 @@
 /obj/structure/closet/secure_closet/marine_personal{
 	pixel_x = 8;
 	job = "Squad Leader"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/closet/secure_closet/marine_personal/smartgunner{
+	pixel_x = -7
+	},
+/obj/structure/closet/secure_closet/marine_personal/squad_leader{
+	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
@@ -9108,19 +9680,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/motor_pool)
-"aER" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/prep_hallway)
 "aES" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating/plating_catwalk,
@@ -9220,13 +9779,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoonprep)
 "aFo" = (
-/obj/structure/closet/secure_closet/marine_personal{
-	job = "Platoon Commander"
-	},
-/obj/item/clothing/under/marine/officer/boiler,
-/obj/item/clothing/suit/storage/jacket/marine/service,
-/obj/item/clothing/suit/storage/jacket/marine/dress/officer/bomber,
-/obj/item/clothing/under/marine/officer/bridge,
+/obj/structure/closet/secure_closet/marine_personal/platoon_commander,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cryo_cells)
 "aFr" = (
@@ -9425,6 +9978,24 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/golden_arrow/cryo_cells)
 "aFY" = (
@@ -9523,6 +10094,15 @@
 	pixel_y = 6;
 	pixel_x = 9
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/storage/box/guncase/heavy/m49a_pve{
+	pixel_y = 10
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "aGo" = (
@@ -9537,7 +10117,12 @@
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/hangar)
 "aGr" = (
-/turf/open/floor/almayer/edge/northeast,
+/obj/structure/stairs/perspective{
+	dir = 4;
+	icon_state = "p_stair_sn_full_cap";
+	color = "grey"
+	},
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aGt" = (
 /obj/structure/sign/safety/bulkhead_door{
@@ -9790,15 +10375,14 @@
 	},
 /obj/structure/barricade/metal{
 	dir = 8;
-	pixel_y = 8;
-	pixel_x = -1
+	pixel_x = -1;
+	pixel_y = 11
 	},
 /obj/structure/barricade/metal{
 	dir = 4;
-	pixel_y = 8;
-	pixel_x = 1
+	pixel_x = 1;
+	pixel_y = 11
 	},
-/obj/structure/curtain/red,
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aHh" = (
@@ -10118,6 +10702,10 @@
 	pixel_x = -9;
 	layer = 3.01
 	},
+/obj/item/storage/firstaid/softpack{
+	pixel_y = -5;
+	pixel_x = -11
+	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/medical)
 "aIv" = (
@@ -10238,6 +10826,15 @@
 "aIQ" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 2;
+	pixel_y = 40
+	},
+/obj/structure/machinery/cm_vending/sorted/marine_food,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	pixel_y = 40
 	},
 /obj/structure/machinery/cm_vending/sorted/marine_food,
@@ -10559,6 +11156,9 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "aJS" = (
@@ -10569,6 +11169,9 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/platoon_commander_rooms)
@@ -10634,6 +11237,7 @@
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aKi" = (
@@ -10702,7 +11306,6 @@
 	pixel_x = -10
 	},
 /obj/structure/machinery/cryopod/big{
-	dir = 4;
 	pixel_y = 11;
 	layer = 3.2;
 	pixel_x = -5
@@ -11188,9 +11791,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
-	},
+/obj/structure/disposalpipe/junction,
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
 "aMi" = (
@@ -11330,8 +11931,9 @@
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 8
 	},
-/obj/structure/disposalpipe/segment{
-	dir = 1
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
 	},
 /turf/open/floor/almayer,
 /area/golden_arrow/dorms)
@@ -11348,6 +11950,7 @@
 /obj/structure/sign/safety/storage{
 	pixel_x = -18
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/almayer/edge/smooth/northwest,
 /area/golden_arrow/platoonprep)
 "aMV" = (
@@ -11646,10 +12249,10 @@
 /turf/open/floor/almayer/edge/west,
 /area/golden_arrow/platoonarmory)
 "aNT" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/effect/decal/strata_decals/grime/grime1{
+	dir = 4
 	},
-/turf/open/floor/almayer/edge/southeast,
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aNV" = (
 /obj/effect/decal/cleanable/dirt{
@@ -11683,6 +12286,9 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "0-4"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/platoonprep)
@@ -11724,18 +12330,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/golden_arrow/supply)
-"aOn" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/golden_arrow/prep_hallway)
 "aOp" = (
 /turf/open/floor/almayer/edge/smooth,
 /area/golden_arrow/supply)
@@ -11957,7 +12551,11 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/lower_cargo)
 "aPf" = (
-/turf/open/floor/almayer/edge/west,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 2
+	},
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aPg" = (
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -12062,12 +12660,11 @@
 /area/golden_arrow/medical)
 "aPv" = (
 /obj/structure/pipes/standard/manifold/hidden/supply,
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	icon_state = "pipe-c"
-	},
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4-8"
+	},
+/obj/structure/disposalpipe/junction{
+	dir = 8
 	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/platoonprep)
@@ -12148,6 +12745,7 @@
 	dir = 10
 	},
 /obj/effect/decal/cleanable/cobweb2,
+/obj/item/ammo_box/rounds/smartgun,
 /turf/open/floor/almayer,
 /area/golden_arrow/hangar)
 "aPE" = (
@@ -12207,6 +12805,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/disposalpipe/trunk,
 /turf/open/floor/almayer/edge/north,
 /area/golden_arrow/prep_hallway)
 "aQc" = (
@@ -12305,6 +12904,14 @@
 /obj/effect/decal/strata_decals/grime/grime4,
 /obj/effect/decal/strata_decals/grime/grime2{
 	dir = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S";
+	pixel_y = -1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 2
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/cryo_cells)
@@ -12475,6 +13082,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "2-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoon_commander_rooms)
 "aRm" = (
@@ -12587,6 +13197,9 @@
 /obj/structure/machinery/shower{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aRA" = (
@@ -12595,6 +13208,9 @@
 	},
 /obj/structure/pipes/standard/manifold/hidden/supply{
 	dir = 8
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
@@ -12867,6 +13483,27 @@
 	pixel_y = 2;
 	pixel_x = -3
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	pixel_y = -1
+	},
+/obj/item/ammo_box/magazine/nade_box{
+	pixel_y = 15;
+	layer = 3.2;
+	pixel_x = -4
+	},
+/obj/item/storage/box/guncase/heavy/fuel{
+	pixel_y = 14
+	},
+/obj/item/storage/box/guncase/heavy/motiondetectors{
+	pixel_y = 2;
+	pixel_x = -3
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "aSt" = (
@@ -12888,7 +13525,18 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	light_power = 0.7
 	},
-/turf/open/floor/almayer/mono,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/bed/chair/comfy/bench/south,
+/obj/item/reagent_container/glass/rag/polishing_rag{
+	pixel_x = 7;
+	pixel_y = -1;
+	name = "towel"
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
 "aSv" = (
 /obj/effect/decal/cleanable/dirt{
@@ -13081,6 +13729,9 @@
 /turf/open/floor/almayer/mono,
 /area/space)
 "aTj" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/cryo_cells)
 "aTl" = (
@@ -13299,6 +13950,9 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 8
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
 "aUb" = (
@@ -13346,8 +14000,11 @@
 /turf/open/floor/almayer/edge,
 /area/golden_arrow/dorms)
 "aUh" = (
-/obj/structure/machinery/disposal,
-/turf/open/floor/almayer/edge/north,
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	color = "grey"
+	},
+/turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aUi" = (
 /obj/effect/decal/cleanable/dirt{
@@ -13730,7 +14387,10 @@
 /obj/structure/cable/heavyduty{
 	icon_state = "1-4"
 	},
-/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/junction{
+	dir = 2;
+	icon_state = "pipe-j2"
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
 "aVD" = (
@@ -13812,6 +14472,25 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
@@ -13982,6 +14661,9 @@
 	icon_state = "wallpipe_3";
 	pixel_y = 22
 	},
+/obj/structure/disposalpipe/segment{
+	dir = 4
+	},
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/cryo_cells)
 "aWC" = (
@@ -14018,6 +14700,7 @@
 /obj/structure/bed/chair/comfy{
 	dir = 4
 	},
+/obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer,
 /area/golden_arrow/cryo_cells)
 "aWI" = (
@@ -14192,7 +14875,7 @@
 	layer = 2.52
 	},
 /obj/structure/machinery/door/airlock/multi_tile/almayer/almayer/glass{
-	name = "\improper Hypersleep Bay"
+	name = "\improper Emergency Infirmary"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/golden_arrow/medical)
@@ -14200,6 +14883,9 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 1
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
@@ -14251,13 +14937,13 @@
 	layer = 2.52
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/firealarm{
-	dir = 4;
-	pixel_x = 21
-	},
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2";
 	pixel_x = 2
+	},
+/obj/structure/machinery/firealarm{
+	dir = 4;
+	pixel_x = 21
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/golden_arrow/platoon_commander_rooms)
@@ -14341,6 +15027,10 @@
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "0-2"
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 2;
+	icon_state = "pipe-c"
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/platoonprep)
@@ -14557,9 +15247,8 @@
 /obj/structure/machinery/shower{
 	dir = 8
 	},
-/obj/structure/barricade/handrail{
-	layer = 3.1;
-	pixel_y = -1
+/obj/structure/barricade/handrail/type_b{
+	layer = 3.2
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/cryo_cells)
@@ -14770,6 +15459,48 @@
 	light_power = 0.7
 	},
 /obj/item/clothing/glasses/hud/health{
+	pixel_y = 5;
+	pixel_x = 7
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/computer/cameras/almayer/vehicle{
+	network = list("Golden Arrow","Vehicle","Midway");
+	pixel_x = 17;
+	dir = 8
+	},
+/obj/structure/machinery/prop/almayer/CICmap{
+	density = 0;
+	dir = 8;
+	icon_state = "shuttle";
+	layer = 2.97;
+	name = "Tactical Map Display";
+	pixel_x = 17;
+	pixel_y = 14
+	},
+/obj/structure/machinery/computer/shuttle/dropship/flight/remote_control{
+	name = "Midway Remote Control Console";
+	shuttleId = "dropship_midway";
+	icon_state = "cameras_old";
+	dir = 8;
+	pixel_x = 17;
+	pixel_y = -14
+	},
+/obj/structure/surface/table/reinforced/almayer_B{
+	pixel_x = 14;
+	layer = 2.01
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/obj/item/clothing/glasses/night/medhud/no_nvg{
 	pixel_y = 5;
 	pixel_x = 7
 	},
@@ -15225,10 +15956,7 @@
 	icon_state = "1-2"
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/computer/ares_console/large{
-	pixel_x = -16;
-	pixel_y = -8
-	},
+/obj/structure/machinery/computer/ares_console/large,
 /obj/structure/bed/chair/comfy/ai_interface{
 	buckling_y = 2
 	},
@@ -15459,6 +16187,24 @@
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/golden_arrow/medical)
+"cMX" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/storage/box/nade_box/smoke/red{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/black,
+/obj/item/ammo_box/magazine/nade_box/smoke/red{
+	pixel_x = 4;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/golden_arrow/supply)
 "cQH" = (
 /obj/structure/machinery/door/poddoor/almayer{
 	name = "\improper Lower Storage Bay Five Blast Door";
@@ -15486,6 +16232,21 @@
 	pixel_y = 8;
 	pixel_x = 3
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated{
+	pixel_x = 5;
+	pixel_y = 10
+	},
+/obj/item/reagent_container/hypospray/autoinjector/adrenaline_concentrated{
+	pixel_y = 13;
+	pixel_x = -5
+	},
+/obj/item/storage/belt/medical/only_scanner,
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/medical)
 "cWH" = (
@@ -15615,6 +16376,23 @@
 	layer = 3.2
 	},
 /obj/item/storage/box/nade_box/flare{
+	pixel_x = 1
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/vp70{
+	pixel_y = 12
+	},
+/obj/item/ammo_box/magazine/m4a3{
+	pixel_y = 22;
+	pixel_x = 1;
+	layer = 3.2
+	},
+/obj/item/ammo_box/magazine/nade_box/flare{
 	pixel_x = 1
 	},
 /turf/open/floor/almayer,
@@ -15937,6 +16715,15 @@
 /obj/item/storage/box/nade_box/smoke{
 	pixel_y = -7
 	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/black,
+/obj/item/ammo_box/magazine/nade_box/smoke{
+	pixel_y = -7
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/supply)
 "eyg" = (
@@ -16105,6 +16892,18 @@
 	pixel_y = 10
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.5;
+	pixel_y = 10
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer/mono,
 /area/golden_arrow/platoonarmory)
 "fbw" = (
@@ -16223,7 +17022,9 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/golden_arrow/supply)
 "fBD" = (
-/obj/structure/bed/chair/comfy/bench/north/east,
+/obj/structure/bed/chair/comfy/bench/north/east{
+	dir = 2
+	},
 /obj/structure/prop/almayer/sadar_decoration{
 	pixel_y = 29
 	},
@@ -16455,6 +17256,13 @@
 	layer = 2.52
 	},
 /obj/structure/machinery/camera/autoname/golden_arrow,
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/obj/item/trash/cigbutt{
+	pixel_x = 9;
+	pixel_y = 10
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/supply)
 "gqG" = (
@@ -17438,15 +18246,20 @@
 /area/golden_arrow/synthcloset)
 "kBG" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/storage/box/nade_box{
-	pixel_y = 13;
-	layer = 3.2
-	},
 /obj/item/storage/box/guncase/heavy/sentry{
 	pixel_y = 13
 	},
 /obj/item/storage/box/guncase/heavy/sentry,
 /obj/structure/machinery/power/apc/almayer/east,
+/obj/item/ammo_box/magazine/nade_box{
+	pixel_y = 13;
+	layer = 3.2
+	},
+/obj/item/ammo_box/magazine/nade_box{
+	pixel_y = 20;
+	layer = 3.2;
+	pixel_x = 3
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "kDp" = (
@@ -18629,9 +19442,9 @@
 "olG" = (
 /obj/structure/phone_base{
 	pixel_y = 6;
-	name = "supply bay receiver";
+	name = "medical bay receiver";
 	phone_category = "Golden Arrow";
-	phone_id = "Supply Bay";
+	phone_id = "Medical Bay";
 	pixel_x = 23;
 	dir = 8
 	},
@@ -18683,6 +19496,15 @@
 /obj/structure/machinery/chem_dispenser/canteen,
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 2;
+	pixel_y = 40
+	},
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/machinery/chem_dispenser/canteen,
+/obj/structure/machinery/light/double/blue/golden_arrow{
 	pixel_y = 40
 	},
 /turf/open/floor/almayer/plate,
@@ -19661,13 +20483,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/hangar)
-"sgG" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/plating/bare_catwalk,
-/area/golden_arrow/engineering)
 "sgR" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8
@@ -20535,6 +21350,31 @@
 	pixel_x = 7
 	},
 /obj/item/ammo_box/rounds/smartgun,
+/obj/merge_conflict_marker{
+	name = "---Merge Conflict Marker---";
+	
+	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	pixel_y = -1
+	},
+/obj/item/ammo_magazine/smartgun{
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/obj/item/ammo_magazine/smartgun{
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/obj/item/ammo_magazine/smartgun{
+	pixel_x = 9;
+	pixel_y = 4
+	},
+/obj/item/ammo_magazine/smartgun{
+	pixel_x = 9;
+	pixel_y = -3
+	},
 /turf/open/floor/almayer,
 /area/golden_arrow/platoonarmory)
 "vPN" = (
@@ -24827,11 +25667,11 @@ aWh
 awS
 alP
 atN
-aLz
-aBk
+abe
+abg
 axN
-aLz
-aLz
+abe
+abe
 apV
 atM
 aBk
@@ -25010,7 +25850,7 @@ aFK
 aTS
 aQd
 ase
-aZl
+abd
 aqd
 abx
 aeL
@@ -25179,7 +26019,7 @@ aEG
 aEG
 aWh
 aog
-aQr
+abj
 anC
 aQr
 aog
@@ -25376,8 +26216,8 @@ alw
 aMQ
 aHk
 aWM
-avb
-aEG
+aaS
+aaP
 aEG
 aEG
 aEG
@@ -25713,7 +26553,7 @@ aFo
 awW
 apm
 alD
-alc
+aam
 aog
 alc
 awW
@@ -26063,7 +26903,7 @@ aWh
 aWh
 aWh
 aWh
-aAI
+aar
 aZw
 amS
 azT
@@ -26427,7 +27267,7 @@ adW
 avj
 agG
 adt
-acO
+aaE
 acO
 aRz
 aog
@@ -26605,8 +27445,8 @@ aQr
 aBw
 atm
 aPf
-aOM
-ave
+aQr
+aaC
 aog
 atY
 ayJ
@@ -26769,7 +27609,7 @@ aEG
 aEG
 aWh
 afI
-aHF
+aaJ
 aHd
 aog
 fSy
@@ -26781,7 +27621,7 @@ aNn
 aAs
 agh
 aUh
-ahK
+aaF
 ato
 aSu
 aog
@@ -26945,8 +27785,8 @@ aEG
 aEG
 aEG
 aWh
-afI
-aHF
+aaN
+aaJ
 aHd
 aog
 ajq
@@ -26956,11 +27796,11 @@ aKk
 ahK
 aLw
 aBk
-axK
+aBw
 aGr
-aoO
+aPf
 aNT
-aQr
+aaD
 aog
 aCH
 adj
@@ -27133,9 +27973,9 @@ aht
 aCB
 aQm
 aBk
-aBw
-adt
-aYH
+aaH
+aog
+aaG
 aYH
 azq
 aog
@@ -28199,7 +29039,7 @@ aLz
 aDS
 azx
 aQb
-aIz
+abc
 aCm
 acs
 aIR
@@ -28318,7 +29158,7 @@ aUO
 tNi
 aaw
 aOK
-aOK
+abq
 aTv
 aNx
 aPh
@@ -28495,7 +29335,7 @@ qRO
 aVX
 aXB
 aEG
-aEG
+abr
 aDh
 aPh
 aPh
@@ -29778,8 +30618,8 @@ ahl
 ahl
 ahl
 aMS
-aOS
-aOS
+abm
+abl
 alW
 aun
 agE
@@ -29969,7 +30809,7 @@ aVC
 auU
 aiq
 ayw
-aER
+abc
 aCm
 aEo
 aEo
@@ -30053,9 +30893,9 @@ duL
 duL
 duL
 hCn
-sgG
-sgG
-sgG
+rqE
+rqE
+rqE
 hCn
 nrp
 anm
@@ -30486,7 +31326,7 @@ gry
 bfK
 azW
 aXt
-aTX
+abn
 aoq
 aDQ
 aiD
@@ -30500,7 +31340,7 @@ aww
 aLE
 ail
 ahz
-aOn
+aDd
 aYy
 aEo
 aIB
@@ -31001,8 +31841,8 @@ aEG
 aEG
 vYW
 cqk
-vve
-aAu
+aaB
+aau
 afz
 aAu
 aoN
@@ -31179,7 +32019,7 @@ aEG
 vYW
 cqk
 vve
-aDj
+aav
 afz
 aAu
 aPB
@@ -31564,7 +32404,7 @@ aeW
 aZm
 aEt
 aoz
-akb
+aaX
 akb
 akb
 akb
@@ -31740,8 +32580,8 @@ arP
 aTD
 adz
 adz
-adz
-adz
+aba
+aaY
 akb
 akb
 akb
@@ -32450,7 +33290,7 @@ aZy
 adz
 ayX
 adz
-aza
+abt
 vRh
 aVD
 akZ
@@ -32955,7 +33795,7 @@ aLe
 ati
 roZ
 odS
-aal
+cMX
 rdX
 btA
 rTJ
@@ -34891,7 +35731,7 @@ aEG
 aEG
 aEG
 atb
-aam
+aal
 aBg
 alK
 aUD

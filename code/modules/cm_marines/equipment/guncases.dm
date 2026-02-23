@@ -103,6 +103,9 @@
 
 /obj/item/storage/box/guncase/m79/fill_preset_inventory()
 	new /obj/item/weapon/gun/launcher/grenade/m81/m79(src)
+	new /obj/item/storage/box/packet/flare(src)
+	new /obj/item/storage/box/packet/baton_slug(src)
+	new /obj/item/storage/box/packet/hornet(src)
 
 //------------
 //R4T lever action rifle
@@ -156,15 +159,6 @@
 	new /obj/item/ammo_magazine/flamer_tank(src)
 	new /obj/item/attachable/attached_gun/extinguisher/pyro(src)
 
-/obj/item/storage/box/guncase/flamer/weak
-	desc = "A gun case containing a M240A1 incinerator unit alongside impure napalm, cheap but should still get the job done."
-	storage_slots = 4
-
-/obj/item/storage/box/guncase/flamer/weak/fill_preset_inventory()
-	new /obj/item/weapon/gun/flamer/weak(src)
-	new /obj/item/ammo_magazine/flamer_tank/weak(src)
-	new /obj/item/ammo_magazine/flamer_tank/weak(src)
-
 //------------ heavy cases
 
 /obj/item/storage/box/guncase/heavy
@@ -213,33 +207,6 @@
 	if(locate(/obj/item/device/sentry_computer) in contents)
 		overlays += image(icon, "+sentrycomp")
 
-/obj/item/storage/box/guncase/heavy/sentryupp
-	name = "\improper UPPAC 32-H sentry gun case"
-	desc = "A gun case containing the UPPAC 32-H sentry unit, a spare drum, and a sentry laptop."
-	icon_state = "uppsentrycase"
-	storage_slots = 3
-	can_hold = list(/obj/item/defenses/handheld/sentry/upp, /obj/item/ammo_magazine/sentry/upp, /obj/item/device/sentry_computer)
-
-/obj/item/storage/box/guncase/heavy/sentryupp/fill_preset_inventory()
-	new /obj/item/defenses/handheld/sentry/upp(src)
-	new /obj/item/ammo_magazine/sentry/upp(src)
-	new /obj/item/device/sentry_computer(src)
-
-/obj/item/storage/box/guncase/heavy/sentryupp/update_icon()
-	overlays.Cut()
-	if(opened)
-		overlays += image(icon, "uppbigcasealt_lid_open")
-	else
-		overlays += image(icon, "uppsentrycase_lid")
-		return
-	if(locate(/obj/item/defenses/handheld/sentry) in contents)
-		overlays += image(icon, "+uppsentry")
-	if(locate(/obj/item/ammo_magazine/sentry) in contents)
-		overlays += image(icon, "+uppsentrymag")
-	if(locate(/obj/item/device/sentry_computer) in contents)
-		overlays += image(icon, "+sentrycomp")
-
-
 /obj/item/storage/box/guncase/heavy/shotgun
 	name = "\improper Ithaca 37 shotgun case"
 	desc = "A heavy case for storing an Ithaca 37 pump-action shotgun, an antique from a bygone era of human history."
@@ -273,43 +240,22 @@
 	if(locate(/obj/item/attachable/stock/shotgun) in contents)
 		overlays += image(icon, "+stock")
 
-/obj/item/storage/box/guncase/heavy/shotgun/type23
-	name = "\improper KS29 shotgun case"
-	desc = "A case for storing a KS29 combat shotgun."
-	icon_state = "ks29case"
-	storage_slots = 2
-	can_hold = list(/obj/item/weapon/gun/shotgun/type23)
-	max_w_class = SIZE_HUGE
-/obj/item/storage/box/guncase/heavy/shotgun/type23/fill_preset_inventory()
-	new /obj/item/weapon/gun/shotgun/type23/unloaded/stored(src)
-	new /obj/item/attachable/stock/type23(src)
-
-/obj/item/storage/box/guncase/heavy/shotgun/type23/update_icon()
-	overlays.Cut()
-	if(opened)
-		overlays += image(icon, "uppbigcasealt_lid_open")
-	else
-		overlays += image(icon, "ks29case_lid")
-		return
-	if(locate(/obj/item/weapon/gun/shotgun/type23) in contents)
-		overlays += image(icon, "+ks29")
-
-/obj/item/storage/box/guncase/heavy/m49a_pve
-	name = "\improper M49A6 battle rifle case"
-	desc = "A large case for storing an M49A6, a modified USCM battle rifle equipped with depleted uranium bullets."
+/obj/item/storage/box/guncase/heavy/m4ra_pve
+	name = "\improper M4RA-R2 battle rifle case"
+	desc = "A large case for storing an M4RA-R2, a modified USCM battle rifle equipped with depleted uranium bullets."
 	icon_state = "r2case"
 	storage_slots = 7
-	can_hold = list(/obj/item/weapon/gun/rifle/m49a/pve, /obj/item/ammo_magazine/rifle/m49a/pve)
+	can_hold = list(/obj/item/weapon/gun/rifle/m4ra/pve, /obj/item/ammo_magazine/rifle/m4ra/pve)
 
-/obj/item/storage/box/guncase/heavy/m49a_pve/fill_preset_inventory()
-	new /obj/item/weapon/gun/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
-	new /obj/item/ammo_magazine/rifle/m49a/pve(src)
+/obj/item/storage/box/guncase/heavy/m4ra_pve/fill_preset_inventory()
+	new /obj/item/weapon/gun/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
+	new /obj/item/ammo_magazine/rifle/m4ra/pve(src)
 
 /obj/item/storage/box/guncase/heavy/m49a_pve/update_icon()
 	overlays.Cut()
@@ -318,30 +264,8 @@
 	else
 		overlays += image(src.icon, "r2case_lid")
 		return
-	if(locate(/obj/item/weapon/gun/rifle/m49a/pve/unloaded) in src.contents)
+	if(locate(/obj/item/weapon/gun/rifle/m4ra/pve/unloaded) in src.contents)
 		overlays += image(src.icon, "+r2")
-
-/obj/item/storage/box/guncase/heavy/hpr
-	name = "\improper M41AE2 heavy pulse rifle case"
-	desc = "A case storing an M41AE2 heavy pulse rifle, a heavier variant of the M41A designed for sustained automatic fire."
-	icon_state = "hprcase"
-	storage_slots = 3
-	can_hold = list(/obj/item/weapon/gun/rifle/lmg, /obj/item/ammo_magazine/hpr_box)
-
-/obj/item/storage/box/guncase/heavy/hpr/fill_preset_inventory()
-	new /obj/item/weapon/gun/rifle/lmg(src)
-	new /obj/item/ammo_magazine/hpr_box(src)
-	new /obj/item/ammo_magazine/hpr_box(src)
-
-/obj/item/storage/box/guncase/heavy/hpr/update_icon()
-	overlays.Cut()
-	if(opened)
-		overlays += image(src.icon, "bigcase_lid_open")
-	else
-		overlays += image(src.icon, "hprcase_lid")
-		return
-	if(locate(/obj/item/weapon/gun/rifle/lmg) in src.contents)
-		overlays += image(src.icon, "+hpr")
 
 /obj/item/storage/box/guncase/heavy/motiondetectors
 	name = "\improper motion detectors case"
@@ -381,45 +305,6 @@
 		source_image.pixel_x = 18
 		overlays += source_image
 
-/obj/item/storage/box/guncase/heavy/motiondetectors/upp
-	name = "\improper motion detectors case"
-	desc = "A case containing four individual handheld motion detectors."
-	icon_state = "uppmdcase"
-	storage_slots = 4
-	can_hold = list(/obj/item/device/motiondetector/upp)
-
-/obj/item/storage/box/guncase/heavy/motiondetectors/upp/fill_preset_inventory()
-	new /obj/item/device/motiondetector/upp(src)
-	new /obj/item/device/motiondetector/upp(src)
-	new /obj/item/device/motiondetector/upp(src)
-	new /obj/item/device/motiondetector/upp(src)
-
-/obj/item/storage/box/guncase/heavy/motiondetectors/upp/update_icon()
-	overlays.Cut()
-	if(opened)
-		overlays += image(icon, "uppbigcase_lid_open")
-	else
-		overlays += image(icon, "uppmdcase_lid")
-		return
-
-	if(length(contents) >= storage_slots)
-		var/image/source_image = image(icon, "+uppmd")
-		source_image.pixel_x = 0
-		overlays += source_image
-	if(length(contents) >= storage_slots * 0.75)
-		var/image/source_image = image(icon, "+uppmd")
-		source_image.pixel_x = 6
-		overlays += source_image
-	if(length(contents) >= storage_slots * 0.5)
-		var/image/source_image = image(icon, "+uppmd")
-		source_image.pixel_x = 12
-		overlays += source_image
-	if(length(contents) >= storage_slots * 0.25)
-		var/image/source_image = image(src.icon, "+uppmd")
-		source_image.pixel_x = 18
-		overlays += source_image
-
-
 /obj/item/storage/box/guncase/heavy/fuel
 	name = "\improper M240A1 fuel canister case"
 	desc = "A heavy case containing six fuel canisters for the M240A1 incinerator unit."
@@ -438,35 +323,59 @@
 /obj/item/storage/box/guncase/heavy/fuel/update_icon()
 	overlays.Cut()
 	if(opened)
-		overlays += image(icon, "case_lid_open")
+		overlays += image(icon, "bigcase_lid_open")
 	else
 		overlays += image(icon, "fuelcase_lid")
 		return
+	var/tank_tally = 0
+	for(var/obj/item/ammo_magazine/flamer_tank/tank in contents)
+		tank_tally++
+		if(tank_tally > initial(storage_slots))
+			return
+		if(istype(tank, /obj/item/ammo_magazine/flamer_tank/upp/gellied))
+			if(tank_tally <= 3)
+				var/image/source_image = image(icon, "+uppfuel_g_bottom")
+				source_image.pixel_x = tank_tally*8-8
+				overlays += source_image
+			else
+				var/image/source_image = image(icon, "+uppfuel_g")
+				source_image.pixel_x = tank_tally*8-8-(24)
+				overlays += source_image
+		else
+			if(istype(tank, /obj/item/ammo_magazine/flamer_tank/upp))
+				if(tank_tally <= 3)
+					var/image/source_image = image(icon, "+uppfuel_bottom")
+					source_image.pixel_x = tank_tally*8-8
+					overlays += source_image
+				else
+					var/image/source_image = image(icon, "+uppfuel")
+					source_image.pixel_x = tank_tally*8-8-(24)
+					overlays += source_image
+			else
+				if(istype(tank, /obj/item/ammo_magazine/flamer_tank))
+					if(tank_tally <= 3)
+						var/image/source_image = image(icon, "+fuel_bottom")
+						source_image.pixel_x = tank_tally*8-8
+						overlays += source_image
+					else
+						var/image/source_image = image(icon, "+fuel")
+						source_image.pixel_x = tank_tally*8-8-(24)
+						overlays += source_image
 
-	if(length(contents) >= 1)
-		var/image/source_image = image(icon, "+fuel_bottom")
-		source_image.pixel_x = 0
-		overlays += source_image
-	if(length(contents) >= 2)
-		var/image/source_image = image(icon, "+fuel_bottom")
-		source_image.pixel_x = 8
-		overlays += source_image
-	if(length(contents) >= 3)
-		var/image/source_image = image(icon, "+fuel_bottom")
-		source_image.pixel_x = 16
-		overlays += source_image
-	if(length(contents) >= 4)
-		var/image/source_image = image(icon, "+fuel")
-		source_image.pixel_x = 0
-		overlays += source_image
-	if(length(contents) >= 5)
-		var/image/source_image = image(icon, "+fuel")
-		source_image.pixel_x = 8
-		overlays += source_image
-	if(length(contents) >= 6)
-		var/image/source_image = image(icon, "+fuel")
-		source_image.pixel_x = 16
-		overlays += source_image
+/obj/item/storage/box/guncase/heavy/fuel/pmc
+	name = "\improper M240A1 fuel canister case"
+	desc = "A heavy case containing six EX-fuel canisters for the M240A1 incinerator unit."
+	icon_state = "fuelcase"
+	storage_slots = 6
+	can_hold = list(/obj/item/ammo_magazine/flamer_tank/EX)
+
+/obj/item/storage/box/guncase/heavy/fuel/pmc/fill_preset_inventory()
+	new /obj/item/ammo_magazine/flamer_tank/EX(src)
+	new /obj/item/ammo_magazine/flamer_tank/EX(src)
+	new /obj/item/ammo_magazine/flamer_tank/EX(src)
+	new /obj/item/ammo_magazine/flamer_tank/EX(src)
+	new /obj/item/ammo_magazine/flamer_tank/EX(src)
+	new /obj/item/ammo_magazine/flamer_tank/EX(src)
 
 /obj/item/storage/box/guncase/heavy/uppfuel
 	name = "\improper LPO80 fuel canister case"
@@ -475,46 +384,47 @@
 	storage_slots = 6
 	can_hold = list(/obj/item/ammo_magazine/flamer_tank)
 
-/obj/item/storage/box/guncase/heavy/uppfuel/fill_preset_inventory()
-	new /obj/item/ammo_magazine/flamer_tank/upp(src)
-	new /obj/item/ammo_magazine/flamer_tank/upp(src)
-	new /obj/item/ammo_magazine/flamer_tank/upp(src)
-	new /obj/item/ammo_magazine/flamer_tank/upp(src)
-	new /obj/item/ammo_magazine/flamer_tank/upp(src)
-	new /obj/item/ammo_magazine/flamer_tank/upp(src)
-
 /obj/item/storage/box/guncase/heavy/uppfuel/update_icon()
 	overlays.Cut()
 	if(opened)
-		overlays += image(icon, "uppbigcasealt_lid_open")
+		overlays += image(icon, "uppbigcase_lid_open")
 	else
 		overlays += image(icon, "uppfuelcase_lid")
 		return
-
-	if(length(contents) >= 1)
-		var/image/source_image = image(icon, "+uppfuel_bottom")
-		source_image.pixel_x = 0
-		overlays += source_image
-	if(length(contents) >= 2)
-		var/image/source_image = image(icon, "+uppfuel_bottom")
-		source_image.pixel_x = 8
-		overlays += source_image
-	if(length(contents) >= 3)
-		var/image/source_image = image(icon, "+uppfuel_bottom")
-		source_image.pixel_x = 16
-		overlays += source_image
-	if(length(contents) >= 4)
-		var/image/source_image = image(icon, "+uppfuel")
-		source_image.pixel_x = 0
-		overlays += source_image
-	if(length(contents) >= 5)
-		var/image/source_image = image(icon, "+uppfuel")
-		source_image.pixel_x = 8
-		overlays += source_image
-	if(length(contents) >= 6)
-		var/image/source_image = image(icon, "+uppfuel")
-		source_image.pixel_x = 16
-		overlays += source_image
+	var/tank_tally = 0
+	for(var/obj/item/ammo_magazine/flamer_tank/tank in contents)
+		tank_tally++
+		if(tank_tally > initial(storage_slots))
+			return
+		if(istype(tank, /obj/item/ammo_magazine/flamer_tank/upp/gellied))
+			if(tank_tally <= 3)
+				var/image/source_image = image(icon, "+uppfuel_g_bottom")
+				source_image.pixel_x = tank_tally*8-8
+				overlays += source_image
+			else
+				var/image/source_image = image(icon, "+uppfuel_g")
+				source_image.pixel_x = tank_tally*8-8-(24)
+				overlays += source_image
+		else
+			if(istype(tank, /obj/item/ammo_magazine/flamer_tank/upp))
+				if(tank_tally <= 3)
+					var/image/source_image = image(icon, "+uppfuel_bottom")
+					source_image.pixel_x = tank_tally*8-8
+					overlays += source_image
+				else
+					var/image/source_image = image(icon, "+uppfuel")
+					source_image.pixel_x = tank_tally*8-8-(24)
+					overlays += source_image
+			else
+				if(istype(tank, /obj/item/ammo_magazine/flamer_tank))
+					if(tank_tally <= 3)
+						var/image/source_image = image(icon, "+fuel_bottom")
+						source_image.pixel_x = tank_tally*8-8
+						overlays += source_image
+					else
+						var/image/source_image = image(icon, "+fuel")
+						source_image.pixel_x = tank_tally*8-8-(24)
+						overlays += source_image
 
 //------------
 /obj/item/storage/box/guncase/m56d
@@ -603,6 +513,38 @@
 	new /obj/item/storage/pouch/shotgun(src)
 	new /obj/item/storage/large_holster/m37(src)
 
+/obj/item/storage/box/guncase/random_old_upp_gun
+	name = "old weapon case"
+	desc = "A scratched up wooden crate. What is inside?"
+	icon_state = "kit_case"
+	storage_slots = 2
+	can_hold = list(/obj/item/weapon/gun/shotgun/double/upp, /obj/item/storage/pouch/shotgun, /obj/item/weapon/gun/pistol/skorpion, /obj/item/storage/pouch/magazine/pistol,/obj/item/ammo_magazine/handful/shotgun/buckshot)
+
+/obj/item/storage/box/guncase/random_old_upp_gun/fill_preset_inventory()
+	var/random_weapon = rand(1,2)
+	switch(random_weapon)
+		if(1)
+			storage_slots = 3
+			new /obj/item/weapon/gun/shotgun/double/upp(src)
+			var/obj/item/storage/pouch/shotgun/pouch = new /obj/item/storage/pouch/shotgun(src)
+			new /obj/item/ammo_magazine/handful/shotgun/buckshot(pouch)
+			new /obj/item/ammo_magazine/handful/shotgun/buckshot(pouch)
+			new /obj/item/ammo_magazine/handful/shotgun/buckshot(pouch)
+			new /obj/item/ammo_magazine/handful/shotgun/buckshot(pouch)
+			new /obj/item/ammo_magazine/handful/shotgun/buckshot(pouch)
+			new /obj/item/ammo_magazine/handful/shotgun/buckshot(src)
+			pouch.update_icon()
+		if(2)
+			new /obj/item/weapon/gun/pistol/skorpion(src)
+			var/obj/item/storage/pouch/magazine/pistol/pouch = new /obj/item/storage/pouch/magazine/pistol(src)
+			new /obj/item/ammo_magazine/pistol/skorpion(pouch)
+			new /obj/item/ammo_magazine/pistol/skorpion(pouch)
+			new /obj/item/ammo_magazine/pistol/skorpion(pouch)
+			new /obj/item/ammo_magazine/pistol/skorpion(pouch)
+			pouch.update_icon()
+	var/obj/item/weapon/gun/safety = locate(/obj/item/weapon/gun) in contents
+	safety.flags_gun_features ^= GUN_TRIGGER_SAFETY
+
 /obj/item/storage/box/guncase/hg45
 	name = "\improper HG 45 pistol case"
 	desc = "A gun case containing a HG 45 pistol."
@@ -622,17 +564,38 @@
 
 /obj/item/storage/box/guncase/nsg23_marine
 	name = "\improper NSG-23 assault rifle case"
-	desc = "A gun case containing a NSG 23 assault rifle. While usually seen in the hands of PMCs, this weapon is sometimes issued to USCM personnel."
+	desc = "A gun case containing a NSG L23A1 assault rifle. While usually seen in the hands of PMCs, this weapon is sometimes issued to USCM personnel."
 	storage_slots = 6
-	can_hold = list(/obj/item/weapon/gun/rifle/nsg23/no_lock, /obj/item/ammo_magazine/rifle/nsg23)
+	can_hold = /obj/item/ammo_magazine/rifle/nsg23
 
 /obj/item/storage/box/guncase/nsg23_marine/fill_preset_inventory()
-	new /obj/item/weapon/gun/rifle/nsg23/no_lock(src)
+	new /obj/item/weapon/gun/rifle/nsg23(src)
 	new /obj/item/ammo_magazine/rifle/nsg23/ap(src)
-	new /obj/item/ammo_magazine/rifle/nsg23/extended(src)
 	new /obj/item/ammo_magazine/rifle/nsg23(src)
 	new /obj/item/ammo_magazine/rifle/nsg23(src)
 	new /obj/item/ammo_magazine/rifle/nsg23(src)
+	new /obj/item/ammo_magazine/rifle/nsg23(src)
+
+/obj/item/storage/box/guncase/nsg23_marine/pve
+
+/obj/item/storage/box/guncase/nsg23_marine/pve/fill_preset_inventory()
+	new /obj/item/weapon/gun/rifle/nsg23/no_lock/pve(src)
+	new /obj/item/ammo_magazine/rifle/nsg23(src)
+	new /obj/item/ammo_magazine/rifle/nsg23(src)
+	new /obj/item/ammo_magazine/rifle/nsg23(src)
+	new /obj/item/ammo_magazine/rifle/nsg23(src)
+	new /obj/item/ammo_magazine/rifle/nsg23(src)
+
+/obj/item/storage/box/guncase/nsg23_marine/pve/heap
+
+/obj/item/storage/box/guncase/nsg23_marine/pve/heap/fill_preset_inventory()
+	new /obj/item/weapon/gun/rifle/nsg23/no_lock/pve/heap(src)
+	new /obj/item/ammo_magazine/rifle/nsg23/heap(src)
+	new /obj/item/ammo_magazine/rifle/nsg23/heap(src)
+	new /obj/item/ammo_magazine/rifle/nsg23/heap(src)
+	new /obj/item/ammo_magazine/rifle/nsg23/heap(src)
+	new /obj/item/ammo_magazine/rifle/nsg23/heap(src)
+
 
 /obj/item/storage/box/guncase/m3717
 	name = "\improper M37-17 pump shotgun case"
@@ -746,8 +709,8 @@
 
 
 /obj/item/storage/box/guncase/xm51
-	name = "\improper XM51 breaching scattergun case"
-	desc = "A gun case containing the XM51 Breaching Scattergun. Comes with two spare magazines, two spare shell boxes, an optional stock and a belt to holster the weapon."
+	name = "\improper M1771 shotgun case"
+	desc = "A gun case containing the Model 1771 Cobra Max Tactical shotgun. Comes with two spare magazines, two spare shell boxes, an optional stock and a belt to holster the weapon."
 	storage_slots = 7
 	can_hold = list(/obj/item/weapon/gun/rifle/xm51, /obj/item/ammo_magazine/rifle/xm51, /obj/item/storage/belt/gun/xm51, /obj/item/attachable/stock/xm51)
 
@@ -756,8 +719,8 @@
 	new /obj/item/weapon/gun/rifle/xm51(src)
 	new /obj/item/ammo_magazine/rifle/xm51(src)
 	new /obj/item/ammo_magazine/rifle/xm51(src)
-	new /obj/item/ammo_magazine/shotgun/light/breaching(src)
-	new /obj/item/ammo_magazine/shotgun/light/breaching(src)
+	new /obj/item/ammo_magazine/shotgun/buckshot/light(src)
+	new /obj/item/ammo_magazine/shotgun/buckshot/light(src)
 	new /obj/item/storage/belt/gun/xm51(src)
 
 //Handgun case for Military police vendor three mag , a railflashligh and the handgun.

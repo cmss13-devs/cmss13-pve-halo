@@ -39,6 +39,7 @@ GLOBAL_LIST_INIT(admin_verbs_default, list(
 	/datum/admins/proc/check_ckey,
 	/datum/admins/proc/toggleooc, /*toggles ooc on/off for everyone*/
 	/datum/admins/proc/togglelooc, /*toggles ooc on/off for everyone*/
+	/datum/admins/proc/setlooccooldoown,
 	/datum/admins/proc/toggledsay, /*toggles dsay on/off for everyone*/
 	/client/proc/check_antagonists,
 	/client/proc/check_round_status,
@@ -73,23 +74,6 @@ GLOBAL_LIST_INIT(admin_verbs_default, list(
 	/client/proc/cmd_mod_say, /* alternate way of typing asay, no different than cmd_admin_say  */
 	/client/proc/cmd_admin_tacmaps_panel,
 	/client/proc/other_records,
-	/datum/admins/proc/toggle_ai,
-	/datum/admins/proc/toggle_human_ai,
-	/datum/admins/proc/create_human_ai_patrol,
-	/client/proc/open_human_ai_management_panel,
-	/client/proc/open_human_faction_management_panel,
-	/client/proc/open_human_defense_creator_panel,
-	/client/proc/create_human_ai,
-	/client/proc/fortify_room,
-	/client/proc/make_human_ai,
-	/datum/admins/proc/create_human_ai_sniper,
-	/client/proc/quick_order_ai_approach,
-	/client/proc/quick_order_ai_hold_position,
-	/client/proc/place_plastic_explosives,
-	/client/proc/toggle_human_ai_tweaks,
-	/client/proc/open_human_squad_spawner_panel,
-	/client/proc/open_human_ai_spawner_panel,
-	/client/proc/toggle_barricade_creation, // Stops cades from being built
 	))
 
 
@@ -154,6 +138,7 @@ GLOBAL_LIST_INIT(admin_verbs_minor_event, list(
 	/client/proc/toggle_events,
 	/client/proc/toggle_shipside_sd,
 	/client/proc/shakeshipverb,
+	/client/proc/shakegroundverb,
 	/client/proc/adminpanelweapons,
 	/client/proc/admin_general_quarters,
 	/client/proc/admin_biohazard_alert,
@@ -206,6 +191,7 @@ GLOBAL_LIST_INIT(admin_verbs_server, list(
 	/client/proc/cmd_debug_del_all,
 	/datum/admins/proc/togglejoin,
 	/client/proc/toggle_cdn,
+	/datum/admins/proc/toggle_intro,
 ))
 
 GLOBAL_LIST_INIT(admin_verbs_debug, list(
@@ -359,14 +345,20 @@ GLOBAL_LIST_INIT(roundstart_mod_verbs, list(
 		add_verb(src, /client/proc/open_sound_panel)
 		add_verb(src, /client/proc/toggle_join_xeno)
 		add_verb(src, /client/proc/admin_marine_announcement)
-		add_verb(src, /client/proc/play_chapter_title)
 		add_verb(src, /client/proc/screen_alert_menu)
+		add_verb(src, /client/proc/enable_fire_support)
+		add_verb(src, /client/proc/disable_fire_support)
+		add_verb(src, /client/proc/set_fire_support_points)
+		add_verb(src, /client/proc/change_callsign)
+		add_verb(src, /client/proc/set_cooldown)
+		add_verb(src, /client/proc/toggle_portrait)
 		add_verb(src, /client/proc/toggle_intro)
 		add_verb(src, /client/proc/game_master_rename_platoon)
 		add_verb(src, /client/proc/toggle_vehicle_blockers)
 		add_verb(src, /client/proc/toggle_ai_xeno_weeding)
 		add_verb(src, /client/proc/toggle_rappel_menu)
 		add_verb(src, /client/proc/toggle_fire_support_menu)
+		add_verb(src, /client/proc/gm_lighting)
 	if(CLIENT_HAS_RIGHTS(src, R_SERVER))
 		add_verb(src, GLOB.admin_verbs_server)
 	if(CLIENT_HAS_RIGHTS(src, R_DEBUG))
@@ -402,9 +394,15 @@ GLOBAL_LIST_INIT(roundstart_mod_verbs, list(
 		/client/proc/toggle_rappel_menu,
 		/client/proc/toggle_fire_support_menu,
 		/client/proc/admin_marine_announcement,
-		/client/proc/play_chapter_title,
 		/client/proc/screen_alert_menu,
+		/client/proc/enable_fire_support,
+		/client/proc/set_fire_support_points,
+		/client/proc/change_callsign,
+		/client/proc/set_cooldown,
+		/client/proc/disable_fire_support,
+		/client/proc/toggle_portrait,
 		/client/proc/toggle_intro,
+		/client/proc/gm_lighting,
 		GLOB.admin_verbs_admin,
 		GLOB.admin_verbs_ban,
 		GLOB.admin_verbs_minor_event,
