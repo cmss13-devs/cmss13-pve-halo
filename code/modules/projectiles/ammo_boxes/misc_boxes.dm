@@ -287,7 +287,7 @@
 	name = "\improper UNSC storage crate - (MRE x 14)"
 	desc = "A generic storage crate for the UNSC holding MREs."
 	icon_state = "base_mre"
-	magazine_type = /obj/item/storage/box/MRE
+	magazine_type = /obj/item/storage/box/mre
 	num_of_magazines = 14
 	overlay_content = "_mre"
 

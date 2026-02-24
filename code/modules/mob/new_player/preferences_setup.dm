@@ -248,35 +248,34 @@
 //USCM Section
 		if(JOB_SQUAD_MARINE)
 			return /datum/equipment_preset/unsc/pfc/equipped
-		if(JOB_SQUAD_ENGI)
-			return /datum/equipment_preset/uscm/engineer_equipped
-		if(JOB_SQUAD_RTO)
-			return /datum/equipment_preset/unsc/rto/equipped
 		if(JOB_SQUAD_LEADER)
 			return /datum/equipment_preset/unsc/leader/equipped
 		if(JOB_SQUAD_MEDIC)
 			return /datum/equipment_preset/unsc/medic/equipped
 		if(JOB_SQUAD_SPECIALIST)
-			return /datum/equipment_preset/unsc/spec/equipped_spnkr
-		if(JOB_SQUAD_SMARTGUN)
-			return /datum/equipment_preset/uscm/smartgunner_equipped
+			return pick(/datum/equipment_preset/unsc/spec/equipped_sniper, /datum/equipment_preset/unsc/spec/equipped_spnkr)
 		if(JOB_SQUAD_TEAM_LEADER)
 			return /datum/equipment_preset/unsc/tl/equipped
-		if(JOB_CO)
-			var/datum/job/J = GLOB.RoleAuthority.roles_by_name[JOB_CO]
-			return J.gear_preset_whitelist["[JOB_CO][J.get_whitelist_status(owner)]"]
-		if(JOB_SO)
-			/datum/equipment_preset/unsc/platco/equipped
-		if(JOB_XO)
-			return /datum/equipment_preset/uscm_ship/xo
-		if(JOB_AUXILIARY_OFFICER)
-			return /datum/equipment_preset/uscm_ship/auxiliary_officer
-		/*
-		if(JOB_INTEL)
-			return /datum/equipment_preset/uscm/intel/full
-		*/
-		if(JOB_CAS_PILOT)
-			return /datum/equipment_preset/uscm_ship/gp/full
+		if(JOB_SQUAD_RTO)
+			return /datum/equipment_preset/unsc/rto/equipped
+//ODST SECTION
+		if(JOB_SQUAD_MARINE_ODST)
+			return /datum/equipment_preset/unsc/pfc/odst/equipped
+		if(JOB_SQUAD_LEADER_ODST)
+			return /datum/equipment_preset/unsc/pfc/odst/equipped
+		if(JOB_SQUAD_MEDIC_ODST)
+			return /datum/equipment_preset/unsc/pfc/odst/equipped
+		if(JOB_SQUAD_SPECIALIST_ODST)
+			return /datum/equipment_preset/unsc/pfc/odst/equipped
+		if(JOB_SQUAD_TEAM_LEADER_ODST)
+			return /datum/equipment_preset/unsc/pfc/odst/equipped
+		if(JOB_SQUAD_RTO_ODST)
+			return /datum/equipment_preset/unsc/pfc/odst/equipped
+//USCM Aux forces (not part of pre-round role select normally)
+		if(JOB_SQUAD_SMARTGUN)
+			return /datum/equipment_preset/uscm/smartgunner_equipped
+		if(JOB_SQUAD_ENGI)
+			return /datum/equipment_preset/uscm/engineer_equipped
 		if(JOB_TANK_CREW)
 			return /datum/equipment_preset/uscm/tank
 		if(JOB_DROPSHIP_PILOT)
@@ -310,8 +309,8 @@
 			return /datum/equipment_preset/uscm/forecon/squad_leader
 		if(JOB_SQUAD_MEDIC_FORECON)
 			return /datum/equipment_preset/uscm/forecon/tech //Not making corpsman & RTO equipped presets purely for this when the tech & rifleman work to convey them respectively as-is
-		if(JOB_SQUAD_RTO)
-			return /datum/equipment_preset/uscm/forecon/standard
+		//if(JOB_SQUAD_RTO)
+		//	return /datum/equipment_preset/uscm/forecon/standard
 		if(JOB_SQUAD_MARINE_FORECON)
 			return /datum/equipment_preset/uscm/forecon/standard
 		if(JOB_SQUAD_SMARTGUN_FORECON)

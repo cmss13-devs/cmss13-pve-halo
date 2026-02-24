@@ -1,0 +1,176 @@
+//===========================//MAIN UNSC PREP\\================================\\
+
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc
+	name = "\improper Uniform Vendor"
+
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/populate_product_list(scale)
+	listed_products = list(
+		list("STANDARD EQUIPMENT", -1, null, null, null),
+		list("Marine Combat Boots", floor(scale * 15), /obj/item/clothing/shoes/marine/knife, VENDOR_ITEM_REGULAR),
+		list("Marine Uniform, Camo Conforming", floor(scale * 15), /obj/item/clothing/under/marine, VENDOR_ITEM_REGULAR),
+		list("Marine Uniform, Jungle BDU", floor(scale * 15), /obj/item/clothing/under/marine/standard, VENDOR_ITEM_REGULAR),
+		list("Marine Combat Gloves", floor(scale * 15), /obj/item/clothing/gloves/marine, VENDOR_ITEM_REGULAR),
+		list("Marine Radio Headset", floor(scale * 15), /obj/item/device/radio/headset/almayer/marine/solardevils, VENDOR_ITEM_REGULAR),
+		list("CH252 Pattern Marine Helmet", floor(scale * 15), /obj/item/clothing/head/helmet/marine/unsc, VENDOR_ITEM_REGULAR),
+		list("M5 Pattern Camera Headset", floor(scale * 15), /obj/item/device/overwatch_camera, VENDOR_ITEM_REGULAR),
+		list("Utility Cap, Jungle", floor(scale * 15), /obj/item/clothing/head/cmcap, VENDOR_ITEM_REGULAR),
+		list("Utility Cap, Snow", floor(scale * 15), /obj/item/clothing/head/cmcap/snow, VENDOR_ITEM_REGULAR),
+		list("Utility Cap, Desert", floor(scale * 15), /obj/item/clothing/head/cmcap/desert, VENDOR_ITEM_REGULAR),
+		list("Operations Cap, Green", floor(scale * 15), /obj/item/clothing/head/cmcap/bridge, VENDOR_ITEM_REGULAR),
+		list("Operations Cap, Tan", floor(scale * 15), /obj/item/clothing/head/cmcap/bridge/tan, VENDOR_ITEM_REGULAR),
+		list("Boonie Hat, Jungle", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie, VENDOR_ITEM_REGULAR),
+		list("Boonie Hat, Desert", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie/tan, VENDOR_ITEM_REGULAR),
+
+		list("WEBBINGS", -1, null, null),
+		list("M52B Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Magazine Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/mag, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Shotgun Shell Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/shotgun, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern M40 Webbing", 0.75, /obj/item/clothing/accessory/storage/webbing/m52b/grenade, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Small Pouch Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/small, VENDOR_ITEM_REGULAR),
+		list("Drop Pouch", 4, /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
+		list("Leg Pouch", 4, /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
+		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR", -1, null, null),
+		list("Standard M52B Body Armor Set", round(scale * 15), /obj/item/storage/box/guncase/m52barmor, VENDOR_ITEM_REGULAR),
+		list("M52B Body Armor", round(scale * 10), /obj/item/clothing/suit/marine/unsc, VENDOR_ITEM_REGULAR),
+		list("M52B Shoulder Pads", round(scale * 10), /obj/item/clothing/accessory/pads/unsc, VENDOR_ITEM_REGULAR),
+		list("M52B Groin Plate", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/groin, VENDOR_ITEM_REGULAR),
+		list("M52B Greaves", round(scale * 15), /obj/item/clothing/accessory/pads/unsc/greaves, VENDOR_ITEM_REGULAR),
+		list("M52B Arm Bracers", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/bracers, VENDOR_ITEM_REGULAR),
+		list("M52B Neck Guard", round(scale * 15), /obj/item/clothing/accessory/pads/unsc/neckguard, VENDOR_ITEM_REGULAR),
+
+		list("BACKPACK", -1, null, null, null),
+		list("UNSC Rucksack", floor(scale * 15), /obj/item/storage/backpack/marine/unsc, VENDOR_ITEM_REGULAR),
+		list("UNSC Buttpack", floor(scale * 15), /obj/item/storage/backpack/marine/satchel/unsc, VENDOR_ITEM_REGULAR),
+
+		list("BELTS", -1, null, null),
+		list("M276 Pattern Ammo Load Rig", floor(scale * 15), /obj/item/storage/belt/marine, VENDOR_ITEM_REGULAR),
+		list("M276 Pattern Grenade Webbing", floor(scale * 10), /obj/item/storage/belt/grenade, VENDOR_ITEM_REGULAR),
+		list("M6 General Pistol Holster Rig", floor(scale * 15), /obj/item/storage/belt/gun/m6, VENDOR_ITEM_REGULAR),
+		list("M276 Pattern M82F Holster Rig", floor(scale * 5), /obj/item/storage/belt/gun/flaregun, VENDOR_ITEM_REGULAR),
+		list("M276 G8-A General Utility Pouch", floor(scale * 15), /obj/item/storage/backpack/general_belt, VENDOR_ITEM_REGULAR),
+
+		list("POUCHES", -1, null, null, null),
+		list("First-Aid Pouch", floor(scale * 15), /obj/item/storage/pouch/firstaid, VENDOR_ITEM_REGULAR),
+		list("Flare Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/full, VENDOR_ITEM_REGULAR),
+		list("Large Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/large, VENDOR_ITEM_REGULAR),
+		list("Medium General Pouch", floor(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
+		list("Pistol Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/pistol/unsc, VENDOR_ITEM_REGULAR),
+		list("Pistol Pouch", floor(scale * 15), /obj/item/storage/pouch/pistol/unsc, VENDOR_ITEM_REGULAR),
+
+		list("RESTRICTED POUCHES", -1, null, null, null),
+		list("Construction Pouch", 1.25, /obj/item/storage/pouch/construction, VENDOR_ITEM_REGULAR),
+		list("Explosive Pouch", 1.25, /obj/item/storage/pouch/explosive, VENDOR_ITEM_REGULAR),
+		list("First Responder Pouch", 2.5, /obj/item/storage/pouch/first_responder, VENDOR_ITEM_REGULAR),
+		list("Large Pistol Magazine Pouch", floor(scale * 2), /obj/item/storage/pouch/magazine/pistol/unsc/large, VENDOR_ITEM_REGULAR),
+		list("Tools Pouch", 1.25, /obj/item/storage/pouch/tools, VENDOR_ITEM_REGULAR),
+		list("Sling Pouch", 1.25, /obj/item/storage/pouch/sling, VENDOR_ITEM_REGULAR),
+
+		list("MASK", -1, null, null, null),
+		list("M5 Gas Mask", floor(scale * 15), /obj/item/clothing/mask/gas/military, VENDOR_ITEM_REGULAR),
+		list("Tactical Wrap", floor(scale * 10), /obj/item/clothing/mask/rebreather/scarf/tacticalmask, VENDOR_ITEM_REGULAR),
+		list("Heat Absorbent Coif", floor(scale * 10), /obj/item/clothing/mask/rebreather/scarf, VENDOR_ITEM_REGULAR),
+
+		list("MISCELLANEOUS", -1, null, null, null),
+		list("Ballistic goggles", round(scale * 10), /obj/item/clothing/glasses/mgoggles, VENDOR_ITEM_REGULAR),
+		list("Ballistic goggles, sun-shaded", round(scale * 10), /obj/item/clothing/glasses/mgoggles/black, VENDOR_ITEM_REGULAR),
+		list("Ballistic goggles, laser-shaded (brown)", round(scale * 10), /obj/item/clothing/glasses/mgoggles/orange, VENDOR_ITEM_REGULAR),
+		list("Ballistic goggles, laser-shaded (green)", round(scale * 10), /obj/item/clothing/glasses/mgoggles/green, VENDOR_ITEM_REGULAR),
+		list("Firearm Lubricant", round(scale * 15), /obj/item/prop/helmetgarb/gunoil, VENDOR_ITEM_REGULAR),
+		list("LRRP Bedroll", round(scale * 15), /obj/item/roller/bedroll, VENDOR_ITEM_REGULAR),
+		list("Marine Issue Compass", round(scale * 15), /obj/item/prop/helmetgarb/compass, VENDOR_ITEM_REGULAR),
+		)
+
+//===========================//ODST PREP\\================================\\
+
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst
+	name = "\improper ODST Uniform Vendor"
+
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst/populate_product_list(scale)
+	listed_products = list(
+		list("STANDARD EQUIPMENT", -1, null, null, null),
+		list("UNSC Combat Boots", floor(scale * 15), /obj/item/clothing/shoes/marine/jungle/knife, VENDOR_ITEM_REGULAR),
+		list("ODST bodyglove", floor(scale * 15), /obj/item/clothing/under/marine/odst, VENDOR_ITEM_REGULAR),
+		list("Marine Combat Gloves", floor(scale * 15), /obj/item/clothing/gloves/marine, VENDOR_ITEM_MANDATORY),
+		list("ODST Radio Headset", floor(scale * 15), /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen, VENDOR_ITEM_REGULAR),
+		list("M5 Pattern Camera Headset", floor(scale * 15), /obj/item/device/overwatch_camera, VENDOR_ITEM_REGULAR),
+		list("Patrol Cap, Jungle BDU", floor(scale * 15), /obj/item/clothing/head/cmcap, VENDOR_ITEM_REGULAR),
+		list("Boonie Hat, Jungle BDU", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie, VENDOR_ITEM_REGULAR),
+
+		list("WEBBINGS", -1, null, null),
+		list("M52B Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Magazine Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/mag, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Shotgun Shell Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/shotgun, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern M40 Webbing", 0.75, /obj/item/clothing/accessory/storage/webbing/m52b/grenade, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Small Pouch Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/small, VENDOR_ITEM_REGULAR),
+		list("Drop Pouch", 4, /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
+		list("Leg Pouch", 4, /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
+		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
+
+		list("ARMOR", -1, null, null),
+		list("CH381 ODST helmet", floor(scale * 15), /obj/item/clothing/head/helmet/marine/unsc/odst, VENDOR_ITEM_MANDATORY),
+		list("Standard M70DT ODST BDU Set", round(scale * 15), /obj/item/storage/box/guncase/odstarmor, VENDOR_ITEM_MANDATORY),
+		list("M70DT ODST BDU", round(scale * 10), /obj/item/clothing/suit/marine/unsc/odst, VENDOR_ITEM_REGULAR),
+		list("M70DT Shoulder Pads", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/odst, VENDOR_ITEM_REGULAR),
+		list("M70DT Groin Plate", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/groin/odst, VENDOR_ITEM_REGULAR),
+		list("M70DT Greaves", round(scale * 15), /obj/item/clothing/accessory/pads/unsc/greaves/odst, VENDOR_ITEM_REGULAR),
+		list("M70DT Arm Bracers", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/bracers/odst, VENDOR_ITEM_REGULAR),
+
+		list("BACKPACK", -1, null, null, null),
+		list("UNSC Rucksack", floor(scale * 15), /obj/item/storage/backpack/marine/unsc, VENDOR_ITEM_REGULAR),
+		list("UNSC Buttpack", floor(scale * 15), /obj/item/storage/backpack/marine/satchel/unsc, VENDOR_ITEM_REGULAR),
+
+		list("BELTS", -1, null, null),
+		list("M276 Pattern Ammo Load Rig", floor(scale * 15), /obj/item/storage/belt/marine, VENDOR_ITEM_REGULAR),
+		list("M276 Pattern Grenade Webbing", floor(scale * 10), /obj/item/storage/belt/grenade, VENDOR_ITEM_REGULAR),
+		list("M6 General Pistol Holster Rig", floor(scale * 15), /obj/item/storage/belt/gun/m6, VENDOR_ITEM_REGULAR),
+		list("M276 Pattern M82F Holster Rig", floor(scale * 5), /obj/item/storage/belt/gun/flaregun, VENDOR_ITEM_REGULAR),
+		list("M276 G8-A General Utility Pouch", floor(scale * 15), /obj/item/storage/backpack/general_belt, VENDOR_ITEM_REGULAR),
+		list("M7 Holster Rig", floor(scale * 15), /obj/item/storage/belt/gun/m7, VENDOR_ITEM_REGULAR),
+
+		list("POUCHES", -1, null, null, null),
+		list("First-Aid Pouch", floor(scale * 15), /obj/item/storage/pouch/firstaid, VENDOR_ITEM_REGULAR),
+		list("Flare Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/full, VENDOR_ITEM_REGULAR),
+		list("Large Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/large, VENDOR_ITEM_REGULAR),
+		list("Medium General Pouch", floor(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
+		list("Pistol Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/pistol/unsc, VENDOR_ITEM_REGULAR),
+		list("Pistol Pouch", floor(scale * 15), /obj/item/storage/pouch/pistol/unsc, VENDOR_ITEM_REGULAR),
+
+		list("RESTRICTED POUCHES", -1, null, null, null),
+		list("Construction Pouch", 1.25, /obj/item/storage/pouch/construction, VENDOR_ITEM_REGULAR),
+		list("Explosive Pouch", 1.25, /obj/item/storage/pouch/explosive, VENDOR_ITEM_REGULAR),
+		list("First Responder Pouch", 2.5, /obj/item/storage/pouch/first_responder, VENDOR_ITEM_REGULAR),
+		list("Large Pistol Magazine Pouch", floor(scale * 2), /obj/item/storage/pouch/magazine/pistol/unsc/large, VENDOR_ITEM_REGULAR),
+		list("Tools Pouch", 1.25, /obj/item/storage/pouch/tools, VENDOR_ITEM_REGULAR),
+		list("Sling Pouch", 1.25, /obj/item/storage/pouch/sling, VENDOR_ITEM_REGULAR),
+
+		list("MASK", -1, null, null, null),
+		list("M5 Gas Mask", floor(scale * 15), /obj/item/clothing/mask/gas/military, VENDOR_ITEM_REGULAR),
+		list("Tactical Wrap", floor(scale * 10), /obj/item/clothing/mask/rebreather/scarf/tacticalmask, VENDOR_ITEM_REGULAR),
+		list("Heat Absorbent Coif", floor(scale * 10), /obj/item/clothing/mask/rebreather/scarf, VENDOR_ITEM_REGULAR),
+		)
+
+/obj/item/storage/box/guncase/m52barmor //forgive me, father
+	name = "\improper M52B Body Armor case"
+	desc = "A case containing the standard issue parts of the M52B body armor set of the UNSC. No parts sold separately."
+	can_hold = list(/obj/item/clothing/suit/marine/unsc, /obj/item/clothing/accessory/pads/unsc, /obj/item/clothing/accessory/pads/unsc/greaves)
+	storage_slots = 3
+
+/obj/item/storage/box/guncase/m52barmor/fill_preset_inventory()
+	new /obj/item/clothing/suit/marine/unsc(src)
+	new /obj/item/clothing/accessory/pads/unsc(src)
+	new /obj/item/clothing/accessory/pads/unsc/greaves(src)
+
+/obj/item/storage/box/guncase/odstarmor //forgive me, father, SECOND edition
+	name = "\improper M70DT ODST BDU case"
+	desc = "A case containing the standard issue parts of the M70DT ODST BDU set of the UNSC. No parts sold separately."
+	can_hold = list(/obj/item/clothing/suit/marine/unsc/odst, /obj/item/clothing/accessory/pads/unsc/odst, /obj/item/clothing/accessory/pads/unsc/greaves/odst, /obj/item/clothing/accessory/pads/unsc/groin/odst, /obj/item/clothing/accessory/pads/unsc/bracers/odst)
+	storage_slots = 5
+
+/obj/item/storage/box/guncase/odstarmor/fill_preset_inventory()
+	new /obj/item/clothing/suit/marine/unsc/odst(src)
+	new /obj/item/clothing/accessory/pads/unsc/odst(src)
+	new /obj/item/clothing/accessory/pads/unsc/greaves/odst(src)
+	new /obj/item/clothing/accessory/pads/unsc/groin/odst(src)
+	new /obj/item/clothing/accessory/pads/unsc/bracers/odst(src)

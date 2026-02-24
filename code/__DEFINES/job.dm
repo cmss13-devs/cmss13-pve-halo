@@ -28,11 +28,13 @@
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
-#define JOB_SQUAD_LEADER "Squad Sergeant"
+#define JOB_SQUAD_LEADER "Squad Leader"
 #define JOB_SQUAD_ENGI "Combat Engineer"
 #define JOB_SQUAD_MEDIC "Corpsman"
 #define JOB_SQUAD_SPECIALIST "Weapons Specialist"
-#define JOB_SQUAD_TEAM_LEADER "Fire Team Leader"
+#define JOB_SQUAD_SPOTTER "Spotter"
+#define JOB_SQUAD_LOADER "Weapons Loader"
+#define JOB_SQUAD_TEAM_LEADER "Fireteam Leader"
 #define JOB_SQUAD_SMARTGUN "Smartgunner"
 #define JOB_SQUAD_ROLES /datum/timelock/squad
 #define JOB_SQUAD_ROLES_LIST list(JOB_SQUAD_MARINE, JOB_SQUAD_LEADER, JOB_SQUAD_ENGI, JOB_SQUAD_MEDIC, JOB_SQUAD_SPECIALIST, JOB_SQUAD_SMARTGUN, JOB_SQUAD_TEAM_LEADER)
