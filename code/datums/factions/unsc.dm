@@ -136,7 +136,7 @@
 				border_rk = "command"
 			if(JOB_NURSE)
 				marine_rk = "nurse"
-			if(JOB_SEA)
+			if(JOB_DI)
 				marine_rk = "sea"
 				border_rk = "command"
 			if(JOB_SYNTH)
@@ -166,11 +166,6 @@
 			if(JOB_PROVOST_MARSHAL, JOB_PROVOST_CMARSHAL, JOB_PROVOST_SMARSHAL)
 				marine_rk = "pvm"
 				border_rk = "command"
-			// TIS
-			if(JOB_TIS_IO)
-				marine_rk = "tisio"
-			if(JOB_TIS_SA)
-				marine_rk = "tissa"
 			// Riot MPs
 			if(JOB_RIOT)
 				marine_rk = "rmp"
