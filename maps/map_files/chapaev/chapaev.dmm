@@ -59,12 +59,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/engineering)
-"ah" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
 "ai" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -172,15 +166,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/engineering)
-"ap" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
 "aq" = (
 /obj/structure/machinery/power/smes/buildable,
 /obj/structure/machinery/camera/autoname/golden_arrow{
@@ -229,37 +214,6 @@
 "at" = (
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"au" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
-	},
-/obj/structure/surface/rack{
-	color = "#8B9490";
-	pixel_x = -3
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/item/clothing/mask/gas/military/upp{
-	pixel_x = -8;
-	pixel_y = 2
-	},
-/obj/item/clothing/mask/gas/military/upp{
-	pixel_y = 2
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"av" = (
-/obj/structure/machinery/pipedispenser,
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice1";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
-"aw" = (
-/obj/structure/pipes/standard/manifold/hidden/supply,
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
 "ax" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -271,16 +225,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
-"ay" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/obj/structure/surface/rack{
-	color = "#8B9490";
-	pixel_x = 3
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/engineering)
 "az" = (
 /obj/structure/machinery/light/small{
 	dir = 8
@@ -343,36 +287,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
-"aC" = (
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
-"aD" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"aE" = (
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/engineering)
-"aF" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	id = "chapaev_engi"
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
 "aG" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E"
@@ -438,17 +352,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
-"aK" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/prop/invuln/lattice_prop{
-	dir = 8;
-	icon_state = "lattice12";
-	pixel_x = 13;
-	pixel_y = 10
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
 "aL" = (
 /obj/structure/prop/invuln/lattice_prop{
 	dir = 8;
@@ -557,13 +460,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
-"aS" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
-	},
-/obj/structure/reagent_dispensers/watertank,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/engineering)
 "aT" = (
 /obj/structure/machinery/light/small{
 	dir = 8;
@@ -600,9 +496,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"aV" = (
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
 "aW" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 10
@@ -654,37 +547,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
-"ba" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
-"bb" = (
-/obj/structure/ladder{
-	height = 1;
-	id = "eng1"
-	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/engineering)
-"bc" = (
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
 "bd" = (
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage{
 	req_one_access = list()
@@ -710,43 +572,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
-"bf" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_y = 30
-	},
-/obj/item/prop/magazine/book{
-	desc = "A science fiction novel of Russian origin. You should probably actually read it instead of passing off your knowledge of the movie as knowlege of the book.";
-	name = "Roadside Picnic";
-	pixel_y = 3;
-	pixel_x = -3
-	},
-/obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
-"bg" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 9
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"bh" = (
-/obj/structure/machinery/vending/cigarette/upp{
-	pixel_y = 16;
-	can_block_movement = 0
-	},
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice2";
-	pixel_x = 16;
-	pixel_y = 16
-	},
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15;
-	layer = 6
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
 "bi" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	name = "\improper Maintenance Tunnels"
@@ -767,13 +592,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"bl" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "bm" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/machinery/door/airlock/upp_utility{
@@ -1881,36 +1699,12 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/prep_hallway)
-"dd" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space)
 "de" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/briefing)
-"df" = (
-/obj/structure/machinery/medical_pod/autodoc{
-	dir = 1;
-	pixel_y = 6
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/space/basic,
-/area/space)
 "dg" = (
 /obj/structure/largecrate/random/barrel/red{
 	stuff = list(/obj/item/clothing/under/marine/veteran/UPP,/obj/item/clothing/gloves/marine,/obj/item/clothing/gloves/marine/brown,/obj/item/clothing/gloves/marine/joe,/obj/item/clothing/shoes/marine/joe,/obj/item/clothing/shoes/marine/upp/guard,/obj/item/clothing/shoes/marine/upp)
@@ -1962,32 +1756,6 @@
 /obj/item/storage/firstaid/o2,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dl" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Section Sergeant";
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
-"dm" = (
-/obj/structure/foamed_metal/iron,
-/turf/open/space/basic,
-/area/space)
 "dn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -2023,37 +1791,6 @@
 	pixel_y = -2
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
-"dq" = (
-/obj/structure/machinery/power/apc/almayer/east,
-/turf/open/space/basic,
-/area/space)
-"dr" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Smartgunner";
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/prop/magazine/book/littleredbook,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "ds" = (
 /obj/structure/closet{
@@ -2099,14 +1836,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
-"dw" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/foamed_metal/iron,
-/turf/open/space/basic,
-/area/space)
 "dx" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -2134,36 +1863,6 @@
 "dA" = (
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dB" = (
-/obj/structure/machinery/medical_pod/bodyscanner{
-	pixel_y = 6
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/space/basic,
-/area/space)
-"dC" = (
-/obj/structure/machinery/light/double{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5
-	},
-/turf/open/space/basic,
-/area/space)
-"dD" = (
-/obj/structure/foamed_metal/iron,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/cryo_cells)
 "dE" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -2178,50 +1877,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dG" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/machinery/medical_pod/sleeper{
-	dir = 8;
-	pixel_y = 6
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/space/basic,
-/area/space)
-"dH" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/weapon/butterfly,
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Corpsman";
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10;
-	pixel_x = -13
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "dI" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
@@ -2238,19 +1893,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
-"dK" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/door/airlock/upp_grey{
-	dir = 1;
-	name = "\improper Locker Room";
-	req_one_access_txt = "230"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/corsat/marked,
-/area/golden_arrow/cryo_cells)
 "dL" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
@@ -2260,39 +1902,6 @@
 	pixel_x = 24
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
-"dM" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Squad Leader";
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10;
-	pixel_x = 11
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "dN" = (
 /obj/structure/barricade/handrail/strata{
@@ -2337,28 +1946,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dT" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Squad Leader";
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "dU" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
@@ -2385,33 +1972,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/cryo_cells)
-"dX" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Smartgunner";
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/weapon/butterfly,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "dY" = (
 /obj/structure/barricade/handrail/strata{
 	dir = 4
@@ -2433,47 +1993,9 @@
 /obj/structure/foamed_metal/iron,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/dorms)
-"eb" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/space/basic,
-/area/space)
 "ec" = (
 /turf/closed/wall/upp_wall/grey,
 /area/golden_arrow/dorms)
-"ed" = (
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	dir = 4;
-	name = "\improper Other Sections"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/briefing)
-"ee" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	layer = 2.5
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/briefing)
 "ef" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/bedsheetbin{
@@ -2496,16 +2018,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
-"ei" = (
-/obj/structure/disposalpipe/segment{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/briefing)
 "ej" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -2538,76 +2050,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"eo" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/prop/magazine/book/littleredbook,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
-"ep" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
-"eq" = (
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/structure/closet/crate/secure/upp/alt,
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10;
-	pixel_x = -13
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/golden_arrow/briefing)
 "er" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -2628,31 +2070,10 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
-"et" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = -2
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
 "eu" = (
 /obj/structure/foamed_metal/iron,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/briefing)
-"ev" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
-	pixel_y = 14
-	},
-/turf/open/space/basic,
-/area/space)
 "ew" = (
 /obj/structure/machinery/washing_machine{
 	pixel_y = 14;
@@ -2767,27 +2188,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"eD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "eE" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -2799,39 +2199,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
-"eF" = (
-/obj/structure/closet/secure_closet/marine_personal{
-	pixel_y = 14;
-	job = "Platoon Commander";
-	can_block_movement = 0;
-	has_cryo_gear = 0
-	},
-/obj/item/clothing/accessory/patch/upp/naval,
-/obj/item/clothing/accessory/patch/upp,
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/item/clothing/under/marine/veteran/UPP/naval,
-/obj/item/clothing/suit/storage/jacket/marine/upp/naval,
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
-/obj/structure/pipes/standard/manifold/visible/supply{
-	dir = 1
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/cryo_cells)
-"eG" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	dir = 4;
-	name = "\improper Other Sections"
-	},
-/turf/open/space/basic,
-/area/space)
 "eH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -2849,28 +2216,6 @@
 	pixel_x = 24
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
-"eI" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/weapon/butterfly,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "eJ" = (
 /obj/structure/barricade/handrail/strata{
@@ -2937,17 +2282,6 @@
 /obj/structure/curtain/blue,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
-"eR" = (
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	dir = 4;
-	name = "\improper Other Sections"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/briefing)
 "eS" = (
 /obj/structure/disposalpipe/junction{
 	dir = 2;
@@ -3010,26 +2344,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/briefing)
-"eY" = (
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/item/stool{
-	pixel_x = 24
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
-"eZ" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/space/basic,
-/area/space)
 "fa" = (
 /obj/structure/disposalpipe/junction{
 	dir = 2;
@@ -3112,16 +2426,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
-"fi" = (
-/obj/structure/pipes/vents/pump{
-	dir = 8
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/cryo_cells)
 "fj" = (
 /obj/structure/sign/safety/galley{
 	pixel_x = 14;
@@ -3188,13 +2492,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/dorms)
-"fq" = (
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	dir = 4;
-	name = "\improper Other Sections"
-	},
-/turf/open/space/basic,
-/area/space)
 "fr" = (
 /obj/structure/machinery/disposal{
 	pixel_y = 14
@@ -3247,20 +2544,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/briefing)
-"fx" = (
-/obj/structure/foamed_metal/iron,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/dorms)
-"fy" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/space/basic,
-/area/space)
 "fz" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/machinery/door/airlock/upp_grey{
@@ -3276,21 +2559,7 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
-"fB" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/space/basic,
-/area/space)
 "fC" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
 	},
@@ -3311,8 +2580,8 @@
 	on = 1;
 	layer = 5
 	},
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/hangar)
 "fD" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/sign/safety/galley{
@@ -3339,17 +2608,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
-"fG" = (
-/obj/structure/surface/rack{
-	color = "#8B9490"
-	},
-/obj/structure/machinery/light/double{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5
-	},
-/turf/open/space/basic,
-/area/space)
 "fH" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/warning_stripes{
@@ -3378,29 +2636,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/canteen)
-"fK" = (
-/obj/structure/surface/rack{
-	color = "#8B9490"
-	},
-/obj/item/tool/crowbar,
-/turf/open/space/basic,
-/area/space)
-"fL" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/turf/open/space/basic,
-/area/space)
-"fM" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/item/prop/almayer/comp_open{
-	layer = 2.9;
-	pixel_y = 1
-	},
-/turf/open/space/basic,
-/area/space)
 "fN" = (
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
@@ -3454,41 +2689,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
-"fT" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/closet{
-	name = "emergency closet";
-	desc = "It's a storage unit for emergency breathmasks and o2 tanks."
-	},
-/obj/item/tank/emergency_oxygen/double,
-/obj/item/tank/emergency_oxygen/double,
-/obj/item/tank/emergency_oxygen/double,
-/obj/item/clothing/mask/gas/military/upp,
-/obj/item/clothing/mask/gas/military/upp,
-/obj/item/clothing/mask/gas/military/upp,
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	layer = 2.5
-	},
-/obj/item/storage/firstaid/o2,
-/turf/open/space/basic,
-/area/space)
-"fU" = (
-/obj/structure/machinery/light/double{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5;
-	dir = 4
-	},
-/turf/open/space/basic,
-/area/space)
 "fV" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/strata/multi_tiles,
@@ -3516,12 +2716,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/canteen)
-"fY" = (
-/obj/item/stool{
-	can_buckle = 1
-	},
-/turf/open/space/basic,
-/area/space)
 "fZ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -3537,43 +2731,6 @@
 "gb" = (
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/canteen)
-"gc" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/item/prop/almayer/comp_closed{
-	pixel_x = -3;
-	pixel_y = 4
-	},
-/obj/item/tool/wrench{
-	pixel_y = 16
-	},
-/turf/open/space/basic,
-/area/space)
-"gd" = (
-/obj/structure/machinery/pipedispenser,
-/turf/open/space/basic,
-/area/space)
-"ge" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/dorms)
 "gf" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice3";
@@ -3761,16 +2918,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
-"gv" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/dorms)
 "gw" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -3788,32 +2935,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/dorms)
-"gy" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/item/book/codebook/upp{
-	icon_state = "book_green";
-	pixel_y = 4;
-	pixel_x = 4
-	},
-/obj/item/prop/magazine/book/uppbooklet{
-	pixel_y = 4;
-	pixel_x = -1;
-	layer = 2.9
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "gz" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/prop/magazine/book/littleredbook{
@@ -3881,32 +3002,13 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/canteen)
-"gF" = (
-/obj/structure/machinery/recharge_station{
-	pixel_y = 13
-	},
-/obj/structure/barricade/handrail/strata{
-	dir = 8
-	},
-/obj/structure/barricade/handrail/strata{
-	dir = 4
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/space/basic,
-/area/space)
 "gG" = (
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
 	},
 /obj/item/storage/box/flare/upp,
-/turf/open/space/basic,
-/area/space)
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/hangar)
 "gH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/reagent_container/food/drinks/coffeecup{
@@ -3982,23 +3084,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/canteen)
-"gO" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/door/airlock/upp_utility{
-	name = "\improper Maintenance Access";
-	dir = 1;
-	req_one_access_txt = "230"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "\improper Maintenance Tunnels"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/space/basic,
-/area/golden_arrow/dorms)
 "gP" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/small{
@@ -4031,24 +3116,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/hangar)
-"gS" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0
-	},
-/obj/item/book/manual/chef_recipes,
-/obj/item/book/manual/barman_recipes,
-/obj/item/book/manual/engineering_hacking,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/dorms)
 "gT" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/power_cell/empty{
@@ -4062,22 +3129,6 @@
 	drop_sensitivity = 0;
 	impact_sensitivity = 1;
 	pixel_y = -5
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/dorms)
-"gU" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/prop/invuln/ice_prefab/roof_greeble{
-	pixel_y = 22;
-	pixel_x = -14;
-	layer = 3
-	},
-/obj/structure/machinery/computer/cameras/wooden_tv/prop{
-	pixel_y = 10;
-	layer = 3
-	},
-/obj/structure/prop/ice_colony/hula_girl{
-	pixel_x = -10
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
@@ -4095,13 +3146,6 @@
 	pixel_y = 3
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/dorms)
-"gW" = (
-/obj/structure/disposalpipe/segment{
-	dir = 1;
-	icon_state = "pipe-c"
-	},
-/turf/open/space/basic,
 /area/golden_arrow/dorms)
 "gX" = (
 /obj/structure/window/reinforced{
@@ -4266,13 +3310,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
-"hk" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo";
-	pixel_x = 1
-	},
-/turf/open/space/basic,
-/area/space)
 "hl" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice3";
@@ -4288,39 +3325,12 @@
 /obj/structure/machinery/power/apc/almayer/east,
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
-"ho" = (
-/obj/structure/machinery/light/small{
-	light_power = 0.8;
-	light_range = 4;
-	light_color = "#e7c0a4"
-	},
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"hp" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/computer/emails{
-	dir = 8;
-	pixel_y = 4
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "hq" = (
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	dir = 1;
 	name = "ship-grade camera";
 	network = list("Chapaev");
 	c_tag = "Sergeants Room"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"hr" = (
-/obj/structure/machinery/light/small{
-	light_power = 0.8;
-	light_range = 4;
-	light_color = "#e7c0a4"
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
@@ -4341,34 +3351,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
-"hv" = (
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	dir = 4;
-	name = "\improper Maintenance Tunnels"
-	},
-/obj/structure/machinery/door/airlock/upp_utility{
-	name = "\improper Maintenance Access";
-	dir = 8;
-	req_one_access_txt = "230"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/space/basic,
-/area/golden_arrow/dorms)
-"hw" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4;
-	icon_state = "exposed01-supply"
-	},
-/obj/structure/disposalpipe/segment,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/dorms)
 "hx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -4381,23 +3363,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/briefing)
-"hy" = (
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/obj/structure/prop{
-	desc = "A sturdy metal ladder that leads to lower deck of Chapaev which houses CIC and Brig. The hatch is closed, for now.";
-	icon_state = "ladder11";
-	name = "ladder"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/dorms)
 "hz" = (
 /obj/structure/machinery/disposal{
 	density = 0;
@@ -4440,21 +3405,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/canteen)
-"hE" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#832121"
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 4;
-	icon_state = "pipe-c"
-	},
-/obj/structure/sign/safety/cryo{
-	pixel_y = 31;
-	pixel_x = 13
-	},
-/turf/open/space/basic,
-/area/golden_arrow/dorms)
 "hF" = (
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
@@ -4497,79 +3447,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
-"hI" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/junction{
-	dir = 8
-	},
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice2";
-	pixel_x = 16;
-	pixel_y = 16
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/dorms)
-"hJ" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/reagent_container/food/drinks/coffeecup{
-	pixel_x = 8;
-	pixel_y = -1
-	},
-/obj/item/prop/magazine/book/warisaracket{
-	color = "#8B9490";
-	desc = "A gift from a sympathetic American marine. An old, well-worn copy of War is a Racket by United States Marine Corps legend, Major General Smedley Butler. In short, the book outlines the function the historical Marine Corps had in establishing and enforcing American global hegemony.";
-	icon_state = "book_green";
-	layer = 2.9;
-	pixel_x = -2
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen";
-	layer = 3
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
-	light_color = "#e7c0a4";
-	light_range = 4;
-	anchored = 1;
-	pixel_y = 15;
-	pixel_x = 2;
-	on = 1;
-	layer = 5
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"hK" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/paper_bin{
-	pixel_y = 6;
-	pixel_x = 3
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen";
-	layer = 3
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
-	light_color = "#e7c0a4";
-	light_range = 4;
-	anchored = 1;
-	pixel_y = -9;
-	pixel_x = 5;
-	on = 1
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "hL" = (
 /obj/structure/machinery/door/airlock/upp_utility{
 	dir = 1;
@@ -4579,34 +3456,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/briefing)
-"hM" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/machinery/door/airlock/upp_utility{
-	name = "\improper Maintenance Access";
-	dir = 1;
-	req_one_access_txt = "230"
-	},
-/obj/structure/machinery/door/poddoor/almayer/locked{
-	name = "\improper Maintenance Tunnels"
-	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/dorms)
-"hN" = (
-/obj/structure/curtain/red,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 13
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo";
-	pixel_x = 1
-	},
-/turf/open/space/basic,
-/area/space)
 "hO" = (
 /obj/structure/machinery/light/small{
 	dir = 1;
@@ -4671,29 +3520,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"hU" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 4;
-	pixel_x = 2
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"hV" = (
-/obj/structure/machinery/door/airlock/upp_grey{
-	name = "\improper Platoon Sergeant's Bunk";
-	req_one_access_txt = "240"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"hW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 8;
-	pixel_x = -2
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "hX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -4807,51 +3633,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
-"ih" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/structure/machinery/computer/secure_data/noaccess{
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"ii" = (
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0;
-	opacity = 0
-	},
-/obj/item/book/manual/engineering_hacking,
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"ij" = (
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0
-	},
-/obj/item/book/manual/engineering_hacking,
-/obj/item/book/manual/evaguide,
-/obj/item/book/manual/surgery{
-	icon_state = "book_tan";
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"ik" = (
-/obj/structure/foamed_metal/iron,
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/platoon_sergeant)
 "il" = (
 /obj/structure/machinery/power/terminal{
 	dir = 8
@@ -4930,28 +3711,6 @@
 	},
 /obj/structure/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"iw" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/tool/hand_labeler{
-	pixel_x = -6;
-	pixel_y = 12
-	},
-/obj/item/prop/tableflag/upp{
-	pixel_x = 7;
-	pixel_y = 12
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/item/folder/red{
-	pixel_y = -1;
-	pixel_x = 3
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
 "ix" = (
@@ -5231,76 +3990,11 @@
 "iY" = (
 /turf/closed/wall/upp_wall/grey/hull,
 /area/golden_arrow/platoon_commander_rooms)
-"iZ" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/computer/secure_data/noaccess{
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "ja" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"jb" = (
-/obj/structure/pipes/vents/pump{
-	dir = 4
-	},
-/obj/item/book/codebook/upp{
-	icon_state = "book_green";
-	pixel_y = 4;
-	pixel_x = -1
-	},
-/obj/item/prop/magazine/book/uppbooklet{
-	pixel_x = 4;
-	pixel_y = 3
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
-"jc" = (
-/obj/item/clipboard{
-	pixel_x = -17;
-	pixel_y = 3
-	},
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/item/device/flashlight/lamp{
-	pixel_x = 2;
-	pixel_y = 11;
-	layer = 5;
-	anchored = 1
-	},
-/obj/item/storage/fancy/cigar/matchbook/brown{
-	pixel_x = -4
-	},
-/obj/item/prop{
-	icon = 'icons/obj/items/drinks.dmi';
-	icon_state = "teacup";
-	name = "teacup";
-	desc = "A small chipped teacup.";
-	pixel_x = 6
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
 "jd" = (
 /obj/structure/machinery/light/small,
 /turf/open/floor/strata/floor3,
@@ -5326,23 +4020,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/platoon_commander_rooms)
-"jg" = (
-/obj/item/storage/belt/gun/type47/np92,
-/obj/structure/closet/secure_closet/guncabinet{
-	req_one_access_txt = "240";
-	req_access = null;
-	can_block_movement = 0;
-	pixel_y = 15;
-	name = "equipment locker";
-	pixel_x = -5
-	},
-/obj/item/storage/backpack/lightpack/upp,
-/obj/item/tool/crew_monitor{
-	faction = "UPP"
-	},
-/obj/item/clothing/suit/marine/faction/UPP/jacket,
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
 "jh" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/pipes/standard/simple/hidden/supply,
@@ -5355,13 +4032,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"ji" = (
-/obj/structure/machinery/door/airlock/upp_grey{
-	name = "\improper Platoon Commander's Office";
-	req_one_access_txt = "241"
-	},
-/turf/open/floor/corsat/marked,
-/area/golden_arrow/platoon_commander_rooms)
 "jj" = (
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/platoon_commander_rooms)
@@ -5383,28 +4053,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
-"jn" = (
-/obj/structure/machinery/door/airlock/upp_grey{
-	name = "\improper Bathroom";
-	dir = 1
-	},
-/turf/open/floor/corsat/marked,
-/area/golden_arrow/platoon_commander_rooms)
-"jo" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/paper_bin{
-	pixel_y = 5;
-	pixel_x = -3
-	},
-/obj/item/folder/green{
-	pixel_x = -6
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jp" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/small{
@@ -5453,26 +4101,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
-"jt" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/obj/structure/mirror{
-	pixel_x = 28
-	},
-/obj/item/tool/soap/syndie{
-	name = "LIFEBUOY soap";
-	desc = "A LIFEBUOY brand soap bar. Tastes like guilt.";
-	pixel_y = 8;
-	pixel_x = 12
-	},
-/obj/item/weapon/straight_razor{
-	pixel_x = 11;
-	pixel_y = -7
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/platoon_commander_rooms)
 "ju" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 5
@@ -5480,20 +4108,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/engineering)
-"jv" = (
-/obj/structure/machinery/door_control{
-	name = "Equipment Room Observation Control";
-	id = "pltco";
-	pixel_x = -22;
-	pixel_y = 8
-	},
-/obj/structure/machinery/light/small{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jw" = (
 /obj/structure/bed/chair/comfy,
 /turf/open/floor/strata/multi_tiles,
@@ -5508,18 +4122,6 @@
 "jy" = (
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/briefing)
-"jz" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jA" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -5541,16 +4143,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/engineering)
-"jC" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/faxmachine{
-	name = "\improper UPP Military Fax Machine";
-	network = "UPP Encrypted Network";
-	target_department = "UPP High Command";
-	pixel_y = 8
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jD" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/shuttle/dropship/flight/remote_control{
@@ -5887,16 +4479,6 @@
 	pixel_x = 3
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
-"kc" = (
-/obj/structure/machinery/light/double{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5
-	},
-/obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/prep_hallway)
 "kd" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -6379,30 +4961,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/engineering)
-"lb" = (
-/obj/structure/closet/secure_closet{
-	name = "machinegunner locker";
-	req_access_txt = "243;238";
-	pixel_x = -8;
-	can_block_movement = 0
-	},
-/obj/structure/machinery/light/double{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5;
-	dir = 8
-	},
-/obj/item/weapon/gun/pkp/iff{
-	current_mag = null
-	},
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/clothing/suit/marine/smartgunner/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lc" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -6441,24 +4999,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/engineering)
-"lj" = (
-/obj/structure/closet/secure_closet{
-	name = "machinegunner locker";
-	req_access_txt = "243;237";
-	pixel_x = -8;
-	can_block_movement = 0
-	},
-/obj/item/weapon/gun/pkp/iff{
-	current_mag = null
-	},
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/clothing/suit/marine/smartgunner/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -6544,13 +5084,6 @@
 /area/golden_arrow/engineering)
 "lr" = (
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/medical)
-"ls" = (
-/obj/structure/surface/rack{
-	color = "#8B9490"
-	},
-/obj/item/roller,
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
 "lt" = (
 /obj/structure/machinery/light/double{
@@ -6676,46 +5209,6 @@
 /obj/structure/window/framed/upp/grey,
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/medical)
-"lE" = (
-/obj/structure/machinery/light/double{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5;
-	dir = 8
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/structure/closet/crate/secure/upp,
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -6776,25 +5269,6 @@
 "lK" = (
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/medical)
-"lL" = (
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/structure/closet/crate/secure/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lM" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/upp,
 /turf/open/floor/strata/floor3/east,
@@ -6818,15 +5292,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/engineering)
-"lP" = (
-/obj/structure/surface/rack{
-	color = "#8B9490"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/smoke,
-/obj/item/storage/box/packet/high_explosive/upp/smoke,
-/obj/item/storage/box/packet/high_explosive/upp/smoke,
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/prep_hallway)
 "lQ" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -7560,30 +6025,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/hangar)
-"nz" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/item/clipboard{
-	pixel_x = -6;
-	pixel_y = -1
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen"
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
-	light_color = "#e7c0a4";
-	light_range = 4;
-	anchored = 1;
-	pixel_y = 14;
-	pixel_x = 7;
-	on = 1;
-	layer = 5
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/hangar)
 "nA" = (
 /obj/structure/surface/rack{
 	color = "#8B9490"
@@ -7986,12 +6427,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
-"oB" = (
-/obj/structure/bed/chair/comfy{
-	dir = 8
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "oC" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -9551,14 +7986,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/platoon_commander_rooms)
-"sO" = (
-/obj/structure/machinery/shower{
-	dir = 8
-	},
-/obj/structure/machinery/door/window/westleft,
-/obj/structure/window/reinforced/tinted/frosted,
-/turf/open/floor/almayer/dark_sterile,
-/area/golden_arrow/platoon_commander_rooms)
 "sV" = (
 /obj/structure/machinery/power/reactor{
 	name = "\improper U.R.A.L.O.I.D. thermonuclear generator";
@@ -9689,18 +8116,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/hangar)
-"xL" = (
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0;
-	opacity = 0
-	},
-/obj/item/book/manual/evaguide,
-/obj/item/book/manual/engineering_hacking,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "yb" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -9725,14 +8140,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/hangar)
-"ze" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/briefing)
 "zs" = (
 /obj/structure/sink{
 	dir = 4;
@@ -9793,12 +8200,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"Bn" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/hangar)
 "CN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -9840,13 +8241,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/dorms)
-"Go" = (
-/obj/structure/bed/chair/comfy/beige{
-	dir = 8;
-	pixel_x = -7
-	},
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
 "GC" = (
 /obj/structure/machinery/light/double{
 	dir = 4;
@@ -9915,20 +8309,12 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"Kl" = (
-/obj/structure/pipes/vents/pump,
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "Lk" = (
 /obj/structure/machinery/power/reactor{
 	name = "\improper U.R.A.L.O.I.D. thermonuclear generator";
 	desc = "ProgMash produced generator made for heavy use by frontier colonies."
 	},
 /turf/open/floor/almayer,
-/area/golden_arrow/engineering)
-"LP" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
 "Mi" = (
 /obj/structure/surface/table/almayer{
@@ -9955,13 +8341,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/dorms)
-"Nv" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "Om" = (
 /turf/closed/wall/upp_wall/grey,
 /area/golden_arrow/platoon_sergeant)
@@ -9982,9 +8361,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
-"PO" = (
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "PV" = (
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
@@ -9995,13 +8371,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
-"Sj" = (
-/obj/structure/machinery/door_control{
-	id = "chapaev_engi";
-	pixel_y = -23
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
 "SJ" = (
 /obj/structure/machinery/iv_drip,
 /turf/open/floor/strata/floor2,
@@ -10098,16 +8467,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/hangar)
-"ZK" = (
-/obj/structure/phone_base/upp_net{
-	name = "Platoon Leader Telephone";
-	phone_category = "Chapaev";
-	phone_id = "Platoon Sergeant's Dorm";
-	dir = 4;
-	pixel_x = -16
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "ZS" = (
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
@@ -16424,14 +14783,14 @@ mT
 nf
 mZ
 DL
-mV
-mV
-mV
-dG
-dC
-dB
-dq
-df
+DL
+DL
+kK
+po
+mq
+hT
+ml
+tU
 lT
 Bf
 kK
@@ -16576,14 +14935,14 @@ mR
 ni
 nb
 mR
-eZ
-ev
-mV
-mV
-mV
-mV
-mV
-mV
+mR
+mJ
+kK
+kK
+kK
+kK
+kK
+kK
 lW
 kK
 kK
@@ -16728,14 +15087,14 @@ Uj
 nf
 mZ
 DL
-mV
-mV
-mV
-dw
-dw
-dm
-dw
-dm
+DL
+DL
+mG
+kM
+kM
+kM
+kM
+kM
 lY
 kM
 kK
@@ -16880,14 +15239,14 @@ mG
 mG
 mG
 DL
-mV
-mV
-mV
-dw
-mV
-mV
-mV
-mV
+DL
+DL
+mG
+kM
+kN
+kN
+kN
+kN
 lZ
 kM
 kM
@@ -17026,23 +15385,23 @@ mG
 PG
 xa
 xa
-fL
+xa
+Jf
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
-fy
 mV
-mV
-mV
-mV
-mV
-dw
-mV
-mV
-mV
-mV
-CN
-mV
-mV
+lZ
+kN
+kN
 kN
 kN
 kN
@@ -17177,22 +15536,22 @@ ob
 mG
 yK
 uU
-mV
-fM
+uU
+TV
 fC
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
-fB
 mV
 mV
-mV
-mV
-mV
-dw
-mV
-mV
-mV
-mV
-dd
+CN
 mV
 mV
 mV
@@ -17315,10 +15674,10 @@ mV
 mV
 mV
 mV
-mV
-dm
-mV
-hk
+nk
+nl
+mG
+oi
 oO
 Jf
 oi
@@ -17326,25 +15685,25 @@ ox
 op
 om
 oh
+mG
+aQ
+gR
+uU
+uU
+nA
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
-gF
-fY
 mV
 mV
-fG
-mV
-fy
-mV
-mV
-mV
-mV
-mV
-dw
-mV
-mV
-mV
-mV
-dd
+CN
 mV
 mV
 mV
@@ -17467,32 +15826,32 @@ mV
 mV
 mV
 mV
-mV
-dw
-mV
-mV
-mV
-mV
-hk
-hN
-mV
-hk
-hk
-mV
+nk
+nl
+mG
+mG
+Jf
+Jf
+oi
+oy
+Jf
+oi
+oi
+mG
 gG
-gc
-mV
-mV
-fK
-mV
-fy
-mV
-mV
-mV
-mV
-mV
-dw
-mV
+Mi
+uU
+uU
+nB
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
@@ -17619,32 +15978,32 @@ mV
 mV
 mV
 mV
-mV
-dw
-dm
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-gd
-fU
-fT
-mV
-mV
-fB
-mV
-mV
-mV
-mV
-mV
-dw
-mV
+nk
+nl
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+nn
+nQ
+nM
+mG
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
@@ -17771,32 +16130,32 @@ mV
 mV
 mV
 mV
-mV
-mV
-dw
-dw
-dm
-dw
-dw
-dm
-dw
-dm
-dw
-dm
-mV
-mV
-mV
-mV
-mV
-mV
-fB
-eG
-fq
-eG
-eG
-mV
-dw
-mV
+nk
+nk
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+nd
+mQ
+mQ
+mQ
+mQ
+mE
+kM
+kN
 mV
 mV
 mV
@@ -17924,31 +16283,31 @@ mV
 mV
 mV
 mV
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+mE
 mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-dw
-dw
-dw
-dm
-dw
-dw
-dw
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+kN
+kN
+kN
 mV
 mV
 mV
@@ -18085,15 +16444,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+mE
 mV
 mV
 mV
@@ -19753,15 +18112,15 @@ mV
 mV
 mV
 mV
-iR
-iR
-iR
-iR
-iR
-iR
-iR
-iR
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19905,15 +18264,15 @@ mV
 mV
 mV
 mV
-iR
-ea
-fx
-fx
-fx
-fx
-fx
-fx
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20057,15 +18416,15 @@ mV
 mV
 mV
 mV
-iR
-ea
-ec
-ec
-hv
-ec
-ec
-ea
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20204,20 +18563,20 @@ mV
 mV
 mV
 mV
-yH
-yH
-yH
-yH
-yH
-yH
-gZ
-ec
-hE
-hw
-gW
-ec
-ea
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20356,32 +18715,32 @@ mV
 mV
 mV
 mV
-yH
-ik
-ik
-gZ
-ik
-gZ
-gZ
-hM
-hI
-hy
-gp
-gO
-fx
-iR
-iR
-iR
 mV
 mV
-iR
-iR
-iR
 mV
-eb
-bD
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20473,15 +18832,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-mE
 mV
 mV
 mV
@@ -20508,32 +18858,41 @@ mV
 mV
 mV
 mV
-yH
-gZ
-Om
-Om
-Om
-Om
-Om
-ec
-Hu
-gI
-Wu
-ec
-fx
-fx
-ea
-iR
 mV
 mV
-iR
-ea
-qR
-eR
-ed
-qR
-dD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20616,31 +18975,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mE
-mV
-mV
-mV
-mV
-mE
-jS
-jS
 mV
 mV
 mV
@@ -20660,32 +18994,57 @@ mV
 mV
 mV
 mV
-yH
-gZ
-Om
-ih
-gy
-PO
-Om
-ec
-ec
-gJ
-ec
-ec
-ec
-ec
-ea
-iR
 mV
 mV
-iR
-ea
-cE
-dx
-ee
-cE
-dD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20767,32 +19126,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-nd
-mI
-mI
-mI
-mI
-mE
-jT
-jS
 mV
 mV
 mV
@@ -20811,33 +19144,59 @@ mV
 mV
 mV
 mV
-yH
-yH
-gZ
-Om
-oB
-Kl
-gt
-ZK
-ec
-gS
-eg
-eg
-fh
-ge
-ec
-ea
-iR
 mV
 mV
-iR
-fx
-cE
-jL
-ei
-cE
-dD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20919,32 +19278,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nR
-nN
-nE
-mG
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jS
 mV
 mV
 mV
@@ -20963,33 +19296,59 @@ mV
 mV
 mV
 mV
-yH
-gZ
-gZ
-Om
-ii
-hU
-hJ
-Nv
-ec
-gT
-eg
-gq
-PV
-gv
-ec
-ea
-iR
 mV
 mV
-iR
-ea
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21071,32 +19430,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-Jf
-dg
-oi
-oq
-dg
-oi
-nW
-mG
-Io
-uU
-of
-uU
-nn
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jS
 mV
 mV
 mV
@@ -21112,36 +19445,62 @@ mV
 mV
 mV
 mV
-iY
-iY
-iY
-iY
-iK
-Om
-Om
-Om
-hV
-Om
-Om
-ec
-gU
-eg
-gr
-fR
-fR
-ec
-ea
-iR
-iR
-iR
-iR
-ea
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21223,77 +19582,77 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-oi
-oL
-Jf
-oi
-or
-Jf
-oi
-nX
-mG
-YE
-uU
-uU
-tu
-no
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-iY
-iY
-iK
-iK
-iK
-iK
-Om
-Om
-ij
-hW
-gt
-PO
-ec
-gV
-eg
-eg
-gh
-fS
-ec
-ea
-ea
-ea
-ea
-ea
-ea
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21371,81 +19730,81 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-oP
-oM
-oJ
-oz
-ou
-on
-oi
-nY
-mG
-nU
-uU
-uU
-gR
-mK
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-iK
-iK
-iK
-iM
-iM
-iM
-Om
-iv
-in
-hX
-gt
-ho
-ec
-ec
-gK
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21523,81 +19882,81 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-oL
-oi
-vp
-oC
-vp
-Jf
-Jf
-Jf
-mG
-Al
-by
-On
-On
-np
-mG
-ne
-DL
-DL
-DL
-DL
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-iM
-iM
-iM
-iM
-iZ
-xL
-Om
-IT
-gt
-hY
-hK
-hp
-ec
-gs
-eg
-gs
-ec
-ea
-ec
-eP
-ec
-eP
-ec
-ew
-ef
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21675,82 +20034,82 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nL
-oD
-nL
-mG
-mG
-mG
-mG
-mG
-nF
-nF
-nF
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-jU
-jU
-mp
-mm
-mh
-ma
-lL
-lE
-jU
-lj
-lb
-kP
-jU
-kt
-ki
-jU
-jU
-jz
-jF
-iM
-jg
-Go
-YU
-Om
-wr
-gt
-hY
-gt
-hq
-ec
-gu
-eg
-gu
-ec
-ec
-ec
-eQ
-ec
-eQ
-ec
-ex
-eg
-cE
-jL
-de
-cE
-bE
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21827,82 +20186,82 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-DL
-tS
-DL
-DL
-DL
-nq
-yb
-oE
-yb
-DL
-tS
-DL
-DL
-DL
-yb
-yb
-yb
-nq
-tS
-nf
-mZ
-DL
-DL
-DL
-jU
-jU
-lF
-lF
-lF
-lF
-lF
-lF
-jU
-lk
-kj
-kj
-kD
-kj
-kj
-jW
-jU
-sO
-jt
-jn
-jF
-jb
-YU
-Om
-iw
-io
-hZ
-gt
-hr
-ec
-gu
-eg
-gw
-fV
-fV
-fz
-fp
-fc
-ey
-ey
-ey
-eh
-cE
-jL
-de
-cE
-bE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -21975,97 +20334,97 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-mT
-oK
-nH
-mR
-mR
-nH
-nH
-ny
-mR
-mR
-nH
-nH
-nH
-mR
-mR
-nH
-nH
-ns
-mR
-ni
-nb
-mR
-mR
-mJ
-jU
-mr
-uF
-uF
-uF
-uF
-uF
-uF
-lt
-uF
-uF
-uF
-kF
-uF
-uF
-jX
-jU
-iM
-iM
-iM
-jF
-jc
-bl
-Om
-IT
-iq
-ia
-gt
-hs
-ec
-gX
-eg
-ej
-gi
-fW
-ec
-fr
-fd
-zs
-ec
-ez
-ej
-cE
-dy
-di
-cE
-cE
-bE
-bD
 mV
 mV
 mV
-bD
-bD
-bD
-bD
-bD
-bD
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -22127,98 +20486,98 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nu
-mT
-nf
-mZ
-DL
-DL
-DL
-jU
-mt
-kk
-kf
-kk
-kk
-kf
-uF
-lu
-ll
-lc
-kG
-kG
-ku
-kk
-jY
-jV
-jC
-jv
-iM
-ji
-iM
-iM
-Om
-Om
-Om
-ib
-Om
-Om
-ec
-ec
-ec
-gx
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ek
-cE
-dz
-db
-cS
-cE
-bE
-bD
 mV
 mV
-bD
-bD
-bE
-bE
-bE
-bE
-bE
-bE
-bD
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -22279,99 +20638,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-DL
-jU
-mu
-kk
-ld
-kQ
-kH
-lM
-lG
-lw
-uF
-ld
-kQ
-kH
-kv
-kl
-ka
-jV
-jD
-YU
-jF
-jj
-jd
-iM
-cE
-eK
-ZS
-ic
-hL
-hu
-eK
-gY
-ZS
-el
-ZS
-eK
-fA
-fs
-fe
-ZS
-eK
-eA
-el
-dQ
-dA
-de
-cU
-cE
-bE
-bD
-bD
-bD
-bD
-bE
-bE
-bF
-bF
-bF
-bF
-bE
-bE
-aa
-aa
 mV
 mV
 mV
@@ -22408,15 +20674,108 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -22431,100 +20790,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qD
-qk
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-mF
-yb
-yb
-yb
-yb
-yb
-yb
-nO
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-mL
-jU
-mv
-mb
-lN
-mb
-mb
-lN
-lH
-lx
-uF
-kf
-kk
-kk
-kw
-km
-jY
-jU
-jI
-jw
-jo
-jk
-jF
-iM
-iE
-dE
-dE
-id
-cE
-hx
-dE
-ha
-dR
-em
-dE
-dE
-fD
-cF
-dR
-eS
-dE
-eB
-em
-dR
-dE
-dj
-cV
-cF
-bE
-bE
-bE
-bE
-bE
-bE
-bF
-bF
-bI
-bI
-bF
-bF
-bE
-ac
-aa
-aa
 mV
 mV
 mV
@@ -22555,25 +20820,119 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-ac
-ac
-ac
-ac
-ac
-ac
-ab
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (83,1,1) = {"
@@ -22583,104 +20942,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-DL
-mG
-DL
-DL
-DL
-jU
-mw
-uF
-uF
-uF
-mc
-lP
-lI
-ly
-lm
-le
-kR
-uF
-kx
-uF
-kb
-jU
-jJ
-YU
-jp
-jF
-jf
-iN
-iF
-ix
-rt
-ie
-ft
-ft
-ft
-ft
-ft
-ft
-ft
-fX
-ft
-ft
-ff
-eT
-eL
-eC
-en
-dS
-dF
-dk
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bZ
-bT
-bR
-bO
-bF
-bF
-ac
-ac
-aa
-aa
-aa
-aa
-aa
 mV
 mV
 mV
@@ -22707,25 +20968,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-ac
-ac
-ac
-ac
-ac
-af
-af
-af
-af
-af
-ab
-ac
-ac
-ac
-ac
-ab
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (84,1,1) = {"
@@ -22735,104 +21094,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-mL
-mG
-mG
-mG
-mG
-jU
-jU
-jU
-mi
-mi
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-kI
-ky
-jU
-jU
-jU
-iM
-jx
-iM
-iM
-iM
-iM
-cE
-iz
-cE
-ft
-ft
-hz
-hh
-hb
-gL
-gz
-gj
-fZ
-fE
-ft
-fg
-eU
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-cG
-cv
-cA
-cv
-cp
-bF
-bF
-bI
-ca
-zN
-zN
-bJ
-bI
-bF
-ac
-ac
-ac
-ac
-ac
-ac
-aa
 mV
 mV
 mV
@@ -22859,25 +21120,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-af
-af
-af
-af
-aG
-az
-au
-af
-af
-af
-af
-af
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (85,1,1) = {"
@@ -22887,104 +21246,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-nj
-mG
-mW
-mS
-mM
-jU
-mx
-kn
-mn
-uF
-md
-kf
-kf
-jU
-ln
-lf
-kS
-uF
-kA
-kn
-kc
-jU
-jK
-jy
-UG
-oH
-iQ
-iQ
-iG
-oH
-ir
-ft
-hO
-hA
-hi
-hc
-gM
-gA
-gj
-vG
-fF
-ft
-fj
-eV
-bF
-eD
-eo
-dT
-dH
-dl
-bF
-cq
-cq
-cB
-cq
-cq
-bF
-ci
-cg
-zN
-bP
-bP
-zN
-bJ
-bF
-af
-af
-br
-bn
-af
-ac
-aa
 mV
 mV
 mV
@@ -23011,25 +21272,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-aY
-aS
-af
-aO
-aH
-aC
-av
-af
-sV
-ar
-ao
-ag
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (86,1,1) = {"
@@ -23039,104 +21398,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-nf
-nc
-mX
-mT
-mN
-mH
-my
-kL
-uF
-uF
-uF
-kL
-kL
-lz
-kL
-kL
-uF
-uF
-kx
-kL
-kd
-jU
-ZS
-ZS
-ze
-jl
-oH
-oH
-oH
-oH
-jL
-ft
-hP
-hB
-hj
-hd
-gB
-gB
-gk
-ga
-fH
-fu
-fk
-eW
-eM
-eE
-zN
-dU
-dI
-dn
-cW
-cM
-cw
-cC
-cw
-cr
-cl
-zN
-zN
-bP
-bU
-bP
-bP
-zN
-bG
-af
-bA
-bt
-bo
-af
-ac
-aa
 mV
 mV
 mV
@@ -23163,25 +21424,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-bf
-ba
-aV
-af
-YA
-aI
-wO
-wO
-af
-at
-ah
-ap
-ah
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (87,1,1) = {"
@@ -23191,104 +21550,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-SP
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-nJ
-nw
-nm
-nf
-nc
-mX
-mT
-mN
-mH
-mz
-uF
-uF
-uF
-uF
-uF
-uF
-lx
-uF
-uF
-uF
-uF
-kx
-uF
-ke
-jU
-jN
-ix
-jr
-uM
-ix
-iS
-ix
-oH
-it
-ft
-hQ
-hB
-fN
-he
-vz
-gC
-gl
-gb
-fI
-ft
-fl
-eX
-bF
-eF
-bK
-dV
-dJ
-do
-bF
-cO
-bF
-bF
-bF
-ct
-cn
-bK
-bK
-cd
-bV
-bK
-bK
-bK
-bH
-aR
-bB
-bv
-bp
-bm
-bk
-bj
 mV
 mV
 mV
@@ -23315,25 +21576,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-bi
-bg
-bb
-aW
-aR
-LP
-aK
-aD
-aw
-aF
-wO
-wO
-wO
-wO
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (88,1,1) = {"
@@ -23343,104 +21702,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-nf
-nc
-mX
-mT
-mN
-mH
-my
-kL
-uF
-uF
-uF
-kL
-kL
-lB
-kL
-kL
-uF
-uF
-kx
-kL
-kf
-jU
-ZS
-ZS
-Yz
-jl
-oH
-oH
-oH
-oH
-jL
-ft
-hR
-hC
-hl
-hf
-gD
-gD
-gm
-gf
-fJ
-fv
-fm
-fa
-eN
-eH
-zN
-fi
-eY
-et
-dK
-cP
-cy
-cy
-cy
-cq
-co
-zN
-zN
-bP
-bX
-bP
-bP
-zN
-bG
-af
-bC
-bw
-bq
-af
-ac
-aa
 mV
 mV
 mV
@@ -23467,25 +21728,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-bh
-bc
-aX
-af
-wO
-aL
-wO
-Sj
-af
-at
-al
-al
-al
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (89,1,1) = {"
@@ -23495,104 +21854,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-DL
-mG
-mY
-mU
-mP
-jU
-kg
-kf
-mn
-mj
-kg
-kf
-kf
-jU
-kf
-kf
-kg
-uF
-kA
-kf
-kg
-jU
-jO
-jy
-js
-rt
-oH
-oH
-iH
-oH
-jL
-ft
-hS
-hD
-hm
-hc
-gN
-gE
-gj
-vG
-fN
-ft
-fn
-eU
-bF
-eI
-ep
-dX
-dM
-dr
-bF
-cq
-cq
-cq
-cq
-cq
-bF
-cj
-ch
-zN
-bP
-bP
-zN
-bL
-bF
-af
-af
-bz
-af
-af
-ac
-aa
 mV
 mV
 mV
@@ -23619,25 +21880,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-bd
-nD
-af
-ug
-aM
-wO
-wO
-af
-Fg
-as
-aq
-an
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (90,1,1) = {"
@@ -23647,104 +22006,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-mL
-mG
-mG
-mG
-mG
-kK
-kK
-mo
-mo
-kK
-kK
-lJ
-lJ
-kK
-kK
-lg
-kK
-kK
-kB
-ko
-cE
-cE
-cE
-cE
-cE
-iV
-iV
-iV
-cE
-iB
-iu
-ft
-ft
-hF
-hn
-hg
-gP
-gH
-gj
-gg
-fO
-ft
-fg
-eU
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-cQ
-cz
-cD
-cz
-cu
-bF
-bF
-bM
-ce
-zN
-zN
-bL
-bM
-bF
-ac
-ac
-ac
-ac
-ac
-ac
-aa
 mV
 mV
 mV
@@ -23771,25 +22032,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-af
-af
-af
-af
-aN
-aE
-ay
-af
-af
-af
-af
-af
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (91,1,1) = {"
@@ -23799,104 +22158,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-DL
-mG
-DL
-DL
-mL
-kK
-mA
-DH
-DH
-bx
-me
-DH
-DH
-kK
-lp
-vC
-kT
-kK
-iD
-dE
-dR
-dR
-jQ
-dE
-dE
-dR
-dR
-dE
-iJ
-iC
-rt
-if
-ft
-ft
-ft
-ft
-ft
-ft
-ft
-fX
-ft
-ft
-ff
-eT
-eL
-eJ
-eq
-dY
-dN
-ds
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-cf
-bY
-bS
-bQ
-bF
-bF
-ac
-ac
-aa
-aa
-aa
-aa
-aa
 mV
 mV
 mV
@@ -23923,25 +22184,123 @@ mV
 mV
 mV
 mV
-aa
-ab
-ac
-ac
-ac
-ac
-ab
-af
-af
-af
-af
-af
-ab
-ac
-ac
-ac
-ac
-ab
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (92,1,1) = {"
@@ -23951,100 +22310,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qH
-ql
-rx
-pH
-rx
-rx
-rx
-rx
-rx
-rx
-rx
-rx
-Za
-rx
-rx
-rx
-rx
-rx
-rx
-nP
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-DL
-kK
-mB
-lK
-lK
-ht
-mf
-lQ
-lK
-lC
-lr
-lh
-kV
-kK
-kC
-ZS
-ZS
-ZS
-jR
-ZS
-ZS
-ZS
-ix
-iW
-cE
-iD
-dE
-ig
-cE
-hG
-dE
-dE
-dR
-dR
-gn
-dE
-fP
-cE
-rt
-fb
-dO
-dO
-er
-tO
-dO
-dt
-cS
-cE
-bE
-bE
-bE
-bE
-bE
-bE
-bF
-bF
-bM
-bM
-bF
-bF
-bE
-ac
-aa
-aa
 mV
 mV
 mV
@@ -24075,25 +22340,119 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-ac
-ac
-ac
-ac
-ac
-ac
-ab
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (93,1,1) = {"
@@ -24103,99 +22462,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-DL
-kK
-mD
-lK
-aU
-lK
-GI
-lS
-Kg
-lD
-SJ
-vC
-kW
-kK
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-eO
-ZS
-fQ
-fw
-hH
-eO
-ZS
-ZS
-ZS
-es
-eO
-fQ
-fw
-fo
-ER
-eO
-ZS
-es
-dZ
-dA
-du
-cY
-cE
-bE
-bD
-bD
-bD
-bD
-bE
-bE
-bF
-bF
-bF
-bF
-bE
-bE
-aa
-aa
 mV
 mV
 mV
@@ -24232,15 +22498,108 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24255,98 +22614,98 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nu
-mT
-nf
-mZ
-DL
-DL
-DL
-kK
-po
-mq
-hT
-ml
-tU
-lT
-Bf
-kK
-kX
-kX
-kX
-kK
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-dP
-dv
-cV
-cE
-bE
-bD
 mV
 mV
-bD
-bD
-bE
-bE
-bE
-bE
-bE
-bE
-bE
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24407,98 +22766,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-mT
-mT
-mT
-DL
-DL
-mT
-oK
-ns
-mR
-mR
-nH
-nH
-nH
-mR
-mR
-nH
-nH
-ny
-mR
-ni
-nb
-mR
-mR
-mJ
-kK
-kK
-kK
-kK
-kK
-kK
-lW
-kK
-kK
-ls
-GC
-kY
-kK
-eu
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-cE
-wW
-Bc
-cE
-cE
-bE
-bD
-mV
-mV
-mV
-bD
-bD
-bD
-bD
-bD
-bD
-bD
-bD
-aa
 mV
 mV
 mV
@@ -24543,11 +22810,103 @@ mV
 mV
 mV
 mV
-Lk
-Lk
-Lk
-Lk
-Lk
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24563,82 +22922,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-DL
-Uj
-DL
-DL
-DL
-wd
-rx
-oF
-rx
-DL
-Uj
-DL
-DL
-nV
-rx
-rx
-rx
-wd
-Uj
-nf
-mZ
-DL
-DL
-DL
-mG
-kM
-kM
-kM
-kM
-kM
-lY
-kM
-kK
-kK
-kK
-kK
-kK
-eu
-qR
-mV
-mV
-mV
-mV
-mV
-mV
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-eu
-cE
-dx
-db
-cE
-bE
-bE
-bD
 mV
 mV
 mV
@@ -24695,11 +22978,87 @@ mV
 mV
 mV
 mV
-Lk
-cc
-Lk
-Lk
-Lk
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24715,48 +23074,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nL
-oD
-nL
-mG
-mG
-mG
-mG
-mG
-nL
-nL
-nL
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-mG
-kM
-kN
-kN
-kN
-kN
-lZ
-kM
-kM
-kM
-kM
-kM
-kM
-eu
-qR
 mV
 mV
 mV
@@ -24782,15 +23099,6 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
-bD
 mV
 mV
 mV
@@ -24847,11 +23155,62 @@ mV
 mV
 mV
 mV
-Lk
-Lk
-Lk
-Lk
-Lk
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24867,48 +23226,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-oi
-oq
-AB
-oG
-ov
-Jf
-Jf
-nZ
-mG
-PG
-xa
-xa
-xa
-Jf
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
-mV
-mV
-mV
-lZ
-kN
-kN
-kN
-kN
-kN
-kN
-qR
-qR
 mV
 mV
 mV
@@ -24934,14 +23251,56 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25019,40 +23378,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-oP
-oN
-oJ
-oI
-ow
-oo
-ol
-ob
-mG
-yK
-uU
-uU
-TV
-nz
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
-mV
-mV
-mV
-CN
 mV
 mV
 mV
@@ -25086,14 +23411,48 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25175,36 +23534,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-oi
-oO
-Jf
-oi
-ox
-op
-om
-oh
-mG
-aQ
-gR
-uU
-uU
-nA
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
-mV
-mV
-mV
-CN
 mV
 mV
 mV
@@ -25238,14 +23567,44 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25327,32 +23686,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-Jf
-Jf
-oi
-oy
-Jf
-oi
-oi
-mG
-Bn
-Mi
-uU
-uU
-nB
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
 mV
 mV
 mV
@@ -25390,14 +23723,40 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25479,32 +23838,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nn
-nQ
-nM
-mG
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
 mV
 mV
 mV
@@ -25542,14 +23875,40 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25631,32 +23990,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-nd
-mQ
-mQ
-mQ
-mQ
-mE
-kM
-kN
 mV
 mV
 mV
@@ -25694,14 +24027,40 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25784,31 +24143,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mE
-mV
-mV
-mV
-mV
-kN
-kN
-kN
 mV
 mV
 mV
@@ -25846,14 +24180,39 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -25945,15 +24304,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-mE
 mV
 mV
 mV
@@ -25998,14 +24348,23 @@ mV
 mV
 mV
 mV
-qR
-eu
-qR
-dy
-di
-qR
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -26150,14 +24509,14 @@ mV
 mV
 mV
 mV
-qR
-qR
-da
 mV
-CN
-da
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
