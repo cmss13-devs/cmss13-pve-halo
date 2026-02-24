@@ -621,7 +621,6 @@ const SupplyDrop = (props) => {
           <LabeledControls mb="5px">
             <LabeledControls.Item label="LONGITUDE">
               <NumberInput
-                step={1}
                 value={supplyX}
                 step={1}
                 minValue={-Infinity}
@@ -632,7 +631,6 @@ const SupplyDrop = (props) => {
             </LabeledControls.Item>
             <LabeledControls.Item label="LATITUDE">
               <NumberInput
-                step={1}
                 value={supplyY}
                 step={1}
                 minValue={-Infinity}
@@ -703,7 +701,6 @@ const OrbitalBombardment = (props) => {
           <LabeledControls mb="5px">
             <LabeledControls.Item label="LONGITUDE">
               <NumberInput
-                step={1}
                 value={OBX}
                 step={1}
                 minValue={-Infinity}
@@ -714,7 +711,6 @@ const OrbitalBombardment = (props) => {
             </LabeledControls.Item>
             <LabeledControls.Item label="LATITUDE">
               <NumberInput
-                step={1}
                 value={OBY}
                 step={1}
                 minValue={-Infinity}

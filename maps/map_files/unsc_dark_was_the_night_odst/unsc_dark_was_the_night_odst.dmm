@@ -1606,7 +1606,7 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/dorms)
 "mp" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "mq" = (
@@ -2196,7 +2196,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/upper_hallway)
 "sU" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "sX" = (

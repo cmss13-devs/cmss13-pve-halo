@@ -152,6 +152,11 @@
 	squad = SQUAD_LRRP
 	job = /datum/job/marine/medic/ai/forecon
 
+/obj/effect/landmark/start/marine/medic/odst
+	name = JOB_SQUAD_MEDIC_ODST
+	squad = SQUAD_ODST
+	job = /datum/job/marine/medic/ai/odst
+
 //-- RMC Platoon --//
 //Medical Assistant//
 
