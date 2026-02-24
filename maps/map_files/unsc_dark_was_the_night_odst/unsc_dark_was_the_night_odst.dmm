@@ -1844,7 +1844,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "pc" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "pe" = (
@@ -1995,7 +1995,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qJ" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qL" = (
