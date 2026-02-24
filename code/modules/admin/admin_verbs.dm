@@ -74,6 +74,25 @@ GLOBAL_LIST_INIT(admin_verbs_default, list(
 	/client/proc/cmd_mod_say, /* alternate way of typing asay, no different than cmd_admin_say  */
 	/client/proc/cmd_admin_tacmaps_panel,
 	/client/proc/other_records,
+	/datum/admins/proc/toggle_ai,
+	/datum/admins/proc/toggle_human_ai,
+	/datum/admins/proc/create_human_ai_patrol,
+	/client/proc/open_human_ai_management_panel,
+	/client/proc/open_human_faction_management_panel,
+	/client/proc/open_human_defense_creator_panel,
+	/client/proc/create_human_ai,
+	/client/proc/fortify_room,
+	/client/proc/make_human_ai,
+	/datum/admins/proc/create_human_ai_sniper,
+	/datum/admins/proc/create_human_ai_machinegunner,
+	/client/proc/quick_order_ai_approach,
+	/client/proc/quick_order_ai_hold_position,
+	/client/proc/place_plastic_explosives,
+	/client/proc/toggle_human_ai_tweaks,
+	/client/proc/open_human_squad_spawner_panel,
+	/client/proc/open_human_ai_spawner_panel,
+	/client/proc/toggle_barricade_creation, // Stops cades from being built
+	/client/proc/play_chapter_title,
 	))
 
 
@@ -394,6 +413,7 @@ GLOBAL_LIST_INIT(roundstart_mod_verbs, list(
 		/client/proc/toggle_rappel_menu,
 		/client/proc/toggle_fire_support_menu,
 		/client/proc/admin_marine_announcement,
+		/client/proc/play_chapter_title,
 		/client/proc/screen_alert_menu,
 		/client/proc/enable_fire_support,
 		/client/proc/set_fire_support_points,

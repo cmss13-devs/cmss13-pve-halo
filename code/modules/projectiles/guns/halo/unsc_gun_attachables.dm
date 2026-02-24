@@ -24,7 +24,7 @@
 	max_range = 10
 	attachment_firing_delay = 5
 
-/obj/item/attachable/attached_gun/grenade/New()
+/obj/item/attachable/attached_gun/grenade/ma5c/New()
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
 
@@ -178,7 +178,7 @@
 	slot = "muzzle"
 	size_mod = 0
 
-/obj/item/attachable/ma5c_barrel/New()
+/obj/item/attachable/ma3a_barrel/New()
 	..()
 	scatter_mod = -SCATTER_AMOUNT_TIER_3
 	burst_scatter_mod = -SCATTER_AMOUNT_TIER_3

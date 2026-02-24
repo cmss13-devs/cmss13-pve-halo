@@ -700,10 +700,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/motor_pool/heavy)
 "bG" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad{
-	req_one_access_txt = "9;12;39;40";
-	req_one_access = list()
-	},
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/armory)
 "bH" = (
@@ -10678,10 +10675,7 @@
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/hangar)
 "Ny" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep{
-	req_one_access_txt = "9;12;39;40";
-	req_access = list()
-	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/armory)
 "NA" = (

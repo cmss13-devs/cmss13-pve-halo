@@ -505,7 +505,7 @@
 	name = "SRS99 barrel key"
 	desc = "A key for the SRS99 barrel, used to unlock the mechanism and allow the user to remove the barrel."
 
-/obj/item/weapon/gun/revolver/mateba/attackby(obj/item/subject, mob/user)
+/obj/item/weapon/gun/rifle/sniper/halo/attackby(obj/item/subject, mob/user)
 	if(istype(subject, /obj/item/weapon/mateba_key/halo_sniper) && can_change_barrel)
 		if(attachments["muzzle"])
 			var/obj/item/attachable/attachment = attachments["special"]
@@ -691,7 +691,7 @@
 /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded
 	current_mag = null
 
-/obj/item/weapon/gun/pistol/halo/m6c/set_gun_config_values()
+/obj/item/weapon/gun/pistol/halo/m6c/socom/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_12)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
@@ -700,7 +700,7 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 
-/obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
+/obj/item/weapon/gun/pistol/halo/m6c/socom/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 19, "muzzle_y" = 15,"rail_x" = 16, "rail_y" = 16, "under_x" = 19, "under_y" = 16, "stock_x" = 0, "stock_y" = 0)
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a
