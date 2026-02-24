@@ -333,7 +333,6 @@ SUBSYSTEM_DEF(radio)
 		"[CLF_CMD_FREQ]" = "opforcmd",
 		"[CLF_ENGI_FREQ]" = "opforeng",
 		"[CLF_MED_FREQ]" = "opformed",
-		"[CLF_CCT_FREQ]" = "opforcct",
 		"[PFA_FREQ]" = "pfaradio",
 		"[JSC_FREQ]" = "jscradio",
 		"[UNSC_FREQ]" = "unscradio",

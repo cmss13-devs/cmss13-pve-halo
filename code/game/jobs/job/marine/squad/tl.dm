@@ -75,7 +75,7 @@
 	gear_preset = initial(gear_preset)
 	if(option == SGT_VARIANT)
 		gear_preset = gear_preset_secondary
-	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/sergeant
 
 /datum/job/marine/tl/ai/odst
 	title = JOB_SQUAD_TEAM_LEADER_ODST

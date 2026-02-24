@@ -135,7 +135,7 @@
 	desc = "A sturdy mess of synthcotton belts and buckles designed to attach to the M52B body armor armor standard for the UNSC. This one is the slimmed down model designed for general purpose storage."
 	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "m52b_webbing"
-	hold = /obj/item/storage/internal/accessory/webbing/m52bbgeneric
+	hold = /obj/item/storage/internal/accessory/webbing/m52bgeneric
 	slot = ACCESSORY_SLOT_M3UTILITY
 	flags_atom = NO_SNOW_TYPE
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi')
@@ -207,6 +207,12 @@
 	icon_state = "m52b_smallwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgeneric
 	slot = ACCESSORY_SLOT_M3UTILITY
+
+/obj/item/storage/internal/accessory/black_vest/m52bgeneric
+	cant_hold = list(
+		/obj/item/ammo_magazine/handful/shotgun,
+		/obj/item/ammo_magazine/plasma,
+	)
 
 /obj/item/clothing/accessory/storage/webbing/m52b/grenade
 	name = "\improper M52B Pattern Grenade Webbing"

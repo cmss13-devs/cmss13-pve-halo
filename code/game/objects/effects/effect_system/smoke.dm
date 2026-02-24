@@ -260,6 +260,14 @@
 	var/applied_fire_stacks = 3
 	var/xeno_yautja_reduction = 0.75
 
+//WP mortar-shell smoke
+/obj/effect/particle_effect/smoke/phosphorus/strong
+	time_to_live = 40
+	spread_speed = 0.5
+	smokeranking = SMOKE_RANK_HIGH
+	next_cough = 5 SECONDS
+	applied_fire_stacks = 6
+
 /obj/effect/particle_effect/smoke/phosphorus/weak
 	time_to_live = 15
 	smokeranking = SMOKE_RANK_MED

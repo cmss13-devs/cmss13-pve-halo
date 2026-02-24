@@ -9,6 +9,7 @@
 #define MORTAR_ORDNANCE list("High Explosive Shell", "Incendiary Shell", "Fragmentation Shell", "Flare Shell", "Willy-Pete Shell", "Smoke Shell")
 #define CHEMICAL_ORDNANCE list("CN-20 Missile", "Nerve Gas OB", "Nerve Gas Shell")
 #define MISC_ORDNANCE list("Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike")
+#define THROWABLES_ORDNANCE list("HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
 
 //seperate fire support types
 #define FIRESUPPORT_TYPE_WRAITH_PLASMA "wraith_plasma"
@@ -18,17 +19,6 @@
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_FAST "glassing_beam_fast"
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
-
-///Assoc list of firesupport types for datum based fire support
-GLOBAL_LIST_INIT(fire_support_types, list(
-	FIRESUPPORT_TYPE_WRAITH_PLASMA = new /datum/fire_support_custom/wraith_plasma,
-	FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD = new /datum/fire_support_custom/banshee_fuel_rod,
-	FIRESUPPORT_TYPE_BANSHEE_STRAFE = new /datum/fire_support_custom/banshee_strafe,
-	FIRESUPPORT_TYPE_GLASSING_BEAM = new /datum/fire_support_custom/glassing_beam,
-	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support_custom/glassing_beam/fast,
-	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support_custom/glassing_beam/weak,
-	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support_custom/glassing_beam/weak/instant,
-	))
 
 /client/proc/toggle_fire_support_menu()
 	set name = "Fire Support Menu"

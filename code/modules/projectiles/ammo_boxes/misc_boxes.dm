@@ -298,7 +298,7 @@
 	name = "\improper UNSC storage crate  (Flares x 14)"
 	desc = "A generic storage crate for the UNSC holding flares."
 	icon_state = "base_flare"
-	magazine_type = /obj/item/storage/box/m94
+	magazine_type = /obj/item/storage/box/flare
 	num_of_magazines = 14
 	overlay_content = "_flare"
 
@@ -309,7 +309,7 @@
 	name = "\improper UNSC storage crate - (Signal Flares x 14)"
 	desc = "A generic storage crate for the UNSC holding signal flares."
 	icon_state = "base_flare"
-	magazine_type = /obj/item/storage/box/m94/signal
+	magazine_type = /obj/item/storage/box/flare/signal
 	num_of_magazines = 14
 	overlay_content = "_signal"
 

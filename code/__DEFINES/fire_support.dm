@@ -135,4 +135,11 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_NERVE_MLRS_UPP = new /datum/fire_support/mortar/smoke/mlrs_cn/upp,
 	FIRESUPPORT_TYPE_OB = new /datum/fire_support/ob,
 	FIRESUPPORT_TYPE_OB_UPP = new /datum/fire_support/ob/upp,
+	FIRESUPPORT_TYPE_WRAITH_PLASMA = new /datum/fire_support_custom/wraith_plasma,
+	FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD = new /datum/fire_support_custom/banshee_fuel_rod,
+	FIRESUPPORT_TYPE_BANSHEE_STRAFE = new /datum/fire_support_custom/banshee_strafe,
+	FIRESUPPORT_TYPE_GLASSING_BEAM = new /datum/fire_support_custom/glassing_beam,
+	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support_custom/glassing_beam/fast,
+	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support_custom/glassing_beam/weak,
+	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support_custom/glassing_beam/weak/instant,
 	))
