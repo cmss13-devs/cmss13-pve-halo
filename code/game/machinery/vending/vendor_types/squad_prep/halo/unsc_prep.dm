@@ -252,7 +252,63 @@
 		list("M13 Fighting Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
 		)
 
+//===========================//CORPSMAN\\================================\\
+
+GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
+
+		list("ESSENTIALS", 0, null, null, null),
+		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("MEDICAL OPTIC (CHOOSE 1)", 0, null, null, null),
+		list("Medical Helmet Optic", 0, /obj/item/device/helmet_visor/medical/advanced, MARINE_CAN_BUY_GLASSES, VENDOR_ITEM_RECOMMENDED),
+		list("Medical HUD Glasses", 0, /obj/item/clothing/glasses/hud/health, MARINE_CAN_BUY_GLASSES, VENDOR_ITEM_RECOMMENDED),
+		list("Mark 2 Battle Medic sight", 0, /obj/item/clothing/glasses/night/medhud/no_nvg, MARINE_CAN_BUY_GLASSES, VENDOR_ITEM_REGULAR),
+
+		list("BELT (CHOOSE 1)", 0, null, null, null),
+		list("M8A Lifesaver Bag (Full)", 0, /obj/item/storage/belt/medical/lifesaver/unsc/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+		list("M8A Medical Storage Rig (Full)", 0, /obj/item/storage/belt/medical/unsc/full, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+		list("M8A Lifesaver Bag (Empty)", 0, /obj/item/storage/belt/medical/lifesaver/unsc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+		list("M8A Medical Storage Rig (Empty)", 0, /obj/item/storage/belt/medical/unsc, MARINE_CAN_BUY_BELT, VENDOR_ITEM_REGULAR),
+
+		list("POUCHES (CHOOSE 2)", 0, null, null, null),
+		list("Flare Pouch (Full)", 0, /obj/item/storage/pouch/flare/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Sling Pouch", 0, /obj/item/storage/pouch/sling, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Large Pistol Magazine Pouch", 0, /obj/item/storage/pouch/magazine/pistol/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Magazine Pouch", 0, /obj/item/storage/pouch/magazine, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Shotgun Shell Pouch", 0, /obj/item/storage/pouch/shotgun, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Medical Kit Pouch", 0, /obj/item/storage/pouch/medkit/unsc, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_RECOMMENDED),
+		list("Pistol Pouch", 0, /obj/item/storage/pouch/pistol/unsc, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+
+		list("ACCESSORIES (CHOOSE 1)", 0, null, null, null),
+		list("M52B Pattern Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m3, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Magazine Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m3/mag, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Shotgun Shell Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m3/shotgun, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Grenade Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m3/m40, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Small Pouch Webbing", 0, /obj/item/clothing/accessory/storage/webbing/m3/small, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Shoulder Holster", 0, /obj/item/clothing/accessory/storage/holster, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+		list("Drop Pouch", 0, /obj/item/clothing/accessory/storage/droppouch, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_REGULAR),
+	))
+
+/obj/structure/machinery/cm_vending/clothing/medic/unsc
+	name = "\improper UNSC Squad Medical Equipment Rack"
+
+/obj/structure/machinery/cm_vending/clothing/medic/unsc/get_listed_products(mob/user)
+	return GLOB.cm_vending_clothing_medic_unsc
+
 //===========================//PRESETS\\================================\\
+
+/obj/effect/essentials_set/medic/unsc
+	spawned_gear_list = list(
+		/obj/item/storage/firstaid/unsc/corpsman,
+		/obj/item/storage/firstaid/unsc/corpsman,
+		/obj/item/device/healthanalyzer/halo,
+		/obj/item/tool/surgery/surgical_line,
+		/obj/item/tool/surgery/synthgraft,
+		/obj/item/storage/surgical_case/regular,
+		/obj/item/device/flashlight/pen,
+		/obj/item/clothing/accessory/stethoscope,
+		/obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/antidote,
+	)
 
 /obj/item/storage/box/guncase/m52barmor //forgive me, father
 	name = "\improper M52B Body Armor case"

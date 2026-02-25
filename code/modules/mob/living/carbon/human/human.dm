@@ -1702,6 +1702,13 @@
 		if(FACTION_TWE)
 			alert_type = /atom/movable/screen/text/screen_text/picture/starting/twe
 			platoon = "Gamma Troop"
+		if(FACTION_UNSC)
+			if(assigned_squad && assigned_squad.name == SQUAD_MARINE_1)
+				alert_type = /atom/movable/screen/text/screen_text/picture/starting/unsc
+				platoon = "7th RECOM Div. \"Rock Hoppers\""
+			if(assigned_squad && assigned_squad.name == SQUAD_ODST)
+				alert_type = /atom/movable/screen/text/screen_text/picture/starting/odst
+				platoon = "33rd Drop Jet Batt. \"The Ferrymen\""
 	play_screen_text("<u>[SSmapping.configs[SHIP_MAP].map_name]<br></u>" + "[platoon]<br><br>" + human_manifest, alert_type)
 
 /mob/living/carbon/human/point_to_atom(atom/A, turf/T)

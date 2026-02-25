@@ -23,6 +23,7 @@
 	max_rounds = 1
 	max_range = 10
 	attachment_firing_delay = 5
+	caliber = "40mm"
 
 /obj/item/attachable/attached_gun/grenade/ma5c/New()
 	..()
