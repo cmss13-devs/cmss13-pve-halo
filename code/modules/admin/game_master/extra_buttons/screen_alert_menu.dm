@@ -6,7 +6,7 @@
 		return
 	var/icon_choice
 	var/icon_choice_state
-	var/selectable_factions = list(FACTION_MARINE, FACTION_UPP, FACTION_WY, FACTION_CLF, FACTION_FREELANCER, FACTION_TWE)
+	var/selectable_factions = list(FACTION_MARINE, FACTION_UPP, FACTION_WY, FACTION_CLF, FACTION_FREELANCER, FACTION_TWE, FACTION_UNSC, FACTION_COVENANT)
 	var/selectable_icons = list(
 		"marine",
 		"marine_2",

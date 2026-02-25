@@ -167,12 +167,12 @@
 	muzzle_flash_color = COLOR_PLASMA_TEAL
 	flags_equip_slot = SLOT_WAIST
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED
-	ammo = /datum/ammo/energy/plasma/plasma_pistol
+	ammo = /datum/ammo/energy/halo_plasma/plasma_pistol
 
 	fire_sound = "gun_lightplasma"
 
-	var/datum/ammo/plasma_bolt = /datum/ammo/energy/plasma/plasma_pistol
-	var/datum/ammo/overcharged_bolt = /datum/ammo/energy/plasma/plasma_pistol/overcharge
+	var/datum/ammo/plasma_bolt = /datum/ammo/energy/halo_plasma/plasma_pistol
+	var/datum/ammo/overcharged_bolt = /datum/ammo/energy/halo_plasma/plasma_pistol/overcharge
 	var/overcharged = FALSE
 	var/atom/movable/overlay/overcharge_overlay
 	COOLDOWN_DECLARE(overcharge_cooldown)
@@ -269,7 +269,7 @@
 	icon_state = "plasma_rifle"
 	heat_per_shot = 3
 	charge_cost = 10
-	ammo = /datum/ammo/energy/plasma/plasma_rifle
+	ammo = /datum/ammo/energy/halo_plasma/plasma_rifle
 	has_heat_overlay = TRUE
 	has_overheat_icon_state = TRUE
 	fire_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
