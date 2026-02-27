@@ -93,6 +93,15 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 ///UPP Supply drop
 #define FIRESUPPORT_TYPE_SUPPLY_DROP_UPP "supply_drop_upp"
 
+//seperate fire support types
+#define FIRESUPPORT_TYPE_WRAITH_PLASMA "wraith_plasma"
+#define FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD "banshee_fuel_rod"
+#define FIRESUPPORT_TYPE_BANSHEE_STRAFE "banshee_strafe"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM "glassing_beam"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM_FAST "glassing_beam_fast"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
+#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
+
 ///Assoc list of firesupport types
 GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_SUPPLY_DROP = new /datum/fire_support/supply_drop,

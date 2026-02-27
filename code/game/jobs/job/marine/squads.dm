@@ -165,6 +165,7 @@
 	faction = FACTION_UNSC
 	use_stripe_overlay = FALSE
 	usable = TRUE
+	squad_type = "Squad"
 
 /datum/squad/marine/upp
 	name = SQUAD_UPP

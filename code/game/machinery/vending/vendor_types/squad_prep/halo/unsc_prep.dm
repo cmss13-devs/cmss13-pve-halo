@@ -20,6 +20,7 @@
 		list("Operations Cap, Tan", floor(scale * 15), /obj/item/clothing/head/cmcap/bridge/tan, VENDOR_ITEM_REGULAR),
 		list("Boonie Hat, Jungle", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie, VENDOR_ITEM_REGULAR),
 		list("Boonie Hat, Desert", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie/tan, VENDOR_ITEM_REGULAR),
+		list("UNSC Shooting Shades", floor(scale * 15), /obj/item/clothing/glasses/sunglasses/big/unsc, VENDOR_ITEM_REGULAR),
 
 		list("WEBBINGS", -1, null, null),
 		list("M52B Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
@@ -257,7 +258,7 @@
 GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 
 		list("ESSENTIALS", 0, null, null, null),
-		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+		list("Essential Medical Set", 0, /obj/effect/essentials_set/medic/unsc, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
 
 		list("MEDICAL OPTIC (CHOOSE 1)", 0, null, null, null),
 		list("Medical Helmet Optic", 0, /obj/item/device/helmet_visor/medical/advanced, MARINE_CAN_BUY_GLASSES, VENDOR_ITEM_RECOMMENDED),

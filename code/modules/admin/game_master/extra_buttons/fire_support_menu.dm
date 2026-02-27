@@ -11,15 +11,6 @@
 #define MISC_ORDNANCE list("Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike")
 #define THROWABLES_ORDNANCE list("HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
 
-//seperate fire support types
-#define FIRESUPPORT_TYPE_WRAITH_PLASMA "wraith_plasma"
-#define FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD "banshee_fuel_rod"
-#define FIRESUPPORT_TYPE_BANSHEE_STRAFE "banshee_strafe"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM "glassing_beam"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM_FAST "glassing_beam_fast"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
-
 /client/proc/toggle_fire_support_menu()
 	set name = "Fire Support Menu"
 	set category = "Game Master.Extras"
@@ -622,6 +613,7 @@
 	return
 
 /datum/fire_support/custom/wraith_plasma
+	name = "wraith plasma"
 	scatter_range = 0
 	initiate_sound = 'sound/weapons/halo/fire_support/wraith_plasma_whistle.ogg'
 	delay_to_impact = 1.5 SECONDS
@@ -636,12 +628,14 @@
 	var/fire_type = FIRE_VARIANT_TYPE_X
 
 /datum/fire_support/custom/wraith_plasma/do_impact(turf/target_turf)
+	cause_data = create_cause_data(src.name)
 	new /obj/effect/temp_visual/plasma_explosion(target_turf)
 	cell_explosion(target_turf, 180, 40, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, explosion_cause_data = cause_data)
 	flame_radius(cause_data, radius, target_turf, flame_level, burn_level, flameshape, null, fire_type)
 	return
 
 /datum/fire_support/custom/banshee_fuel_rod
+	name = "banshee fuel rod"
 	scatter_range = 0
 	start_visual = /obj/effect/temp_visual/banshee_flyby
 	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
@@ -654,11 +648,13 @@
 	var/fire_type = FIRE_VARIANT_TYPE_B
 
 /datum/fire_support/custom/banshee_fuel_rod/do_impact(turf/target_turf)
+	var/datum/cause_data/cause_data = create_cause_data("wraith plasma")
 	new /obj/effect/temp_visual/plasma_explosion/green(target_turf)
 	cell_explosion(target_turf, 180, 80, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, explosion_cause_data = cause_data)
 	flame_radius(cause_data, radius, target_turf, flame_level, burn_level, flameshape, null, fire_type)
 
 /datum/fire_support/custom/banshee_strafe
+	name = "banshee strafe"
 	scatter_range = 2
 	impact_quantity = 15
 	delay_to_impact = 0.4 SECONDS
@@ -689,6 +685,8 @@
 	target_turf.ex_act(EXPLOSION_THRESHOLD_VLOW)
 
 /datum/fire_support/custom/glassing_beam
+	name = "glassing beam"
+
 	scatter_range = 0
 	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/glassing_beam.ogg'
@@ -726,7 +724,7 @@
 
 /datum/fire_support/custom/glassing_beam/do_impact(turf/target_turf)
 	new /obj/effect/temp_visual/glassing_beam(target_turf)
-	var/datum/cause_data/cause_data = create_cause_data("Glassing Beam")
+	var/datum/cause_data/cause_data = create_cause_data("glassing beam")
 	cell_explosion(target_turf, clear_power, clear_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data) //break shit around
 	cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
 	handle_shake(target_turf, 15, 3, 3)

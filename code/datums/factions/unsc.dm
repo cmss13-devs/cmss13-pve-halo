@@ -34,8 +34,7 @@
 			if(JOB_SQUAD_TECH) marine_rk = "tech"
 		if(squad.squad_leader == current_human)
 			switch(squad.squad_type)
-				if("Platoon") marine_rk = "leader_a"
-				if("Team") marine_rk = "soctl_a"
+				if("Squad") marine_rk = "leader_a"
 			current_human.langchat_styles = "langchat_bolded" // bold text for bold leaders
 		else if(squad.fireteam_leaders["SQ1"] == current_human || squad.fireteam_leaders["SQ2"] == current_human)
 			current_human.langchat_styles = "langchat_smaller_bolded"
