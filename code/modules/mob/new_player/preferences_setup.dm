@@ -361,7 +361,7 @@
 		if(JOB_TWE_RMC_LIEUTENANT)
 			return /datum/equipment_preset/royal_marine/lieuteant
 
-	return /datum/equipment_preset/uscm/private_equipped
+	return /datum/equipment_preset/unsc/pfc/equipped
 
 /datum/preferences/proc/clear_equipment()
 	for(var/obj/item/I in preview_dummy)

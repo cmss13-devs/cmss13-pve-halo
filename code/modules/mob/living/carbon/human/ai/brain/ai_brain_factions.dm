@@ -1904,3 +1904,6 @@
 	friendly_factions = list(
 		FACTION_COLONIST,
 	)
+
+/datum/human_ai_faction/covenant
+	faction = FACTION_COVENANT
