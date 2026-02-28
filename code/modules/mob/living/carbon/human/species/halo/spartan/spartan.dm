@@ -108,9 +108,9 @@
 				limb.time_to_knit = 1 MINUTES // 1 minute to self heal bone break, time is in tenths of a second
 
 	spartan.set_languages(LANGUAGE_ENGLISH)
-	give_action(spartan, /datum/action/human_action/activable/covenant/sangheili_kick)
-	give_action(spartan, /datum/action/human_action/activable/throw_wrestle)
-	give_action(spartan, /datum/action/human_action/activable/slam)
+	give_action(spartan, /datum/action/human_action/activable/lunge)
+	give_action(spartan, /datum/action/human_action/activable/fling)
+	give_action(spartan, /datum/action/human_action/activable/punch)
 	spartan.AddComponent(/datum/component/leaping, _leap_range = 4, _leap_cooldown = 4 SECONDS, _leaper_allow_pass_flags = PASS_OVER|PASS_MOB_THRU)
 	spartan.AddComponent(/datum/component/jump, _jump_duration = 0.75 SECONDS, _jump_cooldown = 1 SECONDS, _jump_height = 32, _jump_sound = 'sound/weapons/thudswoosh.ogg', _jump_flags = JUMP_SPIN, _jumper_allow_pass_flags = PASS_OVER|PASS_MOB_THRU)
 	return ..()

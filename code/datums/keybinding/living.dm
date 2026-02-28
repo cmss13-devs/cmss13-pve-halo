@@ -96,6 +96,7 @@
 
 /datum/keybinding/living/jump
 	hotkey_keys = list("C")
+	classic_keys = list("Unbound")
 	name = "jump"
 	full_name = "Jump"
 	description = "Jump."

@@ -209,3 +209,51 @@
 	if(istype(held_item))
 		held_item.toggle_tube()
 		return TRUE
+
+/datum/keybinding/human/lunge
+	hotkey_keys = list("F")
+	classic_keys = list("Unbound")
+	name = "lunge"
+	full_name = "Lunge"
+	keybind_signal = COMSIG_KB_LUNGE_DOWN
+
+/datum/keybinding/human/lunge/down(client/user)
+	. = ..()
+	if(.)
+		return
+	var/datum/action/human_action/activable/lunge/lunge_action = locate() in user.mob.actions
+	if(lunge_action)
+		lunge_action.action_activate()
+		return TRUE
+
+/datum/keybinding/human/fling
+	hotkey_keys = list("V")
+	classic_keys = list("Unbound")
+	name = "fling"
+	full_name = "Fling"
+	keybind_signal = COMSIG_KB_FLING_DOWN
+
+/datum/keybinding/human/fling/down(client/user)
+	. = ..()
+	if(.)
+		return
+	var/datum/action/human_action/activable/fling/fling_action = locate() in user.mob.actions
+	if(fling_action)
+		fling_action.action_activate()
+		return TRUE
+
+/datum/keybinding/human/punch
+	hotkey_keys = list("G")
+	classic_keys = list("Unbound")
+	name = "punch"
+	full_name = "Punch"
+	keybind_signal = COMSIG_KB_PUNCH_DOWN
+
+/datum/keybinding/human/punch/down(client/user)
+	. = ..()
+	if(.)
+		return
+	var/datum/action/human_action/activable/punch/punch_action = locate() in user.mob.actions
+	if(punch_action)
+		punch_action.action_activate()
+		return TRUE

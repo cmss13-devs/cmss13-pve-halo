@@ -2065,6 +2065,11 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	if(. != CHECKS_PASSED)
 		return
 
+	if(!toggle_on)
+		playsound(src, 'sound/handling/click_2.ogg', 50, 1)
+
+	playsound(src, 'sound/handling/suitlight_on.ogg', 50, 1)
+
 	set_light_on(toggle_on)
 
 	update_icon()
