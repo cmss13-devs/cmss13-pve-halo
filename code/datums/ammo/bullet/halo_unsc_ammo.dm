@@ -12,6 +12,7 @@
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/ma5c/shredder
 	name = "shredder bullet"
@@ -30,6 +31,7 @@
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/vk78
 	name = "FMJ bullet"
@@ -43,6 +45,7 @@
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_5
 	max_range = 22
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/br55
 	name = "X-HP SAP-HE bullet"
@@ -55,6 +58,7 @@
 	effective_range_max = 16
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/dmr
 	name = "FMJ bullet"
@@ -68,6 +72,7 @@
 	effective_range_max = 12
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 36
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 // smg ammo
 /datum/ammo/bullet/smg/m7
@@ -89,6 +94,7 @@
 	damage = 60
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
+	shell_casing = /obj/effect/decal/ammo_casing/redshell
 
 /datum/ammo/bullet/shotgun/spread/unsc
 	name = "additional buckshot, USCM special type"
@@ -104,6 +110,7 @@
 	max_range = 10
 	stamina_damage = 75
 	damage = 35
+	shell_casing = /obj/effect/decal/ammo_casing/blueshell
 
 // rocket ammo
 
@@ -132,6 +139,7 @@
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 48
 	shell_speed = AMMO_SPEED_TIER_6 + AMMO_SPEED_TIER_2
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 // pistol ammo
 
@@ -143,3 +151,4 @@
 	damage = 40
 	penetration= ARMOR_PENETRATION_TIER_2
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
+	shell_casing = /obj/effect/decal/ammo_casing/bullet/halo
