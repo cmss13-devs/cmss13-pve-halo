@@ -202,11 +202,11 @@
 	dir = 1;
 	pixel_x = 16
 	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = 8
-	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
+/obj/structure/closet/secure_closet/marine_personal/odst/rifleman{
 	pixel_x = -8
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst/rifleman{
+	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
@@ -214,44 +214,38 @@
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/briefing/one)
 "aA" = (
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = 8
-	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
+/obj/structure/closet/secure_closet/marine_personal/odst/rifleman{
 	pixel_x = -8
+	},
+/obj/structure/closet/secure_closet/marine_personal/odst/rifleman{
+	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
 "aB" = (
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = -8;
-	job = "Weapons Specialist"
+/obj/structure/closet/secure_closet/marine_personal/odst/specialist{
+	pixel_x = -8
 	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = 8;
-	job = "Weapons Specialist"
+/obj/structure/closet/secure_closet/marine_personal/odst/specialist{
+	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
 "aC" = (
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = 8;
-	job = "Radio Telephone Operator"
+/obj/structure/closet/secure_closet/marine_personal/odst/rto{
+	pixel_x = -8
 	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = -8;
-	job = "Squad Sergeant"
+/obj/structure/closet/secure_closet/marine_personal/odst/squad_leader{
+	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
 "aD" = (
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = -8;
-	job = "Fire Team Leader"
+/obj/structure/closet/secure_closet/marine_personal/odst/team_leader{
+	pixel_x = -8
 	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = 8;
-	job = "Fire Team Leader"
+/obj/structure/closet/secure_closet/marine_personal/odst/team_leader{
+	pixel_x = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
@@ -701,7 +695,7 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
 "bP" = (
-/obj/structure/machinery/cm_vending/clothing/medic,
+/obj/structure/machinery/cm_vending/clothing/medic/unsc,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
 "bQ" = (
@@ -745,6 +739,13 @@
 /obj/structure/machinery/power/apc/almayer/south,
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/armory)
+"bU" = (
+/obj/structure/closet/secure_closet/marine_personal/odst{
+	pixel_x = 8;
+	job = "Radio Telephone Operator"
+	},
+/turf/open/space/basic,
+/area/space)
 "bW" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/lower_hallway)
@@ -1606,7 +1607,7 @@
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/dorms)
 "mp" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "mq" = (
@@ -1844,7 +1845,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "pc" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "pe" = (
@@ -1995,7 +1996,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qJ" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qL" = (
@@ -2196,7 +2197,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/upper_hallway)
 "sU" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "sX" = (
@@ -3610,13 +3611,11 @@
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/upper_hallway)
 "JR" = (
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = -8;
-	job = "Corpsman"
+/obj/structure/closet/secure_closet/marine_personal/odst/corpsman{
+	pixel_x = 8
 	},
-/obj/structure/closet/secure_closet/marine_personal/odst{
-	pixel_x = 8;
-	job = "Corpsman"
+/obj/structure/closet/secure_closet/marine_personal/odst/corpsman{
+	pixel_x = -8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
@@ -7866,7 +7865,7 @@ rR
 rR
 rR
 rR
-rR
+bU
 rR
 rR
 wT
