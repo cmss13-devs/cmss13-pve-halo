@@ -152,6 +152,7 @@ As such, don't expect any values assigned to common firearms to even consider ho
 #define FIRE_DELAY_TIER_11 2
 #define FIRE_DELAY_TIER_LMG 1.5
 #define FIRE_DELAY_TIER_SG 1.0
+#define FIRE_DELAY_TIER_SMG2 1.2
 #define FIRE_DELAY_TIER_SMG 1.5
 #define FIRE_DELAY_TIER_12 1
 
@@ -250,6 +251,7 @@ As such, don't expect any values assigned to common firearms to even consider ho
 #define AMMO_SPEED_TIER_6 6
 #define AMMO_SPEED_TIER_7 7
 #define AMMO_SPEED_TIER_8 8
+#define AMMO_SPEED_TIER_HITSCAN 300
 
 /*
 ////ARMOR PENETRATION////

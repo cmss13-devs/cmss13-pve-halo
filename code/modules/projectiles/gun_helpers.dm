@@ -110,7 +110,7 @@ DEFINES in setup.dm, referenced here.
 //----------------------------------------------------------
 
 /obj/item/weapon/gun/clicked(mob/user, list/mods)
-	if (mods["alt"])
+	if (mods[ALT_CLICK])
 		if(!CAN_PICKUP(user, src))
 			return ..()
 		toggle_gun_safety()
@@ -699,16 +699,13 @@ DEFINES in setup.dm, referenced here.
 	var/old_firemode = gun_firemode
 	gun_firemode_list.len = 0
 
-	if(start_burst)
-		gun_firemode_list |= GUN_FIREMODE_BURSTFIRE
-
 	if(start_automatic)
 		gun_firemode_list |= GUN_FIREMODE_AUTOMATIC
 
 	if(start_semiauto)
 		gun_firemode_list |= GUN_FIREMODE_SEMIAUTO
 
-	if(burst_amount > BURST_AMOUNT_TIER_1)
+	if(start_burstfire || burst_amount > BURST_AMOUNT_TIER_1)
 		gun_firemode_list |= GUN_FIREMODE_BURSTFIRE
 
 	if(!length(gun_firemode_list))
@@ -976,7 +973,7 @@ DEFINES in setup.dm, referenced here.
 		return target
 	if(!istype(target, /atom/movable/screen/click_catcher))
 		return null
-	return params2turf(modifiers["screen-loc"], get_turf(user), user.client)
+	return params2turf(modifiers[SCREEN_LOC], get_turf(user), user.client)
 
 /// check if the gun contains any light source that is currently turned on.
 /obj/item/weapon/gun/proc/light_sources()
