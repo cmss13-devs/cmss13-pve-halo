@@ -321,6 +321,36 @@
 	gradient = list("#FFFFFF", "#e67d71ff", "#470d0dff")
 	velocity = generator(GEN_CIRCLE, 85, 75, NORMAL_RAND)
 
+/particles/plasma_explosion/shield_pop
+	count = 15
+	spawning = 15
+	velocity = generator(GEN_CIRCLE, 10, 15, NORMAL_RAND)
+	scale = generator(GEN_NUM, 0.65, 1.1)
+
+/particles/plasma_explosion/shield_hit
+	count = 5
+	spawning = 5
+	velocity = generator(GEN_CIRCLE, 10, 15, NORMAL_RAND)
+	fade = generator(GEN_NUM, 35, 55)
+	scale = generator(GEN_NUM, 0.2, 0.25)
+
+/particles/shield_spark
+	icon = 'icons/halo/effects/plasma.dmi'
+	icon_state = "circle"
+	width = 150
+	height = 150
+	count = 12
+	spawning = 12
+	gradient = list("#FFFFFF", "#bce0ff", "#3e308aff")
+	color_change = 0.25
+	lifespan = 5
+	fade = 5
+	scale = list(0.17, 0.17)
+	grow = -0.03
+	velocity = generator(GEN_CIRCLE, 35, 35, NORMAL_RAND)
+	position = generator(GEN_CIRCLE, 5, 5, NORMAL_RAND)
+	friction = generator(GEN_NUM, 0.5, 0.4)
+
 /obj/effect/temp_visual/plasma_incoming
 	icon = null
 	duration = 3 SECONDS
@@ -369,6 +399,20 @@
 	particles_used = /particles/plasma_explosion/green
 	outline_color = "#328a30ff"
 
+/obj/effect/temp_visual/plasma_explosion/shield_pop
+	light_color = "#77b6ff"
+	particles_used = /particles/plasma_explosion/shield_pop
+	outline_color = "#77b6ff"
+	light_power = 2
+	light_range = 3
+
+/obj/effect/temp_visual/plasma_explosion/shield_hit
+	light_color = "#77b6ff"
+	particles_used = /particles/plasma_explosion/shield_hit
+	outline_color = "#77b6ff"
+	light_power = 1
+	light_range = 2
+
 /obj/effect/temp_visual/banshee_flyby
 	icon = 'icons/halo/effects/banshee_flyby.dmi'
 	icon_state = "banshee_shadow"
@@ -408,3 +452,16 @@
 	particles.count = 0
 	icon_state = "off"
 	light_on = FALSE
+
+/obj/effect/temp_visual/shield_spark
+	icon = null
+	duration = 4
+	layer = ABOVE_MOB_LAYER
+	indestructible = TRUE
+
+/obj/effect/temp_visual/shield_spark/Initialize(mapload)
+	. = ..()
+	particles = new /particles/shield_spark
+	addtimer(VARSET_CALLBACK(particles, count, 0), 1)
+	add_filter("glow", 2, drop_shadow_filter(0, 0, 3, 1, "#77b6ff"))
+
