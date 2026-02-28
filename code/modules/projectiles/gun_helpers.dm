@@ -737,8 +737,10 @@ DEFINES in setup.dm, referenced here.
 		to_chat(user, SPAN_WARNING("You don't know how to do tactical reloads."))
 		return
 	to_chat(user, SPAN_NOTICE("You start a tactical reload."))
-	if(current_mag)
+	if(user.client?.prefs && (user.client?.prefs?.toggle_prefs & TOGGLE_AUTO_EJECT_MAGAZINE_TO_HAND))
 		unload(user)
+	else
+		unload(user, FALSE, TRUE)
 	var/old_mag_loc = new_magazine.loc
 	var/tac_reload_time = 15
 	tac_reload_time = tac_reload_time/user.skills.get_skill_level(SKILL_GUN_HO)
