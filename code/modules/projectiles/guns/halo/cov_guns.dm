@@ -167,12 +167,12 @@
 	muzzle_flash_color = COLOR_PLASMA_TEAL
 	flags_equip_slot = SLOT_WAIST
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_ONE_HAND_WIELDED
-	ammo = /datum/ammo/energy/plasma/plasma_pistol
+	ammo = /datum/ammo/energy/halo_plasma/plasma_pistol
 
 	fire_sound = "gun_lightplasma"
 
-	var/datum/ammo/plasma_bolt = /datum/ammo/energy/plasma/plasma_pistol
-	var/datum/ammo/overcharged_bolt = /datum/ammo/energy/plasma/plasma_pistol/overcharge
+	var/datum/ammo/plasma_bolt = /datum/ammo/energy/halo_plasma/plasma_pistol
+	var/datum/ammo/overcharged_bolt = /datum/ammo/energy/halo_plasma/plasma_pistol/overcharge
 	var/overcharged = FALSE
 	var/atom/movable/overlay/overcharge_overlay
 	COOLDOWN_DECLARE(overcharge_cooldown)
@@ -188,6 +188,7 @@
 		origin[1] = "[icon2html(src, user)] This is a Type-25 plasma pistol"
 		insert_line = "Standard Covenant direct energy weapon, firing magnetically contained balls of high-energy plasma, with significant kinetic punch. Despite being called a \"pistol\", the Type-25 is more than capable of killing fully armoured marines with a single well aimed bolt. Some Covies overcharge this thing, can obliterate a mans whole torso."
 	origin.Insert(2, insert_line)
+	. += SPAN_NOTICE("You could overcharge this for a powerful shot by holding down the trigger with <b>unique action</b>.")
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/set_gun_config_values()
 	..()
@@ -201,10 +202,6 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_7
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
-
-/obj/item/weapon/gun/energy/plasma/plasma_pistol/get_examine_text(mob/user)
-	. = ..()
-	. += SPAN_NOTICE("You could overcharge this for a powerful shot by holding down the trigger with <b>unique action</b>.")
 
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/Initialize()
 	plasma_bolt = GLOB.ammo_list[plasma_bolt] //Gun initialize calls replace_ammo() so we need to set these first.
@@ -272,7 +269,7 @@
 	icon_state = "plasma_rifle"
 	heat_per_shot = 3
 	charge_cost = 10
-	ammo = /datum/ammo/energy/plasma/plasma_rifle
+	ammo = /datum/ammo/energy/halo_plasma/plasma_rifle
 	has_heat_overlay = TRUE
 	has_overheat_icon_state = TRUE
 	fire_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'

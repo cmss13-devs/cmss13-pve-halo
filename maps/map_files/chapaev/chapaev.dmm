@@ -11,6 +11,40 @@
 /obj/structure/foamed_metal/iron,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
+"ad" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/platoon_leader{
+	can_block_movement = 0;
+	pixel_x = -7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
+"ae" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/machinery/light/small{
+	dir = 4;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/smartgunner{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
 "af" = (
 /turf/closed/wall/upp_wall/grey,
 /area/golden_arrow/engineering)
@@ -25,18 +59,88 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/engineering)
-"ah" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
+"ai" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
 	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10;
+	pixel_x = -13
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/corpsman{
+	pixel_x = -7;
+	can_block_movement = 0
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
+"aj" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10;
+	pixel_x = 11
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/squad_leader{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
+"ak" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/squad_leader{
+	can_block_movement = 0;
+	pixel_x = -7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
 "al" = (
 /obj/structure/machinery/power/terminal{
 	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
+"am" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = -7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
 "an" = (
 /obj/structure/machinery/power/smes/buildable,
 /obj/effect/decal/warning_stripes{
@@ -61,15 +165,6 @@
 	pixel_x = 1
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
-/area/golden_arrow/engineering)
-"ap" = (
-/obj/structure/machinery/power/terminal{
-	dir = 8
-	},
-/obj/structure/cable{
-	icon_state = "0-4"
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
 "aq" = (
 /obj/structure/machinery/power/smes/buildable,
@@ -119,47 +214,17 @@
 "at" = (
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"au" = (
+"ax" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "E"
+	icon_state = "E";
+	pixel_x = 1
 	},
-/obj/structure/surface/rack{
-	color = "#8B9490";
-	pixel_x = -3
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/item/clothing/mask/gas/military/upp{
-	pixel_x = -8;
-	pixel_y = 2
-	},
-/obj/item/clothing/mask/gas/military/upp{
-	pixel_y = 2
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"av" = (
-/obj/structure/machinery/pipedispenser,
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice1";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
-"aw" = (
-/obj/structure/pipes/standard/manifold/hidden/supply,
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"ay" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/obj/structure/surface/rack{
-	color = "#8B9490";
-	pixel_x = 3
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = 7
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/engineering)
+/area/golden_arrow/cryo_cells)
 "az" = (
 /obj/structure/machinery/light/small{
 	dir = 8
@@ -170,36 +235,58 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"aC" = (
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
-"aD" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"aE" = (
-/obj/structure/machinery/light/small{
+"aA" = (
+/obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
+	pixel_y = 10
+	},
+/obj/structure/closet/crate/secure/upp/alt,
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	randpixel = 12
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	randpixel = 12
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	randpixel = 12
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	randpixel = 12
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	randpixel = 12
+	},
+/obj/item/reagent_container/food/drinks/dry_ramen{
+	randpixel = 12
+	},
+/obj/item/storage/box/mre/upp,
+/obj/item/storage/box/mre/upp,
+/obj/item/storage/box/mre/upp,
+/obj/item/storage/box/mre/upp,
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10;
+	pixel_x = -13
+	},
+/turf/open/floor/strata/multi_tiles/southwest,
+/area/golden_arrow/briefing)
+"aB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
 	light_color = "#e7c0a4";
 	light_power = 0.8;
 	light_range = 4
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = -7
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/engineering)
-"aF" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	id = "chapaev_engi"
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
+/area/golden_arrow/cryo_cells)
 "aG" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E"
@@ -251,17 +338,20 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
-"aK" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/prop/invuln/lattice_prop{
-	dir = 8;
-	icon_state = "lattice12";
-	pixel_x = 13;
+"aJ" = (
+/obj/structure/disposalpipe/segment{
+	dir = 4;
+	icon_state = "pipe-c"
+	},
+/obj/structure/pipes/standard/manifold/visible/supply{
+	dir = 1
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/platoon_commander{
+	can_block_movement = 0;
 	pixel_y = 10
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
+/area/golden_arrow/cryo_cells)
 "aL" = (
 /obj/structure/prop/invuln/lattice_prop{
 	dir = 8;
@@ -329,6 +419,23 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
+"aP" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/machinery/light/small{
+	dir = 4;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/cryo_cells)
 "aQ" = (
 /obj/structure/machinery/recharge_station{
 	pixel_y = 13
@@ -353,13 +460,25 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
-"aS" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E"
+"aT" = (
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
 	},
-/obj/structure/reagent_dispensers/watertank,
+/obj/structure/bookcase{
+	density = 0;
+	icon_state = "book-5";
+	pixel_y = 18;
+	can_block_movement = 0
+	},
+/obj/item/book/manual/chef_recipes,
+/obj/item/book/manual/barman_recipes,
+/obj/item/book/manual/engineering_hacking,
+/obj/item/prop/magazine/book/littleredbook,
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/engineering)
+/area/golden_arrow/dorms)
 "aU" = (
 /obj/structure/machinery/body_scanconsole{
 	dir = 1;
@@ -377,9 +496,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"aV" = (
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
 "aW" = (
 /obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 10
@@ -411,37 +527,26 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/engineering)
-"ba" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
+"aZ" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/prop/invuln/ice_prefab/roof_greeble{
+	pixel_y = 22;
+	pixel_x = -14;
+	layer = 3
 	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
-"bb" = (
-/obj/structure/ladder{
-	height = 1;
-	id = "eng1"
+/obj/structure/machinery/computer/cameras/wooden_tv/prop{
+	pixel_y = 10;
+	layer = 3
 	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
+/obj/structure/prop/ice_colony/hula_girl{
+	pixel_x = -10
 	},
-/turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/engineering)
-"bc" = (
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15
+/obj/item/weapon/butterfly{
+	pixel_x = 9;
+	pixel_y = -5
 	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/dorms)
 "bd" = (
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage{
 	req_one_access = list()
@@ -461,43 +566,12 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/engineering)
-"bf" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_y = 30
+"be" = (
+/obj/structure/bed/chair/comfy{
+	dir = 4
 	},
-/obj/item/prop/magazine/book{
-	desc = "A science fiction novel of Russian origin. You should probably actually read it instead of passing off your knowledge of the movie as knowlege of the book.";
-	name = "Roadside Picnic";
-	pixel_y = 3;
-	pixel_x = -3
-	},
-/obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
-"bg" = (
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 9
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/engineering)
-"bh" = (
-/obj/structure/machinery/vending/cigarette/upp{
-	pixel_y = 16;
-	can_block_movement = 0
-	},
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice2";
-	pixel_x = 16;
-	pixel_y = 16
-	},
-/obj/structure/prop/invuln/lattice_prop{
-	icon_state = "lattice3";
-	pixel_x = 16;
-	pixel_y = -15;
-	layer = 6
-	},
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/golden_arrow/engineering)
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_sergeant)
 "bi" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	name = "\improper Maintenance Tunnels"
@@ -518,13 +592,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
-"bl" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "bm" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/machinery/door/airlock/upp_utility{
@@ -602,6 +669,19 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
+"bs" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/emails{
+	dir = 8;
+	pixel_y = 4
+	},
+/obj/structure/machinery/light/small{
+	light_power = 0.8;
+	light_range = 4;
+	light_color = "#e7c0a4"
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_sergeant)
 "bt" = (
 /obj/structure/prop/invuln/overhead_pipe,
 /obj/structure/pipes/standard/simple/hidden/supply{
@@ -611,6 +691,14 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/engineering)
+"bu" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/computer/secure_data/noaccess{
+	dir = 4;
+	pixel_y = 4
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_sergeant)
 "bv" = (
 /obj/structure/ladder{
 	height = 2;
@@ -789,6 +877,17 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
+"bN" = (
+/obj/structure/machinery/light/small{
+	light_power = 0.8;
+	light_range = 4;
+	light_color = "#e7c0a4"
+	},
+/obj/structure/bed/chair/comfy{
+	dir = 8
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_sergeant)
 "bO" = (
 /obj/structure/machinery/cryopod/big{
 	pixel_x = -9;
@@ -859,6 +958,27 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/closed/wall/upp_wall/grey,
 /area/golden_arrow/cryo_cells)
+"bW" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/paper_bin{
+	pixel_y = 6;
+	pixel_x = 3
+	},
+/obj/item/tool/pen/clicky{
+	desc = "It's a normal black ink pen.";
+	layer = 3
+	},
+/obj/item/device/flashlight/lamp{
+	light_power = 0.8;
+	light_color = "#e7c0a4";
+	light_range = 4;
+	anchored = 1;
+	pixel_y = -9;
+	pixel_x = 5;
+	on = 1
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/platoon_sergeant)
 "bX" = (
 /obj/structure/machinery/computer/cryopod{
 	pixel_x = -6;
@@ -902,6 +1022,23 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
+"cb" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/paper_bin{
+	pixel_y = 6;
+	pixel_x = -3
+	},
+/obj/item/tool/pen/clicky{
+	desc = "It's a normal black ink pen.";
+	layer = 3;
+	pixel_x = -5
+	},
+/obj/item/reagent_container/food/drinks/coffeecup{
+	pixel_x = 1;
+	pixel_y = -10
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/platoon_sergeant)
 "cc" = (
 /obj/structure/machinery/telecomms/relay/preset/tower,
 /turf/open/floor/almayer,
@@ -990,6 +1127,25 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
+"ck" = (
+/obj/structure/bookcase{
+	density = 0;
+	icon_state = "book-5";
+	pixel_y = 18;
+	can_block_movement = 0
+	},
+/obj/item/book/manual/engineering_hacking,
+/obj/item/book/manual/evaguide,
+/obj/item/book/manual/surgery{
+	icon_state = "book_tan";
+	color = "#8B9490"
+	},
+/obj/item/prop/magazine/book/uppbooklet{
+	pixel_x = 4;
+	pixel_y = 3
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/platoon_sergeant)
 "cl" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
@@ -1006,6 +1162,36 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/cryo_cells)
+"cm" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/tool/hand_labeler{
+	pixel_x = -6;
+	pixel_y = 12
+	},
+/obj/item/prop/tableflag/upp{
+	pixel_x = 7;
+	pixel_y = 12
+	},
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/obj/item/folder/red{
+	pixel_y = -1;
+	pixel_x = 3
+	},
+/obj/item/prop/magazine/book/warisaracket{
+	color = "#8B9490";
+	desc = "A gift from a sympathetic American marine. An old, well-worn copy of War is a Racket by United States Marine Corps legend, Major General Smedley Butler. In short, the book outlines the function the historical Marine Corps had in establishing and enforcing American global hegemony.";
+	icon_state = "book_green";
+	layer = 2.9;
+	pixel_x = -6;
+	pixel_y = -3
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_sergeant)
 "cn" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
@@ -1047,6 +1233,24 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
+"cs" = (
+/obj/item/storage/belt/gun/type47/np92,
+/obj/structure/closet/secure_closet/guncabinet{
+	req_one_access_txt = "240";
+	req_access = null;
+	can_block_movement = 0;
+	pixel_y = -7;
+	name = "equipment locker";
+	pixel_x = 27
+	},
+/obj/item/storage/backpack/lightpack/upp,
+/obj/item/tool/crew_monitor{
+	faction = "UPP"
+	},
+/obj/item/clothing/suit/marine/faction/UPP/jacket,
+/obj/item/clothing/suit/marine/lamp,
+/turf/open/floor/strata/floor2,
+/area/golden_arrow/platoon_commander_rooms)
 "ct" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
@@ -1093,6 +1297,27 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
+"cx" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/paper_bin{
+	pixel_y = 5;
+	pixel_x = -3
+	},
+/obj/item/folder/green{
+	pixel_x = -6
+	},
+/obj/item/tool/pen/clicky{
+	desc = "It's a normal black ink pen."
+	},
+/obj/item/prop{
+	icon = 'icons/obj/items/drinks.dmi';
+	icon_state = "teacup";
+	name = "teacup";
+	desc = "A small chipped teacup.";
+	pixel_x = 11
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_commander_rooms)
 "cy" = (
 /obj/structure/machinery/shower{
 	dir = 4
@@ -1179,6 +1404,91 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
+"cH" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/tool/pen/clicky{
+	desc = "It's a normal black ink pen."
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/briefing)
+"cI" = (
+/obj/structure/machinery/light/small{
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
+	},
+/obj/structure/bookcase{
+	density = 0;
+	icon_state = "book-5";
+	pixel_y = -1;
+	can_block_movement = 0;
+	opacity = 0;
+	pixel_x = -30
+	},
+/obj/item/book/codebook/upp{
+	icon_state = "book_green";
+	pixel_y = 4;
+	pixel_x = -1
+	},
+/obj/item/prop/magazine/book/uppbooklet{
+	pixel_x = 4;
+	pixel_y = 3
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/platoon_commander_rooms)
+"cJ" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/faxmachine{
+	name = "\improper UPP Military Fax Machine";
+	network = "UPP Encrypted Network";
+	target_department = "UPP High Command";
+	pixel_y = 8
+	},
+/obj/structure/machinery/door_control{
+	name = "Equipment Room Observation Control";
+	id = "pltco";
+	pixel_x = -22;
+	pixel_y = -5
+	},
+/turf/open/floor/strata/floor2,
+/area/golden_arrow/platoon_commander_rooms)
+"cK" = (
+/obj/structure/machinery/light/double{
+	dir = 8;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 5
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/mre/upp{
+	pixel_y = 10;
+	pixel_x = 3
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/prep_hallway)
+"cL" = (
+/obj/structure/closet/secure_closet{
+	name = "machinegunner locker";
+	req_access_txt = "243;238";
+	pixel_x = -8;
+	can_block_movement = 0
+	},
+/obj/item/weapon/gun/smartgun/upp,
+/obj/item/ammo_magazine/smartgun/upp,
+/obj/item/ammo_magazine/smartgun/upp,
+/obj/item/ammo_magazine/smartgun/upp,
+/obj/item/storage/belt/gun/smartgunner/upp,
+/obj/item/clothing/suit/marine/smartgunner/upp,
+/obj/item/clothing/glasses/night/m56_goggles/upp/no_nightvision,
+/obj/structure/machinery/light/double{
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 5;
+	dir = 8
+	},
+/obj/item/smartgun_battery/upp,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/prep_hallway)
 "cM" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/warning_stripes{
@@ -1189,6 +1499,23 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/cryo_cells)
+"cN" = (
+/obj/structure/closet/secure_closet{
+	name = "machinegunner locker";
+	req_access_txt = "243;237";
+	pixel_x = -8;
+	can_block_movement = 0
+	},
+/obj/item/weapon/gun/smartgun/upp,
+/obj/item/ammo_magazine/smartgun/upp,
+/obj/item/ammo_magazine/smartgun/upp,
+/obj/item/ammo_magazine/smartgun/upp,
+/obj/item/storage/belt/gun/smartgunner/upp,
+/obj/item/clothing/suit/marine/smartgunner/upp,
+/obj/item/clothing/glasses/night/m56_goggles/upp/no_nightvision,
+/obj/item/smartgun_battery/upp,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/prep_hallway)
 "cO" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
@@ -1219,6 +1546,22 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
+"cR" = (
+/obj/structure/surface/rack{
+	color = "#8B9490"
+	},
+/obj/item/roller,
+/obj/item/storage/belt/medical/only_scanner,
+/obj/item/storage/firstaid/softpack/upp{
+	pixel_x = 3;
+	pixel_y = 2
+	},
+/obj/item/storage/firstaid/softpack/upp{
+	pixel_y = 5;
+	pixel_x = -8
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/medical)
 "cS" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -1229,6 +1572,22 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/briefing)
+"cT" = (
+/obj/structure/closet/crate/secure/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/obj/item/ammo_box/magazine/nade_box/upp,
+/obj/structure/machinery/light/double{
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 5;
+	dir = 8
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/prep_hallway)
 "cU" = (
 /obj/structure/prop{
 	desc = "A sturdy metal ladder that leads to lower deck of Chapaev which houses CIC and Brig. The hatch is closed, for now.";
@@ -1310,6 +1669,13 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
+"cZ" = (
+/obj/structure/closet/crate/secure/upp,
+/obj/item/ammo_box/magazine/nade_box/upp/ugl,
+/obj/item/ammo_box/magazine/nade_box/upp/ugl,
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/prep_hallway)
 "da" = (
 /turf/closed/wall/upp_wall/grey/hull,
 /area/space)
@@ -1323,12 +1689,52 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
+"dc" = (
+/obj/structure/surface/rack{
+	color = "#8B9490"
+	},
+/obj/item/ammo_box/magazine/nade_box/upp/smoke,
+/obj/structure/surface/rack{
+	color = "#8B9490"
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/prep_hallway)
+"dd" = (
+/obj/structure/surface/table/almayer{
+	color = "#8B9490"
+	},
+/obj/item/clipboard{
+	pixel_x = -6;
+	pixel_y = -1
+	},
+/obj/item/tool/pen/clicky{
+	desc = "It's a normal black ink pen."
+	},
+/obj/item/device/flashlight/lamp{
+	light_power = 0.8;
+	light_color = "#e7c0a4";
+	light_range = 4;
+	anchored = 1;
+	pixel_y = 14;
+	pixel_x = 7;
+	on = 1;
+	layer = 5
+	},
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/hangar)
 "de" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/briefing)
+"df" = (
+/obj/structure/surface/table/almayer{
+	color = "#8B9490"
+	},
+/obj/item/storage/box/flare/upp,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/hangar)
 "dg" = (
 /obj/structure/largecrate/random/barrel/red{
 	stuff = list(/obj/item/clothing/under/marine/veteran/UPP,/obj/item/clothing/gloves/marine,/obj/item/clothing/gloves/marine/brown,/obj/item/clothing/gloves/marine/joe,/obj/item/clothing/shoes/marine/joe,/obj/item/clothing/shoes/marine/upp/guard,/obj/item/clothing/shoes/marine/upp)
@@ -1380,28 +1786,13 @@
 /obj/item/storage/firstaid/o2,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dl" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
+"dm" = (
+/obj/structure/machinery/power/terminal{
+	dir = 8
 	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Section Sergeant";
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "dn" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -1438,29 +1829,16 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
-"dr" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
+"dq" = (
+/obj/structure/machinery/power/terminal{
+	dir = 8
 	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Smartgunner";
-	pixel_x = 8;
-	can_block_movement = 0
+/obj/structure/cable{
+	icon_state = "0-4"
 	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/prop/magazine/book/littleredbook,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "ds" = (
 /obj/structure/closet{
 	name = "emergency closet";
@@ -1505,6 +1883,10 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
+"dw" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
 "dx" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W";
@@ -1532,6 +1914,24 @@
 "dA" = (
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
+"dB" = (
+/obj/structure/machinery/power/terminal{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
+"dC" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
+"dD" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	id = "chapaev_engi"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
 "dE" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -1546,36 +1946,26 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dH" = (
+"dG" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
+	icon_state = "E"
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
+/obj/structure/surface/rack{
+	color = "#8B9490";
+	pixel_x = -3
 	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/weapon/butterfly,
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Corpsman";
-	pixel_x = -7;
-	can_block_movement = 0
+/obj/item/clothing/mask/gas/military/upp{
+	pixel_x = -8;
+	pixel_y = 2
 	},
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
+/obj/item/clothing/mask/gas/military/upp{
+	pixel_y = 2
 	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10;
-	pixel_x = -13
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 5
 	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "dI" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
@@ -1592,6 +1982,18 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/cryo_cells)
+"dK" = (
+/obj/structure/machinery/pipedispenser,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice1";
+	pixel_x = 16;
+	pixel_y = -15
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
 "dL" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	dir = 4;
@@ -1601,35 +2003,6 @@
 	pixel_x = 24
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
-"dM" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Squad Leader";
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10;
-	pixel_x = 11
-	},
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "dN" = (
 /obj/structure/barricade/handrail/strata{
@@ -1674,28 +2047,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"dT" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Squad Leader";
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "dU" = (
 /obj/structure/pipes/vents/pump{
 	dir = 4
@@ -1722,29 +2073,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/cryo_cells)
-"dX" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	job = "Smartgunner";
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/weapon/butterfly,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "dY" = (
 /obj/structure/barricade/handrail/strata{
 	dir = 4
@@ -1766,9 +2094,32 @@
 /obj/structure/foamed_metal/iron,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/dorms)
+"eb" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
 "ec" = (
 /turf/closed/wall/upp_wall/grey,
 /area/golden_arrow/dorms)
+"ed" = (
+/obj/structure/pipes/standard/manifold/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
+"ee" = (
+/obj/structure/machinery/door_control{
+	id = "chapaev_engi";
+	pixel_y = -23
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
 "ef" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/bedsheetbin{
@@ -1791,6 +2142,25 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
+"ei" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/surface/rack{
+	color = "#8B9490";
+	pixel_x = 3
+	},
+/obj/item/device/multitool/upp,
+/obj/item/device/multitool/upp{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "ej" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -1823,72 +2193,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"eo" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/prop/magazine/book/littleredbook,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
-"ep" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
-"eq" = (
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10
-	},
-/obj/structure/closet/crate/secure/upp/alt,
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/drinks/dry_ramen{
-	randpixel = 12
-	},
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/item/reagent_container/food/snacks/upp,
-/obj/structure/prop/invuln/overhead_pipe{
-	dir = 4;
-	pixel_y = 10;
-	pixel_x = -13
-	},
-/turf/open/floor/strata/multi_tiles/southwest,
-/area/golden_arrow/briefing)
 "er" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/prop/invuln/overhead_pipe{
@@ -1909,10 +2213,24 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
+"et" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = -15
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
 "eu" = (
 /obj/structure/foamed_metal/iron,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/briefing)
+"ev" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "ew" = (
 /obj/structure/machinery/washing_machine{
 	pixel_y = 14;
@@ -2027,27 +2345,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/golden_arrow/briefing)
-"eD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = -7;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/cryo_cells)
 "eE" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -2059,28 +2356,19 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/cryo_cells)
-"eF" = (
-/obj/structure/closet/secure_closet/marine_personal{
-	pixel_y = 14;
-	job = "Platoon Commander";
-	can_block_movement = 0;
-	has_cryo_gear = 0
-	},
-/obj/item/clothing/accessory/patch/upp/naval,
-/obj/item/clothing/accessory/patch/upp,
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/item/clothing/under/marine/veteran/UPP/naval,
-/obj/item/clothing/suit/storage/jacket/marine/upp/naval,
-/obj/structure/disposalpipe/segment{
+"eG" = (
+/obj/structure/machinery/light/small{
 	dir = 4;
-	icon_state = "pipe-c"
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4
 	},
-/obj/structure/pipes/standard/manifold/visible/supply{
-	dir = 1
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
 	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/cryo_cells)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "eH" = (
 /obj/structure/disposalpipe/segment{
 	dir = 8;
@@ -2098,28 +2386,6 @@
 	pixel_x = 24
 	},
 /turf/open/floor/strata/multi_tiles/west,
-/area/golden_arrow/cryo_cells)
-"eI" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/closet/secure_closet/marine_personal{
-	has_cryo_gear = 0;
-	pixel_x = 8;
-	can_block_movement = 0
-	},
-/obj/item/clothing/shoes/marine/upp,
-/obj/item/clothing/under/marine/veteran/UPP,
-/obj/item/weapon/butterfly,
-/obj/item/device/radio/headset/almayer/marine/solardevils/upp,
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/cryo_cells)
 "eJ" = (
 /obj/structure/barricade/handrail/strata{
@@ -2186,6 +2452,18 @@
 /obj/structure/curtain/blue,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
+"eR" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 8;
+	icon_state = "lattice12";
+	pixel_x = 13;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "eS" = (
 /obj/structure/disposalpipe/junction{
 	dir = 2;
@@ -2248,6 +2526,19 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/briefing)
+"eY" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/golden_arrow/engineering)
+"eZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E"
+	},
+/obj/structure/reagent_dispensers/watertank,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "fa" = (
 /obj/structure/disposalpipe/junction{
 	dir = 2;
@@ -2330,6 +2621,13 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
+"fi" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 5
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/southeast,
+/area/golden_arrow/engineering)
 "fj" = (
 /obj/structure/sign/safety/galley{
 	pixel_x = 14;
@@ -2396,6 +2694,15 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/dorms)
+"fq" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/southeast,
+/area/golden_arrow/engineering)
 "fr" = (
 /obj/structure/machinery/disposal{
 	pixel_y = 14
@@ -2448,6 +2755,31 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/briefing)
+"fx" = (
+/obj/structure/ladder{
+	height = 1;
+	id = "eng1"
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/engineering)
+"fy" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = -15
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	dir = 4;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/southeast,
+/area/golden_arrow/engineering)
 "fz" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/machinery/door/airlock/upp_grey{
@@ -2463,6 +2795,36 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
+"fB" = (
+/obj/item/prop/magazine/book{
+	desc = "A science fiction novel of Russian origin. You should probably actually read it instead of passing off your knowledge of the movie as knowlege of the book.";
+	name = "Roadside Picnic";
+	pixel_y = 3;
+	pixel_x = -3
+	},
+/obj/structure/surface/table/reinforced/prison,
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 6
+	},
+/obj/item/device/flashlight{
+	pixel_x = 4;
+	pixel_y = -5
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/southeast,
+/area/golden_arrow/engineering)
+"fC" = (
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 9
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1;
+	pixel_y = 3
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "fD" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/sign/safety/galley{
@@ -2489,6 +2851,28 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
+"fG" = (
+/obj/structure/machinery/vending/cigarette/upp{
+	pixel_y = 16;
+	can_block_movement = 0
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice2";
+	pixel_x = 16;
+	pixel_y = 16
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 16;
+	pixel_y = -15;
+	layer = 6
+	},
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_x = 32
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/southeast,
+/area/golden_arrow/engineering)
 "fH" = (
 /obj/structure/disposalpipe/segment,
 /obj/effect/decal/warning_stripes{
@@ -2517,6 +2901,39 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/canteen)
+"fK" = (
+/obj/structure/machinery/door/airlock/upp_utility{
+	name = "\improper Maintenance Access";
+	dir = 1;
+	req_one_access_txt = "230"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
+"fL" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = -6;
+	pixel_y = 26
+	},
+/turf/closed/wall/upp_wall/grey,
+/area/golden_arrow/engineering)
+"fM" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/platoon_leader{
+	can_block_movement = 0;
+	pixel_x = -8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 2
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/platoon_leader{
+	can_block_movement = 0;
+	pixel_x = -8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "fN" = (
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
@@ -2570,6 +2987,35 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
+"fT" = (
+/obj/structure/machinery/light/small{
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4;
+	pixel_x = -16
+	},
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/engineering)
+"fU" = (
+/obj/structure/sign{
+	desc = "Comrade! Don't forget to return your state-issued items to your assigned locker before returning to hypersleep!";
+	icon_state = "securearea";
+	name = "Vnimanie! 注意!";
+	pixel_y = -34;
+	layer = 2
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	pixel_y = -2
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice1";
+	pixel_x = 27;
+	pixel_y = -15
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "fV" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/strata/multi_tiles,
@@ -2597,6 +3043,19 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/canteen)
+"fY" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = -6
+	},
+/obj/structure/machinery/light/small{
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4;
+	pixel_x = 16
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/engineering)
 "fZ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -2612,6 +3071,33 @@
 "gb" = (
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/canteen)
+"gc" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/smartgunner{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
+"gd" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/corpsman{
+	pixel_x = -8;
+	can_block_movement = 0
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 2
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
+"ge" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/engineering)
 "gf" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice3";
@@ -2799,6 +3285,17 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
+"gv" = (
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 27;
+	pixel_y = -15;
+	layer = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "gw" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4;
@@ -2816,28 +3313,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/dorms)
-"gy" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/item/book/codebook/upp{
-	icon_state = "book_green";
-	pixel_y = 4;
-	pixel_x = 4
-	},
-/obj/item/prop/magazine/book/uppbooklet{
-	pixel_y = 4;
-	pixel_x = -1;
-	layer = 2.9
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "gz" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/prop/magazine/book/littleredbook{
@@ -2905,6 +3380,24 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/canteen)
+"gF" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = -6
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/engineering)
+"gG" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/squad_leader{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "gH" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/reagent_container/food/drinks/coffeecup{
@@ -2980,6 +3473,17 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/canteen)
+"gO" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/squad_leader{
+	can_block_movement = 0;
+	pixel_x = -7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 2
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "gP" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/small{
@@ -3012,24 +3516,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/hangar)
-"gS" = (
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0
-	},
-/obj/item/book/manual/chef_recipes,
-/obj/item/book/manual/barman_recipes,
-/obj/item/book/manual/engineering_hacking,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/dorms)
 "gT" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/power_cell/empty{
@@ -3043,22 +3529,6 @@
 	drop_sensitivity = 0;
 	impact_sensitivity = 1;
 	pixel_y = -5
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/dorms)
-"gU" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/prop/invuln/ice_prefab/roof_greeble{
-	pixel_y = 22;
-	pixel_x = -14;
-	layer = 3
-	},
-/obj/structure/machinery/computer/cameras/wooden_tv/prop{
-	pixel_y = 10;
-	layer = 3
-	},
-/obj/structure/prop/ice_colony/hula_girl{
-	pixel_x = -10
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
@@ -3077,6 +3547,12 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/dorms)
+"gW" = (
+/obj/structure/pipes/vents/pump{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/engineering)
 "gX" = (
 /obj/structure/window/reinforced{
 	dir = 4;
@@ -3240,6 +3716,25 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
+"hk" = (
+/obj/structure/pipes/standard/manifold/fourway/visible/supply,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 27;
+	pixel_y = -15;
+	layer = 6
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/small{
+	light_power = 0.8;
+	light_range = 4;
+	light_color = "#e7c0a4";
+	invisibility = 100;
+	dir = 4;
+	pixel_x = 13
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "hl" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice3";
@@ -3255,39 +3750,12 @@
 /obj/structure/machinery/power/apc/almayer/east,
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/canteen)
-"ho" = (
-/obj/structure/machinery/light/small{
-	light_power = 0.8;
-	light_range = 4;
-	light_color = "#e7c0a4"
-	},
-/obj/structure/bed/chair/comfy{
-	dir = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"hp" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/computer/emails{
-	dir = 8;
-	pixel_y = 4
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "hq" = (
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	dir = 1;
 	name = "ship-grade camera";
 	network = list("Chapaev");
 	c_tag = "Sergeants Room"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"hr" = (
-/obj/structure/machinery/light/small{
-	light_power = 0.8;
-	light_range = 4;
-	light_color = "#e7c0a4"
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
@@ -3308,6 +3776,26 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
+"hv" = (
+/obj/structure/pipes/vents/pump{
+	dir = 8
+	},
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = -6
+	},
+/turf/open/floor/strata/floor3/east,
+/area/golden_arrow/engineering)
+"hw" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/smartgunner{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "hx" = (
 /obj/structure/disposalpipe/segment{
 	dir = 2;
@@ -3320,6 +3808,18 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/briefing)
+"hy" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = -7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 2
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "hz" = (
 /obj/structure/machinery/disposal{
 	density = 0;
@@ -3362,6 +3862,17 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/canteen)
+"hE" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = 7
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
 "hF" = (
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
@@ -3404,58 +3915,24 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
-"hJ" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/reagent_container/food/drinks/coffeecup{
-	pixel_x = 8;
-	pixel_y = -1
+"hI" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 2
 	},
-/obj/item/prop/magazine/book/warisaracket{
-	color = "#8B9490";
-	desc = "A gift from a sympathetic American marine. An old, well-worn copy of War is a Racket by United States Marine Corps legend, Major General Smedley Butler. In short, the book outlines the function the historical Marine Corps had in establishing and enforcing American global hegemony.";
-	icon_state = "book_green";
-	layer = 2.9;
-	pixel_x = -2
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen";
-	layer = 3
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
+/obj/structure/machinery/light/small{
+	dir = 1;
 	light_color = "#e7c0a4";
+	light_power = 0.8;
 	light_range = 4;
-	anchored = 1;
-	pixel_y = 15;
-	pixel_x = 2;
-	on = 1;
-	layer = 5
+	pixel_x = 16
+	},
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
+	can_block_movement = 0;
+	pixel_x = -7
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"hK" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/paper_bin{
-	pixel_y = 6;
-	pixel_x = 3
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen";
-	layer = 3
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
-	light_color = "#e7c0a4";
-	light_range = 4;
-	anchored = 1;
-	pixel_y = -9;
-	pixel_x = 5;
-	on = 1
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
+/area/golden_arrow/engineering)
 "hL" = (
 /obj/structure/machinery/door/airlock/upp_utility{
 	dir = 1;
@@ -3465,6 +3942,34 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/briefing)
+"hM" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/platoon_commander{
+	can_block_movement = 0;
+	pixel_y = 10
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles/west,
+/area/golden_arrow/engineering)
+"hN" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1;
+	pixel_y = 3
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice3";
+	pixel_x = 27;
+	pixel_y = -15;
+	layer = 6
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice2";
+	pixel_x = 27;
+	pixel_y = 16
+	},
+/turf/open/floor/plating/plating_catwalk/strata,
+/area/golden_arrow/engineering)
 "hO" = (
 /obj/structure/machinery/light/small{
 	dir = 1;
@@ -3529,29 +4034,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"hU" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 4;
-	pixel_x = 2
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"hV" = (
-/obj/structure/machinery/door/airlock/upp_grey{
-	name = "\improper Platoon Sergeant's Bunk";
-	req_one_access_txt = "240"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"hW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 8;
-	pixel_x = -2
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "hX" = (
 /obj/structure/disposalpipe/segment{
 	dir = 1;
@@ -3665,43 +4147,31 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
-"ih" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/structure/machinery/computer/secure_data/noaccess{
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"ii" = (
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
+"ik" = (
+/obj/structure/closet/secure_closet/marine_personal/upp/rifleman{
 	can_block_movement = 0;
-	opacity = 0
+	pixel_x = 7
 	},
-/obj/item/book/manual/engineering_hacking,
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
-"ij" = (
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
 	},
-/obj/item/book/manual/engineering_hacking,
-/obj/item/book/manual/evaguide,
-/obj/item/book/manual/surgery{
-	icon_state = "book_tan";
-	color = "#8B9490"
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_color = "#e7c0a4";
+	light_power = 0.8;
+	light_range = 4;
+	pixel_x = -16
 	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/multi_tiles,
+/area/golden_arrow/engineering)
+"il" = (
+/obj/structure/prop/invuln/overhead_pipe{
+	pixel_x = -6;
+	pixel_y = -26
+	},
+/turf/closed/wall/upp_wall/grey,
+/area/golden_arrow/engineering)
 "in" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -3752,28 +4222,6 @@
 	},
 /obj/structure/machinery/disposal,
 /obj/structure/disposalpipe/trunk,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
-"iw" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/tool/hand_labeler{
-	pixel_x = -6;
-	pixel_y = 12
-	},
-/obj/item/prop/tableflag/upp{
-	pixel_x = 7;
-	pixel_y = 12
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/item/folder/red{
-	pixel_y = -1;
-	pixel_x = 3
-	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/platoon_sergeant)
 "ix" = (
@@ -3959,71 +4407,6 @@
 "iY" = (
 /turf/closed/wall/upp_wall/grey/hull,
 /area/golden_arrow/platoon_commander_rooms)
-"iZ" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/computer/secure_data/noaccess{
-	dir = 4;
-	pixel_x = 2;
-	pixel_y = 2
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
-"jb" = (
-/obj/structure/pipes/vents/pump{
-	dir = 4
-	},
-/obj/item/book/codebook/upp{
-	icon_state = "book_green";
-	pixel_y = 4;
-	pixel_x = -1
-	},
-/obj/item/prop/magazine/book/uppbooklet{
-	pixel_x = 4;
-	pixel_y = 3
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
-"jc" = (
-/obj/item/clipboard{
-	pixel_x = -17;
-	pixel_y = 3
-	},
-/obj/structure/machinery/light/small{
-	dir = 4;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/obj/item/device/flashlight/lamp{
-	pixel_x = 2;
-	pixel_y = 11;
-	layer = 5;
-	anchored = 1
-	},
-/obj/item/storage/fancy/cigar/matchbook/brown{
-	pixel_x = -4
-	},
-/obj/item/prop{
-	icon = 'icons/obj/items/drinks.dmi';
-	icon_state = "teacup";
-	name = "teacup";
-	desc = "A small chipped teacup.";
-	pixel_x = 6
-	},
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
 "jd" = (
 /obj/structure/machinery/light/small,
 /turf/open/floor/strata/floor3,
@@ -4035,30 +4418,6 @@
 	pixel_y = -2
 	},
 /turf/open/floor/strata/floor3,
-/area/golden_arrow/platoon_commander_rooms)
-"jg" = (
-/obj/item/storage/belt/gun/type47/np92,
-/obj/structure/closet/secure_closet/guncabinet{
-	req_one_access_txt = "240";
-	req_access = null;
-	can_block_movement = 0;
-	pixel_y = 15;
-	name = "equipment locker";
-	pixel_x = -5
-	},
-/obj/item/storage/backpack/lightpack/upp,
-/obj/item/tool/crew_monitor{
-	faction = "UPP"
-	},
-/obj/item/clothing/suit/marine/faction/UPP/jacket,
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
-"ji" = (
-/obj/structure/machinery/door/airlock/upp_grey{
-	name = "\improper Platoon Commander's Office";
-	req_one_access_txt = "241"
-	},
-/turf/open/floor/corsat/marked,
 /area/golden_arrow/platoon_commander_rooms)
 "jj" = (
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -4076,28 +4435,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/briefing)
-"jn" = (
-/obj/structure/machinery/door/airlock/upp_grey{
-	name = "\improper Bathroom";
-	dir = 1
-	},
-/turf/open/floor/corsat/marked,
-/area/golden_arrow/platoon_commander_rooms)
-"jo" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/paper_bin{
-	pixel_y = 5;
-	pixel_x = -3
-	},
-/obj/item/folder/green{
-	pixel_x = -6
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jp" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/small{
@@ -4138,40 +4475,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/briefing)
-"jt" = (
-/obj/structure/sink{
-	dir = 4;
-	pixel_x = 11
-	},
-/obj/structure/mirror{
-	pixel_x = 28
-	},
-/obj/item/tool/soap/syndie{
-	name = "LIFEBUOY soap";
-	desc = "A LIFEBUOY brand soap bar. Tastes like guilt.";
-	pixel_y = 8;
-	pixel_x = 12
-	},
-/obj/item/weapon/straight_razor{
-	pixel_x = 11;
-	pixel_y = -7
-	},
-/turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/platoon_commander_rooms)
-"jv" = (
-/obj/structure/machinery/door_control{
-	name = "Equipment Room Observation Control";
-	id = "pltco";
-	pixel_x = -22;
-	pixel_y = 8
-	},
-/obj/structure/machinery/light/small{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jw" = (
 /obj/structure/bed/chair/comfy,
 /turf/open/floor/strata/multi_tiles,
@@ -4186,28 +4489,6 @@
 "jy" = (
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/briefing)
-"jz" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 4
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
-"jC" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/machinery/faxmachine{
-	name = "\improper UPP Military Fax Machine";
-	network = "UPP Encrypted Network";
-	target_department = "UPP High Command";
-	pixel_y = 8
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "jD" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/computer/shuttle/dropship/flight/remote_control{
@@ -4469,16 +4750,6 @@
 	pixel_x = 3
 	},
 /turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
-"kc" = (
-/obj/structure/machinery/light/double{
-	dir = 8;
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5
-	},
-/obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/prep_hallway)
 "kd" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -4829,30 +5100,6 @@
 /obj/structure/machinery/cm_vending/clothing/medic/upp,
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"lb" = (
-/obj/structure/closet/secure_closet{
-	name = "machinegunner locker";
-	req_access_txt = "243;238";
-	pixel_x = -8;
-	can_block_movement = 0
-	},
-/obj/structure/machinery/light/double{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5;
-	dir = 8
-	},
-/obj/item/weapon/gun/pkp/iff{
-	current_mag = null
-	},
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/clothing/suit/marine/smartgunner/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lc" = (
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -4885,24 +5132,6 @@
 /obj/structure/bed/chair/comfy/teal,
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/medical)
-"lj" = (
-/obj/structure/closet/secure_closet{
-	name = "machinegunner locker";
-	req_access_txt = "243;237";
-	pixel_x = -8;
-	can_block_movement = 0
-	},
-/obj/item/weapon/gun/pkp/iff{
-	current_mag = null
-	},
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/ammo_magazine/pkp,
-/obj/item/clothing/suit/marine/smartgunner/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -4960,13 +5189,6 @@
 /area/golden_arrow/medical)
 "lr" = (
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/medical)
-"ls" = (
-/obj/structure/surface/rack{
-	color = "#8B9490"
-	},
-/obj/item/roller,
-/turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
 "lt" = (
 /obj/structure/machinery/light/double{
@@ -5069,46 +5291,6 @@
 /obj/structure/window/framed/upp/grey,
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/medical)
-"lE" = (
-/obj/structure/machinery/light/double{
-	light_color = "#e7c0a4";
-	light_power = 0.8;
-	light_range = 5;
-	dir = 8
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/structure/closet/crate/secure/upp,
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp{
-	color = "#8B795C"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -5169,25 +5351,6 @@
 "lK" = (
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/medical)
-"lL" = (
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/impact{
-	color = "#8B795C"
-	},
-/obj/structure/closet/crate/secure/upp,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/prep_hallway)
 "lM" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/upp,
 /turf/open/floor/strata/floor3/east,
@@ -5199,15 +5362,6 @@
 	pixel_y = -15
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
-/area/golden_arrow/prep_hallway)
-"lP" = (
-/obj/structure/surface/rack{
-	color = "#8B9490"
-	},
-/obj/item/storage/box/packet/high_explosive/upp/smoke,
-/obj/item/storage/box/packet/high_explosive/upp/smoke,
-/obj/item/storage/box/packet/high_explosive/upp/smoke,
-/turf/open/floor/strata/floor3/east,
 /area/golden_arrow/prep_hallway)
 "lQ" = (
 /obj/structure/disposalpipe/segment{
@@ -5871,30 +6025,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/golden_arrow/hangar)
-"nz" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/obj/item/clipboard{
-	pixel_x = -6;
-	pixel_y = -1
-	},
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen"
-	},
-/obj/item/device/flashlight/lamp{
-	light_power = 0.8;
-	light_color = "#e7c0a4";
-	light_range = 4;
-	anchored = 1;
-	pixel_y = 14;
-	pixel_x = 7;
-	on = 1;
-	layer = 5
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/hangar)
 "nA" = (
 /obj/structure/surface/rack{
 	color = "#8B9490"
@@ -6297,12 +6427,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
-"oB" = (
-/obj/structure/bed/chair/comfy{
-	dir = 8
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "oC" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -7862,14 +7986,6 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/golden_arrow/platoon_commander_rooms)
-"sO" = (
-/obj/structure/machinery/shower{
-	dir = 8
-	},
-/obj/structure/machinery/door/window/westleft,
-/obj/structure/window/reinforced/tinted/frosted,
-/turf/open/floor/almayer/dark_sterile,
-/area/golden_arrow/platoon_commander_rooms)
 "sV" = (
 /obj/structure/machinery/power/reactor{
 	name = "\improper U.R.A.L.O.I.D. thermonuclear generator";
@@ -8000,18 +8116,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/southeast,
 /area/golden_arrow/hangar)
-"xL" = (
-/obj/structure/bookcase{
-	density = 0;
-	icon_state = "book-5";
-	pixel_y = 18;
-	can_block_movement = 0;
-	opacity = 0
-	},
-/obj/item/book/manual/evaguide,
-/obj/item/book/manual/engineering_hacking,
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_commander_rooms)
 "yb" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -8036,14 +8140,6 @@
 	},
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/hangar)
-"ze" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/tool/pen/clicky{
-	desc = "It's a normal black ink pen.";
-	name = "pen"
-	},
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/briefing)
 "zs" = (
 /obj/structure/sink{
 	dir = 4;
@@ -8104,12 +8200,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"Bn" = (
-/obj/structure/surface/table/almayer{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/hangar)
 "CN" = (
 /obj/structure/disposalpipe/segment{
 	dir = 4
@@ -8151,13 +8241,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/dorms)
-"Go" = (
-/obj/structure/bed/chair/comfy/beige{
-	dir = 8;
-	pixel_x = -7
-	},
-/turf/open/floor/strata/floor2,
-/area/golden_arrow/platoon_commander_rooms)
 "GC" = (
 /obj/structure/machinery/light/double{
 	dir = 4;
@@ -8226,20 +8309,12 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/golden_arrow/medical)
-"Kl" = (
-/obj/structure/pipes/vents/pump,
-/turf/open/floor/strata/floor3/east,
-/area/golden_arrow/platoon_sergeant)
 "Lk" = (
 /obj/structure/machinery/power/reactor{
 	name = "\improper U.R.A.L.O.I.D. thermonuclear generator";
 	desc = "ProgMash produced generator made for heavy use by frontier colonies."
 	},
 /turf/open/floor/almayer,
-/area/golden_arrow/engineering)
-"LP" = (
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/strata/floor3,
 /area/golden_arrow/engineering)
 "Mi" = (
 /obj/structure/surface/table/almayer{
@@ -8266,13 +8341,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/dorms)
-"Nv" = (
-/obj/structure/bed,
-/obj/item/bedsheet/brown{
-	color = "#8B9490"
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "Om" = (
 /turf/closed/wall/upp_wall/grey,
 /area/golden_arrow/platoon_sergeant)
@@ -8293,9 +8361,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/golden_arrow/hangar)
-"PO" = (
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "PV" = (
 /obj/structure/surface/table/almayer{
 	color = "#8B9490"
@@ -8306,13 +8371,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/dorms)
-"Sj" = (
-/obj/structure/machinery/door_control{
-	id = "chapaev_engi";
-	pixel_y = -23
-	},
-/turf/open/floor/strata/floor3,
-/area/golden_arrow/engineering)
 "SJ" = (
 /obj/structure/machinery/iv_drip,
 /turf/open/floor/strata/floor2,
@@ -8409,16 +8467,6 @@
 	},
 /turf/open/floor/strata/floor3/east,
 /area/golden_arrow/hangar)
-"ZK" = (
-/obj/structure/phone_base/upp_net{
-	name = "Platoon Leader Telephone";
-	phone_category = "Chapaev";
-	phone_id = "Platoon Sergeant's Dorm";
-	dir = 4;
-	pixel_x = -16
-	},
-/turf/open/floor/strata/multi_tiles,
-/area/golden_arrow/platoon_sergeant)
 "ZS" = (
 /turf/open/floor/strata/multi_tiles/west,
 /area/golden_arrow/briefing)
@@ -10204,15 +10252,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+iR
+iR
+iR
+iR
+iR
+iR
+iR
+iR
 mV
 mV
 mV
@@ -10356,15 +10404,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+ea
+ea
+ea
+ea
+ea
+ea
+ea
+iR
 mV
 mV
 mV
@@ -10508,15 +10556,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+ea
+ec
+ec
+FY
+ec
+ec
+ea
+iR
 mV
 mV
 mV
@@ -10660,15 +10708,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+yH
+gZ
+ec
+gQ
+gI
+go
+ec
+ea
+iR
 mV
 mV
 mV
@@ -10812,27 +10860,27 @@ mV
 mV
 mV
 mV
+yH
+gZ
+Nq
+qs
+UR
+gp
+jM
+ea
+iR
+iR
+iR
 mV
 mV
+iR
+iR
+iR
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+CN
+bD
+bD
+bD
 mV
 mV
 mV
@@ -10924,6 +10972,15 @@ mV
 mV
 mV
 mV
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+mE
 mV
 mV
 mV
@@ -10955,36 +11012,27 @@ mV
 mV
 mV
 mV
+yH
+gZ
+ec
+Hu
+gI
+Wu
+ec
+ea
+ea
+ea
+iR
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+ea
+qR
+wW
+Bc
+qR
+bE
+bD
 mV
 mV
 mV
@@ -11067,10 +11115,31 @@ mV
 mV
 mV
 mV
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+mE
 mV
 mV
 mV
 mV
+mE
+jS
+jS
 mV
 mV
 mV
@@ -11095,48 +11164,27 @@ mV
 mV
 mV
 mV
+yH
+gZ
+ec
+ec
+gJ
+ec
+ec
+ec
+ec
+ea
+iR
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+ea
+cE
+dx
+db
+cE
+bE
+bD
 mV
 mV
 mV
@@ -11218,6 +11266,32 @@ mV
 mV
 mV
 mV
+nk
+nk
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+nd
+mI
+mI
+mI
+mI
+mE
+jT
+jS
 mV
 mV
 mV
@@ -11236,59 +11310,33 @@ mV
 mV
 mV
 mV
+yH
+yH
+yH
+yH
+yH
+yH
+yH
+gZ
+ec
+aT
+eg
+eg
+fh
+zv
+ec
+ea
+iR
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+ea
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -11370,6 +11418,32 @@ mV
 mV
 mV
 mV
+nk
+nl
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+nR
+nN
+nE
+mG
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+jT
+jS
 mV
 mV
 mV
@@ -11388,59 +11462,33 @@ mV
 mV
 mV
 mV
+yH
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+gZ
+ec
+gT
+eg
+gq
+PV
+fR
+ec
+ea
+iR
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+iR
+ea
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -11522,6 +11570,32 @@ mV
 mV
 mV
 mV
+nk
+nl
+mG
+mG
+Jf
+dg
+oi
+oq
+dg
+oi
+nW
+mG
+Io
+uU
+of
+uU
+nn
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+jT
+jS
 mV
 mV
 mV
@@ -11540,59 +11614,33 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+yH
+gZ
+Om
+Om
+Om
+Om
+Om
+Om
+ec
+aZ
+eg
+gr
+fR
+fR
+ec
+ea
+iR
+iR
+iR
+iR
+ea
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -11674,77 +11722,77 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+oi
+oL
+Jf
+oi
+or
+Jf
+oi
+nX
+mG
+YE
+uU
+uU
+tu
+no
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+jT
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+jS
+iY
+iY
+mV
+mV
+yH
+gZ
+Om
+Om
+ck
+gt
+gt
+be
+ec
+gV
+eg
+eg
+gh
+fS
+ec
+ea
+ea
+ea
+ea
+ea
+ea
+cE
+jL
+dh
+cE
+bE
+bD
 mV
 mV
 mV
@@ -11822,81 +11870,81 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nk
+nk
+nk
+nk
+nl
+mG
+oP
+oM
+oJ
+oz
+ou
+on
+oi
+nY
+mG
+nU
+uU
+uU
+gR
+mK
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+jT
+iK
+iY
+mV
+mV
+yH
+gZ
+Om
+iv
+in
+hX
+bW
+bs
+ec
+ec
+gK
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+cE
+jL
+dh
+cE
+bE
+bD
 mV
 mV
 mV
@@ -11974,81 +12022,81 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+nl
+nl
+nl
+nl
+mG
+oL
+oi
+vp
+oC
+vp
+Jf
+Jf
+Jf
+mG
+Al
+by
+On
+On
+np
+mG
+ne
+DL
+DL
+DL
+DL
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+iK
+iY
+mV
+mV
+yH
+gZ
+Om
+IT
+gt
+hY
+gt
+hq
+ec
+gs
+eg
+gs
+ec
+ea
+ec
+eP
+ec
+eP
+ec
+ew
+ef
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -12126,82 +12174,82 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+nL
+oD
+nL
+mG
+mG
+mG
+mG
+mG
+nF
+nF
+nF
+mG
+mG
+mG
+mG
+DL
+DL
+DL
+jU
+jU
+mp
+mm
+mh
+ma
+cZ
+cT
+jU
+cN
+cL
+kP
+jU
+kt
+ki
+jU
+jU
+iK
+iY
+iY
+iY
+iY
+gZ
+Om
+wr
+gt
+hY
+cb
+bu
+ec
+gu
+eg
+gu
+ec
+ec
+ec
+eQ
+ec
+eQ
+ec
+ex
+eg
+cE
+jL
+de
+cE
+bE
+bD
+bD
 mV
 mV
 mV
@@ -12278,82 +12326,82 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+DL
+tS
+DL
+DL
+DL
+nq
+yb
+oE
+yb
+DL
+tS
+DL
+DL
+DL
+yb
+yb
+yb
+nq
+tS
+nf
+mZ
+DL
+DL
+DL
+jU
+jU
+lF
+lF
+lF
+lF
+lF
+lF
+jU
+lk
+kj
+kj
+kD
+kj
+kj
+jW
+jU
+iK
+iK
+iK
+iK
+iK
+iK
+Om
+cm
+io
+hZ
+gt
+bN
+ec
+gu
+eg
+gw
+fV
+fV
+fz
+fp
+fc
+ey
+ey
+ey
+eh
+cE
+jL
+de
+cE
+bE
+bE
+bD
 mV
 mV
 mV
@@ -12426,97 +12474,97 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nk
+nk
+nk
+nk
+nl
+mG
+mT
+oK
+nH
+mR
+mR
+nH
+nH
+ny
+mR
+mR
+nH
+nH
+nH
+mR
+mR
+nH
+nH
+ns
+mR
+ni
+nb
+mR
+mR
+mJ
+jU
+mr
+uF
+uF
+uF
+uF
+uF
+uF
+lt
+uF
+uF
+uF
+kF
+uF
+uF
+jX
+jU
+iM
+iM
+iM
+iK
+iK
+iK
+Om
+IT
+iq
+ia
+gt
+hs
+ec
+gX
+eg
+ej
+gi
+fW
+ec
+fr
+fd
+zs
+ec
+ez
+ej
+cE
+dy
+di
+cE
+cE
+bE
+bD
+mV
+mV
+mV
+bD
+bD
+bD
+bD
+bD
+bD
+bD
+bD
 mV
 mV
 mV
@@ -12578,98 +12626,98 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+nl
+nl
+nl
+nl
+mG
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nu
+mT
+nf
+mZ
+DL
+DL
+DL
+jU
+mt
+kk
+kf
+kk
+kk
+kf
+uF
+lu
+ll
+lc
+kG
+kG
+ku
+kk
+jY
+jV
+cJ
+cI
+iM
+iM
+iM
+iM
+Om
+Om
+Om
+ib
+Om
+Om
+ec
+ec
+ec
+gx
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ec
+ek
+cE
+dz
+db
+cS
+cE
+bE
+bD
+mV
+mV
+bD
+bD
+bE
+bE
+bE
+bE
+bE
+bE
+bD
+aa
 mV
 mV
 mV
@@ -12730,99 +12778,99 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+mG
+mG
+mG
+mG
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+nv
+mT
+DL
+mG
+DL
+DL
+DL
+jU
+mu
+kk
+ld
+kQ
+kH
+lM
+lG
+lw
+uF
+ld
+kQ
+kH
+kv
+kl
+ka
+jV
+jD
+YU
+jF
+jj
+jd
+iM
+cE
+eK
+ZS
+ic
+hL
+hu
+eK
+gY
+ZS
+el
+ZS
+eK
+fA
+fs
+fe
+ZS
+eK
+eA
+el
+dQ
+dA
+de
+cU
+cE
+bE
+bD
+bD
+bD
+bD
+bE
+bE
+bF
+bF
+bF
+bF
+bE
+bE
+aa
+aa
 mV
 mV
 mV
@@ -12882,100 +12930,100 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qD
+qk
+yb
+yb
+yb
+yb
+yb
+yb
+yb
+yb
+yb
+yb
+mF
+yb
+yb
+yb
+yb
+yb
+yb
+nO
+DL
+nv
+mT
+DL
+mG
+DL
+DL
+mL
+jU
+mv
+mb
+lN
+mb
+mb
+lN
+lH
+lx
+uF
+kf
+kk
+kk
+kw
+km
+jY
+jU
+jI
+jw
+cx
+jk
+jF
+iM
+iE
+dE
+dE
+id
+cE
+hx
+dE
+ha
+dR
+em
+dE
+dE
+fD
+cF
+dR
+eS
+dE
+eB
+em
+dR
+dE
+dj
+cV
+cF
+bE
+bE
+bE
+bE
+bE
+bE
+bF
+bF
+bI
+bI
+bF
+bF
+bE
+ac
+aa
+aa
 mV
 mV
 mV
@@ -13034,104 +13082,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+DL
+DL
+mG
+DL
+DL
+DL
+jU
+mw
+uF
+uF
+uF
+mc
+dc
+lI
+ly
+lm
+le
+kR
+uF
+kx
+uF
+kb
+jU
+jJ
+YU
+jp
+cs
+jf
+iN
+iF
+ix
+rt
+ie
+ft
+ft
+ft
+ft
+ft
+ft
+ft
+fX
+ft
+ft
+ff
+eT
+eL
+eC
+en
+dS
+dF
+dk
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bZ
+bT
+bR
+bO
+bF
+bF
+ac
+ac
+aa
+aa
+aa
+aa
+aa
 mV
 mV
 "}
@@ -13186,104 +13234,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+DL
+mL
+mG
+mG
+mG
+mG
+jU
+jU
+jU
+mi
+mi
+jU
+jU
+jU
+jU
+jU
+jU
+jU
+kI
+ky
+jU
+jU
+jU
+iM
+jx
+iM
+iM
+iM
+iM
+cE
+iz
+cE
+ft
+ft
+hz
+hh
+hb
+gL
+gz
+gj
+fZ
+fE
+ft
+fg
+eU
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+cG
+cv
+cA
+cv
+cp
+bF
+bF
+bI
+ca
+zN
+zN
+bJ
+bI
+bF
+ac
+ac
+ac
+ac
+ac
+ac
+aa
 mV
 mV
 "}
@@ -13338,104 +13386,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+mT
+nj
+mG
+mW
+mS
+mM
+jU
+mx
+kn
+mn
+uF
+md
+kf
+kf
+jU
+ln
+lf
+kS
+uF
+kA
+kn
+cK
+jU
+jK
+jy
+UG
+oH
+iQ
+iQ
+iG
+oH
+ir
+ft
+hO
+hA
+hi
+hc
+gM
+gA
+gj
+vG
+fF
+ft
+fj
+eV
+bF
+aB
+am
+ak
+ai
+ad
+bF
+cq
+cq
+cB
+cq
+cq
+bF
+ci
+cg
+zN
+bP
+bP
+zN
+bJ
+bF
+af
+af
+br
+bn
+af
+ac
+aa
 mV
 mV
 "}
@@ -13490,104 +13538,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+mT
+nf
+nc
+mX
+mT
+mN
+mH
+my
+kL
+uF
+uF
+uF
+kL
+kL
+lz
+kL
+kL
+uF
+uF
+kx
+kL
+kd
+jU
+ZS
+ZS
+cH
+jl
+oH
+oH
+oH
+oH
+jL
+ft
+hP
+hB
+hj
+hd
+gB
+gB
+gk
+ga
+fH
+fu
+fk
+eW
+eM
+eE
+zN
+dU
+dI
+dn
+cW
+cM
+cw
+cC
+cw
+cr
+cl
+zN
+zN
+bP
+bU
+bP
+bP
+zN
+bG
+af
+bA
+bt
+bo
+af
+ac
+aa
 mV
 mV
 "}
@@ -13642,104 +13690,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+SP
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+nJ
+nw
+nm
+nf
+nc
+mX
+mT
+mN
+mH
+mz
+uF
+uF
+uF
+uF
+uF
+uF
+lx
+uF
+uF
+uF
+uF
+kx
+uF
+ke
+jU
+jN
+ix
+jr
+uM
+ix
+iS
+ix
+oH
+it
+ft
+hQ
+hB
+fN
+he
+vz
+gC
+gl
+gb
+fI
+ft
+fl
+eX
+bF
+aJ
+bK
+dV
+dJ
+do
+bF
+cO
+bF
+bF
+bF
+ct
+cn
+bK
+bK
+cd
+bV
+bK
+bK
+bK
+bH
+aR
+bB
+bv
+bp
+bm
+bk
+bj
 mV
 mV
 "}
@@ -13794,104 +13842,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+mT
+nf
+nc
+mX
+mT
+mN
+mH
+my
+kL
+uF
+uF
+uF
+kL
+kL
+lB
+kL
+kL
+uF
+uF
+kx
+kL
+kf
+jU
+ZS
+ZS
+Yz
+jl
+oH
+oH
+oH
+oH
+jL
+ft
+hR
+hC
+hl
+hf
+gD
+gD
+gm
+gf
+fJ
+fv
+fm
+fa
+eN
+eH
+zN
+dW
+dL
+dp
+cX
+cP
+cy
+cy
+cy
+cq
+co
+zN
+zN
+bP
+bX
+bP
+bP
+zN
+bG
+af
+bC
+bw
+bq
+af
+ac
+aa
 mV
 mV
 "}
@@ -13946,104 +13994,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+mT
+DL
+mG
+mY
+mU
+mP
+jU
+kg
+kf
+mn
+mj
+kg
+kf
+kf
+jU
+kf
+kf
+kg
+uF
+kA
+kf
+kg
+jU
+jO
+jy
+js
+rt
+oH
+oH
+iH
+oH
+jL
+ft
+hS
+hD
+hm
+hc
+gN
+gE
+gj
+vG
+fN
+ft
+fn
+eU
+bF
+aP
+ax
+ae
+aj
+ae
+bF
+cq
+cq
+cq
+cq
+cq
+bF
+cj
+ch
+zN
+bP
+bP
+zN
+bL
+bF
+af
+af
+bz
+af
+af
+ac
+aa
 mV
 mV
 "}
@@ -14098,104 +14146,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+DL
+mL
+mG
+mG
+mG
+mG
+kK
+kK
+mo
+mo
+kK
+kK
+lJ
+lJ
+kK
+kK
+lg
+kK
+kK
+kB
+ko
+cE
+cE
+cE
+cE
+cE
+iV
+iV
+iV
+cE
+iB
+iu
+ft
+ft
+hF
+hn
+hg
+gP
+gH
+gj
+gg
+fO
+ft
+fg
+eU
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+cQ
+cz
+cD
+cz
+cu
+bF
+bF
+bM
+ce
+zN
+zN
+bL
+bM
+bF
+ac
+ac
+ac
+ac
+ac
+ac
+aa
 mV
 mV
 "}
@@ -14250,104 +14298,104 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qG
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+wq
+nf
+DL
+nv
+DL
+DL
+mG
+DL
+DL
+mL
+kK
+mA
+DH
+DH
+bx
+me
+DH
+DH
+kK
+lp
+vC
+kT
+kK
+iD
+dE
+dR
+dR
+jQ
+dE
+dE
+dR
+dR
+dE
+iJ
+iC
+rt
+if
+ft
+ft
+ft
+ft
+ft
+ft
+ft
+fX
+ft
+ft
+ff
+eT
+eL
+eJ
+aA
+dY
+dN
+ds
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+bF
+cf
+bY
+bS
+bQ
+bF
+bF
+ac
+ac
+aa
+aa
+aa
+aa
+aa
 mV
 mV
 "}
@@ -14402,100 +14450,100 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+qH
+ql
+rx
+pH
+rx
+rx
+rx
+rx
+rx
+rx
+rx
+rx
+Za
+rx
+rx
+rx
+rx
+rx
+rx
+nP
+DL
+nv
+mT
+DL
+mG
+DL
+DL
+DL
+kK
+mB
+lK
+lK
+ht
+mf
+lQ
+lK
+lC
+lr
+lh
+kV
+kK
+kC
+ZS
+ZS
+ZS
+jR
+ZS
+ZS
+ZS
+ix
+iW
+cE
+iD
+dE
+ig
+cE
+hG
+dE
+dE
+dR
+dR
+gn
+dE
+fP
+cE
+rt
+fb
+dO
+dO
+er
+tO
+dO
+dt
+cS
+cE
+bE
+bE
+bE
+bE
+bE
+bE
+bF
+bF
+bM
+bM
+bF
+bF
+bE
+ac
+aa
+aa
 mV
 mV
 mV
@@ -14554,99 +14602,99 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+mG
+mG
+mG
+mG
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+DL
+nv
+mT
+DL
+mG
+DL
+DL
+DL
+kK
+mD
+lK
+aU
+lK
+GI
+lS
+Kg
+lD
+SJ
+vC
+kW
+kK
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+eO
+ZS
+fQ
+fw
+hH
+eO
+ZS
+ZS
+ZS
+es
+eO
+fQ
+fw
+fo
+ER
+eO
+ZS
+es
+dZ
+dA
+du
+cY
+cE
+bE
+bD
+bD
+bD
+bD
+bE
+bE
+bF
+bF
+bF
+bF
+bE
+bE
+aa
+aa
 mV
 mV
 mV
@@ -14706,98 +14754,98 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+nl
+nl
+nl
+nl
+mG
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nI
+nu
+mT
+nf
+mZ
+DL
+DL
+DL
+kK
+po
+mq
+hT
+ml
+tU
+lT
+Bf
+kK
+kX
+kX
+kX
+kK
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+cE
+dP
+dv
+cV
+cE
+bE
+bD
+mV
+mV
+bD
+bD
+bE
+bE
+bE
+bE
+bE
+bE
+bE
+aa
 mV
 mV
 mV
@@ -14858,98 +14906,98 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nk
+nk
+nk
+nk
+nl
+mG
+mT
+mT
+mT
+DL
+DL
+mT
+oK
+ns
+mR
+mR
+nH
+nH
+nH
+mR
+mR
+nH
+nH
+ny
+mR
+ni
+nb
+mR
+mR
+mJ
+kK
+kK
+kK
+kK
+kK
+kK
+lW
+kK
+kK
+cR
+GC
+kY
+kK
+eu
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+eu
+cE
+wW
+Bc
+cE
+cE
+bE
+bD
+mV
+mV
+mV
+bD
+bD
+bD
+bD
+bD
+bD
+bD
+bD
+aa
 mV
 mV
 mV
@@ -15014,82 +15062,82 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+nk
+nl
+mG
+DL
+Uj
+DL
+DL
+DL
+wd
+rx
+oF
+rx
+DL
+Uj
+DL
+DL
+nV
+rx
+rx
+rx
+wd
+Uj
+nf
+mZ
+DL
+DL
+DL
+mG
+kM
+kM
+kM
+kM
+kM
+lY
+kM
+kK
+kK
+kK
+kK
+kK
+eu
+qR
+mV
+mV
+mV
+mV
+mV
+mV
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+qR
+eu
+cE
+dx
+db
+cE
+bE
+bE
+bD
 mV
 mV
 mV
@@ -15166,6 +15214,48 @@ mV
 mV
 mV
 mV
+nk
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+nL
+oD
+nL
+mG
+mG
+mG
+mG
+mG
+nL
+nL
+nL
+mG
+mG
+mG
+mG
+DL
+DL
+DL
+mG
+kM
+kN
+kN
+kN
+kN
+lZ
+kM
+kM
+kM
+kM
+kM
+kM
+eu
+qR
 mV
 mV
 mV
@@ -15191,57 +15281,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+de
+cE
+bE
+bD
+bD
 mV
 mV
 mV
@@ -15318,9 +15366,48 @@ mV
 mV
 mV
 mV
+nk
+nl
+nl
+nl
+nl
+nl
+mG
+oi
+oq
+AB
+oG
+ov
+Jf
+Jf
+nZ
+mG
+PG
+xa
+xa
+xa
+Jf
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
+lZ
+kN
+kN
+kN
+kN
+kN
+kN
+qR
+qR
 mV
 mV
 mV
@@ -15346,53 +15433,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -15470,9 +15518,40 @@ mV
 mV
 mV
 mV
+nk
+nk
+nk
+nk
+nk
+nl
+mG
+oP
+oN
+oJ
+oI
+ow
+oo
+ol
+ob
+mG
+yK
+uU
+uU
+TV
+dd
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
+CN
 mV
 mV
 mV
@@ -15506,45 +15585,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -15626,9 +15674,36 @@ mV
 mV
 mV
 mV
+nk
+nl
+mG
+oi
+oO
+Jf
+oi
+ox
+op
+om
+oh
+mG
+aQ
+gR
+uU
+uU
+nA
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
+CN
 mV
 mV
 mV
@@ -15662,41 +15737,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+dh
+cE
+bE
+bD
 mV
 mV
 mV
@@ -15778,6 +15826,32 @@ mV
 mV
 mV
 mV
+nk
+nl
+mG
+mG
+Jf
+Jf
+oi
+oy
+Jf
+oi
+oi
+mG
+df
+Mi
+uU
+uU
+nB
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
@@ -15815,40 +15889,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+dh
+cE
+bE
+bD
 mV
 mV
 mV
@@ -15930,6 +15978,32 @@ mV
 mV
 mV
 mV
+nk
+nl
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+mG
+nn
+nQ
+nM
+mG
+mG
+ne
+DL
+DL
+DL
+DL
+mG
+kM
+kN
 mV
 mV
 mV
@@ -15967,40 +16041,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -16082,6 +16130,32 @@ mV
 mV
 mV
 mV
+nk
+nk
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+mG
+mG
+mG
+mG
+mG
+mG
+nd
+mQ
+mQ
+mQ
+mQ
+mE
+kM
+kN
 mV
 mV
 mV
@@ -16119,40 +16193,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -16235,10 +16283,31 @@ mV
 mV
 mV
 mV
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nl
+nl
+nl
+nl
+nl
+nl
+nl
+mE
 mV
 mV
 mV
 mV
+kN
+kN
+kN
 mV
 mV
 mV
@@ -16276,35 +16345,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+cE
+jL
+de
+cE
+bE
+bD
 mV
 mV
 mV
@@ -16396,6 +16444,15 @@ mV
 mV
 mV
 mV
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+nk
+mE
 mV
 mV
 mV
@@ -16440,23 +16497,14 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+qR
+eu
+qR
+dy
+di
+qR
+bE
+bD
 mV
 mV
 mV
@@ -16601,14 +16649,14 @@ mV
 mV
 mV
 mV
+qR
+qR
+da
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+CN
+da
+bD
+bD
 mV
 mV
 mV
@@ -18064,15 +18112,15 @@ mV
 mV
 mV
 mV
-iR
-iR
-iR
-iR
-iR
-iR
-iR
-iR
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -18216,15 +18264,15 @@ mV
 mV
 mV
 mV
-iR
-ea
-ea
-ea
-ea
-ea
-ea
-ea
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -18368,15 +18416,15 @@ mV
 mV
 mV
 mV
-iR
-ea
-ec
-ec
-FY
-ec
-ec
-ea
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -18515,20 +18563,20 @@ mV
 mV
 mV
 mV
-yH
-yH
-yH
-yH
-yH
-yH
-gZ
-ec
-gQ
-gI
-go
-ec
-ea
-iR
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -18667,32 +18715,32 @@ mV
 mV
 mV
 mV
-yH
-gZ
-gZ
-gZ
-gZ
-gZ
-gZ
-Nq
-qs
-UR
-gp
-jM
-ea
-iR
-iR
-iR
 mV
 mV
-iR
-iR
-iR
 mV
-CN
-bD
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -18784,15 +18832,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-mE
 mV
 mV
 mV
@@ -18819,32 +18858,41 @@ mV
 mV
 mV
 mV
-yH
-gZ
-Om
-Om
-Om
-Om
-Om
-ec
-Hu
-gI
-Wu
-ec
-ea
-ea
-ea
-iR
 mV
 mV
-iR
-ea
-qR
-wW
-Bc
-qR
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -18927,31 +18975,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mE
-mV
-mV
-mV
-mV
-mE
-jS
-jS
 mV
 mV
 mV
@@ -18971,32 +18994,57 @@ mV
 mV
 mV
 mV
-yH
-gZ
-Om
-ih
-gy
-PO
-Om
-ec
-ec
-gJ
-ec
-ec
-ec
-ec
-ea
-iR
 mV
 mV
-iR
-ea
-cE
-dx
-db
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19078,32 +19126,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-nd
-mI
-mI
-mI
-mI
-mE
-jT
-jS
 mV
 mV
 mV
@@ -19122,33 +19144,59 @@ mV
 mV
 mV
 mV
-yH
-yH
-gZ
-Om
-oB
-Kl
-gt
-ZK
-ec
-gS
-eg
-eg
-fh
-zv
-ec
-ea
-iR
 mV
 mV
-iR
-ea
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19230,32 +19278,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nR
-nN
-nE
-mG
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jS
 mV
 mV
 mV
@@ -19274,33 +19296,59 @@ mV
 mV
 mV
 mV
-yH
-gZ
-gZ
-Om
-ii
-hU
-hJ
-Nv
-ec
-gT
-eg
-gq
-PV
-fR
-ec
-ea
-iR
 mV
 mV
-iR
-ea
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19382,32 +19430,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-Jf
-dg
-oi
-oq
-dg
-oi
-nW
-mG
-Io
-uU
-of
-uU
-nn
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jS
 mV
 mV
 mV
@@ -19423,36 +19445,62 @@ mV
 mV
 mV
 mV
-iY
-iY
-iY
-iY
-iK
-Om
-Om
-Om
-hV
-Om
-Om
-ec
-gU
-eg
-gr
-fR
-fR
-ec
-ea
-iR
-iR
-iR
-iR
-ea
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19534,77 +19582,77 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-oi
-oL
-Jf
-oi
-or
-Jf
-oi
-nX
-mG
-YE
-uU
-uU
-tu
-no
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-jS
-iY
-iY
-iK
-iK
-iK
-iK
-Om
-Om
-ij
-hW
-gt
-PO
-ec
-gV
-eg
-eg
-gh
-fS
-ec
-ea
-ea
-ea
-ea
-ea
-ea
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19682,81 +19730,81 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-oP
-oM
-oJ
-oz
-ou
-on
-oi
-nY
-mG
-nU
-uU
-uU
-gR
-mK
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-jT
-iK
-iK
-iK
-iM
-iM
-iM
-Om
-iv
-in
-hX
-gt
-ho
-ec
-ec
-gK
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19834,81 +19882,81 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-oL
-oi
-vp
-oC
-vp
-Jf
-Jf
-Jf
-mG
-Al
-by
-On
-On
-np
-mG
-ne
-DL
-DL
-DL
-DL
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-iM
-iM
-iM
-iM
-iZ
-xL
-Om
-IT
-gt
-hY
-hK
-hp
-ec
-gs
-eg
-gs
-ec
-ea
-ec
-eP
-ec
-eP
-ec
-ew
-ef
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -19986,82 +20034,82 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nL
-oD
-nL
-mG
-mG
-mG
-mG
-mG
-nF
-nF
-nF
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-jU
-jU
-mp
-mm
-mh
-ma
-lL
-lE
-jU
-lj
-lb
-kP
-jU
-kt
-ki
-jU
-jU
-jz
-jF
-iM
-jg
-Go
-YU
-Om
-wr
-gt
-hY
-gt
-hq
-ec
-gu
-eg
-gu
-ec
-ec
-ec
-eQ
-ec
-eQ
-ec
-ex
-eg
-cE
-jL
-de
-cE
-bE
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20138,82 +20186,82 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-DL
-tS
-DL
-DL
-DL
-nq
-yb
-oE
-yb
-DL
-tS
-DL
-DL
-DL
-yb
-yb
-yb
-nq
-tS
-nf
-mZ
-DL
-DL
-DL
-jU
-jU
-lF
-lF
-lF
-lF
-lF
-lF
-jU
-lk
-kj
-kj
-kD
-kj
-kj
-jW
-jU
-sO
-jt
-jn
-jF
-jb
-YU
-Om
-iw
-io
-hZ
-gt
-hr
-ec
-gu
-eg
-gw
-fV
-fV
-fz
-fp
-fc
-ey
-ey
-ey
-eh
-cE
-jL
-de
-cE
-bE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20286,97 +20334,97 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-mT
-oK
-nH
-mR
-mR
-nH
-nH
-ny
-mR
-mR
-nH
-nH
-nH
-mR
-mR
-nH
-nH
-ns
-mR
-ni
-nb
-mR
-mR
-mJ
-jU
-mr
-uF
-uF
-uF
-uF
-uF
-uF
-lt
-uF
-uF
-uF
-kF
-uF
-uF
-jX
-jU
-iM
-iM
-iM
-jF
-jc
-bl
-Om
-IT
-iq
-ia
-gt
-hs
-ec
-gX
-eg
-ej
-gi
-fW
-ec
-fr
-fd
-zs
-ec
-ez
-ej
-cE
-dy
-di
-cE
-cE
-bE
-bD
 mV
 mV
 mV
-bD
-bD
-bD
-bD
-bD
-bD
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20438,98 +20486,98 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nu
-mT
-nf
-mZ
-DL
-DL
-DL
-jU
-mt
-kk
-kf
-kk
-kk
-kf
-uF
-lu
-ll
-lc
-kG
-kG
-ku
-kk
-jY
-jV
-jC
-jv
-iM
-ji
-iM
-iM
-Om
-Om
-Om
-ib
-Om
-Om
-ec
-ec
-ec
-gx
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ec
-ek
-cE
-dz
-db
-cS
-cE
-bE
-bD
 mV
 mV
-bD
-bD
-bE
-bE
-bE
-bE
-bE
-bE
-bD
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20590,99 +20638,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-DL
-jU
-mu
-kk
-ld
-kQ
-kH
-lM
-lG
-lw
-uF
-ld
-kQ
-kH
-kv
-kl
-ka
-jV
-jD
-YU
-jF
-jj
-jd
-iM
-cE
-eK
-ZS
-ic
-hL
-hu
-eK
-gY
-ZS
-el
-ZS
-eK
-fA
-fs
-fe
-ZS
-eK
-eA
-el
-dQ
-dA
-de
-cU
-cE
-bE
-bD
-bD
-bD
-bD
-bE
-bE
-bF
-bF
-bF
-bF
-bE
-bE
-aa
-aa
 mV
 mV
 mV
@@ -20719,15 +20674,108 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -20742,100 +20790,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qD
-qk
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-yb
-mF
-yb
-yb
-yb
-yb
-yb
-yb
-nO
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-mL
-jU
-mv
-mb
-lN
-mb
-mb
-lN
-lH
-lx
-uF
-kf
-kk
-kk
-kw
-km
-jY
-jU
-jI
-jw
-jo
-jk
-jF
-iM
-iE
-dE
-dE
-id
-cE
-hx
-dE
-ha
-dR
-em
-dE
-dE
-fD
-cF
-dR
-eS
-dE
-eB
-em
-dR
-dE
-dj
-cV
-cF
-bE
-bE
-bE
-bE
-bE
-bE
-bF
-bF
-bI
-bI
-bF
-bF
-bE
-ac
-aa
-aa
 mV
 mV
 mV
@@ -20866,25 +20820,119 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-ac
-ac
-ac
-ac
-ac
-ac
-ab
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (83,1,1) = {"
@@ -20894,104 +20942,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-DL
-mG
-DL
-DL
-DL
-jU
-mw
-uF
-uF
-uF
-mc
-lP
-lI
-ly
-lm
-le
-kR
-uF
-kx
-uF
-kb
-jU
-jJ
-YU
-jp
-jF
-jf
-iN
-iF
-ix
-rt
-ie
-ft
-ft
-ft
-ft
-ft
-ft
-ft
-fX
-ft
-ft
-ff
-eT
-eL
-eC
-en
-dS
-dF
-dk
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bZ
-bT
-bR
-bO
-bF
-bF
-ac
-ac
-aa
-aa
-aa
-aa
-aa
 mV
 mV
 mV
@@ -21018,25 +20968,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-ac
-ac
-ac
-ac
-ac
-af
-af
-af
-af
-af
-ab
-ac
-ac
-ac
-ac
-ab
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (84,1,1) = {"
@@ -21046,104 +21094,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-mL
-mG
-mG
-mG
-mG
-jU
-jU
-jU
-mi
-mi
-jU
-jU
-jU
-jU
-jU
-jU
-jU
-kI
-ky
-jU
-jU
-jU
-iM
-jx
-iM
-iM
-iM
-iM
-cE
-iz
-cE
-ft
-ft
-hz
-hh
-hb
-gL
-gz
-gj
-fZ
-fE
-ft
-fg
-eU
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-cG
-cv
-cA
-cv
-cp
-bF
-bF
-bI
-ca
-zN
-zN
-bJ
-bI
-bF
-ac
-ac
-ac
-ac
-ac
-ac
-aa
 mV
 mV
 mV
@@ -21170,25 +21120,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-af
-af
-af
-af
-aG
-az
-au
-af
-af
-af
-af
-af
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (85,1,1) = {"
@@ -21198,104 +21246,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-nj
-mG
-mW
-mS
-mM
-jU
-mx
-kn
-mn
-uF
-md
-kf
-kf
-jU
-ln
-lf
-kS
-uF
-kA
-kn
-kc
-jU
-jK
-jy
-UG
-oH
-iQ
-iQ
-iG
-oH
-ir
-ft
-hO
-hA
-hi
-hc
-gM
-gA
-gj
-vG
-fF
-ft
-fj
-eV
-bF
-eD
-eo
-dT
-dH
-dl
-bF
-cq
-cq
-cB
-cq
-cq
-bF
-ci
-cg
-zN
-bP
-bP
-zN
-bJ
-bF
-af
-af
-br
-bn
-af
-ac
-aa
 mV
 mV
 mV
@@ -21322,25 +21272,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-aY
-aS
-af
-aO
-aH
-aC
-av
-af
-sV
-ar
-ao
-ag
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (86,1,1) = {"
@@ -21350,104 +21398,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-nf
-nc
-mX
-mT
-mN
-mH
-my
-kL
-uF
-uF
-uF
-kL
-kL
-lz
-kL
-kL
-uF
-uF
-kx
-kL
-kd
-jU
-ZS
-ZS
-ze
-jl
-oH
-oH
-oH
-oH
-jL
-ft
-hP
-hB
-hj
-hd
-gB
-gB
-gk
-ga
-fH
-fu
-fk
-eW
-eM
-eE
-zN
-dU
-dI
-dn
-cW
-cM
-cw
-cC
-cw
-cr
-cl
-zN
-zN
-bP
-bU
-bP
-bP
-zN
-bG
-af
-bA
-bt
-bo
-af
-ac
-aa
 mV
 mV
 mV
@@ -21474,25 +21424,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-bf
-ba
-aV
-af
-YA
-aI
-wO
-wO
-af
-at
-ah
-ap
-ah
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (87,1,1) = {"
@@ -21502,104 +21550,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-SP
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-nJ
-nw
-nm
-nf
-nc
-mX
-mT
-mN
-mH
-mz
-uF
-uF
-uF
-uF
-uF
-uF
-lx
-uF
-uF
-uF
-uF
-kx
-uF
-ke
-jU
-jN
-ix
-jr
-uM
-ix
-iS
-ix
-oH
-it
-ft
-hQ
-hB
-fN
-he
-vz
-gC
-gl
-gb
-fI
-ft
-fl
-eX
-bF
-eF
-bK
-dV
-dJ
-do
-bF
-cO
-bF
-bF
-bF
-ct
-cn
-bK
-bK
-cd
-bV
-bK
-bK
-bK
-bH
-aR
-bB
-bv
-bp
-bm
-bk
-bj
 mV
 mV
 mV
@@ -21626,25 +21576,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-bi
-bg
-bb
-aW
-aR
-LP
-aK
-aD
-aw
-aF
-wO
-wO
-wO
-wO
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (88,1,1) = {"
@@ -21654,104 +21702,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-nf
-nc
-mX
-mT
-mN
-mH
-my
-kL
-uF
-uF
-uF
-kL
-kL
-lB
-kL
-kL
-uF
-uF
-kx
-kL
-kf
-jU
-ZS
-ZS
-Yz
-jl
-oH
-oH
-oH
-oH
-jL
-ft
-hR
-hC
-hl
-hf
-gD
-gD
-gm
-gf
-fJ
-fv
-fm
-fa
-eN
-eH
-zN
-dW
-dL
-dp
-cX
-cP
-cy
-cy
-cy
-cq
-co
-zN
-zN
-bP
-bX
-bP
-bP
-zN
-bG
-af
-bC
-bw
-bq
-af
-ac
-aa
 mV
 mV
 mV
@@ -21778,25 +21728,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-bh
-bc
-aX
-af
-wO
-aL
-wO
-Sj
-af
-at
-al
-al
-al
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (89,1,1) = {"
@@ -21806,104 +21854,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-mT
-DL
-mG
-mY
-mU
-mP
-jU
-kg
-kf
-mn
-mj
-kg
-kf
-kf
-jU
-kf
-kf
-kg
-uF
-kA
-kf
-kg
-jU
-jO
-jy
-js
-rt
-oH
-oH
-iH
-oH
-jL
-ft
-hS
-hD
-hm
-hc
-gN
-gE
-gj
-vG
-fN
-ft
-fn
-eU
-bF
-eI
-ep
-dX
-dM
-dr
-bF
-cq
-cq
-cq
-cq
-cq
-bF
-cj
-ch
-zN
-bP
-bP
-zN
-bL
-bF
-af
-af
-bz
-af
-af
-ac
-aa
 mV
 mV
 mV
@@ -21930,25 +21880,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-bd
-nD
-af
-ug
-aM
-wO
-wO
-af
-Fg
-as
-aq
-an
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (90,1,1) = {"
@@ -21958,104 +22006,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-mL
-mG
-mG
-mG
-mG
-kK
-kK
-mo
-mo
-kK
-kK
-lJ
-lJ
-kK
-kK
-lg
-kK
-kK
-kB
-ko
-cE
-cE
-cE
-cE
-cE
-iV
-iV
-iV
-cE
-iB
-iu
-ft
-ft
-hF
-hn
-hg
-gP
-gH
-gj
-gg
-fO
-ft
-fg
-eU
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-cQ
-cz
-cD
-cz
-cu
-bF
-bF
-bM
-ce
-zN
-zN
-bL
-bM
-bF
-ac
-ac
-ac
-ac
-ac
-ac
-aa
 mV
 mV
 mV
@@ -22082,25 +22032,123 @@ mV
 mV
 mV
 mV
-aa
-ac
-af
-af
-af
-af
-af
-af
-aN
-aE
-ay
-af
-af
-af
-af
-af
-af
-ac
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (91,1,1) = {"
@@ -22110,104 +22158,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qG
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-wq
-nf
-DL
-nv
-DL
-DL
-mG
-DL
-DL
-mL
-kK
-mA
-DH
-DH
-bx
-me
-DH
-DH
-kK
-lp
-vC
-kT
-kK
-iD
-dE
-dR
-dR
-jQ
-dE
-dE
-dR
-dR
-dE
-iJ
-iC
-rt
-if
-ft
-ft
-ft
-ft
-ft
-ft
-ft
-fX
-ft
-ft
-ff
-eT
-eL
-eJ
-eq
-dY
-dN
-ds
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-bF
-cf
-bY
-bS
-bQ
-bF
-bF
-ac
-ac
-aa
-aa
-aa
-aa
-aa
 mV
 mV
 mV
@@ -22234,25 +22184,123 @@ mV
 mV
 mV
 mV
-aa
-ab
-ac
-ac
-ac
-ac
-ab
-af
-af
-af
-af
-af
-ab
-ac
-ac
-ac
-ac
-ab
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (92,1,1) = {"
@@ -22262,100 +22310,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-qH
-ql
-rx
-pH
-rx
-rx
-rx
-rx
-rx
-rx
-rx
-rx
-Za
-rx
-rx
-rx
-rx
-rx
-rx
-nP
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-DL
-kK
-mB
-lK
-lK
-ht
-mf
-lQ
-lK
-lC
-lr
-lh
-kV
-kK
-kC
-ZS
-ZS
-ZS
-jR
-ZS
-ZS
-ZS
-ix
-iW
-cE
-iD
-dE
-ig
-cE
-hG
-dE
-dE
-dR
-dR
-gn
-dE
-fP
-cE
-rt
-fb
-dO
-dO
-er
-tO
-dO
-dt
-cS
-cE
-bE
-bE
-bE
-bE
-bE
-bE
-bF
-bF
-bM
-bM
-bF
-bF
-bE
-ac
-aa
-aa
 mV
 mV
 mV
@@ -22386,25 +22340,119 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-ac
-ac
-ac
-ac
-ac
-ac
-ab
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 "}
 (93,1,1) = {"
@@ -22414,99 +22462,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-DL
-nv
-mT
-DL
-mG
-DL
-DL
-DL
-kK
-mD
-lK
-aU
-lK
-GI
-lS
-Kg
-lD
-SJ
-vC
-kW
-kK
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-eO
-ZS
-fQ
-fw
-hH
-eO
-ZS
-ZS
-ZS
-es
-eO
-fQ
-fw
-fo
-ER
-eO
-ZS
-es
-dZ
-dA
-du
-cY
-cE
-bE
-bD
-bD
-bD
-bD
-bE
-bE
-bF
-bF
-bF
-bF
-bE
-bE
-aa
-aa
 mV
 mV
 mV
@@ -22543,15 +22498,108 @@ mV
 mV
 mV
 mV
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -22566,98 +22614,98 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nI
-nu
-mT
-nf
-mZ
-DL
-DL
-DL
-kK
-po
-mq
-hT
-ml
-tU
-lT
-Bf
-kK
-kX
-kX
-kX
-kK
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-cE
-dP
-dv
-cV
-cE
-bE
-bD
 mV
 mV
-bD
-bD
-bE
-bE
-bE
-bE
-bE
-bE
-bE
-aa
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -22718,98 +22766,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-mT
-mT
-mT
-DL
-DL
-mT
-oK
-ns
-mR
-mR
-nH
-nH
-nH
-mR
-mR
-nH
-nH
-ny
-mR
-ni
-nb
-mR
-mR
-mJ
-kK
-kK
-kK
-kK
-kK
-kK
-lW
-kK
-kK
-ls
-GC
-kY
-kK
-eu
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-eu
-cE
-wW
-Bc
-cE
-cE
-bE
-bD
-mV
-mV
-mV
-bD
-bD
-bD
-bD
-bD
-bD
-bD
-bD
-aa
 mV
 mV
 mV
@@ -22854,11 +22810,103 @@ mV
 mV
 mV
 mV
-Lk
-Lk
-Lk
-Lk
-Lk
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -22874,82 +22922,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-DL
-Uj
-DL
-DL
-DL
-wd
-rx
-oF
-rx
-DL
-Uj
-DL
-DL
-nV
-rx
-rx
-rx
-wd
-Uj
-nf
-mZ
-DL
-DL
-DL
-mG
-kM
-kM
-kM
-kM
-kM
-lY
-kM
-kK
-kK
-kK
-kK
-kK
-eu
-qR
-mV
-mV
-mV
-mV
-mV
-mV
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-qR
-eu
-cE
-dx
-db
-cE
-bE
-bE
-bD
 mV
 mV
 mV
@@ -23006,11 +22978,87 @@ mV
 mV
 mV
 mV
-Lk
-cc
-Lk
-Lk
-Lk
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23026,48 +23074,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nL
-oD
-nL
-mG
-mG
-mG
-mG
-mG
-nL
-nL
-nL
-mG
-mG
-mG
-mG
-DL
-DL
-DL
-mG
-kM
-kN
-kN
-kN
-kN
-lZ
-kM
-kM
-kM
-kM
-kM
-kM
-eu
-qR
 mV
 mV
 mV
@@ -23093,15 +23099,6 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
-bD
 mV
 mV
 mV
@@ -23158,11 +23155,62 @@ mV
 mV
 mV
 mV
-Lk
-Lk
-Lk
-Lk
-Lk
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23178,48 +23226,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-nl
-nl
-nl
-mG
-oi
-oq
-AB
-oG
-ov
-Jf
-Jf
-nZ
-mG
-PG
-xa
-xa
-xa
-Jf
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
-mV
-mV
-mV
-lZ
-kN
-kN
-kN
-kN
-kN
-kN
-qR
-qR
 mV
 mV
 mV
@@ -23245,14 +23251,56 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23330,40 +23378,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nl
-mG
-oP
-oN
-oJ
-oI
-ow
-oo
-ol
-ob
-mG
-yK
-uU
-uU
-TV
-nz
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
-mV
-mV
-mV
-CN
 mV
 mV
 mV
@@ -23397,14 +23411,48 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23486,36 +23534,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-oi
-oO
-Jf
-oi
-ox
-op
-om
-oh
-mG
-aQ
-gR
-uU
-uU
-nA
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
-mV
-mV
-mV
-CN
 mV
 mV
 mV
@@ -23549,14 +23567,44 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23638,32 +23686,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-mG
-mG
-Jf
-Jf
-oi
-oy
-Jf
-oi
-oi
-mG
-Bn
-Mi
-uU
-uU
-nB
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
 mV
 mV
 mV
@@ -23701,14 +23723,40 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-dh
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23790,32 +23838,6 @@ mV
 mV
 mV
 mV
-nk
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-mG
-nn
-nQ
-nM
-mG
-mG
-ne
-DL
-DL
-DL
-DL
-mG
-kM
-kN
 mV
 mV
 mV
@@ -23853,14 +23875,40 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -23942,32 +23990,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mG
-mG
-mG
-mG
-mG
-mG
-nd
-mQ
-mQ
-mQ
-mQ
-mE
-kM
-kN
 mV
 mV
 mV
@@ -24005,14 +24027,40 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24095,31 +24143,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nl
-nl
-nl
-nl
-nl
-nl
-nl
-mE
-mV
-mV
-mV
-mV
-kN
-kN
-kN
 mV
 mV
 mV
@@ -24157,14 +24180,39 @@ mV
 mV
 mV
 mV
-qR
-eu
-cE
-jL
-de
-cE
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24256,15 +24304,6 @@ mV
 mV
 mV
 mV
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-nk
-mE
 mV
 mV
 mV
@@ -24309,14 +24348,23 @@ mV
 mV
 mV
 mV
-qR
-eu
-qR
-dy
-di
-qR
-bE
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24461,14 +24509,14 @@ mV
 mV
 mV
 mV
-qR
-qR
-da
 mV
-CN
-da
-bD
-bD
+mV
+mV
+mV
+mV
+mV
+mV
+mV
 mV
 mV
 mV
@@ -24856,15 +24904,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 mV
 mV
 mV
@@ -24997,31 +25045,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ac
+ac
+ac
+ac
+ac
+ac
+ab
+aa
+aa
+aa
+aa
+aa
+aa
 mV
 mV
 mV
@@ -25149,31 +25197,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+af
+af
+af
+af
+af
+ab
+ac
+ac
+ac
+ac
+ab
+aa
 mV
 mV
 mV
@@ -25301,31 +25349,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+aG
+az
+dG
+af
+af
+af
+af
+af
+af
+ac
+aa
 mV
 mV
 mV
@@ -25453,31 +25501,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+af
+hI
+hy
+gO
+gd
+fM
+af
+af
+aY
+eZ
+af
+aO
+aH
+et
+dK
+af
+sV
+ar
+ao
+ag
+af
+ac
+aa
 mV
 mV
 mV
@@ -25605,31 +25653,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+af
+hM
+ge
+gW
+ge
+fT
+af
+fB
+fq
+fi
+af
+YA
+aI
+dw
+eb
+af
+at
+dm
+dq
+dm
+af
+ac
+aa
 mV
 mV
 mV
@@ -25757,31 +25805,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+bi
+hN
+gv
+hk
+gv
+fU
+fK
+fC
+fx
+aW
+aR
+eY
+eR
+ev
+ed
+dD
+dw
+dw
+dw
+wO
+af
+ac
+aa
 mV
 mV
 mV
@@ -25909,31 +25957,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+il
+gF
+gF
+hv
+gF
+fY
+fL
+fG
+fy
+aX
+af
+wO
+aL
+dw
+ee
+af
+dC
+dB
+al
+al
+af
+ac
+aa
 mV
 mV
 mV
@@ -26061,31 +26109,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+af
+ik
+hE
+hw
+gG
+gc
+af
+af
+bd
+nD
+af
+ug
+aM
+wO
+eb
+af
+Fg
+as
+aq
+an
+af
+ac
+aa
 mV
 mV
 mV
@@ -26213,31 +26261,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ab
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+af
+aN
+eG
+ei
+af
+af
+af
+af
+af
+af
+ac
+aa
 mV
 mV
 mV
@@ -26365,31 +26413,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ac
+ab
+af
+af
+af
+af
+af
+ab
+ac
+ac
+ac
+ac
+ab
+aa
 mV
 mV
 mV
@@ -26517,31 +26565,31 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+ac
+ac
+ac
+ac
+ac
+ac
+ab
+aa
+aa
+aa
+aa
+aa
+aa
 mV
 mV
 mV
@@ -26680,15 +26728,15 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
-mV
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
+aa
 mV
 mV
 mV
@@ -26991,11 +27039,11 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
+Lk
+Lk
+Lk
+Lk
+Lk
 mV
 mV
 mV
@@ -27143,11 +27191,11 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
+Lk
+cc
+Lk
+Lk
+Lk
 mV
 mV
 mV
@@ -27295,11 +27343,11 @@ mV
 mV
 mV
 mV
-mV
-mV
-mV
-mV
-mV
+Lk
+Lk
+Lk
+Lk
+Lk
 mV
 mV
 mV
