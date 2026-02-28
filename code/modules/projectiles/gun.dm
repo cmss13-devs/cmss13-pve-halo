@@ -1342,6 +1342,10 @@ and you're good to go.
 		active_attachable.fire_attachment(target, src, user)
 		return TRUE
 
+	if(user.skills)
+		if(user.skills.get_skill_level(SKILL_GUN_HO) >= SKILL_GUN_HO_TRAINED)
+			tactical_reload(target, user)
+	return ..()
 
 /obj/item/weapon/gun/attack(mob/living/attacked_mob, mob/living/user, dual_wield)
 	if(active_attachable && (active_attachable.flags_attach_features & ATTACH_MELEE)) //this is expected to do something in melee.

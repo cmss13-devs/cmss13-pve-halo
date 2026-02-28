@@ -294,17 +294,6 @@ DEFINES in setup.dm, referenced here.
 	else
 		..()
 
-//tactical reloads
-/obj/item/weapon/gun/afterattack(atom/target, mob/user, has_proximity, click_parameters)
-	if(!has_proximity)
-		return
-
-	if(user.skills)
-		if(user.skills.get_skill_level(SKILL_GUN_HO) >= SKILL_GUN_HO_TRAINED)
-			tactical_reload(target, user)
-	return ..()
-
-
 //----------------------------------------------------------
 				//  \\
 				// GENERIC HELPER PROCS  \\

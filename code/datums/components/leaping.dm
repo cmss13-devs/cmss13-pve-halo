@@ -87,10 +87,11 @@
 	var/original_layer = leaper.layer
 	animate(leaper, pixel_z = leaper.pixel_z + 12, layer = max(MOB_UPPER_LAYER, original_layer), time = 0.3 SECONDS / 2, easing = CIRCULAR_EASING|EASE_OUT, flags = ANIMATION_END_NOW|ANIMATION_PARALLEL)
 	animate(pixel_z = leaper.pixel_z - 12, layer = original_layer, time = 0.3 SECONDS / 2, easing = CIRCULAR_EASING|EASE_IN)
-	for(var/i=1 to leap_range)
-		step(leaper, direction)
-		sleep(1)
-	addtimer(CALLBACK(src, PROC_REF(end_jump), leaper, effective_leaper_allow_pass_flags), 0.2 SECONDS)
+	ASYNC
+		for(var/i=1 to leap_range)
+			step(leaper, direction)
+			sleep(1)
+		addtimer(CALLBACK(src, PROC_REF(end_jump), leaper, effective_leaper_allow_pass_flags), 0.2 SECONDS)
 
 /datum/component/leaping/proc/end_jump(atom/leaper, effective_leaper_allow_pass_flags)
 	var/mob/living/living_leaper
