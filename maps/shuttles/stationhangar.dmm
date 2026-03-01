@@ -5,7 +5,6 @@
 "e" = (/obj/structure/barricade/handrail{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
 "f" = (/obj/structure/platform_decoration,/turf/open/shuttle/escapepod{dir = 1},/area/mackay_station/elevator/hangar)
 "g" = (/obj/structure/barricade/handrail,/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
-"h" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/structure/machinery/light/double/blue{dir = 4},/turf/open/floor/almayer/edge/smooth/east,/area/mackay_station/elevator/hangar)
 "i" = (/obj/structure/platform,/obj/structure/platform_decoration{dir = 8},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth/southeast,/area/mackay_station/elevator/hangar)
 "j" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/southeast,/area/mackay_station/elevator/hangar)
 "k" = (/turf/open/shuttle/escapepod/floor0{dir = 4},/area/mackay_station/elevator/hangar)
@@ -17,7 +16,6 @@
 "q" = (/obj/structure/platform{dir = 8},/turf/open/shuttle/escapepod,/area/mackay_station/elevator/hangar)
 "r" = (/obj/effect/decal/warning_stripes{icon_state = "door_warning"; dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/hangar)
 "s" = (/obj/structure/platform_decoration{dir = 4},/turf/open/shuttle/escapepod/floor0{dir = 8},/area/mackay_station/elevator/hangar)
-"t" = (/obj/structure/platform,/obj/structure/machinery/light/double/blue,/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/hangar)
 "u" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/northeast,/area/mackay_station/elevator/hangar)
 "v" = (/obj/structure/platform,/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/hangar)
 "w" = (/obj/effect/decal/warning_stripes{icon_state = "door_warning"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/hangar)
@@ -25,7 +23,7 @@
 "y" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/northwest,/area/mackay_station/elevator/hangar)
 "z" = (/obj/structure/platform_decoration{dir = 4},/obj/structure/platform_decoration{dir = 1},/turf/open/shuttle/escapepod,/area/mackay_station/elevator/hangar)
 "B" = (/obj/structure/barricade/handrail{dir = 8},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
-"C" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/light/double/blue,/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/hangar)
+"C" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/obj/structure/machinery/door_control{pixel_y = -22; id = "hangar"; name = "Elevator Door Controls"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/hangar)
 "D" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/mackay_station/elevator/hangar)
 "E" = (/obj/structure/platform_decoration{dir = 8},/obj/structure/platform_decoration,/turf/open/shuttle/escapepod{dir = 1},/area/mackay_station/elevator/hangar)
 "F" = (/obj/structure/platform{dir = 4},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/turf/open/floor/almayer/edge/smooth/east,/area/mackay_station/elevator/hangar)
@@ -33,7 +31,7 @@
 "H" = (/obj/structure/stairs{dir = 1},/turf/open/floor/almayer/plate,/area/mackay_station/elevator/hangar)
 "I" = (/obj/structure/platform{dir = 1},/turf/open/shuttle/escapepod{dir = 8},/area/mackay_station/elevator/hangar)
 "J" = (/obj/structure/platform{dir = 8},/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/mackay_station/elevator/hangar)
-"K" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/hangar)
+"K" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/structure/machinery/door_control{pixel_y = 24; id = "hangar"; name = "Elevator Door Controls"},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/hangar)
 "L" = (/obj/structure/barricade/handrail{dir = 8},/obj/structure/barricade/handrail,/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
 "M" = (/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/hangar)
 "N" = (/turf/open/floor/almayer/research,/area/mackay_station/elevator/hangar)
@@ -42,7 +40,6 @@
 "Q" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/hangar)
 "S" = (/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
 "T" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/hangar)
-"V" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/structure/machinery/light/double/blue{dir = 8},/turf/open/floor/almayer/edge/smooth/west,/area/mackay_station/elevator/hangar)
 "W" = (/obj/docking_port/mobile/hangar,/turf/closed/wall/unsc/reinforced/hull,/area/mackay_station/elevator/hangar)
 "X" = (/obj/structure/barricade/handrail{dir = 8},/obj/structure/barricade/handrail{dir = 4},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
 "Y" = (/obj/structure/surface/table/reinforced/almayer_B,/obj/structure/machinery/computer/shuttle/elevator_controller/hangar{pixel_x = 3; pixel_y = 12},/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/hangar)
@@ -50,15 +47,15 @@
 
 (1,1,1) = {"
 PPPPGMMMMPPPP
-PyTKrrrrrKTuP
+PyTKrrrrrTTuP
 PakbbbbbbbxDP
-PVfHZTTTOHnhP
+PafHZTTTOHnDP
 PalXJNNNFXqDP
-PaEHptvtiHzDP
+PaEHpvvviHzDP
 PalBmmYmmeqDP
-PVlBSSSSSeqhP
+PalBSSSSSeqDP
 PalLgggggoqDP
 PadIIIIIIIsDP
-PcQCwwwwwCQjP
+PcQQwwwwwCQjP
 WPPPGMMMMPPPP
 "}

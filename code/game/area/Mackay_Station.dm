@@ -92,6 +92,7 @@
 	icon_state = "red"
 	unlimited_power = TRUE
 	requires_power = FALSE
+	base_lighting_alpha = 255
 
 /area/mackay_station/elevator/fire_control
 	name = "\improper Fire Control Elevator"

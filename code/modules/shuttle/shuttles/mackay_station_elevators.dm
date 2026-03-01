@@ -4,7 +4,7 @@
 
 	// Map information
 	height=4
-	width=6
+	width=7
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
@@ -41,7 +41,7 @@
 
 /obj/docking_port/stationary/station_tram_golf
 	dir=NORTH
-	width=6
+	width=7
 	height=4
 	// shutters to clear the area
 	var/airlock_area
@@ -110,7 +110,7 @@
 
 	// Map information
 	height=4
-	width=6
+	width=7
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
@@ -147,7 +147,7 @@
 
 /obj/docking_port/stationary/station_tram_romeo
 	dir=NORTH
-	width=6
+	width=7
 	height=4
 	// shutters to clear the area
 	var/airlock_area
@@ -216,7 +216,7 @@
 
 	// Map information
 	height=4
-	width=6
+	width=7
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
@@ -253,7 +253,7 @@
 
 /obj/docking_port/stationary/station_tram_bravo
 	dir=NORTH
-	width=6
+	width=7
 	height=4
 	// shutters to clear the area
 	var/airlock_area
@@ -322,7 +322,7 @@
 
 	// Map information
 	height=6
-	width=5
+	width=6
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
@@ -359,7 +359,7 @@
 
 /obj/docking_port/stationary/fire_control
 	dir=NORTH
-	width=5
+	width=6
 	height=6
 	// shutters to clear the area
 	var/airlock_area
