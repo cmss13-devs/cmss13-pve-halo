@@ -95,6 +95,7 @@
 #define COMSIG_KB_LUNGE_DOWN "keybinding_human_lunge_down"
 #define COMSIG_KB_FLING_DOWN "keybinding_human_fling_down"
 #define COMSIG_KB_PUNCH_DOWN "keybinding_human_punch_down"
+#define COMSIG_KB_STRENGTH_DOWN "keybinding_human_strength_down"
 
 //Living
 #define COMSIG_KB_SURGERY_INTENT_DOWN "keybinding_living_surgery_intent_down"

@@ -752,6 +752,9 @@
 	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_4
 	velocity_add = AMMO_SPEED_TIER_1
 
+/obj/item/weapon/gun/pistol/halo/m6g/attached
+	starting_attachment_types = list(/obj/item/attachable/scope/mini/smartscope/m6g, /obj/item/attachable/flashlight/m6)
+
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
 	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template, though with less stopping power."

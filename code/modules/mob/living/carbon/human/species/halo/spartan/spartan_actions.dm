@@ -176,3 +176,100 @@
 	human_owner.flick_attack_overlay(carbon, "punch")
 	shake_camera(carbon, 2, 1)
 	step_away(carbon, owner, 2)
+
+/datum/action/human_action/activable/strength
+	name = "Super Strength"
+	icon_file = 'icons/mob/hud/actions_xeno.dmi'
+	action_icon_state = "empower"
+	cooldown = 4.5 SECONDS
+
+/datum/action/human_action/activable/strength/use_ability(atom/affected_atom)
+	owner = usr
+
+	if (!action_cooldown_check())
+		return
+
+	if (!owner.Adjacent(affected_atom))
+		return
+
+	if(affected_atom.superstrength_interaction(owner))
+		affected_atom.superstrength_interaction(owner)
+		enter_cooldown(cooldown)
+	return ..()
+
+/mob/living/carbon/human/superstrength_interaction(mob/living/carbon/human/M)
+	if(mob_size >= MOB_SIZE_BIG)
+		to_chat(M, SPAN_WARNING("[src] is too big for us to grab!"))
+		return
+	M.start_pulling(src)
+	KnockDown(0.5)
+	Stun(0.5)
+	pulledby = M
+	M.grab_level = GRAB_CHOKE
+	return TRUE
+
+//Prying open doors
+/obj/structure/machinery/door/airlock/superstrength_interaction(mob/living/carbon/human/M)
+	var/turf/cur_loc = M.loc
+
+	if(M.action_busy)
+		to_chat(M, SPAN_WARNING("You are already doing something!"))
+		return
+
+	if(isElectrified() && shock(M, 100))
+		return
+
+	if(!density)
+		to_chat(M, SPAN_WARNING("[src] is already open!"))
+		return
+
+	if(heavy)
+		to_chat(M, SPAN_WARNING("[src] is too heavy to open."))
+		return
+
+	if(welded)
+		to_chat(M, SPAN_WARNING("[src] is welded shut."))
+		return
+
+	if(locked)
+		to_chat(M, SPAN_WARNING("[src] is bolted down tight."))
+		return
+
+	if(!istype(cur_loc))
+		return //Some basic logic here
+
+	if(M.action_busy)
+		return
+
+	if(M.is_mob_incapacitated() || M.body_position != STANDING_UP)
+		return
+
+	var/delay
+
+	if(!arePowerSystemsOn())
+		delay = 1 SECONDS
+		playsound(loc, "alien_doorpry", 25, TRUE)
+	else
+		delay = 2 SECONDS
+		playsound(loc, "alien_doorpry", 25, TRUE)
+
+	M.visible_message(SPAN_WARNING("[M] digs into [src] and begins to pry it open."), \
+	SPAN_WARNING("We dig into [src] and begin to pry it open."), null, 5, CHAT_TYPE_COMBAT_ACTION)
+
+	if(do_after(M, delay, INTERRUPT_ALL, BUSY_ICON_HOSTILE))
+		if(M.loc != cur_loc)
+			return  //Make sure we're still there
+		if(M.is_mob_incapacitated() || M.body_position != STANDING_UP)
+			return
+		if(locked)
+			to_chat(M, SPAN_WARNING("[src] is bolted down tight."))
+			return
+		if(welded)
+			to_chat(M, SPAN_WARNING("[src] is welded shut."))
+			return
+		if(density) //Make sure it's still closed
+			spawn(0)
+				open(1)
+				M.visible_message(SPAN_DANGER("[M] pries [src] open."), \
+				SPAN_DANGER("We pry [src] open."), null, 5, CHAT_TYPE_COMBAT_ACTION)
+	return TRUE

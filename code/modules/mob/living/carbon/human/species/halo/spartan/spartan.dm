@@ -111,6 +111,7 @@
 	give_action(spartan, /datum/action/human_action/activable/lunge)
 	give_action(spartan, /datum/action/human_action/activable/fling)
 	give_action(spartan, /datum/action/human_action/activable/punch)
+	give_action(spartan, /datum/action/human_action/activable/strength)
 	spartan.AddComponent(/datum/component/leaping, _leap_range = 4, _leap_cooldown = 4 SECONDS, _leaper_allow_pass_flags = PASS_OVER|PASS_MOB_THRU)
 	spartan.AddComponent(/datum/component/jump, _jump_duration = 0.75 SECONDS, _jump_cooldown = 1 SECONDS, _jump_height = 32, _jump_sound = 'sound/weapons/thudswoosh.ogg', _jump_flags = JUMP_SPIN, _jumper_allow_pass_flags = PASS_OVER|PASS_MOB_THRU)
 	return ..()
