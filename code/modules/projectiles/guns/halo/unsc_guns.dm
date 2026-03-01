@@ -24,7 +24,7 @@
 	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
 	empty_sound = null
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
@@ -64,7 +64,7 @@
 	fa_max_scatter = 2
 
 /obj/item/weapon/gun/rifle/halo/ma5c/unloaded
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
 /obj/item/weapon/gun/rifle/halo/ma3a
@@ -80,7 +80,7 @@
 	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
 	empty_sound = null
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
@@ -120,7 +120,7 @@
 	fa_max_scatter = 2
 
 /obj/item/weapon/gun/rifle/halo/ma3a/unloaded
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
 /obj/item/weapon/gun/rifle/halo/vk78
@@ -136,7 +136,7 @@
 	unload_sound = 'sound/weapons/halo/gun_ma5c_unload.ogg'
 	empty_sound = null
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
@@ -178,7 +178,7 @@
 
 
 /obj/item/weapon/gun/rifle/halo/vk78/unloaded
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
 
@@ -195,7 +195,7 @@
 	unload_sound = 'sound/weapons/halo/gun_br55_unload.ogg'
 	empty_sound = null
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = FALSE
 	map_specific_decoration = FALSE
 
@@ -234,7 +234,7 @@
 	fa_max_scatter = 2
 
 /obj/item/weapon/gun/rifle/halo/br55/unloaded
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
 /obj/item/weapon/gun/rifle/halo/dmr
@@ -253,7 +253,7 @@
 	empty_sound = null
 
 
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
 	start_automatic = FALSE
 	map_specific_decoration = FALSE
 
@@ -286,7 +286,7 @@
 
 
 /obj/item/weapon/gun/rifle/halo/dmr/unloaded
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null
 
 // SMGs
@@ -318,7 +318,7 @@
 	empty_sound = null
 	w_class = SIZE_LARGE
 
-	flags_gun_features = GUN_CAN_POINTBLANK
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/smg/halo/m7
@@ -422,7 +422,7 @@
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded
 	current_mag = /obj/item/ammo_magazine/internal/shotgun/m90/unloaded
-	flags_gun_features = GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRIGGER_SAFETY
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_INTERNAL_MAG|GUN_TRIGGER_SAFETY
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90/police
 	name = "\improper WMT Law Enforcement Shotgun"
@@ -505,7 +505,7 @@
 	name = "SRS99 barrel key"
 	desc = "A key for the SRS99 barrel, used to unlock the mechanism and allow the user to remove the barrel."
 
-/obj/item/weapon/gun/revolver/mateba/attackby(obj/item/subject, mob/user)
+/obj/item/weapon/gun/rifle/sniper/halo/attackby(obj/item/subject, mob/user)
 	if(istype(subject, /obj/item/weapon/mateba_key/halo_sniper) && can_change_barrel)
 		if(attachments["muzzle"])
 			var/obj/item/attachable/attachment = attachments["special"]
@@ -651,7 +651,7 @@
 	cocked_sound = 'sound/weapons/halo/gun_magnum_cocked.ogg'
 	drop_sound = 'sound/items/halo/drop_lightweapon.ogg'
 	pickup_sound = 'sound/items/halo/grab_lightweapon.ogg'
-	flags_gun_features = GUN_CAN_POINTBLANK
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK
 	empty_sound = null
 
 /obj/item/weapon/gun/pistol/halo/m6c
@@ -663,7 +663,7 @@
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6c, /obj/item/attachable/flashlight/m6)
 	fire_sound = "gun_m6c"
-	flags_gun_features = GUN_CAN_POINTBLANK
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK
 
 /obj/item/weapon/gun/pistol/halo/m6c/unloaded
 	current_mag = null
@@ -691,7 +691,7 @@
 /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded
 	current_mag = null
 
-/obj/item/weapon/gun/pistol/halo/m6c/set_gun_config_values()
+/obj/item/weapon/gun/pistol/halo/m6c/socom/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_12)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
@@ -700,7 +700,7 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_5
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 
-/obj/item/weapon/gun/pistol/halo/m6c/set_gun_attachment_offsets()
+/obj/item/weapon/gun/pistol/halo/m6c/socom/set_gun_attachment_offsets()
 	attachable_offset = list("muzzle_x" = 19, "muzzle_y" = 15,"rail_x" = 16, "rail_y" = 16, "under_x" = 19, "under_y" = 16, "stock_x" = 0, "stock_y" = 0)
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a
@@ -795,6 +795,7 @@
 	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
 	icon_state = "he_40mm"
 	item_state = "he_40mm"
+	caliber = "40mm"
 	hand_throwable = FALSE
 	has_arm_sound = FALSE
 	dangerous = FALSE
