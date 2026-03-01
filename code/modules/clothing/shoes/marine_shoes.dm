@@ -142,3 +142,17 @@
 	name = "lizardskin boots"
 	desc = "A pair of lizardskin cowboy boots. Get your disco on, baby."
 	icon_state = "lizardskin"
+
+/obj/item/clothing/shoes/marine/spartan
+	name = "\improper spartan combat shoes"
+	desc = "gloves"
+	icon_state = "spartan"
+	item_state = "spartan"
+	allowed_species_list = list(SPECIES_SPARTAN)
+	item_icons = list(
+		WEAR_FEET = 'icons/halo/mob/humans/onmob/clothing/shoes_48.dmi'
+	)
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM

@@ -23,6 +23,7 @@
 	w_class = SIZE_MEDIUM
 	pickup_sound = "armorequip"
 	drop_sound = "armorequip"
+	allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA, SPECIES_SPARTAN)
 
 /obj/item/clothing/head/helmet/verb/hidehair()
 	set name = "Toggle Hair"
@@ -2012,3 +2013,69 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/head/helmet/marine/unsc/mjolnir
+	name = "\improper Mjolnir Mk IV helmet"
+	desc = "Helmet for the Mjolnir Mk IV Powered Assault Armour. An advanced piece of equipment at least a generation ahead of anything else in UNSC use, the Mk IV's helmet is made of the same multilayer alloys as the armour, and features a polarizing orange-gold visor capable of protecting the wearers eyes from even nuclear flashes automatically. Employs the cutting edge of VISR technology, allowing for an unparalleled augmented-reality display."
+	icon_state = "mk_iv_0"
+	item_state = "mk_iv_0"
+	light_system = DIRECTIONAL_LIGHT
+	light_power = 3
+	light_range = 5
+	allowed_species_list = list(SPECIES_SPARTAN)
+	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
+	flags_inv_hide = HIDEEARS|HIDEEYES|HIDEFACE|HIDEMASK|HIDEALLHAIR
+	armor_melee = CLOTHING_ARMOR_VERYHIGH
+	armor_bullet = CLOTHING_ARMOR_VERYHIGH
+	armor_laser = CLOTHING_ARMOR_VERYHIGH
+	armor_bomb = CLOTHING_ARMOR_VERYHIGH
+	armor_internaldamage = CLOTHING_ARMOR_VERYHIGH
+	actions_types = list(/datum/action/item_action/toggle)
+	var/toggleable = TRUE
+
+/obj/item/clothing/head/helmet/marine/unsc/mjolnir/Initialize()
+	. = ..()
+	update_icon()
+
+/obj/item/clothing/head/helmet/marine/unsc/mjolnir/update_icon()
+	. = ..()
+	if(light_on)
+		icon_state = "mk_iv_[light_on]"
+		item_state = "mk_iv_[light_on]"
+	else
+		icon_state = initial(icon_state)
+		item_state = initial(item_state)
+
+/obj/item/clothing/head/helmet/marine/unsc/mjolnir/attack_self(mob/user)
+	. = ..()
+
+	if(!toggleable)
+		to_chat(user, SPAN_WARNING("You cannot toggle [src] on or off."))
+		return FALSE
+
+	if(!isturf(user.loc))
+		to_chat(user, SPAN_WARNING("You cannot turn the light [light_on ? "off" : "on"] while in [user.loc].")) //To prevent some lighting anomalies.
+		return FALSE
+
+	turn_light(user, !light_on)
+
+/obj/item/clothing/head/helmet/marine/unsc/mjolnir/turn_light(mob/user, toggle_on)
+
+	. = ..()
+	if(. != CHECKS_PASSED)
+		return
+
+	if(!toggle_on)
+		playsound(src, 'sound/handling/click_2.ogg', 50, 1)
+
+	playsound(src, 'sound/handling/suitlight_on.ogg', 50, 1)
+
+	set_light_on(toggle_on)
+
+	update_icon()
+
+	if(user == loc)
+		user.update_inv_head()
+
+	for(var/datum/action/current_action as anything in actions)
+		current_action.update_button_icon()

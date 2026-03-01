@@ -15,6 +15,7 @@
 	var/high_visibility //if it should appear on examine without detailed view
 	var/removable = TRUE
 	flags_equip_slot = SLOT_ACCESSORY
+	allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA, SPECIES_SPARTAN)
 	sprite_sheets = list(SPECIES_MONKEY = 'icons/mob/humans/species/monkeys/onmob/ties_monkey.dmi')
 
 /obj/item/clothing/accessory/Initialize()
