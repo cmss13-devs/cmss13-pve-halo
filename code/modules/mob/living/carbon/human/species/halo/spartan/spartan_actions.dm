@@ -3,7 +3,7 @@
 	name = "Lunge"
 	icon_file = 'icons/mob/hud/actions_xeno.dmi'
 	action_icon_state = "lunge"
-	cooldown = 10 SECONDS
+	cooldown = 15 SECONDS
 
 	// Configurables
 	var/grab_range = 4
@@ -47,7 +47,7 @@
 	name = "Fling"
 	icon_file = 'icons/mob/hud/actions_xeno.dmi'
 	action_icon_state = "fling"
-	cooldown = 6 SECONDS
+	cooldown = 15 SECONDS
 
 	// Configurables
 	var/fling_distance = 4
@@ -107,7 +107,7 @@
 	name = "Punch"
 	icon_file = 'icons/mob/hud/actions_xeno.dmi'
 	action_icon_state = "punch"
-	cooldown = 4.5 SECONDS
+	cooldown = 5 SECONDS
 
 	// Configurables
 	var/base_damage = 150
@@ -181,7 +181,7 @@
 	name = "Super Strength"
 	icon_file = 'icons/mob/hud/actions_xeno.dmi'
 	action_icon_state = "empower"
-	cooldown = 4.5 SECONDS
+	cooldown = 5 SECONDS
 
 /datum/action/human_action/activable/strength/use_ability(atom/affected_atom)
 	owner = usr
