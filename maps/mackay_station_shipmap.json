@@ -1,0 +1,8 @@
+{
+    "map_name": "Mackay Station (Shipmap)",
+    "map_path": "map_files/Mackay_Station_Shipmap",
+    "map_file": "Mackay_Station_Shipmap.dmm",
+    "webmap_url": "MackayStation",
+    "traits": [{"Marine Main Ship": true}],
+    "platoon": "/datum/squad/marine/alpha"
+}
