@@ -836,11 +836,6 @@
 /obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
 	pixel_x = -9
 	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "cj" = (
@@ -1962,7 +1957,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "oR" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/odst,
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "oU" = (
@@ -2147,11 +2142,6 @@
 	pixel_x = 15;
 	pixel_y = 4
 	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qL" = (
@@ -2357,11 +2347,6 @@
 	pixel_y = 2;
 	pixel_x = -3
 	},
-/obj/merge_conflict_marker{
-	name = "---Merge Conflict Marker---";
-	desc = "A best-effort merge was performed. You must resolve this conflict yourself (manually) and remove this object once complete."
-	},
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "sX" = (
@@ -3808,7 +3793,7 @@
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/lower_hallway)
 "Ke" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/odst,
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Kk" = (
