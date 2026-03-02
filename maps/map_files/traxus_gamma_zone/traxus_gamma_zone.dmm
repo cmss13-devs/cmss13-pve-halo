@@ -9131,7 +9131,6 @@
 /area/gamma_sector/traxus_base/transfer_primary)
 "eWD" = (
 /obj/item/clothing/accessory/limb/skeleton/head,
-/obj/item/ammo_casing/bullet,
 /turf/open/auto_turf/sand/layer0,
 /area/gamma_sector/open/dried_river)
 "eWF" = (
@@ -11347,6 +11346,10 @@
 "ggC" = (
 /turf/closed/wall/new_varadero/reinforced,
 /area/gamma_sector/unsc_base/west_wing)
+"ggR" = (
+/obj/item/ammo_casing/bullet,
+/turf/open/gm/dirt2,
+/area/gamma_sector/closed_hard/engineering_caves)
 "gho" = (
 /obj/item/prop/colony/canister{
 	pixel_x = 6;
@@ -57452,7 +57455,7 @@ mhS
 bAW
 mhS
 mhS
-mhS
+ggR
 eHF
 kcW
 qZR
