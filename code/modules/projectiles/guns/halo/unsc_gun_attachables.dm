@@ -24,6 +24,7 @@
 	max_range = 10
 	attachment_firing_delay = 5
 	layer_addition = 0.1
+	caliber = "40mm"
 
 /obj/item/attachable/ma3a_shroud
 	name = "\improper MA3A shroud"
