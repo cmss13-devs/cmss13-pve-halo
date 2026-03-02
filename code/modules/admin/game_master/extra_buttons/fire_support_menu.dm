@@ -1,7 +1,7 @@
 #define FIRE_SUPPORT_CLICK_INTERCEPT_ACTION "fire_support_click_intercept_action"
 
 //Various ordnance selections
-#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive","Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
+#define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive", "Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant", "HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
 #define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
 #define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
@@ -9,26 +9,7 @@
 #define MORTAR_ORDNANCE list("High Explosive Shell", "Incendiary Shell", "Fragmentation Shell", "Flare Shell", "Willy-Pete Shell", "Smoke Shell")
 #define CHEMICAL_ORDNANCE list("CN-20 Missile", "Nerve Gas OB", "Nerve Gas Shell")
 #define MISC_ORDNANCE list("Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike")
-
-//seperate fire support types
-#define FIRESUPPORT_TYPE_WRAITH_PLASMA "wraith_plasma"
-#define FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD "banshee_fuel_rod"
-#define FIRESUPPORT_TYPE_BANSHEE_STRAFE "banshee_strafe"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM "glassing_beam"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM_FAST "glassing_beam_fast"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
-#define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
-
-///Assoc list of firesupport types for datum based fire support
-GLOBAL_LIST_INIT(fire_support_types, list(
-	FIRESUPPORT_TYPE_WRAITH_PLASMA = new /datum/fire_support_custom/wraith_plasma,
-	FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD = new /datum/fire_support_custom/banshee_fuel_rod,
-	FIRESUPPORT_TYPE_BANSHEE_STRAFE = new /datum/fire_support_custom/banshee_strafe,
-	FIRESUPPORT_TYPE_GLASSING_BEAM = new /datum/fire_support_custom/glassing_beam,
-	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support_custom/glassing_beam/fast,
-	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support_custom/glassing_beam/weak,
-	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support_custom/glassing_beam/weak/instant,
-	))
+#define THROWABLES_ORDNANCE list("HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
 
 /client/proc/toggle_fire_support_menu()
 	set name = "Fire Support Menu"
@@ -82,6 +63,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	data["mortar_ordnance_options"] = MORTAR_ORDNANCE
 	data["chemical_ordnance_options"] = CHEMICAL_ORDNANCE
 	data["misc_ordnance_options"] = MISC_ORDNANCE
+	data["throwables_ordnance_options"] = THROWABLES_ORDNANCE
 
 	return data
 
@@ -120,7 +102,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 /datum/fire_support_menu/proc/InterceptClickOn(mob/user, params, atom/object)
 
 	var/turf/target_turf = get_turf(object)
-	var/datum/fire_support_custom/selected_mode
+	var/datum/fire_support/custom/selected_mode
 	if(fire_support_click_intercept)
 		switch(selected_ordnance)
 			//PREMADE ORDNANCE
@@ -329,6 +311,133 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
+			//Throwables
+			if("HE")
+				var/obj/item/explosive/grenade/high_explosive/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("HE - UPP")
+				var/obj/item/explosive/grenade/high_explosive/upp/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("HE - RMC")
+				var/obj/item/explosive/grenade/high_explosive/rmc/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Frag")
+				var/obj/item/explosive/grenade/high_explosive/frag/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Incendiary")
+				var/obj/item/explosive/grenade/incendiary/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Molotov")
+				var/obj/item/explosive/grenade/incendiary/molotov/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Incendiary - RMC")
+				var/obj/item/explosive/grenade/incendiary/rmc/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Smoke - White")
+				var/obj/item/explosive/grenade/smokebomb/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Smoke - Green")
+				var/obj/item/explosive/grenade/smokebomb/green/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Smoke - Red")
+				var/obj/item/explosive/grenade/smokebomb/red/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Smoke - UPP")
+				var/obj/item/explosive/grenade/smokebomb/upp/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("WP")
+				var/obj/item/explosive/grenade/phosphorus/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("WP - UPP")
+				var/obj/item/explosive/grenade/phosphorus/upp/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Ball-Breakers")
+				var/obj/item/explosive/grenade/sebb/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Nerve Gas")
+				var/obj/item/explosive/grenade/nerve_gas/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("LSD")
+				var/obj/item/explosive/grenade/LSD/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Tear Gas")
+				var/obj/item/explosive/grenade/tear/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Metal Foam")
+				var/obj/item/explosive/grenade/metal_foam/ammo = new (target_turf)
+				ammo.activate()
+
+				return TRUE
+
+			if("Flare")
+				var/obj/item/device/flashlight/flare/ammo = new (target_turf)
+				ammo.turn_on()
+
+				return TRUE
+
+			if("Flare - UPP")
+				var/obj/item/device/flashlight/flare/upp/ammo = new (target_turf)
+				ammo.turn_on()
+
+				return TRUE
+
+			if("Flare - Signal")
+				var/obj/item/device/flashlight/flare/signal/ammo = new (target_turf)
+				ammo.turn_on()
+
+				return TRUE
+
 			//Covenant Ordnance
 			if("Wraith Plasma")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
@@ -384,6 +493,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
+
 			else
 				to_chat(user, SPAN_ANNOUNCEMENT_HEADER_ADMIN("Invalid ordnance selection! If this appears, yell at a coder!"))
 				return TRUE
@@ -407,39 +517,39 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	ammo.warhead_impact(target_turf)
 
 //datum based fire support options
-/datum/fire_support_custom
+/datum/fire_support/custom
 	///How far the fire support can land from the target turf
-	var/scatter_range = 1
+	scatter_range = 1
 	///How many impacts per use
-	var/impact_quantity = 1
+	impact_quantity = 1
 	///How much delay between impacts
-	var/impact_delay = 0.15 SECONDS
+	impact_delay = 0.15 SECONDS
 	///How much delay between visual effect of impacts
-	var/visual_impact_delay = 0.15 SECONDS
+	visual_impact_delay = 0.15 SECONDS
 	///Chat message when initiating fire support
 	var/warning_chat_message = "SHELL"
 	///Max range of warning message
 	var/warning_range = 15
 	///Initiating sound effect
-	var/initiate_sound = null
+	initiate_sound = null
 	///Delay between initiation and impact
-	var/delay_to_impact = 4 SECONDS
+	delay_to_impact = 4 SECONDS
 	///visual when initiated
-	var/initiate_visual = null
+	initiate_visual = null
 	///visual when impact starts
-	var/start_visual = null
+	start_visual = null
 	///visual for every impact
-	var/impact_start_visual = null
+	impact_start_visual = null
 	///sound when impact starts
-	var/start_sound = null
+	start_sound = null
 	///sound per impact
-	var/impact_sound = null
+	impact_sound = null
 	///sound ranges
 	var/sound_ranges = null
 	var/datum/cause_data/cause_data
 
 ///Initiates fire support proc chain
-/datum/fire_support_custom/proc/initiate_fire_support(turf/target_turf)
+/datum/fire_support/custom/initiate_fire_support(turf/target_turf)
 	addtimer(CALLBACK(src, PROC_REF(start_fire_support), target_turf), delay_to_impact)
 
 	if(initiate_visual)
@@ -450,7 +560,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	addtimer(CALLBACK(src, PROC_REF(early_warning), target_turf), delay_to_impact/4)
 	addtimer(CALLBACK(src, PROC_REF(late_warning), target_turf), delay_to_impact/2)
 
-/datum/fire_support_custom/proc/early_warning(turf/target_turf)
+/datum/fire_support/custom/proc/early_warning(turf/target_turf)
 	var/relative_dir
 	for(var/mob/mob in range(warning_range, target_turf))
 		if(get_turf(mob) == target_turf)
@@ -462,7 +572,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 			SPAN_DANGER("YOU HEAR SOMETHING COMING DOWN [SPAN_UNDERLINE(relative_dir ? uppertext(("TO YOUR " + dir2text(relative_dir))) : uppertext("right above you"))]!"), SHOW_MESSAGE_AUDIBLE \
 		)
 
-/datum/fire_support_custom/proc/late_warning(turf/target_turf)
+/datum/fire_support/custom/proc/late_warning(turf/target_turf)
 	var/relative_dir
 	for(var/mob/mob in range(warning_range/1.5, target_turf))
 		if(get_turf(mob) == target_turf)
@@ -475,7 +585,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 		)
 
 ///Actually begins the fire support attack
-/datum/fire_support_custom/proc/start_fire_support(turf/target_turf)
+/datum/fire_support/custom/start_fire_support(turf/target_turf)
 	select_target(target_turf)
 
 	if(start_visual)
@@ -484,7 +594,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 		playsound(target_turf, start_sound, 100, sound_range = sound_ranges)
 
 ///Selects the final target turf(s) and calls impact procs
-/datum/fire_support_custom/proc/select_target(turf/target_turf)
+/datum/fire_support/custom/select_target(turf/target_turf)
 	var/list/turf_list = RANGE_TURFS(scatter_range, target_turf)
 	for(var/i = 1 to impact_quantity)
 		var/turf/impact_turf = pick(turf_list)
@@ -492,17 +602,18 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 		addtimer(CALLBACK(src, PROC_REF(do_impact_effect), impact_turf), visual_impact_delay * i)
 
 ///The actual impact of the fire support
-/datum/fire_support_custom/proc/do_impact(turf/target_turf)
+/datum/fire_support/custom/do_impact(turf/target_turf)
 	return
 
-/datum/fire_support_custom/proc/do_impact_effect(turf/target_turf)
+/datum/fire_support/custom/do_impact_effect(turf/target_turf)
 	if(impact_sound)
 		playsound(target_turf, impact_sound, 100, 1, sound_ranges)
 	if(impact_start_visual)
 		new impact_start_visual(target_turf)
 	return
 
-/datum/fire_support_custom/wraith_plasma
+/datum/fire_support/custom/wraith_plasma
+	name = "wraith plasma"
 	scatter_range = 0
 	initiate_sound = 'sound/weapons/halo/fire_support/wraith_plasma_whistle.ogg'
 	delay_to_impact = 1.5 SECONDS
@@ -516,13 +627,15 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	var/flameshape = FLAMESHAPE_IRREGULAR
 	var/fire_type = FIRE_VARIANT_TYPE_X
 
-/datum/fire_support_custom/wraith_plasma/do_impact(turf/target_turf)
+/datum/fire_support/custom/wraith_plasma/do_impact(turf/target_turf)
+	cause_data = create_cause_data(src.name)
 	new /obj/effect/temp_visual/plasma_explosion(target_turf)
 	cell_explosion(target_turf, 180, 40, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, explosion_cause_data = cause_data)
 	flame_radius(cause_data, radius, target_turf, flame_level, burn_level, flameshape, null, fire_type)
 	return
 
-/datum/fire_support_custom/banshee_fuel_rod
+/datum/fire_support/custom/banshee_fuel_rod
+	name = "banshee fuel rod"
 	scatter_range = 0
 	start_visual = /obj/effect/temp_visual/banshee_flyby
 	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
@@ -534,12 +647,14 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	var/flameshape = FLAMESHAPE_IRREGULAR
 	var/fire_type = FIRE_VARIANT_TYPE_B
 
-/datum/fire_support_custom/banshee_fuel_rod/do_impact(turf/target_turf)
+/datum/fire_support/custom/banshee_fuel_rod/do_impact(turf/target_turf)
+	var/datum/cause_data/cause_data = create_cause_data("wraith plasma")
 	new /obj/effect/temp_visual/plasma_explosion/green(target_turf)
 	cell_explosion(target_turf, 180, 80, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, explosion_cause_data = cause_data)
 	flame_radius(cause_data, radius, target_turf, flame_level, burn_level, flameshape, null, fire_type)
 
-/datum/fire_support_custom/banshee_strafe
+/datum/fire_support/custom/banshee_strafe
+	name = "banshee strafe"
 	scatter_range = 2
 	impact_quantity = 15
 	delay_to_impact = 0.4 SECONDS
@@ -549,7 +664,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
 	warning_chat_message = "BANSHEE"
 
-/datum/fire_support_custom/banshee_strafe/do_impact(turf/target_turf)
+/datum/fire_support/custom/banshee_strafe/do_impact(turf/target_turf)
 	new /obj/effect/temp_visual/plasma_explosion/small(target_turf)
 	for(var/target in target_turf)
 		if(isliving(target))
@@ -569,7 +684,9 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 				obj_target.update_health(50)
 	target_turf.ex_act(EXPLOSION_THRESHOLD_VLOW)
 
-/datum/fire_support_custom/glassing_beam
+/datum/fire_support/custom/glassing_beam
+	name = "glassing beam"
+
 	scatter_range = 0
 	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/glassing_beam.ogg'
@@ -588,11 +705,11 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	var/fire_color = LIGHT_COLOR_RED
 	var/fire_type = "white"
 
-/datum/fire_support_custom/glassing_beam/fast
+/datum/fire_support/custom/glassing_beam/fast
 	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead_fast.ogg'
 	delay_to_impact = 4 SECONDS
 
-/datum/fire_support_custom/glassing_beam/weak
+/datum/fire_support/custom/glassing_beam/weak
 	initiate_sound = 'sound/weapons/halo/fire_support/cruiser_overhead_fast.ogg'
 	delay_to_impact = 4 SECONDS
 	clear_power = 300
@@ -601,20 +718,20 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	standard_falloff = 15
 	distance = 7
 
-/datum/fire_support_custom/glassing_beam/weak/instant
+/datum/fire_support/custom/glassing_beam/weak/instant
 	initiate_sound = null
 	delay_to_impact = 1 SECONDS
 
-/datum/fire_support_custom/glassing_beam/do_impact(turf/target_turf)
+/datum/fire_support/custom/glassing_beam/do_impact(turf/target_turf)
 	new /obj/effect/temp_visual/glassing_beam(target_turf)
-	var/datum/cause_data/cause_data = create_cause_data("Glassing Beam")
+	var/datum/cause_data/cause_data = create_cause_data("glassing beam")
 	cell_explosion(target_turf, clear_power, clear_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data) //break shit around
 	cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
 	handle_shake(target_turf, 15, 3, 3)
 	fire_spread(target_turf, cause_data, distance, fire_level, burn_level, fire_color, fire_type, TURF_PROTECTION_OB)
 	return
 
-/datum/fire_support_custom/proc/handle_shake(turf/epicenter, max_shake_factor, shake_frequency, max_knockdown_time)
+/datum/fire_support/custom/proc/handle_shake(turf/epicenter, max_shake_factor, shake_frequency, max_knockdown_time)
 	var/radius_size = 30
 
 	for(var/mob/living/user in urange(radius_size, epicenter))
@@ -642,4 +759,5 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 #undef MORTAR_ORDNANCE
 #undef MISC_ORDNANCE
 #undef CHEMICAL_ORDNANCE
+#undef THROWABLES_ORDNANCE
 #undef FIRE_SUPPORT_CLICK_INTERCEPT_ACTION
