@@ -641,6 +641,7 @@ GLOBAL_LIST_INIT(frozen_items, list(SQUAD_MARINE_1 = list(), SQUAD_MARINE_2 = li
 
 /obj/structure/machinery/cryopod/big/halo
 	name = "cryo pod"
+	desc = "A large metal capsule with a glass cover, intended to store non-essential personnel during long slipspace jumps."
 	icon = 'icons/halo/obj/structures/machinery/64x64cryogenics.dmi'
 	icon_state = "map_tool"
 	dir = WEST
