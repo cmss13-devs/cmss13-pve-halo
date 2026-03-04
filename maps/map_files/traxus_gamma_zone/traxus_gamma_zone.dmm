@@ -11346,10 +11346,6 @@
 "ggC" = (
 /turf/closed/wall/new_varadero/reinforced,
 /area/gamma_sector/unsc_base/west_wing)
-"ggR" = (
-/obj/item/ammo_casing/bullet,
-/turf/open/gm/dirt2,
-/area/gamma_sector/closed_hard/engineering_caves)
 "gho" = (
 /obj/item/prop/colony/canister{
 	pixel_x = 6;
@@ -57455,7 +57451,7 @@ mhS
 bAW
 mhS
 mhS
-ggR
+mhS
 eHF
 kcW
 qZR
