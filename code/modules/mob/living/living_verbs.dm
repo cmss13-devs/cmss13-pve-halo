@@ -175,10 +175,25 @@
 			resist_fire()
 		if(locate(/datum/effects/acid) in effects_list)
 			resist_acid()
+		if(locate(/datum/component/status_effect/plasma_stuck) in datum_components)
+			resist_plasma_nade()
 		if(last_special <= world.time)
 			resist_restraints()
 
 	SEND_SIGNAL(src, COMSIG_MOB_RESISTED)
+
+/mob/living/proc/resist_plasma_nade()
+	return
+
+/mob/living/carbon/human/resist_plasma_nade()
+	var/all_components = datum_components[/datum/component]
+	for(var/datum/component/status_effect/plasma_stuck/component in all_components)
+		component.unstuck(delete_nade = FALSE)
+		KnockDown(1)
+		spin(5, 1)
+	return
+
+
 
 /mob/living/proc/resist_buckle()
 	buckled.manual_unbuckle(src)
