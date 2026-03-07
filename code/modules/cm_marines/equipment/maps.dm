@@ -150,6 +150,18 @@
 	html_link = ""
 	color = "white"
 
+/obj/item/map/mackay_station
+	name = "\improper Station Map"
+	desc = "A labeled blueprint of OWP Mackay Station."
+	html_link = ""
+	color = "white"
+
+/obj/item/map/oni_digsite_451
+	name = "\improper Digsite Map"
+	desc = "A labeled blueprint of what seems to resemble a digsite of some kind, most of the details are censored by black ink."
+	html_link = ""
+	color = "white"
+
 /obj/item/map/taipei
 	name = "\improper Taipei Way-Station map"
 	desc = "A labelled print out of the anterior scan of Taipei Station, An unassuming waystation."
@@ -190,6 +202,8 @@ GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 		MAP_SI391_SEKHMET = new /obj/item/map/lazarus_landing_map(),
 		MAP_BMG290_OTOGI_EGRESS_POINT = new /obj/item/map/new_varadero(),
 		MAP_CANYON_32B = new /obj/item/map/canyon_32b(),
+		MAP_MACKAY_STATION = new /obj/item/map/mackay_station(),
+		MAP_ONI_DIGSITE_451 = new /obj/item/map/oni_digsite_451(),
 		MAP_BOSENMORI_BASHO = new /obj/item/map/lazarus_landing_map(),
 		MAP_BIG_BLUE = new/obj/item/map/big_red_map(),
 		MAP_CALLIOPE_HIGHWAY = new /obj/item/map/big_red_map(),
