@@ -54,6 +54,11 @@
 	var/aa_cooldown_time = 7 SECONDS
 	var/cancel_sounds
 	var/atom/movable/overlay/ammo_overlay
+	starting_attachment_types = list(/obj/item/attachable/spnkr_handle)
+	attachable_allowed = list(
+		/obj/item/attachable/spnkr_handle,
+		/obj/item/attachable/scope/spnkr
+	)
 
 /obj/item/weapon/gun/halo_launcher/spnkr/set_gun_config_values()
 	..()
