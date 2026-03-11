@@ -832,23 +832,16 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/ready_bay)
 "ci" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
-	pixel_x = -9
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/ready_bay)
-"cj" = (
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/ready_bay)
-"ck" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
 	dir = 8
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/dark_was_the_night/ready_bay)
-"cl" = (
+"cj" = (
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/ready_bay)
+"ck" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -858,11 +851,20 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/dark_was_the_night/ready_bay)
+"cl" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "cm" = (
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
 "cn" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
@@ -877,20 +879,11 @@
 	layer = 2.52
 	},
 /obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/ready_bay)
-"cq" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/decal/warning_stripes{
 	icon_state = "SW-out"
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"cr" = (
+"cq" = (
 /obj/item/ammo_box/magazine/unsc/ma5b{
 	pixel_x = 0;
 	pixel_y = 15
@@ -1957,7 +1950,11 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "oR" = (
-/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/tool/hand_labeler{
+	pixel_y = 2;
+	pixel_x = -3
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "oU" = (
@@ -2125,23 +2122,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qJ" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -6;
-	pixel_y = 1
-	},
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -7;
-	pixel_y = 8
-	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 16;
-	pixel_y = 10
-	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 15;
-	pixel_y = 4
-	},
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "qL" = (
@@ -2342,11 +2323,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/upper_hallway)
 "sU" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/tool/hand_labeler{
-	pixel_y = 2;
-	pixel_x = -3
-	},
+/obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "sX" = (
@@ -3477,6 +3454,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/lower_hallway)
+"FW" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
+	pixel_x = -9
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "FX" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -3793,7 +3777,23 @@
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/lower_hallway)
 "Ke" = (
-/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -6;
+	pixel_y = 1
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -7;
+	pixel_y = 8
+	},
+/obj/item/attachable/attached_gun/grenade/ma5c{
+	pixel_x = 16;
+	pixel_y = 10
+	},
+/obj/item/attachable/attached_gun/grenade/ma5c{
+	pixel_x = 15;
+	pixel_y = 4
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Kk" = (
@@ -9176,9 +9176,9 @@ rD
 pJ
 OG
 Fy
-cn
+cl
 cc
-Ke
+qJ
 Fy
 ZE
 cc
@@ -9328,9 +9328,9 @@ rD
 NG
 Sb
 wi
-cp
+cn
 cg
-oR
+sU
 Fy
 bn
 cc
@@ -9480,9 +9480,9 @@ rD
 Tn
 aX
 yq
-cp
+cn
 cc
-Ke
+qJ
 Fy
 bp
 cc
@@ -9632,7 +9632,7 @@ rD
 pW
 aZ
 yq
-cq
+cp
 cd
 Fy
 Fy
@@ -9785,7 +9785,7 @@ rt
 yq
 yq
 wi
-ck
+ci
 ch
 kY
 Uy
@@ -9936,7 +9936,7 @@ Fy
 xM
 bz
 bv
-cr
+cq
 WN
 kR
 Vh
@@ -10697,7 +10697,7 @@ Fy
 Fy
 Fy
 yq
-cl
+ck
 eW
 ry
 eW
@@ -11002,7 +11002,7 @@ Km
 Hh
 LX
 cc
-qJ
+Ke
 Fy
 bs
 cc
@@ -11154,7 +11154,7 @@ Km
 Hh
 LX
 cc
-sU
+oR
 Fy
 bt
 cg
@@ -11306,7 +11306,7 @@ eT
 Fy
 jz
 cc
-ci
+FW
 Fy
 bu
 cc
