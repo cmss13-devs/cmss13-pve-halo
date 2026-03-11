@@ -1,7 +1,8 @@
 /* HUD DATUMS */
 
-//GLOBAL HUD LIST
-GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
+//GLOBAL HUD LIST: (note no assertion ensures all huds are unique so be sure you never reuse the same index)
+// flatten_numeric_alist(alist) is used to ensure the define matches the index and they're sequential defines
+GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 	MOB_HUD_SECURITY_BASIC = new /datum/mob_hud/security/basic(),
 	MOB_HUD_SECURITY_ADVANCED = new /datum/mob_hud/security/advanced(),
 	MOB_HUD_MEDICAL_BASIC = new /datum/mob_hud/medical/basic(),
@@ -12,16 +13,20 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 	MOB_HUD_XENO_HOSTILE = new /datum/mob_hud/xeno_hostile(),
 	MOB_HUD_FACTION_MARINE = new /datum/mob_hud/faction(),
 	MOB_HUD_FACTION_OBSERVER = new /datum/mob_hud/faction/observer(),
+	MOB_HUD_FACTION_ARMY = new /datum/mob_hud/faction/army(),
+	MOB_HUD_FACTION_NAVY = new /datum/mob_hud/faction/navy(),
 	MOB_HUD_FACTION_UPP = new /datum/mob_hud/faction/upp(),
 	MOB_HUD_FACTION_WY = new /datum/mob_hud/faction/wy(),
 	MOB_HUD_FACTION_TWE = new /datum/mob_hud/faction/twe(),
 	MOB_HUD_FACTION_CLF = new /datum/mob_hud/faction/clf(),
 	MOB_HUD_FACTION_PMC = new /datum/mob_hud/faction/pmc(),
-	MOB_HUD_FACTION_UNSC = new /datum/mob_hud/faction/unsc(),
+	MOB_HUD_FACTION_MARSHAL = new /datum/mob_hud/faction/cmb(),
+	MOB_HUD_FACTION_UACG = new /datum/mob_hud/faction/guard(),
 	MOB_HUD_HUNTER = new /datum/mob_hud/hunter_hud(),
 	MOB_HUD_HUNTER_CLAN = new /datum/mob_hud/hunter_clan(),
 	MOB_HUD_EXECUTE = new /datum/mob_hud/execute_hud(),
-	))
+	MOB_HUD_FACTION_UNSC = new /datum/mob_hud/faction/unsc(),
+	)))
 
 /datum/mob_hud
 	var/list/mob/hudmobs = list() //list of all mobs which display this hud
@@ -198,6 +203,12 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 	if(faction == faction_to_check || isobserver(user) || isyautja(user))
 		..()
 
+/datum/mob_hud/faction/army
+	faction_to_check = FACTION_ARMY
+
+/datum/mob_hud/faction/navy
+	faction_to_check = FACTION_NAVY
+
 /datum/mob_hud/faction/upp
 	faction_to_check = FACTION_UPP
 
@@ -212,6 +223,12 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 
 /datum/mob_hud/faction/pmc
 	faction_to_check = FACTION_PMC
+
+/datum/mob_hud/faction/cmb
+	faction_to_check = FACTION_MARSHAL
+
+/datum/mob_hud/faction/guard
+	faction_to_check = FACTION_UACG
 
 /datum/mob_hud/faction/unsc
 	faction_to_check = FACTION_UNSC
@@ -346,17 +363,20 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, list(
 /mob/living/carbon/human/med_hud_set_health()
 	var/image/holder = hud_list[HEALTH_HUD]
 	if(stat == DEAD || status_flags & FAKEDEATH)
-		holder.icon_state = "hudhealth-100"
+		holder.icon_state = "hudhealth-200"
 	else
-		var/percentage = round(health*100/species.total_health, 10)
+		var/percentage = round(health*100/species.total_health, 1)
+		var/percentage_in_10 = round(percentage, 10)
 		if(percentage > -1)
-			holder.icon_state = "hudhealth[percentage]"
+			holder.icon_state = "hudhealth[percentage_in_10]" //We have only some 5 states but not all
 		else if(percentage > -49)
 			holder.icon_state = "hudhealth-0"
 		else if(percentage > -99)
 			holder.icon_state = "hudhealth-50"
-		else
+		else if(percentage > -199)
 			holder.icon_state = "hudhealth-100"
+		else
+			holder.icon_state = "hudhealth-200"
 
 
 /mob/proc/med_hud_set_status() //called when mob stat changes, or get a virus/xeno host, etc

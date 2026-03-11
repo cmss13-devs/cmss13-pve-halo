@@ -17,9 +17,9 @@
 	blood_color = BLOOD_COLOR_UNGGOY
 	flesh_color = "#317986"
 
-	total_health = 150
+	total_health = 125
 	burn_mod = 1
-	brute_mod = 0.8
+	brute_mod = 1
 	slowdown = 0.1
 
 	dodge_pool = 10
@@ -43,6 +43,13 @@
 		"brain" = /datum/internal_organ/brain/unggoy,
 		"eyes" =  /datum/internal_organ/eyes
 		)
+
+/datum/species/unggoy/New()
+	equip_adjust = list(
+		WEAR_R_HAND = list("[NORTH]" = list("x" = 5, "y" = -5), "[EAST]" = list("x" = 7, "y" = -5), "[SOUTH]" = list("x" = -4, "y" = -5), "[WEST]" = list("x" = 0, "y" = -5)),
+		WEAR_L_HAND = list("[NORTH]" = list("x" = -4, "y" = -5), "[EAST]" = list("x" = 0, "y" = -5), "[SOUTH]" = list("x" = 5, "y" = -5), "[WEST]" = list("x" = -7, "y" = -5))
+	)
+	..()
 
 /datum/species/unggoy/post_species_loss(mob/living/carbon/human/H)
 	..()

@@ -1,0 +1,13 @@
+author: "Karmac, Verbs, Tyeagg, 32bit"
+delete-after: True
+changes:
+  - rscadd: "Needler, with supercombine features"
+  - rscadd: "Plasma rifle"
+  - rscadd: "Covenant carbine"
+  - rscadd: "Belts and other equipment for all the different species"
+  - imageadd: "Fuel rod gun sprites by Tyeagg"
+  - balance: "Nerfs unggoy and their armor a bit"
+  - balance: "Buffs plasma pistol"
+  - code_imp: "Modified a bunch of covenant presets"
+  - code_imp: "Modified firearm appraisal & added HAI compatibility thanks to 32bit"
+  - soundadd: "All relevant sounds for the weapons"

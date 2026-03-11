@@ -162,6 +162,10 @@
 	density = TRUE
 	opacity = TRUE
 
+/turf/open/void/vehicle/unopacity
+	density = TRUE
+	opacity = FALSE
+
 /turf/open/void/is_weedable()
 	return NOT_WEEDABLE
 
@@ -758,6 +762,13 @@
 	color = "#995555"
 	name = "pool"
 
+/turf/open/gm/river/dark_water
+	color = "#4d4d4d"
+	name = "fuel"
+
+/turf/open/gm/river/dark_water/no_overlay
+	no_overlay = TRUE
+
 /turf/open/gm/river/red
 	color = "#995555"
 
@@ -778,11 +789,16 @@
 
 /turf/open/gm/river/ocean/deep_water
 	name = "deep water"
+
+/turf/open/gm/river/ocean/no_overlay
 	no_overlay = TRUE
 
 /turf/open/gm/river/ocean/deep_ocean
 	name = "deep ocean"
 	default_name = "deep ocean"
+
+/turf/open/gm/river/ocean/deep_ocean/no_overlay
+	no_overlay = TRUE
 
 /turf/open/gm/river/ocean/Entered(atom/movable/AM)
 	. = ..()
@@ -874,6 +890,9 @@
 	no_overlay = TRUE
 	supports_surgery = FALSE
 
+/turf/open/gm/river/no_overlay_lighted
+	no_overlay = TRUE
+	supports_surgery = FALSE
 
 
 
@@ -926,6 +945,7 @@
 	icon = 'icons/turf/floors/asphalt.dmi'
 	icon_state = "sunbleached_asphalt"
 	baseturfs = /turf/open/asphalt
+	minimap_color = MINIMAP_ROAD
 
 /turf/open/asphalt/tile
 	icon_state = "tile"
@@ -975,6 +995,11 @@
 	name = "floor"
 	icon_state = "cement_sunbleached5"
 	color = "#a39e99"
+
+/turf/open/asphalt/cement_darkened
+	name = "floor"
+	icon_state = "cement5"
+	color = "#b5b3b3"
 
 /turf/open/asphalt/cement_sunbleached/cement_sunbleached1
 	icon_state = "cement_sunbleached1"
@@ -1211,6 +1236,7 @@
 	name = "floor"
 	icon_state = "floor"
 	icon = 'icons/turf/shuttle.dmi'
+	unacidable = TRUE
 
 /turf/open/shuttle/can_surgery
 	allow_construction = TRUE

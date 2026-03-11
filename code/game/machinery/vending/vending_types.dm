@@ -435,6 +435,7 @@
 
 		/obj/item/storage/box/matches = 5,
 		/obj/item/storage/fancy/cigar/matchbook/exec_select = 10,
+		/obj/item/storage/fancy/cigar/matchbook/balaji_imperial = 10,
 		/obj/item/storage/fancy/cigar/matchbook/wy_gold = 10,
 		/obj/item/tool/lighter/random = 20,
 		/obj/item/tool/lighter/zippo/black = 5,
@@ -451,6 +452,7 @@
 
 		/obj/item/storage/box/matches = 2,
 		/obj/item/storage/fancy/cigar/matchbook/exec_select = 7,
+		/obj/item/storage/fancy/cigar/matchbook/balaji_imperial = 6,
 		/obj/item/storage/fancy/cigar/matchbook/wy_gold = 5,
 		/obj/item/tool/lighter/random = 3,
 		/obj/item/tool/lighter/zippo/black = 15,
@@ -486,13 +488,15 @@
 	icon_state = "china_cig_vending"
 	products = list(
 		/obj/item/storage/fancy/cigarettes/laika = 10,
+		/obj/item/clothing/mask/cigarette/cigar/cohiba = 3,
 		/obj/item/storage/box/matches = 15,
-		/obj/item/tool/lighter/zippo = 10,
+		/obj/item/tool/lighter/random = 10,
 	)
 	prices = list(
-		/obj/item/storage/fancy/cigarettes/laika = 45,
+		/obj/item/storage/fancy/cigarettes/laika = 10,
+		/obj/item/clothing/mask/cigarette/cigar/cohiba = 20,
 		/obj/item/storage/box/matches = 1,
-		/obj/item/tool/lighter/zippo = 25,
+		/obj/item/tool/lighter/random = 5,
 	)
 
 /obj/structure/machinery/vending/security
@@ -629,22 +633,23 @@
 	desc = "A kitchen and restaurant equipment vendor."
 	product_ads = "Mm, food stuffs!;Food and food accessories.;Get your plates!;You like forks?;I like forks.;Woo, utensils.;You don't really need these..."
 	icon_state = "dinnerware"
-	products = list(/obj/item/tool/kitchen/tray = 8,/obj/item/tool/kitchen/utensil/fork = 6,/obj/item/tool/kitchen/knife = 3,/obj/item/reagent_container/food/drinks/drinkingglass = 8,/obj/item/clothing/suit/chef/classic = 2,/obj/item/reagent_container/food/condiment/saltshaker = 4,/obj/item/reagent_container/food/condiment/peppermill = 4,/obj/item/reagent_container/food/condiment/enzyme = 1,/obj/item/reagent_container/food/condiment = 8)
-	contraband = list(/obj/item/tool/kitchen/utensil/spoon = 2,/obj/item/tool/kitchen/utensil/knife = 2,/obj/item/tool/kitchen/rollingpin = 2, /obj/item/tool/kitchen/knife/butcher = 2)
-
-/obj/structure/machinery/vending/dinnerware/unsc
-	name = "\improper military utensils dispenser"
-	desc = "Paired with the food dispenser, the utensils machine is a much more simplistic design and only requires manual restocking."
-	icon = 'icons/halo/obj/structures/machinery/vending.dmi'
-	icon_state = "unsc_dinnerware"
-	icon_vend = "unsc_dinnerware_vend"
-	icon_deny = "unsc_dinnerware_deny"
-	tiles_with = list(
-		/obj/structure/window/framed/unsc,
-		/obj/structure/machinery/door/airlock,
-		/turf/closed/wall/unsc,
+	products = list(
+		/obj/item/tool/kitchen/tray = 8,
+		/obj/item/tool/kitchen/utensil/fork = 6,
+		/obj/item/tool/kitchen/knife = 3,
+		/obj/item/reagent_container/food/drinks/drinkingglass = 8,
+		/obj/item/clothing/suit/chef/classic = 2,
+		/obj/item/reagent_container/food/condiment/saltshaker = 4,
+		/obj/item/reagent_container/food/condiment/peppermill = 4,
+		/obj/item/reagent_container/food/condiment = 8,
 	)
-
+	contraband = list(
+		/obj/item/tool/kitchen/utensil/spoon = 2,
+		/obj/item/tool/kitchen/utensil/knife = 2,
+		/obj/item/tool/kitchen/rollingpin = 2,
+		/obj/item/tool/kitchen/knife/butcher = 2,
+		/obj/item/reagent_container/food/condiment/enzyme = 1,
+	)
 
 /obj/structure/machinery/vending/sovietsoda
 	name = "\improper BODA"

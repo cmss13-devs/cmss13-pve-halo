@@ -1,10 +1,10 @@
 #define APC_WIRE_MAIN_POWER 1
 #define APC_WIRE_IDSCAN 2
 
-GLOBAL_LIST_INIT(apc_wire_descriptions, list(
-		APC_WIRE_MAIN_POWER   = "Main power",
-		APC_WIRE_IDSCAN   = "ID scanner"
-	))
+GLOBAL_LIST_INIT(apc_wire_descriptions, flatten_numeric_alist(alist(
+		APC_WIRE_MAIN_POWER = "Main power",
+		APC_WIRE_IDSCAN = "ID scanner",
+	)))
 
 #define APC_COVER_CLOSED 0
 #define APC_COVER_OPEN 1
@@ -161,12 +161,17 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 		set_broken()
 
 /obj/structure/machinery/power/apc/Destroy()
+	area.power_light = 0
+	area.power_equip = 0
+	area.power_environ = 0
+	area.power_change()
+
 	if(terminal)
 		terminal.master = null
 		terminal = null
 	QDEL_NULL(cell)
 	area = null
-	. = ..()
+	return ..()
 
 
 // TGUI SHIT \\
@@ -330,6 +335,7 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 
 // the very fact that i have to override this screams to me that apcs shouldnt be under machinery - spookydonut
 /obj/structure/machinery/power/apc/power_change()
+	update_icon()
 	return
 
 /obj/structure/machinery/power/apc/proc/make_terminal()
@@ -896,7 +902,7 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 
 		else if(grabber.species.can_shred(grabber))
 			var/allcut = TRUE
-			for(var/wire = 1; wire < length(get_wire_descriptions()); wire++)
+			for(var/wire = 1; wire < length(GLOB.apc_wire_descriptions); wire++)
 				if(!isWireCut(wire))
 					allcut = FALSE
 					break
@@ -907,7 +913,7 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 			SPAN_WARNING("You slash [src]!"))
 			playsound(src.loc, 'sound/weapons/slash.ogg', 25, 1)
 			if(wiresexposed)
-				for(var/wire = 1; wire < length(get_wire_descriptions()); wire++)
+				for(var/wire = 1; wire < length(GLOB.apc_wire_descriptions); wire++)
 					cut(wire, user)
 				update_icon()
 				visible_message(SPAN_WARNING("[src]'s wires are shredded!"))
@@ -950,12 +956,6 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 		area.update_power_channels((equipment > 1), (lighting > 1), (environ > 1))
 	else
 		area.update_power_channels(FALSE, FALSE, FALSE)
-
-/obj/structure/machinery/power/apc/proc/get_wire_descriptions()
-	return list(
-		APC_WIRE_MAIN_POWER   = "Main power",
-		APC_WIRE_IDSCAN    = "ID scanner"
-	)
 
 /obj/structure/machinery/power/apc/proc/isWireCut(wire)
 	var/wireFlag = getWireFlag(wire)
@@ -1335,20 +1335,13 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 				L.broken()
 				sleep(1)
 
-/obj/structure/machinery/power/apc/Destroy()
-	area.power_light = 0
-	area.power_equip = 0
-	area.power_environ = 0
-	area.power_change()
-	. = ..()
-
 /obj/structure/machinery/power/apc/wires_cut
 	icon_state = "apcewires_mapicon"
 
 /obj/structure/machinery/power/apc/wires_cut/Initialize(mapload, ndir, building)
 	. = ..()
 	wiresexposed = TRUE
-	for(var/wire = 1; wire < length(get_wire_descriptions()); wire++)
+	for(var/wire = 1; wire < length(GLOB.apc_wire_descriptions); wire++)
 		cut(wire)
 	update_icon()
 	beenhit = 4
@@ -1359,7 +1352,7 @@ GLOBAL_LIST_INIT(apc_wire_descriptions, list(
 /obj/structure/machinery/power/apc/fully_broken/Initialize(mapload, ndir, building)
 	. = ..()
 	wiresexposed = TRUE
-	for(var/wire = 1; wire < length(get_wire_descriptions()); wire++)
+	for(var/wire = 1; wire < length(GLOB.apc_wire_descriptions); wire++)
 		cut(wire)
 	beenhit = 4
 	set_broken()

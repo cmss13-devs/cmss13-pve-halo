@@ -1,0 +1,16 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Beaker variants of most chemicals, replacing pill bottles"
+  - rscadd: "mil-spec syringe that does not break when injecting on harm intent and injects faster"
+  - rscadd: "Optican BurnGuard, functionally kelotane but with painkiller added in. Reskinned injector, basically"
+  - rscadd: "Biofoam antidote, corpsmen get 1 each. Instantly removes all biofoam from anyones system, but applies burn damage as a consequence"
+  - rscadd: "UNSC variants of autoinjectors"
+  - rscadd: "Chorotazine, IA but one chemical instead of 2."
+  - rscadd: "Morphine in UNSC IFAKs, painkiller between tramadol and oxycodone, but is in limited supply."
+  - qol: "Medkit renaming system, alt+mmb a medkit to give it a name similar to pill bottles or injectors do"
+  - imageadd: "Reskinned some items for the UNSC"
+  - maptweak: "Added corpsman prep to prep on the Marine map, instead of in the medbay"
+  - maptweak: "Moved corpsman prep to the ODST medbay as opposed to a random barely visible corner"
+  - balance: "Made it so beakers can fit into UNSC corpsman gear"
+  - code_imp: "Adjusted UNSC corpsman presets to account for all of the changes"

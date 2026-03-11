@@ -875,10 +875,10 @@
 /obj/structure/machinery/door/airlock/dropship_hatch/ex_act(severity)
 	return
 
-/obj/structure/machinery/door/airlock/dropship_hatch/unlock()
-	if(is_reserved_level(z)) // in flight
-		return
-	..()
+/obj/structure/machinery/door/airlock/dropship_hatch/unlock(forced = FALSE)
+	if(is_reserved_level(z) && !forced) // in flight
+		return FALSE
+	return ..()
 
 /obj/structure/machinery/door/airlock/dropship_hatch/attack_alien(mob/living/carbon/xenomorph/xeno)
 
@@ -932,6 +932,9 @@
 /obj/structure/machinery/door/airlock/hatch/cockpit/pmc
 	icon = 'icons/obj/structures/doors/dropshippmc_pilot.dmi'
 
+/obj/structure/machinery/door/airlock/hatch/cockpit/rmc
+	icon = 'icons/obj/structures/doors/dropship_rmc_pilot.dmi'
+
 //PRISON AIRLOCKS
 /obj/structure/machinery/door/airlock/prison
 	name = "cell Door"
@@ -972,7 +975,7 @@
 	req_access = null
 	req_one_access = null
 
-// UNSC airlocks
+// halo airlocks
 
 /obj/structure/machinery/door/airlock/unsc
 	name = "\improper airlock"
@@ -993,33 +996,24 @@
 /obj/structure/machinery/door/airlock/unsc/glass/prop
 	prop_door = TRUE
 	icon_state = "door_locked"
-/obj/structure/machinery/door/airlock/upp_green
-	name = "\improper Airlock"
-	icon = 'icons/obj/structures/doors/upp/uppdoor_green.dmi'
-	openspeed = 5
-	req_access = null
-	req_one_access = null
 
-/obj/structure/machinery/door/airlock/upp_green/window
-	icon = 'icons/obj/structures/doors/upp/uppdoor_glass_green.dmi'
-	opacity = FALSE
-	glass = TRUE
+/obj/structure/machinery/door/airlock/voi
+	name = "\improper industrial door"
+	desc = "An industrial door made of thick metal."
+	icon = 'icons/halo/obj/structures/doors/voi_door.dmi'
 
-/obj/structure/machinery/door/airlock/upp_grey
-	name = "\improper Airlock"
-	icon = 'icons/obj/structures/doors/upp/uppdoor_grey.dmi'
-	openspeed = 5
-	req_access = null
-	req_one_access = null
+/obj/structure/machinery/door/airlock/voi/autoname
+	autoname = TRUE
 
-/obj/structure/machinery/door/airlock/upp_grey/window
-	icon = 'icons/obj/structures/doors/upp/uppdoor_glass_grey.dmi'
-	opacity = FALSE
-	glass = TRUE
+/obj/structure/machinery/door/airlock/voi/colony
+	req_one_access = list(ACCESS_CIVILIAN_PUBLIC, ACCESS_CIVILIAN_ENGINEERING, ACCESS_WY_COLONIAL)
 
-/obj/structure/machinery/door/airlock/upp_utility
-	name = "\improper Airlock"
-	icon = 'icons/obj/structures/doors/upp/uppdoor_utility.dmi'
-	openspeed = 6
-	req_access = null
-	req_one_access = null
+/obj/structure/machinery/door/airlock/voi/colony/autoname
+	autoname = TRUE
+
+/obj/structure/machinery/door/airlock/voi/prop
+	prop_door = TRUE
+	icon_state = "door_locked"
+
+/obj/structure/machinery/door/airlock/voi/prop/autoname
+	autoname = TRUE

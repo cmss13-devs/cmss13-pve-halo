@@ -135,6 +135,12 @@
 	required_reagents = list("silicon" = 1, "potassium" = 1, "nitrogen" = 1)
 	result_amount = 3
 
+/datum/chemical_reaction/saline
+	name = "Saline Solution"
+	id = "saline"
+	result = "saline"
+	required_reagents = list("sodiumchloride" = 1, "sugar" = 1, "water" = 1)
+	result_amount = 6
 
 /datum/chemical_reaction/tramadol
 	name = "Tramadol"
@@ -216,3 +222,17 @@
 	required_reagents = list("biofoam_ext" = 1)
 	required_catalysts = list("biofoam" = 1)
 	result_amount = 1
+
+/datum/chemical_reaction/biofoam_dissolvent
+	name = "Biofoam Dissolvent"
+	id = "biofoam_dissolvent"
+	result = "nullfoam"
+	required_reagents = list("biofoam" = 1)
+	required_catalysts = list("biofoam_dissolvent" = 1)
+
+/datum/chemical_reaction/biofoam_dissolvent_ext
+	name = "Biofoam Dissolvent EXT"
+	id = "biofoam_dissolvent_ext"
+	result = "nullfoam"
+	required_reagents = list("biofoam_ext" = 1)
+	required_catalysts = list("biofoam_dissolvent" = 1)

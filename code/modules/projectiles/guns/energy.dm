@@ -33,6 +33,12 @@
 	update_icon()
 	max_shots = round((cell.maxcharge / charge_cost), 1)
 
+/obj/item/weapon/gun/energy/has_ammunition()
+	if(cell.charge >= charge_cost || in_chamber)
+		return TRUE
+	else
+		return FALSE
+
 /obj/item/weapon/gun/energy/Destroy()
 	QDEL_NULL(cell)
 	. = ..()
@@ -77,10 +83,6 @@
 	cell.charge -= charge_cost
 	in_chamber = create_bullet(ammo, initial(name))
 	return in_chamber
-
-/obj/item/weapon/gun/energy/has_ammunition()
-	if(cell?.charge >= charge_cost)
-		return TRUE //Enough charge for a shot.
 
 /obj/item/weapon/gun/energy/Fire(atom/target, mob/living/user, params, reflex, dual_wield)
 	. = ..()
