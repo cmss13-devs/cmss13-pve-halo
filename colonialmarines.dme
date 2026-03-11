@@ -2493,6 +2493,8 @@
 #include "code\modules\projectiles\guns\halo\cov_gun_attachables.dm"
 #include "code\modules\projectiles\guns\halo\cov_guns.dm"
 #include "code\modules\projectiles\guns\halo\cov_magazines.dm"
+#include "code\modules\projectiles\guns\halo\cov_melee.dm"
+#include "code\modules\projectiles\guns\halo\spnkr.dm"
 #include "code\modules\projectiles\guns\halo\unsc_gun_attachables.dm"
 #include "code\modules\projectiles\guns\halo\unsc_guns.dm"
 #include "code\modules\projectiles\guns\halo\unsc_magazines.dm"
