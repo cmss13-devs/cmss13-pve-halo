@@ -756,9 +756,6 @@
 	scope.hidden = TRUE
 	update_attachable(scope.slot)
 
-/obj/item/weapon/gun/pistol/halo/m6d/attached
-	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/m6d, /obj/item/attachable/flashlight/m6)
-
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
 	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template, though with less stopping power."
