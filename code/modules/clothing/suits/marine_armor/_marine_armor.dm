@@ -958,7 +958,7 @@
 	time_to_equip = 10
 /obj/item/clothing/suit/marine/unsc
 	name = "\improper M52B body armor"
-	desc = "Standard-issue to the UNSC Marine Corps, the M52B armor entered service by 2531 for use in the Human Covenant war, coming with improved protection against plasma-based projectiles compared to older models."
+	desc = "Standard-issue to the UNSC Marine Corps, the M52B armor entered service by 2531 for use in the Human Covenant war. A tweaked Titanium-A composition offers a jump in directed energy protection, though not nearly as much as hoped."
 	icon = 'icons/halo/obj/items/clothing/suits/suits_by_faction/suit_unsc.dmi'
 	icon_state = "m52b"
 	item_state = "m52b"
