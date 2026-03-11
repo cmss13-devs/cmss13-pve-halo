@@ -55,6 +55,7 @@
 	var/datum/looping_sound/spnkr_locking/locking
 	COOLDOWN_DECLARE(aa_cooldown)
 	var/aa_cooldown_time = 7 SECONDS
+	var/cancel_sounds
 
 /obj/item/weapon/gun/halo_launcher/spnkr/set_gun_config_values()
 	..()
@@ -85,6 +86,7 @@
 /obj/item/weapon/gun/halo_launcher/spnkr/use_unique_action()
 	var/mob/living/carbon/user = get_gun_user()
 	var/area/current_area = get_area(user)
+	cancel_sounds = FALSE// In case the user moves while while locking on
 	if(current_area.ceiling >= CEILING_PROTECTION_TIER_1)
 		to_chat(user, SPAN_DANGER("There's a ceiling above you...bad idea."))
 		playsound(user, 'sound/weapons/halo/spnkr_locking/spnkr_aa_fail.ogg')
@@ -106,13 +108,13 @@
 	user.visible_message(SPAN_DANGER("[user] gets down on a knee and aims [user.p_their()] [src] into the air!"), SPAN_DANGER("You get down on a knee and aim your [src] into the air!"))
 	locking.start()
 	message_admins(FONT_SIZE_XL("[user] is attempting to launch an anti-air missile from their [src]!"), user.x, user.y, user.z)
-	addtimer(CALLBACK(src, PROC_REF(stop_loop)), 3 SECONDS)
-	addtimer(CALLBACK(src, PROC_REF(play_loop)), 3 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(stop_locking)), 3 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(play_lockon)), 3 SECONDS)
 	if(!do_after(user, 5 SECONDS, show_busy_icon = BUSY_ICON_HOSTILE))
+		stop_loops()
 		playsound(user, 'sound/weapons/halo/spnkr_locking/spnkr_aa_fail.ogg')
 		to_chat(user, SPAN_WARNING("You interrupt the lockon sequence."))
-		locking.stop()
-		lockon.stop()
+		cancel_sounds = TRUE
 		return
 	var/missile_name = in_chamber.name
 	user.visible_message(FONT_SIZE_LARGE(SPAN_DANGER("[user] fires [user.p_their()] [src] into the air, launching a [in_chamber] from the tube!")), FONT_SIZE_LARGE(SPAN_DANGER("You fire the [src] into the air, launching a [missile_name] from the tube!")))
@@ -155,11 +157,17 @@
 			firing_dir = 270
 	return firing_dir
 
-/obj/item/weapon/gun/halo_launcher/spnkr/proc/stop_loop()
+/obj/item/weapon/gun/halo_launcher/spnkr/proc/stop_locking()
 	locking.stop()
 
-/obj/item/weapon/gun/halo_launcher/spnkr/proc/play_loop()
+/obj/item/weapon/gun/halo_launcher/spnkr/proc/play_lockon()
+	if(cancel_sounds)
+		return
 	lockon.start()
+
+/obj/item/weapon/gun/halo_launcher/spnkr/proc/stop_loops()
+	lockon.stop()
+	locking.stop()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/clicked(mob/user, list/mods)
 	if(!mods["alt"] || !CAN_PICKUP(user, src))
