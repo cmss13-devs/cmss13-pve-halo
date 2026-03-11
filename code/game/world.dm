@@ -280,8 +280,9 @@ GLOBAL_LIST_INIT(reboot_sfx, file2list("config/reboot_sfx.txt"))
 		s += "<a href=\"[CONFIG_GET(string/discordurl)]\"><b>[CONFIG_GET(string/servername)]</b></a>"
 		s += "<br>Hosted by: <b>[CONFIG_GET(string/hostedby)]</b>"
 		s += "<br>Round time: <b>[duration2text()]</b>"
-		s += "<br>An RP server focused on a tight knit platoon fighting xenos!"
-		s += "<br>Shoot the shit *and* shoot shit."
+		s += "<br>An action-roleplay server focused on playing a small, tight-knit squad."
+		s += "<br>Face threats known and unknown in an experience curated by a game-master."
+		s += "<br>In active development!"
 
 	world.status = s
 

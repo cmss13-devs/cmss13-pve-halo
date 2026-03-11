@@ -1,6 +1,6 @@
 // rifle ammo
 
-/datum/ammo/bullet/rifle/ma5c
+/datum/ammo/bullet/rifle/ma5
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
 	damage = 40
@@ -12,8 +12,9 @@
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
-/datum/ammo/bullet/rifle/ma5c/shredder
+/datum/ammo/bullet/rifle/ma5/shredder
 	name = "shredder bullet"
 	damage = 52
 	penetration = ARMOR_PENETRATION_TIER_2
@@ -21,15 +22,16 @@
 /datum/ammo/bullet/rifle/ma3a
 	name = "FMJ bullet"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 35
+	damage = 40
 	penetration = ARMOR_PENETRATION_TIER_2
 	accurate_range = 16
-	accuracy = HIT_ACCURACY_TIER_5
+	accuracy = HIT_ACCURACY_TIER_4
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = AMMO_SPEED_TIER_6
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/vk78
 	name = "FMJ bullet"
@@ -43,6 +45,7 @@
 	effective_range_max = 7
 	damage_falloff = DAMAGE_FALLOFF_TIER_5
 	max_range = 22
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/br55
 	name = "X-HP SAP-HE bullet"
@@ -55,6 +58,7 @@
 	effective_range_max = 16
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 24
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 /datum/ammo/bullet/rifle/dmr
 	name = "FMJ bullet"
@@ -68,6 +72,7 @@
 	effective_range_max = 12
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 36
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
 
 // smg ammo
 /datum/ammo/bullet/smg/m7
@@ -89,6 +94,7 @@
 	damage = 60
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
+	shell_casing = /obj/effect/decal/ammo_casing/redshell
 
 /datum/ammo/bullet/shotgun/spread/unsc
 	name = "additional buckshot, USCM special type"
@@ -104,6 +110,7 @@
 	max_range = 10
 	stamina_damage = 75
 	damage = 35
+	shell_casing = /obj/effect/decal/ammo_casing/blueshell
 
 // rocket ammo
 
@@ -111,11 +118,11 @@
 	name = "M19 missile"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	icon_state = "spnkr_missile"
-	damage = 200
-	shell_speed = AMMO_SPEED_TIER_6
+	damage = 300
+	shell_speed = AMMO_SPEED_TIER_3
 	accuracy = HIT_ACCURACY_TIER_4
 	accurate_range = 14
-	max_range = 14
+	max_range = 24
 
 
 // sniper ammo
@@ -123,15 +130,24 @@
 /datum/ammo/bullet/rifle/srs99
 	name = "APFSDS bullet"
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
-	damage = 200
+	damage = 700
 	penetration = ARMOR_PENETRATION_TIER_8
 	accurate_range = 24
-	accuracy = HIT_ACCURACY_TIER_10
-	scatter = SCATTER_AMOUNT_TIER_10
+	accuracy = HIT_ACCURACY_TIER_MAX
+	scatter = SCATTER_AMOUNT_NONE
 	effective_range_max = 24
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 48
 	shell_speed = AMMO_SPEED_TIER_6 + AMMO_SPEED_TIER_2
+	flags_ammo_behavior = AMMO_BALLISTIC|AMMO_SNIPER|AMMO_IGNORE_COVER
+	shell_casing = /obj/effect/decal/ammo_casing/cartridge/halo
+
+/datum/ammo/bullet/rifle/srs99/set_bullet_traits()
+	. = ..()
+	LAZYADD(traits_to_give, list(
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_penetrating),
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_iff)
+	))
 
 // pistol ammo
 
@@ -143,3 +159,4 @@
 	damage = 40
 	penetration= ARMOR_PENETRATION_TIER_2
 	shrapnel_chance = SHRAPNEL_CHANCE_TIER_2
+	shell_casing = /obj/effect/decal/ammo_casing/bullet/halo
