@@ -60,6 +60,9 @@
 		/obj/item/attachable/scope/spnkr
 	)
 
+	/obj/item/weapon/gun/halo_launcher/spnkr/set_gun_attachment_offsets()
+	attachable_offset = list("under_x" = 48, "under_y" = 16)
+
 /obj/item/weapon/gun/halo_launcher/spnkr/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_5)
