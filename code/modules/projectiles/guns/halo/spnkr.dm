@@ -238,7 +238,7 @@
 		ammo_overlay.icon_state = "spnkr_rockets"
 		ammo_overlay.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
 		ammo_overlay.layer = src.layer - 0.1
-		ammo_overlay.pixel_x = -2
+		ammo_overlay.pixel_x = -5
 		ammo_overlay.pixel_y = 1
 		if(current_mag.current_rounds <= 0)
 			ammo_overlay.icon_state = "spnkr_rockets_e"
