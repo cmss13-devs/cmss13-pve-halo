@@ -104,7 +104,12 @@ GLOBAL_DATUM_INIT(droppod_panel, /datum/drop_pod_menu, new)
 				pod.target_x = droppod_atom.x
 				pod.target_y = droppod_atom.y
 				pod.target_z = droppod_atom.z
-			to_chat(ui.user, SPAN_NOTICE("Target set."))
+			if(!params["val"])
+				return
+
+			var/list/droppod = params["val"]
+			var/atom/droppod_atom = locate(droppod["droppod_ref"])
+			message_admins("[key_name_admin(usr)] set the ODST drop coordinates to [droppod_atom.x], [droppod_atom.y], [droppod_atom.z]", droppod_atom.x, droppod_atom.y, droppod_atom.z)
 		if("toggle_click_droppod")
 			droppod_click_intercept = !droppod_click_intercept
 			return

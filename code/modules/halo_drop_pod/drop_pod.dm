@@ -17,9 +17,10 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	var/can_launch = TRUE
 	var/pod_state = POD_READY
 	var/chute_state = CHUTE_READY
+	var/start_open
 
 // Vars of importance when launching
-	var/landing_scatter = 12 // Scatter from the landing point
+	var/landing_scatter = 18 // Scatter from the landing point
 	var/time_to_land = 30 SECONDS // time it takes from launching to reach the ground
 	var/landing_time = 1 SECONDS
 	var/time_to_chute
@@ -57,6 +58,9 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	target_x = 75
 	target_y = 100
 
+/obj/structure/halo_droppod/start_open
+	start_open = TRUE
+
 /obj/item/drop_pod_door
 	name = "\improper M8823 HEV pod door"
 	icon = 'icons/halo/obj/structures/drop_pod.dmi'
@@ -78,7 +82,6 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 /obj/structure/halo_droppod/Initialize()
 	. = ..()
 	handle_overlays()
-
 	chute_obj = new()
 	chute_obj.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
 	vis_contents += chute_obj
@@ -86,6 +89,8 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	door_obj = new()
 	door_obj.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
 	vis_contents += door_obj
+	if(start_open)
+		open_door()
 
 /obj/structure/halo_droppod/proc/handle_overlays(mob/living/user)
 	overlays.Cut()
@@ -153,7 +158,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	to_chat(user, SPAN_NOTICE("You enter the pod."))
 	user.forceMove(src)
 	occupant = user
-	playsound(src, 'sound/effects/odst_pod/pod_enter_1.ogg')
+	playsound(src, "droppod_enter")
 	addtimer(CALLBACK(src, PROC_REF(close_door), user), 2.5 SECONDS)
 	handle_overlays(user)
 
@@ -173,7 +178,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 	occupant.dir = SOUTH
 	occupant = null
 	to_chat(user, SPAN_NOTICE("You exit the pod."))
-	playsound(src, 'sound/effects/odst_pod/pod_enter_1.ogg')
+	playsound(src, "droppod_enter")
 	handle_overlays(user)
 
 /obj/structure/halo_droppod/attack_hand(mob/living/user)
@@ -356,7 +361,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 /obj/structure/halo_droppod/proc/do_drop(turf/targetturf, mob/user)
 	var/datum/cause_data/cause_data = create_cause_data("[src]", user)
 	explosion(targetturf, light_impact_range = 2, explosion_cause_data = cause_data)
-	playsound(targetturf, 'sound/effects/odst_pod/pod_land_1.ogg', 100)
+	playsound(targetturf, "droppod_land", 100)
 	addtimer(CALLBACK(src, PROC_REF(complete_drop), user), 2 SECONDS)
 
 /obj/structure/halo_droppod/proc/complete_drop(mob/user)
