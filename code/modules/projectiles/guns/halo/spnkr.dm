@@ -33,10 +33,7 @@
 	item_state = "spnkr"
 	layer = ABOVE_OBJ_LAYER
 	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
-	bonus_overlay_layer = UPPER_ITEM_LAYER
 	w_class = SIZE_LARGE
-	bonus_overlay_x = -2
-	bonus_overlay_y = 1
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/spnkr.dmi'
 	var/cover_open = FALSE
 	current_mag = /obj/item/ammo_magazine/spnkr
@@ -56,6 +53,7 @@
 	COOLDOWN_DECLARE(aa_cooldown)
 	var/aa_cooldown_time = 7 SECONDS
 	var/cancel_sounds
+	var/atom/movable/overlay/ammo_overlay
 
 /obj/item/weapon/gun/halo_launcher/spnkr/set_gun_config_values()
 	..()
@@ -219,11 +217,24 @@
 	return ..()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/update_icon()
+	overlays.Cut()
+	vis_contents.Cut()
 	. = ..()
 	if(cover_open)
 		overlays += image("+[base_gun_icon]_cover_open")
 	else
 		overlays += image("+[base_gun_icon]_cover_closed")
+	if(current_mag)
+		ammo_overlay = new()
+		ammo_overlay.icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/special.dmi'
+		ammo_overlay.icon_state = "spnkr_rockets"
+		ammo_overlay.vis_flags = VIS_INHERIT_ID | VIS_INHERIT_PLANE
+		ammo_overlay.layer = src.layer - 0.1
+		ammo_overlay.pixel_x = -2
+		ammo_overlay.pixel_y = 1
+		if(current_mag.current_rounds <= 0)
+			ammo_overlay.icon_state = "spnkr_rockets_e"
+		vis_contents += ammo_overlay
 
 /obj/item/weapon/gun/halo_launcher/spnkr/able_to_fire(mob/living/user)
 	. = ..()
@@ -231,6 +242,7 @@
 		if(cover_open)
 			to_chat(user, SPAN_WARNING("You can't fire [src] with the feed cover open! <b>(alt-click to close)</b>"))
 			return FALSE
+	update_icon()
 
 /obj/item/weapon/gun/halo_launcher/spnkr/cock(mob/user)
 	if(in_chamber)

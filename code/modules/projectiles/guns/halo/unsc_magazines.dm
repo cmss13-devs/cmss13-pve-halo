@@ -163,7 +163,6 @@
 	caliber = "102mm"
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/special.dmi'
 	icon_state = "spnkr_rockets"
-	bonus_overlay = "spnkr_rockets"
 	w_class = SIZE_LARGE
 	max_rounds = 2
 	default_ammo = /datum/ammo/rocket/spnkr
