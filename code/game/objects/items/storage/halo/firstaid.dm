@@ -10,6 +10,7 @@
 	maptext_width = 32
 	maptext_x = 18
 	maptext_y = 3
+	w_class = SIZE_MEDIUM
 	var/maptext_label
 	var/display_maptext = TRUE
 

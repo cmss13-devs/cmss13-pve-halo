@@ -1,9 +1,10 @@
 #define STANDARD_MARINE_TO_TOTAL_SPAWN_RATIO 0.4
 
-#define PVT_VARIANT "Private"
-#define PFC_VARIANT "Private First Class"
 #define CPL_VARIANT "Corporal"
 #define LCPL_VARIANT "Lance Corporal"
+#define PFC_VARIANT "Private First Class"
+#define SR_PVT_VARIANT "Senior Private"
+#define PVT_VARIANT "Private"
 
 /datum/job/marine/standard
 	title = JOB_SQUAD_MARINE
@@ -69,14 +70,29 @@
 /datum/job/marine/standard/ai/upp
 	title = JOB_SQUAD_MARINE_UPP
 	gear_preset = /datum/equipment_preset/uscm/pfc/upp
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/upp/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/upp/private
+	job_options = list(PVT_VARIANT = "PVT", SR_PVT_VARIANT = "SrPVT")
+
+/datum/job/marine/standard/ai/upp/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PVT_VARIANT)
+		gear_preset = gear_preset_secondary
 
 /datum/job/marine/standard/ai/forecon
 	title = JOB_SQUAD_MARINE_FORECON
 	total_positions = 2
 	spawn_positions = 2
 	gear_preset = /datum/equipment_preset/uscm/pfc/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/lesser_rank
+	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/pfc
+	gear_preset_tertiary = /datum/equipment_preset/uscm/pfc/forecon/corporal
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL")
+
+/datum/job/marine/standard/ai/forecon/handle_job_options(option)
+	gear_preset = initial(gear_preset)
+	if(option == PFC_VARIANT)
+		gear_preset = gear_preset_secondary
+	if(option == CPL_VARIANT)
+		gear_preset = gear_preset_tertiary
 
 /datum/job/marine/standard/ai/rto
 	title = JOB_SQUAD_RTO
@@ -107,12 +123,24 @@
 /datum/job/marine/standard/ai/pmc
 	title = JOB_PMCPLAT_STANDARD
 	gear_preset = /datum/equipment_preset/uscm/pmc
-	gear_preset_secondary = /datum/equipment_preset/uscm/pmc
+	job_options = null
 
 /obj/effect/landmark/start/marine/pmc
 	name = JOB_PMCPLAT_STANDARD
 	squad = SQUAD_PMCPLT
 	job = /datum/job/marine/standard/ai/pmc
+
+/datum/job/marine/standard/ai/pmc/small
+	title = JOB_PMCPLAT_SMALL_STANDARD
+	gear_preset = /datum/equipment_preset/uscm/pmc
+	job_options = null
+	total_positions = 3
+	spawn_positions = 3
+
+/obj/effect/landmark/start/marine/pmc/small
+	name = JOB_PMCPLAT_SMALL_STANDARD
+	squad = SQUAD_PMCPLT_SMALL
+	job = /datum/job/marine/standard/ai/pmc/small
 
 /obj/effect/landmark/start/marine/forecon
 	name = JOB_SQUAD_MARINE_FORECON
@@ -134,7 +162,22 @@
 	squad = SQUAD_ODST
 	job = /datum/job/marine/standard/ai/odst
 
-#undef PVT_VARIANT
-#undef PFC_VARIANT
+/datum/job/marine/standard/ai/rmc
+	title = JOB_TWE_RMC_RIFLEMAN
+	total_positions = 2
+	spawn_positions = 2
+	gear_preset = /datum/equipment_preset/uscm/rmc
+	job_options = null
+	supervisors = "the section leader and troop commander"
+	entry_message_body = "You are a highly trained member of the Royal Marines Commando. Whilst you may not have a primary specialisation, that offers you a greater degree of flexibility in additional equipment you can bring to the field.<br><b>You remember that you've stored your personal gear and uniform in the locker rooms.</b>"
+
+/obj/effect/landmark/start/marine/rmc
+	name = JOB_TWE_RMC_RIFLEMAN
+	squad = SQUAD_RMC
+	job = /datum/job/marine/standard/ai/rmc
+
 #undef CPL_VARIANT
 #undef LCPL_VARIANT
+#undef PFC_VARIANT
+#undef SR_PVT_VARIANT
+#undef PVT_VARIANT
