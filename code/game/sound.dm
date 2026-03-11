@@ -481,6 +481,10 @@
 				sound = pick('sound/effects/shields/shield_pop_1.ogg', 'sound/effects/shields/shield_pop_2.ogg', 'sound/effects/shields/shield_pop_3.ogg')
 			if("energy_sword")
 				sound = pick('sound/weapons/halo/energy_sword/energy_sword_1.ogg', 'sound/weapons/halo/energy_sword/energy_sword_2.ogg')
+			if("droppod_enter")
+				sound = pick('sound/effects/odst_pod/pod_enter_1.ogg', 'sound/effects/odst_pod/pod_enter_2.ogg', 'sound/effects/odst_pod/pod_enter_3.ogg')
+			if("droppod_land")
+				sound = pick('sound/effects/odst_pod/pod_land_1.ogg', 'sound/effects/odst_pod/pod_land_2.ogg', 'sound/effects/odst_pod/pod_land_3.ogg', 'sound/effects/odst_pod/pod_land_4.ogg')
 
 			// Covenant audio
 			if("pain_sangheili")

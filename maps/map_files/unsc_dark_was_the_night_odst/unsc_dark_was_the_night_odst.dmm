@@ -664,9 +664,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
-"bM" = (
-/turf/closed/wall/unsc/reinforced/hull,
-/area/space)
 "bN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -2013,6 +2010,7 @@
 /area/dark_was_the_night/briefing/one)
 "pE" = (
 /obj/structure/machinery/door/airlock/hatch/colony,
+/obj/structure/halo_droppod/start_open,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/pod_bay)
 "pJ" = (
@@ -7436,7 +7434,7 @@ Vl
 Vl
 Ld
 AZ
-bM
+AZ
 rR
 rR
 rR
@@ -7588,7 +7586,7 @@ Qn
 DP
 Mc
 av
-bM
+AZ
 rR
 rR
 rR
@@ -7740,7 +7738,7 @@ cm
 fE
 fA
 Vl
-bM
+AZ
 rR
 rR
 rR
@@ -7892,7 +7890,7 @@ cm
 fE
 wu
 sr
-bM
+AZ
 rR
 rR
 rR
