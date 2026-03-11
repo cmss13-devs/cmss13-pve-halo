@@ -14,7 +14,7 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5c
 	name = "MA5C ICWS assault rifle"
-	desc = "The MA5C Misriah Armory Individual Combat Weapons System is a 7.62x51mm bullpup, integrating an electronic round counter, HUD link, and a slew of improvements from the B-variant. Most notable is a reduced 1:7 twist rate offering higher accuracy, reworked contact surfaces for stability in automatic fire, and a completely redesigned 32 round high reliability magazine. As an unintended benefit, the new mechanism and slower twist has actually resulted in a slightly higher muzzle velocity."
+	desc = "The MA5C Misriah Armory Individual Combat Weapons System is a 7.62x51mm bullpup, integrating an electronic round counter, HUD link, and a slew of improvements from the B-variant. Most notable is a reduced 1:7 twist rate offering higher accuracy, reworked contact surfaces for stability in automatic fire, and a completely redesigned 48 round high reliability magazine. As an unintended benefit, the new mechanism and slower twist has actually resulted in a slightly higher muzzle velocity."
 	icon_state = "ma5c"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
@@ -417,7 +417,8 @@
 	fa_max_scatter = 3
 
 /obj/item/weapon/gun/smg/halo/m7/socom
-	name = "M7 submachine gun"
+	name = "M7S submachine gun"
+	desc = "A silenced and accurized variant of the standard M7 SMG. Iconically used by the Orbital Drop Shock Troopers, though employed by other special mission units of the UNSC."
 	starting_attachment_types = list(
 		/obj/item/attachable/stock/m7,
 		/obj/item/attachable/stock/m7/grip/folded_down,
@@ -620,7 +621,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6c
 	name = "M6C service magnum"
-	desc = "The M6C is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. It's set apart from other M6 platform sidearms in that it does not come equipped with a smart-link scope attached to the top of it. Some marines reportedly prefer it due to the less cumbersome nature."
+	desc = "The M6C is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. Streamlining its profile, the standard scope is removed. Some marines reportedly prefer it for that reason."
 	icon_state = "m6c"
 	item_state = "m6"
 	caliber = "12.7x40mm"
