@@ -534,3 +534,15 @@
 	attach_icon = "m7_grip"
 	wield_delay_mod = WIELD_DELAY_NONE
 	size_mod = 1
+
+/obj/item/attachable/spnkr_handle
+	name = "\improper spnkr handle"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "spnkr_handle"
+	attach_icon = "spnkr_handle"
+	slot = "under"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
