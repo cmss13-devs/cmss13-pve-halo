@@ -1808,6 +1808,7 @@
 #include "code\modules\cm_marines\equipment\mortar\mortars.dm"
 #include "code\modules\cm_phone\handset.dm"
 #include "code\modules\cm_phone\phone_base.dm"
+#include "code\modules\cm_phone\Halo\phone_base.dm"
 #include "code\modules\cm_preds\_yaut_defines.dm"
 #include "code\modules\cm_preds\falcon.dm"
 #include "code\modules\cm_preds\huntdata.dm"
