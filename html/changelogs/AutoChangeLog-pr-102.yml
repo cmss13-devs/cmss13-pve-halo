@@ -1,0 +1,6 @@
+author: "tyeagg"
+delete-after: True
+changes:
+  - rscadd: "shield particles for impact and popping"
+  - imageadd: "new elite shield sprites"
+  - imagedel: "temp elite shield sprites"
