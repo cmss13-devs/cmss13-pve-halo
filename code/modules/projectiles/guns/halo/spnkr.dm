@@ -57,7 +57,7 @@
 	starting_attachment_types = list(/obj/item/attachable/spnkr_handle)
 	attachable_allowed = list(
 		/obj/item/attachable/spnkr_handle,
-		/obj/item/attachable/scope/spnkr
+		/obj/item/attachable/scope/spnkr,
 	)
 
 	/obj/item/weapon/gun/halo_launcher/spnkr/set_gun_attachment_offsets()
