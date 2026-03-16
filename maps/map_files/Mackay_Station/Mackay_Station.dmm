@@ -3070,7 +3070,7 @@
 "pwf" = (/obj/structure/platform{dir = 1},/obj/structure/platform{dir = 4},/turf/open/shuttle/escapepod{dir = 4},/area/mackay_station/firecontrol)
 "pww" = (/turf/open/floor/almayer/silver/southeast,/area/mackay_station/romeo/redhangars)
 "pxi" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/structure/machinery/floodlight/landing/floor{color = "#dae2ff"; light_color = "#dae2ff"},/turf/open/floor/almayer/bluecorner/north,/area/mackay_station/bravo/bluebridge)
-"pxn" = (/obj/structure/machinery/camera/autoname,/obj/structure/machinery/door_control/brbutton{id = "crew_shutters"; icon_state = "big_red_button_tablev"; pixel_y = 10; pixel_x = 6; name = "crew quarters weapons shutters"},/turf/open/floor/almayer/research,/area/mackay_station/golf/greenarmory)
+"pxn" = (/obj/structure/machinery/camera/autoname,/obj/structure/machinery/door_control/brbutton{id = "crew_shutters"; icon_state = "big_red_button_tablev"; pixel_y = 26; pixel_x = 6; name = "crew quarters weapons shutters"},/turf/open/floor/almayer/research,/area/mackay_station/golf/greenarmory)
 "pxs" = (/obj/item/prop/unsc_status_display,/turf/closed/wall/almayer/aicore/white/hull{color = "#a1a1a1"},/area/mackay_station/bravo/bluebridge)
 "pxz" = (/obj/structure/machinery/light/double/blue{dir = 4},/turf/open/shuttle/escapepod{dir = 4},/area/mackay_station/romeo/redhangars)
 "pxQ" = (/obj/structure/machinery/light/double/blue{dir = 1},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/golf/greenquarters1)
