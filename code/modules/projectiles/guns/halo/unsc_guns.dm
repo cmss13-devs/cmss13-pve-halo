@@ -14,7 +14,7 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5c
 	name = "MA5C ICWS assault rifle"
-	desc = "The MA5C Misriah Armory Individual Combat Weapons System is a 7.62x51mm bullpup, integrating an electronic round counter, HUD link, and a slew of improvements from the B-variant. Most notable is a reduced 1:7 twist rate offering higher accuracy, reworked contact surfaces for stability in automatic fire, and a completely redesigned 48 round high reliability magazine. As an unintended benefit, the new mechanism and slower twist has actually resulted in a slightly higher muzzle velocity."
+	desc = "A 7.62x51mm bullpup offering a slew of improvements from the B-variant. Reduced 1:7 twist and redesigned contact surfaces increase accuracy and stability in automatic, while the new 48 round magazine is highly reliable."
 	icon_state = "ma5c"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
@@ -70,7 +70,8 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5b
 	name = "MA5B ICWS assault rifle"
-	desc = "The older weapon sports a torrential 900RPM cyclic backed by 60 round magazine. Veterans and units expecting closer combat often select the B-variant if at all possible. However, these strengths would drive its successor's adoption. While beloved by paper soldiers, it is violently unstable in automatic, and in semi its MOA wider. Magazines must be cared for carefully, or failures a few hundred rounds in are almost certain."
+	desc = "The older weapon sports a torrential 900RPM cyclic backed by 60 round magazine. Veterans and units expecting closer combat often select the B-variant if at all possible. However, these strengths would drive its successor's adoption."
+	desc_lore = "While beloved by paper soldiers in all positions, it is violently unstable in automatic, and in semi its MOA wider. Even the saltiest veteran will admit the MA5C's practically hugging its user even in full auto, compared to the 'B. Even this might not have been enough but for its reliability problem. Magazines must be cared for carefully, or failures are frequent. In the desperate combat of the early Human-Covenant War, such care evaporated."
 	icon_state = "ma5b"
 	item_state = "ma5b"
 	caliber = "7.62x51mm"
@@ -131,7 +132,8 @@
 
 /obj/item/weapon/gun/rifle/halo/ma3a
 	name = "MA3A assault rifle"
-	desc = "The MA5's predecessor had a notably short service history before being replaced by the more comprehensively designed MA5 series, though surplus from its large production run would often crop up in private security or rebel hands. Lacking the integrated combat suite of the MA5 rifles, the MA3A instead most commonly featured a over-designed and prone to malfunction multi-mode conventional computer optic. While robust in its capabilities, the constant adjustments and poor battery-life led to its quick abandonment by mainline UNSCDF units."
+	desc = "The MA5's predecessor had a notably short service history before being replaced by the more comprehensively designed MA5 series, though surplus from its large production run would often crop up in private security or rebel hands."
+	desc_lore = " Lacking the integrated combat suite of the MA5 rifles, the MA3A instead most commonly featured a over-designed and prone to malfunction multi-mode conventional computer optic. Though excellent when it worked, the constant adjustments and poor battery-life drove soldiers mad, and led to its quick abandonment by mainline UNSCDF units."
 	icon_state = "ma3a"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
@@ -368,7 +370,7 @@
 
 /obj/item/weapon/gun/smg/halo/m7
 	name = "M7 submachine gun"
-	desc = "The M7 SMG is a relatively small caseless SMG that fires 5mm rounds. Coming with a folding stock and foldable grip, the M7 SMG has found its home in boarding action and special operations units for its compact size and low caliber."
+	desc = "Compact SMG in 5mm caseless. Collapsable stock, folding grip, just the ticket for a pocket hose. The M7 has found its home in boarding, protection detail, and special operations for its compact size and surprising stopping power."
 	icon_state = "m7"
 	item_state = "m7"
 	caliber = "5x23mm"
@@ -450,7 +452,7 @@
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90
 	name = "\improper M90 CAWS"
-	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSC for CQC scenarios. It feeds twelve 8-gauge shotgun shells from it's internal tubular magazine."
+	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSCDF. It feeds twelve 8-gauge shotgun shells from internal tube with an iconic top-loading system."
 	icon_state = "m90"
 	item_state = "m90"
 	fire_sound = "gun_m90"
