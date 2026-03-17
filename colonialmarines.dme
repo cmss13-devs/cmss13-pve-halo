@@ -2784,6 +2784,7 @@
 #include "interface\skin.dmf"
 #include "maps\_basemap.dm"
 #include "modular_pve_halo\code\game\machinery\fax_machine.dm"
+#include "modular_pve_halo\code\game\machinery\newscaster.dm"
 #include "modular_pve_halo\code\game\machinery\computer\medical.dm"
 #include "modular_pve_halo\code\game\machinery\vending\vendor_types\medical.dm"
 #include "modular_pve_halo\code\game\objects\items\trash.dm"
