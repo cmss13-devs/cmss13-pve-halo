@@ -2783,4 +2783,5 @@
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_basemap.dm"
+#include "modular_pve_halo\machinery.dm"
 // END_INCLUDE
