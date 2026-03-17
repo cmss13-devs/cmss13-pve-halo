@@ -215,8 +215,8 @@
 	)
 
 /obj/item/clothing/accessory/storage/webbing/m52b/grenade
-	name = "\improper M52B Pattern Grenade Webbing"
-	desc = "Grenadier configuration designed for standard 40mm grenades. By happy circumstance, the loops can also secure standard issue M9s. Composed of heat-resistant synthetic fabrics, this LBE attaches directly to M52B armor hardpoints with a buckle system."
+	name = "\improper M52B Pattern Grenade Pouch"
+	desc = "LBE configuration designed for grenadiers, holding standard 40mm grenades. May also secure M9s for the more old fashioned grenadier. Composed of heat-resistant synthetic fabrics, this LBE attaches directly to M52B armor hardpoints with a buckle system."
 	icon_state = "m52b_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade
 

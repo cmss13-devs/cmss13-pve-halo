@@ -70,7 +70,7 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5b
 	name = "MA5B ICWS assault rifle"
-	desc = "The older weapon sports a torrential 900RPM cyclic rate backed by a deep 60 round magazine. Veterans and units expecting closer combat, for example in built up urban zones, often select the B-variant if at all possible. However, these two strengths would also drive its successor's adoption. While beloved by paper soldiers, the MA5B in automatic is vigorously unstable, and in semi its MOA is noticeably wider. Magazines must be taken care of carefully, or failures only a few hundred rounds in are almost certain."
+	desc = "The older weapon sports a torrential 900RPM cyclic backed by 60 round magazine. Veterans and units expecting closer combat often select the B-variant if at all possible. However, these strengths would drive its successor's adoption. While beloved by paper soldiers, it is violently unstable in automatic, and in semi its MOA wider. Magazines must be cared for carefully, or failures a few hundred rounds in are almost certain."
 	icon_state = "ma5b"
 	item_state = "ma5b"
 	caliber = "7.62x51mm"
@@ -418,7 +418,6 @@
 
 /obj/item/weapon/gun/smg/halo/m7/socom
 	name = "M7S submachine gun"
-	desc = "A silenced and accurized variant of the standard M7 SMG. Iconically used by the Orbital Drop Shock Troopers, though employed by other special mission units of the UNSC."
 	starting_attachment_types = list(
 		/obj/item/attachable/stock/m7,
 		/obj/item/attachable/stock/m7/grip/folded_down,
@@ -621,7 +620,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6c
 	name = "M6C service magnum"
-	desc = "The M6C is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. Streamlining its profile, the standard scope is removed. Some marines reportedly prefer it for that reason."
+	desc = "Semi-automatic 12.7x40mm recoil-operated pistol. Feed mechanism and grip has been redesigned, attempting to remedy the breakage problem alongside reliability faults. Its 'pugnose' design offers superior use in close quarters, but also incomplete powder burn resulting in lower performance than expected."
 	icon_state = "m6c"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -670,7 +669,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a
 	name = "M4A pistol"
-	desc = "An antiquated 12.7x40mm pistol, popular among civilians and criminals alike. The M4A is a predecessor to the more commonly recognized M6 series of pistols by Misriah, removed from official service in 2414 when the M6 took stage.  It's regarded as being inaccurate with a blinding muzzle flash and deafening report, making it unsuited for most practical purposes, features that make it even more attractive to its most common users."
+	desc = "Vintage 12.7x40mm pistol, popular among civilians and criminals alike. Predecessor to the more commonly recognized M6 series, officially replaced in 2414. Common complaints were its inaccuracy, followed by a blinding, dirty muzzle flash and deafening report. These attributes would also be what gave it a second life among its new users."
 	icon_state = "m4a"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
@@ -693,7 +692,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"
-	desc = "The M6G service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
+	desc = "With a longer barrel and polygonal rifling, the M6G is more accurate and has a higher velocity. Capacity reverted to 8 rounds in a bid to reduce size of weapon and ammo, unfortunately also making it no longer backwards compatible."
 	icon_state = "m6g"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -719,7 +718,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6d
 	name = "M6D service magnum"
-	desc = "The D-variant of the M6 family. Integrating the KFA-2 scope alongside a new grip style, it is controllable and accurate at range. 12.7x40mm Semi-Armour-Piercing-High-Explosive (SAPHE) rounds out of a 12 round magazine grant crushing firepower. However, not all changes are welcomed, and some users swear the added bulk makes it unacceptably unwieldy."
+	desc = "The D-variant has a sterling reputation as a powerful and accurate weapon. To some with its integrated KFA-2 low power smart-link sight, in built up urban centers it's even a fine alternative to a sniper rifle. However, not all that glitters is gold, with some users swearing the added bulk makes it unacceptably unwieldy."
 	icon_state = "m6d"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -732,6 +731,7 @@
 	empty_click = 'sound/weapons/halo/m6d/gun_m6d_dryfire.ogg'
 
 /obj/item/weapon/gun/pistol/halo/m6g/unloaded
+//voibs. wrong magnum.
 	current_mag = null
 
 /obj/item/weapon/gun/pistol/halo/m6d/set_gun_attachment_offsets()
@@ -757,7 +757,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
-	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template, though with less stopping power."
+	desc = "Phased-out member of the M6 family. Unique to the A-variant action is a recoil absorbing design, but velocity loss and accuracy issues were endemic until its replacement. Now seen in security and law enforcement use as a more compact, comfortable carry."
 	icon_state = "m6a"
 	item_state = "m6"
 	caliber = "12.7x40mm"
