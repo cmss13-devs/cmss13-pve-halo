@@ -2784,7 +2784,12 @@
 #include "interface\skin.dmf"
 #include "maps\_basemap.dm"
 #include "modular_pve_halo\code\game\objects\items\trash.dm"
+#include "modular_pve_halo\code\game\objects\items\reagent_containers\food\cans.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\food\snacks.dm"
+#include "modular_pve_halo\code\game\objects\items\tools\flame_tools.dm"
+#include "modular_pve_halo\code\game\objects\items\toys\cards.dm"
 #include "modular_pve_halo\code\game\objects\items\weapons\blades.dm"
+#include "modular_pve_halo\code\game\objects\structures\shower.dm"
+#include "modular_pve_halo\code\modules\almayer\machinery.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
 // END_INCLUDE

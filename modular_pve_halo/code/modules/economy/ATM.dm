@@ -1,5 +1,5 @@
 //auto teller machine
-/obj/structure/machinery/atm/generic
+/obj/structure/machinery/atm
 	name = "automated teller machine"
 	desc = "An automated point of service for expeditionary banking operations."
 
