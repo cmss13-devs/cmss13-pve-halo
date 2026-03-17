@@ -2,11 +2,11 @@
 
 //sauce. sus, even
 /obj/item/reagent_container/food/condiment/hotsauce/sriracha
-	name = ""
+	name = "sriracha sauce bottle"
 	desc = "Sriracha sauce originates from Thailand, and has since become an enduring staple. It tastes of chiles and garlic, with vinegar and a subtle sweetness as a secondary."
 
 /obj/item/reagent_container/food/condiment/hotsauce/tabasco
-	name = ""
+	name = "tabasco sauce bottle"
 	desc = "Tabasco sauce originally hails from the United States despite its namesake being a Mexican city. It is seasoned heavily, with a good deal of vinegar cut with a little sweet and smoke."
 
 
