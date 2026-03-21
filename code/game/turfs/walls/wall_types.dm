@@ -1558,13 +1558,13 @@ INITIALIZE_IMMEDIATE(/turf/closed/wall/indestructible/splashscreen)
 	icon = 'icons/turf/walls/new_varadero/new_varadero_wall.dmi'
 
 /turf/closed/wall/new_varadero/concrete/reinforced
-	name = "concrete wall"
-	desc = "What's inside here? That's concrete, baby!"
+	name = "hard concrete wall"
+	desc = "What's inside here? That's tougher concrete, baby!"
 	icon_state = "concrete_rh"
 	damage_cap = HEALTH_WALL_REINFORCED
 
 /turf/closed/wall/new_varadero/concrete/reinforced/hull
-	name = "concrete wall"
-	desc = "What's inside here? That's concrete, baby with that roman regeneration techniques that are still used even now."
+	name = "dense concrete wall"
+	desc = "What's inside here? That's tough and sturdy concrete, baby! This will withstand even the most strongest of explosions!"
 	icon_state = "concrete_hh"
 	hull = 1

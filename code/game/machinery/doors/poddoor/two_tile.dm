@@ -186,6 +186,17 @@
 	shutter_length = 5
 	var/obj/structure/machinery/door/poddoor/filler_object/f5
 
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/secure
+	icon = 'icons/halo/obj/structures/doors/podlocks/5x1_blast_visegard_hor.dmi'
+	openspeed = 7
+	unacidable = TRUE
+
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/secure/vertical
+	icon = 'icons/halo/obj/structures/doors/podlocks/5x1_blast_visegard_vert.dmi'
+	dir = NORTH
+	openspeed = 7
+	unacidable = TRUE
+
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/Initialize()
 	. = ..()
 	f5 = new/obj/structure/machinery/door/poddoor/filler_object (get_step(f4,dir))

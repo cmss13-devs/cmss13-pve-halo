@@ -15,6 +15,7 @@
 
 /obj/structure/prop/new_varadero_props/Seaweed_Covered_Wall/clean
 	icon_state = "seaweed_clean"
+	density = FALSE
 
 /obj/structure/prop/new_varadero_props/Seaweed_Covered_Wall/pattern_1
 	icon_state = "seaweed0"
@@ -50,3 +51,37 @@
 
 /obj/structure/prop/new_varadero_props/Seaweed_Covered_Wall/half/edge/north
 	icon_state = "seaweed1_north"
+
+//---------------------SUPPORT BEAM
+/obj/structure/prop/new_varadero_props/support_beam
+	name = "\improper support strut"
+	icon = 'icons/turf/support_beams.dmi'
+	icon_state = "support_beam"
+	anchored = TRUE
+	unslashable = TRUE
+	unacidable = TRUE
+	density = FALSE
+	opacity = TRUE
+	layer = ABOVE_MOB_LAYER
+
+/obj/structure/prop/new_varadero_props/support_beam/green
+	icon_state = "support_beam_green"
+
+
+/obj/structure/prop/new_varadero_props/support_beam/aqua
+	icon_state = "support_beam_aqua"
+
+
+/obj/structure/prop/new_varadero_props/support_beam/blue
+	icon_state = "support_beam_blue"
+
+
+/obj/structure/prop/new_varadero_props/support_beam/red
+	icon_state = "support_beam_red"
+
+
+/obj/structure/prop/new_varadero_props/support_beam/brown
+	icon_state = "support_beam_brown"
+
+/obj/structure/prop/new_varadero_props/support_beam/half
+	icon_state = "support_beam_half"
