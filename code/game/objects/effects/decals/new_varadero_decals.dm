@@ -78,10 +78,10 @@
 	icon_state = "road_line_angled_continuous"
 
 /obj/effect/decal/new_varadero/roadlines_angled/continuous/broken_line
-	icon_state = "road_line_alt_angled_continuous"
+	icon_state = "road_line_alt2_angled_continuous"
 
 /obj/effect/decal/new_varadero/roadlines_angled/continuous/segment_line
-	icon_state = "road_line_alt2_angled_continuous"
+	icon_state = "road_line_alt3_angled_continuous"
 
 /obj/effect/decal/new_varadero/roadlines_angled/big
 	icon = 'icons/effects/road_lines_big.dmi'
