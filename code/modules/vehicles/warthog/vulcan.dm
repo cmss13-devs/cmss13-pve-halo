@@ -1,12 +1,13 @@
 /obj/item/hardpoint/special/vulcan
-	name = "M41 'Vulcan' Light Anti-Aircraft Weapon"
-	desc = "The M41 LAAG is a triple-barreled, electric-powered, linkless, belt-fed weapon, capable of firing 500 12.7x99mm armor-piercing rounds per minute."
+	name = "M41 'Vulcan' LAAG"
+	desc = "The M41 Light Anti-Aircraft Gun is a triple-barrelled belt-fed rotary machinegun, firing 12.7x99mm high-velocity explosive rounds at a blistering pace, making it perfectly suited for close-in anti-aircraft fire. Recoil during sustained fire makes any long range engagements difficult, best to fire in short controlled bursts."
+	desc_lore = "The M41 is electrically powered and uses linkless belts fed directly via a reinforced mechanical belt attached to a drum fitted to the weapons mounting point. While intended as a light anti-aircraft option for long patrols and hard points, the .50 calibre gun finds itself most often used against soft targets, like hostile infantry and light armour, where it also excels."
 
-	icon = 'icons/obj/vehicles/hardpoints/warthog.dmi'
+	icon = 'icons/halo/obj/vehicles/hardpoints/warthog.dmi'
 	icon_state = "vulcan"
 	disp_icon = "warthog"
 	disp_icon_state = "vulcan"
-	activation_sounds = list('sound/weapons/gun_smartgun1.ogg', 'sound/weapons/gun_smartgun2.ogg', 'sound/weapons/gun_smartgun3.ogg', 'sound/weapons/gun_smartgun4.ogg')
+	activation_sounds = "gun_hog_chaingun"
 
 	health = 100
 	firing_arc = 0
@@ -19,28 +20,26 @@
 	ammo = new /obj/item/ammo_magazine/hardpoint/vulcan
 	max_clips = 1
 
-	// underlayer_north_muzzleflash = FALSE
-
 	scatter = 3
 	gun_firemode = GUN_FIREMODE_AUTOMATIC
 	gun_firemode_list = list(
 		GUN_FIREMODE_AUTOMATIC,
 	)
-	fire_delay = 0.2 SECONDS
+	fire_delay = FIRE_DELAY_TIER_12
 
 	origins = list(0, 1)
 
 	px_offsets = list(
-		"1" = list(0, -23),
-		"2" = list(0, 23),
-		"4" = list(-26, 0),
-		"8" = list(26, 0)
+		"1" = list(0, -19),
+		"2" = list(0, 28),
+		"4" = list(-24, 6),
+		"8" = list(24, 6)
 	)
 	muzzle_flash_pos = list(
-		"1" = list(-16, 0),
-		"2" = list(-16, -48),
-		"4" = list(12, -24),
-		"8" = list(-44, -24)
+		"1" = list(-16, 16),
+		"2" = list(-17, -50),
+		"4" = list(28, -12),
+		"8" = list(-60, -12)
 	)
 	use_mz_px_offsets = TRUE
 

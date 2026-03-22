@@ -11,11 +11,12 @@
 
 
 /obj/vehicle/multitile/warthog
-	name = "M12 'Warthog' Light Reconnaissance Vehicle"
-	desc = "Its definitely not a Puma."
+	name = "M12 LRV \"Warthog\""
+	desc = "The M12 Light Reconnaissance Vehicle, or Warthog, is a lightly armoured all terrain reconnaissance and transport vehicle in use by the UNSC, first seeing service with the CMA in 2321. considerably versatile over any terrain and with numerous variants to meet any needs, the Warthog is said to be 'as much a part of the UNSC as boots, guns and tasteless coffee'."
+	desc_lore = "Powered by a low profile liquid cooled hydrogen injected ICE, I/C powerplant and featuring a Graf/Hauptman solar/saline actuator, the M12 Warthog can turn even brackish and salty still water into usable fuel hydrogen, giving the warthog the ability to range over 790 kilometres without refuelling. Paired with an infinitely variable transmission and robust four wheel drive, the Warthog is the premier of off-road fighting vehicle."
 	layer = ABOVE_XENO_LAYER // its probably fine
 
-	icon = 'icons/obj/vehicles/warthog.dmi'
+	icon = 'icons/halo/obj/vehicles/warthog.dmi'
 	icon_state = "warthog_base"
 	pixel_x = -16
 	pixel_y = -16
@@ -30,7 +31,6 @@
 	interior_map = null
 
 	vehicle_flags = VEHICLE_CLASS_LIGHT
-	move_delay = VEHICLE_SPEED_FASTER
 
 	misc_multipliers = list(
 		"move" = 0.5, // fucking annoying how this is the only way to modify speed
@@ -38,8 +38,8 @@
 		"cooldown" = 1
 	)
 
-	movement_sound = 'sound/vehicles/tank_driving.ogg'
-	honk_sound = 'sound/vehicles/honk_4_light.ogg'
+	movement_sound = 'sound/vehicles/halo/warthog_low.ogg'
+	honk_sound = 'sound/vehicles/halo/hog_horn.ogg'
 
 	light_range = 3
 	vehicle_light_range = 6
@@ -47,7 +47,7 @@
 	move_max_momentum = 3
 
 	hardpoints_allowed = list(
-		/obj/item/hardpoint/locomotion/van_wheels,
+		/obj/item/hardpoint/locomotion/warthog_wheels,
 		/obj/item/hardpoint/special/vulcan,
 	)
 
@@ -82,22 +82,22 @@
 	buckled_offsets = list(
 		// position, direction, (x, y)
 		VEHICLE_DRIVER = list(
-			"[NORTH]" = list(-8, -8, FALSE),
-			"[SOUTH]" = list(8, -8, TRUE),
-			"[EAST]" = list(0, 0, FALSE),
-			"[WEST]" = list(0, -10, TRUE)
+			"[NORTH]" = list(-10, -2, FALSE),
+			"[SOUTH]" = list(11, -2, TRUE),
+			"[EAST]" = list(2, 6, FALSE),
+			"[WEST]" = list(-2, -6, TRUE)
 		),
 		VEHICLE_SUPPORT_GUNNER_ONE = list(
-			"[NORTH]" = list(8, -6, FALSE),
-			"[SOUTH]" = list(-8, -6, TRUE),
-			"[EAST]" = list(0, -8, TRUE),
-			"[WEST]" = list(0, 0, FALSE)
+			"[NORTH]" = list(11, -2, FALSE),
+			"[SOUTH]" = list(-11, -2, TRUE),
+			"[EAST]" = list(2, -6, TRUE),
+			"[WEST]" = list(-2, 6, FALSE)
 		),
 		VEHICLE_GUNNER = list(
-			"[NORTH]" = list(0, -20, TRUE),
-			"[SOUTH]" = list(0, 28, FALSE),
-			"[EAST]" = list(-26, 8, FALSE),
-			"[WEST]" = list(26, 8, FALSE)
+			"[NORTH]" = list(0, -8, TRUE),
+			"[SOUTH]" = list(0, 39, FALSE),
+			"[EAST]" = list(-24, 17, FALSE),
+			"[WEST]" = list(24, 17, FALSE)
 		)
 	)
 
@@ -335,9 +335,12 @@
 	var/obj/item/steering_wheel/wheel = user.get_active_hand()
 	if(istype(wheel, /obj/item/steering_wheel))
 		if(wheel.flags_item & WIELDED)
-			move_delay = VEHICLE_SPEED_FASTER
-		else
 			move_delay = VEHICLE_SPEED_FAST
+		else
+			move_delay = VEHICLE_SPEED_FASTNORMAL
+		for(var/obj/item/hardpoint/locomotion/warthog_wheels/wheels in hardpoints)
+			if(wheels && wheels.health == 0)
+				move_delay = VEHICLE_SPEED_STATIC
 		return ..()
 
 	wheel = user.get_inactive_hand()
@@ -382,7 +385,9 @@
 		return VEHICLE_SUPPORT_GUNNER_ONE
 
 /obj/vehicle/multitile/warthog/proc/is_valid_seat_locs_turf(mob/M, target_seat)
-	var/list/position = locs_positions[target_seat]["[dir]"]
+	return TRUE
+	// this shits broke.
+	/* var/list/position = locs_positions[target_seat]["[dir]"]
 	var/turf/mob_turf = get_turf(M)
 	if(islist(position))
 		for(var/turf_key in position)
@@ -391,7 +396,8 @@
 	else
 		if(mob_turf == locs[position])
 			return TRUE
-	return FALSE
+	return FALSE */
+
 
 /obj/vehicle/multitile/warthog/BlockedPassDirs(atom/movable/mover, target_dir)
 	if(isliving(mover))
@@ -469,7 +475,7 @@
 
 /obj/effect/vehicle_spawner/warthog
 	name = "Warthog Spawner"
-	icon = 'icons/obj/vehicles/warthog.dmi'
+	icon = 'icons/halo/obj/vehicles/warthog.dmi'
 	icon_state = "warthog_base"
 	pixel_x = -16
 	pixel_y = -16
@@ -488,7 +494,7 @@
 	. = hog
 
 /obj/effect/vehicle_spawner/warthog/load_hardpoints(obj/vehicle/multitile/warthog/V)
-	// V.add_hardpoint(new /obj/item/hardpoint/locomotion/van_wheels)
+	V.add_hardpoint(new /obj/item/hardpoint/locomotion/warthog_wheels)
 
 /obj/effect/vehicle_spawner/warthog/marines/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
 	. = ..()
@@ -523,7 +529,7 @@
 /obj/item/steering_wheel
 	name = "steering wheel"
 	desc = "Use it to drive. Supposedly using both hands makes you go faster."
-	icon = 'icons/obj/vehicles/hardpoints/warthog.dmi'
+	icon = 'icons/halo/obj/vehicles/hardpoints/warthog.dmi'
 	icon_state = "steering_wheel"
 	w_class = SIZE_LARGE
 	flags_item = TWOHANDED|DELONDROP

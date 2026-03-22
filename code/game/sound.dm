@@ -464,6 +464,8 @@
 				sound = pick('sound/weapons/halo/gun_socom_1.ogg', 'sound/weapons/halo/gun_socom_2.ogg', 'sound/weapons/halo/gun_socom_3.ogg', 'sound/weapons/halo/gun_socom_4.ogg')
 			if("gun_socom_smg")
 				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg')
+			if("gun_hog_chaingun")
+				sound = pick('sound/vehicles/halo/warthog_fire_1.ogg', 'sound/vehicles/halo/warthog_fire_2.ogg')
 
 			//halo dryfire
 			if("ma5b_dryfire")
@@ -485,6 +487,9 @@
 				sound = pick('sound/effects/odst_pod/pod_enter_1.ogg', 'sound/effects/odst_pod/pod_enter_2.ogg', 'sound/effects/odst_pod/pod_enter_3.ogg')
 			if("droppod_land")
 				sound = pick('sound/effects/odst_pod/pod_land_1.ogg', 'sound/effects/odst_pod/pod_land_2.ogg', 'sound/effects/odst_pod/pod_land_3.ogg', 'sound/effects/odst_pod/pod_land_4.ogg')
+
+			// halo vehicles
+
 
 			// Covenant audio
 			if("pain_sangheili")
