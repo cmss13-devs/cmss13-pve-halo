@@ -986,7 +986,7 @@
 	name = "C709 Missile Strike"
 	scatter_range = 0
 	impact_quantity = 1
-	delay_to_impact = 30 SECONDS
+	delay_to_impact = 25 SECONDS
 	impact_delay = 1 SECONDS
 	start_visual = /obj/effect/temp_visual/flyby/c709_longsword_flyby
 	has_shadow = TRUE
@@ -998,13 +998,12 @@
 /datum/fire_support/custom/c709_missile/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/explosive/ammo = new()
 	ammo.warhead_impact(target_turf)
-	shakeground(3, 3, FALSE, FALSE)
 
 /datum/fire_support/custom/c709_cluster
 	name = "C709 Cluster Bomb"
 	scatter_range = 0
 	impact_quantity = 1
-	delay_to_impact = 30 SECONDS
+	delay_to_impact = 25 SECONDS
 	impact_delay = 1 SECONDS
 	start_visual = /obj/effect/temp_visual/flyby/c709_longsword_flyby
 	has_shadow = TRUE
@@ -1016,7 +1015,6 @@
 /datum/fire_support/custom/c709_cluster/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/cluster/ammo = new()
 	ammo.warhead_impact(target_turf)
-	shakeground(3, 3, FALSE, FALSE)
 
 /datum/fire_support/custom/c709_incendiary
 	name = "C709 Inc. Bomb"
@@ -1034,7 +1032,6 @@
 /datum/fire_support/custom/c709_incendiary/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/incendiary/ammo = new()
 	ammo.warhead_impact(target_turf)
-	shakeground(3, 3, FALSE, FALSE)
 
 
 #undef ORDNANCE_OPTIONS

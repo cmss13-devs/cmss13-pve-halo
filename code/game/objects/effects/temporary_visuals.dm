@@ -420,7 +420,6 @@
 	indestructible = TRUE
 	var/override_dir = TRUE
 	var/pixel_distance = 960
-	var/speed = 2 SECONDS
 
 /obj/effect/temp_visual/flyby/Initialize()
 	. = ..()
@@ -432,16 +431,16 @@
 	switch(dir)
 		if(NORTH)
 			pixel_z = -pixel_distance
-			animate(src, pixel_z = pixel_distance, time = speed)
+			animate(src, pixel_z = pixel_distance, time = duration)
 		if(SOUTH)
 			pixel_z = pixel_distance
-			animate(src, pixel_z = -pixel_distance, time = speed)
+			animate(src, pixel_z = -pixel_distance, time = duration)
 		if(EAST)
 			pixel_w = -pixel_distance
-			animate(src, pixel_w = pixel_distance, time = speed)
+			animate(src, pixel_w = pixel_distance, time = duration)
 		if(WEST)
 			pixel_w = pixel_distance
-			animate(src, pixel_w = -pixel_distance, time = speed)
+			animate(src, pixel_w = -pixel_distance, time = duration)
 
 /obj/effect/temp_visual/flyby/banshee_flyby
 	icon = 'icons/halo/effects/banshee_flyby.dmi'
@@ -474,7 +473,7 @@
 	pixel_distance = 2240 // this thing is fucking massive it needs the space. it probably needs more.
 	pixel_y = -720
 	pixel_x = -720
-	speed = 5 SECONDS
+	duration = 5 SECONDS
 
 /obj/effect/temp_visual/glassing_beam
 	icon = 'icons/halo/effects/glassing.dmi'
