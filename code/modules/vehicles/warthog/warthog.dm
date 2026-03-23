@@ -236,7 +236,7 @@
 		overlays += damage_overlay
 
 	if(clamped)
-		var/image/J = image(icon, icon_state = "vehicle_clamp", layer = LAYER_OFFSET_HIGHEST)
+		var/image/J = image(icon, icon_state = "vehicle_clamp", layer = src.layer + LAYER_OFFSET_HIGHEST)
 		overlays += J
 
 	var/amt_hardpoints = LAZYLEN(hardpoints)
