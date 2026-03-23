@@ -1,0 +1,4 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - bugfix: "Fixes specops grunts missing a flag to prevent them getting camo based icons that dont exist"

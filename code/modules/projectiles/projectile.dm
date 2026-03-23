@@ -116,6 +116,10 @@
 	SSprojectiles.stop_projectile(src)
 	return ..()
 
+/obj/projectile/update_icon()
+	if(ammo.ammo_glowing)
+		overlays += emissive_appearance(icon, icon_state, src, layer, reset_transform = FALSE)
+
 /obj/projectile/proc/apply_bullet_trait(list/entry)
 	bullet_traits += list(entry.Copy())
 	// Need to use the proc instead of the wrapper because each entry is a list
@@ -241,6 +245,7 @@
 	p_x += clamp((rand()-0.5)*scatter*3, -8, 8)
 	p_y += clamp((rand()-0.5)*scatter*3, -8, 8)
 	update_angle(starting, target_turf)
+	update_icon()
 
 	src.speed = speed
 	// Randomize speed by a small factor to help bullet animations look okay
@@ -850,9 +855,10 @@
 //mobs use get_projectile_hit_chance instead of get_projectile_hit_boolean
 
 /mob/living/proc/get_projectile_hit_chance(obj/projectile/P)
-	if((body_position == LYING_DOWN || HAS_TRAIT(src, TRAIT_NO_STRAY)) && src != P.original)
-		return FALSE
+	//This checks to see if a mob is lying down. If they are a bullet has very poor chances to hit them. Made with many thanks to ihatethisengine2.
 	var/ammo_flags = P.ammo.flags_ammo_behavior | P.projectile_override_flags
+	if((body_position == LYING_DOWN && !(ammo_flags & AMMO_PRONETARGET)|| HAS_TRAIT(src, TRAIT_NO_STRAY)) && src != P.original)
+		return FALSE
 	if(ammo_flags & AMMO_XENO)
 		if((status_flags & XENO_HOST) && HAS_TRAIT(src, TRAIT_NESTED))
 			return FALSE
@@ -1253,7 +1259,7 @@
 	if(!P || !P.ammo.ping)
 		return
 
-	if(P.ammo.sound_bounce) playsound(src, P.ammo.sound_bounce, 50, 1)
+	if(P.ammo.sound_bounce) playsound(src, P.ammo.sound_bounce, 30)
 	var/image/I = image('icons/obj/items/weapons/projectiles.dmi', src, P.ammo.ping, 10)
 	var/offset_x = clamp(P.pixel_x + pixel_x_offset, -10, 10)
 	var/offset_y = clamp(P.pixel_y + pixel_y_offset, -10, 10)

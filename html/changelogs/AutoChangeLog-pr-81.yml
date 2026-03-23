@@ -1,0 +1,5 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Changes SL ranks to SGT & SSGT, RTO to PFC & LCPL, FTL to LCPL & CPL"
+  - bugfix: "Fixed \"Petty Officer 3nd Class\""
