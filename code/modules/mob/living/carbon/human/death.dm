@@ -73,6 +73,13 @@
 
 	give_action(src, /datum/action/ghost)
 
+	if(buckled && HAS_TRAIT(src, TRAIT_IN_OPEN_VEHICLE))
+		if(prob(75))
+			var/obj/open_vehicle = buckled
+			var/mob/living/carbon/human/source = src
+			open_vehicle.manual_unbuckle(source)
+
+
 	if(!gibbed && species.death_sound)
 		playsound(loc, species.death_sound, 50, 1)
 

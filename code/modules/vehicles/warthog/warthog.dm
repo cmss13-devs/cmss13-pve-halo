@@ -2,6 +2,7 @@
 #define LAYER_OFFSET_LOW 0.2
 #define LAYER_OFFSET_ABOVE_LOW 0.3
 #define LAYER_OFFSET_HIGH 0.4
+#define LAYER_OFFSET_HIGHEST 0.5
 
 /**
  * Finish the machine gun
@@ -27,10 +28,12 @@
 	bound_x = 0
 	bound_y = 0
 
+	health = 2000
+
 	// interior_map = /datum/map_template/interior/van
 	interior_map = null
 
-	vehicle_flags = VEHICLE_CLASS_LIGHT
+	vehicle_flags = VEHICLE_CLASS_WEAK
 
 	misc_multipliers = list(
 		"move" = 0.5, // fucking annoying how this is the only way to modify speed
@@ -38,7 +41,7 @@
 		"cooldown" = 1
 	)
 
-	movement_sound = 'sound/vehicles/halo/warthog_low.ogg'
+	movement_sound = 'sound/vehicles/halo/warthog_med.ogg'
 	honk_sound = 'sound/vehicles/halo/hog_horn.ogg'
 
 	light_range = 3
@@ -124,7 +127,25 @@
 
 /obj/vehicle/multitile/warthog/Destroy()
 	qdel(the_steering_wheel)
+	unbuckle()
 	return ..()
+
+
+/obj/vehicle/multitile/warthog/take_damage_type(damage, type, atom/attacker)
+	for(var/obj/item/hardpoint/H in hardpoints)
+		// Health check is done before the hardpoint takes damage
+		// This way, the frame won't take damage at the same time hardpoints break
+		if(H.can_take_damage())
+			H.take_damage(floor(damage * get_dmg_multi(type)))
+
+	health = max(0, health - floor(damage * get_dmg_multi(type) / 2))
+
+	if(ismob(attacker))
+		var/mob/M = attacker
+		log_attack("[src] took [damage] [type] damage from [M] ([M.client ? M.client.ckey : "disconnected"]).")
+	else
+		log_attack("[src] took [damage] [type] damage from [attacker].")
+	update_icon()
 
 /obj/vehicle/multitile/warthog/buckle_mob(mob/M, mob/user)
 	if (!ismob(M) || user.stat || M.buckled || !isturf(user.loc))
@@ -191,6 +212,7 @@
 	set_seated_mob(seat, target)
 	add_fingerprint(user)
 	afterbuckle(target)
+	ADD_TRAIT(target, TRAIT_IN_OPEN_VEHICLE, BUCKLED_TRAIT)
 	switch(seat)
 		if(VEHICLE_DRIVER)
 			vehicle_faction = target.faction
@@ -206,6 +228,21 @@
 
 /obj/vehicle/multitile/warthog/update_icon()
 	. = ..()
+	overlays.Cut()
+
+	if(health <= initial(health))
+		var/image/damage_overlay = image(icon, icon_state = "damaged_frame", layer = layer+0.1)
+		damage_overlay.alpha = 255 * (1 - (health / initial(health)))
+		overlays += damage_overlay
+
+	if(clamped)
+		var/image/J = image(icon, icon_state = "vehicle_clamp", layer = LAYER_OFFSET_HIGHEST)
+		overlays += J
+
+	var/amt_hardpoints = LAZYLEN(hardpoints)
+	if(amt_hardpoints)
+		handle_hardpoint_images()
+
 	overlays += image(icon_state = "warthog_low_overlay", layer = src.layer + LAYER_OFFSET_LOW)
 	overlays += image(icon_state = "warthog_high_overlay", layer = src.layer + LAYER_OFFSET_HIGH)
 
@@ -243,6 +280,7 @@
 		vehicle_faction = ""
 	the_mob.pixel_w = 0
 	the_mob.pixel_z = 0
+	REMOVE_TRAIT(the_mob, TRAIT_IN_OPEN_VEHICLE, BUCKLED_TRAIT)
 	the_mob.layer = MOB_LAYER
 	set_seated_mob(unbuckle_seat, null)
 	active_hp[unbuckle_seat] = null
@@ -336,8 +374,10 @@
 	if(istype(wheel, /obj/item/steering_wheel))
 		if(wheel.flags_item & WIELDED)
 			move_delay = VEHICLE_SPEED_FAST
+			movement_sound = 'sound/vehicles/halo/warthog_hi.ogg'
 		else
 			move_delay = VEHICLE_SPEED_FASTNORMAL
+			movement_sound = 'sound/vehicles/halo/warthog_med.ogg'
 		for(var/obj/item/hardpoint/locomotion/warthog_wheels/wheels in hardpoints)
 			if(wheels && wheels.health == 0)
 				move_delay = VEHICLE_SPEED_STATIC
@@ -346,15 +386,20 @@
 	wheel = user.get_inactive_hand()
 	if(istype(wheel, /obj/item/steering_wheel))
 		if(wheel.flags_item & WIELDED)
-			move_delay = VEHICLE_SPEED_FASTER
-		else
 			move_delay = VEHICLE_SPEED_FAST
+			movement_sound = 'sound/vehicles/halo/warthog_hi.ogg'
+		else
+			move_delay = VEHICLE_SPEED_FASTNORMAL
+			movement_sound = 'sound/vehicles/halo/warthog_med.ogg'
 			if(prob(5) && user.get_active_hand())
 				direction = pick(turn(direction, 90), turn(direction, -90))
 				user.visible_message(
 					SPAN_WARNING("[user]'s hand slips causing the warthog to swerve!"),
 					SPAN_WARNING("Your off-hand grip on [wheel] slips, causing the warthog to swerve!")
 				)
+		for(var/obj/item/hardpoint/locomotion/warthog_wheels/wheels in hardpoints)
+			if(wheels && wheels.health == 0)
+				move_delay = VEHICLE_SPEED_STATIC
 		return ..()
 	the_steering_wheel = new /obj/item/steering_wheel(loc)
 	RegisterSignal(the_steering_wheel, COMSIG_PARENT_QDELETING, PROC_REF(null_steering_wheel))
@@ -532,7 +577,7 @@
 	icon = 'icons/halo/obj/vehicles/hardpoints/warthog.dmi'
 	icon_state = "steering_wheel"
 	w_class = SIZE_LARGE
-	flags_item = TWOHANDED|DELONDROP
+	flags_item = DELONDROP|TWOHANDED|CANTSTRIP
 
 /obj/item/steering_wheel/attack_self(mob/user)
 	. = ..()
@@ -544,3 +589,9 @@
 /obj/item/steering_wheel/dropped(mob/user)
 	..()
 	unwield(user)
+
+#undef LAYER_OFFSET_ABOVE_BASE
+#undef LAYER_OFFSET_LOW
+#undef LAYER_OFFSET_ABOVE_LOW
+#undef LAYER_OFFSET_HIGH
+#undef LAYER_OFFSET_HIGHEST

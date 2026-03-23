@@ -9,6 +9,6 @@
 
 	slot = HDPT_WHEELS
 
-	health = 250
+	health = 600
 
 	move_delay = VEHICLE_SPEED_FAST
