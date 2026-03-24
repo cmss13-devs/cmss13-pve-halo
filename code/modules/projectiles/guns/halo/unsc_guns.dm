@@ -733,7 +733,6 @@
 	empty_click = 'sound/weapons/halo/m6d/gun_m6d_dryfire.ogg'
 
 /obj/item/weapon/gun/pistol/halo/m6g/unloaded
-//voibs. wrong magnum.
 	current_mag = null
 
 /obj/item/weapon/gun/pistol/halo/m6d/set_gun_attachment_offsets()
