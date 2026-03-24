@@ -132,7 +132,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b
 	name = "\improper M52B Pattern Webbing"
-	desc = "General purpose storage configuration. Composed of heat-resistant synthetic fabrics, this LBE attaches directly to M52B armor hardpoints with a buckle system."
+	desc = "General purpose storage configuration. Composed of heat-resistant synthetic fabrics, buckles to M52B armor hardpoints."
 	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "m52b_webbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m52bgeneric
@@ -148,7 +148,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/mag
 	name = "\improper M52B Pattern Magazine Webbing"
-	desc = "A configuration of the standard webbing for weapon magazines. Composed of heat-resistant synthetic fabrics, this LBE attaches directly to M52B armor hardpoints with a buckle system. Set up as a five-pouch."
+	desc = "Magazine pouch configuration. Set up as a five-pouch."
 	icon_state = "m52b_magwebbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m52bmag
 
@@ -192,7 +192,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/shotgun
 	name = "\improper M52B Pattern Shell Webbing"
-	desc = "A configuration of the regular webbing for shotgun shells. Composed of heat-resistant synthetic fabrics, this LBE attaches directly to M52B armor hardpoints with a buckle system. Increasingly common for close combat operations and security forces in the new war."
+	desc = "Fast-draw shotgun shell configuration. Increasingly common for close combat operations and security forces in the new war."
 	icon_state = "m52b_shotgunwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bshotgun
 
@@ -203,7 +203,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/small
 	name = "\improper M52B Pattern Small Pouch Webbing"
-	desc = "Utility configuration for storing various items in convenient pouches. Composed of heat-resistant synthetic fabrics, this LBE attaches directly to M52B armor hardpoints with a buckle system."
+	desc = "Utility configuration for storing various items in convenient pouches."
 	icon_state = "m52b_smallwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgeneric
 	slot = ACCESSORY_SLOT_M3UTILITY
@@ -216,7 +216,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/grenade
 	name = "\improper M52B Pattern Grenade Pouch"
-	desc = "LBE configuration designed for grenadiers, holding standard 40mm grenades. May also secure M9s for the more old fashioned grenadier. Composed of heat-resistant synthetic fabrics, tough and time tested."
+	desc = "LBE configuration designed for grenadiers, holding standard 40mm grenades. May also secure M9s for the more old fashioned grenadier."
 	icon_state = "m52b_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade
 
