@@ -1033,6 +1033,36 @@
 	var/obj/structure/ob_ammo/warhead/incendiary/ammo = new()
 	ammo.warhead_impact(target_turf)
 
+/datum/fire_support/custom/mac_gun
+	name = "MAC"
+	scatter_range = 0
+	impact_quantity = 1
+	delay_to_impact = 0 SECONDS
+	impact_delay = 0 SECONDS
+	impact_sound = null
+	start_sound = 'sounds/weapons/halo/fire_support/frigate_mac.ogg'
+	warning_chat_message = "FRIGATE"
+	warning_range = 35
+
+/datum/fire_support/custom/mac_gun/in_atmosphere
+	name = "MAC - Atmospheric"
+	delay_to_impact = 2 SECONDS
+	start_sound = 'sounds/weapons/halo/fire_support/frigate_mac_in_atmos.ogg'
+
+/datum/fire_support/custom/coilgun_fire
+	name = "Coilguns"
+	scatter_range = 10
+	impact_quantity = 25
+	delay_to_impact = 8 SECONDS
+	impact_delay = 0.5 SECONDS
+	impact_sound = null
+	start_sound = 'sounds/weapons/halo/fire_support/frigate_gunfire.ogg'
+	warning_chat_message = "COILGUNS"
+	warning_range = 35
+
+/datum/fire_support/custom/coilgun_fire/do_impact(turf/target_turf)
+	cell_explosion(target_turf, 80, 20, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("Coilgun Battery"))
+
 
 #undef ORDNANCE_OPTIONS
 #undef COVENANT_ORDNANCE
