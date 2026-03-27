@@ -7,7 +7,7 @@
 	icon_state = "vulcan"
 	disp_icon = "warthog"
 	disp_icon_state = "vulcan"
-	activation_sounds = "gun_hog_chaingun"
+	activation_sounds = 'sound/vehicles/halo/warthog_fire_1.ogg'
 
 	health = 100
 	firing_arc = 0
@@ -173,7 +173,7 @@
 	icon_state = "cupola_1"
 	w_class = SIZE_LARGE
 	default_ammo = /datum/ammo/bullet/rifle/heavy/vulcan
-	max_rounds = 300
+	max_rounds = 100
 	gun_type = /obj/item/hardpoint/special/vulcan
 
 /obj/item/ammo_magazine/hardpoint/vulcan/update_icon()
