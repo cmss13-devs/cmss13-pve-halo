@@ -1040,14 +1040,14 @@
 	delay_to_impact = 0 SECONDS
 	impact_delay = 0 SECONDS
 	impact_sound = null
-	start_sound = 'sounds/weapons/halo/fire_support/frigate_mac.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/frigate_mac.ogg'
 	warning_chat_message = "FRIGATE"
 	warning_range = 35
 
 /datum/fire_support/custom/mac_gun/in_atmosphere
 	name = "MAC - Atmospheric"
 	delay_to_impact = 2 SECONDS
-	start_sound = 'sounds/weapons/halo/fire_support/frigate_mac_in_atmos.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/frigate_mac_in_atmos.ogg'
 
 /datum/fire_support/custom/coilgun_fire
 	name = "Coilguns"
@@ -1056,7 +1056,7 @@
 	delay_to_impact = 8 SECONDS
 	impact_delay = 0.5 SECONDS
 	impact_sound = null
-	start_sound = 'sounds/weapons/halo/fire_support/frigate_gunfire.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/frigate_gunfire.ogg'
 	warning_chat_message = "COILGUNS"
 	warning_range = 35
 
