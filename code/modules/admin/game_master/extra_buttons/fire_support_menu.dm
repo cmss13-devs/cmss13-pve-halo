@@ -4,7 +4,7 @@
 #define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive", "Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant", "HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
 #define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
 #define UNSC_ORDNANCE list("Wombat GAU", "Wombat Missile", "Wombat Inc. Missile", "C712 Coilgun", "C712 Missile", "C712 Cluster", "C709 Cluster Bomb", "C709 Heavy Missile", "C709 Inc. Bomb")
-#define NAVAL_ORDNANCE list()
+#define NAVAL_ORDNANCE list("MAC", "MAC - Atmospheric", "Coilguns")
 #define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
 #define ORBITAL_ORDNANCE list("High Explosive OB", "Incendiary OB", "Cluster OB")
@@ -550,6 +550,7 @@
 				return TRUE
 
 			//C709
+
 			if("C709 Cluster Bomb")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_CLUSTER]
@@ -557,6 +558,7 @@
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
+
 			if("C709 Heavy Missile")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_MISSILE]
@@ -564,6 +566,7 @@
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
+
 			if("C709 Inc. Bomb")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_INCENDIARY]
@@ -571,6 +574,32 @@
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
+			if("MAC")
+
+			// Naval Ordnance
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_MAC]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("MAC - Atmospheric")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_MAC_ATMOS]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("Coilguns")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_COILGUNS]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
 			else
 				to_chat(user, SPAN_ANNOUNCEMENT_HEADER_ADMIN("Invalid ordnance selection! If this appears, yell at a coder!"))
 				return TRUE
@@ -1041,13 +1070,48 @@
 	impact_delay = 0 SECONDS
 	impact_sound = null
 	start_sound = 'sound/weapons/halo/fire_support/frigate_mac.ogg'
-	warning_chat_message = "FRIGATE"
+	warning_chat_message = "MAC"
 	warning_range = 35
+
+/datum/fire_support/custom/mac_gun/do_impact(turf/target_turf)
+
+	var/clear_power = 1600
+	var/clear_falloff = 3
+	var/standard_power = 800
+	var/standard_falloff = 20
+	var/clear_delay = 3
+	var/double_explosion_delay = 6
+
+	new /obj/effect/overlay/temp/blinking_laser (target_turf)
+	sleep(10)
+	var/datum/cause_data/cause_data = create_cause_data("MAC")
+	cell_explosion(target_turf, clear_power, clear_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data) //break shit around
+	sleep(clear_delay)
+
+	// Explosion if turf is not a wall.
+	if(!target_turf.density)
+		cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
+		handle_shake(target_turf, 15, 3, 3)
+		sleep(double_explosion_delay)
+		cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
+		qdel(src)
+		return
+
+	// Checks turf around the target_turf
+	for(var/turf/T in range(2, target_turf))
+		if(!T.density)
+			cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
+			handle_shake(target_turf, 15, 3, 3)
+			sleep(double_explosion_delay)
+			cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
+			qdel(src)
+			return
 
 /datum/fire_support/custom/mac_gun/in_atmosphere
 	name = "MAC - Atmospheric"
-	delay_to_impact = 2 SECONDS
-	start_sound = 'sound/weapons/halo/fire_support/frigate_mac_in_atmos.ogg'
+	delay_to_impact = 4 SECONDS
+	initiate_sound = 'sound/weapons/halo/fire_support/frigate_mac_in_atmos.ogg'
+	start_sound = null
 
 /datum/fire_support/custom/coilgun_fire
 	name = "Coilguns"
@@ -1056,7 +1120,7 @@
 	delay_to_impact = 8 SECONDS
 	impact_delay = 0.5 SECONDS
 	impact_sound = null
-	start_sound = 'sound/weapons/halo/fire_support/frigate_gunfire.ogg'
+	initiate_sound = 'sound/weapons/halo/fire_support/frigate_gunfire.ogg'
 	warning_chat_message = "COILGUNS"
 	warning_range = 35
 

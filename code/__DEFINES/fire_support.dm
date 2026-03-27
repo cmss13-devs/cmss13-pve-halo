@@ -114,6 +114,10 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 #define FIRESUPPORT_TYPE_C709_MISSILE "c709_missile"
 #define FIRESUPPORT_TYPE_C709_INCENDIARY "c709_incendiary_bomb"
 
+#define FIRESUPPORT_TYPE_MAC "mac"
+#define FIRESUPPORT_TYPE_MAC_ATMOS "mac_atmospheric"
+#define FIRESUPPORT_TYPE_COILGUNS "coilguns"
+
 ///Assoc list of firesupport types
 GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_SUPPLY_DROP = new /datum/fire_support/supply_drop,
@@ -172,4 +176,7 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_C709_CLUSTER = new /datum/fire_support/custom/c709_cluster,
 	FIRESUPPORT_TYPE_C709_MISSILE = new /datum/fire_support/custom/c709_missile,
 	FIRESUPPORT_TYPE_C709_INCENDIARY = new /datum/fire_support/custom/c709_incendiary,
+	FIRESUPPORT_TYPE_MAC = new /datum/fire_support/custom/mac_gun,
+	FIRESUPPORT_TYPE_MAC_ATMOS = new /datum/fire_support/custom/mac_gun/in_atmosphere,
+	FIRESUPPORT_TYPE_COILGUNS = new /datum/fire_support/custom/coilgun_fire,
 	))
