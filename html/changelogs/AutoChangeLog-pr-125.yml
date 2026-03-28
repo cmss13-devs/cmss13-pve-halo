@@ -1,0 +1,4 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - bugfix: "throat slitting is now no longer strictly human species"
