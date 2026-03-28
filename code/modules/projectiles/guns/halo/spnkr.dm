@@ -54,7 +54,7 @@
 	var/aa_cooldown_time = 7 SECONDS
 	var/cancel_sounds
 	var/atom/movable/overlay/ammo_overlay
-	starting_attachment_types = list(/obj/item/attachable/spnkr_handle)
+	starting_attachment_types = list(/obj/item/attachable/spnkr_handle, /obj/item/attachable/scope/spnkr)
 	attachable_allowed = list(
 		/obj/item/attachable/spnkr_handle,
 		/obj/item/attachable/scope/spnkr,
