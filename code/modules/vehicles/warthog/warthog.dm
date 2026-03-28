@@ -178,6 +178,10 @@
 	if(!do_after(user, 0.5 SECONDS, INTERRUPT_NO_NEEDHAND, BUSY_ICON_GENERIC))
 		return
 
+	if(seats[target_seat]) // Additional check just in case two people try getting in at around the same time.
+		to_chat(user, SPAN_WARNING("[seats[target_seat]] is already sitting in the [target_seat] seat!"))
+		return
+
 	if(density)
 		density = FALSE
 		if(!step(M, get_dir(M, locs[locs_positions[target_seat]["[dir]"]])) && !is_valid_seat_locs_turf(M, target_seat))
