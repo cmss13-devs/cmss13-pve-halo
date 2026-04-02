@@ -87,6 +87,7 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
 /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra
 	name = "Unggoy SpecOps Ultra combat harness"
@@ -102,11 +103,11 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
-// ================ JACKALS ================
+// ================ JACKALS ================Standard issue combat harness issued to Kig'yar warriors, colouration and complexity will denote the wearers rank or veterancy. Made of dense nanolaminate plating, covering the front, sides, and back of the torso with comprehensive coverage.
 
 /obj/item/clothing/suit/marine/kigyar
 	name = "placeholder Kigyar combat harness"
-	desc = "Standard issue combat harness issued to Kig'yar warriors, colouration and complexity will denote the wearers rank or veterancy. Made of dense nanolaminate plating, covering the front, sides, and back of the torso with comprehensive coverage."
+	desc = "You shouldn't see this!"
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
@@ -118,8 +119,8 @@
 	)
 	allowed_species_list = list(SPECIES_RUUHTIAN)
 
-	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
-	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
-	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
