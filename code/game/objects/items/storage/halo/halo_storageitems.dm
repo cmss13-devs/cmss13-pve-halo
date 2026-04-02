@@ -34,6 +34,11 @@
 	for(var/i = 1 to storage_slots - 1)
 		new /obj/item/ammo_magazine/pistol/halo/m6g(src)
 
+/obj/item/storage/belt/gun/m6/full_m6d/fill_preset_inventory()
+	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6d())
+	for(var/i = 1 to storage_slots - 1)
+		new /obj/item/ammo_magazine/pistol/halo/m6d(src)
+
 /obj/item/storage/belt/gun/m6/full_m6c/m4a/fill_preset_inventory()
 	handle_item_insertion(new /obj/item/weapon/gun/pistol/halo/m6c/m4a())
 	for(var/i = 1 to storage_slots - 1)

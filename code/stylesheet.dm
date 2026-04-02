@@ -68,6 +68,8 @@ em {font-style: normal; font-weight: bold;}
 .unscradio {color: #828cff;}
 .covradio {color: #d283ec;}
 .odstradio {color: #32CD32;}
+.oniradio {color: #6700d1;}
+.ciaradio {color: #e6754c;}
 
 .medium { font-size: 2}
 .big { font-size: 2}
@@ -159,6 +161,7 @@ h1.alert, h2.alert {color: #000000;}
 .filipino {color: #551d6e;}
 .ruspatois {color: #258687}
 .japanese {color: #0047A0}
+.polish {color: #FF8DA1}
 .commando {color: #FE9B24; font-style: bold;}
 .say_quote {font-family: Georgia, Verdana, sans-serif;}
 

@@ -1168,6 +1168,23 @@
 		GLOB.orbital_cannon_cancellation["[cancel_token]"] = null
 		message_admins("[src.owner] has cancelled the orbital strike.")
 
+	else if(href_list["adminacceptspnkr"])
+		if(!check_rights(R_MOD)) return
+		var/obj/item/weapon/gun/halo_launcher/spnkr/rocket = locate(href_list["spnkr"])
+		var/turf/sound_turf = locate(href_list["turf"])
+		var/missile_name = locate(href_list["missile_name"])
+		if(!rocket)
+			return
+		var/template_choice = tgui_input_list(usr, "Do you want to allow the missile to hit its target?", "AA Missile", list("Yes - Crash", "Yes - Damage", "No - Miss"))
+		if(!template_choice)
+			return
+		var/choice
+		if(template_choice == "Yes - Crash")
+			choice = "crash"
+		if(template_choice == "Yes - Damage")
+			choice = "damage"
+		rocket.hit_announce(sound_turf, choice, missile_name)
+
 	else if(href_list["admincancelpredsd"])
 		if (!check_rights(R_MOD)) return
 		var/obj/item/clothing/gloves/yautja/hunter/bracer = locate(href_list["bracer"])
