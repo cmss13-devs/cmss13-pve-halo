@@ -44,7 +44,7 @@
 		"eyes" =  /datum/internal_organ/eyes
 		)
 
-/datum/species/unggoy/post_species_loss(mob/living/carbon/human/H)
+/datum/species/ruuhtian/post_species_loss(mob/living/carbon/human/H)
 	..()
 	var/datum/mob_hud/medical/advanced/A = GLOB.huds[MOB_HUD_MEDICAL_ADVANCED]
 	A.add_to_hud(H)
