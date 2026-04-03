@@ -1,4 +1,36 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aaa" = (
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	dir = 1
+	},
+/turf/open/floor/almayer_hull,
+/area/new_irvine/sector_four)
+"aab" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4"
+	},
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	dir = 8
+	},
+/turf/open/floor/almayer_hull,
+/area/new_irvine/sector_four)
+"aac" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides."
+	},
+/turf/open/floor/almayer_hull,
+/area/new_irvine/sector_three)
 "aad" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 1
@@ -8,6 +40,18 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_one)
+"aae" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	dir = 1
+	},
+/turf/open/floor/almayer_hull,
+/area/new_irvine/sector_three)
 "aar" = (
 /obj/structure/machinery/power/port_gen/pacman/mrs,
 /turf/open/floor/corsat/plate,
@@ -320,8 +364,12 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/vehicle/multitile/box_van/cop_car{
-	dir = 4
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/cop_car.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	name = "\improper Mono-Spectra";
+	desc = "A police car. Used to transport law enforcement and criminals alike."
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
@@ -902,7 +950,7 @@
 /area/new_irvine/water)
 "aIU" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine)
 "aJz" = (
 /obj/structure/machinery/vending/cola,
@@ -1680,6 +1728,11 @@
 /obj/structure/platform{
 	dir = 8
 	},
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides."
+	},
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_four)
 "blG" = (
@@ -1890,8 +1943,12 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/vehicle/multitile/box_van/cop_car{
-	dir = 4
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/cop_car.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	name = "\improper Mono-Spectra";
+	desc = "A police car. Used to transport law enforcement and criminals alike."
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
@@ -2555,8 +2612,11 @@
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_one)
 "bWN" = (
-/obj/vehicle/multitile/van/armored{
-	dir = 8
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_armored_base";
+	dir = 8;
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides."
 	},
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_four)
@@ -5632,7 +5692,7 @@
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_three/indoor)
 "een" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/beach)
 "eeu" = (
 /obj/structure/bed/chair/office/dark{
@@ -6977,7 +7037,9 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = -18
 	},
-/obj/vehicle/multitile/box_van/pizza_van{
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/pizza_van.dmi';
+	icon_state = "van_base";
 	dir = 8
 	},
 /turf/open/floor/almayer_hull,
@@ -7243,7 +7305,7 @@
 /turf/open/floor/strata,
 /area/new_irvine/sector_three/indoor)
 "frx" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_one/indoor)
 "frF" = (
 /obj/effect/decal/warning_stripes{
@@ -7266,7 +7328,9 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = -18
 	},
-/obj/vehicle/multitile/box_van{
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/box_van.dmi';
+	icon_state = "van_base";
 	dir = 4
 	},
 /turf/open/floor/almayer_hull,
@@ -7972,7 +8036,7 @@
 /turf/open/asphalt/cement/cement1/north,
 /area/new_irvine/sector_two)
 "fUo" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_five/indoor/bridge_interier)
 "fUz" = (
 /obj/effect/decal/warning_stripes{
@@ -9005,7 +9069,9 @@
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_three)
 "gKp" = (
-/obj/vehicle/multitile/box_van{
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/box_van.dmi';
+	icon_state = "van_base";
 	dir = 8
 	},
 /turf/open/floor/almayer_hull,
@@ -9966,7 +10032,9 @@
 	dir = 8;
 	pixel_x = -8
 	},
-/obj/vehicle/multitile/box_van/ambulance{
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/ambulance.dmi';
+	icon_state = "van_base";
 	dir = 4
 	},
 /turf/open/floor/almayer_hull,
@@ -11262,7 +11330,7 @@
 /turf/open/floor/wood/ship,
 /area/new_irvine/sector_one/indoor/portauth)
 "iqx" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_one)
 "iqH" = (
 /obj/effect/decal/cleanable/dirt,
@@ -13549,16 +13617,6 @@
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine/sector_three/indoor/arch_angel)
-"kbd" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2";
-	pixel_y = 16
-	},
-/obj/vehicle/multitile/van{
-	dir = 1
-	},
-/turf/open/floor/almayer_hull,
-/area/new_irvine/sector_four)
 "kbC" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile,
 /obj/structure/desertdam/decals/road_edge{
@@ -15004,7 +15062,7 @@
 /area/new_irvine/sector_four/indoor/port)
 "kYv" = (
 /obj/structure/platform_decoration,
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine)
 "kYx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -16330,7 +16388,7 @@
 /area/new_irvine/sector_four)
 "lXa" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_two)
 "lXg" = (
 /obj/structure/platform{
@@ -17175,14 +17233,6 @@
 	},
 /turf/open/floor/strata/white_cyan2,
 /area/new_irvine/sector_two/indoor/shops)
-"mDI" = (
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal5";
-	pixel_y = -10
-	},
-/obj/vehicle/multitile/van,
-/turf/open/floor/almayer_hull,
-/area/new_irvine/sector_four)
 "mDJ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -17222,7 +17272,7 @@
 /area/new_irvine/sector_two/indoor/shops)
 "mFc" = (
 /obj/structure/desertdam/decals/road_edge,
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_five/indoor/bridge_interier)
 "mFe" = (
 /obj/effect/decal/cleanable/dirt,
@@ -17263,7 +17313,7 @@
 /turf/open/asphalt/cement,
 /area/new_irvine/sector_two)
 "mGn" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_four)
 "mGB" = (
 /obj/effect/decal/cleanable/dirt,
@@ -20055,8 +20105,12 @@
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/sector_one)
 "oCV" = (
-/obj/vehicle/multitile/box_van/cop_car{
-	dir = 4
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/cop_car.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	name = "\improper Mono-Spectra";
+	desc = "A police car. Used to transport law enforcement and criminals alike."
 	},
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_two)
@@ -20234,12 +20288,6 @@
 	},
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine/sector_two/indoor/swapartment)
-"oGV" = (
-/obj/vehicle/multitile/van{
-	dir = 1
-	},
-/turf/open/floor/almayer_hull,
-/area/new_irvine/sector_four)
 "oHm" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -21586,7 +21634,7 @@
 /turf/open/floor/strata/floor3,
 /area/new_irvine/sector_two)
 "pJm" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_three/indoor)
 "pJF" = (
 /obj/structure/machinery/light/double/blue{
@@ -22961,14 +23009,6 @@
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_two/indoor/nwapartment)
-"qFJ" = (
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal5";
-	pixel_y = -10
-	},
-/obj/vehicle/multitile/van,
-/turf/open/floor/almayer_hull,
-/area/new_irvine/sector_three)
 "qGa" = (
 /obj/docking_port/stationary/marine_dropship/lz2{
 	name = "LZ2 Beach Landing Zone"
@@ -23074,8 +23114,12 @@
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2"
 	},
-/obj/vehicle/multitile/box_van/cop_car{
-	dir = 4
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/cop_car.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	name = "\improper Mono-Spectra";
+	desc = "A police car. Used to transport law enforcement and criminals alike."
 	},
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_one)
@@ -25734,15 +25778,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
-"sNs" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4"
-	},
-/obj/vehicle/multitile/van{
-	dir = 8
-	},
-/turf/open/floor/almayer_hull,
-/area/new_irvine/sector_four)
 "sNF" = (
 /obj/structure/platform_decoration,
 /obj/item/trash/crushed_cup,
@@ -25852,8 +25887,12 @@
 /turf/open/asphalt/cement/cement9,
 /area/new_irvine/sector_four)
 "sRL" = (
-/obj/vehicle/multitile/box_van/cop_car{
-	dir = 4
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/cop_car.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	name = "\improper Mono-Spectra";
+	desc = "A police car. Used to transport law enforcement and criminals alike."
 	},
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_one)
@@ -26080,7 +26119,7 @@
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
 "tdE" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/beach/power)
 "tdH" = (
 /obj/structure/platform,
@@ -27731,7 +27770,7 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_three)
 "uiN" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_two)
 "ujH" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -27798,7 +27837,7 @@
 /area/new_irvine/sector_one/indoor/corpauth)
 "ukw" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_five/indoor/bridge_interier)
 "ukT" = (
 /obj/structure/surface/table/reinforced/black,
@@ -28735,7 +28774,10 @@
 	icon_state = "stop_decal5";
 	pixel_y = -10
 	},
-/obj/vehicle/multitile/box_van,
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/box_van.dmi';
+	icon_state = "van_base"
+	},
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_one)
 "uVX" = (
@@ -28891,7 +28933,7 @@
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/sector_one/indoor/corpauth)
 "vaY" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine)
 "vcy" = (
 /obj/effect/decal/warning_stripes{
@@ -32324,7 +32366,7 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_four/indoor/port)
 "xSV" = (
-/turf/closed/wall/r_wall/bunker,
+/turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/sector_five/bridge)
 "xTb" = (
 /obj/structure/barricade/handrail/wire{
@@ -32393,12 +32435,6 @@
 /obj/structure/largecrate/random/barrel/true_random,
 /turf/open/asphalt/cement,
 /area/new_irvine/sector_four)
-"xVo" = (
-/obj/vehicle/multitile/van{
-	dir = 1
-	},
-/turf/open/floor/almayer_hull,
-/area/new_irvine/sector_three)
 "xVy" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
@@ -49553,7 +49589,7 @@ qTN
 uJK
 uJK
 grQ
-grQ
+aac
 tHo
 fsP
 rtO
@@ -49805,7 +49841,7 @@ qTN
 uJK
 uJK
 uJK
-qFJ
+ojb
 qTN
 mmU
 rtO
@@ -52066,7 +52102,7 @@ qUe
 lsm
 oIC
 grQ
-grQ
+aae
 uJK
 uJK
 uJK
@@ -52318,7 +52354,7 @@ qUe
 lsm
 qTN
 nBx
-xVo
+uJK
 uJK
 uJK
 qTN
@@ -57169,7 +57205,7 @@ jXl
 jBD
 jBD
 jBD
-jXl
+aab
 ktR
 czF
 plS
@@ -57421,7 +57457,7 @@ jXl
 jBD
 jBD
 jBD
-sNs
+jXl
 ktR
 czF
 plS
@@ -61963,7 +61999,7 @@ pEv
 ujH
 tHz
 okN
-jBD
+aaa
 cWX
 jXl
 jtg
@@ -62201,7 +62237,7 @@ jXl
 jBD
 jBD
 jBD
-mDI
+psm
 cJP
 pEv
 pEv
@@ -62214,7 +62250,7 @@ chB
 pEv
 iyA
 sRo
-oGV
+jBD
 jBD
 jBD
 jXl
@@ -62970,8 +63006,8 @@ eHt
 pEv
 xmO
 aSW
-kbd
-jBD
+gfB
+aaa
 cWX
 jXl
 oUt
