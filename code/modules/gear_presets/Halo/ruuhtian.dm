@@ -69,7 +69,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/minor(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_pistol(new_human), WEAR_J_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/covenant(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot/covenant(new_human), WEAR_L_STORE)
 
 /datum/equipment_preset/covenant/ruuhtian/major
 	name = parent_type::name + " Major"
@@ -97,7 +97,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/needler_crystal, WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/covenant(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot/covenant(new_human), WEAR_L_STORE)
 
 /datum/equipment_preset/covenant/ruuhtian/ultra
 	name = parent_type::name + " Ultra"
@@ -120,4 +120,4 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/ultra(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/energy/plasma/plasma_rifle(new_human), WEAR_J_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/covenant(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/shield/riot/covenant(new_human), WEAR_L_STORE)
