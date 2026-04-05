@@ -84,7 +84,7 @@
 		/datum/equipment_preset/colonist/security/guard/marksman::name = /datum/equipment_preset/colonist/security/guard/marksman,
 		/datum/equipment_preset/mercenary/infiltrator::name = /datum/equipment_preset/mercenary/infiltrator, */
 	//Halo
-		/datum/equipment_preset/unsc/spec/equipped_sniper::name = /datum/equipment_preset/unsc/spec/equipped_sniper,
+		/datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper::name = /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper,
 		/datum/equipment_preset/insurgent/specialist/sniper::name = /datum/equipment_preset/insurgent/specialist/sniper,
 		/datum/equipment_preset/covenant/sangheili/minor/carbine::name = /datum/equipment_preset/covenant/sangheili/minor/carbine,
 	)
