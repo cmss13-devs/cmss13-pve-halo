@@ -801,7 +801,11 @@ As sniper rifles have both and weapon mods can change them as well. ..() deals w
 	flags_item ^= WIELDED
 	name += " (Wielded)"
 	item_state += "_w"
-	slowdown = initial(slowdown) + aim_slowdown
+	if(user.skills)
+		if(user.skills.get_skill_level(SKILL_GUN_HO) >= SKILL_GUN_HO_TRAINED && !is_civilian_usable(user))
+			slowdown = initial(slowdown) + aim_slowdown / user.skills.get_skill_level(SKILL_GUN_HO)
+		else
+			slowdown = initial(slowdown) + aim_slowdown
 	place_offhand(user, initial(name))
 	wield_time = world.time + wield_delay
 	if(HAS_TRAIT(user, TRAIT_DAZED))
@@ -1338,6 +1342,10 @@ and you're good to go.
 		active_attachable.fire_attachment(target, src, user)
 		return TRUE
 
+	if(user.skills)
+		if(user.skills.get_skill_level(SKILL_GUN_HO) >= SKILL_GUN_HO_TRAINED)
+			tactical_reload(target, user)
+	return ..()
 
 /obj/item/weapon/gun/attack(mob/living/attacked_mob, mob/living/user, dual_wield)
 	if(active_attachable && (active_attachable.flags_attach_features & ATTACH_MELEE)) //this is expected to do something in melee.
@@ -1776,7 +1784,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 		if(user?.skills?.get_skill_level(SKILL_FIREARMS) == SKILL_FIREARMS_CIVILIAN && !is_civilian_usable(user))
 			skill_accuracy = -1
 		else
-			skill_accuracy = user.skills.get_skill_level(SKILL_FIREARMS)
+			skill_accuracy = user.skills.get_skill_level(SKILL_FIREARMS) * user.skills.get_skill_level(SKILL_GUN_HO)
 		if(skill_accuracy)
 			gun_accuracy_mult += skill_accuracy * HIT_ACCURACY_MULT_TIER_3 // Accuracy mult increase/decrease per level is equal to attaching/removing a red dot sight
 
@@ -1875,7 +1883,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 		if(user?.skills?.get_skill_level(SKILL_FIREARMS) == SKILL_FIREARMS_CIVILIAN && !is_civilian_usable(user))
 			total_recoil += RECOIL_AMOUNT_TIER_5
 		else
-			total_recoil -= user.skills.get_skill_level(SKILL_FIREARMS)*RECOIL_AMOUNT_TIER_5
+			total_recoil -= user.skills.get_skill_level(SKILL_FIREARMS)*user.skills.get_skill_level(SKILL_GUN_HO)*RECOIL_AMOUNT_TIER_5
 
 	if(total_recoil > 0 && (ishuman(user) || HAS_TRAIT(user, TRAIT_OPPOSABLE_THUMBS)))
 		if(total_recoil >= 4)
@@ -1893,7 +1901,7 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 	if(!istype(gun_user) || !isturf(gun_user.loc))
 		return
 	if(muzzle_flash && !muzzle_flash.applied)
-		var/atom/movable/flash_loc = gun_user.loc
+		var/atom/movable/flash_loc = gun_user
 		var/prev_light = light_range
 		if(!light_on && (light_range <= muzzle_flash_lum))
 			set_light_range(muzzle_flash_lum)
