@@ -170,7 +170,7 @@ GLOBAL_LIST_INIT(personal_weapons_list, list("M90 CAWS shotgun" = /obj/effect/es
 		if(!squad.marines_list.Find(marine))
 			chosen_weapon = "bugged"
 			break
-		if(marine.job == JOB_SO) //get outta here butter bars
+		if(marine.job != JOB_SQUAD_MARINE) //get outta here butter bars
 			temporary_list.Remove(marine)
 			continue
 		if(!marine.client)
