@@ -209,3 +209,53 @@
 /obj/structure/platform_decoration/mineral/sandstone/runed
 	name = "sandstone temple platform corner"
 	color = "#b29082"
+
+//new varadero coastal rocks
+/obj/structure/platform/stone/new_varadero
+	name = "raised rock edges"
+	desc = "A collection of stones and rocks that provide ample grappling and vaulting opportunity. Indicates a change in elevation. You could probably climb it."
+	icon_state = "nv_rock"
+
+/obj/structure/platform/stone/new_varadero/north
+	dir = NORTH
+/obj/structure/platform/stone/new_varadero/east
+	dir = EAST
+/obj/structure/platform/stone/new_varadero/west
+	dir = WEST
+
+//new varadero concrete set
+/obj/structure/platform/stone/new_varadero_concrete
+	name = "raised concrete edge"
+	desc = "A slab of concrete of which is amalgamation of sediments formed tightly into a hard solid surface that is quick, easy, and durable."
+	icon_state = "concrete"
+
+/obj/structure/platform/stone/new_varadero_concrete/north
+	dir = NORTH
+/obj/structure/platform/stone/new_varadero_concrete/east
+	dir = EAST
+/obj/structure/platform/stone/new_varadero_concrete/west
+	dir = WEST
+
+// New Varadero Coast Corners
+/obj/structure/platform_decoration/stone/new_varadero
+	name = "raised rock corner"
+	icon_state = "nv_rock_deco"
+
+/obj/structure/platform_decoration/stone/new_varadero/north
+	dir = NORTH
+/obj/structure/platform_decoration/stone/new_varadero/east
+	dir = EAST
+/obj/structure/platform_decoration/stone/new_varadero/west
+	dir = WEST
+
+//new varadero concrete set
+/obj/structure/platform_decoration/stone/new_varadero_concrete
+	name = "raised concrete corner"
+	icon_state = "concrete_corner"
+
+/obj/structure/platform_decoration/stone/new_varadero_concrete/north
+	dir = NORTH
+/obj/structure/platform_decoration/stone/new_varadero_concrete/east
+	dir = EAST
+/obj/structure/platform_decoration/stone/new_varadero_concrete/west
+	dir = WEST
