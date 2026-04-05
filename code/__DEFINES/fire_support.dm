@@ -102,6 +102,22 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
 
+#define FIRESUPPORT_TYPE_WOMBAT_GAU "wombat_gau"
+#define FIRESUPPORT_TYPE_WOMBAT_MISSILE "wombat_missile"
+#define FIRESUPPORT_TYPE_WOMBAT_INCENDIARY "wombat_incendiary"
+
+#define FIRESUPPORT_TYPE_C712_COILGUN "c712_coilgun"
+#define FIRESUPPORT_TYPE_C712_CLUSTER "c712_cluster"
+#define FIRESUPPORT_TYPE_C712_MISSILE "c712_missile"
+
+#define FIRESUPPORT_TYPE_C709_CLUSTER "c709_cluster_bomb"
+#define FIRESUPPORT_TYPE_C709_MISSILE "c709_missile"
+#define FIRESUPPORT_TYPE_C709_INCENDIARY "c709_incendiary_bomb"
+
+#define FIRESUPPORT_TYPE_MAC "mac"
+#define FIRESUPPORT_TYPE_MAC_ATMOS "mac_atmospheric"
+#define FIRESUPPORT_TYPE_COILGUNS "coilguns"
+
 ///Assoc list of firesupport types
 GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_SUPPLY_DROP = new /datum/fire_support/supply_drop,
@@ -151,4 +167,16 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support/custom/glassing_beam/fast,
 	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support/custom/glassing_beam/weak,
 	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support/custom/glassing_beam/weak/instant,
+	FIRESUPPORT_TYPE_WOMBAT_GAU = new /datum/fire_support/custom/wombat_gau,
+	FIRESUPPORT_TYPE_WOMBAT_MISSILE = new /datum/fire_support/custom/wombat_missile,
+	FIRESUPPORT_TYPE_WOMBAT_INCENDIARY = new /datum/fire_support/custom/wombat_incendiary_missile,
+	FIRESUPPORT_TYPE_C712_COILGUN = new /datum/fire_support/custom/c712_coilgun,
+	FIRESUPPORT_TYPE_C712_CLUSTER = new /datum/fire_support/custom/c712_cluster,
+	FIRESUPPORT_TYPE_C712_MISSILE = new /datum/fire_support/custom/c712_missile,
+	FIRESUPPORT_TYPE_C709_CLUSTER = new /datum/fire_support/custom/c709_cluster,
+	FIRESUPPORT_TYPE_C709_MISSILE = new /datum/fire_support/custom/c709_missile,
+	FIRESUPPORT_TYPE_C709_INCENDIARY = new /datum/fire_support/custom/c709_incendiary,
+	FIRESUPPORT_TYPE_MAC = new /datum/fire_support/custom/mac_gun,
+	FIRESUPPORT_TYPE_MAC_ATMOS = new /datum/fire_support/custom/mac_gun/in_atmosphere,
+	FIRESUPPORT_TYPE_COILGUNS = new /datum/fire_support/custom/coilgun_fire,
 	))
