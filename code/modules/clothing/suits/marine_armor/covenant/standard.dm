@@ -1,3 +1,5 @@
+// ================ GRUNTS ================
+
 /obj/item/clothing/suit/marine/unggoy
 	name = "placeholder Unggoy combat harness"
 	desc = "A combat harness made to fit an Unggoy. Placeholder."
@@ -87,6 +89,7 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
 /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra
 	name = "Unggoy SpecOps Ultra combat harness"

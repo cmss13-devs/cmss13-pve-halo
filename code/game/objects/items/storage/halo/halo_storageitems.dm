@@ -409,6 +409,8 @@
 		/obj/item/ammo_magazine/carbine,
 	)
 
+// ================ ELITES ================
+
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
 	icon_state = "sangbelt_minor"
@@ -438,6 +440,8 @@
 	name = "\improper Sangheili Zealot ammunition belt"
 	icon_state = "sangbelt_zealot"
 	item_state = "sangbelt_zealot"
+
+// ================ GRUNTS ================
 
 /obj/item/storage/belt/marine/covenant/unggoy
 	name = "\improper Unggoy ammunition belt"
@@ -476,3 +480,32 @@
 	name = "\improper Unggoy SpecOps ammunition belt"
 	icon_state = "gruntbelt_specops_ultra"
 	item_state = "gruntbelt_specops_ultra"
+
+// ================ JACKALS ================
+
+/obj/item/storage/belt/marine/covenant/ruuhtian
+	name = "\improper Ruuhtian combat belt"
+	desc = "Placeholder."
+	icon_state = "ruuhtian_minor"
+	item_state = "belt_minor"
+	item_icons = list(
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/belts.dmi'
+		)
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/minor
+	name = "\improper Ruuhtian Minor combat belt"
+	desc = "Modular belt for the users personal weapons and field equipment. Features automatic mechanical adjustment, fitting seamlessly to a wearers combat-harness or body securely with no need for manual intervention."
+	icon_state = "ruuhtian_minor"
+	item_state = "ruuhtian_minor"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/major
+	name = "\improper Ruuhtian Major combat belt"
+	desc = "Modular belt for the users personal weapons and field equipment. Features automatic mechanical adjustment, fitting seamlessly to a wearers combat-harness or body securely with no need for manual intervention."
+	icon_state = "ruuhtian_major"
+	item_state = "ruuhtian_major"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/ultra
+	name = "\improper Ruuhtian Ultra combat belt"
+	desc = "Modular belt for the users personal weapons and field equipment. Features automatic mechanical adjustment, fitting seamlessly to a wearers combat-harness or body securely with no need for manual intervention."
+	icon_state = "ruuhtian_ultra"
+	item_state = "ruuhtian_ultra"

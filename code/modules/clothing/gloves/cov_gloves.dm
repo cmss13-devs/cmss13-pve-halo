@@ -1,3 +1,5 @@
+// ================ ELITES ================
+
 /obj/item/clothing/gloves/marine/sangheili
 	name = "\improper Sangheili gauntlets"
 	desc = "Simple gauntlets worn over the wrists of a Sangheili, made of common nanolaminate composites. Fitted precisely, these gauntlets do not interfere whatsoever with the warriors work, and in the case where pure brute strength is needed, prove sufficient as improvised weapons."
@@ -45,3 +47,18 @@
 	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
 	armor_laser = CLOTHING_ARMOR_VERYHIGH
 	armor_bomb = CLOTHING_ARMOR_HIGH
+
+// ================ JACKALS ================
+
+/obj/item/clothing/gloves/marine/ruuhtian
+	name = "\improper Ruuhtian vambrace"
+	desc = "A heavily armoured vambrace designed to provide protection to the weapon hand of a Kig'yar warrior when used in conjunction with a point defence gauntlet. The otherwise lesser protected limb is a common casualty to high intensity combat frontline Kig'yar find themselves in, this vambrace ensures that they cannot abandon their duty through the loss of a limb."
+	icon = 'icons/halo/obj/items/clothing/covenant/gloves.dmi'
+	icon_state = "ruuhtian_vambrace"
+	item_state = "ruuhtian_vambrace"
+
+	item_icons = list(
+		WEAR_HANDS = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/gloves.dmi'
+	)
+
+	allowed_species_list = list(SPECIES_RUUHTIAN)
