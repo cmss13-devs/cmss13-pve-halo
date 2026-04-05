@@ -412,7 +412,7 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 			dat += "<br><br>"
 
 			dat += "<h2><b><u>Marine Gear:</u></b></h2>"
-			dat += "<b>Support Weapon (Rifleman):</b> <a href ='byond://?_src_=prefs;preference=personalweapon;task=input'><b>[personal_weapon]</b></a><br>"
+			dat += "<b>Rifleman Support Weapon:</b> <a href ='byond://?_src_=prefs;preference=personalweapon;task=input'><b>[personal_weapon]</b></a><br>"
 			dat += "<b>Underwear:</b> <a href ='byond://?_src_=prefs;preference=underwear;task=input'><b>[underwear]</b></a><br>"
 			dat += "<b>Undershirt:</b> <a href='byond://?_src_=prefs;preference=undershirt;task=input'><b>[undershirt]</b></a><br>"
 
