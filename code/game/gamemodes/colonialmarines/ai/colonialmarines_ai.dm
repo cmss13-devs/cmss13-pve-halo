@@ -184,7 +184,7 @@ GLOBAL_LIST_INIT(personal_weapons_list, list("M90 CAWS shotgun" = /obj/effect/es
 		if(chosen_weapon == "bugged")
 			log_debug("Chosen Weapon selected a bugged marine.")
 		else
-			var/obj/item/storage/box/personalcase/pcase = new(get_turf(pick(GLOB.personal_weapon)))
+			var/obj/item/storage/box/personalcase/unsc/pcase = new(get_turf(pick(GLOB.personal_weapon)))
 			pcase.assign_owner(marine.real_name)
 			addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), marine, SPAN_NOTICE("You remember that your requisition for a <b>[marine.client.prefs.personal_weapon]</b> was approved. It's in the armory")), 5 SECONDS)
 			var/the_gun = GLOB.personal_weapons_list[chosen_weapon]
