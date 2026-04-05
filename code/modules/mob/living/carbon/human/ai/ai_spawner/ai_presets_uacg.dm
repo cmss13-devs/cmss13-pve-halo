@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/uacg
+/* /datum/human_ai_equipment_preset/uacg
 	faction = FACTION_UACG
 
 /datum/human_ai_equipment_preset/uacg/regular
@@ -25,3 +25,4 @@
 	name = "UACG Commander"
 	desc = "The Commander of the UACG forces in a local area, normally previously veterans of other branches such as the Marines."
 	path = /datum/equipment_preset/colonist/security/guard/co
+ */

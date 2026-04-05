@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/cmb
+/* /datum/human_ai_squad_preset/cmb
 	faction = FACTION_MARSHAL
 
 /datum/human_ai_squad_preset/cmb/patrol
@@ -57,3 +57,4 @@
 		/datum/equipment_preset/colonist/security/guard/medic = 1,
 		/datum/equipment_preset/colonist/security/guard/co = 1,
 	)
+ */
