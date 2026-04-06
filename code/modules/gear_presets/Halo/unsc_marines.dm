@@ -364,7 +364,7 @@
 	new_human.nutrition = NUTRITION_HIGH
 
 /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper
-	name = parent_type::name + " (Sniper, Equipped)"
+	name = parent_type::name + " (Sniper, Equipped AI LOADOUT)"
 
 /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"
@@ -445,7 +445,7 @@
 	new_human.nutrition = NUTRITION_HIGH
 
 /datum/equipment_preset/unsc/spec/equipped_spnkr/ai_man
-	name = parent_type::name + " (SPNKr, Equipped)"
+	name = parent_type::name + " (SPNKr, Equipped, HAI LOADOUT)"
 
 /datum/equipment_preset/unsc/spec/equipped_spnkr/ai_man/load_gear(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"

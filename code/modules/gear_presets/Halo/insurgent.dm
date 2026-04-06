@@ -411,7 +411,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma3a(new_human), WEAR_IN_R_STORE)
 
 /datum/equipment_preset/insurgent/specialist/ai_man
-	name = "Insurgent Soldier (Specialist, SPNKr)"
+	name = "Insurgent Soldier (Specialist, SPNKr HAI PRESET)"
 	assignment = JOB_INSURGENT_SPECIALIST
 	rank = JOB_INSURGENT_SPECIALIST
 	paygrades = list(PAY_SHORT_REB = JOB_PLAYTIME_TIER_0)
