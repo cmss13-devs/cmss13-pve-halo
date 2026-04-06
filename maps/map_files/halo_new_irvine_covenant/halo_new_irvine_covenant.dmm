@@ -881,6 +881,11 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine)
+"acQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
 "acR" = (
 /obj/structure/platform_decoration,
 /turf/open/asphalt/cement,
@@ -1156,6 +1161,8 @@
 	dir = 4
 	},
 /obj/structure/surface/rack,
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
 /turf/open/floor/plating/asteroidwarning/west,
 /area/new_irvine)
 "adI" = (
@@ -1163,6 +1170,7 @@
 	dir = 8
 	},
 /obj/structure/surface/rack,
+/obj/item/smallDelivery,
 /turf/open/floor/plating/asteroidwarning/east,
 /area/new_irvine)
 "adJ" = (
@@ -1212,6 +1220,7 @@
 	dir = 8
 	},
 /obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine)
 "adQ" = (
@@ -1222,6 +1231,7 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine)
 "adS" = (
@@ -1312,6 +1322,7 @@
 	dir = 8
 	},
 /obj/structure/platform_decoration,
+/obj/effect/decal/cleanable/generic,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine)
 "aee" = (
@@ -1363,7 +1374,7 @@
 /area/new_irvine)
 "aem" = (
 /obj/structure/surface/rack{
-	layer = 3.9
+	layer = 3.1
 	},
 /obj/structure/platform{
 	dir = 1
@@ -1375,16 +1386,10 @@
 	dir = 1
 	},
 /obj/structure/surface/rack{
-	layer = 3.9
+	layer = 3.1
 	},
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor/plating/asteroidwarning,
-/area/new_irvine)
-"aeo" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/platform,
-/turf/open/asphalt/cement,
 /area/new_irvine)
 "aep" = (
 /obj/structure/bed/chair{
@@ -1406,6 +1411,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor/plating/asteroidwarning/east,
 /area/new_irvine)
 "aes" = (
@@ -1450,6 +1456,7 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 8
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine)
 "aez" = (
@@ -1471,6 +1478,7 @@
 	dir = 8
 	},
 /obj/structure/barricade/handrail/wire,
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine)
 "aeD" = (
@@ -1493,6 +1501,7 @@
 	pixel_y = 5;
 	pixel_x = -3
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/wood/ship,
 /area/new_irvine)
 "aeG" = (
@@ -1501,16 +1510,11 @@
 "aeH" = (
 /turf/open/asphalt/tile,
 /area/new_irvine/sector_four/indoor/port)
-"aeI" = (
-/obj/structure/bed/chair{
-	dir = 8
-	},
-/turf/open/floor/wood/ship,
-/area/new_irvine)
 "aeJ" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/floor3,
 /area/new_irvine)
 "aeK" = (
@@ -1581,8 +1585,9 @@
 /area/new_irvine)
 "aeU" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light_switch{
-	pixel_x = -24
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
 	},
 /turf/open/floor/wood/ship,
 /area/new_irvine)
@@ -1604,6 +1609,9 @@
 	pixel_y = 19;
 	layer = 2.9
 	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine)
 "aeY" = (
@@ -2485,6 +2493,10 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine)
 "aht" = (
@@ -3346,6 +3358,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/frame/rack,
 /obj/structure/prop/invuln/darkness,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
 /turf/open/asphalt/cement,
 /area/new_irvine)
 "aju" = (
@@ -4108,6 +4124,9 @@
 	icon_state = "p_stair_full";
 	dir = 6
 	},
+/obj/structure/platform{
+	dir = 8
+	},
 /turf/open/asphalt/cement,
 /area/new_irvine)
 "alk" = (
@@ -4326,6 +4345,13 @@
 	pixel_x = -6;
 	pixel_y = 15
 	},
+/obj/structure/phone_base/halo/new_irvine/outskirts{
+	pixel_y = 29;
+	phone_id = "Construction Site - Garage Workshop #1"
+	},
+/obj/structure/prop/server_equipment/laptop/on{
+	layer = 3.5
+	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine)
 "alN" = (
@@ -4408,6 +4434,11 @@
 	dir = 4
 	},
 /turf/open/asphalt/cement,
+/area/new_irvine)
+"alY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bigDelivery,
+/turf/open/auto_turf/sand_white/layer1,
 /area/new_irvine)
 "alZ" = (
 /obj/structure/platform{
@@ -5050,6 +5081,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata,
 /area/new_irvine)
+"anK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
 "anL" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 4
@@ -5131,6 +5170,10 @@
 	pixel_x = 28
 	},
 /turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine)
+"anW" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/auto_turf/sand_white/layer1,
 /area/new_irvine)
 "anX" = (
 /obj/item/bedsheet/brown,
@@ -5410,6 +5453,16 @@
 "aoK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
+/obj/item/trash/ceramic_plate,
+/obj/item/trash/ceramic_plate{
+	pixel_y = 2
+	},
+/obj/item/trash/ceramic_plate{
+	pixel_y = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine)
 "aoL" = (
@@ -5571,6 +5624,7 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement,
 /area/new_irvine)
 "api" = (
@@ -5587,6 +5641,10 @@
 /area/new_irvine/sector_three/indoor/brvk)
 "apk" = (
 /obj/structure/surface/table/reinforced/black,
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 7
+	},
 /turf/open/floor/strata/multi_tiles,
 /area/new_irvine)
 "apl" = (
@@ -5650,11 +5708,10 @@
 	icon_state = "door_warning";
 	dir = 1
 	},
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4
+	},
 /turf/open/floor/strata/multi_tiles,
-/area/new_irvine)
-"apt" = (
-/obj/structure/bed/chair/comfy/bench/south/west,
-/turf/open/floor/strata/floor3,
 /area/new_irvine)
 "apu" = (
 /obj/structure/machinery/shower{
@@ -5670,12 +5727,12 @@
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine)
-"apw" = (
-/obj/structure/bed/chair/comfy/bench/mid/west,
-/turf/open/floor/strata,
-/area/new_irvine)
 "apx" = (
-/obj/structure/bed/chair/comfy/bench/north/west,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
 /turf/open/floor/strata,
 /area/new_irvine)
 "apy" = (
@@ -5765,9 +5822,9 @@
 /area/new_irvine/sector_two/indoor/apartment)
 "apM" = (
 /obj/structure/platform_decoration{
-	dir = 4
+	dir = 1
 	},
-/obj/structure/platform_decoration{
+/obj/structure/platform{
 	dir = 1
 	},
 /turf/open/asphalt/cement,
@@ -5866,6 +5923,9 @@
 "aqa" = (
 /obj/structure/urinal{
 	pixel_y = 29
+	},
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine)
@@ -5994,7 +6054,8 @@
 "aqv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/vehicles{
-	dir = 4
+	icon_state = "truck_cargo";
+	dir = 1
 	},
 /turf/open/auto_turf/sand_white/layer1,
 /area/new_irvine)
@@ -6063,6 +6124,9 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/supply{
 	layer = 2.9
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine)
@@ -6572,6 +6636,7 @@
 "arT" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
+/obj/effect/spawner/random/toolbox,
 /turf/open/floor/plating/asteroidwarning/west,
 /area/new_irvine)
 "arU" = (
@@ -6667,6 +6732,8 @@
 "asi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/rack,
+/obj/structure/prop/invuln/darkness,
+/obj/effect/spawner/random/tool,
 /turf/open/floor/strata/floor3,
 /area/new_irvine)
 "asj" = (
@@ -6909,14 +6976,800 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_four/indoor/port)
+"asN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"asO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"asP" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"asQ" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"asR" = (
+/obj/structure/largecrate/random/barrel/true_random{
+	layer = 3.5
+	},
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"asS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"asT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"asU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"asV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/airlock_assembly,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"asW" = (
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"asX" = (
+/obj/structure/closet/secure_closet/freezer/fridge/full,
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"asY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/tool/kitchen/utensil/fork{
+	pixel_x = -2
+	},
+/obj/item/tool/kitchen/utensil/fork{
+	pixel_x = 9;
+	pixel_y = 2
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"asZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ata" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atb" = (
+/obj/structure/bigDelivery{
+	pixel_y = 19;
+	pixel_x = 7;
+	layer = 3.5
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/freezer,
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"ate" = (
+/obj/item/trash/burger,
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"atf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/trash/UPPtray{
+	pixel_x = -4
+	},
+/obj/item/tool/kitchen/utensil/fork{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/structure/sink{
+	dir = 4;
+	pixel_x = 11
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"atg" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ath" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ati" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/unary/freezer,
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"atk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"atl" = (
+/obj/structure/desertdam/decals/loose_sand_overlay,
+/obj/structure/fence,
+/turf/open/floor/corsat/marked,
+/area/new_irvine)
+"atm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fence,
+/turf/open/floor/corsat/marked,
+/area/new_irvine)
+"atn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/microwave{
+	pixel_y = 9
+	},
+/obj/structure/machinery/microwave{
+	pixel_x = 0;
+	pixel_y = 22
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"ato" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/closet/crate/freezer/cooler{
+	pixel_y = 9;
+	pixel_x = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"atp" = (
+/obj/item/trash/chips,
+/turf/open/floor/prison/kitchen,
+/area/new_irvine)
+"atq" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atr" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1;
+	pixel_y = 22
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "ats" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement12,
 /area/new_irvine/sector_three)
+"att" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine)
+"atu" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"atv" = (
+/obj/structure/largecrate/random/case/double,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"atw" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/platform,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/box_van.dmi';
+	icon_state = "van_base";
+	dir = 8;
+	pixel_y = 25;
+	pixel_x = 12
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aty" = (
+/obj/structure/machinery/vending/generic,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atz" = (
+/obj/structure/machinery/vending/cola,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atA" = (
+/obj/structure/bed/chair/comfy/bench/south/west,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/largecrate/random/case,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"atC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/largecrate/random/case/double,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"atD" = (
+/obj/effect/decal/cleanable/generic,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atE" = (
+/obj/structure/bed/chair/comfy/bench/mid/west,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atF" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atG" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/new_irvine)
+"atH" = (
+/obj/structure/bed/chair/comfy/bench/north/west,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atI" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/fan{
+	pixel_y = 14;
+	pixel_x = -6
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/new_irvine)
+"atJ" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine)
+"atK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure,
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_22";
+	pixel_x = -1;
+	pixel_y = 13
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atM" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atN" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal12";
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	layer = 3.5
+	},
+/turf/open/asphalt,
+/area/new_irvine)
+"atO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1;
+	pixel_y = 22
+	},
+/turf/open/floor/strata,
+/area/new_irvine)
+"atP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine)
+"atQ" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/flora/pottedplant{
+	icon_state = "pottedplant_22";
+	pixel_x = -1;
+	pixel_y = 13
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atR" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atS" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atT" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	dir = 1;
+	pixel_y = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atU" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	dir = 1;
+	pixel_y = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atV" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5";
+	dir = 1;
+	pixel_y = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"atX" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atY" = (
+/obj/structure/machinery/door/poddoor/railing/preopened{
+	dir = 2;
+	id = "Customs_Construction"
+	},
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"atZ" = (
+/obj/structure/platform_decoration,
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal5"
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aua" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/fan{
+	pixel_y = 14;
+	pixel_x = -6
+	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_x = 10;
+	pixel_y = 6
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aub" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/computer/emails{
+	dir = 1;
+	pixel_y = 1
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auc" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aud" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aue" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	pixel_y = 0
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine)
+"auf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aug" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/device/flashlight/lamp{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auh" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/officetoy,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aui" = (
+/obj/structure/bed/chair,
+/turf/open/floor/strata,
+/area/new_irvine)
+"auj" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auk" = (
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aul" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/machinery/door/poddoor/railing/preopened{
+	dir = 2;
+	id = "Customs_Bigred_south"
+	},
+/turf/open/asphalt,
+/area/new_irvine)
+"aum" = (
+/obj/structure/machinery/door/poddoor/railing/preopened{
+	dir = 2;
+	id = "Customs_Bigred_south"
+	},
+/turf/open/asphalt,
+/area/new_irvine)
+"aun" = (
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auo" = (
+/obj/structure/machinery/door_control/brbutton{
+	pixel_x = 0;
+	pixel_y = 24;
+	id = "Customs_Construction"
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aup" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auq" = (
+/obj/structure/largecrate/random/barrel/true_random{
+	layer = 3.5
+	},
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aur" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/urinal{
+	pixel_y = 29
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine)
+"aus" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "aut" = (
 /obj/structure/flora/bush/ausbushes/var3/fernybush,
 /turf/open/floor/grass,
 /area/new_irvine/sector_one)
+"auu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auw" = (
+/obj/structure/ore_box,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aux" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/floodlight,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice1";
+	pixel_x = 12;
+	pixel_y = -25
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/floodlight,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/watatsumi/left{
+	layer = 3.1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/watatsumi/rightmid{
+	layer = 3.1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/watatsumi/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auD" = (
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auF" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auH" = (
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "auI" = (
 /obj/structure/platform_decoration{
 	dir = 4
@@ -6924,17 +7777,170 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/strata/floor3,
 /area/new_irvine/sector_two)
+"auJ" = (
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auK" = (
+/obj/structure/cargo_container/arious/left,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auL" = (
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/obj/structure/cargo_container/arious/rightmid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auM" = (
+/obj/structure/cargo_container/arious/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "auN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
+"auO" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	dir = 8;
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	pixel_y = -20
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auQ" = (
+/obj/structure/cargo_container/horizontal/blue/bottom,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"auR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/left,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"auS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/rightmid,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/right,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auU" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auV" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auW" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"auX" = (
+/obj/structure/cargo_container/horizontal/blue/middle,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"auZ" = (
+/obj/structure/platform_decoration,
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "ava" = (
 /obj/structure/machinery/power/port_gen/pacman/mrs,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_two/indoor/powernetrelay)
+"avb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avc" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avd" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ave" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "avf" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -6953,12 +7959,137 @@
 /obj/structure/largecrate/random/barrel/true_random,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_four/indoor/port)
+"avh" = (
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	dir = 8;
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	pixel_y = -28;
+	pixel_x = 20
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avi" = (
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avj" = (
+/obj/structure/machinery/space_heater/radiator/red,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avl" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/horizontal/blue/top,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"avn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"avo" = (
+/obj/structure/cargo_container/arious/rightmid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "avp" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 4
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_one)
+"avq" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = 22
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avr" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avs" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avt" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice2";
+	pixel_x = 12;
+	pixel_y = 22
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avu" = (
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "avv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain/red,
@@ -6971,6 +8102,116 @@
 	},
 /turf/open/asphalt/cement/cement4,
 /area/new_irvine/sector_one)
+"avx" = (
+/obj/structure/filingcabinet{
+	density = 0;
+	pixel_x = 8;
+	pixel_y = 16
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/water_cooler/stacks{
+	density = 0;
+	pixel_x = -10;
+	pixel_y = 15
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/horizontal/blue/bottom,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avA" = (
+/obj/structure/machinery/floodlight,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avB" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/horizontal/blue/middle,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avD" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/storage/toolbox/traxus,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"avE" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avF" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"avG" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"avH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/machinery/door_control/brbutton{
+	pixel_x = 0;
+	pixel_y = 24;
+	id = "Customs_Bigred_south"
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/horizontal/blue/top,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avK" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning/southwest,
+/area/new_irvine)
+"avL" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning/southeast,
+/area/new_irvine)
 "avM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes{
@@ -6979,10 +8220,502 @@
 	},
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_four/indoor/port)
+"avN" = (
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bigDelivery,
+/turf/open/floor/plating/asteroidwarning/southeast,
+/area/new_irvine)
+"avO" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning,
+/area/new_irvine)
+"avP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/fan{
+	pixel_y = 14;
+	pixel_x = -6
+	},
+/obj/item/reagent_container/food/drinks/cans/waterbottle{
+	pixel_x = 10;
+	pixel_y = 6
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/coatrack{
+	pixel_y = 21;
+	pixel_x = -7
+	},
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avS" = (
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"avT" = (
+/obj/structure/machinery/floodlight,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"avU" = (
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"avV" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/item/poster{
+	pixel_y = 1
+	},
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"avW" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"avX" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avY" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"avZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 3.1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awa" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"awb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/handrail/wire,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"awc" = (
+/obj/structure/cargo_container/arious/left,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"awd" = (
+/obj/structure/cargo_container/arious/rightmid,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"awe" = (
+/obj/structure/cargo_container/arious/right,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"awf" = (
+/obj/structure/prop/unsc_crate/big/stack/alt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awg" = (
+/obj/structure/barricade/handrail/wire,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"awh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/supply,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"awi" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awj" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/poster{
+	pixel_y = 1
+	},
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"awk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"awl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"awm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1;
+	pixel_y = 22
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awn" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"awo" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/item/frame/apc,
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"awp" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"awq" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"awr" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/item/poster{
+	pixel_y = 1
+	},
+/obj/item/poster{
+	pixel_y = 1
+	},
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"aws" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awt" = (
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awv" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aww" = (
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awx" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awy" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awz" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/clothing/suit/storage/hazardvest{
+	pixel_x = 6;
+	pixel_y = 3
+	},
+/obj/item/clothing/suit/storage/hazardvest{
+	pixel_x = -8;
+	pixel_y = -3
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awA" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"awB" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/item/frame/apc,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"awC" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/powerloader_clamp,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"awD" = (
+/obj/structure/platform,
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awE" = (
+/obj/structure/cargo_container/watatsumi/left{
+	layer = 3.1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awF" = (
+/obj/structure/cargo_container/watatsumi/rightmid{
+	layer = 3.1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awG" = (
+/obj/structure/cargo_container/watatsumi/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awH" = (
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awJ" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awK" = (
+/obj/structure/cargo_container/kelland/left,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awL" = (
+/obj/structure/cargo_container/kelland/right,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"awM" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awN" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/roller{
+	pixel_y = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/reagent_container/food/drinks/coffee{
+	pixel_x = -7;
+	pixel_y = 6
+	},
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/poster{
+	pixel_y = 1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/faxmachine{
+	pixel_y = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
 "awR" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_three/indoor)
+"awS" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/table/reinforced/black,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awT" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/clipboard{
+	pixel_x = -9;
+	pixel_y = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"awU" = (
+/obj/structure/platform,
+/obj/structure/surface/rack,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"awV" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning/northeast,
+/area/new_irvine)
+"awW" = (
+/obj/structure/cargo_container/trijent/left,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awX" = (
+/obj/structure/cargo_container/trijent/mid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"awY" = (
+/obj/structure/cargo_container/trijent/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "awZ" = (
 /obj/structure/sink{
 	layer = 3.1;
@@ -6995,6 +8728,80 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine/sector_one/indoor/portauth)
+"axa" = (
+/obj/structure/prop/vehicles{
+	dir = 4;
+	layer = 3.5
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/smallDelivery{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/smallDelivery,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axc" = (
+/obj/structure/girder/displaced,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/computer/emails{
+	pixel_y = -1;
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axe" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bed/chair{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axf" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axg" = (
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
 "axh" = (
 /obj/structure/sink{
 	dir = 8;
@@ -7003,6 +8810,341 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine/sector_two/indoor/apartment)
+"axi" = (
+/obj/structure/prop/invuln/lattice_prop{
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axj" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axk" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/surface/table/reinforced/black,
+/obj/item/clothing/head/hardhat{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/obj/item/clothing/head/hardhat{
+	pixel_y = -3
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axl" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"axm" = (
+/obj/structure/cargo_container/horizontal/blue/bottom,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 10;
+	pixel_x = -7
+	},
+/obj/item/reagent_container/spray/cleaner{
+	pixel_y = 2;
+	pixel_x = -4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axp" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1;
+	pixel_y = 22
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axq" = (
+/obj/structure/machinery/photocopier,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axr" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/bigDelivery,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidwarning/southwest,
+/area/new_irvine)
+"axs" = (
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axt" = (
+/obj/structure/bigDelivery,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axu" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/corsat/marked,
+/area/new_irvine)
+"axv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axw" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"axx" = (
+/obj/structure/cargo_container/horizontal/blue/top,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"axy" = (
+/obj/structure/cargo_container/horizontal/blue/middle,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axA" = (
+/obj/structure/foamed_metal,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/foamed_metal,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axC" = (
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axD" = (
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"axE" = (
+/obj/item/frame/rack,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"axF" = (
+/obj/structure/largecrate/random,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"axG" = (
+/obj/structure/largecrate/random,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"axH" = (
+/obj/structure/cargo_container/horizontal/blue/top,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/supply,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"axJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/foamed_metal,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"axK" = (
+/obj/structure/foamed_metal,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axL" = (
+/obj/structure/surface/rack,
+/obj/structure/platform,
+/obj/item/frame/air_alarm,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"axM" = (
+/obj/structure/surface/rack,
+/obj/structure/platform,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"axN" = (
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides."
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axO" = (
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 3.1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axP" = (
+/obj/structure/cargo_container/horizontal/blue/bottom,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"axQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/ore_box,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bigDelivery,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"axS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/frame/rack,
+/obj/item/frame/rack,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"axT" = (
+/obj/structure/cargo_container/horizontal/blue/middle,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"axU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axV" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"axW" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"axX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/static_tank/water,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axY" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/smallDelivery{
+	pixel_y = 2;
+	pixel_x = -4
+	},
+/obj/item/smallDelivery{
+	pixel_y = 20;
+	pixel_x = 5
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"axZ" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning/southwest,
+/area/new_irvine)
+"aya" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/frame/rack,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"ayc" = (
+/obj/structure/cargo_container/grant/left,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"ayd" = (
+/obj/structure/cargo_container/grant/rightmid,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aye" = (
+/obj/structure/cargo_container/grant/right,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"ayf" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/vehicle_clamp,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice2";
+	pixel_x = 12;
+	pixel_y = 22
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "ayh" = (
 /obj/structure/platform{
 	dir = 4
@@ -7016,6 +9158,322 @@
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_two/indoor)
+"ayi" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"ayj" = (
+/obj/structure/surface/rack,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/smallDelivery,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"ayk" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8
+	},
+/turf/open/floor/wood/ship,
+/area/new_irvine)
+"aym" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayn" = (
+/obj/structure/girder/reinforced,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayo" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/frame/camera{
+	pixel_x = -3
+	},
+/obj/item/frame/camera{
+	pixel_y = 10;
+	pixel_x = -7
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"ayp" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayq" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/platform_decoration,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plating/asteroidwarning/northwest,
+/area/new_irvine)
+"ayr" = (
+/obj/structure/surface/rack,
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"ays" = (
+/obj/structure/surface/rack,
+/obj/structure/platform,
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"ayt" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bigDelivery,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayu" = (
+/obj/structure/cargo_container/kelland/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayv" = (
+/obj/structure/cargo_container/grant/left,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayw" = (
+/obj/structure/cargo_container/grant/rightmid,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayx" = (
+/obj/structure/cargo_container/grant/right,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayy" = (
+/obj/structure/largecrate/random/case,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayz" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/closed/wall/voi,
+/area/new_irvine)
+"ayA" = (
+/obj/structure/filingcabinet/chestdrawer{
+	pixel_x = 7
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/wood/ship,
+/area/new_irvine)
+"ayB" = (
+/obj/structure/cargo_container/horizontal/blue/bottom,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayC" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/obj/structure/largecrate/random/case,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"ayD" = (
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayE" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayF" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayG" = (
+/obj/structure/cargo_container/horizontal/blue/middle,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayH" = (
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayI" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/grille,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayL" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red,
+/turf/open/floor/wood/ship,
+/area/new_irvine)
+"ayN" = (
+/obj/structure/cargo_container/horizontal/blue/top,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayO" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/frame/rack,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayQ" = (
+/obj/structure/machinery/constructable_frame,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"ayS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"ayT" = (
+/obj/structure/surface/rack,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"ayU" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"ayV" = (
+/obj/structure/cargo_container/horizontal/blue/top,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"ayW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/item/frame/rack,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"ayX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "ayY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue{
@@ -7023,15 +9481,305 @@
 	},
 /turf/open/floor/wood/ship,
 /area/new_irvine/sector_two/indoor/shops)
+"ayZ" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/watertank{
+	layer = 2.9
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aza" = (
+/obj/structure/surface/rack,
+/obj/structure/platform,
+/obj/effect/spawner/random/toolbox,
+/obj/effect/spawner/random/toolbox,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"azb" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/paper{
+	icon_state = "pamphlet_written";
+	icon = 'icons/obj/items/pamphlets.dmi';
+	pixel_x = -6;
+	pixel_y = 6
+	},
+/obj/item/tool/wrench,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azc" = (
+/obj/structure/cargo_container/grant/leftmid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azd" = (
+/obj/structure/cargo_container/grant/rightmid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aze" = (
+/obj/structure/cargo_container/grant/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "azf" = (
 /turf/open/asphalt/cement,
 /area/new_irvine/sector_five/bridge)
+"azg" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/bigDelivery,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
 "azh" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sector_four/indoor/port)
+"azi" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"azj" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/pipe{
+	dir = 6
+	},
+/obj/item/pipe{
+	dir = 6;
+	pixel_y = 7;
+	pixel_x = -7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azk" = (
+/obj/structure/grille,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azl" = (
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	dir = 8;
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	layer = 3.5
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"azm" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	density = 0;
+	pixel_y = 19;
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/smallDelivery,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"azn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"azo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/case/small,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/case,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/left,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"azr" = (
+/obj/structure/cargo_container/arious/rightmid,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"azs" = (
+/obj/structure/cargo_container/arious/right,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"azt" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/dropship_equipment/fuel/fuel_enhancer,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azu" = (
+/obj/structure/desertdam/decals/loose_sand_overlay,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"azv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/case/double,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/pipedispenser,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azy" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azz" = (
+/obj/structure/cargo_container/grant/left,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azA" = (
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/box_van.dmi';
+	icon_state = "van_base";
+	dir = 4;
+	layer = 3.1
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"azB" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azC" = (
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azD" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/stairs/perspective{
+	icon_state = "p_stair_full";
+	dir = 1;
+	layer = 2.9
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azE" = (
+/obj/structure/platform,
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azF" = (
+/obj/structure/largecrate/random/case/double,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/case,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"azH" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/case,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"azI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azJ" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azK" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/dropship_equipment/fuel/cooling_system,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azL" = (
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/box_van.dmi';
+	icon_state = "van_base";
+	dir = 4
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"azM" = (
+/obj/structure/platform,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azN" = (
+/obj/structure/platform,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "azO" = (
 /obj/structure/platform{
 	dir = 4
@@ -7047,10 +9795,314 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/new_irvine/sector_one/indoor/corpauth)
+"azP" = (
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azQ" = (
+/obj/structure/prop/vehicles{
+	dir = 4;
+	icon_state = "truck_damaged"
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azR" = (
+/obj/structure/largecrate/random/case,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azS" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random{
+	layer = 2.9
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azT" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"azU" = (
+/obj/structure/desertdam/decals/loose_sand_overlay,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = -20;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"azV" = (
+/obj/structure/prop/invuln/lattice_prop{
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"azW" = (
+/obj/structure/desertdam/decals/loose_sand_overlay,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice12";
+	pixel_x = 12;
+	pixel_y = 6
+	},
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"azX" = (
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"azY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/inflatable,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"azZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/storage/briefcase/inflatable,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAa" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAb" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/reagent_container/food/drinks/coffee{
+	pixel_x = -9;
+	pixel_y = 9
+	},
+/obj/item/trash/ceramic_plate,
+/obj/item/reagent_container/food/snacks/cheeseburger{
+	pixel_x = 4;
+	pixel_y = 6
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAd" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/dippingbird{
+	pixel_y = 12
+	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -17;
+	pixel_y = 2
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAe" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAf" = (
+/obj/structure/reagent_dispensers/fueltank,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"aAg" = (
+/obj/structure/barricade/handrail/wire,
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAh" = (
+/obj/structure/barricade/handrail/wire,
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 3.2;
+	pixel_y = 18
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "aAi" = (
 /obj/effect/overlay/palmtree_r,
 /turf/open/floor/grass,
 /area/new_irvine/sector_one)
+"aAj" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/structure/barricade/handrail/wire,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAk" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice2";
+	pixel_x = 12;
+	pixel_y = 22
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAl" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAm" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random{
+	pixel_x = -5;
+	pixel_y = -2
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/floodlight,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAo" = (
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	layer = 3.1;
+	pixel_y = 10;
+	pixel_x = -11
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAp" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"aAq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/floodlight,
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"aAr" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/server_equipment/laptop/closed,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aAs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/left,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/rightmid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAv" = (
+/obj/structure/prop/static_tank/water,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder/displaced,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/smes/buildable,
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"aAy" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/vehicles{
+	icon = 'icons/obj/vehicles/van.dmi';
+	icon_state = "van_base";
+	dir = 8;
+	desc = "A rather old hunk of metal with four wheels, you know what to do. Entrance on the back and sides.";
+	layer = 3.5
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/arious/right,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/grant/right,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/autolathe,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
 "aAD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -7068,16 +10120,57 @@
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/sector_two/indoor/shops)
+"aAF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "aAH" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
 	dir = 1
 	},
 /turf/open/floor/corsat/marked,
 /area/new_irvine/sector_three/indoor/arch_angel)
+"aAI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder/displaced{
+	layer = 3.1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "aAJ" = (
 /obj/structure/surface/table/reinforced/black,
 /turf/open/floor/wood/ship,
 /area/new_irvine/sector_one/indoor/portauth)
+"aAK" = (
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
 "aAL" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2"
@@ -7089,6 +10182,139 @@
 /obj/structure/machinery/deployable/barrier,
 /turf/open/floor/almayer_hull,
 /area/new_irvine/sector_two)
+"aAM" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAO" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/structure/barricade/handrail/wire,
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/grant/left,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/grant/rightmid,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/grant/right,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAS" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/lattice_prop{
+	icon_state = "lattice2";
+	pixel_x = 12;
+	pixel_y = 22
+	},
+/obj/structure/prop/invuln/lattice_prop{
+	dir = 1;
+	icon_state = "lattice-simple";
+	pixel_x = 12;
+	pixel_y = -10
+	},
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aAV" = (
+/obj/structure/machinery/power/reactor/colony,
+/turf/open/floor/plating/asteroidwarning,
+/area/new_irvine)
+"aAW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/reactor/colony,
+/turf/open/floor/plating/asteroidwarning,
+/area/new_irvine)
+"aAX" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aAY" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	density = 0;
+	pixel_y = 19;
+	layer = 4.5
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aAZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/horizontal/blue/bottom,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBa" = (
+/obj/structure/prop/vehicles{
+	icon_state = "crane_cargo";
+	dir = 1
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/floodlight,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBc" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/smallDelivery,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
 "aBd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue{
@@ -7096,6 +10322,58 @@
 	},
 /turf/open/floor/strata/white_cyan2,
 /area/new_irvine/sector_four/indoor/port)
+"aBe" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/structure/machinery/power/monitor{
+	layer = 2.9
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBg" = (
+/obj/structure/machinery/fuelpump{
+	layer = 4.2
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBh" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"aBi" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBj" = (
+/obj/structure/cargo_container/lockmart/left,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aBk" = (
+/obj/structure/cargo_container/lockmart/mid,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aBl" = (
+/obj/structure/cargo_container/lockmart/right,
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "aBm" = (
 /obj/structure/platform,
 /obj/effect/decal/cleanable/dirt,
@@ -7110,15 +10388,842 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_one/indoor/corpauth)
+"aBn" = (
+/obj/structure/bed/chair{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBo" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/prop/almayer/computer/PC{
+	dir = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBp" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBq" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/notepad{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/item/notepad{
+	pixel_y = 6;
+	pixel_x = -1
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBr" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/corsat/marked,
+/area/new_irvine)
+"aBs" = (
+/obj/structure/machinery/floodlight,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBt" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/prop/server_equipment/laptop/closed,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank/gas,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/reagent_dispensers/fueltank/gas{
+	layer = 2.9
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBw" = (
+/obj/structure/machinery/fuelpump,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/floor/plating/asteroidwarning/east,
+/area/new_irvine)
+"aBy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/filingcabinet{
+	pixel_x = -8
+	},
+/obj/structure/filingcabinet{
+	pixel_x = 8
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/fan{
+	pixel_y = 14;
+	pixel_x = -6
+	},
+/obj/item/paper_bin{
+	pixel_x = 5;
+	pixel_y = 7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/notepad{
+	pixel_x = -5;
+	pixel_y = 2
+	},
+/obj/item/tool/pen{
+	pixel_x = 6;
+	pixel_y = 6
+	},
+/obj/structure/machinery/door_control/brbutton{
+	pixel_x = 0;
+	pixel_y = 24;
+	id = "Customs_Bigred_north"
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "aBB" = (
 /turf/open/floor/strata/white_cyan2,
 /area/new_irvine/sector_one/indoor/portauth)
+"aBC" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/device/flashlight/lamp{
+	pixel_x = 4;
+	pixel_y = 12
+	},
+/obj/item/smallDelivery{
+	pixel_x = -2;
+	pixel_y = 2
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBE" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aBF" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/frame/table/almayer,
+/obj/item/frame/table/almayer,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/constructable_frame,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBH" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"aBI" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/turf/open/floor/plating/asteroidwarning/north,
+/area/new_irvine)
+"aBJ" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aBK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/horizontal/blue/middle,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
 "aBM" = (
 /obj/structure/platform_decoration{
 	dir = 4
 	},
 /turf/open/asphalt/cement/cement1/north,
 /area/new_irvine/sector_four)
+"aBN" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/constructable_frame{
+	icon_state = "box_1"
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBP" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBQ" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/platform_decoration{
+	dir = 1
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aBR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aBS" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/obj/structure/machinery/door/poddoor/railing/preopened{
+	id = "Customs_Bigred_north"
+	},
+/turf/open/asphalt,
+/area/new_irvine)
+"aBT" = (
+/obj/structure/machinery/door/poddoor/railing/preopened{
+	id = "Customs_Bigred_north"
+	},
+/turf/open/asphalt,
+/area/new_irvine)
+"aBU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/girder,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"aBV" = (
+/obj/structure/girder,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aBW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aBX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/constructable_frame,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aBY" = (
+/obj/structure/girder,
+/turf/open/auto_turf/sand_white/layer1,
+/area/new_irvine)
+"aBZ" = (
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform_decoration{
+	dir = 8
+	},
+/obj/structure/platform_decoration,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCa" = (
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/platform,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/static_tank/fuel,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aCc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCe" = (
+/obj/structure/largecrate/random/barrel/true_random,
+/obj/structure/platform_decoration,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCf" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/asteroidwarning/west,
+/area/new_irvine)
+"aCg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/smallDelivery,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aCh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/key/cargo_train,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCi" = (
+/obj/structure/prop/unsc_crate/corrugated/green,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCj" = (
+/obj/structure/prop/unsc_crate/corrugated/red,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/spawner/random/tool,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/vehicle/train/cargo/engine,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aCm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/vehicle/train/cargo/trolley,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aCn" = (
+/obj/vehicle/train/cargo/trolley,
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aCo" = (
+/obj/structure/barricade/handrail/wire,
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCp" = (
+/obj/structure/barricade/handrail/wire,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCq" = (
+/obj/structure/machinery/constructable_frame{
+	icon_state = "box_2"
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCs" = (
+/obj/structure/prop/invuln/darkness,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCt" = (
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/port_gen/pacman,
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCw" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/port_gen/pacman/mrs,
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCx" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/toy/desk/newtoncradle,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCy" = (
+/obj/structure/machinery/vending/coffee,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/prop/invuln/darkness,
+/obj/effect/spawner/random/powercell,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/obj/structure/prop/invuln/darkness,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCB" = (
+/obj/structure/prop/invuln/darkness,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 5;
+	dir = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCD" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/item/paper/janitor{
+	pixel_y = 14;
+	pixel_x = -6
+	},
+/obj/item/paper/photograph{
+	pixel_y = -4
+	},
+/obj/item/reagent_container/food/drinks/coffee{
+	pixel_x = 8;
+	pixel_y = 6
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCE" = (
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/open/floor/strata,
+/area/new_irvine)
+"aCF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/supply,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aCG" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/simple/visible/scrubbers{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCH" = (
+/obj/structure/pipes/standard/simple/visible/scrubbers{
+	dir = 9
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCI" = (
+/obj/structure/machinery/power/port_gen/pacman,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCJ" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/computer/emails{
+	pixel_y = 5
+	},
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCK" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/machinery/faxmachine{
+	pixel_y = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCL" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/supply,
+/obj/structure/phone_base/halo/new_irvine/outskirts{
+	pixel_y = 29;
+	phone_id = "Construction Site - Storehouse"
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 1;
+	pixel_y = 22
+	},
+/obj/structure/largecrate/supply,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCN" = (
+/obj/structure/pipes/standard/simple/visible/scrubbers{
+	dir = 6
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/port_gen/pacman/mrs,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCP" = (
+/obj/structure/machinery/floodlight,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCQ" = (
+/obj/structure/pipes/standard/simple/visible/scrubbers,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCR" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/darkness,
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCS" = (
+/obj/structure/machinery/space_heater/radiator/red{
+	dir = 8
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine)
+"aCT" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCU" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/storage/toolbox/traxus/big,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCV" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/circuitboard/computer,
+/obj/item/circuitboard/computer,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aCW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/pipes/standard/simple/visible/scrubbers,
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine)
+"aCX" = (
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aCY" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/packageWrap,
+/obj/item/packageWrap,
+/obj/item/packageWrap,
+/obj/item/packageWrap,
+/obj/item/packageWrap,
+/obj/item/packageWrap,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aCZ" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/storage/toolbox/traxus,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDa" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/smallDelivery,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDb" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDc" = (
+/obj/structure/bigDelivery,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDd" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDe" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/storage/toolbox/traxus/alt,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDf" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/circuitboard/airlock,
+/obj/item/circuitboard/airlock,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDg" = (
+/obj/structure/prop/invuln/darkness,
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aDh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aDi" = (
+/obj/effect/decal/cleanable/generic,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/bigDelivery,
+/turf/open/floor/strata,
+/area/new_irvine)
+"aDl" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/supply,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 4;
+	light_power = 0.7
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDm" = (
+/obj/structure/largecrate/random/secure{
+	layer = 2.9
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/invuln/darkness,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 1;
+	light_power = 0.7
+	},
+/turf/open/asphalt/cement,
+/area/new_irvine)
+"aDn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/storage/toolbox/traxus/big,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDo" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/frame/apc,
+/obj/item/frame/apc,
+/obj/item/frame/apc,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDq" = (
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/storage/toolbox/traxus,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/circuitboard/apc,
+/obj/item/circuitboard/apc,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/obj/item/smallDelivery,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
+"aDt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/item/storage/toolbox/traxus/alt,
+/turf/open/floor/strata/floor3,
+/area/new_irvine)
 "aDL" = (
 /obj/vehicle/multitile/box_van/cop_car,
 /turf/open/floor/almayer_hull,
@@ -202704,42 +206809,42 @@ abp
 vdS
 vdS
 vdS
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ayz
+ayz
+ayz
+ayz
+aAg
+acL
+awI
+awI
+acR
+acN
+axj
+aiz
+aiz
+aiz
+aiz
+aiz
+acN
+acN
+acN
+acN
+aiz
+aiz
+aiz
+aiz
+axj
+acN
+acN
+acN
+acN
+acN
+aiz
+aiz
+aiz
+aik
+ahq
+ahq
 vdS
 vdS
 vdS
@@ -202954,17 +207059,17 @@ abp
 abp
 vdS
 vdS
+aBu
+aBe
+ayz
+aAx
+aAx
+abr
+aAg
+agq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+aiS
+acU
 adp
 adp
 adp
@@ -202989,11 +207094,11 @@ adp
 adp
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+alZ
+aik
+ahq
+auC
+apZ
 vdS
 vdS
 abp
@@ -203205,48 +207310,48 @@ abp
 abp
 vdS
 vdS
+aBv
+aBv
+aBf
+aAU
+aAK
+aAy
+agd
+afS
+agr
+acR
+acU
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+adp
+aii
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-adp
-bHb
-bHb
-bHb
-bHb
-bHb
+auJ
+auJ
+apZ
 vdS
 abp
 abp
@@ -203456,49 +207561,49 @@ bHb
 abp
 abp
 vdS
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ago
+abr
+apl
+apl
+abr
+aAM
+afv
+adn
+aez
+afK
+azM
 adp
 adp
 adp
 adp
-adn
-ado
-ado
-adn
-ado
+ayX
+ayS
 ado
 adn
+afv
+afv
+akv
+afv
+afv
+akv
 ado
 ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
+akv
+afv
+afv
+akv
+afv
+afv
 adn
 ado
 adp
 adp
 adp
+acO
+acK
 bHb
-bHb
-bHb
-bHb
-bHb
+auJ
+apZ
 vdS
 vdS
 abp
@@ -203708,49 +207813,49 @@ bHb
 abp
 vdS
 vdS
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+aBP
+aBH
+aBw
+aBg
+aAV
+aAN
+afv
+akv
+aez
+acL
+acT
+acV
 adp
 adp
-adO
-adO
+ayZ
+ayZ
 adV
 adV
-adO
+adp
+awn
+awn
+adp
 adV
 adV
-adO
+adp
 adV
 adV
-adO
+adp
+awn
+awn
+adp
+awn
 adV
-adV
-adO
-adV
-adV
-adO
-adV
-adV
-adO
+adp
 ado
 ado
 adp
 adp
 adp
+aii
 bHb
 bHb
-bHb
-bHb
+auz
 vdS
 abp
 abp
@@ -203960,49 +208065,49 @@ bHb
 abp
 abp
 vdS
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+aBP
+aBH
+aaU
+aaU
+aAW
+aAN
+afv
+akv
+aAh
+acL
+acR
+acU
 adp
 adp
-adW
-aeu
+awi
+ayq
 aeq
 ael
-adW
-adW
+ayE
+awi
+ayq
+ayi
+axZ
+awi
+awy
 aeu
 aeq
-ael
-adW
-adW
-aeu
-aeq
-ael
-adW
-adW
-adW
-adW
-adW
+axr
+axk
+awS
+awy
+awi
+awi
 adP
 adE
 adv
 adp
 adp
+afE
+aij
 bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+auA
 vdS
 abp
 abp
@@ -204212,49 +208317,49 @@ bHb
 abp
 abp
 vdS
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-adp
-adp
-adp
+aBP
+aBI
 aaU
-aev
+aaU
+aAW
+aAN
+afv
+aAo
+aAj
+aii
+azM
+adp
+adp
+adp
+aih
+aza
 abr
 aem
 aaU
 aaU
-aev
+ayr
 abr
-aem
+avO
+axU
 aaU
-aaU
-aev
+axL
 abr
-aem
+adx
 aaU
-aaU
-aaU
-aaU
-aaU
+awT
+awz
+aih
+aih
 adR
-adF
-aaU
+amh
+aih
 adp
 adp
+alZ
+aik
 bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+auB
 vdS
 vdS
 abp
@@ -204464,49 +208569,49 @@ bHb
 abp
 vdS
 vdS
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+aBP
+aBI
+aih
+aaU
+aAV
+aAN
+adn
+aAj
+afE
+aij
+acT
+azB
 abi
-aeW
-aaU
-aev
+apH
+aih
+ays
 abr
 aem
 aaU
 aaU
+ays
+abr
+avO
+axV
+aaU
 aev
 abr
-aem
-aaU
-aaU
-aev
-abr
-aem
+adx
 aaU
 aaU
 aaU
 aaU
 aaU
-aaU
-aaU
-aaU
+aih
+aih
+aih
 adp
 adp
 adp
+avc
 bHb
-bHb
-bHb
-bHb
+auC
+auC
 vdS
 abp
 abp
@@ -204716,49 +208821,49 @@ bHb
 abp
 abp
 vdS
+aBP
+ayz
+aBx
+aBh
+abr
+afR
+aAj
+afE
+aij
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+azC
 abi
 aeW
 aaU
-aev
+ays
 abr
 aen
 aaU
 aaU
-aev
+ays
 abr
-aen
+adx
 aaU
 aaU
-aev
+axM
 abr
-aen
+adx
 aaU
 aei
+awA
+awo
 adH
 adH
 adH
-adH
-adH
-adw
+avK
 adp
 adp
+avr
+avd
 bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+auC
 vdS
 abp
 abp
@@ -204968,29 +209073,29 @@ bHb
 bHb
 bHb
 vdS
+aBQ
+aBi
+aBi
+aBi
+aAX
+aAO
+afE
+aij
+ahq
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+azC
 abi
 aeW
 aaU
 aek
-aer
+ayT
 ady
 aaU
 aaU
-aek
-aer
-ady
+awV
+ayj
+avN
 aaU
 aaU
 aek
@@ -205006,11 +209111,11 @@ abr
 adx
 adp
 adp
+avs
+acK
 bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+ahq
 vdS
 vdS
 abp
@@ -205221,17 +209326,17 @@ bHb
 vdS
 vdS
 vdS
+abW
+abW
+abW
+abW
+ahl
+aij
+ahq
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+azC
 abi
 aeW
 aaU
@@ -205241,28 +209346,28 @@ aaU
 aaU
 aaU
 aaU
+aih
+aih
+aih
 aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
+axN
+aih
+aih
 aaU
 aek
+awB
+awp
+awa
+awa
 adI
-adI
-adI
-adI
-adI
-ady
+avL
 adp
 adp
 adp
+acL
 bHb
-bHb
-bHb
-bHb
+auK
+ahq
 vdS
 abp
 abp
@@ -205471,50 +209576,50 @@ aby
 aby
 aby
 aby
-aby
+aBS
 aby
 abu
 bHb
+aBj
+axC
+bHb
+aAz
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+acR
+azD
 abi
 aeW
 aaU
 aaU
 aaU
+aih
+aih
+aih
 aaU
 aaU
+aih
 aaU
 aaU
+aih
+aih
+aih
+aih
+aih
 aaU
 aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
+aih
+aih
+aih
+aih
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+avt
+ave
+auH
+auL
+auD
 vdS
 abp
 abp
@@ -205723,50 +209828,50 @@ abX
 apI
 apI
 abz
-abz
+aBT
 abz
 abJ
 abu
+aBk
+axC
 bHb
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
+azM
 adp
 adp
 adp
-aeB
-aeB
-aeB
-aeB
-aeB
-aeB
-aeB
-aeB
+azg
+ayk
+ayL
+ayL
+ayF
+ayt
+ayt
+ayk
 aeB
 aeB
 adT
 aaU
+aih
+aih
+aih
 aaU
 aaU
 aaU
 aaU
 aaU
-aaU
-aaU
-aaU
-aaU
-aaU
+aih
+aih
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+alZ
+aik
+ahq
+auM
+apZ
 vdS
 vdS
 abp
@@ -205975,39 +210080,39 @@ aby
 apI
 apI
 aby
-aby
+aBS
 abz
 abz
 abv
+aBl
+aAY
 bHb
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
+acT
+afO
 adp
 aeX
+aya
+adp
+aya
 aeE
-adm
-aeE
-aeE
-adm
-aeE
-aeE
-adm
-aeE
+adp
+aya
+aya
+adp
+aya
 aeC
 adU
 adT
 aaU
-aaU
+aih
 aaU
 aei
-adH
-adH
+awq
+awq
 adH
 adH
 adH
@@ -206015,8 +210120,8 @@ adw
 adp
 adp
 adp
-bHb
-bHb
+aii
+ahq
 bHb
 bHb
 vdS
@@ -206227,7 +210332,7 @@ abz
 apI
 apI
 abz
-abz
+aBT
 abz
 abE
 abw
@@ -206238,26 +210343,26 @@ bHb
 bHb
 bHb
 bHb
-bHb
-bHb
+ahq
+aiQ
 adp
-aeX
-ado
+azm
+afv
+akv
+afv
+afv
 adn
 ado
 ado
-adn
-ado
-ado
-adn
-ado
-ado
+akv
+afv
+afv
 aey
 adM
+axs
+axs
 aaU
-aaU
-aaU
-aej
+awU
 abr
 abr
 abr
@@ -206266,11 +210371,11 @@ abr
 adx
 adp
 adp
+afE
+aij
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
+akN
 vdS
 abp
 abp
@@ -206479,7 +210584,7 @@ aby
 aby
 aby
 aby
-aby
+aBS
 aby
 abw
 bHb
@@ -206489,9 +210594,9 @@ bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
+ahq
+aiS
+afT
 adp
 adp
 adp
@@ -206503,26 +210608,26 @@ aeL
 aeL
 adp
 adp
-adn
-aez
+axW
+alI
 adM
-aaU
-aaU
-aaU
-aek
-adI
-adI
-adI
-adI
-adI
-ady
+axs
+axt
+aih
+awV
+awC
+awp
+avV
+avV
+avV
+avN
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+alZ
+aik
+ahq
+akN
+auE
 vdS
 vdS
 abp
@@ -206733,48 +210838,48 @@ bHb
 vdS
 vdS
 vdS
+ahq
+ahq
+bHb
+awH
+awH
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+azN
 adp
 adp
 adp
+azi
+akv
+afv
+afv
 adn
-adn
 ado
-ado
-adn
-ado
-ado
+afv
 aeJ
 add
 aeD
 aeA
 adM
+aih
 aaU
 aaU
+aih
+aih
+aih
 aaU
 aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
+aih
+aih
 adp
 adp
 adp
-bHb
-bHb
-bHb
-bHb
+aii
+ahq
+akN
+auE
 vdS
 abp
 abp
@@ -206984,49 +211089,49 @@ bHb
 bHb
 bHb
 vdS
-acR
-acN
-acN
-acN
-acN
-acN
-acN
+aiS
+aiz
+aiz
+auF
+auF
+awJ
+awJ
 acK
 bHb
-bHb
-bHb
-bHb
+ahq
+aiR
+afO
 adp
-adn
-aeb
-adn
+azn
+amj
+avk
 ado
 ado
-adn
-adn
+adp
+avE
 aeb
-adn
+akv
 adp
 adn
 aeA
 adM
+aih
+aih
 aaU
 aaU
+aih
+aih
 aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
-aaU
+aih
+aih
+aih
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+afE
+aij
+akN
+akN
+auE
 vdS
 abp
 abp
@@ -207246,8 +211351,8 @@ abr
 acO
 acK
 bHb
-bHb
-bHb
+aiS
+afT
 adp
 adp
 acX
@@ -207262,23 +211367,23 @@ adp
 adp
 aez
 aew
-aaU
-aaU
+aih
+aih
 aaU
 aei
-adH
-adH
-adH
-adH
-adH
-adw
+awj
+awr
+awj
+avW
+avW
+avK
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+alZ
+acN
+acN
+aiz
+auF
 vdS
 vdS
 abp
@@ -207490,47 +211595,47 @@ vdS
 vdS
 acS
 abr
-adn
-adn
-adn
-adn
+aBy
+akv
+azi
+auf
 abr
 abr
 acL
 bHb
-bHb
+azM
 adp
 adp
 aeY
 art
 aeU
 aeG
-aeO
+ayM
 adp
-aeG
+ayA
 aqT
 aeK
 aeF
 adp
-ado
+afv
 aex
+aih
+aih
 aaU
-aaU
-aaU
-aej
+awU
 abr
 abr
 abr
 abr
 abr
-adx
+avO
 adp
 adp
 adp
-bHb
-bHb
-bHb
-bHb
+aet
+aet
+aet
+aet
 vdS
 abp
 abp
@@ -207742,16 +211847,16 @@ abp
 vdS
 acS
 abr
+aBz
+afv
+ado
 adn
-acW
-acW
-acW
 adn
 abr
-acL
-bHb
-bHb
-bHb
+aAk
+auH
+azP
+azE
 adp
 aeZ
 aeO
@@ -207761,14 +211866,14 @@ aeO
 adp
 aeM
 aeG
-aeI
-aeG
+amU
+aeO
 adp
-ado
+afv
 aex
-aaU
-aaU
-aaU
+aih
+aih
+aih
 aek
 adJ
 adJ
@@ -207778,11 +211883,11 @@ adJ
 adp
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+acP
+ahl
+auO
+auO
+ahl
 vdS
 abp
 abp
@@ -207994,16 +212099,16 @@ abp
 vdS
 acS
 abr
+aBA
+aBn
 adn
-acW
-acW
-acW
-adn
+avE
+aeb
 abr
 acL
 bHb
 bHb
-bHb
+acS
 adp
 adp
 aeG
@@ -208012,17 +212117,17 @@ aeS
 aeP
 adp
 aeN
-aeG
-aeG
-aeI
+aeO
+ayl
+amU
 adp
-adn
+axR
 adp
+axl
+axl
+axl
 aeg
 aeg
-aeg
-aeg
-aeg
 adp
 adp
 adp
@@ -208030,11 +212135,11 @@ adp
 adp
 adp
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+acL
+avh
+ahq
+auP
+ahq
 vdS
 bHb
 bHb
@@ -208246,17 +212351,17 @@ vdS
 vdS
 acS
 abr
-adn
-acW
-acW
-acW
-adn
+aBC
+aBo
+avu
+abr
+acX
 abr
 acL
 bHb
 bHb
-bHb
-bHb
+acT
+acV
 adp
 aeL
 aeL
@@ -208271,21 +212376,21 @@ adp
 adp
 adp
 abi
+axu
 abi
 abi
 abi
-abi
 adp
 adp
 adp
 adp
 adp
 adp
+acP
+acM
 bHb
 bHb
-bHb
-bHb
-bHb
+ahq
 vdS
 vdS
 vdS
@@ -208496,50 +212601,50 @@ bHb
 abp
 abp
 vdS
-acS
+aiQ
 abr
-adn
-acW
-acW
-acW
-adn
 abr
-acL
+abr
+abr
+abr
+amk
+abr
+aii
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
+acT
+abW
+abW
+acV
 adp
-bHb
-bHb
+afE
+afO
 adp
-bHb
-bHb
+afE
+afO
 adp
-bHb
-bHb
+acP
+acV
 adp
-bHb
-bHb
-bHb
-bHb
-bHb
+agO
+alX
+alX
+alX
+awD
 adp
-bHb
-bHb
+acP
+acV
 adp
-bHb
-bHb
-bHb
+acP
+abW
+acM
 bHb
 bHb
 bHb
 bHb
 abE
-aby
+aul
 aby
 aby
 aby
@@ -208748,42 +212853,42 @@ bHb
 abp
 abp
 vdS
-acS
+aiQ
 abr
-aeb
-adn
-adn
-adn
-adn
+aBD
+aBp
+akv
+auf
+akv
 abr
-acL
+aii
+auE
 bHb
 bHb
 bHb
 bHb
 bHb
+acT
+aws
+aij
+aiR
+aws
+aij
+acT
+avX
+acM
+acT
+avX
+acM
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+aiR
+aws
+aij
+aiR
+avX
+acM
 bHb
 bHb
 bHb
@@ -208791,7 +212896,7 @@ bHb
 bHb
 abE
 abw
-abz
+aum
 abz
 abz
 apI
@@ -209000,7 +213105,7 @@ bHb
 abp
 vdS
 vdS
-acS
+aiQ
 abr
 acX
 abr
@@ -209008,7 +213113,18 @@ abr
 abr
 abr
 abr
-acL
+aii
+auE
+akN
+apZ
+bHb
+bHb
+bHb
+bHb
+bHb
+ahq
+ahq
+ahq
 bHb
 bHb
 bHb
@@ -209018,23 +213134,12 @@ bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+auE
+ahq
+ahq
+ahq
+ahq
+ahq
 bHb
 bHb
 bHb
@@ -209043,7 +213148,7 @@ bHb
 bHb
 abv
 abz
-abz
+aum
 aby
 aby
 apI
@@ -209252,50 +213357,50 @@ bHb
 abp
 abp
 vdS
-acT
-aeo
+aiR
+aqC
 arM
 afe
 afc
 abW
-abW
-abW
-acM
+ahl
+ahl
+aij
+akN
+akN
+akN
 bHb
 bHb
 bHb
 bHb
 bHb
+aqd
+aqd
+aqd
+awK
+bHb
+bHb
+ahq
+ahq
+bHb
+bHb
+ahq
+bHb
+awW
+auE
+ahq
+ahq
+ahq
+ahq
+ahq
+ahq
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ahq
 abJ
 abu
-abz
+aum
 abz
 abz
 apI
@@ -209504,50 +213609,50 @@ bHb
 abp
 abp
 vdS
-acN
-afm
-aff
+aiz
+aBJ
+aBE
 aff
 afd
 acN
 acN
-acN
+aiz
 acK
 bHb
+azQ
+akN
+bHb
+bHb
+bHb
+ahq
+apZ
+ayN
+ayG
+ayB
+ayu
+akN
+ahq
+ahq
+bHb
+bHb
+ahq
+ahq
+bHb
+awX
+awE
+auE
+ahq
+ahq
+ahq
+ahq
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+ahq
 abJ
-aby
+aul
 aby
 aby
 aby
@@ -209756,40 +213861,40 @@ bHb
 abp
 vdS
 vdS
+avl
+avl
+avl
+abr
 adm
 adm
 adm
-adm
-adm
-adm
-adm
-afa
+abr
 acL
 bHb
 bHb
 bHb
 bHb
 bHb
+ahq
+ahq
+apU
 bHb
 bHb
 bHb
+akN
+akN
+ahq
 bHb
+axO
 bHb
+ahq
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+awY
+awF
+auE
+ahq
+ahq
 acR
 acN
 acN
@@ -209797,7 +213902,7 @@ acN
 acN
 acN
 acN
-acK
+aik
 vdS
 vdS
 vdS
@@ -210008,9 +214113,9 @@ bHb
 abp
 abp
 vdS
-adn
-ado
-ado
+awl
+afv
+afv
 adn
 ado
 ado
@@ -210020,27 +214125,27 @@ acL
 bHb
 bHb
 bHb
+ahq
+ahq
+ahq
+ahq
+ahq
+apU
+akN
+akN
+akN
+ahq
+ahq
 bHb
 bHb
+axO
 bHb
+ahq
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+awG
+ahq
+ahq
 acR
 acU
 abr
@@ -210049,8 +214154,8 @@ abr
 abr
 abr
 abr
-acL
-bHb
+aii
+ahq
 vdS
 bHb
 bHb
@@ -210260,15 +214365,26 @@ bHb
 abp
 abp
 vdS
+avJ
+aBK
+aAZ
 adn
+azX
 ado
-ado
-adn
-ado
-ado
-ado
+awc
 aez
-acL
+aii
+bHb
+bHb
+ahq
+ahq
+ahq
+ahq
+ahq
+ahq
+ahq
+bHb
+akN
 bHb
 bHb
 bHb
@@ -210277,32 +214393,21 @@ bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+ahq
 bHb
 acR
 acK
 acS
 abr
 abr
-adn
-adn
-adn
-adn
+avH
+akJ
+avu
+avi
 abr
 acL
-bHb
+ahq
 vdS
 abp
 abp
@@ -210512,46 +214617,46 @@ bHb
 abp
 vdS
 vdS
-adn
+akv
+afv
 ado
-ado
-adn
-ado
-ado
-ado
+aqO
+azX
+afv
+awd
 aez
-acL
+aii
+bHb
+bHb
+ahq
+azo
+ahq
+ahq
+ahq
+ahq
 bHb
 bHb
 bHb
 bHb
 bHb
+ahq
 bHb
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ahq
 bHb
 bHb
 acS
 adY
 adS
 abr
-adn
-acW
-acW
-acW
-adn
+avP
+aoN
+ado
+ado
+avj
 abr
 acL
 bHb
@@ -210764,30 +214869,30 @@ bHb
 abp
 abp
 vdS
-adn
-ado
-ado
-adn
-ado
-ado
-ado
+auY
+avn
+axx
+auX
+auQ
+afv
+aAA
 aez
-acL
+aii
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+azo
+azo
+azo
+ahq
+ahq
 bHb
 bHb
 acR
 acN
 acN
-acN
-acN
-acK
+aiz
+aiz
+aik
 bHb
 bHb
 bHb
@@ -210799,10 +214904,10 @@ acS
 adZ
 adn
 abr
+avQ
+avk
+akv
 adn
-acW
-acW
-acW
 adn
 abr
 acL
@@ -211016,46 +215121,46 @@ bHb
 abp
 abp
 vdS
+auY
+afv
+ado
 adn
-ado
-ado
-adn
-ado
-ado
-ado
+afv
+afv
+afv
 aez
-acL
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+aii
+ahq
+azR
+azv
+azv
+azo
+ahq
 bHb
 bHb
 bHb
 acS
-als
-adm
-adm
-ahr
-acL
+abr
+avl
+avl
+abr
+aii
+ahq
+axC
+axC
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
+agU
 bHb
 acS
 adZ
-ado
+afv
 abr
-adn
-acW
-acW
-acW
-adn
+abr
+abr
+abr
+avx
+akv
 abr
 acL
 bHb
@@ -211268,46 +215373,46 @@ bHb
 abp
 vdS
 vdS
+awl
+afv
+ado
 adn
-ado
-ado
-adn
-ado
-ado
-ado
+afv
+aqI
+afv
 aez
-acL
+aii
+ahq
+azR
+azv
+azv
+azp
+ahq
 bHb
 bHb
 bHb
+aiQ
+adZ
+ayv
+aym
+alI
+aii
 bHb
-bHb
+auK
+axv
 bHb
 bHb
 bHb
 bHb
 acS
-adZ
-ado
-ado
-aez
-acL
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
-adZ
-ado
+aqu
+afv
 abr
-adn
-acW
-acW
-acW
-adn
+avR
+avI
+abr
+avy
+akv
 abr
 acL
 bHb
@@ -211520,49 +215625,49 @@ bHb
 abp
 abp
 vdS
+azq
+azX
+ado
 adn
-ado
-ado
-adn
-ado
-ado
-ado
+afv
+aAP
+aqI
 aez
+aii
+ahq
+bHb
+azF
+azp
+ahq
+bHb
+bHb
+ash
+bHb
+aiQ
+adZ
+ayw
+aym
+alI
 acL
 bHb
+avo
+axv
+ahq
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
-adZ
-ado
-ado
-aez
-acL
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
-adZ
+aiO
+aqu
+alT
+add
+aml
 afq
 add
-aeD
-adn
-adn
-adn
-adn
+aml
+avk
 abr
 acL
-bHb
+ahq
 vdS
 abp
 abp
@@ -211772,40 +215877,40 @@ bHb
 abp
 abp
 vdS
+auS
+ado
+ayv
 adn
-ado
-ado
-adn
-ado
-ado
-ado
+afv
+aAQ
+aqI
 aez
-acL
+avc
+ahq
+ahq
+bHb
+bHb
+ahq
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
+ahq
+ayH
 adZ
-ado
-ado
-aez
+ayx
+afv
+alI
 acL
 bHb
+auM
+axv
+axv
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
-aea
-adO
+awH
+aiO
+aqu
+akv
 abr
 abr
 abr
@@ -211813,8 +215918,8 @@ abr
 abr
 abr
 abr
-acL
-bHb
+aii
+ahq
 vdS
 abp
 abp
@@ -212024,49 +216129,49 @@ bHb
 abp
 vdS
 vdS
+auT
+ado
+ayw
 adn
-ado
-ado
-adn
-ado
-ado
+afv
+aAR
 ado
 aez
+aAl
+awI
+ahq
+bHb
+bHb
+bHb
+bHb
+bHb
+ahq
+aqF
+ayH
+ayC
+ayy
+ado
+alI
 acL
 bHb
+abU
+apU
+ahq
+ahq
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
-adZ
-ado
-ado
-aez
-acL
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acT
+awH
+awt
+awk
+awb
+asS
+ahl
 abW
 abW
 abW
 abW
 abW
-abW
-abW
-abW
-abW
-acM
-bHb
+aij
+ahq
 vdS
 vdS
 abp
@@ -212276,49 +216381,49 @@ bHb
 abp
 abp
 vdS
+avS
+ado
+ayx
 adn
-ado
-ado
-adn
-ado
+afv
 ado
 ado
 aez
-acL
+aAl
+awI
+awI
+awI
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-acS
+aqF
+aqF
+ayH
 adZ
+ayy
 ado
-ado
-aez
+alI
 acL
 bHb
 bHb
+apZ
+ahq
+bHb
+bHb
+awI
+awu
+awk
+awb
+ahg
 bHb
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+ahq
+ahq
+ahq
 vdS
 abp
 abp
@@ -212528,49 +216633,49 @@ bHb
 abp
 abp
 vdS
+akv
+avS
+avS
 adn
-adn
-adn
-adn
-adn
-adn
-adn
+ayV
+auX
+axP
 aez
-acO
+aAm
+auF
+azS
+auF
+auF
+avB
 acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-aes
+ayO
+ayU
+ayO
+ayI
 adZ
 ado
 ado
 aez
 acO
 acN
+avB
 acN
 acN
+avB
+awJ
+awJ
+awv
+awk
+awb
+avY
 acN
 acN
+avB
 acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
-acN
+aiz
+auW
+aiz
+aiz
 vdS
 abp
 abp
@@ -212780,47 +216885,47 @@ bHb
 abp
 vdS
 vdS
-adn
-ado
-ado
-adn
-ado
-ado
+akv
+afv
 ado
 adn
+ado
+afv
+ado
+abr
+avl
+avl
+abr
+avl
+avl
+abr
 adm
 adm
+abr
 adm
 adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
+abr
 adn
 adn
+abr
+adm
+adm
+abr
+axw
+axw
+abr
+avl
+avl
+abr
 adn
 adn
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
-adm
+abr
+avl
+avl
+abr
+avl
+avl
+abr
 adm
 adm
 vdS
@@ -213032,27 +217137,18 @@ bHb
 abp
 abp
 vdS
-adn
-ado
-ado
-adn
-ado
-ado
+auY
+aBF
 ado
 adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
+afv
+afv
+avm
+auX
+auQ
+aym
+akv
+afv
 ado
 adn
 ado
@@ -213066,14 +217162,23 @@ ado
 adn
 ado
 ado
+avS
+axD
+afv
+akv
+afv
+afv
 adn
 ado
 ado
 adn
 ado
-ado
-adn
-ado
+afv
+akv
+afv
+avm
+auX
+auQ
 adn
 vdS
 abp
@@ -213284,38 +217389,29 @@ bHb
 abp
 abp
 vdS
+axG
+arI
+arI
+akv
+afv
+afv
+ado
+adn
+ado
+azX
 adn
 ado
 ado
 adn
 ado
 ado
-ado
+ayV
+axT
+auQ
 adn
 ado
 ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
+akv
 ado
 ado
 adn
@@ -213326,7 +217422,16 @@ ado
 ado
 adn
 ado
+ado
 adn
+ado
+ado
+adn
+ado
+ado
+adn
+ado
+akv
 vdS
 abp
 abp
@@ -213536,27 +217641,18 @@ bHb
 abp
 vdS
 vdS
+auY
+axF
+aBF
 adn
-ado
-ado
-adn
-ado
-ado
-ado
-adn
-ado
-ado
-adn
+afv
 ado
 ado
 adn
 ado
 ado
-adn
-ado
-ado
-adn
-ado
+akv
+afv
 ado
 adn
 ado
@@ -213567,6 +217663,18 @@ ado
 adn
 ado
 ado
+ayb
+afv
+ado
+adn
+ado
+ado
+adn
+ado
+ado
+adn
+ado
+awc
 adn
 ado
 ado
@@ -213574,11 +217682,8 @@ adn
 ado
 ado
 adn
-ado
-ado
-adn
-ado
-adn
+auR
+akv
 vdS
 vdS
 abp
@@ -213788,49 +217893,49 @@ bHb
 abp
 abp
 vdS
-adn
-adn
-ado
-adn
-ado
-ado
-ado
-adn
+auY
+auY
+aym
+aqO
 ado
 ado
-adn
+ayv
+axG
 ado
-ado
-adn
-ado
-ado
-adn
+afv
+akv
+afv
+afv
+azq
 ado
 ado
 adn
+afv
+afv
+adn
+axD
 ado
+ayc
+axS
+axS
+akJ
+axE
+axx
+auX
+auQ
 ado
 adn
 ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
+awd
 adn
 ado
 ado
 adn
-adn
-adn
+ado
+avn
+akv
+auS
+akv
 vdS
 abp
 abp
@@ -214041,47 +218146,47 @@ abp
 abp
 vdS
 vdS
-adn
-adn
-adn
+auY
+avJ
+avC
+aAZ
+ado
+ayw
+axG
+avn
+azY
+aoM
+azG
+afv
+azr
+axF
+axF
+akv
+afv
+afv
+aqH
+aqI
+ado
+ayd
+axx
+axT
+axP
+axF
+ado
+akv
+afv
+afv
+awl
+afv
+awe
+avS
 ado
 ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-ado
-ado
-adn
-adn
+akv
+avn
+avn
+akv
+auT
 vdS
 vdS
 abp
@@ -214294,45 +218399,45 @@ abp
 abp
 vdS
 vdS
+akv
+akv
+akv
+akv
+aAB
+axG
+axG
+azZ
+azH
+azH
+adn
+azs
+axG
+auY
+auY
+auY
+akv
+aqH
+aqH
+akv
+aye
 adn
 adn
 adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
-adn
+axG
+auY
+auY
+akv
+awl
+awl
+awl
+aqH
+avS
+avS
+avJ
+avC
+avz
+auY
+auY
 vdS
 vdS
 abp
@@ -216303,8 +220408,8 @@ vdS
 bHb
 bHb
 vdS
-bHb
-bHb
+avA
+avA
 vdS
 apZ
 apZ
@@ -216316,7 +220421,25 @@ ahq
 ahq
 vdS
 ahq
-ahq
+ahP
+vdS
+acL
+bHb
+vdS
+bHb
+acS
+vdS
+acL
+bHb
+vdS
+ayn
+ayn
+vdS
+axX
+axX
+vdS
+auy
+avA
 vdS
 bHb
 bHb
@@ -216324,25 +220447,7 @@ vdS
 bHb
 bHb
 vdS
-bHb
-bHb
-vdS
-bHb
-bHb
-vdS
-ahq
-ahq
-vdS
-ahq
-bHb
-vdS
-bHb
-bHb
-vdS
-bHb
-bHb
-vdS
-ahq
+avZ
 ahq
 vdS
 ahq
@@ -216366,11 +220471,11 @@ vdS
 acX
 vdS
 vdS
-ahq
-ahq
+ahg
+asV
 vdS
-ahq
-ahq
+asN
+acQ
 vdS
 vdS
 vdS
@@ -216568,33 +220673,33 @@ ahq
 ahq
 ahq
 ahq
+ahP
+aet
+acL
+bHb
+bHb
+bHb
+acS
+aet
+acL
+bHb
+bHb
+bHb
+ayn
+ayn
+axX
 ahq
-abs
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
+asT
 ahq
-ahq
-ahq
-ahq
+avA
+avA
 bHb
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
-bHb
-ahq
+awf
+asT
 ahq
 ahq
 ahq
@@ -216605,7 +220710,7 @@ apU
 apU
 apU
 ahq
-bHb
+acS
 vdS
 aou
 vdS
@@ -216617,13 +220722,13 @@ abv
 vdS
 aou
 vdS
-bHb
-bHb
-ahq
-ahq
-ahq
-ahq
-ahq
+aet
+acL
+ahe
+asV
+asO
+acQ
+acQ
 vdS
 aor
 aor
@@ -216819,7 +220924,7 @@ bHb
 bHb
 ahq
 ahq
-ahq
+axQ
 abr
 abr
 abr
@@ -216842,7 +220947,7 @@ bHb
 bHb
 bHb
 bHb
-bHb
+awK
 aaF
 aaF
 bHb
@@ -216857,25 +220962,25 @@ ahq
 ahq
 ahq
 ahq
-bHb
-acT
+acS
+aet
 apM
-acM
+atR
 abJ
-abu
+atN
 abz
 abE
 abw
-acT
+atF
 aph
-acM
-bHb
-aaF
-aaF
-ahq
-ahq
-ahq
-ahq
+atw
+aet
+acL
+acj
+ahe
+asO
+ahe
+acQ
 vdS
 abp
 abp
@@ -217062,6 +221167,7 @@ ahg
 ahq
 aaF
 aaF
+ata
 bHb
 bHb
 bHb
@@ -217069,18 +221175,17 @@ bHb
 bHb
 bHb
 bHb
-bHb
-ahq
+axQ
 abr
 abr
+aAa
 alS
-alS
-aih
-aih
-arm
-arm
-arm
-aih
+azI
+azw
+azt
+azj
+azb
+ayW
 abr
 abr
 bHb
@@ -217094,10 +221199,10 @@ bHb
 bHb
 bHb
 bHb
+awL
 aaF
 aaF
 aaF
-aaF
 bHb
 bHb
 ahq
@@ -217105,28 +221210,28 @@ ahq
 ahq
 ahq
 ahq
-ahq
-ahq
-ahq
-bHb
-bHb
-bHb
-bHb
+aiS
+aiz
+aiz
+acN
+aes
+aet
+acL
 bHb
 bHb
 abJ
 aby
 abw
-bHb
-bHb
-bHb
-bHb
-aaF
-aaF
-aaF
-aaF
 ahq
 ahq
+atD
+acS
+aet
+acL
+ata
+aaF
+asO
+ahe
 vdS
 vdS
 vdS
@@ -217301,7 +221406,7 @@ abp
 vdS
 vdS
 vdS
-bHb
+ata
 bHb
 bHb
 ahP
@@ -217321,19 +221426,19 @@ bHb
 bHb
 acR
 acN
-acN
+aAS
 abr
 abr
 agX
-alS
+aAb
 aaU
 aaU
 aih
 aih
+axe
 aih
 aih
-aih
-aih
+ayP
 abr
 abr
 acN
@@ -217357,29 +221462,29 @@ aqj
 aqg
 ahq
 ahq
+aiQ
+abr
+abr
+abr
+abr
+abr
+acL
+bHb
+bHb
+bHb
 ahq
 ahq
 ahq
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-aaF
-aaF
-aaF
-acj
-aaF
-aaF
 ahq
-ahq
+bHb
+acS
+aet
+acL
+bHb
+aaF
+asP
+ahe
+alY
 vdS
 abp
 abp
@@ -217575,7 +221680,7 @@ acT
 arD
 arB
 aef
-aeW
+aAp
 aaU
 aaU
 aaU
@@ -217607,31 +221712,31 @@ aqp
 aqo
 aqk
 aqf
+asT
+ahq
+acS
+abr
+aun
+auh
+aua
+abr
+acL
+bHb
+bHb
+bHb
+bHb
 ahq
 ahq
-ahq
-ahq
 bHb
 bHb
+acS
+aet
+acL
 bHb
 bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-ahq
-ahq
+asP
+ahe
+ahe
 vdS
 abp
 abp
@@ -217819,7 +221924,7 @@ aaF
 aaF
 aaF
 ahe
-ahe
+aBU
 ahq
 ahq
 bHb
@@ -217846,10 +221951,10 @@ ahq
 bHb
 bHb
 bHb
-aaF
-aaF
-aaF
-aaF
+axH
+axy
+axm
+axa
 aaF
 aaF
 aaF
@@ -217860,8 +221965,14 @@ aqp
 aql
 aqf
 aqf
-ahq
-ahq
+bHb
+acS
+abr
+aun
+aui
+aub
+abr
+acL
 bHb
 bHb
 bHb
@@ -217870,19 +221981,13 @@ bHb
 bHb
 bHb
 bHb
+acS
+atl
+ath
+atb
 bHb
-bHb
-bHb
-bHb
-bHb
+asP
 aaF
-aaF
-acj
-aaF
-aaF
-aaF
-bHb
-bHb
 vdS
 vdS
 vdS
@@ -218070,9 +222175,9 @@ aaF
 aaF
 aaF
 aaF
-aaF
-ahq
-ahq
+aBY
+aBR
+aBR
 bHb
 bHb
 bHb
@@ -218109,33 +222214,33 @@ ahe
 aaF
 aaF
 aqq
-aqm
+avD
 aqd
 aqd
-aqd
+acR
+aes
+abr
+auo
+acW
+auc
+abr
+acL
 bHb
 bHb
 bHb
 bHb
 bHb
-ahq
-ahq
 bHb
 bHb
 bHb
+acS
+aet
+ath
+apZ
 bHb
-bHb
-bHb
-bHb
-bHb
+asP
 aaF
-aaF
-aaF
-aaF
-bHb
-bHb
-bHb
-bHb
+acj
 vdS
 abp
 abp
@@ -218321,9 +222426,9 @@ aaF
 aaF
 aaF
 aaF
-aaF
-aaF
-bHb
+aBY
+aBY
+aBV
 bHb
 bHb
 bHb
@@ -218350,7 +222455,7 @@ bHb
 bHb
 aaF
 aaF
-aaF
+anW
 acj
 aaF
 ahe
@@ -218364,30 +222469,30 @@ aaF
 aqm
 aqh
 apZ
-aqe
-bHb
-bHb
-bHb
-bHb
-ahq
-ahq
-ahq
-ahq
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-bHb
-ahq
-ahq
-ahq
+auZ
+auU
+add
+aeD
+auj
+aud
+abr
+acL
 ahq
 bHb
 bHb
 bHb
 bHb
+bHb
+bHb
+bHb
+ahP
+atm
+ati
+atc
+asW
+asQ
+anW
+aaF
 vdS
 abp
 abp
@@ -218574,8 +222679,8 @@ aaF
 aaF
 aaF
 aaF
-aaF
-bHb
+aBY
+akO
 bHb
 bHb
 bHb
@@ -218583,7 +222688,7 @@ ahO
 arF
 arC
 aef
-apH
+aAq
 aih
 aih
 aih
@@ -218616,29 +222721,29 @@ aaF
 aqh
 aqh
 aaF
-bHb
-bHb
-bHb
-bHb
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-bHb
-bHb
-bHb
-bHb
-bHb
-ahq
-ahq
+acT
+acV
 abr
 abr
 abr
 abr
+abr
+aii
+ahq
+ahq
 bHb
 bHb
+bHb
+bHb
+bHb
+ahq
+atx
+abr
+abr
+abr
+abr
+asR
+acK
 vdS
 vdS
 vdS
@@ -218836,16 +222941,16 @@ arG
 abr
 abr
 abr
+aAn
 aih
 aih
 aih
-aih
-aih
+azx
 abr
 abr
 aih
 aih
-agT
+ayQ
 abr
 abr
 aqX
@@ -218869,13 +222974,13 @@ aaF
 aaF
 aaF
 bHb
-bHb
-bHb
-bHb
-ahq
-ahq
-ahq
-ahq
+acT
+abW
+abW
+abW
+abW
+atX
+atT
 ahq
 ahq
 bHb
@@ -218886,11 +222991,11 @@ bHb
 ahq
 abr
 abr
-aoK
-ajA
+atj
+atd
 abr
 abr
-bHb
+acL
 bHb
 vdS
 abp
@@ -219089,7 +223194,7 @@ abr
 abr
 abr
 abr
-aih
+aAc
 all
 aih
 abr
@@ -219124,10 +223229,10 @@ bHb
 bHb
 bHb
 ahq
-ahq
-ahq
-ahq
-ahq
+bHb
+bHb
+atY
+atU
 ahq
 ahq
 bHb
@@ -219137,12 +223242,12 @@ bHb
 ahq
 ahq
 abr
-aoK
-aoK
-ajl
-ajl
+atn
+ajA
+ate
+asX
 abr
-bHb
+acL
 bHb
 vdS
 abp
@@ -219321,7 +223426,7 @@ aim
 ahX
 ahS
 acL
-bHb
+ata
 bHb
 aaF
 aaF
@@ -219333,7 +223438,7 @@ bHb
 bHb
 bHb
 bHb
-ahP
+aBL
 abr
 acX
 abr
@@ -219373,28 +223478,28 @@ ahq
 ahq
 bHb
 bHb
+ata
 bHb
 ahq
 ahq
-ahq
-ahq
-ahq
-ahq
-ahq
+bHb
+atY
+atU
+asT
 bHb
 bHb
 bHb
-bHb
+alB
 ahq
 ahq
 ahq
 abr
-aoK
+atn
 ajl
 ajl
-ajl
+asX
 abr
-bHb
+acL
 vdS
 vdS
 vdS
@@ -219569,7 +223674,7 @@ ajs
 aje
 afB
 afB
-ain
+aCR
 ahY
 ahS
 acL
@@ -219593,9 +223698,9 @@ abr
 abr
 abr
 abr
-alS
-aec
-aaU
+aAd
+azT
+azJ
 abr
 abr
 abr
@@ -219623,15 +223728,15 @@ ahq
 ahq
 ahq
 bHb
+auK
 bHb
 bHb
 ahq
 ahq
 ahq
 ahq
-ahq
-aiS
-aiz
+atZ
+atV
 acN
 acN
 acN
@@ -219641,12 +223746,12 @@ aiz
 aiz
 aiz
 abr
-aod
+ato
 ajl
 ajl
 aoK
 abr
-bHb
+acL
 ahq
 vdS
 abp
@@ -219818,7 +223923,7 @@ vdS
 vdS
 vdS
 ajt
-afB
+aDg
 afB
 ain
 ain
@@ -219838,7 +223943,7 @@ acN
 arU
 abr
 abr
-aqy
+aBG
 aih
 ahc
 abr
@@ -219848,13 +223953,13 @@ agY
 alS
 aaU
 aaU
-aaU
+avF
 abr
 abr
 ahN
 ahN
 ahz
-ahA
+ayJ
 bHb
 bHb
 bHb
@@ -219875,7 +223980,7 @@ ahq
 bHb
 bHb
 bHb
-bHb
+avo
 bHb
 ahq
 ahq
@@ -219887,18 +223992,18 @@ abr
 apG
 apl
 apl
-aoJ
-aoJ
+abr
+abr
 aoJ
 aoJ
 aoJ
 abr
-ajl
+atp
 ajl
 ajA
-aoK
+asY
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -220081,21 +224186,21 @@ ahq
 ahq
 ahq
 bHb
-bHb
-bHb
+awf
+aCj
 bHb
 bHb
 acT
 adk
 arB
 aef
-aeW
+aAp
 aaU
 aaU
 arm
 ahb
-aqy
-arm
+aAC
+aAr
 alS
 aaU
 aaU
@@ -220122,12 +224227,12 @@ bHb
 bHb
 bHb
 bHb
+ata
 bHb
 bHb
 bHb
 bHb
-bHb
-bHb
+auM
 bHb
 bHb
 ahq
@@ -220146,11 +224251,11 @@ aih
 abr
 abr
 aoZ
-ajA
-aoK
-aod
+atk
+atf
 abr
-ahq
+abr
+ahg
 vdS
 vdS
 vdS
@@ -220329,13 +224434,13 @@ ain
 ahZ
 ahS
 aqR
+auy
 ahq
 ahq
 ahq
 ahq
-ahq
-bHb
-bHb
+axO
+aCi
 bHb
 bHb
 aqA
@@ -220381,9 +224486,9 @@ ahq
 ahq
 bHb
 bHb
-bHb
-apZ
-apU
+acR
+asW
+aup
 apU
 ahq
 acR
@@ -220402,7 +224507,7 @@ abr
 abr
 abr
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -220573,16 +224678,16 @@ abp
 vdS
 vdS
 vdS
-ajf
+aDm
 ain
 afB
-ain
+aCR
 aio
 aia
 ahS
 aqR
 aqf
-ahq
+auy
 ahq
 ahq
 ahq
@@ -220632,13 +224737,13 @@ aiS
 aiz
 aiz
 aik
-bHb
-bHb
+acR
+acU
 abr
-apZ
-apU
-apU
-acS
+auq
+atc
+atc
+acU
 abr
 apH
 aih
@@ -220648,13 +224753,13 @@ aaU
 abr
 abr
 abr
-abr
+aty
 adr
 adn
 aoR
 aoL
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -220865,17 +224970,17 @@ acK
 bHb
 bHb
 bHb
+ata
 bHb
-bHb
-bHb
-bHb
+auw
+auw
 bHb
 bHb
 bHb
 bHb
 ahq
 ahq
-aiQ
+aww
 aqn
 afa
 adK
@@ -220884,7 +224989,7 @@ aqs
 aqn
 aqi
 aii
-ahq
+ahP
 abr
 abr
 abr
@@ -220900,13 +225005,13 @@ abr
 abr
 abr
 abr
-abr
+atz
 adn
 acW
 aoS
 aoM
 abr
-ahq
+ahg
 vdS
 vdS
 vdS
@@ -221088,7 +225193,7 @@ aqR
 ahq
 ahq
 ahq
-ahq
+asT
 ahq
 ahq
 ahq
@@ -221098,17 +225203,17 @@ abW
 abW
 abr
 abr
-arm
-arm
+azy
+aBq
 aaU
+agT
+atu
 aaU
-aaU
-aaU
-aaU
-aaU
+aAe
+aAe
 aih
-arm
-arm
+azK
+azy
 abr
 abr
 abW
@@ -221119,15 +225224,15 @@ bHb
 bHb
 bHb
 ahq
-ahq
-ahq
-ahq
+axQ
+axQ
+axQ
 acR
 acN
 aiz
 aiz
-aiz
-afT
+awM
+awx
 aqu
 akv
 ado
@@ -221136,8 +225241,8 @@ ado
 akv
 alI
 aii
-ahq
-bHb
+auG
+acV
 abr
 abr
 apX
@@ -221153,12 +225258,12 @@ abr
 abr
 abr
 abr
-adn
+atq
 aoV
 aoS
 aoM
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -221348,7 +225453,7 @@ bHb
 bHb
 bHb
 bHb
-bHb
+ata
 abr
 abr
 ahd
@@ -221363,7 +225468,7 @@ agV
 abr
 abr
 bHb
-bHb
+azc
 bHb
 bHb
 bHb
@@ -221381,15 +225486,15 @@ abr
 abr
 abr
 amj
-akv
+avk
 aqt
 aly
 aly
-adn
+avE
 alI
 aii
-bHb
-bHb
+ata
+acS
 abr
 aqa
 ann
@@ -221402,15 +225507,15 @@ amk
 alT
 add
 aps
-ank
+atG
 api
 abr
-adn
+atr
 aoV
 aoS
 aoM
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -221582,9 +225687,9 @@ abp
 vdS
 abr
 aii
-ahq
+aDh
 amm
-bHb
+aCX
 acS
 acZ
 abr
@@ -221613,9 +225718,9 @@ abr
 abr
 abr
 abr
+auw
 bHb
-bHb
-bHb
+azd
 bHb
 bHb
 bHb
@@ -221628,8 +225733,8 @@ aet
 aet
 aet
 abr
-alR
-alR
+axn
+axb
 alR
 abr
 acX
@@ -221641,7 +225746,7 @@ abr
 abr
 acL
 bHb
-bHb
+acS
 abr
 aqb
 ann
@@ -221653,7 +225758,7 @@ apE
 akF
 akv
 abr
-apk
+atI
 apm
 api
 abr
@@ -221662,7 +225767,7 @@ akF
 akF
 aoN
 abr
-ahq
+ahg
 vdS
 vdS
 vdS
@@ -221839,12 +225944,12 @@ bHb
 acR
 acU
 acZ
-aih
+azx
 abr
-akv
-akv
-akv
-ahr
+aCr
+aCr
+aCr
+ahR
 asc
 bHb
 bHb
@@ -221862,47 +225967,47 @@ aqh
 aqh
 aqh
 aqh
-acj
+azU
 aaF
+azz
+auw
 bHb
-bHb
-bHb
-bHb
+aze
 bHb
 bHb
 ahq
 aiQ
 abr
-akJ
+ayo
 adn
 aqH
 aqH
 alE
-alE
+axI
 abr
+awm
 aih
-aih
-alS
+awN
 abr
 alK
+avF
 aaU
 aaU
 aaU
-aaU
-aaU
+avF
 abr
 acL
 bHb
-ahq
+ahP
 abr
-aqb
+aur
 apY
-apW
+aue
 add
 apR
 abr
-adn
-akF
+abr
+atO
 akv
 abr
 abr
@@ -221914,7 +226019,7 @@ akv
 amj
 amj
 abr
-bHb
+acL
 ahq
 vdS
 abp
@@ -222091,12 +226196,12 @@ adA
 ads
 acY
 aih
-aih
+asZ
 abr
 asi
-akv
-ado
-aez
+aCr
+aCs
+aCo
 ase
 aql
 bHb
@@ -222104,22 +226209,22 @@ bHb
 ahq
 ahq
 ahq
-ahq
+ayK
 ahq
 ahq
 aaF
 acj
-aaF
+anW
 aqh
 aqh
 aqh
 aaF
-aaF
+axg
 bHb
-bHb
-bHb
-bHb
-bHb
+azd
+auw
+auw
+ata
 bHb
 bHb
 ahq
@@ -222143,9 +226248,9 @@ adB
 adu
 aaU
 abr
-acL
-ahq
-ahq
+avq
+avb
+auV
 abr
 abr
 acX
@@ -222153,10 +226258,10 @@ abr
 abr
 abr
 abr
-adn
+atQ
 acW
 akF
-akv
+atL
 abr
 abr
 abr
@@ -222166,7 +226271,7 @@ abr
 acX
 acX
 abr
-bHb
+acL
 bHb
 vdS
 abp
@@ -222337,39 +226442,39 @@ abp
 abp
 vdS
 abr
+aix
+atu
 aaU
 aaU
 aaU
-aaU
-aaU
-aih
-aih
+asZ
+asZ
 abr
-asj
-ado
-ado
-aez
+aCz
+aCt
+aCt
+aCo
 ase
 arZ
 bHb
 ahq
 ahq
 ahq
+ayK
+ayK
+ayK
 ahq
 ahq
-ahq
-ahq
-ahq
 aaF
 aaF
 aaF
 aaF
 aaF
 aaF
+ahC
 bHb
-bHb
-bHb
-bHb
+aze
+auw
 bHb
 bHb
 bHb
@@ -222384,11 +226489,11 @@ adn
 akv
 akv
 abr
-aih
+axo
 aaU
 aqx
 abr
-aih
+awm
 aih
 aaU
 adC
@@ -222397,28 +226502,28 @@ aaU
 abr
 acL
 ahq
-ahq
+ahP
 abr
-aoM
+aus
 amk
+auf
 akv
 akv
-akv
-adn
+atS
 acW
 acW
 acW
 akF
-akv
+apT
 akF
 acW
 acW
-akF
+apT
 akv
 aoO
 aoO
 abr
-bHb
+acL
 vdS
 vdS
 vdS
@@ -222590,17 +226695,17 @@ abp
 vdS
 abr
 abr
-aaU
+aix
 adq
 aaU
-aaU
-aih
+aCS
+asZ
 abr
 abr
 abr
-ado
-ado
-aez
+aCt
+aCt
+aCo
 asc
 arZ
 bHb
@@ -222608,9 +226713,9 @@ ahq
 ahq
 ahq
 ahq
-ahq
-ahq
-ahq
+ayK
+ayK
+ayK
 bHb
 bHb
 bHb
@@ -222618,14 +226723,14 @@ aaF
 aaF
 aaF
 bHb
-bHb
+ahC
 ahq
 ahq
 bHb
 bHb
 bHb
 ahq
-ahq
+asT
 ahq
 aiQ
 aet
@@ -222637,7 +226742,7 @@ abW
 acV
 abr
 all
-aqx
+axc
 aqx
 abr
 alL
@@ -222649,7 +226754,7 @@ aaU
 abr
 acL
 ahq
-ahq
+ahP
 abr
 aoM
 akF
@@ -222660,17 +226765,17 @@ adn
 acW
 apA
 apx
-apw
-apt
 acW
-acW
-acW
-acW
+abr
+atH
+atE
+atA
+abr
 aoW
 aoT
 aoP
 abr
-ahq
+ahg
 bHb
 vdS
 abp
@@ -222850,18 +226955,18 @@ abr
 abr
 abr
 abr
-ado
-ado
-alI
+aCt
+aCt
+aCp
 ase
 bHb
 ahq
 arX
+asT
 ahq
 ahq
 ahq
-ahq
-ahq
+ayK
 bHb
 bHb
 bHb
@@ -222870,14 +226975,14 @@ bHb
 aaF
 bHb
 ahq
-ahq
+ahG
 ahq
 ahq
 ahq
 bHb
 bHb
 ahq
-ahq
+ayK
 ahq
 aiQ
 aet
@@ -222901,13 +227006,13 @@ aaU
 abr
 acL
 ahq
-ahq
+ahP
 abr
 abr
-akv
-acW
-acW
+abr
 adn
+adn
+abr
 abr
 abr
 acX
@@ -222922,7 +227027,7 @@ abr
 aoU
 aoQ
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -223094,17 +227199,17 @@ abp
 vdS
 abr
 abr
-akv
+auf
 adr
 akv
-akv
-akv
+auf
+awl
 abr
 abr
 abr
-ado
-ado
-alI
+aCt
+aCt
+aCp
 acL
 abU
 ahq
@@ -223117,20 +227222,20 @@ bHb
 bHb
 bHb
 bHb
+ayN
+ayG
+ayB
+ahq
+ahq
+ahG
+ahq
+ahq
+ahq
 bHb
-bHb
-bHb
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-bHb
-ahq
-ahq
-ahq
-ahq
+ayK
+ayK
+ayK
+ayK
 aiQ
 aet
 aii
@@ -223141,8 +227246,8 @@ aqe
 aqD
 abr
 alK
-alR
-alR
+axd
+awO
 abr
 adn
 ahr
@@ -223153,7 +227258,7 @@ aih
 abr
 acL
 ahq
-ahq
+ahP
 abr
 abr
 aoa
@@ -223174,7 +227279,7 @@ abr
 abr
 abr
 abr
-ahq
+ahg
 vdS
 vdS
 vdS
@@ -223345,18 +227450,18 @@ abp
 abp
 vdS
 abr
-akv
+aDn
 akv
 acW
-acW
+aCY
 akF
 akF
 alT
 add
-aeD
-ado
-afv
-alI
+aCA
+aCt
+aCu
+aCp
 acL
 bHb
 ahq
@@ -223373,15 +227478,15 @@ bHb
 ahq
 ahq
 ahq
-ahq
-ahq
+auy
+ahG
 ahq
 ahq
 bHb
-bHb
-ahq
-ahq
-ahq
+azk
+ayK
+ayK
+ayK
 ahq
 aiQ
 aet
@@ -223392,9 +227497,9 @@ bHb
 ahq
 aqD
 abr
-aaU
-aih
-alR
+axp
+axe
+awP
 abr
 afv
 aez
@@ -223405,7 +227510,7 @@ alu
 abr
 acO
 acK
-ahq
+ahP
 abr
 abr
 aob
@@ -223417,16 +227522,16 @@ apF
 ano
 apy
 abr
+atJ
 ann
-ann
 ano
 ano
-ano
+att
 abr
 abr
 abr
 abr
-ahq
+ahg
 ahq
 vdS
 abp
@@ -223597,18 +227702,18 @@ abp
 vdS
 vdS
 abr
-akv
+aDo
 acW
 acW
-acW
+aCZ
 acW
 akv
 akv
 abr
-adn
-akv
-afv
-alI
+aCB
+aCr
+aCu
+aCp
 acL
 bHb
 ahq
@@ -223623,30 +227728,30 @@ bHb
 bHb
 ahq
 ahq
-ahq
-ahq
-ahq
-ahq
+aAs
+auy
+auy
+ahG
 ahq
 bHb
 bHb
 bHb
-ahq
-ahq
+ayK
+ayK
 ahq
 ahq
 aiQ
 aet
 aqR
-aqd
+ayf
 apZ
 bHb
 aqF
 aqD
 abr
-aaU
+axq
 aih
-alR
+awQ
 abr
 alM
 alI
@@ -223657,16 +227762,16 @@ alk
 abr
 abr
 acL
-ahq
-ahq
+auG
+auu
 abr
 abr
-aoM
+aug
 amj
-akv
+atW
 abr
 apF
-ano
+atP
 apz
 add
 apv
@@ -223677,8 +227782,8 @@ apb
 abr
 abr
 abr
-ahq
-ahq
+asS
+ahA
 bHb
 vdS
 abp
@@ -223849,18 +227954,18 @@ abp
 abp
 vdS
 abr
-akv
+aDp
 acW
 acW
-acW
+aDa
 adn
-adn
+aCP
 abr
 abr
 abr
-akv
-akv
-alI
+aCw
+aCr
+aCp
 acL
 bHb
 bHb
@@ -223870,15 +227975,15 @@ apZ
 bHb
 bHb
 bHb
+ata
 bHb
-bHb
 ahq
 ahq
 ahq
+aAt
+auy
 ahq
-ahq
-ahq
-ahq
+ahG
 bHb
 bHb
 bHb
@@ -223891,7 +227996,7 @@ aiQ
 aet
 aqS
 aqd
-aqd
+axY
 ahq
 aqF
 aqD
@@ -223910,8 +228015,8 @@ alk
 abr
 acL
 bHb
-ahq
-ahq
+auG
+auu
 abr
 abr
 acX
@@ -223928,8 +228033,8 @@ abr
 abr
 abr
 abr
-ahq
-ahq
+asS
+ahA
 bHb
 vdS
 vdS
@@ -224101,39 +228206,39 @@ abp
 abp
 vdS
 abr
-adn
-acW
+abr
+aDi
 acW
 akF
-akv
+aCc
 abr
 abr
 abr
 abr
 abr
-akv
-alI
+aCv
+aCp
 acL
 arO
 arO
-apZ
-apZ
-apZ
-apZ
-bHb
+aCe
+asW
+aBZ
+asW
+acK
 arO
 arO
+ahO
+ahh
+ahf
 ahq
-ahq
-ahq
-ahq
-ahq
+aAu
 ahq
 bHb
-bHb
+ahC
 bHb
 aaF
-aaF
+anW
 bHb
 bHb
 bHb
@@ -224141,7 +228246,7 @@ ahq
 ahq
 aiQ
 abr
-alZ
+ayp
 acN
 acN
 aiz
@@ -224163,25 +228268,25 @@ abr
 acL
 bHb
 bHb
-ahq
-aiQ
+auv
+auk
 aet
 agO
 alj
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
-ahq
+aqX
+atK
+atK
+atK
+atK
+atK
+aqX
+aqX
+aqX
+aqX
+aqX
+aqX
+ahA
+asT
 bHb
 bHb
 vdS
@@ -224353,45 +228458,45 @@ abp
 vdS
 vdS
 abr
-adn
+aDq
 acW
+aDd
 akF
-akF
-akv
+alE
 abr
 abr
-akv
-akv
+aCD
+aCC
 abr
 abr
 abr
 ahm
 adt
 adt
-adt
+aBr
 abr
-apZ
+aCa
 abr
+adN
 adt
 adt
-adt
-adt
+aBr
 abr
-ahq
-ahq
-bHb
-bHb
-bHb
-bHb
-aaF
-aaF
-acj
-aaF
-aaF
-bHb
-bHb
-ahq
-aiQ
+aAT
+aAF
+auH
+auH
+auH
+azV
+avU
+azA
+azu
+azl
+avU
+auH
+auH
+avb
+ayD
 abr
 abr
 aet
@@ -224405,11 +228510,11 @@ agT
 aqy
 abr
 alP
-alI
+awg
 alD
 alz
 aih
-aaU
+avG
 all
 abr
 aii
@@ -224420,11 +228525,11 @@ acS
 aet
 aii
 ahq
+asT
 ahq
-ahq
-ahq
-bHb
-bHb
+aqF
+arZ
+arZ
 acR
 acN
 aiz
@@ -224605,22 +228710,22 @@ abp
 agQ
 vdS
 abr
-akv
+aDr
 acW
-acW
+aDe
 akF
-akv
+alE
 abr
-adn
-acW
-akv
-akv
+aCJ
+aCE
+aoN
+aCx
 abr
 abr
 asf
 arR
 arL
-arT
+aCf
 abr
 abr
 abr
@@ -224630,22 +228735,22 @@ arL
 arL
 abr
 abr
+acL
 bHb
 bHb
+aaF
+axg
+azL
+aaF
+aaF
+aaF
+aaF
+aaF
 bHb
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
 bHb
-bHb
-aiR
-ahl
-ahl
+aiQ
+ayz
+asS
 abW
 ahl
 ahl
@@ -224857,36 +228962,36 @@ agQ
 agQ
 vdS
 abr
-akv
+asj
 akF
+aDf
 acW
-acW
-akv
+alE
 abr
-adn
+aCK
 acW
 acW
-adn
+auc
 abr
 ahs
 amh
+azx
+aaU
+aCg
+aBW
+abr
+aBW
+alR
 aih
 aaU
-alR
-alR
-abr
-alR
-alR
-aih
 aaU
-aaU
-arH
+aBa
 abr
+acL
 bHb
-bHb
 aaF
 aaF
-aaF
+axg
 aaF
 ahe
 ahe
@@ -224895,25 +229000,25 @@ aaF
 aaF
 aaF
 bHb
-bHb
-bHb
-bHb
+acT
+abW
+acM
 bHb
 bHb
 ahq
 ahq
-ahq
+asT
 aiR
 ahl
-ahl
+axf
 afO
 alQ
 alE
-alE
+awh
 alE
 alA
 adn
-adn
+atS
 alm
 afE
 aij
@@ -224922,7 +229027,7 @@ bHb
 bHb
 acS
 aet
-aii
+aqS
 ahq
 bHb
 bHb
@@ -224933,13 +229038,13 @@ adk
 aeW
 ali
 ali
-aaU
+atu
 aoI
 aoI
 aih
 aih
 aih
-aoI
+anK
 vdS
 abp
 abp
@@ -225109,8 +229214,8 @@ agQ
 vdS
 vdS
 abr
-akv
-akF
+abr
+aDj
 acW
 acW
 afq
@@ -225118,27 +229223,27 @@ add
 aml
 acW
 acW
-adn
+aCy
 abr
 alC
-aih
+aCl
 asa
 aaU
 aih
-alR
+axU
 abr
 alR
-aih
+azx
 aaU
 aaU
 aaU
 aih
 abr
+acL
 bHb
-bHb
-aaF
-aaF
-aaF
+aAf
+aAf
+axg
 ahe
 arv
 arv
@@ -225150,20 +229255,20 @@ aaF
 bHb
 bHb
 bHb
+auK
 bHb
 bHb
 bHb
 bHb
 bHb
 bHb
-bHb
-ahq
+ahG
 aiQ
 alQ
 alJ
 alJ
 alF
-ado
+avT
 ado
 ado
 alp
@@ -225174,8 +229279,8 @@ bHb
 bHb
 acS
 aet
-aii
-ahq
+aqS
+aqF
 ahq
 ahq
 bHb
@@ -225183,15 +229288,15 @@ bHb
 acR
 adl
 aeW
+atB
+atB
+atv
 ali
-ali
-aaU
-ali
-ali
+atg
+asZ
 aih
-aih
-aih
-aoI
+alz
+anK
 vdS
 abp
 abp
@@ -225361,88 +229466,88 @@ abp
 abp
 vdS
 abr
-akv
+asj
 akF
 acW
 acW
-adn
+aCT
 abr
-akv
+aCL
 akF
 acW
-adn
+aty
 abr
 alC
-aih
+aCm
 agT
 aaU
 aaU
-aih
+aCb
 abr
 alR
 aih
 arH
 aaU
-aaU
-aih
+aBs
+aBb
 abr
-bHb
-aaF
-aaF
+acL
+aAf
+aAf
 vdS
-alV
+azW
 ahe
 vdS
 arv
 arv
 vdS
 ahe
-ahe
+ayR
 vdS
 bHb
 vdS
 bHb
-bHb
+avo
 bHb
 bHb
 bHb
 aaF
 aaF
 bHb
-bHb
+ahC
 aiQ
 alQ
 alF
-ado
+avT
 ado
 ado
 ado
 alv
 alq
 aii
-ahq
+asT
 ahq
 bHb
 bHb
 acS
 vdS
-aii
-ahq
+aqS
+aqF
 vdS
 ahq
 ahq
 vdS
-acT
+atM
 acV
 vdS
-ali
-ali
+atB
+atC
 vdS
-ali
-ali
+atg
+atg
 vdS
-ali
-aoI
+asU
+anK
 vdS
 vdS
 vdS
@@ -225613,55 +229718,55 @@ abp
 abp
 vdS
 abr
-akv
-akF
+aDs
+aDk
 akF
 acW
-adn
+aCU
 abr
-akv
+aCM
+aCF
 akF
-akF
-adn
+auj
 abr
 alC
-aaU
+aCn
 agT
 arY
 aaU
-aih
+aCb
 abr
-aih
+awm
 aaU
 aaU
 aaU
-aih
-aih
+azx
+aBb
 abr
+acL
+aAf
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+vdS
+auM
+bHb
 bHb
 aaF
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-vdS
-bHb
-bHb
-bHb
 aaF
 aaF
 aaF
-aaF
-bHb
+ahC
 acS
 aea
 adO
@@ -225865,14 +229970,14 @@ abp
 vdS
 vdS
 abr
-akv
+aDt
+aCF
 akF
-akF
-acW
-adn
+aDb
+aCV
 abr
 abr
-akv
+alE
 amj
 abr
 abr
@@ -225890,7 +229995,7 @@ aaU
 amb
 alL
 abr
-bHb
+ahg
 vdS
 vdS
 vdS
@@ -225913,7 +230018,7 @@ aaF
 aaF
 aaF
 aaF
-bHb
+ahC
 acT
 abW
 abW
@@ -226118,9 +230223,9 @@ abp
 vdS
 abr
 abr
-akv
+aDl
 akF
-adn
+aDc
 abr
 abr
 abr
@@ -226142,8 +230247,8 @@ amb
 amc
 ama
 abr
-bHb
-bHb
+ahg
+aAv
 vdS
 afN
 afN
@@ -226159,13 +230264,13 @@ afN
 afN
 vdS
 bHb
+ata
 bHb
-bHb
 aaF
 aaF
 aaF
 aaF
-aaF
+axg
 bHb
 bHb
 bHb
@@ -226179,7 +230284,7 @@ ahq
 bHb
 bHb
 bHb
-bHb
+auw
 vdS
 afN
 afN
@@ -226376,26 +230481,26 @@ abr
 abr
 abr
 abr
-afv
+aCG
 amk
 abr
 abr
-adn
-adn
+axW
+afa
 adU
 afi
-adn
-akv
+als
+aCc
 abr
-adn
-adn
+axW
+afa
 adU
 amd
-adn
+als
 adn
 abr
-bHb
-bHb
+ahg
+aAv
 vdS
 afN
 afN
@@ -226417,10 +230522,10 @@ aaF
 aaF
 acj
 aaF
+axg
 aaF
 aaF
-aaF
-bHb
+ata
 bHb
 bHb
 bHb
@@ -226430,8 +230535,8 @@ ahq
 ahq
 bHb
 bHb
-bHb
-bHb
+auw
+auw
 vdS
 afN
 afN
@@ -226627,26 +230732,26 @@ acX
 abr
 abr
 abr
-ado
-ado
+aCN
+aCH
 akv
 alT
 add
 aeD
 adn
-adn
-adn
+adm
+adm
 akv
 alT
 add
 aeD
 adn
-adn
-adn
+adm
+adm
 adn
 akJ
 abr
-bHb
+ahg
 vdS
 vdS
 vdS
@@ -226669,7 +230774,7 @@ ahe
 aaF
 aaF
 aaF
-aaF
+axg
 aaF
 aaF
 aaF
@@ -226682,7 +230787,7 @@ ahq
 bHb
 bHb
 bHb
-bHb
+auw
 vdS
 vdS
 vdS
@@ -226876,30 +230981,30 @@ abr
 abr
 abr
 amk
-afv
-afv
-ado
-ado
+aCW
+aCW
+aCQ
+aCH
 adn
 akv
 abr
 abr
-asg
-ado
+aCq
+aBN
 ado
 afv
 arP
-arP
+aCd
 abr
+aBX
 arS
-arS
-ado
+aBN
 ado
 arI
-arI
+aBc
 abr
-bHb
-ahq
+aAG
+aAw
 vdS
 afN
 afN
@@ -226914,28 +231019,28 @@ afN
 afN
 afN
 vdS
-ahq
-ahq
-ahe
-ahe
-ahe
-ahe
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-bHb
-bHb
-ahq
-bHb
-bHb
-bHb
-bHb
-ahq
+ayg
+avb
+axz
+axz
+axz
+axz
+avU
+axi
+avU
+avU
+avU
+avU
+avU
+avU
+auH
+auH
+avb
+auH
+auH
+auH
+auH
+aux
 vdS
 afN
 afN
@@ -227126,32 +231231,32 @@ abp
 vdS
 abr
 abr
+awl
+alE
+alE
 akv
 akv
-akv
-akv
-akv
-akv
-adn
+aCO
+aCI
 abr
 abr
 abr
 abr
 asg
+aCk
 arP
-arP
-arP
+aCh
 abr
 abr
 abr
 arS
-arS
+aBO
 arP
-arI
+aBt
 abr
 abr
-ahq
-ahq
+aAI
+aAw
 vdS
 afN
 afN
@@ -227166,14 +231271,14 @@ afN
 afN
 afN
 vdS
-ahq
-ahq
-ahe
-ahe
+axB
+axB
+axJ
+axJ
 alV
 ahe
 aaF
-aaF
+axg
 aaF
 aaF
 aaF
@@ -227186,8 +231291,8 @@ bHb
 bHb
 bHb
 bHb
-ahq
-ahq
+auy
+auy
 vdS
 afN
 afN
@@ -227402,7 +231507,7 @@ abr
 abr
 abr
 abr
-ahq
+aAI
 vdS
 vdS
 vdS
@@ -227419,13 +231524,13 @@ afN
 vdS
 vdS
 vdS
-ahq
-ahq
+axB
+axB
+axJ
+axJ
 ahe
 ahe
-ahe
-ahe
-aaF
+axg
 aaF
 acj
 aaF
@@ -227438,7 +231543,7 @@ bHb
 bHb
 bHb
 ahq
-ahq
+auy
 vdS
 vdS
 vdS
@@ -227670,14 +231775,14 @@ afN
 afN
 afN
 vdS
-ahq
-ahq
-ahq
-ahq
+axB
+axB
+axB
+axB
+axJ
 ahe
-ahe
 aaF
-aaF
+axg
 aaF
 aaF
 aaF
@@ -227691,7 +231796,7 @@ bHb
 bHb
 ahq
 ahq
-ahq
+asT
 vdS
 afN
 afN
@@ -227922,21 +232027,21 @@ afN
 afN
 afN
 vdS
-ahq
-ahq
-ahq
-ahq
+axB
+axB
+axB
+axB
+axK
+axA
+aaF
+axg
+aaF
+aaF
+aaF
+aaF
 bHb
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
-aaF
 bHb
-bHb
-bHb
+ata
 bHb
 bHb
 bHb
@@ -228175,13 +232280,13 @@ afN
 vdS
 vdS
 vdS
-ahq
-ahq
+axB
+axB
 vdS
-ahq
-ahq
+axB
+axB
 vdS
-aaF
+axg
 aaF
 vdS
 aaF
@@ -228190,10 +232295,10 @@ vdS
 bHb
 bHb
 vdS
-bHb
-ahq
+avA
+auy
 vdS
-ahq
+asT
 ahq
 vdS
 vdS
