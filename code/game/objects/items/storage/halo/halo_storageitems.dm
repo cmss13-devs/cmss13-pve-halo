@@ -294,6 +294,17 @@
 // BOXES
 //======================
 
+/obj/item/storage/box/personalcase/unsc
+	name = "UNSC requisitioned weapon case"
+	desc = "A secure case with a lock containing someone's requisitioned weapon."
+	icon = 'icons/halo/obj/items/storage/kits.dmi'
+
+/obj/item/storage/box/personalcase/unsc/assign_owner(new_owner)
+	owner = new_owner
+	name = "\improper [owner]'s UNSC requisitioned weapon case"
+	desc = "A secure case with a lock containing [owner]'s requisitioned weapon."
+
+
 /obj/item/storage/unsc_speckit
 	name = "UNSC specialist kit box"
 	desc = "An unlabeled, unmarked specialist equipment box. You can only wonder as to what the contents are."
