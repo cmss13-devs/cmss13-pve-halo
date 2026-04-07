@@ -664,9 +664,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
-"bM" = (
-/turf/closed/wall/unsc/reinforced/hull,
-/area/space)
 "bN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -2013,6 +2010,7 @@
 /area/dark_was_the_night/briefing/one)
 "pE" = (
 /obj/structure/machinery/door/airlock/hatch/colony,
+/obj/structure/halo_droppod/start_open,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/pod_bay)
 "pJ" = (
@@ -2281,7 +2279,7 @@
 "sF" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 2;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper General Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -2711,16 +2709,6 @@
 /area/dark_was_the_night/briefing/two)
 "xh" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	pixel_x = -6;
-	pixel_y = 13;
-	layer = 3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	layer = 3.1;
-	pixel_x = -6;
-	pixel_y = 20
-	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	layer = 3.2
 	},
@@ -3124,7 +3112,7 @@
 "BM" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper Specialist Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -3161,15 +3149,6 @@
 "Cl" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/dark_was_the_night/ready_bay)
-"Cn" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_y = 28;
-	id = "ship_armory2";
-	name = "armory shutters control";
-	req_one_access_txt = "19;12"
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/armory)
 "Cs" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3456,9 +3435,7 @@
 /area/dark_was_the_night/lower_hallway)
 "FW" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
-	pixel_x = -9
-	},
+/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "FX" = (
@@ -3785,14 +3762,6 @@
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
 	pixel_x = -7;
 	pixel_y = 8
-	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 16;
-	pixel_y = 10
-	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 15;
-	pixel_y = 4
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -4125,7 +4094,7 @@
 "MT" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper RTO Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -7436,7 +7405,7 @@ Vl
 Vl
 Ld
 AZ
-bM
+AZ
 rR
 rR
 rR
@@ -7588,7 +7557,7 @@ Qn
 DP
 Mc
 av
-bM
+AZ
 rR
 rR
 rR
@@ -7740,7 +7709,7 @@ cm
 fE
 fA
 Vl
-bM
+AZ
 rR
 rR
 rR
@@ -7892,7 +7861,7 @@ cm
 fE
 wu
 sr
-bM
+AZ
 rR
 rR
 rR
@@ -11399,7 +11368,7 @@ qL
 Be
 nG
 qV
-Cn
+nG
 Be
 qL
 GV

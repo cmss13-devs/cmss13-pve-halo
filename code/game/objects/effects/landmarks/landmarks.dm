@@ -607,3 +607,8 @@
 /obj/effect/landmark/personal_weapon/Destroy()
 	GLOB.personal_weapon -= src
 	return ..()
+
+/obj/effect/landmark/droppod
+	name = "Droppod LZ Point"
+	invisibility_value = SEE_INVISIBLE_OBSERVER
+	icon_state = "o_green"

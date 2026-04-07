@@ -76,7 +76,7 @@
 
 		return FALSE
 
-	if(ishuman(user) && ishuman_strict(target) && user.a_intent == INTENT_GRAB && user.zone_selected == "mouth")
+	if(ishuman(user) && ishuman(target) && user.a_intent == INTENT_GRAB && user.zone_selected == "mouth")
 		var/mob/living/carbon/human/human_target = target
 		var/mob/living/carbon/human/human_user = user
 		if(force >= MELEE_FORCE_NORMAL && !isnull(sharp) && sharp == IS_SHARP_ITEM_ACCURATE)

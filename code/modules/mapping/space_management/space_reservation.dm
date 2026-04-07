@@ -48,6 +48,20 @@
 /datum/turf_reservation/interior
 	turf_type = /turf/open/void/vehicle
 
+/datum/turf_reservation/transit/drop_pod
+	turf_type = /turf/open/space/transit/drop_pod
+	var/list/turf/taken_turfs = list()
+
+/datum/turf_reservation/transit/drop_pod/reserve(width, height, z_size, z_reservation)
+	. = ..()
+	if(!.)
+		return
+	//make this area safe for usage by humans
+	for(var/turf/floor in reserved_turfs)
+		var/area/old_area = floor.loc
+		new /area/drop_pod_space(floor)
+		floor.change_area(old_area, floor.loc)
+
 /datum/turf_reservation/proc/Release()
 	bottom_left_turfs.Cut()
 	top_right_turfs.Cut()
