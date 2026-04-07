@@ -65,6 +65,12 @@
 	if (!ishuman(affected_atom))
 		return
 
+	if(owner.body_position == LYING_DOWN)
+		return
+
+	if(target == owner)
+		return
+
 	if (!owner.Adjacent(affected_atom))
 		return
 
@@ -120,6 +126,12 @@
 		return
 
 	if (!ishuman(affected_atom))
+		return
+
+	if(owner.body_position == LYING_DOWN)
+		return
+
+	if(target == owner)
 		return
 
 	var/distance = get_dist(owner, affected_atom)
@@ -192,9 +204,23 @@
 	if (!owner.Adjacent(affected_atom))
 		return
 
+	if(owner.body_position == LYING_DOWN)
+		return
+
+	if(target == owner)
+		return
+	var/mob/living/carbon/human/human_owner = owner
+
+	var/obj/item/I = human_owner.get_inactive_hand()
+	if(I)
+		human_owner.drop_inv_item_on_ground(I)
+
 	if(affected_atom.superstrength_interaction(owner))
 		affected_atom.superstrength_interaction(owner)
-		enter_cooldown(cooldown)
+		if(ismob(affected_atom))
+			enter_cooldown(cooldown + 5 SECONDS)
+		else
+			enter_cooldown(cooldown)
 	return ..()
 
 /mob/living/carbon/human/superstrength_interaction(mob/living/carbon/human/M)
@@ -206,6 +232,7 @@
 	Stun(0.5)
 	pulledby = M
 	M.grab_level = GRAB_CHOKE
+	step(src, get_dir(src, M))
 	return TRUE
 
 //Prying open doors
