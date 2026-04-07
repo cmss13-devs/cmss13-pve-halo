@@ -165,6 +165,7 @@
 /area/new_irvine/outskirt/indoors
 	name = "New Irvine - Outskirts Indoors"
 	icon_state = "OUTSKIRT INDOORS"
+	ceiling = CEILING_METAL
 
 /area/new_irvine/outskirt/indoors/tunnel
 	name = "New Irvine - Tunnel To Outskirts"
@@ -172,7 +173,7 @@
 	powernet_name = "New Irvine - Outskirts Tunnel"
 
 /area/new_irvine/outskirt/indoors/tunnel/outdoor
-	name = "New Irvine - Tunnel To Outskirts"
+	name = "New Irvine - Tunnel To Outskirts Outdoor"
 	ceiling = CEILING_NONE
 
 /area/new_irvine/outskirt/indoors/gasstation

@@ -112,6 +112,9 @@
 /obj/structure/machinery/power/port_gen/pacman/mrs,
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_five/indoor/bridge_interier)
+"aas" = (
+/turf/closed/wall/r_wall/bunker/hull,
+/area/new_irvine/outskirt/contruction/indoors/crackhouse)
 "aat" = (
 /turf/open/gm/river,
 /area/new_irvine/outskirt/beach/water)
@@ -406,6 +409,12 @@
 "abp" = (
 /turf/open/auto_turf/strata_grass/layer1,
 /area/new_irvine/outskirt/forest)
+"abq" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4"
+	},
+/turf/open/asphalt,
+/area/new_irvine/outskirt/contruction/indoors/crackhouse)
 "abr" = (
 /turf/closed/wall/voi,
 /area/new_irvine/outskirt/exports/indoors/prefabs)
@@ -413,6 +422,9 @@
 /obj/structure/fence,
 /turf/open/asphalt/cement,
 /area/new_irvine/outskirt/trailerpark)
+"abt" = (
+/turf/open/asphalt,
+/area/new_irvine/outskirt/contruction/indoors/crackhouse)
 "abu" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal12";
@@ -641,7 +653,7 @@
 	dir = 4
 	},
 /turf/open/floor/corsat/marked,
-/area/new_irvine/outskirt/contruction)
+/area/new_irvine/outskirt/contruction/indoors/crackhouse)
 "aca" = (
 /obj/structure/surface/table/reinforced/black,
 /obj/effect/decal/cleanable/dirt,
@@ -5698,7 +5710,7 @@
 	dir = 4
 	},
 /turf/open/floor/plating/asteroidfloor,
-/area/new_irvine/outskirt/contruction)
+/area/new_irvine/outskirt/contruction/indoors/crackhouse)
 "aph" = (
 /obj/structure/platform_decoration{
 	dir = 1
@@ -16643,10 +16655,6 @@
 "aQE" = (
 /turf/open/asphalt/cement/cement3,
 /area/new_irvine/outskirt/forest/road)
-"aQF" = (
-/obj/structure/machinery/door/airlock/voi/colony/autoname,
-/turf/open/floor/corsat/marked,
-/area/new_irvine/outskirt/contruction)
 "aQG" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 8
@@ -231103,17 +231111,17 @@ abp
 agQ
 agQ
 agQ
-aOJ
+aas
 aee
-aOJ
+aas
 aRg
 aRw
 aRg
 aRw
 aRf
-aOJ
+aas
 aee
-aOJ
+aas
 abp
 abp
 abp
@@ -231354,18 +231362,18 @@ abp
 aOE
 agQ
 agQ
-aOJ
-aOJ
-aQF
-aOJ
+aas
+aas
+aPr
+aas
 abZ
 abZ
 abZ
 abZ
 abZ
-aOJ
-aQF
-aOJ
+aas
+aPr
+aas
 aOJ
 abp
 abp
@@ -231606,18 +231614,18 @@ aOJ
 aOJ
 aOJ
 aOJ
-aOJ
-aOJ
+aas
+aas
 apg
-aOJ
-aRj
-aRx
-aRj
-aRx
-aRj
-aOJ
+aas
+abq
+abt
+abq
+abt
+abq
+aas
 apg
-aOJ
+aas
 aOJ
 aOJ
 aOJ
@@ -231858,18 +231866,18 @@ aSF
 aOJ
 aSF
 aSF
-aOJ
-aOJ
-aQF
-aOJ
+aas
+aas
+aPr
+aas
 abZ
 abZ
 abZ
 abZ
 abZ
-aOJ
-aQF
-aOJ
+aas
+aPr
+aas
 aOJ
 ahg
 asV
@@ -232111,17 +232119,17 @@ aSF
 aSF
 aOT
 aQu
-aOJ
+aas
 aou
-aOJ
+aas
 aRj
 aRx
 aRx
 aRx
 aRj
-aOJ
+aas
 aou
-aOJ
+aas
 aQf
 aOY
 ahe
