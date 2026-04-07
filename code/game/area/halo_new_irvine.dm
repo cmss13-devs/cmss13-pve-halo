@@ -149,3 +149,136 @@
 	ceiling = CEILING_METAL
 //
 
+/area/new_irvine/outskirt
+	name = "New Irvine Outskirts OOB"
+	icon_state = "OUTSKIRT OOB"
+	powernet_name = "New Irvine - Outskirts"
+
+/area/new_irvine/outskirt/beach
+	name = "New Irvine Outskirts - Beach"
+	icon_state = "BEACH - OUTSKIRT"
+
+/area/new_irvine/outskirt/beach/water
+	name = "New Irvine Outskirts - Water"
+	icon_state = "BEACH - OUTSKIRT"
+
+/area/new_irvine/outskirt/indoors
+	name = "New Irvine - Outskirts Indoors"
+	icon_state = "OUTSKIRT INDOORS"
+
+/area/new_irvine/outskirt/indoors/tunnel
+	name = "New Irvine - Tunnel To Outskirts"
+	icon_state = "TUNNEL OUTSKIRT"
+	powernet_name = "New Irvine - Outskirts Tunnel"
+
+/area/new_irvine/outskirt/indoors/tunnel/outdoor
+	name = "New Irvine - Tunnel To Outskirts"
+	ceiling = CEILING_NONE
+
+/area/new_irvine/outskirt/indoors/gasstation
+	name = "New Irvine - Gas Station"
+	icon_state = "OUTSKIRT INDOORS"
+	powernet_name = "New Irvine - Gasstation"
+
+/area/new_irvine/outskirt/indoors/busstop
+	name = "New Irvine - Bus Stop"
+	icon_state = "BUSSTAT"
+
+/area/new_irvine/beach/outskirt
+	name = "New Irvine - Outskirts - Beach"
+	icon_state = "BEACH - OUTSKIRT"
+
+/area/new_irvine/outskirt/forest
+	name = "New Irvine - Outskirts Forest"
+	icon_state = "OUTSKIRT FOREST"
+
+/area/new_irvine/outskirt/forest/road
+	name = "New Irvine - Outskirts Road"
+	icon_state = "OUTSKIRT FOREST"
+
+///
+
+/area/new_irvine/outskirt/contruction
+	name = "New Irvine Outskirts - Contruction"
+	icon_state = "CONTRUCTION AREA"
+	powernet_name = "New Irvine - Contruction"
+
+/area/new_irvine/outskirt/contruction/indoors
+	icon_state = "OUTSKIRT INDOORS"
+	ceiling = CEILING_METAL
+
+/area/new_irvine/outskirt/contruction/indoors/garage
+	name = "New Irvine Outskirts - Garage"
+	icon_state = "OS - CGARAGE"
+
+/area/new_irvine/outskirt/contruction/indoors/garagetwo
+	name = "New Irvine Outskirts - Garage Two"
+	icon_state = "C GAR2"
+
+/area/new_irvine/outskirt/contruction/indoors/crackhouse
+	name = "New Irvine Outskirts - Crackhouse"
+	icon_state = "OS - C CRACK"
+
+/area/new_irvine/outskirt/contruction/indoors/storehouse
+	name = "New Irvine Outskirts - Storehouse"
+	icon_state = "C PREFB"
+
+//
+
+/area/new_irvine/outskirt/trailerpark
+	name = "New Irvine Outskirts - Trailerpark"
+	icon_state = "TRAILORPARK AREA"
+	powernet_name = "New Irvine - Trailerpark"
+
+/area/new_irvine/outskirt/trailerpark/indoors
+	icon_state = "OUTSKIRT INDOORS"
+	ceiling = CEILING_METAL
+
+/area/new_irvine/outskirt/trailerpark/indoors/prefab
+	name = "New Irvine Outskirts - Trailerpark Prefabs"
+	icon_state = "TPREFB"
+//
+
+/area/new_irvine/outskirt/exports
+	name = "New Irvine Outskirts - Imports & Exports"
+	icon_state = "BR AREA"
+	powernet_name = "New Irvine - Imports & Exports"
+
+/area/new_irvine/outskirt/exports/indoors
+	icon_state = "OUTSKIRT INDOORS"
+	ceiling = CEILING_METAL
+
+/area/new_irvine/outskirt/exports/indoors/bigred
+	name = "New Irvine Outskirts - Big Red"
+	icon_state = "BIGRED"
+
+/area/new_irvine/outskirt/exports/indoors/sec1
+	name = "New Irvine Outskirts - Sec Booth One"
+	icon_state = "BSEC1"
+
+/area/new_irvine/outskirt/exports/indoors/sec2
+	name = "New Irvine Outskirts - Sec Booth Two"
+	icon_state = "BSEC2"
+
+/area/new_irvine/outskirt/exports/indoors/prefabs
+	name = "New Irvine Outskirts - Prefabs"
+	icon_state = "C PREFB"
+
+//
+
+/area/new_irvine/outskirt/dorms
+	name = "New Irvine Outskirts - Dorms"
+	icon_state = "DORMS OUTSIDE"
+	powernet_name = "New Irvine - Dorms"
+
+/area/new_irvine/outskirt/dorms/indoors
+	icon_state = "OUTSKIRT INDOORS"
+	ceiling = CEILING_METAL
+
+/area/new_irvine/outskirt/dorms/indoors/twosdorms
+	name = "New Irvine Outskirts - Two Story Dorms"
+	icon_state = "2S DORM"
+
+/area/new_irvine/outskirt/dorms/indoors/threesdorms
+	name = "New Irvine Outskirts - Three Story Dorms"
+	icon_state = "3S DORM"
