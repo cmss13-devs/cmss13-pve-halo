@@ -183,6 +183,7 @@
 /area/new_irvine/outskirt/indoors/busstop
 	name = "New Irvine - Bus Stop"
 	icon_state = "BUSSTAT"
+	ceiling = CEILING_METAL
 
 /area/new_irvine/beach/outskirt
 	name = "New Irvine - Outskirts - Beach"
