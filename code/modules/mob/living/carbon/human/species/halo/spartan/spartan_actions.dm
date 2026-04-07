@@ -61,7 +61,7 @@
 	var/weaken_power = 0.5
 	var/slowdown = 2
 
-/datum/action/human_action/activable/fling/use_ability(atom/affected_atom)
+/datum/action/human_action/activable/fling/use_ability(atom/affected_atom, mob/living/carbon/owner)
 	owner = usr
 	var/mob/living/carbon/human/human_owner = owner
 
@@ -125,7 +125,7 @@
 	var/base_damage = 150
 	var/damage_variance = 5
 
-/datum/action/human_action/activable/punch/use_ability(atom/affected_atom)
+/datum/action/human_action/activable/punch/use_ability(atom/affected_atom, mob/living/carbon/owner)
 	owner = usr
 
 	if (!action_cooldown_check())
@@ -201,7 +201,7 @@
 	action_icon_state = "empower"
 	cooldown = 5 SECONDS
 
-/datum/action/human_action/activable/strength/use_ability(atom/affected_atom)
+/datum/action/human_action/activable/strength/use_ability(atom/affected_atom, mob/living/carbon/owner)
 	owner = usr
 
 	if (!action_cooldown_check())
