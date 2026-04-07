@@ -2788,7 +2788,6 @@
 #include "modular_pve_halo\code\game\machinery\computer\medical.dm"
 #include "modular_pve_halo\code\game\machinery\vending\vendor_types\medical.dm"
 #include "modular_pve_halo\code\game\objects\items\trash.dm"
-#include "modular_pve_halo\code\game\objects\items\props\helmetgarb.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\food\cans.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\food\snacks.dm"
 #include "modular_pve_halo\code\game\objects\items\tools\flame_tools.dm"
