@@ -12,6 +12,12 @@
 /datum/action/human_action/activable/lunge/use_ability(atom/affected_atom, mob/living/carbon/owner)
 	owner = usr
 
+	if(owner.body_position == LYING_DOWN)
+		return
+
+	if(target == owner)
+		return
+
 	if(!action_cooldown_check())
 		to_chat(owner, SPAN_WARNING("You can't do that yet..."))
 		return
