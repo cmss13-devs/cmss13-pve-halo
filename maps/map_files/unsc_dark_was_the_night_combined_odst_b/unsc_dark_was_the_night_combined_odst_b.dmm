@@ -677,10 +677,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/dorms)
-"aGv" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/corpsman,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/two)
 "aHo" = (
 /obj/effect/decal/unsc/commons{
 	pixel_y = -32
@@ -1656,12 +1652,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
-"bPH" = (
-/obj/effect/landmark/start/marine/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "bQD" = (
 /obj/structure/roof/cargocrane_tracks/vertical{
 	pixel_y = 14
@@ -2254,10 +2244,6 @@
 "cqD" = (
 /turf/open/floor/almayer_hull/outerhull_dir,
 /area/dark_was_the_night)
-"cqI" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/corpsman,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/one)
 "cru" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -2309,9 +2295,6 @@
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/spec/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
 "cua" = (
@@ -2467,15 +2450,6 @@
 /obj/structure/machinery/power/apc/almayer/west,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"cBo" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/squad_leader{
-	pixel_x = -8
-	},
-/obj/structure/closet/secure_closet/marine_personal/unsc/rto{
-	pixel_x = 8
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/one)
 "cBA" = (
 /obj/structure/stairs{
 	dir = 1
@@ -3420,9 +3394,6 @@
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/tl/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
 "dzG" = (
@@ -4477,15 +4448,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
-"ewM" = (
-/obj/structure/gun_rack/halo/medkit{
-	pixel_y = 23
-	},
-/obj/effect/landmark/start/marine/spec/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "ewR" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -4735,12 +4697,6 @@
 /obj/structure/surface/table/almayer,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/kitchen)
-"eMX" = (
-/obj/effect/landmark/start/marine/rto,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "eNe" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 5;
@@ -6137,10 +6093,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/upper_hallway)
-"gnW" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/rifleman,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/one)
 "goN" = (
 /obj/structure/machinery/light/small/red{
 	dir = 4
@@ -6151,17 +6103,6 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night)
-"gqH" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/cryo_bay/two)
 "gsg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out";
@@ -7659,12 +7600,6 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/upper_hallway)
-"iqr" = (
-/obj/effect/landmark/start/marine/tl/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "iqu" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/four,
 /turf/open/floor/almayer/mono,
@@ -8275,15 +8210,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
-"iWf" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/team_leader{
-	pixel_x = -8
-	},
-/obj/structure/closet/secure_closet/marine_personal/unsc/team_leader{
-	pixel_x = 8
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/two)
 "iWC" = (
 /turf/open/floor/almayer/cargo_arrow,
 /area/dark_was_the_night/hangar)
@@ -8411,12 +8337,7 @@
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/bathroom)
 "jfC" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/team_leader{
-	pixel_x = -8
-	},
-/obj/structure/closet/secure_closet/marine_personal/unsc/team_leader{
-	pixel_x = 8
-	},
+/obj/structure/closet,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay/one)
 "jgA" = (
@@ -9616,15 +9537,6 @@
 "kvh" = (
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
-"kvF" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/squad_leader{
-	pixel_x = -8
-	},
-/obj/structure/closet/secure_closet/marine_personal/unsc/rto{
-	pixel_x = 8
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/two)
 "kvU" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -9850,7 +9762,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/briefing)
 "kFG" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/specialist,
+/obj/structure/closet,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay/two)
 "kGf" = (
@@ -10125,10 +10037,6 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/cryo_hall)
-"kUm" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/specialist,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/one)
 "kUy" = (
 /obj/structure/platform{
 	dir = 1
@@ -10563,12 +10471,9 @@
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/tl/alpha,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
 "ltu" = (
@@ -13116,12 +13021,6 @@
 "oon" = (
 /turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/motor_pool/heavy)
-"ooq" = (
-/obj/effect/landmark/start/marine/medic/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "ooW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -13362,12 +13261,9 @@
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/alpha,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
 "oBm" = (
@@ -14162,19 +14058,12 @@
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/cryo_hall)
 "psR" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/leader/alpha,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
+/obj/effect/landmark/observer_start,
 /turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/cryo_bay/two)
+/area/dark_was_the_night)
 "psW" = (
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night)
@@ -16575,17 +16464,6 @@
 "sly" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/briefing)
-"slz" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/rto,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/cryo_bay/two)
 "slC" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -18104,10 +17982,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
-"tPV" = (
-/obj/effect/landmark/observer_start,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "tQe" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night)
@@ -18912,10 +18786,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
-"uPg" = (
-/obj/structure/closet/secure_closet/marine_personal/unsc/rifleman,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/cryo_bay/two)
 "uPl" = (
 /obj/structure/machinery/computer/cameras/wooden_tv/prop{
 	dir = 8;
@@ -20215,16 +20085,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/supply)
-"wwp" = (
-/obj/structure/machinery/firealarm{
-	pixel_y = 23;
-	pixel_x = 0
-	},
-/obj/effect/landmark/start/marine/spec/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "wwN" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -21228,20 +21088,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
-"xLy" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/effect/landmark/start/marine/spec/alpha,
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/cryo_bay/two)
 "xLX" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -21259,12 +21105,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night)
-"xOc" = (
-/obj/effect/landmark/start/marine/leader/alpha,
-/obj/effect/landmark/late_join/alpha,
-/obj/effect/landmark/late_join,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/cryo_bay/two)
 "xOn" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -30431,8 +30271,8 @@ bGG
 kFG
 kFG
 bGG
-aGv
-aGv
+kFG
+kFG
 bGG
 yfr
 oAy
@@ -30442,11 +30282,11 @@ hBW
 oAy
 vuo
 wXR
-kUm
-kUm
+jfC
+jfC
 wXR
-cqI
-cqI
+jfC
+jfC
 wXR
 wXR
 wXR
@@ -30720,13 +30560,13 @@ bGG
 kxz
 kxz
 crI
-xOc
-iqr
-ooq
+qsQ
+qsQ
+qsQ
 crI
-wwp
-bPH
-bPH
+jyK
+qsQ
+qsQ
 crI
 kxz
 kxz
@@ -31021,7 +30861,7 @@ mcC
 otG
 eqB
 oAM
-xLy
+mcC
 hvh
 xLv
 hvh
@@ -31031,7 +30871,7 @@ hvh
 hvh
 xLv
 hvh
-psR
+mcC
 ltt
 swk
 jvx
@@ -31937,17 +31777,17 @@ qsQ
 kdC
 crI
 rHj
-tPV
+qsQ
 qsQ
 qLE
 naF
 kbO
 crI
-kvF
+kFG
 qlD
 crI
 hGY
-iWf
+kFG
 crI
 gvO
 tXn
@@ -31957,7 +31797,7 @@ iif
 pJx
 btq
 krD
-cBo
+jfC
 evc
 krD
 bKn
@@ -32839,9 +32679,6 @@ hvh
 otG
 gdc
 ctI
-gqH
-hvh
-xLv
 hvh
 hvh
 xLv
@@ -32849,7 +32686,10 @@ hvh
 hvh
 xLv
 hvh
-slz
+hvh
+xLv
+hvh
+hvh
 dza
 gdc
 rLw
@@ -33144,13 +32984,13 @@ bGG
 aia
 aia
 crI
-iqr
-eMX
-ooq
+qsQ
+qsQ
+qsQ
 crI
-ewM
-bPH
-bPH
+sdg
+qsQ
+qsQ
 crI
 aia
 aia
@@ -33458,11 +33298,11 @@ crI
 crI
 crI
 bGG
-uPg
-uPg
+kFG
+kFG
 bGG
-uPg
-uPg
+kFG
+kFG
 crI
 qCS
 mOY
@@ -33472,11 +33312,11 @@ uoe
 oAy
 rPh
 wXR
-gnW
-gnW
+jfC
+jfC
 wXR
-gnW
-gnW
+jfC
+jfC
 wXR
 wXR
 wXR
@@ -34225,7 +34065,7 @@ gNT
 iXR
 oxs
 isU
-oKA
+psR
 vrG
 isU
 isU
