@@ -415,6 +415,15 @@
 	},
 /turf/open/asphalt,
 /area/new_irvine/outskirt/contruction/indoors/crackhouse)
+"abr" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc,
+/obj/structure/ladder/rope{
+	height = 2;
+	id = "To Sewers";
+	pixel_y = 29
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_three/indoor)
 "abs" = (
 /obj/structure/fence,
 /turf/open/asphalt/cement,
@@ -37269,14 +37278,6 @@
 "gOS" = (
 /turf/open/floor/corsat/marked,
 /area/new_irvine/beach/power)
-"gOT" = (
-/obj/structure/platform,
-/obj/structure/ladder/rope{
-	height = 2;
-	id = "To Sewers"
-	},
-/turf/open/floor/almayer/empty,
-/area/new_irvine/sector_three/indoor)
 "gPo" = (
 /obj/structure/platform{
 	dir = 8
@@ -205290,8 +205291,8 @@ vAA
 pUr
 pUr
 pUr
-gOT
-vDQ
+cEg
+abr
 apd
 nTx
 laS
