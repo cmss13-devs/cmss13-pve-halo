@@ -284,3 +284,36 @@
 /area/new_irvine/outskirt/dorms/indoors/threesdorms
 	name = "New Irvine Outskirts - Three Story Dorms"
 	icon_state = "3S DORM"
+
+//
+
+/area/new_irvine/sewers
+	name = "New Irvine - Sewer System"
+	icon_state = "3S DORM"
+	ceiling = CEILING_METAL
+	powernet_name = "New Irvine - Sewer"
+
+/area/new_irvine/sewers/lab
+	name = "New Irvine - Classified"
+	icon_state = "3S DORM"
+	powernet_name = "New Irvine - Lab #1"
+
+/area/new_irvine/sewers/lab/railway
+	name = "New Irvine - Data Withheld"
+	icon_state = "3S DORM"
+	powernet_name = "New Irvine - Lab #1 Railway"
+
+/area/new_irvine/sewers/lab/lvltwo
+	name = "New Irvine - Restricted"
+	icon_state = "3S DORM"
+	powernet_name = "New Irvine - Lab #2"
+
+/area/new_irvine/sewers/lab/lvlthree
+	name = "New Irvine - Redacted"
+	icon_state = "3S DORM"
+	powernet_name = "New Irvine - Lab #3"
+
+/area/new_irvine/sewers/lab/lvlfour
+	name = "New Irvine - Access Denied"
+	icon_state = "3S DORM"
+	powernet_name = "New Irvine - Lab #4"
