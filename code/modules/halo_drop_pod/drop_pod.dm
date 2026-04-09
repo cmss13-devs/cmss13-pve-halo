@@ -257,7 +257,7 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		to_chat(user, SPAN_WARNING("RECALCULATION FAILED!"))
 	return locate(target_x, target_y, target_z) //no other alt spots found, we return our orig
 
-/obj/structure/halo_droppod/proc/start_launch_pod(mob/user, commanded_drop = FALSE)
+/obj/structure/halo_droppod/proc/start_launch_pod(mob/user)
 	if(!occupant)
 		return
 	user = occupant
@@ -274,10 +274,6 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		return
 
 	var/turf/target = locate(target_x, target_y, target_z)
-	if(!commanded_drop) //we randomise the landing slightly, its already randomised for mass launch
-		target = find_new_target()
-		target_x = target.x
-		target_y = target.y
 
 	if(!checklanding(user))
 		return
