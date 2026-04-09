@@ -334,7 +334,7 @@
 /obj/item/storage/large_holster/spnkr/filled/launcher/fill_preset_inventory()
 	for(var/i = 1 to 2)
 		new /obj/item/ammo_magazine/spnkr(src)
-	new /obj/item/ammo_magazine/spnkr(src)
+	handle_item_insertion(new /obj/item/weapon/gun/halo_launcher/spnkr())
 	update_icon()
 
 //======================
