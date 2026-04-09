@@ -272,7 +272,7 @@
 
 /obj/item/storage/large_holster/spnkr
 	name = "SPNKr tube storage backpack"
-	desc = "A carrying rack complete with two individual metal tube, each capable of storing one M19 twin-tube unit for the M41 SPNKr, and a special harness for the launcher itself."
+	desc = "A carrying rack complete with two individual metallic tubes, each capable of storing one M19 twin-tube unit for the M41 SPNKr, and a special harness for the launcher itself."
 	icon = 'icons/halo/obj/items/clothing/back/back_by_faction/back_unsc.dmi'
 	icon_state = "spnkrpack_0"
 	item_state = "spnkrpack"
