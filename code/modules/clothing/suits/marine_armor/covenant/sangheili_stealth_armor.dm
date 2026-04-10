@@ -174,11 +174,6 @@
 	var/obj/item/clothing/accessory/pads/sangheili/minor/pads = new()
 	src.attach_accessory(null, pads, TRUE)
 
-/obj/item/clothing/suit/marine/shielded/sangheili/stealth/minor/invis
-	full_camo_alpha = FULL_CAMO_ALPHA
-	current_camo = FULL_CAMO_ALPHA
-	visible_camo_alpha = VISIBLE_CAMO_ALPHA
-
 /obj/item/clothing/suit/marine/shielded/sangheili/stealth/zealot
 
 	name = "\improper Sangheili Zealot combat harness"
