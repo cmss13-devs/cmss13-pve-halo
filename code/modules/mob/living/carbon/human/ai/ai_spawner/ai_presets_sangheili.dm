@@ -54,4 +54,4 @@
 /datum/human_ai_equipment_preset/covenant/sangheili/stealth_zealot
 	name = "Sangheili Stealth Zealot (Plasma Rifle)"
 	desc = "TBD"
-	path = /datum/equipment_preset/covenant/sangheili/stealth
+	path = /datum/equipment_preset/covenant/sangheili/zealot/stealth
