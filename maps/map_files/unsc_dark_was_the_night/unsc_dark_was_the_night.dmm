@@ -4470,12 +4470,7 @@
 /area/dark_was_the_night/upper_hallway)
 "kS" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -7;
-	pixel_y = 8
-	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc,
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded,
+/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "kT" = (
@@ -4940,10 +4935,6 @@
 /turf/open/shuttle/escapepod/east,
 /area/dark_was_the_night/lower_hallway)
 "lN" = (
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	pixel_x = 5;
-	pixel_y = -3
-	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -14;
 	pixel_y = -2
@@ -5240,7 +5231,7 @@
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper General Equipment"
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -5878,7 +5869,7 @@
 "oU" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper Fireteam Leader Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -5957,7 +5948,6 @@
 "pr" = (
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
-/obj/item/attachable/attached_gun/grenade/ma5c,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/armory)
@@ -7483,12 +7473,6 @@
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/cryo_bay/two)
 "wm" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_y = 28;
-	id = "ship_armory2";
-	name = "armory shutters control";
-	req_one_access_txt = "19;12"
-	},
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
 	pixel_x = -2;
@@ -7858,7 +7842,7 @@
 "xC" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper General Equipment"
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -11554,7 +11538,7 @@
 "Pj" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper Squad Leader Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -12036,7 +12020,8 @@
 "RB" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2"
+	id = "ship_armory";
+	name = "\improper Specialist Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
@@ -13421,7 +13406,7 @@
 "Yy" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	pixel_y = 2;
-	id = "ship_armory2"
+	id = "ship_armory"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
