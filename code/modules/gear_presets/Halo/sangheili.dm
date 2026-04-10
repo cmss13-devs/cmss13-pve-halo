@@ -179,6 +179,41 @@
 	add_elite_zealot(new_human)
 	add_cov_carbine_package(new_human)
 
+/datum/equipment_preset/covenant/sangheili/zealot/stealth
+	name = parent_type::name + " Zealot (Plasma Rifle)"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+	idtype = /obj/item/card/id/covenant
+	access = list(ACCESS_MARINE_PREP)
+	assignment = JOB_COV_ZEALOT
+	rank = JOB_COV_ZEALOT
+	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "Zealot"
+	skills = /datum/skills/covenant/sangheili
+	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/sangheili/zealot/stealth/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_stealth_zealot(new_human)
+	add_plasma_rifle_package(new_human)
+
+//
+/datum/equipment_preset/covenant/sangheili/stealth
+	name = parent_type::name + " Stealth (Plasma Rifle)"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+	idtype = /obj/item/card/id/covenant
+	access = list(ACCESS_MARINE_PREP)
+	assignment = JOB_COV_STEALTH
+	rank = JOB_COV_STEALTH
+	paygrades = list(PAY_SHORT_SANG_MINOR = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "Stealth"
+	skills = /datum/skills/covenant/sangheili
+	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/sangheili/stealth/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_stealth_zealot(new_human)
+	add_plasma_rifle_package(new_human)
+
 //Procs
 
 /datum/equipment_preset/proc/add_elite_basics(mob/living/carbon/human/new_human)
@@ -219,6 +254,24 @@
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/sangheili/zealot(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/zealot(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/zealot(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/zealot(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/zealot(new_human), WEAR_WAIST)
+
+/datum/equipment_preset/proc/add_elite_stealth(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/sangheili/minor(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/stealth(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/minor(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/minor(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/minor(new_human), WEAR_WAIST)
+
+/datum/equipment_preset/proc/add_elite_stealth_zealot(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/sangheili/zealot(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/stealth/zealot(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/zealot(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/zealot(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/zealot(new_human), WEAR_WAIST)
