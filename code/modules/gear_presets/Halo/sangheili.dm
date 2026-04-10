@@ -179,24 +179,8 @@
 	add_elite_zealot(new_human)
 	add_cov_carbine_package(new_human)
 
-/datum/equipment_preset/covenant/sangheili/zealot/stealth
-	name = parent_type::name + " Zealot (Plasma Rifle)"
-	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
-	idtype = /obj/item/card/id/covenant
-	access = list(ACCESS_MARINE_PREP)
-	assignment = JOB_COV_ZEALOT
-	rank = JOB_COV_ZEALOT
-	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Zealot"
-	skills = /datum/skills/covenant/sangheili
-	languages = list(LANGUAGE_SANGHEILI)
+// The Stealth Elites
 
-/datum/equipment_preset/covenant/sangheili/zealot/stealth/load_gear(mob/living/carbon/human/new_human)
-	add_elite_basics(new_human)
-	add_elite_stealth_zealot(new_human)
-	add_plasma_rifle_package(new_human)
-
-//
 /datum/equipment_preset/covenant/sangheili/stealth
 	name = parent_type::name + " Stealth (Plasma Rifle)"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
@@ -212,6 +196,23 @@
 /datum/equipment_preset/covenant/sangheili/stealth/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_stealth(new_human)
+	add_plasma_rifle_package(new_human)
+
+/datum/equipment_preset/covenant/sangheili/zealot/stealth
+	name = parent_type::name + " Stealth Zealot (Plasma Rifle)"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+	idtype = /obj/item/card/id/covenant
+	access = list(ACCESS_MARINE_PREP)
+	assignment = JOB_COV_ZEALOT
+	rank = JOB_COV_ZEALOT
+	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "Zealot"
+	skills = /datum/skills/covenant/sangheili
+	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/sangheili/zealot/stealth/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_stealth_zealot(new_human)
 	add_plasma_rifle_package(new_human)
 
 //Procs
