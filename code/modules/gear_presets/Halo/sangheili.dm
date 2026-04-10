@@ -211,7 +211,7 @@
 
 /datum/equipment_preset/covenant/sangheili/stealth/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
-	add_elite_stealth_zealot(new_human)
+	add_elite_stealth(new_human)
 	add_plasma_rifle_package(new_human)
 
 //Procs
@@ -262,7 +262,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/sangheili/minor(new_human), WEAR_HEAD)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/stealth(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/stealth/minor/invis(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/minor(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/minor(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/minor(new_human), WEAR_WAIST)
