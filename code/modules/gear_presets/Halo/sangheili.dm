@@ -188,8 +188,8 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_STEALTH
 	rank = JOB_COV_STEALTH
-	paygrades = list(PAY_SHORT_SANG_MINOR = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Stealth"
+	paygrades = list(PAY_SHORT_SANG_STEALTH = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "Stealth Operations"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
