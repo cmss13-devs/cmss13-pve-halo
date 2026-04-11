@@ -47,6 +47,11 @@
 	desc = "TBD"
 	path = /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle
 
+/datum/human_ai_equipment_preset/covenant/unggoy/specops/plasma_rifle/stealth
+	name = "Unggoy Specops Stealth (Plasma Rifle)"
+	desc = "TBD"
+	path = /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/stealth
+
 //
 
 /datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra/needler
@@ -57,7 +62,12 @@
 /datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
 	name = "Unggoy Specops (Ultra, Plasma Rifle)"
 	desc = "TBD"
-	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
+	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/stealth
+
+/datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
+	name = "Unggoy Specops Stealth (Ultra, Plasma Rifle)"
+	desc = "TBD"
+	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/stealth
 //
 
 /datum/human_ai_equipment_preset/covenant/unggoy/deacon/needler

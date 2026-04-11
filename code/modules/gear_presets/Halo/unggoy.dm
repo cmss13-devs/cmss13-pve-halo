@@ -345,3 +345,29 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/gas/unggoy(new_human), WEAR_FACE)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 
+
+
+
+
+/datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/stealth
+	name = parent_type::name + " SpecOps (Plasma Rifle - Stealth)"
+
+/datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/stealth/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	var	/obj/item/clothing/suit/marine/unggoy/stealth/special_ops/cloak = new()
+	cloak.attack_self(new_human)
+	new_human.equip_to_slot_or_del(cloak, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
+	add_plasma_rifle_package(new_human)
+
+
+/datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/stealth
+	name = parent_type::name + " SpecOps Ultra (Plasma Rifle - Stealth)"
+
+/datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/stealth/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	var	/obj/item/clothing/suit/marine/unggoy/stealth/special_ops/ultra/cloak = new()
+	cloak.attack_self(new_human)
+	new_human.equip_to_slot_or_del(cloak, WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
+	add_plasma_rifle_package(new_human)

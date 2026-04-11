@@ -262,8 +262,10 @@
 /datum/equipment_preset/proc/add_elite_stealth(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
+	var/obj/item/clothing/suit/marine/shielded/sangheili/stealth/minor/cloak = new()
+	cloak.attack_self(new_human)
+	new_human.equip_to_slot_or_del(cloak, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/sangheili/minor(new_human), WEAR_HEAD)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/stealth/minor(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/minor(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/minor(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/minor(new_human), WEAR_WAIST)
@@ -271,8 +273,10 @@
 /datum/equipment_preset/proc/add_elite_stealth_zealot(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
+	var	/obj/item/clothing/suit/marine/shielded/sangheili/stealth/zealot/cloak = new()
+	cloak.attack_self(new_human)
+	new_human.equip_to_slot_or_del(cloak, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/sangheili/zealot(new_human), WEAR_HEAD)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/shielded/sangheili/stealth/zealot(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/zealot(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/zealot(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/zealot(new_human), WEAR_WAIST)
