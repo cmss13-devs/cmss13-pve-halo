@@ -230,8 +230,8 @@
 
 	else if(istype(brain.primary_weapon, /obj/item/weapon/gun/energy/plasma/plasma_pistol))
 		var/obj/item/weapon/gun/energy/plasma/plasma_pistol/plasma_reducer = brain.primary_weapon
-		addtimer(CALLBACK(plasma_reducer, TYPE_PROC_REF(/obj/item/weapon/gun/energy/plasma/plasma_pistol, start_fire), tied_human), plasma_reducer.get_fire_delay()*0.5)
-		COOLDOWN_START(brain, stop_fire_cooldown, max(plasma_reducer.get_fire_delay()) + 0.5)
+		addtimer(CALLBACK(plasma_reducer, TYPE_PROC_REF(/obj/item/weapon/gun/energy/plasma/plasma_pistol, start_fire), tied_human), plasma_reducer.get_fire_delay()*0.25)
+		COOLDOWN_START(brain, stop_fire_cooldown, max(plasma_reducer.get_fire_delay()) + 0.25)
 		stop_firing(brain)
 		qdel(src)
 		return
