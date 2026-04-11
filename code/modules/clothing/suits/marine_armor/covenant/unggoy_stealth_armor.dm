@@ -1,10 +1,4 @@
-#define FULL_CAMO_ALPHA 15
-#define VISIBLE_CAMO_ALPHA 60
-
-#define FULL_PVE_CAMO_ALPHA 30
-#define VISIBLE_PVE_CAMO_ALPHA 75
-
-/obj/item/clothing/suit/marine/unggoy/stealth
+/obj/item/clothing/suit/marine/unggoy/cloaked
 	var/camo_active = FALSE
 	var/full_camo_alpha = FULL_PVE_CAMO_ALPHA
 	var/incremental_shooting_camo_penalty = 6
@@ -14,17 +8,17 @@
 	var/cloak_cooldown
 	var/camo_message_delay = 2 SECONDS
 
-/obj/item/clothing/suit/marine/unggoy/stealth/dropped(mob/user)
+/obj/item/clothing/suit/marine/unggoy/cloaked/dropped(mob/user)
 	if(ishuman(user) && !issynth(user))
 		deactivate_camouflage(user, FALSE)
 
 	. = ..()
 
-/obj/item/clothing/suit/marine/unggoy/stealth/attack_self(mob/user)
+/obj/item/clothing/suit/marine/unggoy/cloaked/attack_self(mob/user)
 	..()
 	camouflage(user)
 
-/obj/item/clothing/suit/marine/unggoy/stealth/proc/camouflage(mob/user)
+/obj/item/clothing/suit/marine/unggoy/cloaked/proc/camouflage(mob/user)
 	if(!user || user.is_mob_incapacitated(TRUE))
 		return
 
@@ -67,7 +61,7 @@
 	anim(H.loc, H, 'icons/mob/mob.dmi', null, "cloak", null, H.dir)
 	return TRUE
 
-/obj/item/clothing/suit/marine/unggoy/stealth/proc/fade_in(mob/user)
+/obj/item/clothing/suit/marine/unggoy/cloaked/proc/fade_in(mob/user)
 	SIGNAL_HANDLER
 	var/mob/living/carbon/human/H = user
 	if(camo_active)
@@ -81,14 +75,14 @@
 		addtimer(CALLBACK(src, PROC_REF(fade_out_finish), H), camouflage_break, TIMER_OVERRIDE|TIMER_UNIQUE)
 		animate(H, alpha = full_camo_alpha + 5, time = camouflage_break, easing = LINEAR_EASING, flags = ANIMATION_END_NOW)
 
-/obj/item/clothing/suit/marine/unggoy/stealth/proc/fade_out_finish(mob/living/carbon/human/H)
+/obj/item/clothing/suit/marine/unggoy/cloaked/proc/fade_out_finish(mob/living/carbon/human/H)
 	if(camo_active && H.back == src)
 		ADD_TRAIT(H, TRAIT_CLOAKED, TRAIT_SOURCE_EQUIPMENT(WEAR_BACK))
 		to_chat(H, SPAN_BOLDNOTICE("Your cloak shimmers, returning to it's perfectly camouflaged state!"))
 		animate(H, alpha = full_camo_alpha)
 		current_camo = full_camo_alpha
 
-/obj/item/clothing/suit/marine/unggoy/stealth/proc/wrapper_fizzle_camouflage()
+/obj/item/clothing/suit/marine/unggoy/cloaked/proc/wrapper_fizzle_camouflage()
 	SIGNAL_HANDLER
 	var/mob/wearer = src.loc
 	wearer.visible_message(SPAN_DANGER("[wearer]'s cloak fizzles out!"), SPAN_DANGER("Your cloak fizzles out!"))
@@ -97,7 +91,7 @@
 	sparks.start()
 	deactivate_camouflage(wearer, TRUE, TRUE)
 
-/obj/item/clothing/suit/marine/unggoy/stealth/proc/deactivate_camouflage(mob/living/carbon/human/H, anim = TRUE, forced)
+/obj/item/clothing/suit/marine/unggoy/cloaked/proc/deactivate_camouflage(mob/living/carbon/human/H, anim = TRUE, forced)
 	SIGNAL_HANDLER
 	if(!istype(H))
 		return FALSE
@@ -129,8 +123,8 @@
 	if(anim)
 		anim(H.loc, H,'icons/mob/mob.dmi', null, "uncloak", null, H.dir)
 
-/obj/item/clothing/suit/marine/unggoy/stealth/special_ops
-	name = "Unggoy SpecOps stealth combat harness"
+/obj/item/clothing/suit/marine/unggoy/cloaked/special_ops
+	name = "Unggoy SpecOps cloak capable combat harness"
 	desc = "A dark purple harness reserved for those few Unggoy who meet the requirements to join the Special-Warfare-Group's ranks. While benefiting from numerous fitting and material developments over the more common combat harnesses of their brothers, the Spec-Ops variant also features obvious advancements in the areas of stealth."
 	desc_lore = "From passive thermal and sensor stealth built into its matrices, to the capability to become totally invisible on all spectrum given an active camouflage module, this harness is well worth the countless nights of training."
 	icon_state = "unggoy_specops"
@@ -152,8 +146,8 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
-/obj/item/clothing/suit/marine/unggoy/stealth/special_ops/ultra
-	name = "Unggoy SpecOps Ultra stealth combat harness"
+/obj/item/clothing/suit/marine/unggoy/cloaked/special_ops/ultra
+	name = "Unggoy SpecOps Ultra cloak capable combat harness"
 	desc = "A modification of the Spec-Ops harness used by Unggoy of the Special-Warfare-Group, worn by veterans and specialists. A notable improvement over the common Spec-Ops harness, featuring reinforced composites designed for direct combat. While many may regard Unggoy as cowardly and weak, few who've seen this black harness live to tell about it, and those who do have far different opinions."
 	icon_state = "unggoy_specops_ultra"
 	item_state = "unggoy_specops_ultra"

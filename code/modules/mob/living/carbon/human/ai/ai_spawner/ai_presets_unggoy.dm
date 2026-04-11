@@ -47,10 +47,10 @@
 	desc = "TBD"
 	path = /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle
 
-/datum/human_ai_equipment_preset/covenant/unggoy/specops/plasma_rifle/stealth
-	name = "Unggoy Specops Stealth (Plasma Rifle)"
+/datum/human_ai_equipment_preset/covenant/unggoy/specops/plasma_rifle/cloaked
+	name = "Unggoy Specops (Cloaked)) (Plasma Rifle)"
 	desc = "TBD"
-	path = /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/stealth
+	path = /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/cloaked
 
 //
 
@@ -62,14 +62,13 @@
 /datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
 	name = "Unggoy Specops (Ultra, Plasma Rifle)"
 	desc = "TBD"
-	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/stealth
+	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
 
-/datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle
-	name = "Unggoy Specops Stealth (Ultra, Plasma Rifle)"
+/datum/human_ai_equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/cloaked
+	name = "Unggoy Specops (Cloaked)) (Ultra, Plasma Rifle)"
 	desc = "TBD"
-	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/stealth
+	path = /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/cloaked
 //
-
 /datum/human_ai_equipment_preset/covenant/unggoy/deacon/needler
 	name = "Unggoy Deacon (Needler)"
 	desc = "TBD"
