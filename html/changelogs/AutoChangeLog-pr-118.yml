@@ -1,0 +1,5 @@
+author: "KoishiVibe"
+delete-after: True
+changes:
+  - rscadd: "descriptions for fax machines, nescasters, newspapers, helmet items, cards, cigars, snacks, snack trash, gas masks, medical equipment, and more"
+  - code_imp: "HaloPVE modular folder"
