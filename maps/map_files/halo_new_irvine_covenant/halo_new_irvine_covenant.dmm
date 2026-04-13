@@ -1546,6 +1546,11 @@
 	icon_state = "door_warning";
 	dir = 1
 	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/new_irvine/outskirt/contruction/indoors/crackhouse)
@@ -3774,6 +3779,10 @@
 /obj/structure/surface/table/reinforced/black,
 /obj/structure/window{
 	dir = 8
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/outskirt/indoors/gasstation)
@@ -9782,6 +9791,10 @@
 /obj/structure/machinery/space_heater/radiator/red{
 	dir = 4
 	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /turf/open/floor/strata/floor3,
 /area/new_irvine/outskirt/exports/indoors/bigred)
 "azj" = (
@@ -9962,6 +9975,13 @@
 	},
 /turf/open/asphalt/cement,
 /area/new_irvine/outskirt/exports)
+"azF" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
 "azG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/case,
@@ -10754,6 +10774,10 @@
 /obj/item/paper_bin{
 	pixel_x = 5;
 	pixel_y = 7
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
 	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
@@ -12100,6 +12124,10 @@
 	dir = 8;
 	light_power = 0.7
 	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/carpet,
 /area/new_irvine/outskirt/exports/indoors/prefabs)
@@ -12161,6 +12189,10 @@
 /area/new_irvine/outskirt/exports)
 "aER" = (
 /obj/structure/bed/chair,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/new_irvine/outskirt/exports/indoors/prefabs)
@@ -14811,6 +14843,10 @@
 /obj/structure/machinery/prop/almayer/computer/PC{
 	dir = 4
 	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /turf/open/floor/strata/floor3,
 /area/new_irvine/outskirt/indoors/tunnel)
 "aLa" = (
@@ -16123,6 +16159,10 @@
 	pixel_x = -20;
 	pixel_y = 6
 	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /turf/open/floor/plating/kutjevo,
 /area/new_irvine/outskirt/indoors/tunnel)
 "aOi" = (
@@ -17146,6 +17186,10 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/strata,
 /area/new_irvine/outskirt/trailerpark/indoors/prefab)
@@ -18182,6 +18226,10 @@
 	pixel_x = 5;
 	pixel_y = 7
 	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/new_irvine/outskirt/exports/indoors/sec1)
@@ -18412,6 +18460,11 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 1
+	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
 	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
@@ -18983,6 +19036,14 @@
 "aWD" = (
 /turf/open/floor/plating/asteroidwarning/north,
 /area/new_irvine/outskirt/exports/indoors/bigred)
+"aWE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_five/indoor/bridge_interier)
 "aWF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -18999,6 +19060,17 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/asphalt/cement,
 /area/new_irvine/sector_one)
+"aWI" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
 "aWJ" = (
 /obj/structure/platform{
 	dir = 4
@@ -19510,8 +19582,13 @@
 /area/new_irvine/outskirt/contruction/indoors/storehouse)
 "aYr" = (
 /obj/structure/surface/table/reinforced/black,
-/obj/item/ammo_magazine/shotgun/beanbag/unsc,
-/obj/item/ammo_magazine/shotgun/beanbag/unsc,
+/obj/item/ammo_magazine/shotgun/beanbag/unsc{
+	pixel_x = 4;
+	pixel_y = 10
+	},
+/obj/item/ammo_magazine/shotgun/beanbag/unsc{
+	pixel_x = -5
+	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
 "aYs" = (
@@ -21692,6 +21769,10 @@
 /area/new_irvine/outskirt/forest/road)
 "bed" = (
 /obj/structure/bed/sofa/south/grey/left,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /obj/effect/vehicle_roof/van,
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/outskirt/indoors/busstop)
@@ -23330,6 +23411,10 @@
 "bjd" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/secure,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /turf/open/floor/strata/floor3,
 /area/new_irvine/outskirt/dorms/indoors/twosdorms)
 "bje" = (
@@ -23592,6 +23677,10 @@
 /obj/item/tool/kitchen/utensil/fork{
 	pixel_x = 10;
 	pixel_y = 3
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
 	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/outskirt/dorms/indoors/threesdorms)
@@ -24166,6 +24255,72 @@
 "bly" = (
 /turf/closed/wall/r_wall/bunker/hull,
 /area/new_irvine/outskirt/dorms)
+"blz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
+"blA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
+"blB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue/golden_arrow{
+	dir = 8;
+	light_power = 0.7
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_one/indoor)
+"blC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/outskirt/exports/indoors/prefabs)
+"blD" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -17;
+	pixel_y = 2
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_one/indoor/nipd)
+"blE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/plating/plating_catwalk/prison,
+/area/new_irvine/outskirt/indoors/tunnel)
+"blF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_one/indoor/nipd)
 "blG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/warning_stripes{
@@ -24174,11 +24329,193 @@
 	},
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_five/indoor/bridge_interier)
+"blH" = (
+/obj/structure/gun_rack/halo/armory/ma5b/unloaded,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 22;
+	layer = 3.1
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_one/indoor/nipd)
+"blI" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/new_irvine/sector_one/indoor/nipd)
+"blJ" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/white_cyan2,
+/area/new_irvine/sector_one/indoor/portauth)
+"blK" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
+"blL" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_one/indoor/nipd)
+"blM" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata,
+/area/new_irvine/outskirt/trailerpark/indoors/prefab)
+"blN" = (
+/obj/structure/prop/almayer/computers/sensor_computer2,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
+"blO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/reinforced/black,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/contruction/indoors/crackhouse)
+"blP" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/sector_one/indoor/apartments)
+"blQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_one/indoor/portauth)
+"blR" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outskirt/contruction/indoors/garagetwo)
 "blS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/vending/generic,
 /turf/open/floor/strata,
 /area/new_irvine/sector_two/indoor/apartment)
+"blT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_one/indoor/apartments)
+"blU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/multi_tiles/southeast,
+/area/new_irvine/sector_one/indoor/apartments)
+"blV" = (
+/obj/structure/reagent_dispensers/fueltank,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/new_irvine/outskirt/contruction/indoors/garage)
+"blW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_two/indoor/swapartment)
+"blX" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_four/indoor/port)
+"blY" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/sector_two)
+"blZ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_two/indoor/apartment)
+"bma" = (
+/obj/structure/surface/table/reinforced/black,
+/obj/item/newspaper{
+	pixel_x = -4;
+	pixel_y = 3
+	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/strata/floor3,
+/area/new_irvine/outskirt/indoors/tunnel)
+"bmb" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_two/indoor/swapartment)
 "bmc" = (
 /obj/structure/barricade/sandbags/full,
 /turf/open/floor/prison/cell_stripe,
@@ -24206,6 +24543,83 @@
 /obj/structure/cable/heavyduty/west_east,
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine/sewers)
+"bmg" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_four/indoor/port)
+"bmh" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_four/indoor/port)
+"bmi" = (
+/obj/structure/surface/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/rack{
+	layer = 5.2;
+	pixel_y = 19
+	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/prison/kitchen,
+/area/new_irvine/sector_two/indoor/shops)
+"bmj" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_two/indoor/nwapartment)
+"bmk" = (
+/obj/structure/sink{
+	layer = 3.1;
+	pixel_y = 24
+	},
+/obj/structure/mirror{
+	pixel_x = -1;
+	pixel_y = 35
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -17;
+	pixel_y = 2
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/new_irvine/sector_two/indoor/shops)
+"bml" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/corsat/plate,
+/area/new_irvine/sector_three/indoor)
+"bmm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata/multi_tiles,
+/area/new_irvine/sector_three/indoor/brvk)
 "bmn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue{
@@ -24214,6 +24628,37 @@
 	},
 /turf/open/floor/wood/ship,
 /area/new_irvine/sector_three/indoor/american_merchant)
+"bmo" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_four/indoor/port_prefabs)
+"bmp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/outskirt/dorms/indoors/threesdorms)
+"bmq" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
+/turf/open/floor/strata,
+/area/new_irvine/sector_three/indoor/arch_angel)
+"bmr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/ma5b,
+/turf/open/floor/prison/floor_plate,
+/area/new_irvine/sewers/lab)
 "bmG" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 6
@@ -30830,17 +31275,8 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/sector_five/indoor/bridge_interier)
 "dZw" = (
-/obj/structure/gun_rack/flamer/unloaded{
-	pixel_x = 7;
-	pixel_y = 16;
-	density = 0
-	},
-/obj/structure/gun_rack/mk221{
-	pixel_x = -11;
-	pixel_y = 16;
-	density = 0
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/ma5b,
 /turf/open/floor/prison/floor_marked,
 /area/new_irvine/sewers/lab/lvlfour)
 "dZx" = (
@@ -31558,7 +31994,12 @@
 	dir = 4;
 	light_power = 0.7
 	},
-/obj/item/ammo_box/magazine/unsc/ma5b{
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_y = 4;
+	pixel_x = 4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_x = -12;
 	pixel_y = 10
 	},
 /turf/open/floor/strata,
@@ -35707,6 +36148,10 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /turf/open/floor/strata/white_cyan2,
 /area/new_irvine/sector_three/indoor/american_merchant)
 "gfr" = (
@@ -48030,6 +48475,7 @@
 	pixel_x = -6;
 	pixel_y = 12
 	},
+/obj/item/weapon/gun/shotgun/pump/halo/m90/police,
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
 "lfG" = (
@@ -50646,7 +51092,7 @@
 /turf/open/floor/strata/white_cyan1/east,
 /area/new_irvine/sewers/lab/lvlthree)
 "mhH" = (
-/obj/structure/gun_rack/halo/big,
+/obj/structure/gun_rack/halo/big/ma5c/unloaded,
 /turf/open/floor/strata,
 /area/new_irvine/sector_two/indoor/apartment)
 "mhO" = (
@@ -51593,14 +52039,6 @@
 /obj/structure/machinery/power/breakerbox/activated,
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_one/indoor)
-"myN" = (
-/obj/structure/gun_rack/m41/unloaded{
-	pixel_y = 16;
-	density = 0
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/floor_marked,
-/area/new_irvine/sewers/lab/lvlfour)
 "mze" = (
 /obj/structure/platform{
 	dir = 1
@@ -54188,6 +54626,10 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 8
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
 	},
 /turf/open/floor/corsat/plate,
 /area/new_irvine/sector_two/indoor/powernetrelay)
@@ -57986,15 +58428,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/escapepod/floor4,
 /area/new_irvine/sewers/lab/railway)
-"pdv" = (
-/obj/structure/largecrate/supply/ammo/m41amk1,
-/obj/structure/largecrate/supply/ammo/m41amk1{
-	pixel_x = 3;
-	pixel_y = 10
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/floor_plate,
-/area/new_irvine/sewers/lab/lvlfour)
 "pdX" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 4
@@ -62627,6 +63060,10 @@
 	pixel_x = -7;
 	pixel_y = 13
 	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
 "qXS" = (
@@ -65673,6 +66110,11 @@
 "snb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/power/apc/no_power/north,
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 9;
+	pixel_x = 2
+	},
 /turf/open/floor/prison/floor_marked,
 /area/new_irvine/sewers/lab/lvlfour)
 "snr" = (
@@ -67447,7 +67889,7 @@
 /area/new_irvine/sewers/lab/lvlfour)
 "tfo" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/gun_rack/halo/big,
+/obj/structure/gun_rack/halo/big/ma5c/unloaded,
 /turf/open/floor/strata,
 /area/new_irvine/sector_two/indoor/apartment)
 "tfI" = (
@@ -70510,6 +70952,10 @@
 	pixel_x = -7;
 	pixel_y = 2
 	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
+	},
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/sector_three/indoor/brvk)
 "uqa" = (
@@ -70908,6 +71354,10 @@
 /obj/structure/machinery/light/double/blue{
 	dir = 8;
 	light_color = "#dae2ff"
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_x = 0;
+	pixel_y = 25
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_four/indoor/port)
@@ -73337,6 +73787,13 @@
 /obj/structure/machinery/light/double/blue/golden_arrow{
 	dir = 4;
 	light_power = 0.7
+	},
+/obj/item/weapon/gun/smg/halo/m7/folded_up{
+	pixel_y = 8;
+	pixel_x = -2
+	},
+/obj/item/weapon/gun/smg/halo/m7/folded_up{
+	pixel_y = 2
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/nipd)
@@ -211273,7 +211730,7 @@ nTx
 nTx
 gaT
 laS
-awR
+bml
 awR
 laS
 vdS
@@ -211903,7 +212360,7 @@ voX
 dIA
 qXb
 qXb
-mjV
+blB
 tNi
 mjV
 iuz
@@ -214368,7 +214825,7 @@ rFT
 cvq
 tPu
 tPu
-xKH
+blU
 fFv
 xKH
 xKH
@@ -216308,7 +216765,7 @@ cYu
 mZn
 cYu
 cYu
-xxK
+bmj
 wjh
 kap
 dFl
@@ -216851,7 +217308,7 @@ tqw
 uJd
 egI
 wNb
-iqH
+blW
 ylX
 dZL
 cbf
@@ -217846,7 +218303,7 @@ iza
 ylX
 mPO
 uQJ
-ofm
+bmb
 tCy
 gdi
 wNb
@@ -223418,7 +223875,7 @@ wfZ
 wfZ
 kYj
 tPu
-tPu
+blP
 gry
 qkq
 rgD
@@ -224918,7 +225375,7 @@ dAU
 lqB
 oyA
 tPu
-hUV
+blT
 hUV
 tPu
 tPu
@@ -226340,7 +226797,7 @@ vdS
 vdS
 ueP
 rUM
-lKb
+bmk
 vPd
 iSH
 jyh
@@ -227457,7 +227914,7 @@ hws
 wwu
 daO
 daO
-pfb
+blH
 pfb
 daO
 daO
@@ -228457,12 +228914,12 @@ xmP
 vHm
 spz
 daO
-dTm
+blL
 kYx
 daO
 vGA
 qXQ
-dTm
+bGS
 eov
 daO
 ckd
@@ -229465,8 +229922,8 @@ kYx
 kYx
 daO
 gRn
-dTm
-dTm
+oXp
+oXp
 rbn
 daO
 daO
@@ -230469,8 +230926,8 @@ opS
 umw
 daO
 bcY
-kYx
-dTm
+oIO
+bGS
 iQO
 daO
 jEd
@@ -231473,13 +231930,13 @@ dTm
 xDt
 ydY
 hIg
-kYx
-kYx
+blF
+blF
 oCX
 ydY
 qmu
 dTm
-dTm
+blD
 oXp
 ksk
 ksk
@@ -234918,7 +235375,7 @@ sth
 sth
 kjW
 kjW
-cqB
+blZ
 cqB
 kjW
 kjW
@@ -236493,7 +236950,7 @@ daO
 pWG
 lEM
 daO
-syw
+blI
 mkZ
 hXf
 daO
@@ -236986,7 +237443,7 @@ daO
 daO
 daO
 daO
-kYx
+mDb
 kYx
 daO
 bbt
@@ -239564,7 +240021,7 @@ tPM
 tPM
 tPM
 tPM
-vdP
+aWE
 vdP
 vdP
 tPM
@@ -246967,7 +247424,7 @@ bcN
 anx
 klo
 sQe
-tPl
+blY
 dph
 mHJ
 xgD
@@ -247941,7 +248398,7 @@ jMU
 lGl
 jCN
 rUM
-niR
+bmi
 fFf
 eqB
 tuM
@@ -249544,7 +250001,7 @@ aBB
 knR
 knR
 fWy
-aBB
+blJ
 knR
 fWy
 ser
@@ -250956,7 +251413,7 @@ wjA
 wjA
 kyt
 iAS
-ltP
+bmh
 wxm
 iAS
 eEO
@@ -250966,7 +251423,7 @@ wjA
 wjA
 wjA
 iAS
-nYP
+bmg
 nYP
 iAS
 iAS
@@ -250987,7 +251444,7 @@ yiC
 pWJ
 iAS
 iAS
-wxm
+blX
 wxm
 ltP
 ltP
@@ -254416,7 +254873,7 @@ vdS
 mQX
 trM
 rLm
-wcG
+bmq
 lmp
 xjA
 hxx
@@ -255541,7 +255998,7 @@ jWv
 vJX
 gTU
 fWy
-sbe
+blQ
 pAs
 erm
 nVm
@@ -256450,7 +256907,7 @@ dFG
 dFG
 chi
 rtO
-ime
+bmm
 ime
 ime
 rtO
@@ -264666,7 +265123,7 @@ tPM
 iUi
 iUi
 tPM
-alt
+tUF
 vdP
 tPM
 gJp
@@ -267991,7 +268448,7 @@ oZc
 ttH
 oZc
 oZc
-mqM
+bmo
 rvs
 gmf
 oZc
@@ -277009,7 +277466,7 @@ oZc
 ttH
 oZc
 oZc
-mqM
+bmo
 rvs
 gmf
 oZc
@@ -287050,7 +287507,7 @@ gmf
 nFn
 nFn
 oZc
-mqM
+bmo
 dys
 oZc
 svp
@@ -330427,7 +330884,7 @@ oXa
 dZz
 apr
 apr
-aLc
+azF
 aLB
 aLt
 apr
@@ -331878,7 +332335,7 @@ aKQ
 apr
 apr
 apr
-aLC
+blE
 aLC
 aLH
 aLH
@@ -332304,7 +332761,7 @@ aRV
 aRV
 aLF
 aME
-aLw
+bma
 aMk
 apr
 apr
@@ -332361,7 +332818,7 @@ aQh
 aQh
 apr
 apr
-aSx
+blN
 aLC
 aMH
 aLC
@@ -332374,7 +332831,7 @@ aQh
 aQh
 apr
 apr
-aLc
+azF
 aMG
 aLu
 apr
@@ -332410,7 +332867,7 @@ aNd
 aLp
 apr
 apr
-aLR
+blA
 aMU
 aKQ
 aMI
@@ -333325,7 +333782,7 @@ apr
 aLp
 apr
 apr
-aLc
+azF
 aMk
 aRL
 apr
@@ -333345,7 +333802,7 @@ apr
 apr
 apr
 apr
-aKQ
+blK
 aMk
 aLF
 apr
@@ -337433,7 +337890,7 @@ aLq
 apr
 apr
 apr
-aLu
+blz
 aMF
 aMF
 aLI
@@ -339328,7 +339785,7 @@ acI
 aco
 apr
 apr
-aKQ
+blK
 aKQ
 apr
 aLn
@@ -339447,7 +339904,7 @@ aMk
 aMC
 apr
 apr
-aMk
+aWI
 aMg
 aMe
 aMb
@@ -340908,7 +341365,7 @@ apr
 apr
 apr
 apr
-aKQ
+blK
 aMi
 aKQ
 apr
@@ -350168,7 +350625,7 @@ pvt
 feZ
 mTC
 pHX
-qWH
+bmr
 feZ
 oVj
 wzF
@@ -350670,7 +351127,7 @@ pvt
 feZ
 gks
 vGN
-qWH
+bmr
 feZ
 oVj
 wzF
@@ -369683,7 +370140,7 @@ wdG
 wzF
 nlq
 snb
-pdv
+roG
 eyo
 jEK
 plW
@@ -370686,7 +371143,7 @@ wdG
 wdG
 wzF
 nlq
-myN
+dZw
 ndF
 eyo
 nzn
@@ -379056,7 +379513,7 @@ aPk
 aQV
 adl
 aPA
-aQy
+blM
 aPA
 aFq
 akv
@@ -413707,7 +414164,7 @@ avo
 aiR
 aDX
 aWZ
-ajA
+blC
 ajl
 asX
 aWZ
@@ -425615,7 +426072,7 @@ bfD
 bff
 bff
 bff
-bhG
+bmp
 bhu
 bgQ
 bgx
@@ -437241,7 +437698,7 @@ aWl
 aXy
 aXq
 aWl
-aAe
+blV
 aAe
 aWk
 azK
@@ -438771,7 +439228,7 @@ awm
 aTO
 awN
 aTt
-alK
+blR
 avF
 aTM
 aTM
@@ -440288,7 +440745,7 @@ aOY
 aOT
 ahP
 aPf
-aoM
+blO
 aPI
 aPI
 aPI
