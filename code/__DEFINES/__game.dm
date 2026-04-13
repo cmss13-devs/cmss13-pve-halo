@@ -54,6 +54,11 @@
 #define MAP_REDEMPTION_VALLEY "Redemption Valley" //valley with a military outpost and agricultural hamlet
 #define MAP_BINHAI_SUPPLY_STATION "Binhai Supply Station" //UPP asteroid base
 #define MAP_HALO_NEW_IRVINE "New Irvine"
+#define MAP_FEATURELESS_SPACE "Featureless Space"
+#define MAP_LV522_FEATURELESS_BARRENS "LV-522 Featureless Barrens"
+#define MAP_LV818_FEATURELESS_DESERT "LV-818 Featureless Desert"
+#define MAP_LV818_FEATURELESS_JUNGLE "LV-818 Featureless Jungle"
+#define MAP_LV295_FEATURELESS_ARCTIC "LV-818 FEATURELESS ARCTIC"
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
 
