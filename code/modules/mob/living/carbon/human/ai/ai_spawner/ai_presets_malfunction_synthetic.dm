@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/malfunctioning_synth
+/* /datum/human_ai_equipment_preset/malfunctioning_synth
 	faction = FACTION_MALF_SYNTH
 
 /datum/human_ai_equipment_preset/malfunctioning_synth/malf_synth
@@ -55,3 +55,4 @@
 	name = "UA Combat Android - Malfunctioning"
 	desc = "A damaged and hostile working joe"
 	path = /datum/equipment_preset/synth/working_joe/security_android/malf_synth
+ */

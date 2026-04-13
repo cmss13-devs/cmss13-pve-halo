@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/mercenaries
+/* /datum/human_ai_equipment_preset/mercenaries
 	faction = FACTION_MERCENARY
 
 /datum/human_ai_equipment_preset/mercenaries/grunt
@@ -85,3 +85,4 @@
 	name = "Black Dragoons Infiltrator"
 	desc = "The Black Dragoons' only force of stealth operatives, equipped for maximum manuverability and to strike fear in anyone who gets in their way."
 	path = /datum/equipment_preset/mercenary/infiltrator
+ */
