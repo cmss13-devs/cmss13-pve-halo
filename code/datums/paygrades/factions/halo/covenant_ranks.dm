@@ -95,6 +95,14 @@
 	ranking = 9
 	pay_multiplier = 5
 
+/datum/paygrade/covenant/sangheili_stealth
+	paygrade = PAY_SHORT_SANG_STEALTH
+	name = "Stealth Operative"
+	prefix = "Stealth Operative"
+	ranking = 6
+	pay_multiplier = 2
+
+
 // HIGH COMMAND
 
 /datum/paygrade/covenant/sangheili_commander
