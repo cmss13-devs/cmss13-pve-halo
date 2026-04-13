@@ -24659,6 +24659,29 @@
 /obj/structure/gun_rack/halo/armory/ma5b,
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab)
+"bms" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 9;
+	pixel_x = 2
+	},
+/obj/structure/machinery/power/apc/no_power/north,
+/turf/open/floor/prison/floor_plate,
+/area/new_irvine/sewers/lab/lvlfour)
+"bmt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c{
+	pixel_y = 13;
+	pixel_x = -4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets,
+/turf/open/floor/prison/floor_plate,
+/area/new_irvine/sewers/lab/lvlfour)
 "bmG" = (
 /obj/structure/pipes/standard/simple/hidden/green{
 	dir = 6
@@ -26084,11 +26107,8 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/largecrate/supply/ammo/m41amk1,
-/obj/item/ammo_magazine/shotgun/buckshot{
-	pixel_x = -5;
-	pixel_y = 4
-	},
+/obj/item/ammo_box/magazine/unsc/br55,
+/obj/item/ammo_magazine/shotgun/buckshot/unsc,
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvlthree)
 "bVk" = (
@@ -29081,13 +29101,8 @@
 /turf/open/floor/strata/white_cyan1/east,
 /area/new_irvine/sewers/lab/lvlthree)
 "dcq" = (
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	dir = 4;
-	pixel_x = -17;
+/obj/structure/machinery/door_control{
+	pixel_x = -28;
 	id = "S3_Containmment_3"
 	},
 /turf/open/floor/strata/white_cyan1/east,
@@ -30414,14 +30429,9 @@
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvltwo)
 "dGO" = (
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	id = "S3_Containmment_1";
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	pixel_x = 17;
-	dir = 8
+/obj/structure/machinery/door_control{
+	pixel_x = 29;
+	id = "S3_Containmment_1"
 	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/new_irvine/sewers/lab/lvlthree)
@@ -34598,14 +34608,9 @@
 /area/new_irvine/sewers/lab/lvlfour)
 "fwR" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	id = "S3_Containmment_2";
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	pixel_x = 17;
-	dir = 8
+/obj/structure/machinery/door_control{
+	pixel_x = 29;
+	id = "S3_Containmment_2"
 	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/new_irvine/sewers/lab/lvlthree)
@@ -36257,13 +36262,9 @@
 /area/new_irvine/sewers)
 "gil" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell B4";
-	layer = 3.2;
-	name = "Cell Control";
-	pixel_y = 19;
-	req_access = null
+	pixel_y = 30
 	},
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvlfour)
@@ -36618,11 +36619,11 @@
 	dir = 8;
 	light_color = "#dae2ff"
 	},
-/obj/structure/largecrate/supply/ammo/m41amk1,
-/obj/structure/largecrate/supply/ammo/m41amk1{
-	pixel_y = 11
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 8
+	},
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvlthree)
 "gsc" = (
@@ -38263,7 +38264,11 @@
 /area/new_irvine/sewers/lab/lvltwo)
 "hcY" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/surface/rack,
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 9;
+	pixel_x = 2
+	},
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab)
 "hdc" = (
@@ -42382,12 +42387,8 @@
 /turf/open/gm/dirt,
 /area/new_irvine/beach)
 "iOM" = (
-/obj/structure/gun_rack/mk221{
-	pixel_x = 8;
-	pixel_y = 16;
-	density = 0
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/vending/security/colony,
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvlthree)
 "iOQ" = (
@@ -46412,11 +46413,6 @@
 	pixel_y = 6;
 	layer = 3.5
 	},
-/obj/item/reagent_container/food/snacks/resin_fruit/greater{
-	layer = 3.6;
-	pixel_x = -12;
-	pixel_y = 5
-	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/new_irvine/sewers/lab/lvlthree)
 "ksF" = (
@@ -46695,14 +46691,9 @@
 /turf/open/floor/strata/white_cyan2/west,
 /area/new_irvine/sector_two/indoor/apartment)
 "kxe" = (
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell A3";
-	layer = 5.4;
-	name = "Cell Control";
-	pixel_y = -19;
-	dir = 1;
-	req_access = null
+	pixel_y = 30
 	},
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvlfour)
@@ -46781,14 +46772,6 @@
 	},
 /turf/open/floor/strata,
 /area/new_irvine/sector_one/indoor/corpauth)
-"kzi" = (
-/obj/structure/gun_rack/m41/unloaded{
-	pixel_y = 16;
-	density = 0
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/floor_plate,
-/area/new_irvine/sewers/lab/lvlthree)
 "kzk" = (
 /obj/structure/machinery/light/double/blue{
 	dir = 4;
@@ -47897,14 +47880,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab)
-"kTm" = (
-/obj/structure/gun_rack/mk221{
-	pixel_x = -9;
-	pixel_y = 16;
-	density = 0
-	},
-/turf/open/floor/prison/floor_plate,
-/area/new_irvine/sewers/lab/lvlthree)
 "kTu" = (
 /obj/structure/machinery/light/double{
 	dir = 4;
@@ -50489,11 +50464,7 @@
 /turf/open/floor/strata,
 /area/new_irvine/sector_four/indoor/port)
 "lTn" = (
-/obj/structure/machinery/vending/security/colony{
-	pixel_y = 16;
-	density = 0
-	},
-/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/ma5b,
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab/lvlthree)
 "lTu" = (
@@ -57040,7 +57011,7 @@
 /area/new_irvine/sector_three)
 "oyt" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/xenoautopsy/tank/alien{
+/obj/structure/xenoautopsy/tank{
 	pixel_y = 16
 	},
 /obj/structure/surface/table/almayer,
@@ -57161,17 +57132,12 @@
 /area/new_irvine/sector_three/indoor)
 "oAX" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	id = "S3_Containmment_4";
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	dir = 4;
-	pixel_x = -17
-	},
 /obj/structure/surface/table/almayer,
 /obj/item/newspaper,
+/obj/structure/machinery/door_control{
+	pixel_x = -28;
+	id = "S3_Containmment_4"
+	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/new_irvine/sewers/lab/lvlthree)
 "oBc" = (
@@ -63878,10 +63844,6 @@
 	pixel_y = 11
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/snacks/resin_fruit/speed{
-	pixel_x = 5;
-	pixel_y = 3
-	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/new_irvine/sewers/lab/lvlfour)
 "rrR" = (
@@ -66107,16 +66069,6 @@
 /obj/structure/closet/secure_closet/atmos_personal,
 /turf/open/floor/prison/bright_clean_marked,
 /area/new_irvine/sewers/lab/lvltwo)
-"snb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/power/apc/no_power/north,
-/obj/item/ammo_box/magazine/unsc/ma5b,
-/obj/item/ammo_box/magazine/unsc/ma5b{
-	pixel_y = 9;
-	pixel_x = 2
-	},
-/turf/open/floor/prison/floor_marked,
-/area/new_irvine/sewers/lab/lvlfour)
 "snr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue/golden_arrow{
@@ -66847,6 +66799,10 @@
 	light_color = "#dae2ff"
 	},
 /obj/structure/surface/rack,
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo,
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_y = 7
+	},
 /turf/open/floor/prison/floor_plate,
 /area/new_irvine/sewers/lab)
 "sFB" = (
@@ -67880,7 +67836,7 @@
 	icon_state = "W";
 	pixel_x = -1
 	},
-/obj/structure/xenoautopsy/tank/alien{
+/obj/structure/xenoautopsy/tank{
 	pixel_y = 16
 	},
 /obj/structure/surface/table/almayer,
@@ -76899,10 +76855,6 @@
 /area/new_irvine/sector_four/indoor/port)
 "wZb" = (
 /obj/structure/surface/table/almayer,
-/obj/item/oldresearch/Chitin{
-	pixel_y = 6;
-	pixel_x = -4
-	},
 /obj/item/storage/fancy/vials/random{
 	pixel_x = 5
 	},
@@ -78004,15 +77956,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata,
 /area/new_irvine/sector_two/indoor/nwapartment)
-"xxN" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/xenoautopsy/tank/hugger{
-	pixel_y = 16
-	},
-/obj/structure/surface/table/almayer,
-/obj/structure/window,
-/turf/open/floor/strata/white_cyan1,
-/area/new_irvine/sewers/lab/lvlfour)
 "xxP" = (
 /obj/structure/surface/table/almayer,
 /obj/item/reagent_container/food/snacks/sliceable/plaincake{
@@ -79489,13 +79432,9 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell L3";
-	layer = 3.2;
-	name = "Airlock Control";
-	pixel_y = 19;
-	req_access = null
+	pixel_y = 30
 	},
 /turf/open/floor/strata/white_cyan1,
 /area/new_irvine/sewers/lab/lvlfour)
@@ -323465,7 +323404,7 @@ iQt
 iQt
 ocS
 cPe
-seN
+fSZ
 fSZ
 fSZ
 eMH
@@ -329522,7 +329461,7 @@ xUk
 xUk
 xUk
 xUk
-fSZ
+seN
 fSZ
 xUk
 xUk
@@ -365621,7 +365560,7 @@ wdG
 wdG
 wzF
 nlq
-xxN
+oyt
 oIe
 oIe
 xOj
@@ -366625,7 +366564,7 @@ wdG
 wdG
 wzF
 nlq
-xxN
+oyt
 plW
 oIe
 oIe
@@ -370139,8 +370078,8 @@ wdG
 wdG
 wzF
 nlq
-snb
-roG
+nlq
+bms
 eyo
 jEK
 plW
@@ -371143,8 +371082,8 @@ wdG
 wdG
 wzF
 nlq
-dZw
-ndF
+nlq
+bmt
 eyo
 nzn
 hGg
@@ -373722,7 +373661,7 @@ xAy
 xAy
 wzF
 qxP
-lTn
+iOM
 iUB
 mio
 qRK
@@ -374224,7 +374163,7 @@ xAy
 xAy
 wzF
 qxP
-kzi
+qxP
 bmG
 shm
 lzN
@@ -375228,7 +375167,7 @@ xAy
 xAy
 wzF
 qxP
-kTm
+lTn
 mNg
 mio
 ilX
