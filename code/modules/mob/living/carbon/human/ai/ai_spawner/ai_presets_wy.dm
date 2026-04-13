@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/wy
+/* /datum/human_ai_equipment_preset/wy
 	faction = FACTION_WY
 
 /datum/human_ai_equipment_preset/wy/security/weyland
@@ -97,3 +97,4 @@
 	path = /datum/equipment_preset/wy/manager/director
 
 
+ */

@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/contractor
+/* /datum/human_ai_equipment_preset/contractor
 	faction = FACTION_CONTRACTOR
 
 /datum/human_ai_equipment_preset/contractor/duty/standard
@@ -62,3 +62,4 @@
 	name = "Contractor - Covert Synth"
 	desc = "Covert PMC support synthetic."
 	path = /datum/equipment_preset/contractor/covert/synth
+ */
