@@ -20,6 +20,21 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
+"ac" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 23
+	},
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/coastline/south)
+"ad" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/unsc_crate/stack,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/coastline/south)
 "ae" = (
 /turf/closed/wall/covenant/lights/brighter,
 /area/shield_base/outdoors/beach)
@@ -46,6 +61,36 @@
 	},
 /turf/open/gm/coast/north,
 /area/shield_base/outdoors/beach)
+"ai" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 23
+	},
+/turf/open/floor/strata/floor2,
+/area/shield_base/indoors/coastline/south)
+"aj" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -23
+	},
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/facility)
+"ak" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -23
+	},
+/turf/open/floor/strata/white_cyan1,
+/area/shield_base/indoors/facility)
+"al" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
+/turf/open/floor/strata/floor2,
+/area/shield_base/indoors/facility)
 "am" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 4
@@ -53,6 +98,22 @@
 /obj/structure/barricade/handrail/wire,
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/facility)
+"an" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
+/turf/open/floor/strata/white_cyan1,
+/area/shield_base/indoors/facility)
+"ao" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/photocopier,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 23
+	},
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "ap" = (
@@ -101,6 +162,35 @@
 /obj/structure/window,
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
+"av" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/photocopier,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -23
+	},
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/facility)
+"aw" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
+/turf/open/floor/strata/floor2,
+/area/shield_base/indoors/coastline/north)
+"ax" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/unsc_crate/stack,
+/obj/item/weapon/gun/smg/halo/m7/folded_up{
+	pixel_y = 7;
+	pixel_x = -1
+	},
+/turf/open/floor/strata/white_cyan1/east,
+/area/shield_base/indoors/facility)
+"ay" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/ma5b/unloaded,
+/turf/open/floor/prison/floor_plate,
+/area/shield_base/indoors/facility)
 "az" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
@@ -113,10 +203,41 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility/prefab)
+"aB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/coastline/north)
 "aC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/pipes/standard/manifold/fourway/hidden/green,
 /turf/open/floor/prison/cell_stripe/north,
+/area/shield_base/indoors/facility)
+"aD" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 1
+	},
+/turf/open/floor/strata/floor3,
+/area/shield_base/indoors/coastline/north)
+"aE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 8;
+	pixel_x = 5
+	},
+/turf/open/floor/prison/floor_plate,
+/area/shield_base/indoors/facility)
+"aF" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade/empty,
+/turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "aH" = (
 /obj/structure/machinery/light/double/blue{
@@ -2563,6 +2684,10 @@
 /obj/item/toy/desk/newtoncradle{
 	pixel_y = 8
 	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 23
+	},
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "lv" = (
@@ -2889,14 +3014,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/white_cyan1/east,
-/area/shield_base/indoors/facility)
-"mU" = (
-/obj/structure/gun_rack/m41/unloaded{
-	pixel_y = 16;
-	density = 0
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "mV" = (
 /obj/effect/decal/cleanable/dirt,
@@ -4333,11 +4450,8 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/largecrate/supply/ammo/m41amk1,
-/obj/item/ammo_magazine/shotgun/buckshot{
-	pixel_x = -5;
-	pixel_y = 4
-	},
+/obj/item/ammo_box/magazine/unsc/br55,
+/obj/item/ammo_magazine/shotgun/buckshot/unsc,
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "ti" = (
@@ -6874,12 +6988,8 @@
 /turf/open/floor/strata/white_cyan1,
 /area/shield_base/indoors/facility)
 "Ec" = (
-/obj/structure/gun_rack/mk221{
-	pixel_x = 8;
-	pixel_y = 16;
-	density = 0
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/br55/empty,
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "Ef" = (
@@ -7016,6 +7126,9 @@
 "EK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "EL" = (
@@ -7658,15 +7771,9 @@
 /turf/open/floor/almayer_hull,
 /area/shield_base/indoors/facility)
 "Ht" = (
-/obj/structure/gun_rack/mk221{
-	pixel_x = -7;
-	pixel_y = 16;
-	density = 0
-	},
 /obj/structure/machinery/vending/security/colony{
 	pixel_y = 16;
-	density = 0;
-	pixel_x = 17
+	density = 0
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/strata/white_cyan1/east,
@@ -7764,12 +7871,6 @@
 /area/shield_base/outdoors/oni)
 "HP" = (
 /turf/closed/wall/almayer/research/containment/wall/purple,
-/area/shield_base/indoors/facility)
-"HQ" = (
-/obj/structure/machinery/door/airlock/multi_tile/almayer/generic2{
-	name = "\improper Security Office Airlock"
-	},
-/turf/open/floor/corsat/marked,
 /area/shield_base/indoors/facility)
 "HS" = (
 /obj/structure/machinery/light/double/blue{
@@ -8655,6 +8756,7 @@
 /area/shield_base/indoors/facility)
 "LE" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/ma5b/unloaded,
 /turf/open/floor/prison/floor_marked,
 /area/shield_base/indoors/facility)
 "LF" = (
@@ -10151,11 +10253,7 @@
 /turf/open/floor/strata/white_cyan1,
 /area/shield_base/indoors/facility)
 "Re" = (
-/obj/structure/gun_rack/mk221{
-	pixel_x = -9;
-	pixel_y = 16;
-	density = 0
-	},
+/obj/structure/gun_rack/halo/armory/ma5b/unloaded,
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "Rf" = (
@@ -10930,11 +11028,8 @@
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/coastline/north)
 "Ui" = (
-/obj/structure/machinery/vending/security/colony{
-	pixel_y = 16;
-	density = 0
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/armory/br55/unloaded,
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "Uj" = (
@@ -11154,6 +11249,10 @@
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_y = -9;
+	pixel_x = -7
 	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/shield_base/indoors/facility)
@@ -11970,6 +12069,10 @@
 "Yy" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed/chair/comfy/bench/north,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 23
+	},
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/coastline/north)
 "YB" = (
@@ -12088,11 +12191,12 @@
 	dir = 8;
 	light_color = "#dae2ff"
 	},
-/obj/structure/largecrate/supply/ammo/m41amk1,
-/obj/structure/largecrate/supply/ammo/m41amk1{
-	pixel_y = 11
-	},
 /obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_y = 8;
+	pixel_x = 5
+	},
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "Zf" = (
@@ -20153,8 +20257,8 @@ wB
 wB
 wB
 cY
-LE
-wJ
+cY
+aE
 cY
 GF
 EI
@@ -20657,8 +20761,8 @@ wB
 wB
 wB
 cY
-LE
-Kr
+cY
+aF
 cY
 yE
 kI
@@ -23483,7 +23587,7 @@ QY
 cY
 cY
 cY
-lh
+ax
 AJ
 SV
 gL
@@ -24734,7 +24838,7 @@ wB
 wB
 wB
 cY
-HQ
+Ka
 Ol
 wi
 ug
@@ -25475,7 +25579,7 @@ zz
 Wp
 zz
 ly
-HQ
+Ka
 cY
 wB
 wB
@@ -26531,7 +26635,7 @@ vO
 eA
 UH
 WD
-Sb
+ao
 cY
 VJ
 Ct
@@ -27539,7 +27643,7 @@ Ao
 lb
 fJ
 WD
-Sb
+av
 cY
 IE
 BB
@@ -27553,7 +27657,7 @@ Ap
 Ct
 wu
 cY
-PV
+aj
 PV
 UH
 UH
@@ -29019,7 +29123,7 @@ wB
 wB
 wB
 cY
-mU
+cY
 cO
 GU
 An
@@ -29271,7 +29375,7 @@ wB
 wB
 wB
 cY
-Ui
+ay
 Cb
 cY
 Pl
@@ -29823,7 +29927,7 @@ cY
 kz
 kz
 cY
-yI
+ak
 Et
 nP
 yI
@@ -32086,7 +32190,7 @@ Qr
 kz
 cY
 cY
-yI
+an
 OF
 iE
 kz
@@ -38642,7 +38746,7 @@ dk
 Va
 Pr
 Pr
-UH
+al
 EO
 xc
 Pr
@@ -44440,7 +44544,7 @@ Ps
 Pr
 Pr
 EO
-PV
+aj
 Pr
 Ps
 dk
@@ -56851,7 +56955,7 @@ Hn
 ka
 GY
 GY
-GY
+ac
 iO
 Hn
 Zu
@@ -63261,7 +63365,7 @@ VT
 LG
 cp
 cp
-Jh
+aD
 VT
 xV
 Ya
@@ -63305,7 +63409,7 @@ Sp
 Jz
 cp
 VT
-cp
+aw
 Aa
 VT
 Zu
@@ -64778,7 +64882,7 @@ VT
 xV
 qK
 VT
-Aa
+aB
 nY
 cU
 cp
@@ -65906,7 +66010,7 @@ mx
 Hn
 Hn
 Ei
-KU
+ai
 yU
 cj
 Hn
@@ -66426,7 +66530,7 @@ LC
 LC
 xd
 Hn
-rx
+ad
 KU
 Hn
 KU
