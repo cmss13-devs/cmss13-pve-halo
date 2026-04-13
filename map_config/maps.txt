@@ -112,3 +112,6 @@ endmap
 
 map halo_new_irvine
 endmap
+
+map oni_shield_base
+endmap
