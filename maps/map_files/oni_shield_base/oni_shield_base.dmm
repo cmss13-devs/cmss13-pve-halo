@@ -1451,14 +1451,9 @@
 /turf/open/floor/plating/kutjevo/platingdmg1,
 /area/shield_base/indoors/facility)
 "fY" = (
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell A3";
-	layer = 5.4;
-	name = "Cell Control";
-	pixel_y = -19;
-	dir = 1;
-	req_access = null
+	pixel_y = 29
 	},
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
@@ -1659,9 +1654,9 @@
 /turf/open/floor/strata/white_cyan2,
 /area/shield_base/indoors/facility)
 "gM" = (
-/obj/structure/machinery/door/airlock/almayer/generic{
+/obj/structure/machinery/door/airlock/unsc/glass{
 	dir = 1;
-	name = "\improper Containment Airlock"
+	req_one_access_txt = "8"
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	id = "Containment Cell L3"
@@ -3306,9 +3301,7 @@
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "od" = (
-/obj/structure/machinery/door/airlock/almayer/generic{
-	name = "\improper Containment Airlock"
-	},
+/obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
 	id = "Containment Cell A3"
@@ -4300,13 +4293,9 @@
 	pixel_x = 1;
 	pixel_y = 1
 	},
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell L3";
-	layer = 3.2;
-	name = "Airlock Control";
-	pixel_y = 19;
-	req_access = null
+	pixel_y = 29
 	},
 /turf/open/floor/strata/white_cyan1,
 /area/shield_base/indoors/facility)
@@ -6086,13 +6075,6 @@
 /obj/structure/cargo_container/grant/right,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
-"Aj" = (
-/obj/structure/machinery/door/airlock/almayer/generic{
-	dir = 1;
-	name = "\improper Sublevel-4 Airlock"
-	},
-/turf/open/floor/corsat/marked,
-/area/shield_base/indoors/facility)
 "Ak" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "4-8"
@@ -6300,14 +6282,9 @@
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/outdoors/oni)
 "Ba" = (
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	id = "S3_Containmment_1";
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	pixel_x = 17;
-	dir = 8
+/obj/structure/machinery/door_control{
+	pixel_x = 29;
+	id = "S3_Containmment_1"
 	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/shield_base/indoors/facility)
@@ -6383,9 +6360,7 @@
 /turf/open/floor/strata/white_cyan1/east,
 /area/shield_base/indoors/facility)
 "Bo" = (
-/obj/structure/machinery/door/airlock/almayer/generic{
-	name = "\improper Containment Airlock"
-	},
+/obj/structure/machinery/door/airlock/unsc/glass,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
 	id = "Containment Cell B4"
@@ -6906,13 +6881,9 @@
 /area/shield_base/indoors/facility)
 "DF" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell B4";
-	layer = 3.2;
-	name = "Cell Control";
-	pixel_y = 19;
-	req_access = null
+	pixel_y = 29
 	},
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
@@ -8073,7 +8044,7 @@
 /area/shield_base/indoors/coastline/north)
 "IO" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/xenoautopsy/tank/alien{
+/obj/structure/xenoautopsy/tank{
 	pixel_y = 16
 	},
 /obj/structure/surface/table/almayer,
@@ -8749,9 +8720,7 @@
 /turf/open/gm/dirt,
 /area/shield_base/outdoors/beach)
 "LD" = (
-/obj/structure/machinery/door/airlock/almayer/generic{
-	name = "\improper Sublevel-4 Airlock"
-	},
+/obj/structure/machinery/door/airlock/unsc/glass,
 /turf/open/floor/corsat/marked,
 /area/shield_base/indoors/facility)
 "LE" = (
@@ -8826,7 +8795,7 @@
 	icon_state = "W";
 	pixel_x = -1
 	},
-/obj/structure/xenoautopsy/tank/alien{
+/obj/structure/xenoautopsy/tank{
 	pixel_y = 16
 	},
 /obj/structure/surface/table/almayer,
@@ -9211,15 +9180,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/outdoors/oni)
-"Nh" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/xenoautopsy/tank/hugger{
-	pixel_y = 16
-	},
-/obj/structure/surface/table/almayer,
-/obj/structure/window,
-/turf/open/floor/strata/white_cyan1,
-/area/shield_base/indoors/facility)
 "Nl" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/computer/operating{
@@ -9486,13 +9446,6 @@
 	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/shield_base/indoors/facility)
-"Oe" = (
-/obj/structure/machinery/door/airlock/multi_tile/almayer/generic2{
-	dir = 1;
-	name = "\improper Security Checkpoint Airlock"
-	},
-/turf/open/floor/corsat/marked,
-/area/shield_base/indoors/facility)
 "Og" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double/blue{
@@ -9541,13 +9494,8 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/shield_base/outdoors/oni)
 "Or" = (
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	dir = 4;
-	pixel_x = -17;
+/obj/structure/machinery/door_control{
+	pixel_x = -28;
 	id = "S3_Containmment_3"
 	},
 /turf/open/floor/strata/white_cyan1/east,
@@ -9577,10 +9525,6 @@
 /area/shield_base/outdoors/beach)
 "Oz" = (
 /obj/structure/surface/table/almayer,
-/obj/item/oldresearch/Chitin{
-	pixel_y = 6;
-	pixel_x = -4
-	},
 /obj/item/storage/fancy/vials/random{
 	pixel_x = 5
 	},
@@ -9745,14 +9689,9 @@
 /area/shield_base/indoors/facility)
 "Pi" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	id = "S3_Containmment_2";
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	pixel_x = 17;
-	dir = 8
+/obj/structure/machinery/door_control{
+	pixel_x = 29;
+	id = "S3_Containmment_2"
 	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/shield_base/indoors/facility)
@@ -10262,17 +10201,12 @@
 /area/shield_base/indoors/facility)
 "Rg" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
-	id = "S3_Containmment_4";
-	layer = 3.2;
-	name = "Airlock Control";
-	req_access = null;
-	dir = 4;
-	pixel_x = -17
-	},
 /obj/structure/surface/table/almayer,
 /obj/item/newspaper,
+/obj/structure/machinery/door_control{
+	pixel_x = -28;
+	id = "S3_Containmment_4"
+	},
 /turf/open/floor/strata/white_cyan1/east,
 /area/shield_base/indoors/facility)
 "Ri" = (
@@ -10857,14 +10791,9 @@
 	pixel_x = 1;
 	pixel_y = -1
 	},
-/obj/structure/machinery/door_display/research_cell{
-	has_wall_divider = 1;
+/obj/structure/machinery/door_control{
 	id = "Containment Cell R4";
-	layer = 5.4;
-	name = "Airlock Control";
-	pixel_y = -19;
-	dir = 1;
-	req_access = null
+	pixel_y = -29
 	},
 /turf/open/floor/strata/white_cyan1,
 /area/shield_base/indoors/facility)
@@ -11615,9 +11544,7 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/shield_base/outdoors/oni)
 "WF" = (
-/obj/structure/machinery/door/airlock/multi_tile/almayer/generic2{
-	name = "\improper Containment Airlock"
-	},
+/obj/structure/machinery/door/airlock/multi_tile/unsc,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	id = "Containment Cell Operating Table"
 	},
@@ -11882,10 +11809,6 @@
 	pixel_y = 11
 	},
 /obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/snacks/resin_fruit/speed{
-	pixel_x = 5;
-	pixel_y = 3
-	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/shield_base/indoors/facility)
 "XI" = (
@@ -12093,9 +12016,9 @@
 /turf/open/floor/strata/white_cyan2,
 /area/shield_base/indoors/facility)
 "YE" = (
-/obj/structure/machinery/door/airlock/almayer/generic{
+/obj/structure/machinery/door/airlock/unsc/glass{
 	dir = 1;
-	name = "\improper Containment Airlock"
+	req_one_access_txt = "8"
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	id = "Containment Cell R4"
@@ -17989,7 +17912,7 @@ wB
 wB
 wB
 cY
-Nh
+IO
 SV
 SV
 eD
@@ -18493,7 +18416,7 @@ wB
 wB
 wB
 cY
-Nh
+IO
 EI
 SV
 SV
@@ -19758,13 +19681,13 @@ rC
 SV
 SV
 SV
-Aj
+ep
 tb
 dC
 mH
 tY
 zL
-Aj
+ep
 EI
 SV
 SV
@@ -20262,13 +20185,13 @@ aE
 cY
 GF
 EI
-Aj
+ep
 fq
 dC
 mH
 tY
 zL
-Aj
+ep
 SV
 SV
 SV
@@ -24818,7 +24741,7 @@ cY
 cY
 cY
 Sm
-Oe
+hO
 cY
 cY
 cY
