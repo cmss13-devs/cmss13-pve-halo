@@ -52,7 +52,7 @@
 	},
 /obj/structure/barricade/handrail/wire,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "ap" = (
@@ -332,7 +332,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 1
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "bI" = (
@@ -376,7 +376,7 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 8
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "bQ" = (
@@ -452,7 +452,7 @@
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff"
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "cj" = (
@@ -752,7 +752,7 @@
 /turf/open/floor/strata/white_cyan2/west,
 /area/shield_base/indoors/facility)
 "dk" = (
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "dm" = (
@@ -1073,7 +1073,7 @@
 	light_color = "#dae2ff";
 	dir = 1
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "eP" = (
@@ -1255,7 +1255,7 @@
 	light_color = "#dae2ff";
 	dir = 8
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "fJ" = (
@@ -1505,7 +1505,7 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "gH" = (
@@ -1528,7 +1528,7 @@
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff"
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "gL" = (
@@ -1576,7 +1576,7 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "gV" = (
@@ -2442,7 +2442,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "kR" = (
@@ -2644,7 +2644,7 @@
 	light_color = "#dae2ff";
 	dir = 8
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "lN" = (
@@ -2921,7 +2921,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/shield_base/indoors/facility)
 "mY" = (
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "na" = (
@@ -3185,7 +3185,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "od" = (
@@ -3466,7 +3466,7 @@
 /area/shield_base/indoors/facility)
 "pC" = (
 /obj/effect/decal/cleanable/blood,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "pE" = (
@@ -3969,7 +3969,7 @@
 	light_color = "#dae2ff";
 	dir = 1
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "rT" = (
@@ -4603,7 +4603,7 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "ue" = (
@@ -4613,7 +4613,7 @@
 /obj/structure/barricade/sandbags/wired{
 	dir = 8
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "uf" = (
@@ -4764,7 +4764,7 @@
 	dir = 4
 	},
 /obj/structure/barricade/handrail/wire,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "uK" = (
@@ -4977,7 +4977,7 @@
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "vC" = (
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/closed/wall/hangar,
 /area/shield_base/indoors/facility)
 "vD" = (
@@ -5165,7 +5165,7 @@
 "wk" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/misc/unsc/m7_ammo/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "wl" = (
@@ -5198,7 +5198,7 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "ws" = (
@@ -5455,7 +5455,7 @@
 "xI" = (
 /obj/structure/barricade/handrail/wire,
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "xM" = (
@@ -5469,7 +5469,7 @@
 /area/shield_base/indoors/facility)
 "xO" = (
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "xP" = (
@@ -5477,7 +5477,7 @@
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 5
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "xQ" = (
@@ -5698,7 +5698,7 @@
 /area/shield_base/indoors/facility)
 "yQ" = (
 /obj/structure/largecrate/random/barrel/true_random,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
 "yS" = (
@@ -5942,7 +5942,7 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Aa" = (
@@ -6077,7 +6077,7 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "AF" = (
@@ -6332,7 +6332,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "BG" = (
@@ -6620,7 +6620,7 @@
 /area/shield_base/outdoors/oni)
 "CL" = (
 /obj/effect/decal/cleanable/blood,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "CN" = (
@@ -6700,7 +6700,7 @@
 "Da" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/unsc_crate/big,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "Db" = (
@@ -6816,7 +6816,7 @@
 /area/shield_base/indoors/facility)
 "DO" = (
 /obj/structure/fence,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "DQ" = (
@@ -6958,7 +6958,7 @@
 /area/shield_base/indoors/facility)
 "Ey" = (
 /obj/structure/cargo_container/grant/rightmid,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
 "Ez" = (
@@ -6980,7 +6980,7 @@
 	light_color = "#dae2ff";
 	dir = 8
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "EE" = (
@@ -7575,7 +7575,7 @@
 /area/shield_base/indoors/facility)
 "Hc" = (
 /obj/structure/barricade/handrail/wire,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Hd" = (
@@ -7591,7 +7591,7 @@
 "He" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/unsc_crate/stack,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "Hg" = (
@@ -7902,7 +7902,7 @@
 "Ir" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/secure,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "It" = (
@@ -7981,7 +7981,7 @@
 /area/shield_base/indoors/facility)
 "IQ" = (
 /obj/structure/gun_rack/halo/armory/br55/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "IR" = (
@@ -8024,7 +8024,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Ja" = (
@@ -8163,7 +8163,7 @@
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff"
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "JI" = (
@@ -8462,7 +8462,7 @@
 /area/shield_base/outdoors/oni)
 "KT" = (
 /obj/structure/prop/static_tank/fuel,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
 "KU" = (
@@ -9018,7 +9018,7 @@
 "MP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/misc/unsc/grenade/launchable/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "MS" = (
@@ -9054,7 +9054,7 @@
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = -5
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "MW" = (
@@ -9086,7 +9086,7 @@
 	light_color = "#dae2ff";
 	dir = 4
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Nd" = (
@@ -9309,7 +9309,7 @@
 /area/shield_base/indoors/facility)
 "NQ" = (
 /obj/structure/cargo_container/grant/right,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
 "NR" = (
@@ -9403,7 +9403,7 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 1
 	},
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Oj" = (
@@ -9703,7 +9703,7 @@
 /area/shield_base/indoors/facility)
 "Ps" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "Pt" = (
@@ -10267,7 +10267,7 @@
 "Ry" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "RD" = (
@@ -10466,7 +10466,7 @@
 	dir = 8
 	},
 /obj/structure/barricade/handrail/wire,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Sz" = (
@@ -10536,7 +10536,7 @@
 "SG" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/misc/unsc/flare/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "SJ" = (
@@ -10576,7 +10576,7 @@
 /turf/open/floor/strata/multi_tiles/west,
 /area/shield_base/indoors/facility)
 "SR" = (
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
 "SV" = (
@@ -10842,7 +10842,7 @@
 "TQ" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/ammo_box/magazine/misc/unsc/mre/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "TS" = (
@@ -10903,12 +10903,12 @@
 	dir = 1
 	},
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Ue" = (
 /obj/structure/cargo_container/grant/left,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor2,
 /area/shield_base/indoors/facility)
 "Ug" = (
@@ -11129,7 +11129,7 @@
 "Va" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/gun_rack/halo/armory/br55/empty,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "Vd" = (
@@ -11276,7 +11276,7 @@
 "VE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/barrel/true_random,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/multi_tiles/southwest,
 /area/shield_base/indoors/facility)
 "VG" = (
@@ -12127,7 +12127,7 @@
 /area/shield_base/indoors/facility)
 "Zp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/prop/invuln/darkness,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/shield_base/indoors/facility)
 "Zt" = (
@@ -39641,7 +39641,7 @@ WE
 bV
 Eu
 AE
-vC
+Pr
 vC
 dk
 gG
@@ -43933,7 +43933,7 @@ vC
 rQ
 dk
 xO
-dk
+YI
 Pr
 dp
 Pr
