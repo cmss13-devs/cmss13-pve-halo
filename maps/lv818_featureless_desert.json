@@ -2,10 +2,8 @@
     "map_name": "LV-818 Featureless Desert",
     "map_path": "map_files/LV818_Featureless_Desert",
     "map_file": "LV818_Featureless_Desert.dmm",
-    "webmap_url": "Solaris",
     "weather_holder": "/datum/weather_ss_map_holder/big_red",
     "traits": [{ "Ground": true }],
-    "nightmare_path": "maps/Nightmare/maps/BigRed/",
     "camouflage": "desert"
 
 }
