@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/clf
+/* /datum/human_ai_equipment_preset/clf
 	faction = FACTION_UA_REBEL
 
 //UA Rebels
@@ -52,3 +52,4 @@
 	name = "UA Rebel Combat Android"
 	desc = "An illegal combat android for the UA rebel faction. Use this sparingly."
 	path = /datum/equipment_preset/synth/working_joe/security_android/ua_rebel
+ */
