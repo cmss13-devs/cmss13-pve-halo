@@ -317,3 +317,9 @@
 	name = "New Irvine - Access Denied"
 	icon_state = "3S DORM"
 	powernet_name = "New Irvine - Lab #4"
+
+/area/new_irvine/covenant
+	name = "New Irvine - Covenant Structure"
+	icon_state = "3S DORM"
+	powernet_name = "New Irvine - Covenant Structure"
+	ceiling = CEILING_METAL
