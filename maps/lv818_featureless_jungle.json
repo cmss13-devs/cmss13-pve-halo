@@ -5,5 +5,4 @@
     "weather_holder": "/datum/weather_ss_map_holder/lv624",
     "traits": [{ "Ground": true }],
     "camouflage": "jungle"
-
 }
