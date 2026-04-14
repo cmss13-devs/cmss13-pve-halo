@@ -2798,7 +2798,9 @@
 #include "modular_pve_halo\code\game\objects\items\weapons\blades.dm"
 #include "modular_pve_halo\code\game\objects\structures\shower.dm"
 #include "modular_pve_halo\code\modules\almayer\machinery.dm"
+#include "modular_pve_halo\code\modules\clothing\glasses\glasses.dm"
 #include "modular_pve_halo\code\modules\clothing\masks\gasmask.dm"
 #include "modular_pve_halo\code\modules\clothing\suits\marine_coat.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
+#include "modular_pve_halo\code\modules\projectiles\guns\halo\unsc_guns.dm"
 // END_INCLUDE
