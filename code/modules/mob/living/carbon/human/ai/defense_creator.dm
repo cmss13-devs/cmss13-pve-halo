@@ -209,11 +209,11 @@
 	name = "W-Y Sentry - Static"
 	desc = /obj/structure/machinery/defenses/sentry/premade/deployable/wy::desc
 	icon_state = "wy_sentry_static"
-	path_to_spawn = /obj/structure/machinery/defenses/sentry/premade/deployable/wy
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/premade/deployable/wy */
 
 // Bell towers
 
-/datum/human_ai_defense/defense/bell_tower
+/* /datum/human_ai_defense/defense/bell_tower
 	name = "USCM Bell Tower"
 	desc = /obj/structure/machinery/defenses/bell_tower::desc
 	icon_state = "uscm_belltower"
@@ -230,14 +230,14 @@
 	name = "USCM Bell Tower - MD"
 	desc = /obj/structure/machinery/defenses/bell_tower/md::desc
 	icon_state = "uscm_belltower_md"
-	path_to_spawn = /obj/structure/machinery/defenses/bell_tower/md
+	path_to_spawn = /obj/structure/machinery/defenses/bell_tower/md */
 
 // Flags
 
 /datum/human_ai_defense/defense/flag
 	category = "Planted Flags"
 
-/datum/human_ai_defense/defense/flag/uscm
+/* /datum/human_ai_defense/defense/flag/uscm
 	name = "USCM Planted Flag"
 	desc = /obj/structure/machinery/defenses/planted_flag::desc
 	icon_state = "uscm_flag"
@@ -265,11 +265,11 @@
 	name = "W-Y Planted Flag"
 	desc = /obj/structure/machinery/defenses/planted_flag/wy::desc
 	icon_state = "wy_flag"
-	path_to_spawn = /obj/structure/machinery/defenses/planted_flag/wy
+	path_to_spawn = /obj/structure/machinery/defenses/planted_flag/wy */
 
 // Teslas
 
-/datum/human_ai_defense/defense/tesla
+/* /datum/human_ai_defense/defense/tesla
 	name = "USCM Tesla Coil"
 	desc = /obj/structure/machinery/defenses/tesla_coil::desc
 	icon_state = "uscm_tesla"
