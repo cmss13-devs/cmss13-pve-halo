@@ -122,7 +122,7 @@
 /datum/human_ai_defense/defense/sentry
 	category = "Sentries"
 
-/datum/human_ai_defense/defense/sentry/uscm
+/* /datum/human_ai_defense/defense/sentry/uscm
 	name = "USCM Sentry"
 	desc = /obj/structure/machinery/defenses/sentry::desc
 	icon_state = "uscm_sentry"
@@ -286,7 +286,7 @@
 	name = "USCM Tesla Coil - Micro"
 	desc = /obj/structure/machinery/defenses/tesla_coil/micro::desc
 	icon_state = "uscm_tesla_micro"
-	path_to_spawn = /obj/structure/machinery/defenses/tesla_coil/micro
+	path_to_spawn = /obj/structure/machinery/defenses/tesla_coil/micro */
 
 // Mines
 
