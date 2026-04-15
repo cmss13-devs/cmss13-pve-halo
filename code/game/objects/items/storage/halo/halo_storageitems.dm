@@ -431,7 +431,7 @@
 	name = "\improper Covenant ammunition belt"
 	desc = "A modular attachment for a warrior's combat harness that accepts several hard case blister units for personal storage, and to holster weaponry. Thanks to advancements in smart-materials, the belt is theoretically a true 'one size fits all' design."
 	icon = 'icons/halo/obj/items/clothing/covenant/belts.dmi'
-	icon_state = "sangbelt_minor"
+	icon_state = "sang_minor"
 	has_gamemode_skin = FALSE
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	can_hold = list(
@@ -458,8 +458,8 @@
 
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
-	icon_state = "sangbelt_minor"
-	item_state = "sangbelt_minor"
+	icon_state = "sang_minor"
+	item_state = "sang_minor"
 	item_icons = list(
 		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/sangheili/belts.dmi'
 		)
@@ -471,20 +471,40 @@
 
 /obj/item/storage/belt/marine/covenant/sangheili/major
 	name = "\improper Sangheili Major ammunition belt"
-	icon_state = "sangbelt_major"
-	item_state = "sangbelt_major"
+	icon_state = "sang_major"
+	item_state = "sang_major"
 
 /obj/item/storage/belt/marine/covenant/sangheili/major/stored_needles
 
 /obj/item/storage/belt/marine/covenant/sangheili/ultra
 	name = "\improper Sangheili Ultra ammunition belt"
-	icon_state = "sangbelt_ultra"
-	item_state = "sangbelt_ultra"
+	icon_state = "sang_ultra"
+	item_state = "sang_ultra"
 
 /obj/item/storage/belt/marine/covenant/sangheili/zealot
 	name = "\improper Sangheili Zealot ammunition belt"
-	icon_state = "sangbelt_zealot"
-	item_state = "sangbelt_zealot"
+	icon_state = "sang_zealot"
+	item_state = "sang_zealot"
+
+/obj/item/storage/belt/marine/covenant/sangheili/specops
+	name = "\improper Sangheili Special Operations ammunition belt"
+	icon_state = "sang_specops"
+	item_state = "sang_specops"
+
+/obj/item/storage/belt/marine/covenant/sangheili/specops/ultra
+	name = "\improper Sangheili Special Operations Ultra ammunition belt"
+	icon_state = "sang_specultra"
+	item_state = "sang_specultra"
+
+/obj/item/storage/belt/marine/covenant/sangheili/stealth
+	name = "\improper Sangheili Stealth ammunition belt"
+	icon_state = "sang_stealth"
+	item_state = "sang_stealth"
+
+/obj/item/storage/belt/marine/covenant/sangheili/honor_guard
+	name = "\improper Sangheili Honor Guard ammunition belt"
+	icon_state = "sang_honorguard"
+	item_state = "sang_honorguard"
 
 /obj/item/storage/belt/marine/covenant/unggoy
 	name = "\improper Unggoy ammunition belt"

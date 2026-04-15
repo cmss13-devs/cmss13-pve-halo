@@ -204,7 +204,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
 	add_plasma_pistol_package(new_human)
 
@@ -213,7 +213,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/needler/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
 	add_needler_package(new_human)
 
@@ -222,7 +222,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
 	add_plasma_rifle_package(new_human)
 
@@ -240,7 +240,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
 	add_plasma_pistol_package(new_human)
 
@@ -249,7 +249,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser/needler/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
 	add_needler_package(new_human)
 
@@ -258,7 +258,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/lesser/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
 	add_plasma_rifle_package(new_human)
 
@@ -277,7 +277,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops/ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
 	add_plasma_pistol_package(new_human)
 
@@ -286,7 +286,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/needler/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops/ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
 	add_needler_package(new_human)
 
@@ -295,7 +295,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/stealth/unggoy_specops/ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unggoy/cloaking/specops/ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
 	add_plasma_rifle_package(new_human)
 
@@ -354,7 +354,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/cloaked/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	var	/obj/item/clothing/suit/marine/unggoy/cloaked/special_ops/cloak = new()
+	var	/obj/item/clothing/suit/marine/unggoy/cloaking/specops/cloak = new()
 	cloak.attack_self(new_human)
 	new_human.equip_to_slot_or_del(cloak, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops(new_human), WEAR_WAIST)
@@ -366,7 +366,7 @@
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/plasma_rifle/cloaked/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
-	var	/obj/item/clothing/suit/marine/unggoy/cloaked/special_ops/ultra/cloak = new()
+	var	/obj/item/clothing/suit/marine/unggoy/cloaking/specops/ultra/cloak = new()
 	cloak.attack_self(new_human)
 	new_human.equip_to_slot_or_del(cloak, WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra(new_human), WEAR_WAIST)
