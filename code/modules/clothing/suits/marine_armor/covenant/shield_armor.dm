@@ -198,7 +198,7 @@
 
 	name = "\improper Sangheili Honor Guard combat harness"
 
-	icon_state = "sang_honorguard"
+	icon_state = "sang_major"
 
 	shield = SANG_SHIELD_HONOR_GUARD
 	armor_melee = CLOTHING_ARMOR_GIGAHIGH

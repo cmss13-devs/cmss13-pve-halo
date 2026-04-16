@@ -319,7 +319,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/honor_guard
-	name = parent_type::name + " Stealth (Plasma Rifle)"
+	name = parent_type::name + " Honor Guard"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
@@ -362,7 +362,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/minor(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/minor(new_human), WEAR_WAIST)
 	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/sangheili/minor = 70, /obj/item/clothing/head/helmet/marine/sangheili/minor/manta_hat = 30))
-	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/minor = 70, /obj/item/clothing/accessory/pads/sangheili/minor/variant_2 = 20, /obj/item/clothing/accessory/pads/sangheili/minor/variant_3 = 10))
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/minor = 50, /obj/item/clothing/accessory/pads/sangheili/minor/variant_2 = 30, /obj/item/clothing/accessory/pads/sangheili/minor/variant_3 = 20))
 	new_human.equip_to_slot_or_del(new pick_hat(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
 
@@ -374,7 +374,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/major(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/major(new_human), WEAR_WAIST)
 	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/sangheili/major = 70, /obj/item/clothing/head/helmet/marine/sangheili/major/manta_hat = 30))
-	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/major = 70, /obj/item/clothing/accessory/pads/sangheili/major/variant_2 = 20, /obj/item/clothing/accessory/pads/sangheili/major/variant_3 = 10))
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/major = 50, /obj/item/clothing/accessory/pads/sangheili/major/variant_2 = 30, /obj/item/clothing/accessory/pads/sangheili/major/variant_3 = 20))
 	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new pick_pads, WEAR_ACCESSORY)
 
@@ -397,8 +397,8 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/sangheili/zealot(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/zealot(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/zealot(new_human), WEAR_WAIST)
-	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/sangheili/zealot = 25, /obj/item/clothing/head/helmet/marine/sangheili/zealot/manta_hat = 75))
-	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/zealot = 10, /obj/item/clothing/accessory/pads/sangheili/zealot/variant_2 = 10, /obj/item/clothing/accessory/pads/sangheili/zealot/variant_3 = 80))
+	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/sangheili/zealot = 50, /obj/item/clothing/head/helmet/marine/sangheili/zealot/manta_hat = 50))
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/zealot = 20, /obj/item/clothing/accessory/pads/sangheili/zealot/variant_2 = 20, /obj/item/clothing/accessory/pads/sangheili/zealot/variant_3 = 60))
 	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new pick_pads, WEAR_ACCESSORY)
 
@@ -422,7 +422,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/sangheili/specops/ultra(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/sangheili/specops/ultra(new_human), WEAR_WAIST)
 	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/sangheili/specops/ultra = 20, /obj/item/clothing/head/helmet/marine/sangheili/specops/ultra/manta_hat = 0, /obj/item/clothing/head/helmet/marine/sangheili/specops/ultra/assault = 80))
-	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/specops/ultra = 10, /obj/item/clothing/accessory/pads/sangheili/specops/ultra/variant_2 = 10, /obj/item/clothing/accessory/pads/sangheili/specops/ultra/variant_3 = 80))
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/sangheili/specops/ultra = 25, /obj/item/clothing/accessory/pads/sangheili/specops/ultra/variant_2 = 25, /obj/item/clothing/accessory/pads/sangheili/specops/ultra/variant_3 = 50))
 	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new pick_pads, WEAR_ACCESSORY)
 
