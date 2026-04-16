@@ -14,7 +14,7 @@
 	faction_group = FACTION_LIST_COVENANT
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
-	faction = FACTION_COVENANT
+	faction = FACTION_SANGHEILI
 	skills = /datum/skills/covenant/sangheili
 
 /datum/equipment_preset/covenant/sangheili/load_race(mob/living/carbon/human/new_human, client/mob_client)
