@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/twe_rebel
+/* /datum/human_ai_equipment_preset/twe_rebel
 	faction = FACTION_TWE_REBEL
 
 /datum/human_ai_equipment_preset/twe_rebel/guerilla
@@ -55,3 +55,4 @@
 	name = "TWE Rebel Automaton"
 	desc = "A very illegal security droid used by rebel forces"
 	path = /datum/equipment_preset/synth/working_joe/upp/combat/twe_rebel
+ */
