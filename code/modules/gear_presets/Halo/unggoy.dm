@@ -225,6 +225,7 @@
 	name = parent_type::name + " SpecOps"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
+	faction = FACTION_SPECOPS_UNGGOY
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_SPECOPS
 	rank = JOB_COV_SPECOPS
@@ -254,12 +255,21 @@
 	add_needler_package(new_human)
 
 /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle
-	name = parent_type::name + " SpecOps (Plasma Rifle)"
+	name = parent_type::name + " (Plasma Rifle)"
 
 /datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
 	add_grunt_specops(new_human)
 	add_plasma_rifle_package(new_human)
+
+/datum/equipment_preset/covenant/unggoy/specops/cloaking
+	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
+
+/datum/equipment_preset/covenant/unggoy/specops/cloaking/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	add_grunt_specops(new_human)
+	add_plasma_rifle_package(new_human)
+	grunt_camouflage(new_human)
 
 // =================================
 // SPECOPS ULTRA
@@ -269,6 +279,7 @@
 	name = parent_type::name + " SpecOps Ultra"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
+	faction = FACTION_SPECOPS_UNGGOY
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_SPECOPS_ULTRA
 	rank = JOB_COV_SPECOPS_ULTRA
@@ -304,6 +315,15 @@
 	add_grunt_basics(new_human)
 	add_grunt_specops_ultra(new_human)
 	add_plasma_rifle_package(new_human)
+
+/datum/equipment_preset/covenant/unggoy/specops_ultra/cloaking
+	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
+
+/datum/equipment_preset/covenant/unggoy/specops_ultra/cloaking/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	add_grunt_specops_ultra(new_human)
+	add_plasma_rifle_package(new_human)
+	grunt_camouflage(new_human)
 
 // =================================
 // DEACON
@@ -607,3 +627,9 @@
 			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/covenant/unggoy/ultra/doubleprong(new_human), WEAR_BACK)
 		if("canister")
 			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/covenant/unggoy/ultra/canister(new_human), WEAR_BACK)
+
+/datum/equipment_preset/proc/grunt_camouflage(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	for(var/obj/item/clothing/suit/marine/unggoy/cloaking/camouflage in new_human)
+		camouflage.attack_self(new_human)

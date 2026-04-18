@@ -186,7 +186,7 @@
 	add_elite_basics(new_human)
 	add_elite_zealot(new_human)
 	add_plasma_rifle_package(new_human)
-	camouflage(new_human)
+	elite_camouflage(new_human)
 
 // =================================
 // Special Operations
@@ -225,7 +225,7 @@
 	add_elite_basics(new_human)
 	add_elite_specops(new_human)
 	add_plasma_rifle_package(new_human)
-	camouflage(new_human)
+	elite_camouflage(new_human)
 
 // =================================
 // Special Operations Ultra
@@ -264,7 +264,7 @@
 	add_elite_basics(new_human)
 	add_elite_specops_ultra(new_human)
 	add_plasma_rifle_package(new_human)
-	camouflage(new_human)
+	elite_camouflage(new_human)
 
 // =================================
 // Stealth
@@ -303,7 +303,7 @@
 	add_elite_basics(new_human)
 	add_elite_stealth(new_human)
 	add_needler_package(new_human)
-	camouflage(new_human)
+	elite_camouflage(new_human)
 
 /datum/equipment_preset/covenant/sangheili/stealth/cloaking
 	name = parent_type::name + " (Cloaked)"
@@ -312,7 +312,7 @@
 	add_elite_basics(new_human)
 	add_elite_stealth(new_human)
 	add_plasma_rifle_package(new_human)
-	camouflage(new_human)
+	elite_camouflage(new_human)
 
 // =================================
 // Honor Guard
@@ -452,7 +452,7 @@
 	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new pick_pads, WEAR_ACCESSORY)
 
-/datum/equipment_preset/proc/camouflage(mob/living/carbon/human/new_human)
+/datum/equipment_preset/proc/elite_camouflage(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
 	for(var/obj/item/clothing/suit/marine/shielded/sangheili/cloaking/camouflage in new_human)
