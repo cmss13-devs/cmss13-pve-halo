@@ -384,6 +384,22 @@
 	icon_state = "tn13"
 	path_to_spawn = /obj/item/explosive/mine/tn13/strong/active
 
+/datum/human_ai_defense/mine/covenant
+	uses_turned_on = FALSE
+	category = "Covenant Landmines"
+
+/datum/human_ai_defense/mine/covenant/covenant_needler
+	name = "Covenant Needle Mine"
+	desc = /obj/item/explosive/mine/covenant/needle_mine::desc
+	icon_state = "needlemine"
+	path_to_spawn = /obj/item/explosive/mine/covenant/needle_mine/active
+
+/datum/human_ai_defense/mine/covenant/covenant_plasma
+	name = "Covenant Plasma Mine"
+	desc = /obj/item/explosive/mine/covenant/plasma/active::desc
+	icon_state = "needlemine"
+	path_to_spawn = /obj/item/explosive/mine/covenant/plasma/active
+
 // Barricades
 
 /datum/human_ai_defense/barricade
