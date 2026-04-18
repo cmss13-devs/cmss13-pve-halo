@@ -1,4 +1,13 @@
 /obj/item/clothing/suit/marine/unggoy/cloaking
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+
+	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
+	item_icons = list(
+		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/armor.dmi'
+	)
+	allowed_species_list = list(SPECIES_UNGGOY)
+
 	var/camo_active = FALSE
 	var/full_camo_alpha = FULL_PVE_CAMO_ALPHA
 	var/incremental_shooting_camo_penalty = 6
@@ -124,19 +133,11 @@
 		anim(H.loc, H,'icons/mob/mob.dmi', null, "uncloak", null, H.dir)
 
 /obj/item/clothing/suit/marine/unggoy/cloaking/specops
-	name = "Unggoy SpecOps combat harness"
+	name = "Unggoy Special Operations combat harness"
 	desc = "A dark purple harness reserved for those few Unggoy who meet the requirements to join the Special-Warfare-Group's ranks. While benefiting from numerous fitting and material developments over the more common combat harnesses of their brothers, the Spec-Ops variant also features obvious advancements in the areas of stealth."
 	desc_lore = "From passive thermal and sensor stealth built into its matrices, to the capability to become totally invisible on all spectrum given an active camouflage module, this harness is well worth the countless nights of training."
 	icon_state = "unggoy_specops"
 	item_state = "unggoy_specops"
-	slowdown = SLOWDOWN_ARMOR_LIGHT
-	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
-
-	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
-	item_icons = list(
-		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/armor.dmi'
-	)
-	allowed_species_list = list(SPECIES_UNGGOY)
 
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
@@ -146,8 +147,8 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
-/obj/item/clothing/suit/marine/unggoy/cloaking/specops/ultra
-	name = "Unggoy SpecOps Ultra combat harness"
+/obj/item/clothing/suit/marine/unggoy/cloaking/specops_ultra
+	name = "Unggoy Special Operations Ultra combat harness"
 	desc = "A modification of the Spec-Ops harness used by Unggoy of the Special-Warfare-Group, worn by veterans and specialists. A notable improvement over the common Spec-Ops harness, featuring reinforced composites designed for direct combat. While many may regard Unggoy as cowardly and weak, few who've seen this black harness live to tell about it, and those who do have far different opinions."
 	icon_state = "unggoy_specops_ultra"
 	item_state = "unggoy_specops_ultra"

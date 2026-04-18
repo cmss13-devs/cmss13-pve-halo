@@ -335,7 +335,9 @@
 	add_elite_honor_guard(new_human)
 	add_plasma_rifle_package(new_human)
 
-//Procs
+// =================================
+// PROCS
+// =================================
 
 /datum/equipment_preset/proc/add_elite_basics(mob/living/carbon/human/new_human)
 	if(!istype(new_human))

@@ -18,6 +18,9 @@
 
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
+	valid_accessory_slots = list(ACCESSORY_SLOT_UNGGOY_BICEP, ACCESSORY_SLOT_UNGGOY_SHOULDER)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_UNGGOY_BICEP, ACCESSORY_SLOT_UNGGOY_SHOULDER)
+
 /obj/item/clothing/suit/marine/unggoy/minor
 	name = "Unggoy Minor combat harness"
 	desc = "A combat harness designed for use by Unggoy warriors, made of a sturdy nanolaminate composite and coloured to denote the warriors rank. Thanks to the weight of the methane tank usually mounted to the harness, the actual coverage of the plating is relatively limited, only covering the chest, waist and shoulders. <b>This one indicates the wearer is an Unggoy Minor.</b>"
@@ -35,7 +38,7 @@
 	icon_state = "unggoy_heavy"
 	item_state = "unggoy_heavy"
 
-	armor_bomb = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_VERYHIGH
 
 /obj/item/clothing/suit/marine/unggoy/ultra
 	name = "Unggoy Ultra combat harness"

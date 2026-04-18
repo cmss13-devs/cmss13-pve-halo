@@ -1,3 +1,7 @@
+//======================
+// SANGHEILI
+//======================
+
 /obj/item/clothing/accessory/pads/sangheili
 	name = "\improper Sangheili shoulder pads"
 	desc = "Pauldrons of venerable design, fitted to a warrior's combat harness to protect the upper arms. While simple in function, the strong nanolaminate composites of these pauldrons provide ample protection."
@@ -104,3 +108,82 @@
 	name = "\improper Sangheili Honor Guard shoulder pads"
 	icon_state = "sang_honorguard"
 	item_state = "sang_honorguard"
+
+//======================
+// UNGGOY
+//======================
+
+/obj/item/clothing/accessory/pads/unggoy
+	name = "\improper Unggoy shoulder pads"
+	desc = "Pauldrons of venerable design, fitted to a warrior's combat harness to protect the upper arms. While simple in function, the strong nanolaminate composites of these pauldrons provide ample protection."
+	icon = 'icons/halo/obj/items/clothing/covenant/accessories.dmi'
+	icon_state = "unggoy_minor_shoulder"
+	item_state = "unggoy_minor_shoulder"
+	allowed_species_list = list(SPECIES_UNGGOY)
+	slot = ACCESSORY_SLOT_UNGGOY_SHOULDER
+	flags_atom = NO_SNOW_TYPE
+	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/unggoy/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/accessories.dmi')
+
+/obj/item/clothing/accessory/pads/unggoy/minor
+	name = "\improper Unggoy Minor shoulder pads"
+
+/obj/item/clothing/accessory/pads/unggoy/major
+	name = "\improper Unggoy Major shoulder pads"
+	icon_state = "unggoy_major_shoulder"
+	item_state = "unggoy_major_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/ultra
+	name = "\improper Unggoy Ultra shoulder pads"
+	icon_state = "unggoy_ultra_shoulder"
+	item_state = "unggoy_ultra_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/heavy
+	name = "\improper Unggoy Heavy shoulder pads"
+	icon_state = "unggoy_heavy_shoulder"
+	item_state = "unggoy_heavy_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/specops
+	name = "\improper Unggoy Special Operations shoulder pads"
+	icon_state = "unggoy_specops_shoulder"
+	item_state = "unggoy_specops_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/specops_ultra
+	name = "\improper Unggoy Special Operations Ultra shoulder pads"
+	icon_state = "unggoy_specultra_shoulder"
+	item_state = "unggoy_specultra_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/bicep
+	name = "\improper Unggoy bicep armor"
+	desc = "Pauldrons of venerable design, fitted to a warrior's combat harness to protect the upper arms. While simple in function, the strong nanolaminate composites of these pauldrons provide ample protection."
+	icon = 'icons/halo/obj/items/clothing/covenant/accessories.dmi'
+	icon_state = "unggoy_minor_bicep"
+	item_state = "unggoy_minor_bicep"
+	slot = ACCESSORY_SLOT_UNGGOY_BICEP
+
+/obj/item/clothing/accessory/pads/unggoy/bicep/minor
+	name = "\improper Unggoy Minor bicep armor"
+
+/obj/item/clothing/accessory/pads/unggoy/bicep/major
+	name = "\improper Unggoy Major bicep armor"
+	icon_state = "unggoy_major_shoulder"
+	item_state = "unggoy_major_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/bicep/ultra
+	name = "\improper Unggoy Ultra bicep armor"
+	icon_state = "unggoy_ultra_shoulder"
+	item_state = "unggoy_ultra_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/bicep/heavy
+	name = "\improper Unggoy Heavy bicep armor"
+	icon_state = "unggoy_heavy_shoulder"
+	item_state = "unggoy_heavy_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/bicep/specops
+	name = "\improper Unggoy Special Operations bicep armor"
+	icon_state = "unggoy_specops_shoulder"
+	item_state = "unggoy_specops_shoulder"
+
+/obj/item/clothing/accessory/pads/unggoy/bicep/specops_ultra
+	name = "\improper Unggoy Special Operations Ultra bicep armor"
+	icon_state = "unggoy_specultra_shoulder"
+	item_state = "unggoy_specultra_shoulder"

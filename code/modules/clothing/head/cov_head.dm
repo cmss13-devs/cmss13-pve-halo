@@ -1,3 +1,7 @@
+//======================
+// SANGHEILI
+//======================
+
 /obj/item/clothing/head/helmet/marine/sangheili
 	name = "\improper Sangheili helmet"
 	desc = "A nanolaminate helmet inspired by ancient Sangheili armours of the Pre-Covenant, having not changed its design in fifty generations. Fitted with comprehensive communications and smart-link systems allowing the wearer to maintain both control of their levies and fine operation of their weapons."
@@ -129,3 +133,75 @@
 	armor_bullet = CLOTHING_ARMOR_GIGAHIGH
 	armor_laser = CLOTHING_ARMOR_GIGAHIGH
 	armor_bomb = CLOTHING_ARMOR_GIGAHIGHDOUBLEPLUSGOOD
+
+//======================
+// UNGGOY
+//======================
+
+/obj/item/clothing/head/helmet/marine/unggoy
+	name = "\improper Unggoy helmet"
+	desc = "A nanolaminate helmet for Unggoy."
+	icon = 'icons/halo/obj/items/clothing/covenant/helmets.dmi'
+	icon_state = "unggoy_minor_assault"
+	item_state = "unggoy_minor_assault"
+
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/unggoy/hat.dmi'
+	)
+
+	allowed_species_list = list(SPECIES_UNGGOY)
+
+	flags_marine_helmet = NO_FLAGS
+	flags_inventory = NO_FLAGS
+	flags_inv_hide = NO_FLAGS
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	built_in_visors = list()
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+
+/obj/item/clothing/head/helmet/marine/unggoy/minor
+	name = "\improper Unggoy Minor assault helmet"
+	icon_state = "unggoy_minor_assault"
+	item_state = "unggoy_minor_assault"
+
+/obj/item/clothing/head/helmet/marine/unggoy/major
+	name = "\improper Unggoy Major assault helmet"
+	icon_state = "unggoy_major_assault"
+	item_state = "unggoy_major_assault"
+
+/obj/item/clothing/head/helmet/marine/unggoy/ultra
+	name = "\improper Unggoy Ultra assault helmet"
+	icon_state = "unggoy_ultra_assault"
+	item_state = "unggoy_ultra_assault"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/unggoy/heavy
+	name = "\improper Unggoy Heavy assault helmet"
+	icon_state = "unggoy_heavy_assault"
+	item_state = "unggoy_heavy_assault"
+
+	armor_bomb = CLOTHING_ARMOR_VERYHIGH
+
+
+/obj/item/clothing/head/helmet/marine/unggoy/specops
+	name = "\improper Unggoy Special Operations assault helmet"
+	icon_state = "unggoy_specops_assault"
+	item_state = "unggoy_specops_assault"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/unggoy/specops_ultra
+	name = "\improper Unggoy Special Operations assault helmet"
+	icon_state = "unggoy_specultra_assault"
+	item_state = "unggoy_specultra_assault"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
