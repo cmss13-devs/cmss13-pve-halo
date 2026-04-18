@@ -13,9 +13,9 @@
 	size_mod = 0
 	hud_offset_mod = -3
 
-/obj/item/attachable/attached_gun/grenade/ma5c
-	name = "\improper M301C 40mm grenade launcher"
-	desc = "A 40mm underslung grenade launcher. The C variant of the M301 is purpose built for the MA5C ICWS to serve as a grip for the weapon much like the standard-issue flashlight of the MA5C."
+/obj/item/attachable/attached_gun/grenade/ma5
+	name = "\improper M301 40mm grenade launcher"
+	desc = "A 40mm underslung grenade launcher. Replaces the standard-issue flashlight of the MA5 series of rifles. Fits both the MA5C and the MA5B."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
 	icon_state = "ma5c_gl"
 	attach_icon = "ma5c_gl"
@@ -25,6 +25,31 @@
 	attachment_firing_delay = 5
 	layer_addition = 0.1
 	caliber = "40mm"
+
+/obj/item/attachable/attached_gun/grenade/ma5/update_icon()
+	. = ..()
+	var/base_icon_state
+	if(istype(loc, /obj/item/weapon/gun/rifle/halo/ma5b))
+		base_icon_state = "ma5b_gl"
+	if(istype(loc, /obj/item/weapon/gun/rifle/halo/ma5c))
+		base_icon_state = "ma5c_gl"
+	attach_icon = base_icon_state
+	icon_state = base_icon_state
+	if(breech_open)
+		attach_icon += "-open"
+		icon_state += "-open"
+	if(istype(loc, /obj/item/weapon/gun))
+		var/obj/item/weapon/gun/gun = loc
+		gun.update_attachable(slot)
+
+/obj/item/attachable/attached_gun/grenade/ma5/Attach(obj/item/weapon/gun/subject)
+	if(istype(subject, /obj/item/weapon/gun/rifle/halo/ma5b))
+		attach_icon = "ma5b_gl"
+		..()
+	if(istype(subject, /obj/item/weapon/gun/rifle/halo/ma5c))
+		attach_icon = "ma5c_gl"
+		..()
+	else return
 
 /obj/item/attachable/ma3a_shroud
 	name = "\improper MA3A shroud"
@@ -108,27 +133,17 @@
 	size_mod = 0
 	hud_offset_mod = -3
 
-/obj/item/attachable/flashlight/ma5c
-	name = "\improper MA5C integrated flashlight"
-	desc = "The MA5C integrated flashlight, standard-issue to any MA5-model assault rifle."
+/obj/item/attachable/flashlight/ma5
+	name = "\improper MA5 integrated flashlight"
+	desc = "The MA5 integrated flashlight, standard-issue to any MA5 series assault rifle."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma5c_flashlight"
-	attach_icon = "ma5c_flashlight"
-	original_state = "ma5c_flashlight"
-	original_attach = "ma5c_flashlight"
+	icon_state = "ma5_flashlight"
+	attach_icon = "ma5_flashlight"
+	original_state = "ma5_flashlight"
+	original_attach = "ma5_flashlight"
 	slot = "under"
 
-/obj/item/attachable/flashlight/ma5b
-	name = "\improper MA5B integrated flashlight"
-	desc = "The MA5B integrated flashlight, standard-issue to any MA5-model assault rifle and essential to handling it."
-	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
-	icon_state = "ma5b_flashlight"
-	attach_icon = "ma5b_flashlight"
-	original_state = "ma5b_flashlight"
-	original_attach = "ma5b_flashlight"
-	slot = "under"
-
-/obj/item/attachable/flashlight/ma5c/ma3a
+/obj/item/attachable/flashlight/ma5/ma3a
 	name = "\improper MA3A integrated flashlight"
 	desc = "An underbarrel grip for the MA3A, integrated as a flashlight."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
@@ -138,7 +153,7 @@
 	original_attach = "ma3a_flashlight"
 	slot = "under"
 
-/obj/item/attachable/flashlight/ma5c/ma3a/New()
+/obj/item/attachable/flashlight/ma5/ma3a/New()
 	..()
 	recoil_mod = -RECOIL_AMOUNT_TIER_4
 

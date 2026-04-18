@@ -1,5 +1,5 @@
 
-/datum/human_ai_squad_preset/uscm
+/* /datum/human_ai_squad_preset/uscm
 	faction = FACTION_MARINE
 
 /datum/human_ai_squad_preset/uscm/rifleteam
@@ -41,5 +41,5 @@
 		/datum/equipment_preset/uscm_ship/so_equipped = 1,
 		/datum/equipment_preset/uscm/leader_equipped = 1,
 		/datum/equipment_preset/uscm/private_equipped = 2,
-	)
+	) */
 

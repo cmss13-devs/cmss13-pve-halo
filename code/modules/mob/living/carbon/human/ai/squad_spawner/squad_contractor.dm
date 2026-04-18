@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/contractor
+/* /datum/human_ai_squad_preset/contractor
 
 	faction = "Contractors"
 
@@ -71,3 +71,4 @@
 		/datum/equipment_preset/contractor/covert/engi = 1,
 		/datum/equipment_preset/contractor/covert/medic = 1,
 	)
+ */
