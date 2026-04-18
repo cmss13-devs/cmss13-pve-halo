@@ -52,7 +52,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/minor
-	name = parent_type::name + " Minor (Plasma Rifle)"
+	name = parent_type::name + " Minor"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
@@ -64,6 +64,13 @@
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/minor/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_minor(new_human)
+
+/datum/equipment_preset/covenant/sangheili/minor/plasma_rifle
+	name = parent_type::name + " Minor (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/minor/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_minor(new_human)
 	add_plasma_rifle_package(new_human)
@@ -89,7 +96,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/major
-	name = parent_type::name + " Major (Plasma Rifle)"
+	name = parent_type::name + " Major"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
@@ -101,6 +108,13 @@
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/major/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_major(new_human)
+
+/datum/equipment_preset/covenant/sangheili/major/plasma_Rifle
+	name = parent_type::name + " Major (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/major/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_major(new_human)
 	add_plasma_rifle_package(new_human)
@@ -126,7 +140,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/ultra
-	name = parent_type::name + " Ultra (Plasma Rifle)"
+	name = parent_type::name + " Ultra"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
@@ -138,6 +152,13 @@
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/ultra/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_ultra(new_human)
+
+/datum/equipment_preset/covenant/sangheili/ultra/plasma_rifle
+	name = parent_type::name + " Ultra (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_ultra(new_human)
 	add_plasma_rifle_package(new_human)
@@ -155,7 +176,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/zealot
-	name = parent_type::name + " Zealot (Plasma Rifle)"
+	name = parent_type::name + " Zealot"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
@@ -167,6 +188,13 @@
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/zealot/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_zealot(new_human)
+
+/datum/equipment_preset/covenant/sangheili/zealot/plasma_rifle
+	name = parent_type::name + " Zealot (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/zealot/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_zealot(new_human)
 	add_plasma_rifle_package(new_human)
@@ -193,7 +221,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/specops
-	name = parent_type::name + " SpecOps (Plasma Rifle)"
+	name = parent_type::name + " SpecOps"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	faction = FACTION_SPECOPS_SANGHEILI
@@ -208,10 +236,17 @@
 /datum/equipment_preset/covenant/sangheili/specops/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
 	add_elite_specops(new_human)
+
+/datum/equipment_preset/covenant/sangheili/specops/plasma_rifle
+	name =  parent_type::name + " (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/specops/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics_fullbody(new_human)
+	add_elite_specops(new_human)
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/specops/carbine
-	name =  parent_type::name + "SpecOps (Carbine)"
+	name =  parent_type::name + " (Carbine)"
 
 /datum/equipment_preset/covenant/sangheili/specops/carbine/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
@@ -232,7 +267,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/specops_ultra
-	name = parent_type::name + " SpecOps Ultra (Plasma Rifle)"
+	name = parent_type::name + " SpecOps Ultra"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	faction = FACTION_SPECOPS_SANGHEILI
@@ -247,10 +282,17 @@
 /datum/equipment_preset/covenant/sangheili/specops_ultra/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
 	add_elite_specops_ultra(new_human)
+
+/datum/equipment_preset/covenant/sangheili/specops_ultra/plasma_rifle
+	name =  parent_type::name + " (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/specops_ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics_fullbody(new_human)
+	add_elite_specops_ultra(new_human)
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/specops_ultra/carbine
-	name =  parent_type::name + "SpecOps Ultra (Carbine)"
+	name =  parent_type::name + " (Carbine)"
 
 /datum/equipment_preset/covenant/sangheili/specops_ultra/carbine/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
@@ -271,7 +313,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/stealth
-	name = parent_type::name + " Stealth (Plasma Rifle)"
+	name = parent_type::name + " Stealth"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	faction = FACTION_SPECOPS_SANGHEILI
@@ -286,10 +328,17 @@
 /datum/equipment_preset/covenant/sangheili/stealth/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
 	add_elite_stealth(new_human)
+
+/datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle
+	name =  parent_type::name + " (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
+	add_elite_basics(new_human)
+	add_elite_stealth(new_human)
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/stealth/needler
-	name =  parent_type::name + "Stealth (Needler)"
+	name =  parent_type::name + " (Needler)"
 
 /datum/equipment_preset/covenant/sangheili/stealth/needler/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -305,7 +354,7 @@
 	add_needler_package(new_human)
 	elite_camouflage(new_human)
 
-/datum/equipment_preset/covenant/sangheili/stealth/cloaking
+/datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle/cloaking
 	name = parent_type::name + " (Cloaked)"
 
 /datum/equipment_preset/covenant/sangheili/stealth/cloaking/load_gear(mob/living/carbon/human/new_human)
@@ -319,7 +368,7 @@
 // =================================
 
 /datum/equipment_preset/covenant/sangheili/honor_guard
-	name = parent_type::name + " Honor Guard"
+	name = parent_type::name + " Honor Guard !!ROCKS FALL!!"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)

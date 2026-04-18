@@ -8,7 +8,7 @@
 /datum/human_ai_equipment_preset/covenant/sangheili/minor
 	name = "Sangheili Minor (Plasma Rifle)"
 	desc = "Good at medium range combat. Decently high threat. Commonly found at Covenant bases or leading large groups of lesser species."
-	path = /datum/equipment_preset/covenant/sangheili/minor
+	path = /datum/equipment_preset/covenant/sangheili/minor/plasma_rifle
 
 /datum/human_ai_equipment_preset/covenant/sangheili/minor/needler
 	name = "Sangheili Minor (Needler)"
@@ -22,7 +22,7 @@
 /datum/human_ai_equipment_preset/covenant/sangheili/major
 	name = "Sangheili Major (Plasma Rifle)"
 	desc = "Good at medium range combat. Can be a high threat. Uncommonly found at Covenant bases or overseeing several Sangheili Minors."
-	path = /datum/equipment_preset/covenant/sangheili/major
+	path = /datum/equipment_preset/covenant/sangheili/major/plasma_rifle
 
 /datum/human_ai_equipment_preset/covenant/sangheili/major/needler
 	name = "Sangheili Major (Needler)"
@@ -41,7 +41,7 @@
 /datum/human_ai_equipment_preset/covenant/sangheili/ultra
 	name = "Sangheili Ultra (Plasma Rifle)"
 	desc = "Good at medium range combat. Can be a very deadly threat. Use with caution. Can be found among Ultras of lesser species or leading the Covenant forces in the AO."
-	path = /datum/equipment_preset/covenant/sangheili/ultra
+	path = /datum/equipment_preset/covenant/sangheili/ultra/plasma_rifle
 
 /datum/human_ai_equipment_preset/covenant/sangheili/ultra/carbine
 	name = "Sangheili Ultra (Carbine)"
@@ -55,7 +55,7 @@
 /datum/human_ai_equipment_preset/covenant/sangheili/zealot
 	name = "Sangheili Zealot (Plasma Rifle)"
 	desc = "Superior to Sangheili Ultras. Good at medium range. Can be a very deadly threat. Use with caution and sparsely."
-	path = /datum/equipment_preset/covenant/sangheili/zealot
+	path = /datum/equipment_preset/covenant/sangheili/zealot/plasma_rifle
 
 /datum/human_ai_equipment_preset/covenant/sangheili/zealot/carbine
 	name = "Sangheili Zealot (Carbine)"
