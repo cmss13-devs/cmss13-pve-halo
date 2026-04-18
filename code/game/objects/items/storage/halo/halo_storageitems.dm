@@ -551,7 +551,7 @@
 /obj/item/storage/backpack/covenant/unggoy
 	name = "\improper Unggoy methane tank pack"
 	desc = "A gas tank full of methane. It comes with limited magnetic attachment points."
-	icon = 'icons/halo/obj/items/clothing/covenant/belts.dmi'
+	icon = 'icons/halo/obj/items/clothing/covenant/back.dmi'
 	icon_state = "unggoy_minor_1"
 	item_state = "unggoy_minor_1"
 	item_icons = list(
