@@ -68,7 +68,7 @@
 	add_elite_minor(new_human)
 
 /datum/equipment_preset/covenant/sangheili/minor/plasma_rifle
-	name = parent_type::name + " Minor (Plasma Rifle)"
+	name = parent_type::name + " (Plasma Rifle)"
 
 /datum/equipment_preset/covenant/sangheili/minor/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -76,7 +76,7 @@
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/minor/needler
-	name = parent_type::name + " Minor (Needler)"
+	name = parent_type::name + " (Needler)"
 
 /datum/equipment_preset/covenant/sangheili/minor/needler/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -84,7 +84,7 @@
 	add_needler_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/minor/carbine
-	name = "Sangheili Minor (Carbine)"
+	name = parent_type::name + " (Carbine)"
 
 /datum/equipment_preset/covenant/sangheili/minor/carbine/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -112,7 +112,7 @@
 	add_elite_major(new_human)
 
 /datum/equipment_preset/covenant/sangheili/major/plasma_Rifle
-	name = parent_type::name + " Major (Plasma Rifle)"
+	name = parent_type::name + " (Plasma Rifle)"
 
 /datum/equipment_preset/covenant/sangheili/major/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -120,7 +120,7 @@
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/major/needler
-	name = parent_type::name + " Major (Needler)"
+	name = parent_type::name + " (Needler)"
 
 /datum/equipment_preset/covenant/sangheili/major/needler/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -128,7 +128,7 @@
 	add_needler_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/major/carbine
-	name = parent_type::name + " Major (Carbine)"
+	name = parent_type::name + " (Carbine)"
 
 /datum/equipment_preset/covenant/sangheili/major/carbine/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -156,7 +156,7 @@
 	add_elite_ultra(new_human)
 
 /datum/equipment_preset/covenant/sangheili/ultra/plasma_rifle
-	name = parent_type::name + " Ultra (Plasma Rifle)"
+	name = parent_type::name + " (Plasma Rifle)"
 
 /datum/equipment_preset/covenant/sangheili/ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -164,7 +164,7 @@
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/ultra/carbine
-	name = parent_type::name + " Ultra (Carbine)"
+	name = parent_type::name + " (Carbine)"
 
 /datum/equipment_preset/covenant/sangheili/ultra/carbine/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -192,7 +192,7 @@
 	add_elite_zealot(new_human)
 
 /datum/equipment_preset/covenant/sangheili/zealot/plasma_rifle
-	name = parent_type::name + " Zealot (Plasma Rifle)"
+	name = parent_type::name + " (Plasma Rifle)"
 
 /datum/equipment_preset/covenant/sangheili/zealot/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -200,7 +200,7 @@
 	add_plasma_rifle_package(new_human)
 
 /datum/equipment_preset/covenant/sangheili/zealot/carbine
-	name = parent_type::name + " Zealot (Carbine)"
+	name = parent_type::name + " (Carbine)"
 
 /datum/equipment_preset/covenant/sangheili/zealot/carbine/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
