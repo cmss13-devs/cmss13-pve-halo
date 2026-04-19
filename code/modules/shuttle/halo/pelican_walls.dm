@@ -3,7 +3,7 @@
 	desc = "A D77H-TCE \"Pelican\" dropship, used by all branches of the UNSC. This one belongs to the \"troop carrier\" family of dropships. Being the TCE variant, this pelican comes with additional seating so that it may fit an entire squad, with the sacrifice of no capability for DCC personnel being aboard in most cases."
 	icon = 'icons/halo/turf/pelican.dmi'
 	icon_state = null
-	layer = 2.02
+	layer = WALL_LAYER
 
 /obj/structure/shuttle/part/pelican/no_dense
 	density = FALSE
