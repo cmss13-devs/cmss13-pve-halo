@@ -559,6 +559,7 @@
 		)
 	worn_accessible = TRUE
 	max_storage_space = 10
+	flags_item = ITEM_OVERRIDE_NORTHFACE
 
 
 /obj/item/storage/backpack/covenant/unggoy/minor/pointy

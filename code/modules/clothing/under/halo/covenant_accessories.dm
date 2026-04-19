@@ -165,25 +165,25 @@
 
 /obj/item/clothing/accessory/pads/unggoy/bicep/major
 	name = "\improper Unggoy Major bicep armor"
-	icon_state = "unggoy_major_shoulder"
-	item_state = "unggoy_major_shoulder"
+	icon_state = "unggoy_major_bicep"
+	item_state = "unggoy_major_bicep"
 
 /obj/item/clothing/accessory/pads/unggoy/bicep/ultra
 	name = "\improper Unggoy Ultra bicep armor"
-	icon_state = "unggoy_ultra_shoulder"
-	item_state = "unggoy_ultra_shoulder"
+	icon_state = "unggoy_ultra_bicep"
+	item_state = "unggoy_ultra_bicep"
 
 /obj/item/clothing/accessory/pads/unggoy/bicep/heavy
 	name = "\improper Unggoy Heavy bicep armor"
-	icon_state = "unggoy_heavy_shoulder"
-	item_state = "unggoy_heavy_shoulder"
+	icon_state = "unggoy_heavy_bicep"
+	item_state = "unggoy_heavy_bicep"
 
 /obj/item/clothing/accessory/pads/unggoy/bicep/specops
 	name = "\improper Unggoy Special Operations bicep armor"
-	icon_state = "unggoy_specops_shoulder"
-	item_state = "unggoy_specops_shoulder"
+	icon_state = "unggoy_specops_bicep"
+	item_state = "unggoy_specops_bicep"
 
 /obj/item/clothing/accessory/pads/unggoy/bicep/specops_ultra
 	name = "\improper Unggoy Special Operations Ultra bicep armor"
-	icon_state = "unggoy_specultra_shoulder"
-	item_state = "unggoy_specultra_shoulder"
+	icon_state = "unggoy_specultra_bicep"
+	item_state = "unggoy_specultra_bicep"

@@ -150,8 +150,8 @@
 /obj/item/clothing/suit/marine/unggoy/cloaking/specops_ultra
 	name = "Unggoy Special Operations Ultra combat harness"
 	desc = "A modification of the Spec-Ops harness used by Unggoy of the Special-Warfare-Group, worn by veterans and specialists. A notable improvement over the common Spec-Ops harness, featuring reinforced composites designed for direct combat. While many may regard Unggoy as cowardly and weak, few who've seen this black harness live to tell about it, and those who do have far different opinions."
-	icon_state = "unggoy_specops_ultra"
-	item_state = "unggoy_specops_ultra"
+	icon_state = "unggoy_specultra"
+	item_state = "unggoy_specultra"
 
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
