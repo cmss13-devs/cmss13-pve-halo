@@ -26,7 +26,7 @@
 /obj/structure/covenant_barricade/proc/update_dirs(atom/movable/source, olddir, newdir)
 	SIGNAL_HANDLER
 	overlays.Cut()
-	switch(newdir)
+	switch(newdir || dir)
 		if(NORTH, SOUTH)
 			if(is_wide)
 				bound_width = 64
@@ -36,6 +36,8 @@
 				bound_width = 32
 				bound_height = 64
 	if(newdir == WEST && is_wide || newdir == EAST && is_wide)
+		pixel_adjustment = 64
+	if(dir == WEST && is_wide || dir == EAST && is_wide)
 		pixel_adjustment = 64
 	var/image/overlay = image(icon, icon_state = "[initial(icon_state)]_o", layer = 4.4, pixel_y = pixel_adjustment)
 	overlays += overlay
