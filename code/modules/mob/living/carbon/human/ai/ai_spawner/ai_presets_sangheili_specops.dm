@@ -57,7 +57,7 @@
 /datum/human_ai_equipment_preset/covenant/specops_sangheili/stealth/cloaking
 	name = "Sangheili Stealth (Plasma Rifle) !!CLOAKING!!"
 	desc = "Comes pre-cloaked. Intelligence operative, typically found in groups with each other or solo. Armor comparable to a Major but shields weaker than a Sangheili Minor."
-	path = /datum/equipment_preset/covenant/sangheili/stealth/cloaking
+	path = /datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle/cloaking
 
 /datum/human_ai_equipment_preset/covenant/specops_sangheili/stealth/needler/cloaking
 	name = "Sangheili Stealth (Needler) !!CLOAKING!!"
