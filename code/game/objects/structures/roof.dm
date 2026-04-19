@@ -21,6 +21,11 @@
 
 	icon_state = null
 
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/roof/LateInitialize() //we use late init to allow for lazy nodes to spawn first on mapload
+	. = ..()
+
 	RegisterSignal(SSdcs, COMSIG_GLOB_MOB_LOGGED_IN, PROC_REF(add_default_image))
 
 	for(var/icon in GLOB.player_list)
@@ -34,10 +39,7 @@
 			neighbor = locate() in adjacent_loc
 			if(!neighbor)
 				neighbor = new(adjacent_loc)
-	return INITIALIZE_HINT_LATELOAD
 
-/obj/structure/roof/LateInitialize() //we use late init to allow for lazy nodes to spawn first on mapload
-	. = ..()
 	if(linked_master)
 		return
 	for(var/direction in CARDINAL_ALL_DIRS) //this searches if there is lattice with master already, to work with runtime creation
