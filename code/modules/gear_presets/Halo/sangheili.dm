@@ -111,7 +111,7 @@
 	add_elite_basics(new_human)
 	add_elite_major(new_human)
 
-/datum/equipment_preset/covenant/sangheili/major/plasma_Rifle
+/datum/equipment_preset/covenant/sangheili/major/plasma_rifle
 	name = parent_type::name + " (Plasma Rifle)"
 
 /datum/equipment_preset/covenant/sangheili/major/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
@@ -357,7 +357,7 @@
 /datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle/cloaking
 	name = parent_type::name + " (Cloaked)"
 
-/datum/equipment_preset/covenant/sangheili/stealth/cloaking/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle/cloaking/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_stealth(new_human)
 	add_plasma_rifle_package(new_human)
