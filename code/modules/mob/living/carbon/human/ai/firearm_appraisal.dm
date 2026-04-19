@@ -78,6 +78,22 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	)
 	primary_weight = 8
 
+/datum/firearm_appraisal/xm51
+	burst_amount_max = 1
+	minimum_range = 1
+	optimal_range = 1 // point-blank our beloved
+	maximum_range = 3
+	gun_types = list(
+		/obj/item/weapon/gun/rifle/xm51,
+	)
+	primary_weight = 4
+
+/datum/firearm_appraisal/xm51/before_fire(obj/item/weapon/gun/shotgun/firearm, mob/living/carbon/user, datum/human_ai_brain/AI)
+	. = ..()
+	if(firearm.in_chamber)
+		return
+	firearm.unique_action(user)
+
 /datum/firearm_appraisal/rifle
 	burst_amount_max = 8
 	gun_types = list(
@@ -89,6 +105,7 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	burst_amount_max = 18
 	gun_types = list(
 		/obj/item/weapon/gun/smartgun,
+		/obj/item/weapon/gun/pkp,
 	)
 	primary_weight = 10
 
@@ -232,6 +249,20 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	)
 	primary_weight = 7
 	burst_amount_max = 4
+
+/datum/firearm_appraisal/covenant/plasma/pistol
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma/plasma_pistol,
+	)
+	primary_weight = 6
+	burst_amount_max = 2
+
+/datum/firearm_appraisal/covenant/plasma/rifle
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma/plasma_rifle,
+	)
+	primary_weight = 7
+	burst_amount_max = 3
 
 /datum/firearm_appraisal/covenant/needler
 	gun_types = list(

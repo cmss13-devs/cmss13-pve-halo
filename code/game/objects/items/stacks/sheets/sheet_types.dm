@@ -318,6 +318,13 @@ GLOBAL_LIST_INIT_TYPED(cardboard_recipes, /datum/stack_recipe, list ( \
 		new/datum/stack_recipe("empty box of combat flashlights", /obj/item/ammo_box/magazine/misc/flashlight/combat/empty), \
 		new/datum/stack_recipe("empty box of High-Capacity Power Cells", /obj/item/ammo_box/magazine/misc/power_cell/empty), \
 		null, \
+		new/datum/stack_recipe("empty box of UPP rations", /obj/item/ammo_box/magazine/misc/mre/upp/empty), \
+		new/datum/stack_recipe("empty box of WY rations", /obj/item/ammo_box/magazine/misc/mre/wy/empty), \
+		new/datum/stack_recipe("empty box of WY emergency food packs", /obj/item/ammo_box/magazine/misc/mre/wy/empty), \
+		new/datum/stack_recipe("empty box of PMC rations", /obj/item/ammo_box/magazine/misc/mre/pmc/empty), \
+		new/datum/stack_recipe("empty box of FSR rations", /obj/item/ammo_box/magazine/misc/mre/fsr/empty), \
+		new/datum/stack_recipe("empty box of TWE rations", /obj/item/ammo_box/magazine/misc/mre/twe/empty), \
+		null, \
 		new/datum/stack_recipe("empty magazine box (Desert Eagle)", /obj/item/ammo_box/magazine/deagle/empty), \
 		new/datum/stack_recipe("empty magazine box (Desert Eagle Heavy)", /obj/item/ammo_box/magazine/deagle/super/empty), \
 		new/datum/stack_recipe("empty magazine box (Desert Eagle High-Impact)", /obj/item/ammo_box/magazine/deagle/super/highimpact/empty), \
@@ -361,9 +368,8 @@ GLOBAL_LIST_INIT_TYPED(cardboard_recipes, /datum/stack_recipe, list ( \
 		null, \
 		new/datum/stack_recipe("empty magazine box (S&W .38)", /obj/item/ammo_box/magazine/snw/empty), \
 		null, \
-		new/datum/stack_recipe("empty magazine box (NSG 23)", /obj/item/ammo_box/magazine/nsg23/empty), \
-		new/datum/stack_recipe("empty magazine box (NSG 23 AP)", /obj/item/ammo_box/magazine/nsg23/ap/empty), \
-		new/datum/stack_recipe("empty magazine box (NSG 23 EX)", /obj/item/ammo_box/magazine/nsg23/ex/empty), \
+		new/datum/stack_recipe("empty magazine box (NSG L23A1)", /obj/item/ammo_box/magazine/nsg23/empty), \
+		new/datum/stack_recipe("empty magazine box (NSG L23A1 AP)", /obj/item/ammo_box/magazine/nsg23/ap/empty), \
 		null, \
 		new/datum/stack_recipe("empty magazine box (Type71)", /obj/item/ammo_box/magazine/type71/empty), \
 		new/datum/stack_recipe("empty magazine box (Type71 AP)", /obj/item/ammo_box/magazine/type71/ap/empty), \
