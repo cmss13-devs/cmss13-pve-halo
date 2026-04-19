@@ -30,11 +30,11 @@
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5c
 	attachable_allowed = list(
-		/obj/item/attachable/attached_gun/grenade/ma5c,
-		/obj/item/attachable/flashlight/ma5c,
+		/obj/item/attachable/attached_gun/grenade/ma5,
+		/obj/item/attachable/flashlight/ma5,
 		/obj/item/attachable/ma5c_muzzle,
 	)
 
@@ -90,13 +90,15 @@
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5b
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5)
 	attachable_allowed = list(
 		/obj/item/attachable/ma5b_muzzle,
-		/obj/item/attachable/flashlight/ma5b,
+		/obj/item/attachable/flashlight/ma5,
+		/obj/item/attachable/attached_gun/grenade/ma5,
 	)
 
 /obj/item/weapon/gun/rifle/halo/ma5b/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 48, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 29, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
 
 /obj/item/weapon/gun/rifle/halo/ma5b/handle_starting_attachment()
 	..()
@@ -104,10 +106,6 @@
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
-	var/obj/item/attachable/flashlight/ma5b/integrated2 = new(src)
-	integrated2.flags_attach_features &= ~ATTACH_REMOVABLE
-	integrated2.Attach(src)
-	update_attachable(integrated2.slot)
 
 /obj/item/weapon/gun/rifle/halo/ma5b/set_gun_config_values()
 	..()
@@ -147,11 +145,11 @@
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 
-	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5c/ma3a, /obj/item/attachable/ma3a_barrel, /obj/item/attachable/scope/mini/ma3a)
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5/ma3a, /obj/item/attachable/ma3a_barrel, /obj/item/attachable/scope/mini/ma3a)
 	current_mag = /obj/item/ammo_magazine/rifle/halo/ma3a
 	attachable_allowed = list(
 		/obj/item/attachable/ma3a_shroud,
-		/obj/item/attachable/flashlight/ma5c/ma3a,
+		/obj/item/attachable/flashlight/ma5/ma3a,
 		/obj/item/attachable/ma3a_barrel,
 		/obj/item/attachable/scope/mini/ma3a,
 	)
@@ -732,7 +730,7 @@
 	cocked_sound = 'sound/weapons/halo/m6d/gun_m6d_cock.ogg'
 	empty_click = 'sound/weapons/halo/m6d/gun_m6d_dryfire.ogg'
 
-/obj/item/weapon/gun/pistol/halo/m6g/unloaded
+/obj/item/weapon/gun/pistol/halo/m6d/unloaded
 	current_mag = null
 
 /obj/item/weapon/gun/pistol/halo/m6d/set_gun_attachment_offsets()
@@ -800,6 +798,9 @@
 	icon_state = "he_40mm"
 	item_state = "he_40mm"
 	caliber = "40mm"
+	explosion_power = 80
+	explosion_falloff = 40
+	shrapnel_count = 0
 	hand_throwable = FALSE
 	has_arm_sound = FALSE
 	dangerous = FALSE

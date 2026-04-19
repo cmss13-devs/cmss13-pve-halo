@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/uscm
+/* /datum/human_ai_equipment_preset/uscm
 	faction = FACTION_MARINE
 
 /datum/human_ai_equipment_preset/uscm/rifleman
@@ -94,3 +94,4 @@
 	name = "USCM Hazmat Joe"
 	desc = "You always know a working joe"
 	path = /datum/equipment_preset/synth/working_joe/engi
+ */
