@@ -422,6 +422,7 @@
 	pixel_y = -32;
 	opacity = 0
 	},
+/obj/structure/roof/pelican_roof,
 /turf/open/shuttle/pelican/paneling/right,
 /area/shuttle/pelican)
 "Ox" = (
