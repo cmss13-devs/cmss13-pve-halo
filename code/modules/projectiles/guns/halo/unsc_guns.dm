@@ -291,7 +291,7 @@
 	scatter_unwielded = SCATTER_AMOUNT_TIER_6
 	damage_mult = BASE_BULLET_DAMAGE_MULT
 	recoil_unwielded = RECOIL_AMOUNT_TIER_3
-	recoil = RECOIL_AMOUNT_TIER_4 - 0.5
+	recoil = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = 16
 	fa_max_scatter = 2
 
