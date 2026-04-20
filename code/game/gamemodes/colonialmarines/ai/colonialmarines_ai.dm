@@ -151,16 +151,12 @@ GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI
 												/datum/squad/marine/odst = ROLES_ODST))
 
 
-GLOBAL_LIST_INIT(personal_weapons_list, list("Ithaca 37 shotgun-stakeout" = /obj/item/storage/large_holster/m37/full/noammo,\
-											"Ithaca 37 shotgun-traditional" = /obj/item/weapon/gun/shotgun/pump/stock,\
-											"Sawn-off double barrel shotgun" = /obj/item/weapon/gun/shotgun/double/sawn,\
-											"M79 grenade launcher" = /obj/item/weapon/gun/launcher/grenade/m81/m79/modified,\
-											"Cut down M79 grenade launcher" = /obj/item/weapon/gun/launcher/grenade/m81/m79/modified/sawnoff,\
-											"4 M15 grenades" = /obj/effect/essentials_set/m15_4_pack))
+GLOBAL_LIST_INIT(personal_weapons_list, list("M90 CAWS shotgun" = /obj/effect/essentials_set/m90caws,\
+											"MA5 M301 40mm grenade launcher" = /obj/effect/essentials_set/ma5_launcher))
 
 /datum/game_mode/colonialmarines/ai/proc/spawn_personal_weapon()
 	var/datum/squad/squad = locate() in GLOB.RoleAuthority.squads
-	if(!squad || squad.faction != FACTION_MARINE || !squad.marines_list.len > 0)
+	if(!squad || squad.faction != FACTION_UNSC || !squad.marines_list.len > 0)
 		return
 	if(!GLOB.personal_weapon.len)
 		return
@@ -174,7 +170,7 @@ GLOBAL_LIST_INIT(personal_weapons_list, list("Ithaca 37 shotgun-stakeout" = /obj
 		if(!squad.marines_list.Find(marine))
 			chosen_weapon = "bugged"
 			break
-		if(marine.job == JOB_SO) //get outta here butter bars
+		if(marine.job != JOB_SQUAD_MARINE) //get outta here butter bars
 			temporary_list.Remove(marine)
 			continue
 		if(!marine.client)
@@ -188,9 +184,9 @@ GLOBAL_LIST_INIT(personal_weapons_list, list("Ithaca 37 shotgun-stakeout" = /obj
 		if(chosen_weapon == "bugged")
 			log_debug("Chosen Weapon selected a bugged marine.")
 		else
-			var/obj/item/storage/box/personalcase/pcase = new(get_turf(pick(GLOB.personal_weapon)))
+			var/obj/item/storage/box/personalcase/unsc/pcase = new(get_turf(pick(GLOB.personal_weapon)))
 			pcase.assign_owner(marine.real_name)
-			addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), marine, SPAN_NOTICE("You remember that you've successfully snuck in your <b>heirloom weapon</b> aboard: <b>[marine.client.prefs.personal_weapon]</b>. It's in the armory")), 5 SECONDS)
+			addtimer(CALLBACK(GLOBAL_PROC, GLOBAL_PROC_REF(to_chat), marine, SPAN_NOTICE("You remember that your requisition for a <b>[marine.client.prefs.personal_weapon]</b> was approved. It's in the armory")), 5 SECONDS)
 			var/the_gun = GLOB.personal_weapons_list[chosen_weapon]
 			new the_gun(pcase)
 			for(var/obj/effect/landmark/personal_weapon/PW in GLOB.personal_weapon)

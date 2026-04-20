@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/pmc
+/* /datum/human_ai_equipment_preset/pmc
 	faction = FACTION_PMC
 
 /datum/human_ai_equipment_preset/pmc/standard
@@ -60,3 +60,4 @@
 	name = "PMC - Security Android"
 	desc = "A highly illegal PMC security android. GMs should not be using this willynilly"
 	path = /datum/equipment_preset/synth/working_joe/security_android/pmc
+ */
