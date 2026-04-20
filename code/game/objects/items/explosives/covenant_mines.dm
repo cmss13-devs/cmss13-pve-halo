@@ -2,6 +2,7 @@
 
 /obj/item/explosive/mine/covenant
 	icon = 'icons/obj/items/weapons/covenant_mines.dmi'
+	icon_state = "plasmamine"
 
 //[Plasma Mine]\\
 
