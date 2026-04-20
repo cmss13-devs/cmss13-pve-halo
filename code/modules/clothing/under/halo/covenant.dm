@@ -18,6 +18,7 @@
 	item_state = "sangheili_undersuit"
 	worn_state = "sangheili_undersuit"
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_LEGS|BODY_FLAG_ARMS|BODY_FLAG_FEET
 	drop_sound = "armorequip"
 	allowed_species_list = list(SPECIES_SANGHEILI)
 	item_state_slots = list()
@@ -27,6 +28,14 @@
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
+
+/obj/item/clothing/under/marine/covenant/sangheili/fullbody
+	name = "\improper full-coverage Sangheili undersuit"
+	flags_jumpsuit = null
+	flags_armor_protection = BODY_FLAG_ALL_BUT_HEAD
+	icon_state = "sangheili_undersuit_2"
+	item_state = "sangheili_undersuit_2"
+	worn_state = "sangheili_undersuit_2"
 
 /obj/item/clothing/under/marine/covenant/unggoy
 	name = "\improper Unggoy magnetic webbing"

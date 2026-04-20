@@ -10,3 +10,6 @@
 	item_icons = list(
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/unggoy/mask.dmi'
 	)
+/obj/item/clothing/mask/gas/unggoy/specops
+	icon_state = "specops_mask"
+	item_state = "specops_mask"
