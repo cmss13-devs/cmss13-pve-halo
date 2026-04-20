@@ -250,6 +250,20 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	primary_weight = 7
 	burst_amount_max = 4
 
+/datum/firearm_appraisal/covenant/plasma/pistol
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma/plasma_pistol,
+	)
+	primary_weight = 6
+	burst_amount_max = 2
+
+/datum/firearm_appraisal/covenant/plasma/rifle
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma/plasma_rifle,
+	)
+	primary_weight = 7
+	burst_amount_max = 3
+
 /datum/firearm_appraisal/covenant/needler
 	gun_types = list(
 		/obj/item/weapon/gun/smg/covenant_needler,
