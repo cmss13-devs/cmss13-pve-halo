@@ -1539,3 +1539,21 @@
   - imageadd: fire support radials
   - imageadd: dropship shadows for krokodil and ud
   - rscadd: more seamless looking blood decals
+2026-04-20:
+  DetectiveGoogle, Verbs:
+  - rscadd: Pelican dropship
+  DexterDude:
+  - rscadd: Small and wide covenant barriers.
+  The32bitguy:
+  - rscadd: Only adds the plasma grenade
+  Verbs, Gentlefood, Chrome:
+  - rscadd: 2 new helmet variants for elites courtesy of Chrome
+  - rscadd: 2 new shoulder variants for elites
+  - rscadd: 4 total methane tank backpacks
+  - rscadd: Unggoy Assault helmet and Special Operations mask
+  - rscadd: Honor Guard, courtesy of Gentlefood
+  - bugfix: Fixed preset names so they're no longer weird and messed up
+  - code_imp: Sangheili and Unggoy cosmetic gear is now for the most part randomized,
+      with different weights depending on role
+  - imagetweak: Removed the in-built methane tank from the Unggoy armor.
+  - imagetweak: Redid all onmob sprites to have improved shading and palettes.
