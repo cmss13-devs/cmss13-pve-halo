@@ -265,9 +265,6 @@
 	pixel_x = -16;
 	pixel_y = -16
 	},
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_x = -16
-	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "aH" = (
@@ -439,12 +436,6 @@
 	dir = 4
 	},
 /turf/open/floor/almayer/edge/smooth/southeast,
-/area/dark_was_the_night/hangar)
-"aZ" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_x = -16
-	},
-/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "ba" = (
 /obj/structure/surface/table/almayer,
@@ -675,9 +666,6 @@
 /obj/structure/roof/cargocrane_tracks/horizontal{
 	pixel_y = 16
 	},
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_x = -16
-	},
 /obj/structure/roof/cargocrane_tracks/tjoint3{
 	pixel_y = 16;
 	pixel_x = -16
@@ -862,13 +850,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"bW" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_x = -16;
-	pixel_y = 16
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "bX" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/shower{
@@ -1149,16 +1130,6 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/dark_was_the_night/engineering)
-"cM" = (
-/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
-	pixel_y = 16;
-	pixel_x = -16
-	},
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_x = -16
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "cN" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
@@ -1408,15 +1379,6 @@
 	},
 /turf/open/floor/almayer/redcorner,
 /area/dark_was_the_night/hangar)
-"dm" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/red,
-/area/dark_was_the_night/hangar)
 "dn" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -1553,15 +1515,6 @@
 /obj/structure/machinery/camera/autoname/golden_arrow,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/cryo_hall)
-"dD" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/structure/machinery/landinglight/ds1/delayone{
-	dir = 1
-	},
-/turf/open/floor/almayer/red/north,
-/area/dark_was_the_night/hangar)
 "dE" = (
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/cryo_bay/two)
@@ -4470,12 +4423,7 @@
 /area/dark_was_the_night/upper_hallway)
 "kS" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -7;
-	pixel_y = 8
-	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc,
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded,
+/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "kT" = (
@@ -4597,15 +4545,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_hall)
-"lg" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 1
-	},
-/turf/open/floor/almayer/red/north,
-/area/dark_was_the_night/hangar)
 "lh" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -4940,10 +4879,6 @@
 /turf/open/shuttle/escapepod/east,
 /area/dark_was_the_night/lower_hallway)
 "lN" = (
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	pixel_x = 5;
-	pixel_y = -3
-	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -14;
 	pixel_y = -2
@@ -5240,7 +5175,7 @@
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper General Equipment"
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -5878,7 +5813,7 @@
 "oU" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper Fireteam Leader Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -5957,7 +5892,6 @@
 "pr" = (
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
-/obj/item/attachable/attached_gun/grenade/ma5c,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/armory)
@@ -7483,12 +7417,6 @@
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/cryo_bay/two)
 "wm" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_y = 28;
-	id = "ship_armory2";
-	name = "armory shutters control";
-	req_one_access_txt = "19;12"
-	},
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
 	pixel_x = -2;
@@ -7573,16 +7501,6 @@
 /obj/structure/barricade/handrail,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"wE" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/red/north,
-/area/dark_was_the_night/hangar)
 "wF" = (
 /obj/structure/machinery/computer/crew/unsc/big{
 	pixel_y = 10;
@@ -7858,7 +7776,7 @@
 "xC" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper General Equipment"
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -8273,12 +8191,6 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay/two)
-"zD" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer/redfull,
-/area/dark_was_the_night/hangar)
 "zE" = (
 /obj/structure/stairs/perspective{
 	dir = 1
@@ -10169,12 +10081,6 @@
 /obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
-"IS" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/hangar)
 "IW" = (
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -10545,9 +10451,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay/two)
 "KL" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
+/obj/docking_port/stationary/marine_dropship/pelican_lz/hangar,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "KN" = (
@@ -10585,12 +10489,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/engineering)
-"KR" = (
-/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "KT" = (
 /obj/structure/machinery/camera/autoname/golden_arrow{
 	dir = 1
@@ -11554,7 +11452,7 @@
 "Pj" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper Squad Leader Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -12036,7 +11934,8 @@
 "RB" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2"
+	id = "ship_armory";
+	name = "\improper Specialist Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
@@ -13421,7 +13320,7 @@
 "Yy" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/halo{
 	pixel_y = 2;
-	id = "ship_armory2"
+	id = "ship_armory"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
@@ -13749,13 +13648,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
-"ZM" = (
-/obj/structure/machinery/door/poddoor/almayer,
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "ZN" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -31110,12 +31002,12 @@ QW
 QW
 QW
 QW
+FK
 QW
 QW
 QW
 QW
-QW
-QW
+FK
 QW
 QW
 QW
@@ -31255,6 +31147,7 @@ QW
 QW
 QW
 QW
+FK
 QW
 QW
 QW
@@ -31273,8 +31166,7 @@ QW
 QW
 QW
 QW
-QW
-QW
+FK
 QW
 QW
 QW
@@ -31865,44 +31757,44 @@ QW
 QW
 QW
 QW
-KR
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-lg
-dm
-KL
-KL
-KL
-KL
-KL
-KL
-wE
-IS
-KL
-ZM
-zD
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+dx
+cU
+QW
+QW
+QW
+QW
+QW
+QW
+bv
+JS
+QW
+zW
+pa
 WE
 Fi
 Fi
@@ -32017,44 +31909,44 @@ QW
 QW
 QW
 QW
-KR
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
 KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-KL
-dD
-dm
-KL
-KL
-KL
-KL
-KL
-KL
-wE
-IS
-KL
-ZM
-zD
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+QW
+dy
+cU
+QW
+QW
+QW
+QW
+QW
+QW
+bv
+JS
+QW
+zW
+pa
 WE
 Fi
 Fi
@@ -32623,6 +32515,7 @@ QW
 QW
 QW
 QW
+FK
 QW
 QW
 QW
@@ -32641,8 +32534,7 @@ QW
 QW
 QW
 QW
-QW
-QW
+FK
 QW
 QW
 QW
@@ -32782,12 +32674,12 @@ QW
 QW
 QW
 QW
+FK
 QW
 QW
 QW
 QW
-QW
-QW
+FK
 QW
 QW
 QW
@@ -35379,23 +35271,23 @@ pD
 lU
 GN
 WE
-cM
-aZ
-aZ
-bW
+QW
+QW
+QW
+QW
 bD
-aZ
-aZ
+QW
+QW
 aG
 WE
 WE
-cM
-aZ
-aZ
-bW
+QW
+QW
+QW
+QW
 bD
-aZ
-aZ
+QW
+QW
 aG
 WE
 dL
