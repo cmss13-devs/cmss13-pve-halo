@@ -76,9 +76,9 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
-	assignment = JOB_COV_MINOR
-	rank = JOB_COV_MINOR
-	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
+	assignment = JOB_COV_MAJOR
+	rank = JOB_COV_MAJOR
+	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Major"
 	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI)
@@ -104,9 +104,9 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	idtype = /obj/item/card/id/covenant
 	access = list(ACCESS_MARINE_PREP)
-	assignment = JOB_COV_MINOR
-	rank = JOB_COV_MINOR
-	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
+	assignment = JOB_COV_ULTRA
+	rank = JOB_COV_ULTRA
+	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Ultra"
 	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI)
