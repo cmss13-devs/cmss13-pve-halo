@@ -229,7 +229,7 @@
 	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
 	built_in_visors = list()
 
-/obj/item/clothing/head/helmet/marine/ruuhtian/major
+/obj/item/clothing/head/helmet/marine/ruuhtian/better
 	name = "\improper superior Ruuhtian combat helmet"
 	icon_state = "superior_helmet"
 	item_state = "superior_helmet"
