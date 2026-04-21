@@ -1,4 +1,0 @@
-author: "KoishiVibe"
-delete-after: True
-changes:
-  - bugfix: "M6D now has unloaded variant correctly subtyped."
