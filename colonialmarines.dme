@@ -2816,7 +2816,7 @@
 #include "modular_pve_halo\code\modules\projectiles\guns\pistol\unsc.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\rifle\unsc.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\shotgun\unsc.dm"
-#include "modular_pve_halo\code\modules\projectiles\guns\specialist\launcher\spnkr.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\smg\unsc.dm"
+#include "modular_pve_halo\code\modules\projectiles\guns\specialist\launcher\spnkr.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\sniper\unsc.dm"
 // END_INCLUDE
