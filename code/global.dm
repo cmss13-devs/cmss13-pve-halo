@@ -1,7 +1,7 @@
 //This file was auto-corrected by findeclaration.exe on 25.5.2012 20:42:31
 #define MAIN_SHIP_NAME SSmapping.get_main_ship_name()
 #define MAIN_SHIP_DEFAULT_NAME "UNSC Dark Was The Night"
-#define SHIP_MAP_NAMES list("USS Almayer", "USS Golden Arrow",  "USS Golden Arrow (Classic)", "SSV Chapaev", "USS Rover", "USCSS Firefly", "USCSS Obsidian Falk", "USCSS Onyx Karain", "HMS Brynhild", "UNSC Dark Was The Night", "UNSC Dark Was The Night (ODSTBay)")
+#define SHIP_MAP_NAMES list("USS Almayer", "USS Golden Arrow",  "USS Golden Arrow (Classic)", "SSV Chapaev", "USS Rover", "USCSS Firefly", "USCSS Obsidian Falk", "USCSS Onyx Karain", "HMS Brynhild", "UNSC Dark Was The Night", "UNSC Dark Was The Night (ODSTBay)", "Mackay Station (Shipmap)")
 #define MAIN_SHIP_PLATOON text2path(SSmapping.get_main_ship_platoon())
 #define MAIN_SHIP_DEFAULT_PLATOON "/datum/squad/marine/alpha"
 #define USCM_AUXILIARY_PLATOON new /datum/squad/marine/bravo
