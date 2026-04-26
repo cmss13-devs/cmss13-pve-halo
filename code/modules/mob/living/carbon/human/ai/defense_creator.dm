@@ -43,7 +43,7 @@
 	var/list/data = list()
 
 	data["defenses"] = lazy_ui_data
-	data["valid_factions"] = list(FACTION_MARINE, FACTION_UA_REBEL, FACTION_UPP, FACTION_CANC, FACTION_WY, FACTION_FREELANCER, FACTION_TWE, FACTION_TWE_REBEL, FACTION_MERCENARY)
+	data["valid_factions"] = list(FACTION_UNSC, FACTION_INSURGENT, FACTION_ONI, FACTION_UNSCN, FACTION_UEG_POLICE, FACTION_COVENANT, FACTION_KIGYAR, FACTION_UNGGOY, FACTION_SANGHEILI)
 
 	return data
 
@@ -119,10 +119,10 @@
 	if(faction)
 		defense.handle_iff(faction)
 
-/* /datum/human_ai_defense/defense/sentry
+/datum/human_ai_defense/defense/sentry
 	category = "Sentries"
 
-/datum/human_ai_defense/defense/sentry/uscm
+/* /datum/human_ai_defense/defense/sentry/uscm
 	name = "USCM Sentry"
 	desc = /obj/structure/machinery/defenses/sentry::desc
 	icon_state = "uscm_sentry"
@@ -230,14 +230,14 @@
 	name = "USCM Bell Tower - MD"
 	desc = /obj/structure/machinery/defenses/bell_tower/md::desc
 	icon_state = "uscm_belltower_md"
-	path_to_spawn = /obj/structure/machinery/defenses/bell_tower/md
+	path_to_spawn = /obj/structure/machinery/defenses/bell_tower/md */
 
 // Flags
 
 /datum/human_ai_defense/defense/flag
 	category = "Planted Flags"
 
-/datum/human_ai_defense/defense/flag/uscm
+/* /datum/human_ai_defense/defense/flag/uscm
 	name = "USCM Planted Flag"
 	desc = /obj/structure/machinery/defenses/planted_flag::desc
 	icon_state = "uscm_flag"
@@ -265,11 +265,11 @@
 	name = "W-Y Planted Flag"
 	desc = /obj/structure/machinery/defenses/planted_flag/wy::desc
 	icon_state = "wy_flag"
-	path_to_spawn = /obj/structure/machinery/defenses/planted_flag/wy
+	path_to_spawn = /obj/structure/machinery/defenses/planted_flag/wy */
 
 // Teslas
 
-/datum/human_ai_defense/defense/tesla
+/* /datum/human_ai_defense/defense/tesla
 	name = "USCM Tesla Coil"
 	desc = /obj/structure/machinery/defenses/tesla_coil::desc
 	icon_state = "uscm_tesla"
@@ -301,22 +301,104 @@
 		defense.iff_signal = faction
 
 /datum/human_ai_defense/mine/claymore
-	name = "Claymore"
+	name = "Weak Claymore"
 	desc = /obj/item/explosive/mine/active::desc
 	icon_state = "claymore"
 	path_to_spawn = /obj/item/explosive/mine/active
 
-/* /datum/human_ai_defense/mine/claymore/wy
-	name = "Claymore - WY"
+/datum/human_ai_defense/mine/claymore/strong
+	name = "Strong Claymore"
+	desc = /obj/item/explosive/mine/strong/active::desc
+	icon_state = "claymore"
+	path_to_spawn = /obj/item/explosive/mine/strong/active
+
+/datum/human_ai_defense/mine/claymore/wy
+	name = "Weak PMC Claymore"
 	desc = /obj/item/explosive/mine/pmc/active::desc
 	icon_state = "claymore_wy"
 	path_to_spawn = /obj/item/explosive/mine/pmc/active
+
+/datum/human_ai_defense/mine/claymore/wy
+	name = "Strong PMC Claymore"
+	desc = /obj/item/explosive/mine/pmc/strong/active::desc
+	icon_state = "claymore_wy"
+	path_to_spawn = /obj/item/explosive/mine/pmc/strong/active
 
 /datum/human_ai_defense/mine/sebb
 	name = "G2 Electroshock"
 	desc = /obj/item/explosive/mine/sebb/active::desc
 	icon_state = "sebb"
-	path_to_spawn = /obj/item/explosive/mine/sebb/active */
+	path_to_spawn = /obj/item/explosive/mine/sebb/active
+
+/datum/human_ai_defense/mine/prox_sensor
+	name = "Proximity Sensor"
+	desc = /obj/item/device/assembly/prox_sensor::desc
+	icon_state = "prox"
+	path_to_spawn = /obj/item/device/assembly/prox_sensor/active
+
+/datum/human_ai_defense/mine/m760ap
+	name = "Weak M760 Blast Mine"
+	desc = /obj/item/explosive/mine/m760ap/active::desc
+	icon_state = "m760"
+	path_to_spawn = /obj/item/explosive/mine/m760ap/active
+
+/datum/human_ai_defense/mine/m760ap/strong
+	name = "Strong M760 Blast Mine"
+	desc = /obj/item/explosive/mine/m760ap/strong/active::desc
+	icon_state = "m760"
+	path_to_spawn = /obj/item/explosive/mine/m760ap/strong/active
+
+/datum/human_ai_defense/mine/m5a3betty
+	name = "Weak M5A3 Bounding Mine"
+	desc = /obj/item/explosive/mine/m5a3betty/active::desc
+	icon_state = "m5"
+	path_to_spawn = /obj/item/explosive/mine/m5a3betty/active
+
+/datum/human_ai_defense/mine/m5a3betty/strong
+	name = "Strong M5A3 Bounding Mine"
+	desc = /obj/item/explosive/mine/m5a3betty/strong/active::desc
+	icon_state = "m5"
+	path_to_spawn = /obj/item/explosive/mine/m5a3betty/strong/active
+
+/datum/human_ai_defense/mine/fzd91
+	name = "Weak FZD-91 Landmine"
+	desc = /obj/item/explosive/mine/fzd91/active::desc
+	icon_state = "fzd91"
+	path_to_spawn = /obj/item/explosive/mine/fzd91/active
+
+/datum/human_ai_defense/mine/fzd91/strong
+	name = "Strong FZD-91 Landmine"
+	desc = /obj/item/explosive/mine/fzd91/strong/active::desc
+	icon_state = "fzd91"
+	path_to_spawn = /obj/item/explosive/mine/fzd91/strong/active
+
+/datum/human_ai_defense/mine/tn13
+	name = "Weak TN-13 Landmine"
+	desc = /obj/item/explosive/mine/tn13/active::desc
+	icon_state = "tn13"
+	path_to_spawn = /obj/item/explosive/mine/tn13/active
+
+/datum/human_ai_defense/mine/tn13/strong
+	name = "Regular TN-13 Landmine"
+	desc = /obj/item/explosive/mine/tn13/strong/active::desc
+	icon_state = "tn13"
+	path_to_spawn = /obj/item/explosive/mine/tn13/strong/active
+
+/datum/human_ai_defense/mine/covenant
+	uses_turned_on = FALSE
+	category = "Covenant Landmines"
+
+/datum/human_ai_defense/mine/covenant/covenant_needler
+	name = "Covenant Needle Mine"
+	desc = /obj/item/explosive/mine/covenant/needle_mine::desc
+	icon_state = "needlemine"
+	path_to_spawn = /obj/item/explosive/mine/covenant/needle_mine/active
+
+/datum/human_ai_defense/mine/covenant/covenant_plasma
+	name = "Covenant Plasma Mine"
+	desc = /obj/item/explosive/mine/covenant/plasma/active::desc
+	icon_state = "needlemine"
+	path_to_spawn = /obj/item/explosive/mine/covenant/plasma/active
 
 // Barricades
 
@@ -374,7 +456,7 @@
 	name = "Metal Folding Barricade"
 	desc = /obj/structure/barricade/plasteel/metal::desc
 	icon_state = "metal_folding"
-	path_to_spawn =/obj/structure/barricade/plasteel/metal
+	path_to_spawn = /obj/structure/barricade/plasteel/metal
 
 /datum/human_ai_defense/barricade/metal_folding/spawn_object(turf/loc_to_spawn, dir_to_spawn, faction, turned_on)
 	var/obj/structure/barricade/plasteel/metal/defense = new path_to_spawn(loc_to_spawn)
