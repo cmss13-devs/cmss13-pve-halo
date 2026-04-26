@@ -1,5 +1,5 @@
 /obj/structure/shuttle/part/bumblebee
-	name = "beeeeeeeeee"
+	name = "SKT-9 \"Bumblebee\" Lifeboat"
 	icon = 'icons/halo/obj/structures/bumblebee_parts.dmi'
 	icon_state = "0,1"
 	layer = WALL_LAYER
@@ -27,7 +27,7 @@
 		buckled_mob.setDir(dir)
 
 /obj/structure/machinery/door/airlock/evacuation/bumblebee
-	name = "\improper Evacuation Airlock"
+	name = "\improper Bumblebee Evacuation Airlock"
 	icon = 'icons/halo/obj/structures/doors/bumblebee_door.dmi'
 	unslashable = TRUE
 	unacidable = TRUE
