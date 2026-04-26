@@ -815,6 +815,7 @@
 #include "code\game\sound.dm"
 #include "code\game\supplyshuttle.dm"
 #include "code\game\world.dm"
+#include "code\game\area\606_regretful_flame.dm"
 #include "code\game\area\admin_level.dm"
 #include "code\game\area\almayer.dm"
 #include "code\game\area\areas.dm"
