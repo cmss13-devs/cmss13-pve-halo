@@ -25,6 +25,7 @@
 #define SQUAD_ODST "The Ferrymen"
 #define SQUAD_ODST_2 "The Ferrymen Sq. 2"
 #define SQUAD_LRRP_2 "Ocelot Grapplers"
+#define SQUAD_UNSC_ODST_COMBO "Rock Hoppers, JTF"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -59,6 +60,8 @@
 #define JOB_SQUAD_TEAM_LEADER_ODST "ODST Fireteam Leader"
 #define JOB_SQUAD_RTO_ODST "ODST Radio Telephone Operator"
 #define JOB_SQUAD_LEADER_ODST "ODST Squad Sergeant"
+#define JOB_ODST_ROLES_LIST list(JOB_SQUAD_MARINE_ODST, JOB_SQUAD_SPECIALIST_ODST, JOB_SQUAD_MEDIC_ODST, JOB_SQUAD_TEAM_LEADER_ODST, JOB_SQUAD_RTO_ODST, JOB_SQUAD_LEADER_ODST)
+
 
 GLOBAL_LIST_INIT(job_squad_roles, JOB_SQUAD_ROLES_LIST)
 
