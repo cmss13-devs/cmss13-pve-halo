@@ -22,7 +22,7 @@
 	brute_mod = 1
 	slowdown = 0.1
 
-	dodge_pool = 10
+	dodge_pool = 5
 	dodge_pool_max = 10
 	dodge_pool_regen = 1
 	dodge_pool_regen_max = 1
@@ -77,7 +77,7 @@
 /datum/species/unggoy/handle_post_spawn(mob/living/carbon/human/unggoy)
 	GLOB.alive_human_list -= unggoy
 
-	unggoy.blood_type = "S*"
+	unggoy.blood_type = "U*"
 	unggoy.h_style = "Bald"
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
 	GLOB.unggoy_mob_list += unggoy
