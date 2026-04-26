@@ -167,6 +167,10 @@
 	new /obj/item/stack/medical/splint(src)
 	new /obj/item/stack/medical/splint(src)
 
+/obj/item/storage/belt/shotgun/unsc/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/ammo_magazine/handful/shotgun/buckshot_unsc(src)
+
 //======================
 // POUCHES
 //======================
@@ -203,6 +207,15 @@
 	new /obj/item/stack/medical/advanced/bruise_pack(src)
 	new /obj/item/stack/medical/advanced/ointment(src)
 	new /obj/item/stack/medical/splint(src)
+
+/obj/item/storage/pouch/medkit/unsc/full_bio/fill_preset_inventory()
+	new /obj/item/storage/syringe_case/unsc/burnguard(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_container/glass/beaker/unsc/tramadol(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/oxycodone/halo(src)
 
 //======================
 // HOLSTER POUCHES

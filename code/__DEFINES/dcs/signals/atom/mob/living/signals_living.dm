@@ -45,3 +45,9 @@
 
 /// from base of /mob/living/apply_status_effect(): (datum/status_effect/new_effect)
 #define COMSIG_LIVING_APPLY_EFFECT "living_apply_effect"
+
+///From /mob/living/can_leap
+#define COMSIG_LIVING_CAN_LEAP "living_can_leap"
+
+///From /mob/living/can_jump
+#define COMSIG_LIVING_CAN_JUMP "living_can_jump"
