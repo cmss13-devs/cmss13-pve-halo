@@ -847,6 +847,7 @@
 #include "code\game\area\Prison_Station_FOP.dm"
 #include "code\game\area\prison_v3_fiorina.dm"
 #include "code\game\area\redemption_valley.dm"
+#include "code\game\area\shield_base.dm"
 #include "code\game\area\shiva.dm"
 #include "code\game\area\shuttles.dm"
 #include "code\game\area\SI391_Sekhmet_Swamp.dm"
