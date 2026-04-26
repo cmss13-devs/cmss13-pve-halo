@@ -1,13 +1,13 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
-/obj/structure/shuttle/part/bumblebee{
-	icon_state = "2,0"
-	},
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "2,0,1";
 	layer = 4.1
 	},
-/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/no_dense/opacity_false{
+	icon_state = "2,0"
+	},
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "e" = (
@@ -46,10 +46,10 @@
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "p" = (
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "2,2"
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "q" = (
@@ -78,32 +78,32 @@
 /turf/open/shuttle/escapepod/floor4,
 /area/shuttle/escape_pod)
 "s" = (
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "1,2"
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "t" = (
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "3,2"
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "w" = (
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "1,0,1";
 	layer = 4.1
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "y" = (
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "4,2"
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "A" = (
@@ -122,25 +122,25 @@
 /turf/open/shuttle/escapepod/floor4,
 /area/shuttle/escape_pod)
 "C" = (
-/obj/structure/shuttle/part/bumblebee/no_dense{
-	icon_state = "3,0"
-	},
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "3,0,1";
 	layer = 4.1
 	},
-/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/no_dense/opacity_false{
+	icon_state = "3,0"
+	},
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "D" = (
-/obj/structure/shuttle/part/bumblebee{
-	icon_state = "5,0"
-	},
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "5,0,1";
 	layer = 4.1
 	},
-/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/no_dense/opacity_false{
+	icon_state = "5,0"
+	},
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "I" = (
@@ -190,21 +190,21 @@
 /turf/open/shuttle/escapepod/floor4,
 /area/shuttle/escape_pod)
 "S" = (
-/obj/structure/shuttle/part/bumblebee/no_dense{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/no_dense/opacity_false{
 	icon_state = "4,0"
 	},
-/obj/structure/shuttle/part/bumblebee{
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "4,0,1";
 	layer = 4.1
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 "T" = (
-/obj/structure/shuttle/part/bumblebee{
+/obj/effect/roof_node/bumblebee,
+/obj/structure/shuttle/part/bumblebee/opacity_false{
 	icon_state = "5,2"
 	},
-/obj/effect/roof_node/bumblebee,
 /turf/template_noop,
 /area/shuttle/escape_pod)
 

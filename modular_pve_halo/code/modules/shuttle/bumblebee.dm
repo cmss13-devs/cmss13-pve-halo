@@ -31,6 +31,8 @@
 	icon = 'icons/halo/obj/structures/doors/bumblebee_door.dmi'
 	unslashable = TRUE
 	unacidable = TRUE
+	opacity = FALSE
+	glass = TRUE
 
 /obj/structure/machinery/computer/shuttle/escape_pod_panel/bumblebee
 	icon = 'icons/halo/obj/structures/machinery/bumblebee_computer.dmi'
