@@ -52,6 +52,7 @@
 	var/atom/movable/screen/oxygen_icon
 	var/atom/movable/screen/fire_icon
 	var/atom/movable/screen/healths
+	var/atom/movable/screen/motion_sensor/motion_sensor
 	var/atom/movable/screen/bodytemp_icon
 
 	var/atom/movable/screen/gun_setting_icon
@@ -148,6 +149,7 @@
 	oxygen_icon = null
 	fire_icon = null
 	healths = null
+	motion_sensor = null
 	bodytemp_icon = null
 
 	gun_setting_icon = null
@@ -390,6 +392,11 @@
 	healths.icon = ui_datum.ui_style_icon
 	healths.screen_loc = ui_datum.UI_HEALTH_LOC
 	infodisplay += healths
+
+/datum/hud/proc/draw_motion_sensor(datum/custom_hud/ui_datum, ui_alpha)
+	motion_sensor = new /atom/movable/screen/motion_sensor()
+	motion_sensor.screen_loc = ui_datum.UI_MOTION_LOC
+	infodisplay += motion_sensor
 
 /datum/hud/proc/draw_zone_sel(datum/custom_hud/ui_datum, ui_alpha, ui_color)
 	zone_sel = new /atom/movable/screen/zone_sel()
