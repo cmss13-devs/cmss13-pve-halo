@@ -527,7 +527,7 @@
 	src.hostile_color = enemy_color
 
 /atom/movable/screen/motion_sensor/process()
-	if(!our_mob)
+	if(!our_mob || !our_mob.client)
 		return
 	var/turf/cur_turf = get_turf(our_mob)
 	dir = our_mob.dir
