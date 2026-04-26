@@ -1977,6 +1977,10 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	)
 
+/obj/item/clothing/head/helmet/marine/unsc/Initialize(mapload, list/new_protection)
+	. = ..()
+	AddComponent(/datum/component/motion_sensor_manager)
+
 /obj/item/clothing/head/helmet/marine/unsc/pilot
 	name = "\improper FH252 helmet"
 	desc = "The typical helmet found used by most UNSC pilots due to it's fully enclosed nature, particularly preferred by pilots in combat situations where their cockpit may end up breached."
