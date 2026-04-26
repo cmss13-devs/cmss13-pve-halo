@@ -112,3 +112,6 @@ endmap
 
 map halo_new_irvine
 endmap
+
+map halo_new_irvine_covenant
+endmap
