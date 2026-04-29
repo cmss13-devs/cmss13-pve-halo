@@ -2,8 +2,9 @@
 
 //Various ordnance selections
 #define ORDNANCE_OPTIONS list("Banshee Missile", "CN-20 Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile", "Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike", "High Explosive", "Incendiary", "Cluster", "High Explosive", "Nerve Gas OB", "Incendiary", "Fragmentation", "Flare",  "Nerve Gas Mortar", "Willy-Pete Mortar", "Smoke Mortar", "Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant", "HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
-#define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe")
-#define UNSC_ORDNANCE list("Wombat GAU", "Wombat Missile", "Wombat Inc. Missile", "C712 Coilgun", "C712 Missile", "C712 Cluster", "C709 Cluster Bomb", "C709 Heavy Missile", "C709 Inc. Bomb")
+#define COVENANT_ORDNANCE list("Wraith Plasma", "Banshee Fuel Rod", "Banshee Strafe", "Banshee Flyby", "Seraph Strafe", "Seraph Fuel Rod", "Seraph Flyby")
+#define UNSC_ORDNANCE list("Wombat Flyby", "Wombat GAU", "Wombat Missile", "Wombat Inc. Missile","C712 Flyby", "C712 Coilgun", "C712 Missile", "C712 Cluster", "C709 Flyby", "C709 Cluster Bomb", "C709 Heavy Missile", "C709 Inc. Bomb")
+#define DROPSHIP_HOVERING list("Phantom", "Phantom (Unarmed)", "Spirit", "Spirit (Unarmed)", "Pelican", "Pelican (Unarmed)", "Pelican - Rocket Pods",)
 #define NAVAL_ORDNANCE list("MAC", "MAC - Atmospheric", "Coilguns")
 #define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
@@ -61,9 +62,12 @@
 	data["covenant_ordnance_options"] = COVENANT_ORDNANCE
 	data["unsc_ordnance_options"] = UNSC_ORDNANCE
 	data["naval_ordnance_options"] = NAVAL_ORDNANCE
+	data["dropship_options"] = DROPSHIP_HOVERING
 	data["glassing_beam_options"] = GLASSING_BEAMS
+	/* dont need this, its replaced with halo versions
 	data["missile_ordnance_options"] = MISSILE_ORDNANCE
 	data["orbital_ordnance_options"] = ORBITAL_ORDNANCE
+	*/
 	data["mortar_ordnance_options"] = MORTAR_ORDNANCE
 	data["chemical_ordnance_options"] = CHEMICAL_ORDNANCE
 	data["misc_ordnance_options"] = MISC_ORDNANCE
@@ -467,6 +471,34 @@
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
+			if("Banshee Flyby")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_BANSHEE_FLYBY]
+				selected_mode.initiate_fire_support(target_turf)
+
+				return TRUE
+
+			if("Seraph Fuel Rod")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SERAPH_FUEL_ROD]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("Seraph Strafe")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SERAPH_STRAFE]
+				selected_mode.initiate_fire_support(target_turf)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("Seraph Flyby")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SERAPH_FLYBY]
+				selected_mode.initiate_fire_support(target_turf)
+
+				return TRUE
+
 			if("Glassing Beam")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM]
@@ -523,6 +555,12 @@
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
+			if("Wombat Flyby")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_WOMBAT_FLYBY]
+				selected_mode.initiate_fire_support(target_turf)
+
+				return TRUE
+
 
 			//C712
 			if("C712 Coilgun")
@@ -547,6 +585,12 @@
 				selected_mode.initiate_fire_support(target_turf)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("C712 Flyby")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C712_FLYBY]
+				selected_mode.initiate_fire_support(target_turf)
+
 				return TRUE
 
 			//C709
@@ -574,9 +618,16 @@
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
-			if("MAC")
+
+			if("C709 Flyby")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_FLYBY]
+				selected_mode.initiate_fire_support(target_turf)
+
+				return TRUE
 
 			// Naval Ordnance
+
+			if("MAC")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_MAC]
 				selected_mode.initiate_fire_support(target_turf)
@@ -600,6 +651,52 @@
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
+			// Dropship hovering
+
+			if("Pelican (Unarmed)")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PELICAN_HOVER]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
+			if("Pelican")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PELICAN_HOVER_LIGHT]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
+			if("Pelican - Rocket Pods")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PELICAN_HOVER_ARMED]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
+			if("Phantom (Unarmed)")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PHANTOM_HOVER]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
+			if("Phantom")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PHANTOM_HOVER_ARMED]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
+			if("Spirit (Unarmed)")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SPIRIT_HOVER]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
+			if("Spirit")
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SPIRIT_HOVER_ARMED]
+				if(user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir)
+				else
+					selected_mode.initiate_fire_support(target_turf, NORTH)
 			else
 				to_chat(user, SPAN_ANNOUNCEMENT_HEADER_ADMIN("Invalid ordnance selection! If this appears, yell at a coder!"))
 				return TRUE
@@ -658,8 +755,8 @@
 	var/has_shadow
 
 ///Initiates fire support proc chain
-/datum/fire_support/custom/initiate_fire_support(turf/target_turf)
-	addtimer(CALLBACK(src, PROC_REF(start_fire_support), target_turf), delay_to_impact)
+/datum/fire_support/custom/initiate_fire_support(turf/target_turf, additional_variable)
+	addtimer(CALLBACK(src, PROC_REF(start_fire_support), target_turf, additional_variable), delay_to_impact)
 
 	if(initiate_visual)
 		new initiate_visual(target_turf)
@@ -694,8 +791,8 @@
 		)
 
 ///Actually begins the fire support attack
-/datum/fire_support/custom/start_fire_support(turf/target_turf)
-	select_target(target_turf)
+/datum/fire_support/custom/start_fire_support(turf/target_turf, additional_variable)
+	select_target(target_turf, additional_variable)
 	if(has_shadow)
 		if(!shadow_cooldown)
 			shadow_cooldown = addtimer(VARSET_CALLBACK(src, shadow_cooldown, null), 4 SECONDS, TIMER_STOPPABLE)
@@ -707,15 +804,15 @@
 		playsound(target_turf, start_sound, 100, sound_range = sound_ranges)
 
 ///Selects the final target turf(s) and calls impact procs
-/datum/fire_support/custom/select_target(turf/target_turf)
+/datum/fire_support/custom/select_target(turf/target_turf, additional_variable)
 	var/list/turf_list = RANGE_TURFS(scatter_range, target_turf)
 	for(var/i = 1 to impact_quantity)
 		var/turf/impact_turf = pick(turf_list)
-		addtimer(CALLBACK(src, PROC_REF(do_impact), impact_turf), impact_delay * i)
+		addtimer(CALLBACK(src, PROC_REF(do_impact), impact_turf, additional_variable), impact_delay * i)
 		addtimer(CALLBACK(src, PROC_REF(do_impact_effect), impact_turf), visual_impact_delay * i)
 
 ///The actual impact of the fire support
-/datum/fire_support/custom/do_impact(turf/target_turf)
+/datum/fire_support/custom/do_impact(turf/target_turf, additional_variable)
 	return
 
 /datum/fire_support/custom/do_impact_effect(turf/target_turf)
@@ -762,10 +859,21 @@
 	var/fire_type = FIRE_VARIANT_TYPE_B
 
 /datum/fire_support/custom/banshee_fuel_rod/do_impact(turf/target_turf)
-	var/datum/cause_data/cause_data = create_cause_data("wraith plasma")
+	var/datum/cause_data/cause_data = create_cause_data("fuel rod")
 	new /obj/effect/temp_visual/plasma_explosion/green(target_turf)
 	cell_explosion(target_turf, 180, 80, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, explosion_cause_data = cause_data)
 	flame_radius(cause_data, radius, target_turf, flame_level, burn_level, flameshape, null, fire_type)
+
+/datum/fire_support/custom/banshee_fuel_rod/seraph
+	name = "seraph fuel rod"
+	scatter_range = 2
+	start_visual = /obj/effect/temp_visual/flyby/banshee_flyby
+	start_sound = 'sound/weapons/halo/fire_support/seraph_flyby.ogg'
+	warning_chat_message = "BANSHEE"
+	delay_to_impact = 2 SECONDS
+	has_shadow = TRUE
+	scatter_range = 2
+	impact_quantity = 2
 
 /datum/fire_support/custom/banshee_strafe
 	name = "banshee strafe"
@@ -778,6 +886,16 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/banshee_strafe.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
 	warning_chat_message = "BANSHEE"
+
+/datum/fire_support/custom/banshee_strafe/seraph
+	name = "seraph strafe"
+	impact_quantity = 45
+	impact_delay = 0.02 SECONDS
+	initiate_sound = 'sound/weapons/halo/fire_support/seraph_strafe.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/seraph_flyby.ogg'
+	start_visual = /obj/effect/temp_visual/flyby/seraph_flyby
+	warning_chat_message = "SERAPH"
+	scatter_range = 4
 
 /datum/fire_support/custom/banshee_strafe/do_impact(turf/target_turf)
 	new /obj/effect/temp_visual/plasma_explosion/small(target_turf)
@@ -798,6 +916,30 @@
 			if(!(obj_target.indestructible))
 				obj_target.update_health(50)
 	target_turf.ex_act(EXPLOSION_THRESHOLD_VLOW)
+
+/datum/fire_support/custom/banshee_flyby
+	name = "banshee flyby"
+	delay_to_impact = 0.4 SECONDS
+	start_visual = /obj/effect/temp_visual/flyby/banshee_flyby
+	has_shadow = FALSE // this is so you can have several in formation if you want!
+	initiate_sound = null
+	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
+	warning_chat_message = "BANSHEE"
+
+/datum/fire_support/custom/banshee_flyby/do_impact(turf/target_turf)
+	return
+
+/datum/fire_support/custom/seraph_flyby
+	name = "seraph flyby"
+	delay_to_impact = 0.4 SECONDS
+	start_visual = /obj/effect/temp_visual/flyby/seraph_flyby
+	has_shadow = FALSE // this is so you can have several in formation if you want!
+	initiate_sound = null
+	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
+	warning_chat_message = "SERAPH"
+
+/datum/fire_support/custom/seraph_flyby/do_impact(turf/target_turf)
+	return
 
 /datum/fire_support/custom/glassing_beam
 	name = "glassing beam"
@@ -869,7 +1011,9 @@
 
 // ============================ UNSC ORDNANCE ============================ \\
 
+// ================
 // wombat
+// ================
 
 /datum/fire_support/custom/wombat_gau
 	name = "F-99 Wombat GAU strafe"
@@ -958,7 +1102,20 @@
 	cell_explosion(target_turf, 100, 50, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("F-99 Wombat ASGIM-5 missile run"))
 	fire_spread(target_turf, create_cause_data("Incendiary rockets"), 3, 25, 20, "#EE6515")
 
+/datum/fire_support/custom/wombat_flyby
+	name = "F-99 Wombat Flyby"
+	delay_to_impact = 0.4 SECONDS
+	start_visual = /obj/effect/temp_visual/flyby/wombat_flyby
+	has_shadow = FALSE // this is so you can have several in formation if you want!
+	initiate_sound = 'sound/weapons/halo/fire_support/wombat_flyover.ogg'
+	warning_chat_message = "WOMBAT"
+
+/datum/fire_support/custom/wombat_flyby/do_impact(turf/target_turf)
+	return
+
+// ================
 // c712
+// ================
 
 /datum/fire_support/custom/c712_coilgun
 	name = "C712 Longsword Coilgun"
@@ -1009,7 +1166,19 @@
 /datum/fire_support/custom/c712_missile/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 400, 75, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("C712 Missile Strike"))
 
+/datum/fire_support/custom/c712_flyby
+	name = "C712 Longsword Flyby"
+	start_visual = /obj/effect/temp_visual/flyby/c712_longsword_flyby
+	has_shadow = FALSE // this is so you can have several in formation if you want!
+	initiate_sound = 'sound/weapons/halo/fire_support/c712_flyover.ogg'
+	warning_chat_message = "C712 LONGSWORD"
+
+/datum/fire_support/custom/c712_flyby/do_impact(turf/target_turf)
+	return
+
+// ================
 // c709
+// ================
 
 /datum/fire_support/custom/c709_missile
 	name = "C709 Missile Strike"
@@ -1061,6 +1230,21 @@
 /datum/fire_support/custom/c709_incendiary/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/incendiary/ammo = new()
 	ammo.warhead_impact(target_turf)
+
+/datum/fire_support/custom/c709_flyby
+	name = "C709 Longsword Flyby"
+	start_visual = /obj/effect/temp_visual/flyby/c709_longsword_flyby
+	has_shadow = FALSE // this is so you can have several in formation if you want!
+	delay_to_impact = 25 SECONDS
+	initiate_sound = 'sound/weapons/halo/fire_support/c709_flyover.ogg'
+	warning_chat_message = "C712 LONGSWORD"
+
+/datum/fire_support/custom/c709_flyby/do_impact(turf/target_turf)
+	return
+
+// ================
+// naval fire support
+// ================
 
 /datum/fire_support/custom/mac_gun
 	name = "MAC"
@@ -1126,6 +1310,268 @@
 
 /datum/fire_support/custom/coilgun_fire/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 80, 20, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("Coilgun Battery"))
+
+// ================
+// dropship hovering
+// ================
+
+/datum/fire_support/custom/pelican_hover
+	name = "D77-TCE Pelican"
+	delay_to_impact = 0.5 SECONDS
+	start_visual = null
+	scatter_range = 0
+	has_shadow = FALSE // this is to prevent you spawning a bunch of them and having sentries without shadows.
+	initiate_sound = null
+	start_sound = null
+	warning_chat_message = "D77-TCE PELICAN"
+
+/datum/fire_support/custom/pelican_hover/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/pelican/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+	animate(dropship, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = dropship.pixel_y +2)
+	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = dropship.pixel_y - 2)
+/datum/fire_support/custom/pelican_hover/armed
+	name = "(Rocket Pods) D77-TCE Pelican"
+
+/datum/fire_support/custom/pelican_hover/armed/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/pelican/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+
+	var/turf/gun_turf
+	var/turf/turret_turf_1 // left side
+	var/turf/turret_turf_2 // right side
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/pelican_main_turret/main_turret
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/pelican_rocket_pod/side_turret_1
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/pelican_rocket_pod/side_turret_2
+	var/main_turret_offset = 11
+	var/turret_offset_forward = 6
+	var/turret_offset_side = 8
+
+	switch(dropship.dir)
+		if(NORTH)
+			gun_turf = locate(dropship.x, dropship.y + main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(NORTH)
+
+			turret_turf_1 = locate(dropship.x - turret_offset_side, dropship.y + turret_offset_forward, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(NORTH)
+
+			turret_turf_2 = locate(dropship.x + turret_offset_side, dropship.y + turret_offset_forward, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(NORTH)
+		if(SOUTH)
+			gun_turf = locate(dropship.x, dropship.y - main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(SOUTH)
+
+			turret_turf_1 = locate(dropship.x + turret_offset_side, dropship.y - turret_offset_forward, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(SOUTH)
+
+			turret_turf_2 = locate(dropship.x - turret_offset_side, dropship.y - turret_offset_forward, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(SOUTH)
+		if(EAST)
+			gun_turf = locate(dropship.x + main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(EAST)
+
+			turret_turf_1 = locate(dropship.x + turret_offset_forward, dropship.y + turret_offset_side, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(EAST)
+
+			turret_turf_2 = locate(dropship.x + turret_offset_forward, dropship.y - turret_offset_side, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(EAST)
+		if(WEST)
+			gun_turf = locate(dropship.x - main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(WEST)
+
+			turret_turf_1 = locate(dropship.x - turret_offset_forward, dropship.y - turret_offset_side, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(WEST)
+
+			turret_turf_2 = locate(dropship.x - turret_offset_forward, dropship.y + turret_offset_side, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(WEST)
+	if(main_turret)
+		QDEL_IN(main_turret, 59 SECONDS)
+	if(side_turret_1)
+		QDEL_IN(side_turret_1, 59 SECONDS)
+	if(side_turret_2)
+		QDEL_IN(side_turret_2, 59 SECONDS)
+
+
+/datum/fire_support/custom/pelican_hover/light
+	name = "(Armed) D77-TCE Pelican"
+
+/datum/fire_support/custom/pelican_hover/light/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/pelican/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+
+	var/turf/gun_turf
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/pelican_main_turret/main_turret
+	var/main_turret_offset = 11
+
+	switch(dropship.dir)
+		if(NORTH)
+			gun_turf = locate(dropship.x, dropship.y + main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(NORTH)
+		if(SOUTH)
+			gun_turf = locate(dropship.x, dropship.y - main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(SOUTH)
+		if(EAST)
+			gun_turf = locate(dropship.x + main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(EAST)
+		if(WEST)
+			gun_turf = locate(dropship.x - main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(WEST)
+	QDEL_IN(main_turret, 59 SECONDS)
+
+/datum/fire_support/custom/phantom_hover
+	name = "Phantom"
+	delay_to_impact = 0.5 SECONDS
+	start_visual = null
+	scatter_range = 0
+	has_shadow = FALSE // this is to prevent you spawning a bunch of them and having sentries without shadows.
+	initiate_sound = null
+	start_sound = null
+	warning_chat_message = "PHANTOM"
+
+/datum/fire_support/custom/phantom_hover/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/phantom/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+
+/datum/fire_support/custom/phantom_hover/armed
+	name = "Armed Phantom"
+
+/datum/fire_support/custom/phantom_hover/armed/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/phantom/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+
+	var/turf/gun_turf
+	var/turf/turret_turf_1 // left side
+	var/turf/turret_turf_2 // right side
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/phantom_main_turret/main_turret
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/phantom_plasma_turret/side_turret_1
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/phantom_plasma_turret/side_turret_2
+	var/main_turret_offset = 16
+	var/turret_offset_forward = 3
+	var/turret_offset_side = 7
+
+	switch(dropship.dir)
+		if(NORTH)
+			gun_turf = locate(dropship.x, dropship.y + main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(NORTH)
+
+			turret_turf_1 = locate(dropship.x - turret_offset_side, dropship.y + turret_offset_forward, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(WEST)
+
+			turret_turf_2 = locate(dropship.x + turret_offset_side, dropship.y + turret_offset_forward, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(EAST)
+		if(SOUTH)
+			gun_turf = locate(dropship.x, dropship.y - main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(SOUTH)
+
+			turret_turf_1 = locate(dropship.x + turret_offset_side, dropship.y - turret_offset_forward, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(EAST)
+
+			turret_turf_2 = locate(dropship.x - turret_offset_side, dropship.y - turret_offset_forward, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(WEST)
+		if(EAST)
+			gun_turf = locate(dropship.x + main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(EAST)
+
+			turret_turf_1 = locate(dropship.x + turret_offset_forward, dropship.y + turret_offset_side, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(NORTH)
+
+			turret_turf_2 = locate(dropship.x + turret_offset_forward, dropship.y - turret_offset_side, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(SOUTH)
+		if(WEST)
+			gun_turf = locate(dropship.x - main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(WEST)
+
+			turret_turf_1 = locate(dropship.x - turret_offset_forward, dropship.y - turret_offset_side, dropship.z)
+			side_turret_1 = new (turret_turf_1)
+			side_turret_1.setDir(SOUTH)
+
+			turret_turf_2 = locate(dropship.x - turret_offset_forward, dropship.y + turret_offset_side, dropship.z)
+			side_turret_2 = new (turret_turf_2)
+			side_turret_2.setDir(NORTH)
+	if(main_turret)
+		QDEL_IN(main_turret, 59 SECONDS)
+	if(side_turret_1)
+		QDEL_IN(side_turret_1, 59 SECONDS)
+	if(side_turret_2)
+		QDEL_IN(side_turret_2, 59 SECONDS)
+
+/datum/fire_support/custom/spirit_hover
+	name = "Spirit"
+	delay_to_impact = 0.5 SECONDS
+	start_visual = null
+	scatter_range = 0
+	has_shadow = FALSE // this is to prevent you spawning a bunch of them and having sentries without shadows.
+	initiate_sound = null
+	start_sound = null
+	warning_chat_message = "Spirit"
+
+/datum/fire_support/custom/spirit_hover/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/spirit/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+
+/datum/fire_support/custom/spirit_hover/armed
+	name = "Armed Spirit"
+
+/datum/fire_support/custom/spirit_hover/armed/do_impact(turf/target_turf, direction)
+	var/obj/effect/temp_visual/dropship_hover/spirit/dropship = new(target_turf)
+	if(direction)
+		dropship.setDir(direction)
+
+	var/turf/gun_turf
+	var/obj/structure/machinery/defenses/sentry/halo_cas_turret/phantom_main_turret/main_turret
+	var/main_turret_offset = 9
+
+	switch(dropship.dir)
+		if(NORTH)
+			gun_turf = locate(dropship.x, dropship.y - main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(NORTH)
+		if(SOUTH)
+			gun_turf = locate(dropship.x, dropship.y + main_turret_offset, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(SOUTH)
+		if(EAST)
+			gun_turf = locate(dropship.x - main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(EAST)
+		if(WEST)
+			gun_turf = locate(dropship.x - main_turret_offset, dropship.y, dropship.z)
+			main_turret = new(gun_turf)
+			main_turret.setDir(WEST)
+	QDEL_IN(main_turret, 59 SECONDS)
+
 
 
 #undef ORDNANCE_OPTIONS

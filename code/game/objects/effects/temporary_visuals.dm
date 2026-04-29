@@ -183,7 +183,7 @@
 	. = ..()
 	particles = new /particles/shuttle_dust_hover
 	animate(src, alpha = 255, time = 1 SECONDS)
-	addtimer(CALLBACK(src, PROC_REF(fade_away)), 4 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(fade_away)), duration - 1 SECONDS)
 
 /obj/effect/temp_visual/dropship_hover/proc/fade_away()
 	animate(src, alpha = 0, time = 1 SECONDS)
@@ -191,6 +191,78 @@
 
 /obj/effect/temp_visual/dropship_hover/krokodil
 	icon_state = "krokodil"
+
+/obj/effect/temp_visual/dropship_hover/phantom
+	icon = 'icons/halo/effects/phantom_flyby.dmi'
+	icon_state = "phantom_shadow"
+	duration = 1 MINUTES
+	pixel_x = -560
+	pixel_y = -560
+	var/datum/looping_sound/phantom_loop/hover
+	randomdir = FALSE
+
+/obj/effect/temp_visual/dropship_hover/phantom/Initialize()
+	. = ..()
+	particles = null
+	hover = new(src)
+	hover.start()
+	animate(src, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +2)
+	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 2)
+	set_light_on(TRUE)
+	set_light_range(10)
+	set_light_color("#b188b6")
+
+/obj/effect/temp_visual/dropship_hover/phantom/fade_away()
+	. = ..()
+	hover.stop()
+
+/obj/effect/temp_visual/dropship_hover/spirit
+	icon = 'icons/halo/effects/spirit_flyby.dmi'
+	icon_state = "spirit_shadow"
+	duration = 1 MINUTES
+	pixel_x = -384
+	pixel_y = -384
+	var/datum/looping_sound/phantom_loop/hover
+	randomdir = FALSE
+
+/obj/effect/temp_visual/dropship_hover/spirit/Initialize()
+	. = ..()
+	particles = null
+	hover = new(src)
+	hover.start()
+	animate(src, time = 2 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +4)
+	animate(time = 2 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 4)
+	set_light_on(TRUE)
+	set_light_range(10)
+	set_light_color("#b188b6")
+
+/obj/effect/temp_visual/dropship_hover/spirit/fade_away()
+	. = ..()
+	hover.stop()
+
+/obj/effect/temp_visual/dropship_hover/pelican
+	icon = 'icons/halo/effects/pelican_flyby.dmi'
+	icon_state = "pelican_shadow"
+	duration = 1 MINUTES
+	pixel_x = -368
+	pixel_y = -368
+	var/datum/looping_sound/pelican_loop/hover
+	randomdir = FALSE
+
+/obj/effect/temp_visual/dropship_hover/pelican/Initialize()
+	. = ..()
+	particles = null
+	hover = new(src)
+	hover.start()
+	animate(src, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +2)
+	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 2)
+	set_light_on(TRUE)
+	set_light_range(10)
+	set_light_color("#d7935b")
+
+/obj/effect/temp_visual/dropship_hover/pelican/fade_away()
+	. = ..()
+	hover.stop()
 
 /obj/effect/temp_visual/heavyimpact_cas
 	name = "heavy impact"
