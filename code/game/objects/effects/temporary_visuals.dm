@@ -200,6 +200,8 @@
 	pixel_y = -560
 	var/datum/looping_sound/phantom_loop/hover
 	randomdir = FALSE
+	light_range = 15
+	light_color = "#b188b6"
 
 /obj/effect/temp_visual/dropship_hover/phantom/Initialize()
 	. = ..()
@@ -209,8 +211,6 @@
 	animate(src, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +2)
 	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 2)
 	set_light_on(TRUE)
-	set_light_range(10)
-	set_light_color("#b188b6")
 
 /obj/effect/temp_visual/dropship_hover/phantom/fade_away()
 	. = ..()
@@ -224,6 +224,8 @@
 	pixel_y = -384
 	var/datum/looping_sound/phantom_loop/hover
 	randomdir = FALSE
+	light_range = 9
+	light_color = "#b188b6"
 
 /obj/effect/temp_visual/dropship_hover/spirit/Initialize()
 	. = ..()
@@ -233,8 +235,6 @@
 	animate(src, time = 2 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +4)
 	animate(time = 2 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 4)
 	set_light_on(TRUE)
-	set_light_range(10)
-	set_light_color("#b188b6")
 
 /obj/effect/temp_visual/dropship_hover/spirit/fade_away()
 	. = ..()
@@ -248,6 +248,8 @@
 	pixel_y = -368
 	var/datum/looping_sound/pelican_loop/hover
 	randomdir = FALSE
+	light_range = 9
+	light_color = "#d7935b"
 
 /obj/effect/temp_visual/dropship_hover/pelican/Initialize()
 	. = ..()
@@ -257,8 +259,6 @@
 	animate(src, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +2)
 	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 2)
 	set_light_on(TRUE)
-	set_light_range(10)
-	set_light_color("#d7935b")
 
 /obj/effect/temp_visual/dropship_hover/pelican/fade_away()
 	. = ..()
