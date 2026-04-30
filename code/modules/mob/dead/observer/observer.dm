@@ -393,6 +393,15 @@
 				if("Xeno Status HUD")
 					H = GLOB.huds[MOB_HUD_XENO_STATUS]
 					H.add_hud_to(src, src)
+				if("Faction US Army HUD")
+					H = GLOB.huds[MOB_HUD_FACTION_ARMY]
+					H.add_hud_to(src, src)
+				if("Faction UACG HUD")
+					H = GLOB.huds[MOB_HUD_FACTION_UACG]
+					H.add_hud_to(src, src)
+				if("Faction USASF HUD")
+					H = GLOB.huds[MOB_HUD_FACTION_NAVY]
+					H.add_hud_to(src, src)
 				if("Faction UPP HUD")
 					H = GLOB.huds[MOB_HUD_FACTION_UPP]
 					H.add_hud_to(src, src)
@@ -587,7 +596,8 @@ This is the proc mobs get to turn into a ghost. Forked from ghostize due to comp
 
 	for(var/obj/effect/step_trigger/S in new_turf) //<-- this is dumb
 		S.Crossed(src)
-
+	for(var/obj/effect/roof_node/S in new_turf) //<-- this is dumb
+		S.Crossed(src)
 	// CRUTCH because ghost don't respect normal movement rules
 	SEND_SIGNAL(new_turf, COMSIG_TURF_ENTERED, src)
 	SEND_SIGNAL(src, COMSIG_GHOST_MOVED, new_turf)

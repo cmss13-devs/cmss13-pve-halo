@@ -11,6 +11,8 @@
 	var/datum/halo_shield/shield = TESTER_SHIELD
 	/// Whether or not any of the shield features are enabled
 	var/shield_enabled = TRUE
+	///is shield shimmering effect active
+	var/shield_effect = FALSE
 	/// Time in seconds until the shield begins to regenerate after taking damage
 	COOLDOWN_DECLARE(time_to_regen)
 	/// Time that it takes for the shield to reach full strength
@@ -68,7 +70,14 @@
 	if(ishuman(user))
 		if(damage_taken)
 			playsound(src, "shield_hit")
-			flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 4)
+			if(!shield_effect)
+				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 22)
+				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff9a", "size" = 1))
+				shield_effect = TRUE
+				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 22)
+			var/obj/shield_hit_fx = new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
+			shield_hit_fx.pixel_x = rand(-5, 5)
+			shield_hit_fx.pixel_y = rand(-16, 16)
 			shield_strength = max(shield_strength - damage_taken, 0)
 			COOLDOWN_START(src, time_to_regen, shield.time_to_regen)
 			if(shield_strength <= 0 && !shield_broken)
@@ -80,7 +89,9 @@
 	user = src.loc
 	if(ishuman(user))
 		playsound(src, "shield_pop", falloff = 5)
-		flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+pop"), 2 SECONDS)
+		new /obj/effect/temp_visual/plasma_explosion/shield_pop(user.loc)
+		new /obj/effect/temp_visual/shield_spark(user.loc)
+		remove_shield_effect()
 		user.visible_message(SPAN_NOTICE("[user]s energy shield shimmers and pops, overloading!"), SPAN_DANGER("Your energy shield shimmers and pops, overloading!"))
 
 // ------------------ PROCESS PROCS ------------------
@@ -99,8 +110,13 @@
 			return
 		if(shield_broken || user.stat == DEAD)
 			if(COOLDOWN_FINISHED(src, shield_sparks))
-				flick_overlay(user, image('icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi', null, "+flicker"), 4)
-				COOLDOWN_START(src, shield_sparks, rand(1, 4) SECONDS)
+				var/obj/shield_sparkle = new /obj/effect/temp_visual/plasma_explosion/shield_hit(user.loc)
+				shield_sparkle.pixel_x = rand(-5, 5)
+				shield_sparkle.pixel_y = rand(-16, 16)
+				user.add_filter("shield", 2, list("type" = "outline", "color" = "#bce0ff9a", "size" = 1))
+				addtimer(CALLBACK(src, PROC_REF(remove_shield_effect)), 5)
+				shield_effect = TRUE
+				COOLDOWN_START(src, shield_sparks, rand(3, 5) SECONDS)
 		if(user.stat == DEAD)
 			disable_shield()
 		if(COOLDOWN_FINISHED(src, time_to_regen))
@@ -111,6 +127,11 @@
 					playsound(src, "shield_charge", vary = TRUE)
 					user.visible_message(SPAN_NOTICE("[user]s energy shield emitters hum, regenerating the shield around them!"), SPAN_DANGER("Your energy shields hum and begin to regenerate."))
 					COOLDOWN_START(src, shield_noise_cd, shield.time_to_regen)
+
+/obj/item/clothing/suit/marine/shielded/proc/remove_shield_effect()
+	user = src.loc
+	user.remove_filter("shield")
+	shield_effect = FALSE
 
 // ------------------ ARMOR ------------------
 
@@ -145,11 +166,6 @@
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 
-/obj/item/clothing/suit/marine/shielded/sangheili/minor/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/minor/pads = new()
-	src.attach_accessory(null, pads, TRUE)
-
 /obj/item/clothing/suit/marine/shielded/sangheili/major
 
 	name = "\improper Sangheili Major combat harness"
@@ -163,11 +179,6 @@
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_laser = CLOTHING_ARMOR_HIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
-
-/obj/item/clothing/suit/marine/shielded/sangheili/major/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/major/pads = new()
-	src.attach_accessory(null, pads, TRUE)
 
 /obj/item/clothing/suit/marine/shielded/sangheili/ultra
 
@@ -183,26 +194,14 @@
 	armor_laser = CLOTHING_ARMOR_HIGHPLUS
 	armor_bomb = CLOTHING_ARMOR_HIGH
 
-/obj/item/clothing/suit/marine/shielded/sangheili/ultra/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/ultra/pads = new()
-	src.attach_accessory(null, pads, TRUE)
+/obj/item/clothing/suit/marine/shielded/sangheili/honor_guard // mega op but thats ok
 
-/obj/item/clothing/suit/marine/shielded/sangheili/zealot
+	name = "\improper Sangheili Honor Guard combat harness"
 
-	name = "\improper Sangheili Zealot combat harness"
-	desc = "The golden sheen of this harness marks the proud Sangheili out as one of the vaunted Zealots, warriors belonging to honourable Orders. Vastly superior to any lesser harness, the nanolaminate alloys used in it are said to be imbued with holy-metals directly, allowing it to be not only exceptionally light, but absurdly sturdy as well. This conventional strength is paired with powerful energy-shields, turning the warrior into an unstoppable object as they pursue their goals."
-	desc_lore = "Be it leading troops directly in glorious combat, or securing Holy Relics in daring and softly spoken of operations, the bearer of this harness is not to be trifled with, let alone crossed."
+	icon_state = "sang_major"
 
-	icon_state = "sang_zealot"
-
-	shield = SANG_SHIELD_ZEALOT
-	armor_melee = CLOTHING_ARMOR_ULTRAHIGH
-	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
-	armor_laser = CLOTHING_ARMOR_VERYHIGH
-	armor_bomb = CLOTHING_ARMOR_HIGH
-
-/obj/item/clothing/suit/marine/shielded/sangheili/zealot/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/zealot/pads = new()
-	src.attach_accessory(null, pads, TRUE)
+	shield = SANG_SHIELD_HONOR_GUARD
+	armor_melee = CLOTHING_ARMOR_GIGAHIGH
+	armor_bullet = CLOTHING_ARMOR_GIGAHIGH
+	armor_laser = CLOTHING_ARMOR_GIGAHIGH
+	armor_bomb = CLOTHING_ARMOR_GIGAHIGHDOUBLEPLUSGOOD
