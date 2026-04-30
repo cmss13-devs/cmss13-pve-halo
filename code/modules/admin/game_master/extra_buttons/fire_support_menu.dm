@@ -1244,7 +1244,7 @@
 	has_shadow = FALSE // this is so you can have several in formation if you want!
 	delay_to_impact = 25 SECONDS
 	initiate_sound = 'sound/weapons/halo/fire_support/c709_flyover.ogg'
-	warning_chat_message = "C712 LONGSWORD"
+	warning_chat_message = "C709 LONGSWORD"
 	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/c709_flyby/do_impact(turf/target_turf)
