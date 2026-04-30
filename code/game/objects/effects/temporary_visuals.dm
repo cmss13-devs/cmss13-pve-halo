@@ -523,8 +523,8 @@
 /obj/effect/temp_visual/flyby/seraph_flyby
 	icon = 'icons/halo/effects/kai_seraph_flyby.dmi'
 	icon_state = "kai_shadow"
-	pixel_x = -140
-	pixel_y = -140
+	pixel_x = -240
+	pixel_y = -240
 
 /obj/effect/temp_visual/flyby/wombat_flyby
 	icon = 'icons/halo/effects/wombat_flyby.dmi'

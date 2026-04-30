@@ -64,7 +64,7 @@
 	icon_state = "closed_landed_pod"
 	icon_opened = "opened_landed_pod"
 	icon_closed = "closed_landed_pod"
-	playsound(src, 'sound/effects/odst_pod/door_clang_1.ogg')
+	playsound(src, "droppod_land", 25)
 	addtimer(CALLBACK(src, PROC_REF(finish_open)), 2)
 
 /obj/structure/closet/ordnance_canister/proc/finish_open()

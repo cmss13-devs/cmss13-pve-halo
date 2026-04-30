@@ -59,19 +59,19 @@
 	var/flameshape = FLAMESHAPE_IRREGULAR
 	var/fire_type = FIRE_VARIANT_TYPE_X
 
-/datum/ammo/energy/halo_plasma/phantom_big_turret/on_hit_mob(mob/mob, obj/projectile/projectile)
+/datum/ammo/energy/halo_plasma/phantom_main_turret/on_hit_mob(mob/mob, obj/projectile/projectile)
 	new /obj/effect/temp_visual/plasma_explosion(get_turf(mob))
 	cell_explosion(get_turf(mob), 50, 20, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, projectile.weapon_cause_data, "explosion_phantomgun", "explosion_phantomgun", "explosion_phantomgun_lod")
 
-/datum/ammo/energy/halo_plasma/phantom_big_turret/on_hit_obj(obj/object, obj/projectile/projectile)
+/datum/ammo/energy/halo_plasma/phantom_main_turret/on_hit_obj(obj/object, obj/projectile/projectile)
 	new /obj/effect/temp_visual/plasma_explosion(get_turf(object))
 	cell_explosion(get_turf(object), 50, 20, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, projectile.weapon_cause_data, "explosion_phantomgun", "explosion_phantomgun", "explosion_phantomgun_lod")
 
-/datum/ammo/energy/halo_plasma/phantom_big_turret/on_hit_turf(turf/turf, obj/projectile/projectile)
+/datum/ammo/energy/halo_plasma/phantom_main_turret/on_hit_turf(turf/turf, obj/projectile/projectile)
 	new /obj/effect/temp_visual/plasma_explosion(turf)
 	cell_explosion(turf, 50, 20, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, projectile.weapon_cause_data, "explosion_phantomgun", "explosion_phantomgun", "explosion_phantomgun_lod")
 
-/datum/ammo/energy/halo_plasma/phantom_big_turret/do_at_max_range(obj/projectile/projectile)
+/datum/ammo/energy/halo_plasma/phantom_main_turret/do_at_max_range(obj/projectile/projectile)
 	new /obj/effect/temp_visual/plasma_explosion(get_turf(projectile))
 	cell_explosion(get_turf(projectile), 50, 20, EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL, null, projectile.weapon_cause_data, "explosion_phantomgun", "explosion_phantomgun", "explosion_phantomgun_lod")
 

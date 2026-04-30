@@ -732,6 +732,8 @@
 	visual_impact_delay = 0.15 SECONDS
 	///Chat message when initiating fire support
 	var/warning_chat_message = "SHELL"
+	///Verb used for the warning message
+	var/warning_chat_verb = "HIT"
 	///Max range of warning message
 	var/warning_range = 15
 	///Initiating sound effect
@@ -786,7 +788,7 @@
 		else
 			relative_dir = Get_Compass_Dir(mob, target_turf)
 		mob.show_message( \
-			SPAN_HIGHDANGER("A [warning_chat_message] IS ABOUT TO HIT [SPAN_UNDERLINE(relative_dir ? uppertext(("TO YOUR " + dir2text(relative_dir))) : uppertext("right above you"))]!"), SHOW_MESSAGE_VISIBLE, \
+			SPAN_HIGHDANGER("A [warning_chat_message] IS ABOUT TO [warning_chat_verb] [SPAN_UNDERLINE(relative_dir ? uppertext(("TO YOUR " + dir2text(relative_dir))) : uppertext("right above you"))]!"), SHOW_MESSAGE_VISIBLE, \
 			SPAN_HIGHDANGER("YOU HEAR SOMETHING VERY CLOSE COMING DOWN [SPAN_UNDERLINE(relative_dir ? uppertext(("TO YOUR " + dir2text(relative_dir))) : uppertext("right above you"))]!"), SHOW_MESSAGE_AUDIBLE \
 		)
 
@@ -867,13 +869,14 @@
 /datum/fire_support/custom/banshee_fuel_rod/seraph
 	name = "seraph fuel rod"
 	scatter_range = 2
-	start_visual = /obj/effect/temp_visual/flyby/banshee_flyby
+	start_visual = /obj/effect/temp_visual/flyby/seraph_flyby
 	start_sound = 'sound/weapons/halo/fire_support/seraph_flyby.ogg'
-	warning_chat_message = "BANSHEE"
+	warning_chat_message = "SERAPH"
 	delay_to_impact = 2 SECONDS
 	has_shadow = TRUE
 	scatter_range = 2
 	impact_quantity = 2
+	radius = 2
 
 /datum/fire_support/custom/banshee_strafe
 	name = "banshee strafe"
@@ -925,6 +928,7 @@
 	initiate_sound = null
 	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
 	warning_chat_message = "BANSHEE"
+	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/banshee_flyby/do_impact(turf/target_turf)
 	return
@@ -937,6 +941,7 @@
 	initiate_sound = null
 	start_sound = 'sound/weapons/halo/fire_support/banshee_flyby.ogg'
 	warning_chat_message = "SERAPH"
+	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/seraph_flyby/do_impact(turf/target_turf)
 	return
@@ -1109,6 +1114,7 @@
 	has_shadow = FALSE // this is so you can have several in formation if you want!
 	initiate_sound = 'sound/weapons/halo/fire_support/wombat_flyover.ogg'
 	warning_chat_message = "WOMBAT"
+	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/wombat_flyby/do_impact(turf/target_turf)
 	return
@@ -1172,6 +1178,7 @@
 	has_shadow = FALSE // this is so you can have several in formation if you want!
 	initiate_sound = 'sound/weapons/halo/fire_support/c712_flyover.ogg'
 	warning_chat_message = "C712 LONGSWORD"
+	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/c712_flyby/do_impact(turf/target_turf)
 	return
@@ -1238,6 +1245,7 @@
 	delay_to_impact = 25 SECONDS
 	initiate_sound = 'sound/weapons/halo/fire_support/c709_flyover.ogg'
 	warning_chat_message = "C712 LONGSWORD"
+	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/c709_flyby/do_impact(turf/target_turf)
 	return
@@ -1324,6 +1332,7 @@
 	initiate_sound = null
 	start_sound = null
 	warning_chat_message = "D77-TCE PELICAN"
+	warning_chat_verb = "HOVER OVER"
 
 /datum/fire_support/custom/pelican_hover/do_impact(turf/target_turf, direction)
 	var/obj/effect/temp_visual/dropship_hover/pelican/dropship = new(target_turf)
@@ -1446,6 +1455,7 @@
 	initiate_sound = null
 	start_sound = null
 	warning_chat_message = "PHANTOM"
+	warning_chat_verb = "HOVER OVER"
 
 /datum/fire_support/custom/phantom_hover/do_impact(turf/target_turf, direction)
 	var/obj/effect/temp_visual/dropship_hover/phantom/dropship = new(target_turf)
@@ -1534,7 +1544,8 @@
 	has_shadow = FALSE // this is to prevent you spawning a bunch of them and having sentries without shadows.
 	initiate_sound = null
 	start_sound = null
-	warning_chat_message = "Spirit"
+	warning_chat_message = "SPIRIT"
+	warning_chat_verb = "HOVER OVER"
 
 /datum/fire_support/custom/spirit_hover/do_impact(turf/target_turf, direction)
 	var/obj/effect/temp_visual/dropship_hover/spirit/dropship = new(target_turf)
@@ -1567,7 +1578,7 @@
 			main_turret = new(gun_turf)
 			main_turret.setDir(EAST)
 		if(WEST)
-			gun_turf = locate(dropship.x - main_turret_offset, dropship.y, dropship.z)
+			gun_turf = locate(dropship.x + main_turret_offset, dropship.y, dropship.z)
 			main_turret = new(gun_turf)
 			main_turret.setDir(WEST)
 	QDEL_IN(main_turret, 59 SECONDS)
