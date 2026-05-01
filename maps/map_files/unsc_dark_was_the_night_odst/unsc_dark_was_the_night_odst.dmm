@@ -664,6 +664,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
+"bM" = (
+/turf/open/space/basic,
+/turf/closed/wall/unsc/reinforced/hull,
+/area/dark_was_the_night/armory)
 "bN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -3507,9 +3511,6 @@
 /obj/structure/machinery/cryopod/big/halo/flipped,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/cryo_bay)
-"Gx" = (
-/turf/closed/wall/unsc/reinforced/hull,
-/area/space)
 "GD" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/six,
 /turf/open/floor/almayer/mono,
@@ -12474,7 +12475,7 @@ rR
 rR
 rR
 rR
-rR
+bJ
 qV
 qV
 db
@@ -13236,13 +13237,13 @@ rR
 rR
 rR
 bJ
+bM
 bJ
 HJ
 HJ
 qq
 CR
 CR
-qq
 qq
 qq
 bJ
@@ -13388,13 +13389,13 @@ rR
 rR
 rR
 rR
-Gx
+rR
+bJ
 Lz
 Lz
 bJ
 BM
 BM
-bJ
 bJ
 bJ
 bJ
@@ -13540,14 +13541,14 @@ rR
 rR
 rR
 rR
-Gx
+rR
+bJ
 Nz
 Um
 bJ
 Cw
 jP
 bJ
-rR
 rR
 rR
 rR
@@ -13692,14 +13693,14 @@ rR
 rR
 rR
 rR
-Gx
-bJ
-bJ
-bJ
-bJ
-bJ
-bJ
 rR
+bJ
+bJ
+bJ
+bJ
+bJ
+bJ
+bJ
 rR
 rR
 rR
