@@ -1563,6 +1563,14 @@
 "jN" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/canteen)
+"jP" = (
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "jS" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1667,6 +1675,9 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
+"lo" = (
+/turf/open/floor/almayer/blue/east,
+/area/dark_was_the_night/armory)
 "lp" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1;
@@ -3901,11 +3912,12 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "Lz" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
-/obj/structure/machinery/light/small/blue/golden_arrow{
-	dir = 4
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "ship_armory";
+	name = "\improper Squad Leader Equipment"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
 "LB" = (
 /obj/structure/machinery/light/double/blue{
@@ -4124,10 +4136,8 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "Nz" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
-/obj/structure/machinery/light/small/blue/golden_arrow{
-	dir = 4
-	},
+/obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "NG" = (
@@ -4954,6 +4964,14 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
+"XY" = (
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "Yd" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/almayer,
@@ -13188,13 +13206,13 @@ rR
 rR
 bJ
 bJ
-bJ
+lo
+qL
 HJ
-qq
+qL
 CR
-qq
+qL
 CR
-qq
 qq
 bJ
 rR
@@ -13339,14 +13357,14 @@ rR
 rR
 rR
 rR
-rR
+bJ
+Lz
 bJ
 MT
 bJ
 BM
 bJ
 BM
-bJ
 bJ
 bJ
 rR
@@ -13491,14 +13509,14 @@ rR
 rR
 rR
 rR
-rR
-bJ
-Um
-bJ
-Lz
 bJ
 Nz
 bJ
+Um
+bJ
+jP
+bJ
+XY
 bJ
 rR
 rR
@@ -13643,7 +13661,6 @@ rR
 rR
 rR
 rR
-rR
 bJ
 bJ
 bJ
@@ -13651,7 +13668,8 @@ bJ
 bJ
 bJ
 bJ
-rR
+bJ
+bJ
 rR
 rR
 rR

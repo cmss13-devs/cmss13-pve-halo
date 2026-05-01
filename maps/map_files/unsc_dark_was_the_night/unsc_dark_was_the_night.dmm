@@ -3669,6 +3669,7 @@
 /obj/structure/sign/safety/one{
 	pixel_x = -16
 	},
+/obj/item/clothing/head/helmet/marine/unsc/motion,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "iQ" = (
@@ -5893,6 +5894,7 @@
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
+/obj/item/clothing/head/helmet/marine/unsc/motion,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/armory)
 "pu" = (
@@ -11978,6 +11980,7 @@
 /obj/structure/sign/safety/two{
 	pixel_x = -16
 	},
+/obj/item/clothing/head/helmet/marine/unsc/motion,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
 "RZ" = (
