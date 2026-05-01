@@ -1313,7 +1313,7 @@
 	impact_delay = 0.5 SECONDS
 	impact_sound = null
 	initiate_sound = 'sound/weapons/halo/fire_support/frigate_gunfire.ogg'
-	warning_chat_message = "COILGUNS"
+	warning_chat_message = "COILGUN BARRAGE"
 	warning_range = 35
 
 /datum/fire_support/custom/coilgun_fire/do_impact(turf/target_turf)
