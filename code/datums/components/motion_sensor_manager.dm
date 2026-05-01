@@ -5,6 +5,7 @@
 /datum/component/motion_sensor_manager
 	dupe_mode = COMPONENT_DUPE_HIGHLANDER
 	var/datum/action/item_action/motion_sensor/sensor_action
+	var/motion_sensor_color = "#0080ae"
 
 /datum/component/motion_sensor_manager/Initialize()
 	if(!isitem(parent))
@@ -14,7 +15,7 @@
 /datum/component/motion_sensor_manager/RegisterWithParent()
 	RegisterSignal(parent, COMSIG_ITEM_EQUIPPED, PROC_REF(equipped))
 	RegisterSignal(parent, COMSIG_ITEM_DROPPED, PROC_REF(dropped))
-	sensor_action = new /datum/action/item_action/motion_sensor(parent)
+	sensor_action = new /datum/action/item_action/motion_sensor(parent, null, motion_sensor_color)
 	RegisterSignal(sensor_action, COMSIG_ACTION_ACTIVATED, PROC_REF(toggle))
 
 /datum/component/motion_sensor_manager/UnregisterFromParent()
@@ -27,6 +28,7 @@
 
 /datum/component/motion_sensor_manager/proc/equipped(obj/item/source, mob/living/carbon/human/mob, slot)
 	SIGNAL_HANDLER
+	mob.hud_used.motion_sensor.configure(background_color = motion_sensor_color)
 	if(is_equipped(mob))
 		mob.hud_used.motion_sensor.give(mob)
 	else
@@ -56,11 +58,20 @@
 	var/obj/item/parent_item = parent
 	return parent_item.is_valid_slot(mob.get_slot_by_item(parent_item), TRUE)
 
-/datum/action/item_action/motion_sensor/New(Target, obj/item/holder)
+/datum/action/item_action/motion_sensor
+	var/overlay_color
+
+/datum/action/item_action/motion_sensor/New(Target, obj/item/holder, _overlay_color)
 	. = ..()
 	name = "Toggle Motion Sensor"
 	button.name = name
-	// Maybe this would look better with a custom sprite? Right now it just shows the helmet
+	overlay_color = _overlay_color
+	update_button_icon()
+
+/datum/action/item_action/motion_sensor/update_button_icon()
+	var/image/image = image('icons/halo/mob/hud/actions.dmi', button, "motion_sensor")
+	image.color = overlay_color
+	button.overlays += image
 
 /datum/action/item_action/motion_sensor/action_activate()
 	if(!ismob(holder_item.loc))
