@@ -958,6 +958,9 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
+"cS" = (
+/turf/open/floor/almayer/blue/north,
+/area/dark_was_the_night/armory)
 "cZ" = (
 /turf/open/floor/almayer/redcorner/east,
 /area/dark_was_the_night/lower_hallway)
@@ -1492,6 +1495,14 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/ready_bay)
+"jq" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 2;
+	id = "ship_armory";
+	name = "\improper Fireteam Leader Equipment"
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/armory)
 "js" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -1564,11 +1575,13 @@
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/canteen)
 "jP" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 4
 	},
-/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/two{
+	pixel_x = 32
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "jS" = (
@@ -1676,7 +1689,13 @@
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
 "lo" = (
-/turf/open/floor/almayer/blue/east,
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/two{
+	pixel_x = 8;
+	pixel_y = 24
+	},
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "lp" = (
 /obj/structure/bed/chair/office/light{
@@ -3190,6 +3209,16 @@
 	},
 /turf/open/floor/almayer/test_floor5,
 /area/dark_was_the_night/cryo_hall)
+"Cw" = (
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/obj/structure/sign/safety/one{
+	pixel_x = 32
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "Cx" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3478,6 +3507,9 @@
 /obj/structure/machinery/cryopod/big/halo/flipped,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/cryo_bay)
+"Gx" = (
+/turf/closed/wall/unsc/reinforced/hull,
+/area/space)
 "GD" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/six,
 /turf/open/floor/almayer/mono,
@@ -4104,12 +4136,13 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
 "MT" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "ship_armory";
-	name = "\improper RTO Equipment"
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/one{
+	pixel_y = 24;
+	pixel_x = 8
 	},
-/turf/open/floor/almayer/pod_landing_floor,
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "MX" = (
 /turf/open/floor/almayer/mono,
@@ -4965,12 +4998,10 @@
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
 "XY" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
-/obj/structure/machinery/light/small/blue/golden_arrow{
-	dir = 4
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/blue/north,
 /area/dark_was_the_night/armory)
 "Yd" = (
 /obj/structure/machinery/light/small/red,
@@ -12443,7 +12474,7 @@ rR
 rR
 rR
 rR
-bJ
+rR
 qV
 qV
 db
@@ -12594,7 +12625,7 @@ rR
 rR
 rR
 rR
-rR
+bJ
 bJ
 bJ
 mq
@@ -12746,10 +12777,10 @@ rR
 rR
 rR
 rR
-rR
-rR
 bJ
-SI
+MT
+jq
+XY
 bm
 Be
 Zm
@@ -12898,10 +12929,10 @@ rR
 rR
 rR
 rR
-rR
-rR
 bJ
-qq
+lo
+jq
+cS
 qL
 qL
 qL
@@ -13050,8 +13081,8 @@ rR
 rR
 rR
 rR
-rR
-rR
+bJ
+bJ
 bJ
 xl
 qL
@@ -13206,13 +13237,13 @@ rR
 rR
 bJ
 bJ
-lo
-qL
 HJ
-qL
+HJ
+qq
 CR
-qL
 CR
+qq
+qq
 qq
 bJ
 rR
@@ -13357,14 +13388,14 @@ rR
 rR
 rR
 rR
-bJ
+Gx
+Lz
 Lz
 bJ
-MT
-bJ
+BM
 BM
 bJ
-BM
+bJ
 bJ
 bJ
 rR
@@ -13509,15 +13540,15 @@ rR
 rR
 rR
 rR
-bJ
+Gx
 Nz
-bJ
 Um
 bJ
+Cw
 jP
 bJ
-XY
-bJ
+rR
+rR
 rR
 rR
 rR
@@ -13661,15 +13692,15 @@ rR
 rR
 rR
 rR
+Gx
 bJ
 bJ
 bJ
 bJ
 bJ
 bJ
-bJ
-bJ
-bJ
+rR
+rR
 rR
 rR
 rR
