@@ -664,10 +664,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
-"bM" = (
-/turf/open/space/basic,
-/turf/closed/wall/unsc/reinforced/hull,
-/area/dark_was_the_night/armory)
 "bN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -13237,7 +13233,7 @@ rR
 rR
 rR
 bJ
-bM
+bJ
 bJ
 HJ
 HJ
