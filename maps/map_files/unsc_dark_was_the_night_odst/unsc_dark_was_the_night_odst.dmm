@@ -664,6 +664,16 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
+"bM" = (
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/obj/structure/sign/safety/one{
+	pixel_x = 32
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "bN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -892,6 +902,36 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
+"cr" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "ship_armory";
+	name = "\improper Squad Leader Equipment"
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/armory)
+"cs" = (
+/obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
+"ct" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/blue/north,
+/area/dark_was_the_night/armory)
+"cu" = (
+/turf/open/floor/almayer/blue/north,
+/area/dark_was_the_night/armory)
+"cv" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 2;
+	id = "ship_armory";
+	name = "\improper Fireteam Leader Equipment"
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/armory)
 "cw" = (
 /obj/structure/platform{
 	dir = 4
@@ -901,6 +941,15 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/lower_hallway)
+"cx" = (
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/one{
+	pixel_y = 24;
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "cy" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -909,6 +958,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/upper_hallway)
+"cz" = (
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/two{
+	pixel_x = 8;
+	pixel_y = 24
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "cA" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/dorms)
@@ -958,9 +1016,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"cS" = (
-/turf/open/floor/almayer/blue/north,
-/area/dark_was_the_night/armory)
 "cZ" = (
 /turf/open/floor/almayer/redcorner/east,
 /area/dark_was_the_night/lower_hallway)
@@ -1495,14 +1550,6 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/ready_bay)
-"jq" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 2;
-	id = "ship_armory";
-	name = "\improper Fireteam Leader Equipment"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/armory)
 "js" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -1574,16 +1621,6 @@
 "jN" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/canteen)
-"jP" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
-/obj/structure/machinery/light/small/blue/golden_arrow{
-	dir = 4
-	},
-/obj/structure/sign/safety/two{
-	pixel_x = 32
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "jS" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1688,15 +1725,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
-"lo" = (
-/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
-/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
-/obj/structure/sign/safety/two{
-	pixel_x = 8;
-	pixel_y = 24
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "lp" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1;
@@ -3209,16 +3237,6 @@
 	},
 /turf/open/floor/almayer/test_floor5,
 /area/dark_was_the_night/cryo_hall)
-"Cw" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
-/obj/structure/machinery/light/small/blue/golden_arrow{
-	dir = 4
-	},
-/obj/structure/sign/safety/one{
-	pixel_x = 32
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "Cx" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3940,14 +3958,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"Lz" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "ship_armory";
-	name = "\improper Squad Leader Equipment"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/armory)
 "LB" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -4132,15 +4142,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"MT" = (
-/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
-/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
-/obj/structure/sign/safety/one{
-	pixel_y = 24;
-	pixel_x = 8
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "MX" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/dorms)
@@ -4166,8 +4167,13 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
 "Nz" = (
-/obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
-/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/obj/structure/sign/safety/two{
+	pixel_x = 32
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "NG" = (
@@ -4994,12 +5000,6 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
-"XY" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/blue/north,
-/area/dark_was_the_night/armory)
 "Yd" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/almayer,
@@ -12775,9 +12775,9 @@ rR
 rR
 rR
 bJ
-MT
-jq
-XY
+cx
+cv
+ct
 bm
 Be
 Zm
@@ -12927,9 +12927,9 @@ rR
 rR
 rR
 bJ
-lo
-jq
-cS
+cz
+cv
+cu
 qL
 qL
 qL
@@ -13387,8 +13387,8 @@ rR
 rR
 rR
 bJ
-Lz
-Lz
+cr
+cr
 bJ
 BM
 BM
@@ -13539,11 +13539,11 @@ rR
 rR
 rR
 bJ
-Nz
+cs
 Um
 bJ
-Cw
-jP
+bM
+Nz
 bJ
 rR
 rR
