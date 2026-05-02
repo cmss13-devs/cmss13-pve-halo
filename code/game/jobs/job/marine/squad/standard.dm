@@ -103,7 +103,7 @@
 	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /datum/job/marine/standard/ai/rto/handle_job_options(option)
-	if(option != PFC_VARIANT)
+	if(option != LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
 	else
 		gear_preset = initial(gear_preset)
