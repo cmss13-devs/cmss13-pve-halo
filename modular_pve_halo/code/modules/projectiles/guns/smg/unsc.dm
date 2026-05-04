@@ -28,7 +28,7 @@
 	empty_sound = null
 	w_class = SIZE_LARGE
 
-	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK
+	flags_gun_features = GUN_CAN_POINTBLANK
 	start_automatic = TRUE
 	map_specific_decoration = FALSE
 	current_mag = /obj/item/ammo_magazine/smg/halo/m7
