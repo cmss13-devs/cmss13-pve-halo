@@ -1976,6 +1976,17 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	item_icons = list(
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	)
+	var/motion_sensor = FALSE
+
+/obj/item/clothing/head/helmet/marine/unsc/Initialize(mapload, list/new_protection)
+	. = ..()
+	if(motion_sensor)
+		AddComponent(/datum/component/motion_sensor_manager)
+
+/obj/item/clothing/head/helmet/marine/unsc/motion
+	name = "\improper CH252-M helmet"
+	desc = "An upgraded helmet of the UNSC Marine Corps, with a motion sensor. Various attachment points on the helmet allow for various equipment to be fitted to the helmet."
+	motion_sensor = TRUE
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot
 	name = "\improper FH252 helmet"
@@ -1983,6 +1994,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "pilot"
 	item_state = "pilot"
 	flags_atom = ALLOWINTERNALS|NO_SNOW_TYPE|NO_NAME_OVERRIDE|BLOCKGASEFFECT|ALLOWREBREATH|ALLOWCPR
+	motion_sensor = TRUE
 
 /obj/item/clothing/head/helmet/marine/unsc/police
 	name = "\improper police CH252 helmet"
@@ -2000,9 +2012,14 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	icon_state = "oni"
 	item_state = "oni"
 
+/obj/item/clothing/head/helmet/marine/unsc/oni/motion
+	name = "\improper ONI CH252-M helmet"
+	desc = "An upgraded helmet of the UNSC Marine Corps, with a motion sensor. Various attachment points on the helmet allow for various equipment to be fitted to the helmet. This particular variant is used by ONI Security Forces, featuring a distinct black colour scheme."
+	motion_sensor = TRUE
+
 /obj/item/clothing/head/helmet/marine/unsc/odst
 	name = "\improper CH381 ODST helmet"
-	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
+	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment, and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
 	icon_state = "odst"
 	item_state = "odst"
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
@@ -2012,3 +2029,8 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
+
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion
+	name = "\improper CH381-M ODST helmet"
+	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment, a motion sensor, and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
+	motion_sensor = TRUE

@@ -49,6 +49,7 @@
 	var/UI_STATUS_Y_OFFSET = 26
 
 	//Middle right (status indicators)
+	var/UI_MOTION_LOC = "EAST-1:25,10:20"
 	var/UI_SL_LOCATOR_LOC = "EAST-1:28,9:18"
 	var/UI_OXYGEN_LOC = "EAST-1:28,8:17"
 	var/UI_HEALTH_LOC = "EAST-1:28,7:15"
