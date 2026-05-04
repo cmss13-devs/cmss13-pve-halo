@@ -1,21 +1,16 @@
+//bimex tempfiller
 /obj/item/clothing/glasses/sunglasses/big
-	name = "\improper polarized sports shades"
-	desc = "Sleek, angular shades designed to protect your eyes from both sunlight and foreign objects. These shades have a dark tint finish."
-	icon = 'icons/obj/items/clothing/glasses.dmi'
-	icon_state = "bimex_black"
-	item_state = "bimex_black"
+	name = "tactical shades"
+	desc = "Combat graded ballistic sunglasses with polarized lenses. Protects eyes from laser flash and splinters. Often avaliable at surplus stores or the PX."
+	clothing_traits = null
 
 /obj/item/clothing/glasses/sunglasses/big/orange
-	name = "\improper tactical sports shades"
-	desc = "Sleek, angular shades designed to protect your eyes from both sunlight and foreign objects. These shades have a mild orange-hued tint finish."
-	icon_state = "bimex_orange"
-	item_state = "bimex_orange"
+	name = "orange tactical shades"
+	desc = "Combat graded ballistic sunglasses with polarized anti-glare lenses. Protects eyes from laser flash and splinters. Marginally more expensive."
 
 /obj/item/clothing/glasses/sunglasses/big/classic
-	name = "prototype polarized shooting glasses"
-	desc = "An early prototype model of what would later develop into the modern shooting glasses used by many members of the UNSCDF's ground forces. Bulkier compared to the final model, they still provide the same degree of protection from sunlight thanks to the dark tint finish on the lenses."
-	icon_state = "bigsunglasses"
-	item_state = "bigsunglasses"
+	name = "ballistic aviator shades"
+	desc = "Combat graded large lens sunglasses with laser eye protection and ballistic defense. Enhanced grip nosebridge prevents them from falling off."
 
 /obj/item/clothing/glasses/sunglasses/big/unsc
 	name = "\improper UNSC shooting shades"
@@ -27,3 +22,9 @@
 		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 		)
+
+/obj/item/clothing/glasses/sunglasses/sechud
+	desc = "Tied into local security systems, this set of sunglasses also can display personal information of suspects at a glance."
+
+/obj/item/clothing/glasses/sunglasses/sechud/prescription
+	desc = "Tied into local security systems, this set of prescription sunglasses also can display personal information of suspects at a glance."
