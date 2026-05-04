@@ -4,3 +4,12 @@
   noctyrnal:
   - imagetweak: new m7 sprite
   - imagetweak: new dmr sprite
+2026-05-02:
+  BonniePandora:
+  - bugfix: ODST RTO rank selections correspond to correct rank
+  - bugfix: ODST SL now has HUD icon
+  - bugfix: Regular marine RTO has HUD icon
+2026-05-04:
+  BonniePandora:
+  - bugfix: M7 & M7S SMGs now properly use caseless ammo
+  - bugfix: ODST RFN rank options now correspond to the correct rank
