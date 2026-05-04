@@ -4,6 +4,9 @@
 /obj/item/prop/helmetgarb/cartridge
 	desc = "This is the bullet from an MA5B Assault Rifle. It is deformed from impact against an armored surface. It's been reduced to a lucky keepsake now."
 
+/obj/item/prop/helmetgarb/gunoil
+	desc = "It is a bottle of oil, for your gun. Don't fall for the rumors, the BR55 is NOT a self-cleaning firearm."
+
 /obj/item/prop/helmetgarb/lucky_feather
 	desc = "A tacky plastic feather, colored a riotous red color."
 

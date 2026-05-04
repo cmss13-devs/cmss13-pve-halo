@@ -77,15 +77,15 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/glasses/mgoggles/green/prescription
 
 /datum/gear/eyewear/bimex_shades
-	display_name = "Tinted Shooting Glasses"
+	display_name = "Tactical Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big
 
 /datum/gear/eyewear/bimex_shades_orange
-	display_name = "Tactical Shooting Glasses"
+	display_name = "Orange Tactical Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big/orange
 
 /datum/gear/eyewear/bimex_shades_classic
-	display_name = "Prototype Tinted Shooting Glasses"
+	display_name = "Ballistic Aviator Shades"
 	path = /obj/item/clothing/glasses/sunglasses/big/classic
 
 /datum/gear/eyewear/sunglasses
