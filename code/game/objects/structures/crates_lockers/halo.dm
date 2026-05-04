@@ -32,6 +32,11 @@
 	icon = 'icons/halo/obj/structures/crates_32x48.dmi'
 	icon_state = "cover_off"
 
+/obj/item/prop/ordnance_canister_door/Initialize()
+	. = ..()
+	pixel_x = rand(-5,5)
+	pixel_y = rand(-5,5)
+
 /obj/structure/closet/ordnance_canister/open()
 	if(opened)
 		return 0
@@ -52,6 +57,8 @@
 
 /obj/structure/closet/ordnance_canister/dropping/Initialize()
 	. = ..()
+	pixel_x = rand(-5,5)
+	pixel_y = rand(-5,5)
 	if(contents_path && contents_number)
 		for(var/amount = 1 to contents_number)
 			new contents_path(src)
@@ -81,8 +88,8 @@
 	playsound(door, 'sound/effects/odst_pod/door_clang_1.ogg')
 
 /obj/structure/closet/ordnance_canister/proc/drop_down()
-	pixel_y = 400
-	animate(src, pixel_y = 0, time = 1.5 SECONDS, easing = LINEAR_EASING)
+	pixel_z = 400
+	animate(src, pixel_z = 0, time = 1.5 SECONDS, easing = LINEAR_EASING)
 	addtimer(CALLBACK(src, PROC_REF(pop_open)), 1.45 SECONDS)
 
 /obj/structure/closet/ordnance_canister/proc/create_pod_light()
