@@ -31,6 +31,11 @@
 	if(brain.should_reload())
 		return 0
 
+	if(istype(brain.primary_weapon, /obj/item/weapon/gun/energy/plasma))
+		var/obj/item/weapon/gun/energy/plasma/plam = brain.primary_weapon
+		if(plam.dispersing)
+			return 0
+
 	return 10
 
 /datum/ai_action/fire_at_target/Destroy(force, ...)
@@ -230,7 +235,25 @@
 
 	else if(istype(brain.primary_weapon, /obj/item/weapon/gun/energy/plasma/plasma_pistol))
 		var/obj/item/weapon/gun/energy/plasma/plasma_pistol/plasma_reducer = brain.primary_weapon
-		addtimer(CALLBACK(plasma_reducer, TYPE_PROC_REF(/obj/item/weapon/gun/energy/plasma/plasma_pistol, start_fire), tied_human), plasma_reducer.get_fire_delay()*0.25)
+		if(plasma_reducer.heat >= 60)
+			var/vent_decision = 0
+			if(brain.current_target)
+				vent_decision = max(0, -20+(PLASMA_VENT_CHANCE_DIRECT_COMBAT*get_dist(brain.tied_human, brain.current_target)))
+			else
+				if(brain.target_turf)
+					vent_decision = max(0, -20+(PLASMA_VENT_CHANCE_INDIRECT_COMBAT*get_dist(brain.tied_human, brain.target_turf)))
+			vent_decision += max(0,plasma_reducer.heat-65)
+			if(prob(max(0, vent_decision)))
+				currently_firing = FALSE
+				brain.unholster_primary()
+				brain.ensure_primary_hand(plasma_reducer)
+				plasma_reducer.unload(brain.tied_human)
+				return
+			else if(plasma_reducer.heat >= 100)
+				currently_firing = FALSE
+				addtimer(CALLBACK(brain.primary_weapon, TYPE_PROC_REF(/obj/item/weapon/gun, start_fire), null, brain.current_target, null, null, null, TRUE), brain.primary_weapon.get_fire_delay())
+				return
+		addtimer(CALLBACK(plasma_reducer, TYPE_PROC_REF(/obj/item/weapon/gun/energy/plasma/plasma_pistol, start_fire), tied_human), plasma_reducer.get_fire_delay()*0.25) //standard hAi weapon throttling
 		COOLDOWN_START(brain, stop_fire_cooldown, max(plasma_reducer.get_fire_delay()) + 0.25)
 		stop_firing(brain)
 		qdel(src)
