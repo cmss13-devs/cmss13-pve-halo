@@ -746,14 +746,3 @@
 	item_state = "monoscope"
 	flags_armor_protection = 0
 	flags_equip_slot = SLOT_EYES
-
-/obj/item/clothing/glasses/sunglasses/big/unsc
-	name = "\improper UNSC shooting shades"
-	desc = "A pair of standard-issue shades. Some models come with an in-built HUD system, this one evidently does not."
-	icon = 'icons/halo/obj/items/clothing/glasses/glasses.dmi'
-	icon_state = "hudglasses"
-	item_state = "hudglasses"
-	item_icons = list(
-		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
-		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
-		)
