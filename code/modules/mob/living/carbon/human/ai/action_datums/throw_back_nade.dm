@@ -13,7 +13,13 @@
 	if(get_dist(brain.tied_human, brain.active_grenade_found) > 4)
 		return 0
 
-	return 50
+	var/mob/living/carbon/human/tied_mob = brain.tied_human
+	if(!HAS_TRAIT(tied_mob, TRAIT_DEXTROUS))
+		return 0
+	if(HAS_TRAIT(tied_mob, TRAIT_DEXTROUS))
+		return 25
+
+	return
 
 /datum/ai_action/throw_back_nade/Destroy(force, ...)
 	brain.active_grenade_found = null // Mr. Grenade is not our friend now
