@@ -1,0 +1,23 @@
+"a" = (/turf/closed/wall/unsc/reinforced/hull,/area/mackay_station/elevator/fire_control)
+"g" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth/southwest,/area/mackay_station/elevator/fire_control)
+"t" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/turf/open/floor/almayer/edge/smooth/northwest,/area/mackay_station/elevator/fire_control)
+"C" = (/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/fire_control)
+"D" = (/obj/effect/decal/warning_stripes{icon_state = "W"},/turf/open/floor/almayer/edge/smooth/west,/area/mackay_station/elevator/fire_control)
+"J" = (/obj/effect/decal/warning_stripes{icon_state = "door_warning"; dir = 4},/turf/open/floor/almayer/edge/smooth/corner/east,/area/mackay_station/elevator/fire_control)
+"K" = (/obj/docking_port/mobile/fire_control,/turf/closed/wall/unsc/reinforced/hull,/area/mackay_station/elevator/fire_control)
+"L" = (/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth,/area/mackay_station/elevator/fire_control)
+"N" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/turf/open/floor/almayer/edge/smooth/north,/area/mackay_station/elevator/fire_control)
+"S" = (/obj/structure/machinery/door/airlock/multi_tile/unsc{dir = 1; id = "control"},/turf/open/floor/almayer/pod_landing_floor,/area/mackay_station/elevator/fire_control)
+"U" = (/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/effect/decal/warning_stripes{icon_state = "S"},/turf/open/floor/almayer/edge/smooth/southeast,/area/mackay_station/elevator/fire_control)
+"V" = (/obj/effect/decal/warning_stripes{icon_state = "door_warning"; dir = 4},/turf/open/floor/almayer/edge/smooth/corner/north,/area/mackay_station/elevator/fire_control)
+"X" = (/obj/effect/decal/warning_stripes{icon_state = "N"; pixel_y = 1},/obj/effect/decal/warning_stripes{icon_state = "E"; pixel_x = 1},/obj/structure/machinery/computer/shuttle/elevator_controller/fire_control{pixel_x = 3; pixel_y = 34},/turf/open/floor/almayer/edge/smooth/northeast,/area/mackay_station/elevator/fire_control)
+"Y" = (/turf/open/floor/plating/plating_catwalk,/area/mackay_station/elevator/fire_control)
+
+(1,1,1) = {"
+aaaaaa
+atNNXa
+aDYYVC
+aDYYJS
+agLLUa
+Kaaaaa
+"}
