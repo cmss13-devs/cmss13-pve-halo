@@ -6,6 +6,7 @@
 	height = 3
 	preferred_direction = WEST
 	port_direction = WEST
+	max_capacity = 9
 
 /datum/map_template/shuttle/bumblebee_west
 	name = "bumblebee"
