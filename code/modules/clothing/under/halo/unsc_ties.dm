@@ -1,8 +1,8 @@
 //===========================//CUSTOM ARMOR COSMETIC PLATES\\================================\\
 
 /obj/item/clothing/accessory/pads/unsc
-	name = "\improper M52B Shoulder Pads"
-	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC."
+	name = "\improper M52B Pauldrons"
+	desc = "A pair of Ti-A pauldrons attachable to the UNSCMC's M52B armor for shoulder and upper arm protection."
 	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "pads"
 	item_state = "pads"
@@ -11,52 +11,52 @@
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi')
 
 /obj/item/clothing/accessory/pads/unsc/bracers
-	name = "\improper M52B Arm Bracers"
-	desc = "A set arm bracers worn in conjunction to the M52B body armor of the UNSC."
+	name = "\improper M52B Vambraces"
+	desc = "A pair of composite vambraces attachable to the UNSCMC's M52B armor for forearm protection. "
 	icon_state = "bracers"
 	item_state = "bracers"
 	slot = ACCESSORY_SLOT_DECORBRACER
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/unsc/bracers/police
-	name = "\improper Police Shoulder Bracers"
-	desc = "A set arm bracers worn in conjunction to an armoured vest, commonly issued to Police forces."
+	name = "\improper Police Arm Guards"
+	desc = "Supplementary protection for ballistic vests, commonly seen in police service. Resists lower power ammunition readily, as well as blunt impact."
 	icon_state = "bracers_police"
 	item_state = "bracers_police"
 
 /obj/item/clothing/accessory/pads/unsc/neckguard
-	name = "\improper M52B Neck Guard"
-	desc = "An attachable neck guard option for the M52B body armor worn by the UNSC."
+	name = "\improper M52B Throat Guard"
+	desc = "An optional throat guard for the UNSCMC's M52B armor, designed to resist splinters and some lower powered ammunition."
 	icon_state = "neckguard"
 	item_state = "neckguard"
 	slot = ACCESSORY_SLOT_DECORNECK
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/unsc/neckguard/police
-	name = "\improper Police Neck Guard"
-	desc = "An attachable neck guard option for basic ballistic vests, commonly issued to the Police."
+	name = "\improper Police Throat Guard"
+	desc = "Supplementary protection for ballistic vests, commonly seen in police service as a cheap up-armor for riot protection and high threat situations."
 	icon_state = "neckguard_police"
 	item_state = "neckguard_police"
 
 /obj/item/clothing/accessory/pads/unsc/greaves
-	name = "\improper M52B Shin Guards"
-	desc = "A set shinguards designed to be worn in conjuction with M52B body armor."
+	name = "\improper M52B Greaves"
+	desc = "A pair of composite partial length greaves for the UNSCMC's M52B armor. Intended for use alongside the VZG7 boots' armor protection, offering shrapnel, splinter, and cut protection."
 	icon_state = "shinguards"
 	item_state = "shinguards"
 	slot = ACCESSORY_SLOT_DECORSHIN
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/unsc/groin
-	name = "\improper M52B Groin Plate"
-	desc = "A plate designed to attach to M52B body armor to protect the babymakers of the Corps. Standardized protection of the UNSC often seen worn more often than not."
+	name = "\improper M52B Lap Panel"
+	desc = "Supplementary abdominal and groin protection for the UNSCMC's M52B armor. Titanium-A incorporation offers surprising resistance to gunfire and directed energy grazes."
 	icon_state = "groinplate"
 	item_state = "groinplate"
 	slot = ACCESSORY_SLOT_DECORGROIN
 	flags_atom = NO_SNOW_TYPE
 
 /obj/item/clothing/accessory/pads/unsc/groin/police
-	name = "\improper Police Groin Plate"
-	desc = "A plate designed to attach to an armoured Vest to protect the babymakers. Most commonly attached to Police Vests."
+	name = "\improper Police Lap Panel"
+	desc = "Additional protection for ballistic vests, covering the lower abdomen and groin. Protects vital arteries and organs from low powered weapons and ricochets. Seen most commonly in police service."
 	icon_state = "groinplate_police"
 	item_state = "groinplate_police"
 
@@ -81,26 +81,26 @@
 	item_state = "groinplate_insurgent"
 
 /obj/item/clothing/accessory/pads/unsc/odst
-	name = "\improper M70DT Shoulder Pads"
-	desc = "A set shoulder pads attachable to the M70DT armor set worn by the ODSTs."
+	name = "\improper M70DT Pauldrons"
+	desc = "A pair of Ti-A pauldrons for the ODST standard issue M70DT armor set, offering shoulder protection. Commonly takes a medical reference panel."
 	icon_state = "odst_pads"
 	item_state = "odst_pads"
 
 /obj/item/clothing/accessory/pads/unsc/bracers/odst
-	name = "\improper M70DT Bracers"
-	desc = "A set arm bracers worn in conjunction to the M70DT body armor of the ODSTs."
+	name = "\improper M70DT Vambraces"
+	desc = "A pair of Ti-A vambraces for the ODST standard issue M70DT armor set."
 	icon_state = "odst_bracers"
 	item_state = "odst_bracers"
 
 /obj/item/clothing/accessory/pads/unsc/greaves/odst
 	name = "\improper M70DT Greaves"
-	desc = "A set greaves designed to be worn in conjuction with M70DT body armor."
+	desc = "A pair of Ti-A greaves for the ODST standard issue M70DT armor set. By force procurement specification, the M70DT set does not use the VZG7 design for equipment tailorability reasons, so these are full length."
 	icon_state = "odst_shinguards"
 	item_state = "odst_shinguards"
 
 /obj/item/clothing/accessory/pads/unsc/groin/odst
-	name = "\improper M70DT Groin Plate"
-	desc = "A plate designed to attach to M70DT body armor to protect the babymakers of the Corps. Standardized protection of the ODSTs often seen worn more often than not."
+	name = "\improper M70DT Lap Panel"
+	desc = "Abdomen and groin protection for the ODST standard issue M70DT armor set. Titanium-A plates increase protection significantly."
 	icon_state = "odst_groinplate"
 	item_state = "odst_groinplate"
 
@@ -132,7 +132,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b
 	name = "\improper M52B Pattern Webbing"
-	desc = "A sturdy mess of synthcotton belts and buckles designed to attach to the M52B body armor armor standard for the UNSC. This one is the slimmed down model designed for general purpose storage."
+	desc = "General purpose storage configuration. Composed of heat-resistant synthetic fabrics, buckles to M52B armor hardpoints."
 	icon = 'icons/halo/obj/items/clothing/accessories/accessories.dmi'
 	icon_state = "m52b_webbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m52bgeneric
@@ -148,7 +148,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/mag
 	name = "\improper M52B Pattern Magazine Webbing"
-	desc = "A variant of the M52B pattern webbing that features pouches for pulse rifle magazines."
+	desc = "Magazine pouch configuration. Set up as a five-pouch."
 	icon_state = "m52b_magwebbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m52bmag
 
@@ -192,7 +192,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/shotgun
 	name = "\improper M52B Pattern Shell Webbing"
-	desc = "A slightly modified variant of the M52B pattern webbing, fitted for 12 gauge shotgun shells."
+	desc = "Fast-draw shotgun shell configuration. Increasingly common for close combat operations and security forces in the new war."
 	icon_state = "m52b_shotgunwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bshotgun
 
@@ -203,7 +203,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/small
 	name = "\improper M52B Pattern Small Pouch Webbing"
-	desc = "A set of M52B pattern webbing fully outfitted with pouches and pockets to carry a while array of small items."
+	desc = "Utility configuration for storing various items in convenient pouches."
 	icon_state = "m52b_smallwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgeneric
 	slot = ACCESSORY_SLOT_M3UTILITY
@@ -215,8 +215,8 @@
 	)
 
 /obj/item/clothing/accessory/storage/webbing/m52b/grenade
-	name = "\improper M52B Pattern Grenade Webbing"
-	desc = "A variation of the M52B pattern webbing fitted with loops for storing M40 grenades."
+	name = "\improper M52B Pattern Grenade Pouch"
+	desc = "LBE configuration designed for grenadiers, holding standard 40mm grenades. May also secure M9s for the more old fashioned grenadier."
 	icon_state = "m52b_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade
 

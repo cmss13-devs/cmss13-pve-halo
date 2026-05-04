@@ -14,7 +14,7 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5c
 	name = "MA5C ICWS assault rifle"
-	desc = "Belonging to the MA5 individual combat weapons system platform and produced by Misriah Armory, the MA5C is a staple weapon among the UNSC marine corps. It uses a box magazine capable of holding 32 7.62x51mm full-metal-jacket rounds."
+	desc = "A 7.62x51mm bullpup offering a slew of improvements from the B-variant. Reduced 1:7 twist and redesigned contact surfaces increase accuracy and stability in automatic, while the new 48 round magazine is highly reliable."
 	icon_state = "ma5c"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
@@ -70,8 +70,8 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5b
 	name = "MA5B ICWS assault rifle"
-	desc = "The MA5B is an older member of the MA5 line produced by Misriah Armory, though still in use by the Marine Corps and Army. Fires a standard 7.62x51mm round in 60 round magazines, with superior firerate to the MA5C, though less stability and accuracy."
-	desc_lore = "While the MA5C was developed to meet many of the issues the UNSC Marine Corps found with the MA5B rifle, primarily its unreliable magazines and poor long-range performance, it remains popular among veterans and close quarter specialists. Especially when paired with 'shredder' ammunition."
+	desc = "The older weapon sports a torrential 900RPM cyclic backed by 60 round magazine. Veterans and units expecting closer combat often select the B-variant if at all possible. However, these strengths would drive its successor's adoption."
+	desc_lore = "While beloved by paper soldiers in all positions, it is violently unstable in automatic, and in semi its MOA wider. Even the saltiest veteran will admit the MA5C's practically hugging its user even in full auto, compared to the 'B. Even this might not have been enough but for its reliability problem. Magazines must be cared for carefully, or failures are frequent. In the desperate combat of the early Human-Covenant War, such care evaporated."
 	icon_state = "ma5b"
 	item_state = "ma5b"
 	caliber = "7.62x51mm"
@@ -130,7 +130,8 @@
 
 /obj/item/weapon/gun/rifle/halo/ma3a
 	name = "MA3A assault rifle"
-	desc = "An old predecessor to the MA5 line, the MA3A had a notably short service history before being replaced by the more comprehensively designed MA5 series, nonetheless, enough were made to feed the private-security and would-be rebel markets for decades to come. Lacking the integrated combat suite of the MA5 rifles, the MA3A instead most commonly featured a over-designed and prone to malfunction multi-mode conventional computer optic. While robust in its capabilities, the constant adjustments and poor battery-life led to its quick abandonment by mainline UNSCDF units."
+	desc = "The MA5's predecessor had a notably short service history before being replaced by the more comprehensively designed MA5 series, though surplus from its large production run would often crop up in private security or rebel hands."
+	desc_lore = " Lacking the integrated combat suite of the MA5 rifles, the MA3A instead most commonly featured a over-designed and prone to malfunction multi-mode conventional computer optic. Though excellent when it worked, the constant adjustments and poor battery-life drove soldiers mad, and led to its quick abandonment by mainline UNSCDF units."
 	icon_state = "ma3a"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
@@ -186,7 +187,7 @@
 
 /obj/item/weapon/gun/rifle/halo/vk78
 	name = "VK78 surplus rifle"
-	desc = "The Colonial-Military-Authorities replacement for the ageing HMG-38, this 6.5x48mm rifle spent more of its life-time shooting targets than it had any combatant. Benefiting from a more ergonomically conventional layout, and exceptional mechanical simplicity, the Vk78 has long survived the CMA's downfall in the hands of militia-men, criminals, homesteaders and rebels alike. Listen for that distinct bark on patrol, it's probably not friendly."
+	desc = "The Colonial Military Authority's replacement for the aging HMG-38, this 6.5x48mm rifle spent more of its lifetime shooting targets than it had any combatant. Its rugged action and conventional layout has seen this weapon outlive the CMA, going on to arm militia, criminals, and sometimes homesteaders. Listen for that distinct bark on patrol, it's probably not friendly."
 	icon_state = "vk78"
 	item_state = "vk78"
 	caliber = "6.5x48mm"
@@ -245,7 +246,7 @@
 
 /obj/item/weapon/gun/rifle/halo/br55
 	name = "BR55 battle rifle"
-	desc = "A standard-issue marksman rifle in use by the UNSC Marine Corps, the BR55 battle rifle has a reasonably high power, acceptable rate of fire, and high accuracy. It comes with a standard 36-round detachable box magazine of 9.5x40mm experimental HP-SAP-HE rounds, allowing it to reach higher velocities than the MA5 series despite the smaller propellant."
+	desc = "The UNSC Marine Corps' new DMR. Noticeably more powerful than the MA5, a novel rifling scheme offers excellent accuracy and precision over any range. Standard issue mag is a 36 rounder of 9.5x40mm HP-SAP-HE, using new propellants and a very high chamber pressure for much improved muzzle velocity compared to the MA5 series."
 	icon_state = "br55"
 	item_state = "br55"
 	caliber = "9.5x40mm"
@@ -367,7 +368,7 @@
 
 /obj/item/weapon/gun/smg/halo/m7
 	name = "M7 submachine gun"
-	desc = "The M7 SMG is a relatively small caseless SMG that fires 5mm rounds. Coming with a folding stock and foldable grip, the M7 SMG has found its home in boarding action and special operations units for its compact size and low caliber."
+	desc = "Compact SMG in 5mm caseless. Collapsable stock, folding grip, just the ticket for a pocket hose. The M7 has found its home in boarding, protection detail, and special operations for its compact size and surprising stopping power."
 	icon_state = "m7"
 	item_state = "m7"
 	caliber = "5x23mm"
@@ -416,7 +417,7 @@
 	fa_max_scatter = 3
 
 /obj/item/weapon/gun/smg/halo/m7/socom
-	name = "M7 submachine gun"
+	name = "M7S submachine gun"
 	starting_attachment_types = list(
 		/obj/item/attachable/stock/m7,
 		/obj/item/attachable/stock/m7/grip/folded_down,
@@ -449,7 +450,7 @@
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90
 	name = "\improper M90 CAWS"
-	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSC for CQC scenarios. It feeds twelve 8-gauge shotgun shells from it's internal tubular magazine."
+	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSCDF. It feeds twelve 8-gauge shotgun shells from internal tube with an iconic top-loading system."
 	icon_state = "m90"
 	item_state = "m90"
 	fire_sound = "gun_m90"
@@ -500,7 +501,7 @@
 
 /obj/item/weapon/gun/rifle/sniper/halo
 	name = "SRS99-AM sniper rifle"
-	desc = "The SRS99-AM sniper rifle is the standard issue sniper rifle across all branches of the UNSC due to it's extreme capabilities. It has a 4 round detachable box magazine of 14.5x114mm APFSDS ammunition and modularity allowing the entire barrel system to be removed and replaced with alternative variants."
+	desc = "The SRS99-AM sniper rifle is the UNSCDF's new standard issue sniper rifle. Feeds a 4 round mag of 14.5x114mm APFSDS with incredible performance at extreme range. One quirk of the weapon is a significant level of modularity, particularly in the barrel which may be replaced quickly or swapped entirely."
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = "srs99"
 	item_state = "srs99"
@@ -619,7 +620,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6c
 	name = "M6C service magnum"
-	desc = "The M6C is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. It's set apart from other M6 platform sidearms in that it does not come equipped with a smart-link scope attached to the top of it. Some marines reportedly prefer it due to the less cumbersome nature."
+	desc = "Semi-automatic 12.7x40mm recoil-operated pistol. Feed mechanism and grip has been redesigned, attempting to remedy the breakage problem alongside reliability faults. Its 'pugnose' design offers superior use in close quarters, but also incomplete powder burn resulting in lower performance than expected."
 	icon_state = "m6c"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -668,7 +669,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6c/m4a
 	name = "M4A pistol"
-	desc = "An antiquated 12.7x40mm pistol, popular among civilians and criminals alike. The M4A is a predecessor to the more commonly recognized M6 series of pistols by Misriah, removed from official service in 2414 when the M6 took stage.  It's regarded as being inaccurate with a blinding muzzle flash and deafening report, making it unsuited for most practical purposes, features that make it even more attractive to its most common users."
+	desc = "Vintage 12.7x40mm pistol, popular among civilians and criminals alike. Predecessor to the more commonly recognized M6 series, officially replaced in 2414. Common complaints were its inaccuracy, followed by a blinding, dirty muzzle flash and deafening report. These attributes would also be what gave it a second life among its new users."
 	icon_state = "m4a"
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6c
 	attachable_allowed = list(/obj/item/attachable/flashlight/m6)
@@ -691,7 +692,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6g
 	name = "M6G service magnum"
-	desc = "The M6G service magnum is a high-power sidearm utilized by the UNSC, using 12.7x40mm rounds held in a 8 round magazine. With a longer barrel, the M6G is more accurate and has a higher velocity than the M6C."
+	desc = "With a longer barrel and polygonal rifling, the M6G is more accurate and has a higher velocity. Capacity reverted to 8 rounds in a bid to reduce size of weapon and ammo, unfortunately also making it no longer backwards compatible."
 	icon_state = "m6g"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -717,8 +718,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6d
 	name = "M6D service magnum"
-	desc = "The M6D service magnum is a high-power sidearm in use by the UNSC, particularly with officers and some special forces troops. Fires 12.7x40mm Semi-Armour-Piercing-High-Explosive (SAPHE) rounds out of a 12 round magazine."
-	desc_lore = "Its extended magazine and custom grip give it a striking profile which many consider unwieldy and bulky, though others will swear on the weapons power and accuracy with its integrated KFA-2 scope."
+	desc = "The D-variant has a sterling reputation as a powerful and accurate weapon. To some with its integrated KFA-2 low power smart-link sight, in built up urban centers it's even a fine alternative to a sniper rifle. However, not all that glitters is gold, with some users swearing the added bulk makes it unacceptably unwieldy."
 	icon_state = "m6d"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -756,7 +756,7 @@
 
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
-	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template, though with less stopping power."
+	desc = "Phased-out member of the M6 family. Unique to the A-variant action is a recoil absorbing design, but velocity loss and accuracy issues were endemic until its replacement. Now seen in security and law enforcement use as a more compact, comfortable carry."
 	icon_state = "m6a"
 	item_state = "m6"
 	caliber = "12.7x40mm"
@@ -784,7 +784,7 @@
 
 /obj/item/explosive/grenade/high_explosive/m15/unsc
 	name = "M9 fragmentation grenade"
-	desc = "A high explosive fragmentation grenade utilized by the UNSC."
+	desc = "The UNSCDF's standard issue frag grenade. 190 gram Composition L filler reliably saturates a 15 meter radius with fragments."
 	desc_lore = "Rumors spread about how every new posting someone gets, the design of the M9 fragmentation grenade looks different from the last ones they held."
 	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
 	icon_state = "m9"
