@@ -62,8 +62,8 @@ export const GameMasterFireSupportMenu = (props, context) => {
             ))}
           </Collapsible>
 
-          <Collapsible content="Missiles">
-            {data.missile_ordnance_options.map((ordnance, i) => (
+          <Collapsible content="UNSC">
+            {data.unsc_ordnance_options.map((ordnance, i) => (
               <Button
                 selected={data.selected_ordnance === ordnance}
                 key={i}
@@ -77,8 +77,8 @@ export const GameMasterFireSupportMenu = (props, context) => {
             ))}
           </Collapsible>
 
-          <Collapsible content="Orbital Bombardments">
-            {data.orbital_ordnance_options.map((ordnance, i) => (
+          <Collapsible content="UNSC - Naval">
+            {data.naval_ordnance_options.map((ordnance, i) => (
               <Button
                 selected={data.selected_ordnance === ordnance}
                 key={i}
@@ -91,6 +91,51 @@ export const GameMasterFireSupportMenu = (props, context) => {
               </Button>
             ))}
           </Collapsible>
+
+          <Collapsible content="Dropships">
+            {data.dropship_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible>
+
+          {/* <Collapsible content="Missiles">
+            {data.missile_ordnance_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible> */}
+
+          {/* <Collapsible content="Orbital Bombardments">
+            {data.orbital_ordnance_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible> */}
 
           <Collapsible content="Mortar Shells">
             {data.mortar_ordnance_options.map((ordnance, i) => (
@@ -143,6 +188,36 @@ export const GameMasterFireSupportMenu = (props, context) => {
                 selected={data.selected_ordnance === ordnance}
                 key={i}
                 width={'100px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible>
+
+          <Collapsible content="Weapon Resupply">
+            {data.weapon_resupply_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible>
+
+          <Collapsible content="Ammo Resupply">
+            {data.ammo_resupply_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
                 onClick={() => {
                   act('set_selected_ordnance', { ordnance });
                 }}
