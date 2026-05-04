@@ -2809,4 +2809,6 @@
 #include "modular_pve_halo\code\modules\clothing\masks\gasmask.dm"
 #include "modular_pve_halo\code\modules\clothing\suits\marine_coat.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
+#include "modular_pve_halo\code\modules\shuttle\bumblebee.dm"
+#include "modular_pve_halo\code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
 // END_INCLUDE
