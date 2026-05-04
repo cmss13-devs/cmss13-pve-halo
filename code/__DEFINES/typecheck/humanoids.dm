@@ -7,6 +7,9 @@
 //Check if the mob is an actual human or Synth
 #define ishumansynth_strict(A)   (ishuman(A) && (istype(A?:species, /datum/species/human) || istype(A?:species, /datum/species/synthetic)))
 
+//Check if the mob is a member-species of the covenant hegemony
+#define iscovenant(A)   (ishuman(A) && (istype(A?:species, /datum/species/unggoy) || istype(A?:species, /datum/species/sangheili)))
+
 #define iszombie(A) (ishuman(A) && istype(A?:species, /datum/species/zombie))
 #define ismonkey(A) (ishuman(A) && istype(A?:species, /datum/species/monkey))
 #define isyautja(A) (ishuman(A) && istype(A?:species, /datum/species/yautja))
