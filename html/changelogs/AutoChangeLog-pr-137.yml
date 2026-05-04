@@ -1,0 +1,7 @@
+author: "KoishiVibe"
+delete-after: True
+changes:
+  - code_imp: "Modularization of halo firearms."
+  - code_imp: "modularization of halo ammo"
+  - code_imp: "modularization of halo sunglasses"
+  - qol: "New sunglasses flavortext and names. Bimex hopefully eliminated for time being"
