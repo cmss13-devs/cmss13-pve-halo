@@ -1251,6 +1251,7 @@
 #include "code\game\objects\items\devices\radio\intercom.dm"
 #include "code\game\objects\items\devices\radio\listening_bugs.dm"
 #include "code\game\objects\items\devices\radio\radio.dm"
+#include "code\game\objects\items\explosives\covenant_mines.dm"
 #include "code\game\objects\items\explosives\explosive.dm"
 #include "code\game\objects\items\explosives\mine.dm"
 #include "code\game\objects\items\explosives\plastic.dm"
