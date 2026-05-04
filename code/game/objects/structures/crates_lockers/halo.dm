@@ -26,6 +26,8 @@
 	var/contents_number
 
 /obj/item/prop/ordnance_canister_door
+	name = "Type-A Resupply Canister cover"
+	desc = "The cover to a Type-A Resupply Canister. Pops off as soon as the canister hits the ground."
 	w_class = SIZE_HUGE
 	icon = 'icons/halo/obj/structures/crates_32x48.dmi'
 	icon_state = "cover_off"
@@ -113,13 +115,13 @@
 	drop_on_spawn = TRUE
 
 /obj/structure/closet/ordnance_canister/dropping/weapon/m7
-	name = parent_type::name + " (M7 SMG)"
+	name = parent_type::name + " (M7 SMGs)"
 	contents_path = /obj/item/weapon/gun/smg/halo/m7
 	contents_number = 3
 	drop_on_spawn = TRUE
 
 /obj/structure/closet/ordnance_canister/dropping/weapon/m7_socom
-	name = parent_type::name + " (M7/S SMG)"
+	name = parent_type::name + " (M7/S SMGs)"
 	contents_path = /obj/item/weapon/gun/smg/halo/m7/socom
 	contents_number = 3
 	drop_on_spawn = TRUE
@@ -182,7 +184,6 @@
 	contents_number = 2
 	drop_on_spawn = TRUE
 
-
 /obj/structure/closet/ordnance_canister/dropping/ammo/m7
 	name = parent_type::name + " (M7 Ammo)"
 	contents_path = /obj/item/ammo_box/magazine/misc/unsc/m7_ammo
@@ -195,7 +196,7 @@
 	contents_number = 3
 	drop_on_spawn = TRUE
 
-/obj/structure/closet/ordnance_canister/dropping/ammo/m6c
+/obj/structure/closet/ordnance_canister/dropping/ammo/m6c_socom
 	name = parent_type::name + " (M6C Ammo - SOCOM)"
 	contents_path = /obj/item/ammo_box/magazine/unsc/small/m6c/socom
 	contents_number = 3

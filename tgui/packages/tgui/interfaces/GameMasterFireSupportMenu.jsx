@@ -196,6 +196,36 @@ export const GameMasterFireSupportMenu = (props, context) => {
               </Button>
             ))}
           </Collapsible>
+
+          <Collapsible content="Weapon Resupply">
+            {data.weapon_resupply_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible>
+
+          <Collapsible content="Ammo Resupply">
+            {data.ammo_resupply_options.map((ordnance, i) => (
+              <Button
+                selected={data.selected_ordnance === ordnance}
+                key={i}
+                width={'140px'}
+                onClick={() => {
+                  act('set_selected_ordnance', { ordnance });
+                }}
+              >
+                {ordnance}
+              </Button>
+            ))}
+          </Collapsible>
         </Section>
       </Window.Content>
     </Window>

@@ -13,6 +13,8 @@
 #define CHEMICAL_ORDNANCE list("CN-20 Missile", "Nerve Gas OB", "Nerve Gas Shell")
 #define MISC_ORDNANCE list("Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike")
 #define THROWABLES_ORDNANCE list("HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
+#define WEAPON_RESUPPLY list("MA5C", "MA5B", "BR55", "M7", "M7/S", "M90 CAWS", "SRS99-AM", "M41 SPNKr")
+#define AMMO_RESUPPLY list("MA5C (Ammo)", "MA5B (Ammo)", "BR55 (Ammo)", "MA5C Shredder (Ammo)", "MA5B Shredder (Ammo)", "BR55 (Ammo)", "BR55 Extended (Ammo)", "M7 (Ammo)", "M6C (Ammo)", "M6C SOCOM (Ammo)", "M6G (Ammo)", "M6D (Ammo)", "Buckshot 8G (Ammo)", "M41 SPNKr (Ammo)", "SRS99-AM (Ammo)", "M9 (Grenades)", "40mm (Grenades)", "Medical Supplies")
 
 /client/proc/toggle_fire_support_menu()
 	set name = "Fire Support Menu"
@@ -72,6 +74,8 @@
 	data["chemical_ordnance_options"] = CHEMICAL_ORDNANCE
 	data["misc_ordnance_options"] = MISC_ORDNANCE
 	data["throwables_ordnance_options"] = THROWABLES_ORDNANCE
+	data["weapon_resupply_options"] = WEAPON_RESUPPLY
+	data["ammo_resupply_options"] = AMMO_RESUPPLY
 
 	return data
 
@@ -673,30 +677,121 @@
 					selected_mode.initiate_fire_support(target_turf, user.dir)
 				else
 					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
 			if("Phantom (Unarmed)")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PHANTOM_HOVER]
 				if(user.dir)
 					selected_mode.initiate_fire_support(target_turf, user.dir)
 				else
 					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
 			if("Phantom")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PHANTOM_HOVER_ARMED]
 				if(user.dir)
 					selected_mode.initiate_fire_support(target_turf, user.dir)
 				else
 					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
 			if("Spirit (Unarmed)")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SPIRIT_HOVER]
 				if(user.dir)
 					selected_mode.initiate_fire_support(target_turf, user.dir)
 				else
 					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
 			if("Spirit")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SPIRIT_HOVER_ARMED]
 				if(user.dir)
 					selected_mode.initiate_fire_support(target_turf, user.dir)
 				else
 					selected_mode.initiate_fire_support(target_turf, NORTH)
+				return TRUE
+
+			// ================
+			// resupply
+			// ================
+
+			// weapons
+			if("MA5C")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/ma5c(target_turf)
+				return TRUE
+			if("MA5B")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/ma5b(target_turf)
+				return TRUE
+			if("BR55")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/br55(target_turf)
+				return TRUE
+			if("M7")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/m7(target_turf)
+				return TRUE
+			if("M7/S")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/m7_socom(target_turf)
+				return TRUE
+			if("M90 CAWS")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/m90_shotgun(target_turf)
+				return TRUE
+			if("SRS99-AM")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/srs99_sniper(target_turf)
+				return TRUE
+			if("M41 SPNKr")
+				new /obj/structure/closet/ordnance_canister/dropping/weapon/m41_spnkr(target_turf)
+				return TRUE
+
+			// ammo
+			if("MA5C (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/ma5c(target_turf)
+				return TRUE
+			if("MA5C Shredder (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/ma5c_shredder(target_turf)
+				return TRUE
+			if("MA5B (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/ma5b(target_turf)
+				return TRUE
+			if("MA5B Shredder (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/ma5b_shredder(target_turf)
+				return TRUE
+			if("BR55 (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/br55(target_turf)
+				return TRUE
+			if("BR55 Extended (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/br55_extended(target_turf)
+				return TRUE
+			if("M7 (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/m7(target_turf)
+				return TRUE
+			if("M6C (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/m6c(target_turf)
+				return TRUE
+			if("M6C SOCOM (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/m6c_socom(target_turf)
+				return TRUE
+			if("M6G (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/m6g(target_turf)
+				return TRUE
+			if("M6D (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/m6d(target_turf)
+				return TRUE
+			if("Buckshot 8G (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/shotgun(target_turf)
+				return TRUE
+			if("M41 SPNKr (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/spnkr(target_turf)
+				return TRUE
+			if("SRS99-AM (Ammo)")
+				new /obj/structure/closet/ordnance_canister/dropping/ammo/sniper(target_turf)
+				return TRUE
+
+			// misc
+			if("M9 (Grenades)")
+				new /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades(target_turf)
+				return TRUE
+			if("40mm (Grenades)")
+				new /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades(target_turf)
+				return TRUE
+			if("Medical Supplies")
+				new /obj/structure/closet/ordnance_canister/dropping/misc/medical_resupply(target_turf)
+				return TRUE
+
 			else
 				to_chat(user, SPAN_ANNOUNCEMENT_HEADER_ADMIN("Invalid ordnance selection! If this appears, yell at a coder!"))
 				return TRUE
@@ -1583,8 +1678,6 @@
 			main_turret.setDir(WEST)
 	QDEL_IN(main_turret, 59 SECONDS)
 
-
-
 #undef ORDNANCE_OPTIONS
 #undef COVENANT_ORDNANCE
 #undef UNSC_ORDNANCE
@@ -1595,3 +1688,5 @@
 #undef CHEMICAL_ORDNANCE
 #undef THROWABLES_ORDNANCE
 #undef FIRE_SUPPORT_CLICK_INTERCEPT_ACTION
+#undef WEAPON_RESUPPLY
+#undef AMMO_RESUPPLY

@@ -308,6 +308,7 @@
 	detection_range = 16
 	sentry_range = 16
 	accuracy_mult = 2
+	damage_mult = 1.5
 	ammo = new /obj/item/ammo_magazine/sentry/pelican_main_turret
 	faction_group = FACTION_LIST_UNSC
 	selected_categories = list(
@@ -318,8 +319,8 @@
 	name = "\improper pelican rocket pod"
 	desc = "The rocket pods on the pelican."
 	firing_sound = "gun_missile_pod"
-	sentry_range = 8
-	detection_range = 8
+	sentry_range = 11
+	detection_range = 11
 	color = COLOR_GREEN
 	burst = 3
 	burst_fire_delay = 0.5 SECONDS
@@ -329,4 +330,4 @@
 	selected_categories = list(
 		SENTRY_CATEGORY_IFF = FACTION_UNSC,
 	)
-	firing_angle = 45
+	firing_angle = 80
