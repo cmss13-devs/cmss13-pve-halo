@@ -6,7 +6,7 @@
 	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
 	faction = FACTION_UNGGOY
 	faction_group = FACTION_LIST_COVENANT
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/load_race(mob/living/carbon/human/new_human, client/mob_client)
@@ -54,7 +54,7 @@
 	rank = JOB_COV_MINOR
 	paygrades = list(PAY_SHORT_COV_MINOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Minor"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/minor/load_gear(mob/living/carbon/human/new_human)
@@ -98,7 +98,7 @@
 	rank = JOB_COV_MAJOR
 	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Major"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/major/load_gear(mob/living/carbon/human/new_human)
@@ -142,7 +142,7 @@
 	rank = JOB_COV_HEAVY
 	paygrades = list(PAY_SHORT_COV_HEAVY = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Heavy"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/heavy/load_gear(mob/living/carbon/human/new_human)
@@ -186,7 +186,7 @@
 	rank = JOB_COV_ULTRA
 	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Ultra"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/ultra/load_gear(mob/living/carbon/human/new_human)
@@ -231,7 +231,7 @@
 	rank = JOB_COV_SPECOPS
 	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/specops/load_gear(mob/living/carbon/human/new_human)
@@ -285,7 +285,7 @@
 	rank = JOB_COV_SPECOPS_ULTRA
 	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps Ultra"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/load_gear(mob/living/carbon/human/new_human)
@@ -338,7 +338,7 @@
 	rank = JOB_COV_DEACON
 	paygrades = list(PAY_SHORT_COV_DEACON = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Deacon"
-	skills = /datum/skills/covenant/unggoy
+	skills = /datum/skills/combat_medic
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
 /datum/equipment_preset/covenant/unggoy/deacon/load_gear(mob/living/carbon/human/new_human)

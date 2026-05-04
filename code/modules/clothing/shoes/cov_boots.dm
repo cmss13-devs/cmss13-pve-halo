@@ -166,3 +166,45 @@
 	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+
+//======================
+// KIGYAR
+//======================
+
+/obj/item/clothing/shoes/ruuhtian
+	name = "Ruuhtian foot guards"
+	desc = "Placeholder."
+	icon = 'icons/halo/obj/items/clothing/covenant/shoes.dmi'
+	icon_state = "ruuhtian_minor"
+	item_state = "ruuhtian_minor"
+
+	drop_sound = "armorequip"
+
+	item_icons = list(
+		WEAR_FEET = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/shoes.dmi'
+	)
+
+	allowed_species_list = list(SPECIES_RUUHTIAN)
+
+/obj/item/clothing/shoes/ruuhtian/minor
+	name = "Ruuhtian Minor foot guards"
+	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
+	icon_state = "ruuhtian_minor"
+	item_state = "ruuhtian_minor"
+
+/obj/item/clothing/shoes/ruuhtian/major
+	name = "Ruuhtian Major foot guards"
+	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
+	icon_state = "ruuhtian_major"
+	item_state = "ruuhtian_minor"
+
+/obj/item/clothing/shoes/ruuhtian/ultra
+	name = "Ruuhtian Ultra foot guards"
+	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
+	icon_state = "ruuhtian_ultra"
+	item_state = "ruuhtian_minor"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM

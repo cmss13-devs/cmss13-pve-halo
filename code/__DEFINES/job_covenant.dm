@@ -8,6 +8,8 @@
 #define JOB_COV_COMMANDER "Sub-Commander"
 #define JOB_COV_COMANDER "Commander"
 #define JOB_COV_STEALTH "Stealth Operations"
+#define JOB_COV_MARKSMAN "Marksman"
+#define JOB_COV_SNIPER "Sniper"
 
 // Ministry
 #define JOB_COV_DEACON "Deacon"
