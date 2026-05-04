@@ -112,3 +112,6 @@ endmap
 
 map halo_new_irvine
 endmap
+
+map valorous_chant
+endmap
