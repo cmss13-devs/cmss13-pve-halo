@@ -5,16 +5,16 @@
 	desc = "This is the bullet from an MA5B Assault Rifle. It is deformed from impact against an armored surface. It's been reduced to a lucky keepsake now."
 
 /obj/item/prop/helmetgarb/lucky_feather
-	desc = "It is a riotous red color, made of really crummy plastic and synthetic threading, you know, the same sort of material every banker's spine is made of."
+	desc = "A tacky plastic feather, colored a riotous red color."
 
 /obj/item/prop/helmetgarb/lucky_feather/blue
-	desc = "It is a brilliant blue color. You think you might have seen a bluejay in a book once."
+	desc = "A tacky plastic feather, colored a brilliant blue color."
 
 /obj/item/prop/helmetgarb/lucky_feather/purple
-	desc = "It is a plucky purple color. Legend has it a station AI known as Shakespeare simulated 1000 monkeys typing gibberish in order to replicate the actual works of Shakespeare. Art critics are on the fence if this is the first instance of true artificial abstract art."
+	desc = "A tacky plastic feather, colored a plucky purple color."
 
 /obj/item/prop/helmetgarb/lucky_feather/yellow
-	desc = "It is an unyielding yellow color. They say the New Kansas colony produces more carpenters per capita than any other colony in all of UNSC controlled space."
+	desc = "A tacky plastic feather, colored an unyielding yellow color."
 
 /obj/item/prop/helmetgarb/flair_io/halo
 	desc = "A little pin modelled after the symbol painted upon the first lander which touched down on Io's surface."
