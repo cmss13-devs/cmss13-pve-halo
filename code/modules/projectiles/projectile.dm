@@ -1054,7 +1054,7 @@
 		return
 
 	P.play_hit_effect(src)
-	if(damage || (ammo_flags & AMMO_SPECIAL_EMBED))
+	if(damage_result || (ammo_flags & AMMO_SPECIAL_EMBED))
 
 		var/splatter_dir = get_dir(P.starting, loc)
 		handle_blood_splatter(splatter_dir)
@@ -1062,7 +1062,7 @@
 		. = TRUE
 		apply_damage(damage_result, P.ammo.damage_type, P.def_zone, firer = P.firer)
 
-		if(P.ammo.shrapnel_chance > 0 && prob(P.ammo.shrapnel_chance + floor(damage / 10)))
+		if(P.ammo.shrapnel_chance > 0 && (damage_result/damage) > 0.5 && prob(trunc(P.ammo.shrapnel_chance * damage_result/damage)))
 			if(ammo_flags & AMMO_SPECIAL_EMBED)
 				P.ammo.on_embed(src, organ)
 
