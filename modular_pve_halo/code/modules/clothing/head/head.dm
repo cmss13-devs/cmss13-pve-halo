@@ -1,5 +1,6 @@
 /obj/item/clothing/head/beanie/royal_marine
-	//Blank means it'll inherit the base beanie name/desc rather than being Royal Marine mentioning
+	name = "beanie"
+	desc = "A standard military beanie. Comfortable, but absolutely lacking in any kind of protection."
 
 /obj/item/clothing/head/cmcap/bridge
 	name = "\improper green UNSC operations cap"

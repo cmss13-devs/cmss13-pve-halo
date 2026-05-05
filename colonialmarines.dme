@@ -2813,6 +2813,7 @@
 #include "modular_pve_halo\code\modules\clothing\masks\gasmask.dm"
 #include "modular_pve_halo\code\modules\clothing\suits\marine_coat.dm"
 #include "modular_pve_halo\code\modules\clothing\under\ties.dm"
+#include "modular_pve_halo\code\modules\cm_marines\equipment\maps.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
 #include "modular_pve_halo\code\modules\projectiles\cov_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\unsc_gun_attachables.dm"

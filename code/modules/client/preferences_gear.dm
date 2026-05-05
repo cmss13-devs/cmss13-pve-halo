@@ -2023,3 +2023,10 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Eye drops"
 	path = /obj/item/prop/helmetgarb/eye_drops
 	cost = 1
+
+// HALO PVE EDIT - START - ITEM ADDITION
+/datum/gear/misc/tacpad
+	display_name = "MC3 Individual Data/Net Terminal"
+	path = /obj/item/tacmap_map
+	cost = 5
+// HALO PVE EDIT - END
