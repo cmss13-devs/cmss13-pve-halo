@@ -1,4 +1,22 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aaa" = (
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/plasticcup{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/turf/open/floor/almayer/red/north,
+/area/mackay_station/romeo/redcommons2)
+"aab" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	icon_state = "shutterc1";
+	dir = 2;
+	id = "spacewalk1"
+	},
+/obj/item/reagent_container/food/drinks/plasticcup,
+/turf/open/floor/almayer/research,
+/area/mackay_station/pathways)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -14374,6 +14392,7 @@
 	name = "General Listening Channel";
 	pixel_y = -29
 	},
+/obj/item/reagent_container/food/drinks/h_chocolate,
 /turf/open/floor/almayer/red,
 /area/mackay_station/romeo/redcommons2)
 "jYl" = (
@@ -122283,7 +122302,7 @@ iMN
 aGa
 kdo
 yln
-cwt
+aab
 aEF
 aGa
 bwT
@@ -140115,7 +140134,7 @@ kIa
 kIa
 kIa
 vTv
-haG
+aaa
 nTd
 xVd
 laz

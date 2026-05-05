@@ -1,4 +1,12 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aaa" = (
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/plasticcup{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/turf/open/floor/almayer/red/north,
+/area/mackay_station/romeo/redcommons2)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -14381,6 +14389,7 @@
 	name = "General Listening Channel";
 	pixel_y = -29
 	},
+/obj/item/reagent_container/food/drinks/h_chocolate,
 /turf/open/floor/almayer/red,
 /area/mackay_station/romeo/redcommons2)
 "jYl" = (
@@ -140223,7 +140232,7 @@ kIa
 kIa
 kIa
 vTv
-haG
+aaa
 nTd
 xVd
 laz
