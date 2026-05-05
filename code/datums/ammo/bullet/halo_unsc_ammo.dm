@@ -161,6 +161,15 @@
 	accurate_range = 14
 	max_range = 24
 
+/datum/ammo/rocket/pelican_missile_pod
+	name = "M19 missile"
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	icon_state = "spnkr_missile"
+	damage = 300
+	shell_speed = AMMO_SPEED_TIER_1
+	accuracy = HIT_ACCURACY_TIER_4
+	accurate_range = 14
+	max_range = 24
 
 // sniper ammo
 

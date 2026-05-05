@@ -13,3 +13,18 @@
   BonniePandora:
   - bugfix: M7 & M7S SMGs now properly use caseless ammo
   - bugfix: ODST RFN rank options now correspond to the correct rank
+2026-05-05:
+  DexterDude:
+  - rscadd: Wombat, seraph, C712, C709 (OBs) as firesupport options
+  - rscadd: MAC & coilgun firesupport options (OBs but larger mostly)
+  - rscadd: Dropship hovering types, armed and unarmed
+  - rscadd: Resupply canisters as a type of firesupport for easy GM usage
+  - rscadd: Flyovers for almost all applicable firesupport types
+  - imageadd: Shadows for all applicable firesupport types.
+  - imagetweak: Redoes banshee shadows
+  KoishiVibe:
+  - code_imp: Modularization of halo firearms.
+  - code_imp: modularization of halo ammo
+  - code_imp: modularization of halo sunglasses
+  - qol: New sunglasses flavortext and names. Bimex hopefully eliminated for time
+      being
