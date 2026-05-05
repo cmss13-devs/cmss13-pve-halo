@@ -179,6 +179,10 @@
 			faction_group = FACTION_LIST_TWE
 		if(FACTION_MERCENARY)
 			faction_group = FACTION_LIST_MERCENARY
+		if(FACTION_COVENANT)
+			faction_group = FACTION_LIST_COVENANT
+		if(FACTION_UNSC)
+			faction_group = FACTION_LIST_UNSC
 
 
 

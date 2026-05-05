@@ -183,7 +183,7 @@
 	. = ..()
 	particles = new /particles/shuttle_dust_hover
 	animate(src, alpha = 255, time = 1 SECONDS)
-	addtimer(CALLBACK(src, PROC_REF(fade_away)), 4 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(fade_away)), duration - 1 SECONDS)
 
 /obj/effect/temp_visual/dropship_hover/proc/fade_away()
 	animate(src, alpha = 0, time = 1 SECONDS)
@@ -191,6 +191,78 @@
 
 /obj/effect/temp_visual/dropship_hover/krokodil
 	icon_state = "krokodil"
+
+/obj/effect/temp_visual/dropship_hover/phantom
+	icon = 'icons/halo/effects/phantom_flyby.dmi'
+	icon_state = "phantom_shadow"
+	duration = 1 MINUTES
+	pixel_x = -560
+	pixel_y = -560
+	var/datum/looping_sound/phantom_loop/hover
+	randomdir = FALSE
+	light_range = 15
+	light_color = "#b188b6"
+
+/obj/effect/temp_visual/dropship_hover/phantom/Initialize()
+	. = ..()
+	particles = null
+	hover = new(src)
+	hover.start()
+	animate(src, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +2)
+	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 2)
+	set_light_on(TRUE)
+
+/obj/effect/temp_visual/dropship_hover/phantom/fade_away()
+	. = ..()
+	hover.stop()
+
+/obj/effect/temp_visual/dropship_hover/spirit
+	icon = 'icons/halo/effects/spirit_flyby.dmi'
+	icon_state = "spirit_shadow"
+	duration = 1 MINUTES
+	pixel_x = -384
+	pixel_y = -384
+	var/datum/looping_sound/phantom_loop/hover
+	randomdir = FALSE
+	light_range = 9
+	light_color = "#b188b6"
+
+/obj/effect/temp_visual/dropship_hover/spirit/Initialize()
+	. = ..()
+	particles = null
+	hover = new(src)
+	hover.start()
+	animate(src, time = 2 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +4)
+	animate(time = 2 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 4)
+	set_light_on(TRUE)
+
+/obj/effect/temp_visual/dropship_hover/spirit/fade_away()
+	. = ..()
+	hover.stop()
+
+/obj/effect/temp_visual/dropship_hover/pelican
+	icon = 'icons/halo/effects/pelican_flyby.dmi'
+	icon_state = "pelican_shadow"
+	duration = 1 MINUTES
+	pixel_x = -368
+	pixel_y = -368
+	var/datum/looping_sound/pelican_loop/hover
+	randomdir = FALSE
+	light_range = 9
+	light_color = "#d7935b"
+
+/obj/effect/temp_visual/dropship_hover/pelican/Initialize()
+	. = ..()
+	particles = null
+	hover = new(src)
+	hover.start()
+	animate(src, time = 1 SECONDS, loop = -1, LINEAR_EASING, pixel_y = src.pixel_y +2)
+	animate(time = 1 SECONDS, easing = LINEAR_EASING, pixel_y = src.pixel_y - 2)
+	set_light_on(TRUE)
+
+/obj/effect/temp_visual/dropship_hover/pelican/fade_away()
+	. = ..()
+	hover.stop()
 
 /obj/effect/temp_visual/heavyimpact_cas
 	name = "heavy impact"
@@ -413,19 +485,67 @@
 	light_power = 1
 	light_range = 2
 
-/obj/effect/temp_visual/banshee_flyby
-	icon = 'icons/halo/effects/banshee_flyby.dmi'
-	icon_state = "banshee_shadow"
+/obj/effect/temp_visual/flyby
 	layer = FLY_LAYER
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	duration = 2 SECONDS
-	pixel_x = -22
-	pixel_z = -480
 	indestructible = TRUE
+	var/override_dir = TRUE
+	var/pixel_distance = 960
 
-/obj/effect/temp_visual/banshee_flyby/Initialize()
+/obj/effect/temp_visual/flyby/Initialize()
 	. = ..()
-	animate(src, pixel_z = 960, time = 2 SECONDS)
+	if(!override_dir)
+		var/random_dir = pick(NORTH, SOUTH, EAST, WEST)
+		setDir(random_dir)
+	else
+		setDir(NORTH)
+	switch(dir)
+		if(NORTH)
+			pixel_z = -pixel_distance
+			animate(src, pixel_z = pixel_distance, time = duration)
+		if(SOUTH)
+			pixel_z = pixel_distance
+			animate(src, pixel_z = -pixel_distance, time = duration)
+		if(EAST)
+			pixel_w = -pixel_distance
+			animate(src, pixel_w = pixel_distance, time = duration)
+		if(WEST)
+			pixel_w = pixel_distance
+			animate(src, pixel_w = -pixel_distance, time = duration)
+
+/obj/effect/temp_visual/flyby/banshee_flyby
+	icon = 'icons/halo/effects/banshee_flyby.dmi'
+	icon_state = "banshee_shadow"
+	pixel_x = -64
+	pixel_y = -64
+
+/obj/effect/temp_visual/flyby/seraph_flyby
+	icon = 'icons/halo/effects/kai_seraph_flyby.dmi'
+	icon_state = "kai_shadow"
+	pixel_x = -240
+	pixel_y = -240
+
+/obj/effect/temp_visual/flyby/wombat_flyby
+	icon = 'icons/halo/effects/wombat_flyby.dmi'
+	icon_state = "wombat_shadow"
+	pixel_x = -144
+	pixel_y = -144
+
+/obj/effect/temp_visual/flyby/c712_longsword_flyby
+	icon = 'icons/halo/effects/c712_flyby.dmi'
+	icon_state = "c712_shadow"
+	pixel_x = -352
+	pixel_y = -352
+	pixel_distance = 1920
+
+/obj/effect/temp_visual/flyby/c709_longsword_flyby
+	icon = 'icons/halo/effects/c709_flyby.dmi'
+	icon_state = "c709_shadow"
+	pixel_distance = 2240 // this thing is fucking massive it needs the space. it probably needs more.
+	pixel_y = -720
+	pixel_x = -720
+	duration = 5 SECONDS
 
 /obj/effect/temp_visual/glassing_beam
 	icon = 'icons/halo/effects/glassing.dmi'

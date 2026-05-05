@@ -1557,3 +1557,9 @@
       with different weights depending on role
   - imagetweak: Removed the in-built methane tank from the Unggoy armor.
   - imagetweak: Redid all onmob sprites to have improved shading and palettes.
+2026-04-21:
+  DexterDude:
+  - bugfix: Pelican roof not working
+2026-04-27:
+  DexterDude:
+  - config: removes zonespace from codeowners
