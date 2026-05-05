@@ -591,7 +591,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/blackcorner/west,
+/turf/open/floor/almayer/redcorner/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "aJg" = (
 /obj/structure/prop/unsc_crate/stack{
@@ -653,7 +653,7 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 8
 	},
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "aMU" = (
 /obj/structure/surface/table/almayer{
@@ -718,7 +718,7 @@
 	icon_state = "NW-out";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/blackcorner/north,
+/turf/open/floor/almayer/redcorner/north,
 /area/oni_digsite/sub_level_2/south/hangar)
 "aPo" = (
 /obj/effect/decal/warning_stripes{
@@ -872,9 +872,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/oni_digsite/sub_level_9/south)
 "bfT" = (
-/turf/open/shuttle/escapepod/floor2{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor0/north,
 /area/oni_digsite/sub_level_9/south)
 "bfZ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1087,9 +1085,7 @@
 	dir = 4
 	},
 /obj/structure/platform,
-/turf/open/shuttle/escapepod/floor0{
-	dir = 8
-	},
+/turf/open/shuttle/escapepod/floor0/west,
 /area/oni_digsite/sub_level_2/north/reception)
 "buv" = (
 /obj/structure/stairs{
@@ -1173,7 +1169,7 @@
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 8
 	},
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "bys" = (
 /obj/effect/decal/warning_stripes{
@@ -1339,7 +1335,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out"
 	},
-/turf/open/floor/almayer/blackcorner/west,
+/turf/open/floor/almayer/redcorner/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "bFN" = (
 /obj/structure/machinery/cm_vending/sorted/tech/comp_storage,
@@ -1434,7 +1430,7 @@
 	icon_state = "NW-out";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "bJc" = (
 /obj/structure/surface/table/almayer,
@@ -1889,7 +1885,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "cfP" = (
 /obj/structure/barricade/metal{
@@ -2437,7 +2433,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/oni_digsite/sub_level_9/south)
 "cKb" = (
-/turf/open/floor/almayer/blackcorner,
+/turf/open/floor/almayer/redcorner,
 /area/oni_digsite/sub_level_2/south/hangar)
 "cKL" = (
 /obj/item/paper_bin/uscm{
@@ -2639,9 +2635,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod/floor2{
-	dir = 8
-	},
+/turf/open/shuttle/escapepod/floor0,
 /area/oni_digsite/sub_level_9/dormitory)
 "cWL" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -2802,9 +2796,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/shuttle/escapepod/floor0{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor2,
 /area/oni_digsite/sub_level_2/north/reception)
 "dfj" = (
 /obj/structure/platform/strata/metal,
@@ -3584,9 +3576,7 @@
 /turf/open/floor/almayer/pod_landing_floor,
 /area/oni_digsite/sub_level_2/south/watchpoint_delta)
 "ebQ" = (
-/turf/open/shuttle/escapepod/floor2{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor0/north,
 /area/oni_digsite/sub_level_9/research)
 "ecn" = (
 /turf/open/floor/prison/floor_plate,
@@ -4555,7 +4545,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "feB" = (
 /obj/structure/surface/table/almayer{
@@ -4619,9 +4609,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/oni_digsite/sub_level_2/north/checkpoint_charlie)
 "fhm" = (
-/turf/open/shuttle/escapepod/floor2{
-	dir = 8
-	},
+/turf/open/shuttle/escapepod/floor0,
 /area/oni_digsite/sub_level_2/north/offices)
 "fhX" = (
 /obj/structure/gun_rack/halo/medkit{
@@ -5191,9 +5179,7 @@
 /turf/open/floor/plating,
 /area/oni_digsite/sub_level_2/north/power)
 "fIU" = (
-/turf/open/shuttle/escapepod/floor0{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor2,
 /area/oni_digsite/sub_level_9/dormitory)
 "fJa" = (
 /obj/structure/closet/crate/unsc{
@@ -5738,7 +5724,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/open/floor/almayer/black/east,
+/turf/open/floor/almayer/red/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "goT" = (
 /obj/structure/platform_decoration/strata{
@@ -6101,18 +6087,14 @@
 /turf/open/floor/prison/floor_plate,
 /area/oni_digsite/sub_level_9/south)
 "gMk" = (
-/turf/open/shuttle/escapepod/floor0{
-	dir = 8
-	},
+/turf/open/shuttle/escapepod/floor0/west,
 /area/oni_digsite/sub_level_2/north/offices)
 "gMB" = (
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 8
 	},
 /obj/structure/machinery/landinglight/ds1/delaytwo,
-/turf/open/floor/almayer/black{
-	dir = 10
-	},
+/turf/open/floor/almayer/red/southwest,
 /area/oni_digsite/sub_level_2/south/hangar)
 "gMG" = (
 /obj/structure/barricade/metal{
@@ -6529,7 +6511,7 @@
 /turf/open/floor/prison/bright_clean,
 /area/oni_digsite/sub_level_2/north/offices)
 "hnS" = (
-/turf/open/floor/almayer/blackcorner/east,
+/turf/open/floor/almayer/redcorner/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "hoi" = (
 /obj/structure/machinery/camera/autoname{
@@ -6579,9 +6561,7 @@
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 4
 	},
-/turf/open/floor/almayer/black{
-	dir = 6
-	},
+/turf/open/floor/almayer/red/southeast,
 /area/oni_digsite/sub_level_2/south/hangar)
 "hug" = (
 /obj/structure/surface/table/almayer{
@@ -7121,9 +7101,7 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 4
 	},
-/turf/open/floor/almayer/black{
-	dir = 6
-	},
+/turf/open/floor/almayer/red/southeast,
 /area/oni_digsite/sub_level_2/south/hangar)
 "hVC" = (
 /obj/structure/surface/table/almayer{
@@ -8227,7 +8205,7 @@
 	layer = 3.1;
 	pixel_y = 4
 	},
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "jah" = (
 /obj/structure/surface/table/almayer{
@@ -8295,9 +8273,7 @@
 /turf/open/floor/almayer/mono,
 /area/oni_digsite/sub_level_2/south)
 "jcH" = (
-/turf/open/shuttle/escapepod/floor2{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor0/north,
 /area/oni_digsite/sub_level_9/small_buildings)
 "jdl" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -8429,7 +8405,7 @@
 	icon_state = "E";
 	pixel_x = 1
 	},
-/turf/open/floor/almayer/black/east,
+/turf/open/floor/almayer/red/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "jkE" = (
 /obj/structure/bed/chair/comfy/bench/north/east,
@@ -8590,9 +8566,7 @@
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 1
 	},
-/turf/open/floor/almayer/black{
-	dir = 5
-	},
+/turf/open/floor/almayer/red/northeast,
 /area/oni_digsite/sub_level_2/south/hangar)
 "jwZ" = (
 /obj/structure/pipes/vents/pump,
@@ -8869,7 +8843,7 @@
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 1
 	},
-/turf/open/floor/almayer/black/north,
+/turf/open/floor/almayer/red/north,
 /area/oni_digsite/sub_level_2/south/hangar)
 "jOk" = (
 /obj/structure/surface/table/almayer{
@@ -9231,7 +9205,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/blackcorner,
+/turf/open/floor/almayer/redcorner,
 /area/oni_digsite/sub_level_2/south/hangar)
 "kaT" = (
 /obj/structure/platform/strata{
@@ -10067,7 +10041,7 @@
 	icon_state = "SE-out";
 	pixel_x = 1
 	},
-/turf/open/floor/almayer/blackcorner,
+/turf/open/floor/almayer/redcorner,
 /area/oni_digsite/sub_level_2/south/hangar)
 "kTH" = (
 /obj/effect/decal/strata_decals/rocks/ice/ice1,
@@ -11439,9 +11413,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/black{
-	dir = 1
-	},
+/turf/open/floor/almayer/red/north,
 /area/oni_digsite/sub_level_2/south/hangar)
 "mvc" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -11947,7 +11919,7 @@
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 1
 	},
-/turf/open/floor/almayer/black/north,
+/turf/open/floor/almayer/red/north,
 /area/oni_digsite/sub_level_2/south/hangar)
 "mZY" = (
 /obj/structure/surface/table/almayer{
@@ -11980,7 +11952,7 @@
 	pixel_y = 1;
 	pixel_x = 1
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "nbz" = (
 /obj/structure/surface/table/almayer{
@@ -14004,7 +13976,7 @@
 /turf/closed/wall/almayer/aicore/white,
 /area/oni_digsite/sub_level_9/research)
 "psa" = (
-/turf/open/floor/almayer/blackcorner/north,
+/turf/open/floor/almayer/redcorner/north,
 /area/oni_digsite/sub_level_2/south/hangar)
 "pso" = (
 /obj/structure/machinery/light/double/blue,
@@ -14422,7 +14394,7 @@
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 4
 	},
-/turf/open/floor/almayer/black/east,
+/turf/open/floor/almayer/red/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "pOF" = (
 /obj/structure/machinery/camera/autoname{
@@ -14869,7 +14841,7 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
 	},
-/turf/open/floor/almayer/black/north,
+/turf/open/floor/almayer/red/north,
 /area/oni_digsite/sub_level_2/south/hangar)
 "qoG" = (
 /obj/structure/machinery/camera/autoname{
@@ -15206,15 +15178,6 @@
 /obj/structure/barricade/handrail/strata,
 /turf/open/floor/prison/bright_clean,
 /area/oni_digsite/sub_level_9/small_buildings)
-"qQY" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/almayer/black{
-	dir = 4
-	},
-/area/oni_digsite/sub_level_2/south/hangar)
 "qRF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -15408,7 +15371,7 @@
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 4
 	},
-/turf/open/floor/almayer/black/east,
+/turf/open/floor/almayer/red/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "raf" = (
 /obj/structure/machinery/disposal,
@@ -15471,14 +15434,6 @@
 	},
 /turf/open/floor/prison,
 /area/oni_digsite/sub_level_9/south)
-"red" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W"
-	},
-/turf/open/floor/almayer/black{
-	dir = 8
-	},
-/area/oni_digsite/sub_level_2/south/hangar)
 "reg" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
@@ -16521,9 +16476,7 @@
 	dir = 8
 	},
 /obj/structure/machinery/landinglight/ds1/delaythree,
-/turf/open/floor/almayer/black{
-	dir = 10
-	},
+/turf/open/floor/almayer/red/southwest,
 /area/oni_digsite/sub_level_2/south/hangar)
 "smS" = (
 /obj/structure/barricade/handrail/strata,
@@ -16844,9 +16797,7 @@
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 1
 	},
-/turf/open/floor/almayer/black{
-	dir = 5
-	},
+/turf/open/floor/almayer/red/northeast,
 /area/oni_digsite/sub_level_2/south/hangar)
 "sHo" = (
 /obj/structure/barricade/metal,
@@ -17412,7 +17363,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "tsb" = (
 /obj/structure/surface/rack,
@@ -17478,7 +17429,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "txi" = (
 /obj/structure/machinery/floodlight/landing,
@@ -17823,9 +17774,7 @@
 /obj/structure/machinery/light/double/blue{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod/floor0{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor2,
 /area/oni_digsite/sub_level_9/research)
 "tTH" = (
 /obj/structure/reagent_dispensers/water_cooler/stacks{
@@ -18056,9 +18005,7 @@
 /obj/structure/machinery/landinglight/ds1/delayone{
 	dir = 8
 	},
-/turf/open/floor/almayer/black{
-	dir = 9
-	},
+/turf/open/floor/almayer/red/northwest,
 /area/oni_digsite/sub_level_2/south/hangar)
 "udJ" = (
 /obj/structure/machinery/floodlight/landing,
@@ -18076,9 +18023,7 @@
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 4
 	},
-/turf/open/floor/almayer/black{
-	dir = 6
-	},
+/turf/open/floor/almayer/red/southeast,
 /area/oni_digsite/sub_level_2/south/hangar)
 "ufB" = (
 /obj/structure/prop/server_equipment,
@@ -18198,9 +18143,7 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
 	},
-/turf/open/floor/almayer/black{
-	dir = 5
-	},
+/turf/open/floor/almayer/red/northeast,
 /area/oni_digsite/sub_level_2/south/hangar)
 "ulz" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
@@ -18245,13 +18188,13 @@
 	icon_state = "NW-out";
 	pixel_y = 1
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "uoO" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 4
 	},
-/turf/open/floor/almayer/black/east,
+/turf/open/floor/almayer/red/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "uqp" = (
 /obj/structure/machinery/light/double/blue{
@@ -18876,7 +18819,7 @@
 	pixel_y = 1;
 	pixel_x = 1
 	},
-/turf/open/floor/almayer/blackcorner/east,
+/turf/open/floor/almayer/redcorner/east,
 /area/oni_digsite/sub_level_2/south/hangar)
 "uVh" = (
 /obj/structure/platform/strata/metal{
@@ -19198,7 +19141,7 @@
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 8
 	},
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "vnx" = (
 /obj/structure/pipes/vents/pump,
@@ -19629,10 +19572,7 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/oni_digsite/sub_level_2/north/checkpoint_charlie)
 "vNd" = (
-/turf/open/nostromowater{
-	desc = null;
-	name = "cave water"
-	},
+/turf/open/nostromowater,
 /area/oni_digsite/sub_level_2/cavern)
 "vNx" = (
 /obj/structure/surface/table/almayer,
@@ -19762,7 +19702,7 @@
 	pixel_y = 1;
 	pixel_x = 1
 	},
-/turf/open/floor/almayer/black,
+/turf/open/floor/almayer/red,
 /area/oni_digsite/sub_level_2/south/hangar)
 "vWr" = (
 /obj/structure/pipes/vents/pump,
@@ -20650,9 +20590,7 @@
 	dir = 8
 	},
 /obj/structure/machinery/landinglight/ds1/delayone,
-/turf/open/floor/almayer/black{
-	dir = 10
-	},
+/turf/open/floor/almayer/red/southwest,
 /area/oni_digsite/sub_level_2/south/hangar)
 "wZG" = (
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
@@ -20688,9 +20626,7 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 8
 	},
-/turf/open/floor/almayer/black{
-	dir = 9
-	},
+/turf/open/floor/almayer/red/northwest,
 /area/oni_digsite/sub_level_2/south/hangar)
 "xaF" = (
 /obj/structure/platform/strata/metal,
@@ -20804,9 +20740,7 @@
 /obj/structure/machinery/landinglight/ds1/delaythree{
 	dir = 8
 	},
-/turf/open/floor/almayer/black{
-	dir = 9
-	},
+/turf/open/floor/almayer/red/northwest,
 /area/oni_digsite/sub_level_2/south/hangar)
 "xdY" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -21250,7 +21184,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 1
 	},
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "xAd" = (
 /obj/effect/decal/warning_stripes{
@@ -21549,7 +21483,7 @@
 /turf/open/floor/almayer/tcomms,
 /area/oni_digsite/sub_level_2/north/research)
 "xPK" = (
-/turf/open/floor/almayer/blackcorner/west,
+/turf/open/floor/almayer/redcorner/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "xQi" = (
 /obj/structure/platform/strata/metal,
@@ -21692,7 +21626,7 @@
 	icon_state = "W"
 	},
 /obj/structure/cargo_container/unsc/main_3/d,
-/turf/open/floor/almayer/black/west,
+/turf/open/floor/almayer/red/west,
 /area/oni_digsite/sub_level_2/south/hangar)
 "xXK" = (
 /obj/structure/bed/chair/comfy/ares{
@@ -32723,12 +32657,12 @@ pgD
 pgD
 pRQ
 kTa
-qQY
-qQY
-qQY
-qQY
-qQY
-qQY
+jjk
+jjk
+jjk
+jjk
+jjk
+jjk
 uUT
 wFh
 pgD
@@ -34452,12 +34386,12 @@ pgD
 pgD
 pRQ
 bEE
-red
-red
-red
-red
-red
-red
+trY
+trY
+trY
+trY
+trY
+trY
 aPm
 wFh
 pgD
