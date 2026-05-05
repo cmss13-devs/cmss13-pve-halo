@@ -1,0 +1,10 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - rscadd: "Wombat, seraph, C712, C709 (OBs) as firesupport options"
+  - rscadd: "MAC & coilgun firesupport options (OBs but larger mostly)"
+  - rscadd: "Dropship hovering types, armed and unarmed"
+  - rscadd: "Resupply canisters as a type of firesupport for easy GM usage"
+  - rscadd: "Flyovers for almost all applicable firesupport types"
+  - imageadd: "Shadows for all applicable firesupport types."
+  - imagetweak: "Redoes banshee shadows"
