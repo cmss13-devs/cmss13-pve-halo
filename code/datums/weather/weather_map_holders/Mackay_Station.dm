@@ -12,4 +12,4 @@
 	return !CEILING_IS_PROTECTED(A.ceiling, CEILING_GLASS)
 
 /datum/weather_ss_map_holder/mackay_station/should_start_event()
-	return TRUE
+	return FALSE
