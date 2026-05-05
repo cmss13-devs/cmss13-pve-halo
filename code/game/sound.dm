@@ -464,6 +464,8 @@
 				sound = pick('sound/weapons/halo/gun_socom_1.ogg', 'sound/weapons/halo/gun_socom_2.ogg', 'sound/weapons/halo/gun_socom_3.ogg', 'sound/weapons/halo/gun_socom_4.ogg')
 			if("gun_socom_smg")
 				sound = pick('sound/weapons/halo/gun_silenced_smg_1.ogg', 'sound/weapons/halo/gun_silenced_smg_2.ogg')
+			if("gun_missile_pod")
+				sound = pick('sound/weapons/halo/pelican_gun/missile_launch_1.ogg', 'sound/weapons/halo/pelican_gun/missile_launch_2.ogg', 'sound/weapons/halo/pelican_gun/missile_launch_3.ogg', 'sound/weapons/halo/pelican_gun/missile_launch_4.ogg')
 
 			//halo dryfire
 			if("ma5b_dryfire")
@@ -516,6 +518,12 @@
 				sound = pick('sound/bullets/plasma/plasma_miss_1.ogg', 'sound/bullets/plasma/plasma_miss_2.ogg', 'sound/bullets/plasma/plasma_miss_3.ogg', 'sound/bullets/plasma/plasma_miss_4.ogg', 'sound/bullets/plasma/plasma_miss_5.ogg', 'sound/bullets/plasma/plasma_miss_6.ogg', )
 			if("gun_plasma_overcharge")
 				sound = pick('sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_1.ogg', 'sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_2.ogg', 'sound/weapons/halo/plasma_pistol_overcharge/overcharge_fire_3.ogg')
+
+			// halo explosions
+			if("explosion_phantomgun")
+				sound = pick('sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_1.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_2.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_3.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_4.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_5.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_6.ogg')
+			if("explosion_phantomgun_lod")
+				sound = pick('sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_lod_1.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_lod_2.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_lod_3.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_lod_4.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_lod_5.ogg', 'sound/weapons/halo/phantom_gun/gun_phantom_turret_boom_lod_6.ogg')
 			// Xeno
 			if("acid_hit")
 				sound = pick('sound/bullets/acid_impact1.ogg')
