@@ -2146,9 +2146,7 @@
 /turf/open/floor/almayer/mono,
 /area/mackay_station/golf/greenquarters1)
 "buK" = (
-/turf/open/shuttle/escapepod/floor0/north{
-	dir = 2
-	},
+/turf/open/shuttle/escapepod/floor0,
 /area/mackay_station/bravo/blueengi)
 "bvm" = (
 /turf/open/shuttle/escapepod/north,
@@ -7751,9 +7749,7 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
 "fwI" = (
-/turf/open/shuttle/escapepod/floor0/north{
-	dir = 8
-	},
+/turf/open/shuttle/escapepod/floor0/west,
 /area/mackay_station/bravo/blueengi)
 "fwM" = (
 /turf/open/floor/almayer/research,
@@ -12798,9 +12794,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/shuttle/escapepod/floor0/north{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor2,
 /area/mackay_station/bravo/blueengi)
 "jcj" = (
 /obj/structure/flora/pottedplant,
@@ -19557,9 +19551,7 @@
 /area/mackay_station/romeo/redhangars)
 "nEQ" = (
 /obj/effect/decal/cleanable/blood/oil,
-/turf/open/shuttle/escapepod/floor0/north{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor2,
 /area/mackay_station/bravo/blueengi)
 "nEW" = (
 /obj/structure/platform/strata/metal{

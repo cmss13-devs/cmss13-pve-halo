@@ -1391,9 +1391,7 @@
 /turf/open/floor/plating,
 /area/oni_digsite/sub_level_9/south)
 "bHF" = (
-/turf/open/shuttle/escapepod/floor2{
-	dir = 1
-	},
+/turf/open/shuttle/escapepod/floor0/west,
 /area/oni_digsite/sub_level_9/dormitory)
 "bIq" = (
 /obj/structure/surface/table/reinforced/prison,
@@ -11496,9 +11494,7 @@
 /turf/open/floor/prison/floor_plate,
 /area/oni_digsite/sub_level_2/north/checkpoint_charlie)
 "mAx" = (
-/turf/open/shuttle/escapepod/floor0{
-	dir = 1
-	},
+/turf/open/shuttle/escapepod/floor0/north,
 /area/oni_digsite/sub_level_9/dormitory)
 "mBb" = (
 /obj/structure/barricade/handrail/strata{

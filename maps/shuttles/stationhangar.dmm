@@ -5,11 +5,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/mackay_station/elevator/hangar)
-"b" = (
-/turf/open/shuttle/escapepod{
-	dir = 4
-	},
-/area/mackay_station/elevator/hangar)
 "c" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -23,9 +18,7 @@
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/turf/open/shuttle/escapepod/floor0{
-	dir = 1
-	},
+/turf/open/shuttle/escapepod/floor0/north,
 /area/mackay_station/elevator/hangar)
 "e" = (
 /obj/structure/barricade/handrail{
@@ -35,9 +28,7 @@
 /area/mackay_station/elevator/hangar)
 "f" = (
 /obj/structure/platform_decoration,
-/turf/open/shuttle/escapepod{
-	dir = 1
-	},
+/turf/open/shuttle/escapepod/north,
 /area/mackay_station/elevator/hangar)
 "g" = (
 /obj/structure/barricade/handrail,
@@ -68,17 +59,13 @@
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/mackay_station/elevator/hangar)
 "k" = (
-/turf/open/shuttle/escapepod/floor0{
-	dir = 4
-	},
+/turf/open/shuttle/escapepod/floor2,
 /area/mackay_station/elevator/hangar)
 "l" = (
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod{
-	dir = 1
-	},
+/turf/open/shuttle/escapepod/north,
 /area/mackay_station/elevator/hangar)
 "m" = (
 /obj/structure/barricade/handrail{
@@ -129,9 +116,7 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod/floor0{
-	dir = 8
-	},
+/turf/open/shuttle/escapepod/floor0/west,
 /area/mackay_station/elevator/hangar)
 "u" = (
 /obj/effect/decal/warning_stripes{
@@ -208,9 +193,7 @@
 	dir = 8
 	},
 /obj/structure/platform_decoration,
-/turf/open/shuttle/escapepod{
-	dir = 1
-	},
+/turf/open/shuttle/escapepod/north,
 /area/mackay_station/elevator/hangar)
 "F" = (
 /obj/structure/platform{
@@ -238,9 +221,7 @@
 /obj/structure/platform{
 	dir = 1
 	},
-/turf/open/shuttle/escapepod{
-	dir = 8
-	},
+/turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/elevator/hangar)
 "J" = (
 /obj/structure/platform{
@@ -387,7 +368,7 @@ P
 (4,1,1) = {"
 P
 K
-b
+S
 H
 X
 H
@@ -401,7 +382,7 @@ P
 (5,1,1) = {"
 G
 r
-b
+S
 Z
 J
 p
@@ -415,7 +396,7 @@ G
 (6,1,1) = {"
 M
 r
-b
+S
 T
 N
 v
@@ -429,7 +410,7 @@ M
 (7,1,1) = {"
 M
 r
-b
+S
 T
 N
 v
@@ -443,7 +424,7 @@ M
 (8,1,1) = {"
 M
 r
-b
+S
 T
 N
 v
@@ -457,7 +438,7 @@ M
 (9,1,1) = {"
 M
 r
-b
+S
 O
 F
 i
@@ -471,7 +452,7 @@ M
 (10,1,1) = {"
 P
 T
-b
+S
 H
 X
 H
