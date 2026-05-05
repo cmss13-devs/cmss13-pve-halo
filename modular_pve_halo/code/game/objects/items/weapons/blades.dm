@@ -4,14 +4,14 @@
 /obj/item/weapon/sword/machete
 	name = "\improper Patern-2 composite sword"
 	desc = "Standard UNSC field issue tool for use in jungle environments. Designed and crafted at Misriah Armory, the machete's grip has a thin layer of special gel to help absorb shock from impacts and a unique layering design on the blade that enables it to self-sharpen with use."
-	icon = 'icons/halo/obj/items/weapons/weapons.dmi'
+	icon = 'icons/halo/obj/items/weapons/melee_by_faction/unsc/unsc_melee.dmi'
 	icon_state = "unsc_machete"
 
 //UNSC knife
 /obj/item/weapon/knife/marine
 	name = "\improper M1 Combat Knife"
 	desc = "Standard UNSC cold weapon. 20cm high carbon steel blade with anti-flash carbide coating. Balanced for throwing and close quarters combat, though mostly intended as a multitool... Especially these days."
-	icon = 'icons/halo/obj/items/weapons/weapons.dmi'
+	icon = 'icons/halo/obj/items/weapons/melee_by_faction/unsc/unsc_melee.dmi'
 	icon_state = "unsc_marine_knife"
 
 /obj/item/weapon/knife/marine/kabar
