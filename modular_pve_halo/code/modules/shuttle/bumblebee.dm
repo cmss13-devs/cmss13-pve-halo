@@ -26,6 +26,39 @@
 	if(buckled_mob)
 		buckled_mob.setDir(dir)
 
+// Change from parent: does not make the chair dense when multiple on one tile are occupied.
+/obj/structure/bed/chair/vehicle/bumblebee/afterbuckle(mob/buckled)
+	if(buckled_mob)
+		if(buckled_mob != buckled)
+			return
+		icon_state = initial(icon_state) + "_buckled"
+		overlays += chairbar
+
+		if(buckle_offset_x != 0)
+			mob_old_x = buckled.pixel_x
+			buckled.pixel_x = buckle_offset_x
+		if(buckle_offset_y != 0)
+			mob_old_y = buckled.pixel_y
+			buckled.pixel_y = buckle_offset_y
+	else
+		icon_state = initial(icon_state)
+		overlays -= chairbar
+
+		if(buckle_offset_x != 0)
+			buckled.pixel_x = mob_old_x
+			mob_old_x = 0
+		if(buckle_offset_y != 0)
+			buckled.pixel_y = mob_old_y
+			mob_old_y = 0
+
+	if(buckled_mob)
+		ADD_TRAIT(buckled_mob, TRAIT_UNDENSE, DOUBLE_SEATS_TRAIT)
+	else
+		REMOVE_TRAIT(buckled, TRAIT_UNDENSE, DOUBLE_SEATS_TRAIT)
+
+	handle_rotation()
+
+
 /obj/structure/machinery/door/airlock/evacuation/bumblebee
 	name = "\improper Bumblebee Evacuation Airlock"
 	icon = 'icons/halo/obj/structures/doors/bumblebee_door.dmi'
