@@ -65,7 +65,7 @@
 	title = JOB_SQUAD_MARINE_ODST
 	gear_preset = /datum/equipment_preset/unsc/pfc/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/odst/lesser_rank
-	job_options = list(PFC_VARIANT = "LCPL", PVT_VARIANT = "PFC")
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /datum/job/marine/standard/ai/upp
 	title = JOB_SQUAD_MARINE_UPP
@@ -103,7 +103,7 @@
 	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /datum/job/marine/standard/ai/rto/handle_job_options(option)
-	if(option != PFC_VARIANT)
+	if(option != LCPL_VARIANT)
 		gear_preset = gear_preset_secondary
 	else
 		gear_preset = initial(gear_preset)
