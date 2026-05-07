@@ -2807,7 +2807,6 @@
 #include "modular_pve_halo\code\modules\clothing\suits\marine_coat.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
 #include "modular_pve_halo\code\modules\shuttle\bumblebee.dm"
-#include "modular_pve_halo\code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
 #include "modular_pve_halo\code\modules\projectiles\cov_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\unsc_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\cov_guns.dm"
@@ -2824,4 +2823,5 @@
 #include "modular_pve_halo\code\modules\projectiles\guns\smg\unsc.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\launcher\spnkr.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\sniper\unsc.dm"
+#include "modular_pve_halo\code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
 // END_INCLUDE
