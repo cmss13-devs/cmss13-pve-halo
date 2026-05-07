@@ -161,6 +161,7 @@
 	. = ..()
 	icon_state = "light_rotating-[rand(1, 3)]"
 
+
 ///rotating light mask, but only pointing in one direction
 /atom/movable/lighting_mask/rotating_conical
 	icon_state = "light_conical_rotating"
@@ -171,6 +172,10 @@
 
 /atom/movable/lighting_mask/fire_act(exposed_temperature, exposed_volume)
 	return
+
+/atom/movable/lighting_mask/slow_blinking
+	icon = 'icons/halo/effects/lighting_object_big.dmi'
+	icon_state = "light_slowblink"
 
 #undef LIGHTING_MASK_SPRITE_SIZE
 #undef LIGHTING_MASK_RADIUS

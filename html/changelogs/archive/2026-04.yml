@@ -1560,3 +1560,6 @@
 2026-04-21:
   DexterDude:
   - bugfix: Pelican roof not working
+2026-04-27:
+  DexterDude:
+  - config: removes zonespace from codeowners
