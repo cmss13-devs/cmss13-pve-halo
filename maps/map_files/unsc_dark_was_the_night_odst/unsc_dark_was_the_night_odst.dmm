@@ -1127,6 +1127,14 @@
 /area/dark_was_the_night/lower_hallway)
 "eT" = (
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = 1;
+	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = -6;
+	pixel_y = 7
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "eW" = (
@@ -1245,11 +1253,14 @@
 /area/dark_was_the_night/dorms)
 "gy" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/grenade{
-	pixel_x = 7;
-	pixel_y = 17
+/obj/item/ammo_box/magazine/misc/unsc/grenade/blast{
+	pixel_x = -6;
+	pixel_y = -3
 	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade,
+/obj/item/ammo_box/magazine/misc/unsc/grenade/blast{
+	pixel_x = 4;
+	pixel_y = 10
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "gz" = (
@@ -1603,10 +1614,6 @@
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -4;
 	pixel_y = -3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade{
-	pixel_x = -6;
-	pixel_y = 10
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -2711,6 +2718,10 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	layer = 3.2
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade{
+	pixel_x = -6;
+	pixel_y = 10
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
