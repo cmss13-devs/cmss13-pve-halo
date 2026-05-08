@@ -437,6 +437,22 @@
 	},
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/dark_was_the_night/hangar)
+"aZ" = (
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = 8;
+	pixel_y = 16
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = -9;
+	pixel_y = 8
+	},
+/obj/item/explosive/grenade/smokebomb/unsc{
+	pixel_x = 6;
+	pixel_y = 24;
+	layer = 3.22
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/armory)
 "ba" = (
 /obj/structure/surface/table/almayer,
 /obj/item/tool/pen{
@@ -12298,22 +12314,6 @@
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
-"Tw" = (
-/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
-	pixel_x = 8;
-	pixel_y = 16
-	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
-	pixel_x = -9;
-	pixel_y = 8
-	},
-/obj/item/explosive/grenade/smokebomb/unsc{
-	pixel_x = 6;
-	pixel_y = 24;
-	layer = 3.22
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/armory)
 "Tx" = (
 /obj/structure/stairs/perspective,
 /obj/structure/barricade/handrail{
@@ -25151,7 +25151,7 @@ tG
 tG
 mE
 mk
-Tw
+aZ
 lB
 nb
 qO
