@@ -31,11 +31,6 @@
 	if(brain.should_reload())
 		return 0
 
-	if(istype(brain.primary_weapon, /obj/item/weapon/gun/energy/plasma))
-		var/obj/item/weapon/gun/energy/plasma/plam = brain.primary_weapon
-		if(plam.dispersing)
-			return 0
-
 	return 10
 
 /datum/ai_action/fire_at_target/Destroy(force, ...)
@@ -253,7 +248,7 @@
 				currently_firing = FALSE
 				addtimer(CALLBACK(brain.primary_weapon, TYPE_PROC_REF(/obj/item/weapon/gun, start_fire), null, brain.current_target, null, null, null, TRUE), brain.primary_weapon.get_fire_delay())
 				return
-		addtimer(CALLBACK(plasma_reducer, TYPE_PROC_REF(/obj/item/weapon/gun/energy/plasma/plasma_pistol, start_fire), tied_human), plasma_reducer.get_fire_delay()*0.25) //standard hAi weapon throttling
+		addtimer(CALLBACK(plasma_reducer, TYPE_PROC_REF(/obj/item/weapon/gun/energy/plasma/plasma_pistol, start_fire), tied_human), plasma_reducer.get_fire_delay()) //standard hAi weapon throttling
 		COOLDOWN_START(brain, stop_fire_cooldown, max(plasma_reducer.get_fire_delay()) + 0.25)
 		stop_firing(brain)
 		qdel(src)

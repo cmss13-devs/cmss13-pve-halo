@@ -56,4 +56,4 @@
 	if(!brain.move_to_next_turf(get_turf(brain.current_target)))
 		return ONGOING_ACTION_COMPLETED
 
-	return ONGOING_ACTION_UNFINISHED
+	return ONGOING_ACTION_COMPLETED
