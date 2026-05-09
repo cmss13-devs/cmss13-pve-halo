@@ -54,6 +54,8 @@
 #define MAP_REDEMPTION_VALLEY "Redemption Valley" //valley with a military outpost and agricultural hamlet
 #define MAP_BINHAI_SUPPLY_STATION "Binhai Supply Station" //UPP asteroid base
 #define MAP_HALO_NEW_IRVINE "New Irvine"
+#define MAP_TRAXUS_GAMMA_ZONE "Gamma Sector" //HALO
+
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
 
@@ -400,6 +402,17 @@
 #define WALL_AICORE "aiwall"
 #define WALL_UPP_GREEN "uppwall_interior"
 #define WALL_UPP_GREY "uppwall_interior"
+#define WALL_CONCRETE "concrete"
+#define WALL_FOUNDATION "new_varadero"
+#define WALL_FOUNDATIONR "new_varadero_r"
+#define WALL_SHIPWALL_YELLOW "shipwall_yellow"
+#define WALL_SHIPWALL_HULL_YELLOW "shipwall_hull_yellow"
+#define WALL_SHIPWALL_NORTH_RIGHT_YELLOW "shipwall_nr_yellow"
+#define WALL_SHIPWALL_NORTH_LEFT_YELLOW "shipwall_nl_yellow"
+#define WALL_SHIPWALL_SOUTH_RIGHT_YELLOW "shipwall_sr_yellow"
+#define WALL_SHIPWALL_SOUTH_LEFT_YELLOW "shipwall_sl_yellow"
+#define WALL_BASALT_COLUMN "nv_rock"
+#define WALL_BASALT_COLUMN_SOLID "nv_rock_alt"
 #define WALL_UNSC "unsc"
 #define WALL_VOI "voiwall"
 #define WALL_COV "covwall"
