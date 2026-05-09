@@ -7893,16 +7893,6 @@
 "fCC" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/hangar)
-"fCE" = (
-/obj/structure/platform{
-	dir = 4
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/cryo_bay/two)
 "fCJ" = (
 /obj/structure/platform,
 /obj/structure/barricade/handrail{
@@ -19442,16 +19432,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/motor_pool/heavy)
-"sRs" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/turf/open/shuttle/escapepod/floor1,
-/area/dark_was_the_night/cryo_bay/two)
 "sSl" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer/PC{
@@ -33791,7 +33771,7 @@ crI
 fmu
 uNK
 nCD
-sRs
+jWB
 cOL
 uNK
 uNK
@@ -34397,7 +34377,7 @@ crI
 gYD
 uNK
 kIF
-fCE
+cbD
 aAH
 cQB
 uNK
