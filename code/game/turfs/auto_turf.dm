@@ -365,7 +365,7 @@
 	desc = "grass, dirt, mud, and other assorted high moisture cave flooring."
 
 /turf/open/auto_turf/irvine_grass/insert_self_into_baseturfs()
-	baseturfs += /turf/open/auto_turf/irvine_grass/layer0_mud
+	baseturfs += /turf/open/auto_turf/irvine_grass/layer0
 
 /turf/open/auto_turf/irvine_grass/layer0
 	icon = 'icons/turf/floors/auto_strata_grass.dmi'

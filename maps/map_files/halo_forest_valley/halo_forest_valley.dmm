@@ -918,7 +918,8 @@
 /obj/structure/sign/safety/bridge{
 	pixel_x = 8;
 	pixel_y = 8;
-	name = "caution: rough trail ahead"
+	name = "caution: rough trail ahead";
+	desc = null
 	},
 /turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
@@ -1413,7 +1414,8 @@
 /obj/structure/sign/safety/bridge{
 	pixel_x = 8;
 	pixel_y = 8;
-	name = "caution: stay on designated trail"
+	name = "caution: stay on designated trail";
+	desc = null
 	},
 /turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
