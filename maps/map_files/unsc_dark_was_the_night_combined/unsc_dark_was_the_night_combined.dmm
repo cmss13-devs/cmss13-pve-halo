@@ -701,16 +701,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
-"aIX" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/red/north,
-/area/dark_was_the_night/hangar)
 "aJb" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice2";
@@ -2847,15 +2837,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/north,
 /area/dark_was_the_night/ready_bay)
-"cXh" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 1
-	},
-/turf/open/floor/almayer/red/north,
-/area/dark_was_the_night/hangar)
 "cXm" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3070,12 +3051,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
-"dgz" = (
-/obj/structure/roof/cargocrane_tracks/vertical/endcap1{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "dgF" = (
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
@@ -3472,7 +3447,7 @@
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
 	vector_y = null;
-	vector_x = 151
+	vector_x = 152
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -3671,15 +3646,6 @@
 /obj/structure/prop/almayer/computers/sensor_computer2,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night)
-"dOC" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/red,
-/area/dark_was_the_night/hangar)
 "dOV" = (
 /obj/structure/disposalpipe/segment,
 /obj/structure/disposalpipe/segment{
@@ -4453,12 +4419,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/cryo_bay/one)
-"ewj" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/hangar)
 "ewm" = (
 /obj/structure/cargo_container/unsc/main_3/d,
 /obj/effect/decal/cleanable/dirt{
@@ -6764,7 +6724,7 @@
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
 	vector_y = null;
-	vector_x = 151
+	vector_x = 152
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -8534,7 +8494,7 @@
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
 	vector_y = null;
-	vector_x = 151
+	vector_x = 152
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -8613,7 +8573,7 @@
 /obj/effect/step_trigger/teleporter_vector{
 	name = "StairsUpper";
 	vector_y = null;
-	vector_x = 151
+	vector_x = 152
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -9030,15 +8990,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
-"jMs" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/obj/structure/machinery/landinglight/ds1/delayone{
-	dir = 1
-	},
-/turf/open/floor/almayer/red/north,
-/area/dark_was_the_night/hangar)
 "jNZ" = (
 /obj/structure/platform{
 	dir = 1
@@ -12215,13 +12166,6 @@
 "nph" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/kitchen/freezer)
-"npJ" = (
-/obj/structure/machinery/door/poddoor/almayer,
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "nqd" = (
 /obj/structure/platform{
 	dir = 1
@@ -13207,12 +13151,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
-"ouY" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
-/turf/open/floor/almayer/redfull,
-/area/dark_was_the_night/hangar)
 "ovF" = (
 /obj/structure/bookcase{
 	icon_state = "book-5";
@@ -18621,9 +18559,7 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/hangar)
 "urF" = (
-/obj/structure/roof/cargocrane_tracks/vertical{
-	pixel_y = 14
-	},
+/obj/docking_port/stationary/marine_dropship/pelican_lz/hangar,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "usR" = (
@@ -99829,7 +99765,7 @@ vbK
 vbK
 vbK
 oWG
-bHz
+aRJ
 qFg
 xwu
 vDj
@@ -100122,7 +100058,7 @@ bHz
 bHz
 bHz
 bHz
-bHz
+aRJ
 bHz
 bHz
 unF
@@ -100146,14 +100082,14 @@ kiP
 aij
 pYW
 bHz
-bHz
+aRJ
 pIB
 tlL
 tlL
 tlL
 cMR
 bHz
-bHz
+aRJ
 bHz
 bHz
 pIB
@@ -100421,7 +100357,7 @@ gKz
 bHz
 bHz
 bHz
-bHz
+aRJ
 bHz
 bHz
 bHz
@@ -100760,7 +100696,7 @@ gKz
 gKz
 gKz
 gKz
-bHz
+aRJ
 bHz
 bHz
 bHz
@@ -100771,7 +100707,7 @@ pIB
 jyk
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -101074,7 +101010,7 @@ pIB
 jyk
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -101363,7 +101299,7 @@ lPE
 pYW
 bHz
 bHz
-bHz
+aRJ
 bHz
 bHz
 aRB
@@ -101377,7 +101313,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -101633,7 +101569,7 @@ aRJ
 aRJ
 cMR
 bHz
-bHz
+aRJ
 bHz
 unF
 smN
@@ -101680,7 +101616,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -101983,7 +101919,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -102253,12 +102189,12 @@ gem
 gem
 gem
 gem
+rFf
 gem
 gem
 gem
 gem
-gem
-gem
+rFf
 gem
 gem
 gem
@@ -102280,13 +102216,13 @@ vRC
 vRC
 vRC
 ruU
-bHz
+aRJ
 bHz
 pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -102549,6 +102485,7 @@ gem
 gem
 gem
 gem
+rFf
 gem
 gem
 gem
@@ -102567,8 +102504,7 @@ gem
 gem
 gem
 gem
-gem
-gem
+rFf
 gem
 gem
 gem
@@ -102589,7 +102525,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -102892,7 +102828,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -103195,7 +103131,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -103498,7 +103434,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -103763,45 +103699,45 @@ gem
 gem
 gem
 gem
-dgz
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-cXh
-dOC
-urF
-urF
-urF
-urF
-urF
-urF
-aIX
-ewj
-urF
-npJ
-ouY
-ouY
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+tYy
+aRB
+gem
+gem
+gem
+gem
+gem
+gem
+mnE
+pIB
+gem
+ezl
+rSK
+yhX
 bQD
 bQD
 bQD
@@ -104066,45 +104002,45 @@ gem
 gem
 gem
 gem
-dgz
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
 urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-urF
-jMs
-dOC
-urF
-urF
-urF
-urF
-urF
-urF
-aIX
-ewj
-urF
-npJ
-ouY
-ouY
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+gem
+pHy
+aRB
+gem
+gem
+gem
+gem
+gem
+gem
+mnE
+pIB
+gem
+ezl
+rSK
+yhX
 bQD
 bQD
 bQD
@@ -104407,7 +104343,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -104710,7 +104646,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -105013,7 +104949,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -105276,6 +105212,7 @@ gem
 gem
 gem
 gem
+rFf
 gem
 gem
 gem
@@ -105294,8 +105231,7 @@ gem
 gem
 gem
 gem
-gem
-gem
+rFf
 gem
 gem
 gem
@@ -105316,7 +105252,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -105586,12 +105522,12 @@ gem
 gem
 gem
 gem
+rFf
 gem
 gem
 gem
 gem
-gem
-gem
+rFf
 gem
 gem
 gem
@@ -105619,7 +105555,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -105874,7 +105810,7 @@ tlL
 tlL
 tlL
 cMR
-bHz
+aRJ
 bHz
 tEi
 nyv
@@ -105922,7 +105858,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -106225,7 +106161,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -106528,7 +106464,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -106818,7 +106754,7 @@ bHz
 bHz
 bHz
 bHz
-bHz
+aRJ
 bHz
 jRx
 vRC
@@ -106831,7 +106767,7 @@ pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -107118,6 +107054,7 @@ kGx
 ixl
 bHz
 bHz
+aRJ
 bHz
 bHz
 bHz
@@ -107127,14 +107064,13 @@ bHz
 bHz
 bHz
 bHz
-bHz
-bHz
+aRJ
 bHz
 pIB
 gem
 ezl
 rSK
-rSK
+yhX
 rck
 rck
 rck
@@ -107393,7 +107329,7 @@ mnE
 bHz
 bHz
 bHz
-bHz
+aRJ
 bHz
 bHz
 tEi
