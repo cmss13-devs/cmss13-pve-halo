@@ -5790,8 +5790,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -9051,8 +9052,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -10812,8 +10814,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -10890,8 +10893,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01

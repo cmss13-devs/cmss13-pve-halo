@@ -2777,6 +2777,15 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night)
+"agY" = (
+/obj/structure/stairs,
+/obj/effect/step_trigger/teleporter_vector{
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/cryo_hall)
 "ahe" = (
 /obj/structure/prop/invuln/overhead/flammable_pipe/fly{
 	pixel_y = 6
@@ -5962,8 +5971,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -9150,8 +9160,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -10887,8 +10898,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -10965,8 +10977,9 @@
 	},
 /obj/structure/stairs,
 /obj/effect/step_trigger/teleporter_vector{
-	name = "ShipStairsUpper";
-	vector_y = -63
+	name = "StairsUpper";
+	vector_y = null;
+	vector_x = 151
 	},
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -35635,7 +35648,7 @@ oNi
 mDT
 lzz
 iBd
-dTO
+agY
 dTO
 vaU
 vaU
