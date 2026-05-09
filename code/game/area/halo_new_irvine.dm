@@ -323,3 +323,16 @@
 	icon_state = "3S DORM"
 	powernet_name = "New Irvine - Covenant Structure"
 	ceiling = CEILING_METAL
+
+//
+
+/area/new_irvine/nature_park
+	name = "New Irvine - Nature Park"
+	icon_state = "BEACH - OUTSKIRT"
+	powernet_name = "New Irvine - Nature Park"
+
+/area/new_irvine/nature_park/indoors
+	name = "New Irvine - Nature Park - Indoors"
+	icon_state = "BEACH - OUTSKIRT"
+	powernet_name = "New Irvine - Nature Park"
+	ceiling = CEILING_METAL

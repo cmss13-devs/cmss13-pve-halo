@@ -115,3 +115,6 @@ endmap
 
 map halo_new_irvine_covenant
 endmap
+
+map halo_forest_valley
+endmap
