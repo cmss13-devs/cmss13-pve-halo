@@ -244,10 +244,10 @@ as having entered the turf.
 	INVOKE_ASYNC(A, TYPE_PROC_REF(/atom, ex_act), power, null, explosion_cause_data)
 	log_explosion(A, src)
 
-// I'll admit most of the code from here on out is basically just copypasta from DOREC
+// I'll admit most of the code from here on out is basically just copypasta from DORECz
 
 // Spawns a cellular automaton of an explosion
-/proc/cell_explosion(turf/epicenter, power, falloff, falloff_shape = EXPLOSION_FALLOFF_SHAPE_LINEAR, direction, datum/cause_data/explosion_cause_data)
+/proc/cell_explosion(turf/epicenter, power, falloff, falloff_shape = EXPLOSION_FALLOFF_SHAPE_LINEAR, direction, datum/cause_data/explosion_cause_data, explosion_sound = "explosion", explosion_sound_big = "bigboom", explosion_sound_lod = 'sound/effects/explosionfar.ogg')
 	if(!istype(epicenter))
 		epicenter = get_turf(epicenter)
 
@@ -268,12 +268,12 @@ as having entered the turf.
 	var/mob/causing_mob = explosion_cause_data?.resolve_mob()
 	msg_admin_attack("Explosion with Power: [power], Falloff: [falloff], Shape: [falloff_shape],[causing_obj ? " from [causing_obj]" : ""][causing_mob ? " by [key_name(causing_mob)]" : ""] in [epicenter.loc.name] ([epicenter.x],[epicenter.y],[epicenter.z]).", epicenter.x, epicenter.y, epicenter.z)
 
-	playsound(epicenter, 'sound/effects/explosionfar.ogg', 100, 1, round(power^2,1))
+	playsound(epicenter, explosion_sound_lod, 100, 1, round(power^2,1))
 
 	if(power >= 300) //Make BIG BOOMS
-		playsound(epicenter, "bigboom", 80, 1, max(round(power,1),7))
+		playsound(epicenter, explosion_sound_big, 80, 1, max(round(power,1),7))
 	else
-		playsound(epicenter, "explosion", 90, 1, max(round(power,1),7))
+		playsound(epicenter, explosion_sound, 90, 1, max(round(power,1),7))
 
 	var/datum/automata_cell/explosion/E = new /datum/automata_cell/explosion(epicenter)
 	if(power > EXPLOSION_MAX_POWER)
