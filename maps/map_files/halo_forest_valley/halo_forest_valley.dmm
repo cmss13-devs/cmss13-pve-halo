@@ -22,7 +22,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "av" = (
 /obj/structure/gun_rack/halo/medkit{
@@ -71,14 +71,14 @@
 /area/new_irvine/nature_park/indoors)
 "bX" = (
 /obj/structure/flora/forest/pines/three,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "cb" = (
 /obj/structure/flora/forest/baby_bush,
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "cd" = (
 /turf/open/gm/coast/beachcorner2/south_east,
@@ -177,7 +177,7 @@
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "dX" = (
 /obj/structure/surface/table/reinforced/black,
@@ -245,7 +245,7 @@
 "fF" = (
 /obj/structure/flora/forest/baby_bush,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "fH" = (
 /obj/structure/platform{
@@ -351,7 +351,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "ik" = (
 /obj/effect/decal/cleanable/dirt,
@@ -374,7 +374,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "iJ" = (
 /turf/open/gm/coast/beachcorner2/north_west,
@@ -392,7 +392,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "iU" = (
 /obj/structure/gun_rack/halo/medkit{
@@ -406,14 +406,14 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "jb" = (
 /turf/open/floor/plating/asteroidfloor,
 /area/new_irvine/nature_park/indoors)
 "jd" = (
 /obj/structure/flora/forest/bush/large,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "jh" = (
 /obj/structure/stairs/perspective{
@@ -422,7 +422,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "jl" = (
 /obj/structure/flora/forest/bush,
@@ -437,7 +437,7 @@
 "jJ" = (
 /obj/structure/flora/forest/pines/two,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "jU" = (
 /turf/open/auto_turf/strata_grass/layer0,
@@ -458,7 +458,7 @@
 /obj/structure/platform{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "kB" = (
 /obj/structure/flora/forest/pines/two,
@@ -473,7 +473,7 @@
 /obj/structure/platform/kutjevo/rock{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "lh" = (
 /obj/effect/decal/cleanable/dirt,
@@ -539,7 +539,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "mZ" = (
 /obj/structure/barricade/handrail/strata{
@@ -563,7 +563,7 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "nX" = (
 /obj/structure/bed/sofa/south/grey/left,
@@ -589,12 +589,12 @@
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "oN" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "oV" = (
 /obj/structure/platform{
@@ -621,11 +621,11 @@
 /obj/structure/platform{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "pu" = (
 /obj/structure/flora/forest/pines/four,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "pD" = (
 /turf/open/mars_cave/mars_cave_2,
@@ -643,7 +643,7 @@
 "qg" = (
 /obj/structure/flora/forest/logs_n_stumps/fallen,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "qt" = (
 /obj/item/trash/pistachios,
@@ -677,13 +677,13 @@
 /area/new_irvine/nature_park)
 "rs" = (
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "rt" = (
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "rD" = (
 /obj/structure/surface/table/reinforced/black,
@@ -705,11 +705,11 @@
 "sm" = (
 /obj/structure/flora/forest/pines/two,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "sn" = (
 /obj/structure/flora/forest/pines,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "so" = (
 /obj/structure/platform/stair_cut/alt,
@@ -722,20 +722,20 @@
 /area/new_irvine/nature_park)
 "st" = (
 /obj/structure/platform_decoration,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "sJ" = (
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "sM" = (
 /obj/structure/flora/forest/pines/three,
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "sO" = (
 /obj/structure/surface/table/reinforced/black,
@@ -755,11 +755,11 @@
 /area/new_irvine/nature_park)
 "ta" = (
 /obj/structure/flora/forest/logs_n_stumps/two,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "tl" = (
 /obj/structure/platform,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "tn" = (
 /obj/structure/barricade/handrail/strata{
@@ -785,7 +785,7 @@
 "ud" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/platform,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "uh" = (
 /obj/structure/barricade/handrail/strata,
@@ -800,7 +800,7 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "uw" = (
 /obj/structure/platform{
@@ -828,7 +828,7 @@
 /obj/structure/platform/kutjevo/rock{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "uS" = (
 /obj/structure/closet/secure_closet/fridge,
@@ -886,7 +886,7 @@
 "wk" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "wq" = (
 /obj/structure/surface/table/reinforced/black,
@@ -920,7 +920,7 @@
 	pixel_y = 8;
 	name = "caution: rough trail ahead"
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "wC" = (
 /obj/structure/barricade/handrail/strata{
@@ -973,7 +973,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "xl" = (
 /obj/structure/platform{
@@ -1011,7 +1011,7 @@
 /area/new_irvine/nature_park/indoors)
 "xL" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "yj" = (
 /obj/structure/filingcabinet{
@@ -1025,13 +1025,13 @@
 /area/new_irvine/nature_park/indoors)
 "yk" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "yv" = (
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "yz" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1053,7 +1053,7 @@
 "zu" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "zR" = (
 /obj/structure/surface/table/reinforced/black,
@@ -1104,7 +1104,7 @@
 /turf/open/floor/prison/kitchen,
 /area/new_irvine/nature_park/indoors)
 "Ay" = (
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "AA" = (
 /obj/structure/platform/stair_cut,
@@ -1132,7 +1132,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "AQ" = (
 /obj/structure/platform{
@@ -1142,7 +1142,7 @@
 /area/new_irvine/nature_park)
 "AU" = (
 /obj/structure/flora/forest/bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "AV" = (
 /obj/structure/platform_decoration{
@@ -1208,7 +1208,7 @@
 /area/new_irvine/nature_park)
 "CQ" = (
 /obj/structure/fence,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Dd" = (
 /obj/structure/bed/sofa/south/grey/right,
@@ -1230,7 +1230,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "DV" = (
 /turf/closed/wall/voi/reinforced/hull,
@@ -1249,7 +1249,7 @@
 /area/new_irvine/nature_park)
 "Eu" = (
 /obj/structure/flora/forest/logs_n_stumps/fallen,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Ez" = (
 /obj/structure/bed/chair/comfy/bench/south/east,
@@ -1260,7 +1260,7 @@
 /obj/structure/platform_decoration/kutjevo/rock{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "EF" = (
 /obj/structure/platform_decoration{
@@ -1301,7 +1301,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Gf" = (
 /obj/structure/platform{
@@ -1392,7 +1392,7 @@
 /area/new_irvine/nature_park)
 "Jg" = (
 /obj/structure/machinery/door/poddoor/almayer/blended,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "JK" = (
 /obj/structure/barricade/handrail/strata{
@@ -1406,7 +1406,7 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "JT" = (
 /obj/item/device/flashlight/lamp/tripod/grey,
@@ -1415,7 +1415,7 @@
 	pixel_y = 8;
 	name = "caution: stay on designated trail"
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Kg" = (
 /obj/structure/platform{
@@ -1520,7 +1520,7 @@
 /area/new_irvine/nature_park)
 "MM" = (
 /obj/structure/flora/forest/pines/two,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Ne" = (
 /obj/effect/decal/cleanable/dirt,
@@ -1540,7 +1540,7 @@
 /area/new_irvine/nature_park/indoors)
 "No" = (
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Nr" = (
 /obj/item/trash/semki,
@@ -1740,7 +1740,7 @@
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "St" = (
 /obj/structure/flora/forest/pines/four,
@@ -1752,7 +1752,7 @@
 /area/new_irvine/nature_park)
 "SQ" = (
 /obj/structure/prop/rock,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "SZ" = (
 /turf/closed/wall/rock/brown,
@@ -1774,7 +1774,7 @@
 "Tl" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Tp" = (
 /turf/open/floor/plating/asteroidfloor,
@@ -1848,7 +1848,7 @@
 "Vf" = (
 /obj/structure/flora/forest/logs_n_stumps,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Vw" = (
 /obj/structure/platform{
@@ -1924,7 +1924,7 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "WA" = (
 /obj/structure/bed/chair/comfy/bench/mid/west,
@@ -1989,7 +1989,7 @@
 /area/new_irvine/nature_park)
 "XO" = (
 /obj/structure/flora/forest/logs_n_stumps,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "XR" = (
 /obj/structure/barricade/handrail/strata{
@@ -2012,7 +2012,7 @@
 "YB" = (
 /obj/structure/platform_decoration,
 /obj/structure/flora/forest/pines/four,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "YP" = (
 /obj/structure/platform,
@@ -2031,12 +2031,12 @@
 "Za" = (
 /obj/structure/flora/jungle/thickbush,
 /obj/structure/platform,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Zc" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "Zh" = (
 /obj/effect/decal/cleanable/dirt,
@@ -2071,7 +2071,7 @@
 "ZG" = (
 /obj/structure/flora/forest/pines/two,
 /obj/structure/platform,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "ZJ" = (
 /obj/structure/flora/forest/bush/large,
@@ -2094,11 +2094,11 @@
 /obj/structure/platform/kutjevo/rock{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 "ZR" = (
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/nature_park)
 
 (1,1,1) = {"

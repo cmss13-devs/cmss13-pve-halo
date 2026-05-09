@@ -367,7 +367,7 @@
 /turf/open/auto_turf/irvine_grass/insert_self_into_baseturfs()
 	baseturfs += /turf/open/auto_turf/irvine_grass/layer0_mud
 
-/turf/open/auto_turf/irvine_gras/layer0
+/turf/open/auto_turf/irvine_grass/layer0
 	icon = 'icons/turf/floors/auto_strata_grass.dmi'
 	icon_state = "grass_0"
 	icon_prefix = "grass"
@@ -398,6 +398,6 @@
 	variant = "mud_alt"
 	variant_prefix_name = "muddy"
 
-/turf/open/auto_turf/irvine_grass/layer1
-	icon_state = "grass_1"
+/turf/open/auto_turf/irvine_grass/layer2
+	icon_state = "grass_2"
 	bleed_layer = 2

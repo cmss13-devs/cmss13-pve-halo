@@ -407,7 +407,7 @@
 /turf/open/floor/almayer_hull/outerhull_dir/southwest,
 /area/new_irvine/outskirt/indoors/tunnel/outdoor)
 "abp" = (
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "abq" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -2994,7 +2994,7 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aim" = (
 /obj/structure/platform{
@@ -5517,7 +5517,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aos" = (
 /obj/structure/barricade/handrail/wire{
@@ -5602,18 +5602,18 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aoD" = (
 /obj/structure/platform_decoration,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aoE" = (
 /obj/structure/platform_decoration{
 	dir = 1
 	},
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aoF" = (
 /obj/structure/platform{
@@ -15597,7 +15597,7 @@
 "aMS" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aMT" = (
 /turf/open/floor/prison/kitchen,
@@ -16988,14 +16988,14 @@
 /area/new_irvine/outskirt/forest/road)
 "aQs" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aQt" = (
 /obj/structure/platform_decoration{
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "aQu" = (
 /obj/structure/platform,
@@ -21987,7 +21987,7 @@
 /area/new_irvine/outskirt/dorms)
 "beF" = (
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "beG" = (
 /turf/open/auto_turf/strata_grass/layer0_mud_alt,
@@ -22058,13 +22058,13 @@
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "beS" = (
 /obj/structure/platform{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "beT" = (
 /obj/structure/platform{
@@ -22130,7 +22130,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bff" = (
 /turf/closed/wall/voi,
@@ -22222,7 +22222,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bft" = (
 /obj/structure/platform_decoration{
@@ -22230,7 +22230,7 @@
 	},
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bfu" = (
 /obj/structure/machinery/door/airlock/voi/colony/autoname{
@@ -22262,7 +22262,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bfy" = (
 /obj/effect/decal/cleanable/dirt,
@@ -22283,7 +22283,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bfC" = (
 /obj/effect/decal/cleanable/dirt,
@@ -22685,7 +22685,7 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bgW" = (
 /obj/structure/platform_decoration{
@@ -22693,7 +22693,7 @@
 	},
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bgX" = (
 /obj/structure/bed/chair{
@@ -22835,14 +22835,14 @@
 /area/new_irvine/outskirt/dorms/indoors/twosdorms)
 "bhs" = (
 /obj/structure/platform_decoration,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bht" = (
 /obj/structure/platform,
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bhu" = (
 /turf/open/floor/strata,
@@ -23133,7 +23133,7 @@
 "bil" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bim" = (
 /obj/structure/platform_decoration{
@@ -23945,7 +23945,7 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bku" = (
 /obj/structure/prop/vehicles{
@@ -23961,12 +23961,12 @@
 	},
 /obj/structure/platform_decoration,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bkw" = (
 /obj/structure/platform,
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bkx" = (
 /obj/structure/platform{
@@ -24059,7 +24059,7 @@
 	dir = 4
 	},
 /obj/structure/platform,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bkK" = (
 /turf/open/floor/covenant/lane/horizontal,
@@ -24097,7 +24097,7 @@
 /area/new_irvine/outskirt/exports)
 "bkT" = (
 /obj/structure/machinery/recharger/covenant,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bkU" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -24701,7 +24701,7 @@
 /obj/structure/platform/kutjevo/rock{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/beach)
 "bmv" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -24715,37 +24715,37 @@
 /area/new_irvine/sector_five/bridge)
 "bmw" = (
 /obj/structure/flora/forest/pines,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmx" = (
 /obj/structure/flora/forest/pines/four,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmy" = (
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmz" = (
 /turf/open/auto_turf/irvine_grass/layer0_mud,
 /area/new_irvine/outskirt/forest)
 "bmA" = (
 /obj/structure/flora/forest/pines/two,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmB" = (
 /turf/open/gm/river,
 /area/new_irvine/outskirt/forest)
 "bmC" = (
 /obj/structure/flora/forest/pines/three,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmD" = (
 /obj/structure/flora/bush/ausbushes/var3/ywflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmE" = (
 /obj/structure/flora/forest/bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmF" = (
 /obj/structure/flora/bush/ausbushes/reedbush,
@@ -24759,7 +24759,7 @@
 /area/new_irvine/sewers/lab/lvlthree)
 "bmH" = (
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmI" = (
 /obj/structure/flora/bush/ausbushes/var3/stalkybush,
@@ -24767,7 +24767,7 @@
 /area/new_irvine/outskirt/forest)
 "bmJ" = (
 /obj/structure/flora/bush/ausbushes/grassybush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmK" = (
 /obj/structure/surface/table/reinforced/black,
@@ -24783,7 +24783,7 @@
 /area/new_irvine/outskirt/forest)
 "bmM" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmN" = (
 /obj/structure/flora/forest/pines/two,
@@ -24796,11 +24796,11 @@
 "bmP" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmQ" = (
 /obj/structure/flora/bush/ausbushes/lavendergrass,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmR" = (
 /obj/effect/decal/cleanable/dirt,
@@ -24812,7 +24812,7 @@
 /area/new_irvine/sector_five/indoor/bridge_interier)
 "bmS" = (
 /obj/structure/flora/bush/ausbushes/var3/sparsegrass,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmT" = (
 /obj/structure/platform_decoration{
@@ -24825,7 +24825,7 @@
 /area/new_irvine/sewers/lab/railway)
 "bmU" = (
 /obj/structure/flora/forest/bush/large,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmV" = (
 /obj/structure/platform_decoration{
@@ -24848,7 +24848,7 @@
 /area/new_irvine/outskirt/forest)
 "bmX" = (
 /obj/structure/flora/forest/small_tree,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bmY" = (
 /obj/structure/flora/forest/logs_n_stumps/fallen,
@@ -24860,7 +24860,7 @@
 /area/new_irvine/outskirt/forest)
 "bna" = (
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bnb" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
@@ -24885,11 +24885,11 @@
 /area/new_irvine/sewers/lab/lvltwo)
 "bnf" = (
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bng" = (
 /obj/structure/flora/bush/ausbushes/var3/brflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bnh" = (
 /obj/structure/flora/forest/baby_bush,
@@ -24918,7 +24918,7 @@
 "bnl" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/forest/pines/four,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bnm" = (
 /obj/structure/flora/forest/pines/five,
@@ -24927,12 +24927,12 @@
 "bnn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/forest/pines/three,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bno" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bnp" = (
 /obj/structure/flora/forest/pines/three,
@@ -25028,11 +25028,11 @@
 /turf/open/shuttle/escapepod/floor4,
 /area/new_irvine/sewers/lab/railway)
 "bnD" = (
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnE" = (
 /obj/structure/flora/forest/pines/three,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnF" = (
 /obj/effect/decal/warning_stripes{
@@ -25047,22 +25047,22 @@
 /area/new_irvine/outskirt/dorms)
 "bnH" = (
 /obj/structure/flora/forest/pines,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnI" = (
 /obj/structure/flora/forest/pines/four,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnJ" = (
 /obj/structure/flora/forest/pines/two,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnK" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnL" = (
 /obj/structure/covenant_barricade/wide{
@@ -25098,7 +25098,7 @@
 	dir = 8
 	},
 /obj/structure/flora/forest/pines,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnR" = (
 /obj/structure/desertdam/decals/road_edge{
@@ -25119,7 +25119,7 @@
 /area/new_irvine/sewers/lab)
 "bnT" = (
 /obj/effect/decal/cleanable/dirt,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnU" = (
 /obj/structure/bed/chair/comfy,
@@ -25132,14 +25132,14 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnW" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /obj/structure/flora/forest/pines/three,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnX" = (
 /obj/structure/platform,
@@ -25147,13 +25147,13 @@
 	dir = 8
 	},
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnY" = (
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bnZ" = (
 /obj/structure/platform,
@@ -25161,11 +25161,11 @@
 	dir = 8
 	},
 /obj/structure/flora/forest/pines,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "boa" = (
 /obj/structure/platform,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bob" = (
 /obj/structure/flora/forest/pines,
@@ -25182,27 +25182,27 @@
 "boe" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bof" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bog" = (
 /obj/structure/flora/forest/pines/three,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boh" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/forest/pines/three,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boi" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boj" = (
 /obj/structure/flora/jungle/thickbush,
@@ -25211,7 +25211,7 @@
 "bok" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/forest/pines/five,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bol" = (
 /obj/structure/flora/forest/logs_n_stumps,
@@ -25249,7 +25249,7 @@
 "bot" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "bou" = (
 /obj/structure/flora/forest/logs_n_stumps/fallen,
@@ -25267,17 +25267,17 @@
 "box" = (
 /obj/structure/flora/forest/pines/three,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boy" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boz" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boA" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
@@ -25286,7 +25286,7 @@
 "boB" = (
 /obj/structure/flora/forest/pines/two,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boC" = (
 /obj/structure/platform_decoration{
@@ -25298,17 +25298,17 @@
 "boD" = (
 /obj/structure/flora/forest/pines/two,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boE" = (
 /obj/structure/flora/forest/bush,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boF" = (
 /obj/structure/flora/forest/baby_bush,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boG" = (
 /obj/structure/machinery/light/double{
@@ -25321,22 +25321,22 @@
 "boH" = (
 /obj/structure/flora/forest/bush,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boJ" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/bush/ausbushes/lavendergrass,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boK" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/bush/ausbushes/var3/fullgrass,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boL" = (
 /obj/structure/flora/forest/pines,
@@ -25366,7 +25366,7 @@
 "boQ" = (
 /obj/structure/flora/jungle/thickbush,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boR" = (
 /obj/structure/pipes/standard/simple/hidden/green{
@@ -25377,7 +25377,7 @@
 "boS" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boT" = (
 /obj/structure/flora/jungle/thickbush,
@@ -25399,17 +25399,17 @@
 "boW" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/forest)
 "boZ" = (
 /obj/structure/flora/forest/pines/five,
@@ -25428,15 +25428,15 @@
 /area/new_irvine/sewers/lab/railway)
 "bpb" = (
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpc" = (
 /obj/structure/flora/forest/bush/large,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpd" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpe" = (
 /obj/structure/platform{
@@ -25453,40 +25453,40 @@
 /area/new_irvine/outskirt/dorms)
 "bpg" = (
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bph" = (
 /obj/structure/flora/forest/bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpi" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpj" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpk" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpl" = (
 /obj/structure/flora/forest/pines/three,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpm" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpn" = (
 /obj/structure/platform{
@@ -25494,45 +25494,45 @@
 	},
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpo" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpp" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpq" = (
 /obj/structure/flora/forest/pines/four,
 /obj/structure/flora/jungle/thickbush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpr" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bps" = (
 /obj/structure/platform_decoration{
 	dir = 1
 	},
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpt" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /obj/structure/flora/bush/ausbushes/ppflowers,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpu" = (
 /obj/structure/flora/jungle/thickbush,
@@ -25549,12 +25549,12 @@
 "bpw" = (
 /obj/structure/flora/forest/pines/five,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpx" = (
 /obj/structure/flora/forest/pines,
 /obj/structure/flora/forest/baby_bush,
-/turf/open/auto_turf/irvine_grass/layer1,
+/turf/open/auto_turf/irvine_grass/layer2,
 /area/new_irvine/outskirt/dorms)
 "bpy" = (
 /obj/structure/flora/forest/baby_bush,
