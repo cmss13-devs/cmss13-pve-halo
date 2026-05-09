@@ -6635,10 +6635,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
-"etn" = (
-/obj/structure/surface/table/reinforced/prison,
-/turf/open/floor/almayer/sterile_green,
-/area/dark_was_the_night/medical)
 "etD" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -44241,7 +44237,7 @@ eSZ
 sDe
 frb
 kqo
-etn
+aiC
 cad
 gNT
 sQs
