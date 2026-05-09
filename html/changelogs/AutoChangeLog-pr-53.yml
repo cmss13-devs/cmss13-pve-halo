@@ -1,0 +1,5 @@
+author: "The32bitguy"
+delete-after: True
+changes:
+  - rscadd: "Sangeili AI can now kick."
+  - rscadd: "AI with TRAIT_SUPER_STRONG now wrestle."
