@@ -56,6 +56,10 @@ map unsc_dark_was_the_night_combined_odst_b
 
 endmap
 
+map unsc_dark_was_the_night_combined_marine_b
+
+endmap
+
 map uscss_obsidian_falk
 	disabled
 endmap
