@@ -13,7 +13,7 @@
 /obj/item/ammo_magazine/internal/shotgun/m90/police
 	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
 
-// shotgun shells
+// shotgun shell boxes
 
 /obj/item/ammo_magazine/shotgun/buckshot/unsc
 	name = "UNSC 8-gauge shotgun shell box"
@@ -34,3 +34,23 @@
 	transfer_handful_amount = 6
 	max_rounds = 24
 	caliber = "8g"
+
+// shotgun shell handfuls
+
+/obj/item/ammo_magazine/handful/shotgun/halo
+	name = "handful of MAG 15P-00B shotgun shells"
+	icon_state = "8g_shell_6"
+	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
+	caliber = "8g"
+	max_rounds = 6
+	current_rounds = 6
+	gun_type = /obj/item/weapon/gun/shotgun/pump/halo
+	handful_state = "8g_shell"
+	transfer_handful_amount = 6
+	flags_human_ai = AMMUNITION_ITEM
+
+/obj/item/ammo_magazine/handful/shotgun/halo/beanbag
+	name = "handful of MAG LLHB shotgun shells"
+	icon_state = "8g_beanbag_6"
+	default_ammo = /datum/ammo/bullet/shotgun/beanbag/unsc
+	handful_state = "8g_beanbag"

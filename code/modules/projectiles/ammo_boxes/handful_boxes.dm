@@ -138,3 +138,34 @@
 
 /obj/item/ammo_box/magazine/lever_action/marksman/empty
 	empty = TRUE
+
+/obj/item/ammo_box/magazine/shotgun/unsc
+
+	name = "UNSC loose-munitions box"
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon_state = "base_ammoshell"
+	overlay_content = null
+	overlay_gun_type = null
+	handfuls_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	limit_per_tile = 2
+	deployed_object = /obj/structure/magazine_box/unsc
+
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot
+	name = "\improper UNSC shotgun shell box (MAG 15P-00B x 48)"
+	num_of_magazines = 48
+	icon_state = "base_ammoshell"
+	overlay_content = "_magbuck"
+	magazine_type = /obj/item/ammo_magazine/handful/shotgun/halo
+
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/shotgun/unsc/beanbag
+	name = "\improper shotgun shell box (MAG LLHB x 48)"
+	num_of_magazines = 48
+	icon_state = "base_ammoshell_beanbag"
+	overlay_content = "_beanbag"
+	magazine_type = /obj/item/ammo_magazine/handful/shotgun/halo/beanbag
+
+/obj/item/ammo_box/magazine/shotgun/unsc/beanbag/empty
+	empty = TRUE
