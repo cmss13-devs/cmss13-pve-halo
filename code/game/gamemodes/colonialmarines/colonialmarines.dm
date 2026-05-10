@@ -382,6 +382,10 @@
 	addtimer(CALLBACK(src, PROC_REF(intro_sequence)), DROPSHIP_DROP_MSG_DELAY)
 	add_current_round_status_to_end_results("First Drop")
 
+/datum/game_mode/colonialmarines/pod_first_drop(/obj/structure/halo_droppod)
+	addtimer(CALLBACK(src, PROC_REF(intro_sequence)), DROPSHIP_DROP_MSG_DELAY)
+	add_current_round_status_to_end_results("First Drop")
+
 /datum/game_mode/colonialmarines/proc/intro_sequence()
 	for(var/mob/living/carbon/human/human as anything in GLOB.alive_human_list)
 		if(human.z != ZTRAIT_GROUND)
