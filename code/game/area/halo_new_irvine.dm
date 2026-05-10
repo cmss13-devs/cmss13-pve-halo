@@ -336,3 +336,29 @@
 	icon_state = "BEACH - OUTSKIRT"
 	powernet_name = "New Irvine - Nature Park"
 	ceiling = CEILING_METAL
+
+//
+
+/area/new_irvine/deep_woods
+	name = "New Irvine - Forest"
+	icon_state = "BEACH - OUTSKIRT"
+	powernet_name = "New Irvine - Forest"
+
+/area/new_irvine/deep_woods/indoors
+	name = "New Irvine - Forest - Indoors"
+	icon_state = "BEACH - OUTSKIRT"
+	powernet_name = "New Irvine - Forest"
+	ceiling = CEILING_METAL
+
+//
+
+/area/new_irvine/deep_woods/unsc_base
+	name = "New Irvine - UNSC Base"
+	icon_state = "BEACH - OUTSKIRT"
+	powernet_name = "New Irvine - UNSC Base - Forest"
+
+/area/new_irvine/deep_woods/unsc_base/indoors
+	name = "New Irvine - UNSC Base - Indoors"
+	icon_state = "BEACH - OUTSKIRT"
+	powernet_name = "New Irvine - UNSC Base - Forest"
+	ceiling = CEILING_METAL

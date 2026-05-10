@@ -359,7 +359,7 @@
 /turf/open/auto_turf/irvine_grass
 	name = "matted grass"
 	icon = 'icons/turf/floors/auto_forest_irvine.dmi'
-	icon_state = "grass_1"
+	icon_state = "grass_2"
 	icon_prefix = "grass"
 	layer_name = list("ground","lush thick grass")
 	desc = "grass, dirt, mud, and other assorted high moisture cave flooring."
