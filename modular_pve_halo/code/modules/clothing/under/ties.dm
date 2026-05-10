@@ -25,7 +25,7 @@
 	name = "cross armor paint"
 
 /obj/item/clothing/accessory/paint/inscription
-	name = "cross armor paint"
+	name = "inscription armor paint"
 
 /obj/item/clothing/accessory/paint/fire
 	name = "flames armor paint"
