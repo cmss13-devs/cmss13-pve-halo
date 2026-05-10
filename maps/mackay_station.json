@@ -1,0 +1,8 @@
+{
+    "map_name": "Mackay Station",
+    "map_path": "map_files/Mackay_Station",
+    "map_file": "Mackay_Station.dmm",
+    "webmap_url": "MackayStation",
+    "weather_holder": "/datum/weather_ss_map_holder/mackay_station",
+    "map_item_type": "/obj/item/map/mackay_station"
+}

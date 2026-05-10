@@ -55,6 +55,9 @@
 #define MAP_BINHAI_SUPPLY_STATION "Binhai Supply Station" //UPP asteroid base
 #define MAP_HALO_NEW_IRVINE "New Irvine"
 #define MAP_HALO_NEW_IRVINE_COVENANT "New Irvine (Covenant)"
+#define MAP_MACKAY_STATION "Mackay Station"
+#define MAP_ONI_DIGSITE_451 "ONI Digsite 451"
+
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define MAP_HALO_FOREST_VALLEY "New Irvine - Forest Valley"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
