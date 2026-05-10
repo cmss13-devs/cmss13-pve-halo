@@ -224,6 +224,7 @@
 	pixel_y = -32;
 	opacity = 0
 	},
+/obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/paneling/left,
 /area/shuttle/pelican)
 "CR" = (
@@ -422,6 +423,7 @@
 	pixel_y = -32;
 	opacity = 0
 	},
+/obj/effect/roof_node/pelican,
 /obj/structure/roof/pelican_roof,
 /turf/open/shuttle/pelican/paneling/right,
 /area/shuttle/pelican)
@@ -501,6 +503,7 @@
 	pixel_y = -32;
 	opacity = 0
 	},
+/obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/directional/west,
 /area/shuttle/pelican)
 "UY" = (
@@ -539,6 +542,7 @@
 	opacity = 0
 	},
 /obj/structure/machinery/door/airlock/multi_tile/almayer/dropshiprear/pelican,
+/obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/directional/east,
 /area/shuttle/pelican)
 "XR" = (
