@@ -139,6 +139,8 @@
 /obj/item/ammo_box/magazine/lever_action/marksman/empty
 	empty = TRUE
 
+	// HALO PVE EDIT - START - SHOTGUN & SNIPER HANDFUL BOXES
+
 /obj/item/ammo_box/magazine/shotgun/unsc
 
 	name = "UNSC loose-munitions box"
@@ -169,3 +171,23 @@
 
 /obj/item/ammo_box/magazine/shotgun/unsc/beanbag/empty
 	empty = TRUE
+
+/obj/item/ammo_box/magazine/lever_action/unsc
+	name = "\improper UNSC anti-materiel rounds box (14.5x114mm x 16)"
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon_state = "base_ammoshell_srs99"
+	overlay_content = "_srs99"
+	overlay_ammo_type = "_blank"
+	overlay_gun_type = "_blank"
+	handfuls_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	limit_per_tile = 2
+	deployed_object = /obj/structure/magazine_box/unsc
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/sniper
+	num_of_magazines = 16
+	handfuls = TRUE
+	handful = "rounds"
+
+/obj/item/ammo_box/magazine/lever_action/empty
+	empty = TRUE
+
+	// HALO PVE EDIT - FINISH
