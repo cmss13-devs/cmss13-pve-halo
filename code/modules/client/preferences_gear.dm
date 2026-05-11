@@ -123,23 +123,20 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Prescription sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses/prescription
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/eyewear/pilot_visor_black
-	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL, REPATHING
 	display_name = "IHADSS visor, black"
-	path = /obj/item/device/helmet_visor/po_visor/marine/unsc
-	/*
+	path = /obj/item/device/helmet_visor/po_visor/marine
 	allowed_origins = USCM_ORIGINS
-	*/
-	// HALO PVE EDIT - END
 
 /datum/gear/eyewear/pilot_visor_yellow
-	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL, ITEM REPATHING
 	display_name = "IHADSS visor, yellow"
-	path = /obj/item/device/helmet_visor/po_visor/marine/unsc/yellow
-	/*
+	path = /obj/item/device/helmet_visor/po_visor/marine/yellow
 	allowed_origins = USCM_ORIGINS
-	*/
+*/
 	// HALO PVE EDIT - END
+
 
 /*
 //================================================
