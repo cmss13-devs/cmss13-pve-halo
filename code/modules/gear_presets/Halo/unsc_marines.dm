@@ -320,7 +320,7 @@
 
 /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper/load_gear(mob/living/carbon/human/new_human)
 	add_marine_basics(new_human)
-	add_sniper_package(new_human)
+	add_sniper_package_alt(new_human)
 	add_spec_ai_gear(new_human)
 
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
@@ -351,18 +351,18 @@
 /datum/equipment_preset/unsc/spec/equipped_spnkr/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-/datum/equipment_preset/unsc/spec/equipped_spnkr/ai_man
+/datum/equipment_preset/unsc/spec/equipped_spnkr/ai_spnkr
 	name = parent_type::name + " (SPNKr, Equipped, HAI LOADOUT)"
 
-/datum/equipment_preset/unsc/spec/equipped_spnkr/ai_man/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/unsc/spec/equipped_spnkr/ai_spnkr/load_gear(mob/living/carbon/human/new_human)
 	add_marine_basics(new_human)
-	add_spnkr_gear(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/halo_launcher/spnkr(new_human), WEAR_BACK)
 	add_spec_ai_gear(new_human)
 
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
-/datum/equipment_preset/unsc/spec/equipped_spnkr/ai_man/load_status(mob/living/carbon/human/new_human)
+/datum/equipment_preset/unsc/spec/equipped_spnkr/ai_spnkr/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
 
@@ -562,7 +562,7 @@
 
 /datum/equipment_preset/unsc/spec/odst/equipped_sniper/ai_sniper/load_gear(mob/living/carbon/human/new_human)
 	add_odst_basics(new_human)
-	add_sniper_package(new_human)
+	add_sniper_package_alt(new_human)
 	add_spec_ai_gear(new_human)
 
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
@@ -593,20 +593,19 @@
 /datum/equipment_preset/unsc/spec/odst/equipped_spnkr/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-/datum/equipment_preset/unsc/spec/odst/equipped_spnkr/ai_man
+/datum/equipment_preset/unsc/spec/odst/equipped_spnkr/ai_spnkr
 	name = parent_type::name + " (SPNKr, Equipped, HAI LOADOUT)"
 
-/datum/equipment_preset/unsc/spec/odst/equipped_spnkr/ai_man/load_gear(mob/living/carbon/human/new_human)
+/datum/equipment_preset/unsc/spec/odst/equipped_spnkr/ai_spnkr/load_gear(mob/living/carbon/human/new_human)
 	add_odst_basics(new_human)
-	add_spnkr_gear(new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/halo_launcher/spnkr(new_human), WEAR_BACK)
 	add_spec_ai_gear(new_human)
 
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
-/datum/equipment_preset/unsc/spec/odst/equipped_spnkr/ai_man/load_status(mob/living/carbon/human/new_human)
+/datum/equipment_preset/unsc/spec/odst/equipped_spnkr/ai_spnkr/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
-
 
 //medic
 /datum/equipment_preset/unsc/medic/odst/equipped
@@ -805,6 +804,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/flare(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/flare/signal(new_human), WEAR_IN_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/device/binoculars/range/designator/sergeant(new_human), WEAR_IN_BACK)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/box/tear_packet/medical_packet(new_human), WEAR_IN_BACK)
 	// Accessories
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/grenade/m9_frag(new_human), WEAR_ACCESSORY)
 	// Pockets
