@@ -368,7 +368,6 @@
 	baseturfs += /turf/open/auto_turf/irvine_grass/layer0
 
 /turf/open/auto_turf/irvine_grass/layer0
-	icon = 'icons/turf/floors/auto_strata_grass.dmi'
 	icon_state = "grass_0"
 	icon_prefix = "grass"
 	bleed_layer = 0
