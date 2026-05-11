@@ -301,3 +301,22 @@
 
 /obj/item/device/binoculars/fire_support/pmc/usable_shipside
 	usable_shipside = TRUE
+
+/obj/item/device/binoculars/fire_support/halo/unsc
+	faction = FACTION_UNSC
+	mode_list = list(
+		FIRESUPPORT_TYPE_WOMBAT_GAU,
+		FIRESUPPORT_TYPE_WOMBAT_MISSILE,
+		FIRESUPPORT_TYPE_WOMBAT_INCENDIARY,
+		FIRESUPPORT_TYPE_C712_COILGUN,
+		FIRESUPPORT_TYPE_C712_CLUSTER,
+		FIRESUPPORT_TYPE_C712_MISSILE,
+		FIRESUPPORT_TYPE_C709_CLUSTER,
+		FIRESUPPORT_TYPE_C709_MISSILE,
+		FIRESUPPORT_TYPE_C709_INCENDIARY,
+		FIRESUPPORT_TYPE_MAC_ATMOS,
+		FIRESUPPORT_TYPE_COILGUNS,
+	)
+
+/obj/item/device/binoculars/fire_support/halo/unsc/usable_shipside
+	usable_shipside = TRUE

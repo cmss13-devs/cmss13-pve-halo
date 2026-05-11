@@ -851,6 +851,9 @@
 	var/shadow_cooldown
 	var/has_shadow
 
+/datum/fire_support/custom/New()
+	name = "[name] ([cost])"
+
 ///Initiates fire support proc chain
 /datum/fire_support/custom/initiate_fire_support(turf/target_turf, additional_variable)
 	addtimer(CALLBACK(src, PROC_REF(start_fire_support), target_turf, additional_variable), delay_to_impact)
@@ -1126,6 +1129,18 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/wombat_flyover.ogg'
 	start_sound = 'sound/weapons/fire_support/casplane_flyby.ogg'
 	warning_chat_message = "WOMBAT"
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_GAU
+	cost = 3
+
+	icon_state = "gau"
+	initiate_chat_message = "TARGET ACQUIRED. GUN RUN INBOUND."
+	initiate_screen_message = list(
+		"TARGET ACQUIRED. GUN RUN INBOUND.",
+		"LASE SIGHTED. MUNITIONS EN-ROUTE.",
+		"MUNITION DELIVERY IMMINENT, TAKE COVER.",
+	)
 
 /datum/fire_support/custom/wombat_gau/do_impact(turf/target_turf)
 	var/revdir = REVERSE_DIR(NORTH)
@@ -1182,6 +1197,18 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/wombat_flyover.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/wombat_missile.ogg'
 	warning_chat_message = "WOMBAT"
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_MISSILE
+	cost = 4
+
+	icon_state = "rockets"
+	initiate_chat_message = "TARGET ACQUIRED. MISSILE INBOUND."
+	initiate_screen_message = list(
+		"TARGET ACQUIRED. MISSILE INBOUND.",
+		"LASE SIGHTED. MUNITIONS EN-ROUTE.",
+		"MUNITION DELIVERY IMMINENT, TAKE COVER.",
+	)
 
 /datum/fire_support/custom/wombat_missile/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 180, 40, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("F-99 Wombat ASGM-4 missile run"))
@@ -1197,6 +1224,18 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/wombat_flyover.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/wombat_missile.ogg'
 	warning_chat_message = "WOMBAT"
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_INCENDIARY
+	cost = 3
+
+	icon_state = "incend_rockets"
+	initiate_chat_message = "TARGET ACQUIRED. INCENDIARY INBOUND."
+	initiate_screen_message = list(
+		"TARGET ACQUIRED. INCENDIARY INBOUND.",
+		"LASE SIGHTED. MUNITIONS EN-ROUTE.",
+		"MUNITION DELIVERY IMMINENT, TAKE COVER.",
+	)
 
 /datum/fire_support/custom/wombat_incendiary_missile/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 100, 50, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("F-99 Wombat ASGIM-5 missile run"))
@@ -1229,6 +1268,18 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/c712_flyover.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/c712_coilgun.ogg'
 	warning_chat_message = "C712 LONGSWORD"
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_C712_COILGUN
+	cost = 3
+
+	icon_state = "gau"
+	initiate_chat_message = "TARGET ACQUIRED, MUNITIONS INBOUND."
+	initiate_screen_message = list(
+		"Copy on target, firing now.",
+		"Letting her rip.",
+		"All right, keep your heads down!",
+		)
 
 /datum/fire_support/custom/c712_coilgun/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 80, 40, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("C712 Longsword Coilgun"))
@@ -1244,6 +1295,18 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/c712_flyover.ogg'
 	start_sound = null
 	warning_chat_message = "C712 LONGSWORD"
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_C712_CLUSTER
+	cost = 4
+
+	icon_state = "rockets"
+	initiate_chat_message = "TARGET ACQUIRED, MUNITIONS INBOUND."
+	initiate_screen_message = list(
+		"Eyes on, bomb away.",
+		"Roger, ground-shaker dropping now.",
+		"Watch out for the shrapnel!",
+		)
 
 /datum/fire_support/custom/c712_cluster/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 90, 90, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("C712 Cluster Bomb"))
@@ -1263,6 +1326,19 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/c712_flyover.ogg'
 	start_sound = 'sound/weapons/halo/fire_support/c712_missile.ogg'
 	warning_chat_message = "C712 LONGSWORD"
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_C712_MISSILE
+	cost = 4
+
+	icon_state = "missile"
+	initiate_chat_message = "TARGET ACQUIRED, MUNITIONS INBOUND."
+	initiate_screen_message = list(
+		"TGP on lase, one out.",
+		"Hope that target's worth it, sending one.",
+		"One big boom, on the way.",
+		"Missile inbound, keep your heads down.",
+		)
 
 /datum/fire_support/custom/c712_missile/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 400, 75, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("C712 Missile Strike"))
@@ -1294,6 +1370,19 @@
 	start_sound = 'sound/weapons/halo/fire_support/c712_missile.ogg'
 	warning_chat_message = "C709 LONGSWORD"
 	warning_range = 35
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_C709_MISSILE
+	cost = 5
+
+	icon_state = "missile"
+	initiate_chat_message = "TARGET ACQUIRED, HEAVY MUNITIONS INBOUND."
+	initiate_screen_message = list(
+		"TGP on lase, one out.",
+		"Hope that target's worth it, sending one.",
+		"One big boom, on the way.",
+		"Missile inbound, keep your heads down.",
+		)
 
 /datum/fire_support/custom/c709_missile/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/explosive/ammo = new()
@@ -1311,6 +1400,19 @@
 	start_sound = 'sound/weapons/halo/fire_support/c712_missile.ogg'
 	warning_chat_message = "C709 LONGSWORD"
 	warning_range = 35
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_C709_CLUSTER
+	cost = 5
+
+	icon_state = "rockets"
+	initiate_chat_message = "TARGET ACQUIRED, HEAVY MUNITIONS INBOUND."
+	initiate_screen_message = list(
+		"Eyes on, bombs away.",
+		"Roger, ground-shaker dropping now.",
+		"Watch out for the shrapnel!",
+		"Copy target, suggest you get clear of the blast.",
+		)
 
 /datum/fire_support/custom/c709_cluster/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/cluster/ammo = new()
@@ -1328,6 +1430,19 @@
 	start_sound = 'sound/weapons/halo/fire_support/c712_missile.ogg'
 	warning_chat_message = "C709 LONGSWORD"
 	warning_range = 35
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_CAS_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_C709_INCENDIARY
+	cost = 5
+
+	icon_state = "napalm_missile"
+	initiate_chat_message = "TARGET ACQUIRED, HEAVY MUNITIONS INBOUND."
+	initiate_screen_message = list(
+		"TGP on lase, one firecracker out.",
+		"Hope that target's worth it, sending a hot one.",
+		"One spicy boom, on the way.",
+		"Missile inbound, keep your heads down.",
+		)
 
 /datum/fire_support/custom/c709_incendiary/do_impact(turf/target_turf)
 	var/obj/structure/ob_ammo/warhead/incendiary/ammo = new()
@@ -1400,6 +1515,19 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/frigate_mac_in_atmos.ogg'
 	start_sound = null
 
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_ORBITAL_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_MAC_ATMOS
+	cost = 6
+
+	icon_state = "he_ob"
+	initiate_chat_message = "TARGET ACQUIRED, ORBITAL MUNITION INBOUND."
+	initiate_screen_message = list(
+		"MAC target acquired, firing now.",
+		"Acquiring firing solution, suggest you take cover.",
+		"Orbital munition inbound, clear the site!",
+		)
+
 /datum/fire_support/custom/coilgun_fire
 	name = "Coilguns"
 	scatter_range = 10
@@ -1410,6 +1538,19 @@
 	initiate_sound = 'sound/weapons/halo/fire_support/frigate_gunfire.ogg'
 	warning_chat_message = "COILGUN BARRAGE"
 	warning_range = 35
+
+	faction = FACTION_UNSC
+	fire_support_firer = FIRESUPPORT_ORBITAL_UNSC
+	fire_support_type = FIRESUPPORT_TYPE_COILGUNS
+	cost = 4
+
+	icon_state = "he_mortar"
+	initiate_chat_message = "TARGET ACQUIRED, ORBITAL MUNITION INBOUND."
+	initiate_screen_message = list(
+		"Positive on target, guns spooling now.",
+		"Find some cover, it's about to get loud down there!",
+		"Copy, engaging target lase.",
+		)
 
 /datum/fire_support/custom/coilgun_fire/do_impact(turf/target_turf)
 	cell_explosion(target_turf, 80, 20, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, create_cause_data("Coilgun Battery"))

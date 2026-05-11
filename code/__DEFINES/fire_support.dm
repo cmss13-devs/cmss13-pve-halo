@@ -11,6 +11,9 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 #define FIRESUPPORT_CAS_UPP "cas_upp"
 #define FIRESUPPORT_ARTY_UPP "artillery_upp"
 #define FIRESUPPORT_ORBITAL_UPP "orbital_upp"
+#define FIRESUPPORT_CAS_UNSC "cas_unsc"
+#define FIRESUPPORT_ARTY_UNSC "artillery_unsc"
+#define FIRESUPPORT_ORBITAL_UNSC "orbital_unsc"
 
 ///GAU gun run
 #define FIRESUPPORT_TYPE_GUN "gun"

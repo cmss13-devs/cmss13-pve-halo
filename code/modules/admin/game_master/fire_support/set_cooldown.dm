@@ -9,7 +9,7 @@
 		to_chat(usr, SPAN_WARNING("A mode hasn't been selected yet!"))
 		return
 
-	var/list/selectable = list(FIRESUPPORT_ARTY, FIRESUPPORT_CAS, FIRESUPPORT_ORBITAL, FIRESUPPORT_ARTY_UPP, FIRESUPPORT_CAS_UPP, FIRESUPPORT_ORBITAL_UPP)
+	var/list/selectable = list(FIRESUPPORT_ARTY, FIRESUPPORT_CAS, FIRESUPPORT_ORBITAL, FIRESUPPORT_ARTY_UPP, FIRESUPPORT_CAS_UPP, FIRESUPPORT_ORBITAL_UPP, FIRESUPPORT_CAS_UNSC, FIRESUPPORT_ARTY_UNSC, FIRESUPPORT_ORBITAL_UNSC)
 	var/fire_support_changed = tgui_input_list(src, "Choose fire support cooldown to change.", "Cooldown", selectable)
 	if(!fire_support_changed)
 		return
