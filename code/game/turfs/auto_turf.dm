@@ -361,7 +361,7 @@
 	icon = 'icons/turf/floors/auto_forest_irvine.dmi'
 	icon_state = "grass_2"
 	icon_prefix = "grass"
-	layer_name = list("ground","lush thick grass")
+	layer_name = list("ground","lush thick grass", "lush forest grass")
 	desc = "grass, dirt, mud, and other assorted high moisture cave flooring."
 
 /turf/open/auto_turf/irvine_grass/insert_self_into_baseturfs()
