@@ -1940,7 +1940,7 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/sniper/halo(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/mag/sniper(new_human), WEAR_ACCESSORY)
 
-/datum/equipment_preset/proc/add_sniper_package_alt(mob/living/carbon/human/new_human) // hAI can't pull from webbing to reload, so they need a belt
+/datum/equipment_preset/proc/add_sniper_package_belt(mob/living/carbon/human/new_human) // hAI can't pull from webbing to reload, so they need a belt
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/sniper/halo(new_human), WEAR_BACK)

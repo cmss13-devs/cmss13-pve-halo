@@ -320,7 +320,7 @@
 
 /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper/load_gear(mob/living/carbon/human/new_human)
 	add_marine_basics(new_human)
-	add_sniper_package_alt(new_human)
+	add_sniper_package_belt(new_human)
 	add_spec_ai_gear(new_human)
 
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
@@ -562,7 +562,7 @@
 
 /datum/equipment_preset/unsc/spec/odst/equipped_sniper/ai_sniper/load_gear(mob/living/carbon/human/new_human)
 	add_odst_basics(new_human)
-	add_sniper_package_alt(new_human)
+	add_sniper_package_belt(new_human)
 	add_spec_ai_gear(new_human)
 
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
@@ -778,6 +778,7 @@
 /datum/equipment_preset/proc/add_medic_gear(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health(new_human), WEAR_EYES)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
