@@ -1515,6 +1515,7 @@
 #include "code\game\turfs\closed.dm"
 #include "code\game\turfs\floor.dm"
 #include "code\game\turfs\floor_types.dm"
+#include "code\game\turfs\irvine_grass.dm"
 #include "code\game\turfs\kutjevo.dm"
 #include "code\game\turfs\light.dm"
 #include "code\game\turfs\open.dm"

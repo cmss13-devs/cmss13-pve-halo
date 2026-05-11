@@ -364,6 +364,9 @@
 	layer_name = list("ground","lush thick grass")
 	desc = "grass, dirt, mud, and other assorted high moisture cave flooring."
 
+/turf/open/auto_turf/irvine_grass/get_dirt_type()
+	return DIRT_TYPE_IRVINE_GRASS
+
 /turf/open/auto_turf/irvine_grass/insert_self_into_baseturfs()
 	baseturfs += /turf/open/auto_turf/irvine_grass/layer0
 
