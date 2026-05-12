@@ -239,6 +239,44 @@
 	contents_number = 4
 	drop_on_spawn = TRUE
 
+// Mixed Ammo Drops
+
+/obj/structure/closet/ordnance_canister/dropping/ammo_mix/basic
+	name = parent_type::name + " (Basic Mixed Ammo)"
+	drop_on_spawn = TRUE
+
+/obj/structure/closet/ordnance_canister/dropping/ammo_mix/basic/Initialize() // We need multiple paths and the system doesn't support that and I'm too lazy to make it do that for one thing.
+	. = ..()
+	new /obj/item/ammo_box/magazine/unsc/ma5b(src)
+	new /obj/item/ammo_box/magazine/unsc/ma5c(src)
+	new /obj/item/ammo_box/magazine/unsc/br55(src)
+	new /obj/item/ammo_box/magazine/unsc/small/m6c(src)
+
+/obj/structure/closet/ordnance_canister/dropping/ammo_mix/spec
+	name = parent_type::name + " (Specialist Mixed Ammo)"
+	drop_on_spawn = TRUE
+
+/obj/structure/closet/ordnance_canister/dropping/ammo_mix/spec/Initialize() // well maybe since i'm doing it a few times it should be done but
+	. = ..()
+	new /obj/item/ammo_magazine/spnkr(src)
+	new /obj/item/ammo_magazine/spnkr(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+
+/obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst
+	name = parent_type::name + " (ODST Mixed Ammo)"
+	drop_on_spawn = TRUE
+
+/obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst/Initialize() // I couldn't be arsed to figure it out, sorry
+	. = ..()
+	new /obj/item/ammo_box/magazine/unsc/ma5b/shredder(src)
+	new /obj/item/ammo_box/magazine/unsc/ma5c/shredder(src)
+	new /obj/item/ammo_box/magazine/unsc/br55/extended(src)
+	new /obj/item/ammo_box/magazine/unsc/small/m6c/socom(src)
+	new /obj/item/ammo_box/magazine/misc/unsc/m7_ammo(src)
+
 // Misc. Supplies
 
 /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades

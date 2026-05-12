@@ -11,7 +11,9 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 #define FIRESUPPORT_CAS_UPP "cas_upp"
 #define FIRESUPPORT_ARTY_UPP "artillery_upp"
 #define FIRESUPPORT_ORBITAL_UPP "orbital_upp"
-#define FIRESUPPORT_CAS_UNSC "cas_unsc"
+#define FIRESUPPORT_CAS_WOMBAT "cas_wombat"
+#define FIRESUPPORT_CAS_C712 "cas_c712"
+#define FIRESUPPORT_CAS_C709 "cas_c709"
 #define FIRESUPPORT_ARTY_UNSC "artillery_unsc"
 #define FIRESUPPORT_ORBITAL_UNSC "orbital_unsc"
 
@@ -115,11 +117,23 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 #define FIRESUPPORT_TYPE_WOMBAT_GAU "wombat_gau"
 #define FIRESUPPORT_TYPE_WOMBAT_MISSILE "wombat_missile"
 #define FIRESUPPORT_TYPE_WOMBAT_INCENDIARY "wombat_incendiary"
+#define FIRESUPPORT_TYPE_WOMBAT_GAU_CALL_IN "wombat_gau_call_in"
+#define FIRESUPPORT_TYPE_WOMBAT_MISSILE_CALL_IN "wombat_missile_call_in"
+#define FIRESUPPORT_TYPE_WOMBAT_INCENDIARY_CALL_IN "wombat_incendiary_call_in"
+#define FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP "wombat_supply_drop"
+#define FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC "wombat_supply_drop_spec"
+#define FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_ODST "wombat_supply_drop_odst"
+#define FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES "wombat_supply_drop_grenades"
+#define FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES "wombat_supply_drop_launchable_grenades"
+#define FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_MEDICAL "wombat_supply_drop_medical"
 #define FIRESUPPORT_TYPE_WOMBAT_FLYBY "wombat_flyby"
 
 #define FIRESUPPORT_TYPE_C712_COILGUN "c712_coilgun"
 #define FIRESUPPORT_TYPE_C712_CLUSTER "c712_cluster"
 #define FIRESUPPORT_TYPE_C712_MISSILE "c712_missile"
+#define FIRESUPPORT_TYPE_C712_COILGUN_CALL_IN "c712_coilgun_call_in"
+#define FIRESUPPORT_TYPE_C712_CLUSTER_CALL_IN "c712_cluster_call_in"
+#define FIRESUPPORT_TYPE_C712_MISSILE_CALL_IN "c712_missile_call_in"
 #define FIRESUPPORT_TYPE_C712_FLYBY "c712_flyby"
 
 #define FIRESUPPORT_TYPE_C709_CLUSTER "c709_cluster_bomb"
@@ -137,6 +151,7 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 
 #define FIRESUPPORT_TYPE_MAC "mac"
 #define FIRESUPPORT_TYPE_MAC_ATMOS "mac_atmospheric"
+#define FIRESUPPORT_TYPE_MAC_ATMOS_CALL_IN "mac_atmospheric_call_in"
 #define FIRESUPPORT_TYPE_COILGUNS "coilguns"
 
 ///Assoc list of firesupport types
@@ -192,26 +207,39 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support/custom/glassing_beam/fast,
 	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support/custom/glassing_beam/weak,
 	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support/custom/glassing_beam/weak/instant,
-	FIRESUPPORT_TYPE_WOMBAT_GAU = new /datum/fire_support/custom/wombat_gau,
-	FIRESUPPORT_TYPE_WOMBAT_MISSILE = new /datum/fire_support/custom/wombat_missile,
-	FIRESUPPORT_TYPE_WOMBAT_INCENDIARY = new /datum/fire_support/custom/wombat_incendiary_missile,
-	FIRESUPPORT_TYPE_WOMBAT_FLYBY = new /datum/fire_support/custom/wombat_flyby,
-	FIRESUPPORT_TYPE_C712_COILGUN = new /datum/fire_support/custom/c712_coilgun,
-	FIRESUPPORT_TYPE_C712_CLUSTER = new /datum/fire_support/custom/c712_cluster,
-	FIRESUPPORT_TYPE_C712_MISSILE = new /datum/fire_support/custom/c712_missile,
-	FIRESUPPORT_TYPE_C712_FLYBY = new /datum/fire_support/custom/c712_flyby,
-	FIRESUPPORT_TYPE_C709_CLUSTER = new /datum/fire_support/custom/c709_cluster,
-	FIRESUPPORT_TYPE_C709_MISSILE = new /datum/fire_support/custom/c709_missile,
-	FIRESUPPORT_TYPE_C709_INCENDIARY = new /datum/fire_support/custom/c709_incendiary,
-	FIRESUPPORT_TYPE_C709_FLYBY = new /datum/fire_support/custom/c709_flyby,
-	FIRESUPPORT_TYPE_MAC = new /datum/fire_support/custom/mac_gun,
-	FIRESUPPORT_TYPE_MAC_ATMOS = new /datum/fire_support/custom/mac_gun/in_atmosphere,
-	FIRESUPPORT_TYPE_COILGUNS = new /datum/fire_support/custom/coilgun_fire,
-	FIRESUPPORT_TYPE_PELICAN_HOVER = new /datum/fire_support/custom/pelican_hover,
-	FIRESUPPORT_TYPE_PELICAN_HOVER_ARMED = new /datum/fire_support/custom/pelican_hover/armed,
-	FIRESUPPORT_TYPE_PELICAN_HOVER_LIGHT = new /datum/fire_support/custom/pelican_hover/light,
-	FIRESUPPORT_TYPE_PHANTOM_HOVER = new /datum/fire_support/custom/phantom_hover,
-	FIRESUPPORT_TYPE_PHANTOM_HOVER_ARMED = new /datum/fire_support/custom/phantom_hover/armed,
-	FIRESUPPORT_TYPE_SPIRIT_HOVER = new /datum/fire_support/custom/spirit_hover,
-	FIRESUPPORT_TYPE_SPIRIT_HOVER_ARMED = new /datum/fire_support/custom/spirit_hover/armed,
+	FIRESUPPORT_TYPE_WOMBAT_GAU = new /datum/fire_support/custom/wombat/gau,
+	FIRESUPPORT_TYPE_WOMBAT_MISSILE = new /datum/fire_support/custom/wombat/missile,
+	FIRESUPPORT_TYPE_WOMBAT_INCENDIARY = new /datum/fire_support/custom/wombat/incendiary_missile,
+	FIRESUPPORT_TYPE_WOMBAT_GAU_CALL_IN = new /datum/fire_support/custom/wombat/gau/call_in,
+	FIRESUPPORT_TYPE_WOMBAT_MISSILE_CALL_IN = new /datum/fire_support/custom/wombat/missile/call_in,
+	FIRESUPPORT_TYPE_WOMBAT_INCENDIARY_CALL_IN = new /datum/fire_support/custom/wombat/incendiary_missile/call_in,
+	FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP = new /datum/fire_support/custom/wombat/supply_drop,
+	FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC = new /datum/fire_support/custom/wombat/supply_drop/spec,
+	FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_ODST = new /datum/fire_support/custom/wombat/supply_drop/odst,
+	FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES = new /datum/fire_support/custom/wombat/supply_drop/grenades,
+	FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES = new /datum/fire_support/custom/wombat/supply_drop/launchable_grenades,
+	FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_MEDICAL = new /datum/fire_support/custom/wombat/supply_drop/medical_resupply,
+	FIRESUPPORT_TYPE_WOMBAT_FLYBY = new /datum/fire_support/custom/wombat/flyby,
+	FIRESUPPORT_TYPE_C712_COILGUN = new /datum/fire_support/custom/c712/coilgun,
+	FIRESUPPORT_TYPE_C712_CLUSTER = new /datum/fire_support/custom/c712/cluster,
+	FIRESUPPORT_TYPE_C712_MISSILE = new /datum/fire_support/custom/c712/missile,
+	FIRESUPPORT_TYPE_C712_COILGUN_CALL_IN = new /datum/fire_support/custom/c712/coilgun/call_in,
+	FIRESUPPORT_TYPE_C712_CLUSTER_CALL_IN = new /datum/fire_support/custom/c712/cluster/call_in,
+	FIRESUPPORT_TYPE_C712_MISSILE_CALL_IN = new /datum/fire_support/custom/c712/missile/call_in,
+	FIRESUPPORT_TYPE_C712_FLYBY = new /datum/fire_support/custom/c712/flyby,
+	FIRESUPPORT_TYPE_C709_CLUSTER = new /datum/fire_support/custom/c709/cluster,
+	FIRESUPPORT_TYPE_C709_MISSILE = new /datum/fire_support/custom/c709/missile,
+	FIRESUPPORT_TYPE_C709_INCENDIARY = new /datum/fire_support/custom/c709/incendiary,
+	FIRESUPPORT_TYPE_C709_FLYBY = new /datum/fire_support/custom/c709/flyby,
+	FIRESUPPORT_TYPE_MAC = new /datum/fire_support/custom/ob/mac_gun,
+	FIRESUPPORT_TYPE_MAC_ATMOS = new /datum/fire_support/custom/ob/mac_gun/in_atmosphere,
+	FIRESUPPORT_TYPE_MAC_ATMOS_CALL_IN = new /datum/fire_support/custom/ob/mac_gun/in_atmosphere/call_in,
+	FIRESUPPORT_TYPE_COILGUNS = new /datum/fire_support/custom/ob/coilgun_fire,
+	FIRESUPPORT_TYPE_PELICAN_HOVER = new /datum/fire_support/custom/pelican/hover,
+	FIRESUPPORT_TYPE_PELICAN_HOVER_ARMED = new /datum/fire_support/custom/pelican/hover/armed,
+	FIRESUPPORT_TYPE_PELICAN_HOVER_LIGHT = new /datum/fire_support/custom/pelican/hover/light,
+	FIRESUPPORT_TYPE_PHANTOM_HOVER = new /datum/fire_support/custom/phantom/hover,
+	FIRESUPPORT_TYPE_PHANTOM_HOVER_ARMED = new /datum/fire_support/custom/phantom/hover/armed,
+	FIRESUPPORT_TYPE_SPIRIT_HOVER = new /datum/fire_support/custom/spirit/hover,
+	FIRESUPPORT_TYPE_SPIRIT_HOVER_ARMED = new /datum/fire_support/custom/spirit/hover/armed,
 	))
