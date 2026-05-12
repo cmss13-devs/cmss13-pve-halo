@@ -2022,8 +2022,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	cost = 1
 
 // HALO PVE EDIT - START - ITEM ADDITION
-/datum/gear/misc/tacpad
-	display_name = "MC3 Individual Data/Net Terminal"
-	path = /obj/item/tacmap_map
+/datum/gear/misc/datapad
+	display_name = "SC2 Personal Data-Pad"
+	path = /obj/item/datapad
 	cost = 5
 // HALO PVE EDIT - END
