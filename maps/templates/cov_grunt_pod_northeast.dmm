@@ -1,0 +1,139 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/covenant,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"c" = (
+/turf/open/floor/covenant/smooth_plating/sides/southwest,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"f" = (
+/turf/closed/wall/covenant,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"i" = (
+/turf/closed/wall/covenant/lights,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"x" = (
+/turf/open/floor/covenant/paneling/rotated,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"B" = (
+/turf/open/floor/covenant/smooth_plating/sides/northeast,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"L" = (
+/turf/open/floor/covenant/paneling,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"Y" = (
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+Y
+Y
+Y
+f
+f
+f
+f
+f
+Y
+"}
+(2,1,1) = {"
+Y
+Y
+f
+f
+x
+x
+x
+f
+f
+"}
+(3,1,1) = {"
+Y
+Y
+f
+L
+a
+a
+a
+L
+f
+"}
+(4,1,1) = {"
+Y
+f
+f
+L
+a
+i
+a
+L
+f
+"}
+(5,1,1) = {"
+Y
+f
+i
+c
+a
+a
+a
+L
+f
+"}
+(6,1,1) = {"
+f
+f
+a
+B
+c
+x
+x
+f
+f
+"}
+(7,1,1) = {"
+i
+c
+a
+a
+i
+f
+f
+f
+Y
+"}
+(8,1,1) = {"
+Y
+B
+c
+f
+f
+f
+Y
+Y
+Y
+"}
+(9,1,1) = {"
+Y
+Y
+i
+f
+Y
+Y
+Y
+Y
+Y
+"}

@@ -1,0 +1,340 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/covenant/smooth_plating/sides/southwest,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"b" = (
+/turf/open/floor/covenant/smooth_plating/sides/northeast,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"c" = (
+/turf/open/floor/covenant/paneling,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"g" = (
+/turf/closed/wall/covenant/lights/brighter,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"i" = (
+/turf/open/floor/covenant/smooth_plating/sides/southeast,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"j" = (
+/turf/closed/wall/covenant/lights/hull/brighter,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"t" = (
+/turf/closed/wall/covenant/hull,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"u" = (
+/turf/open/floor/covenant,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"w" = (
+/turf/open/floor/covenant/paneling/rotated,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"E" = (
+/turf/open/floor/covenant/lane/vertical,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"F" = (
+/turf/closed/wall/covenant/lights/hull,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"Q" = (
+/turf/open/floor/covenant/smooth_plating/sides/northwest,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"X" = (
+/turf/open/floor/covenant/lane/horizontal,
+/area/event/metal/dynamic{
+	base_lighting_alpha = 0
+	})
+"Z" = (
+/turf/template_noop,
+/area/template_noop)
+
+(1,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+t
+j
+j
+F
+Z
+"}
+(2,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Q
+E
+E
+j
+t
+F
+"}
+(3,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Q
+E
+i
+u
+u
+j
+j
+j
+"}
+(4,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Q
+E
+i
+u
+u
+u
+u
+u
+X
+t
+"}
+(5,1,1) = {"
+Z
+Z
+t
+t
+Q
+E
+i
+u
+u
+u
+u
+u
+u
+u
+b
+a
+"}
+(6,1,1) = {"
+Z
+t
+t
+E
+i
+u
+u
+u
+t
+w
+t
+u
+u
+u
+u
+X
+"}
+(7,1,1) = {"
+F
+t
+j
+j
+u
+u
+u
+t
+t
+g
+t
+t
+u
+u
+u
+X
+"}
+(8,1,1) = {"
+F
+t
+j
+j
+u
+u
+u
+c
+g
+g
+g
+c
+u
+u
+u
+X
+"}
+(9,1,1) = {"
+F
+t
+j
+j
+u
+u
+u
+t
+t
+g
+t
+t
+u
+u
+u
+X
+"}
+(10,1,1) = {"
+Z
+t
+t
+E
+a
+u
+u
+u
+t
+w
+t
+u
+u
+u
+u
+X
+"}
+(11,1,1) = {"
+Z
+Z
+t
+t
+b
+E
+a
+u
+u
+u
+u
+u
+u
+u
+Q
+i
+"}
+(12,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+b
+E
+a
+u
+u
+u
+u
+u
+X
+t
+"}
+(13,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+b
+E
+a
+u
+u
+j
+j
+t
+"}
+(14,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+b
+E
+E
+j
+t
+F
+"}
+(15,1,1) = {"
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+Z
+t
+t
+t
+F
+Z
+"}

@@ -1,0 +1,19 @@
+"a" = (/turf/open/floor/covenant/lane/horizontal,/area/dark_was_the_night/pod_bay)
+"h" = (/turf/open/floor/covenant/endcap/west,/area/dark_was_the_night/pod_bay)
+"j" = (/turf/open/floor/covenant/lane/horizontal,/area/space)
+"r" = (/turf/closed/wall/covenant/lights/hull/brighter,/area/dark_was_the_night/pod_bay)
+"E" = (/turf/open/floor/covenant/lane/vertical,/area/dark_was_the_night/pod_bay)
+"M" = (/turf/closed/wall/covenant/lights/hull/brighter,/area/space)
+"P" = (/turf/closed/wall/covenant/hull,/area/space)
+"Q" = (/turf/open/floor/covenant/paneling/rotated,/area/space)
+"R" = (/turf/open/floor/covenant/endcap/east,/area/space)
+"W" = (/turf/open/floor/covenant/paneling/rotated,/area/dark_was_the_night/pod_bay)
+"Y" = (/turf/closed/wall/covenant/hull,/area/dark_was_the_night/pod_bay)
+
+(1,1,1) = {"
+YYYrYYrPPP
+YhaaaaajRP
+EWWWWWWQQM
+YhaaaaajRP
+YYYrYYrPPP
+"}
