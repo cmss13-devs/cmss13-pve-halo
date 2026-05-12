@@ -284,8 +284,8 @@
 	name = "covenant plasma charge"
 	desc = "An alien explosive device. Who knows what it might do."
 	icon = 'icons/obj/items/weapons/covenant_mines.dmi'
-	icon_state = "plasmacharge"
-	overlay_image = "plasmacharge_active"
+	icon_state = "covplasma-charge"
+	overlay_image = "covplasmacharge-active"
 	w_class = SIZE_SMALL
 	angle = 55
 	timer = 5
