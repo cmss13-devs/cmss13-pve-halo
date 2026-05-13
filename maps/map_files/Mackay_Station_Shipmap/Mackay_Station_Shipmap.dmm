@@ -2584,7 +2584,6 @@
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
-/obj/item/tacmap_map,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "bIJ" = (
@@ -14011,10 +14010,6 @@
 	pixel_x = 0;
 	pixel_y = 7
 	},
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -5;
-	pixel_y = 12
-	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "jPw" = (
@@ -19157,7 +19152,6 @@
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
-/obj/item/tacmap_map,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "nod" = (

@@ -4730,7 +4730,6 @@
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 4
 	},
-/obj/item/tacmap_map,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "Uy" = (
