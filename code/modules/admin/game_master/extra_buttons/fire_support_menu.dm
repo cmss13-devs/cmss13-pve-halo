@@ -1314,7 +1314,21 @@
 	var/enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/basic
 
 /datum/fire_support/custom/wombat/supply_drop/select_target(turf/target_turf, mob/user)
-	new enroute_tube(target_turf)
+	start_sound = 'sound/items/fulton.ogg'
+	var/obj/delivered_tube
+	delivered_tube = new enroute_tube(target_turf)
+	delivered_tube.pixel_z = 100
+	delivered_tube.overlays += image('icons/obj/structures/droppod_32x64.dmi', delivered_tube, "chute_cables_static")
+	var/image/I = image('icons/obj/structures/droppod_64x64.dmi', delivered_tube, "chute_animated")
+	I.pixel_x -= 16
+	I.pixel_y += 16
+	delivered_tube.overlays += I
+	delivered_tube.density = FALSE
+	animate(delivered_tube, pixel_z = 0, time = 1.5 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(delivered_tube_land), target_turf, delivered_tube), 1.5 SECONDS)
+
+/datum/fire_support/custom/wombat/supply_drop/proc/delivered_tube_land(turf/target_turf, obj/delivered_tube)
+	delivered_tube.overlays.Cut()
 
 /datum/fire_support/custom/wombat/supply_drop/spec
 	name = "F-99 Wombat Resupply - Specialist Ammo"
