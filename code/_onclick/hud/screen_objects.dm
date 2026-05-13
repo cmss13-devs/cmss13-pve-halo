@@ -479,9 +479,9 @@
 	if(user.assigned_squad)
 		user.assigned_squad.tgui_interact(user)
 
-/atom/movable/screen/motion_sensor
-	name = "motion sensor"
-	icon = 'icons/mob/hud/motion_sensor.dmi'
+/atom/movable/screen/motion_tracker
+	name = "motion tracker"
+	icon = 'icons/mob/hud/motion_tracker.dmi'
 	icon_state = "base"
 	alpha = 0 // Hidden by default
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
@@ -498,24 +498,24 @@
 	/// Reference to the mob we're tracking. We use this instead of hud.mymob because that's not implemented
 	var/mob/our_mob
 
-/atom/movable/screen/motion_sensor/Initialize(mapload, ...)
+/atom/movable/screen/motion_tracker/Initialize(mapload, ...)
 	. = ..()
 	range_bounds = new()
 	color = "#0080ae"
 
-/atom/movable/screen/motion_sensor/proc/give(mob/new_mob)
+/atom/movable/screen/motion_tracker/proc/give(mob/new_mob)
 	our_mob = new_mob
 	alpha = 255
 	mouse_opacity = MOUSE_OPACITY_ICON
 	START_PROCESSING(SSfastobj, src)
 
-/atom/movable/screen/motion_sensor/proc/remove()
+/atom/movable/screen/motion_tracker/proc/remove()
 	alpha = 0
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	STOP_PROCESSING(SSfastobj, src)
 
-/// Used for changing the IFF/colors of the sensor, i.e. for the covenant
-/atom/movable/screen/motion_sensor/proc/configure(
+/// Used for changing the IFF/colors of the tracker, i.e. for the covenant
+/atom/movable/screen/motion_tracker/proc/configure(
 	iff = FACTION_UNSC,
 	background_color = "#0080ae",
 	friendly_color = "#ddff00",
@@ -526,7 +526,7 @@
 	src.friendly_color = friendly_color
 	src.hostile_color = enemy_color
 
-/atom/movable/screen/motion_sensor/process()
+/atom/movable/screen/motion_tracker/process()
 	if(!our_mob || !our_mob.client)
 		return
 	var/turf/cur_turf = get_turf(our_mob)
@@ -542,37 +542,37 @@
 	for(var/obj/vehicle/multitile/vehicle in GLOB.all_multi_vehicles)
 		if(vehicle.z != cur_turf.z || !range_bounds.contains_atom(vehicle))
 			continue
-		var/image/I = image(icon, src, "blip_vehicle")
+		var/image/image = image(icon, src, "blip_vehicle")
 		if(!vehicle.vehicle_faction)
-			I.color = "#FFFFFF"
+			image.color = "#FFFFFF"
 		else if(vehicle.get_target_lock(iff_signal))
-			I.color = friendly_color
+			image.color = friendly_color
 		else
-			I.color = hostile_color
-		I.alpha = 128
-		I.pixel_x = vehicle.x - cur_turf.x
-		I.pixel_y = vehicle.y - cur_turf.y
-		I.appearance_flags = RESET_COLOR
-		overlays += I
+			image.color = hostile_color
+		image.alpha = 128
+		image.pixel_x = vehicle.x - cur_turf.x
+		image.pixel_y = vehicle.y - cur_turf.y
+		image.appearance_flags = RESET_COLOR
+		overlays += image
 
-	for(var/mob/living/L in ping_candidates)
-		if(!L.x || !L.y || HAS_TRAIT(L, TRAIT_CLOAKED) || L.stat == DEAD)
+	for(var/mob/living/candidate in ping_candidates)
+		if(!candidate.x || !candidate.y || HAS_TRAIT(candidate, TRAIT_CLOAKED) || candidate.stat == DEAD)
 			continue
 		var/blip_state = "blip"
-		if(L.mob_size >= MOB_SIZE_BIG)
+		if(candidate.mob_size >= MOB_SIZE_BIG)
 			blip_state = "blip_large"
-		else if (L.mob_size < MOB_SIZE_HUMAN || L.mob_size == MOB_SIZE_XENO_VERY_SMALL)
+		else if (candidate.mob_size < MOB_SIZE_HUMAN || candidate.mob_size == MOB_SIZE_XENO_VERY_SMALL)
 			blip_state = "blip_small"
 
-		var/image/I = image(icon, src, blip_state)
-		if(L.get_target_lock(iff_signal))
-			I.color = friendly_color
+		var/image/image = image(icon, src, blip_state)
+		if(candidate.get_target_lock(iff_signal))
+			image.color = friendly_color
 		else
-			I.color = hostile_color
-		I.pixel_x = L.x - cur_turf.x + round((L.pixel_x + L.pixel_w) / world.icon_size, 1)
-		I.pixel_y = L.y - cur_turf.y + round((L.pixel_y + L.pixel_z) / world.icon_size, 1)
-		I.appearance_flags = RESET_COLOR
-		overlays += I
+			image.color = hostile_color
+		image.pixel_x = candidate.x - cur_turf.x + round((candidate.pixel_x + candidate.pixel_w) / world.icon_size, 1)
+		image.pixel_y = candidate.y - cur_turf.y + round((candidate.pixel_y + candidate.pixel_z) / world.icon_size, 1)
+		image.appearance_flags = RESET_COLOR
+		overlays += image
 
 /atom/movable/screen/mark_locator
 	name = "mark locator"
