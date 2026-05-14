@@ -22,12 +22,12 @@
 	brute_mod = 0.8
 	slowdown = -0.2
 
-	dodge_pool = 20
-	dodge_pool_max = 20
+	dodge_pool = 20 //Each bullet reduces dodge pool by one btw - Verbs
+	dodge_pool_max = 20 //The max it can regen to
 	dodge_pool_regen = 1
 	dodge_pool_regen_max = 1
 	dodge_pool_regen_restoration = 0.1
-	dp_regen_base_reactivation_time = 20
+	dp_regen_base_reactivation_time = 20 //how much time needs to pass for ourguy to start regenning after he's been shot
 
 	heat_level_1 = 500
 	heat_level_2 = 700
@@ -128,10 +128,7 @@
 
 	dodge_pool = 25
 	dodge_pool_max = 25
-	dodge_pool_regen = 1
-	dodge_pool_regen_max = 1
-	dodge_pool_regen_restoration = 0.1
-	dp_regen_base_reactivation_time = 25
+	dp_regen_base_reactivation_time = 20
 
 	knock_down_reduction = 2
 	stun_reduction = 2
@@ -148,10 +145,7 @@
 
 	dodge_pool = 30
 	dodge_pool_max = 30
-	dodge_pool_regen = 1
-	dodge_pool_regen_max = 1
-	dodge_pool_regen_restoration = 0.1
-	dp_regen_base_reactivation_time = 30
+	dp_regen_base_reactivation_time = 15
 
 	knock_down_reduction = 4
 	stun_reduction = 4
@@ -168,10 +162,7 @@
 
 	dodge_pool = 35
 	dodge_pool_max = 35
-	dodge_pool_regen = 1
-	dodge_pool_regen_max = 1
-	dodge_pool_regen_restoration = 0.1
-	dp_regen_base_reactivation_time = 35
+	dp_regen_base_reactivation_time = 15
 
 	knock_down_reduction = 6
 	stun_reduction = 6
