@@ -105,7 +105,7 @@
 // Halo inserts
 /area/adminlevel/covenant
 	name = "Nanolaminate Structure"
-	icon_state = "purple"
+	icon_state = "cov"
 	requires_power = FALSE
 	ceiling = CEILING_METAL
 
