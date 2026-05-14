@@ -660,51 +660,51 @@
 			if("Pelican (Unarmed)")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PELICAN_HOVER]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 			if("Pelican")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PELICAN_HOVER_LIGHT]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 			if("Pelican - Rocket Pods")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PELICAN_HOVER_ARMED]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 			if("Phantom (Unarmed)")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PHANTOM_HOVER]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 			if("Phantom")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_PHANTOM_HOVER_ARMED]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 			if("Spirit (Unarmed)")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SPIRIT_HOVER]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 			if("Spirit")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SPIRIT_HOVER_ARMED]
 				if(user.dir)
-					selected_mode.initiate_fire_support(target_turf, user.dir)
+					selected_mode.initiate_fire_support(target_turf, user.dir, TRUE)
 				else
-					selected_mode.initiate_fire_support(target_turf, NORTH)
+					selected_mode.initiate_fire_support(target_turf, NORTH, TRUE)
 				return TRUE
 
 			// ================
