@@ -526,6 +526,9 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
+/datum/equipment_preset/unsc/pfc/odst/equipped/load_status(mob/living/carbon/human/new_human)
+	new_human.nutrition = NUTRITION_HIGH
+
 //weapon spec (sniper)
 /datum/equipment_preset/unsc/spec/odst/equipped_sniper
 	name = parent_type::name + " (Sniper, Equipped)"
