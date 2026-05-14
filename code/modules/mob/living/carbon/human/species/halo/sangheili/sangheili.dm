@@ -153,9 +153,9 @@
 	dodge_pool_regen_restoration = 0.1
 	dp_regen_base_reactivation_time = 30
 
-	knock_down_reduction = 2.5
-	stun_reduction = 2.5
-	knock_out_reduction = 2.5
+	knock_down_reduction = 4
+	stun_reduction = 4
+	knock_out_reduction = 4
 
 /datum/species/sangheili/heroic/legendary/mythic
 	name = SPECIES_SANGHEILI_MYTHIC
@@ -173,6 +173,6 @@
 	dodge_pool_regen_restoration = 0.1
 	dp_regen_base_reactivation_time = 35
 
-	knock_down_reduction = 3
-	stun_reduction = 3
-	knock_out_reduction = 3
+	knock_down_reduction = 6
+	stun_reduction = 6
+	knock_out_reduction = 6
