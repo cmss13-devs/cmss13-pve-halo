@@ -16,7 +16,11 @@
 #define MINIMAP_FLAG_XENO_MUTATED (1<<14)
 #define MINIMAP_FLAG_XENO_FORSAKEN (1<<15)
 #define MINIMAP_FLAG_XENO_RENEGADE (1<<16)
-#define MINIMAP_FLAG_ALL (1<<17) - 1
+
+#define MINIMAP_FLAG_UNSC (1<<17)
+#define MINIMAP_FLAG_COVENANT (1<<18)
+
+#define MINIMAP_FLAG_ALL (1<<19) - 1
 
 ///The minimap zoom scale
 #define MINIMAP_SCALE 2
@@ -70,6 +74,8 @@ GLOBAL_LIST_INIT(all_minimap_flags, bitfield2list(MINIMAP_FLAG_ALL))
 #define MINIMAP_SQUAD_UPP "#B22222"
 #define MINIMAP_SQUAD_RMC "#aa740f"
 #define MINIMAP_SQUAD_PMC "#ccffe9"
+
+
 
 #define MINIMAP_ICON_BACKGROUND_CIVILIAN "#7D4820"
 #define MINIMAP_ICON_BACKGROUND_CIC "#3f3f3f"
