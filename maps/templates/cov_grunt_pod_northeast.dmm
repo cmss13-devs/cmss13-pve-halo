@@ -1,39 +1,25 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /turf/open/floor/covenant,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "c" = (
 /turf/open/floor/covenant/smooth_plating/sides/southwest,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "f" = (
 /turf/closed/wall/covenant,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "i" = (
 /turf/closed/wall/covenant/lights,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "x" = (
 /turf/open/floor/covenant/paneling/rotated,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "B" = (
 /turf/open/floor/covenant/smooth_plating/sides/northeast,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "L" = (
 /turf/open/floor/covenant/paneling,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "Y" = (
 /turf/template_noop,
 /area/template_noop)

@@ -1,15 +1,93 @@
-"a" = (/turf/closed/wall/covenant/lights/hull/brighter,/area/dark_was_the_night/pod_bay)
-"f" = (/turf/open/floor/covenant/paneling/rotated,/area/dark_was_the_night/pod_bay)
-"l" = (/turf/open/floor/covenant/lane/horizontal,/area/dark_was_the_night/pod_bay)
-"o" = (/turf/open/floor/covenant/endcap/west,/area/dark_was_the_night/pod_bay)
-"z" = (/turf/open/floor/covenant/lane/vertical,/area/dark_was_the_night/pod_bay)
-"D" = (/turf/closed/wall/covenant/hull,/area/dark_was_the_night/pod_bay)
-"J" = (/turf/open/floor/covenant/endcap/east,/area/dark_was_the_night/pod_bay)
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/covenant/lights/hull/brighter,
+/area/dark_was_the_night/pod_bay)
+"f" = (
+/turf/open/floor/covenant/paneling/rotated,
+/area/dark_was_the_night/pod_bay)
+"l" = (
+/turf/open/floor/covenant/lane/horizontal,
+/area/dark_was_the_night/pod_bay)
+"o" = (
+/turf/open/floor/covenant/endcap/west,
+/area/dark_was_the_night/pod_bay)
+"z" = (
+/turf/open/floor/covenant/lane/vertical,
+/area/dark_was_the_night/pod_bay)
+"D" = (
+/turf/closed/wall/covenant/hull,
+/area/dark_was_the_night/pod_bay)
+"J" = (
+/turf/open/floor/covenant/endcap/east,
+/area/dark_was_the_night/pod_bay)
 
 (1,1,1) = {"
-DDDaDDaDDD
-DollllllJD
-affffffffz
-DollllllJD
-DDDaDDaDDD
+D
+D
+a
+D
+D
+"}
+(2,1,1) = {"
+D
+o
+f
+o
+D
+"}
+(3,1,1) = {"
+D
+l
+f
+l
+D
+"}
+(4,1,1) = {"
+a
+l
+f
+l
+a
+"}
+(5,1,1) = {"
+D
+l
+f
+l
+D
+"}
+(6,1,1) = {"
+D
+l
+f
+l
+D
+"}
+(7,1,1) = {"
+a
+l
+f
+l
+a
+"}
+(8,1,1) = {"
+D
+l
+f
+l
+D
+"}
+(9,1,1) = {"
+D
+J
+f
+J
+D
+"}
+(10,1,1) = {"
+D
+D
+z
+D
+D
 "}

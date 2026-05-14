@@ -4,37 +4,25 @@
 /area/template_noop)
 "f" = (
 /turf/closed/wall/covenant/hull,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "m" = (
 /obj/effect/abstract/ripple/shadow,
 /obj/effect/abstract/ripple/shadow,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "u" = (
 /turf/closed/wall/covenant/lights/brighter,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "v" = (
 /turf/open/floor/covenant/paneling,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "E" = (
 /turf/open/floor/covenant/paneling/rotated,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "L" = (
 /obj/effect/abstract/ripple/shadow,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/adminlevel/covenant/no_baselight)
 "Q" = (
 /turf/closed/wall/covenant/hull,
 /area/template_noop)
