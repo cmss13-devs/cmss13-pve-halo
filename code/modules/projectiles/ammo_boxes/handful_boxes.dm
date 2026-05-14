@@ -172,7 +172,24 @@
 /obj/item/ammo_box/magazine/shotgun/unsc/beanbag/empty
 	empty = TRUE
 
-/obj/item/ammo_box/magazine/lever_action/unsc
+/obj/item/ammo_box/magazine/lever_action/unsc/sniper/update_icon()
+	if(overlays)
+		overlays.Cut()
+	var/obj/item/ammo_magazine/AM = locate(/obj/item/ammo_magazine) in contents
+	if(AM.current_rounds == num_of_magazines) //showing bullets inside box
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]")
+	else if(AM.current_rounds > (num_of_magazines/2))
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]_3")
+	else if(AM.current_rounds > (num_of_magazines/4))
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]_2")
+	else if(AM.current_rounds > 0)
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]_1")
+	if(!icon_state_deployed) // The lid is on the sprite already.
+		overlays += image(icon, icon_state = "[icon_state]_lid") //adding lid
+	if(overlay_gun_type)
+		overlays += image(text_markings_icon, icon_state = "text[overlay_gun_type]") //adding text
+
+/obj/item/ammo_box/magazine/lever_action/unsc/sniper
 	name = "\improper UNSC anti-materiel rounds box (14.5x114mm x 16)"
 	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
 	icon_state = "base_ammoshell_srs99"
@@ -187,7 +204,7 @@
 	handfuls = TRUE
 	handful = "rounds"
 
-/obj/item/ammo_box/magazine/lever_action/empty
+/obj/item/ammo_box/magazine/lever_action/unsc/sniper/empty
 	empty = TRUE
 
 	// HALO PVE EDIT - FINISH

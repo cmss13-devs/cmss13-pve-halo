@@ -11,19 +11,6 @@
 	handful_state = "vulture_bullet"
 	transfer_handful_amount = 4
 
-/*
-/obj/item/ammo_magazine/handful/lever_action/halo_sniper
-	name = "handful of 14.5x114mm APFSDS rounds"
-	desc = "A handful of 14.5x114mm armor-piercing, fin-stabilised, discarding sabot rounds."
-	icon_state = "vulture_bullet_4"
-	default_ammo = /datum/ammo/bullet/rifle/srs99
-	caliber = "14.5x114mm"
-	max_rounds = 4
-	current_rounds = 4
-	gun_type = /obj/item/weapon/gun/rifle/sniper/halo
-	handful_state = "vulture_bullet"
-	transfer_handful_amount = 4
-*/
 // rockets
 
 /obj/item/ammo_magazine/spnkr
