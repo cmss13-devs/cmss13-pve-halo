@@ -454,7 +454,7 @@
 			if("Wraith Plasma")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_WRAITH_PLASMA]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -462,7 +462,7 @@
 			if("Banshee Fuel Rod")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_BANSHEE_FUEL_ROD]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -470,21 +470,21 @@
 			if("Banshee Strafe")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_BANSHEE_STRAFE]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
 			if("Banshee Flyby")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_BANSHEE_FLYBY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				return TRUE
 
 			if("Seraph Fuel Rod")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SERAPH_FUEL_ROD]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -492,28 +492,28 @@
 			if("Seraph Strafe")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SERAPH_STRAFE]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
 			if("Seraph Flyby")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SERAPH_FLYBY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				return TRUE
 
 			if("Glassing Beam")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 			if("Glassing Fast")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM_FAST]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -521,7 +521,7 @@
 			if("Glassing Weak Fast")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -529,7 +529,7 @@
 			if("Glassing Weak Instant")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -538,7 +538,7 @@
 			if("Wombat GAU")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_WOMBAT_GAU]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -546,7 +546,7 @@
 			if("Wombat Missile")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_WOMBAT_MISSILE]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -554,14 +554,14 @@
 			if("Wombat Inc. Missile")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_WOMBAT_INCENDIARY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
 			if("Wombat Flyby")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_WOMBAT_FLYBY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				return TRUE
 
@@ -570,7 +570,7 @@
 			if("C712 Coilgun")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C712_COILGUN]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -578,7 +578,7 @@
 			if("C712 Missile")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C712_MISSILE]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -586,14 +586,14 @@
 			if("C712 Cluster")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C712_CLUSTER]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
 			if("C712 Flyby")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C712_FLYBY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				return TRUE
 
@@ -602,7 +602,7 @@
 			if("C709 Cluster Bomb")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_CLUSTER]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -610,7 +610,7 @@
 			if("C709 Heavy Missile")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_MISSILE]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -618,14 +618,14 @@
 			if("C709 Inc. Bomb")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_INCENDIARY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
 			if("C709 Flyby")
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_C709_FLYBY]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				return TRUE
 
@@ -634,7 +634,7 @@
 			if("MAC")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_MAC]
-				selected_mode.initiate_fire_support(target_turf, user)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -642,7 +642,7 @@
 			if("MAC - Atmospheric")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_MAC_ATMOS]
-				selected_mode.initiate_fire_support(target_turf)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -650,7 +650,7 @@
 			if("Coilguns")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_COILGUNS]
-				selected_mode.initiate_fire_support(target_turf)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -865,9 +865,17 @@
 /datum/fire_support/custom/New()
 	name = "[name] ([cost])"
 
+///Enables the firesupport option
+/datum/fire_support/custom/enable_firesupport()
+	fire_support_flags |= FIRESUPPORT_AVAILABLE
+
+///Disables the firesupport entirely
+/datum/fire_support/custom/disable()
+	fire_support_flags &= ~FIRESUPPORT_AVAILABLE
+
 ///Initiates fire support proc chain
-/datum/fire_support/custom/initiate_fire_support(turf/target_turf, mob/user)
-	if(!(fire_support_flags & FIRESUPPORT_AVAILABLE))
+/datum/fire_support/custom/initiate_fire_support(turf/target_turf, mob/user, ignore_availability = FALSE)
+	if(!ignore_availability && !(fire_support_flags & FIRESUPPORT_AVAILABLE))
 		to_chat(user, SPAN_NOTICE("FIRE SUPPORT UNAVAILABLE"))
 		return
 	addtimer(CALLBACK(src, PROC_REF(start_fire_support), target_turf, user), delay_to_impact)
@@ -1595,7 +1603,7 @@
 /datum/fire_support/custom/ob
 	initiate_title = "Bridge"
 	portrait_type = "woman_fleet_green"
-	cooldown_duration = 5 MINUTES
+	cooldown_duration = 4 MINUTES
 	fire_support_firer = FIRESUPPORT_ORBITAL_UNSC
 
 /datum/fire_support/custom/ob/mac_gun
