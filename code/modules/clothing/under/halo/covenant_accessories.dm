@@ -8,7 +8,7 @@
 	icon = 'icons/halo/obj/items/clothing/covenant/accessories.dmi'
 	icon_state = "sang_minor_1"
 	item_state = "sang_minor_1"
-	allowed_species_list = list(SPECIES_SANGHEILI)
+	allowed_species_list = list(SPECIES_SANGHEILI,SPECIES_SANGHEILI_HEROIC,SPECIES_SANGHEILI_LEGENDARY,SPECIES_SANGHEILI_MYTHIC)
 	slot = ACCESSORY_SLOT_SANG_SHOULDER
 	flags_atom = NO_SNOW_TYPE
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/sangheili/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/sangheili/accessories.dmi')

@@ -146,7 +146,7 @@
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/sangheili/armor.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_SANGHEILI)
+	allowed_species_list = list(SPECIES_SANGHEILI,SPECIES_SANGHEILI_HEROIC,SPECIES_SANGHEILI_LEGENDARY,SPECIES_SANGHEILI_MYTHIC)
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 

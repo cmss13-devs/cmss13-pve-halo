@@ -20,7 +20,7 @@
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_LEGS|BODY_FLAG_ARMS|BODY_FLAG_FEET
 	drop_sound = "armorequip"
-	allowed_species_list = list(SPECIES_SANGHEILI)
+	allowed_species_list = list(SPECIES_SANGHEILI,SPECIES_SANGHEILI_HEROIC,SPECIES_SANGHEILI_LEGENDARY,SPECIES_SANGHEILI_MYTHIC)
 	item_state_slots = list()
 
 	item_icons = list(
