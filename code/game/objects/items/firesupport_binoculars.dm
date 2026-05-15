@@ -120,7 +120,7 @@
 			continue
 		radial_options[mode_list[fire_support_type].name] = image(icon = 'icons/mob/radial.dmi', icon_state = mode_list[fire_support_type].icon_state)
 
-	var/mode_selected = show_radial_menu(user, src, radial_options, null, 48, null, TRUE, TRUE)
+	var/mode_selected = show_radial_menu(user, src, radial_options, null, 72, null, TRUE, TRUE)
 	for(var/option in mode_list)
 		if(mode_list[option].name != mode_selected)
 			continue

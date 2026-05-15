@@ -1342,31 +1342,31 @@
 	delivered_tube.overlays.Cut()
 
 /datum/fire_support/custom/wombat/supply_drop/spec
-	name = "Wombat - Specialist Ammo"
+	name = "Supply - Specialist Ammo"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC
 	cost = 5
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/spec
 
 /datum/fire_support/custom/wombat/supply_drop/odst
-	name = "Wombat - ODST Ammo"
+	name = "Supply - ODST Ammo"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_ODST
 	cost = 4
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst
 
 /datum/fire_support/custom/wombat/supply_drop/grenades
-	name = "Wombat - Grenades"
+	name = "Supply - Grenades"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES
 	cost = 3
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades
 
 /datum/fire_support/custom/wombat/supply_drop/launchable_grenades
-	name = "Wombat - 40mm Grenades"
+	name = "Supply - 40mm Grenades"
 	cost = 3
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades
 
 /datum/fire_support/custom/wombat/supply_drop/medical_resupply
-	name = "Wombat - Medical"
+	name = "Supply - Medical"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_MEDICAL
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/medical_resupply
 
