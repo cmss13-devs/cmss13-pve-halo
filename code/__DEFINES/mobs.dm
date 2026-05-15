@@ -350,7 +350,6 @@ GLOBAL_LIST_INIT(default_xeno_onmob_icons, list(
 #define SPECIES_MONKEY "Monkey"
 #define SPECIES_ZOMBIE "Zombie"
 #define SPECIES_SANGHEILI "Sangheili"
-#define SPECIES_RUUHTIAN "Ruuhtian"
 #define SPECIES_SANGHEILI_HEROIC "Sangheili Heroic"
 #define SPECIES_SANGHEILI_LEGENDARY "Sangheili Legendary"
 #define SPECIES_SANGHEILI_MYTHIC "Sangheili Mythic"
