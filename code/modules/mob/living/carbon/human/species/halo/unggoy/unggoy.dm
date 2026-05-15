@@ -100,3 +100,15 @@
 	unggoy.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY))
 	return ..()
 
+/datum/species/unggoy/heroic //Unlike elites this tier is for ultras and specops, grunts arent getting a full suite of heroic, legendary, etc
+	name = SPECIES_UNGGOY_HEROIC
+	name_plural = "Unggoy Heroic"
+
+	total_health = 150 //+25 HP
+	burn_mod = 0.9 //alittle lower
+	brute_mod = 0.9 //alittle lower
+	slowdown = 0.1
+
+	dodge_pool = 12 //From 10 to 12
+	dodge_pool_max = 12 //From 10 to 12
+	dp_regen_base_reactivation_time = 30 //5 less

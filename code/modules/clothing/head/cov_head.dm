@@ -149,7 +149,7 @@
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/unggoy/hat.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
 
 	flags_marine_helmet = NO_FLAGS
 	flags_inventory = NO_FLAGS

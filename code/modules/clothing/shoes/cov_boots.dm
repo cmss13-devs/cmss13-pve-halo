@@ -105,7 +105,7 @@
 		WEAR_FEET = 'icons/halo/mob/humans/onmob/clothing/unggoy/shoes.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
 
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW

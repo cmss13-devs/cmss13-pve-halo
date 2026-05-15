@@ -119,7 +119,7 @@
 	icon = 'icons/halo/obj/items/clothing/covenant/accessories.dmi'
 	icon_state = "unggoy_minor_shoulder"
 	item_state = "unggoy_minor_shoulder"
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
 	slot = ACCESSORY_SLOT_UNGGOY_SHOULDER
 	flags_atom = NO_SNOW_TYPE
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/unggoy/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/accessories.dmi')

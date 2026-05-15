@@ -46,7 +46,7 @@
 	worn_state = "unggoy_harness"
 	flags_jumpsuit = null
 	drop_sound = "armorequip"
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
 	item_state_slots = list()
 
 	item_icons = list(
