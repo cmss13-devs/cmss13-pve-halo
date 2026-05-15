@@ -1173,6 +1173,7 @@
 	warning_chat_message = "WOMBAT"
 
 /datum/fire_support/custom/wombat/gau/call_in
+	name = "Wombat - GAU"
 	delay_to_impact = 3 SECONDS
 
 	cost = 2
@@ -1243,6 +1244,7 @@
 	warning_chat_message = "WOMBAT"
 
 /datum/fire_support/custom/wombat/missile/call_in
+	name = "Wombat - Missile"
 	delay_to_impact = 3 SECONDS
 
 	cost = 4
@@ -1272,6 +1274,7 @@
 	warning_chat_message = "WOMBAT"
 
 /datum/fire_support/custom/wombat/incendiary_missile/call_in
+	name = "Wombat - Inc. Missile"
 	delay_to_impact = 3 SECONDS
 
 	cost = 3
@@ -1299,7 +1302,7 @@
 	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/wombat/supply_drop
-	name = "F-99 Wombat Resupply - Mixed Ammo"
+	name = "Wombat - Mixed Ammo"
 	cost = 2
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP
 	faction = FACTION_UNSC
@@ -1339,31 +1342,31 @@
 	delivered_tube.overlays.Cut()
 
 /datum/fire_support/custom/wombat/supply_drop/spec
-	name = "F-99 Wombat Resupply - Specialist Ammo"
+	name = "Wombat - Specialist Ammo"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC
 	cost = 5
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/spec
 
 /datum/fire_support/custom/wombat/supply_drop/odst
-	name = "F-99 Wombat Resupply - ODST Ammo"
+	name = "Wombat - ODST Ammo"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_ODST
 	cost = 4
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst
 
 /datum/fire_support/custom/wombat/supply_drop/grenades
-	name = "F-99 Wombat Resupply - Grenades"
+	name = "Wombat - Grenades"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES
 	cost = 3
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades
 
 /datum/fire_support/custom/wombat/supply_drop/launchable_grenades
-	name = "F-99 Wombat Resupply - 40mm Grenades"
+	name = "Wombat - 40mm Grenades"
 	cost = 3
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades
 
 /datum/fire_support/custom/wombat/supply_drop/medical_resupply
-	name = "F-99 Wombat Resupply - Medical Supplies"
+	name = "Wombat - Medical"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_MEDICAL
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/medical_resupply
 
