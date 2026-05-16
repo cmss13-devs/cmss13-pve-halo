@@ -1,0 +1,5 @@
+author: "Contrabang"
+delete-after: True
+changes:
+  - rscadd: "Adds motion sensors to certain helmets, which are given to FTL and SL"
+  - maptweak: "Adds an SL locker on the ODST map"
