@@ -30,7 +30,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Vastem Pattern Firecharge"
 		insert_line = "A standard modular-purpose explosive in use by the legions of the Covenant. When activated as a mine the device will detonate whenever a hostile or unknown entity crosses over it, exploding violently. The firecharge produces ample plasma accelerated high velocity shrapnel commonly thrown far around it by the sudden blast. This capability may also be used offensively, as a placed charge against portals or walls. The Vastem Pattern Firecharge has a long history in the Covenant, having served for over a thousand years as an adaptable explosive. Though used sparingly as a landmine by most forces, who prefer mobility and violence of action over static defence, the Vastem Pattern Firecharge has nonetheless earned a grim respect for its unassuming ability to blunt even dedicated assaults. It is a veteran's wisdom to always watch where one steps."
 	else
@@ -168,7 +168,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Var'zes Pattern Blastcharge"
 		insert_line = "A landmine of ancient design, still in use by the Covenant's legions. Employing older design philosophy and materials, it nonetheless remains both popular and lethal. Once stepped upon the weapon will deploy a withering blast of the violent shards into any surrounding targets, known to commonly disable many thanks to its abundant micro-shrapnel. A design hearkening back to the ages before the Covenant, the Var'zes has seen consistent employment by the Sangheili who first designed it for over three millennia. While landmines and stationary weapons are less common in Covenant use, they remain popular among troops who hope to damage enemy morale as much as their bodies."
 	else
@@ -283,7 +283,6 @@
 /obj/item/explosive/plastic/breaching_charge/plasma/halo
 	name = "covenant plasma charge"
 	desc = "An alien explosive device. Who knows what it might do."
-	icon = 'icons/obj/items/weapons/covenant_mines.dmi'
 	icon_state = "covplasma-charge"
 	overlay_image = "covplasmacharge-active"
 	w_class = SIZE_SMALL
@@ -301,7 +300,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Vastem Pattern Firecharge"
 		insert_line = "A standard modular-purpose explosive in use by the legions of the Covenant. When activated as a mine the device will detonate whenever a hostile or unknown entity crosses over it, exploding violently. The firecharge produces ample plasma accelerated high velocity shrapnel commonly thrown far around it by the sudden blast. This capability may also be used offensively, as a placed charge against portals or walls. The Vastem Pattern Firecharge has a long history in the Covenant, having served for over a thousand years as an adaptable explosive. Though used sparingly as a landmine by most forces, who prefer mobility and violence of action over static defence, the Vastem Pattern Firecharge has nonetheless earned a grim respect for its unassuming ability to blunt even dedicated assaults. It is a veteran's wisdom to always watch where one steps."
 	else
