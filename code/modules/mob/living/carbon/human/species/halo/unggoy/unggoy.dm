@@ -9,7 +9,6 @@
 		TRAIT_COV_TECH,
 		TRAIT_SUPER_STRONG,
 		TRAIT_FOREIGN_BIO,
-		TRAIT_DEXTROUS,
 		TRAIT_IRON_TEETH,
 	)
 	unarmed_type = /datum/unarmed_attack/punch/unggoy

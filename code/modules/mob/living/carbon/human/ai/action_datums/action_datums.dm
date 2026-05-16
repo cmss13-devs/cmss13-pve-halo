@@ -12,6 +12,7 @@ GLOBAL_LIST_INIT_TYPED(AI_actions, /datum/ai_action, setup_ai_actions())
 	var/name
 	var/datum/human_ai_brain/brain
 	var/action_flags = null
+	var/species_restricted = FALSE
 
 /// Proc to be overridden to determine what weight this action should have
 /// The reason a brain is passed in as an arg is that we have GLOB.AI_actions that are iterated through, calling get_weight() on each for every AI

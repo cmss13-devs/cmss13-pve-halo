@@ -59,6 +59,9 @@
 #define MAP_LV818_FEATURELESS_DESERT "LV-818 Featureless Desert"
 #define MAP_LV818_FEATURELESS_JUNGLE "LV-818 Featureless Jungle"
 #define MAP_LV295_FEATURELESS_ARCTIC "LV-295 Featureless Arctic"
+#define MAP_MACKAY_STATION "Mackay Station"
+#define MAP_ONI_DIGSITE_451 "ONI Digsite 451"
+
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
 
