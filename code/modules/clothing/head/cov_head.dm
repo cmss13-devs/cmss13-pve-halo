@@ -13,7 +13,7 @@
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/sangheili/hat.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_SANGHEILI)
+	allowed_species_list = list(SPECIES_SANGHEILI,SPECIES_SANGHEILI_HEROIC,SPECIES_SANGHEILI_LEGENDARY,SPECIES_SANGHEILI_MYTHIC)
 
 	flags_marine_helmet = NO_FLAGS
 	flags_inventory = NO_FLAGS
@@ -149,7 +149,7 @@
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/unggoy/hat.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
 
 	flags_marine_helmet = NO_FLAGS
 	flags_inventory = NO_FLAGS
