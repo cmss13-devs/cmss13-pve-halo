@@ -1179,7 +1179,7 @@
 	cost = 2
 	faction = FACTION_UNSC
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_GAU
-	icon_state = "gau"
+	icon_state = "Wombat_Gau"
 	initiate_chat_message = "TARGET ACQUIRED. GUN RUN INBOUND."
 	initiate_screen_message = list(
 		"TARGET ACQUIRED. GUN RUN INBOUND.",
@@ -1250,7 +1250,7 @@
 	cost = 4
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_MISSILE
 	faction = FACTION_UNSC
-	icon_state = "rockets"
+	icon_state = "Wombat_Missile"
 	initiate_chat_message = "TARGET ACQUIRED. MISSILE INBOUND."
 	initiate_screen_message = list(
 		"TARGET ACQUIRED. MISSILE INBOUND.",
@@ -1280,7 +1280,7 @@
 	cost = 3
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_INCENDIARY
 	faction = FACTION_UNSC
-	icon_state = "incend_rockets"
+	icon_state = "Wombat_Incin"
 	initiate_chat_message = "TARGET ACQUIRED. INCENDIARY INBOUND."
 	initiate_screen_message = list(
 		"TARGET ACQUIRED. INCENDIARY INBOUND.",
@@ -1306,7 +1306,7 @@
 	cost = 2
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP
 	faction = FACTION_UNSC
-	icon_state = "ammo"
+	icon_state = "Supply_Marine"
 	initiate_chat_message = "TARGET ACQUIRED, TUBE DEPLOYING."
 	initiate_screen_message = list(
 		"SUPPLIES; ENROUTE.",
@@ -1342,31 +1342,36 @@
 	delivered_tube.overlays.Cut()
 
 /datum/fire_support/custom/wombat/supply_drop/spec
-	name = "Supply - Specialist Ammo"
+	name = "Supply - Spec Ammo"
+	icon_state = "Supply_Spec"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC
 	cost = 5
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/spec
 
 /datum/fire_support/custom/wombat/supply_drop/odst
 	name = "Supply - ODST Ammo"
+	icon_state = "Supply_ODST"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_ODST
 	cost = 4
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst
 
 /datum/fire_support/custom/wombat/supply_drop/grenades
 	name = "Supply - Grenades"
+	icon_state = "Supply_Grenade"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES
 	cost = 3
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades
 
 /datum/fire_support/custom/wombat/supply_drop/launchable_grenades
 	name = "Supply - 40mm Grenades"
+	icon_state = "Supply_Grenade"
 	cost = 3
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades
 
 /datum/fire_support/custom/wombat/supply_drop/medical_resupply
 	name = "Supply - Medical"
+	icon_state = "Supply_Med"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_MEDICAL
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/medical_resupply
 
@@ -1401,7 +1406,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_C712_COILGUN
 	cost = 3
 	faction = FACTION_UNSC
-	icon_state = "gau"
+	icon_state = "712_Coilgun"
 	initiate_chat_message = "TARGET ACQUIRED, MUNITIONS INBOUND."
 	initiate_screen_message = list(
 		"Copy on target, firing now.",
@@ -1431,7 +1436,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_C712_CLUSTER
 	cost = 4
 	faction = FACTION_UNSC
-	icon_state = "rockets"
+	icon_state = "712_Cluster"
 	initiate_chat_message = "TARGET ACQUIRED, MUNITIONS INBOUND."
 	initiate_screen_message = list(
 		"Eyes on, bomb away.",
@@ -1464,7 +1469,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_C712_MISSILE
 	cost = 4
 	faction = FACTION_UNSC
-	icon_state = "missile"
+	icon_state = "712_Missile"
 	initiate_chat_message = "TARGET ACQUIRED, MUNITIONS INBOUND."
 	initiate_screen_message = list(
 		"TGP on lase, one out.",
@@ -1514,7 +1519,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_C709_MISSILE
 	cost = 5
 
-	icon_state = "missile"
+	icon_state = "709_Missile"
 	initiate_chat_message = "TARGET ACQUIRED, HEAVY MUNITIONS INBOUND."
 	initiate_screen_message = list(
 		"TGP on lase, one out.",
@@ -1544,7 +1549,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_C709_CLUSTER
 	cost = 5
 
-	icon_state = "rockets"
+	icon_state = "709_Cluster"
 	initiate_chat_message = "TARGET ACQUIRED, HEAVY MUNITIONS INBOUND."
 	initiate_screen_message = list(
 		"Eyes on, bombs away.",
@@ -1574,7 +1579,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_C709_INCENDIARY
 	cost = 5
 
-	icon_state = "napalm_missile"
+	icon_state = "709_Incin"
 	initiate_chat_message = "TARGET ACQUIRED, HEAVY MUNITIONS INBOUND."
 	initiate_screen_message = list(
 		"TGP on lase, one firecracker out.",
@@ -1663,11 +1668,12 @@
 /datum/fire_support/custom/ob/mac_gun/in_atmosphere/call_in
 	delay_to_impact = 20 SECONDS
 
+	name = "MAC"
 	faction = FACTION_UNSC
 	fire_support_type = FIRESUPPORT_TYPE_MAC_ATMOS
 	cost = 20
 
-	icon_state = "he_ob"
+	icon_state = "Naval_MAC"
 	initiate_chat_message = "TARGET ACQUIRED, ORBITAL MUNITION INBOUND. CLEAR THE AREA."
 	initiate_screen_message = list(
 		"MAC on target.",
@@ -1692,7 +1698,7 @@
 	fire_support_type = FIRESUPPORT_TYPE_COILGUNS
 	cost = 10
 
-	icon_state = "he_mortar"
+	icon_state = "Naval_Coilgun"
 	initiate_chat_message = "TARGET ACQUIRED, ORBITAL MUNITION INBOUND. CLEAR THE AREA."
 	initiate_screen_message = list(
 		"Positive on target, guns spooling now.",
