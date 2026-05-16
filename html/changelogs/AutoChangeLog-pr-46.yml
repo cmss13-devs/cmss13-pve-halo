@@ -1,5 +1,0 @@
-author: "Karmac"
-delete-after: True
-changes:
-  - mapadd: "Mackay Station (Ground & Shipmap versions), ONI Digsite 451"
-  - rscadd: "prop status display for the unsc, covenant bomb"
