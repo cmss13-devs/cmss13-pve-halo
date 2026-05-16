@@ -479,6 +479,101 @@
 	if(user.assigned_squad)
 		user.assigned_squad.tgui_interact(user)
 
+/atom/movable/screen/motion_tracker
+	name = "motion tracker"
+	icon = 'icons/mob/hud/motion_tracker.dmi'
+	icon_state = "base"
+	alpha = 0 // Hidden by default
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	/// Our bounds to check
+	var/datum/shape/ellipse/circle/range_bounds
+	/// Our IFF signal
+	var/iff_signal = FACTION_UNSC
+	/// Color of IFF friendly targets
+	var/friendly_color = "#ddff00"
+	/// Color of not IFF friendly targets, including civilians?
+	var/hostile_color = "#d30000"
+	/// How many tiles away in a radius to scan, 16 matches well with the size of the 32x32 hud element
+	var/radius = 16
+	/// Reference to the mob we're tracking. We use this instead of hud.mymob because that's not implemented
+	var/mob/our_mob
+
+/atom/movable/screen/motion_tracker/Initialize(mapload, ...)
+	. = ..()
+	range_bounds = new()
+	color = "#0080ae"
+
+/atom/movable/screen/motion_tracker/proc/give(mob/new_mob)
+	our_mob = new_mob
+	alpha = 255
+	mouse_opacity = MOUSE_OPACITY_ICON
+	START_PROCESSING(SSfastobj, src)
+
+/atom/movable/screen/motion_tracker/proc/remove()
+	alpha = 0
+	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
+	STOP_PROCESSING(SSfastobj, src)
+
+/// Used for changing the IFF/colors of the tracker, i.e. for the covenant
+/atom/movable/screen/motion_tracker/proc/configure(
+	iff = FACTION_UNSC,
+	background_color = "#0080ae",
+	friendly_color = "#ddff00",
+	enemy_color = "#d30000"
+)
+	src.iff_signal = iff
+	src.color = background_color
+	src.friendly_color = friendly_color
+	src.hostile_color = enemy_color
+
+/atom/movable/screen/motion_tracker/process()
+	if(!our_mob || !our_mob.client)
+		return
+	var/turf/cur_turf = get_turf(our_mob)
+	dir = our_mob.dir
+	if(!istype(cur_turf))
+		return
+
+	overlays.Cut()
+
+	range_bounds.set_shape(cur_turf.x, cur_turf.y, radius)
+	var/list/ping_candidates = SSquadtree.players_in_range(range_bounds, cur_turf.z, QTREE_EXCLUDE_OBSERVER | QTREE_SCAN_MOBS)
+
+	for(var/obj/vehicle/multitile/vehicle in GLOB.all_multi_vehicles)
+		if(vehicle.z != cur_turf.z || !range_bounds.contains_atom(vehicle))
+			continue
+		var/image/image = image(icon, src, "blip_vehicle")
+		if(!vehicle.vehicle_faction)
+			image.color = "#FFFFFF"
+		else if(vehicle.get_target_lock(iff_signal))
+			image.color = friendly_color
+		else
+			image.color = hostile_color
+		image.alpha = 128
+		image.pixel_x = vehicle.x - cur_turf.x
+		image.pixel_y = vehicle.y - cur_turf.y
+		image.appearance_flags = RESET_COLOR
+		overlays += image
+
+	for(var/mob/living/candidate in ping_candidates)
+		if(!candidate.x || !candidate.y || HAS_TRAIT(candidate, TRAIT_CLOAKED) || candidate.stat == DEAD)
+			continue
+		var/blip_state = "blip"
+		if(candidate.mob_size >= MOB_SIZE_BIG)
+			blip_state = "blip_large"
+		else if (candidate.mob_size < MOB_SIZE_HUMAN || candidate.mob_size == MOB_SIZE_XENO_VERY_SMALL)
+			blip_state = "blip_small"
+
+		var/image/image = image(icon, src, blip_state)
+		if(candidate.get_target_lock(iff_signal))
+			image.color = friendly_color
+		else
+			image.color = hostile_color
+		image.pixel_x = candidate.x - cur_turf.x + round((candidate.pixel_x + candidate.pixel_w) / world.icon_size, 1)
+		image.pixel_y = candidate.y - cur_turf.y + round((candidate.pixel_y + candidate.pixel_z) / world.icon_size, 1)
+		image.appearance_flags = RESET_COLOR
+		overlays += image
+
 /atom/movable/screen/mark_locator
 	name = "mark locator"
 	icon = 'icons/mob/hud/alien_standard.dmi'
