@@ -190,7 +190,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Eos'Mak-pattern plasma pistol"
 		insert_line = "The reliable work horse of the Covenant's innumerable host, seen in the hands of the most honoured admirals and councillors, or the lowest menials. A deceptively powerful weapon capable of severing limbs and killing with a singular blow through even strong armours. Has the ability to pool excessive charge into a single bolt, dispelling shields and destroying bodies alike."
 	else
@@ -292,7 +292,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Okarda'phaa-pattern plasma rifle"
 		insert_line = "An ancient and venerable weapon which has served the Covenant for many centuries in the hands of its most honoured warriors. A truly brutal tool, capable of immense kinetic and raw thermal damage, blasting armour to pieces and rendering flesh nothing but boiled mist. Most commonly seen in the hands of Sangheili warriors, or the veterans of lesser rates."
 	else
@@ -343,7 +343,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Eket'Vauh-pattern needler"
 		insert_line = "Automatic guided munitions launcher, firing charged Subanese crystals shaved from a central core. The Eket'Vauh pattern is produced on High Charity, within the Sacred Promissory's Assembly-Forges. A less common variant used by those given favour by the High Council, the purple-pink shards fired by this weapon ensure efficient judgement in a violent detonation."
 	else
@@ -434,7 +434,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Vostu-pattern carbine"
 		insert_line = "One of the few ballistic weapons in use by the Covenant, the Vostu Pattern Carbine fires a 8x60mm caseless radioactive slug, which commonly fragments upon penetrating a target, potentially turning even minor wounds lethal with the toxic material left behind. Used by Sangheili warriors and many a Kig'yar marksmen who seek a cruel and precise weapon."
 	else
