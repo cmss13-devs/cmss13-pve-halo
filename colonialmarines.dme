@@ -439,6 +439,7 @@
 #include "code\datums\components\id_lock.dm"
 #include "code\datums\components\iff_fire_prevention.dm"
 #include "code\datums\components\label.dm"
+#include "code\datums\components\motion_sensor_manager.dm"
 #include "code\datums\components\orbiter.dm"
 #include "code\datums\components\overlay_lighting.dm"
 #include "code\datums\components\phone.dm"
