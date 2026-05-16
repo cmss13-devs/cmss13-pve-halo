@@ -28,7 +28,7 @@
 	var/faction = FACTION_MARINE
 
 	var/datum/tacmap/tacmap
-	var/minimap_type = MINIMAP_FLAG_USCM
+	var/minimap_type = MINIMAP_FLAG_UNSC
 
 
 	///List of saved coordinates, format of ["x", "y", "comment"]
@@ -944,6 +944,9 @@
 	faction = FACTION_TWE
 /obj/structure/machinery/computer/overwatch/freelance
 	faction = FACTION_FREELANCER
+/obj/structure/machinery/computer/overwatch/unsc
+	faction = FACTION_LIST_UNSC
+
 
 /obj/structure/machinery/computer/overwatch/toc
 	name = "TOC Overwatch Console"
