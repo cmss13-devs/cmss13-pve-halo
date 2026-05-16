@@ -172,7 +172,7 @@
 	. = ..()
 	var/list/origin = .
 	var/insert_line
-	if(isunggoy(user) || issangheili(user))
+	if(iscovenant(user))
 		origin[1] = "[icon2html(src, user)] This is a Pelosus-Pattern Energy Sword"
 		insert_line = "A standard issue energy sword given to Sangheili warriors who achieve either battlefield excellence, or sufficient rank. A mass produced and disposable tool employing rudimentary technology to create a blade capable of defeating any defence that it meets."
 	else
