@@ -102,6 +102,16 @@
 		X.away_timer = XENO_LEAVE_TIMER
 		X.set_hive_and_update(hivenumber)
 
+// Halo inserts
+/area/adminlevel/covenant
+	name = "Nanolaminate Structure"
+	icon_state = "cov"
+	requires_power = FALSE
+	ceiling = CEILING_METAL
+
+/area/adminlevel/covenant/no_baselight
+	base_lighting_alpha = 0
+
 // ERT Station
 /area/adminlevel/ert_station
 	name = "ERT Station"
