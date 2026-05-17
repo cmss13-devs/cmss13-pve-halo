@@ -7,6 +7,10 @@
 	},
 /turf/open/floor/almayer/red/north,
 /area/mackay_station/romeo/redcommons2)
+"aab" = (
+/obj/item/tacmap_map,
+/turf/open/space/basic,
+/area/space)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -47203,7 +47207,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aab
 kIa
 kIa
 "}
@@ -47519,7 +47523,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aab
 kIa
 kIa
 kIa
@@ -51575,7 +51579,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aab
 kIa
 kIa
 kIa

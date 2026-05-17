@@ -55,7 +55,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/eyewear/rpg_glasses
 	display_name = "Marine RPG Glasses"
 	path = /obj/item/clothing/glasses/regular
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/eyewear/prescription_glasses
 	display_name = "Prescription Glasses"
@@ -78,19 +82,37 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/glasses/mgoggles/green/prescription
 
 /datum/gear/eyewear/bimex_shades
-	display_name = "BiMex Polarized Shades"
+	// HALO PVE EDIT - START - ITEM RENAMING
+	display_name = "Tactical Shades"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/glasses/sunglasses/big
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/eyewear/bimex_shades_orange
-	display_name = "BiMex Tactical Shades"
+	// HALO PVE EDIT - START - ITEM RENAMING
+	display_name = "Orange Tactical Shades"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/glasses/sunglasses/big/orange
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/eyewear/bimex_shades_classic
-	display_name = "BiMex Classic Shades"
+	// HALO PVE EDIT - START - ITEM RENAMING
+	display_name = "Ballistic Aviator Shades"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/glasses/sunglasses/big/classic
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = NON_UPP_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/eyewear/sunglasses
 	display_name = "Sunglasses"
@@ -101,15 +123,21 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Prescription sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses/prescription
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/eyewear/pilot_visor_black
-	display_name = "Pilot visor, black"
+	display_name = "IHADSS visor, black"
 	path = /obj/item/device/helmet_visor/po_visor/marine
 	allowed_origins = USCM_ORIGINS
 
 /datum/gear/eyewear/pilot_visor_yellow
-	display_name = "Pilot visor, yellow"
+	display_name = "IHADSS visor, yellow"
 	path = /obj/item/device/helmet_visor/po_visor/marine/yellow
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
+
+
 /*
 //================================================
 				Masks & Scarves
@@ -121,21 +149,36 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	slot = WEAR_FACE
 
 /datum/gear/mask/balaclava_black
+	// HALO PVE EDIT - START - REPATHING
+
 	display_name = "Balaclava, black"
-	path = /obj/item/clothing/mask/balaclava
+	path = /obj/item/clothing/mask/rebreather/scarf
+	// HALO PVE EDIT - END
 
 /datum/gear/mask/balaclava_green
+	// HALO PVE EDIT - START - REPATHING
 	display_name = "Balaclava, green"
-	path = /obj/item/clothing/mask/balaclava/tactical
+	path = /obj/item/clothing/mask/rebreather/scarf/green
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/mask/balaclava_threehole
 	display_name = "Balaclava, three-hole"
 	path = /obj/item/clothing/mask/balaclava/threehole
 	allowed_origins = UPP_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
-/datum/gear/mask/coif
-	display_name = "Coif"
-	path = /obj/item/clothing/mask/rebreather/scarf
+	// HALO PVE EDIT - START - ITEM SHUFFLING, ORIGINAL LINE 226
+/datum/gear/mask/balaclava_grey
+	display_name = "Balaclava, grey"
+	path = /obj/item/clothing/mask/rebreather/scarf/gray
+
+/datum/gear/mask/balaclava_tan
+	display_name = "Balaclava, tan"
+	path = /obj/item/clothing/mask/rebreather/scarf/tan
+	// HALO PVE EDIT - END
 
 /datum/gear/mask/face_wrap_black
 	display_name = "Face wrap, black"
@@ -177,7 +220,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Gas mask"
 	path = /obj/item/clothing/mask/gas //Civ market gas-mask, no longer USCM locked
 	cost = 1
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/mask/scarf_black
 	display_name = "Scarf, black"
@@ -223,6 +270,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Neckerchief, red"
 	path = /obj/item/clothing/mask/neckerchief/red
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/mask/uscm
 	allowed_origins = USCM_ORIGINS
 
@@ -249,6 +298,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/mask/rebreather/skull/black
 	cost = 4
 	slot = WEAR_FACE
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -261,22 +312,38 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	cost = 3
 	slot = WEAR_HEAD
 
-/datum/gear/headwear/uscm/santa_hat
+	// HALO PVE EDIT - START - REPATHING
+/datum/gear/headwear/santa_hat
+	// HALO PVE EDIT - END
 	display_name = "santa hat, red"
 	path = /obj/item/clothing/head/santa
 	cost = 1
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
-/datum/gear/headwear/uscm/santa_hat/special_conditions()
+	// HALO PVE EDIT - START - REPATHING
+/datum/gear/headwear/santa_hat/special_conditions()
+	// HALO PVE EDIT - END
 	return is_month(12) && (is_day(21) || is_day(22) || is_day(23) || is_day(24) || is_day(25) || is_day(26))
 
-/datum/gear/headwear/uscm/santa_hat_green
+	// HALO PVE EDIT - START - REPATHING
+/datum/gear/headwear/santa_hat_green
+	// HALO PVE EDIT - END
 	display_name = "santa hat, green"
 	path = /obj/item/clothing/head/santa/green
 	cost = 1
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
-/datum/gear/headwear/uscm/santa_hat_green/special_conditions()
+	// HALO PVE EDIT - START - REPATHING
+/datum/gear/headwear/santa_hat_green/special_conditions()
+	// HALO PVE EDIT - END
 	return is_month(12) && (is_day(21) || is_day(22) || is_day(23) || is_day(24) || is_day(25) || is_day(26))
 
 /datum/gear/headwear/durag_black
@@ -287,125 +354,194 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Durag, jungle"
 	path = /obj/item/clothing/head/durag
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL, DATUM REPATHING
+/*
 /datum/gear/headwear/uscm
 	allowed_origins = USCM_ORIGINS
+*/
 
-/datum/gear/headwear/uscm/bandana_green
-	display_name = "USCM bandana, green"
+/datum/gear/headwear/bandana_green
+
+	display_name = "bandana, green"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmbandana
 
-/datum/gear/headwear/uscm/bandana_tan
-	display_name = "USCM bandana, tan"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/bandana_tan
+	display_name = "bandana, tan"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmbandana/tan
 
-/datum/gear/headwear/uscm/beanie_grey
-	display_name = "USCM beanie, grey"
+	// HALO PVE EDIT - START - ITEM ADDITION
+/datum/gear/headwear/beanie_black
+	display_name = "beanie, black"
+	path = /obj/item/clothing/head/beanie/royal_marine
+	// HALO PVE EDIT - END
+
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/beanie_grey
+	display_name = "beanie, grey"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/beanie/gray
 
-/datum/gear/headwear/uscm/beanie_green
-	display_name = "USCM beanie, green"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/beanie_green
+	display_name = "beanie, green"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/beanie/green
 
-/datum/gear/headwear/uscm/beanie_tan
-	display_name = "USCM beanie, tan"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/beanie_tan
+	display_name = "beanie, tan"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/beanie/tan
 
-/datum/gear/headwear/uscm/boonie_jungle
-	display_name = "USCM boonie hat, jungle"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/boonie_jungle
+	display_name = "boonie hat, jungle"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie
 
-/datum/gear/headwear/uscm/boonie_desert
-	display_name = "USCM boonie hat, desert"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/boonie_desert
+	display_name = "boonie hat, desert"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie/tan
 
-/datum/gear/headwear/uscm/boonie_snow
-	display_name = "USCM boonie hat, snow"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/boonie_snow
+	display_name = "boonie hat, snow"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie/snow
 
-/datum/gear/headwear/uscm/cap
-	display_name = "USCM cap, jungle"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap
+	display_name = "utility cap, jungle"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap
 	cost = 2
 
-/datum/gear/headwear/uscm/cap_desert
-	display_name = "USCM cap, desert"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap_desert
+	display_name = "utility cap, desert"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/desert
 	cost = 2
 
-/datum/gear/headwear/uscm/cap_snow
-	display_name = "USCM cap, snow"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap_snow
+	display_name = "utility cap, snow"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/snow
 	cost = 2
 
-/datum/gear/headwear/uscm/cap_operations
-	display_name = "USCM Operations Cap, Green"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap_operations
+	display_name = "UNSC Operations Cap, Green"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/bridge
 
-/datum/gear/headwear/uscm/cap_operations2
-	display_name = "USCM Operations Cap, Tan"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap_operations2
+	display_name = "UNSC Operations Cap, Tan"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/bridge/tan
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/headwear/uscm/cap/sulaco
 	display_name = "USS Golden Arrow cap"
 	path = /obj/item/clothing/head/sulacocap
 	cost = 1
+*/
+	// HALO PVE EDIT - END
 
-/datum/gear/headwear/uscm/cap/flap_jungle
-	display_name = "USCM expedition flapcap, jungle"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap/flap_jungle
+	display_name = "UNSC expedition flapcap, jungle"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap
 
-/datum/gear/headwear/uscm/cap/flap_desert
-	display_name = "USCM expedition flapcap, desert"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap/flap_desert
+	display_name = "UNSC expedition flapcap, desert"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap/desert
 
-/datum/gear/headwear/uscm/cap/flap_snow
-	display_name = "USCM expedition flapcap, snow"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/cap/flap_snow
+	display_name = "UNSC expedition flapcap, snow"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap/snow
 
-/datum/gear/headwear/uscm/headband_brown
-	display_name = "USCM headband, brown"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_brown
+	display_name = "headband, brown"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/brown
 
-/datum/gear/headwear/uscm/headband_green
-	display_name = "USCM headband, green"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_green
+	display_name = "headband, green"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband
 
-/datum/gear/headwear/uscm/headband_grey
-	display_name = "USCM headband, grey"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_grey
+	display_name = "headband, grey"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/gray
 
-/datum/gear/headwear/uscm/headband_red
-	display_name = "USCM headband, red"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_red
+	display_name = "headband, red"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/red
 
-/datum/gear/headwear/uscm/headband_tan
-	display_name = "USCM headband, tan"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_tan
+	display_name = "headband, tan"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/tan
 
-/datum/gear/headwear/uscm/headband_intel
-	display_name = "USCM headband, black"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_intel
+	display_name = "headband, black"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/intel
 
-/datum/gear/headwear/uscm/headband_bravo
-	display_name = "USCM headband, orange"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_bravo
+	display_name = "headband, orange"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/bravo
 
-/datum/gear/headwear/uscm/headband_charlie
-	display_name = "USCM headband, purple"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_charlie
+	display_name = "headband, purple"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/charlie
 
-/datum/gear/headwear/uscm/headband_delta
-	display_name = "USCM headband, blue"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_delta
+	display_name = "headband, blue"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/delta
 
-/datum/gear/headwear/uscm/headband_echo
-	display_name = "USCM headband, cyan green"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headband_echo
+	display_name = "headband, cyan green"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/echo
 
-/datum/gear/headwear/uscm/headset
-	display_name = "USCM headset"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/headset
+	display_name = "UNSC headset"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headset
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/headwear/uscm/beret_white
 	display_name = "Beret, white"
 	path = /obj/item/clothing/head/beret/cm/white
@@ -448,11 +584,17 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/headwear/upp/boonie
 	display_name = "UPP boonie"
 	path = /obj/item/clothing/head/uppcap/boonie
+*/
+	// HALO PVE EDIT - END
 
-/datum/gear/headwear/upp/ushanka
-	display_name = "UPP ushanka"
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+/datum/gear/headwear/ushanka
+	display_name = "Ushanka"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/uppcap/ushanka
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/headwear/rmc
 	allowed_origins = TWE_ORIGINS
 
@@ -471,7 +613,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/headwear/beret_black
 	display_name = "Beret, black"
 	path = /obj/item/clothing/head/beret/black
-
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -495,18 +638,26 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Flair, Peace and Love"
 	path = /obj/item/prop/helmetgarb/flair_peace
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL
 /datum/gear/helmet_garb/flair_uscm
-	display_name = "Flair, USCM"
+	display_name = "Flair, UNSC"
 	path = /obj/item/prop/helmetgarb/flair_uscm
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/helmet_garb/gunoil
 	display_name = "Gun oil"
 	path = /obj/item/prop/helmetgarb/gunoil
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/helmet_garb/netting
 	display_name = "Helmet netting"
 	path = /obj/item/prop/helmetgarb/netting
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/helmet_garb/lucky_feather
 	display_name = "Lucky feather, red"
@@ -524,6 +675,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Lucky feather, blue"
 	path = /obj/item/prop/helmetgarb/lucky_feather/blue
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/helmet_garb/broken_nvgs
 	display_name = "M1 Multispectrum Visor"
 	path = /obj/item/prop/helmetgarb/helmet_nvg/cosmetic/larp
@@ -536,6 +689,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/helmet_garb/raincover
 	display_name = "Rain cover"
 	path = /obj/item/prop/helmetgarb/raincover
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/helmet_garb/rabbits_foot
 	display_name = "Rabbit's foot"
@@ -565,6 +720,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Tickets to Space Jam"
 	path = /obj/item/prop/helmetgarb/spacejam_tickets
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/helmet_garb/trimmed_wire
 	display_name = "Trimmed barbed wire"
 	path = /obj/item/prop/helmetgarb/trimmed_wire
@@ -578,6 +735,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "USCM chaplain helmet patch"
 	path = /obj/item/prop/helmetgarb/chaplain_patch
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -608,21 +767,31 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "brown fingerless combat gloves"
 	path = /obj/item/clothing/gloves/marine/brown/fingerless
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/clothing/shotgun_holster_belt
 	display_name = "shotgun holster belt"
 	path = /obj/item/storage/belt/gun/shotgunholster
 	cost = 3
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL
 /datum/gear/clothing/flak
-	display_name = "M67 flak jacket (Blue)"
+	display_name = "vintage flak jacket (Blue)"
 	path = /obj/item/clothing/accessory/flak
 	cost = 3
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/clothing/flak/od
-	display_name = "M67 flak jacket (Green)"
+	display_name = "vintage flak jacket (Green)"
 	path = /obj/item/clothing/accessory/flak/od
+	// HALO PVE EDIT - END
 
 /datum/gear/clothing/windbreaker_green
 	display_name = "Windbreaker, Green"
@@ -639,6 +808,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/suit/storage/windbreaker/windbreaker_blue
 	cost = 3
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/clothing/service_jacket
 	display_name = "USCM service jacket"
 	path = /obj/item/clothing/suit/storage/jacket/marine/service
@@ -656,6 +827,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/clothing/under/shorts/red/uscm
 	cost = 1
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -667,49 +840,62 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	category = "Armor & body paints"
 	cost = 0
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/paint/paint_sg
 	display_name = "Black Smartgun Harness Paint"
 	path = /obj/item/clothing/accessory/paint/sg
+*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/paint_skull
-	display_name = "M3 Pattern Skull Paint"
+	display_name = "Skull Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/paint_heart
-	display_name = "M3 Pattern Heart Paint"
+	display_name = "Heart Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/heart
 
-/datum/gear/paint/uaflag
-	display_name = "M3 Pattern UA Flag Paint"
-	path = /obj/item/clothing/accessory/paint/uaflag
-
-/datum/gear/paint/usflag
-	display_name = "M3 Pattern US Flag Paint"
-	path = /obj/item/clothing/accessory/paint/usflag
-
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/target
-	display_name = "M3 Pattern Target Paint"
+	display_name = "Target Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/target
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/smiley
-	display_name = "M3 Pattern Smiley-Face Paint"
+	display_name = "Smiley-Face Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/alcoholism
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/neutral
-	display_name = "M3 Pattern Neutral-Face Paint"
+	display_name = "Neutral-Face Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/melancholy
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/cross
-	display_name = "M3 Pattern Cross Paint"
+	display_name = "Cross Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/cross
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/pandora
-	display_name = "M3 Pattern Inscription Paint"
+	display_name = "Inscription Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/inscription
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/flames
-	display_name = "M3 Pattern Fire Paint"
+	display_name = "Fire Armor Paint"
+	// HALO PVE EDIT - END
 	path = /obj/item/clothing/accessory/paint/fire
+
 
 /datum/gear/paint/facepaint_green
 	display_name = "Facepaint, green"
@@ -726,6 +912,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/facepaint/black
 	cost = 2
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/paint/facepaint_skull
 	display_name = "Facepaint, skull"
 	path = /obj/item/facepaint/skull
@@ -735,6 +923,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Fullbody paint"
 	path = /obj/item/facepaint/sniper
 	cost = 4 //To match with the skull paint amount of point, gave this amount of point for the same reason of the skull facepaint (too cool for everyone to be able to constantly use)
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -825,14 +1015,16 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Camera"
 	path = /obj/item/device/camera
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL
 /datum/gear/toy/mags
 	cost = 1
-	allowed_origins = NON_UPP_ORIGINS
+	/*
+	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
-/datum/gear/toy/mags/magazine_dirty
-	display_name = "Magazine"
-	path = /obj/item/prop/magazine/dirty
-
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/toy/mags/boots
 	allowed_origins = NON_UPP_ORIGINS
 
@@ -855,15 +1047,25 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/toy/mags/boots/boots_magazine_five
 	display_name = "Boots Issue No.55"
 	path = /obj/item/prop/magazine/boots/n055
+*/
+	// HALO PVE EDIT - END
+
+/datum/gear/toy/mags/magazine_dirty
+	display_name = "Magazine"
+	path = /obj/item/prop/magazine/dirty
 
 /datum/gear/toy/film
 	display_name = "Camera film"
 	path = /obj/item/device/camera_film
 	cost = 0
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL
 /datum/gear/toy/card
 	cost = 1
-	allowed_origins = NON_UPP_ORIGINS
+	/*
+	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/toy/card/ace_of_spades
 	display_name = "Card, ace of spades"
@@ -885,9 +1087,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Card, Uno Reverse - yellow"
 	path = /obj/item/toy/handcard/uno_reverse_yellow
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/toy/card/trading_card
 	display_name = "Card, random WeyYu Trading"
 	path = /obj/item/toy/trading_card
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/toy/deck
 	display_name = "Deck of cards, regular"
@@ -897,9 +1103,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Deck of cards, Uno"
 	path = /obj/item/toy/deck/uno
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/toy/trading_card
 	display_name = "Trading Card Packet"
 	path = /obj/item/storage/fancy/trading_card
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/toy/d6
 	display_name = "Die, 6 sides"
@@ -1088,34 +1298,52 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/weapon
 	category = "Weapons"
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/weapon/bayonet
-	display_name = "M5 bayonet"
+	display_name = "M5 combat knife"
+	// HALO PVE EDIT - END
 	path = 	/obj/item/attachable/bayonet
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/weapon/kabar
-	display_name = "KA-BAR utility knife"
+	display_name = "MK88 Ratio survival knife"
+	// HALO PVE EDIT - END
 	path = 	/obj/item/weapon/knife/marine/kabar
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/weapon/bowie
-	display_name = "Bowie fighting knife"
+	display_name = "Model 52 Navy knife"
+	// HALO PVE EDIT - END
 	path = 	/obj/item/storage/box/loadout/bowie
 	cost = 4
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL
 /datum/gear/weapon/kukri
 	display_name = "Kukri utility knife"
 	path = 	/obj/item/storage/box/loadout/bowie/kukri
 	cost = 4
+	/*
 	allowed_origins = TWE_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/weapon/baker
-	display_name = "Baker-pattern fighting knife"
+	display_name = "M11 combat knife"
+	// HALO PVE EDIT - END
 	path = 	/obj/item/weapon/knife/marine/baker
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL
 /datum/gear/weapon/chinese
-	display_name = "Type 4 bayonet"
+	display_name = "Colonial Military Authority M2 bayonet"
 	path = 	/obj/item/attachable/bayonet/canc
+	/*
 	allowed_origins = UPP_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/weapon/type_80_Bayonet
 	display_name = "Type 80 bayonet"
 	path = /obj/item/attachable/bayonet/upp/surplus
@@ -1126,12 +1354,16 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "M8 Cartridge Bayonet"
 	path = /obj/item/storage/box/loadout/co2_knife
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/weapon/butterfly_knife
 	display_name = "Butterfly Knife"
 	path = /obj/item/weapon/butterfly
 	cost = 3
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/weapon/clfpistol
 	display_name = "Hummingbird Pistol"
 	path = /obj/item/storage/box/loadout/CLF_loadout
@@ -1218,6 +1450,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/large_holster/machete/arnold/weak
 	cost = 4
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -1225,9 +1459,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/drink
 	category = "Canned drinks"
+	/*
 	allowed_origins = NON_UPP_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/drink/water
 	display_name = "Bottled water"
@@ -1238,18 +1476,24 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Grape juice"
 	path = /obj/item/reagent_container/food/drinks/cans/grape_juice
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/drink/lemon_lime
-	display_name = "Lemon lime"
+	display_name = "BLAST lemon-lime soda"
+	// HALO PVE EDIT - END
 	path = /obj/item/reagent_container/food/drinks/cans/lemon_lime
 
 /datum/gear/drink/iced_tea
 	display_name = "Iced tea"
 	path = /obj/item/reagent_container/food/drinks/cans/iced_tea
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/drink/cola
-	display_name = "Classic Cola"
+	display_name = "Coca-Cola"
+	// HALO PVE EDIT - END
 	path = /obj/item/reagent_container/food/drinks/cans/classcola
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/drink/mountain_wind
 	display_name = "Mountain Wind"
 	path = /obj/item/reagent_container/food/drinks/cans/space_mountain_wind
@@ -1265,7 +1509,17 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/drink/souto_diet
 	display_name = "Diet Souto"
 	path = /obj/item/reagent_container/food/drinks/cans/souto/diet/classic
+*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - ITEM ADDITION
+/datum/gear/drink/bepis
+	display_name = "Pepsi"
+	path = /obj/item/reagent_container/food/drinks/cans/pepsi
+	// HALO PVE EDIT - END
+
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/drink/boda
 	display_name = "Boda Soda"
 	path = /obj/item/reagent_container/food/drinks/cans/boda
@@ -1295,6 +1549,14 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/drink/alcohol/loko
 	display_name = "Thirteen Loko"
 	path = /obj/item/reagent_container/food/drinks/cans/thirteenloko
+*/
+	// HALO PVE EDIT - END
+
+	// HALO PVE EDIT - START - ITEM ADDITION
+/datum/gear/drink/orange_soda
+	display_name = "Oranj Soda"
+	path = /obj/item/reagent_container/food/drinks/cans/starkist
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -1325,19 +1587,27 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Metal flask"
 	path = /obj/item/reagent_container/food/drinks/flask
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/flask/uscm
 	display_name = "USCM flask"
 	path = /obj/item/reagent_container/food/drinks/flask/marine
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/flask/vacuum
 	display_name = "Vacuum flask"
 	path = /obj/item/reagent_container/food/drinks/flask/vacuumflask
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/flask/wy
 	display_name = "WY flask"
 	path = /obj/item/reagent_container/food/drinks/flask/weylandyutani
 	allowed_origins = NON_UPP_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
 /*
 //================================================
@@ -1387,9 +1657,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/snack_packaged
 	category = "Food (packaged)"
+	/*
 	allowed_origins = NON_UPP_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/snack_packaged/beef_jerky
 	display_name = "Beef jerky"
@@ -1462,9 +1736,13 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/smoking
 	category = "Smoking"
+	/*
 	allowed_origins = NON_UPP_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/smoking/cigarette
 	display_name = "Cigarette"
@@ -1473,14 +1751,18 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	slot = WEAR_FACE
 	allowed_origins = FACTION_ORIGINS
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ITEM REPATHING
 /datum/gear/smoking/cigarette/cigar_classic
-	display_name = "Classic cigar"
-	path = /obj/item/clothing/mask/cigarette/cigar/classic
+	display_name = "Sweet William cigar"
+	path = /obj/item/clothing/mask/cigarette/cigar
+	// HALO PVE EDIT - END
 	cost = 2
 
+	// HALO PVE EDIT - START - ITEM RENAMING, ITEM REPATHING
 /datum/gear/smoking/cigarette/cigar_premium
-	display_name = "Premium cigar"
-	path = /obj/item/clothing/mask/cigarette/cigar
+	display_name = "Generic cigar"
+	path = /obj/item/clothing/mask/cigarette/cigar/classic
+	// HALO PVE EDIT - END
 	cost = 1
 	allowed_origins = FACTION_ORIGINS
 
@@ -1489,30 +1771,46 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/fancy/cigarettes/lucky_strikes
 	cost = 0
 
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/smoking/pack_laika
 	display_name = "Pack Of Laika"
 	path = /obj/item/storage/fancy/cigarettes/laika
+	/*
 	allowed_origins = UPP_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/smoking/pack_emeraldgreen
 	display_name = "Pack Of Emerald Greens"
 	path = /obj/item/storage/fancy/cigarettes/emeraldgreen
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/smoking/pack_wygold
-	display_name = "Pack Of Weyland Yutani Golds"
+	display_name = "Pack Of Watashi-Yorro Golds"
+	// HALO PVE EDIT - END
 	path = /obj/item/storage/fancy/cigarettes/wypacket
 
 /datum/gear/smoking/pack_koorlander
 	display_name = "Pack Of Koorlander Golds"
 	path = /obj/item/storage/fancy/cigarettes/kpack
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/smoking/pack_arcturian
-	display_name = "Pack Of Arcturian Aces"
+	display_name = "Pack Of Arcadian Aces"
+	// HALO PVE EDIT - END
 	path = /obj/item/storage/fancy/cigarettes/arcturian_ace
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/smoking/pack_ladyfingers
-	display_name = "Pack Of Lady Fingers"
+	display_name = "Pack Of Cupid's Delights"
+	// HALO PVE EDIT - END
 	path = /obj/item/storage/fancy/cigarettes/lady_finger
+
+	// HALO PVE EDIT - START - ITEM ADDITION
+/datum/gear/smoking/pack_balaji
+	display_name = "Pack Of Ludicrous Plaids"
+	path = /obj/item/storage/fancy/cigarettes/balaji
+	// HALO PVE EDIT - END
 
 /datum/gear/smoking/spirit
 	display_name = "Pack Of American Spirit, Turquoise"
@@ -1527,10 +1825,14 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/fancy/cigarettes/blackpack
 	cost = 4
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/smoking/weed_joint
 	display_name = "Joint of weed"
 	path = /obj/item/clothing/mask/cigarette/weed
 	cost = 1
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/smoking/lighter
 	display_name = "Lighter, cheap"
@@ -1573,16 +1875,19 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc
 	category = "Miscellaneous"
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/misc/pdt_kit
 	display_name = "PDT/L kit"
 	path = /obj/item/storage/box/pdt_kit/advanced
 	cost = 1 // it's in the vendors anyway.
 
-
 /datum/gear/misc/watch
 	display_name = "Seiko Pulsemeter wristwatch"
 	path = /obj/item/storage/box/watch_box
 	cost = 1
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/misc/watch/bishop
 	display_name = "Seiko 7A28-6000 wristwatch"
@@ -1604,19 +1909,29 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/storage/box/watch_box/dallas
 	cost = 3
 
+	// HALO PVE EDIT - START - OPTION REMOVAL
+/*
 /datum/gear/misc/sunscreen_stick
 	display_name = "USCM issue sunscreen"
 	path = /obj/item/facepaint/sunscreen_stick
 	cost = 1 //The cadmium poisoning pays for the discounted cost longterm
 	allowed_origins = USCM_ORIGINS
+*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/misc/dogtags
 	display_name = "Attachable Dogtags"
 	path = /obj/item/clothing/accessory/dogtags
 	cost = 0
 	slot = WEAR_IN_ACCESSORY
+	/*
 	allowed_origins = USCM_ORIGINS
+	*/
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL
+/*
 /datum/gear/misc/patch_uscm
 	display_name = "USCM shoulder patch"
 	path = /obj/item/clothing/accessory/patch
@@ -1662,6 +1977,8 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc/patch_rmc/twe
 	display_name = "Three World Empire shoulder patch"
 	path = /obj/item/clothing/accessory/patch/twe
+*/
+	// HALO PVE EDIT - END
 
 /datum/gear/misc/family_photo
 	display_name = "Family photo"
@@ -1703,3 +2020,10 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Eye drops"
 	path = /obj/item/prop/helmetgarb/eye_drops
 	cost = 1
+
+// HALO PVE EDIT - START - ITEM ADDITION
+/datum/gear/misc/datapad
+	display_name = "SC2 Personal Data-Pad"
+	path = /obj/item/datapad
+	cost = 5
+// HALO PVE EDIT - END
