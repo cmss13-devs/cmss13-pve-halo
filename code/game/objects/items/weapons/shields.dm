@@ -54,6 +54,20 @@
 		lower_shield(user)
 	..()
 
+/obj/item/weapon/shield/riot/covenant
+	name = "Ruuhtian point defense gauntlet"
+	desc = "Nigh-Ubiquitous equipment among Kig'yar warriors serving the Covenant. This piece of equipment projects a linear energy barrier from the wrist mounted projector, allowing the user to crouch behind it for near total cover from incoming fire. Proves exeedingly effective against any form of ballistic weapon, and provides impressive protection against plasma weaponry."
+	icon = 'icons/halo/obj/items/ruuhtian_shield.dmi'
+	readied_block = 150
+	passive_block = 100
+	icon_state = "gauntlet"
+	base_icon_state = "gauntlet"
+	item_state = "gauntlet"
+	item_icons = list(
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+		)
+
 /obj/item/weapon/shield/riot
 	name = "riot shield"
 	desc = "Composite translucent shield useful for deflecting blunt objects or high speed collisions."

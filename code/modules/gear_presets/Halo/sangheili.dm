@@ -15,7 +15,7 @@
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
 	paygrades = list(PAY_SHORT_COV_CIV = JOB_PLAYTIME_TIER_0)
 	faction = FACTION_SANGHEILI
-	skills = /datum/skills/covenant/sangheili
+	skills = /datum/skills/SL
 
 /datum/equipment_preset/covenant/sangheili/load_race(mob/living/carbon/human/new_human, client/mob_client)
 	new_human.set_species(SPECIES_SANGHEILI)
@@ -60,7 +60,7 @@
 	rank = JOB_COV_MINOR
 	paygrades = list(PAY_SHORT_SANG_MINOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Minor"
-	skills = /datum/skills/covenant/sangheili
+	skills = /datum/skills/SL
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/minor/load_gear(mob/living/carbon/human/new_human)
@@ -104,7 +104,7 @@
 	rank = JOB_COV_MAJOR
 	paygrades = list(PAY_SHORT_SANG_MAJOR = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Major"
-	skills = /datum/skills/covenant/sangheili
+	skills = /datum/skills/SL
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/major/load_gear(mob/living/carbon/human/new_human)
@@ -148,7 +148,7 @@
 	rank = JOB_COV_ULTRA
 	paygrades = list(PAY_SHORT_SANG_ULTRA = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Ultra"
-	skills = /datum/skills/covenant/sangheili
+	skills = /datum/skills/SL
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/ultra/load_gear(mob/living/carbon/human/new_human)
@@ -184,7 +184,7 @@
 	rank = JOB_COV_ZEALOT
 	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Zealot"
-	skills = /datum/skills/covenant/sangheili
+	skills = /datum/skills/SL
 	languages = list(LANGUAGE_SANGHEILI)
 
 /datum/equipment_preset/covenant/sangheili/zealot/load_gear(mob/living/carbon/human/new_human)
