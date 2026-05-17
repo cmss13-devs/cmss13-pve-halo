@@ -29,3 +29,9 @@
 /obj/item/trash/hotdog
 	name = "microwave hotdog wrapper"
 	desc = "Oily plastic package that once held a hotdog."
+
+/obj/item/trash/grenade/unsc_smoke
+	name = "spent M45 smoke grenade"
+	desc = "A used-up smoke grenade canister. This is trash."
+	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
+	icon_state = "smonk_spent"
