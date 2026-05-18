@@ -1,0 +1,8 @@
+{
+    "map_name": "Featureless Space",
+    "map_path": "map_files/Featureless_Space",
+    "map_file": "Featureless_Space.dmm",
+    "weather_holder": "/datum/weather_ss_map_holder/lv624",
+    "traits": [{ "Ground": true }],
+    "camouflage": "jungle"
+}
