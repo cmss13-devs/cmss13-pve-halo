@@ -302,3 +302,17 @@
 	new /obj/item/storage/firstaid/unsc/corpsman(src)
 	new /obj/item/storage/firstaid/unsc/corpsman(src)
 	new /obj/item/storage/firstaid/unsc/corpsman(src)
+
+/obj/structure/closet/ordnance_canister/dropping/misc/corpsman_resupply
+	name = parent_type::name + " (Corpsman Supplies)"
+	drop_on_spawn = TRUE
+
+/obj/structure/closet/ordnance_canister/dropping/misc/corpsman_resupply/Initialize() // We need multiple paths and the system doesn't support that and I'm too lazy to make it do that for one thing.
+	. = ..()
+	new /obj/item/ammo_box/magazine/misc/unsc/medical_packets(src)
+	new /obj/item/storage/firstaid/unsc/corpsman(src)
+	new /obj/item/storage/firstaid/unsc/corpsman(src)
+	new /obj/item/storage/firstaid/unsc/corpsman(src)
+	new /obj/item/storage/firstaid/unsc/corpsman(src)
+
+
