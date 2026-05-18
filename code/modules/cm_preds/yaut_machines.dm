@@ -8,6 +8,12 @@
 	minimap_type = MINIMAP_FLAG_ALL
 	faction = FACTION_YAUTJA
 
+/obj/structure/machinery/prop/almayer/CICmap/yautja/empty
+	name = "covenant globe"
+	desc = "A hologram projector designed by the covenant to display worlds."
+	icon_state = "globe_empty"
+	faction = FACTION_COVENANT
+
 /obj/structure/machinery/autolathe/yautja
 	name = "yautja autolathe"
 	desc = "It produces items using metal and glass."
