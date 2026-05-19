@@ -1,12 +1,15 @@
-/obj/item/device/helmet_visor/medical/odst
-	name = "VSIR Field Medic Module"
-	desc = "A support utility module for the VISR system. Links to the biomonitors of allied personnel and provides detailed information for those able to comprehend it."
-	helmet_overlay = "med_sight_right"
-	hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
+// /obj/item/device/helmet_visor/medical/odst
+	// name = "VSIR Field Medic Module"
+	// desc = "A support utility module for the VISR system. Links to the biomonitors of allied personnel and provides detailed information for those able to comprehend it."
+	// helmet_overlay = "med_sight_right"
+	// hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
 
 /obj/item/device/helmet_visor/night_vision/unsc/
 	hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
 	helmet_overlay = "hud_sight_full"
+	lighting_alpha = 190
+	toggle_on_sound = 'sound/handling/visr_on.ogg'
+	toggle_off_sound = 'sound/handling/visr_off.ogg'
 	power_use = 0
 	visor_glows = FALSE
 // separating out in case there are visr variants created between odst and spartans down the line
@@ -16,10 +19,9 @@
 /obj/item/device/helmet_visor/night_vision/unsc/activate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
 
-	user.add_client_color_matrix("visr_low_light", 99, color_matrix_multiply(color_matrix_saturation(1.25), color_matrix_from_string("#e3b153")))
+	user.add_client_color_matrix("visr_low_light", 99, color_matrix_multiply(color_matrix_saturation(0.8), color_matrix_from_string("#cbae77")))
 	user.overlay_fullscreen("visr_low_light", /atom/movable/screen/fullscreen/flash/noise/nvg)
 	user.overlay_fullscreen("visr_low_light_blur", /atom/movable/screen/fullscreen/brute/nvg/visr, 3)
-	user.overlay_fullscreen("visr_low_light_vignette", /atom/movable/screen/fullscreen/brute/nvg, 4)
 	user.update_sight()
 
 	for(var/type in hud_type)
@@ -36,7 +38,6 @@
 	user.remove_client_color_matrix("visr_low_light", 1 SECONDS)
 	user.clear_fullscreen("visr_low_light", 0.5 SECONDS)
 	user.clear_fullscreen("visr_low_light_blur", 0.5 SECONDS)
-	user.clear_fullscreen("visr_low_light_vignette", 0.5 SECONDS)
 
 	for(var/type in hud_type)
 		var/datum/mob_hud/current_mob_hud = GLOB.huds[type]
@@ -51,19 +52,20 @@
 	STOP_PROCESSING(SSobj, src)
 
 /obj/item/device/helmet_visor/night_vision/unsc/process(delta_time)
-	if(!VISR_LOWLIGHT_USAGE(delta_time))
+	if(VISR_LOWLIGHT_USAGE(delta_time))
+		return
 
-		if(!istype(loc, /obj/item/clothing/head/helmet/marine))
-			return PROCESS_KILL
-
-		if(!istype(loc?.loc, /mob/living/carbon/human))
-			return PROCESS_KILL
-
-		var/obj/item/clothing/head/helmet/marine/attached_helmet = loc
-		var/mob/living/carbon/human/user = loc.loc
-		to_chat(user, SPAN_NOTICE("[src] deactivates as the battery goes out."))
-		deactivate_visor(attached_helmet, user)
+	if(!istype(loc, /obj/item/clothing/head/helmet/marine))
 		return PROCESS_KILL
+
+	if(!istype(loc?.loc, /mob/living/carbon/human))
+		return PROCESS_KILL
+
+	var/obj/item/clothing/head/helmet/marine/attached_helmet = loc
+	var/mob/living/carbon/human/user = loc.loc
+	to_chat(user, SPAN_NOTICE("[src] deactivates as the battery goes out."))
+	deactivate_visor(attached_helmet, user)
+	return PROCESS_KILL
 
 /obj/item/device/helmet_visor/night_vision/unsc/can_toggle(mob/living/carbon/human/user)
 	. = ..()
@@ -88,18 +90,19 @@
 	user.sync_lighting_plane_alpha()
 
 /obj/item/device/helmet_visor/night_vision/unsc/change_view(mob/user, new_size)
-	if(new_size > 13) // cannot use binos with NVO
-		var/obj/item/clothing/head/helmet/marine/attached_helmet = loc
-		if(!istype(attached_helmet))
-			return
-		deactivate_visor(attached_helmet, user)
-		to_chat(user, SPAN_NOTICE("You deactivate [src] on [attached_helmet]."))
-		playsound_client(user.client, toggle_off_sound, null, 75)
-		attached_helmet.active_visor = null
-		attached_helmet.update_icon()
-		var/datum/action/item_action/cycle_helmet_huds/cycle_action = locate() in attached_helmet.actions
-		if(cycle_action)
-			cycle_action.set_default_overlay()
+	if(new_size <= 13) // cannot use binos with NVO
+		return
+	var/obj/item/clothing/head/helmet/marine/attached_helmet = loc
+	if(!istype(attached_helmet))
+		return
+	deactivate_visor(attached_helmet, user)
+	to_chat(user, SPAN_NOTICE("You deactivate [src] on [attached_helmet]."))
+	playsound_client(user.client, toggle_off_sound, null, 75)
+	attached_helmet.active_visor = null
+	attached_helmet.update_icon()
+	var/datum/action/item_action/cycle_helmet_huds/cycle_action = locate() in attached_helmet.actions
+	if(cycle_action)
+		cycle_action.set_default_overlay()
 
 #undef VISR_LOWLIGHT_USAGE
 
