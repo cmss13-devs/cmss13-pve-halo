@@ -1,9 +1,3 @@
-// /obj/item/device/helmet_visor/medical/odst
-	// name = "VSIR Field Medic Module"
-	// desc = "A support utility module for the VISR system. Links to the biomonitors of allied personnel and provides detailed information for those able to comprehend it."
-	// helmet_overlay = "med_sight_right"
-	// hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
-
 /obj/item/device/helmet_visor/night_vision/unsc/
 	hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
 	helmet_overlay = "hud_sight_full"

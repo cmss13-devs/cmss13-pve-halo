@@ -2020,8 +2020,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 /obj/item/clothing/head/helmet/marine/unsc/odst
 	name = "\improper CH381 ODST helmet"
 	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment, and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
-	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/unsc/odst) // new /obj/item/device/helmet_visor/medical/odst,
-	// start_down_visor_type = /obj/item/device/helmet_visor/medical/odst
+	built_in_visors = list(new /obj/item/device/helmet_visor/night_vision/unsc/odst)
 	icon_state = "odst"
 	item_state = "odst"
 	flags_inventory = COVEREYES|COVERMOUTH|BLOCKSHARPOBJ|BLOCKGASEFFECT
