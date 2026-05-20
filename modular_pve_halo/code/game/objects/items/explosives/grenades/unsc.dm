@@ -47,6 +47,6 @@
 	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
 	icon_state = "defensive_grenade"
 	item_state = "defensive_grenade"
-	explosion_power = 110
-	explosion_falloff = 10
+	explosion_power = 90
+	explosion_falloff = 8
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL
