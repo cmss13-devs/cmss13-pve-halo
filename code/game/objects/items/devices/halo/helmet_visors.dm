@@ -10,26 +10,32 @@
 
 /// Sets the action overlay to default hud sight up
 /datum/action/item_action/cycle_helmet_huds/halo/set_default_overlay()
-	action_icon_state = "hud_sight_up"
+	action_icon_state = "visr_off"
 	button.overlays.Cut()
 	button.overlays += image('icons/halo/obj/items/clothing/helmet_visors.dmi', button, action_icon_state)
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc
-	name = "VSIR Low-Light Vision Module"
-	desc = "The integrated VISR system features light enhancement systems, raising the brightness of the surrounding area on the user's heads-up display during low-light operations."
+/obj/item/device/helmet_visor/night_vision/halo
+	name = "HALO NVG Module"
+	desc = "If you're seeing this, you probably shouldn't be."
+	icon = 'icons/halo/obj/items/clothing/helmet_visors.dmi'
 
 	hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
 	lighting_alpha = 190
 	toggle_on_sound = 'sound/handling/visr_on.ogg'
 	toggle_off_sound = 'sound/handling/visr_off.ogg'
+	helmet_overlay = null
 	icon_state = "visr_chip"
 	action_icon_string = "visr_on"
 	power_use = 0
 	visor_glows = FALSE
 
+/obj/item/device/helmet_visor/night_vision/halo/unsc
+	name = "VSIR Low-Light Vision Module"
+	desc = "The integrated VISR system features light enhancement systems, raising the brightness of the surrounding area on the user's heads-up display during low-light operations."
+
 #define VISR_LOWLIGHT_USAGE(delta_time) (power_cell.use(power_use * (delta_time ? delta_time : 1)))
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc/activate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
+/obj/item/device/helmet_visor/night_vision/halo/activate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
 
 	user.add_client_color_matrix("visr_low_light", 99, color_matrix_multiply(color_matrix_saturation(0.8), color_matrix_from_string("#cbae77")))
@@ -47,7 +53,7 @@
 	START_PROCESSING(SSobj, src)
 	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW, PROC_REF(change_view))
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc/deactivate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
+/obj/item/device/helmet_visor/night_vision/halo/deactivate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
 	user.remove_client_color_matrix("visr_low_light", 1 SECONDS)
 	user.clear_fullscreen("visr_low_light", 0.5 SECONDS)
 	user.clear_fullscreen("visr_low_light_blur", 0.5 SECONDS)
@@ -64,7 +70,7 @@
 	user.update_sight()
 	STOP_PROCESSING(SSobj, src)
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc/process(delta_time)
+/obj/item/device/helmet_visor/night_vision/halo/process(delta_time)
 	if(VISR_LOWLIGHT_USAGE(delta_time))
 		return
 
@@ -80,7 +86,7 @@
 	deactivate_visor(attached_helmet, user)
 	return PROCESS_KILL
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc/can_toggle(mob/living/carbon/human/user)
+/obj/item/device/helmet_visor/night_vision/halo/can_toggle(mob/living/carbon/human/user)
 	. = ..()
 	if(!.)
 		return
@@ -95,14 +101,14 @@
 
 	return TRUE
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc/on_update_sight(mob/user)
+/obj/item/device/helmet_visor/night_vision/halo/on_update_sight(mob/user)
 
 	if(lighting_alpha < 255)
 		user.see_in_dark = 7
 	user.lighting_alpha = lighting_alpha
 	user.sync_lighting_plane_alpha()
 
-/obj/item/device/helmet_visor/night_vision/halo/unsc/change_view(mob/user, new_size)
+/obj/item/device/helmet_visor/night_vision/halo/change_view(mob/user, new_size)
 	if(new_size <= 13) // cannot use binos with NVO
 		return
 	var/obj/item/clothing/head/helmet/marine/attached_helmet = loc
