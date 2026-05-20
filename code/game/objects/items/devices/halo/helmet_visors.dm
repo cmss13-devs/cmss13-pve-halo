@@ -39,7 +39,6 @@
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
 
 	user.add_client_color_matrix("visr_low_light", 99, color_matrix_multiply(color_matrix_saturation(0.8), color_matrix_from_string("#cbae77")))
-	user.overlay_fullscreen("visr_low_light", /atom/movable/screen/fullscreen/flash/noise/nvg)
 	user.overlay_fullscreen("visr_low_light_blur", /atom/movable/screen/fullscreen/brute/nvg/visr, 3)
 	user.update_sight()
 
@@ -55,7 +54,6 @@
 
 /obj/item/device/helmet_visor/night_vision/halo/deactivate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
 	user.remove_client_color_matrix("visr_low_light", 1 SECONDS)
-	user.clear_fullscreen("visr_low_light", 0.5 SECONDS)
 	user.clear_fullscreen("visr_low_light_blur", 0.5 SECONDS)
 
 	for(var/type in hud_type)
