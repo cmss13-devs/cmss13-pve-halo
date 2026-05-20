@@ -86,8 +86,7 @@
 	name = "Special Operations Unggoy Pair !!CLOAKED!!"
 	desc = "A duo of Special Operations Unggoy, both equipped with plasma rifles. Cloaked."
 	ai_to_spawn = list(
-		/datum/equipment_preset/covenant/unggoy/specops/cloaking = 1,
-		/datum/equipment_preset/covenant/unggoy/specops/cloaking = 1,
+		/datum/equipment_preset/covenant/unggoy/specops/cloaking = 2,
 	)
 
 /datum/human_ai_squad_preset/covenant/specops_unggoy_pair_ultra
