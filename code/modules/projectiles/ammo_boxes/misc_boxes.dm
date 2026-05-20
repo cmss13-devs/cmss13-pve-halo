@@ -317,7 +317,7 @@
 	empty = TRUE
 
 /obj/item/ammo_box/magazine/misc/unsc/grenade
-	name = "\improper UNSC storage crate - (Grenades x 9)"
+	name = "\improper UNSC storage crate - (Frag Grenades x 9)"
 	desc = "A generic storage crate for the UNSC holding fragmentation grenades."
 	icon_state = "base_frag"
 	magazine_type = /obj/item/explosive/grenade/high_explosive/m15/unsc
@@ -325,6 +325,28 @@
 	overlay_content = "_frag"
 
 /obj/item/ammo_box/magazine/misc/unsc/grenade/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke
+	name = "\improper UNSC storage crate - (Smoke Grenades x 9)"
+	desc = "A generic storage crate for the UNSC holding smoke grenades."
+	icon_state = "base_smoke"
+	magazine_type = /obj/item/explosive/grenade/smokebomb/unsc
+	num_of_magazines = 9
+	overlay_content = "_smoke"
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/blast
+	name = "\improper UNSC storage crate - (Blast Grenades x 9)"
+	desc = "A generic storage crate for the UNSC holding defensive grenades."
+	icon_state = "base_defgre"
+	magazine_type = /obj/item/explosive/grenade/high_explosive/pmc/unsc
+	num_of_magazines = 9
+	overlay_content = "_defgre"
+
+/obj/item/ammo_box/magazine/misc/unsc/grenade/blast/empty
 	empty = TRUE
 
 /obj/item/ammo_box/magazine/misc/unsc/grenade/launchable
