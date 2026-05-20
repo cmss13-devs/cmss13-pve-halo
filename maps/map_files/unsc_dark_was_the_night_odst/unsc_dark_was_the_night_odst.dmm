@@ -2103,7 +2103,7 @@
 	light_color = "#dae2ff";
 	dir = 1
 	},
-/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot/empty{
 	pixel_x = 3;
 	pixel_y = 19
 	},
