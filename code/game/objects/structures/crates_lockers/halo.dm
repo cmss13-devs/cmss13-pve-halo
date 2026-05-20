@@ -285,6 +285,19 @@
 	contents_number = 2
 	drop_on_spawn = TRUE
 
+/obj/structure/closet/ordnance_canister/dropping/misc/grenades
+	name = parent_type::name + " (Mixed Grenades)"
+	drop_on_spawn = TRUE
+
+/obj/structure/closet/ordnance_canister/dropping/misc/grenades/Initialize() // I couldn't be arsed to figure it out, sorry
+	. = ..()
+	new /obj/item/ammo_box/magazine/misc/unsc/grenade(src)
+	new /obj/item/ammo_box/magazine/misc/unsc/grenade(src)
+	new /obj/item/ammo_box/magazine/misc/unsc/grenade/smoke(src)
+	new /obj/item/ammo_box/magazine/misc/unsc/grenade/smoke(src)
+	new /obj/item/ammo_box/magazine/misc/unsc/grenade/blast(src)
+	new /obj/item/ammo_box/magazine/misc/unsc/grenade/blast(src)
+
 /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades
 	name = parent_type::name + " (40mm Grenades)"
 	contents_path = /obj/item/ammo_box/magazine/misc/unsc/grenade/launchable

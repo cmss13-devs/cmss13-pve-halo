@@ -14,7 +14,7 @@
 #define MISC_ORDNANCE list("Laser", "Minirocket", "Incendiary Minirocket",  "Sentry Drop", "25mm Multipurpose Strike", "25mm Armorpiercing Strike")
 #define THROWABLES_ORDNANCE list("HE", "HE - UPP", "HE - RMC", "Frag", "Incendiary", "Molotov", "Incendiary - RMC", "Smoke - White", "Smoke - Green", "Smoke - Red", "Smoke - UPP", "WP", "WP - UPP", "Ball-Breakers", "Nerve Gas", "LSD", "Tear Gas", "Metal Foam", "Flare", "Flare - UPP", "Flare - Signal")
 #define WEAPON_RESUPPLY list("MA5C", "MA5B", "BR55", "M7", "M7/S", "M90 CAWS", "SRS99-AM", "M41 SPNKr")
-#define AMMO_RESUPPLY list("MA5C (Ammo)", "MA5B (Ammo)", "BR55 (Ammo)", "MA5C Shredder (Ammo)", "MA5B Shredder (Ammo)", "BR55 Extended (Ammo)", "M7 (Ammo)", "M6C (Ammo)", "M6C SOCOM (Ammo)", "M6G (Ammo)", "M6D (Ammo)", "Buckshot 8G (Ammo)", "M41 SPNKr (Ammo)", "SRS99-AM (Ammo)", "Basic (Mixed Ammo)", "Specialist (Mixed Ammo)", "ODST (Mixed Ammo)", "M9 (Grenades)", "40mm (Grenades)", "Medical Supplies")
+#define AMMO_RESUPPLY list("MA5C (Ammo)", "MA5B (Ammo)", "BR55 (Ammo)", "MA5C Shredder (Ammo)", "MA5B Shredder (Ammo)", "BR55 Extended (Ammo)", "M7 (Ammo)", "M6C (Ammo)", "M6C SOCOM (Ammo)", "M6G (Ammo)", "M6D (Ammo)", "Buckshot 8G (Ammo)", "M41 SPNKr (Ammo)", "SRS99-AM (Ammo)", "Basic (Mixed Ammo)", "Specialist (Mixed Ammo)", "ODST (Mixed Ammo)", "M9 (Grenades)", "Grenades (Mixed)", "40mm (Grenades)", "Medical Supplies")
 
 /client/proc/toggle_fire_support_menu()
 	set name = "Fire Support Menu"
@@ -796,6 +796,9 @@
 			if("M9 (Grenades)")
 				new /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades(target_turf)
 				return TRUE
+			if("Grenades (Mixed)")
+				new /obj/structure/closet/ordnance_canister/dropping/misc/grenades(target_turf)
+				return TRUE
 			if("40mm (Grenades)")
 				new /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades(target_turf)
 				return TRUE
@@ -1359,8 +1362,8 @@
 	name = "Supply - Grenades"
 	icon_state = "Supply_Grenade"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES
-	cost = 3
-	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/m9_grenades
+	cost = 4
+	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/grenades
 
 /datum/fire_support/custom/wombat/supply_drop/launchable_grenades
 	name = "Supply - 40mm Grenades"
