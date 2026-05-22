@@ -26,6 +26,7 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 	MOB_HUD_HUNTER_CLAN = new /datum/mob_hud/hunter_clan(),
 	MOB_HUD_EXECUTE = new /datum/mob_hud/execute_hud(),
 	MOB_HUD_FACTION_UNSC = new /datum/mob_hud/faction/unsc(),
+	MOB_HUD_VISR = new /datum/mob_hud/visr()
 	)))
 
 /datum/mob_hud
@@ -231,10 +232,19 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 	faction_to_check = FACTION_UACG
 
 /datum/mob_hud/faction/unsc
-	faction_to_check = FACTION_UNSC
+	faction_to_check = FACTION_LIST_UNSC
 
 /datum/mob_hud/faction/observer
 	hud_icons = list(FACTION_HUD, ORDER_HUD, HUNTER_CLAN, HOLOCARD_HUD)
+
+// HALO HUD
+
+/datum/mob_hud/visr
+	hud_icons = list(VISR_HUD)
+
+/datum/mob_hud/visr/add_to_single_hud(mob/user, mob/target)
+	if(target != user)
+		..()
 
 ///////// MOB PROCS //////////////////////////////:
 
@@ -803,6 +813,35 @@ GLOBAL_DATUM(hud_icon_hudfocus, /image)
 /mob/living/carbon/human/hud_set_holocard()
 	var/image/holder = hud_list[HOLOCARD_HUD]
 	holder.icon_state = holo_card_color ? "holo_card_[holo_card_color]" : "hudblank"
+
+// HALO VISR HUD
+/mob/proc/set_visr_hud()
+	return
+
+GLOBAL_DATUM(visr_icon_neutral, /image)
+GLOBAL_DATUM(visr_icon_friendly, /image)
+GLOBAL_DATUM(visr_icon_enemy, /image)
+
+/mob/living/carbon/human/set_visr_hud()
+	var/image/holder = hud_list[VISR_HUD]
+	holder.overlays.Cut()
+	if(faction in FACTION_LIST_COVENANT)
+		if(!GLOB.visr_icon_enemy)
+			GLOB.visr_icon_enemy = image('icons/halo/mob/hud/hud.dmi', src, "visr_icon_enemy")
+		holder.overlays += GLOB.visr_icon_enemy
+	else if(faction in list(FACTION_INSURGENT))
+		if(!GLOB.visr_icon_enemy)
+			GLOB.visr_icon_enemy = image('icons/halo/mob/hud/hud.dmi', src, "visr_icon_enemy")
+		holder.overlays += GLOB.visr_icon_enemy
+	else if(faction in list(FACTION_UNSC, FACTION_UNSCN))
+		if(!GLOB.visr_icon_friendly)
+			GLOB.visr_icon_friendly = image('icons/halo/mob/hud/hud.dmi', src, "visr_icon_friendly")
+		holder.overlays += GLOB.visr_icon_friendly
+	else
+		if(!GLOB.visr_icon_neutral)
+			GLOB.visr_icon_neutral = image('icons/halo/mob/hud/hud.dmi', src, "visr_icon_neutral")
+		holder.overlays += GLOB.visr_icon_neutral
+	hud_list[VISR_HUD] = holder
 
 // Vampire Execute HUD
 /mob/living/carbon/human/proc/update_execute_hud()

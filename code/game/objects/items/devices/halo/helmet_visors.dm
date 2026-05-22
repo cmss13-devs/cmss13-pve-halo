@@ -3,7 +3,7 @@
 	desc = "If you're seeing this, you probably shouldn't be."
 	icon = 'icons/obj/items/clothing/helmet_visors.dmi'
 
-	hud_type = list(MOB_HUD_FACTION_UNSC)
+	hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_VISR)
 	lighting_alpha = 170 // originally 190
 	toggle_on_sound = 'sound/handling/visr_on.ogg'
 	toggle_off_sound = 'sound/handling/visr_off.ogg'
@@ -14,8 +14,8 @@
 	visor_glows = FALSE
 
 /obj/item/device/helmet_visor/night_vision/halo/unsc
-	name = "VISR Low-Light Vision Module"
-	desc = "The integrated VISR system features light enhancement systems, raising the brightness of the surrounding area on the user's heads-up display during low-light operations."
+	name = "VISR v22.5606C.01"
+	desc = "The integrated VISR system features light enhancement systems, raising the brightness of the surrounding area on the user's heads-up display during low-light operations. This vision-enhancement mode also links with the user's neural interface to provide Friend or Foe designation by searching for IFF transponders on friendly or enemy personnel"
 
 #define VISR_LOWLIGHT_USAGE(delta_time) (power_cell.use(power_use * (delta_time ? delta_time : 1)))
 
