@@ -1,19 +1,3 @@
-/// Sets the action overlay based on the visor type
-/datum/action/item_action/cycle_helmet_huds/halo/set_action_overlay(obj/item/device/helmet_visor/new_visor)
-	if(!new_visor)
-		set_default_overlay()
-		return
-
-	action_icon_state = new_visor.action_icon_string
-	button.overlays.Cut()
-	button.overlays += image('icons/halo/obj/items/clothing/helmet_visors.dmi', button, action_icon_state)
-
-/// Sets the action overlay to default hud sight up
-/datum/action/item_action/cycle_helmet_huds/halo/set_default_overlay()
-	action_icon_state = "visr_off"
-	button.overlays.Cut()
-	button.overlays += image('icons/halo/obj/items/clothing/helmet_visors.dmi', button, action_icon_state)
-
 /obj/item/device/helmet_visor/night_vision/halo
 	name = "HALO NVG Module"
 	desc = "If you're seeing this, you probably shouldn't be."
