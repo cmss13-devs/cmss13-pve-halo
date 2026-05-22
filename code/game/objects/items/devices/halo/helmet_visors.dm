@@ -30,7 +30,7 @@
 	visor_glows = FALSE
 
 /obj/item/device/helmet_visor/night_vision/halo/unsc
-	name = "VSIR Low-Light Vision Module"
+	name = "VISR Low-Light Vision Module"
 	desc = "The integrated VISR system features light enhancement systems, raising the brightness of the surrounding area on the user's heads-up display during low-light operations."
 
 #define VISR_LOWLIGHT_USAGE(delta_time) (power_cell.use(power_use * (delta_time ? delta_time : 1)))
