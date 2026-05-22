@@ -20,7 +20,7 @@
 	icon = 'icons/halo/obj/items/clothing/helmet_visors.dmi'
 
 	hud_type = list(MOB_HUD_FACTION_UNSC)
-	lighting_alpha = 190
+	lighting_alpha = 170 // originally 190
 	toggle_on_sound = 'sound/handling/visr_on.ogg'
 	toggle_off_sound = 'sound/handling/visr_off.ogg'
 	helmet_overlay = null
@@ -38,7 +38,7 @@
 /obj/item/device/helmet_visor/night_vision/halo/activate_visor(obj/item/clothing/head/helmet/marine/attached_helmet, mob/living/carbon/human/user)
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
 
-	user.add_client_color_matrix("visr_low_light", 99, color_matrix_multiply(color_matrix_saturation(0.8), color_matrix_from_string("#cbae77")))
+	user.add_client_color_matrix("visr_low_light", 99, color_matrix_multiply(color_matrix_saturation(1.25), color_matrix_from_string("#cab999"))) // saturation originally 0.8, hexcode originally "#cbae77"
 	user.overlay_fullscreen("visr_low_light_blur", /atom/movable/screen/fullscreen/brute/nvg/visr, 3)
 	user.update_sight()
 
