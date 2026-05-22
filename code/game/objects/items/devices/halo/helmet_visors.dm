@@ -19,7 +19,7 @@
 	desc = "If you're seeing this, you probably shouldn't be."
 	icon = 'icons/halo/obj/items/clothing/helmet_visors.dmi'
 
-	hud_type = list(MOB_HUD_FACTION_UNSC, MOB_HUD_MEDICAL_BASIC)
+	hud_type = list(MOB_HUD_FACTION_UNSC)
 	lighting_alpha = 190
 	toggle_on_sound = 'sound/handling/visr_on.ogg'
 	toggle_off_sound = 'sound/handling/visr_off.ogg'
