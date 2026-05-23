@@ -1,7 +1,16 @@
+import { BooleanLike } from 'common/react';
 import { useState } from 'react';
 
 import { useBackend } from '../backend';
-import { Box, Button, Divider, Dropdown, Section, Stack } from '../components';
+import {
+  Box,
+  Button,
+  Divider,
+  Dropdown,
+  Section,
+  Slider,
+  Stack,
+} from '../components';
 import { Window } from '../layouts';
 
 type AIEquipmentPreset = {
@@ -23,6 +32,11 @@ type BackendContext = {
   selected_equipment: string;
   species_settings: string[];
   species_selected: string;
+  zombie_outer_wear: boolean;
+  zombie_outer_wear_chance: number;
+  zombie_delimb_multi: number;
+  clipboard: string;
+  autoClean: BooleanLike;
 };
 
 export const HumanAISpawner = (props) => {
@@ -78,9 +92,6 @@ export const HumanAISpawner = (props) => {
                             setPreset(squad);
                             act('remember_path', {
                               path: squad.path,
-                              selected_faction: data.selected_faction,
-                              selected_equipment: data.selected_equipment,
-                              species_selected: data.species_selected,
                             });
                           }}
                         >
@@ -97,15 +108,32 @@ export const HumanAISpawner = (props) => {
               </Section>
             </Stack.Item>
             <Divider vertical />
+            {/* right panel*/}
             <Stack.Item width="30%">
               <Section
                 title="Selected Preset"
                 buttons={
-                  <Button.Checkbox
-                    checked={data.desc}
-                    icon="eye-slash"
-                    onClick={() => act('hide_desc')}
-                  />
+                  <span>
+                    {chosenPreset !== null ? (
+                      /*
+                      <span>
+                        <Button.Checkbox
+                          icon="clipboard"
+                          onClick={() => {
+                            act('save');
+                          }}
+                        />
+                        */
+                      <Button.Checkbox
+                        icon="trash"
+                        onClick={() =>
+                          act('delete_preset', {
+                            path: chosenPreset.path,
+                          })
+                        }
+                      />
+                    ) : null}
+                  </span>
                 }
               >
                 {chosenPreset !== null ? (
@@ -118,6 +146,7 @@ export const HumanAISpawner = (props) => {
                         textAlign="center"
                         width="100%"
                         selected={data.spawn_click_intercept}
+                        tooltip="RMB spawns on ghost."
                         onClick={() =>
                           act('create_ai', {
                             path: chosenPreset.path,
@@ -125,6 +154,16 @@ export const HumanAISpawner = (props) => {
                             selected_equipment: data.selected_equipment,
                           })
                         }
+                        onAuxClick={(e) => {
+                          if (e.button === 2) { // 2 means RMB
+                          act('create_ai', {
+                            path: chosenPreset.path,
+                            selected_faction: data.selected_faction,
+                            selected_equipment: data.selected_equipment,
+                            spawn_now: true,
+                          });
+                          }
+                        }}
                       >
                         {data.outfit === 1 ? 'Outfit' : 'Click Spawn'}
                       </Button>
@@ -176,6 +215,60 @@ export const HumanAISpawner = (props) => {
                       Click gives outfit
                     </Button.Checkbox>
                     <Section title="Additional Options" />
+                    {data.species_selected === 'Zombie' ? (
+                      <Stack align="baseline">
+                        <Stack.Item>
+                          <Button.Checkbox
+                            checked={data.zombie_outer_wear}
+                            onClick={() => {
+                              act('zombie_outer_wear');
+                            }}
+                          >
+                            Helmet
+                          </Button.Checkbox>
+                        </Stack.Item>
+                        <Stack.Item grow>
+                          <Slider
+                            maxValue={100}
+                            minValue={0}
+                            value={data.zombie_outer_wear_chance}
+                            onChange={(e, value) =>
+                              act('zombie_outer_wear_chance', {
+                                zombie_outer_wear_chance: value,
+                              })
+                            }
+                            unit={'%'}
+                            step={10}
+                            stepPixelSize={10}
+                          />
+                        </Stack.Item>
+                      </Stack>
+                    ) : null}
+                    {data.species_selected === 'Zombie' ? (
+                      <Stack align="baseline">
+                        <Button.Checkbox
+                          textAlign="center"
+                          width="55%"
+                          checked={data.autoClean}
+                          onClick={() => act('auto_clean')}
+                        >
+                          Auto-Clean
+                        </Button.Checkbox>
+                        <Slider
+                          maxValue={2000}
+                          minValue={-100}
+                          value={data.zombie_delimb_multi * 100}
+                          onChange={(e, value) =>
+                            act('zombie_delimb_multi', {
+                              zombie_delimb_multi: value / 100,
+                            })
+                          }
+                          unit={'% delimb'}
+                          step={100}
+                          stepPixelSize={10}
+                        />
+                      </Stack>
+                    ) : null}
                     <Dropdown
                       width="100%"
                       options={data.species_settings}
@@ -245,6 +338,7 @@ export const HumanAISpawner = (props) => {
                   </Box>
                 )}
               </Section>
+              <Section />
             </Stack.Item>
           </Stack>
         </Stack>
