@@ -1305,7 +1305,7 @@
 	warning_chat_verb = "FLY OVER"
 
 /datum/fire_support/custom/wombat/supply_drop
-	name = "Wombat - Mixed Ammo"
+	name = "Supply - Mixed Ammo"
 	cost = 2
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP
 	faction = FACTION_UNSC
