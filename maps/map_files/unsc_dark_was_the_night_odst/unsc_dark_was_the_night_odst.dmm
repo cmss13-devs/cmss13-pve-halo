@@ -552,7 +552,8 @@
 	layer = 3.01
 	},
 /obj/item/ammo_box/magazine/unsc/small/m6c/socom{
-	pixel_y = 19
+	pixel_y = 19;
+	pixel_x = 0
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
@@ -583,10 +584,12 @@
 "bz" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/small/m6c/socom{
-	pixel_y = 15
+	pixel_y = 15;
+	pixel_x = 0
 	},
 /obj/item/ammo_box/magazine/unsc/small/m6c/socom{
-	pixel_y = 5
+	pixel_y = 5;
+	pixel_x = 0
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
@@ -889,6 +892,7 @@
 /area/dark_was_the_night/ready_bay)
 "cq" = (
 /obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_x = 0;
 	pixel_y = 15
 	},
 /obj/item/ammo_box/magazine/unsc/ma5b,
@@ -993,6 +997,7 @@
 /area/dark_was_the_night/lower_hallway)
 "cK" = (
 /obj/structure/prop/unsc_crate/stack{
+	pixel_x = 0;
 	pixel_y = 15;
 	layer = 5.12
 	},
@@ -1234,7 +1239,8 @@
 /area/dark_was_the_night/lower_hallway)
 "fA" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/canteen)
@@ -1609,12 +1615,14 @@
 /area/dark_was_the_night/cryo_hall)
 "jK" = (
 /obj/structure/prop/unsc_crate/stack{
+	pixel_x = 0;
 	pixel_y = 15;
 	layer = 5.12
 	},
 /obj/structure/prop/unsc_crate/standard/green{
 	layer = 5.2;
-	pixel_x = 8
+	pixel_x = 8;
+	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1841,7 +1849,8 @@
 	},
 /obj/effect/decal/unsc/engi{
 	dir = 1;
-	pixel_x = 16
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/plating/northeast,
 /area/dark_was_the_night/engineering)
@@ -1882,6 +1891,7 @@
 /area/dark_was_the_night/canteen)
 "nm" = (
 /obj/structure/prop/unsc_crate/stack{
+	pixel_x = 0;
 	pixel_y = 15;
 	layer = 5.12
 	},
@@ -2216,10 +2226,12 @@
 "rt" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /obj/item/ammo_box/magazine/unsc/br55{
+	pixel_x = 0;
 	pixel_y = 17
 	},
 /obj/item/ammo_box/magazine/unsc/br55{
-	pixel_x = -3
+	pixel_x = -3;
+	pixel_y = 0
 	},
 /obj/item/ammo_box/magazine/unsc/br55/extended{
 	pixel_x = -2;
@@ -2408,6 +2420,7 @@
 	},
 /obj/structure/largecrate/random/barrel/yellow{
 	pixel_x = -5;
+	pixel_y = 0;
 	layer = 5.22
 	},
 /turf/open/floor/almayer/test_floor5,
@@ -2590,7 +2603,8 @@
 	pixel_x = 1
 	},
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2603,7 +2617,8 @@
 /area/dark_was_the_night/ready_bay)
 "vF" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2778,13 +2793,15 @@
 "xl" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/closet/crate/unsc{
+	pixel_x = 0;
 	pixel_y = 12
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "xq" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2843,7 +2860,8 @@
 /area/dark_was_the_night/pod_bay)
 "xL" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
-	pixel_x = 2
+	pixel_x = 2;
+	pixel_y = 0
 	},
 /obj/item/storage/toolbox/traxus{
 	pixel_x = 5;
@@ -3191,7 +3209,8 @@
 /area/dark_was_the_night/lower_hallway)
 "Cd" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /obj/structure/machinery/power/apc/almayer/south,
 /turf/open/floor/almayer/edge/smooth,
@@ -3219,6 +3238,7 @@
 	},
 /obj/structure/prop/unsc_crate/corrugated/green{
 	pixel_x = 5;
+	pixel_y = 0;
 	layer = 5.21
 	},
 /obj/structure/prop/unsc_crate/corrugated/red{
@@ -3378,7 +3398,8 @@
 "ED" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
@@ -3473,6 +3494,7 @@
 "FV" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 2;
+	pixel_y = 0;
 	layer = 5.1
 	},
 /obj/effect/decal/cleanable/dirt{
@@ -3625,7 +3647,8 @@
 /area/dark_was_the_night/armory)
 "HK" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
+	icon_state = "door_warning";
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
@@ -4166,7 +4189,8 @@
 /area/dark_was_the_night/armory)
 "NG" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
-	pixel_x = 5
+	pixel_x = 5;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -4201,7 +4225,8 @@
 /area/dark_was_the_night/ready_bay)
 "Os" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/dorms)
@@ -4211,6 +4236,7 @@
 /area/dark_was_the_night/briefing/one)
 "OG" = (
 /obj/structure/prop/unsc_crate/stack{
+	pixel_x = 0;
 	pixel_y = 17;
 	layer = 3.1
 	},
@@ -4260,7 +4286,8 @@
 /area/dark_was_the_night/engineering)
 "OW" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
@@ -4567,7 +4594,8 @@
 /area/dark_was_the_night/canteen)
 "So" = (
 /obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
+	pixel_y = 25;
+	pixel_x = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
@@ -4603,7 +4631,8 @@
 /area/dark_was_the_night/ready_bay)
 "Tb" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning"
+	icon_state = "door_warning";
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
@@ -4685,7 +4714,8 @@
 "TP" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer/PC{
-	pixel_y = 6
+	pixel_y = 6;
+	pixel_x = 0
 	},
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -4751,12 +4781,12 @@
 /area/dark_was_the_night/briefing/one)
 "Um" = (
 /obj/structure/closet/secure_closet/halo/job_locker/rto,
+/obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 4
 	},
-/obj/item/device/binoculars/fire_support/halo/unsc,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "Uy" = (
@@ -4807,7 +4837,8 @@
 	icon_state = "map";
 	layer = 2.97;
 	name = "Tactical Map Display";
-	pixel_y = 26
+	pixel_y = 26;
+	pixel_x = 0
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/pod_bay)
@@ -5003,6 +5034,7 @@
 "YC" = (
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/item/storage/toolbox/traxus/big{
+	pixel_x = 0;
 	pixel_y = 15
 	},
 /turf/open/floor/almayer,
@@ -5069,6 +5101,7 @@
 "Zw" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = -4;
+	pixel_y = 0;
 	layer = 5.1
 	},
 /obj/structure/prop/unsc_crate/big/stack/alt{
