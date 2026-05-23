@@ -43,6 +43,7 @@
 	var/is_resin_allowed = TRUE // can xenos weed, place resin holes or dig tunnels at said areas
 	var/is_landing_zone = FALSE // primarily used to prevent mortars from hitting this location
 	var/resin_construction_allowed = TRUE // Allow construction of resin walls, and other special
+	var/no_droppod
 
 	// Weather
 	var/weather_enabled = TRUE // Manual override for weather if set to false
@@ -82,6 +83,9 @@
 	/// Doesn't need to be set for areas/Z levels that are marked as admin-only
 	var/block_game_interaction = FALSE
 
+	// Day-Night settings
+	var/daytime_affected = TRUE
+
 
 /area/New()
 	// This interacts with the map loader, so it needs to be set immediately
@@ -102,6 +106,9 @@
 	reg_in_areas_in_z()
 	if(is_mainship_level(z))
 		GLOB.ship_areas += src
+		daytime_affected = FALSE
+	if(ceiling > CEILING_GLASS)
+		daytime_affected = FALSE
 
 	update_base_lighting()
 

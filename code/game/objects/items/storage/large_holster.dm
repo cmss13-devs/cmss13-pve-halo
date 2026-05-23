@@ -74,6 +74,9 @@
 /obj/item/storage/large_holster/m37/full/fill_preset_inventory()
 	new /obj/item/weapon/gun/shotgun/pump(src)
 
+/obj/item/storage/large_holster/m37/full/noammo/fill_preset_inventory()
+	new /obj/item/weapon/gun/shotgun/pump/unloaded (src)
+
 /obj/item/storage/large_holster/machete
 	name = "\improper H5 pattern M2132 machete scabbard"
 	desc = "A large leather scabbard used to carry a M2132 machete. It can be strapped to the back or the armor."
@@ -149,7 +152,7 @@
 	desc = "The M276 is the standard load-bearing equipment of the USCM. It consists of a modular belt with various clips. This holster features a larger frame and stiff backboard to support a submachinegun. It's designed for the M39, but the clips are adjustable enough to fit most compact submachineguns. Due to its unorthodox design, it isn't a very common sight, and is only specially issued."
 	icon_state = "m39_holster"
 	icon = 'icons/obj/items/clothing/belts.dmi'
-	flags_equip_slot = SLOT_WAIST
+	flags_equip_slot = SLOT_WAIST|SLOT_SUIT_STORE
 	max_w_class = 5
 	can_hold = list(
 		/obj/item/weapon/gun/smg/m39,
@@ -174,7 +177,7 @@
 		W.pixel_x = 0
 		W.transform = turn(matrix(0.82, MATRIX_SCALE), 90) //0.82x is the right size and gives reasonably accurate results with pixel scaling.
 
-		W.vis_flags |= VIS_INHERIT_ID //Means the gun is just visual and doesn't block picking up or clicking on the holster.
+		W.vis_flags |= VIS_INHERIT_ID|VIS_INHERIT_PLANE //Means the gun is just visual and doesn't block picking up or clicking on the holster.
 		vis_contents += W
 
 	..()
@@ -189,7 +192,7 @@
 	W.pixel_x = gun_offset
 	W.transform = null
 
-	W.vis_flags &= ~VIS_INHERIT_ID
+	W.vis_flags &= ~VIS_INHERIT_ID|VIS_INHERIT_PLANE
 	vis_contents -= W
 
 	..()

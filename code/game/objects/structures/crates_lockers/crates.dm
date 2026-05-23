@@ -439,7 +439,6 @@
 	icon_opened = "open_uppcrate"
 	icon_closed =  "close_uppcrate"
 
-
 //------------- UNSC CRATES -------------
 
 /obj/structure/closet/crate/unsc

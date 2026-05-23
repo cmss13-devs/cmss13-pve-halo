@@ -22,12 +22,14 @@
 	var/has_arm_sound = TRUE
 	var/underslug_launchable = FALSE
 	var/hand_throwable = TRUE
+	var/caliber = "non-standard"
 	harmful = TRUE //Is it harmful? Are they banned for synths?
 	antigrief_protection = TRUE //Should it be checked by antigrief?
 	ground_offset_x = 7
 	ground_offset_y = 6
 	var/dual_purpose = FALSE
 	var/fuse_type = TIMED_FUSE
+	var/spent_case = null //For smokes & such that leave behind used up cases/shells
 
 
 /obj/item/explosive/grenade/Initialize()

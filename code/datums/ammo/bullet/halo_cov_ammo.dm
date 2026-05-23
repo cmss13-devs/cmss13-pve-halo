@@ -1,4 +1,4 @@
-/datum/ammo/energy/plasma
+/datum/ammo/energy/halo_plasma
 	name = "plasma bolt"
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	shell_speed = AMMO_SPEED_TIER_3
@@ -8,7 +8,7 @@
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_PLASMA_TEAL
 
-/datum/ammo/energy/plasma/plasma_pistol
+/datum/ammo/energy/halo_plasma/plasma_pistol
 	name = "light plasma bolt"
 	icon_state = "plasma_teal"
 	accurate_range = 10
@@ -17,12 +17,12 @@
 	accuracy = HIT_ACCURACY_TIER_3
 	scatter = SCATTER_AMOUNT_TIER_10
 
-/datum/ammo/energy/plasma/plasma_pistol/overcharge
+/datum/ammo/energy/halo_plasma/plasma_pistol/overcharge
 	name = "overcharged light plasma bolt"
 	damage = 80
 	shell_speed = AMMO_SPEED_TIER_4
 
-/datum/ammo/energy/plasma/plasma_rifle
+/datum/ammo/energy/halo_plasma/plasma_rifle
 	name = "plasma bolt"
 	icon_state = "plasma_blue"
 	shell_speed = AMMO_SPEED_TIER_4

@@ -1,0 +1,5 @@
+author: "banana-battery"
+delete-after: True
+changes:
+  - rscadd: "added admin and ghost notif for chapter titles"
+  - admin: "yippee"

@@ -71,6 +71,8 @@
 	desc_lore = "From passive thermal and sensor stealth built into its matrices, to the capability to become totally invisible on all spectrum given an active camouflage module, this harness is well worth the countless nights of training."
 	icon_state = "unggoy_specops"
 	item_state = "unggoy_specops"
+	slowdown = SLOWDOWN_ARMOR_LIGHT
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
 	icon = 'icons/halo/obj/items/clothing/covenant/armor.dmi'
 	item_icons = list(

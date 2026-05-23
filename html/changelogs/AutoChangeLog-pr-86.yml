@@ -1,0 +1,5 @@
+author: "CactusMouth"
+delete-after: True
+changes:
+  - rscadd: "Added salvaged ODST armour + Insurgent Cell Leader. Also adds the ONI subfaction and it's relevant presets + equipment. Also added UNSC uniforms + UNSC non-combatants"
+  - imageadd: "Added icons for the salvaged ODST armor. Also added icons for the ONI M52B armor variant. Also added icons for UNSC Non-combatant's uniforms."

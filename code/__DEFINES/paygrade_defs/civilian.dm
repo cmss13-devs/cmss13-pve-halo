@@ -37,6 +37,9 @@
 /// REBC, Rebel Commander "REBC"
 #define PAY_SHORT_REBC "REBC"
 
+/// REBCL, Rebel Cell Leader "REBCL"
+#define PAY_SHORT_REBCL "REBCL"
+
 //------- UEG POLICE -------//
 /// UPO, Officer
 #define PAY_SHORT_UPO "UPO"

@@ -35,6 +35,7 @@
 #ifndef TESTING
 #define GLOBAL_PROTECT(X)\
 /datum/controller/global_vars/InitGlobal##X(){\
+	CAN_BE_REDEFINED(TRUE);\
 	..();\
 	gvars_datum_protected_varlist[#X] = TRUE;\
 }
@@ -44,6 +45,7 @@
 
 #define GLOBAL_SORTED(X)\
 /datum/controller/global_vars/InitGlobal##X(){\
+	CAN_BE_REDEFINED(TRUE);\
 	..();\
 	##X = sortAssoc(##X);\
 }
@@ -75,6 +77,18 @@
 /// Create a typed list global that is initialized as an empty list
 #define GLOBAL_LIST_EMPTY_TYPED(X, Typepath) GLOBAL_LIST_INIT_TYPED(X, Typepath, list())
 
+/// Create an alist global with an initializer expression
+#define GLOBAL_ALIST_INIT(X, InitValue) GLOBAL_RAW(/alist/##X); GLOBAL_MANAGED(X, InitValue)
+
+/// Create an alist global that is initialized as an empty list
+#define GLOBAL_ALIST_EMPTY(X) GLOBAL_ALIST_INIT(X, alist())
+
+/// Create a typed alist global with an initializer expression
+//#define GLOBAL_ALIST_INIT_TYPED(X, Typepath, InitValue) GLOBAL_RAW(/alist##Typepath/X); GLOBAL_MANAGED(X, InitValue) // Byond doesn't currently allow this?
+
+/// Create a typed alist global that is initialized as an empty list
+//#define GLOBAL_ALIST_EMPTY_TYPED(X, Typepath) GLOBAL_ALIST_INIT_TYPED(X, Typepath, alist()) // Byond doesn't currently allow this?
+
 /// Create a typed global with an initializer expression
 #define GLOBAL_DATUM_INIT(X, Typepath, InitValue) GLOBAL_RAW(Typepath/##X); GLOBAL_MANAGED(X, InitValue)
 
@@ -83,6 +97,9 @@
 
 /// Create a null global list
 #define GLOBAL_LIST(X) GLOBAL_RAW(/list/##X); GLOBAL_UNMANAGED(X)
+
+/// Create a null global alist
+#define GLOBAL_ALIST(X) GLOBAL_RAW(/alist/##X); GLOBAL_UNMANAGED(X)
 
 /// Create a typed null global
 #define GLOBAL_DATUM(X, Typepath) GLOBAL_RAW(Typepath/##X); GLOBAL_UNMANAGED(X)

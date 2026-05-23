@@ -1,0 +1,4 @@
+author: "DexterDude"
+delete-after: True
+changes:
+  - bugfix: "Removes nonexistent Glassing Weak from Covenant fire support options"

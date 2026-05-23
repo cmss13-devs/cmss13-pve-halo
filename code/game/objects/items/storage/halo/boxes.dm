@@ -33,6 +33,7 @@
 	name = "UNSC medical packet"
 	desc = "A combat-rated first aid medical packet filled with the bare bones basic essentials to ensuring you or your buddies don't die on the battlefield."
 	icon_state = "medical_packet"
+	w_class = 3
 	storage_slots = 6
 	max_w_class = 3
 	can_hold = list(
