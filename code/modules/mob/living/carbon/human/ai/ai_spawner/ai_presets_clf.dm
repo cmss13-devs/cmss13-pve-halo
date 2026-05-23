@@ -34,7 +34,7 @@
 /datum/human_ai_equipment_preset/clf/medic
 	name = "CLF Medic"
 	desc = "The guy who tries to keep the rest of the team alive. Comes equipped with medical supplies, though they don’t always live long enough to do treatment."
-	path = /datum/equipment_preset/clf/medic
+	path = /datum/equipment_preset/clf/synth/combat
 
 /datum/human_ai_equipment_preset/clf/multipurpose_synth
 	name = "CLF Multipurpose Synthetic"
