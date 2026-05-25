@@ -55,9 +55,9 @@
 		return FALSE
 
 	if(ishuman(user))
-		var/mob/living/carbon/human/H = user
-		if(!H.melee_allowed)
-			to_chat(H, SPAN_DANGER("You are currently unable to attack."))
+		var/mob/living/carbon/human/human_user = user
+		if(!human_user.melee_allowed)
+			to_chat(human_user, SPAN_DANGER("You are currently unable to attack."))
 			return FALSE
 
 	var/showname = "."
@@ -90,32 +90,13 @@
 						to_chat(target, SPAN_HIGHDANGER("[user] grabs you and pins you and pulls your head back exposing your throat."))
 
 						throat_slit_stun(target, user)
-						switch(get_dir(user, target))
-							if(NORTH)
-								human_target.pixel_y -= 12
-							if(EAST)
-								human_target.pixel_x -= 12
-							if(SOUTH)
-								human_target.pixel_y += 12
-							if(WEST)
-								human_target.pixel_x += 12
-							if(NORTHEAST)
-								human_target.pixel_x -= 12
-								human_target.pixel_y -= 12
-							if(NORTHWEST)
-								human_target.pixel_y -= 12
-								human_target.pixel_x += 12
-							if(SOUTHEAST)
-								human_target.pixel_y += 12
-								human_target.pixel_x -= 12
-							if(SOUTHWEST)
-								human_target.pixel_y += 12
-								human_target.pixel_x += 12
+						human_target.reset_pixel_shift()
+						human_user.pixel_shift_target_mob(target, 12)
 
 						if(!do_after(user, 4 SECONDS * human_user.get_skill_duration_multiplier(SKILL_CQC), INTERRUPT_ALL|BEHAVIOR_IMMOBILE, BUSY_ICON_HOSTILE, target, INTERRUPT_OUT_OF_RANGE, BUSY_ICON_HOSTILE))
 							remove_throat_slit_stun(target)
-							human_target.pixel_y = 0
-							human_target.pixel_x = 0
+							human_target.reset_pixel_shift()
+							to_chat(user, SPAN_WARNING("You were interrupted!"))
 							return FALSE
 
 						target.visible_message(SPAN_DANGER("[user] slit open [target]'s throat! They made quite a bloody mess!"), SPAN_HIGHDANGER("[user] slits your throat! Oh god!"))
@@ -127,8 +108,7 @@
 						var/obj/limb/head/head = human_target.get_limb("head")
 						ADD_TRAIT(target, TRAIT_FLOORED, THROATSLIT_TRAIT)
 						human_target.spray_blood(rand(0,181), head)
-						human_target.pixel_y = 0
-						human_target.pixel_x = 0
+						human_target.reset_pixel_shift()
 
 						if(do_after(target, 2 SECONDS, INTERRUPT_NONE))
 							target.death(create_cause_data("throat slit"))
