@@ -189,7 +189,7 @@ GLOBAL_LIST_EMPTY(pre_start_humanAI)
 			var/faction_to_delete = text2path(params["faction_group"])
 			var/faction_i = 0
 			for(var/faction_name in lazy_ui_data)
-				faction_i++ //i feel like there is a better way to do this
+				faction_i++ //i feel like there is a better way to do thi
 				if(faction_name == faction_to_delete)
 					var/list/faction_list = lazy_ui_data[faction_name]
 					var/preset_i = 0
