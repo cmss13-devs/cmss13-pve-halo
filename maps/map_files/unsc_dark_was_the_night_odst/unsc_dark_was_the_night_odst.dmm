@@ -980,6 +980,13 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/dorms)
+"cC" = (
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "cF" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/briefing/two)
@@ -2880,6 +2887,10 @@
 	pixel_y = 11
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
+	pixel_x = 8;
+	pixel_y = -1
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
 "ym" = (
@@ -4586,6 +4597,16 @@
 	layer = 3.11;
 	pixel_x = -1;
 	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
+	pixel_x = -9;
+	pixel_y = 22;
+	layer = 3.11
+	},
+/obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet{
+	layer = 3.11;
+	pixel_x = 8;
+	pixel_y = 23
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -9353,7 +9374,7 @@ rR
 rD
 NG
 Sb
-wi
+cC
 cn
 cg
 sU

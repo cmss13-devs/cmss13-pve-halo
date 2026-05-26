@@ -366,13 +366,17 @@
 	pixel_y = -2
 	},
 /obj/item/tool/screwdriver{
-	pixel_x = 1;
+	pixel_x = 10;
 	icon_state = "screwdriver4";
-	pixel_y = -8
+	pixel_y = -5
 	},
 /obj/item/storage/toolbox/traxus/alt{
 	pixel_x = 5;
 	pixel_y = 13
+	},
+/obj/item/tool/hand_labeler{
+	pixel_y = -1;
+	pixel_x = 1
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -6334,6 +6338,7 @@
 	pixel_x = 0;
 	pixel_y = 12
 	},
+/obj/item/ammo_box/magazine/unsc/ma5c,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "eyh" = (
@@ -14006,6 +14011,10 @@
 	pixel_x = 0;
 	pixel_y = 7
 	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = 6;
+	pixel_y = -4
+	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "jPw" = (
@@ -17734,14 +17743,18 @@
 "mwa" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_x = 4;
-	pixel_y = 12
+	pixel_x = 2;
+	pixel_y = 17
 	},
-/obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_y = 23
-	},
-/obj/item/ammo_box/magazine/unsc/ma5c,
 /obj/structure/machinery/light/double/blue,
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = 9;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = -8;
+	pixel_y = 0
+	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "mwr" = (
@@ -19947,18 +19960,22 @@
 /turf/open/floor/strata/white_cyan2/west,
 /area/mackay_station/golf/greenquarters2)
 "nVz" = (
-/obj/item/facepaint/green{
-	pixel_y = 6;
-	pixel_x = 2
-	},
-/obj/item/facepaint/black{
-	pixel_x = -7;
-	pixel_y = 1
-	},
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/facepaint/brown{
-	pixel_x = 1;
-	pixel_y = -4
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
+	pixel_x = 6;
+	pixel_y = -7
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet{
+	pixel_x = 8;
+	pixel_y = 11
+	},
+/obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
+	pixel_x = -9;
+	pixel_y = 10
+	},
+/obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet{
+	pixel_x = -8;
+	pixel_y = -7
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -30375,9 +30392,17 @@
 /area/mackay_station/golf/greenrec)
 "uYX" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/tool/hand_labeler{
-	pixel_y = 2;
-	pixel_x = -3
+/obj/item/facepaint/black{
+	pixel_x = -7;
+	pixel_y = 1
+	},
+/obj/item/facepaint/green{
+	pixel_y = 6;
+	pixel_x = 2
+	},
+/obj/item/facepaint/brown{
+	pixel_x = 1;
+	pixel_y = -4
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
