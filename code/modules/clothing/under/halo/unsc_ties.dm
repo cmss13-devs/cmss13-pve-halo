@@ -279,3 +279,23 @@
 	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
 	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
 	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+
+/obj/item/clothing/accessory/storage/webbing/m52b/grenade/mix_nades
+	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade/unsc
+
+/obj/item/storage/internal/accessory/black_vest/m52bgrenade/unsc/fill_preset_inventory()
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/smokebomb/unsc(src)
+	new /obj/item/explosive/grenade/smokebomb/unsc(src)
+	new /obj/item/explosive/grenade/smokebomb/unsc(src)
+
+/obj/item/clothing/accessory/storage/webbing/m52b/grenade/mix_odst_nades
+	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade/unsc
+
+/obj/item/storage/internal/accessory/black_vest/m52bgrenade/unsc/fill_preset_inventory()
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+	new /obj/item/explosive/grenade/high_explosive/pmc/unsc(src)
+	new /obj/item/explosive/grenade/smokebomb/unsc(src)
+	new /obj/item/explosive/grenade/smokebomb/unsc(src)
