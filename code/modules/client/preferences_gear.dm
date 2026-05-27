@@ -216,12 +216,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Face wrap, cyan green"
 	path = /obj/item/clothing/mask/rebreather/scarf/tacticalmask/echo
 
+	// HALO PVE EDIT - START - ITEM REMOVAL
+	/*
 /datum/gear/mask/gas
 	display_name = "Gas mask"
 	path = /obj/item/clothing/mask/gas //Civ market gas-mask, no longer USCM locked
 	cost = 1
-	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
-	/*
 	allowed_origins = USCM_ORIGINS
 	*/
 	// HALO PVE EDIT - END
@@ -2025,5 +2025,5 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc/datapad
 	display_name = "SC2 Personal Data-Pad"
 	path = /obj/item/datapad
-	cost = 5
+	cost = 3
 // HALO PVE EDIT - END
