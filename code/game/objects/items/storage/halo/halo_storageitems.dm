@@ -235,10 +235,6 @@
 // BACKPACKS
 //======================
 
-#define PHONE_ON_BASE_UNIT_ITEM_STATE "[initial(item_state)]"
-#define PHONE_OFF_BASE_UNIT_ITEM_STATE "[initial(item_state)]_ear"
-#define PHONE_RINGING_ITEM_STATE "[initial(item_state)]_ring"
-
 /obj/item/storage/backpack/marine/satchel/rto/unsc
 	name = "UNSC radio backpack"
 	icon = 'icons/halo/obj/items/clothing/back/back_by_faction/back_unsc.dmi'
@@ -251,32 +247,6 @@
 	networks_receive = list(FACTION_UNSC, FACTION_MARINE)
 	networks_transmit = list(FACTION_UNSC, FACTION_MARINE)
 	phone_category = PHONE_UNSC
-
-/obj/item/storage/backpack/marine/satchel/rto/unsc/phone_picked_up()
-	icon_state = PHONE_OFF_BASE_UNIT_ICON_STATE
-	item_state = PHONE_OFF_BASE_UNIT_ITEM_STATE
-	update_icon()
-
-/obj/item/storage/backpack/marine/satchel/rto/unsc/phone_hung_up()
-	icon_state = PHONE_ON_BASE_UNIT_ICON_STATE
-	item_state = PHONE_ON_BASE_UNIT_ITEM_STATE
-	update_icon()
-
-/obj/item/storage/backpack/marine/satchel/rto/unsc/phone_ringing()
-	icon_state = PHONE_RINGING_ICON_STATE
-	item_state = PHONE_RINGING_ITEM_STATE
-	update_icon()
-
-/obj/item/storage/backpack/marine/satchel/rto/unsc/phone_stopped_ringing()
-	if(icon_state == PHONE_OFF_BASE_UNIT_ICON_STATE)
-		return
-	icon_state = PHONE_ON_BASE_UNIT_ICON_STATE
-	item_state = PHONE_ON_BASE_UNIT_ITEM_STATE
-	update_icon()
-
-#undef PHONE_ON_BASE_UNIT_ITEM_STATE
-#undef PHONE_OFF_BASE_UNIT_ITEM_STATE
-#undef PHONE_RINGING_ITEM_STATE
 
 /obj/item/storage/backpack/marine/satchel/unsc
 	name = "UNSC buttpack"
