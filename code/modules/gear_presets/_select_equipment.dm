@@ -1923,6 +1923,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 2)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/tool/weldingtool(new_human), WEAR_IN_BACK)
@@ -1948,6 +1952,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 2)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	// Pockets
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc(new_human), WEAR_L_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/large(new_human), WEAR_R_STORE)
@@ -1960,6 +1968,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 2)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	// Accessories
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/grenade/m9_frag(new_human), WEAR_ACCESSORY)
 	// Pockets
@@ -1974,6 +1986,7 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health(new_human), WEAR_EYES)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
@@ -1993,6 +2006,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/rto/unsc(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
@@ -2010,6 +2027,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/motion(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
@@ -2026,6 +2047,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/motion(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
@@ -2093,6 +2118,10 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	// Head & Face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot(new_human), WEAR_HEAD)
+	var/random_helmetlight = rand(1,5)
+	switch(random_helmetlight)
+		if(1 to 3)
+			new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	var/random_glasses = rand(1,3)
 	switch(random_glasses)
 		if(1 to 2)
@@ -2218,6 +2247,7 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/odst(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/attachable/flashlight/m6(new_human), WEAR_IN_HELMET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health(new_human), WEAR_EYES)
 	// Back
 	new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
