@@ -117,7 +117,11 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/eyewear/sunglasses
 	display_name = "Sunglasses"
 	path = /obj/item/clothing/glasses/sunglasses
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
+	/*
 	cost = 0
+	*/
+	// HALO PVE EDIT - END
 
 /datum/gear/eyewear/prescription_sunglasses
 	display_name = "Prescription sunglasses"
@@ -349,10 +353,16 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/headwear/durag_black
 	display_name = "Durag, black"
 	path = /obj/item/clothing/head/durag/black
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
+	cost = 2
+	// HALO PVE EDIT - END
 
 /datum/gear/headwear/durag
 	display_name = "Durag, jungle"
 	path = /obj/item/clothing/head/durag
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
+	cost = 2
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - ITEM RENAMING, ORIGIN LOCK REMOVAL, DATUM REPATHING
 /*
@@ -365,83 +375,94 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "bandana, green"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmbandana
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
+	cost = 2
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
 /datum/gear/headwear/bandana_tan
 	display_name = "bandana, tan"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmbandana/tan
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM ADDITION
+	// HALO PVE EDIT - START - ITEM ADDITION, POINTS ADJUSTMENT
 /datum/gear/headwear/beanie_black
 	display_name = "beanie, black"
 	path = /obj/item/clothing/head/beanie/royal_marine
+	cost = 2
 	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING, POINTS ADJUSTMENT
 /datum/gear/headwear/beanie_grey
 	display_name = "beanie, grey"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/beanie/gray
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING, POINTS ADJUSTMENT
 /datum/gear/headwear/beanie_green
 	display_name = "beanie, green"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/beanie/green
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING, POINTS ADJUSTMENT
 /datum/gear/headwear/beanie_tan
 	display_name = "beanie, tan"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/beanie/tan
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/boonie_jungle
 	display_name = "boonie hat, jungle"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/boonie_desert
 	display_name = "boonie hat, desert"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie/tan
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/boonie_snow
 	display_name = "boonie hat, snow"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie/snow
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/cap
 	display_name = "utility cap, jungle"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap
-	cost = 2
+	//cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/cap_desert
 	display_name = "utility cap, desert"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/desert
-	cost = 2
+	//cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/cap_snow
 	display_name = "utility cap, snow"
-	// HALO PVE EDIT - END
-	path = /obj/item/clothing/head/cmcap/snow
-	cost = 2
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	path = /obj/item/clothing/head/cmcap/snow
+	//cost = 2
+	// HALO PVE EDIT - END
+
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/cap_operations
 	display_name = "UNSC Operations Cap, Green"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/bridge
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/cap_operations2
 	display_name = "UNSC Operations Cap, Tan"
 	// HALO PVE EDIT - END
@@ -456,89 +477,100 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 */
 	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/cap/flap_jungle
 	display_name = "UNSC expedition flapcap, jungle"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/cap/flap_desert
 	display_name = "UNSC expedition flapcap, desert"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap/desert
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/headwear/cap/flap_snow
 	display_name = "UNSC expedition flapcap, snow"
 	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap/snow
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_brown
 	display_name = "headband, brown"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/brown
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_green
 	display_name = "headband, green"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_grey
 	display_name = "headband, grey"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/gray
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_red
 	display_name = "headband, red"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/red
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_tan
 	display_name = "headband, tan"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/tan
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_intel
 	display_name = "headband, black"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/intel
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_bravo
 	display_name = "headband, orange"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/bravo
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_charlie
 	display_name = "headband, purple"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/charlie
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_delta
 	display_name = "headband, blue"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/delta
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headband_echo
 	display_name = "headband, cyan green"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headband/echo
+	cost = 2
+	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/headset
 	display_name = "UNSC headset"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/headset
+	cost = 2
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - OPTIONS REMOVAL
 /*
@@ -587,11 +619,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 */
 	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING, DATUM REPATHING
+	// HALO PVE EDIT - START - ITEM RENAMING, POINTS ADJUSTMENT
 /datum/gear/headwear/ushanka
 	display_name = "Ushanka"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/uppcap/ushanka
+	cost = 2
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - OPTIONS REMOVAL
 /*
@@ -836,66 +869,47 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 //================================================
 */
 
+	// HALO PVE EDIT - START - OPTIONS REMOVAL PENDING REWORK OF ARMOR PAINTS
+/*
 /datum/gear/paint
 	category = "Armor & body paints"
 	cost = 0
 
-	// HALO PVE EDIT - START - OPTION REMOVAL
-/*
 /datum/gear/paint/paint_sg
 	display_name = "Black Smartgun Harness Paint"
 	path = /obj/item/clothing/accessory/paint/sg
-*/
-	// HALO PVE EDIT - END
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/paint_skull
-	display_name = "Skull Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Skull Armor Paint"
 	path = /obj/item/clothing/accessory/paint
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/paint_heart
-	display_name = "Heart Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Heart Armor Paint"
 	path = /obj/item/clothing/accessory/paint/heart
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/target
-	display_name = "Target Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Target Armor Paint"
 	path = /obj/item/clothing/accessory/paint/target
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/smiley
-	display_name = "Smiley-Face Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Smiley-Face Armor Paint"
 	path = /obj/item/clothing/accessory/paint/alcoholism
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/neutral
-	display_name = "Neutral-Face Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Neutral-Face Armor Paint"
 	path = /obj/item/clothing/accessory/paint/melancholy
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/cross
-	display_name = "Cross Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Cross Armor Paint"
 	path = /obj/item/clothing/accessory/paint/cross
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/pandora
-	display_name = "Inscription Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Inscription Armor Paint"
 	path = /obj/item/clothing/accessory/paint/inscription
 
-	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/paint/flames
-	display_name = "Fire Armor Paint"
-	// HALO PVE EDIT - END
+	display_name = "M3 Fire Armor Paint"
 	path = /obj/item/clothing/accessory/paint/fire
-
 
 /datum/gear/paint/facepaint_green
 	display_name = "Facepaint, green"
@@ -912,8 +926,6 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	path = /obj/item/facepaint/black
 	cost = 2
 
-	// HALO PVE EDIT - START - OPTIONS REMOVAL
-/*
 /datum/gear/paint/facepaint_skull
 	display_name = "Facepaint, skull"
 	path = /obj/item/facepaint/skull
@@ -1689,8 +1701,10 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Packaged hotdog"
 	path = /obj/item/reagent_container/food/snacks/microwavable/packaged_hdogs
 
+	// HALO PVE EDIT - START - ITEM RENAMING
 /datum/gear/snack_packaged/chips_pepper
-	display_name = "W-Y Pepper Chips"
+	display_name = "Pepper Chips"
+	// HALO PVE EDIT - END
 	path = /obj/item/reagent_container/food/snacks/wy_chips/pepper
 
 /*
@@ -1766,10 +1780,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	cost = 1
 	allowed_origins = FACTION_ORIGINS
 
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
 /datum/gear/smoking/pack_lucky_strikes
 	display_name = "Pack Of Lucky Strikes"
 	path = /obj/item/storage/fancy/cigarettes/lucky_strikes
-	cost = 0
+	//cost = 0
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/smoking/pack_laika
@@ -1820,10 +1836,12 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Pack Of American Spirit, Yellow"
 	path = /obj/item/storage/fancy/cigarettes/spirit/yellow
 
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
 /datum/gear/smoking/pack_exec
 	display_name = "Pack Of Executive Selects"
 	path = /obj/item/storage/fancy/cigarettes/blackpack
-	cost = 4
+	//cost = 4
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - OPTION REMOVAL
 /*
@@ -1889,25 +1907,33 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 */
 	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
 /datum/gear/misc/watch/bishop
 	display_name = "Seiko 7A28-6000 wristwatch"
 	path = /obj/item/storage/box/watch_box/bishop
-	cost = 2
+	cost = 1
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
 /datum/gear/misc/watch/ripley
 	display_name = "Seiko 7A28-7000 wristwatch"
 	path = /obj/item/storage/box/watch_box/ripley
-	cost = 2
+	cost = 1
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
 /datum/gear/misc/watch/burke
 	display_name = "Seiko H556-5050 wristwatch"
 	path = /obj/item/storage/box/watch_box/burke
-	cost = 2
+	cost = 1
+	// HALO PVE EDIT - END
 
+	// HALO PVE EDIT - START - POINTS ADJUSTMENT
 /datum/gear/misc/watch/dallas
 	display_name = "Samani E-125 wristwatch"
 	path = /obj/item/storage/box/watch_box/dallas
-	cost = 3
+	cost = 1
+	// HALO PVE EDIT - END
 
 	// HALO PVE EDIT - START - OPTION REMOVAL
 /*
@@ -2025,5 +2051,5 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 /datum/gear/misc/datapad
 	display_name = "SC2 Personal Data-Pad"
 	path = /obj/item/datapad
-	cost = 3
+	cost = 1
 // HALO PVE EDIT - END
