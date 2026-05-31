@@ -62,10 +62,11 @@
 	w_class = SIZE_MEDIUM
 	storage_slots = 14
 	max_storage_space = 14
-	can_hold = list(/obj/item/device/flashlight/flare/unsc,
+	can_hold = list(
+		/obj/item/device/flashlight/flare/unsc,
 		/obj/item/device/flashlight/flare/signal/unsc,
 		/obj/item/device/flashlight/flare/chemlight,
-		)
+	)
 
 /obj/item/storage/box/flare/unsc/fill_preset_inventory()
 	for(var/i = 1 to max_storage_space)
@@ -102,8 +103,9 @@
 	w_class = SIZE_MEDIUM
 	storage_slots = 21
 	max_storage_space = 21
-	can_hold = list(/obj/item/device/flashlight/flare/chemlight,
-		)
+	can_hold = list(
+		/obj/item/device/flashlight/flare/chemlight,
+	)
 
 /obj/item/storage/box/flare/chemlight/fill_preset_inventory()
 	var/add_glowsticks = rand(1,6)
