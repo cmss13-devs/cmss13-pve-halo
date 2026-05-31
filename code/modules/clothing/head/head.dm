@@ -876,12 +876,6 @@
 	name = "\improper UEG police chief peaked cap"
 	desc = "A peaked cap used within the UEG Police forces to denote rank and authority of some kind."
 
-	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
-	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
-	item_icons = list(
-		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
-	)
-
 /obj/item/clothing/head/cmcap/classic
 	name = "\improper grey utility cap"
 	desc = "A grey utility cap"
