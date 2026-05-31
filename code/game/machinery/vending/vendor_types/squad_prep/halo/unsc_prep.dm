@@ -23,14 +23,14 @@
 		list("UNSC Shooting Shades", floor(scale * 15), /obj/item/clothing/glasses/sunglasses/big/unsc, VENDOR_ITEM_REGULAR),
 
 		list("WEBBINGS", -1, null, null),
-		list("M52B Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
-		list("M52B Pattern Magazine Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/mag, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Magazine Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b/mag, VENDOR_ITEM_REGULAR),
 		list("M52B Pattern Shotgun Shell Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/shotgun, VENDOR_ITEM_REGULAR),
 		list("M52B Pattern M40 Webbing", 0.75, /obj/item/clothing/accessory/storage/webbing/m52b/grenade, VENDOR_ITEM_REGULAR),
-		list("M52B Pattern Small Pouch Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/small, VENDOR_ITEM_REGULAR),
-		list("Drop Pouch", 4, /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
-		list("Leg Pouch", 4, /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
-		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Small Pouch Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b/small, VENDOR_ITEM_REGULAR),
+		list("Drop Pouch", round(scale * 10), /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
+		list("Leg Pouch", round(scale * 10), /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
+		list("Shoulder Holster", round(scale * 10), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR", -1, null, null),
 		list("Standard M52B Body Armor Set", round(scale * 15), /obj/item/storage/box/guncase/m52barmor, VENDOR_ITEM_REGULAR),
@@ -131,7 +131,7 @@
 		list("Roller Bed", round(scale * 2), /obj/item/roller, VENDOR_ITEM_REGULAR),
 		list("Machete Scabbard (Full)", round(scale * 5), /obj/item/storage/large_holster/machete/full, VENDOR_ITEM_REGULAR),
 		list("Tactical Monocular", round(scale * 2), /obj/item/device/binoculars/range/monocular, VENDOR_ITEM_REGULAR),
-		list("M13 Fighting Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
+		list("M1 Combat Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
 		)
 
 //===========================//ODST PREP\\================================\\
@@ -151,14 +151,14 @@
 		list("Boonie Hat, Jungle BDU", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie, VENDOR_ITEM_REGULAR),
 
 		list("WEBBINGS", -1, null, null),
-		list("M52B Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
-		list("M52B Pattern Magazine Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/mag, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Magazine Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b/mag, VENDOR_ITEM_REGULAR),
 		list("M52B Pattern Shotgun Shell Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/shotgun, VENDOR_ITEM_REGULAR),
 		list("M52B Pattern M40 Webbing", 0.75, /obj/item/clothing/accessory/storage/webbing/m52b/grenade, VENDOR_ITEM_REGULAR),
-		list("M52B Pattern Small Pouch Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b/small, VENDOR_ITEM_REGULAR),
-		list("Drop Pouch", 4, /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
-		list("Leg Pouch", 4, /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
-		list("Shoulder Holster", round(max(1,(scale * 0.5))), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
+		list("M52B Pattern Small Pouch Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b/small, VENDOR_ITEM_REGULAR),
+		list("Drop Pouch", round(scale * 10), /obj/item/clothing/accessory/storage/droppouch, VENDOR_ITEM_REGULAR),
+		list("Leg Pouch", round(scale * 10), /obj/item/clothing/accessory/storage/smallpouch, VENDOR_ITEM_REGULAR),
+		list("Shoulder Holster", round(scale * 10), /obj/item/clothing/accessory/storage/holster, VENDOR_ITEM_REGULAR),
 
 		list("ARMOR", -1, null, null),
 		list("CH381 ODST helmet", floor(scale * 15), /obj/item/clothing/head/helmet/marine/unsc/odst, VENDOR_ITEM_MANDATORY),
@@ -250,7 +250,7 @@
 		list("Roller Bed", round(scale * 2), /obj/item/roller, VENDOR_ITEM_REGULAR),
 		list("Machete Scabbard (Full)", round(scale * 5), /obj/item/storage/large_holster/machete/full, VENDOR_ITEM_REGULAR),
 		list("Tactical Monocular", round(scale * 2), /obj/item/device/binoculars/range/monocular, VENDOR_ITEM_REGULAR),
-		list("M13 Fighting Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
+		list("M1 Combat Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
 		)
 
 //===========================//CORPSMAN\\================================\\
