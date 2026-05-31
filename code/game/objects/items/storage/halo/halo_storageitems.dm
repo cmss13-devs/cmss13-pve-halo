@@ -209,10 +209,11 @@
 	desc = "A pouch designed to hold flares and chemlights. Refillable with flare or chemlight packs."
 	icon = 'icons/halo/obj/items/clothing/pouches.dmi'
 	icon_state = "flare"
-	can_hold = list(/obj/item/device/flashlight/flare/unsc,
+	can_hold = list(
+		/obj/item/device/flashlight/flare/unsc,
 		/obj/item/device/flashlight/flare/signal/unsc,
 		/obj/item/device/flashlight/flare/chemlight,
-		)
+	)
 
 /obj/item/storage/pouch/flare/unsc/full/fill_preset_inventory()
 	for(var/i = 1 to storage_slots)
