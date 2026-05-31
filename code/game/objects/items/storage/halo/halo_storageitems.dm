@@ -204,6 +204,42 @@
 	new /obj/item/stack/medical/advanced/ointment(src)
 	new /obj/item/stack/medical/splint(src)
 
+/obj/item/storage/pouch/flare/unsc
+	name = "UNSC illumination equipment pouch"
+	desc = "A pouch designed to hold flares and chemlights. Refillable with flare or chemlight packs."
+	icon = 'icons/halo/obj/items/clothing/pouches.dmi'
+	icon_state = "flare"
+	can_hold = list(/obj/item/device/flashlight/flare/unsc,
+		/obj/item/device/flashlight/flare/signal/unsc,
+		/obj/item/device/flashlight/flare/chemlight,
+		)
+
+/obj/item/storage/pouch/flare/unsc/full/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/unsc(src)
+
+/obj/item/storage/pouch/flare/unsc/full_chemlights/fill_preset_inventory()
+	var/add_glowsticks = rand(1,6)
+	switch(add_glowsticks)
+		if(1)
+			for(var/i = 1 to storage_slots)
+				new /obj/item/device/flashlight/flare/chemlight(src)
+		if(2)
+			for(var/i = 1 to storage_slots)
+				new /obj/item/device/flashlight/flare/chemlight/blue(src)
+		if(3)
+			for(var/i = 1 to storage_slots)
+				new /obj/item/device/flashlight/flare/chemlight/orange(src)
+		if(4)
+			for(var/i = 1 to storage_slots)
+				new /obj/item/device/flashlight/flare/chemlight/red(src)
+		if(5)
+			for(var/i = 1 to storage_slots)
+				new /obj/item/device/flashlight/flare/chemlight/yellow(src)
+		if(6)
+			for(var/i = 1 to storage_slots)
+				new /obj/item/device/flashlight/flare/chemlight/radioisotope(src)
+
 //======================
 // HOLSTER POUCHES
 //======================
