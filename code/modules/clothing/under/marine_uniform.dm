@@ -58,6 +58,19 @@
 	item_icons = list(
 		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
 
+// HALO PVE EDIT - START - Halo CE style uniform
+/obj/item/clothing/under/marine/classic
+	name = "\improper UNSC fatigues"
+	desc = "Older-issue Marine uniform, with venlar armor inserts at critical areas to protect from blades and ballistics."
+	icon = 'icons/halo/obj/items/clothing/undersuit.dmi'
+	icon_state = "classic_marine"
+	worn_state = "classic_marine"
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	item_icons = list(
+		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
+
+// HALO PVE EDIT - END
+
 /obj/item/clothing/under/marine/medic
 	name = "\improper UNSC corpsman uniform"
 	desc = "Standard-issue Marine hospital corpsman fatigues with venlar armor inserts at critical areas to protect from blades and ballistics."
