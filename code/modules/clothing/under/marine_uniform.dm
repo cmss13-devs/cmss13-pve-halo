@@ -65,6 +65,7 @@
 	icon = 'icons/halo/obj/items/clothing/undersuit.dmi'
 	icon_state = "classic_marine"
 	worn_state = "classic_marine"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 	item_icons = list(
 		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
