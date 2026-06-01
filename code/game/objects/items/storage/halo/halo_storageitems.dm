@@ -219,7 +219,7 @@
 	for(var/i = 1 to storage_slots)
 		new /obj/item/device/flashlight/flare/unsc(src)
 
-/obj/item/storage/pouch/flare/unsc/full_chemlights/fill_preset_inventory()
+/obj/item/storage/pouch/flare/unsc/full_random_chemlights/fill_preset_inventory()
 	var/add_glowsticks = rand(1,6)
 	switch(add_glowsticks)
 		if(1)
@@ -240,6 +240,66 @@
 		if(6)
 			for(var/i = 1 to storage_slots)
 				new /obj/item/device/flashlight/flare/chemlight/radioisotope(src)
+
+/obj/item/storage/pouch/flare/unsc/chemlight
+	name = "UNSC chemical illumination stick pouch"
+	desc = "A pouch designed to hold a plethora of chemlights. Refillable with chemlight packs."
+	icon = 'icons/halo/obj/items/clothing/pouches.dmi'
+	icon_state = "glowstick_pouch"
+	can_hold = list(
+		/obj/item/device/flashlight/flare/chemlight,
+		/obj/item/device/flashlight/flare/chemlight/blue,
+		/obj/item/device/flashlight/flare/chemlight/red,
+		/obj/item/device/flashlight/flare/chemlight/yellow,
+		/obj/item/device/flashlight/flare/chemlight/orange,
+		/obj/item/device/flashlight/flare/chemlight/radioisotope,
+	)
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/fill_preset_inventory()
+	var/list/glowsticks = subtypesof(/obj/item/device/flashlight/flare/chemlight)
+	for(var/i=1 to max_storage_space)
+		var/sticks_to_pick = pick(glowsticks)
+		var/obj/item/device/flashlight/flare/chemlight/forbidden_juice_stick = new sticks_to_pick(src)
+		forbidden_juice_stick.on = FALSE
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/green
+	icon_state = "glowstick_pouch_green"
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/green/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight(src)
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/blue
+	icon_state = "glowstick_pouch_blue"
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/blue/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight/blue(src)
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/red
+	icon_state = "glowstick_pouch_red"
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/red/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight/red(src)
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/yellow
+	icon_state = "glowstick_pouch_yellow"
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/yellow/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight/yellow(src)
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/yellow/radioisotope/fill_preset_inventory() //Visually similar enough to share the same pouch icon
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight/radioisotope(src)
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/orange
+	icon_state = "glowstick_pouch_orange"
+
+/obj/item/storage/pouch/flare/unsc/chemlight/full/orange/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight/orange(src)
 
 //======================
 // HOLSTER POUCHES

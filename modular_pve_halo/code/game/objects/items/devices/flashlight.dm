@@ -68,7 +68,7 @@
 	flame_tint = "#49F37C"
 	flame_base_tint = "#49F37C"
 	icon_state = "glowstick_green"
-	item_state = "glowstick_green"
+	item_state = "flare"
 	raillight_compatible = 0
 	can_be_broken = FALSE
 	rotation_on_throw = TRUE
@@ -113,7 +113,6 @@
 	flame_tint = "#FC0F29"
 	flame_base_tint = "#FC0F29"
 	icon_state = "glowstick_red"
-	item_state = "glowstick_red"
 
 /obj/item/device/flashlight/flare/chemlight/blue
 	name = "blue glowstick"
@@ -122,7 +121,6 @@
 	flame_tint = "#599DFF"
 	flame_base_tint = "#599DFF"
 	icon_state = "glowstick_blue"
-	item_state = "glowstick_blue"
 
 /obj/item/device/flashlight/flare/chemlight/orange
 	name = "orange glowstick"
@@ -131,7 +129,6 @@
 	flame_tint = "#FA7C0B"
 	flame_base_tint = "#FA7C0B"
 	icon_state = "glowstick_orange"
-	item_state = "glowstick_orange"
 
 /obj/item/device/flashlight/flare/chemlight/yellow
 	name = "yellow glowstick"
@@ -140,14 +137,12 @@
 	flame_tint = "#FEF923"
 	flame_base_tint = "#FEF923"
 	icon_state = "glowstick_yellow"
-	item_state = "glowstick_yellow"
 
 /obj/item/device/flashlight/flare/chemlight/radioisotope
 	name = "radioisotope glowstick"
 	desc = "A radioisotope powered military-grade chemical light. Escaping particles light up the area far brighter on similar levels to flares and for longer. Inadvisable to ingest the contents of."
 	glow_color = "radioisotope-green"
 	icon_state = "glowstick_isotope"
-	item_state = "glowstick_isotope"
 	light_color = "#49F37C"
 	flame_tint = "#49F37C"
 	flame_base_tint = "#49F37C"
