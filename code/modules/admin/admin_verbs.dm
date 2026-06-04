@@ -427,6 +427,7 @@ GLOBAL_LIST_INIT(roundstart_mod_verbs, list(
 		/client/proc/toggle_portrait,
 		/client/proc/toggle_intro,
 		/client/proc/gm_lighting,
+		/client/proc/gm_shipmap_lighting,
 		/client/proc/toggle_droppod_menu,
 		GLOB.admin_verbs_admin,
 		GLOB.admin_verbs_ban,
