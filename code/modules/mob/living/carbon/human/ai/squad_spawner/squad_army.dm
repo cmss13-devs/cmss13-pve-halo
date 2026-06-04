@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/army
+/* /datum/human_ai_squad_preset/army
 	faction = FACTION_ARMY
 
 /datum/human_ai_squad_preset/army/patrol
@@ -103,3 +103,4 @@
 		/datum/equipment_preset/usasf/crew/infantry/nco = 1,
 		/datum/equipment_preset/usasf/crew/infantry = 1,
 	)
+ */

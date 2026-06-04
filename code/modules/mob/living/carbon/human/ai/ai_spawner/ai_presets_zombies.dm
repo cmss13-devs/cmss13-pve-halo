@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/zombie
+/* /datum/human_ai_equipment_preset/zombie
 	faction = FACTION_ZOMBIE
 
 /datum/human_ai_equipment_preset/zombie/generic
@@ -65,3 +65,4 @@
 	name = "Zombie - USCM CBRN"
 	desc = "Uuuggh..."
 	path = /datum/equipment_preset/zombie/cbrn
+ */

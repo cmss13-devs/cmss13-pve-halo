@@ -166,11 +166,6 @@
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 
-/obj/item/clothing/suit/marine/shielded/sangheili/minor/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/minor/pads = new()
-	src.attach_accessory(null, pads, TRUE)
-
 /obj/item/clothing/suit/marine/shielded/sangheili/major
 
 	name = "\improper Sangheili Major combat harness"
@@ -184,11 +179,6 @@
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
 	armor_laser = CLOTHING_ARMOR_HIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUMHIGH
-
-/obj/item/clothing/suit/marine/shielded/sangheili/major/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/major/pads = new()
-	src.attach_accessory(null, pads, TRUE)
 
 /obj/item/clothing/suit/marine/shielded/sangheili/ultra
 
@@ -204,26 +194,14 @@
 	armor_laser = CLOTHING_ARMOR_HIGHPLUS
 	armor_bomb = CLOTHING_ARMOR_HIGH
 
-/obj/item/clothing/suit/marine/shielded/sangheili/ultra/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/ultra/pads = new()
-	src.attach_accessory(null, pads, TRUE)
+/obj/item/clothing/suit/marine/shielded/sangheili/honor_guard // mega op but thats ok
 
-/obj/item/clothing/suit/marine/shielded/sangheili/zealot
+	name = "\improper Sangheili Honor Guard combat harness"
 
-	name = "\improper Sangheili Zealot combat harness"
-	desc = "The golden sheen of this harness marks the proud Sangheili out as one of the vaunted Zealots, warriors belonging to honourable Orders. Vastly superior to any lesser harness, the nanolaminate alloys used in it are said to be imbued with holy-metals directly, allowing it to be not only exceptionally light, but absurdly sturdy as well. This conventional strength is paired with powerful energy-shields, turning the warrior into an unstoppable object as they pursue their goals."
-	desc_lore = "Be it leading troops directly in glorious combat, or securing Holy Relics in daring and softly spoken of operations, the bearer of this harness is not to be trifled with, let alone crossed."
+	icon_state = "sang_major"
 
-	icon_state = "sang_zealot"
-
-	shield = SANG_SHIELD_ZEALOT
-	armor_melee = CLOTHING_ARMOR_ULTRAHIGH
-	armor_bullet = CLOTHING_ARMOR_ULTRAHIGH
-	armor_laser = CLOTHING_ARMOR_VERYHIGH
-	armor_bomb = CLOTHING_ARMOR_HIGH
-
-/obj/item/clothing/suit/marine/shielded/sangheili/zealot/Initialize(mapload)
-	. = ..()
-	var/obj/item/clothing/accessory/pads/sangheili/zealot/pads = new()
-	src.attach_accessory(null, pads, TRUE)
+	shield = SANG_SHIELD_HONOR_GUARD
+	armor_melee = CLOTHING_ARMOR_GIGAHIGH
+	armor_bullet = CLOTHING_ARMOR_GIGAHIGH
+	armor_laser = CLOTHING_ARMOR_GIGAHIGH
+	armor_bomb = CLOTHING_ARMOR_GIGAHIGHDOUBLEPLUSGOOD

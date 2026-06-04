@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/mercs
+/* /datum/human_ai_squad_preset/mercs
 	faction = FACTION_MERCENARY
 
 /datum/human_ai_squad_preset/mercs/grunts
@@ -66,3 +66,4 @@
 	ai_to_spawn = list(
 		/datum/equipment_preset/mercenary/bulwark = 2,
 	)
+ */

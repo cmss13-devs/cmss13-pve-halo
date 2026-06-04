@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/pmc
+/* /datum/human_ai_squad_preset/pmc
 	faction = FACTION_PMC
 
 /datum/human_ai_squad_preset/pmc/rifleteam
@@ -31,3 +31,4 @@
 	ai_to_spawn = list(
 		/datum/equipment_preset/pmc/medic = 2,
 	)
+ */

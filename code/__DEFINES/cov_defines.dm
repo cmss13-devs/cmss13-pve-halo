@@ -1,2 +1,4 @@
 #define ACCESSORY_SLOT_SANG_SHOULDER "Sang Shoulder"
 #define ACCESSORY_SLOT_SANG_WEBBING "Sang Webbing"
+#define ACCESSORY_SLOT_UNGGOY_SHOULDER "Unggoy Shoulder"
+#define ACCESSORY_SLOT_UNGGOY_BICEP "Unggoy Bicep"

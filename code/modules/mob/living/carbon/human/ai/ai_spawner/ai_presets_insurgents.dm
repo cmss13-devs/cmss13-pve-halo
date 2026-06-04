@@ -47,7 +47,7 @@
 /datum/human_ai_equipment_preset/insurgent/specialist
 	name = "Insurgent Soldier (Specialist, SPNKr)"
 	desc = "A soldier of the insurgency, trained to use the M41 SPNKr for combat. They also have an MA3A for backup."
-	path = /datum/equipment_preset/insurgent/specialist
+	path = /datum/equipment_preset/insurgent/specialist/ai_man
 
 /datum/human_ai_equipment_preset/insurgent/sl
 	name = "Insurgent Soldier (Squad Leader)"

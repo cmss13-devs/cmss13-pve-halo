@@ -21,6 +21,11 @@
 
 	icon_state = null
 
+	return INITIALIZE_HINT_LATELOAD
+
+/obj/structure/roof/LateInitialize() //we use late init to allow for lazy nodes to spawn first on mapload
+	. = ..()
+
 	RegisterSignal(SSdcs, COMSIG_GLOB_MOB_LOGGED_IN, PROC_REF(add_default_image))
 
 	for(var/icon in GLOB.player_list)
@@ -34,10 +39,7 @@
 			neighbor = locate() in adjacent_loc
 			if(!neighbor)
 				neighbor = new(adjacent_loc)
-	return INITIALIZE_HINT_LATELOAD
 
-/obj/structure/roof/LateInitialize() //we use late init to allow for lazy nodes to spawn first on mapload
-	. = ..()
 	if(linked_master)
 		return
 	for(var/direction in CARDINAL_ALL_DIRS) //this searches if there is lattice with master already, to work with runtime creation
@@ -80,12 +82,13 @@
 	unacidable = TRUE
 	var/datum/roof_master_node/linked_master
 
-/obj/effect/roof_node/Crossed(atom/movable/mover, target_dir)
+/obj/effect/roof_node/Crossed(mob/mover)
+	..()
 	if(!linked_master)
 		return
-	if(isliving(mover))
-		var/mob/living/mob = mover
-		linked_master.add_under_roof(mob)
+	if(isliving(mover) || isobserver(mover))
+		var/mob/target = mover
+		linked_master.add_under_roof(target)
 
 /obj/effect/roof_node/Destroy(force, ...)
 	if(linked_master)
@@ -118,22 +121,24 @@
 			qdel(roof)
 	return ..()
 
-/datum/roof_master_node/proc/add_under_roof(mob/living/living) //mob crossed connected node
-	if(living in mobs_under)
+/datum/roof_master_node/proc/add_under_roof(mob/target) //mob crossed connected node
+	if(target in mobs_under)
 		return
-	mobs_under += living
-	RegisterSignal(living, COMSIG_PARENT_QDELETING, PROC_REF(remove_under_roof))
-	RegisterSignal(living, COMSIG_MOB_LOGGED_IN, PROC_REF(add_client))
-	RegisterSignal(living, COMSIG_MOVABLE_MOVED, PROC_REF(check_under_roof))
+	mobs_under += target
+	RegisterSignal(target, COMSIG_PARENT_QDELETING, PROC_REF(remove_under_roof))
+	RegisterSignal(target, COMSIG_MOB_LOGGED_IN, PROC_REF(add_client))
+	RegisterSignal(target, COMSIG_MOVABLE_MOVED, PROC_REF(check_under_roof))
 
-	if(living.client)
-		add_client(living)
+	if(isobserver(target) || isliving(target))
+		if(target.client)
+			add_client(target)
 
-/datum/roof_master_node/proc/add_client(mob/living/mob)
+/datum/roof_master_node/proc/add_client(mob/target)
 	SIGNAL_HANDLER
-	for(var/obj/structure/roof/roof in connected_roof)
-		mob.client.images -= roof.normal_image
-		mob.client.images += roof.under_image
+	if(isliving(target) || isobserver(target))
+		for(var/obj/structure/roof/roof in connected_roof)
+			target.client.images -= roof.normal_image
+			target.client.images += roof.under_image
 
 /datum/roof_master_node/proc/remove_under_roof(mob/living/living) //mob is no longer under roof
 	SIGNAL_HANDLER

@@ -7,6 +7,7 @@
 #define JOB_COV_ZEALOT "Zealot"
 #define JOB_COV_COMMANDER "Sub-Commander"
 #define JOB_COV_COMANDER "Commander"
+#define JOB_COV_STEALTH "Stealth Operations"
 
 // Ministry
 #define JOB_COV_DEACON "Deacon"
@@ -22,7 +23,11 @@
 #define JOB_COV_HEAVY "Heavy"
 #define JOB_COV_HEAVY_ULTRA "Heavy Ultra"
 
-#define JOB_COV_SPECOPS "SpecOps"
-#define JOB_COV_SPECOPS_ULTRA "SpecOps Ultra"
-#define JOB_COV_SPECOPS_OFFICER "SpecOps Officer"
-#define JOB_COV_SPECOPS_LEADER "SpecOps Leader"
+#define JOB_COV_HONOR_GUARD "Honor Guard"
+#define JOB_COV_HONOR_GUARD_LOS "Lights of Sanghelios"
+#define JOB_COV_HONOR_GUARD_CAPTAIN "Honor Guard Captain"
+
+#define JOB_COV_SPECOPS "Special Operations"
+#define JOB_COV_SPECOPS_ULTRA "Special Operations Ultra"
+#define JOB_COV_SPECOPS_OFFICER "Special Operations Officer"
+#define JOB_COV_SPECOPS_LEADER "Special Operations Leader"

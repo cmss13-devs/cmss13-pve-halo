@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/marshal
+/* /datum/human_ai_equipment_preset/marshal
 	faction = FACTION_MARSHAL
 
 /datum/human_ai_equipment_preset/marshal/deputy
@@ -79,3 +79,4 @@
 	name = "CMB Marshals - Human Rights Observer"
 	desc = "CMB Marshals human rights observer. Unarmed"
 	path = /datum/equipment_preset/cmb/observer
+ */

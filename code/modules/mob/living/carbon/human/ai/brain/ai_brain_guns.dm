@@ -20,4 +20,9 @@
 	if(primary_weapon.has_ammunition())
 		return FALSE
 
+	if(istype(primary_weapon, /obj/item/weapon/gun/energy/plasma))
+		var/obj/item/weapon/gun/energy/plasma/plam = primary_weapon
+		if(!plam.dispersing)
+			return FALSE
+
 	return TRUE
