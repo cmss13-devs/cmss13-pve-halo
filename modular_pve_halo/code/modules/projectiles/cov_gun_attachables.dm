@@ -15,22 +15,22 @@
 	name = "\improper carbine scope"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
 
-/obj/item/attachable/scope/variable_zoom/covenant/activate_attachment(obj/item/weapon/gun/G, mob/living/carbon/user, turn_off)
-	if(turn_off || G.zoom)
-		if(G.zoom)
-			G.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
+/obj/item/attachable/scope/variable_zoom/covenant/activate_attachment(obj/item/weapon/gun/gun, mob/living/carbon/user, turn_off)
+	if(turn_off || gun.zoom)
+		if(gun.zoom)
+			gun.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
 		return TRUE
 
-	if(!G.zoom)
-		if(!(G.flags_item & WIELDED))
+	if(!gun.zoom)
+		if(!(gun.flags_item & WIELDED))
 			if(user)
-				to_chat(user, SPAN_WARNING("You must hold [G] with two hands to use [src]."))
+				to_chat(user, SPAN_WARNING("You must hold [gun] with two hands to use [src]."))
 			return FALSE
 		if(!iscovenant(user))
 			if(user)
 				to_chat(user, SPAN_DANGER("There's no visible optic feed or compatible smart-link connection, how the hell do you expect to use this?!"))
 			return FALSE
 		else
-			G.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
-			apply_scoped_buff(G,user)
+			gun.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
+			apply_scoped_buff(gun,user)
 	return TRUE
