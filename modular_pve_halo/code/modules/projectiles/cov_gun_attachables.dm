@@ -17,7 +17,6 @@
 
 /obj/item/attachable/scope/variable_zoom/covenant/activate_attachment(obj/item/weapon/gun/gun, mob/living/carbon/user, turn_off)
 	if(!iscovenant(user))
-		if(user)
-			to_chat(user, SPAN_DANGER("There's no visible optic feed or compatible smart-link connection, how the hell do you expect to use [src]?!"))
+		to_chat(user, SPAN_DANGER("There's no visible optic feed or compatible smart-link connection, how the hell do you expect to use [src]?!"))
 		return FALSE
 	..()
