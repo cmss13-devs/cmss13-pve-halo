@@ -211,6 +211,21 @@
 	icon_state = "wy_sentry_static"
 	path_to_spawn = /obj/structure/machinery/defenses/sentry/premade/deployable/wy */
 
+/datum/human_ai_defense/defense/sentry/cov
+	category = "Covenant Sentries"
+
+/datum/human_ai_defense/defense/sentry/cov/covenant/static_gun
+	name = "Automated Plasma Turret"
+	desc = /obj/structure/machinery/defenses/sentry/covenant/premade::desc
+	icon_state = "wy_sentry_static"
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/premade
+
+/datum/human_ai_defense/defense/sentry/cov/covenant/static_gun/omni
+	name = "Omni-Automated Plasma Turret"
+	desc = /obj/structure/machinery/defenses/sentry/covenant/omni/premade::desc
+	icon_state = "wy_sentry_static"
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/omni/premade
+
 // Bell towers
 
 /* /datum/human_ai_defense/defense/bell_tower
@@ -399,6 +414,59 @@
 	desc = /obj/item/explosive/mine/covenant/plasma/active::desc
 	icon_state = "needlemine"
 	path_to_spawn = /obj/item/explosive/mine/covenant/plasma/active
+
+//Covenant Props
+
+/datum/human_ai_defense/defense/covenant_prop
+	category = "Covenant Props"
+
+/datum/human_ai_defense/defense/covenant_prop/wide_barrier
+	name = "covenant triptych barrier"
+	desc = /obj/structure/covenant_barricade/wide::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/covenant_barricade/wide
+
+/datum/human_ai_defense/defense/covenant_prop/barrier
+	name = "short covenant triptych barrier"
+	desc = /obj/structure/covenant_barricade::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/covenant_barricade
+
+/datum/human_ai_defense/defense/covenant_prop/sensor
+	name = "covenant proximity sensor"
+	desc = /obj/item/device/assembly/prox_sensor/cov/active::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/item/device/assembly/prox_sensor/cov/active
+
+/datum/human_ai_defense/defense/covenant_prop/tower
+	name = "covenant relay tower"
+	desc = /obj/structure/machinery/telecomms/relay/preset/ice_colony/cov::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/machinery/telecomms/relay/preset/ice_colony/cov
+
+/datum/human_ai_defense/defense/covenant_prop/plasma_battery
+	name = "covenant plasma battery"
+	desc = /obj/structure/reagent_dispensers/fueltank/cov::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/reagent_dispensers/fueltank/cov
+
+/datum/human_ai_defense/defense/covenant_prop/plasma_battery_big
+	name = "covenant large plasma battery"
+	desc = /obj/structure/prop/static_tank/fuel/cov::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/prop/static_tank/fuel/cov
+
+/datum/human_ai_defense/defense/covenant_prop/stool
+	name = "covenant stool"
+	desc = /obj/structure/bed/chair/comfy/cov::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/bed/chair/comfy/cov
+
+/datum/human_ai_defense/defense/covenant_prop/crate
+	name = "plasma-charging crate"
+	desc = /obj/structure/machinery/recharger/covenant::desc
+	icon_state = "metal"
+	path_to_spawn = /obj/structure/machinery/recharger/covenant
 
 // Barricades
 
