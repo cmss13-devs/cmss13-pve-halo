@@ -215,13 +215,13 @@
 	category = "Covenant Sentries"
 
 /datum/human_ai_defense/defense/sentry/cov/covenant/static_gun
-	name = "Automated Plasma Turret"
+	name = "Automated Plasma Turret (BROKEN NOT USE)"
 	desc = /obj/structure/machinery/defenses/sentry/covenant/premade::desc
 	icon_state = "wy_sentry_static"
 	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/premade
 
 /datum/human_ai_defense/defense/sentry/cov/covenant/static_gun/omni
-	name = "Omni-Automated Plasma Turret"
+	name = "Omni-Automated Plasma Turret (DEADLY)"
 	desc = /obj/structure/machinery/defenses/sentry/covenant/omni/premade::desc
 	icon_state = "wy_sentry_static"
 	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/omni/premade

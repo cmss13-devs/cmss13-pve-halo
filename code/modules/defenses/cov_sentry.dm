@@ -12,9 +12,9 @@
 	name = "Automated Plasma Turret"
 	desc = "An automated weapon built by the Covenant, it fires a burst of plasma bolts. "
 	icon = 'modular_pve_halo/icons/covProps64x64.dmi'
-	defense_type = "Static"
+	defense_type = "Normal"
 	sentry_type = "covsentry"
-	defense_icon = "covsentry"
+	defense_icon = "defense_base"
 	fire_delay = 6
 	burst_fire_delay = 3
 	burst = 3
@@ -58,9 +58,9 @@
 	name = "Omni Directional Automated Plasma Turret"
 	desc = "An automated weapon built by the Covenant, it fires a burst of plasma bolts. "
 	icon = 'modular_pve_halo/icons/covProps64x64.dmi'
-	defense_type = "Static"
+	defense_type = "Normal"
 	sentry_type = "covsentry"
-	defense_icon = "covsentry"
+	defense_icon = "defense_base"
 	fire_delay = 5
 	omni_directional = TRUE
 	damage_mult = 1.5
