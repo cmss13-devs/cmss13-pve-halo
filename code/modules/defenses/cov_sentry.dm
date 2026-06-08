@@ -21,7 +21,6 @@
 	burst = 3
 	health = 350
 	health_max = 350
-	damage_mult = 3.5
 	disassemble_time = 20 SECONDS
 	hack_time = 25 SECONDS
 	sentry_range = 12
