@@ -55,6 +55,9 @@
 	desc = "Covenant Plasma Battery"
 	icon = 'modular_pve_halo/icons/covProps32x32.dmi'
 	icon_state = "plasmabattery"
+	light_range = 4
+	light_power = 0.5
+	light_color = LIGHT_COLOR_BLUE
 
 /obj/structure/prop/static_tank/fuel/cov
 	name = "Large Plasma Battery"
