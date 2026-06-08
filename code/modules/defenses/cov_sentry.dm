@@ -28,6 +28,10 @@
 	ammo = new /obj/item/ammo_magazine/sentry/covenant
 	firing_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
 	pixel_x = -16
+	light_on = TRUE
+	light_range = 4
+	light_power = 0.5
+	light_color = LIGHT_COLOR_PINK
 
 /obj/structure/machinery/defenses/sentry/covenant/premade
 	immobile = TRUE
