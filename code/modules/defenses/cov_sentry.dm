@@ -13,17 +13,17 @@
 	desc = "An automated weapon built by the Covenant, it fires a burst of plasma bolts. "
 	icon = 'modular_pve_halo/icons/covProps64x64.dmi'
 	defense_type = "Static"
-	static = TRUE
 	sentry_type = "covsentry"
 	defense_icon = "covsentry"
-	fire_delay = 2 SECONDS
+	fire_delay = 6
 	burst_fire_delay = 3
 	burst = 3
 	health = 350
 	health_max = 350
+	damage_mult = 2.5
 	disassemble_time = 20 SECONDS
 	hack_time = 25 SECONDS
-	sentry_range = 12
+	sentry_range = 7
 	omni_directional = FALSE
 	ammo = new /obj/item/ammo_magazine/sentry/covenant
 	firing_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
@@ -59,11 +59,11 @@
 	desc = "An automated weapon built by the Covenant, it fires a burst of plasma bolts. "
 	icon = 'modular_pve_halo/icons/covProps64x64.dmi'
 	defense_type = "Static"
-	static = TRUE
 	sentry_type = "covsentry"
 	defense_icon = "covsentry"
-	fire_delay = 3
+	fire_delay = 5
 	omni_directional = TRUE
+	damage_mult = 1.5
 
 /obj/structure/machinery/defenses/sentry/covenant/omni/premade
 	immobile = TRUE
