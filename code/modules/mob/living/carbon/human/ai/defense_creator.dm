@@ -215,16 +215,16 @@
 	category = "Covenant Sentries"
 
 /datum/human_ai_defense/defense/sentry/cov/covenant/static_gun
-	name = "Automated Plasma Turret (BROKEN NOT USE)"
-	desc = /obj/structure/machinery/defenses/sentry/covenant/premade::desc
+	name = "Automated Plasma Turret"
+	desc = /obj/structure/machinery/defenses/sentry/covenant::desc
 	icon_state = "wy_sentry_static"
-	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/premade
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant
 
 /datum/human_ai_defense/defense/sentry/cov/covenant/static_gun/omni
 	name = "Omni-Automated Plasma Turret (DEADLY)"
-	desc = /obj/structure/machinery/defenses/sentry/covenant/omni/premade::desc
+	desc = /obj/structure/machinery/defenses/sentry/covenant/omni::desc
 	icon_state = "wy_sentry_static"
-	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/omni/premade
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/omni
 
 // Bell towers
 

@@ -23,7 +23,7 @@
 	damage_mult = 2.5
 	disassemble_time = 20 SECONDS
 	hack_time = 25 SECONDS
-	sentry_range = 7
+	sentry_range = 14
 	omni_directional = FALSE
 	ammo = new /obj/item/ammo_magazine/sentry/covenant
 	firing_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
@@ -33,30 +33,17 @@
 	light_power = 0.5
 	light_color = LIGHT_COLOR_PINK
 
-/obj/structure/machinery/defenses/sentry/covenant/premade
-	immobile = TRUE
-	turned_on = TRUE
-
-/obj/structure/machinery/defenses/sentry/covenant/premade/Initialize()
+/obj/structure/machinery/defenses/sentry/covenant/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
-	if(selected_categories[SENTRY_CATEGORY_IFF])
-		selected_categories[SENTRY_CATEGORY_IFF] = FACTION_COVENANT
-
-/obj/structure/machinery/defenses/sentry/covenant/premade/get_examine_text(mob/user)
-	. = ..()
-	. += SPAN_NOTICE("It seems this one's bolts have been securely welded into the floor, and the access panel locked. You can't interact with it.")
-
-/obj/structure/machinery/defenses/sentry/covenant/premade/attackby(obj/item/O, mob/user)
-	return
-
-/obj/structure/machinery/defenses/sentry/covenant/premade/power_on()
-	return
-
-/obj/structure/machinery/defenses/sentry/covenant/premade/power_off()
-	return
-
-/obj/structure/machinery/defenses/sentry/covenant/premade/damaged_action()
-	return
+	var/list/origin = .
+	var/insert_line
+	if(iscovenant(user))
+		origin[1] = "[icon2html(src, user)] This is a Shuku-pattern sentry turret"
+		insert_line = ".."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-2 Automated Plasma Turret"
+		insert_line = ".."
+	origin.Insert(2, insert_line)
 
 /obj/structure/machinery/defenses/sentry/covenant/omni
 	name = "Omni Directional Automated Plasma Turret"
@@ -66,30 +53,18 @@
 	sentry_type = "covsentry"
 	defense_icon = "defense_base"
 	fire_delay = 5
+	sentry_range = 5
 	omni_directional = TRUE
-	damage_mult = 1.5
+	damage_mult = 2
 
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade
-	immobile = TRUE
-	turned_on = TRUE
-
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade/Initialize()
+/obj/structure/machinery/defenses/sentry/covenant/omni/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
-	if(selected_categories[SENTRY_CATEGORY_IFF])
-		selected_categories[SENTRY_CATEGORY_IFF] = FACTION_COVENANT
-
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade/get_examine_text(mob/user)
-	. = ..()
-	. += SPAN_NOTICE("It seems this one's bolts have been securely welded into the floor, and the access panel locked. You can't interact with it.")
-
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade/attackby(obj/item/O, mob/user)
-	return
-
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade/power_on()
-	return
-
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade/power_off()
-	return
-
-/obj/structure/machinery/defenses/sentry/covenant/omni/premade/damaged_action()
-	return
+	var/list/origin = .
+	var/insert_line
+	if(iscovenant(user))
+		origin[1] = "[icon2html(src, user)] This is a Shuku-pattern Omni-Directional sentry turret"
+		insert_line = ".."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-2 Omni-Directional Automated Plasma Turret"
+		insert_line = ".."
+	origin.Insert(2, insert_line)
