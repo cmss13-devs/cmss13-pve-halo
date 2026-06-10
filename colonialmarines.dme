@@ -2815,6 +2815,7 @@
 #include "modular_pve_halo\code\game\objects\items\tools\flame_tools.dm"
 #include "modular_pve_halo\code\game\objects\items\toys\cards.dm"
 #include "modular_pve_halo\code\game\objects\items\weapons\blades.dm"
+#include "modular_pve_halo\code\game\objects\structures\fence.dm"
 #include "modular_pve_halo\code\game\objects\structures\shower.dm"
 #include "modular_pve_halo\code\modules\almayer\machinery.dm"
 #include "modular_pve_halo\code\modules\clothing\glasses\glasses.dm"
