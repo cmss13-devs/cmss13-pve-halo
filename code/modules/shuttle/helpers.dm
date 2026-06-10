@@ -158,6 +158,13 @@
 		if(istype(blocking_obj, /obj/structure/machinery/door/poddoor/filler_object))
 			continue
 
+		if(istype(blocking_obj, /obj/structure/shuttle))
+			continue // dont push shuttle parts out
+		if(istype(blocking_obj, /obj/effect/roof_node))
+			continue // dont push roof nodes out
+		if(istype(blocking_obj, /obj/structure/roof))
+			continue // dont push roofs out
+
 		// Skip anything that'd just get crushed instead
 		if(istype(door, /obj/structure/machinery/door/airlock))
 			if(is_type_in_list(blocking_obj, door:resin_smushables)) // Done with : because of https://www.byond.com/forum/post/2954294

@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/twe
+/* /datum/human_ai_squad_preset/twe
 	faction = FACTION_TWE
 
 /datum/human_ai_squad_preset/twe/rifleteam
@@ -42,3 +42,4 @@
 		/datum/equipment_preset/royal_marine/troopsergeant = 1,
 		/datum/equipment_preset/royal_marine/standard = 1,
 	)
+ */

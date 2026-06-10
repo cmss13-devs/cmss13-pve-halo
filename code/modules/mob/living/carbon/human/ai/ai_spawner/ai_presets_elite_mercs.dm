@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/elite_merc
+/* /datum/human_ai_equipment_preset/elite_merc
 	faction = FACTION_MERCENARY
 
 /datum/human_ai_equipment_preset/elite_merc/standard
@@ -26,4 +26,4 @@
 	desc = "An elite merc medic, will spawn with a rifle and medical equipment"
 	path = /datum/equipment_preset/other/elite_merc/medic
 
-
+ */

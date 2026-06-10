@@ -1,6 +1,0 @@
-author: "DexterDude"
-delete-after: True
-changes:
-  - rscadd: "Riflemen can now choose the grenade launcher or shotgun in the lobby. Default is the shotgun."
-  - balance: "Nerfs the shotgun and grenade launcher as they were overperforming."
-  - maptweak: "Edited maps to reflect the changes above"

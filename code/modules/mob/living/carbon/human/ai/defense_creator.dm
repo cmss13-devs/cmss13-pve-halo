@@ -119,7 +119,7 @@
 	if(faction)
 		defense.handle_iff(faction)
 
-/datum/human_ai_defense/defense/sentry
+/* /datum/human_ai_defense/defense/sentry
 	category = "Sentries"
 
 /datum/human_ai_defense/defense/sentry/uscm
@@ -209,11 +209,11 @@
 	name = "W-Y Sentry - Static"
 	desc = /obj/structure/machinery/defenses/sentry/premade/deployable/wy::desc
 	icon_state = "wy_sentry_static"
-	path_to_spawn = /obj/structure/machinery/defenses/sentry/premade/deployable/wy
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/premade/deployable/wy */
 
 // Bell towers
 
-/datum/human_ai_defense/defense/bell_tower
+/* /datum/human_ai_defense/defense/bell_tower
 	name = "USCM Bell Tower"
 	desc = /obj/structure/machinery/defenses/bell_tower::desc
 	icon_state = "uscm_belltower"
@@ -286,7 +286,7 @@
 	name = "USCM Tesla Coil - Micro"
 	desc = /obj/structure/machinery/defenses/tesla_coil/micro::desc
 	icon_state = "uscm_tesla_micro"
-	path_to_spawn = /obj/structure/machinery/defenses/tesla_coil/micro
+	path_to_spawn = /obj/structure/machinery/defenses/tesla_coil/micro */
 
 // Mines
 
@@ -306,7 +306,7 @@
 	icon_state = "claymore"
 	path_to_spawn = /obj/item/explosive/mine/active
 
-/datum/human_ai_defense/mine/claymore/wy
+/* /datum/human_ai_defense/mine/claymore/wy
 	name = "Claymore - WY"
 	desc = /obj/item/explosive/mine/pmc/active::desc
 	icon_state = "claymore_wy"
@@ -316,7 +316,7 @@
 	name = "G2 Electroshock"
 	desc = /obj/item/explosive/mine/sebb/active::desc
 	icon_state = "sebb"
-	path_to_spawn = /obj/item/explosive/mine/sebb/active
+	path_to_spawn = /obj/item/explosive/mine/sebb/active */
 
 // Barricades
 

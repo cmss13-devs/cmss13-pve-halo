@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/clf
+/* /datum/human_ai_squad_preset/clf
 	faction = "Insurrectionists"
 
 /datum/human_ai_squad_preset/clf/patrol
@@ -94,3 +94,4 @@
 		/datum/equipment_preset/canc/remnant/leader = 1,
 		/datum/equipment_preset/canc/remnant = 2,
 	)
+ */

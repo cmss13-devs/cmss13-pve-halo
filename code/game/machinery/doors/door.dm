@@ -252,6 +252,8 @@
 
 	for(var/turf/turf_tile in locs)
 		for(var/obj/structure/blocking_structure in turf_tile)
+			if(istype(blocking_structure, /obj/structure/shuttle))
+				continue
 			if(blocking_structure.density || istype(blocking_structure, /obj/structure/closet))
 				addtimer(CALLBACK(src, PROC_REF(close), forced), 6 SECONDS + openspeed, TIMER_UNIQUE|TIMER_OVERRIDE|TIMER_NO_HASH_WAIT)
 				return FALSE
