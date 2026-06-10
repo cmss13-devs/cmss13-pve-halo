@@ -2053,6 +2053,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	armor_bomb = CLOTHING_ARMOR_VERYHIGH
 	armor_internaldamage = CLOTHING_ARMOR_VERYHIGH
 	actions_types = list(/datum/action/item_action/toggle)
+	motion_tracker = TRUE
 	var/toggleable = TRUE
 
 /obj/item/clothing/head/helmet/marine/unsc/mjolnir/Initialize()
