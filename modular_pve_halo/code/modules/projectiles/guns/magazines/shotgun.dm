@@ -34,3 +34,13 @@
 	transfer_handful_amount = 6
 	max_rounds = 24
 	caliber = "8g"
+
+/obj/item/ammo_magazine/handful/shotgun/buckshot_unsc
+	name = "handful of MAG 15P-00B (8g)"
+	icon_state = "8g_shell_6"
+	handful_state = "8g_shell"
+	caliber = "8g"
+	default_ammo = /datum/ammo/bullet/shotgun/buckshot/unsc
+	max_rounds = 6
+	current_rounds = 6
+	transfer_handful_amount = 6
