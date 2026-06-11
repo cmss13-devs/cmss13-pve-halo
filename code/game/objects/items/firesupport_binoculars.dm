@@ -302,6 +302,9 @@
 /obj/item/device/binoculars/fire_support/pmc/usable_shipside
 	usable_shipside = TRUE
 
+/obj/item/device/binoculars/fire_support/halo
+	indestructible = TRUE
+
 /obj/item/device/binoculars/fire_support/halo/unsc
 	faction = FACTION_UNSC
 	mode_list = list(
