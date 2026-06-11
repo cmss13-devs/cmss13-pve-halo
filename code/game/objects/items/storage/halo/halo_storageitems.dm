@@ -247,6 +247,7 @@
 	networks_receive = list(FACTION_UNSC, FACTION_MARINE)
 	networks_transmit = list(FACTION_UNSC, FACTION_MARINE)
 	phone_category = PHONE_UNSC
+	indestructible = TRUE
 
 /obj/item/storage/backpack/marine/satchel/unsc
 	name = "UNSC buttpack"
