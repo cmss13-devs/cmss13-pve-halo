@@ -121,3 +121,6 @@ endmap
 
 map traxus_gamma_zone
 endmap
+
+map strategos_island
+endmap

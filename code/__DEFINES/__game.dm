@@ -57,6 +57,7 @@
 #define MAP_MACKAY_STATION "Mackay Station"
 #define MAP_ONI_DIGSITE_451 "ONI Digsite 451"
 #define MAP_TRAXUS_GAMMA_ZONE "Gamma Sector" //HALO
+#define MAP_STRATEGOS_ISLAND "Strategos Island" //HALO MP map mash-up
 
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"

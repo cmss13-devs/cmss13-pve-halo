@@ -2854,10 +2854,6 @@
 	pixel_x = 0;
 	pixel_y = -1
 	},
-/obj/item/attachable/flashlight/ma5c{
-	pixel_x = -3;
-	pixel_y = -4
-	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/unsc_base/west_wing)
 "bxN" = (
@@ -20715,13 +20711,6 @@
 	},
 /turf/open/floor/prison/floor_plate,
 /area/gamma_sector/traxus_base/supply_section_main)
-"lsz" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#6b675e"
-	},
-/obj/item/attachable/flashlight/ma5c/ma3a,
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/closed_soft/observation_hab)
 "lsH" = (
 /obj/structure/platform/kutjevo/smooth{
 	dir = 4;
@@ -24129,20 +24118,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/cell_stripe,
 /area/gamma_sector/unsc_base/north_wing)
-"nmL" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#6b675e"
-	},
-/obj/item/attachable/flashlight/ma5c{
-	pixel_x = 0;
-	pixel_y = 3
-	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 7;
-	pixel_y = 10
-	},
-/turf/open/floor/prison/floor_plate,
-/area/gamma_sector/unsc_base/armory)
 "nmQ" = (
 /obj/structure/prop/unsc_crate/stack,
 /turf/open/asphalt/tile,
@@ -43776,14 +43751,6 @@
 	color = "#6b675e";
 	layer = 2.79
 	},
-/obj/item/attachable/flashlight/ma5c{
-	pixel_x = 1;
-	pixel_y = 3
-	},
-/obj/item/attachable/flashlight/ma5c{
-	pixel_x = 4;
-	pixel_y = -5
-	},
 /turf/open/floor/plating/plating_catwalk/prison,
 /area/gamma_sector/traxus_base/supply_section_a)
 "xMy" = (
@@ -54842,7 +54809,7 @@ yjS
 hZG
 eZQ
 dHT
-lsz
+mrZ
 mrZ
 dHT
 eZQ
@@ -64321,7 +64288,7 @@ nES
 dXk
 gHq
 ofX
-nmL
+teg
 qPv
 uzn
 nES
