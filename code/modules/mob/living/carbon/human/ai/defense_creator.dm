@@ -215,10 +215,10 @@
 	category = "Covenant Sentries"
 
 /datum/human_ai_defense/defense/sentry/cov/covenant/static_gun
-	name = "Automated Plasma Turret"
-	desc = /obj/structure/machinery/defenses/sentry/covenant::desc
+	name = "Automated Plasma Turret (Directional, 14 tile range)"
+	desc = /obj/structure/machinery/defenses/sentry/covenant/dmr::desc
 	icon_state = "wy_sentry_static"
-	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant
+	path_to_spawn = /obj/structure/machinery/defenses/sentry/covenant/dmr
 
 /datum/human_ai_defense/defense/sentry/cov/covenant/static_gun/omni
 	name = "Omni-Automated Plasma Turret (DEADLY)"

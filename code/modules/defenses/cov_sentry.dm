@@ -1,4 +1,5 @@
 
+#define COV_SNIPER_SENTRY_RANGE 14
 
 /obj/item/ammo_magazine/sentry/covenant
 	name = "Plasma Battery"
@@ -23,7 +24,6 @@
 	damage_mult = 2.5
 	disassemble_time = 20 SECONDS
 	hack_time = 25 SECONDS
-	sentry_range = 14
 	omni_directional = FALSE
 	ammo = new /obj/item/ammo_magazine/sentry/covenant
 	firing_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
@@ -32,6 +32,21 @@
 	light_range = 4
 	light_power = 0.5
 	light_color = LIGHT_COLOR_PINK
+
+/obj/structure/machinery/defenses/sentry/covenant/dmr
+	sentry_range = 14
+
+/obj/structure/machinery/defenses/sentry/covenant/dmr/set_range()
+	switch(dir)
+		if(EAST)
+			range_bounds = SQUARE(x + (COV_SNIPER_SENTRY_RANGE/2), y, COV_SNIPER_SENTRY_RANGE)
+		if(WEST)
+			range_bounds = SQUARE(x - (COV_SNIPER_SENTRY_RANGE/2), y, COV_SNIPER_SENTRY_RANGE)
+		if(NORTH)
+			range_bounds = SQUARE(x, y + (COV_SNIPER_SENTRY_RANGE/2), COV_SNIPER_SENTRY_RANGE)
+		if(SOUTH)
+			range_bounds = SQUARE(x, y - (COV_SNIPER_SENTRY_RANGE/2), COV_SNIPER_SENTRY_RANGE)
+
 
 /obj/structure/machinery/defenses/sentry/covenant/get_examine_text(mob/living/carbon/human/user)
 	. = ..()
