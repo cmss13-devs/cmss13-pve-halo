@@ -6,7 +6,7 @@
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/armor.dmi'
 	)
-	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 
 	var/camo_active = FALSE
 	var/full_camo_alpha = FULL_PVE_CAMO_ALPHA

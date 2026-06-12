@@ -5,7 +5,7 @@
 	icon_state = "methane_mask"
 	item_state = "methane_mask"
 
-	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 
 	item_icons = list(
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/unggoy/mask.dmi'

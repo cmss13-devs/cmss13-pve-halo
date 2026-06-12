@@ -13,7 +13,7 @@
 		WEAR_HANDS = 'icons/halo/mob/humans/onmob/clothing/sangheili/gloves.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_SANGHEILI,SPECIES_SANGHEILI_HEROIC,SPECIES_SANGHEILI_LEGENDARY,SPECIES_SANGHEILI_MYTHIC)
+	allowed_species_list = list(SPECIES_LIST_SANGHEILI)
 
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
@@ -101,7 +101,7 @@
 		WEAR_HANDS = 'icons/halo/mob/humans/onmob/clothing/unggoy/gloves.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_UNGGOY,SPECIES_UNGGOY_HEROIC)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
