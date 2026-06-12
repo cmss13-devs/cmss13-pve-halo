@@ -169,7 +169,7 @@
 
 /obj/item/storage/belt/shotgun/unsc/fill_preset_inventory()
 	for(var/i = 1 to storage_slots)
-		new /obj/item/ammo_magazine/handful/shotgun/buckshot_unsc(src)
+		new /obj/item/ammo_magazine/handful/shotgun/halo(src)
 
 //======================
 // POUCHES
