@@ -1348,7 +1348,7 @@
 	name = "Supply - Spec Ammo"
 	icon_state = "Supply_Spec"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC
-	cost = 5
+	cost = 6
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/ammo_mix/spec
 
 /datum/fire_support/custom/wombat/supply_drop/odst
@@ -1362,13 +1362,13 @@
 	name = "Supply - Grenades"
 	icon_state = "Supply_Grenade"
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES
-	cost = 4
+	cost = 3
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/grenades
 
 /datum/fire_support/custom/wombat/supply_drop/launchable_grenades
 	name = "Supply - 40mm Grenades"
 	icon_state = "Supply_Grenade"
-	cost = 3
+	cost = 4
 	fire_support_type = FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES
 	enroute_tube = /obj/structure/closet/ordnance_canister/dropping/misc/launchable_grenades
 
