@@ -14,7 +14,7 @@
 
 /obj/item/weapon/gun/shotgun/pump/halo/m90
 	name = "\improper M90 CAWS"
-	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSC for CQC scenarios. It feeds twelve 8-gauge shotgun shells from it's internal tubular magazine."
+	desc = "Built and produced by Weapon System Technology, the M90 CAWS is a contemporary pump-action shotgun employed by the UNSC for CQC scenarios. It feeds twelve 8-gauge shotgun shells from it's dual internal tubular magazines."
 	icon_state = "m90"
 	item_state = "m90"
 	fire_sound = "gun_m90"
