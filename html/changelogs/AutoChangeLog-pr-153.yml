@@ -1,4 +1,0 @@
-author: "BonniePandora"
-delete-after: True
-changes:
-  - code_imp: "Adds a new iscovenant check, introduced to relevant items which used the isunggoy || issangheili checks prior"
