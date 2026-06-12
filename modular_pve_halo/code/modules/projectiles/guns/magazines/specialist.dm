@@ -1,4 +1,4 @@
-// sniper magazines
+// sniper magazines & handfuls
 
 /obj/item/ammo_magazine/rifle/halo/sniper
 	name = "\improper SRS99-AM magazine (14.5x114mm APFSDS)"
@@ -8,7 +8,8 @@
 	gun_type = /obj/item/weapon/gun/rifle/sniper/halo
 	default_ammo = /datum/ammo/bullet/rifle/srs99
 	caliber = "14.5x114mm"
-
+	handful_state = "vulture_bullet"
+	transfer_handful_amount = 4
 
 // rockets
 
