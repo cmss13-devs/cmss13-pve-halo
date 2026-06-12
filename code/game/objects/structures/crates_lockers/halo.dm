@@ -223,8 +223,8 @@
 
 /obj/structure/closet/ordnance_canister/dropping/ammo/shotgun
 	name = parent_type::name + " (Buckshot Ammo)"
-	contents_path = /obj/item/ammo_magazine/shotgun/buckshot/unsc
-	contents_number = 3
+	contents_path = /obj/item/ammo_box/magazine/shotgun/unsc
+	contents_number = 2
 	drop_on_spawn = TRUE
 
 /obj/structure/closet/ordnance_canister/dropping/ammo/spnkr
@@ -234,9 +234,15 @@
 	drop_on_spawn = TRUE
 
 /obj/structure/closet/ordnance_canister/dropping/ammo/sniper
-	name = parent_type::name + " (SRS99-AM Ammo)"
+	name = parent_type::name + " (SRS99-AM Magazines)"
 	contents_path = /obj/item/ammo_magazine/rifle/halo/sniper
 	contents_number = 4
+	drop_on_spawn = TRUE
+
+/obj/structure/closet/ordnance_canister/dropping/ammo/sniper_rounds
+	name = parent_type::name + " (SRS99-AM Ammo)"
+	contents_path = /obj/item/ammo_box/magazine/lever_action/unsc/sniper
+	contents_number = 1
 	drop_on_spawn = TRUE
 
 // Misc. Supplies
