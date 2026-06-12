@@ -145,9 +145,9 @@
 
 /obj/item/clothing/shoes/marine/spartan
 	name = "\improper spartan combat shoes"
-	desc = "gloves"
-	icon_state = "spartan"
-	item_state = "spartan"
+	desc = "A pair of spartan issued black combat boots."
+	icon_state = "marine"
+	item_state = "marine"
 	allowed_species_list = list(SPECIES_SPARTAN)
 	item_icons = list(
 		WEAR_FEET = 'icons/halo/mob/humans/onmob/clothing/shoes_48.dmi'

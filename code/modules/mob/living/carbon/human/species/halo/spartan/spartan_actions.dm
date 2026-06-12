@@ -233,6 +233,9 @@
 	if(mob_size >= MOB_SIZE_BIG)
 		to_chat(M, SPAN_WARNING("[src] is too big for us to grab!"))
 		return
+	if(HAS_TRAIT(src, TRAIT_SUPER_STRONG) && src.body_position != LYING_DOWN)
+		to_chat(M, SPAN_WARNING("[src] is too strong for us to grab while they're standing!"))
+		return
 	M.start_pulling(src)
 	KnockDown(0.5)
 	Stun(0.5)

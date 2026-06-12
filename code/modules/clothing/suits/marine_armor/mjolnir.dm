@@ -22,7 +22,13 @@
 	armor_internaldamage = CLOTHING_ARMOR_ULTRAHIGHPLUS
 	var/armor_status = 100
 
+/obj/item/clothing/suit/marine/unsc/mjolnir/examine(mob/user)
+	to_chat(user, SPAN_NOTICE("It has [armor_status] armor integrity."))
+
 /obj/item/clothing/suit/marine/unsc/mjolnir/proc/armor_check()
+	if(armor_status <= 0)
+		armor_status = 0
+		return
 	var/new_stat
 	switch(armor_status)
 		if(80 to 100)

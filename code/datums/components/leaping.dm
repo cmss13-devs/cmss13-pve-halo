@@ -4,6 +4,7 @@
 
 /datum/component/leaping
 	dupe_mode = COMPONENT_DUPE_UNIQUE_PASSARGS
+	var/toggled = TRUE
 	var/leap_range = 4
 	var/leap_cooldown = 3 SECONDS
 	/// The timing for activating a leap by double tapping a movement key.
@@ -21,6 +22,7 @@
 		return COMPONENT_INCOMPATIBLE
 
 	set_vars(_leap_range, _leap_cooldown, _leaper_allow_pass_flags)
+	give_action(parent, /datum/action/human_action/toggle_leap)
 
 /datum/component/leaping/UnregisterFromParent()
 	UnregisterSignal(parent, list(COMSIG_KB_MOVEMENT_EAST_DOWN, COMSIG_KB_MOVEMENT_NORTH_DOWN, COMSIG_KB_MOVEMENT_SOUTH_DOWN, COMSIG_KB_MOVEMENT_WEST_DOWN, COMSIG_LIVING_CAN_LEAP))
@@ -60,6 +62,8 @@
 
 /// Checks if we can leap in the specified direction, and activates the ability if so.
 /datum/component/leaping/proc/check_leap(direction)
+	if(!toggled)
+		return
 	if(last_move_dir == direction && last_mousedown_time + double_tap_timing > world.time)
 		if(TIMER_COOLDOWN_CHECK(parent, LEAP_COMPONENT_COOLDOWN))
 			to_chat(parent, SPAN_WARNING("Catch your breath!"))
@@ -104,3 +108,22 @@
 ///Checks if this mob can leap
 /mob/living/proc/can_leap()
 	return SEND_SIGNAL(src, COMSIG_LIVING_CAN_LEAP)
+
+/datum/action/human_action/toggle_leap
+	name = "Toggle Leaping"
+	icon_file = 'icons/halo/mob/hud/actions.dmi'
+	action_icon_state = "leap_on"
+
+/datum/action/human_action/toggle_leap/action_activate()
+	. = ..()
+	if(!can_use_action())
+		return
+
+	var/mob/living/carbon/human/human_user = owner
+	var/datum/component/leaping/component = human_user.GetComponent(/datum/component/leaping)
+	if(component)
+		component.toggled = !component.toggled
+		if(component.toggled)
+			to_chat(human_user, SPAN_WARNING("Leaping toggled on, you will leap when double tapping movement keys!"))
+		else
+			to_chat(human_user, SPAN_WARNING("Leaping toggled off, you will no longer leap when double tapping movement keys!"))
