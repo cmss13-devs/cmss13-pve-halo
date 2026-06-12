@@ -2360,16 +2360,12 @@
 	pixel_x = 0;
 	pixel_y = 17
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -7;
-	pixel_y = 20
-	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = 6;
-	pixel_y = 19
-	},
 /obj/item/ammo_box/magazine/unsc/br55{
 	pixel_y = 4
+	},
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
+	pixel_x = 0;
+	pixel_y = 21
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -14005,6 +14001,10 @@
 /obj/item/ammo_box/magazine/misc/unsc/mre{
 	pixel_x = 0;
 	pixel_y = 7
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -2;
+	pixel_y = 13
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
