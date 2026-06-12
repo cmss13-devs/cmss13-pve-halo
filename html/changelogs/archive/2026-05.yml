@@ -35,3 +35,21 @@
   The32bitguy:
   - rscadd: Sangeili AI can now kick.
   - rscadd: AI with TRAIT_SUPER_STRONG now wrestle.
+2026-05-17:
+  BonniePandora:
+  - balance: hAI & non-Sanghelli cAI will no longer throw back hand grenades
+  - code_imp: Adds a new iscovenant check, introduced to relevant items which used
+      the isunggoy || issangheili checks prior
+  Contrabang:
+  - rscadd: Adds motion sensors to certain helmets, which are given to FTL and SL
+  - maptweak: Adds an SL locker on the ODST map
+2026-05-21:
+  BonniePandora:
+  - rscadd: M45 smoke & M47 blast grenades, along with storage boxes for both types
+  - imageadd: Sprites for the above
+  - maptweak: Shipmaps adjusted to include smoke grenade boxes, marine ship gained
+      another aid packet box at request of Verbs, ODST map gets 2 blast grenade boxes
+      in exchange for 2 of their frag grenade boxes
+  - qol: grenade boxes now tell you what kind of 'nade is in them in their name
+  Yorkoh:
+  - balance: created a skill list for sangheili
