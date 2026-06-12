@@ -7,7 +7,7 @@
 	var/list/lightturfs
 	var/light_str = input(usr, "Set the light power.", "Shipmap Daytime Brightness", "0.3") as null|num
 	var/daytime_color = input(usr, "Please select the color to use.", "Daytime Color") as color|null
-	var/confirm = tgui_alert(usr, "Are you sure you wish to change daytime on the shipmap to this settings? This should only be used on shipmaps that are ostensibly ground maps.", "Confirm", list("Yes", "No"), 1 HOURS)
+	var/confirm = tgui_alert(usr, "Are you sure you wish to change daytime on the shipmap to this settings? This should probably only be used on shipmaps that are ostensibly ground maps.", "Confirm", list("Yes", "No"), 1 HOURS)
 	var/z_level = 3
 	if(confirm != "Yes")
 		return FALSE
