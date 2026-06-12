@@ -1,0 +1,9 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - rscadd: "Shotgun ammo tins for buckshot & beanbag, loose-rounds sniper ammo tin"
+  - rscadd: "New ammo droppod containing loose sniper-rounds box instead of mags"
+  - bugfix: "Slight rewording of the M90A's description"
+  - qol: "Shotgun ammo droppod swapped from 3 paper-boxes of 24 shells to 2 tins of 48 shells"
+  - imageadd: "Sprites for the additions listed above"
+  - maptweak: "ODST 'Night & McKay Station shipmaps had loose paper-boxes of shotgun ammo swapped for an empty ammo tin, McKay got a second aid-packet box"
