@@ -102,6 +102,13 @@
 /datum/species/unggoy/heroic //Unlike elites this tier is for ultras and specops, grunts arent getting a full suite of heroic, legendary, etc
 	name = SPECIES_UNGGOY_HEROIC
 	name_plural = "Unggoy Heroic"
+	mob_inherent_traits = list(
+		TRAIT_COV_TECH,
+		TRAIT_SUPER_STRONG,
+		TRAIT_FOREIGN_BIO,
+		TRAIT_IRON_TEETH,
+		TRAIT_DEXTROUS,
+	)
 
 	total_health = 150 //+25 HP
 	burn_mod = 0.9 //alittle lower
