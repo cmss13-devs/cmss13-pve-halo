@@ -175,6 +175,7 @@
 
 /datum/ammo/bullet/rifle/srs99
 	name = "APFSDS bullet"
+	handful_state = "vulture_bullet"
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 700
 	penetration = ARMOR_PENETRATION_TIER_8
