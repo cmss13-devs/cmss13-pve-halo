@@ -138,3 +138,73 @@
 
 /obj/item/ammo_box/magazine/lever_action/marksman/empty
 	empty = TRUE
+
+	// HALO PVE EDIT - START - SHOTGUN & SNIPER HANDFUL BOXES
+
+/obj/item/ammo_box/magazine/shotgun/unsc
+
+	name = "UNSC loose-munitions box"
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon_state = "base_ammoshell"
+	overlay_content = null
+	overlay_gun_type = null
+	handfuls_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	limit_per_tile = 2
+	deployed_object = /obj/structure/magazine_box/unsc
+
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot
+	name = "\improper UNSC shotgun shell box (MAG 15P-00B x 48)"
+	num_of_magazines = 48
+	icon_state = "base_ammoshell"
+	overlay_content = "_magbuck"
+	magazine_type = /obj/item/ammo_magazine/handful/shotgun/halo
+
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/shotgun/unsc/beanbag
+	name = "\improper shotgun shell box (MAG LLHB x 48)"
+	num_of_magazines = 48
+	icon_state = "base_ammoshell_beanbag"
+	overlay_content = "_beanbag"
+	magazine_type = /obj/item/ammo_magazine/handful/shotgun/halo/beanbag
+
+/obj/item/ammo_box/magazine/shotgun/unsc/beanbag/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/lever_action/unsc/sniper/update_icon()
+	if(overlays)
+		overlays.Cut()
+	var/obj/item/ammo_magazine/AM = locate(/obj/item/ammo_magazine) in contents
+	if(AM.current_rounds == num_of_magazines) //showing bullets inside box
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]")
+	else if(AM.current_rounds > (num_of_magazines/2))
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]_3")
+	else if(AM.current_rounds > (num_of_magazines/4))
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]_2")
+	else if(AM.current_rounds > 0)
+		overlays += image(handfuls_icon, icon_state = "[handful][overlay_content]_1")
+	if(!icon_state_deployed) // The lid is on the sprite already.
+		overlays += image(icon, icon_state = "[icon_state]_lid") //adding lid
+	if(overlay_gun_type)
+		overlays += image(text_markings_icon, icon_state = "text[overlay_gun_type]") //adding text
+
+/obj/item/ammo_box/magazine/lever_action/unsc/sniper
+	name = "\improper UNSC anti-materiel rounds box (14.5x114mm x 16)"
+	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
+	icon_state = "base_ammoshell_srs99"
+	overlay_content = "_srs99"
+	overlay_ammo_type = "_blank"
+	overlay_gun_type = "_blank"
+	handfuls_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
+	limit_per_tile = 2
+	deployed_object = /obj/structure/magazine_box/unsc
+	magazine_type = /obj/item/ammo_magazine/rifle/halo/sniper
+	num_of_magazines = 16
+	handfuls = TRUE
+	handful = "rounds"
+
+/obj/item/ammo_box/magazine/lever_action/unsc/sniper/empty
+	empty = TRUE
+
+	// HALO PVE EDIT - FINISH
