@@ -376,10 +376,6 @@
 	pixel_x = -2;
 	pixel_y = 12
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -4;
-	pixel_y = 14
-	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "aY" = (
@@ -2110,17 +2106,13 @@
 	pixel_x = -2;
 	pixel_y = 13
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -7;
-	pixel_y = 14
-	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 1
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = 7;
-	pixel_y = 13
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot/empty{
+	pixel_x = 3;
+	pixel_y = 19
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
