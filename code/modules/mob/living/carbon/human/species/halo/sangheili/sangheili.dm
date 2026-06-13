@@ -22,12 +22,12 @@
 	brute_mod = 0.8
 	slowdown = -0.2
 
-	dodge_pool = 20
-	dodge_pool_max = 20
+	dodge_pool = 20 //Each bullet reduces dodge pool by one btw - Verbs
+	dodge_pool_max = 20 //The max it can regen to
 	dodge_pool_regen = 1
 	dodge_pool_regen_max = 1
 	dodge_pool_regen_restoration = 0.1
-	dp_regen_base_reactivation_time = 20
+	dp_regen_base_reactivation_time = 20 //how much time needs to pass for ourguy to start regenning after he's been shot
 
 	heat_level_1 = 500
 	heat_level_2 = 700
@@ -121,3 +121,55 @@
 	sangheili.set_languages(list(LANGUAGE_SANGHEILI))
 	return ..()
 
+//Special Subtypes
+
+/datum/species/sangheili/heroic
+	name = SPECIES_SANGHEILI_HEROIC
+	name_plural = "Sangheili Heroic"
+	unarmed_type = /datum/unarmed_attack/punch/sangheili/heroic
+	pain_type = /datum/pain/sangheili/heroic
+
+	total_health = 360
+	slowdown = -0.3
+
+	dodge_pool = 25
+	dodge_pool_max = 25
+	dp_regen_base_reactivation_time = 20
+
+	knock_down_reduction = 2
+	stun_reduction = 2
+	knock_out_reduction = 2
+
+/datum/species/sangheili/heroic/legendary
+	name = SPECIES_SANGHEILI_LEGENDARY
+	name_plural = "Sangheili Legendary"
+	unarmed_type = /datum/unarmed_attack/punch/sangheili/heroic/legendary
+	pain_type = /datum/pain/sangheili/heroic/legendary
+
+	total_health = 380
+	slowdown = -0.4
+
+	dodge_pool = 30
+	dodge_pool_max = 30
+	dp_regen_base_reactivation_time = 15
+
+	knock_down_reduction = 4
+	stun_reduction = 4
+	knock_out_reduction = 4
+
+/datum/species/sangheili/heroic/legendary/mythic
+	name = SPECIES_SANGHEILI_MYTHIC
+	name_plural = "Sangheili Mythic"
+	unarmed_type = /datum/unarmed_attack/punch/sangheili/heroic/legendary/mythic
+	pain_type = /datum/pain/sangheili/heroic/legendary/mythic
+
+	total_health = 400
+	slowdown = -0.5
+
+	dodge_pool = 35
+	dodge_pool_max = 35
+	dp_regen_base_reactivation_time = 15
+
+	knock_down_reduction = 6
+	stun_reduction = 6
+	knock_out_reduction = 6

@@ -106,6 +106,7 @@
 #include "code\__DEFINES\shuttles.dm"
 #include "code\__DEFINES\skills.dm"
 #include "code\__DEFINES\sounds.dm"
+#include "code\__DEFINES\species_lists.dm"
 #include "code\__DEFINES\spartan.dm"
 #include "code\__DEFINES\speech_channels.dm"
 #include "code\__DEFINES\stamina.dm"
