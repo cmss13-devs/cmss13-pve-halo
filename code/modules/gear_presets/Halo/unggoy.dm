@@ -69,6 +69,15 @@
 	add_grunt_minor(new_human)
 	add_plasma_pistol_package(new_human)
 
+/datum/equipment_preset/covenant/unggoy/minor/plasma_pistol/grenade
+	name = parent_type::name + " (!GRENADES!)"
+
+/datum/equipment_preset/covenant/unggoy/minor/plasma_pistol/grenade/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	add_grunt_minor(new_human)
+	add_plasma_pistol_package(new_human)
+	add_plasma_grenade_low(new_human)
+
 /datum/equipment_preset/covenant/unggoy/minor/needler
 	name = parent_type::name + " (Needler)"
 
@@ -112,6 +121,15 @@
 	add_grunt_basics(new_human)
 	add_grunt_major(new_human)
 	add_plasma_pistol_package(new_human)
+
+/datum/equipment_preset/covenant/unggoy/major/plasma_pistol/grenade
+	name = parent_type::name + " (!GRENADES!)"
+
+/datum/equipment_preset/covenant/unggoy/major/plasma_pistol/grenade/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	add_grunt_major(new_human)
+	add_plasma_pistol_package(new_human)
+	add_plasma_grenade_low(new_human)
 
 /datum/equipment_preset/covenant/unggoy/major/needler
 	name = parent_type::name + " (Needler)"
@@ -173,6 +191,15 @@
 	add_grunt_heavy(new_human)
 	add_plasma_rifle_package(new_human)
 
+/datum/equipment_preset/covenant/unggoy/heavy/plasma_rifle/grenade
+	name = parent_type::name + " (!GRENADES!)"
+
+/datum/equipment_preset/covenant/unggoy/heavy/plasma_rifle/grenade/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	add_grunt_heavy(new_human)
+	add_plasma_rifle_package(new_human)
+	add_plasma_grenade_medium(new_human)
+
 // =================================
 // ULTRA
 // =================================
@@ -188,6 +215,9 @@
 	role_comm_title = "Ultra"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
+
+/datum/equipment_preset/covenant/unggoy/ultra/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_UNGGOY_HEROIC)
 
 /datum/equipment_preset/covenant/unggoy/ultra/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
@@ -234,6 +264,9 @@
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
 
+/datum/equipment_preset/covenant/unggoy/specops/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_UNGGOY_HEROIC)
+
 /datum/equipment_preset/covenant/unggoy/specops/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)
 	add_grunt_specops(new_human)
@@ -262,6 +295,16 @@
 	add_grunt_specops(new_human)
 	add_plasma_rifle_package(new_human)
 
+
+/datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/grenade
+	name = parent_type::name + " (!GRENADES!)"
+
+/datum/equipment_preset/covenant/unggoy/specops/plasma_rifle/grenade/load_gear(mob/living/carbon/human/new_human)
+	add_grunt_basics(new_human)
+	add_grunt_specops(new_human)
+	add_plasma_rifle_package(new_human)
+	add_plasma_grenade_high(new_human)
+
 /datum/equipment_preset/covenant/unggoy/specops/cloaking
 	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
 
@@ -287,6 +330,9 @@
 	role_comm_title = "SpecOps Ultra"
 	skills = /datum/skills/covenant/unggoy
 	languages = list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY)
+
+/datum/equipment_preset/covenant/unggoy/specops_ultra/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_UNGGOY_HEROIC)
 
 /datum/equipment_preset/covenant/unggoy/specops_ultra/load_gear(mob/living/carbon/human/new_human)
 	add_grunt_basics(new_human)

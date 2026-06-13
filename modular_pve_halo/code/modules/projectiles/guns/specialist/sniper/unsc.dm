@@ -36,6 +36,7 @@
 	map_specific_decoration = FALSE
 	skill_locked = FALSE
 	flags_item = TWOHANDED
+	indestructible = TRUE
 	var/can_change_barrel = TRUE
 
 /obj/item/weapon/gun/rifle/sniper/halo/verb/toggle_scope_zoom_level()
