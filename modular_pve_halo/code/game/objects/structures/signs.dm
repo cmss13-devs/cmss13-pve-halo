@@ -8,7 +8,7 @@
 
 /obj/structure/sign/banners/halo/odst_worn
 	name = "\improper Worn 105th Shock Troops Division flag"
-	desc = "A very worn flag of the Orbital Drop Shock Trooper division of the UNSC Marine Corps. This one looks like it's been around since Drop Jet Jumpers's began dropping feet first into hell in 2129."
+	desc = "A very worn flag of the Orbital Drop Shock Trooper division of the UNSC Marine Corps. This one looks like it could've been around since the time of the Drop Jet Jumpers with how tattered it's become."
 	icon_state = "odstflag_worn"
 
 /obj/structure/sign/banners/halo/unsc
