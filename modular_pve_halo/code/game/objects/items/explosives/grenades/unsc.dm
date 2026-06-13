@@ -25,3 +25,28 @@
 	dangerous = FALSE
 	dual_purpose = TRUE
 	underslug_launchable = TRUE
+
+/obj/item/explosive/grenade/smokebomb/unsc
+	name = "\improper M45 smoke grenade"
+	desc = "A canister-type grenade typically used for signalling or concealment purposes."
+	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
+	icon_state = "smonk"
+	item_state = "smonk"
+	det_time = 30
+	throw_speed = SPEED_FAST
+	caliber = "non-standard"
+	underslug_launchable = FALSE
+	dual_purpose = FALSE
+	throw_range = 6
+	arm_sound = 'sound/weapons/pinpull.ogg'
+	spent_case = /obj/item/trash/grenade/unsc_smoke
+
+/obj/item/explosive/grenade/high_explosive/pmc/unsc
+	name = "\improper M47 blast grenade"
+	desc = "A powerful high-explosive grenade designed to be used from defensive positions."
+	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
+	icon_state = "defensive_grenade"
+	item_state = "defensive_grenade"
+	explosion_power = 90
+	explosion_falloff = 8
+	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL
