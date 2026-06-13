@@ -167,7 +167,8 @@
 	if(istype(parent_atom, /mob/living))
 		RegisterSignal(parent_atom, list(
 		COMSIG_LIVING_REJUVENATED,
-		), PROC_REF(unstuck))
+		), PROC_REF(force_unstuck))
+		RegisterSignal(parent_atom, COMSIG_MOB_RESISTED, PROC_REF(unstuck))
 	//RegisterSignal(src, COMSIG_PARENT_QDELETING, GLOBAL_PROC_REF(qdel), src.origin_nade)
 	START_PROCESSING(SSfastobj, src)
 
@@ -178,16 +179,24 @@
 		origin_nade.hiss_loop.stop()
 		*/
 
-/datum/component/status_effect/plasma_stuck/proc/unstuck(delete_nade = TRUE)
+/datum/component/status_effect/plasma_stuck/proc/force_unstuck()
+	qdel(src.origin_nade)
+	parent_atom.overlays -= attached_icon
+	parent_atom.overlays -= attached_icon_em
+	qdel(src)
+
+/datum/component/status_effect/plasma_stuck/proc/unstuck()
 	var/atom/movable/parent_atom = parent
-	if(delete_nade)
-		qdel(src.origin_nade)
-	else
-		to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
-		src.origin_nade.forceMove(parent_atom.loc)
-		src.origin_nade.attached = FALSE
-		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
-		INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom,  HIGH_LAUNCH)
+	if(isliving(parent_atom))
+		var/mob/living/target = parent_atom
+		target.spin(5, 1)
+		target.KnockDown(1)
+	to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
+	src.origin_nade.forceMove(parent_atom.loc)
+	src.origin_nade.attached = FALSE
+	addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
+	addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), src.origin_nade.det_time-time_running-1.15 SECONDS)
+	INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, HIGH_LAUNCH)
 	parent_atom.overlays -= attached_icon
 	parent_atom.overlays -= attached_icon_em
 	qdel(src)
