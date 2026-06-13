@@ -20,6 +20,11 @@
 	var/input = "TITAN unit online. Good morning, marines."
 	shipwide_ai_announcement(input, name)
 
+/datum/game_mode/proc/voyager_online()
+	var/name = "Voyager Report"
+	var/input = "Voyager here, thaw out cycle complete. Rise and shine, marines."
+	shipwide_ai_announcement(input, name)
+
 /datum/game_mode/proc/request_ert(user, ares = FALSE)
 	if(!user)
 		return FALSE
