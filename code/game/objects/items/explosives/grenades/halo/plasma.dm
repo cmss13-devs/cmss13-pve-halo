@@ -180,6 +180,7 @@
 		*/
 
 /datum/component/status_effect/plasma_stuck/proc/force_unstuck()
+	var/atom/movable/parent_atom = parent
 	qdel(src.origin_nade)
 	parent_atom.overlays -= attached_icon
 	parent_atom.overlays -= attached_icon_em
