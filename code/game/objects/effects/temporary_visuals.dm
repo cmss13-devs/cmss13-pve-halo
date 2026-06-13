@@ -393,6 +393,17 @@
 	gradient = list("#FFFFFF", "#e67d71ff", "#470d0dff")
 	velocity = generator(GEN_CIRCLE, 85, 75, NORMAL_RAND)
 
+/particles/plasma_explosion/glassing/scarab
+	width = 850
+	height = 850
+	count = 500
+	spawning = 45
+	fade = generator(GEN_NUM, 20, 45)
+	position = list(0, 0)
+	scale = generator(GEN_NUM, 2, 2.5)
+	gradient = list("#FFFFFF", "#09eb60", "#328a30ff")
+	velocity = generator(GEN_CIRCLE, 65, 55, NORMAL_RAND)
+
 /particles/plasma_explosion/shield_pop
 	count = 15
 	spawning = 15
@@ -558,6 +569,7 @@
 	light_color = "#e67d71ff"
 	layer = ABOVE_FLY_LAYER
 	indestructible = TRUE
+	var/beam_cutoff = 7.5 SECONDS
 	var/outline_color = "#c50909ff"
 	var/particles_used = /particles/plasma_explosion/glassing
 
@@ -566,12 +578,22 @@
 	particles = new particles_used
 	add_filter("pixel_outline", 1, outline_filter(1, outline_color, OUTLINE_SHARP))
 	add_filter("glow", 2, drop_shadow_filter(0, 0, 3, 1, outline_color))
-	addtimer(CALLBACK(src, PROC_REF(beam_off)), 7.5 SECONDS)
+	addtimer(CALLBACK(src, PROC_REF(beam_off)), beam_cutoff)
 
 /obj/effect/temp_visual/glassing_beam/proc/beam_off()
 	particles.count = 0
 	icon_state = "off"
 	light_on = FALSE
+
+/obj/effect/temp_visual/glassing_beam/scarab
+	icon = 'icons/halo/effects/scarab_beam.dmi'
+	icon_state = "scarab_beam"
+	duration = 6.7 SECONDS
+	beam_cutoff = 5.7 SECONDS
+	particles_used = /particles/plasma_explosion/glassing/scarab
+	light_color = "#5dbf67ff"
+	outline_color = "#09eb60"
+	pixel_y = -448
 
 /obj/effect/temp_visual/shield_spark
 	icon = null
