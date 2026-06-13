@@ -1,0 +1,5 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - bugfix: "Fixes UNSC RTO bags losing their item-state/onmob sprite when rang & picked up"
+  - imageadd: "Couple new onmob sprites done using the existing one & the icon sprites as a basis"
