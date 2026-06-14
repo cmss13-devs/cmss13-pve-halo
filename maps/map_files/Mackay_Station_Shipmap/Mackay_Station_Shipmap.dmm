@@ -7,6 +7,10 @@
 	},
 /turf/open/floor/almayer/red/north,
 /area/mackay_station/romeo/redcommons2)
+"aab" = (
+/obj/item/tacmap_map,
+/turf/open/space/basic,
+/area/space)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -2576,6 +2580,7 @@
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
+/obj/item/tacmap_map,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "bIJ" = (
@@ -19148,6 +19153,7 @@
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
 /obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/weapon/gun/rifle/halo/br55/unloaded,
+/obj/item/tacmap_map,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "nod" = (
@@ -47203,7 +47209,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aab
 kIa
 kIa
 "}
@@ -47519,7 +47525,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aab
 kIa
 kIa
 kIa
@@ -51575,7 +51581,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aab
 kIa
 kIa
 kIa
