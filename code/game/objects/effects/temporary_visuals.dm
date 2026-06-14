@@ -591,8 +591,8 @@
 	duration = 6.7 SECONDS
 	beam_cutoff = 5.7 SECONDS
 	particles_used = /particles/plasma_explosion/glassing/scarab
-	light_color = "#5dbf67ff"
-	outline_color = "#09eb60"
+	light_color = "#25e2bc"
+	outline_color = "#09ebb3"
 	pixel_y = -448
 
 /obj/effect/temp_visual/shield_spark
