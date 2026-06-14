@@ -10,13 +10,29 @@
 		"Fireteam Leader" = TRACKER_FTL,
 		"Landing Zone" = TRACKER_LZ
 	)
-	locate_setting = TRACKER_FTL
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/equipped(mob/living/carbon/human/user, slot)
+	. = ..()
+
+	if((user == user.assigned_squad?.fireteam_leaders["SQ1"] || user == user.assigned_squad?.fireteam_leaders["SQ2"]) && ("Squad Leader" in tracking_options))
+		locate_setting = tracking_options["Squad Leader"]
+		return
+
+	if(((user in user.assigned_squad?.fireteams["SQ1"]) || (user in user.assigned_squad?.fireteams["SQ2"])) && ("Fireteam Leader" in tracking_options))
+		locate_setting = tracking_options["Fireteam Leader"]
+		return
 
 /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers
 	frequency = UNSC_FREQ
 
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers/squadlead
+	initial_keys = list(/obj/item/device/encryptionkey/squadlead)
+
 /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen
 	frequency = ODST_FREQ
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen/squadlead
+	initial_keys = list(/obj/item/device/encryptionkey/squadlead)
 
 /obj/item/device/radio/headset/distress/oni
 	name = "ONI security headset"
