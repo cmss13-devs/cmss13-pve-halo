@@ -23,6 +23,7 @@
 #define SKILL_INTEL "intel"
 #define SKILL_DOMESTIC "domestics"
 #define SKILL_FIREMAN "fireman"
+#define SKILL_GUN_HO "gun_ho"
 
 /*
 -----------------------------------------------------------------------------------------------------------------------------------------------------------
@@ -36,6 +37,13 @@
 #define SKILL_FIREARMS_TRAINED 1   //marines (allow tactical reloads)
 #define SKILL_FIREARMS_EXPERT 2   //special training
 #define SKILL_FIREARMS_MAX 2
+
+//better unwielded firing handling and smaller slowdown for wielding
+//quicker and better qol for tactical reloads
+#define SKILL_GUN_HO_UNTRAINED 1
+#define SKILL_GUN_HO_TRAINED 2
+#define SKILL_GUN_HO_EXPERT 3
+#define SKILL_GUN_HO_MAX 3
 
 //spec_weapons skill
 //hidden. who can and can't use specialist weapons

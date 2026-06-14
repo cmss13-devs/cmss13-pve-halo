@@ -72,3 +72,7 @@
 
 /// From /datum/game_master_submenu/vents/proc/setup_ambush()
 #define COMSIG_GAME_MASTER_AMBUSH_SET "game_master_ambush_set"
+
+///from /datum/element/jump when a jump has started and ended
+#define COMSIG_ELEMENT_JUMP_STARTED "element_jump_started"
+#define COMSIG_ELEMENT_JUMP_ENDED "element_jump_ended"
