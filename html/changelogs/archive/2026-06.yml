@@ -24,3 +24,16 @@
   - rscadd: Grunt Heroic Subtype (Warning this type of grunt can throw back grenades)
   - rscadd: Grunt Ultra subtype set to 'Heroic' On spawn
   - rscadd: Grunt Specops subtype set to 'Heroic' On spawn
+2026-06-14:
+  BonniePandora:
+  - bugfix: Fixes UNSC RTO bags losing their item-state/onmob sprite when rang & picked
+      up
+  - imageadd: Couple new onmob sprites done using the existing one & the icon sprites
+      as a basis
+  DexterDude:
+  - rscadd: Various hAI squad presets for the Covenant
+  - bugfix: Makes covenant hAI squad presets actually have guns now
+  Vany3045:
+  - rscadd: Extra loadouts for grunts with plasma grenades.
+  Yorkoh:
+  - balance: spnkr, spnkr rig, sniper, rto pack are all indestructible now
