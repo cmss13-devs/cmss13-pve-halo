@@ -875,3 +875,31 @@
 /obj/item/clothing/head/marine/peaked/service/ueg
 	name = "\improper UEG police chief peaked cap"
 	desc = "A peaked cap used within the UEG Police forces to denote rank and authority of some kind."
+
+/obj/item/clothing/head/cmcap/classic
+	name = "\improper grey utility cap"
+	desc = "A grey utility cap"
+	icon_state = "cap_grey"
+	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	)
+
+/obj/item/clothing/head/cmcap/boonie/classic
+	name = "\improper grey boonie hat"
+	icon_state = "booniehat_grey"
+	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	)
+
+/obj/item/clothing/head/durag/classic
+	icon_state = "durag_grey"
+	desc = "An improvised head wrap made out of a grey neckerchief. Great for keeping the sweat out of your eyes and protecting your hair."
+	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
+	)
