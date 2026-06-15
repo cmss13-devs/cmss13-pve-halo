@@ -129,7 +129,7 @@
 	var/mutable_appearance/attached_icon_em
 	var/image/attached_icon
 	var/time_triggered
-	var/det_time_after_unstuck = 2 SECONDS
+	var/det_time_after_unstuck = 4 SECONDS
 
 /datum/component/status_effect/plasma_stuck/Initialize(origin_nade, zone)
 	. = ..()
