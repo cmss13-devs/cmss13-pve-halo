@@ -28,6 +28,8 @@
 	var/attached = FALSE
 	var/attached_icon = "stuck_plasma"
 	var/time_triggered
+	///prevent multiple windup sounds from playing if the nade gets unstuck
+	var/windup_sound_queued = FALSE
 	///holder for plasma flame particle effect
 	var/obj/effect/abstract/particle_holder/plasma_effect
 
@@ -50,6 +52,7 @@
 		plasma_effect.particles.spawning = 5
 		plasma_effect.add_filter("pixel_outline", 0.1, outline_filter(1, "#3decff", OUTLINE_SHARP))
 		addtimer(CALLBACK(src, PROC_REF(play_windup_sound)), det_time - 1.15 SECONDS)
+		windup_sound_queued = TRUE
 		item_state = "plasma_grenade_on"
 		user.update_inv_l_hand()
 		user.update_inv_r_hand()
@@ -108,7 +111,7 @@
 					return
 
 /obj/item/explosive/grenade/high_explosive/plasma/proc/play_windup_sound()
-	if(attached)
+	if(!windup_sound_queued)
 		return
 	playsound(loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
 
@@ -161,6 +164,7 @@
 	src.origin_nade.attached = TRUE
 	src.origin_nade.forceMove(parent_atom)
 	src.origin_nade.set_light_on(TRUE)
+	src.origin_nade.windup_sound_queued = FALSE
 	animation_flash_color(parent_atom, COLOR_BLUE)
 	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
 	if(time_running >= 2.5 SECONDS)
@@ -199,6 +203,7 @@
 		src.origin_nade.attached = FALSE
 		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), det_time_after_unstuck)
 		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), det_time_after_unstuck-1.15 SECONDS)
+		src.origin_nade.windup_sound_queued = TRUE
 		INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, HIGH_LAUNCH)
 		parent_atom.overlays -= attached_icon
 		parent_atom.overlays -= attached_icon_em
