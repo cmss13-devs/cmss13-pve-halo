@@ -129,6 +129,7 @@
 	var/mutable_appearance/attached_icon_em
 	var/image/attached_icon
 	var/time_triggered
+	var/det_time_after_unstuck = 2 SECONDS
 
 /datum/component/status_effect/plasma_stuck/Initialize(origin_nade, zone)
 	. = ..()
@@ -196,8 +197,8 @@
 		to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
 		src.origin_nade.forceMove(parent_atom.loc)
 		src.origin_nade.attached = FALSE
-		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
-		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), src.origin_nade.det_time-time_running-1.15 SECONDS)
+		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), det_time_after_unstuck)
+		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), det_time_after_unstuck-1.15 SECONDS)
 		INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, HIGH_LAUNCH)
 		parent_atom.overlays -= attached_icon
 		parent_atom.overlays -= attached_icon_em
