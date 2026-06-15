@@ -187,20 +187,23 @@
 	qdel(src)
 
 /datum/component/status_effect/plasma_stuck/proc/unstuck()
-	var/atom/movable/parent_atom = parent
-	if(isliving(parent_atom))
-		var/mob/living/target = parent_atom
-		target.spin(5, 1)
-		target.KnockDown(1)
-	to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
-	src.origin_nade.forceMove(parent_atom.loc)
-	src.origin_nade.attached = FALSE
-	addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
-	addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), src.origin_nade.det_time-time_running-1.15 SECONDS)
-	INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, HIGH_LAUNCH)
-	parent_atom.overlays -= attached_icon
-	parent_atom.overlays -= attached_icon_em
-	qdel(src)
+	if(prob(50))
+		var/atom/movable/parent_atom = parent
+		if(isliving(parent_atom))
+			var/mob/living/target = parent_atom
+			target.spin(5, 1)
+			target.KnockDown(1)
+		to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
+		src.origin_nade.forceMove(parent_atom.loc)
+		src.origin_nade.attached = FALSE
+		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), src.origin_nade.det_time-time_running)
+		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), src.origin_nade.det_time-time_running-1.15 SECONDS)
+		INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, HIGH_LAUNCH)
+		parent_atom.overlays -= attached_icon
+		parent_atom.overlays -= attached_icon_em
+		qdel(src)
+	else
+		to_chat(parent, SPAN_HIGHDANGER("You fail to fling the burning ball of light off!"))
 
 /datum/component/status_effect/plasma_stuck/proc/update_vehicle_icon()
 	var/atom/movable/parent_atom = parent
@@ -300,7 +303,6 @@
 		stuck_limb.droplimb()
 		origin_nade.attached = FALSE
 		origin_nade.prime()
-		stuck_human.gib()
 		stage = 3
 
 /datum/component/status_effect/plasma_stuck/proc/process_living(delta_time)
@@ -325,7 +327,6 @@
 		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
 		origin_nade.attached = FALSE
 		origin_nade.prime()
-		stuck_mob.gib()
 		stage = 3
 
 /datum/component/status_effect/plasma_stuck/proc/process_vehicle(delta_time)
@@ -364,5 +365,3 @@
 		origin_nade.attached = FALSE
 		origin_nade.prime()
 		qdel(src)
-
-
