@@ -203,6 +203,11 @@
 		parent_atom.overlays -= attached_icon_em
 		qdel(src)
 	else
+		var/atom/movable/parent_atom = parent
+		if(isliving(parent_atom))
+			var/mob/living/target = parent_atom
+			target.spin(5, 1)
+			target.KnockDown(1)
 		to_chat(parent, SPAN_HIGHDANGER("You fail to fling the burning ball of light off!"))
 
 /datum/component/status_effect/plasma_stuck/proc/update_vehicle_icon()
