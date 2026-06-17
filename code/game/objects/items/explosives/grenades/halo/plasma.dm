@@ -315,6 +315,7 @@
 		origin_nade.attached = FALSE
 		origin_nade.prime()
 		stage = 3
+		qdel(src)
 
 /datum/component/status_effect/plasma_stuck/proc/process_living(delta_time)
 	var/atom/parent_atom = parent
@@ -339,6 +340,7 @@
 		origin_nade.attached = FALSE
 		origin_nade.prime()
 		stage = 3
+		qdel(src)
 
 /datum/component/status_effect/plasma_stuck/proc/process_vehicle(delta_time)
 	var/atom/parent_atom = parent
