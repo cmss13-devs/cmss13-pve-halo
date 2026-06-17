@@ -271,7 +271,7 @@
 	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
 	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
 	new /obj/item/ammo_box/magazine/misc/unsc/grenade/launchable(src)
-	new /obj/item/ammo_box/magazine/shotgun/unsc(src)
+	new /obj/item/ammo_box/magazine/shotgun/unsc/buckshot(src)
 
 /obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst
 	name = parent_type::name + " (ODST Mixed Ammo)"
