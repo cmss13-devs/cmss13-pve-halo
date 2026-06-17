@@ -63,7 +63,7 @@
 	icon = 'icons/halo/obj/items/lighting.dmi'
 	light_color = "#49F37C"
 	var/glow_color = "green"
-	light_power = 2
+	light_power = 0.7
 	light_range = 5
 	flame_tint = "#49F37C"
 	flame_base_tint = "#49F37C"
@@ -104,7 +104,12 @@
 			set_light_range(starting_light-3)
 		if(0 MINUTES to 17.99 MINUTES)
 			set_light_range(starting_light-4)
-			set_light_power(0.5) // A power of 2 results in no light at all, while .5 results in a small light.
+			set_light_power(0.3)
+
+/obj/item/device/flashlight/flare/chemlight/attack_self(mob/living/user)
+	if(on)
+		return
+	. = ..()
 
 /obj/item/device/flashlight/flare/chemlight/red
 	name = "red glowstick"
@@ -147,4 +152,4 @@
 	flame_tint = "#49F37C"
 	flame_base_tint = "#49F37C"
 	light_range = 8
-	light_power = 3
+	light_power = 1.5
