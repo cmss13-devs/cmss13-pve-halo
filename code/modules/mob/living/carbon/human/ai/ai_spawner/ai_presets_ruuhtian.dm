@@ -3,12 +3,12 @@
 
 /datum/human_ai_equipment_preset/covenant/ruuhtian/minor
 	name = "Ruuhtian Minor (Plasma Pistol)"
-	desc = "Intermediate between Unggoy and Sangheili. Not as common as Unggoy, but still fairly common."
+	desc = "Intermediate between Unggoy and Sangheili. Not as common as Unggoy, but still fairly prevalent."
 	path = /datum/equipment_preset/covenant/ruuhtian/minor/plasma_pistol
 
 /datum/human_ai_equipment_preset/covenant/ruuhtian/minor/needler
 	name = "Ruuhtian Minor (Needler)"
-	desc = "Intermediate between Unggoy and Sangheili. Not as common as Unggoy, but still fairly common. Can be dangerous in close quarters."
+	desc = "Intermediate between Unggoy and Sangheili. Not as common as Unggoy, but still fairly prevalent. Can be dangerous in close quarters."
 	path = /datum/equipment_preset/covenant/ruuhtian/minor/needler
 
 /datum/human_ai_equipment_preset/covenant/ruuhtian/major
@@ -35,6 +35,8 @@
 	name = "Ruuhtian Ultra (Carbine)"
 	desc = "Often found among other Ultras or leading larger units of Unggoy and Kig-yar. Can be dangerous at all ranges, but good at long range combat."
 	path = /datum/equipment_preset/covenant/ruuhtian/ultra/carbine
+
+// snipers/marksmen
 
 /datum/human_ai_equipment_preset/covenant/ruuhtian/marksman
 	name = "Ruuhtian Marksman (Carbine)"

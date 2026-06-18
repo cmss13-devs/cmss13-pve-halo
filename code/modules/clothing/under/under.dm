@@ -47,7 +47,7 @@
 	else
 		worn_state = icon_state
 
-	var/check_icon = contained_sprite ? icon : GLOB.default_onmob_icons[WEAR_BODY]
+	var/check_icon = contained_sprite ? icon : item_icons[WEAR_BODY]
 
 	//autodetect rollability, cuttability, and removability.
 	if(icon_exists(check_icon, "[worn_state]_d[contained_sprite ? "_un" : ""]"))

@@ -62,6 +62,23 @@
 	icon_state = "ruuhtian_undersuit"
 	item_state = "ruuhtian_undersuit"
 	worn_state = "ruuhtian_undersuit"
+	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
+	drop_sound = "armorequip"
+	allowed_species_list = list(SPECIES_RUUHTIAN)
+	item_state_slots = list()
+
+	item_icons = list(
+		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/uniforms.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
+	)
+
+/obj/item/clothing/under/marine/covenant/ruuhtian/fullbody
+	name = "\improper full-coverage Ruuhtian undersuit"
+
+	icon_state = "ruuhtian_undersuit_2"
+	item_state = "ruuhtian_undersuit_2"
+	worn_state = "ruuhtian_undersuit_2"
 	flags_jumpsuit = null
 	drop_sound = "armorequip"
 	allowed_species_list = list(SPECIES_RUUHTIAN)

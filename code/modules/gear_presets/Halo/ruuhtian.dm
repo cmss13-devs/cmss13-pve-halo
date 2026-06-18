@@ -213,40 +213,235 @@
 	add_cov_carbine_package(new_human)
 
 // =================================
+// Special Operations
+// =================================
+
+/datum/equipment_preset/covenant/ruuhtian/specops
+	name = parent_type::name + " SpecOps"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+	idtype = /obj/item/card/id/covenant
+	faction = FACTION_SPECOPS_KIGYAR
+	access = list(ACCESS_MARINE_PREP)
+	assignment = JOB_COV_SPECOPS
+	rank = JOB_COV_SPECOPS
+	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "SpecOps"
+	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/ruuhtian/specops/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops/plasma_pistol
+	name = parent_type::name + " (Plasma Pistol)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops(new_human)
+	add_plasma_pistol_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops/needler
+	name = parent_type::name + " (Needler)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops/needler/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops(new_human)
+	add_needler_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops/plasma_rifle
+	name = parent_type::name + " (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops(new_human)
+	add_plasma_rifle_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops/carbine
+	name = parent_type::name + " (Carbine)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops/carbine/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops(new_human)
+	add_cov_carbine_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops/cloaking
+	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
+
+/datum/equipment_preset/covenant/ruuhtian/specops/cloaking/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops(new_human)
+	add_plasma_rifle_package(new_human)
+	jackal_camouflage(new_human)
+
+// =================================
+// Special Operations Ultra
+// =================================
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra
+	name = parent_type::name + " SpecOps Ultra"
+	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
+	idtype = /obj/item/card/id/covenant
+	faction = FACTION_SPECOPS_KIGYAR
+	access = list(ACCESS_MARINE_PREP)
+	assignment = JOB_COV_SPECOPS
+	rank = JOB_COV_SPECOPS
+	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
+	role_comm_title = "SpecOps Ultra"
+	skills = /datum/skills/covenant/unggoy
+	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops_ultra(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/plasma_pistol
+	name = parent_type::name + " (Plasma Pistol)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/plasma_pistol/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops_ultra(new_human)
+	add_plasma_pistol_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/needler
+	name = parent_type::name + " (Needler)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/needler/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops_ultra(new_human)
+	add_needler_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/plasma_rifle
+	name = parent_type::name + " (Plasma Rifle)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/plasma_rifle/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops_ultra(new_human)
+	add_plasma_rifle_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/carbine
+	name = parent_type::name + " (Carbine)"
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/carbine/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops_ultra(new_human)
+	add_cov_carbine_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/cloaking
+	name = parent_type::name + " (Plasma Rifle) !!CLOAKED!!"
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/cloaking/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics_fullbody(new_human)
+	add_jackal_specops_ultra(new_human)
+	add_plasma_rifle_package(new_human)
+	jackal_camouflage(new_human)
+
+// =================================
+// Marksman/Sniper
+// =================================
+
+/datum/equipment_preset/covenant/ruuhtian/specops/marksman
+	name = parent_type::name + " Marksman (Carbine)"
+	role_comm_title = "SpecOps Marksman"
+	assignment = JOB_COV_SPECOPS_MARKSMAN
+	rank = JOB_COV_SPECOPS_MARKSMAN
+
+/datum/equipment_preset/covenant/ruuhtian/specops/marksman/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics(new_human)
+	add_jackal_specops_marksman(new_human)
+	add_cov_carbine_package(new_human)
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/sniper
+	name = parent_type::name + " Sniper (Carbine)"
+	role_comm_title = "SpecOps Sniper"
+	assignment = JOB_COV_SPECOPS_SNIPER
+	rank = JOB_COV_SPECOPS_SNIPER
+
+/datum/equipment_preset/covenant/ruuhtian/specops_ultra/sniper/load_gear(mob/living/carbon/human/new_human)
+	add_jackal_basics(new_human)
+	add_jackal_specops_sniper(new_human)
+	add_cov_carbine_package(new_human)
+
+
+// =================================
 // Procs
 // =================================
 
 /datum/equipment_preset/proc/add_jackal_basics(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/ruuhtian(new_human), WEAR_BODY)
+	var/obj/item/clothing/under/marine/covenant/ruuhtian/uniform = new
+	if(prob(25))
+		uniform.roll_suit_sleeves(new_human)
+	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
+
+/datum/equipment_preset/proc/add_jackal_basics_fullbody(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/covenant/ruuhtian/fullbody(new_human), WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/proc/add_jackal_minor(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/minor(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/minor(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/minor(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/minor(new_human), WEAR_WAIST)
 	if(prob(75))
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/better = 10, /obj/item/clothing/head/helmet/marine/ruuhtian/headset = 60))
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian = 40, /obj/item/clothing/head/helmet/marine/ruuhtian/better = 10, /obj/item/clothing/head/helmet/marine/ruuhtian/headset = 45, /obj/item/clothing/head/helmet/marine/ruuhtian/assault/minor = 5))
 		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+	if(prob(40))
+		var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/ruuhtian/minor = 75, /obj/item/clothing/accessory/pads/ruuhtian/minor/variant_2 = 25))
+		new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
+	if(prob(40))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/ruuhtian/bicep/minor(new_human), WEAR_ACCESSORY)
 
 /datum/equipment_preset/proc/add_jackal_major(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/major(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/major(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/major(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/major(new_human), WEAR_WAIST)
 	if(prob(90))
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian = 60, /obj/item/clothing/head/helmet/marine/ruuhtian/better = 20, /obj/item/clothing/head/helmet/marine/ruuhtian/headset = 20))
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian = 45, /obj/item/clothing/head/helmet/marine/ruuhtian/better = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/headset = 15, /obj/item/clothing/head/helmet/marine/ruuhtian/assault/major = 10))
 		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+	if(prob(80))
+		var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/ruuhtian/major = 50, /obj/item/clothing/accessory/pads/ruuhtian/major/variant_2 = 50))
+		new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
+	if(prob(80))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/ruuhtian/bicep/major(new_human), WEAR_ACCESSORY)
 
 /datum/equipment_preset/proc/add_jackal_ultra(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/ultra(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/ultra(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/ultra(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/ultra(new_human), WEAR_WAIST)
-	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian = 20, /obj/item/clothing/head/helmet/marine/ruuhtian/better = 80, /obj/item/clothing/head/helmet/marine/ruuhtian/headset = 0))
+	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian/better = 25, /obj/item/clothing/head/helmet/marine/ruuhtian/assault/ultra = 75))
 	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/ruuhtian/ultra = 25, /obj/item/clothing/accessory/pads/ruuhtian/ultra/variant_2 = 75))
+	new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/ruuhtian/bicep/ultra(new_human), WEAR_ACCESSORY)
+
+/datum/equipment_preset/proc/add_jackal_specops(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/specops(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops(new_human), WEAR_WAIST)
+	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/specops = 70))
+	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/ruuhtian/specops = 25, /obj/item/clothing/accessory/pads/ruuhtian/specops/variant_2 = 75))
+	new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/ruuhtian/bicep/specops(new_human), WEAR_ACCESSORY)
+
+/datum/equipment_preset/proc/add_jackal_specops_ultra(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops_ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/specops_ultra(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops_ultra(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra(new_human), WEAR_WAIST)
+	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops_ultra = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/specops_ultra = 70))
+	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/ruuhtian/ultra = 50, /obj/item/clothing/accessory/pads/ruuhtian/ultra/variant_2 = 95))
+	new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/ruuhtian/bicep/minor(new_human), WEAR_ACCESSORY)
 
 /datum/equipment_preset/proc/add_jackal_marksman(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/minor(new_human), WEAR_JACKET)
@@ -255,9 +450,29 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/minor(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/ruuhtian/marksman(new_human), WEAR_HEAD)
 
+/datum/equipment_preset/proc/add_jackal_specops_marksman(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/ruuhtian/marksman(new_human), WEAR_HEAD)
+
 /datum/equipment_preset/proc/add_jackal_sniper(mob/living/carbon/human/new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/major(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/major(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/major(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/ruuhtian/sniper(new_human), WEAR_HEAD)
+
+/datum/equipment_preset/proc/add_jackal_specops_sniper(mob/living/carbon/human/new_human)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops_ultra(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops_ultra(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/ruuhtian/sniper(new_human), WEAR_HEAD)
+
+/datum/equipment_preset/proc/jackal_camouflage(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	for(var/obj/item/clothing/suit/marine/ruuhtian/cloaking/camouflage in new_human)
+		camouflage.attack_self(new_human)

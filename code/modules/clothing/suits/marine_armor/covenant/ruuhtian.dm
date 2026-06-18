@@ -14,20 +14,23 @@
 
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 
+	valid_accessory_slots = list(ACCESSORY_SLOT_RUUHTIAN_BICEP, ACCESSORY_SLOT_RUUHTIAN_SHOULDER)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_RUUHTIAN_BICEP, ACCESSORY_SLOT_RUUHTIAN_SHOULDER)
+
 /obj/item/clothing/suit/marine/ruuhtian/minor
 	name = "Ruuhtian Minor combat harness"
-	desc = "Standard issue combat harness issued to Kig'yar warriors, colouration and complexity will denote the wearers rank or veterancy. Made of dense nanolaminate plating, covering the front, sides, and back of the torso with comprehensive coverage."
+	desc =  "Standard issue body armour worn by low ranking Jackals serving the Covenant. Made of nanolaminate plating, providing ample protection for the wearers torso and legs, effective against most human or Covenant small arms under light fire."
 
 
 /obj/item/clothing/suit/marine/ruuhtian/major
 	name = "Ruuhtian Major combat harness"
-	desc = "Standard issue combat harness issued to Kig'yar warriors, colouration and complexity will denote the wearers rank or veterancy. Made of dense nanolaminate plating, covering the front, sides, and back of the torso with comprehensive coverage."
+	desc = "A bronze coloured modification of the armour worn by Jackals, sports superior coverage and additional armour segments, such as pauldrons or gauntlets. Given to Major ranked Jackals, usually seen commanding lower rates or acting as heavy support roles."
 	icon_state = "ruuhtian_major"
 	item_state = "ruuhtian_major"
 
 /obj/item/clothing/suit/marine/ruuhtian/ultra
 	name = "Ruuhtian Ultra combat harness"
-	desc = "Standard issue combat harness issued to Kig'yar warriors, colouration and complexity will denote the wearers rank or veterancy. Made of dense nanolaminate plating, covering the front, sides, and back of the torso with comprehensive coverage."
+	desc = "A heavily reinforced set of Jackal body armour worn by those ranked as Ultras, features a notably white-silver colouration and vastly improved protective qualities. A full set of pauldrons, arm guards and expanded torso protection, Jackals wearing this are extreme threats."
 	icon_state = "ruuhtian_ultra"
 	item_state = "ruuhtian_ultra"
 

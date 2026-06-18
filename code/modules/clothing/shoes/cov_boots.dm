@@ -173,7 +173,7 @@
 
 /obj/item/clothing/shoes/ruuhtian
 	name = "Ruuhtian foot guards"
-	desc = "Placeholder."
+	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
 	icon = 'icons/halo/obj/items/clothing/covenant/shoes.dmi'
 	icon_state = "ruuhtian_minor"
 	item_state = "ruuhtian_minor"
@@ -186,25 +186,55 @@
 
 	allowed_species_list = list(SPECIES_RUUHTIAN)
 
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+
 /obj/item/clothing/shoes/ruuhtian/minor
 	name = "Ruuhtian Minor foot guards"
-	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
 	icon_state = "ruuhtian_minor"
 	item_state = "ruuhtian_minor"
 
 /obj/item/clothing/shoes/ruuhtian/major
 	name = "Ruuhtian Major foot guards"
-	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
 	icon_state = "ruuhtian_major"
-	item_state = "ruuhtian_minor"
+	item_state = "ruuhtian_major"
 
 /obj/item/clothing/shoes/ruuhtian/ultra
 	name = "Ruuhtian Ultra foot guards"
-	desc = "Extensions attached to the tops of the Kig'yar's foot. Made of common nanolaminate armour material the foot guards are designed to be as unobtrusive as possible, ensuring the wearer can make full use of their species high mobility unimpeded."
 	icon_state = "ruuhtian_ultra"
-	item_state = "ruuhtian_minor"
+	item_state = "ruuhtian_ultra"
 
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+
+/obj/item/clothing/shoes/ruuhtian/specops
+	name = "Ruuhtian Special Operations  foot guards"
+	icon_state = "ruuhtian_specops"
+	item_state = "ruuhtian_specops"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+
+/obj/item/clothing/shoes/ruuhtian/specops_ultra
+	name = "Ruuhtian Special Operations Ultra foot guards"
+	icon_state = "ruuhtian_specultra"
+	item_state = "ruuhtian_specultra"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
+	armor_laser = CLOTHING_ARMOR_HIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH

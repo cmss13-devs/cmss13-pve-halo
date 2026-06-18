@@ -187,3 +187,101 @@
 	name = "\improper Unggoy Special Operations Ultra bicep armor"
 	icon_state = "unggoy_specultra_bicep"
 	item_state = "unggoy_specultra_bicep"
+
+//======================
+// RUUHTIAN
+//======================
+
+/obj/item/clothing/accessory/pads/ruuhtian
+	name = "\improper Ruuhtian shoulder pads"
+	desc = "Pauldrons of venerable design, fitted to a warrior's combat harness to protect the upper arms. While simple in function, the strong nanolaminate composites of these pauldrons provide ample protection."
+	icon = 'icons/halo/obj/items/clothing/covenant/accessories.dmi'
+	icon_state = "ruuhtian_minor_1"
+	item_state = "ruuhtian_minor_1"
+	allowed_species_list = list(SPECIES_RUUHTIAN)
+	slot = ACCESSORY_SLOT_RUUHTIAN_SHOULDER
+	flags_atom = NO_SNOW_TYPE
+	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/accessories.dmi')
+
+/obj/item/clothing/accessory/pads/ruuhtian/minor
+	name = "\improper Ruuhtian Minor shoulder pads"
+	icon_state = "ruuhtian_minor_1"
+	item_state = "ruuhtian_minor_1"
+
+/obj/item/clothing/accessory/pads/ruuhtian/minor/variant_2
+	name = "\improper Ruuhtian Minor shoulder pads"
+	icon_state = "ruuhtian_minor_2"
+	item_state = "ruuhtian_minor_2"
+
+/obj/item/clothing/accessory/pads/ruuhtian/major
+	name = "\improper Ruuhtian Major shoulder pads"
+	icon_state = "ruuhtian_major_1"
+	item_state = "ruuhtian_major_1"
+
+/obj/item/clothing/accessory/pads/ruuhtian/major/variant_2
+	name = "\improper Ruuhtian Major shoulder pads"
+	icon_state = "ruuhtian_major_2"
+	item_state = "ruuhtian_major_2"
+
+/obj/item/clothing/accessory/pads/ruuhtian/ultra
+	name = "\improper Ruuhtian Ultra shoulder pads"
+	icon_state = "ruuhtian_ultra_1"
+	item_state = "ruuhtian_ultra_1"
+
+/obj/item/clothing/accessory/pads/ruuhtian/ultra/variant_2
+	name = "\improper Ruuhtian Ultra shoulder pads"
+	icon_state = "ruuhtian_ultra_2"
+	item_state = "ruuhtian_ultra_2"
+
+/obj/item/clothing/accessory/pads/ruuhtian/specops
+	name = "\improper Ruuhtian Special Operations shoulder pads"
+	icon_state = "ruuhtian_specops_1"
+	item_state = "ruuhtian_specops_1"
+
+/obj/item/clothing/accessory/pads/ruuhtian/specops/variant_2
+	name = "\improper Ruuhtian Special Operations shoulder pads"
+	icon_state = "ruuhtian_specops_2"
+	item_state = "ruuhtian_specops_2"
+
+/obj/item/clothing/accessory/pads/ruuhtian/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra shoulder pads"
+	icon_state = "ruuhtian_specultra_1"
+	item_state = "ruuhtian_specultra_1"
+
+/obj/item/clothing/accessory/pads/ruuhtian/specops_ultra/variant_2
+	name = "\improper Ruuhtian Special Operations Ultra shoulder pads"
+	icon_state = "ruuhtian_specultra_2"
+	item_state = "ruuhtian_specultra_2"
+
+// bicep
+
+/obj/item/clothing/accessory/pads/ruuhtian/bicep
+	name = "\improper Ruuhtian bicep armor"
+	icon_state = "ruuhtian_minor_bicep"
+	item_state = "ruuhtian_minor_bicep"
+	slot = ACCESSORY_SLOT_RUUHTIAN_BICEP
+
+/obj/item/clothing/accessory/pads/ruuhtian/bicep/minor
+	name = "\improper Ruuhtian Minor bicep armor"
+	icon_state = "ruuhtian_minor_bicep"
+	item_state = "ruuhtian_minor_bicep"
+
+/obj/item/clothing/accessory/pads/ruuhtian/bicep/major
+	name = "\improper Ruuhtian Major bicep armor"
+	icon_state = "ruuhtian_major_bicep"
+	item_state = "ruuhtian_major_bicep"
+
+/obj/item/clothing/accessory/pads/ruuhtian/bicep/ultra
+	name = "\improper Ruuhtian Ultra bicep armor"
+	icon_state = "ruuhtian_ultra_bicep"
+	item_state = "ruuhtian_ultra_bicep"
+
+/obj/item/clothing/accessory/pads/ruuhtian/bicep/specops
+	name = "\improper Ruuhtian Special Operations bicep armor"
+	icon_state = "ruuhtian_specops_bicep"
+	item_state = "ruuhtian_specops_bicep"
+
+/obj/item/clothing/accessory/pads/ruuhtian/bicep/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra bicep armor"
+	icon_state = "ruuhtian_specultra_bicep"
+	item_state = "ruuhtian_specultra_bicep"
