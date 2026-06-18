@@ -17,6 +17,15 @@
 /datum/pain/sangheili/oxy_kill(mob/living/source)
 	return
 
+/datum/pain/sangheili/heroic
+	max_pain = 350
+
+/datum/pain/sangheili/heroic/legendary
+	max_pain = 400
+
+/datum/pain/sangheili/heroic/legendary/mythic
+	feels_pain = FALSE
+
 /datum/pain/unggoy
 	max_pain = 225
 

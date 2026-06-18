@@ -20,7 +20,7 @@
 	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_LEGS|BODY_FLAG_ARMS|BODY_FLAG_FEET
 	drop_sound = "armorequip"
-	allowed_species_list = list(SPECIES_SANGHEILI)
+	allowed_species_list = list(SPECIES_LIST_SANGHEILI)
 	item_state_slots = list()
 
 	item_icons = list(
@@ -46,7 +46,7 @@
 	worn_state = "unggoy_harness"
 	flags_jumpsuit = null
 	drop_sound = "armorequip"
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 	item_state_slots = list()
 
 	item_icons = list(

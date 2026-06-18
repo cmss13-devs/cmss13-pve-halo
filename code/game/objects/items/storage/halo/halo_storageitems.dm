@@ -247,6 +247,7 @@
 	networks_receive = list(FACTION_UNSC, FACTION_MARINE)
 	networks_transmit = list(FACTION_UNSC, FACTION_MARINE)
 	phone_category = PHONE_UNSC
+	indestructible = TRUE
 
 /obj/item/storage/backpack/marine/satchel/unsc
 	name = "UNSC buttpack"
@@ -276,6 +277,7 @@
 	icon = 'icons/halo/obj/items/clothing/back/back_by_faction/back_unsc.dmi'
 	icon_state = "spnkrpack_0"
 	item_state = "spnkrpack"
+	indestructible = TRUE
 	storage_slots = 3
 	can_hold = list(/obj/item/ammo_magazine/spnkr, /obj/item/weapon/gun/halo_launcher/spnkr)
 	has_gamemode_skin = FALSE

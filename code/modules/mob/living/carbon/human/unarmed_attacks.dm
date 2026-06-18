@@ -43,6 +43,15 @@
 	attack_verb = list("pummel","slamm","punch")
 	damage = 20
 
+/datum/unarmed_attack/punch/sangheili/heroic
+	damage = 30
+
+/datum/unarmed_attack/punch/sangheili/heroic/legendary
+	damage = 35
+
+/datum/unarmed_attack/punch/sangheili/heroic/legendary/mythic
+	damage = 40
+
 /datum/unarmed_attack/punch/unggoy
 	attack_verb = list("pummel","slamm","punch")
 	damage = 40
