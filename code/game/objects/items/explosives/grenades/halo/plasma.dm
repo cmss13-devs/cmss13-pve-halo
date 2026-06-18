@@ -186,7 +186,8 @@
 
 /datum/component/status_effect/plasma_stuck/proc/force_unstuck()
 	var/atom/movable/parent_atom = parent
-	qdel(src.origin_nade)
+	if(src.origin_nade)
+		qdel(src.origin_nade)
 	parent_atom.overlays -= attached_icon
 	parent_atom.overlays -= attached_icon_em
 	qdel(src)
@@ -315,7 +316,7 @@
 		origin_nade.attached = FALSE
 		origin_nade.prime()
 		stage = 3
-		qdel(src)
+		force_unstuck()
 
 /datum/component/status_effect/plasma_stuck/proc/process_living(delta_time)
 	var/atom/parent_atom = parent
@@ -340,7 +341,7 @@
 		origin_nade.attached = FALSE
 		origin_nade.prime()
 		stage = 3
-		qdel(src)
+		force_unstuck()
 
 /datum/component/status_effect/plasma_stuck/proc/process_vehicle(delta_time)
 	var/atom/parent_atom = parent
@@ -377,4 +378,4 @@
 		mob.ex_act(300)
 		origin_nade.attached = FALSE
 		origin_nade.prime()
-		qdel(src)
+		force_unstuck()
