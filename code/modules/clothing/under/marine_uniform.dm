@@ -70,6 +70,9 @@
 	item_icons = list(
 		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
 
+/obj/item/clothing/under/marine/classic/Initialize() //Annoyingly needed, else the flag nukes itself at init despite the rolled sleeves functioning when re-added manually
+	. = ..()
+	flags_jumpsuit += UNIFORM_SLEEVE_ROLLABLE
 // HALO PVE EDIT - END
 
 /obj/item/clothing/under/marine/medic
