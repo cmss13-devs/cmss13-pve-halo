@@ -216,7 +216,7 @@
 	icon_state = "ammo_packet"
 	item_state = "ammo_packet"
 	flags_equip_slot = null
-	w_class = SIZE_SMALL
+	w_class = SIZE_MEDIUM
 	default_ammo = /datum/ammo/bullet/rifle/ma5
 	bullet_amount = 120 //120 AR, 48 magnum, 180 SMG, 72 BR
 	max_bullet_amount = 120
