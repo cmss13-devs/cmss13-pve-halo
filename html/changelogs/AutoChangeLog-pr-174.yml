@@ -1,0 +1,7 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - rscadd: "Loose-ammo packets in M6, M7, MA5 and BR55 flavours, as well as misc-ammo boxes of each."
+  - balance: "M7 magazine packet w_class upped"
+  - imageadd: "Sprites for the packets, going largely by what the game renditions looked like"
+  - maptweak: "UNSC shipmaps given a box of each type of ammo packet in their armories, some things shifted about as a result"

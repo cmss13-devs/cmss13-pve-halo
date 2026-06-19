@@ -87,6 +87,10 @@
 		/datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper::name = /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper,
 		/datum/equipment_preset/insurgent/specialist/sniper::name = /datum/equipment_preset/insurgent/specialist/sniper,
 		/datum/equipment_preset/covenant/sangheili/minor/carbine::name = /datum/equipment_preset/covenant/sangheili/minor/carbine,
+		/datum/equipment_preset/covenant/ruuhtian/marksman/carbine::name = /datum/equipment_preset/covenant/ruuhtian/marksman/carbine,
+		/datum/equipment_preset/covenant/ruuhtian/sniper/carbine::name = /datum/equipment_preset/covenant/ruuhtian/sniper/carbine,
+		/datum/equipment_preset/covenant/ruuhtian/specops/marksman::name = /datum/equipment_preset/covenant/ruuhtian/specops/marksman,
+		/datum/equipment_preset/covenant/ruuhtian/specops_ultra/sniper::name = /datum/equipment_preset/covenant/ruuhtian/specops_ultra/sniper,
 	)
 
 	if(!check_rights(R_DEBUG))

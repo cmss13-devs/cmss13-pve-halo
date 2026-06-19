@@ -4745,18 +4745,14 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "ly" = (
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
-	pixel_x = -4;
-	pixel_y = -1
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet{
+	pixel_x = 1;
+	pixel_y = -4
 	},
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
-	layer = 3;
-	pixel_x = 15;
-	pixel_y = -3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
-	pixel_x = -4;
-	pixel_y = 7
+/obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
+	pixel_x = -8;
+	pixel_y = 12
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
@@ -4764,6 +4760,10 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
 	pixel_x = 1
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
+	pixel_x = -8;
+	pixel_y = -5
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/armory)
@@ -5246,10 +5246,10 @@
 	icon_state = "NW-out";
 	pixel_y = 1
 	},
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
-	layer = 3;
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet{
 	pixel_x = -4;
-	pixel_y = 26
+	pixel_y = 23;
+	layer = 3.01
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/armory)
