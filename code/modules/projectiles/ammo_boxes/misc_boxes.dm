@@ -380,3 +380,47 @@
 
 /obj/item/ammo_box/magazine/misc/unsc/m7_ammo/empty
 	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet
+	name = "UNSC storage crate - (M118 (7.62x51mm) Ammunition Packets x 16)"
+	desc = "A generic UNSC storage crate for holding ammunition packets to refill MA5 series rifle magazines."
+	magazine_type = /obj/item/ammo_box/rounds/unsc/ma5
+	num_of_magazines = 16
+	icon_state = "base_40mm"
+	overlay_content = "_riflepack"
+
+/obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet
+	name = "UNSC storage crate - (M443 (5x23mm) Ammunition Packets x 16)"
+	desc = "A generic UNSC storage crate for holding ammunition packets to refill M7 SMG magazines."
+	magazine_type = /obj/item/ammo_box/rounds/unsc/m7
+	num_of_magazines = 16
+	icon_state = "base_40mm"
+	overlay_content = "_riflepack"
+
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet
+	name = "UNSC storage crate - (M225 (12.7x40mm) Ammunition Packets x 16)"
+	desc = "A generic UNSC storage crate for holding ammunition packets to refill M6 series handgun magazines."
+	magazine_type = /obj/item/ammo_box/rounds/unsc/m6
+	num_of_magazines = 16
+	icon_state = "base_40mm"
+	overlay_content = "_pistolpack"
+
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet
+	name = "UNSC storage crate - (M634 (9.5x40mm) Ammunition Packets x 16)"
+	desc = "A generic UNSC storage crate for holding ammunition packets to refill BR55 battle rifle magazines."
+	magazine_type = /obj/item/ammo_box/rounds/unsc/br55
+	num_of_magazines = 16
+	icon_state = "base_40mm"
+	overlay_content = "_pistolpack"
+
+/obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet/empty
+	empty = TRUE
