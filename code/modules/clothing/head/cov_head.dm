@@ -205,3 +205,141 @@
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+
+//======================
+// KIGYAR
+//======================
+
+/obj/item/clothing/head/helmet/marine/ruuhtian
+	name = "\improper Ruuhtian combat helmet"
+	desc = "A basic helmet given to Kig'yar warriors, covers the sides and top of the head. Standard issue nanolaminate helmet featuring simple elastic straps and a padded interior providing a modicum of comfort. Capable of deflecting a deceptively high amount of damage, despite its simple appearance."
+	icon = 'icons/halo/obj/items/clothing/covenant/helmets.dmi'
+	icon_state = "ruuhtian_standard"
+	item_state = "ruuhtian_standard"
+
+	item_icons = list(
+		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/hat.dmi'
+	)
+
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
+
+	flags_marine_helmet = NO_FLAGS
+	flags_inventory = NO_FLAGS
+	flags_inv_hide = NO_FLAGS
+	flags_atom = NO_NAME_OVERRIDE|NO_SNOW_TYPE
+	built_in_visors = list()
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/better
+	name = "\improper superior Ruuhtian combat helmet"
+	icon_state = "ruuhtian_superior"
+	item_state = "ruuhtian_superior"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/sniper
+	name = "\improper Ruuhtian sniper helmet"
+	desc = "An advanced helmet given to specialist Kig'yar marksmen and snipers. Features an advanced optical suite over the standard combat helmet, allowing seamless smart-link with any held weapon, several modular vision modes, and high-fidelity independent magnification capabilities."
+	icon_state = "ruuhtian_sniper"
+	item_state = "ruuhtian_sniper"
+
+	armor_melee = CLOTHING_ARMOR_MEDIUM
+	armor_bullet = CLOTHING_ARMOR_MEDIUM
+	armor_laser = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/marksman
+	name = "\improper Ruuhtian marksman helmet"
+	desc = "An advanced helmet given to specialist Kig'yar marksmen and snipers. Features an advanced optical suite over the standard combat helmet, allowing seamless smart-link with any held weapon, several modular vision modes, and high-fidelity independent magnification capabilities."
+	icon_state = "ruuhtian_marksman"
+	item_state = "ruuhtian_marksman"
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/headset
+
+	name = "\improper Ruuhtian tactical headset"
+	desc = "A simple optical headset used by some Kig'yar warriors. While not as comprehensive as the marksmen helmet, the tactical headset provides significant benefits over more simple smart-link units used by common warriors, alongside the ability to display complex information from the Covenant Battle-Net."
+	icon_state = "ruuhtian_headsight"
+	item_state = "ruuhtian_headsight"
+
+	armor_melee = CLOTHING_ARMOR_VERYLOW
+	armor_bullet = CLOTHING_ARMOR_VERYLOW
+	armor_laser = CLOTHING_ARMOR_VERYLOW
+
+// assault
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/assault
+	name = "\improper Ruuhtian assault helmet"
+	desc = "A heavily armoured helmet sometimes seen used by Jackal troops. While it has obvious benefits in protecting the head from injury, it seems to also feature other upgrades not common to most gear worn by Covenant troops."
+	flags_inv_hide = HIDEALLHAIR
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bullet = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/assault/minor
+	name = "\improper Ruuhtian Minor assault helmet"
+	icon_state = "ruuhtian_minor_assault"
+	item_state = "ruuhtian_minor_assault"
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/assault/major
+	name = "\improper Ruuhtian Major assault helmet"
+	icon_state = "ruuhtian_major_assault"
+	item_state = "ruuhtian_major_assault"
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/assault/ultra
+	name = "\improper Ruuhtian Ultra assault helmet"
+	icon_state = "ruuhtian_ultra_assault"
+	item_state = "ruuhtian_ultra_assault"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops
+	name = "\improper Ruuhtian Special Operations assault helmet"
+	icon_state = "ruuhtian_specops_assault"
+	item_state = "ruuhtian_specops_assault"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra assault helmet"
+	icon_state = "ruuhtian_specultra_assault"
+	item_state = "ruuhtian_specultra_assault"
+
+	armor_melee = CLOTHING_ARMOR_HIGHPLUS
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
+	armor_laser = CLOTHING_ARMOR_HIGHPLUS
+	armor_bomb = CLOTHING_ARMOR_HIGHPLUS
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/specops
+	name = "\improper Ruuhtian Special Operations helmet"
+	desc = "Advanced combat helmet used by Jackal special operations troops. A technology dense piece of kit filled with complex sensor suites, migraine inducing UI elements and an unnervingly plush interior, little is known past the fact it can take significant damage and is always a bad sign."
+	icon_state = "ruuhtian_specops"
+	item_state = "ruuhtian_specops"
+
+	flags_inv_hide = HIDEALLHAIR
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+
+/obj/item/clothing/head/helmet/marine/ruuhtian/specops/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra helmet"
+	icon_state = "ruuhtian_specultra"
+	item_state = "ruuhtian_specultra"
+
+	armor_melee = CLOTHING_ARMOR_HIGHPLUS
+	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
+	armor_laser = CLOTHING_ARMOR_HIGHPLUS
+	armor_bomb = CLOTHING_ARMOR_HIGHPLUS
