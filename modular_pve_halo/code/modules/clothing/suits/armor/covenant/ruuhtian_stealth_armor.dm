@@ -1,9 +1,3 @@
-#define FULL_CAMO_ALPHA 15
-#define VISIBLE_CAMO_ALPHA 60
-
-#define FULL_PVE_CAMO_ALPHA 30
-#define VISIBLE_PVE_CAMO_ALPHA 75
-
 /obj/item/clothing/suit/marine/ruuhtian/cloaking
 	slowdown = SLOWDOWN_ARMOR_LIGHT
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE

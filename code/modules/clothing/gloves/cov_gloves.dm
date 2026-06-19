@@ -147,19 +147,10 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
-/obj/item/clothing/gloves/marine/ruuhtian/specops_ultra
+/obj/item/clothing/gloves/marine/ruuhtian/specops/specops_ultra
 	name = "\improper Ruuhtian Special Operations Ultra defense gauntlet"
-	desc = "Used by Jackal special operations troops, showing comparable defensive qualities to those used by more common Ultras. Improvements in recharge rate and the ability to be obscurbed by active-camouflage makes these dangerous pieces of equipment."
 	icon_state = "ruuhtian_specultra"
 	item_state = "ruuhtian_specultra"
-
-	armor_melee = CLOTHING_ARMOR_HIGH
-	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
-	armor_laser = CLOTHING_ARMOR_HIGH
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
-	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_rad = CLOTHING_ARMOR_MEDIUM
-	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
 
 //======================

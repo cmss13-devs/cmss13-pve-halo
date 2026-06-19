@@ -454,7 +454,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops_ultra(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/specops_ultra(new_human), WEAR_HANDS)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/specops/specops_ultra(new_human), WEAR_HANDS)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops_ultra(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra(new_human), WEAR_WAIST)
 	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops_ultra = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/specops_ultra = 70))
