@@ -4,7 +4,7 @@
 	name_plural = "Ruuhtian"
 	mob_flags = KNOWS_TECHNOLOGY
 	uses_skin_color = TRUE
-	flags = HAS_HARDCRIT|HAS_SKIN_COLOR|SPECIAL_BONEBREAK
+	flags = HAS_HARDCRIT|HAS_SKIN_COLOR|SPECIAL_BONEBREAK|NO_SHRAPNEL
 	mob_inherent_traits = list(
 		TRAIT_COV_TECH,
 		TRAIT_SUPER_STRONG,
