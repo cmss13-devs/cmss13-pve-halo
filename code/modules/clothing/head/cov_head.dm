@@ -334,13 +334,10 @@
 	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
 	armor_bomb = CLOTHING_ARMOR_MEDIUM
 
-/obj/item/clothing/head/helmet/marine/ruuhtian/specops_ultra
+/obj/item/clothing/head/helmet/marine/ruuhtian/specops/specops_ultra
 	name = "\improper Ruuhtian Special Operations Ultra helmet"
-	desc = "Advanced combat helmet used by Jackal special operations troops. A technology dense piece of kit filled with complex sensor suites, migraine inducing UI elements and an unnervingly plush interior, little is known past the fact it can take significant damage and is always a bad sign."
 	icon_state = "ruuhtian_specultra"
 	item_state = "ruuhtian_specultra"
-
-	flags_inv_hide = HIDEALLHAIR
 
 	armor_melee = CLOTHING_ARMOR_HIGHPLUS
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS

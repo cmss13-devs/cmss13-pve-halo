@@ -455,9 +455,9 @@
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops_ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian/specops/specops_ultra(new_human), WEAR_HANDS)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops_ultra(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops/specops_ultra(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra(new_human), WEAR_WAIST)
-	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops_ultra = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/specops_ultra = 70))
+	var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops_ultra = 30, /obj/item/clothing/head/helmet/marine/ruuhtian/specops/specops_ultra = 70))
 	new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	var/pick_pads = pick_weight(list(/obj/item/clothing/accessory/pads/ruuhtian/ultra = 50, /obj/item/clothing/accessory/pads/ruuhtian/ultra/variant_2 = 95))
 	new_human.equip_to_slot_or_del(new pick_pads(new_human), WEAR_ACCESSORY)
@@ -495,7 +495,7 @@
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops_ultra(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine/ruuhtian(new_human), WEAR_HANDS)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops_ultra(new_human), WEAR_FEET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/ruuhtian/specops/specops_ultra(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/ruuhtian/sniper(new_human), WEAR_HEAD)
 

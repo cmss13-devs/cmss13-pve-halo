@@ -214,7 +214,7 @@
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
 /obj/item/clothing/shoes/ruuhtian/specops
-	name = "Ruuhtian Special Operations  foot guards"
+	name = "Ruuhtian Special Operations foot guards"
 	icon_state = "ruuhtian_specops"
 	item_state = "ruuhtian_specops"
 
@@ -226,15 +226,9 @@
 	armor_rad = CLOTHING_ARMOR_MEDIUM
 	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
 
-/obj/item/clothing/shoes/ruuhtian/specops_ultra
+/obj/item/clothing/shoes/ruuhtian/specops/specops_ultra
 	name = "Ruuhtian Special Operations Ultra foot guards"
 	icon_state = "ruuhtian_specultra"
 	item_state = "ruuhtian_specultra"
 
-	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGHPLUS
-	armor_laser = CLOTHING_ARMOR_HIGH
-	armor_bomb = CLOTHING_ARMOR_MEDIUM
-	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
-	armor_rad = CLOTHING_ARMOR_MEDIUM
-	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
