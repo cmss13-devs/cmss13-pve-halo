@@ -1,65 +1,68 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /turf/closed/wall/covenant/lights,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "c" = (
 /turf/open/floor/covenant/endcap/south,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "d" = (
 /turf/open/floor/covenant/paneling/rotated,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "g" = (
 /turf/template_noop,
 /area/template_noop)
 "h" = (
 /turf/open/floor/covenant/smooth_plating/sides/south,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "i" = (
 /turf/open/floor/covenant/smooth_plating/sides/east,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "l" = (
 /turf/open/floor/covenant/lane/vertical,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "m" = (
 /turf/open/floor/covenant/lane/horizontal,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "o" = (
 /turf/open/floor/covenant/smooth_plating/sides/southwest,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "p" = (
 /turf/open/floor/covenant/endcap/north,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "s" = (
 /obj/structure/machinery/recharger/covenant,
 /turf/open/floor/covenant/plating,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "z" = (
 /turf/open/floor/covenant/paneling,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "A" = (
 /turf/open/floor/covenant/smooth_plating/sides/southeast,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "C" = (
 /turf/open/floor/covenant,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "D" = (
 /turf/open/floor/covenant/smooth_plating/sides/northwest,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "F" = (
 /turf/open/floor/covenant/smooth_plating/sides/north,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "N" = (
 /turf/open/floor/covenant/smooth_plating/sides/west,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "O" = (
 /turf/open/floor/covenant/smooth_plating/sides/northeast,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
+"Q" = (
+/turf/template_noop,
+/area/covenant/no_baselight)
 "T" = (
 /turf/open/floor/covenant/endcap/east,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "U" = (
 /turf/open/floor/covenant/endcap/west,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 
 (1,1,1) = {"
 g
@@ -88,7 +91,7 @@ C
 C
 a
 a
-g
+Q
 g
 "}
 (3,1,1) = {"

@@ -1,7 +1,7 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
 "a" = (
 /turf/closed/wall/covenant/lights/hull/brighter,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "k" = (
 /turf/template_noop,
 /area/template_noop)
@@ -11,37 +11,37 @@
 	layer = 7
 	},
 /turf/open/floor/covenant/paneling,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "x" = (
 /obj/effect/abstract/ripple/shadow{
 	mouse_opacity = 0;
 	layer = 7
 	},
 /turf/closed/wall/covenant/lights/brighter,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "A" = (
 /turf/closed/wall/covenant/lights/brighter,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "C" = (
 /turf/closed/wall/covenant/hull,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "H" = (
 /obj/effect/abstract/ripple/shadow{
 	mouse_opacity = 0;
 	layer = 7
 	},
 /turf/template_noop,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "K" = (
 /obj/effect/abstract/ripple/shadow{
 	mouse_opacity = 0;
 	layer = 7
 	},
 /turf/open/floor/covenant/paneling/rotated,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 "V" = (
 /turf/closed/wall/covenant/lights/hull,
-/area/adminlevel/covenant/no_baselight)
+/area/covenant/no_baselight)
 
 (1,1,1) = {"
 k

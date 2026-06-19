@@ -2796,6 +2796,7 @@
 #include "interface\interface.dm"
 #include "interface\skin.dmf"
 #include "maps\_basemap.dm"
+#include "modular_pve_halo\code\game\area\covenant.dm"
 #include "modular_pve_halo\code\game\machinery\fax_machine.dm"
 #include "modular_pve_halo\code\game\machinery\newscaster.dm"
 #include "modular_pve_halo\code\game\machinery\computer\medical.dm"
