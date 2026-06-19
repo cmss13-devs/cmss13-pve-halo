@@ -286,6 +286,11 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 
 	pod_state = POD_INFLIGHT
 
+	if(!(MODE_HAS_TOGGLEABLE_FLAG(MODE_DISABLE_INTRO_BLURB)))
+		if(SSticker?.mode && !(SSticker.mode.flags_round_type & MODE_DS_LANDED)) //Launching on first drop.
+			SSticker.mode.pod_first_drop()
+			SSticker.mode.flags_round_type |= MODE_DS_LANDED
+
 	var/random_delay = rand(0, 20)*0.1
 	addtimer(CALLBACK(src, PROC_REF(delay_pod), user), random_delay SECONDS)
 
@@ -300,10 +305,6 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 
 	playsound(src, 'sound/effects/escape_pod_launch.ogg', 70)
 	sleep(1 SECONDS)
-	if(!(MODE_HAS_TOGGLEABLE_FLAG(MODE_DISABLE_INTRO_BLURB)))
-		if(SSticker?.mode && !(SSticker.mode.flags_round_type & MODE_DS_LANDED)) //Launching on first drop.
-			SSticker.mode.pod_first_drop()
-			SSticker.mode.flags_round_type |= MODE_DS_LANDED
 	reservation = SSmapping.request_turf_block_reservation(5, 5, 1, turf_type_override = /turf/open/space/transit/drop_pod)
 	var/turf/bottom_left_turf = reservation.bottom_left_turfs[1]
 	var/turf/top_right_turf = reservation.top_right_turfs[1]
