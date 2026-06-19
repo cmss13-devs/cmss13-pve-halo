@@ -22,6 +22,7 @@
 /obj/structure/magazine_box/unsc
 	icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/boxes_and_lids.dmi'
 	icon_state = "base"
+	handfuls_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
 	text_markings_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/text.dmi'
 	magazines_icon = 'icons/halo/obj/items/weapons/guns/ammo_boxes/magazines.dmi'
 
