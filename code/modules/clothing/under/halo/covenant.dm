@@ -17,7 +17,6 @@
 	icon_state = "sangheili_undersuit"
 	item_state = "sangheili_undersuit"
 	worn_state = "sangheili_undersuit"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	flags_armor_protection = BODY_FLAG_CHEST|BODY_FLAG_GROIN|BODY_FLAG_LEGS|BODY_FLAG_ARMS|BODY_FLAG_FEET
 	drop_sound = "armorequip"
 	allowed_species_list = list(SPECIES_LIST_SANGHEILI)
@@ -29,13 +28,20 @@
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
 
+/obj/item/clothing/under/marine/covenant/sangheili/partial
+	name = "\improper partial-coverage Sangheili undersuit"
+
+	item_state = "sangheili_undersuit_3"
+	worn_state = "sangheili_undersuit_3"
+
 /obj/item/clothing/under/marine/covenant/sangheili/fullbody
 	name = "\improper full-coverage Sangheili undersuit"
-	flags_jumpsuit = null
-	flags_armor_protection = BODY_FLAG_ALL_BUT_HEAD
+
 	icon_state = "sangheili_undersuit_2"
 	item_state = "sangheili_undersuit_2"
 	worn_state = "sangheili_undersuit_2"
+
+	flags_armor_protection = BODY_FLAG_ALL_BUT_HEAD
 
 /obj/item/clothing/under/marine/covenant/unggoy
 	name = "\improper Unggoy magnetic webbing"
@@ -62,9 +68,9 @@
 	icon_state = "ruuhtian_undersuit"
 	item_state = "ruuhtian_undersuit"
 	worn_state = "ruuhtian_undersuit"
-	flags_jumpsuit = UNIFORM_SLEEVE_ROLLABLE
 	drop_sound = "armorequip"
-	allowed_species_list = list(SPECIES_RUUHTIAN)
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
+
 	item_state_slots = list()
 
 	item_icons = list(
@@ -72,6 +78,12 @@
 		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
 		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
 	)
+
+/obj/item/clothing/under/marine/covenant/ruuhtian/partial
+	name = "\improper partial-coverage Ruuhtian undersuit"
+
+	item_state = "ruuhtian_undersuit_3"
+	worn_state = "ruuhtian_undersuit_3"
 
 /obj/item/clothing/under/marine/covenant/ruuhtian/fullbody
 	name = "\improper full-coverage Ruuhtian undersuit"
@@ -79,13 +91,5 @@
 	icon_state = "ruuhtian_undersuit_2"
 	item_state = "ruuhtian_undersuit_2"
 	worn_state = "ruuhtian_undersuit_2"
-	flags_jumpsuit = null
-	drop_sound = "armorequip"
-	allowed_species_list = list(SPECIES_RUUHTIAN)
-	item_state_slots = list()
 
-	item_icons = list(
-		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/uniforms.dmi',
-		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo.dmi',
-		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo.dmi'
-	)
+	flags_armor_protection = BODY_FLAG_ALL_BUT_HEAD

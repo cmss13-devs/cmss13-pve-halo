@@ -9,7 +9,6 @@
 		TRAIT_COV_TECH,
 		TRAIT_SUPER_STRONG,
 		TRAIT_FOREIGN_BIO,
-		TRAIT_DEXTROUS,
 		TRAIT_IRON_TEETH,
 	)
 	unarmed_type = /datum/unarmed_attack/punch/kigyar
@@ -17,13 +16,14 @@
 	blood_color = BLOOD_COLOR_JACKAL
 	flesh_color = BLOOD_COLOR_JACKAL
 
+// 0.9 damage mod for now until they get shields
 	total_health = 125
-	burn_mod = 1
-	brute_mod = 1
+	burn_mod = 0.9
+	brute_mod = 0.9
 	slowdown = 0
 
 	dodge_pool = 12
-	dodge_pool_max = 10
+	dodge_pool_max = 12
 	dodge_pool_regen = 1
 	dodge_pool_regen_max = 1
 	dodge_pool_regen_restoration = 0.2
@@ -95,3 +95,23 @@
 
 /datum/species/ruuhtian/get_hairstyle(style)
 	return GLOB.ruuhtian_hair_styles_list[style]
+
+/datum/species/ruuhtian/heroic //Unlike elites this tier is for ultras and specops, grunts arent getting a full suite of heroic, legendary, etc
+	name = SPECIES_RUUHTIAN_HEROIC
+	name_plural = "Ruuhtian Heroic"
+	mob_inherent_traits = list(
+		TRAIT_COV_TECH,
+		TRAIT_SUPER_STRONG,
+		TRAIT_FOREIGN_BIO,
+		TRAIT_IRON_TEETH,
+		TRAIT_DEXTROUS,
+	)
+
+	total_health = 150 //+25 HP
+	burn_mod = 0.8 //alittle lower
+	brute_mod = 0.8 //alittle lower
+	slowdown = 0
+
+	dodge_pool = 14 //From 12 to 14
+	dodge_pool_max = 14 //From 12 to 14
+	dp_regen_base_reactivation_time = 25 //5 less

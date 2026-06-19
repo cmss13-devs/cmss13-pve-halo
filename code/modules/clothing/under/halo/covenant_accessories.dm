@@ -198,7 +198,7 @@
 	icon = 'icons/halo/obj/items/clothing/covenant/accessories.dmi'
 	icon_state = "ruuhtian_minor_1"
 	item_state = "ruuhtian_minor_1"
-	allowed_species_list = list(SPECIES_RUUHTIAN)
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
 	slot = ACCESSORY_SLOT_RUUHTIAN_SHOULDER
 	flags_atom = NO_SNOW_TYPE
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/accessories.dmi')

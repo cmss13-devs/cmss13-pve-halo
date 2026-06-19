@@ -101,7 +101,7 @@
 		WEAR_HANDS = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/gloves.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_RUUHTIAN)
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
 
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW

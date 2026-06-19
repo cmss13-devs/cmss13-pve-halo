@@ -10,7 +10,7 @@
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/armor.dmi'
 	)
-	allowed_species_list = list(SPECIES_RUUHTIAN)
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
 
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
 

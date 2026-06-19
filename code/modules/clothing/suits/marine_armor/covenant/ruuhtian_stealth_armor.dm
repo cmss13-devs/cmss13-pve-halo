@@ -12,7 +12,7 @@
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/armor.dmi'
 	)
-	allowed_species_list = list(SPECIES_RUUHTIAN)
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
 
 	var/camo_active = FALSE
 	var/full_camo_alpha = FULL_PVE_CAMO_ALPHA

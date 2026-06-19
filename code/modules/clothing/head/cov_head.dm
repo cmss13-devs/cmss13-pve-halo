@@ -221,7 +221,7 @@
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/hat.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_RUUHTIAN)
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
 
 	flags_marine_helmet = NO_FLAGS
 	flags_inventory = NO_FLAGS
