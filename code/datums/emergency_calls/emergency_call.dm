@@ -21,9 +21,9 @@
 	shipwide_ai_announcement(input, name)
 
 /datum/game_mode/proc/voyager_online()
-	var/name = "Voyager Report"
-	var/input = "Voyager here, thaw out cycle complete. Rise and shine, marines."
-	shipwide_ai_announcement(input, name)
+	var/name = "Cryogenics Technician - Intercom"
+	var/input = pick("Thaw out cycle complete. Hope you enjoyed your date with the admiral's wife.", "Thaw out cycle complete.", "Thaw out cycle done-and-done, rise and shine.", "Thawing complete, everyone looks green on the health monitors.", "Green on the health monitors, thaw-out cycle is complete.")
+	shipwide_ai_announcement(input, name, 'sound/effects/radiostatic.ogg')
 
 /datum/game_mode/proc/request_ert(user, ares = FALSE)
 	if(!user)
