@@ -218,7 +218,7 @@
 	flags_equip_slot = null
 	w_class = SIZE_SMALL
 	default_ammo = /datum/ammo/bullet/rifle/ma5
-	bullet_amount = 120 //120 AR, 72 magnum, 180 SMG, 108 BR
+	bullet_amount = 120 //120 AR, 48 magnum, 180 SMG, 72 BR
 	max_bullet_amount = 120
 	caliber = "7.62x51"
 	can_explode = FALSE
@@ -372,8 +372,8 @@
 	icon_state = "ammo_packet_battle_rifle"
 	item_state = "ammo_packet_battle_rifle"
 	default_ammo = /datum/ammo/bullet/rifle/br55
-	bullet_amount = 96
-	max_bullet_amount = 96
+	bullet_amount = 72
+	max_bullet_amount = 72
 	caliber = "9.5x40mm"
 
 /obj/item/ammo_box/rounds/unsc/br55/empty
@@ -385,8 +385,8 @@
 	icon_state = "ammo_packet_pistol"
 	item_state = "ammo_packet_pistol"
 	default_ammo = /datum/ammo/bullet/pistol/magnum
-	bullet_amount = 72
-	max_bullet_amount = 72
+	bullet_amount = 48
+	max_bullet_amount = 48
 	caliber = "12.7x40mm"
 
 /obj/item/ammo_box/rounds/unsc/m6/empty
