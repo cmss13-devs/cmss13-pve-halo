@@ -15,7 +15,7 @@
 		WEAR_FEET = 'icons/halo/mob/humans/onmob/clothing/sangheili/shoes.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_SANGHEILI)
+	allowed_species_list = list(SPECIES_LIST_SANGHEILI)
 
 	armor_melee = CLOTHING_ARMOR_HIGH
 	armor_bullet = CLOTHING_ARMOR_HIGH
@@ -105,7 +105,7 @@
 		WEAR_FEET = 'icons/halo/mob/humans/onmob/clothing/unggoy/shoes.dmi'
 	)
 
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW

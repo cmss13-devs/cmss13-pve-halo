@@ -106,6 +106,7 @@
 #include "code\__DEFINES\shuttles.dm"
 #include "code\__DEFINES\skills.dm"
 #include "code\__DEFINES\sounds.dm"
+#include "code\__DEFINES\species_lists.dm"
 #include "code\__DEFINES\speech_channels.dm"
 #include "code\__DEFINES\stamina.dm"
 #include "code\__DEFINES\stats.dm"
@@ -2810,6 +2811,7 @@
 #include "modular_pve_halo\code\game\objects\items\weapons\blades.dm"
 #include "modular_pve_halo\code\game\objects\structures\fence.dm"
 #include "modular_pve_halo\code\game\objects\structures\shower.dm"
+#include "modular_pve_halo\code\game\objects\structures\signs.dm"
 #include "modular_pve_halo\code\modules\almayer\machinery.dm"
 #include "modular_pve_halo\code\modules\clothing\glasses\glasses.dm"
 #include "modular_pve_halo\code\modules\clothing\masks\gasmask.dm"
@@ -2831,4 +2833,6 @@
 #include "modular_pve_halo\code\modules\projectiles\guns\smg\unsc.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\launcher\spnkr.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\sniper\unsc.dm"
+#include "modular_pve_halo\code\modules\shuttle\bumblebee.dm"
+#include "modular_pve_halo\code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
 // END_INCLUDE

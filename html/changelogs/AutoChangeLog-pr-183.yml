@@ -1,0 +1,5 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - rscadd: "New flags"
+  - imageadd: "Sprites for the above"
