@@ -220,7 +220,7 @@
 		new /obj/item/device/flashlight/flare/unsc(src)
 
 /obj/item/storage/pouch/flare/unsc/full_random_chemlights/fill_preset_inventory()
-	var/add_glowsticks = rand(1,6)
+	var/add_glowsticks = rand(1,5)
 	switch(add_glowsticks)
 		if(1)
 			for(var/i = 1 to storage_slots)
@@ -237,9 +237,6 @@
 		if(5)
 			for(var/i = 1 to storage_slots)
 				new /obj/item/device/flashlight/flare/chemlight/yellow(src)
-		if(6)
-			for(var/i = 1 to storage_slots)
-				new /obj/item/device/flashlight/flare/chemlight/radioisotope(src)
 
 /obj/item/storage/pouch/flare/unsc/chemlight
 	name = "UNSC chemical illumination stick pouch"
@@ -255,8 +252,10 @@
 		/obj/item/device/flashlight/flare/chemlight/radioisotope,
 	)
 
+#define PLAYER_CHEMLIGHT_LIST list("/obj/item/device/flashlight/flare/chemlight", "/obj/item/device/flashlight/flare/chemlight/red", "/obj/item/device/flashlight/flare/chemlight/yellow", "/obj/item/device/flashlight/flare/chemlight/blue", "/obj/item/device/flashlight/flare/chemlight/orange")
+
 /obj/item/storage/pouch/flare/unsc/chemlight/full/fill_preset_inventory()
-	var/list/glowsticks = subtypesof(/obj/item/device/flashlight/flare/chemlight)
+	var/list/glowsticks = PLAYER_CHEMLIGHT_LIST
 	for(var/i=1 to max_storage_space)
 		var/sticks_to_pick = pick(glowsticks)
 		var/obj/item/device/flashlight/flare/chemlight/forbidden_juice_stick = new sticks_to_pick(src)

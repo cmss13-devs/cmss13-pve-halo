@@ -108,7 +108,7 @@
 	)
 
 /obj/item/storage/box/flare/chemlight/fill_preset_inventory()
-	var/add_glowsticks = rand(1,6)
+	var/add_glowsticks = rand(1,5)
 	switch(add_glowsticks)
 		if(1)
 			for(var/i = 1 to storage_slots)
@@ -125,9 +125,6 @@
 		if(5)
 			for(var/i = 1 to storage_slots)
 				new /obj/item/device/flashlight/flare/chemlight/yellow(src)
-		if(6)
-			for(var/i = 1 to storage_slots)
-				new /obj/item/device/flashlight/flare/chemlight/radioisotope(src)
 
 /obj/item/storage/box/flare/chemlight/update_icon()
 	if(!length(contents))
@@ -144,3 +141,19 @@
 		. += SPAN_INFO("This box is empty now!")
 	else
 		. += SPAN_INFO("This one is full of [glowstick.glow_color] chemlights.")
+
+/obj/item/storage/box/flare/chemlight/radioisotope
+	name = "\improper radioisotope chemical illumination stick pack"
+	desc = "A packet of fourteen high-illumination chemlights. Carried by UNSC soldiers to light dark areas or mark points of interest."
+	icon_state = "chemlight"
+	icon = 'icons/halo/obj/items/storage/packets.dmi'
+	w_class = SIZE_MEDIUM
+	storage_slots = 21
+	max_storage_space = 21
+	can_hold = list(
+		/obj/item/device/flashlight/flare/chemlight/radioisotope,
+	)
+
+/obj/item/storage/box/flare/chemlight/radioisotope/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/device/flashlight/flare/chemlight/radioisotope(src)
