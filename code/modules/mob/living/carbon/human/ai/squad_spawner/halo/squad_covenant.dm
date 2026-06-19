@@ -32,7 +32,7 @@
 
 /datum/human_ai_squad_preset/covenant/sangheili_lance_leader
 	name = "Lance Command Team (Mixed)"
-	desc = "The command team of a Covenant Ruuhtian Lance, the equivalent of a squad in the Covenant military. One Sangheili armed with a plasma rifle accompanied by a Unggoy Ultra with a needler and a Ruuhtian Minor armed with a plasma pistol."
+	desc = "The command team of a Covenant Ruuhtian Lance, the equivalent of a squad in the Covenant military. One Sangheili armed with a plasma rifle accompanied by an Unggoy Ultra with a needler and a Ruuhtian Minor armed with a plasma pistol."
 	ai_to_spawn = list(
 		/datum/equipment_preset/covenant/sangheili/minor/plasma_rifle = 1,
 		/datum/equipment_preset/covenant/unggoy/ultra/needler = 1,
@@ -41,7 +41,7 @@
 
 /datum/human_ai_squad_preset/covenant/sangheili_major_levy
 	name = "Sangheili Major Team (Mixed)"
-	desc = "Often put in charge of several lances of Sangheili or heavy pieces of equipment. One Sangheili Major with a plasma rifle accompanied by a Ruuhtian Ultra with a needler and Unggoy Minor with a plasma pistol."
+	desc = "Often put in charge of several lances of Sangheili or heavy pieces of equipment. One Sangheili Major with a plasma rifle accompanied by a Ruuhtian Ultra with a needler and an Unggoy Minor with a plasma pistol."
 	ai_to_spawn = list(
 		/datum/equipment_preset/covenant/sangheili/major/plasma_rifle = 1,
 		/datum/equipment_preset/covenant/ruuhtian/ultra/needler = 1,

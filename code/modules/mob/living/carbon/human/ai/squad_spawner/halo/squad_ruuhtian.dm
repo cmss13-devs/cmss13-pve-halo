@@ -10,7 +10,7 @@
 
 /datum/human_ai_squad_preset/covenant/ruuhtian/ruuhtian_levy
 	name = "Levy (Ruuhtian)"
-	desc = "A Covenant Levy is the equivalent of a fireteam in their military. Two Minors armed with plasma pistols and one Major armed with a plasma rifle.."
+	desc = "A Covenant Levy is the equivalent of a fireteam in their military. Two Minors armed with plasma pistols and one Major armed with a plasma rifle."
 	ai_to_spawn = list(
 		/datum/equipment_preset/covenant/ruuhtian/major/plasma_rifle = 1,
 		/datum/equipment_preset/covenant/ruuhtian/minor/plasma_pistol = 2,
