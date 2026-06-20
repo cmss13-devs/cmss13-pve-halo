@@ -57,6 +57,10 @@
 		skin_color_icon = H.skin_color
 		body_type_icon = H.body_type
 
+	if(isspeciesruuhtian(H))
+		skin_color_icon = H.skin_color
+		body_type_icon = H.body_type
+
 	if(isspeciesspartan(H))
 		skin_color_icon = H.skin_color
 		body_type_icon = H.body_type

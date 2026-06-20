@@ -260,6 +260,7 @@
 	networks_receive = list(FACTION_UNSC, FACTION_MARINE)
 	networks_transmit = list(FACTION_UNSC, FACTION_MARINE)
 	phone_category = PHONE_UNSC
+	indestructible = TRUE
 
 /obj/item/storage/backpack/marine/satchel/unsc
 	name = "UNSC buttpack"
@@ -289,6 +290,7 @@
 	icon = 'icons/halo/obj/items/clothing/back/back_by_faction/back_unsc.dmi'
 	icon_state = "spnkrpack_0"
 	item_state = "spnkrpack"
+	indestructible = TRUE
 	storage_slots = 3
 	can_hold = list(/obj/item/ammo_magazine/spnkr, /obj/item/weapon/gun/halo_launcher/spnkr)
 	has_gamemode_skin = FALSE
@@ -469,6 +471,8 @@
 		/obj/item/ammo_magazine/carbine,
 	)
 
+// ================ ELITES ================
+
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
 	icon_state = "sang_minor"
@@ -519,6 +523,8 @@
 	icon_state = "sang_honorguard"
 	item_state = "sang_honorguard"
 
+// ================ GRUNTS ================
+
 /obj/item/storage/belt/marine/covenant/unggoy
 	name = "\improper Unggoy ammunition belt"
 	icon_state = "unggoy_minor"
@@ -553,9 +559,46 @@
 	item_state = "unggoy_specops"
 
 /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra
+
 	name = "\improper Unggoy Special Operations ammunition belt"
 	icon_state = "unggoy_specultra"
 	item_state = "unggoy_specultra"
+
+// ================ JACKALS ================
+
+/obj/item/storage/belt/marine/covenant/ruuhtian
+	name = "\improper Ruuhtian combat belt"
+	desc = "Common load bearing equipment given to Jackals, similar to models given to Grunts but featuring more complex construction and better 'fitting'. Examples captured in the field commonly show extensive personal modification."
+	icon_state = "ruuhtian_minor"
+	item_state = "belt_minor"
+	item_icons = list(
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/belts.dmi'
+		)
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/minor
+	name = "\improper Ruuhtian Minor combat belt"
+	icon_state = "ruuhtian_minor"
+	item_state = "ruuhtian_minor"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/major
+	name = "\improper Ruuhtian Major combat belt"
+	icon_state = "ruuhtian_major"
+	item_state = "ruuhtian_major"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/ultra
+	name = "\improper Ruuhtian Ultra combat belt"
+	icon_state = "ruuhtian_ultra"
+	item_state = "ruuhtian_ultra"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/specops
+	name = "\improper Ruuhtian Special Operations combat belt"
+	icon_state = "ruuhtian_specops"
+	item_state = "ruuhtian_specops"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra combat belt"
+	icon_state = "ruuhtian_specultra"
+	item_state = "ruuhtian_specultra"
 
 //======================
 // COVIE BACKPACKS

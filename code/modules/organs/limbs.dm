@@ -716,6 +716,10 @@ This function completely restores a damaged organ to perfect condition.
 		skin_color = owner.skin_color
 		body_type = owner.body_type
 
+	if(isspeciesruuhtian(owner))
+		skin_color = owner.skin_color
+		body_type = owner.body_type
+
 	if(isspeciesspartan(owner))
 		skin_color = owner.skin_color
 		body_type = owner.body_type

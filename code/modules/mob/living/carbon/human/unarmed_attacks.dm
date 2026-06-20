@@ -55,6 +55,15 @@
 /datum/unarmed_attack/punch/unggoy
 	attack_verb = list("pummel","slamm","punch")
 	damage = 40
+	attack_sound = "swing_hit"
+
+/datum/unarmed_attack/punch/kigyar
+	attack_verb = list("scratch","claw","slic")
+	damage = 10
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	sharp = TRUE
+	edge = TRUE
+
 
 /datum/unarmed_attack/punch/spartan
 	attack_verb = list("pummel","slamm","punch")

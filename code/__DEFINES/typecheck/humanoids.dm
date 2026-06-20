@@ -8,9 +8,7 @@
 #define ishumansynth_strict(A)   (ishuman(A) && (istype(A?:species, /datum/species/human) || istype(A?:species, /datum/species/synthetic)))
 
 //Check if the mob is a member-species of the covenant hegemony
-#define iscovenant(A)   (isunggoy(A) || issangheili(A))
-//Replace above with this for jackals inclusion on relevant PR post-merging
-//#define iscovenant(A)   (isunggoy(A) || issangheili(A) || isruuhtian(A))
+#define iscovenant(A) (isunggoy(A) || issangheili(A) || isruuhtian(A))
 
 #define iszombie(A) (ishuman(A) && istype(A?:species, /datum/species/zombie))
 #define ismonkey(A) (ishuman(A) && istype(A?:species, /datum/species/monkey))
@@ -18,6 +16,7 @@
 #define issangheili(A) (ishuman(A) && istype(A?:species, /datum/species/sangheili))
 #define isspartan(A) (ishuman(A) && istype(A?:species, /datum/species/spartan))
 #define isunggoy(A) (ishuman(A) && istype(A?:species, /datum/species/unggoy))
+#define isruuhtian(A) (ishuman(A) && istype(A?:species, /datum/species/ruuhtian))
 #define isresearcher(A) (ishuman(A) && A.job == "Researcher")
 #define isSEA(A) (ishuman(A) && A.job == "Senior Enlisted Advisor")
 #define issynth(A) (ishuman(A) && istype(A?:species, /datum/species/synthetic))
@@ -34,6 +33,7 @@
 #define isspeciessynth(A) (A.species?.group == SPECIES_SYNTHETIC)
 #define isspeciessangheili(A) (A.species?.group == SPECIES_SANGHEILI)
 #define isspeciesunggoy(A) (A.species?.group == SPECIES_UNGGOY)
+#define isspeciesruuhtian(A) (A.species?.group == SPECIES_RUUHTIAN)
 #define isspeciesspartan(A) (A.species?.group == SPECIES_SPARTAN)
 
 //Size checks for carbon to use instead of typechecks. (Hellhounds are deprecated)
