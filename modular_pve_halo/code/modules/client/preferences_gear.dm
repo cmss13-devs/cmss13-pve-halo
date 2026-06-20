@@ -1,23 +1,28 @@
 /*
+// Overrides to loadout gear.
+// Gear is sometimes disabled via the use of `display_name = null` or `category = null`
+*/
+
+/*
 //================================================
 				Eyewear
 //================================================
 */
 
 /datum/gear/eyewear/rpg_glasses
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/eyewear/bimex_shades
 	display_name = "Tactical Shades"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/eyewear/bimex_shades_orange
 	display_name = "Orange Tactical Shades"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/eyewear/bimex_shades_classic
 	display_name = "Ballistic Aviator Shades"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/eyewear/sunglasses
 	cost = 2
@@ -149,7 +154,6 @@
 
 /datum/gear/headwear/boonie_snow
 	display_name = "boonie hat, snow"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/boonie/snow
 
 /datum/gear/headwear/uscm/cap
@@ -203,7 +207,6 @@
 
 /datum/gear/headwear/cap/flap_desert
 	display_name = "UNSC expedition flapcap, desert"
-	// HALO PVE EDIT - END
 	path = /obj/item/clothing/head/cmcap/flap/desert
 
 /datum/gear/headwear/uscm/cap/flap_snow
@@ -395,14 +398,14 @@
 
 /datum/gear/clothing/flak
 	display_name = "vintage flak jacket (Blue)"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/clothing/flak/od
 	display_name = "vintage flak jacket (Green)"
 
 /datum/gear/clothing/service_jacket
 	display_name = "UNSC service jacket"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/clothing/upp_service_jacket
 	display_name = null
@@ -477,7 +480,7 @@
 */
 
 /datum/gear/toy/mags
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/toy/mags/boots/boots_magazine_one
 	display_name = null
@@ -495,7 +498,7 @@
 	display_name = null
 
 /datum/gear/toy/card
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/toy/card/trading_card
 	display_name = null
@@ -532,14 +535,14 @@
 
 /datum/gear/weapon/kukri
 	display_name = "Kukri utility knife"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/weapon/baker
 	display_name = "M11 combat knife"
 
 /datum/gear/weapon/chinese
 	display_name = "Colonial Military Authority M2 bayonet"
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/weapon/type_80_Bayonet
 	display_name = null
@@ -601,9 +604,8 @@
 //================================================
 */
 
-	// HALO PVE EDIT - START - ORIGIN LOCK REMOVAL
 /datum/gear/drink
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/drink/lemon_lime
 	display_name = "BLAST lemon-lime soda"
@@ -675,7 +677,7 @@
 */
 
 /datum/gear/snack_packaged
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/snack_packaged/chips_pepper
 	display_name = "Pepper Chips"
@@ -693,7 +695,7 @@
 */
 
 /datum/gear/smoking
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/smoking/cigarette/cigar_classic
 	display_name = "Sweet William cigar"
@@ -707,7 +709,7 @@
 	cost = 2
 
 /datum/gear/smoking/pack_laika
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/smoking/pack_wygold
 	display_name = "Pack Of Watashi-Yorro Golds"
@@ -728,46 +730,11 @@
 /datum/gear/smoking/weed_joint
 	display_name = null
 
-/datum/gear/smoking/lighter
-	display_name = "Lighter, cheap"
-	path = /obj/item/tool/lighter/random
-	cost = 1
-	allowed_origins = FACTION_ORIGINS
-
-/datum/gear/smoking/zippo
-	display_name = "Lighter, zippo"
-	path = /obj/item/tool/lighter/zippo
-
-/datum/gear/smoking/zippo/black
-	display_name = "Black lighter, zippo"
-	path = /obj/item/tool/lighter/zippo/black
-
-/datum/gear/smoking/zippo/blue
-	display_name = "Blue lighter, zippo"
-	path = /obj/item/tool/lighter/zippo/blue
-
-/datum/gear/smoking/goldzippo
-	display_name = "Lighter, golden zippo"
-	path = /obj/item/tool/lighter/zippo/gold
-	cost = 3
-
-/datum/gear/smoking/electronic_cigarette
-	display_name = "Electronic cigarette"
-	path = /obj/item/clothing/mask/electronic_cigarette
-
-/datum/gear/smoking/electronic_cigarette/cigar
-	display_name = "Electronic cigar"
-	path = /obj/item/clothing/mask/electronic_cigarette/cigar
-	cost = 3
-
 /*
 //================================================
 				Miscellaneous
 //================================================
 */
-
-/datum/gear/misc
-	category = "Miscellaneous"
 
 /datum/gear/misc/pdt_kit
 	display_name = null
@@ -791,7 +758,7 @@
 	display_name = null
 
 /datum/gear/misc/dogtags
-	allowed_origins = null
+	allowed_origins = FACTION_ORIGINS
 
 /datum/gear/misc/patch_uscm
 	display_name = null
@@ -816,47 +783,6 @@
 
 /datum/gear/misc/patch_rmc/twe
 	display_name = null
-
-/datum/gear/misc/family_photo
-	display_name = "Family photo"
-	path = /obj/item/prop/helmetgarb/family_photo
-	cost = 1
-
-/datum/gear/misc/compass
-	display_name = "Compass"
-	path = /obj/item/prop/helmetgarb/compass
-	cost = 1
-
-/datum/gear/misc/bug_spray
-	display_name = "Bug spray"
-	path = /obj/item/prop/helmetgarb/bug_spray
-	cost = 1
-
-/datum/gear/misc/straight_razor
-	display_name = "Cut-throat razor"
-	path = /obj/item/weapon/straight_razor
-	cost = 3
-
-/datum/gear/misc/survival_tool
-	display_name = "Colonial Companion multi-tool"
-	path = /obj/item/weapon/swiss_army_knife
-	cost = 4 // Two tools & a knife in one package
-
-/datum/gear/misc/can_opener
-	display_name = "Can opener"
-	path = /obj/item/tool/kitchen/can_opener
-	cost = 1
-
-/datum/gear/misc/can_opener/compact
-	display_name = "Compact can opener"
-	path = /obj/item/tool/kitchen/can_opener/compact
-	cost = 2
-
-/datum/gear/misc/eye_drops
-
-	display_name = "Eye drops"
-	path = /obj/item/prop/helmetgarb/eye_drops
-	cost = 1
 
 /datum/gear/misc/datapad
 	display_name = "SC2 Personal Data-Pad"
