@@ -1,5 +1,0 @@
-author: "DexterDude"
-delete-after: True
-changes:
-  - rscadd: "Various hAI squad presets for the Covenant"
-  - bugfix: "Makes covenant hAI squad presets actually have guns now"
