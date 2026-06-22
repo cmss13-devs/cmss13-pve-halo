@@ -1898,3 +1898,24 @@ GLOBAL_LIST_INIT(rebel_ua_pistols, list(
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/carbine, WEAR_IN_BELT)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/carbine, WEAR_IN_BELT)
 	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/carbine, WEAR_IN_BELT)
+
+/datum/equipment_preset/proc/add_plasma_grenade_low(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+
+/datum/equipment_preset/proc/add_plasma_grenade_medium(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+
+/datum/equipment_preset/proc/add_plasma_grenade_high(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
+	new_human.equip_to_slot_or_del(new /obj/item/explosive/grenade/high_explosive/plasma, WEAR_IN_BELT)
