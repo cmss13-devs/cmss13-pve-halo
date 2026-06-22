@@ -77,7 +77,8 @@
 /area/cop_brighton/outside)
 "an" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
-	dir = 1
+	dir = 1;
+	name = "Engineering"
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/engineering)
@@ -281,7 +282,8 @@
 /area/cop_brighton/inside/engineering)
 "aS" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
-	dir = 1
+	dir = 1;
+	name = "Cargo"
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/engineering)
@@ -517,7 +519,8 @@
 /area/cop_brighton/inside/operations)
 "bF" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
-	dir = 1
+	dir = 1;
+	name = "Guard Post"
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/operations)
@@ -678,7 +681,9 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
 "cd" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass,
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass{
+	name = "Requisitions"
+	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/operations)
 "ce" = (
@@ -1511,7 +1516,9 @@
 /turf/open/floor/plating,
 /area/cop_brighton/outside)
 "eB" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc,
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	name = "Cryo Storage"
+	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "eC" = (
@@ -2010,6 +2017,26 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/cop_brighton/inside)
+"fK" = (
+/obj/structure/machinery/door/airlock/unsc/glass{
+	name = "Shed"
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside)
+"fL" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	dir = 1;
+	name = "Barracks"
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/barracks)
+"fM" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	dir = 1;
+	name = "Operations"
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
 "fN" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -2034,6 +2061,19 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/motor_pool)
+"fQ" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	dir = 1;
+	name = "Ops Centre"
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
+"fR" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass{
+	name = "Infirmary"
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
 "fU" = (
 /obj/structure/window_frame/upp/green,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -2307,7 +2347,8 @@
 /area/cop_brighton/inside/operations)
 "hF" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
-	dir = 1
+	dir = 1;
+	name = "Chow Hall"
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/barracks)
@@ -2723,7 +2764,9 @@
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
 "kN" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass,
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass{
+	name = "Generators"
+	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/engineering)
 "kQ" = (
@@ -4053,7 +4096,8 @@
 /area/cop_brighton/outside/landing_zone)
 "tf" = (
 /obj/structure/machinery/door/airlock/unsc/prop{
-	dir = 1
+	dir = 1;
+	name = "Latrine"
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/cop_brighton/inside)
@@ -4230,7 +4274,9 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
 "uw" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/glass,
+/obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
+	name = "Armory"
+	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/barracks)
 "uy" = (
@@ -4370,7 +4416,8 @@
 /area/cop_brighton/inside/operations)
 "vr" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
-	dir = 1
+	dir = 1;
+	name = "Bunks"
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/barracks)
@@ -5609,7 +5656,8 @@
 /area/cop_brighton/inside/operations)
 "Dm" = (
 /obj/structure/machinery/door/airlock/unsc{
-	dir = 1
+	dir = 1;
+	name = "Latrine"
 	},
 /turf/open/floor/almayer/dark_sterile,
 /area/cop_brighton/inside)
@@ -6898,7 +6946,9 @@
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/cop_brighton/outside/landing_zone)
 "Le" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc,
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	name = "Showers"
+	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/barracks)
 "Li" = (
@@ -31592,7 +31642,7 @@ ac
 ac
 ac
 ag
-vr
+fL
 ac
 ac
 ac
@@ -38847,7 +38897,7 @@ bc
 bc
 bc
 bD
-bF
+fM
 bc
 bc
 bc
@@ -39853,7 +39903,7 @@ cD
 cD
 cD
 cx
-cd
+fR
 bw
 bl
 bl
@@ -41698,7 +41748,7 @@ DE
 JM
 eH
 eH
-BD
+fK
 eH
 eH
 JM
@@ -42079,7 +42129,7 @@ bc
 bc
 bc
 bD
-bF
+fQ
 bc
 bc
 bc
