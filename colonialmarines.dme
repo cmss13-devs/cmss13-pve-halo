@@ -770,6 +770,7 @@
 #include "code\datums\weather\weather_events\bosenmori_basho.dm"
 #include "code\datums\weather\weather_events\calliope_desert_bus.dm"
 #include "code\datums\weather\weather_events\calliope_highway.dm"
+#include "code\datums\weather\weather_events\cop_brighton.dm"
 #include "code\datums\weather\weather_events\faction_clash.dm"
 #include "code\datums\weather\weather_events\kleschers_research_site.dm"
 #include "code\datums\weather\weather_events\long.dm"
