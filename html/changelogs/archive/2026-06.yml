@@ -64,3 +64,8 @@
   WickedCybs:
   - rscadd: More dream text to see when you're in cryo or unconscious for some reason!!!
   - rscdel: Trims out some CM specific dream text
+2026-06-22:
+  Yorkoh:
+  - rscadd: MAIN_AI_SYSTEM references (Titan) now is called Voyager
+  - rscadd: cryotech_online proc, so there's a voice on the tannoy when folks wake
+      up from cryo instead of titan saying hello
