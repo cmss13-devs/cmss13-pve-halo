@@ -121,7 +121,6 @@
 /area/cop_brighton/outside)
 "at" = (
 /obj/structure/gun_rack/halo/armory/ma5c/unloaded,
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "au" = (
@@ -187,7 +186,6 @@
 	icon_state = "E";
 	pixel_x = 1
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "aE" = (
@@ -302,13 +300,6 @@
 /obj/effect/landmark/observer_start,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
-"aW" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/vehicle_roof/van,
-/turf/open/floor/strata,
-/area/cop_brighton/inside)
 "aX" = (
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/cop_brighton/inside/operations)
@@ -744,7 +735,6 @@
 /area/cop_brighton/outside)
 "cp" = (
 /obj/structure/bed/chair/bolted,
-/obj/effect/vehicle_roof/van,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -1256,7 +1246,6 @@
 	dir = 4;
 	id = "railing_right"
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "dT" = (
@@ -2235,7 +2224,6 @@
 	icon_state = "E";
 	pixel_x = 1
 	},
-/obj/effect/vehicle_roof/van,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -2555,6 +2543,7 @@
 	pixel_y = 15;
 	pixel_x = 6
 	},
+/obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "ic" = (
@@ -2603,7 +2592,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "il" = (
@@ -3744,7 +3732,6 @@
 	dir = 8;
 	id = "railing_left"
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "qb" = (
@@ -5208,7 +5195,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "zJ" = (
@@ -5839,7 +5825,6 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "Dy" = (
@@ -6241,7 +6226,6 @@
 	pixel_x = 35;
 	pixel_y = 11
 	},
-/obj/structure/machinery/light/double/blue,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "Gh" = (
@@ -6298,7 +6282,6 @@
 	name = "General Listening Channel";
 	pixel_y = 26
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "Gt" = (
@@ -6538,7 +6521,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "HB" = (
@@ -6924,7 +6906,6 @@
 /area/cop_brighton/inside/operations)
 "JY" = (
 /obj/structure/gun_rack/halo/armory/ma5b/unloaded,
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "JZ" = (
@@ -7912,15 +7893,6 @@
 /obj/structure/gun_rack/halo/big/ma5c/unloaded,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
-"Rd" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_y = 26
-	},
-/obj/structure/machinery/light/double/blue{
-	dir = 1
-	},
-/turf/open/floor/shiva/radiator_tile2,
-/area/cop_brighton/inside/barracks)
 "Rk" = (
 /obj/structure/platform_decoration{
 	dir = 8
@@ -7976,7 +7948,6 @@
 	pixel_x = 2;
 	pixel_y = 16
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "RN" = (
@@ -8159,17 +8130,13 @@
 	},
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/cop_brighton/inside/operations)
-"Ta" = (
-/obj/effect/vehicle_roof/van,
-/turf/open/floor/prison/rampbottom/east,
-/area/cop_brighton/inside)
 "Ti" = (
 /obj/effect/decal/cleanable/vomit,
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
 "Tj" = (
-/obj/structure/gun_rack/halo/medkit{
-	pixel_y = 23
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_y = 26
 	},
 /turf/open/floor/shiva/radiator_tile2,
 /area/cop_brighton/inside/barracks)
@@ -8268,9 +8235,8 @@
 /area/cop_brighton/outside)
 "TK" = (
 /obj/structure/platform/stair_cut,
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/prison/rampbottom/east,
-/area/cop_brighton/inside)
+/area/cop_brighton/outside)
 "TQ" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/reagent_container/food/drinks/sillycup{
@@ -8486,7 +8452,6 @@
 	pixel_y = 6;
 	layer = 2.8
 	},
-/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "Vc" = (
@@ -9172,12 +9137,11 @@
 /area/cop_brighton/outside)
 "ZJ" = (
 /obj/structure/platform,
-/obj/effect/vehicle_roof/van,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /turf/open/floor/prison/rampbottom/east,
-/area/cop_brighton/inside)
+/area/cop_brighton/outside)
 "ZP" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -19628,14 +19592,14 @@ eH
 eH
 eH
 JY
-Sl
-Sl
+aI
+aI
 cp
 ij
-AS
-Sl
-Sl
-AS
+eD
+aI
+aI
+eD
 ph
 bf
 aI
@@ -19830,14 +19794,14 @@ eH
 eH
 eH
 RG
-Ew
-Sl
-Sl
+bf
+aI
+aI
 ij
-AS
-Sl
-Sl
-AS
+eD
+aI
+aI
+eD
 It
 bq
 aI
@@ -20032,14 +19996,14 @@ eH
 eH
 eH
 at
-ed
-Sl
-ed
+bi
+aI
+bi
 UX
-AS
-aW
-Sl
-AS
+eD
+bf
+aI
+eD
 Vl
 aI
 bj
@@ -21457,7 +21421,7 @@ JM
 DE
 DE
 DE
-DE
+aT
 DE
 DE
 wR
@@ -25483,7 +25447,7 @@ bA
 rX
 eH
 TK
-Ta
+vH
 ZJ
 eH
 kR
@@ -26878,7 +26842,7 @@ DE
 DE
 DE
 DE
-DE
+aT
 VL
 vH
 vH
@@ -29090,7 +29054,7 @@ JM
 DE
 DE
 DE
-DE
+aT
 DE
 DE
 DE
@@ -29311,7 +29275,7 @@ DE
 Jd
 Jd
 DE
-DE
+aT
 DE
 JM
 JM
@@ -30355,7 +30319,7 @@ ug
 wD
 es
 ac
-Rd
+rQ
 ug
 ug
 xq
@@ -37180,7 +37144,7 @@ dN
 dG
 DE
 DE
-DE
+aT
 DE
 DE
 DE
@@ -41063,7 +41027,7 @@ JM
 JM
 JM
 DE
-DE
+aT
 DE
 DE
 JM
@@ -41826,7 +41790,7 @@ DE
 DE
 DE
 DE
-DE
+aT
 DE
 bA
 fu
