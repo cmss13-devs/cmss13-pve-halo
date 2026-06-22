@@ -298,6 +298,20 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
+"aV" = (
+/obj/effect/landmark/observer_start,
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
+"aW" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata,
+/area/cop_brighton/inside)
+"aX" = (
+/turf/open/floor/almayer/sterile_green_side/west,
+/area/cop_brighton/inside/operations)
 "ba" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -1242,8 +1256,9 @@
 	dir = 4;
 	id = "railing_right"
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "dT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SW-out"
@@ -3729,8 +3744,9 @@
 	dir = 8;
 	id = "railing_left"
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "qb" = (
 /obj/structure/platform_decoration/strata/metal{
 	dir = 1
@@ -4301,7 +4317,7 @@
 /area/cop_brighton/inside/engineering)
 "tD" = (
 /obj/docking_port/stationary/marine_dropship/pelican_lz{
-	name = "Camp Brighton LZ2"
+	name = "Brighton LZ2"
 	},
 /turf/open/floor/plating,
 /area/cop_brighton/outside/landing_zone)
@@ -5060,8 +5076,9 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
 "yy" = (
-/obj/structure/closet/secure_closet/freezer/fridge/full{
-	pixel_x = 7
+/obj/structure/closet/secure_closet/freezer/fridge/full,
+/obj/structure/machinery/light/double/blue{
+	dir = 4
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
@@ -5426,7 +5443,7 @@
 /area/cop_brighton/outside)
 "Bw" = (
 /obj/docking_port/stationary/marine_dropship/pelican_lz/hangar{
-	name = "Camp Brighton LZ1"
+	name = "Brighton LZ1"
 	},
 /turf/open/floor/plating,
 /area/cop_brighton/outside/landing_zone)
@@ -5940,6 +5957,9 @@
 /obj/item/storage/box/bodybags{
 	pixel_y = 18;
 	pixel_x = -2
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 8
 	},
 /turf/open/floor/almayer/sterile_green_corner/north,
 /area/cop_brighton/inside/operations)
@@ -6518,8 +6538,9 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "HB" = (
 /obj/structure/machinery/cm_vending/sorted/medical/unsc{
 	pixel_y = 18;
@@ -12514,7 +12535,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 VH
@@ -12673,7 +12694,7 @@ DE
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -13783,6 +13804,7 @@ DE
 DE
 DE
 DE
+gw
 JM
 JM
 JM
@@ -13812,8 +13834,7 @@ JM
 JM
 JM
 JM
-JM
-JM
+gw
 DE
 DE
 DE
@@ -15776,7 +15797,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -15945,7 +15966,7 @@ DE
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -17422,7 +17443,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -19611,10 +19632,10 @@ Sl
 Sl
 cp
 ij
-aH
-ae
-ae
-aH
+AS
+Sl
+Sl
+AS
 ph
 bf
 aI
@@ -19813,10 +19834,10 @@ Ew
 Sl
 Sl
 ij
-aH
-ae
-ae
-aH
+AS
+Sl
+Sl
+AS
 It
 bq
 aI
@@ -20015,10 +20036,10 @@ ed
 Sl
 ed
 UX
-aH
-aQ
-ae
-aH
+AS
+aW
+Sl
+AS
 Vl
 aI
 bj
@@ -21300,7 +21321,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -21485,7 +21506,7 @@ DE
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -22049,7 +22070,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -25729,7 +25750,7 @@ DE
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -25946,7 +25967,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -26674,7 +26695,7 @@ Jd
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -28703,7 +28724,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -29971,7 +29992,7 @@ DE
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -33326,7 +33347,7 @@ Jd
 DE
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -34375,7 +34396,7 @@ VL
 ac
 nj
 ug
-ug
+aV
 ug
 ug
 nj
@@ -35145,7 +35166,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -36597,7 +36618,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -36789,7 +36810,7 @@ bc
 MQ
 DE
 DE
-JM
+gw
 JM
 JM
 JM
@@ -41004,7 +41025,7 @@ bc
 bc
 bc
 Eq
-SU
+aX
 Hi
 cD
 cD
