@@ -891,7 +891,7 @@
 		if(dodge_pool)
 			. -= dodge_pool * 8
 		if(HAS_TRAIT(src, TRAIT_IN_OPEN_VEHICLE))
-			. -= . / 1.3
+			. *= 3/13
 		var/mob/living/carbon/human/shooter_human = P.firer
 		if(istype(shooter_human))
 			if(shooter_human.faction == faction && !(ammo_flags & AMMO_ALWAYS_FF))

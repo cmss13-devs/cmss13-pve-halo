@@ -545,6 +545,10 @@
 /obj/effect/vehicle_spawner/warthog/load_hardpoints(obj/vehicle/multitile/warthog/V)
 	V.add_hardpoint(new /obj/item/hardpoint/locomotion/warthog_wheels)
 
+/obj/effect/vehicle_spawner/warthog/gausscannon/load_hardpoints(obj/vehicle/multitile/warthog/V)
+	. = ..()
+	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan/gauss)
+
 /obj/effect/vehicle_spawner/warthog/marines/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
 	. = ..()
 	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan)
