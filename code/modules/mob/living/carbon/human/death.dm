@@ -75,8 +75,8 @@
 
 	if(buckled && HAS_TRAIT(src, TRAIT_IN_OPEN_VEHICLE))
 		if(prob(75))
-			// Unbuckle from the vehicle
-			buckled.manual_unbuckle(src)
+			var/obj/vehicle/multitile/warthog/open_vehicle = buckled
+			open_vehicle.manual_unbuckle(src)
 
 
 	if(!gibbed && species.death_sound)
