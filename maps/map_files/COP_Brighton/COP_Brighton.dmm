@@ -300,9 +300,45 @@
 /obj/effect/landmark/observer_start,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
+"aW" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/bathunisex{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
 "aX" = (
 /turf/open/floor/almayer/sterile_green_side/west,
 /area/cop_brighton/inside/operations)
+"aY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside)
+"aZ" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 8
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata,
+/area/cop_brighton/inside/engineering)
 "ba" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "SE-out";
@@ -392,8 +428,9 @@
 /obj/structure/machinery/light/double/blue{
 	dir = 8
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/auto_turf/snow/layer0,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "bp" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
@@ -634,6 +671,14 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
+"bY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 4
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/engineering)
 "bZ" = (
 /obj/structure/janitorialcart,
 /turf/open/floor/strata,
@@ -783,6 +828,10 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
+"cw" = (
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "cx" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -1210,12 +1259,6 @@
 /obj/structure/barricade/handrail,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside/landing_zone)
-"dO" = (
-/obj/structure/machinery/camera/autoname{
-	dir = 1
-	},
-/turf/open/floor/strata,
-/area/cop_brighton/inside/motor_pool)
 "dP" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -1455,8 +1498,9 @@
 	icon_state = "door_warning";
 	dir = 1
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "ey" = (
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer/sterile_green,
@@ -1617,6 +1661,13 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/cop_brighton/outside/landing_zone)
+"eS" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "eT" = (
 /obj/structure/barricade/handrail{
 	dir = 1
@@ -2093,8 +2144,9 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "gc" = (
 /obj/structure/barricade/razorwire{
 	dir = 8;
@@ -2333,6 +2385,39 @@
 /obj/structure/roof/cargocrane_tracks/vertical/endcap1,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/motor_pool)
+"gC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/barracks)
+"gD" = (
+/obj/effect/vehicle_roof/van,
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/inside)
+"gE" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/high_voltage{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
 "gF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -2362,6 +2447,52 @@
 	},
 /turf/open/floor/plating,
 /area/cop_brighton/outside)
+"gI" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
+"gJ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside)
+"gK" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/security{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"gL" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 1
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
 "gM" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -2375,6 +2506,51 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/motor_pool)
+"gN" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
+"gO" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/storage{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"gP" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 4
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
+"gQ" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
 "gR" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/map,
@@ -2385,10 +2561,124 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/outside)
+"gS" = (
+/obj/effect/vehicle_roof/van,
+/turf/open/auto_turf/snow/layer0,
+/area/cop_brighton/inside)
+"gT" = (
+/obj/structure/surface/rack,
+/obj/item/tool/shovel/snow{
+	layer = 3.2;
+	pixel_x = -3
+	},
+/obj/item/tool/shovel/snow{
+	layer = 3.2;
+	pixel_x = 9
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/auto_turf/snow/layer0,
+/area/cop_brighton/inside)
+"gU" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/bridge{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
 "gV" = (
 /obj/structure/machinery/prop/almayer/CICmap,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
+"gW" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/maint{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"gX" = (
+/obj/structure/platform,
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/operations)
+"gY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/effect/vehicle_roof/van,
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/motor_pool)
+"gZ" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/landingzone{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"ha" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/fire_haz{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
 "hb" = (
 /obj/structure/machinery/autolathe,
 /turf/open/floor/strata,
@@ -2416,6 +2706,50 @@
 	pixel_y = 8
 	},
 /turf/open/auto_turf/snow/layer0,
+/area/cop_brighton/outside)
+"he" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning"
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/outside/landing_zone)
+"hf" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/outside/landing_zone)
+"hg" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/sign/safety/cryo{
+	pixel_x = 7;
+	pixel_y = 22
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"hh" = (
+/obj/structure/machinery/power/reactor{
+	name = "\improper S-52 fusion reactor 17"
+	},
+/turf/open/floor/almayer,
+/area/cop_brighton/outside)
+"hi" = (
+/obj/structure/machinery/telecomms/relay/preset/tower,
+/turf/open/floor/almayer,
 /area/cop_brighton/outside)
 "hk" = (
 /obj/effect/decal/warning_stripes{
@@ -2839,10 +3173,10 @@
 	pixel_x = -3
 	},
 /obj/structure/machinery/door_control{
-	pixel_y = -4;
-	pixel_x = -6;
+	pixel_x = 6;
 	id = "req_shutters";
-	name = "Requisitions Shutters"
+	name = "Requisitions Shutters";
+	pixel_y = -3
 	},
 /obj/structure/surface/table/reinforced/prison,
 /turf/open/floor/strata,
@@ -2861,7 +3195,9 @@
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside)
 "kk" = (
-/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage,
+/obj/structure/machinery/cm_vending/sorted/tech/electronics_storage{
+	hacked = 1
+	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/engineering)
 "kp" = (
@@ -3024,8 +3360,9 @@
 	id = "motor_pool";
 	name = "Door Controls"
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside/motor_pool)
 "lz" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -3197,6 +3534,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/operations)
 "mN" = (
@@ -3488,6 +3826,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "oJ" = (
@@ -3636,7 +3975,9 @@
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside)
 "pB" = (
-/obj/structure/machinery/camera/autoname,
+/obj/structure/machinery/light/double/blue{
+	dir = 1
+	},
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/inside)
 "pC" = (
@@ -4189,8 +4530,9 @@
 /obj/structure/machinery/light/double/blue{
 	dir = 4
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/auto_turf/snow/layer2,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "ta" = (
 /obj/effect/decal/cleanable/blood/oil,
 /turf/open/floor/strata,
@@ -4796,7 +5138,9 @@
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
 "wL" = (
-/obj/structure/machinery/cm_vending/sorted/tech/comp_storage,
+/obj/structure/machinery/cm_vending/sorted/tech/comp_storage{
+	hacked = 1
+	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/engineering)
 "wM" = (
@@ -4971,8 +5315,9 @@
 "xO" = (
 /obj/structure/platform,
 /obj/structure/machinery/light/double/blue,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside/operations)
 "xS" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -4991,8 +5336,9 @@
 /obj/structure/largecrate/random/barrel/true_random{
 	pixel_x = 6
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside/barracks)
 "xZ" = (
 /obj/structure/closet/secure_closet/marine_personal/unsc/rifleman{
 	pixel_x = 8
@@ -5243,6 +5589,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 8
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/auto_turf/snow/layer2,
 /area/cop_brighton/inside)
 "Ae" = (
@@ -5559,6 +5906,7 @@
 /obj/structure/machinery/camera/autoname{
 	dir = 4
 	},
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/motor_pool)
 "Cd" = (
@@ -6047,7 +6395,8 @@
 	icon_state = "4-8"
 	},
 /obj/structure/machinery/cm_vending/sorted/tech/tool_storage{
-	pixel_x = -6
+	pixel_x = -6;
+	hacked = 1
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/cop_brighton/inside/engineering)
@@ -6178,7 +6527,9 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
 "FN" = (
-/obj/structure/machinery/door/poddoor/almayer,
+/obj/structure/machinery/door/poddoor/almayer{
+	dir = 4
+	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
 "FZ" = (
@@ -7013,7 +7364,10 @@
 /area/cop_brighton/inside/engineering)
 "KQ" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/item/toy/plush/bee,
+/obj/item/toy/plush/bee{
+	name = "Bruce The Bee";
+	desc = "A cute toy that awakens the warrior spirit in the most reserved marine. Bruce has over a hundred theoretical kills."
+	},
 /obj/structure/machinery/light/double/blue{
 	dir = 8
 	},
@@ -8060,11 +8414,10 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "Sv" = (
-/obj/structure/machinery/light/double/blue{
-	dir = 1
-	},
+/obj/structure/machinery/camera/autoname,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata/floor3,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside)
 "Sw" = (
 /obj/structure/prop/invuln/overhead/flammable_pipe/fly{
 	pixel_y = 6
@@ -8830,8 +9183,9 @@
 /area/cop_brighton/outside)
 "XA" = (
 /obj/structure/prop/unsc_crate/stack,
+/obj/effect/vehicle_roof/van,
 /turf/open/floor/strata,
-/area/cop_brighton/outside)
+/area/cop_brighton/inside/engineering)
 "XC" = (
 /obj/structure/curtain,
 /turf/open/floor/almayer/sterile_green_side/west,
@@ -19188,18 +19542,18 @@ DE
 DE
 Ac
 sZ
-DE
-DE
-DE
+gD
+gD
+gD
 sZ
 JM
 JM
 JM
 JM
 sZ
-DE
-DE
-DE
+gD
+gD
+gD
 sZ
 Ac
 DE
@@ -20398,22 +20752,22 @@ aT
 DE
 DE
 DE
-dh
+gT
+bo
+gS
+gS
+gS
 bo
 JM
 JM
 JM
-bo
-JM
-JM
-JM
 JM
 bo
-aH
-bb
-aH
+AS
+gJ
+AS
 bo
-DE
+gD
 DE
 DE
 DE
@@ -21415,8 +21769,8 @@ Jd
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -21617,8 +21971,8 @@ Jd
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 gw
 DE
@@ -21819,8 +22173,8 @@ DE
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 JM
 JM
@@ -22021,8 +22375,8 @@ DE
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 JM
 JM
@@ -22634,7 +22988,7 @@ gw
 DE
 DE
 DE
-DE
+gE
 DE
 gw
 JM
@@ -23850,9 +24204,9 @@ VL
 wb
 ae
 XA
-am
-am
-ZR
+bY
+bY
+aZ
 ae
 wb
 dG
@@ -24849,8 +25203,8 @@ dG
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 Jd
 DE
@@ -25051,8 +25405,8 @@ dG
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 Jd
 DE
@@ -25253,8 +25607,8 @@ MQ
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -25423,7 +25777,7 @@ ae
 ae
 aQ
 aQ
-dO
+ae
 cL
 fP
 cN
@@ -25455,8 +25809,8 @@ UR
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -25682,7 +26036,7 @@ ae
 am
 am
 ae
-ZR
+ae
 ae
 xp
 dJ
@@ -26036,10 +26390,10 @@ Cx
 rX
 wb
 lm
-bb
-bb
-bb
-bb
+gY
+gY
+gY
+gY
 Ca
 wb
 kR
@@ -27646,24 +28000,24 @@ JM
 JM
 JM
 DE
-DE
-DE
-DE
-wR
-DE
-DE
-JM
-JM
-JM
-JM
-DE
-DE
-Jd
+ha
 DE
 DE
 wR
 DE
 DE
+JM
+JM
+JM
+JM
+DE
+gW
+Jd
+DE
+DE
+wR
+DE
+DE
 DE
 DE
 DE
@@ -27680,7 +28034,7 @@ JM
 JM
 JM
 JM
-DE
+gO
 DE
 DE
 VL
@@ -28247,6 +28601,10 @@ JM
 JM
 JM
 JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -28258,6 +28616,10 @@ JM
 JM
 JM
 JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -28268,18 +28630,10 @@ JM
 JM
 JM
 JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -28449,6 +28803,10 @@ JM
 JM
 JM
 JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -28460,6 +28818,10 @@ JM
 JM
 JM
 JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -28470,18 +28832,10 @@ JM
 JM
 JM
 JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
-JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -28646,7 +29000,7 @@ eK
 eK
 eI
 eH
-Sv
+AS
 JM
 JM
 JM
@@ -28848,9 +29202,9 @@ KA
 KA
 eH
 eH
+pB
 JM
-JM
-DE
+hg
 DE
 DE
 DE
@@ -31277,10 +31631,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+fp
+fj
+fj
+fp
 dQ
 dN
 dG
@@ -31479,10 +31833,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+hf
+fp
+fp
+he
 dQ
 dN
 dG
@@ -31681,10 +32035,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+hf
+fp
+fp
+he
 dQ
 dN
 dG
@@ -31883,10 +32237,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+fp
+fb
+fb
+fp
 dQ
 dN
 dG
@@ -31926,11 +32280,11 @@ Cx
 rX
 wb
 xU
-aQ
-bb
-bb
-YA
-ae
+gI
+gC
+gC
+eS
+cw
 wb
 vR
 ac
@@ -33136,7 +33490,7 @@ DE
 DE
 DE
 DE
-DE
+gK
 gw
 JM
 JM
@@ -33341,8 +33695,8 @@ JM
 JM
 JM
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -33527,6 +33881,10 @@ JM
 JM
 JM
 JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -33539,12 +33897,8 @@ JM
 JM
 JM
 JM
-JM
-JM
-JM
-JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -33729,6 +34083,10 @@ JM
 JM
 JM
 JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -33741,12 +34099,8 @@ JM
 JM
 JM
 JM
-JM
-JM
-JM
-JM
-JM
-JM
+ch
+ch
 JM
 DE
 Jd
@@ -33917,6 +34271,8 @@ Jd
 Jd
 DE
 JM
+ch
+ch
 JM
 JM
 JM
@@ -33945,10 +34301,8 @@ JM
 JM
 JM
 JM
-JM
-JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -34115,12 +34469,12 @@ UV
 mt
 nq
 DE
-DE
 Jd
 DE
+gZ
 JM
-JM
-JM
+ch
+ch
 JM
 gw
 DE
@@ -34321,8 +34675,8 @@ DE
 DE
 gw
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -34332,7 +34686,7 @@ DE
 DE
 DE
 DE
-DE
+gU
 JM
 JM
 JM
@@ -34523,8 +34877,8 @@ JM
 JM
 JM
 JM
-JM
-JM
+ch
+ch
 JM
 dh
 DE
@@ -36143,10 +36497,10 @@ DE
 DE
 Ef
 nw
-ZH
-nw
-nw
-nw
+gP
+gQ
+gQ
+gQ
 mM
 fI
 pp
@@ -36159,10 +36513,10 @@ jr
 Ef
 uB
 mM
-nw
-nw
-nw
-ZH
+gQ
+gQ
+gQ
+gP
 nw
 pp
 DE
@@ -36771,7 +37125,7 @@ rv
 Vf
 Lu
 bc
-MQ
+gL
 DE
 DE
 gw
@@ -36948,7 +37302,7 @@ JM
 DE
 DE
 DE
-VL
+gX
 fU
 bl
 bl
@@ -36973,7 +37327,7 @@ NQ
 bl
 bl
 fU
-dG
+gN
 DE
 DE
 DE
@@ -36984,8 +37338,8 @@ JM
 JM
 JM
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -37150,7 +37504,7 @@ DE
 DE
 DE
 DE
-VL
+gX
 fU
 bV
 bl
@@ -37175,7 +37529,7 @@ Yb
 bl
 bl
 fU
-dG
+gN
 DE
 Jd
 DE
@@ -37186,8 +37540,8 @@ DE
 DE
 gw
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 aT
@@ -37352,7 +37706,7 @@ DE
 Jd
 DE
 DE
-VL
+gX
 fU
 bl
 bl
@@ -37377,7 +37731,7 @@ bl
 bl
 bl
 fU
-dG
+gN
 DE
 DE
 Jd
@@ -37388,8 +37742,8 @@ DE
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -37579,7 +37933,7 @@ bE
 bE
 nG
 bc
-MQ
+gL
 DE
 DE
 DE
@@ -37590,8 +37944,8 @@ DE
 DE
 DE
 JM
-JM
-JM
+ch
+ch
 JM
 DE
 DE
@@ -37741,10 +38095,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+fp
+fj
+fj
+fp
 dQ
 dN
 dG
@@ -37943,10 +38297,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+hf
+fp
+fp
+he
 dQ
 dN
 dG
@@ -38145,10 +38499,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+hf
+fp
+fp
+he
 dQ
 dN
 dG
@@ -38347,10 +38701,10 @@ bs
 HU
 AI
 dW
-dW
-dW
-dW
-dW
+fp
+fb
+fb
+fp
 dQ
 dN
 dG
@@ -39411,7 +39765,7 @@ JM
 JM
 JM
 JM
-DE
+aW
 DE
 DE
 JM
@@ -40016,10 +40370,10 @@ DE
 JM
 JM
 JM
-JM
-JM
-JM
-JM
+em
+em
+em
+em
 JM
 Uo
 MP
@@ -40218,10 +40572,10 @@ DE
 JM
 JM
 JM
-JM
-JM
-JM
-JM
+em
+em
+em
+em
 JM
 JM
 JM
@@ -40622,10 +40976,10 @@ DE
 JM
 JM
 JM
-JM
-JM
-JM
-JM
+DE
+DE
+DE
+DE
 JM
 it
 eH
@@ -41630,7 +41984,7 @@ DE
 JM
 JM
 oD
-am
+aY
 gb
 Xl
 JM
@@ -48168,12 +48522,12 @@ nb
 (194,1,1) = {"
 nb
 VH
-VH
-VH
-VH
-VH
-VH
-VH
+hh
+hh
+hh
+hh
+hh
+hh
 VH
 VH
 VH
@@ -48370,12 +48724,12 @@ nb
 (195,1,1) = {"
 nb
 VH
-VH
-VH
-VH
-VH
-VH
-VH
+hh
+hh
+hh
+hh
+hh
+hh
 VH
 VH
 VH
@@ -48572,12 +48926,12 @@ nb
 (196,1,1) = {"
 nb
 VH
-VH
-VH
-VH
-VH
-VH
-VH
+hh
+hh
+hi
+hh
+hh
+hh
 VH
 VH
 VH
@@ -48774,12 +49128,12 @@ nb
 (197,1,1) = {"
 nb
 VH
-VH
-VH
-VH
-VH
-VH
-VH
+hh
+hh
+hh
+hh
+hh
+hh
 VH
 VH
 VH
@@ -48976,12 +49330,12 @@ nb
 (198,1,1) = {"
 nb
 VH
-VH
-VH
-VH
-VH
-VH
-VH
+hh
+hh
+hh
+hh
+hh
+hh
 VH
 VH
 VH
