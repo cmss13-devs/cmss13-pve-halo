@@ -1,11 +1,13 @@
 /datum/weather_ss_map_holder/cop_brighton
 	name = "COP Brighton Map Holder"
 
-	min_time_between_events = 30 MINUTES
+	min_time_between_events = 20 MINUTES
 	no_weather_turf_icon_state = "strata_clearsky"
 
 	potential_weather_events = list(
 		/datum/weather_event/snow,
+		/datum/weather_event/snowstorm,
+		/datum/weather_event/blizzard,
 	)
 
 /datum/weather_ss_map_holder/cop_brighton/should_affect_area(area/A)
