@@ -265,7 +265,8 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside)
 "aP" = (
-/turf/open/floor/rampbottom,
+/obj/structure/stairs/perspective,
+/turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
 "aQ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1010,7 +1011,7 @@
 /turf/open/floor/strata,
 /area/cop_brighton/outside)
 "dd" = (
-/turf/open/floor/rampbottom,
+/turf/open/floor/prison/rampbottom,
 /area/cop_brighton/inside/motor_pool)
 "de" = (
 /obj/structure/window/framed/upp/green,
@@ -1123,7 +1124,7 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/motor_pool)
 "dt" = (
-/turf/open/floor/rampbottom/north,
+/turf/open/floor/prison/rampbottom/north,
 /area/cop_brighton/inside/motor_pool)
 "du" = (
 /obj/structure/platform_decoration,
@@ -2074,6 +2075,9 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/operations)
+"fS" = (
+/turf/open/floor/prison/rampbottom,
+/area/cop_brighton/outside)
 "fU" = (
 /obj/structure/window_frame/upp/green,
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
@@ -4496,9 +4500,7 @@
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside)
 "vH" = (
-/turf/open/floor/rampbottom{
-	dir = 4
-	},
+/turf/open/floor/prison/rampbottom/east,
 /area/cop_brighton/outside)
 "vJ" = (
 /obj/structure/machinery/door/poddoor/railing{
@@ -4886,7 +4888,10 @@
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
 "yg" = (
-/turf/open/floor/rampbottom/north,
+/obj/structure/stairs/perspective{
+	dir = 1
+	},
+/turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
 "yh" = (
 /obj/effect/decal/warning_stripes{
@@ -8038,9 +8043,7 @@
 /area/cop_brighton/inside/operations)
 "Ta" = (
 /obj/effect/vehicle_roof/van,
-/turf/open/floor/rampbottom{
-	dir = 4
-	},
+/turf/open/floor/prison/rampbottom/east,
 /area/cop_brighton/inside)
 "Ti" = (
 /obj/effect/decal/cleanable/vomit,
@@ -8148,9 +8151,7 @@
 "TK" = (
 /obj/structure/platform/stair_cut,
 /obj/effect/vehicle_roof/van,
-/turf/open/floor/rampbottom{
-	dir = 4
-	},
+/turf/open/floor/prison/rampbottom/east,
 /area/cop_brighton/inside)
 "TQ" = (
 /obj/structure/surface/table/reinforced/prison,
@@ -9054,9 +9055,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/rampbottom{
-	dir = 4
-	},
+/turf/open/floor/prison/rampbottom/east,
 /area/cop_brighton/inside)
 "ZP" = (
 /obj/effect/decal/cleanable/dirt{
@@ -34430,8 +34429,8 @@ dX
 dX
 dX
 EI
-aP
-aP
+fS
+fS
 ar
 ae
 al
@@ -34632,8 +34631,8 @@ dY
 dY
 dY
 dQ
-aP
-aP
+fS
+fS
 qZ
 ae
 al
@@ -34834,8 +34833,8 @@ dY
 dY
 dY
 dQ
-aP
-aP
+fS
+fS
 ar
 ae
 al
@@ -35036,8 +35035,8 @@ RS
 RS
 Jp
 uA
-aP
-aP
+fS
+fS
 ar
 ae
 al
