@@ -5,7 +5,7 @@
 	no_weather_turf_icon_state = "strata_clearsky"
 
 	potential_weather_events = list(
-		/datum/weather_event/snow/infinite,
+		/datum/weather_event/snow,
 	)
 
 /datum/weather_ss_map_holder/cop_brighton/should_affect_area(area/A)
