@@ -13,7 +13,6 @@
 /obj/item/clothing/accessory/pads/unsc/Initialize()
 	. = ..()
 	inv_overlay = image("icon" = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', "icon_state" = "[item_state? "[item_state]" : "[icon_state]"]")
-	flags_atom |= USES_HEARING
 
 /obj/item/clothing/accessory/pads/unsc/bracers
 	name = "\improper M52B Arm Bracers"
