@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/twe
+/* /datum/human_ai_equipment_preset/twe
 	faction = FACTION_TWE
 
 /datum/human_ai_equipment_preset/twe/standard
@@ -36,3 +36,4 @@
 	desc = "Lieutenant, similarly outfitted to the section leader."
 	path = /datum/equipment_preset/royal_marine/lieuteant
 
+ */

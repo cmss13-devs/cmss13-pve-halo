@@ -250,6 +250,20 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	primary_weight = 7
 	burst_amount_max = 4
 
+/datum/firearm_appraisal/covenant/plasma/pistol
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma/plasma_pistol,
+	)
+	primary_weight = 6
+	burst_amount_max = 2
+
+/datum/firearm_appraisal/covenant/plasma/rifle
+	gun_types = list(
+		/obj/item/weapon/gun/energy/plasma/plasma_rifle,
+	)
+	primary_weight = 7
+	burst_amount_max = 3
+
 /datum/firearm_appraisal/covenant/needler
 	gun_types = list(
 		/obj/item/weapon/gun/smg/covenant_needler,
@@ -265,22 +279,3 @@ GLOBAL_LIST_INIT_TYPED(firearm_appraisals, /datum/firearm_appraisal, build_firea
 	if(firearm.dispersing)
 		AI.try_cover()
 		return
-	if(firearm.heat >= 60)
-		var/vent_decision = 0
-		if(AI.current_target)
-			vent_decision = max(0, -20+(PLASMA_VENT_CHANCE_DIRECT_COMBAT*get_dist(AI.tied_human, AI.current_target)))
-		else
-			if(AI.target_turf)
-				vent_decision = max(0, -20+(PLASMA_VENT_CHANCE_INDIRECT_COMBAT*get_dist(AI.tied_human, AI.target_turf)))
-		vent_decision += max(0,firearm.heat-65)
-		if(prob(max(0, vent_decision)))
-			AI.unholster_primary()
-			AI.ensure_primary_hand(firearm)
-			firearm.unwield(user)
-			sleep(AI.micro_action_delay * AI.action_delay_mult)
-			user.swap_hand()
-			sleep(AI.short_action_delay * AI.action_delay_mult)
-			firearm.unload(user)
-			sleep(AI.micro_action_delay * AI.action_delay_mult)
-			user.swap_hand()
-			AI.wield_primary_sleep()

@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/wy
+/* /datum/human_ai_squad_preset/wy
 	faction = FACTION_WY
 
 /datum/human_ai_squad_preset/wy/patrol
@@ -22,3 +22,4 @@
 		/datum/equipment_preset/colonist/security/weyland/tactical/lead = 1,
 		/datum/equipment_preset/colonist/security/weyland/tactical = 2,
 	)
+ */

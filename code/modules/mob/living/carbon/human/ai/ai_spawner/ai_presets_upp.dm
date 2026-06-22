@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/upp
+/* /datum/human_ai_equipment_preset/upp
 	faction = FACTION_UPP
 
 /datum/human_ai_equipment_preset/upp/militia
@@ -219,3 +219,4 @@
 	name = "UPP Dzho Automaton"
 	desc = "You always know a legally distinct working joe"
 	path = /datum/equipment_preset/synth/working_joe/upp
+ */

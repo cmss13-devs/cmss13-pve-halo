@@ -1,4 +1,4 @@
-/datum/human_ai_squad_preset/upp
+/* /datum/human_ai_squad_preset/upp
 	faction = FACTION_UPP
 
 /datum/human_ai_squad_preset/upp/militia
@@ -80,3 +80,4 @@
 	ai_to_spawn = list(
 		/datum/equipment_preset/upp/machinegunner = 1,
 	)
+ */

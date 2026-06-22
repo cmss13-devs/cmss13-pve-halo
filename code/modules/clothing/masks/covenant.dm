@@ -5,8 +5,11 @@
 	icon_state = "methane_mask"
 	item_state = "methane_mask"
 
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 
 	item_icons = list(
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/unggoy/mask.dmi'
 	)
+/obj/item/clothing/mask/gas/unggoy/specops
+	icon_state = "specops_mask"
+	item_state = "specops_mask"

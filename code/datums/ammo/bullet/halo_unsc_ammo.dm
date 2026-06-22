@@ -82,6 +82,7 @@
 	penetration = ARMOR_PENETRATION_TIER_1
 	scatter = SCATTER_AMOUNT_TIER_8
 	accuracy = HIT_ACCURACY_TIER_4
+	shell_casing = null
 
 // shotgun ammo
 
@@ -91,7 +92,7 @@
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread/unsc
 	accurate_range = 8
 	max_range = 8
-	damage = 60
+	damage = 70
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
 	shell_casing = /obj/effect/decal/ammo_casing/redshell
@@ -100,8 +101,44 @@
 	name = "additional buckshot, USCM special type"
 	accurate_range = 8
 	max_range = 8
-	damage = 90
+	damage = 70
 	firing_freq_offset = SOUND_FREQ_LOW
+
+/datum/ammo/bullet/shotgun/buckshot/unsc/on_hit_mob(mob/M,obj/projectile/P)
+	if(issangheili(M))
+		return
+	knockback(M, P, 3)
+
+/datum/ammo/bullet/shotgun/buckshot/unsc/knockback_effects(mob/living/living_mob, obj/projectile/fired_projectile)
+	if(iscarbonsizexeno(living_mob))
+		var/mob/living/carbon/xenomorph/target = living_mob
+		to_chat(target, SPAN_XENODANGER("You are shaken and slowed by the sudden impact!"))
+		target.Stun(2.5)
+		target.Slow(4)
+	else
+		if(!isyautja(living_mob)) //Not predators.
+			living_mob.Stun(3)
+			living_mob.Slow(5)
+			to_chat(living_mob, SPAN_HIGHDANGER("The impact knocks you off-balance!"))
+		living_mob.apply_stamina_damage(fired_projectile.ammo.damage, fired_projectile.def_zone, ARMOR_BULLET)
+
+/datum/ammo/bullet/shotgun/spread/unsc/on_hit_mob(mob/M,obj/projectile/P)
+	if(issangheili(M))
+		return
+	knockback(M, P, 3)
+
+/datum/ammo/bullet/shotgun/spread/unsc/knockback_effects(mob/living/living_mob, obj/projectile/fired_projectile)
+	if(iscarbonsizexeno(living_mob))
+		var/mob/living/carbon/xenomorph/target = living_mob
+		to_chat(target, SPAN_XENODANGER("You are shaken and slowed by the sudden impact!"))
+		target.Stun(2.5)
+		target.Slow(4)
+	else
+		if(!isyautja(living_mob)) //Not predators.
+			living_mob.Stun(3)
+			living_mob.Slow(5)
+			to_chat(living_mob, SPAN_HIGHDANGER("The impact knocks you off-balance!"))
+		living_mob.apply_stamina_damage(fired_projectile.ammo.damage, fired_projectile.def_zone, ARMOR_BULLET)
 
 /datum/ammo/bullet/shotgun/beanbag/unsc
 	name = "MAG LLHB"
@@ -109,7 +146,7 @@
 	accurate_range = 10
 	max_range = 10
 	stamina_damage = 75
-	damage = 35
+	damage = 50
 	shell_casing = /obj/effect/decal/ammo_casing/blueshell
 
 // rocket ammo
@@ -124,11 +161,21 @@
 	accurate_range = 14
 	max_range = 24
 
+/datum/ammo/rocket/pelican_missile_pod
+	name = "M19 missile"
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	icon_state = "spnkr_missile"
+	damage = 300
+	shell_speed = AMMO_SPEED_TIER_1
+	accuracy = HIT_ACCURACY_TIER_4
+	accurate_range = 14
+	max_range = 24
 
 // sniper ammo
 
 /datum/ammo/bullet/rifle/srs99
 	name = "APFSDS bullet"
+	handful_state = "vulture_bullet"
 	headshot_state = HEADSHOT_OVERLAY_HEAVY
 	damage = 700
 	penetration = ARMOR_PENETRATION_TIER_8

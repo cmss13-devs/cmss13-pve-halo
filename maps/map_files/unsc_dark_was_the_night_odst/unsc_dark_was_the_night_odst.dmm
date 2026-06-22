@@ -376,10 +376,6 @@
 	pixel_x = -2;
 	pixel_y = 12
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -4;
-	pixel_y = 14
-	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "aY" = (
@@ -664,6 +660,16 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/ready_bay)
+"bM" = (
+/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
+/obj/structure/machinery/light/small/blue/golden_arrow{
+	dir = 4
+	},
+/obj/structure/sign/safety/one{
+	pixel_x = 32
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "bN" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -892,6 +898,36 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
+"cr" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "ship_armory";
+	name = "\improper Squad Leader Equipment"
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/armory)
+"cs" = (
+/obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
+"ct" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/blue/north,
+/area/dark_was_the_night/armory)
+"cu" = (
+/turf/open/floor/almayer/blue/north,
+/area/dark_was_the_night/armory)
+"cv" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 2;
+	id = "ship_armory";
+	name = "\improper Fireteam Leader Equipment"
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/armory)
 "cw" = (
 /obj/structure/platform{
 	dir = 4
@@ -901,6 +937,15 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/lower_hallway)
+"cx" = (
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/one{
+	pixel_y = 24;
+	pixel_x = 8
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "cy" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -909,6 +954,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/upper_hallway)
+"cz" = (
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
+/obj/structure/sign/safety/two{
+	pixel_x = 8;
+	pixel_y = 24
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/armory)
 "cA" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/dorms)
@@ -922,6 +976,13 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/dorms)
+"cC" = (
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
+	pixel_x = -8;
+	pixel_y = 6
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
 "cF" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/briefing/two)
@@ -1127,6 +1188,14 @@
 /area/dark_was_the_night/lower_hallway)
 "eT" = (
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = 1;
+	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = -6;
+	pixel_y = 7
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "eW" = (
@@ -1245,11 +1314,14 @@
 /area/dark_was_the_night/dorms)
 "gy" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/grenade{
-	pixel_x = 7;
-	pixel_y = 17
+/obj/item/ammo_box/magazine/misc/unsc/grenade/blast{
+	pixel_x = -6;
+	pixel_y = -3
 	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade,
+/obj/item/ammo_box/magazine/misc/unsc/grenade/blast{
+	pixel_x = 4;
+	pixel_y = 10
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "gz" = (
@@ -1603,10 +1675,6 @@
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -4;
 	pixel_y = -3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade{
-	pixel_x = -6;
-	pixel_y = 10
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -2038,17 +2106,13 @@
 	pixel_x = -2;
 	pixel_y = 13
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = -7;
-	pixel_y = 14
-	},
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
 	dir = 1
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = 7;
-	pixel_y = 13
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot/empty{
+	pixel_x = 3;
+	pixel_y = 19
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -2279,7 +2343,7 @@
 "sF" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 2;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper General Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -2709,18 +2773,12 @@
 /area/dark_was_the_night/briefing/two)
 "xh" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	pixel_x = -6;
-	pixel_y = 13;
-	layer = 3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	layer = 3.1;
-	pixel_x = -6;
-	pixel_y = 20
-	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	layer = 3.2
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade{
+	pixel_x = -6;
+	pixel_y = 10
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -2821,6 +2879,10 @@
 	pixel_y = 11
 	},
 /obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
+	pixel_x = 8;
+	pixel_y = -1
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
 "ym" = (
@@ -3122,7 +3184,7 @@
 "BM" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
-	id = "ship_armory2";
+	id = "ship_armory";
 	name = "\improper Specialist Equipment"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -3159,15 +3221,6 @@
 "Cl" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/dark_was_the_night/ready_bay)
-"Cn" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_y = 28;
-	id = "ship_armory2";
-	name = "armory shutters control";
-	req_one_access_txt = "19;12"
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/armory)
 "Cs" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3454,9 +3507,7 @@
 /area/dark_was_the_night/lower_hallway)
 "FW" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/weapon/gun/shotgun/pump/halo/m90/unloaded{
-	pixel_x = -9
-	},
+/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "FX" = (
@@ -3784,14 +3835,6 @@
 	pixel_x = -7;
 	pixel_y = 8
 	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 16;
-	pixel_y = 10
-	},
-/obj/item/attachable/attached_gun/grenade/ma5c{
-	pixel_x = 15;
-	pixel_y = 4
-	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "Kk" = (
@@ -3929,13 +3972,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"Lz" = (
-/obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft1,
-/obj/structure/machinery/light/small/blue/golden_arrow{
-	dir = 4
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/armory)
 "LB" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -4120,14 +4156,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"MT" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	id = "ship_armory2";
-	name = "\improper RTO Equipment"
-	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/armory)
 "MX" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/dorms)
@@ -4156,6 +4184,9 @@
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
 /obj/structure/machinery/light/small/blue/golden_arrow{
 	dir = 4
+	},
+/obj/structure/sign/safety/two{
+	pixel_x = 32
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
@@ -4558,6 +4589,16 @@
 	layer = 3.11;
 	pixel_x = -1;
 	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
+	pixel_x = -9;
+	pixel_y = 22;
+	layer = 3.11
+	},
+/obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet{
+	layer = 3.11;
+	pixel_x = 8;
+	pixel_y = 23
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
@@ -9325,7 +9366,7 @@ rR
 rD
 NG
 Sb
-wi
+cC
 cn
 cg
 sU
@@ -11397,7 +11438,7 @@ qL
 Be
 nG
 qV
-Cn
+nG
 Be
 qL
 GV
@@ -12605,7 +12646,7 @@ rR
 rR
 rR
 rR
-rR
+bJ
 bJ
 bJ
 mq
@@ -12757,10 +12798,10 @@ rR
 rR
 rR
 rR
-rR
-rR
 bJ
-SI
+cx
+cv
+ct
 bm
 Be
 Zm
@@ -12909,10 +12950,10 @@ rR
 rR
 rR
 rR
-rR
-rR
 bJ
-qq
+cz
+cv
+cu
 qL
 qL
 qL
@@ -13061,8 +13102,8 @@ rR
 rR
 rR
 rR
-rR
-rR
+bJ
+bJ
 bJ
 xl
 qL
@@ -13219,9 +13260,9 @@ bJ
 bJ
 bJ
 HJ
+HJ
 qq
 CR
-qq
 CR
 qq
 qq
@@ -13370,10 +13411,10 @@ rR
 rR
 rR
 bJ
-MT
+cr
+cr
 bJ
 BM
-bJ
 BM
 bJ
 bJ
@@ -13522,13 +13563,13 @@ rR
 rR
 rR
 bJ
+cs
 Um
 bJ
-Lz
-bJ
+bM
 Nz
 bJ
-bJ
+rR
 rR
 rR
 rR

@@ -6,7 +6,7 @@
 #define GLOBAL_PROC "magic BS"
 
 //Game defining directives.
-#define MAIN_AI_SYSTEM "TITAN 1200" //Previously ARES v3.2
+#define MAIN_AI_SYSTEM "Voyager" //Previously "TITAN 1200" // ARES v3.2
 
 // Maploader bounds indices
 #define MAP_MINX 1
@@ -54,6 +54,9 @@
 #define MAP_REDEMPTION_VALLEY "Redemption Valley" //valley with a military outpost and agricultural hamlet
 #define MAP_BINHAI_SUPPLY_STATION "Binhai Supply Station" //UPP asteroid base
 #define MAP_HALO_NEW_IRVINE "New Irvine"
+#define MAP_MACKAY_STATION "Mackay Station"
+#define MAP_ONI_DIGSITE_451 "ONI Digsite 451"
+
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
 

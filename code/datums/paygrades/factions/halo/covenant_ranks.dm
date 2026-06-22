@@ -1,7 +1,7 @@
 // BASE
 
 /datum/paygrade/covenant
-	name = "Covy paygrades"
+	name = "Civilian"
 	default_faction = FACTION_COVENANT
 	paygrade = PAY_SHORT_COV_CIV
 	prefix = "Civ"
@@ -51,14 +51,14 @@
 
 // KIG-YAR
 
-/datum/paygrade/covenant/jackal_champion
+/datum/paygrade/covenant/kigyar_champion
 	paygrade = PAY_SHORT_COV_CHAMPION
 	name = "Champion"
 	prefix = "Champion"
 	ranking = 4
 	pay_multiplier = 2.2
 
-/datum/paygrade/covenant/jackal_shipmistress
+/datum/paygrade/covenant/kigyar_shipmistress
 	paygrade = PAY_SHORT_COV_SHIPMISTRESS
 	name = "Shipmistress"
 	prefix = "Shipmistress"
@@ -94,6 +94,28 @@
 	prefix = "Zealot"
 	ranking = 9
 	pay_multiplier = 5
+
+/datum/paygrade/covenant/sangheili_stealth
+	paygrade = PAY_SHORT_SANG_STEALTH
+	name = "Stealth Operative"
+	prefix = "Stealth Operative"
+	ranking = 6
+	pay_multiplier = 2
+
+/datum/paygrade/covenant/sangheili_honor_guard
+	paygrade = PAY_SHORT_SANG_HONOR_GUARD
+	name = "Honor Guard"
+	prefix = "Honor Guard"
+	ranking = 9
+	pay_multiplier = 5
+
+/datum/paygrade/covenant/sangheili_honor_guard_los
+	paygrade = PAY_SHORT_SANG_HONOR_GUARD_LOS
+	name = "Lights of Sanghelios"
+	prefix = "Helios"
+	ranking = 10
+	pay_multiplier = 6
+
 
 // HIGH COMMAND
 

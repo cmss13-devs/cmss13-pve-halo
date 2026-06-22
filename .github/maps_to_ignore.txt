@@ -1,6 +1,5 @@
 almayer
 firefly
-golden_arrow
 chapaev
 rover
 golden_arrow_classic
@@ -25,7 +24,6 @@ kutjevo
 lv295_blacksite
 lv522_chances_claim
 lv522_chances_claim_forecon
-lv624
 lv624_repaired
 new_varadero
 new_varadero_repaired

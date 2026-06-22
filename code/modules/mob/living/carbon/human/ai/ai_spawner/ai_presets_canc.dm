@@ -1,4 +1,4 @@
-/datum/human_ai_equipment_preset/canc
+/* /datum/human_ai_equipment_preset/canc
 	faction = FACTION_CANC
 
 /datum/human_ai_equipment_preset/canc/newblood
@@ -45,3 +45,4 @@
 	name = "CANC Combat Android"
 	desc = "A CANC Combat Android, these are illegal and should be used sparingly."
 	path = /datum/equipment_preset/synth/working_joe/upp/combat/canc
+ */
