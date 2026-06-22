@@ -1113,7 +1113,8 @@
 /obj/item/device/radio/intercom{
 	freerange = 1;
 	name = "General Listening Channel";
-	pixel_y = 26
+	pixel_y = 26;
+	pixel_x = 6
 	},
 /turf/open/floor/shiva/radiator_tile2,
 /area/cop_brighton/inside/motor_pool)
@@ -4926,7 +4927,8 @@
 	pixel_x = -14
 	},
 /obj/structure/sign/nosmoking_1{
-	pixel_y = 30
+	pixel_y = 30;
+	pixel_x = -5
 	},
 /turf/open/floor/shiva/radiator_tile2,
 /area/cop_brighton/inside/motor_pool)
@@ -8067,7 +8069,8 @@
 "PT" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
 	pixel_x = -2;
-	pixel_y = 16
+	pixel_y = 16;
+	layer = 2.9
 	},
 /obj/structure/reagent_dispensers/watertank/unsc{
 	pixel_x = 4
