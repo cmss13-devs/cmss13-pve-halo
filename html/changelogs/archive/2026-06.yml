@@ -37,3 +37,30 @@
   - rscadd: Extra loadouts for grunts with plasma grenades.
   Yorkoh:
   - balance: spnkr, spnkr rig, sniper, rto pack are all indestructible now
+2026-06-20:
+  BonniePandora:
+  - rscadd: Loose-ammo packets in M6, M7, MA5 and BR55 flavours, as well as misc-ammo
+      boxes of each.
+  - balance: M7 magazine packet w_class upped
+  - imageadd: Sprites for the packets, going largely by what the game renditions looked
+      like
+  - maptweak: UNSC shipmaps given a box of each type of ammo packet in their armories,
+      some things shifted about as a result
+  - rscadd: New flags
+  - imageadd: Sprites for the above
+  DexterDude:
+  - rscadd: Jackal species
+  - rscadd: Heroic Jackal species, slightly tougher and they throw back grenades.
+      Assigned to Ultras and SpecOps jackals.
+  - rscadd: Jackal Minor, Major, Ultra, Marksman, Sniper presets
+  - rscadd: SpecOps, SpecOps Ultra, SpecOps Marksman, SpecOps Sniper presets
+  - rscadd: Jackal squads, also adjusts Unggoy squads to be their own thing and creates
+      mixed squads
+  - code_imp: Shifts covenant suit armor files to the pve modular file and sets up
+      a halo pve __DEFINES folder
+  - bugfix: Fixes jumpsuit rolling not working for cov clothes (by making them subtypes)
+  Gentlefood, Lagomorph, Verbs, DetectiveGoogle:
+  - rscadd: halo escape pods
+  WickedCybs:
+  - rscadd: More dream text to see when you're in cryo or unconscious for some reason!!!
+  - rscdel: Trims out some CM specific dream text
