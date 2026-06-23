@@ -1563,22 +1563,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
-"eG" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -6;
-	pixel_y = 1
-	},
-/obj/item/ammo_box/magazine/misc/unsc/mre{
-	pixel_x = 10;
-	pixel_y = 12
-	},
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -3;
-	pixel_y = 9
-	},
-/turf/open/floor/strata,
-/area/cop_brighton/inside/barracks)
 "eH" = (
 /turf/closed/wall/upp_wall,
 /area/cop_brighton/inside)
@@ -2179,6 +2163,22 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/engineering)
+"gh" = (
+/obj/structure/surface/table/reinforced/prison,
+/obj/item/device/flashlight/lamp/on{
+	pixel_y = 14;
+	pixel_x = 5
+	},
+/obj/item/prop/magazine/book/theartofwar{
+	pixel_x = -5;
+	layer = 3
+	},
+/obj/item/clothing/mask/cigarette/pipe{
+	pixel_y = 2;
+	pixel_x = -2
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "gi" = (
 /obj/structure/prop/unsc_crate/big/stack,
 /turf/open/floor/strata,
@@ -2369,6 +2369,16 @@
 /obj/effect/vehicle_roof/van,
 /turf/open/auto_turf/snow/layer2,
 /area/cop_brighton/inside)
+"gE" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo_arrow";
+	dir = 1
+	},
+/obj/structure/machinery/light/double/blue{
+	dir = 8
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/barracks)
 "gF" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "N";
@@ -2730,6 +2740,15 @@
 /obj/structure/machinery/telecomms/relay/preset/tower,
 /turf/open/floor/almayer,
 /area/cop_brighton/outside)
+"hj" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo_arrow"
+	},
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
+/turf/open/floor/strata/floor3,
+/area/cop_brighton/inside/barracks)
 "hk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -2771,8 +2790,8 @@
 /turf/open/auto_turf/snow/layer2,
 /area/cop_brighton/outside)
 "hn" = (
-/obj/structure/machinery/camera/autoname{
-	dir = 8
+/obj/structure/machinery/light/double/blue{
+	dir = 4
 	},
 /turf/open/floor/shiva/radiator_tile2,
 /area/cop_brighton/inside/barracks)
@@ -2863,10 +2882,14 @@
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
 "hy" = (
-/obj/structure/closet/crate/unsc,
-/obj/item/weapon/gun/smg/halo/m7,
-/obj/item/weapon/gun/smg/halo/m7,
-/turf/open/floor/strata,
+/obj/structure/machinery/light/double/blue{
+	dir = 4
+	},
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot/empty{
+	pixel_x = -6;
+	pixel_y = -5
+	},
+/turf/open/floor/shiva/radiator_tile2,
 /area/cop_brighton/inside/barracks)
 "hz" = (
 /obj/effect/decal/cleanable/blood/oil,
@@ -3037,9 +3060,8 @@
 	pixel_y = 15;
 	pixel_x = 6
 	},
-/obj/structure/machinery/light/double/blue,
-/obj/item/tool/screwdriver{
-	pixel_x = 3
+/obj/item/tool/screwdriver/tactical{
+	pixel_x = 6
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
@@ -3123,6 +3145,22 @@
 /obj/structure/reagent_dispensers/watertank/unsc,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside)
+"ic" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_y = 1;
+	pixel_x = 4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/mre{
+	pixel_x = -13;
+	pixel_y = 11
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = 6;
+	pixel_y = 9
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "id" = (
 /obj/structure/closet/crate/unsc{
 	pixel_x = -6;
@@ -3196,19 +3234,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/motor_pool)
-"im" = (
-/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
-/obj/item/device/binoculars/range/monocular,
-/obj/item/weapon/gun/rifle/halo/br55/unloaded,
-/obj/structure/sign/safety/one{
-	pixel_x = -16
-	},
-/obj/item/clothing/head/helmet/marine/unsc/motion,
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/turf/open/floor/strata,
-/area/cop_brighton/inside/barracks)
 "in" = (
 /obj/structure/prop/unsc_crate/stack,
 /obj/item/device/flashlight/on{
@@ -3503,6 +3528,31 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside/landing_zone)
+"iR" = (
+/obj/item/ammo_box/magazine/unsc/small/m6c{
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c{
+	pixel_x = 0;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c{
+	pixel_x = 6;
+	pixel_y = -5
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c{
+	pixel_x = 6;
+	pixel_y = 3;
+	layer = 3
+	},
+/obj/item/ammo_box/magazine/unsc/small/m6c{
+	pixel_x = 3;
+	pixel_y = 18
+	},
+/obj/structure/surface/table/reinforced/almayer_B,
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "iS" = (
 /obj/structure/prop/ice_colony/surveying_device/measuring_device,
 /turf/open/auto_turf/snow/layer1,
@@ -3616,8 +3666,8 @@
 	pixel_y = 8;
 	pixel_x = -3
 	},
-/obj/item/tool/screwdriver{
-	pixel_x = 3
+/obj/item/tool/screwdriver/tactical{
+	pixel_x = 6
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
@@ -3697,6 +3747,19 @@
 	},
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
+"jr" = (
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
+/obj/item/device/binoculars/range/monocular,
+/obj/item/weapon/gun/rifle/halo/br55/unloaded,
+/obj/item/clothing/head/helmet/marine/unsc/motion,
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/obj/structure/sign/safety/one{
+	pixel_x = 32
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "js" = (
 /obj/structure/bed/chair{
 	pixel_y = 6;
@@ -3723,6 +3786,55 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/motor_pool)
+"jw" = (
+/obj/item/ammo_box/magazine/misc/unsc/flare/signal{
+	pixel_x = 33;
+	pixel_y = 5
+	},
+/obj/item/ammo_box/magazine/misc/unsc/flare{
+	pixel_x = 36;
+	pixel_y = 11
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
+"jx" = (
+/obj/structure/closet/crate/unsc,
+/obj/item/weapon/gun/smg/halo/m7,
+/obj/item/weapon/gun/smg/halo/m7,
+/obj/structure/machinery/light/double/blue{
+	dir = 4
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
+"jy" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/unsc/br55{
+	pixel_x = 0;
+	pixel_y = 15
+	},
+/obj/item/ammo_box/magazine/unsc/br55{
+	pixel_x = -2
+	},
+/obj/item/ammo_box/magazine/unsc/br55{
+	pixel_x = -1;
+	pixel_y = 11
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
+"jz" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_x = 2;
+	pixel_y = 16
+	},
+/obj/item/ammo_box/magazine/unsc/ma5b,
+/obj/item/ammo_box/magazine/unsc/ma5b{
+	pixel_x = -1;
+	pixel_y = 9;
+	layer = 3
+	},
+/turf/open/floor/strata,
+/area/cop_brighton/inside/barracks)
 "jB" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow2";
@@ -3907,31 +4019,6 @@
 /obj/structure/platform/stair_cut,
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/operations)
-"kZ" = (
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	pixel_x = 0;
-	pixel_y = 10
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	pixel_x = 0;
-	pixel_y = 2
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	pixel_x = 6;
-	pixel_y = -5
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	pixel_x = 6;
-	pixel_y = 3;
-	layer = 3
-	},
-/obj/item/ammo_box/magazine/unsc/small/m6c{
-	pixel_x = -14;
-	pixel_y = -5
-	},
-/obj/structure/surface/table/reinforced/almayer_B,
-/turf/open/floor/strata,
-/area/cop_brighton/inside/barracks)
 "le" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "S"
@@ -4280,20 +4367,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside)
-"nu" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/unsc/ma5b{
-	pixel_x = 2;
-	pixel_y = 16
-	},
-/obj/item/ammo_box/magazine/unsc/ma5b,
-/obj/item/ammo_box/magazine/unsc/ma5b{
-	pixel_x = -1;
-	pixel_y = 7;
-	layer = 3
-	},
-/turf/open/floor/strata,
-/area/cop_brighton/inside/barracks)
 "nw" = (
 /obj/structure/platform{
 	dir = 4
@@ -5110,17 +5183,6 @@
 /area/cop_brighton/inside/barracks)
 "sS" = (
 /obj/structure/gun_rack/halo/big/ma5b/unloaded,
-/turf/open/floor/strata,
-/area/cop_brighton/inside/barracks)
-"sT" = (
-/obj/structure/surface/table/reinforced/prison,
-/obj/item/prop/magazine/book/theartofwar{
-	pixel_x = -3;
-	pixel_y = 2
-	},
-/obj/item/clothing/mask/cigarette/pipe{
-	pixel_y = 4
-	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "sV" = (
@@ -7176,14 +7238,6 @@
 	pixel_x = 1;
 	pixel_y = -4
 	},
-/obj/item/ammo_box/magazine/misc/unsc/flare/signal{
-	pixel_x = 33;
-	pixel_y = 5
-	},
-/obj/item/ammo_box/magazine/misc/unsc/flare{
-	pixel_x = 35;
-	pixel_y = 11
-	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "Gh" = (
@@ -8360,19 +8414,6 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
-"NE" = (
-/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
-/obj/item/device/binoculars/range/monocular,
-/obj/item/weapon/gun/rifle/halo/br55/unloaded,
-/obj/structure/sign/safety/two{
-	pixel_x = -16
-	},
-/obj/item/clothing/head/helmet/marine/unsc/motion,
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/turf/open/floor/strata,
-/area/cop_brighton/inside/barracks)
 "NF" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/machinery/microwave{
@@ -9000,18 +9041,15 @@
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside/landing_zone)
 "Su" = (
-/obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/unsc/br55{
-	pixel_x = 0;
-	pixel_y = 15
+/obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
+/obj/item/device/binoculars/range/monocular,
+/obj/item/weapon/gun/rifle/halo/br55/unloaded,
+/obj/item/clothing/head/helmet/marine/unsc/motion,
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
 	},
-/obj/item/ammo_box/magazine/unsc/br55,
-/obj/item/ammo_box/magazine/unsc/br55{
-	pixel_x = -1;
-	pixel_y = 11
-	},
-/obj/structure/machinery/light/double/blue{
-	dir = 4
+/obj/structure/sign/safety/two{
+	pixel_x = 32
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
@@ -30243,9 +30281,9 @@ Jd
 DE
 wR
 DE
-DE
-DE
 Ef
+nw
+nw
 nw
 nw
 nw
@@ -30444,10 +30482,10 @@ DE
 DE
 DE
 DE
-DE
-DE
 Ef
 PQ
+ac
+ac
 ac
 ac
 ac
@@ -30646,23 +30684,23 @@ aT
 DE
 DE
 DE
-DE
-DE
 VL
 ac
 ac
 pb
 JW
 Fm
-jR
+ug
+hj
 pI
-EG
+gE
+ug
 jR
 pI
 EG
 aU
-im
-NE
+wD
+es
 ac
 ac
 fw
@@ -30848,17 +30886,17 @@ DE
 DE
 DE
 DE
-DE
-DE
 VL
 ac
 Jw
 ug
 ug
 ug
+ug
 jR
 lg
 EG
+ug
 jR
 lg
 EG
@@ -31050,23 +31088,23 @@ DE
 DE
 AD
 DE
-DE
-DE
 VL
 ac
 Rb
 EG
 sF
 ug
+ug
 jR
 pI
 EG
+ug
 jR
 pI
 EG
 sF
-fN
-fN
+ug
+ug
 ac
 uK
 ug
@@ -31252,8 +31290,6 @@ DE
 DE
 DE
 DE
-DE
-DE
 VL
 ac
 gn
@@ -31267,8 +31303,10 @@ ug
 ug
 ug
 ug
-wD
-es
+ug
+ug
+ug
+Zd
 ac
 rQ
 ug
@@ -31454,14 +31492,14 @@ DE
 DE
 DE
 DE
-DE
-DE
 VL
 ac
 xy
 ug
 ug
-eG
+tt
+Tt
+ug
 ug
 xG
 oQ
@@ -31480,8 +31518,8 @@ us
 CS
 xG
 CS
+gh
 TQ
-sT
 ug
 ug
 ug
@@ -31655,15 +31693,15 @@ DE
 DE
 DE
 DE
-DE
 aT
-DE
 VL
 ac
-nu
+jz
 ug
 ug
-kZ
+iR
+ic
+ug
 ug
 ug
 ZW
@@ -31858,14 +31896,14 @@ DE
 Jd
 DE
 DE
-DE
-DE
 VL
 ac
 go
 EG
 ug
-tt
+ug
+ug
+ug
 ug
 ug
 ZW
@@ -32060,8 +32098,6 @@ DE
 Jd
 DE
 DE
-DE
-DE
 VL
 ac
 sS
@@ -32069,7 +32105,9 @@ EG
 ug
 ug
 ug
+ug
 sF
+ug
 va
 vP
 hS
@@ -32261,14 +32299,14 @@ dO
 DE
 Jd
 DE
-DE
 wR
-DE
 VL
 ac
 XW
 ug
-ug
+jw
+fN
+fN
 fN
 fN
 ug
@@ -32464,12 +32502,12 @@ dO
 hu
 Jd
 DE
-DE
-DE
 VL
 ac
 ac
-Tt
+jy
+jx
+jr
 Su
 mp
 Nw
@@ -32665,11 +32703,11 @@ dO
 dO
 DE
 Jd
-Jd
-DE
 DE
 bA
 rX
+ac
+ac
 ac
 ac
 ac
@@ -32869,9 +32907,9 @@ aT
 DE
 DE
 DE
-DE
-AD
 bA
+Cx
+Cx
 Cx
 Cx
 rX
@@ -33072,7 +33110,7 @@ DE
 DE
 DE
 DE
-DE
+AD
 DE
 DE
 DE
