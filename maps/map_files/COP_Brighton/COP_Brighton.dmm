@@ -883,6 +883,12 @@
 /obj/structure/prop/server_equipment/laptop/on,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/operations)
+"cH" = (
+/obj/item/device/flashlight/lamp/tripod/grey{
+	icon_state = "tripod_lamp_grey-on"
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
 "cI" = (
 /obj/structure/machinery/vending/coffee,
 /turf/open/floor/strata,
@@ -3497,12 +3503,6 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside/landing_zone)
-"iR" = (
-/obj/item/storage/toolbox/traxus{
-	pixel_y = 12
-	},
-/turf/open/auto_turf/snow/layer1,
-/area/cop_brighton/outside)
 "iS" = (
 /obj/structure/prop/ice_colony/surveying_device/measuring_device,
 /turf/open/auto_turf/snow/layer1,
@@ -3527,6 +3527,9 @@
 	pixel_x = -7;
 	pixel_y = 16;
 	layer = 3.1
+	},
+/obj/item/storage/toolbox/traxus{
+	pixel_y = -6
 	},
 /turf/open/auto_turf/snow/layer1,
 /area/cop_brighton/outside)
@@ -3919,7 +3922,8 @@
 	},
 /obj/item/ammo_box/magazine/unsc/small/m6c{
 	pixel_x = 6;
-	pixel_y = 3
+	pixel_y = 3;
+	layer = 3
 	},
 /obj/item/ammo_box/magazine/unsc/small/m6c{
 	pixel_x = -14;
@@ -4285,7 +4289,8 @@
 /obj/item/ammo_box/magazine/unsc/ma5b,
 /obj/item/ammo_box/magazine/unsc/ma5b{
 	pixel_x = -1;
-	pixel_y = 7
+	pixel_y = 7;
+	layer = 3
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
@@ -4499,7 +4504,8 @@
 	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
 	pixel_x = -10;
-	pixel_y = 6
+	pixel_y = 6;
+	layer = 3
 	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
 	pixel_x = 9;
@@ -7019,20 +7025,22 @@
 "Fm" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
-	pixel_x = -8;
+	pixel_x = -10;
 	pixel_y = 12
 	},
 /obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet{
 	pixel_x = 8;
-	pixel_y = 10
+	pixel_y = 10;
+	layer = 3
 	},
 /obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
 	pixel_x = 4;
-	pixel_y = 15
+	pixel_y = 15;
+	layer = 3.1
 	},
 /obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
 	pixel_y = -4;
-	pixel_x = -6
+	pixel_x = -8
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
@@ -9079,12 +9087,6 @@
 /obj/effect/decal/cleanable/vomit,
 /turf/open/auto_turf/snow/layer0,
 /area/cop_brighton/outside)
-"Tj" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_y = 26
-	},
-/turf/open/floor/shiva/radiator_tile2,
-/area/cop_brighton/inside/barracks)
 "Tl" = (
 /obj/item/ashtray/plastic{
 	icon_state = "ashtray_full_bl";
@@ -18113,7 +18115,7 @@ DE
 DE
 DE
 Jd
-DE
+cH
 DE
 DE
 DE
@@ -18522,7 +18524,7 @@ DE
 DE
 DE
 DE
-DE
+cH
 DE
 DE
 JM
@@ -19120,7 +19122,7 @@ DE
 DE
 DE
 DE
-DE
+cH
 DE
 DE
 DE
@@ -19139,7 +19141,7 @@ DE
 DE
 DE
 AD
-DE
+cH
 Jd
 Jd
 DE
@@ -19547,7 +19549,7 @@ DE
 DE
 DE
 DE
-DE
+cH
 DE
 DE
 DE
@@ -23170,7 +23172,7 @@ DE
 DE
 DE
 DE
-DE
+dO
 JM
 JM
 JM
@@ -23372,8 +23374,8 @@ DE
 DE
 DE
 DE
-DE
-JM
+hM
+dO
 JM
 JM
 JM
@@ -23574,8 +23576,8 @@ aT
 DE
 DE
 DE
-DE
-JM
+dO
+dO
 JM
 JM
 JM
@@ -23776,7 +23778,7 @@ DE
 DE
 DE
 DE
-DE
+dO
 JM
 JM
 JM
@@ -25599,7 +25601,7 @@ JM
 JM
 JM
 JM
-dO
+hM
 DE
 DE
 VL
@@ -28018,7 +28020,7 @@ DE
 dO
 dO
 dO
-JM
+gw
 JM
 JM
 JM
@@ -28816,7 +28818,7 @@ DE
 dO
 iX
 dO
-iR
+hM
 DE
 DE
 dO
@@ -29611,6 +29613,10 @@ JM
 JM
 JM
 JM
+dO
+JM
+JM
+dO
 JM
 JM
 JM
@@ -29628,11 +29634,7 @@ JM
 JM
 JM
 JM
-JM
-JM
-JM
-JM
-JM
+dO
 JM
 JM
 JM
@@ -29813,9 +29815,9 @@ DE
 dO
 dO
 DE
-DE
-DE
-DE
+dO
+hM
+dO
 DE
 DE
 dO
@@ -29832,9 +29834,9 @@ DE
 DE
 DE
 DE
-DE
-DE
-DE
+dO
+hM
+dO
 DE
 DE
 DE
@@ -30017,8 +30019,8 @@ AD
 DE
 DE
 DE
-DE
-DE
+dO
+dO
 DE
 DE
 dO
@@ -30036,8 +30038,8 @@ Jd
 Jd
 DE
 DE
-DE
-DE
+dO
+dO
 DE
 DE
 DE
@@ -30836,7 +30838,7 @@ JM
 JM
 JM
 JM
-dO
+hM
 iN
 dO
 dO
@@ -31874,7 +31876,7 @@ ug
 ug
 Zd
 ac
-Tj
+rQ
 ug
 ug
 ug
@@ -32076,7 +32078,7 @@ qI
 EC
 tg
 ac
-On
+Ap
 ug
 ug
 ug
@@ -32480,7 +32482,7 @@ Tz
 sj
 ac
 ac
-ug
+On
 ug
 ug
 ug
@@ -33259,7 +33261,7 @@ dO
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 DE
@@ -34281,7 +34283,7 @@ JM
 JM
 dO
 dO
-JM
+gw
 JM
 dO
 JM
@@ -36110,7 +36112,7 @@ DE
 JM
 JM
 JM
-JM
+gw
 DE
 DE
 VL
@@ -39548,7 +39550,7 @@ AD
 DE
 DE
 DE
-dO
+hM
 JM
 JM
 JM
@@ -41372,7 +41374,7 @@ JM
 JM
 JM
 JM
-JM
+gw
 JM
 Mi
 Ho
