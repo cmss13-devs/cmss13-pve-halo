@@ -2724,16 +2724,6 @@
 /obj/structure/machinery/telecomms/relay/preset/tower,
 /turf/open/floor/almayer,
 /area/cop_brighton/outside)
-"hj" = (
-/obj/item/device/flashlight/lamp/tripod/grey{
-	icon_state = "tripod_lamp_grey-on"
-	},
-/obj/structure/machinery/floodlight/landing{
-	name = "bolted floodlight";
-	layer = 2.8
-	},
-/turf/open/auto_turf/snow/layer0,
-/area/cop_brighton/outside)
 "hk" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -14727,7 +14717,7 @@ DE
 DE
 dO
 DE
-hj
+Ki
 JM
 JM
 JM
@@ -14757,7 +14747,7 @@ JM
 JM
 JM
 JM
-hj
+Ki
 DE
 DE
 DE
@@ -15337,7 +15327,7 @@ JM
 JM
 JM
 JM
-hj
+Ki
 DE
 DE
 DE
@@ -15358,7 +15348,7 @@ DE
 dO
 DE
 DE
-hj
+Ki
 JM
 JM
 JM
@@ -21828,7 +21818,7 @@ JM
 JM
 JM
 JM
-hj
+Ki
 dO
 dO
 dO
@@ -22244,7 +22234,7 @@ JM
 JM
 JM
 JM
-hj
+Ki
 DE
 DE
 DE
@@ -22429,7 +22419,7 @@ DE
 aT
 DE
 DE
-hj
+Ki
 JM
 JM
 JM
@@ -22846,7 +22836,7 @@ DE
 DE
 DE
 DE
-hj
+Ki
 JM
 JM
 JM
@@ -26280,7 +26270,7 @@ dO
 DE
 DE
 DE
-hj
+Ki
 JM
 JM
 JM
@@ -26673,7 +26663,7 @@ DE
 DE
 DE
 DE
-hj
+Ki
 JM
 JM
 JM
@@ -26890,7 +26880,7 @@ JM
 JM
 JM
 JM
-hj
+Ki
 DE
 DE
 DE
@@ -27283,7 +27273,7 @@ JM
 JM
 JM
 JM
-hj
+Ki
 DE
 DE
 DE
@@ -31324,7 +31314,7 @@ dO
 JM
 JM
 JM
-gw
+JM
 dO
 dO
 tk
@@ -31526,7 +31516,7 @@ dO
 AS
 aY
 ho
-dO
+hM
 dO
 dO
 dO
