@@ -1563,6 +1563,15 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside)
+"eG" = (
+/obj/structure/flora/tree/pine,
+/obj/item/clothing/accessory/limb/skeleton/head{
+	pixel_x = 5;
+	desc = "You get the feeling that, if this object had power over you, it would make the deaths of Grunts far more volatile.";
+	name = "Look Daddy!"
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
 "eH" = (
 /turf/closed/wall/upp_wall,
 /area/cop_brighton/inside)
@@ -42155,7 +42164,7 @@ Jd
 DE
 DE
 DE
-aT
+eG
 DE
 Jd
 DE
