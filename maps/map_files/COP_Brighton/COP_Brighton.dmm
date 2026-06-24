@@ -3902,12 +3902,67 @@
 	},
 /turf/open/auto_turf/snow/layer1,
 /area/cop_brighton/outside)
+"jD" = (
+/obj/item/dogtag{
+	desc = "A fallen marine's information dog tag. It looks battered and the name is worn out.";
+	pixel_y = 2;
+	name = "faded information dog tag"
+	},
+/turf/open/auto_turf/snow/layer1,
+/area/cop_brighton/outside)
 "jE" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/structure/barricade/handrail{
 	dir = 8
 	},
 /turf/open/floor/strata/floor3,
+/area/cop_brighton/outside)
+"jF" = (
+/obj/item/reagent_container/food/snacks/grown/poppy{
+	pixel_x = 4;
+	pixel_y = 6;
+	layer = 3.03
+	},
+/turf/open/auto_turf/snow/layer1,
+/area/cop_brighton/outside)
+"jG" = (
+/obj/structure/prop/wooden_cross,
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"jH" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0;
+	layer = 6.1
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0;
+	layer = 6.1
+	},
+/obj/structure/prop/almayer/ship_memorial/golden_arrow{
+	layer = 6.2;
+	pixel_y = 20;
+	icon_state = "noticeboard";
+	icon = 'icons/obj/structures/props/stationobjs.dmi';
+	desc = "Here is the resting place for all those who have come and gone before us, for those we have recovered, and those we could not. This war will see an end, and you will watch over us until it does."
+	},
+/turf/open/auto_turf/snow/layer2,
+/area/cop_brighton/outside)
+"jI" = (
+/obj/structure/prop/wooden_cross,
+/obj/item/prop/helmetgarb/rosary{
+	desc = "An old rosary, a few beads missing from it's string, yet it still holds together.";
+	name = "damaged rosary";
+	pixel_y = -8
+	},
+/turf/open/auto_turf/snow/layer2,
 /area/cop_brighton/outside)
 "jJ" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
@@ -41198,9 +41253,9 @@ eH
 eH
 eH
 DE
+DE
+DE
 AD
-DE
-DE
 DE
 DE
 DE
@@ -41804,13 +41859,13 @@ eH
 eH
 eH
 DE
-DE
-DE
-DE
+Jd
+jG
+jD
 Jd
 DE
 DE
-wR
+iV
 DE
 DE
 Jd
@@ -42006,12 +42061,12 @@ eH
 eH
 eH
 DE
-DE
-DE
+jG
+jD
 DE
 Jd
-DE
-DE
+dO
+dO
 DE
 DE
 DE
@@ -42208,16 +42263,16 @@ eH
 eH
 eH
 DE
+jI
+dO
+DE
+dO
+JM
+JM
+dO
+dO
 DE
 DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
-Jd
 DE
 DE
 DE
@@ -42410,18 +42465,18 @@ eH
 eH
 eH
 DE
+AD
+jH
+JM
+JM
+JM
+JM
+JM
+dO
 DE
 DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
-Jd
-Jd
-DE
+dO
+dO
 DE
 DE
 DE
@@ -42612,18 +42667,18 @@ eH
 eH
 eH
 DE
+jG
+jD
+DE
+JM
+JM
+DE
+hl
 DE
 DE
 DE
-DE
-DE
-DE
-aT
-DE
-DE
-DE
-Jd
-DE
+dO
+JM
 DE
 DE
 DE
@@ -42813,20 +42868,20 @@ DE
 eH
 eH
 eH
+Jd
+jG
+jD
+DE
+DE
+dO
+dO
 DE
 DE
 DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
-DE
+dO
+JM
+JM
+JM
 dO
 dO
 dO
@@ -43016,6 +43071,9 @@ eH
 eH
 eH
 DE
+Jd
+jG
+jF
 DE
 DE
 DE
@@ -43024,11 +43082,8 @@ DE
 DE
 DE
 DE
-DE
-DE
-DE
-DE
-DE
+JM
+JM
 DE
 dO
 gw
