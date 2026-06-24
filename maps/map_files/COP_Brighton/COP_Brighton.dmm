@@ -3243,6 +3243,13 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/inside/motor_pool)
+"im" = (
+/obj/structure/machinery/light/double/blue{
+	dir = 1
+	},
+/obj/structure/machinery/vending/coffee,
+/turf/open/floor/shiva/radiator_tile2,
+/area/cop_brighton/inside/barracks)
 "in" = (
 /obj/structure/prop/unsc_crate/stack,
 /obj/item/device/flashlight/on{
@@ -3844,6 +3851,28 @@
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
+"jA" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/noticeboard{
+	pixel_y = 20;
+	name = "sign board";
+	desc = "Looks like someone's scribbled directions onto it. Cryo Storage - North. Motor Pool - West. Engineering - South. Entry Gate - South-West."
+	},
+/turf/open/auto_turf/snow/layer1,
+/area/cop_brighton/outside)
 "jB" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow2";
@@ -3851,6 +3880,28 @@
 	},
 /turf/open/floor/strata/floor3,
 /area/cop_brighton/outside/landing_zone)
+"jC" = (
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 4;
+	name = "Post";
+	pixel_x = -16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/barricade/handrail/kutjevo{
+	dir = 8;
+	name = "Post";
+	pixel_x = 16;
+	pixel_y = 16;
+	density = 0
+	},
+/obj/structure/noticeboard{
+	pixel_y = 20;
+	name = "sign board";
+	desc = "Looks like someone's scribbled directions onto it. Landing Pads - North. Operations - East. Barracks - South. Toilets - South-East."
+	},
+/turf/open/auto_turf/snow/layer1,
+/area/cop_brighton/outside)
 "jE" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/structure/barricade/handrail{
@@ -6450,7 +6501,9 @@
 "Bg" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/reagent_container/food/snacks/cheeseburger{
-	pixel_y = 4
+	pixel_y = 4;
+	name = "moa burger";
+	desc = "Have S'Moa!"
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/engineering)
@@ -6896,6 +6949,10 @@
 /obj/item/reagent_container/food/drinks/coffee{
 	pixel_y = 12;
 	pixel_x = -6
+	},
+/obj/item/reagent_container/food/drinks/bottle/tomatojuice{
+	pixel_x = 6;
+	pixel_y = -6
 	},
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
@@ -30072,7 +30129,7 @@ DE
 DE
 dO
 dO
-DE
+jA
 JM
 JM
 JM
@@ -31923,7 +31980,7 @@ ug
 ug
 Zd
 ac
-rQ
+im
 ug
 ug
 ug
@@ -33304,7 +33361,7 @@ DE
 DE
 DE
 DE
-dO
+DE
 JM
 JM
 JM
@@ -33506,7 +33563,7 @@ DE
 DE
 aT
 DE
-dO
+hT
 JM
 JM
 JM
@@ -33910,7 +33967,7 @@ DE
 DE
 dO
 dO
-hT
+jC
 JM
 JM
 JM
