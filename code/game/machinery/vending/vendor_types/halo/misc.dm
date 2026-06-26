@@ -41,7 +41,7 @@
 	listed_products = list(
 		list("ESSENTIAL SUPPLIES", -1, null, null),
 		list("Syringe", floor(scale * 7), /obj/item/reagent_container/syringe/halo, VENDOR_ITEM_MANDATORY),
-		list("Empty Medkit", floor(scale * 1), /obj/item/storage/firstaid/unsc/field/empty, VENDOR_ITEM_REGULAR),
+		list("Empty Medkit", floor(scale * 1), /obj/item/storage/firstaid/unsc/empty, VENDOR_ITEM_REGULAR),
 		list("Syringe Case", floor(scale * 2), /obj/item/storage/syringe_case/unsc, VENDOR_ITEM_REGULAR),
 
 		list("FIELD SUPPLIES", -1, null, null),

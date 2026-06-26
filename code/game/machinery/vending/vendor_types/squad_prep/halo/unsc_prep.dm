@@ -10,7 +10,7 @@
 		list("Marine Uniform, Camo Conforming", floor(scale * 15), /obj/item/clothing/under/marine, VENDOR_ITEM_REGULAR),
 		list("Marine Uniform, Jungle BDU", floor(scale * 15), /obj/item/clothing/under/marine/standard, VENDOR_ITEM_REGULAR),
 		list("Marine Combat Gloves", floor(scale * 15), /obj/item/clothing/gloves/marine, VENDOR_ITEM_REGULAR),
-		list("Marine Radio Headset", floor(scale * 15), /obj/item/device/radio/headset/almayer/marine/solardevils, VENDOR_ITEM_REGULAR),
+		list("Marine Radio Headset", floor(scale * 15), /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers, VENDOR_ITEM_REGULAR),
 		list("CH252 Pattern Marine Helmet", floor(scale * 15), /obj/item/clothing/head/helmet/marine/unsc, VENDOR_ITEM_REGULAR),
 		list("M5 Pattern Camera Headset", floor(scale * 15), /obj/item/device/overwatch_camera, VENDOR_ITEM_REGULAR),
 		list("Utility Cap, Jungle", floor(scale * 15), /obj/item/clothing/head/cmcap, VENDOR_ITEM_REGULAR),
@@ -240,7 +240,6 @@
 		list("SIDEARMS", -1, null, null),
 		list("M6C/SOCOM Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded, VENDOR_ITEM_REGULAR),
 		list("M7/SOCOM Submachine Gun", round(scale * 4), /obj/item/weapon/gun/smg/halo/m7/socom/folded_up, VENDOR_ITEM_REGULAR),
-		list("KFA-2/G smart-linked scope", round(scale * 4), /obj/item/attachable/scope/mini/smartscope/m6g, VENDOR_ITEM_REGULAR),
 		list("M6 flashlight", round(scale * 4), /obj/item/attachable/flashlight/m6, VENDOR_ITEM_REGULAR),
 		list("M82F Flare Gun", round(scale * 1), /obj/item/weapon/gun/flare, VENDOR_ITEM_REGULAR),
 
@@ -300,8 +299,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 
 /obj/effect/essentials_set/medic/unsc
 	spawned_gear_list = list(
-		/obj/item/storage/firstaid/unsc/field/corpsman,
-		/obj/item/storage/firstaid/unsc/field/corpsman,
+		/obj/item/storage/firstaid/unsc/corpsman,
+		/obj/item/storage/firstaid/unsc/corpsman,
 		/obj/item/device/healthanalyzer/halo,
 		/obj/item/tool/surgery/surgical_line,
 		/obj/item/tool/surgery/synthgraft,
