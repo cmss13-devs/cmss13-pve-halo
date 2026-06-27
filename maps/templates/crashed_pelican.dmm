@@ -12,9 +12,7 @@
 	},
 /obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "d" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "1,3";
@@ -24,23 +22,17 @@
 /obj/effect/roof_node/pelican,
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/pelican/paneling/left,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "e" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "4,1"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "f" = (
 /obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/paneling/right,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "g" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "2,2";
@@ -54,9 +46,7 @@
 /obj/effect/roof_node/pelican,
 /obj/structure/prop/invuln/fire,
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "h" = (
 /obj/structure/platform/pelican{
 	pixel_x = -4
@@ -67,17 +57,13 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/pelican/directional/south,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "i" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "5,1"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "j" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_x = -9;
@@ -87,9 +73,7 @@
 	},
 /obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/paneling/left,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "k" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "12,4";
@@ -97,9 +81,7 @@
 	},
 /obj/structure/prop/invuln/fire,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "l" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "11,3";
@@ -123,18 +105,14 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/pelican/paneling/sideways,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "m" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "10,2";
 	opacity = 0
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "n" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "9,4";
@@ -143,9 +121,7 @@
 /obj/effect/roof_node/pelican,
 /obj/structure/prop/invuln/fire,
 /turf/open/shuttle/pelican/paneling/smooth,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "o" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothe";
@@ -164,26 +140,20 @@
 	layer = 4.02
 	},
 /turf/open/shuttle/pelican/directional/west,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "p" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "8,6"
 	},
 /obj/structure/prop/invuln/fire,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "q" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "6,1"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "r" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothe";
@@ -203,9 +173,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/pelican/directional/west,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "t" = (
 /obj/effect/roof_node/pelican,
 /obj/effect/decal/warning_stripes{
@@ -218,34 +186,26 @@
 	pixel_y = -4
 	},
 /turf/open/shuttle/pelican/paneling/left,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "u" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "5,6"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "v" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "3,1"
 	},
 /obj/structure/prop/invuln/fire,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "w" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "7,1"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "x" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "2,5";
@@ -258,9 +218,7 @@
 	},
 /obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/directional/west,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "y" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothw";
@@ -279,9 +237,7 @@
 	buckling_y = 3
 	},
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "z" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothw";
@@ -300,9 +256,7 @@
 	buckling_y = 3
 	},
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "A" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "2,1"
@@ -313,50 +267,38 @@
 	opacity = 0
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "B" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "9,5"
 	},
 /turf/open/floor,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "C" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "6,6"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "D" = (
 /obj/effect/roof_node/pelican,
 /obj/effect/decal/cleanable/blood{
 	icon_state = "gib6"
 	},
 /turf/open/shuttle/pelican/paneling/right,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "E" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "3,6"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "F" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "7,6"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "G" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "2,6"
@@ -367,9 +309,7 @@
 	opacity = 0
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "H" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothw";
@@ -389,9 +329,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "I" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothw";
@@ -410,18 +348,14 @@
 	buckling_y = 3
 	},
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "J" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "12,5";
 	opacity = 0
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "K" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "11,4";
@@ -454,9 +388,7 @@
 	},
 /obj/effect/decal/cleanable/blood/gibs/body,
 /turf/open/shuttle/pelican/paneling/sideways,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "L" = (
 /obj/effect/roof_node/pelican,
 /obj/effect/decal/warning_stripes{
@@ -469,9 +401,7 @@
 	pixel_y = -4
 	},
 /turf/open/shuttle/pelican/paneling/right,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "M" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothw";
@@ -494,17 +424,13 @@
 	pixel_y = -4
 	},
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "N" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "4,6"
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "O" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "wsmoothe";
@@ -528,9 +454,7 @@
 	pixel_x = -8
 	},
 /turf/open/shuttle/pelican/directional/west,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "P" = (
 /obj/structure/shuttle/part/pelican/no_dense{
 	icon_state = "1,3";
@@ -540,32 +464,22 @@
 /obj/effect/roof_node/pelican,
 /obj/structure/roof/pelican_roof/missing_l_wing,
 /turf/open/shuttle/pelican/paneling/right,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "Q" = (
 /obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/directional/east,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "R" = (
 /obj/effect/roof_node/pelican,
 /turf/open/shuttle/pelican/paneling/left,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "T" = (
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "U" = (
 /obj/effect/roof_node/pelican,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "V" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "10,5";
@@ -577,18 +491,14 @@
 	pixel_x = 32
 	},
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "X" = (
 /obj/structure/shuttle/part/pelican{
 	icon_state = "9,6"
 	},
 /obj/structure/prop/invuln/fire,
 /turf/template_noop,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 "Y" = (
 /obj/structure/machinery/computer/dropship_weapons/pelican{
 	pixel_x = -2;
@@ -610,9 +520,7 @@
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/shuttle/pelican/cockpit_seat,
-/area/event/metal/dynamic{
-	base_lighting_alpha = 0
-	})
+/area/shuttle/pelican)
 
 (1,1,1) = {"
 a
