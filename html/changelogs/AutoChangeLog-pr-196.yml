@@ -1,0 +1,4 @@
+author: "Yorkoh"
+delete-after: True
+changes:
+  - rscadd: "subtype of medkits, field medkits. Regular medkits increase in size, field medkits remain medium size. Fixed all relevant vendors/item packages related to this"
