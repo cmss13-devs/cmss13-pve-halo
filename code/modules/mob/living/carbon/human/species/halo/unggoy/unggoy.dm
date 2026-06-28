@@ -76,7 +76,7 @@
 /datum/species/unggoy/handle_post_spawn(mob/living/carbon/human/unggoy)
 	GLOB.alive_human_list -= unggoy
 
-	unggoy.blood_type = "S*"
+	unggoy.blood_type = "U*"
 	unggoy.h_style = "Bald"
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
 	GLOB.unggoy_mob_list += unggoy
@@ -99,3 +99,22 @@
 	unggoy.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_UNGGOY))
 	return ..()
 
+/datum/species/unggoy/heroic //Unlike elites this tier is for ultras and specops, grunts arent getting a full suite of heroic, legendary, etc
+	name = SPECIES_UNGGOY_HEROIC
+	name_plural = "Unggoy Heroic"
+	mob_inherent_traits = list(
+		TRAIT_COV_TECH,
+		TRAIT_SUPER_STRONG,
+		TRAIT_FOREIGN_BIO,
+		TRAIT_IRON_TEETH,
+		TRAIT_DEXTROUS,
+	)
+
+	total_health = 150 //+25 HP
+	burn_mod = 0.9 //alittle lower
+	brute_mod = 0.9 //alittle lower
+	slowdown = 0.1
+
+	dodge_pool = 12 //From 10 to 12
+	dodge_pool_max = 12 //From 10 to 12
+	dp_regen_base_reactivation_time = 30 //5 less
