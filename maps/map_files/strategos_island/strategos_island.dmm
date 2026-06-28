@@ -14758,16 +14758,6 @@
 /obj/structure/platform/stone/new_varadero_concrete,
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
-"eUm" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#cdb398"
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/asteroidfloor,
-/area/strategos/open)
 "eUr" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -33790,11 +33780,10 @@
 /turf/open/new_varadero/sidewalk/southeast,
 /area/strategos/crows_nest)
 "lvw" = (
-/obj/effect/decal/path_edges/mud_corner{
-	dir = 5
+/obj/structure/machinery/light/double{
+	dir = 4
 	},
-/obj/structure/roof/pelican_roof,
-/turf/open/auto_turf/varadero_brown_grass/layer0_mud_alt,
+/turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
 "lvx" = (
 /obj/effect/decal/cleanable/dirt,
@@ -43822,12 +43811,6 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkcorner/southwest,
 /area/strategos/crows_nest)
-"oHe" = (
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
-/turf/open/auto_turf/varadero_brown_grass/layer0,
-/area/strategos/open)
 "oHg" = (
 /obj/effect/decal/path_edges/grass_corner{
 	dir = 8
@@ -45172,8 +45155,14 @@
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
 "pdP" = (
-/obj/structure/roof/pelican_roof,
-/turf/open/floor/corsat/spiralplate,
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
 /area/strategos/open)
 "pdS" = (
 /obj/structure/platform/stone/new_varadero_concrete/west,
@@ -47973,8 +47962,10 @@
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
 "pXY" = (
-/obj/structure/roof/pelican_roof,
-/turf/open/auto_turf/varadero_white_sand_alt/layer1,
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
 "pYx" = (
 /obj/effect/decal/medical_decals{
@@ -55450,12 +55441,6 @@
 	},
 /turf/open/asphalt/cement_shaded,
 /area/strategos/crows_nest)
-"sst" = (
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/auto_turf/varadero_brown_grass/layer0,
-/area/strategos/open)
 "ssz" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal8";
@@ -59262,10 +59247,6 @@
 /obj/structure/platform_decoration,
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/rats_nest)
-"tCA" = (
-/obj/structure/roof/pelican_roof,
-/turf/open/asphalt/cement_sunbleached,
-/area/strategos/open)
 "tCB" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double,
@@ -63732,11 +63713,6 @@
 	},
 /turf/open/floor/asteroid,
 /area/strategos/hydroplant_zanzibar)
-"uZQ" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/roof/pelican_roof,
-/turf/open/floor/corrugated,
-/area/strategos/crows_nest)
 "vaw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/secure,
@@ -77803,7 +77779,7 @@ wYr
 wYr
 wYr
 wYr
-pXY
+wYr
 wYr
 pTh
 pTh
@@ -80043,7 +80019,7 @@ lzN
 ixv
 maO
 maO
-eUm
+pdP
 qbR
 qbR
 qbR
@@ -81548,7 +81524,7 @@ cZu
 yiC
 yiC
 yiC
-oHe
+pXY
 bzq
 pmh
 mLs
@@ -82756,7 +82732,7 @@ hvZ
 hvZ
 oql
 yiC
-sst
+lvw
 bzq
 jlY
 qgy
@@ -113518,7 +113494,7 @@ fxv
 giK
 gHv
 gHv
-lvw
+yiY
 nxV
 nxV
 xrB
@@ -151069,7 +151045,7 @@ akW
 qDN
 qDN
 fjd
-pdP
+fjd
 fjd
 fjd
 qDN
@@ -156055,7 +156031,7 @@ tlj
 qDN
 qDN
 fjd
-pdP
+fjd
 fjd
 fjd
 qDN
@@ -191733,7 +191709,7 @@ aup
 ybH
 pyK
 bNW
-uZQ
+bNW
 nIZ
 ybH
 ybH
@@ -200981,7 +200957,7 @@ qrD
 thG
 thG
 chq
-tCA
+chq
 thG
 thG
 thG
