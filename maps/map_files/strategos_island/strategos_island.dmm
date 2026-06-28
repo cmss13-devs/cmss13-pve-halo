@@ -1223,9 +1223,15 @@
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/hydroplant_zanzibar)
 "awK" = (
-/turf/open/space/basic,
-/turf/closed/wall/new_varadero/concrete/reinforced,
-/area/strategos/crows_nest)
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/open)
 "awQ" = (
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
@@ -14752,6 +14758,16 @@
 /obj/structure/platform/stone/new_varadero_concrete,
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
+"eUm" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/open)
 "eUr" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -43806,6 +43822,12 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkcorner/southwest,
 /area/strategos/crows_nest)
+"oHe" = (
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/turf/open/auto_turf/varadero_brown_grass/layer0,
+/area/strategos/open)
 "oHg" = (
 /obj/effect/decal/path_edges/grass_corner{
 	dir = 8
@@ -55428,6 +55450,12 @@
 	},
 /turf/open/asphalt/cement_shaded,
 /area/strategos/crows_nest)
+"sst" = (
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/turf/open/auto_turf/varadero_brown_grass/layer0,
+/area/strategos/open)
 "ssz" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal8";
@@ -80015,7 +80043,7 @@ lzN
 ixv
 maO
 maO
-maO
+eUm
 qbR
 qbR
 qbR
@@ -80315,7 +80343,7 @@ lzN
 lzN
 lzN
 ixv
-maO
+awK
 szl
 szl
 mjH
@@ -81520,10 +81548,10 @@ cZu
 yiC
 yiC
 yiC
-yiC
+oHe
 bzq
 pmh
-pmh
+mLs
 pmh
 pmh
 pmh
@@ -81542,7 +81570,7 @@ pmh
 mLs
 pmh
 bzq
-mjH
+wDB
 mjH
 mjH
 mjH
@@ -82728,10 +82756,10 @@ hvZ
 hvZ
 oql
 yiC
-yiC
+sst
 bzq
 jlY
-jlY
+qgy
 jlY
 jlY
 jlY
@@ -83052,7 +83080,7 @@ hvZ
 qUm
 qUm
 qbR
-uVk
+iRL
 uVk
 qbR
 eSm
@@ -172451,7 +172479,7 @@ qvy
 qvy
 ujm
 ujm
-awK
+qvy
 qvy
 qvy
 lzN
