@@ -1,5 +1,0 @@
-author: "WickedCybs"
-delete-after: True
-changes:
-  - rscadd: "More dream text to see when you're in cryo or unconscious for some reason!!!"
-  - rscdel: "Trims out some CM specific dream text"
