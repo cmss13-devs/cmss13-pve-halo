@@ -433,7 +433,7 @@
 	name = "rocky ground"
 	icon = 'icons/turf/floors/new_varadero/auto_sand_rock_nv.dmi'
 	icon_state = "rock_0"
-	icon_prefix = "rock_0"
+	icon_prefix = "rock"
 	layer_name = list("ground","rocky ground")
 	desc = "peculiar set of rocks formed into hexagonal pattern."
 
@@ -451,7 +451,7 @@
 	name = "sand"
 	icon = 'icons/turf/floors/new_varadero/white_auto_sand.dmi'
 	icon_state = "sand_0"
-	icon_prefix = "sand_0"
+	icon_prefix = "sand"
 	layer_name = list("ground","loose sand")
 	desc = "sand mixed with small rocks compacted tightly together by other means."
 
@@ -475,7 +475,7 @@
 	name = "deep water transition"
 	icon = 'icons/turf/floors/new_varadero/seadeep_auto_turf_stuff.dmi'
 	icon_state = "seadeep_0"
-	icon_prefix = "seadeep_0"
+	icon_prefix = "seadeep"
 	layer_name = list("water")
 
 /turf/open/auto_turf/varadero_water_transit/layer0
