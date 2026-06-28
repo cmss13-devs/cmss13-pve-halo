@@ -415,7 +415,7 @@
 	name = "compact sand"
 	icon = 'icons/turf/floors/new_varadero/auto_sand_rock_nv.dmi'
 	icon_state = "white_sand_0"
-	icon_prefix = "white_sand_0"
+	icon_prefix = "sand"
 	layer_name = list("ground","compact sand")
 	desc = "sand mixed with small rocks compacted tightly together by other means."
 

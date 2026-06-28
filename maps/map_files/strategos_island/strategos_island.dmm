@@ -1222,12 +1222,6 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/hydroplant_zanzibar)
-"awK" = (
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/auto_turf/varadero_brown_grass/layer0,
-/area/strategos/open)
 "awQ" = (
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
@@ -18507,9 +18501,6 @@
 	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
-"gdi" = (
-/turf/closed/wall/new_varadero/concrete/reinforced,
-/area/space)
 "gdo" = (
 /obj/structure/fence/halo,
 /turf/open/new_varadero/sidewalk/northeast,
@@ -32504,6 +32495,12 @@
 	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
+"kYx" = (
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/turf/open/auto_turf/varadero_brown_grass/layer0,
+/area/strategos/open)
 "kYM" = (
 /obj/structure/largecrate/random/barrel/true_random,
 /turf/open/floor/corrugated,
@@ -33760,12 +33757,6 @@
 "lvq" = (
 /turf/open/new_varadero/sidewalk/southeast,
 /area/strategos/crows_nest)
-"lvw" = (
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
-/turf/open/auto_turf/varadero_brown_grass/layer0,
-/area/strategos/open)
 "lvx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/dam/truck/cargo{
@@ -34056,6 +34047,16 @@
 	},
 /turf/open/asphalt/cement_shaded,
 /area/strategos/rats_nest)
+"lAn" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/open)
 "lAu" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	color = "#634d36";
@@ -45130,14 +45131,10 @@
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
 "pdP" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#cdb398"
+/obj/structure/machinery/light/double{
+	dir = 8
 	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/asteroidfloor,
+/turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
 "pdS" = (
 /obj/structure/platform/stone/new_varadero_concrete/west,
@@ -47936,6 +47933,16 @@
 /obj/structure/reagent_dispensers/water_cooler/stacks,
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
+"pXY" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/open)
 "pYx" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaltopright"
@@ -63682,16 +63689,6 @@
 	},
 /turf/open/floor/asteroid,
 /area/strategos/hydroplant_zanzibar)
-"uZQ" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#cdb398"
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/floor/asteroidfloor,
-/area/strategos/open)
 "vaw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/secure,
@@ -79998,7 +79995,7 @@ lzN
 ixv
 maO
 maO
-pdP
+pXY
 qbR
 qbR
 qbR
@@ -80298,7 +80295,7 @@ lzN
 lzN
 lzN
 ixv
-uZQ
+lAn
 szl
 szl
 mjH
@@ -81503,7 +81500,7 @@ cZu
 yiC
 yiC
 yiC
-lvw
+pdP
 bzq
 pmh
 mLs
@@ -82711,7 +82708,7 @@ hvZ
 hvZ
 oql
 yiC
-awK
+kYx
 bzq
 jlY
 qgy
@@ -115173,8 +115170,8 @@ gpy
 mjH
 mjH
 mjH
-gdi
-gdi
+wap
+wap
 hvZ
 hvZ
 ikC
@@ -115475,8 +115472,8 @@ mjH
 mjH
 mjH
 vua
-gdi
-gdi
+wap
+wap
 hvZ
 lzN
 ikC
@@ -115777,8 +115774,8 @@ mjH
 mjH
 vua
 hvZ
-gdi
-gdi
+wap
+wap
 hvZ
 hvZ
 lzN
@@ -116079,9 +116076,9 @@ wTC
 vua
 hvZ
 hvZ
-gdi
-gdi
-gdi
+wap
+wap
+wap
 hvZ
 wYr
 wYr
@@ -116381,9 +116378,9 @@ hvZ
 hvZ
 hvZ
 jDj
-gdi
-gdi
-gdi
+wap
+wap
+wap
 lzN
 lzN
 wYr
