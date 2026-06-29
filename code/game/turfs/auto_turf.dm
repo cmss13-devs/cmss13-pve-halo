@@ -452,7 +452,7 @@
 	icon = 'icons/turf/floors/new_varadero/white_auto_sand.dmi'
 	icon_state = "sand_0"
 	icon_prefix = "sand"
-	layer_name = list("ground","loose sand")
+	layer_name = list("ground","loose sand","swifty sand")
 	desc = "sand mixed with small rocks compacted tightly together by other means."
 
 /turf/open/auto_turf/varadero_white_sand_alt/layer0
@@ -476,7 +476,7 @@
 	icon = 'icons/turf/floors/new_varadero/seadeep_auto_turf_stuff.dmi'
 	icon_state = "seadeep_0"
 	icon_prefix = "seadeep"
-	layer_name = list("water")
+	layer_name = list("water","deep water")
 
 /turf/open/auto_turf/varadero_water_transit/layer0
 	icon_state = "seadeep_0"
