@@ -8,6 +8,8 @@
 #define JOB_COV_COMMANDER "Sub-Commander"
 #define JOB_COV_COMANDER "Commander"
 #define JOB_COV_STEALTH "Stealth Operations"
+#define JOB_COV_MARKSMAN "Marksman"
+#define JOB_COV_SNIPER "Sniper"
 
 // Ministry
 #define JOB_COV_DEACON "Deacon"
@@ -28,6 +30,8 @@
 #define JOB_COV_HONOR_GUARD_CAPTAIN "Honor Guard Captain"
 
 #define JOB_COV_SPECOPS "Special Operations"
+#define JOB_COV_SPECOPS_MARKSMAN "Special Operations Marksman"
+#define JOB_COV_SPECOPS_SNIPER "Special Operations Sniper"
 #define JOB_COV_SPECOPS_ULTRA "Special Operations Ultra"
 #define JOB_COV_SPECOPS_OFFICER "Special Operations Officer"
 #define JOB_COV_SPECOPS_LEADER "Special Operations Leader"

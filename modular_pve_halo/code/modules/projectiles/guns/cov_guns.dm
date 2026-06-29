@@ -451,7 +451,7 @@
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
-	var/obj/item/attachable/scope/variable_zoom/scope = new(src)
+	var/obj/item/attachable/scope/variable_zoom/covenant/scope = new(src)
 	scope.flags_attach_features &= ~ATTACH_REMOVABLE
 	scope.Attach(src)
 	scope.hidden = TRUE
