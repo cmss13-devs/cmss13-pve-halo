@@ -279,7 +279,7 @@
 
 /obj/structure/closet/ordnance_canister/dropping/ammo_mix/odst/Initialize() // I couldn't be arsed to figure it out, sorry
 	. = ..()
-	new /obj/item/ammo_box/magazine/unsc/ma5b/shredder(src)
+	new /obj/item/ammo_box/magazine/unsc/ma5b(src)
 	new /obj/item/ammo_box/magazine/unsc/ma5c/shredder(src)
 	new /obj/item/ammo_box/magazine/unsc/br55/extended(src)
 	new /obj/item/ammo_box/magazine/unsc/small/m6c/socom(src)
