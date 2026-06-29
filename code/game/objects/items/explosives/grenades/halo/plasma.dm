@@ -30,6 +30,8 @@
 	var/time_triggered
 	///prevent multiple windup sounds from playing if the nade gets unstuck
 	var/windup_sound_queued = FALSE
+	///has the windup sound played
+	var/windup = FALSE
 	///holder for plasma flame particle effect
 	var/obj/effect/abstract/particle_holder/plasma_effect
 
@@ -75,7 +77,9 @@
 
 /obj/item/explosive/grenade/high_explosive/plasma/prime(mob/living/user)
 	set waitfor = 0
-	if(!attached) //if it is attached then the component thing does special behaviour
+	if(attached && !windup) //if it is attached then the component thing does special behaviour
+		return
+	if(windup)
 		cell_explosion(src.loc, explosion_power, explosion_falloff, falloff_mode, null, cause_data)
 		new /obj/effect/temp_visual/plasma_explosion/cyan(get_turf(src))
 		for(var/mob/living/target_living in range(3, get_turf(src)))
@@ -114,6 +118,7 @@
 	if(!windup_sound_queued)
 		return
 	playsound(loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
+	windup = TRUE
 
 /datum/looping_sound/plasma_hiss
 	start_sound = list('sound/weapons/halo/firebomb_throw.ogg' = 1)
@@ -169,12 +174,15 @@
 	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
 	if(time_running >= 0.5 SECONDS)
 		time_running = 0.25 SECONDS
+	else if(time_running >= 1.25 SECONDS)
+		time_running = 0.25 SECONDS
 	if(istype(parent_atom, /mob/living))
 		RegisterSignal(parent_atom, list(
 		COMSIG_LIVING_REJUVENATED,
 		), PROC_REF(force_unstuck))
 		RegisterSignal(parent_atom, COMSIG_MOB_RESISTED, PROC_REF(unstuck))
 	//RegisterSignal(src, COMSIG_PARENT_QDELETING, GLOBAL_PROC_REF(qdel), src.origin_nade)
+	RegisterSignal(src.origin_nade, COMSIG_PARENT_QDELETING, PROC_REF(force_unstuck))
 	START_PROCESSING(SSfastobj, src)
 
 /*
@@ -307,7 +315,8 @@
 		stuck_limb.fracture(100)
 		stage = 2
 	if(time_running >= 1.15 SECONDS && stage == 2)
-		playsound(parent_atom.loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
+		origin_nade.windup_sound_queued = TRUE
+		origin_nade.play_windup_sound()
 		stage = 2.5
 	if(time_running >= 1.25 SECONDS && stage == 2.5)
 		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
@@ -334,7 +343,8 @@
 		to_chat(parent, SPAN_HIGHDANGER("Your bones start to melt!"))
 		stage = 2
 	if(time_running >= 1.15 SECONDS && stage == 2)
-		playsound(parent_atom.loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
+		origin_nade.windup_sound_queued = TRUE
+		origin_nade.play_windup_sound()
 		stage = 2.5
 	if(time_running >= 1.25 SECONDS && stage == 2.5)
 		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
@@ -365,7 +375,8 @@
 		mob.interior_crash_effect()
 		stage = 2
 	if(time_running >= 1.15 SECONDS && stage == 2)
-		playsound(parent_atom.loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
+		origin_nade.windup_sound_queued = TRUE
+		origin_nade.play_windup_sound()
 		stage = 2.5
 	if(time_running >= 1.25 SECONDS && stage == 2.5)
 		animation_flash_color(parent_atom, COLOR_BLUE)
