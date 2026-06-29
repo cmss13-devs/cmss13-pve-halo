@@ -2632,6 +2632,14 @@
 	},
 /turf/open/new_varadero/taupe_concrete,
 /area/strategos/crows_nest)
+"aTy" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/map/current_map,
+/turf/open/asphalt/cement_shaded/full,
+/area/strategos/crows_nest)
 "aTz" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -8615,6 +8623,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement_sunbleached,
 /area/strategos/open)
+"cTU" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/map/current_map,
+/turf/open/floor/yellowfull,
+/area/strategos/hydroplant_zanzibar)
 "cUc" = (
 /obj/structure/platform/stone/new_varadero_concrete/north,
 /turf/open/gm/river/white_coast,
@@ -17769,6 +17785,13 @@
 /obj/structure/prop/unsc_crate/stack,
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
+"fPF" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/map/current_map,
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/crows_nest)
 "fPG" = (
 /obj/structure/prop/rock/black_ground/dense,
 /turf/open/gm/white_dirt,
@@ -18268,6 +18291,13 @@
 "fXW" = (
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/strategos/dockyard_longshore_metal)
+"fXX" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/map/current_map,
+/turf/open/new_varadero/alt_concrete/floor,
+/area/strategos/crows_nest)
 "fYb" = (
 /obj/structure/platform/stone/new_varadero_concrete/north,
 /obj/structure/largecrate/random/barrel/true_random,
@@ -21893,6 +21923,7 @@
 /area/strategos/open)
 "hmy" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/segment/five,
+/obj/item/map/current_map,
 /turf/open/floor/strata/blue1,
 /area/strategos/crows_nest)
 "hmL" = (
@@ -58331,6 +58362,7 @@
 	pixel_x = 8;
 	pixel_y = 9
 	},
+/obj/item/map/current_map,
 /turf/open/floor/prison/sterile_white,
 /area/strategos/crows_nest)
 "tpd" = (
@@ -60811,6 +60843,13 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/crows_nest)
+"ueL" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/map/current_map,
+/turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
 "ueM" = (
 /obj/structure/machinery/light{
@@ -104866,7 +104905,7 @@ nZU
 kZO
 kZO
 cOH
-jXi
+cTU
 qBR
 qBR
 qBR
@@ -162516,8 +162555,8 @@ ljg
 drU
 qvy
 qvy
-kgz
-kgz
+ueL
+ueL
 lrk
 xWw
 xWw
@@ -185076,7 +185115,7 @@ qvy
 eBx
 qvy
 qvy
-iwm
+aTy
 pEy
 aFM
 qvy
@@ -190214,7 +190253,7 @@ eBx
 eBx
 qvy
 jtx
-leR
+fPF
 tvB
 tvB
 ueG
@@ -202923,7 +202962,7 @@ qvy
 qvy
 nlh
 lNJ
-lNJ
+fXX
 lNJ
 bYD
 gRf
