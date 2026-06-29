@@ -1222,6 +1222,12 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/hydroplant_zanzibar)
+"awK" = (
+/obj/structure/machinery/light/double{
+	dir = 4
+	},
+/turf/open/auto_turf/varadero_brown_grass/layer0,
+/area/strategos/open)
 "awQ" = (
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
@@ -8767,14 +8773,6 @@
 	},
 /turf/open/auto_turf/varadero_brown_grass/layer0_mud_alt,
 /area/strategos/open)
-"cWS" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/surface/table/almayer{
-	color = "#cdb398"
-	},
-/obj/item/map/current_map,
-/turf/open/asphalt/cement_shaded/full,
-/area/strategos/crows_nest)
 "cWY" = (
 /obj/effect/decal/path_edges/mud_corner{
 	dir = 4
@@ -23825,13 +23823,6 @@
 	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/dockyard_longshore_metal)
-"hWB" = (
-/obj/structure/surface/table/almayer{
-	color = "#cdb398"
-	},
-/obj/item/map/current_map,
-/turf/open/asphalt/cement_shaded/full,
-/area/strategos/crows_nest)
 "hWD" = (
 /obj/structure/closet/crate/unsc,
 /turf/open/new_varadero/sidewalk/east,
@@ -32496,10 +32487,14 @@
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
 "kYx" = (
-/obj/structure/machinery/light/double{
-	dir = 4
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
 	},
-/turf/open/auto_turf/varadero_brown_grass/layer0,
+/obj/structure/machinery/light/small{
+	dir = 1;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
 /area/strategos/open)
 "kYM" = (
 /obj/structure/largecrate/random/barrel/true_random,
@@ -33757,6 +33752,16 @@
 "lvq" = (
 /turf/open/new_varadero/sidewalk/southeast,
 /area/strategos/crows_nest)
+"lvw" = (
+/obj/structure/surface/table/reinforced/prison{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/light/small{
+	dir = 8;
+	light_power = 0.25
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/open)
 "lvx" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/dam/truck/cargo{
@@ -34047,16 +34052,6 @@
 	},
 /turf/open/asphalt/cement_shaded,
 /area/strategos/rats_nest)
-"lAn" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#cdb398"
-	},
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
-	},
-/turf/open/floor/asteroidfloor,
-/area/strategos/open)
 "lAu" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer/open{
 	color = "#634d36";
@@ -45130,12 +45125,6 @@
 	},
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
-"pdP" = (
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
-/turf/open/auto_turf/varadero_brown_grass/layer0,
-/area/strategos/open)
 "pdS" = (
 /obj/structure/platform/stone/new_varadero_concrete/west,
 /obj/structure/platform/stone/new_varadero_concrete,
@@ -46788,7 +46777,6 @@
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
 	},
-/obj/item/map/current_map,
 /obj/item/folder/black_random,
 /obj/structure/machinery/light{
 	light_power = 0.75;
@@ -47933,16 +47921,6 @@
 /obj/structure/reagent_dispensers/water_cooler/stacks,
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
-"pXY" = (
-/obj/structure/surface/table/reinforced/prison{
-	color = "#cdb398"
-	},
-/obj/structure/machinery/light/small{
-	dir = 8;
-	light_power = 0.25
-	},
-/turf/open/floor/asteroidfloor,
-/area/strategos/open)
 "pYx" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaltopright"
@@ -58353,10 +58331,6 @@
 	pixel_x = 8;
 	pixel_y = 9
 	},
-/obj/item/map/current_map{
-	pixel_x = -5;
-	pixel_y = -10
-	},
 /turf/open/floor/prison/sterile_white,
 /area/strategos/crows_nest)
 "tpd" = (
@@ -63689,6 +63663,12 @@
 	},
 /turf/open/floor/asteroid,
 /area/strategos/hydroplant_zanzibar)
+"uZQ" = (
+/obj/structure/machinery/light/double{
+	dir = 8
+	},
+/turf/open/auto_turf/varadero_brown_grass/layer0,
+/area/strategos/open)
 "vaw" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/secure,
@@ -79995,7 +79975,7 @@ lzN
 ixv
 maO
 maO
-pXY
+lvw
 qbR
 qbR
 qbR
@@ -80295,7 +80275,7 @@ lzN
 lzN
 lzN
 ixv
-lAn
+kYx
 szl
 szl
 mjH
@@ -81500,7 +81480,7 @@ cZu
 yiC
 yiC
 yiC
-pdP
+uZQ
 bzq
 pmh
 mLs
@@ -82708,7 +82688,7 @@ hvZ
 hvZ
 oql
 yiC
-kYx
+awK
 bzq
 jlY
 qgy
@@ -162536,8 +162516,8 @@ ljg
 drU
 qvy
 qvy
-hWB
-hWB
+kgz
+kgz
 lrk
 xWw
 xWw
@@ -185096,7 +185076,7 @@ qvy
 eBx
 qvy
 qvy
-cWS
+iwm
 pEy
 aFM
 qvy
