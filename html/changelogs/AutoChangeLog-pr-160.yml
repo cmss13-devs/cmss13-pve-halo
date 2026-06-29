@@ -1,0 +1,4 @@
+author: "banana-battery"
+delete-after: True
+changes:
+  - mapadd: "Covenant structure templates added to the Admin template loader."
