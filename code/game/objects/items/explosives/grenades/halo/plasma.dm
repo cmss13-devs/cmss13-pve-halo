@@ -306,10 +306,10 @@
 		to_chat(parent, SPAN_HIGHDANGER("Your bones start to melt!"))
 		stuck_limb.fracture(100)
 		stage = 2
-	if(time_running >= 0.9 SECONDS && stage == 2)
+	if(time_running >= 1.15 SECONDS && stage == 2)
 		playsound(parent_atom.loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
 		stage = 2.5
-	if(time_running >= 1 SECONDS && stage == 2.5)
+	if(time_running >= 1.25 SECONDS && stage == 2.5)
 		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
 		var/obj/limb/stuck_limb = stuck_human.get_limb(zone)
 		stuck_limb.droplimb()
@@ -333,10 +333,10 @@
 		stuck_mob.KnockDown(1)
 		to_chat(parent, SPAN_HIGHDANGER("Your bones start to melt!"))
 		stage = 2
-	if(time_running >= 0.9 SECONDS && stage == 2)
+	if(time_running >= 1.15 SECONDS && stage == 2)
 		playsound(parent_atom.loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
 		stage = 2.5
-	if(time_running >= 1 SECONDS && stage == 2.5)
+	if(time_running >= 1.25 SECONDS && stage == 2.5)
 		to_chat(parent, SPAN_HIGHDANGER("holy shit!"))
 		origin_nade.attached = FALSE
 		origin_nade.prime()
@@ -364,10 +364,10 @@
 		new /obj/flamer_fire(target, create_cause_data("Plasma Nade Cookoff"), reagent, 1)
 		mob.interior_crash_effect()
 		stage = 2
-	if(time_running >= 0.9 SECONDS && stage == 2)
+	if(time_running >= 1.15 SECONDS && stage == 2)
 		playsound(parent_atom.loc, 'sound/weapons/halo/plasma_grenade_windup.ogg', 100)
 		stage = 2.5
-	if(time_running >= 1 SECONDS && stage == 2.5)
+	if(time_running >= 1.25 SECONDS && stage == 2.5)
 		animation_flash_color(parent_atom, COLOR_BLUE)
 		var/turf/centre = mob.interior.get_middle_turf()
 		var/turf/target = get_random_turf_in_range(centre, 2, 0)
