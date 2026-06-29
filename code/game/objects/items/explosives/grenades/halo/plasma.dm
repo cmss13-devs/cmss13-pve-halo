@@ -167,7 +167,7 @@
 	src.origin_nade.windup_sound_queued = FALSE
 	animation_flash_color(parent_atom, COLOR_BLUE)
 	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
-	if(time_running >= 2.5 SECONDS)
+	if(time_running >= 1.25 SECONDS)
 		time_running = time_running-5
 	if(istype(parent_atom, /mob/living))
 		RegisterSignal(parent_atom, list(
