@@ -459,6 +459,13 @@
 /obj/structure/machinery/prop/almayer/computer/PC,
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
+"ajl" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	color = "#91a708";
+	id = "base_lz_armory3b"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "ajH" = (
 /obj/effect/decal/new_varadero/metal/straight{
 	dir = 8;
@@ -797,6 +804,14 @@
 	},
 /turf/open/asphalt/cement_sunbleached,
 /area/strategos/hydroplant_filtration)
+"apv" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	color = "#91a708";
+	dir = 4;
+	id = "base_east_secondary"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "apK" = (
 /obj/structure/closet/crate/trashcart{
 	pixel_x = 0;
@@ -1004,7 +1019,7 @@
 /area/strategos/crows_nest)
 "asI" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -2273,6 +2288,11 @@
 /obj/structure/prop/almayer/computers/mission_planning_system{
 	name = "computer";
 	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lockdown_hangar";
+	pixel_x = 2;
+	pixel_y = -3
 	},
 /turf/open/asphalt/cement_shaded/south,
 /area/strategos/crows_nest)
@@ -4253,6 +4273,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
+"buU" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	color = "#91a708";
+	id = "base_lz_armory4b"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "buW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/handrail/type_nv{
@@ -5068,7 +5095,7 @@
 /area/strategos/open)
 "bIQ" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /turf/open/floor/corrugated,
@@ -7152,6 +7179,13 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/open)
+"cud" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#634d36";
+	id = "base_lz_armoryE1"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "cuH" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/portable_atmospherics/canister/carbon_dioxide{
@@ -7990,7 +8024,9 @@
 /turf/open/floor/corsat/tan,
 /area/strategos/crows_nest)
 "cIQ" = (
-/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/secure,
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile/secure{
+	id = "base_warehouse_exit"
+	},
 /turf/open/new_varadero/taupe_concrete/grate_s,
 /area/strategos/crows_nest)
 "cIS" = (
@@ -8201,11 +8237,11 @@
 /area/strategos/hydroplant_zanzibar)
 "cLO" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile";
 	pixel_x = 0;
 	pixel_y = 11
@@ -11024,6 +11060,13 @@
 /obj/structure/machinery/light/double,
 /turf/open/new_varadero/sidewalk/east,
 /area/strategos/crows_nest)
+"dKs" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	color = "#634d36";
+	id = "base_lz_armory2"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "dKy" = (
 /turf/open/asphalt/cement_shaded/southwest,
 /area/strategos/hydroplant_filtration)
@@ -11941,6 +11984,16 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
+"dZl" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 1
+	},
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "dZo" = (
 /obj/structure/prop/invuln/darkness,
 /obj/effect/decal/cleanable/dirt,
@@ -13181,6 +13234,13 @@
 /obj/structure/prop/unsc_crate/stack,
 /turf/open/floor/corrugated,
 /area/strategos/rats_nest)
+"evR" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#634d36";
+	id = "base_lz_armory"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "evU" = (
 /obj/structure/largecrate/random/barrel/medical,
 /turf/open/floor/corrugated,
@@ -14854,7 +14914,7 @@
 /area/strategos/crows_nest)
 "eVM" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -17578,9 +17638,20 @@
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
 "fMX" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/almayer/computers/sensor_computer3,
 /obj/structure/machinery/light{
 	light_power = 0.75
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "warehouse2_R";
+	pixel_x = 10;
+	pixel_y = -3
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "warehouse2_L";
+	pixel_x = -9;
+	pixel_y = -3
 	},
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
@@ -17796,6 +17867,13 @@
 /obj/structure/prop/rock/black_ground/dense,
 /turf/open/gm/white_dirt,
 /area/strategos/open)
+"fPK" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	color = "#634d36";
+	id = "base_lz_armoryE3"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "fQb" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = -20;
@@ -19597,6 +19675,14 @@
 /obj/structure/prop/invuln/darkness,
 /turf/open/new_varadero/sidewalk/west,
 /area/strategos/dockyard_longshore_metal)
+"guY" = (
+/obj/structure/machinery/door/poddoor/almayer/locked{
+	color = "#91a708";
+	dir = 4;
+	id = "base_east_exit"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "gvf" = (
 /obj/structure/machinery/door/poddoor/almayer/locked{
 	color = "#91a708"
@@ -21695,7 +21781,7 @@
 /area/strategos/open)
 "hhF" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
@@ -21786,6 +21872,16 @@
 /obj/structure/prop/almayer/computers/sensor_computer3,
 /obj/structure/machinery/light{
 	light_power = 0.75
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "warehouse1_R";
+	pixel_x = 10;
+	pixel_y = -3
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "warehouse1_L";
+	pixel_x = -9;
+	pixel_y = -3
 	},
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
@@ -22082,11 +22178,11 @@
 /area/strategos/dockyard_longshore_metal)
 "hqq" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile";
 	pixel_x = 0;
 	pixel_y = 11
@@ -23815,7 +23911,8 @@
 	dir = 2
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
-	color = "#634d36"
+	color = "#634d36";
+	id = "base_lz_armory"
 	},
 /turf/open/floor/corsat/marked,
 /area/strategos/crows_nest)
@@ -24662,6 +24759,12 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0,
 /area/strategos/open)
+"ikE" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "cliff_hangar2"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "ikK" = (
 /obj/structure/machinery/light/small{
 	dir = 4;
@@ -26252,6 +26355,10 @@
 	},
 /turf/open/asphalt/cement_shaded,
 /area/strategos/open)
+"iPA" = (
+/obj/item/stool,
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "iPF" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/cargo_container/arious/right{
@@ -28628,6 +28735,12 @@
 	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/rats_nest)
+"jHy" = (
+/obj/structure/machinery/door/poddoor{
+	id = "cliff_hangar2"
+	},
+/turf/open/shuttle/black,
+/area/strategos/crows_nest)
 "jHA" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = 12
@@ -29744,6 +29857,18 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement_sunbleached,
 /area/strategos/open)
+"jZh" = (
+/obj/structure/prop/almayer/computers/mission_planning_system{
+	name = "computer";
+	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_armory_hangar";
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/turf/open/new_varadero/sidewalk/east,
+/area/strategos/crows_nest)
 "jZo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
@@ -30248,6 +30373,17 @@
 /obj/structure/machinery/light/double,
 /turf/open/asphalt/cement_shaded/east,
 /area/strategos/open)
+"kig" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "base_lockdown_hangar"
+	},
+/turf/open/floor/corsat/marked,
+/area/strategos/crows_nest)
 "kio" = (
 /obj/structure/flora/jungle/treeblocker,
 /turf/open/auto_turf/strata_grass/layer0,
@@ -31085,6 +31221,13 @@
 	},
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
+"kwo" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	color = "#634d36";
+	id = "base_armory_hangar"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "kwE" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/dock_concrete,
@@ -34008,6 +34151,18 @@
 	},
 /turf/open/asphalt/cement_shaded/east,
 /area/strategos/crows_nest)
+"lyK" = (
+/obj/structure/prop/almayer/computers/mission_planning_system{
+	name = "computer";
+	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "courtyard_outerR";
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/turf/open/floor/asteroid,
+/area/strategos/dockyard_longshore_metal)
 "lyP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
@@ -34506,6 +34661,13 @@
 	},
 /turf/open/floor/asteroidfloor,
 /area/strategos/hydroplant_zanzibar)
+"lJl" = (
+/obj/structure/machinery/power/breakerbox{
+	density = 0;
+	pixel_y = 24
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "lJn" = (
 /obj/structure/extinguisher_cabinet,
 /turf/closed/wall/new_varadero/concrete/reinforced,
@@ -35279,6 +35441,13 @@
 /obj/structure/largecrate/random/secure,
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/strategos/rats_nest)
+"lVI" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#634d36";
+	id = "base_lz_armory4"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "lWd" = (
 /obj/structure/platform{
 	dir = 1
@@ -36309,6 +36478,12 @@
 	},
 /turf/open/asphalt/cement_shaded,
 /area/strategos/open)
+"mkl" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armory2"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "mks" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = -8;
@@ -37294,8 +37469,9 @@
 /area/strategos/open)
 "mBp" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	color = "#634d36"
+	color = "#634d36";
+	id = "base_lz_armory";
+	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/strategos/crows_nest)
@@ -37564,6 +37740,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/taupe_concrete,
 /area/strategos/open)
+"mFh" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "base_lockdown_hangar"
+	},
+/turf/open/floor/corsat/marked,
+/area/strategos/crows_nest)
 "mFy" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/corrugated,
@@ -39272,6 +39456,19 @@
 "ngG" = (
 /turf/closed/shuttle/transit,
 /area/space)
+"ngM" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armory4b";
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armory4";
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "ngU" = (
 /obj/structure/platform{
 	dir = 4;
@@ -39284,6 +39481,11 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0,
 /area/strategos/open)
+"nhg" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/fence/halo,
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "nhh" = (
 /obj/structure/machinery/door/poddoor/railing/preopened{
 	dir = 2
@@ -42242,6 +42444,16 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/open)
+"ohj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/almayer/computers/sensor_computer3,
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_east_secondary";
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/crows_nest)
 "ohn" = (
 /obj/structure/machinery/vending/snack,
 /turf/open/asphalt/cement_shaded/full,
@@ -43698,6 +43910,11 @@
 	name = "computer";
 	desc = "a terminal for all sorts of things."
 	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_warehouse_exit";
+	pixel_x = 1;
+	pixel_y = -3
+	},
 /turf/open/floor/asteroid,
 /area/strategos/crows_nest)
 "oFF" = (
@@ -44304,6 +44521,12 @@
 	},
 /turf/open/floor/corsat/tan,
 /area/strategos/crows_nest)
+"oOE" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armoryE2"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "oOV" = (
 /obj/structure/prop/invuln/darkness,
 /obj/structure/platform,
@@ -45040,6 +45263,11 @@
 	},
 /turf/open/new_varadero/sidewalk/west,
 /area/strategos/open)
+"pbh" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/barrel/true_random,
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "pbF" = (
 /obj/structure/machinery/light/double{
 	dir = 4
@@ -46282,7 +46510,18 @@
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
 "pvZ" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/almayer/computers/sensor_computer3,
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_east_exit";
+	pixel_x = 10;
+	pixel_y = -3
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_east_secondary";
+	pixel_x = -9;
+	pixel_y = -3
+	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
 "pwd" = (
@@ -47533,6 +47772,16 @@
 	},
 /turf/open/floor/yellowfull,
 /area/strategos/hydroplant_zanzibar)
+"pQG" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/structure/machinery/prop/almayer/computer/PC{
+	pixel_x = 1;
+	pixel_y = 5
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "pQL" = (
 /obj/structure/platform/stone/new_varadero/east,
 /turf/open/gm/river/white_coast,
@@ -49407,6 +49656,12 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0,
 /area/strategos/open)
+"qvj" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armoryE3"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "qvm" = (
 /obj/structure/machinery/power/port_gen/pacman,
 /turf/open/floor/greengrid,
@@ -50030,7 +50285,7 @@
 /area/strategos/hydroplant_filtration)
 "qFF" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/item/prop/colony/canister{
@@ -52432,6 +52687,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement_shaded,
 /area/strategos/crows_nest)
+"ruJ" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armory"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "ruY" = (
 /obj/structure/largecrate/random/secure,
 /obj/structure/machinery/light/small/red{
@@ -53744,6 +54005,14 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
+"rQZ" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#999966";
+	dir = 4;
+	id = "warehouse1_L"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/dockyard_longshore_metal)
 "rRe" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -53984,6 +54253,14 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/strata/fake_wood,
 /area/strategos/open)
+"rVl" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "base_lz_armoryE2"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "rVP" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal7";
@@ -56572,7 +56849,7 @@
 /area/strategos/rats_nest)
 "sLx" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/structure/machinery/light{
@@ -59880,7 +60157,7 @@
 /area/strategos/rats_nest)
 "tOl" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile";
 	pixel_x = -9;
 	pixel_y = 0
@@ -61014,6 +61291,16 @@
 	},
 /turf/open/new_varadero/sidewalk/west,
 /area/strategos/hydroplant_filtration)
+"ugH" = (
+/obj/structure/machinery/door/airlock/voi{
+	dir = 2
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	color = "#634d36";
+	id = "base_lz_armory2"
+	},
+/turf/open/floor/corsat/marked,
+/area/strategos/crows_nest)
 "ugP" = (
 /obj/structure/machinery/light{
 	light_power = 0.75;
@@ -61382,7 +61669,7 @@
 /area/strategos/open)
 "umE" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /obj/effect/decal/cleanable/dirt,
@@ -62065,6 +62352,19 @@
 "uxA" = (
 /turf/open/new_varadero/sidewalk/northwest,
 /area/strategos/crows_nest)
+"uxD" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armory3b";
+	pixel_x = 0;
+	pixel_y = 10
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armory3";
+	pixel_x = 0;
+	pixel_y = -10
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "uxJ" = (
 /turf/open/floor/asteroid,
 /area/strategos/crows_nest)
@@ -62405,6 +62705,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/asteroidfloor,
 /area/strategos/hydroplant_zanzibar)
+"uEm" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#999966";
+	dir = 4;
+	id = "warehouse2_L"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/dockyard_longshore_metal)
 "uEp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/small{
@@ -63227,7 +63535,9 @@
 /turf/open/floor/corrugated,
 /area/strategos/rats_nest)
 "uPK" = (
-/obj/structure/machinery/door/poddoor,
+/obj/structure/machinery/door/poddoor{
+	id = "cliff_hangar1"
+	},
 /turf/open/shuttle/black,
 /area/strategos/crows_nest)
 "uPL" = (
@@ -63348,6 +63658,14 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/sidewalk/north,
 /area/strategos/rats_nest)
+"uTg" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "easter_egg_armory"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "uTi" = (
 /obj/effect/decal/new_varadero/metal/straight{
 	dir = 4;
@@ -64157,6 +64475,12 @@
 /obj/structure/platform/stone/new_varadero_concrete/north,
 /turf/open/asphalt/cement_sunbleached,
 /area/strategos/open)
+"viQ" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "cliff_hangar1"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "viV" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/fireaxecabinet{
@@ -64594,6 +64918,14 @@
 	},
 /obj/item/clothing/ears/earmuffs,
 /turf/open/floor/corrugated,
+/area/strategos/dockyard_longshore_metal)
+"vqj" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#999966";
+	dir = 4;
+	id = "warehouse2_R"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
 /area/strategos/dockyard_longshore_metal)
 "vqw" = (
 /obj/structure/prop/invuln/overhead/flammable_pipe/fly{
@@ -65448,13 +65780,13 @@
 /area/strategos/dockyard_longshore_metal)
 "vFJ" = (
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile";
 	pixel_x = -9;
 	pixel_y = 13
 	},
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile";
 	pixel_x = -9;
 	pixel_y = 22
@@ -66344,6 +66676,14 @@
 "vWC" = (
 /turf/open/floor/asteroidwarning/east,
 /area/strategos/hydroplant_filtration)
+"vWP" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#999966";
+	dir = 4;
+	id = "warehouse1_R"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/dockyard_longshore_metal)
 "vWQ" = (
 /obj/structure/prop/invuln/darkness,
 /obj/structure/machinery/light/double{
@@ -66529,6 +66869,11 @@
 /obj/structure/platform_decoration/stone/new_varadero_concrete/north,
 /turf/open/asphalt/cement_sunbleached/cement_sunbleached3,
 /area/strategos/open)
+"vZt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/largecrate/random/secure,
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_ghost_town)
 "vZv" = (
 /obj/item/lightstick/red/planted{
 	pixel_x = 5;
@@ -66807,6 +67152,18 @@
 	},
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
+"wdV" = (
+/obj/structure/prop/almayer/computers/mission_planning_system{
+	name = "computer";
+	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_armory_hangar";
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/turf/open/new_varadero/sidewalk/northeast,
+/area/strategos/crows_nest)
 "wei" = (
 /obj/structure/surface/rack,
 /obj/structure/surface/rack{
@@ -67169,7 +67526,8 @@
 /obj/structure/machinery/door/airlock/voi,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
-	color = "#634d36"
+	color = "#634d36";
+	id = "easter_egg_armory"
 	},
 /turf/open/floor/corsat/marked,
 /area/strategos/crows_nest)
@@ -67440,7 +67798,7 @@
 	dir = 8
 	},
 /obj/structure/ship_ammo/rocket/banshee{
-	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords.[2][3] They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
+	desc = "The Scorpion missile is a type of explosive ordnance used by the United Nations Space Command. These missiles are commonly mounted on the UNSC's AV-19 SkyHawk jets and occasionally GA-TL1 Longswords. They are equipped with motion tracking systems and proximity detonators that greatly increase their chances of crippling or destroying a target. They are also able to attain high cruising speeds and are very accurate, thanks to their advanced guidance systems, which quickly locate and lock onto a target.";
 	name = "ATM-77C 'Scorpian' missile"
 	},
 /turf/open/asphalt/cement_shaded/west,
@@ -67599,6 +67957,13 @@
 /obj/structure/prop/new_varadero_props/support_beam/half,
 /turf/closed/wall/new_varadero/reinforced/hull,
 /area/strategos/dockyard_longshore_metal)
+"wpS" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	color = "#634d36";
+	id = "base_lz_armory3"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/crows_nest)
 "wqj" = (
 /obj/structure/bed/chair/office/light,
 /obj/effect/decal/cleanable/dirt,
@@ -68852,7 +69217,8 @@
 "wMG" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
-	color = "#634d36"
+	color = "#634d36";
+	id = "base_lockdown_hangar"
 	},
 /turf/open/floor/corsat/marked,
 /area/strategos/crows_nest)
@@ -70765,7 +71131,8 @@
 /area/strategos/rats_nest)
 "xsM" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
-	color = "#634d36"
+	color = "#634d36";
+	id = "base_lockdown_hangar"
 	},
 /turf/open/floor/corsat/marked,
 /area/strategos/crows_nest)
@@ -72566,6 +72933,12 @@
 /obj/item/folder/black_random,
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
+"xYl" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "base_lz_armoryE1"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "xYO" = (
 /obj/structure/fence/halo,
 /obj/effect/decal/cleanable/dirt,
@@ -72662,6 +73035,12 @@
 "yaJ" = (
 /turf/open/floor/strata/blue1,
 /area/strategos/crows_nest)
+"yaT" = (
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "easter_egg_armory"
+	},
+/turf/open/gm/dirt2,
+/area/strategos/oob_rock)
 "yaW" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	color = "#999966"
@@ -75517,8 +75896,8 @@ dsp
 bVL
 qbR
 qbR
-pPs
-tYO
+pbh
+cZf
 qbR
 pPs
 pPs
@@ -75819,11 +76198,11 @@ dsp
 dsp
 qbR
 qbR
-pPs
-tYO
+nhg
+sPJ
 qbR
-tYO
-tYO
+sPJ
+sPJ
 qbR
 qbR
 lzN
@@ -76121,12 +76500,12 @@ dsp
 dsp
 qbR
 qbR
+dZl
+ezC
+pha
 tYO
 tYO
-tYO
-tYO
-tYO
-tYO
+pha
 ucF
 whm
 uKB
@@ -76423,12 +76802,12 @@ dsp
 dsp
 qbR
 qbR
+pQG
+iPA
 tYO
 tYO
 tYO
-tYO
-tYO
-tYO
+cZf
 qbR
 fOk
 wgP
@@ -76725,12 +77104,12 @@ dsp
 dsp
 qbR
 qbR
+ezC
 tYO
 tYO
 tYO
 tYO
-tYO
-tYO
+kYM
 ucF
 fOk
 wgP
@@ -77329,12 +77708,12 @@ dsp
 vRB
 qbR
 qbR
+bbM
 tYO
+orA
+ezC
 tYO
-tYO
-tYO
-tYO
-tYO
+orA
 ucF
 mIo
 tXn
@@ -77631,11 +78010,11 @@ rjO
 rjO
 qbR
 qbR
-pPs
-tYO
+nhg
+sPJ
 qbR
-tYO
-tYO
+sPJ
+sPJ
 qbR
 qbR
 yiC
@@ -77933,10 +78312,10 @@ rHR
 rHR
 qUm
 qUm
-tYO
-tYO
+lJl
+kYM
 qbR
-pPs
+vZt
 pPs
 qbR
 qbR
@@ -134145,7 +134524,7 @@ xWw
 xWw
 xWw
 kvM
-bxw
+fPK
 xnM
 xnM
 xnM
@@ -134159,7 +134538,7 @@ epj
 gmQ
 xMy
 rkm
-sUk
+evR
 nIZ
 nIZ
 bNW
@@ -134447,7 +134826,7 @@ iUC
 iUC
 iUC
 iUC
-bxw
+fPK
 rkm
 rkm
 rkm
@@ -134461,7 +134840,7 @@ epj
 pcP
 rkm
 rkm
-sUk
+evR
 nIZ
 dxf
 vpi
@@ -134749,7 +135128,7 @@ fkm
 fkm
 fkm
 fkm
-bxw
+fPK
 bsQ
 bsQ
 rkm
@@ -134763,7 +135142,7 @@ wrH
 pcP
 rkm
 rkm
-sUk
+evR
 nIZ
 mFV
 vpi
@@ -135051,7 +135430,7 @@ xWw
 rHH
 xWw
 xWw
-bxw
+fPK
 gpZ
 gpZ
 qVN
@@ -135065,7 +135444,7 @@ wrH
 ccg
 dee
 rkm
-sUk
+evR
 nIZ
 nIZ
 nIZ
@@ -135656,7 +136035,7 @@ vCY
 vCY
 vCY
 bAe
-olY
+qvj
 bAe
 bAe
 oBK
@@ -135668,7 +136047,7 @@ rkm
 bAe
 bAe
 bAe
-olY
+ruJ
 bAe
 qvy
 qvy
@@ -135970,7 +136349,7 @@ rkm
 bAe
 bAe
 bAe
-olY
+mkl
 bAe
 qvy
 qvy
@@ -136554,14 +136933,14 @@ jYi
 jLc
 ryp
 eiC
-gvf
+ajl
 nIZ
 nIZ
 nIZ
 nIZ
 nIZ
 nIZ
-bxw
+wpS
 rkm
 uHf
 eWd
@@ -136575,14 +136954,14 @@ epj
 gmQ
 xMy
 rkm
-bxw
+dKs
 nIZ
 nIZ
 bNW
 qeV
 nIZ
 nhk
-hWb
+ugH
 pRU
 xPM
 mzH
@@ -136856,14 +137235,14 @@ jYi
 qVy
 mxR
 kCS
-gvf
+ajl
 nIZ
 wqK
 wqK
 wqK
 vpi
 bNW
-bxw
+wpS
 rkm
 rkm
 sIY
@@ -136877,7 +137256,7 @@ epj
 pcP
 rkm
 rkm
-bxw
+dKs
 nIZ
 rAK
 wqK
@@ -137158,14 +137537,14 @@ jYi
 tPO
 jYi
 kCS
-gvf
+ajl
 nIZ
 wqK
 wqK
 vpi
 vpi
 nIZ
-bxw
+wpS
 rkm
 bsQ
 sIY
@@ -137179,7 +137558,7 @@ wrH
 ewF
 rkm
 rkm
-bxw
+dKs
 nIZ
 vpi
 irN
@@ -137460,14 +137839,14 @@ jYi
 hxN
 xro
 pIB
-gvf
+ajl
 nIZ
 jSH
 bIQ
 bIQ
 diL
 nIZ
-bxw
+wpS
 rkm
 oBi
 bOM
@@ -137481,7 +137860,7 @@ wrH
 ccg
 dee
 rkm
-bxw
+dKs
 nIZ
 nIZ
 bNW
@@ -138072,7 +138451,7 @@ qvy
 qvy
 qvy
 bAe
-olY
+uxD
 bAe
 bAe
 oBK
@@ -138374,7 +138753,7 @@ qvy
 qvy
 qvy
 bAe
-olY
+ngM
 bAe
 bAe
 bAe
@@ -138386,7 +138765,7 @@ rkm
 bAe
 bAe
 bAe
-olY
+xYl
 sIf
 lzN
 lzN
@@ -138970,14 +139349,14 @@ jYi
 dgD
 ryp
 eiC
-gvf
+buU
 nIZ
 bNW
 bNW
 nIZ
 bNW
 nIZ
-sUk
+lVI
 rkm
 uHf
 eWd
@@ -138991,7 +139370,7 @@ cGf
 tvT
 xnM
 xnM
-sUk
+cud
 xWw
 kvM
 xWw
@@ -139272,14 +139651,14 @@ jYi
 tPO
 gnk
 eQM
-gvf
+buU
 nIZ
 wqK
 vpi
 qid
 wqK
 nIZ
-sUk
+lVI
 rkm
 rkm
 syb
@@ -139293,7 +139672,7 @@ bsQ
 rkm
 rkm
 rkm
-sUk
+cud
 iUC
 iUC
 eVG
@@ -139574,14 +139953,14 @@ jYi
 tPO
 jYi
 eQM
-gvf
+buU
 nIZ
 vpi
 wqK
 wqK
 wqK
 bNW
-sUk
+lVI
 rkm
 rkm
 syb
@@ -139595,7 +139974,7 @@ rkm
 rkm
 rkm
 rkm
-sUk
+cud
 fkm
 fkm
 fkm
@@ -139876,14 +140255,14 @@ jYi
 hxN
 hro
 fTr
-gvf
+buU
 nIZ
 nIZ
 nIZ
 nIZ
 bNW
 bNW
-sUk
+lVI
 rkm
 oBi
 xKp
@@ -139897,7 +140276,7 @@ xuD
 gpZ
 gpZ
 gpZ
-sUk
+cud
 xWw
 rHH
 xWw
@@ -141096,14 +141475,14 @@ lzN
 lzN
 lzN
 bAe
-rTj
-rTj
-rTj
-rTj
-rTj
+rVl
+rVl
+rVl
+rVl
+rVl
 bAe
 lzN
-olY
+oOE
 olY
 lzN
 lzN
@@ -144422,9 +144801,9 @@ azN
 rhC
 uxJ
 uxJ
-wSQ
+wdV
 qvy
-fkm
+jZh
 rmE
 fkm
 hHL
@@ -144725,7 +145104,7 @@ rhC
 rhC
 uxJ
 uxJ
-bxw
+kwo
 uxJ
 rhC
 rhC
@@ -145027,7 +145406,7 @@ rhC
 rhC
 rwn
 rhC
-bxw
+kwo
 rhC
 rhC
 rhC
@@ -145329,7 +145708,7 @@ rhC
 rhC
 uxJ
 rhC
-bxw
+kwo
 uxJ
 uxJ
 rhC
@@ -145631,7 +146010,7 @@ rhC
 rhC
 uxJ
 rhC
-bxw
+kwo
 rhC
 rhC
 uxJ
@@ -172856,11 +173235,11 @@ oeS
 wpO
 uZu
 uZu
-bzn
-bzn
-bzn
-bzn
-bzn
+uEm
+uEm
+uEm
+uEm
+uEm
 qyc
 tqG
 iDl
@@ -172871,11 +173250,11 @@ bVY
 iDl
 tqG
 qyc
-bzn
-bzn
-bzn
-bzn
-bzn
+uEm
+uEm
+uEm
+uEm
+uEm
 uZu
 uZu
 wpO
@@ -184282,7 +184661,7 @@ qyc
 qyc
 qyc
 hog
-xKD
+lyK
 qyc
 qyc
 dxJ
@@ -188098,8 +188477,8 @@ qvy
 qvy
 qvy
 qvy
-eGI
-bim
+mFh
+kig
 qvy
 qvy
 qvy
@@ -190341,11 +190720,11 @@ oeS
 uZu
 uZu
 uZu
-bzn
-bzn
-bzn
-bzn
-bzn
+rQZ
+rQZ
+rQZ
+rQZ
+rQZ
 qyc
 uBL
 dxJ
@@ -190356,11 +190735,11 @@ dxJ
 fJe
 fJe
 qyc
-bzn
-bzn
-bzn
-bzn
-bzn
+rQZ
+rQZ
+rQZ
+rQZ
+rQZ
 uZu
 uZu
 wpO
@@ -190976,11 +191355,11 @@ oeS
 uZu
 uZu
 uZu
-bzn
-bzn
-bzn
-bzn
-bzn
+vqj
+vqj
+vqj
+vqj
+vqj
 qyc
 bjd
 iVl
@@ -190991,11 +191370,11 @@ xds
 nUX
 xds
 qyc
-bzn
-bzn
-bzn
-bzn
-bzn
+vqj
+vqj
+vqj
+vqj
+vqj
 uZu
 uZu
 uZu
@@ -196516,7 +196895,7 @@ jsa
 jsa
 jsa
 lzN
-bAe
+viQ
 bAe
 btf
 nIZ
@@ -196818,7 +197197,7 @@ jsa
 jsa
 lzN
 lzN
-bAe
+olY
 bAe
 xtM
 nIZ
@@ -197120,7 +197499,7 @@ jsa
 lzN
 lzN
 lzN
-bAe
+olY
 bAe
 xtM
 nIZ
@@ -197422,7 +197801,7 @@ jsa
 jsa
 lzN
 lzN
-bAe
+ikE
 bAe
 btf
 nIZ
@@ -198626,7 +199005,7 @@ lzN
 jsa
 jsa
 jDy
-uPK
+jHy
 jDy
 bNW
 bNW
@@ -198928,7 +199307,7 @@ bES
 jsa
 epR
 jDy
-uPK
+jHy
 jDy
 vbD
 xFz
@@ -199230,7 +199609,7 @@ nMf
 gjx
 epR
 jDy
-uPK
+jHy
 jDy
 xWw
 asH
@@ -199532,7 +199911,7 @@ nMf
 nMf
 rqN
 jDy
-uPK
+jHy
 jDy
 xWw
 xWw
@@ -199834,7 +200213,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 sHT
 xUM
@@ -200136,7 +200515,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 mOz
 xeY
@@ -200438,7 +200817,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 mOz
 mOz
@@ -200740,7 +201119,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 mOz
 fng
@@ -201042,7 +201421,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 mOz
 fng
@@ -201344,7 +201723,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 sHT
 exx
@@ -201646,7 +202025,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 aFM
 xho
@@ -201753,7 +202132,7 @@ lTI
 mxR
 jYi
 bAe
-olY
+yaT
 bAe
 nin
 yds
@@ -201948,7 +202327,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 xWw
 xWw
@@ -202059,9 +202438,9 @@ bAe
 bAe
 qvy
 qvy
-rTj
-rTj
-rTj
+uTg
+uTg
+uTg
 qvy
 qvy
 qvy
@@ -202250,7 +202629,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 vbD
 xUM
@@ -202552,7 +202931,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 mOz
 xeY
@@ -202854,7 +203233,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 mOz
 fng
@@ -203156,7 +203535,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 gIc
 fng
 mOz
@@ -203458,7 +203837,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 fng
 mOz
@@ -203760,7 +204139,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 sHT
 kWJ
@@ -204062,7 +204441,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 xWw
 xho
@@ -204364,7 +204743,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 xWw
 qOw
@@ -204459,7 +204838,7 @@ jYi
 wKy
 qbi
 tcF
-pvZ
+ohj
 qvy
 qvy
 qvy
@@ -204666,7 +205045,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 sHT
 jsU
@@ -204754,11 +205133,11 @@ qvy
 qvy
 qvy
 qvy
-kIJ
-kIJ
-kIJ
-kIJ
-kIJ
+apv
+apv
+apv
+apv
+apv
 qvy
 qvy
 qvy
@@ -204968,7 +205347,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 bNW
 fzA
@@ -205270,7 +205649,7 @@ nMf
 nMf
 wkb
 jDy
-uPK
+jHy
 jDy
 bNW
 bNW
@@ -206264,11 +206643,11 @@ qvy
 qvy
 qvy
 qvy
-kIJ
-kIJ
-kIJ
-kIJ
-kIJ
+guY
+guY
+guY
+guY
+guY
 qvy
 qvy
 qvy
@@ -208461,11 +208840,11 @@ wkg
 uZu
 uZu
 uZu
-bzn
-bzn
-bzn
-bzn
-bzn
+vWP
+vWP
+vWP
+vWP
+vWP
 qyc
 bjd
 iVl
@@ -208476,11 +208855,11 @@ xds
 nUX
 xds
 qyc
-bzn
-bzn
-bzn
-bzn
-bzn
+vWP
+vWP
+vWP
+vWP
+vWP
 uZu
 uZu
 uZu
