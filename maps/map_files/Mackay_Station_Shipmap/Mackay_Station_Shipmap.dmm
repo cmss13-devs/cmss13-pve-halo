@@ -94,6 +94,10 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
+"aak" = (
+/obj/item/tacmap_map,
+/turf/open/space/basic,
+/area/space)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -3935,10 +3939,6 @@
 /obj/item/storage/pouch/shotgun/large{
 	pixel_x = 8;
 	pixel_y = -6
-	},
-/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
-	pixel_x = 12;
-	pixel_y = 14
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -17820,6 +17820,10 @@
 "mwa" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue,
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
+	pixel_x = -20;
+	pixel_y = 16
+	},
 /obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -47260,7 +47264,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aak
 kIa
 kIa
 "}
@@ -47576,7 +47580,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aak
 kIa
 kIa
 kIa
@@ -51632,7 +51636,7 @@ kIa
 kIa
 kIa
 kIa
-kIa
+aak
 kIa
 kIa
 kIa
