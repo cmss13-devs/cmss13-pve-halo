@@ -1893,7 +1893,9 @@ not all weapons use normal magazines etc. load_into_chamber() itself is designed
 	if(!istype(gun_user) || !isturf(gun_user.loc))
 		return
 	if(muzzle_flash && !muzzle_flash.applied)
+		// HALO PVE EDIT START - Muzzle Flash Attachment
 		var/atom/movable/flash_loc = gun_user
+		// HALO PVE EDIT END
 		var/prev_light = light_range
 		if(!light_on && (light_range <= muzzle_flash_lum))
 			set_light_range(muzzle_flash_lum)
