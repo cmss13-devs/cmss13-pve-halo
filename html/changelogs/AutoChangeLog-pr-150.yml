@@ -1,0 +1,8 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - rscadd: "Some new things to the loadout options, others were renamed"
+  - rscdel: "A lot of items that didn't fit were removed from the loadout options"
+  - bugfix: "Descriptions of webbings de-Aliensified"
+  - bugfix: "Armor attachments will now display on the inventory icon"
+  - imageadd: "New icons for the standard-issue knife, machete and tacmap tablet, former two courtesy of @chromazul on discord"
