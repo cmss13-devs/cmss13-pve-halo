@@ -147,7 +147,6 @@
 /obj/item/clothing/accessory/storage/webbing/m52b/Initialize()
 	. = ..()
 	inv_overlay = image("icon" = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', "icon_state" = "[item_state? "[item_state]" : "[icon_state]"]")
-	flags_atom |= USES_HEARING
 
 /obj/item/storage/internal/accessory/webbing/m52bgeneric
 	cant_hold = list(

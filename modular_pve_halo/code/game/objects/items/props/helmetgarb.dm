@@ -19,8 +19,8 @@
 /obj/item/prop/helmetgarb/lucky_feather/yellow
 	desc = "A tacky plastic feather, colored an unyielding yellow color."
 
-/obj/item/prop/helmetgarb/flair_io/halo
+/obj/item/prop/helmetgarb/flair_io
 	desc = "A little pin modelled after the symbol painted upon the first lander which touched down on Io's surface."
 
-/obj/item/prop/helmetgarb/flair_peace/halo
+/obj/item/prop/helmetgarb/flair_peace
 	desc = "Something to help suggest the duality of man, that jungian thing."
