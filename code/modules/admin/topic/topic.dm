@@ -1187,14 +1187,7 @@
 			choice = "miss"
 		if(template_choice == "Random - 60% Crash / 30% Dmg / 10% Miss")
 			// weighted at 60% crash, 30% damage, 10% miss
-			var/list/random_choice = list()
-			for(var/i = 1 to 6)
-				random_choice += "crash"
-			for(var/i = 1 to 3)
-				random_choice += "damage"
-			for(var/i = 1 to 1)
-				random_choice += "miss"
-			choice = pick(random_choice)
+			choice = pick_weight(list("crash"= 60, "damage"= 30, "miss"= 10))
 		rocket.hit_announce(sound_turf, choice, missile_name)
 
 	else if(href_list["admincancelpredsd"])
