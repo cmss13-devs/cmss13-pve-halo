@@ -7523,11 +7523,6 @@
 /obj/structure/platform/stair_cut/alt,
 /turf/open/asphalt/cement_shaded/west,
 /area/strategos/hydroplant_filtration)
-"cAa" = (
-/obj/structure/platform/stone/new_varadero_concrete/west,
-/obj/structure/platform/stone/new_varadero_concrete/west,
-/turf/open/floor/strata/multi_tiles/southeast,
-/area/strategos/crows_nest)
 "cAj" = (
 /obj/structure/prop/unsc_crate/corrugated/red,
 /obj/effect/decal/cleanable/dirt,
@@ -35234,12 +35229,6 @@
 /obj/structure/machinery/disposal,
 /turf/open/new_varadero/dock_concrete,
 /area/strategos/crows_nest)
-"lQy" = (
-/obj/structure/platform/stone/new_varadero_concrete/west,
-/obj/structure/platform/stone/new_varadero_concrete/west,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/asphalt/cement_shaded/full,
-/area/strategos/crows_nest)
 "lQC" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/largecrate/random/barrel/true_random,
@@ -45161,11 +45150,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/strategos/dockyard_longshore_glass)
-"oYZ" = (
-/obj/structure/platform/stone/new_varadero_concrete/west,
-/obj/structure/platform/stone/new_varadero_concrete/west,
-/turf/open/asphalt/cement_shaded/full,
-/area/strategos/crows_nest)
 "oZn" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/flora/pottedplant{
@@ -201175,11 +201159,11 @@ hND
 vMy
 cvg
 sYL
-oYZ
-oYZ
-oYZ
-oYZ
-lQy
+ldS
+ldS
+hND
+hND
+hND
 vMy
 xVo
 wZT
@@ -202123,7 +202107,7 @@ sMc
 uJW
 aCJ
 iVM
-cAa
+baz
 ueK
 yds
 tIu
@@ -202727,7 +202711,7 @@ sMc
 cPr
 aCJ
 iVM
-cAa
+baz
 omo
 tvB
 qkl
@@ -204497,11 +204481,11 @@ ldS
 vMy
 aFM
 wZT
-lQy
-lQy
-lQy
-oYZ
-lQy
+ldS
+ldS
+hND
+hND
+hND
 vMy
 aFM
 wZT
