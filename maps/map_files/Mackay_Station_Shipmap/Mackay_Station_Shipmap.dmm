@@ -8,48 +8,52 @@
 /turf/open/floor/almayer/red/north,
 /area/mackay_station/romeo/redcommons2)
 "aab" = (
+/obj/item/tacmap_map,
+/turf/open/space/basic,
+/area/space)
+"aac" = (
 /obj/structure/flora/pottedplant{
 	pixel_x = -9;
 	pixel_y = -1
 	},
 /turf/open/floor/almayer/silver/southwest,
 /area/mackay_station/romeo/redtram1)
-"aac" = (
+"aad" = (
 /obj/structure/flora/pottedplant{
 	pixel_x = -8;
 	pixel_y = -1
 	},
 /turf/open/floor/almayer/silver/southwest,
 /area/mackay_station/romeo/redtram2)
-"aad" = (
+"aae" = (
 /obj/structure/flora/pottedplant{
 	pixel_x = 8;
 	pixel_y = -1
 	},
 /turf/open/floor/almayer/silver/southeast,
 /area/mackay_station/romeo/redtram2)
-"aae" = (
+"aaf" = (
 /obj/structure/machinery/computer/tech_control{
 	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/romeo/redtram1)
-"aaf" = (
+"aag" = (
 /obj/structure/prop/almayer/computers/sensor_computer3{
 	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/romeo/redtram1)
-"aag" = (
+"aah" = (
 /obj/structure/machinery/computer/supply_drop_console/limited/alternate{
 	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/romeo/redtram2)
-"aah" = (
+"aai" = (
 /obj/structure/prop/almayer/computers/sensor_computer3{
 	pixel_x = 0;
 	pixel_y = 16
@@ -62,7 +66,7 @@
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/romeo/redtram2)
-"aai" = (
+"aaj" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
 	pixel_x = -8;
@@ -78,7 +82,7 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
-"aaj" = (
+"aak" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/mre{
 	pixel_x = 6;
@@ -94,10 +98,6 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
-"aak" = (
-/obj/item/tacmap_map,
-/turf/open/space/basic,
-/area/space)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -47264,7 +47264,7 @@ kIa
 kIa
 kIa
 kIa
-aak
+aab
 kIa
 kIa
 "}
@@ -47580,7 +47580,7 @@ kIa
 kIa
 kIa
 kIa
-aak
+aab
 kIa
 kIa
 kIa
@@ -51636,7 +51636,7 @@ kIa
 kIa
 kIa
 kIa
-aak
+aab
 kIa
 kIa
 kIa
@@ -57131,7 +57131,7 @@ dGo
 gZP
 dGo
 gZP
-aai
+aaj
 udL
 kIa
 kIa
@@ -62837,7 +62837,7 @@ dGo
 gZP
 dGo
 gZP
-aaj
+aak
 udL
 kIa
 kIa
@@ -88340,8 +88340,8 @@ hqz
 hqz
 gGl
 yfi
-aae
-aab
+aaf
+aac
 gBS
 kIa
 gBS
@@ -93095,7 +93095,7 @@ szb
 szb
 szb
 wss
-aaf
+aag
 hBq
 gBS
 gBS
@@ -149521,8 +149521,8 @@ xmc
 xmc
 oAV
 gKV
-aag
-aac
+aah
+aad
 ptq
 ptq
 rUE
@@ -154276,8 +154276,8 @@ eUu
 eUu
 eUu
 mKq
-aah
-aad
+aai
+aae
 ptq
 kIa
 ptq
