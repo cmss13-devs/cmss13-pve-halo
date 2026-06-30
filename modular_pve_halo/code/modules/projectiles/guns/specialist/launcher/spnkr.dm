@@ -3,6 +3,7 @@
 /obj/item/weapon/gun/halo_launcher // im a lazy bastard and dont want to deal with killing all of the dumb procs sorry :)
 	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_weapons.dmi'
 	icon_state = null
+	indestructible = TRUE
 
 // ====================== SPNKR LAUNCHER ====================== \\
 
