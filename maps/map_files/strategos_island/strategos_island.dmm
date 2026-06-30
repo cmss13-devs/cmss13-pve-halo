@@ -832,10 +832,10 @@
 /turf/open/floor/asteroidfloor,
 /area/strategos/hydroplant_zanzibar)
 "apS" = (
-/obj/structure/prop/invuln/darkness,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/new_varadero/sidewalk/south,
-/area/strategos/dockyard_longshore_metal)
+/obj/structure/cargo_container/unsc/vertical/south_2,
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/rats_nest)
 "apT" = (
 /obj/structure/barricade/handrail/wire,
 /obj/structure/surface/table/reinforced/black,
@@ -873,6 +873,13 @@
 "aqg" = (
 /turf/open/floor/asteroidwarning/west,
 /area/strategos/hydroplant_ghost_town)
+"aql" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#999966";
+	id = "port_loading1B"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/dockyard_longshore_metal)
 "aqt" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -1903,6 +1910,12 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/hydroplant_ghost_town)
+"aHP" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 1
+	},
+/turf/open/new_varadero/sidewalk/north,
+/area/strategos/crows_nest)
 "aHT" = (
 /obj/structure/platform{
 	dir = 1
@@ -2153,6 +2166,16 @@
 	pixel_y = 0
 	},
 /turf/open/asphalt/cement_sunbleached,
+/area/strategos/open)
+"aMk" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 0
+	},
+/turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/open)
 "aMl" = (
 /obj/structure/machinery/light{
@@ -5773,6 +5796,14 @@
 "bTY" = (
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/hydroplant_zanzibar)
+"bUc" = (
+/obj/structure/prop/unsc_crate/corrugated/green,
+/obj/item/prop/almayer/comp_open{
+	pixel_x = 1;
+	pixel_y = 14
+	},
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/crows_nest)
 "bUw" = (
 /obj/structure/machinery/door_control/brbutton/alt{
 	pixel_x = 10;
@@ -10037,6 +10068,11 @@
 /obj/structure/machinery/light/double{
 	dir = 1
 	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "north_LZ2entry";
+	pixel_x = 2;
+	pixel_y = -3
+	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
 "dsp" = (
@@ -10095,6 +10131,13 @@
 /obj/structure/largecrate/random/secure,
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
+"dun" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/folder/black_random,
+/turf/open/floor/strata/fake_wood,
+/area/strategos/hydroplant_filtration)
 "dup" = (
 /obj/effect/decal/new_varadero/warning/continuous{
 	dir = 8;
@@ -10281,6 +10324,10 @@
 "dxf" = (
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
+	},
+/obj/item/ammo_box/rounds/unsc/ma5{
+	pixel_x = -5;
+	pixel_y = -2
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/strategos/crows_nest)
@@ -10826,16 +10873,19 @@
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
 	},
+/obj/item/paper_bin{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/obj/item/tool/pen/blue/clicky,
 /turf/open/floor/strata/fake_wood,
 /area/strategos/hydroplant_filtration)
 "dGd" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 4;
-	color = "#634d36"
+	color = "#999966";
+	id = "port_loading2"
 	},
-/obj/structure/prop/invuln/darkness,
-/turf/open/new_varadero/taupe_concrete/grate,
+/turf/open/new_varadero/taupe_concrete/grate_s,
 /area/strategos/dockyard_longshore_metal)
 "dGi" = (
 /turf/open/new_varadero/sidewalk/northwest,
@@ -13796,7 +13846,7 @@
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
 	},
-/obj/item/storage/box/tear_packet/m7,
+/obj/item/ammo_box/rounds/unsc/m7,
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
 "eEF" = (
@@ -15120,13 +15170,13 @@
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
 "eZp" = (
-/obj/structure/blocker/invisible_wall,
-/obj/structure/machinery/light/small{
-	dir = 1;
-	light_power = 0.25
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "east_cargo_hangar_load"
 	},
-/turf/open/asphalt/cement_sunbleached,
-/area/strategos/open)
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "eZq" = (
 /obj/effect/decal/path_edges/mud_corner{
 	dir = 10
@@ -15145,9 +15195,11 @@
 /turf/open/floor/asteroid,
 /area/strategos/dockyard_longshore_glass)
 "eZQ" = (
+/obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
-	color = "#634d36"
+	color = "#634d36";
+	id = "port_split_gate"
 	},
 /obj/structure/prop/invuln/darkness,
 /turf/open/new_varadero/taupe_concrete/grate,
@@ -15523,6 +15575,13 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
+"ffz" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/ashtray/bronze,
+/turf/open/floor/carpet,
+/area/strategos/hydroplant_filtration)
 "ffK" = (
 /obj/effect/decal/new_varadero/concrete2/half_diagonal{
 	dir = 4
@@ -17075,6 +17134,13 @@
 	},
 /turf/open/floor/corsat/gamma,
 /area/strategos/crows_nest)
+"fDC" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/hydroplant_zanzibar)
 "fDD" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -17866,6 +17932,15 @@
 	},
 /turf/open/floor/yellowfull,
 /area/strategos/hydroplant_zanzibar)
+"fPv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/asphalt/cement_shaded,
+/area/strategos/dockyard_longshore_metal)
 "fPw" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal3";
@@ -18214,6 +18289,12 @@
 /obj/structure/prop/invuln/darkness,
 /turf/open/new_varadero/sidewalk/north,
 /area/strategos/hydroplant_zanzibar)
+"fUw" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/corsat/tan,
+/area/strategos/hydroplant_filtration)
 "fUE" = (
 /obj/structure/largecrate/random/secure,
 /turf/open/floor/yellowfull,
@@ -18653,6 +18734,14 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
+"gdZ" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/corrugated,
+/area/strategos/rats_nest)
 "geb" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/prop/server_equipment,
@@ -19352,6 +19441,11 @@
 /obj/item/device/flashlight/lamp,
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
+"gpl" = (
+/obj/structure/machinery/floodlight/landing/floor,
+/obj/structure/largecrate/random/secure,
+/turf/open/new_varadero/alt_concrete/floor,
+/area/strategos/crows_nest)
 "gpy" = (
 /obj/effect/decal/new_varadero/concrete2/half_diagonal{
 	dir = 4
@@ -19373,6 +19467,12 @@
 	},
 /turf/open/asphalt/cement_shaded/north,
 /area/strategos/rats_nest)
+"gpE" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/asteroid,
+/area/strategos/hydroplant_zanzibar)
 "gpI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/generic,
@@ -23916,6 +24016,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/taupe_concrete/warning/west,
 /area/strategos/crows_nest)
+"hVO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/almayer/computers/mission_planning_system{
+	name = "computer";
+	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "port_loading1B";
+	pixel_x = 1;
+	pixel_y = -3
+	},
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/dockyard_longshore_metal)
 "hVP" = (
 /obj/structure/machinery/light/double{
 	dir = 8
@@ -25436,6 +25549,10 @@
 	},
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
+"iyQ" = (
+/obj/structure/prop/unsc_crate/big/stack/alt,
+/turf/open/asphalt/cement_shaded/full,
+/area/strategos/hydroplant_filtration)
 "iyY" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -26266,6 +26383,14 @@
 /obj/item/device/flashlight/combat,
 /turf/open/floor/corrugated,
 /area/strategos/crows_nest)
+"iNk" = (
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 8
+	},
+/obj/structure/reagent_dispensers/fueltank/liquidhydrogen,
+/turf/open/floor/corrugated,
+/area/strategos/crows_nest)
 "iNx" = (
 /obj/structure/prop/unsc_crate/stack,
 /turf/open/floor/strata/fake_wood,
@@ -26673,6 +26798,15 @@
 /area/strategos/dockyard_longshore_metal)
 "iTS" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/almayer/computers/mission_planning_system{
+	name = "computer";
+	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "port_split_gate";
+	pixel_x = 1;
+	pixel_y = -3
+	},
 /obj/structure/prop/invuln/darkness,
 /turf/open/new_varadero/sidewalk/south,
 /area/strategos/dockyard_longshore_metal)
@@ -26955,6 +27089,12 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/hydroplant_filtration)
+"iYJ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/prop/unsc_crate/big/stack/alt,
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/crows_nest)
 "iYO" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/reinforced/black,
@@ -27045,6 +27185,19 @@
 	dir = 4
 	},
 /turf/open/floor/plating/plating_catwalk/strata,
+/area/strategos/crows_nest)
+"iZW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
 "jaa" = (
 /obj/structure/cargo_container/watatsumi/rightmid,
@@ -28082,6 +28235,19 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/yellowfull,
 /area/strategos/hydroplant_filtration)
+"jvr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/crate/unsc,
+/obj/item/ammo_box/rounds/unsc/m7{
+	pixel_x = 4;
+	pixel_y = -2
+	},
+/obj/item/ammo_box/rounds/unsc/ma5{
+	pixel_x = -5;
+	pixel_y = -2
+	},
+/turf/open/asphalt/cement_shaded/full,
+/area/strategos/crows_nest)
 "jvw" = (
 /obj/structure/machinery/newscaster{
 	pixel_y = 30
@@ -28177,6 +28343,15 @@
 	},
 /turf/open/floor/asteroid,
 /area/strategos/crows_nest)
+"jwW" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 0
+	},
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/hydroplant_filtration)
 "jxf" = (
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
@@ -28209,6 +28384,15 @@
 	dir = 4
 	},
 /turf/open/new_varadero/ship,
+/area/strategos/crows_nest)
+"jxz" = (
+/obj/structure/prop/unsc_crate/stack,
+/obj/structure/reagent_dispensers/watertank/unsc{
+	pixel_x = -5;
+	pixel_y = 17;
+	layer = 3.01
+	},
+/turf/open/new_varadero/alt_concrete/floor,
 /area/strategos/crows_nest)
 "jxO" = (
 /turf/open/auto_turf/ground_rock_column/layer0,
@@ -29762,6 +29946,7 @@
 	pixel_x = -6;
 	pixel_y = -4
 	},
+/obj/item/ammo_box/rounds/unsc/m6,
 /turf/open/floor/corrugated,
 /area/strategos/rats_nest)
 "jXg" = (
@@ -30664,6 +30849,13 @@
 /obj/effect/decal/new_varadero/warning/asteroidwarning,
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_glass)
+"kms" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_zanzibar)
 "kmw" = (
 /obj/structure/platform_decoration/stone/new_varadero_concrete,
 /turf/open/asphalt/cement_sunbleached,
@@ -31994,6 +32186,7 @@
 	pixel_x = 11;
 	pixel_y = -3
 	},
+/obj/item/ammo_box/rounds/unsc/m6,
 /turf/open/asphalt/cement_shaded/east,
 /area/strategos/crows_nest)
 "kJm" = (
@@ -32718,6 +32911,11 @@
 	name = "computer";
 	desc = "a terminal for all sorts of things."
 	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_x = 1;
+	pixel_y = -4;
+	id = "command_storageway"
+	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/rats_nest)
 "kYW" = (
@@ -32755,6 +32953,14 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/strata/fake_wood,
 /area/strategos/open)
+"kZt" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/corrugated,
+/area/strategos/crows_nest)
 "kZu" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -33756,6 +33962,13 @@
 	},
 /turf/open/new_varadero/dock_concrete,
 /area/strategos/open)
+"lrj" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/barricade/metal/plasteel{
+	dir = 1
+	},
+/turf/open/new_varadero/dock_concrete,
+/area/strategos/crows_nest)
 "lrk" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -35656,6 +35869,15 @@
 	},
 /turf/open/auto_turf/varadero_brown_grass/layer0,
 /area/strategos/open)
+"lZu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_filtration)
 "lZv" = (
 /obj/structure/surface/rack{
 	color = "#6f4d2a"
@@ -37036,6 +37258,15 @@
 "mso" = (
 /obj/structure/machinery/light{
 	light_power = 0.75
+	},
+/obj/structure/prop/almayer/computers/mission_planning_system{
+	name = "computer";
+	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "port_loading1";
+	pixel_x = 1;
+	pixel_y = -3
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/dockyard_longshore_metal)
@@ -38492,6 +38723,20 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/hydroplant_filtration)
+"mQe" = (
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 35;
+	pixel_x = 10;
+	layer = 3.01;
+	id = "west_cargo_hangar_load"
+	},
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 24;
+	pixel_x = 10;
+	id = "west_cargo_hangar_load2"
+	},
+/turf/open/floor/corrugated,
+/area/strategos/crows_nest)
 "mQl" = (
 /obj/structure/prop/unsc_crate/corrugated{
 	color = "#cdb398";
@@ -39227,6 +39472,11 @@
 	light_power = 0.75;
 	dir = 1
 	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_x = 1;
+	pixel_y = -4;
+	id = "command_storageway"
+	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
 "nbQ" = (
@@ -39731,6 +39981,14 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
+"nkq" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_filtration)
 "nkr" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -40290,11 +40548,13 @@
 /turf/open/asphalt/cement_shaded,
 /area/strategos/rats_nest)
 "nuI" = (
-/obj/structure/machinery/door_control/brbutton/alt{
-	id = "west_LZ2entry"
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "west_cargo_hangar_load2"
 	},
-/turf/open/gm/dirt2,
-/area/strategos/oob_rock)
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "nuY" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/sidewalk/sidewalkcorner/northeast,
@@ -43170,6 +43430,10 @@
 	color = "#6f4d2a"
 	},
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets/empty,
+/obj/structure/machinery/light{
+	light_power = 0.75;
+	dir = 4
+	},
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_metal)
 "orN" = (
@@ -43702,6 +43966,14 @@
 	},
 /turf/open/floor/greengrid,
 /area/strategos/warehouse_foundry)
+"oBw" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/corrugated,
+/area/strategos/crows_nest)
 "oBB" = (
 /obj/structure/largecrate/random/barrel/true_random,
 /obj/effect/decal/cleanable/dirt,
@@ -44403,6 +44675,15 @@
 	},
 /turf/open/asphalt/cement_sunbleached,
 /area/strategos/open)
+"oMz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/hydroplant_filtration)
 "oMB" = (
 /obj/structure/platform/stone/new_varadero_concrete,
 /turf/open/gm/river/white_coast,
@@ -45336,6 +45617,15 @@
 "pcw" = (
 /turf/open/asphalt/cement_sunbleached/cement_sunbleached14,
 /area/strategos/open)
+"pcB" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/new_varadero/sidewalk/east,
+/area/strategos/crows_nest)
 "pcD" = (
 /obj/structure/largecrate/random/barrel/red,
 /turf/open/floor/corrugated,
@@ -47179,6 +47469,12 @@
 /obj/structure/cargo_container/unsc/main_3/d,
 /turf/open/new_varadero/sidewalk/west,
 /area/strategos/open)
+"pGn" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/corsat/spiralplate,
+/area/strategos/hydroplant_zanzibar)
 "pGp" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = 12;
@@ -48167,6 +48463,12 @@
 	},
 /turf/open/auto_turf/strata_grass/layer0,
 /area/strategos/open)
+"pXr" = (
+/obj/structure/barricade/metal/plasteel{
+	dir = 1
+	},
+/turf/open/new_varadero/dock_concrete,
+/area/strategos/crows_nest)
 "pXs" = (
 /obj/structure/surface/table/reinforced/prison{
 	color = "#cdb398"
@@ -50705,6 +51007,12 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/dock_concrete,
 /area/strategos/crows_nest)
+"qMC" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer/open{
+	color = "#999966"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/dockyard_longshore_metal)
 "qMM" = (
 /obj/structure/platform/stone/new_varadero_concrete/west,
 /obj/effect/decal/cleanable/dirt,
@@ -50848,6 +51156,14 @@
 	pixel_y = -30
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/flora/pottedplant{
+	name = "synthethic potted plant";
+	desc = "It is made of Fiberbush(tm). It contains asbestos. Studies say that greenery calms the mind due to some sort evolved mechanism in the brain. This plant is not calming.";
+	icon_state = "pottedplant_21";
+	layer = 3.1;
+	pixel_x = -9;
+	pixel_y = 0
+	},
 /turf/open/floor/corsat/tan,
 /area/strategos/hydroplant_filtration)
 "qPg" = (
@@ -50996,6 +51312,13 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/open)
+"qSA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/new_varadero/sidewalk/south,
+/area/strategos/crows_nest)
 "qSE" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light{
@@ -51486,6 +51809,21 @@
 	},
 /turf/open/new_varadero/sidewalk/south,
 /area/strategos/rats_nest)
+"rax" = (
+/obj/structure/surface/rack{
+	color = "#6f4d2a"
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/item/ammo_box/rounds/unsc/m6{
+	pixel_x = -4;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/rounds/unsc/m6{
+	pixel_x = 6;
+	pixel_y = -2
+	},
+/turf/open/floor/corrugated,
+/area/strategos/crows_nest)
 "raz" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/new_varadero/warning/asteroidwarning{
@@ -51630,6 +51968,7 @@
 /area/strategos/dockyard_longshore_metal)
 "rcL" = (
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
 /turf/open/new_varadero/sidewalk/sidewalkcenter_darker/north,
 /area/strategos/rats_nest)
 "rcQ" = (
@@ -52413,6 +52752,13 @@
 /obj/structure/cargo_container/grant/right,
 /turf/open/floor/corrugated,
 /area/strategos/dockyard_longshore_glass)
+"rny" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	color = "#999966";
+	id = "port_loading1"
+	},
+/turf/open/new_varadero/taupe_concrete/grate_s,
+/area/strategos/dockyard_longshore_metal)
 "rnA" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/sidewalk/sidewalkcenter_darker/south,
@@ -52644,6 +52990,13 @@
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
+"rtU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/new_varadero/taupe_concrete,
+/area/strategos/open)
 "rua" = (
 /obj/structure/cargo_container/unsc/main_3/c,
 /turf/open/floor/corsat/spiralplate,
@@ -53397,6 +53750,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/taupe_concrete/grate_s,
 /area/strategos/warehouse_foundry)
+"rIa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/floor/asteroidwarning,
+/area/strategos/hydroplant_zanzibar)
 "rIf" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/surface/table/almayer{
@@ -53449,8 +53809,16 @@
 	color = "#cdb398"
 	},
 /obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_x = -5;
-	pixel_y = 8
+	pixel_x = -11;
+	pixel_y = 13
+	},
+/obj/item/ammo_box/rounds/unsc/m7{
+	pixel_x = 9;
+	pixel_y = 0
+	},
+/obj/item/ammo_box/rounds/unsc/m6{
+	pixel_x = 0;
+	pixel_y = -3
 	},
 /turf/open/new_varadero/sidewalk/sidewalkfull,
 /area/strategos/crows_nest)
@@ -54175,7 +54543,8 @@
 "rTj" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 4;
-	color = "#634d36"
+	color = "#634d36";
+	id = "command_armory"
 	},
 /turf/open/new_varadero/taupe_concrete/grate,
 /area/strategos/crows_nest)
@@ -56558,6 +56927,14 @@
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
 	},
+/obj/item/storage/fancy/cigar/tarbacktube{
+	pixel_x = -5;
+	pixel_y = -3
+	},
+/obj/item/storage/fancy/cigar/tarbacktube{
+	pixel_x = 1;
+	pixel_y = -12
+	},
 /turf/open/floor/carpet,
 /area/strategos/hydroplant_filtration)
 "sHn" = (
@@ -56896,6 +57273,12 @@
 "sMc" = (
 /obj/effect/decal/new_varadero/warning/asteroidwarning,
 /turf/open/floor/asteroid,
+/area/strategos/crows_nest)
+"sMw" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
 "sMz" = (
 /obj/structure/prop/server_equipment,
@@ -57306,6 +57689,10 @@
 	},
 /turf/open/gm/white_dirt,
 /area/strategos/open)
+"sUi" = (
+/obj/structure/cargo_container/unsc/vertical/south_1,
+/turf/open/new_varadero/taupe_concrete/warning/west,
+/area/strategos/rats_nest)
 "sUk" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	color = "#634d36"
@@ -59142,6 +59529,26 @@
 	},
 /turf/open/floor/asteroid,
 /area/strategos/crows_nest)
+"twt" = (
+/obj/structure/machinery/light/small{
+	light_power = 0.25
+	},
+/obj/structure/prop/unsc_crate/corrugated{
+	color = "#cdb398";
+	pixel_x = 5;
+	pixel_y = 0
+	},
+/obj/structure/prop/unsc_crate/standard/red{
+	layer = 3.01;
+	pixel_x = -6;
+	pixel_y = 14
+	},
+/obj/structure/prop/unsc_crate/corrugated/green{
+	pixel_x = -14;
+	pixel_y = 1
+	},
+/turf/open/new_varadero/alt_concrete/floor,
+/area/strategos/crows_nest)
 "twu" = (
 /obj/structure/largecrate/random/barrel/true_random{
 	pixel_x = 1;
@@ -59395,6 +59802,11 @@
 /obj/structure/prop/almayer/computers/mission_planning_system{
 	name = "computer";
 	desc = "a terminal for all sorts of things."
+	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_x = 1;
+	pixel_y = -4;
+	id = "command_armory"
 	},
 /turf/open/new_varadero/sidewalk/north,
 /area/strategos/crows_nest)
@@ -62967,6 +63379,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/new_varadero/taupe_concrete,
 /area/strategos/dockyard_longshore_metal)
+"uIc" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/asphalt/cement_shaded/full,
+/area/strategos/crows_nest)
 "uIg" = (
 /obj/effect/decal/new_varadero/concrete2/half_diagonal{
 	dir = 8
@@ -63306,6 +63727,15 @@
 /obj/structure/prop/invuln/darkness,
 /turf/open/asphalt/cement_shaded,
 /area/strategos/dockyard_longshore_metal)
+"uMp" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 8;
+	pixel_x = 20;
+	pixel_y = 3
+	},
+/turf/open/floor/asteroidfloor,
+/area/strategos/hydroplant_zanzibar)
 "uMr" = (
 /obj/structure/machinery/light{
 	light_power = 0.75;
@@ -65183,6 +65613,11 @@
 	name = "computer";
 	desc = "a terminal for all sorts of things."
 	},
+/obj/structure/machinery/door_control/brbutton/alt{
+	pixel_x = 1;
+	pixel_y = -4;
+	id = "command_armory"
+	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/crows_nest)
 "vuM" = (
@@ -65766,6 +66201,11 @@
 	},
 /turf/open/floor/corsat/marked,
 /area/strategos/hydroplant_zanzibar)
+"vEN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/unsc_crate/big/stack/alt,
+/turf/open/new_varadero/sidewalk/sidewalkfull,
+/area/strategos/crows_nest)
 "vEU" = (
 /obj/effect/decal/path_edges/mud_corner{
 	dir = 8
@@ -66936,6 +67376,13 @@
 	},
 /turf/open/gm/river/white_coast,
 /area/strategos/open)
+"wao" = (
+/obj/structure/surface/table/almayer{
+	color = "#cdb398"
+	},
+/obj/item/ashtray/bronze,
+/turf/open/floor/strata/fake_wood,
+/area/strategos/hydroplant_filtration)
 "wap" = (
 /turf/closed/wall/new_varadero/concrete/reinforced,
 /area/strategos/hydroplant_filtration)
@@ -67127,6 +67574,12 @@
 	},
 /turf/open/gm/river/white_coast,
 /area/strategos/open)
+"wdp" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 24
+	},
+/turf/open/new_varadero/sidewalk/sidewalkcorner,
+/area/strategos/rats_nest)
 "wdE" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	pixel_x = 0;
@@ -67415,6 +67868,7 @@
 /obj/item/ammo_magazine/rifle/halo/ma5c,
 /obj/item/ammo_magazine/rifle/halo/ma5c,
 /obj/item/ammo_magazine/rifle/halo/ma5c,
+/obj/item/ammo_box/rounds/unsc/m7,
 /turf/open/floor/corrugated,
 /area/strategos/rats_nest)
 "whc" = (
@@ -67912,6 +68366,14 @@
 	},
 /obj/item/stack/medical/advanced/bruise_pack,
 /turf/open/new_varadero/alt_concrete/floor,
+/area/strategos/crows_nest)
+"wof" = (
+/obj/structure/machinery/door_control/brbutton{
+	pixel_y = 24;
+	pixel_x = -9;
+	id = "east_cargo_hangar_load"
+	},
+/turf/open/floor/corrugated,
 /area/strategos/crows_nest)
 "wog" = (
 /obj/structure/prop/unsc_crate/big{
@@ -68547,13 +69009,12 @@
 /turf/open/asphalt/cement_shaded/north_south,
 /area/strategos/hydroplant_zanzibar)
 "wzA" = (
-/obj/structure/largecrate/random/barrel/true_random,
-/obj/structure/machinery/light{
-	light_power = 0.75;
-	dir = 4
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/gun_rack/halo/medkit{
+	dir = 1
 	},
 /turf/open/floor/corrugated,
-/area/strategos/dockyard_longshore_metal)
+/area/strategos/crows_nest)
 "wzF" = (
 /obj/structure/surface/table/almayer{
 	color = "#cdb398"
@@ -68897,6 +69358,14 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/rats_nest)
+"wGC" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 0
+	},
+/turf/open/new_varadero/sidewalk/east,
+/area/strategos/crows_nest)
 "wGG" = (
 /obj/structure/prop/unsc_crate/big{
 	pixel_x = -8;
@@ -69280,6 +69749,14 @@
 	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/open)
+"wNn" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "west_cargo_hangar_load"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "wNC" = (
 /obj/structure/sink{
 	pixel_y = 20
@@ -69717,6 +70194,17 @@
 	},
 /turf/open/floor/corrugated,
 /area/strategos/hydroplant_zanzibar)
+"wTU" = (
+/obj/structure/flora/pottedplant{
+	name = "synthethic potted plant";
+	desc = "It is made of Fiberbush(tm). It contains asbestos. Studies say that greenery calms the mind due to some sort evolved mechanism in the brain. This plant is not calming.";
+	icon_state = "pottedplant_21";
+	layer = 3.1;
+	pixel_x = 4;
+	pixel_y = 15
+	},
+/turf/open/floor/corsat/tan,
+/area/strategos/hydroplant_filtration)
 "wTZ" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 1;
@@ -69724,6 +70212,14 @@
 	},
 /turf/open/new_varadero/alt_concrete/floor,
 /area/strategos/open)
+"wUg" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 4;
+	color = "#634d36";
+	id = "command_storageway"
+	},
+/turf/open/new_varadero/taupe_concrete/grate,
+/area/strategos/crows_nest)
 "wUm" = (
 /obj/structure/prop/structure_lattice{
 	dir = 1
@@ -70657,6 +71153,11 @@
 	desc = "a terminal for all sorts of things."
 	},
 /obj/structure/platform/stone/new_varadero_concrete/east,
+/obj/structure/machinery/door_control/brbutton/alt{
+	id = "port_loading2";
+	pixel_x = 1;
+	pixel_y = -3
+	},
 /turf/open/asphalt/cement_shaded/full,
 /area/strategos/dockyard_longshore_metal)
 "xlD" = (
@@ -71594,6 +72095,19 @@
 /obj/structure/machinery/power/apc/power/east,
 /turf/open/floor/asteroidfloor,
 /area/strategos/hydroplant_ghost_town)
+"xBb" = (
+/obj/structure/ship_ammo/minirocket{
+	name = "ANVIL-II air-to-surface missile pod";
+	desc = "A popular response for dropships such as the Pelican to fire a saturation effect on targets."
+	},
+/obj/structure/ship_ammo/minirocket{
+	name = "ANVIL-II air-to-surface missile pod";
+	desc = "A popular response for dropships such as the Pelican to fire a saturation effect on targets.";
+	pixel_x = 2;
+	pixel_y = 10
+	},
+/turf/open/new_varadero/alt_concrete/floor,
+/area/strategos/crows_nest)
 "xBl" = (
 /obj/structure/desertdam/decals/road_edge{
 	pixel_x = -8
@@ -71678,6 +72192,10 @@
 	},
 /turf/open/floor/asteroidfloor,
 /area/strategos/hydroplant_ghost_town)
+"xCw" = (
+/obj/structure/prop/unsc_crate/corrugated/blue,
+/turf/open/asphalt/cement_shaded/full,
+/area/strategos/hydroplant_filtration)
 "xCP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/item/stack/yautja_rope{
@@ -73529,6 +74047,14 @@
 /obj/effect/spawner/random/tool,
 /turf/open/floor/corrugated,
 /area/strategos/hydroplant_zanzibar)
+"yji" = (
+/obj/structure/gun_rack/halo/medkit{
+	dir = 4;
+	pixel_x = -20;
+	pixel_y = 0
+	},
+/turf/open/floor/corrugated,
+/area/strategos/hydroplant_filtration)
 "yjj" = (
 /obj/structure/prop/turbine_extras/left,
 /turf/open/asphalt/cement_shaded/full,
@@ -78738,7 +79264,7 @@ mid
 gco
 vEC
 mid
-odc
+rIa
 eaH
 lSR
 lSR
@@ -89330,7 +89856,7 @@ hvZ
 hvZ
 lzN
 mid
-qPM
+fDC
 uXm
 uXm
 apO
@@ -91381,7 +91907,7 @@ ihV
 kvA
 kKE
 qnk
-qPM
+uMp
 lCB
 jIQ
 tuX
@@ -92260,7 +92786,7 @@ wUp
 qBR
 qBR
 mid
-pkl
+pGn
 kkG
 lxb
 jlJ
@@ -98364,7 +98890,7 @@ gro
 gro
 gro
 mid
-wLi
+gpE
 wLi
 wLi
 wLi
@@ -102564,7 +103090,7 @@ eBV
 eBV
 cfz
 mid
-mWc
+kms
 kkG
 kkG
 kkG
@@ -106717,7 +107243,7 @@ fKU
 ukQ
 xaL
 tYr
-tYr
+yji
 qnd
 rzY
 qIk
@@ -107925,7 +108451,7 @@ fKU
 ukQ
 xaL
 tYr
-qnd
+lZu
 tYr
 rzY
 eGB
@@ -108298,7 +108824,7 @@ ktx
 wbN
 wap
 bLU
-rfq
+fUw
 rfq
 pXv
 wap
@@ -112511,7 +113037,7 @@ sSk
 gJI
 qnd
 qnd
-tYr
+nkq
 sSk
 bCw
 qnd
@@ -120613,7 +121139,7 @@ wap
 tYr
 qnd
 heb
-eZp
+wsU
 dhp
 dhp
 mPI
@@ -123093,7 +123619,7 @@ bLU
 dPd
 dLF
 dLF
-mzH
+oMz
 mzH
 dLF
 dPd
@@ -123639,7 +124165,7 @@ wap
 wap
 lbM
 lLB
-dFX
+wao
 qZQ
 rfq
 rfq
@@ -123947,7 +124473,7 @@ rfq
 rfq
 rfq
 sGy
-sGy
+ffz
 rfq
 gcy
 thG
@@ -124243,8 +124769,8 @@ wap
 wap
 wcY
 dFX
-dFX
-rfq
+dun
+wTU
 rfq
 prT
 prT
@@ -126066,7 +126592,7 @@ aux
 tRP
 tRP
 tRP
-tRP
+iyQ
 tRP
 tRP
 tRP
@@ -126672,7 +127198,7 @@ tRP
 tRP
 tRP
 tRP
-tRP
+xCw
 tRP
 aux
 dLF
@@ -127343,7 +127869,7 @@ iol
 nbQ
 dLF
 dLF
-mzH
+jwW
 mzH
 dLF
 ngd
@@ -135116,7 +135642,7 @@ qvy
 nIZ
 nIZ
 nIZ
-nIZ
+oBw
 wJq
 tYq
 tvB
@@ -135171,7 +135697,7 @@ mFV
 vpi
 sfG
 wqK
-eZe
+rax
 qvy
 qeP
 xPM
@@ -137464,9 +137990,9 @@ drY
 drY
 drY
 rcL
-rMg
+apS
 pYD
-vIv
+sUi
 xFv
 lzN
 rsg
@@ -140790,7 +141316,7 @@ sCz
 drY
 rsg
 rsg
-fuB
+wdp
 kJM
 kJM
 kJM
@@ -144776,7 +145302,7 @@ bNW
 qvy
 lzN
 lzN
-nuI
+szd
 lzN
 lzN
 lzN
@@ -145726,7 +146252,7 @@ lzN
 lzN
 lzN
 qvy
-xFE
+qSA
 rhC
 rhC
 uxJ
@@ -146976,7 +147502,7 @@ uxJ
 uxJ
 uxJ
 uxJ
-tcF
+aHP
 qvy
 qvy
 qvy
@@ -150888,7 +151414,7 @@ mjH
 mjH
 qvy
 uVk
-wCE
+aMk
 qvy
 qvy
 rlO
@@ -155690,7 +156216,7 @@ qVk
 qvy
 eiN
 bNW
-nIZ
+oBw
 qvy
 nFd
 rhC
@@ -158327,7 +158853,7 @@ mDp
 rsg
 dWH
 fer
-seg
+gdZ
 seg
 bqx
 qRk
@@ -159358,7 +159884,7 @@ uxJ
 uxJ
 uxJ
 uxJ
-tcF
+aHP
 qvy
 qvy
 qvy
@@ -169815,7 +170341,7 @@ qvy
 qvy
 qvy
 qvy
-xWw
+sMw
 gRf
 xFE
 xWw
@@ -170101,10 +170627,10 @@ qvy
 qvy
 qvy
 bYD
-rTj
-rTj
-rTj
-rTj
+wUg
+wUg
+wUg
+wUg
 bYD
 bYD
 nIZ
@@ -174628,7 +175154,7 @@ uli
 obO
 fCx
 wSQ
-hHL
+pcB
 hHL
 fkm
 jim
@@ -177053,7 +177579,7 @@ xWw
 xWw
 aFM
 aFM
-aFM
+jvr
 qvy
 aFM
 xWw
@@ -179289,7 +179815,7 @@ wvc
 bwO
 aXF
 qyc
-apS
+iTS
 uqf
 xAL
 xAL
@@ -179592,7 +180118,7 @@ neJ
 otY
 qyc
 pFp
-dGd
+eZQ
 eZQ
 eZQ
 eZQ
@@ -180194,7 +180720,7 @@ bLc
 dxJ
 neJ
 dxJ
-yaW
+aql
 dSV
 clk
 jCi
@@ -180496,7 +181022,7 @@ jDC
 dxJ
 neJ
 dxJ
-yaW
+aql
 dSV
 vDB
 jCi
@@ -180798,7 +181324,7 @@ oBS
 neJ
 dxJ
 neJ
-yaW
+aql
 dSV
 vDB
 jCi
@@ -181099,7 +181625,7 @@ bsA
 oBS
 neJ
 dxJ
-neJ
+hVO
 qyc
 bFn
 vDB
@@ -182308,7 +182834,7 @@ aMB
 paA
 dxJ
 dxJ
-yaW
+rny
 wjC
 kbN
 jCi
@@ -182610,7 +183136,7 @@ dxJ
 neJ
 neJ
 dxJ
-yaW
+rny
 wjC
 qcm
 jCi
@@ -182912,7 +183438,7 @@ jUB
 oyO
 neJ
 dxJ
-yaW
+rny
 wjC
 kbN
 jCi
@@ -186526,7 +187052,7 @@ rmF
 qyc
 sPg
 qyb
-ayg
+vSp
 qyb
 vSp
 hgM
@@ -186790,7 +187316,7 @@ pXR
 xNp
 jmA
 jmA
-jmA
+fPv
 wtj
 wtj
 wtj
@@ -187431,7 +187957,7 @@ mmx
 jef
 qyc
 orF
-wzA
+ayg
 uOe
 kzx
 elD
@@ -187733,7 +188259,7 @@ qyc
 qyc
 qyc
 qyc
-qyc
+may
 pFp
 pFp
 pFp
@@ -188244,7 +188770,7 @@ azN
 xWw
 rHH
 xWw
-aFM
+uIc
 aFM
 xWw
 xWw
@@ -188510,7 +189036,7 @@ qvy
 qvy
 qvy
 qvy
-xWw
+wRG
 xWw
 qvy
 qvy
@@ -188612,12 +189138,12 @@ kiy
 rKs
 wtj
 naH
-yaW
+dGd
 dxJ
 eAW
 paA
 neJ
-yaW
+dGd
 mjH
 uVk
 dSV
@@ -188914,12 +189440,12 @@ wtj
 rKs
 wtj
 eVE
-yaW
+dGd
 dxJ
 dxJ
 dxJ
 neJ
-yaW
+dGd
 uVk
 oqt
 dTi
@@ -188936,7 +189462,7 @@ aKv
 aKv
 fHK
 jCi
-yaW
+qMC
 kgC
 kgC
 kgC
@@ -188945,7 +189471,7 @@ kgC
 kgC
 kgC
 kgC
-yaW
+qMC
 jCi
 clk
 aKv
@@ -189094,13 +189620,13 @@ tvB
 tvB
 yds
 tvB
-tvB
+bUc
 yds
 yds
 yds
 yds
 rne
-pSS
+pXr
 bsQ
 rkm
 hcx
@@ -189216,12 +189742,12 @@ wtj
 rKs
 wtj
 eVE
-yaW
+dGd
 qrg
 tEY
 tEY
 wJj
-yaW
+dGd
 uVk
 uNV
 dTi
@@ -189238,7 +189764,7 @@ aKv
 aKv
 wkg
 swN
-yaW
+qMC
 oEK
 oEK
 oEK
@@ -189247,7 +189773,7 @@ oEK
 oEK
 oEK
 oEK
-yaW
+qMC
 mUO
 vDB
 aKv
@@ -189396,7 +189922,7 @@ tvB
 tvB
 tvB
 hcx
-hcx
+xBb
 iiM
 yds
 tvB
@@ -189518,12 +190044,12 @@ wJW
 rKs
 wtj
 eVE
-yaW
+dGd
 nTS
 inz
 csI
 uIU
-yaW
+dGd
 uVk
 mjH
 bFn
@@ -189540,7 +190066,7 @@ jCi
 aKv
 qej
 otW
-yaW
+qMC
 oEK
 oEK
 oEK
@@ -189549,7 +190075,7 @@ oEK
 oEK
 oEK
 oEK
-yaW
+qMC
 sWS
 vhZ
 aKv
@@ -189698,7 +190224,7 @@ ous
 ous
 jim
 hcx
-lqc
+gpl
 hcx
 yds
 tvB
@@ -189842,7 +190368,7 @@ aKv
 sEu
 arf
 nOP
-yaW
+qMC
 nSe
 nSe
 nSe
@@ -189851,7 +190377,7 @@ nSe
 nSe
 nSe
 nSe
-yaW
+qMC
 jCi
 nkP
 aKv
@@ -190007,7 +190533,7 @@ yds
 aYF
 nIZ
 dxH
-pSS
+pXr
 rkm
 bsQ
 hcx
@@ -191218,7 +191744,7 @@ obd
 mEV
 cIB
 mho
-bYD
+qvy
 mrM
 xPj
 vLS
@@ -191592,7 +192118,7 @@ hHL
 hHL
 rmE
 fkm
-fkm
+wGC
 jlq
 uto
 vPz
@@ -191938,7 +192464,7 @@ qyc
 qyc
 qyc
 qyc
-qyc
+may
 qyc
 khI
 iJF
@@ -192432,7 +192958,7 @@ nIZ
 rQX
 qvy
 qvy
-opk
+kZt
 nIZ
 nIZ
 nIZ
@@ -192728,7 +193254,7 @@ obd
 mEV
 cIB
 mho
-bYD
+qvy
 fMY
 izF
 vLS
@@ -193030,7 +193556,7 @@ obd
 mEV
 cIB
 hcx
-hcx
+jxz
 ibz
 mEV
 ojq
@@ -193933,7 +194459,7 @@ yds
 qXN
 nIZ
 dxH
-pSS
+pXr
 bsQ
 bsQ
 hcx
@@ -194356,7 +194882,7 @@ ofn
 aML
 ahl
 qyc
-boz
+rtU
 xSy
 kjQ
 mjH
@@ -194539,7 +195065,7 @@ rne
 wFp
 rkm
 rkm
-mho
+twt
 bYD
 hsn
 hcx
@@ -194838,7 +195364,7 @@ pqS
 gLB
 pAY
 rne
-bxY
+lrj
 bsQ
 rkm
 hcx
@@ -195445,10 +195971,10 @@ qvy
 qvy
 qvy
 qvy
-qvy
+bYD
 ujm
 qVk
-qvy
+bYD
 qvy
 qvy
 qvy
@@ -195730,15 +196256,15 @@ qvy
 qvy
 qvy
 qvy
-ptl
-ptl
-ptl
-ptl
+wNn
+wNn
+wNn
+wNn
 qvy
-ptl
-ptl
-ptl
-ptl
+nuI
+nuI
+nuI
+nuI
 qvy
 qvy
 qvy
@@ -196398,7 +196924,7 @@ lKK
 xWw
 xWw
 xWw
-kTx
+iZW
 aFM
 aFM
 xWw
@@ -197245,7 +197771,7 @@ bNW
 bNW
 pjt
 qvy
-nIZ
+mQe
 bNW
 nIZ
 bNW
@@ -197547,7 +198073,7 @@ bNW
 bNW
 piS
 qvy
-nIZ
+wof
 bNW
 nog
 nIZ
@@ -198484,7 +199010,7 @@ nIZ
 nrJ
 iNj
 nIZ
-bNW
+wzA
 qvy
 qvy
 lzN
@@ -199052,10 +199578,10 @@ qvy
 qvy
 qvy
 qvy
-ptl
-ptl
-ptl
-ptl
+eZp
+eZp
+eZp
+eZp
 qvy
 qvy
 qvy
@@ -199359,8 +199885,8 @@ tvB
 yds
 yds
 egR
-oHI
-yds
+iYJ
+dnc
 yds
 xfN
 qvy
@@ -199371,10 +199897,10 @@ qvy
 uqn
 qvy
 qvy
-qvy
+bYD
 ujm
 qVk
-qvy
+bYD
 qvy
 qvy
 qvy
@@ -199964,10 +200490,10 @@ yds
 yds
 yds
 yds
-yds
+iAP
 tvB
 xfN
-pSS
+pXr
 bsQ
 bsQ
 hcx
@@ -200266,7 +200792,7 @@ hcx
 hcx
 iiM
 yds
-yds
+vEN
 yds
 xfN
 tIw
@@ -200874,7 +201400,7 @@ yds
 yds
 bNW
 dxH
-pSS
+pXr
 rkm
 bsQ
 iiM
@@ -201488,7 +202014,7 @@ afo
 vLS
 tcF
 azN
-ekJ
+iNk
 dtP
 qvy
 qvy
@@ -202085,7 +202611,7 @@ rvT
 ppn
 cQD
 mho
-bYD
+qvy
 eDI
 lPx
 uYY
@@ -203595,7 +204121,7 @@ rvT
 ppn
 cQD
 wkb
-bYD
+qvy
 eDI
 tte
 izF
@@ -204800,7 +205326,7 @@ yds
 yds
 nIZ
 dxH
-pSS
+pXr
 rkm
 rkm
 hcx
@@ -205705,7 +206231,7 @@ yds
 yds
 yds
 xfN
-pSS
+pXr
 bsQ
 bsQ
 eBM
@@ -220751,7 +221277,7 @@ lzN
 lzN
 lzN
 lzN
-lzN
+lAX
 lzN
 lzN
 lzN
@@ -221052,11 +221578,11 @@ ngG
 lzN
 lzN
 lzN
-lzN
 lAX
 lzN
 lzN
 lzN
+lAX
 lzN
 lzN
 lzN
@@ -221353,8 +221879,8 @@ gNi
 ngG
 lzN
 lzN
-lzN
 lAX
+lzN
 lzN
 lzN
 lzN
@@ -221660,8 +222186,8 @@ lzN
 lzN
 lzN
 lzN
-lAX
 lzN
+lAX
 lzN
 lzN
 lzN
@@ -221959,8 +222485,8 @@ lzN
 lzN
 lAX
 lzN
-lzN
-lzN
+lAX
+lAX
 lzN
 lzN
 lAX
@@ -222261,9 +222787,9 @@ lzN
 lzN
 lAX
 lzN
-lAX
-lAX
 lzN
+lAX
+lAX
 lzN
 lAX
 lzN
@@ -222564,8 +223090,8 @@ lzN
 lAX
 lzN
 lzN
-lAX
-lAX
+lzN
+lzN
 lzN
 lAX
 lzN
@@ -223166,11 +223692,11 @@ ngG
 lzN
 lzN
 lAX
+lAX
 lzN
 lzN
 lzN
-lzN
-lzN
+lAX
 lAX
 lzN
 lzN
@@ -223467,13 +223993,13 @@ gNi
 ngG
 lzN
 lzN
-lAX
-lAX
-lzN
-lzN
 lzN
 lAX
 lAX
+lAX
+lAX
+lAX
+lzN
 lzN
 lzN
 lzN
@@ -223770,11 +224296,11 @@ ngG
 lzN
 lzN
 lzN
+lzN
 lAX
 lAX
 lAX
-lAX
-lAX
+lzN
 lzN
 lzN
 lzN
@@ -224073,9 +224599,9 @@ lzN
 lzN
 lzN
 lzN
-lAX
-lAX
-lAX
+lzN
+lzN
+lzN
 lzN
 lzN
 lzN
