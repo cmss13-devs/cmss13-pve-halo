@@ -1,4 +1,0 @@
-author: "Yorkoh"
-delete-after: True
-changes:
-  - rscadd: "intro blurb sequence to drop pods, and a specific drop pod datum for this proc"
