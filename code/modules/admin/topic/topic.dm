@@ -1175,7 +1175,7 @@
 		var/missile_name = locate(href_list["missile_name"])
 		if(!rocket)
 			return
-		var/template_choice = tgui_input_list(usr, "Do you want to allow the missile to hit its target?", "AA Missile", list("Yes - Crash", "Yes - Damage", "No - Miss"))
+		var/template_choice = tgui_input_list(usr, "Do you want to allow the missile to hit its target?", "AA Missile", list("Yes - Crash", "Yes - Damage", "Random - 60% Crash / 30% Dmg / 10% Miss", "No - Miss"))
 		if(!template_choice)
 			return
 		var/choice
@@ -1183,6 +1183,11 @@
 			choice = "crash"
 		if(template_choice == "Yes - Damage")
 			choice = "damage"
+		if(template_choice == "No - Miss") // maybe theres a better way to do this but I needed to access a "miss" outcome for the random choice
+			choice = "miss"
+		if(template_choice == "Random - 60% Crash / 30% Dmg / 10% Miss")
+			// weighted at 60% crash, 30% damage, 10% miss
+			choice = pick_weight(list("crash"= 60, "damage"= 30, "miss"= 10))
 		rocket.hit_announce(sound_turf, choice, missile_name)
 
 	else if(href_list["admincancelpredsd"])
