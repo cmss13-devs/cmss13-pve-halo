@@ -1,0 +1,13 @@
+2026-07-01:
+  BonniePandora:
+  - admin: New verb for GM's to tweak shipmap lighting on the fly
+  - rscadd: Some new things to the loadout options, others were renamed
+  - rscdel: A lot of items that didn't fit were removed from the loadout options
+  - bugfix: Descriptions of webbings de-Aliensified
+  - bugfix: Armor attachments will now display on the inventory icon
+  - imageadd: New icons for the standard-issue knife, machete and tacmap tablet, former
+      two courtesy of @chromazul on discord
+  Yorkoh:
+  - qol: adds a random choice block of code to the spnkr AA pop-up and outcome
+  - rscadd: intro blurb sequence to drop pods, and a specific drop pod datum for this
+      proc
