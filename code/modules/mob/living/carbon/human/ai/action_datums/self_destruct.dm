@@ -1,8 +1,8 @@
 /datum/ai_action/self_destruct
-	name = "Throw Grenade"
+	name = "Self Destruct"
 	action_flags = ACTION_USING_HANDS
 	var/obj/item/explosive/grenade/grenade
-	species_restricted = /datum/species/unggoy
+	species_restricted = "Unggoy"
 
 /datum/ai_action/self_destruct/get_weight(datum/human_ai_brain/brain)
 	if(!brain.last_stand)
@@ -21,10 +21,7 @@
 	if(!length(brain.equipment_map[HUMAN_AI_GRENADES]))
 		return 0
 
-	if(!grenade.can_use_grenade())
-		return 0
-
-	if((brain.tied_human.health / brain.tied_human.maxHealth) <= 25)
+	if((brain.tied_human.health / brain.tied_human.maxHealth) <= 0.25)
 		return ACTION_WEIGHT_HIGHEST_PRIORITY
 
 	return 0
@@ -60,7 +57,7 @@
 		return ONGOING_ACTION_COMPLETED
 
 	var/distance = get_dist(tied_human, target_turf)
-	if(distance <= 3 && !grenade.active) // basic precautions
+	if(distance <= 5 && !grenade.active) // basic precautions
 		var/list/turf_line = get_line(tied_human, target_turf)
 		var/line_of_sight = TRUE
 		for(var/turf/turf as anything in turf_line)
@@ -71,25 +68,24 @@
 				if(object.density)
 					line_of_sight = TRUE
 		if(line_of_sight)
-			INVOKE_ASYNC(src, PROC_REF(prime_grenade))
+			prime_grenade()
 
 	if(distance > brain.view_distance)
 		return ONGOING_ACTION_COMPLETED
 
 	if(distance > 0)
 		if(!brain.move_to_next_turf(target_turf))
-			return ONGOING_ACTION_UNFINISHED
+			return ONGOING_ACTION_UNFINISHED_BLOCK
 
 		if(get_dist(target_turf, tied_human) > 0)
-			return ONGOING_ACTION_UNFINISHED
+			return ONGOING_ACTION_UNFINISHED_BLOCK
 
 	tied_human.face_atom(target_turf)
 
 	return ONGOING_ACTION_UNFINISHED
 
 /datum/ai_action/self_destruct/proc/prime_grenade()
-	sleep(brain.short_action_delay * brain.action_delay_mult)
-	grenade.attack_self(brain.tied_human)
+	INVOKE_ASYNC(grenade, TYPE_PROC_REF(/obj/item/explosive/grenade, attack_self), brain.tied_human)
 	brain.tied_human.toggle_throw_mode(THROW_MODE_NORMAL)
 	brain.ensure_primary_hand(src)
 	brain.tied_human.face_atom(brain.target_turf)

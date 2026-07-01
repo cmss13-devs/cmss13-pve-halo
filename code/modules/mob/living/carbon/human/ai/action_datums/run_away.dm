@@ -1,7 +1,7 @@
 /datum/ai_action/run_away
 	name = "Run Away"
 	action_flags = ACTION_USING_LEGS
-	species_restricted = list(/datum/species/unggoy)
+	species_restricted = "Unggoy"
 	incom
 
 /datum/ai_action/run_away/get_weight(datum/human_ai_brain/brain)
