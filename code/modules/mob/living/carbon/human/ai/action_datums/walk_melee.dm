@@ -15,7 +15,7 @@
 	if(!brain.tried_reload && (brain.primary_weapon || length(brain.secondary_weapons)))
 		return 0
 
-	return 3
+	return ACTION_WEIGHT_WALK_MELEE
 
 /datum/ai_action/walk_melee/trigger_action()
 	. = ..()

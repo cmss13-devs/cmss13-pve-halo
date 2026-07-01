@@ -31,7 +31,7 @@
 	if(brain.should_reload())
 		return 0
 
-	return 10
+	return ACTION_WEIGHT_FIRE_AT_TARGET
 
 /datum/ai_action/fire_at_target/Destroy(force, ...)
 	stop_firing(brain)
