@@ -551,7 +551,7 @@
 // HALO PVE EDIT - START - THERMITE GRENADE HANDLING
 	if(burn_level >= BURN_LEVEL_TIER_9)
 		R = new /datum/reagent/thermite
-	else if(burn_level >= BURN_LEVEL_TIER_7)
+	if(burn_level >= BURN_LEVEL_TIER_7)
 // HALO PVE EDIT - END
 		R = new /datum/reagent/napalm/blue()
 	else if(burn_level <= BURN_LEVEL_TIER_2)
