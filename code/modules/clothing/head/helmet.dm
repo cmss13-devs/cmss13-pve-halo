@@ -2034,3 +2034,10 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	name = "\improper CH381-M ODST helmet"
 	desc = "An iconic helmet, designed for use by Orbital-Drop-Shock-Troopers of the UNSC's Marine Corps' Special Forces. An advanced piece of equipment featuring various benefits: a polarizing visor, VISR optical software, reinforced COM unit, fully sealed environment, a motion tracker, and a nice black finish. Commonly defaced with crude graffiti by bored helljumpers."
 	motion_tracker = TRUE
+
+/obj/item/clothing/head/helmet/marine/unsc/odst/recon
+	name = "\improper S-1/ONI Recon helmet"
+	desc = "Developed by the ONI Materials Group for operatives of that organisation in tandem with a matching armor-system. Aiming to improve the wearers stealth capabilities without impacting endurance, the helmet achieves this by reducing IR signatures, reflective surfaces and radio-signal emissions. The visor of the helmet employs a cutting-edge optics suite."
+	icon_state = "s1-oni"
+	item_state = "s1-oni"
+	motion_tracker = TRUE

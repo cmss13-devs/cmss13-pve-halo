@@ -1028,6 +1028,25 @@
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
+/obj/item/clothing/suit/marine/unsc/odst/recon
+	name = "\improper S-1/ONI Recon BDU"
+	desc = "An ONI-derived variant of the armor-system used by ODST's for field operatives and signal-intelligence specialists. What's simply called the 'Recon BDU' is a mission-tailored adaptation, forgoing the shoulder pads for extra freedom of movement and replacing the abdominal panel with a WILLOWKEY Tactical Signals Intelligence Collection System. Some models go even further, incorporating radar absorbent materials, reducing reflective surfaces and lowering the operator's IR signature."
+	icon_state = "s1-oni"
+	item_state = "s1-oni"
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORGROIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PAINT)
+
+/obj/item/clothing/suit/marine/unsc/odst/recon/kitted
+
+/obj/item/clothing/suit/marine/unsc/odst/recon/kitted/Initialize(mapload)
+	. = ..()
+	var/obj/item/clothing/accessory/pads/unsc/groin/odst/crotchplate = new()
+	src.attach_accessory(null, crotchplate, TRUE)
+	var/obj/item/clothing/accessory/pads/unsc/greaves/odst/shinguards = new()
+	src.attach_accessory(null, shinguards, TRUE)
+	var/obj/item/clothing/accessory/pads/unsc/bracers/odst/armguards = new()
+	src.attach_accessory(null, armguards, TRUE)
+
 /obj/item/clothing/suit/marine/unsc/odst/insurrection
 	name = "\improper scavenged M70DT ODST BDU"
 	icon_state = "odst_insurgent"
