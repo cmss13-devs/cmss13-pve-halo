@@ -2812,6 +2812,7 @@
 #include "modular_pve_halo\code\game\machinery\computer\medical.dm"
 #include "modular_pve_halo\code\game\machinery\vending\vendor_types\medical.dm"
 #include "modular_pve_halo\code\game\objects\items\trash.dm"
+#include "modular_pve_halo\code\game\objects\items\devices\flashlight.dm"
 #include "modular_pve_halo\code\game\objects\items\devices\helmet_visors.dm"
 #include "modular_pve_halo\code\game\objects\items\explosives\grenades\unsc.dm"
 #include "modular_pve_halo\code\game\objects\items\props\helmetgarb.dm"

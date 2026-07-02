@@ -54,7 +54,7 @@
 
 		list("POUCHES", -1, null, null, null),
 		list("First-Aid Pouch", floor(scale * 15), /obj/item/storage/pouch/firstaid, VENDOR_ITEM_REGULAR),
-		list("Flare Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/full, VENDOR_ITEM_REGULAR),
+		list("Illum. Equipment Pouch", floor(scale * 15), /obj/item/storage/pouch/flare/unsc, VENDOR_ITEM_REGULAR),
 		list("Large Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/large, VENDOR_ITEM_REGULAR),
 		list("Medium General Pouch", floor(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
 		list("Pistol Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/pistol/unsc, VENDOR_ITEM_REGULAR),
@@ -112,10 +112,12 @@
 
 		list("FLARE AND LIGHT", -1, null, null),
 		list("Combat Flashlight", round(scale * 5), /obj/item/device/flashlight/combat, VENDOR_ITEM_REGULAR),
-		list("Box of Flashlight", round(scale * 1), /obj/item/ammo_box/magazine/misc/flashlight, VENDOR_ITEM_REGULAR),
-		list("Box of Flares", round(scale * 1), /obj/item/ammo_box/magazine/misc/flares, VENDOR_ITEM_REGULAR),
-		list("M94 Marking Flare Pack", round(scale * 10), /obj/item/storage/box/flare, VENDOR_ITEM_REGULAR),
-		list("M89-S Signal Flare Pack", round(scale * 1), /obj/item/storage/box/flare/signal, VENDOR_ITEM_REGULAR),
+		list("Box of Flashlights", round(scale * 1), /obj/item/ammo_box/magazine/misc/flashlight, VENDOR_ITEM_REGULAR),
+		list("Box of Illumination Flares", round(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/flare, VENDOR_ITEM_REGULAR),
+		list("Box of Chemlight Packs", round(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/flare/chemlight, VENDOR_ITEM_REGULAR),
+		list("M62 Illumination Flare Pack", round(scale * 10), /obj/item/storage/box/flare/unsc, VENDOR_ITEM_REGULAR),
+		list("Chemical Illumination Stick Pack", round(scale * 10), /obj/item/storage/box/flare/chemlight, VENDOR_ITEM_REGULAR),
+		list("M73-S Signal Flare Pack", round(scale * 1), /obj/item/storage/box/flare/signal/unsc, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARMS", -1, null, null),
 		list("M6C Service Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/unloaded, VENDOR_ITEM_REGULAR),
@@ -183,7 +185,7 @@
 
 		list("POUCHES", -1, null, null, null),
 		list("First-Aid Pouch", floor(scale * 15), /obj/item/storage/pouch/firstaid, VENDOR_ITEM_REGULAR),
-		list("Flare Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/full, VENDOR_ITEM_REGULAR),
+		list("Illum. Equipment Pouch", floor(scale * 15), /obj/item/storage/pouch/flare/unsc, VENDOR_ITEM_REGULAR),
 		list("Large Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/large, VENDOR_ITEM_REGULAR),
 		list("Medium General Pouch", floor(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
 		list("Pistol Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/pistol/unsc, VENDOR_ITEM_REGULAR),
@@ -232,10 +234,12 @@
 
 		list("FLARE AND LIGHT", -1, null, null),
 		list("Combat Flashlight", round(scale * 5), /obj/item/device/flashlight/combat, VENDOR_ITEM_REGULAR),
-		list("Box of Flashlight", round(scale * 1), /obj/item/ammo_box/magazine/misc/flashlight, VENDOR_ITEM_REGULAR),
-		list("Box of Flares", round(scale * 1), /obj/item/ammo_box/magazine/misc/flares, VENDOR_ITEM_REGULAR),
-		list("M94 Marking Flare Pack", round(scale * 10), /obj/item/storage/box/flare, VENDOR_ITEM_REGULAR),
-		list("M89-S Signal Flare Pack", round(scale * 1), /obj/item/storage/box/flare/signal, VENDOR_ITEM_REGULAR),
+		list("Box of Flashlights", round(scale * 1), /obj/item/ammo_box/magazine/misc/flashlight, VENDOR_ITEM_REGULAR),
+		list("Box of Illumination Flares", round(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/flare, VENDOR_ITEM_REGULAR),
+		list("Box of Chemlight Packs", round(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/flare/chemlight, VENDOR_ITEM_REGULAR),
+		list("M62 Illumination Flare Pack", round(scale * 10), /obj/item/storage/box/flare/unsc, VENDOR_ITEM_REGULAR),
+		list("Chemical Illumination Stick Pack", round(scale * 10), /obj/item/storage/box/flare/chemlight, VENDOR_ITEM_REGULAR),
+		list("M73-S Signal Flare Pack", round(scale * 1), /obj/item/storage/box/flare/signal/unsc, VENDOR_ITEM_REGULAR),
 
 		list("SIDEARMS", -1, null, null),
 		list("M6C/SOCOM Magnum", round(scale * 4), /obj/item/weapon/gun/pistol/halo/m6c/socom/unloaded, VENDOR_ITEM_REGULAR),
