@@ -2,7 +2,7 @@
 #define ishuman(A) (istype(A, /mob/living/carbon/human) )
 
 //Check if the mob is an actual human (and not Yautja or Synth)
-#define ishuman_strict(A) (ishuman(A) && istype(A?:species, /datum/species/human))
+#define ishuman_strict(A) (ishuman(A) && istype(A?:species, /datum/species/human) || istype(A?:species, /datum/species/spartan))
 
 //Check if the mob is an actual human or Synth
 #define ishumansynth_strict(A)   (ishuman(A) && (istype(A?:species, /datum/species/human) || istype(A?:species, /datum/species/synthetic)))
@@ -14,6 +14,7 @@
 #define ismonkey(A) (ishuman(A) && istype(A?:species, /datum/species/monkey))
 #define isyautja(A) (ishuman(A) && istype(A?:species, /datum/species/yautja))
 #define issangheili(A) (ishuman(A) && istype(A?:species, /datum/species/sangheili))
+#define isspartan(A) (ishuman(A) && istype(A?:species, /datum/species/spartan))
 #define isunggoy(A) (ishuman(A) && istype(A?:species, /datum/species/unggoy))
 #define isruuhtian(A) (ishuman(A) && istype(A?:species, /datum/species/ruuhtian))
 #define isresearcher(A) (ishuman(A) && A.job == "Researcher")
@@ -33,6 +34,7 @@
 #define isspeciessangheili(A) (A.species?.group == SPECIES_SANGHEILI)
 #define isspeciesunggoy(A) (A.species?.group == SPECIES_UNGGOY)
 #define isspeciesruuhtian(A) (A.species?.group == SPECIES_RUUHTIAN)
+#define isspeciesspartan(A) (A.species?.group == SPECIES_SPARTAN)
 
 //Size checks for carbon to use instead of typechecks. (Hellhounds are deprecated)
 #define iscarbonsizexeno(A) (A.mob_size >= MOB_SIZE_XENO_VERY_SMALL)

@@ -3,6 +3,7 @@
 	gender = PLURAL
 	icon = 'icons/obj/items/clothing/glasses.dmi'
 	w_class = SIZE_SMALL
+	allowed_species_list = list(SPECIES_HUMAN, SPECIES_YAUTJA, SPECIES_SPARTAN)
 	var/vision_flags = 0
 	var/darkness_view = 0 //Base human is 2
 	/// The amount of nightvision these glasses have. This should be a number between 0 and 1.
