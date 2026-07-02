@@ -548,7 +548,11 @@
 	if(!istype(T))
 		return
 	var/datum/reagent/R = new /datum/reagent/napalm/ut()
+// HALO PVE EDIT - START - THERMITE GRENADE HANDLING
+	if(burn_level >= BURN_LEVEL_TIER_9)
+		R = new /datum/reagent/thermite
 	if(burn_level >= BURN_LEVEL_TIER_7)
+// HALO PVE EDIT - END
 		R = new /datum/reagent/napalm/blue()
 	else if(burn_level <= BURN_LEVEL_TIER_2)
 		R = new /datum/reagent/napalm/green()

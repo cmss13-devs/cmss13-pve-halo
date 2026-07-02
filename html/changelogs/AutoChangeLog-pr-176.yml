@@ -1,0 +1,6 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - rscadd: "TH-61 thermite grenades & a corresponding grenade box"
+  - imageadd: "sprites for the above"
+  - soundadd: "firebomb ignition/detonation sound for the TH-61's to use"
