@@ -263,7 +263,6 @@
 /datum/equipment_preset/unsc/pilot
 	name = "UNSC Pilot"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
-	idtype = /obj/item/card/id/silver
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
 	assignment = JOB_DROPSHIP_PILOT
 	rank = JOB_DROPSHIP_PILOT
