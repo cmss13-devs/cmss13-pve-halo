@@ -11,3 +11,8 @@
   - qol: adds a random choice block of code to the spnkr AA pop-up and outcome
   - rscadd: intro blurb sequence to drop pods, and a specific drop pod datum for this
       proc
+2026-07-03:
+  BonniePandora:
+  - rscadd: TH-61 thermite grenades & a corresponding grenade box
+  - imageadd: sprites for the above
+  - soundadd: firebomb ignition/detonation sound for the TH-61's to use
