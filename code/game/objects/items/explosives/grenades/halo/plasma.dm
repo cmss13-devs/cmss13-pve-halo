@@ -91,7 +91,6 @@
 			qdel(P)
 		if(shrapnel_count)
 			create_shrapnel(loc, shrapnel_count, , ,shrapnel_type, cause_data)
-		empulse(src, 1, 2) // mini EMP
 		playsound(loc, 'sound/weapons/halo/plasma_grenade_explosion.ogg', 100)
 		qdel(src)
 
