@@ -1469,6 +1469,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
+/obj/item/tacmap_map,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "et" = (
@@ -5916,6 +5917,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
+/obj/item/tacmap_map,
 /turf/open/floor/strata,
 /area/cop_brighton/inside/barracks)
 "wK" = (
