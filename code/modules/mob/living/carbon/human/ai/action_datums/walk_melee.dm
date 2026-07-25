@@ -33,6 +33,10 @@
 		return ONGOING_ACTION_COMPLETED
 
 	var/mob/tied_human = brain.tied_human
+	if(get_dist(tied_human, brain.current_target) > 1 || (tied_human.x != brain.current_target.x && tied_human.y != brain.current_target.y))	// you are in range to hit, but you can get closer
+		if(!brain.move_to_next_turf(get_turf(brain.current_target)))
+			return ONGOING_ACTION_COMPLETED
+
 	if(get_dist(tied_human, brain.current_target) <= 1)
 		if(!HAS_TRAIT(tied_human, TRAIT_SUPER_STRONG))
 			tied_human.a_intent_change(INTENT_HARM)
@@ -52,8 +56,6 @@
 		brain.unholster_any_weapon()
 		INVOKE_ASYNC(tied_human, TYPE_PROC_REF(/mob, do_click), brain.current_target, "", list())
 		tied_human.face_atom(brain.current_target)
-
-	if(!brain.move_to_next_turf(get_turf(brain.current_target)))
 		return ONGOING_ACTION_COMPLETED
 
-	return ONGOING_ACTION_COMPLETED
+	return ONGOING_ACTION_UNFINISHED
