@@ -307,7 +307,7 @@ DEFINE_BITFIELD(whitelist_status, list(
 #define FACTION_COVENANT "Covenant"
 #define FACTION_UNGGOY "Unggoy"
 #define FACTION_SANGHEILI "Sangheili"
-#define FACTION_KIGYAR "Kigyar"
+#define FACTION_KIGYAR "Kig-Yar"
 //Covvie SpecOps
 #define FACTION_SPECOPS_SANGHEILI "Specops Sangheili"
 #define FACTION_SPECOPS_UNGGOY "Specops Unggoy"

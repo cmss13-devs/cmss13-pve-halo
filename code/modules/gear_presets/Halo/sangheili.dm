@@ -107,6 +107,9 @@
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
+/datum/equipment_preset/covenant/sangheili/major/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_HEROIC)
+
 /datum/equipment_preset/covenant/sangheili/major/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_major(new_human)
@@ -151,6 +154,9 @@
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
+/datum/equipment_preset/covenant/sangheili/ultra/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_LEGENDARY)
+
 /datum/equipment_preset/covenant/sangheili/ultra/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
 	add_elite_ultra(new_human)
@@ -186,6 +192,9 @@
 	role_comm_title = "Zealot"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/sangheili/zealot/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_MYTHIC)
 
 /datum/equipment_preset/covenant/sangheili/zealot/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics(new_human)
@@ -233,6 +242,9 @@
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
+/datum/equipment_preset/covenant/sangheili/specops/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_LEGENDARY)
+
 /datum/equipment_preset/covenant/sangheili/specops/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
 	add_elite_specops(new_human)
@@ -279,6 +291,9 @@
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
+/datum/equipment_preset/covenant/sangheili/specops_ultra/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_LEGENDARY)
+
 /datum/equipment_preset/covenant/sangheili/specops_ultra/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
 	add_elite_specops_ultra(new_human)
@@ -324,6 +339,9 @@
 	role_comm_title = "Stealth"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
+
+/datum/equipment_preset/covenant/sangheili/stealth/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_HEROIC)
 
 /datum/equipment_preset/covenant/sangheili/stealth/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
@@ -379,6 +397,9 @@
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
 
+/datum/equipment_preset/covenant/sangheili/honor_guard/load_race(mob/living/carbon/human/new_human, client/mob_client)
+	new_human.set_species(SPECIES_SANGHEILI_MYTHIC)
+
 /datum/equipment_preset/covenant/sangheili/honor_guard/load_gear(mob/living/carbon/human/new_human)
 	add_elite_basics_fullbody(new_human)
 	add_elite_honor_guard(new_human)
@@ -391,12 +412,8 @@
 /datum/equipment_preset/proc/add_elite_basics(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
-	var/obj/item/clothing/under/marine/covenant/sangheili/uniform = new()
-	var/random_uniform = rand(1,2)
-	switch(random_uniform)
-		if(1)
-			uniform.roll_suit_sleeves(new_human)
-	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	var/pick_under = pick_weight(list(/obj/item/clothing/under/marine/covenant/sangheili = 70, /obj/item/clothing/under/marine/covenant/sangheili/partial = 30))
+	new_human.equip_to_slot_or_del(new pick_under, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/proc/add_elite_basics_fullbody(mob/living/carbon/human/new_human)
