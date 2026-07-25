@@ -26,6 +26,7 @@
 
 #define LANGUAGE_SANGHEILI "Sangheili"
 #define LANGUAGE_UNGGOY "Unggoy"
+#define LANGUAGE_RUUHTIAN "Ruuhtian"
 
 // all languages
 
