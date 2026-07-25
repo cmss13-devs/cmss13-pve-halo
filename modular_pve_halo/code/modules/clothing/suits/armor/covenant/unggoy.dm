@@ -10,7 +10,7 @@
 	item_icons = list(
 		WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/unggoy/armor.dmi'
 	)
-	allowed_species_list = list(SPECIES_UNGGOY)
+	allowed_species_list = list(SPECIES_LIST_UNGGOY)
 
 	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW

@@ -82,6 +82,9 @@ GLOBAL_VAR_INIT(cas_tracking_id_increment, 0) //this var used to assign unique t
 /datum/game_mode/proc/ds_first_drop(obj/docking_port/mobile/marine_dropship)
 	return
 
+/datum/game_mode/proc/pod_first_drop(obj/structure/halo_droppod)
+	return
+
 ///Triggered when the dropship first lands.
 /datum/game_mode/proc/ds_first_landed(obj/docking_port/stationary/marine_dropship)
 	SHOULD_CALL_PARENT(TRUE)
