@@ -11,6 +11,8 @@
 
 /obj/item/storage/box/tear_packet/m7
 	name = "magazine packet (M7, x2)"
+	desc = "A plastic packet bulging at the seams with two M7 SMG magazines."
+	w_class = SIZE_MEDIUM
 	storage_slots = 2
 
 /obj/item/storage/box/tear_packet/m7/fill_preset_inventory()
