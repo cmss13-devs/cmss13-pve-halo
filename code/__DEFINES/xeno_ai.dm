@@ -91,9 +91,5 @@ PROBABILITY CALCULATIONS ARE HERE
 #define PRAETORIAN_SPIT 80
 #define PRAETORIAN_SPRAY 80
 
-
-/// Special blockers for pathfinding or obstacle handling
-#define AI_SPECIAL_BLOCKERS list(/obj/flamer_fire, /mob/living, /obj/vehicle/multitile, /turf/open/space, /turf/open/gm/river)
-
 // Friend-or-foe universal check
 #define IS_SAME_HIVENUMBER(A,B) (A.hivenumber == B.hivenumber)

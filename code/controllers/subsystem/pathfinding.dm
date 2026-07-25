@@ -22,7 +22,6 @@ SUBSYSTEM_DEF(pathfinding)
 
 	while(length(current_processing))
 		// A* Pathfinding. Uses priority queue
-		// morrow is the best coder since CM dev btw
 		if(current_position < 1 || current_position > length(current_processing))
 			current_position = length(current_processing)
 
