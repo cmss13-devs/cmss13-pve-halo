@@ -43,9 +43,27 @@
 	attack_verb = list("pummel","slamm","punch")
 	damage = 20
 
+/datum/unarmed_attack/punch/sangheili/heroic
+	damage = 30
+
+/datum/unarmed_attack/punch/sangheili/heroic/legendary
+	damage = 35
+
+/datum/unarmed_attack/punch/sangheili/heroic/legendary/mythic
+	damage = 40
+
 /datum/unarmed_attack/punch/unggoy
 	attack_verb = list("pummel","slamm","punch")
 	damage = 40
+	attack_sound = "swing_hit"
+
+/datum/unarmed_attack/punch/kigyar
+	attack_verb = list("scratch","claw","slic")
+	damage = 10
+	attack_sound = 'sound/weapons/bladeslice.ogg'
+	sharp = TRUE
+	edge = TRUE
+
 
 /datum/unarmed_attack/punch/synthetic
 	attack_verb = list("punch","clock","slugg","bludgeon","maul")

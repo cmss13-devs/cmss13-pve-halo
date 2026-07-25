@@ -3,7 +3,7 @@
 	keybind_category = CATEGORY_HUMAN_EMOTE
 
 	/// Species that can use this emote.
-	var/list/species_type_allowed_typecache = list(/datum/species/human, /datum/species/synthetic, /datum/species/yautja, /datum/species/sangheili, /datum/species/unggoy)
+	var/list/species_type_allowed_typecache = list(/datum/species/human, /datum/species/synthetic, /datum/species/yautja, /datum/species/sangheili, /datum/species/unggoy, /datum/species/ruuhtian)
 	/// Species that can't use this emote.
 	var/list/species_type_blacklist_typecache = list(/datum/species/monkey)
 
@@ -164,6 +164,8 @@
 		return get_sfx("pain_sangheili")
 	if(isunggoy(user))
 		return get_sfx("pain_unggoy")
+	if(isruuhtian(user))
+		return get_sfx("pain_ruuhtian")
 
 /datum/emote/living/carbon/human/medic/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -212,6 +214,8 @@
 		return get_sfx("pred_pain")
 	if(issangheili(user))
 		return get_sfx("pain_sangheili")
+	if(isruuhtian(user))
+		return get_sfx("pain_ruuhtian")
 
 /datum/emote/living/carbon/human/pain/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -255,6 +259,8 @@
 		return get_sfx("pain_sangheili")
 	if(isunggoy(user))
 		return get_sfx("pain_unggoy")
+	if(isruuhtian(user))
+		return get_sfx("pain_ruuhtian")
 
 /datum/emote/living/carbon/human/scream/run_emote(mob/living/user, params, type_override, intentional)
 	. = ..()
@@ -385,6 +391,8 @@
 		return get_sfx("warcry_sangheili")
 	if(isunggoy(user))
 		return get_sfx("warcry_unggoy")
+	if(isruuhtian(user))
+		return get_sfx("warcry_ruuhtian")
 
 /datum/emote/living/carbon/human/whimper
 	key = "whimper"

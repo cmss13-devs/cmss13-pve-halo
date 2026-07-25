@@ -17,6 +17,15 @@
 /datum/pain/sangheili/oxy_kill(mob/living/source)
 	return
 
+/datum/pain/sangheili/heroic
+	max_pain = 350
+
+/datum/pain/sangheili/heroic/legendary
+	max_pain = 400
+
+/datum/pain/sangheili/heroic/legendary/mythic
+	feels_pain = FALSE
+
 /datum/pain/unggoy
 	max_pain = 225
 
@@ -26,5 +35,17 @@
 	threshold_distressing = 100
 	threshold_severe = 125
 	threshold_horrible = 150
+
+	feels_pain = TRUE
+
+/datum/pain/ruuhtian
+	max_pain = 175
+
+	threshold_mild = 20
+	threshold_discomforting = 40
+	threshold_moderate = 60
+	threshold_distressing = 80
+	threshold_severe = 100
+	threshold_horrible = 125
 
 	feels_pain = TRUE
