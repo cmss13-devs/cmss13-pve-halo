@@ -300,8 +300,8 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 
 /obj/effect/essentials_set/medic/unsc
 	spawned_gear_list = list(
-		/obj/item/storage/firstaid/unsc/corpsman,
-		/obj/item/storage/firstaid/unsc/corpsman,
+		/obj/item/storage/firstaid/unsc/field/corpsman,
+		/obj/item/storage/firstaid/unsc/field/corpsman,
 		/obj/item/device/healthanalyzer/halo,
 		/obj/item/tool/surgery/surgical_line,
 		/obj/item/tool/surgery/synthgraft,
