@@ -2036,8 +2036,8 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	motion_tracker = TRUE
 
 /obj/item/clothing/head/helmet/marine/unsc/odst/recon
-	name = "\improper S-1/ONI Recon helmet"
-	desc = "Developed by the ONI Materials Group for operatives of that organisation in tandem with a matching armor-system. Aiming to improve the wearers stealth capabilities without impacting endurance, the helmet achieves this by reducing IR signatures, reflective surfaces and radio-signal emissions. The visor of the helmet employs a cutting-edge optics suite."
+	name = "\improper CH395/OR Recon helmet"
+	desc = "Developed by the ONI Materials Group in tandem with a matching armor-system for operatives of that organisation. Aiming to improve the wearers stealth capabilities without impacting endurance, the helmet achieves this by reducing IR signatures, reflective surfaces and radio-signal emissions. The visor of the helmet employs a cutting-edge optics suite."
 	icon_state = "s1-oni"
 	item_state = "s1-oni"
 	motion_tracker = TRUE

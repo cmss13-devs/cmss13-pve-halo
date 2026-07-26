@@ -1029,8 +1029,8 @@
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
 /obj/item/clothing/suit/marine/unsc/odst/recon
-	name = "\improper S-1/ONI Recon BDU"
-	desc = "An ONI-derived variant of the armor-system used by ODST's for field operatives and signal-intelligence specialists. What's simply called the 'Recon BDU' is a mission-tailored adaptation, forgoing the shoulder pads for extra freedom of movement and replacing the abdominal panel with a WILLOWKEY Tactical Signals Intelligence Collection System. Some models go even further, incorporating radar absorbent materials, reducing reflective surfaces and lowering the operator's IR signature."
+	name = "\improper M73/OR Operations BDU"
+	desc = "An ONI-derived variant of the armor-system used by both ONI field-operatives and ODST signal-intelligence specialists. What's simply called the 'Recon BDU' is an observation & reconnaissance mission-tailored adaptation, forgoing the shoulder pads for extra freedom of movement and replacing the abdominal panel with a WILLOWKEY Tactical Signals Intelligence Collection System. Some models go even further, incorporating radar absorbent materials, reducing reflective surfaces and lowering the operator's IR signature."
 	icon_state = "s1-oni"
 	item_state = "s1-oni"
 	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_PAINT, ACCESSORY_SLOT_M3UTILITY, ACCESSORY_SLOT_PONCHO)
