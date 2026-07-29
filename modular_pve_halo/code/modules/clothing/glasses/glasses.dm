@@ -54,6 +54,7 @@
 	var/activated = TRUE
 	var/datum/action/item_action/activation
 	var/obj/item/attached_item
+	var/flipped = FALSE
 	garbage = FALSE
 
 	item_icons = list(
@@ -69,14 +70,26 @@
 	if(mods[ALT_CLICK])
 		if(!CAN_PICKUP(user, src))
 			return ..()
-		if(activated)
-			icon_state = "[base_icon_state]_f"
-			item_state = "[base_icon_state]_f"
-			base_icon_state = "[base_icon_state]_f"
-		if(!activated)
-			icon_state = "[base_icon_state]_f_0"
-			item_state = "[base_icon_state]_f_0"
-			base_icon_state = "[base_icon_state]_f"
+		if(!flipped)
+			if(activated)
+				icon_state = "[base_icon_state]_f"
+				item_state = "[base_icon_state]_f"
+				base_icon_state = "[base_icon_state]_f"
+			if(!activated)
+				icon_state = "[base_icon_state]_f_0"
+				item_state = "[base_icon_state]_f_0"
+				base_icon_state = "[base_icon_state]_f"
+			to_chat(user, SPAN_NOTICE("You flip the [src] around."))
+		else
+			if(activated)
+				icon_state = "[base_icon_state]"
+				item_state = "[base_icon_state]"
+				base_icon_state = "[base_icon_state]"
+			if(!activated)
+				icon_state = "[base_icon_state]_0"
+				item_state = "[base_icon_state]_0"
+				base_icon_state = "[base_icon_state]"
+			to_chat(user, SPAN_NOTICE("You flip the [src] back."))
 		if(ismob(src.loc))
 			var/mob/M = src.loc
 			M.update_inv_glasses()
@@ -147,6 +160,7 @@
 		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
+	var/flipped = FALSE
 
 /obj/item/clothing/glasses/hud/health/unsc/get_examine_text(mob/user)
 	. = ..()
@@ -154,8 +168,19 @@
 
 /obj/item/clothing/glasses/hud/health/unsc/clicked(mob/user, list/mods)
 	if(mods[ALT_CLICK])
-		icon_state = "scouter_med_f"
-		deactive_state = "scouter_med_f_0"
+		if(flipped)
+			deactive_state = "scouter_med_f_0"
+			if(active)
+				icon_state = "scouter_med_f"
+			else
+				icon_state = "scouter_med_f_0"
+		else
+			deactive_state = "scouter_med_0"
+			if(active)
+				icon_state = "scouter_med"
+			else
+				icon_state = "scouter_med_0"
+
 		if(ismob(src.loc))
 			var/mob/M = src.loc
 			M.update_inv_glasses()
