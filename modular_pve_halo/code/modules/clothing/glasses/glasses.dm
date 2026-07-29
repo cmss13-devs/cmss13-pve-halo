@@ -50,11 +50,9 @@
 	actions_types = list(/datum/action/item_action/toggle)
 	toggleable = TRUE
 	deactive_state = "scouter_0"
-	var/base_icon_state = "scouter"
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
 	flags_obj = OBJ_NO_HELMET_BAND|OBJ_IS_HELMET_GARB
 	eye_protection = EYE_PROTECTION_FLAVOR
-	var/flipped = FALSE
 	garbage = FALSE
 	w_class = SIZE_TINY
 
@@ -63,37 +61,6 @@
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
 
-/obj/item/clothing/glasses/scouter/get_examine_text(mob/user)
-	. = ..()
-	. += SPAN_INFO("Alt-clicking it in your hand will flip it.")
-
-/obj/item/clothing/glasses/scouter/clicked(mob/user, list/mods)
-	if(mods[ALT_CLICK])
-		if(!CAN_PICKUP(user, src))
-			return ..()
-		if(!flipped)
-			deactive_state = "[base_icon_state]_f_0"
-			if(active)
-				icon_state = "[base_icon_state]_f"
-				item_state = "[base_icon_state]_f"
-			if(!active)
-				icon_state = "[base_icon_state]_f_0"
-				item_state = "[base_icon_state]_f_0"
-			to_chat(user, SPAN_NOTICE("You flip the [src] around."))
-		else
-			deactive_state = "[base_icon_state]_0"
-			if(active)
-				icon_state = "[base_icon_state]"
-				item_state = "[base_icon_state]"
-			if(!active)
-				icon_state = "[base_icon_state]_0"
-				item_state = "[base_icon_state]_0"
-			to_chat(user, SPAN_NOTICE("You flip the [src] back."))
-		if(ismob(src.loc))
-			var/mob/M = src.loc
-			M.update_inv_glasses()
-			M.update_inv_wear_mask()
-	return ..()
 
 // scouter, med
 
@@ -107,29 +74,3 @@
 		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
-	var/flipped = FALSE
-
-/obj/item/clothing/glasses/hud/health/unsc/get_examine_text(mob/user)
-	. = ..()
-	. += SPAN_INFO("Alt-clicking it in your hand will flip it.")
-
-/obj/item/clothing/glasses/hud/health/unsc/clicked(mob/user, list/mods)
-	if(mods[ALT_CLICK])
-		if(flipped)
-			deactive_state = "scouter_med_f_0"
-			if(active)
-				icon_state = "scouter_med_f"
-			else
-				icon_state = "scouter_med_f_0"
-		else
-			deactive_state = "scouter_med_0"
-			if(active)
-				icon_state = "scouter_med"
-			else
-				icon_state = "scouter_med_0"
-
-		if(ismob(src.loc))
-			var/mob/M = src.loc
-			M.update_inv_glasses()
-			M.update_inv_wear_mask()
-	return ..()
