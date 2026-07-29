@@ -2820,7 +2820,6 @@
 #include "modular_pve_halo\code\game\objects\items\storage\misc.dm"
 #include "modular_pve_halo\code\game\objects\items\tools\flame_tools.dm"
 #include "modular_pve_halo\code\game\objects\items\toys\cards.dm"
-#include "modular_pve_halo\code\modules\client\preferences_gear.dm"
 #include "modular_pve_halo\code\game\objects\items\weapons\blades.dm"
 #include "modular_pve_halo\code\game\objects\structures\fence.dm"
 #include "modular_pve_halo\code\game\objects\structures\shower.dm"

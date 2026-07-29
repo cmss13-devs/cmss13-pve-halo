@@ -32,7 +32,7 @@
 	desc = "Oh my god...it's the halo helmetgarb...but who the hell's spriting it?"
 	icon = 'icons/halo/obj/items/helmet_garb.dmi'
 	icon_state = null
-	flags_obj = OBJ_NO_HELMET_BAND
+	flags_obj = OBJ_NO_HELMET_BAND|OBJ_IS_HELMET_GARB
 
 /obj/item/prop/helmetgarb/halo/visor
 	name = "gold UNSC helmet visor"

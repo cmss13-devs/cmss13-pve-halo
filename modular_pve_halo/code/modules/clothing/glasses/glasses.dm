@@ -47,15 +47,16 @@
 	icon = 'icons/halo/obj/items/clothing/glasses/glasses.dmi'
 	icon_state = "scouter"
 	item_state = "scouter"
+	actions_types = list(/datum/action/item_action/toggle)
+	toggleable = TRUE
+	deactive_state = "scouter_0"
 	var/base_icon_state = "scouter"
 	flags_equip_slot = SLOT_EYES|SLOT_FACE
 	flags_obj = OBJ_NO_HELMET_BAND|OBJ_IS_HELMET_GARB
 	eye_protection = EYE_PROTECTION_FLAVOR
-	var/activated = TRUE
-	var/datum/action/item_action/activation
-	var/obj/item/attached_item
 	var/flipped = FALSE
 	garbage = FALSE
+	w_class = SIZE_TINY
 
 	item_icons = list(
 		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
@@ -71,82 +72,28 @@
 		if(!CAN_PICKUP(user, src))
 			return ..()
 		if(!flipped)
-			if(activated)
+			deactive_state = "[base_icon_state]_f_0"
+			if(active)
 				icon_state = "[base_icon_state]_f"
 				item_state = "[base_icon_state]_f"
-				base_icon_state = "[base_icon_state]_f"
-			if(!activated)
+			if(!active)
 				icon_state = "[base_icon_state]_f_0"
 				item_state = "[base_icon_state]_f_0"
-				base_icon_state = "[base_icon_state]_f"
 			to_chat(user, SPAN_NOTICE("You flip the [src] around."))
 		else
-			if(activated)
+			deactive_state = "[base_icon_state]_0"
+			if(active)
 				icon_state = "[base_icon_state]"
 				item_state = "[base_icon_state]"
-				base_icon_state = "[base_icon_state]"
-			if(!activated)
+			if(!active)
 				icon_state = "[base_icon_state]_0"
 				item_state = "[base_icon_state]_0"
-				base_icon_state = "[base_icon_state]"
 			to_chat(user, SPAN_NOTICE("You flip the [src] back."))
 		if(ismob(src.loc))
 			var/mob/M = src.loc
 			M.update_inv_glasses()
 			M.update_inv_wear_mask()
 	return ..()
-
-/obj/item/clothing/glasses/scouter/on_enter_storage(obj/item/storage/internal/S)
-	..()
-
-	if(!istype(S))
-		return
-
-	remove_attached_item()
-
-	attached_item = S.master_object
-	RegisterSignal(attached_item, COMSIG_PARENT_QDELETING, PROC_REF(remove_attached_item))
-	activation = new /datum/action/item_action/toggle(src, S.master_object)
-
-	if(ismob(S.master_object.loc))
-		activation.give_to(S.master_object.loc)
-
-/obj/item/clothing/glasses/scouter/on_exit_storage(obj/item/storage/S)
-	remove_attached_item()
-	return ..()
-
-/obj/item/clothing/glasses/scouter/proc/remove_attached_item()
-	SIGNAL_HANDLER
-	if(!attached_item)
-		return
-
-	UnregisterSignal(attached_item, COMSIG_PARENT_QDELETING)
-	UnregisterSignal(attached_item, COMSIG_ITEM_EQUIPPED)
-	qdel(activation)
-	attached_item = null
-
-/obj/item/clothing/glasses/scouter/ui_action_click(mob/owner, obj/item/holder)
-	toggle_goggles(owner)
-	activation.update_button_icon()
-
-/obj/item/clothing/glasses/scouter/proc/toggle_goggles(mob/living/carbon/human/user)
-	if(user.is_mob_incapacitated())
-		return
-
-	if(!attached_item)
-		return
-
-	activated = !activated
-	if(activated)
-		to_chat(user, SPAN_NOTICE("You activate the HUD."))
-		icon_state = "[base_icon_state]"
-		playsound(user, 'sound/handling/hud_on.ogg', 25, 1)
-	else
-		to_chat(user, SPAN_NOTICE("You de-activate the HUD."))
-		playsound(user, 'sound/handling/hud_off.ogg', 25, 1)
-		icon_state = "[base_icon_state]_0"
-
-	attached_item.update_icon()
 
 // scouter, med
 
@@ -185,3 +132,4 @@
 			var/mob/M = src.loc
 			M.update_inv_glasses()
 			M.update_inv_wear_mask()
+	return ..()

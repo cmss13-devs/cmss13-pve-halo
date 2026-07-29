@@ -11,8 +11,8 @@
 		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
 
 /obj/item/clothing/under/marine/unsc/Initialize() //Needed because otherwise the game freaks out and thinks it isn't rollable because of different icon .dmis, something that'll be fixed on upstream merge I'm sure.
-    . = ..()
-    flags_jumpsuit += UNIFORM_SLEEVE_ROLLABLE
+	. = ..()
+	flags_jumpsuit += UNIFORM_SLEEVE_ROLLABLE|UNIFORM_JACKET_REMOVABLE|UNIFORM_SLEEVE_CUTTABLE
 
 /obj/item/clothing/under/marine/unsc/odst
 	name = "\improper ODST bodyglove"
