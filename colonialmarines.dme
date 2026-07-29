@@ -2829,6 +2829,8 @@
 #include "modular_pve_halo\code\modules\clothing\glasses\glasses.dm"
 #include "modular_pve_halo\code\modules\clothing\head\head.dm"
 #include "modular_pve_halo\code\modules\clothing\head\helmet.dm"
+#include "modular_pve_halo\code\modules\clothing\under\marine_uniform.dm"
+#include "modular_pve_halo\code\modules\clothing\under\unsc_ties.dm"
 #include "modular_pve_halo\code\modules\clothing\masks\breath.dm"
 #include "modular_pve_halo\code\modules\clothing\masks\gasmask.dm"
 #include "modular_pve_halo\code\modules\clothing\suits\marine_coat.dm"
