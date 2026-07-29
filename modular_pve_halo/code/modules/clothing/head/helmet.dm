@@ -147,3 +147,7 @@
 	name = "\improper CH299/S helmet"
 	desc = "A heavily modified variant of a standard helmet, developed for use by UEG strategic security personnel and the Office of Naval Intelligence. Modifications are primarily focused on a fully enclosed design with polarizing visor and an overall reinforced frame. Secondary modifications include advanced encryption/comms gear and proprietary VISR versions."
 	motion_tracker = TRUE
+
+/obj/item/clothing/head/uppcap/ushanka
+	name = "\improper ushanka"
+	desc = "An old-style cold weather hat favored by those hailing from old Russia, Eastern Europe, or colonies founded by settlers from there."

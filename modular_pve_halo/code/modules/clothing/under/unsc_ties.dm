@@ -12,6 +12,10 @@
 	flags_atom = NO_SNOW_TYPE
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi')
 
+/obj/item/clothing/accessory/pads/unsc/Initialize()
+	. = ..()
+	inv_overlay = image("icon" = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', "icon_state" = "[item_state? "[item_state]" : "[icon_state]"]")
+
 /obj/item/clothing/accessory/pads/unsc/variant_2
 	name = "\improper M48A Shoulder Pads"
 	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC."
@@ -221,6 +225,10 @@
 	flags_atom = NO_SNOW_TYPE
 	accessory_icons = list(WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', WEAR_JACKET = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi')
 
+/obj/item/clothing/accessory/storage/webbing/m52b/Initialize()
+	. = ..()
+	inv_overlay = image("icon" = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', "icon_state" = "[item_state? "[item_state]" : "[icon_state]"]")
+
 /obj/item/storage/internal/accessory/webbing/m52bgeneric
 	cant_hold = list(
 		/obj/item/ammo_magazine/handful/shotgun,
@@ -229,7 +237,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/mag
 	name = "\improper M52B Pattern Magazine Webbing"
-	desc = "A variant of the M52B pattern webbing that features pouches for pulse rifle magazines."
+	desc = "A variant of the M52B pattern webbing that features pouches for various kinds of magazines."
 	icon_state = "m52b_magwebbing"
 	hold = /obj/item/storage/internal/accessory/webbing/m52bmag
 
@@ -273,7 +281,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/shotgun
 	name = "\improper M52B Pattern Shell Webbing"
-	desc = "A slightly modified variant of the M52B pattern webbing, fitted for 12 gauge shotgun shells."
+	desc = "A slightly modified variant of the M52B pattern webbing, fitted with elasticated loops for holding various gauges of shotgun shells."
 	icon_state = "m52b_shotgunwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bshotgun
 
@@ -284,7 +292,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/small
 	name = "\improper M52B Pattern Small Pouch Webbing"
-	desc = "A set of M52B pattern webbing fully outfitted with pouches and pockets to carry a while array of small items."
+	desc = "A set of M52B pattern webbing fully outfitted with pouches and pockets to carry a whole array of small items."
 	icon_state = "m52b_smallwebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgeneric
 	slot = ACCESSORY_SLOT_M3UTILITY
@@ -297,7 +305,7 @@
 
 /obj/item/clothing/accessory/storage/webbing/m52b/grenade
 	name = "\improper M52B Pattern Grenade Webbing"
-	desc = "A variation of the M52B pattern webbing fitted with loops for storing M40 grenades."
+	desc = "A variation of the M52B pattern webbing fitted with multiple small pouches for storing all manner of grenades."
 	icon_state = "m52b_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade
 
