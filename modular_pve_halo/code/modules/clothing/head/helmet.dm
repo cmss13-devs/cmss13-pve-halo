@@ -5,17 +5,54 @@
 	icon_state = "helmet_2"
 	item_state = "helmet_2"
 	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
+	flags_marine_helmet = HELMET_GARB_OVERLAY|HELMET_DAMAGE_OVERLAY
 	built_in_visors = null
 	start_down_visor_type = null
 	item_icons = list(
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	)
 	var/motion_tracker = FALSE
+	/// The dmi where the grayscale squad overlays are contained, added here just to brute force the search in case of weird outliers
+	helmet_overlay_icon = 'icons/halo/mob/humans/onmob/helmet_garb.dmi'
 
 /obj/item/clothing/head/helmet/marine/unsc/Initialize(mapload, list/new_protection)
 	. = ..()
 	if(motion_tracker)
 		AddComponent(/datum/component/motion_tracker_manager)
+
+/obj/item/clothing/head/helmet/marine/unsc/update_icon()
+	.=..()
+	helmet_overlays = list() // Rebuild our list every time
+	if(pockets && length(pockets.contents) && (flags_marine_helmet & HELMET_GARB_OVERLAY))
+		var/list/above_band_layer = list()
+		var/list/below_band_layer = list()
+		var/has_helmet_band = FALSE
+		for(var/obj/O in pockets.contents)
+			if(GLOB.allowed_helmet_items[O.type])
+				var/has_band = !HAS_FLAG(O.flags_obj, OBJ_NO_HELMET_BAND)
+				if(has_band)
+					has_helmet_band = TRUE
+				if(GLOB.allowed_helmet_items[O.type] == HELMET_GARB_RELAY_ICON_STATE)
+					if(has_band)
+						above_band_layer += "helmet_[O.icon_state]"
+					else
+						below_band_layer += "helmet_[O.icon_state]"
+				else
+					if(has_band)
+						above_band_layer += GLOB.allowed_helmet_items[O.type]
+					else
+						below_band_layer += GLOB.allowed_helmet_items[O.type]
+		if(has_helmet_band)
+			helmet_overlays = above_band_layer + list("helmet_band") + below_band_layer
+		else
+			helmet_overlays = above_band_layer + below_band_layer
+
+	if(active_visor)
+		helmet_overlays += active_visor.helmet_overlay
+
+	if(ismob(loc))
+		var/mob/M = loc
+		M.update_inv_head()
 
 /obj/item/clothing/head/helmet/marine/unsc/motion
 	name = "\improper CH252-M helmet"
