@@ -65,6 +65,10 @@
 	edge = TRUE
 
 
+/datum/unarmed_attack/punch/spartan
+	attack_verb = list("pummel","slamm","punch")
+	damage = 50
+
 /datum/unarmed_attack/punch/synthetic
 	attack_verb = list("punch","clock","slugg","bludgeon","maul")
 	attack_sound = 'sound/weapons/synthpunch1.ogg'
