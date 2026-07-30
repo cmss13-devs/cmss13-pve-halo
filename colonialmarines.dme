@@ -2845,7 +2845,6 @@
 #include "modular_pve_halo\code\modules\clothing\under\unsc_ties.dm"
 #include "modular_pve_halo\code\modules\cm_marines\equipment\maps.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
-#include "modular_pve_halo\code\modules\mob\living\carbon\human\update_icons.dm"
 #include "modular_pve_halo\code\modules\projectiles\cov_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\unsc_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\cov_guns.dm"
