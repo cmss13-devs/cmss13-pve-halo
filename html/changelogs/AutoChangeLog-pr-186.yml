@@ -1,0 +1,5 @@
+author: "Yorkoh"
+delete-after: True
+changes:
+  - rscadd: "added squadlead variants of both ferryman and odst - they have the command channel so for mixed group ops not every player has to be on the same net"
+  - qol: "unsc headsets now default to FTL / SL correctly"
