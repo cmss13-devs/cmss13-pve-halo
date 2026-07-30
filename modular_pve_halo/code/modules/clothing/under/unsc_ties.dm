@@ -155,8 +155,8 @@
 /obj/item/clothing/accessory/pads/unsc/greaves/odst/oni
 	name = "\improper ONI M70DT Greaves"
 	desc = "A set greaves designed to be worn in conjuction with M70DT body armor. This set is painted black, matching ONI armor colorations."
-	icon_state = "odst_shinguards"
-	item_state = "odst_shinguards"
+	icon_state = "shinguards_onist"
+	item_state = "shinguards_onist"
 
 // odst
 
