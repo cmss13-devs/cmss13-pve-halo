@@ -1,0 +1,5 @@
+/obj/item/storage/pouch/first_responder/unsc/fill_preset_inventory()
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
+	new /obj/item/storage/syringe_case/unsc/morphine/full(src)

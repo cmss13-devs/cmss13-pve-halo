@@ -4,7 +4,7 @@
 	name = "halo cap placeholder"
 	desc = "You shouldn't be seeing this."
 	icon = 'icons/halo/obj/items/clothing/hats/hats_by_faction/hat_unsc.dmi'
-	icon_state = "headset"
+	icon_state = "cap"
 	item_icons = list(
 		WEAR_HEAD = 'icons/halo/mob/humans/onmob/clothing/hats/hats_by_faction/hat_unsc.dmi'
 	)

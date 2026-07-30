@@ -73,7 +73,7 @@
 	motion_tracker = TRUE
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot
-	name = "\improper FH640 Pilot Helmet"
+	name = "\improper FH400 Pilot Helmet"
 	desc = "Standard issue flight helmet for UNSC dropship pilots, uses a conventional HUD visor which automatically interfaces with whatever vehicle it finds itself in. The classic FH400 pilot helmet has remained largely unchanged in over a hundred years, outside of regular hardware and software updates, which is a testament to its enduring legacy."
 	icon_state = "pilot_3"
 	item_state = "pilot_3"
@@ -81,14 +81,14 @@
 	motion_tracker = TRUE
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot/weapons_operator
-	name = "\improper FH400 Pilot Helmet"
+	name = "\improper FH400/WS Pilot Helmet"
 	desc = "A standard flight helmet in use with the UNSC Marines, modified with an alternate WS (Weapon-Systems) module. The WS module allows for seamless integration with the aircraft's weaponry, defensive systems and sensors, while allowing the WSO to isolate themselves from unnecessary visual clutter."
 	desc_lore = "While nominally seen in use by marine weapon system officers, the advanced interface systems and clear imaging provided by the blockier HUD unit has seen it also assigned to UNSC escape craft, which may require extreme maneuvers by their pilots. For the same reason it has also become unofficially popular with some regular pilots as well."
 	icon_state = "pilot_2"
 	item_state = "pilot_2"
 
 /obj/item/clothing/head/helmet/marine/unsc/pilot/navy
-	name = "\improper FH400/WS Pilot Helmet"
+	name = "\improper FH640 Pilot Helmet"
 	desc = "The UNSC Navy's primary flight helmet assigned to nearly all combat pilots. Features top of the line hardware and software including proprietary VISR versions and 45 minutes of emergency rebreathing capability, alongside general comfort considerations like active-cooling. Cozy."
 	desc_lore = "Developed in response to mounting demands by Navy combat pilots during the height of the Insurrection for a new helmet that was both advanced enough to keep up with the realities of pitched small craft combat and able to protect its wearer more readily in the event of a worse case scenario. Thanks to its success in both categories it has also become one of the most commonly stolen items when considering cross-branch theft."
 	icon_state = "pilot"

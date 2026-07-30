@@ -113,6 +113,9 @@ GLOBAL_LIST_INIT(job_command_roles, JOB_COMMAND_ROLES_LIST)
 #define JOB_AUXILIARY_OFFICER "Auxiliary Support Officer"
 #define JOB_CAS_PILOT "Gunship Pilot"
 #define JOB_DROPSHIP_PILOT "Pilot"
+// HALO PVE EDIT - START - WSO DEFINE
+#define JOB_DROPSHIP_COPILOT "Co-Pilot"
+// HALO PVE EDIT - END
 #define JOB_TANK_CREW "Tank Crew"
 #define JOB_DROPSHIP_CREW_CHIEF "Dropship Crew Chief"
 #define JOB_INTEL "Intelligence Officer"

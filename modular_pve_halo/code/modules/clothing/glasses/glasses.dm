@@ -61,6 +61,24 @@
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
 
+/obj/item/clothing/glasses/scouter/clicked(mob/user, list/mods)
+	if(mods[ALT_CLICK])
+		if(!CAN_PICKUP(user, src))
+			return ..()
+		if(istypestrict(src, /obj/item/clothing/glasses/scouter))
+			var/obj/item/clothing/glasses/scouter/flipped/new_scouter = new(user.loc)
+			user.put_in_active_hand(new_scouter)
+		else if(istypestrict(src, /obj/item/clothing/glasses/scouter/flipped))
+			var/obj/item/clothing/glasses/scouter/new_scouter = new(user.loc)
+			user.put_in_active_hand(new_scouter)
+
+	return ..()
+
+/obj/item/clothing/glasses/scouter/flipped // i dont wanna fuck with all the code
+
+	icon_state = "scouter_f"
+	item_state = "scouter_f"
+	deactive_state = "scouter_f_0"
 
 // scouter, med
 

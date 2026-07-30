@@ -885,7 +885,7 @@
 			. -= mobility_aura * 5
 		if(dodge_pool)
 			. -= dodge_pool * 8
-		if(istype(wear_suit, /obj/item/clothing/suit/marine/shielded))
+		if(istype(wear_suit, /obj/item/clothing/suit/marine/unsc/forecon_flakvest))
 			. -= 15
 		var/mob/living/carbon/human/shooter_human = P.firer
 		if(istype(shooter_human))

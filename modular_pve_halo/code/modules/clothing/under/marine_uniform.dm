@@ -30,7 +30,7 @@
     flags_jumpsuit = null
 
 /obj/item/clothing/under/marine/unsc/forecon
-	name = "\improper UNSC uniform"
+	name = "\improper UNSC recon uniform"
 	icon_state = "forecon"
 	worn_state = "forecon"
 
