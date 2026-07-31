@@ -56,6 +56,9 @@
 #define MAP_HALO_NEW_IRVINE "New Irvine"
 #define MAP_MACKAY_STATION "Mackay Station"
 #define MAP_ONI_DIGSITE_451 "ONI Digsite 451"
+#define MAP_JUNGLE_DELTA "Jungle Delta" //Featureless Jungle
+#define MAP_PROSPECTOR_CANYON "Prospector Canyon"//Mostly Featureless Desert canyon
+#define MAP_ARCTIC_VALLEY "Arctic Valley"//Featureless Arctic
 
 #define GAMEMODE_WHISKEY_OUTPOST "Whiskey Outpost"
 #define GAMEMODE_HIVE_WARS "Hive Wars"
