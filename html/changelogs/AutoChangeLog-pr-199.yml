@@ -1,0 +1,5 @@
+author: "Karmac"
+delete-after: True
+changes:
+  - rscadd: "added prop versions of the pelican nacelles and wings, as well as a parent type that's just the pelican frame with no opacity, added a subtype of the pelican roof overlay missing a left wing"
+  - mapadd: "added a crashed pelican template"
