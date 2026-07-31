@@ -181,7 +181,8 @@
 
 		list("POUCHES", -1, null, null, null),
 		list("First Responder Pouch", floor(scale * 15), /obj/item/storage/pouch/first_responder, VENDOR_ITEM_REGULAR),
-		list("Illum. Equipment Pouch", floor(scale * 15), /obj/item/storage/pouch/flare/unsc, VENDOR_ITEM_REGULAR),
+		list("Illum. Equipment Pouch (Empty)", floor(scale * 15), /obj/item/storage/pouch/flare/unsc, VENDOR_ITEM_REGULAR),
+		list("Chemlight Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/unsc/chemlight/full, VENDOR_ITEM_REGULAR),
 		list("Large Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/large, VENDOR_ITEM_REGULAR),
 		list("Medium General Pouch", floor(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
 		list("Pistol Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/pistol/unsc, VENDOR_ITEM_REGULAR),

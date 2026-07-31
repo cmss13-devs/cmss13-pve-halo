@@ -153,3 +153,28 @@
 	flame_base_tint = "#49F37C"
 	light_range = 8
 	light_power = 1.5
+
+//Pre-cracked chemlights for GMs to use
+/obj/item/device/flashlight/flare/chemlight/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/flare/chemlight/red/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/flare/chemlight/blue/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/flare/chemlight/orange/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/flare/chemlight/yellow/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/flare/chemlight/radioisotope/on/Initialize()
+	. = ..()
+	turn_on()
