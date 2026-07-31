@@ -23,3 +23,15 @@
   - qol: vendors now have more webbings and such available
   - qol: vendors have biofoam pens and medical pouches that can take the halo IFAK
       stuff
+2026-07-31:
+  Karmac:
+  - rscadd: added prop versions of the pelican nacelles and wings, as well as a parent
+      type that's just the pelican frame with no opacity, added a subtype of the pelican
+      roof overlay missing a left wing
+  - mapadd: added a crashed pelican template
+  Yorkoh:
+  - rscadd: added squadlead variants of both ferryman and odst - they have the command
+      channel so for mixed group ops not every player has to be on the same net
+  - qol: unsc headsets now default to FTL / SL correctly
+  tyeagg:
+  - bugfix: muzzle flash attaches to firer now
