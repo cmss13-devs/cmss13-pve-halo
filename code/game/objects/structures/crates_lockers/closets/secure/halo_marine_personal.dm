@@ -47,3 +47,5 @@
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/rto
 	job = JOB_SQUAD_RTO
+
+//
