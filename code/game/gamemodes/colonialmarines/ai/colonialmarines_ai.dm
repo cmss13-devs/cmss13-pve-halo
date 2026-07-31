@@ -138,7 +138,20 @@ GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/j
 		/datum/job/marine/medic/ai/odst = JOB_SQUAD_MEDIC,\
 		/datum/job/marine/standard/ai/rto = JOB_SQUAD_RTO,\
 		/datum/job/marine/tl/ai/odst = JOB_SQUAD_TEAM_LEADER,\
-		/datum/job/marine/leader/ai/odst = JOB_SQUAD_LEADER)))
+		/datum/job/marine/leader/ai/odst = JOB_SQUAD_LEADER,\
+		/datum/squad/marine/combined = list(/datum/job/marine/standard/ai/odst = JOB_SQUAD_MARINE_ODST,\
+		/datum/job/marine/specialist/ai/odst = JOB_SQUAD_SPECIALIST_ODST,\
+		/datum/job/marine/medic/ai/odst = JOB_SQUAD_MEDIC_ODST,\
+		/datum/job/marine/standard/ai/rto = JOB_SQUAD_RTO_ODST,\
+		/datum/job/marine/tl/ai/odst = JOB_SQUAD_TEAM_LEADER_ODST,\
+		/datum/job/marine/leader/ai/odst = JOB_SQUAD_LEADER_ODST,\
+		/datum/job/marine/leader/ai = JOB_SQUAD_LEADER,\
+		/datum/job/marine/standard/ai/rto = JOB_SQUAD_RTO,\
+		/datum/job/marine/medic/ai = JOB_SQUAD_MEDIC,\
+		/datum/job/marine/tl/ai = JOB_SQUAD_TEAM_LEADER,\
+		/datum/job/marine/smartgunner/ai = JOB_SQUAD_SMARTGUN,\
+		/datum/job/marine/specialist/ai = JOB_SQUAD_SPECIALIST,\
+		/datum/job/marine/standard/ai = JOB_SQUAD_MARINE))))
 
 GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI,\
 												/datum/squad/marine/upp = ROLES_AI_UPP,\
@@ -148,7 +161,8 @@ GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI
 												/datum/squad/marine/rmc = ROLES_RMCTROOP,\
 												/datum/squad/marine/pmc = ROLES_PMCPLT,\
 												/datum/squad/marine/forecon = ROLES_AI_FORECON,\
-												/datum/squad/marine/odst = ROLES_ODST))
+												/datum/squad/marine/odst = ROLES_ODST,\
+												/datum/squad/marine/combined = ROLES_SQUAD_UNSC_ODST_COMBO))
 
 
 GLOBAL_LIST_INIT(personal_weapons_list, list("M90 CAWS shotgun" = /obj/effect/essentials_set/m90caws,\

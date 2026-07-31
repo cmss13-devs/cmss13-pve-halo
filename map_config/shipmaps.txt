@@ -48,6 +48,18 @@ map unsc_dark_was_the_night_odst
 
 endmap
 
+map unsc_dark_was_the_night_combined
+
+endmap
+
+map unsc_dark_was_the_night_combined_odst_b
+
+endmap
+
+map unsc_dark_was_the_night_combined_marine_b
+
+endmap
+
 map mackay_station_shipmap
 
 endmap

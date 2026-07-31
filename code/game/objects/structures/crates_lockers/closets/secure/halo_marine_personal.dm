@@ -6,19 +6,19 @@
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen(src)
 
 /obj/structure/closet/secure_closet/marine_personal/odst/rifleman
-	job = JOB_SQUAD_MARINE
+	job = JOB_SQUAD_MARINE_ODST
 
 /obj/structure/closet/secure_closet/marine_personal/odst/specialist
-	job = JOB_SQUAD_SPECIALIST
+	job = JOB_SQUAD_SPECIALIST_ODST
 
 /obj/structure/closet/secure_closet/marine_personal/odst/corpsman
-	job = JOB_SQUAD_MEDIC
+	job = JOB_SQUAD_MEDIC_ODST
 
 /obj/structure/closet/secure_closet/marine_personal/odst/team_leader
-	job = JOB_SQUAD_TEAM_LEADER
+	job = JOB_SQUAD_TEAM_LEADER_ODST
 
 /obj/structure/closet/secure_closet/marine_personal/odst/squad_leader
-	job = JOB_SQUAD_LEADER
+	job = JOB_SQUAD_LEADER_ODST
 
 /obj/structure/closet/secure_closet/marine_personal/odst/squad_leader/spawn_gear()
 	new /obj/item/clothing/under/marine/odst(src)
@@ -26,7 +26,7 @@
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen/squadlead(src)
 
 /obj/structure/closet/secure_closet/marine_personal/odst/rto
-	job = JOB_SQUAD_RTO
+	job = JOB_SQUAD_RTO_ODST
 
 // ==UNSC== //
 

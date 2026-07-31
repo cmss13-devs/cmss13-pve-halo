@@ -92,6 +92,7 @@
 	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "ODST-RFN"
 	skills = /datum/skills/pfc
+	assignment = JOB_SQUAD_MARINE_ODST
 
 /datum/equipment_preset/unsc/pfc/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -117,6 +118,7 @@
 	name = "ODST Hospital Corpsman"
 	role_comm_title = "ODST-HC"
 	skills = /datum/skills/combat_medic
+	assignment = JOB_SQUAD_MEDIC_ODST
 
 /datum/equipment_preset/unsc/medic/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -142,6 +144,7 @@
 	name = "ODST Radio Telephone Operator"
 	role_comm_title = "ODST-RTO"
 	skills = /datum/skills/pfc
+	assignment = JOB_SQUAD_RTO_ODST
 
 /datum/equipment_preset/unsc/rto/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -168,6 +171,7 @@
 	name = "ODST Squad Weapons Specialist"
 	role_comm_title = "ODST-Spc"
 	skills = /datum/skills/specialist
+	assignment = JOB_SQUAD_SPECIALIST_ODST
 
 /datum/equipment_preset/unsc/spec/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -194,6 +198,7 @@
 	name = "ODST Fireteam Leader"
 	role_comm_title = "ODST-FTL"
 	skills = /datum/skills/tl
+	assignment = JOB_SQUAD_TEAM_LEADER_ODST
 
 /datum/equipment_preset/unsc/tl/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -221,6 +226,7 @@
 	role_comm_title = "ODST-SL"
 	minimum_age = 27
 	skills = /datum/skills/SL
+	assignment = JOB_SQUAD_LEADER_ODST
 
 /datum/equipment_preset/unsc/leader/odst/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
