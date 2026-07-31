@@ -1,0 +1,11 @@
+{
+	"map_name": "New Irvine - Forest Valley",
+    "short_name": "New Irvine - Forest Valley",
+	"map_path": "map_files/halo_forest_valley",
+    "map_file": "halo_forest_valley.dmm",
+    "webmap_url": "LV552",
+    "map_item_type": "/obj/item/map/lv522_map",
+    "weather_holder": "/datum/weather_ss_map_holder/lv522_chances_claim",
+
+    "camouflage": "jungle"
+}
