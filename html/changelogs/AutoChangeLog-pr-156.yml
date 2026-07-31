@@ -1,7 +1,0 @@
-author: "Yorkoh"
-delete-after: True
-changes:
-  - rscdel: "commented gas masks out of vendors"
-  - qol: "halo referenced items and names in vendors"
-  - qol: "vendors now have more webbings and such available"
-  - qol: "vendors have biofoam pens and medical pouches that can take the halo IFAK stuff"
