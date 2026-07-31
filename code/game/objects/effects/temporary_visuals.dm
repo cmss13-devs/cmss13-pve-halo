@@ -335,6 +335,7 @@
 	icon_state = "banshee_rackless"
 	pixel_x = -64
 	pixel_y = -64
+
 /particles/plasma
 	icon = 'icons/halo/effects/plasma.dmi'
 	icon_state = "circle"
@@ -423,6 +424,23 @@
 	position = generator(GEN_CIRCLE, 5, 5, NORMAL_RAND)
 	friction = generator(GEN_NUM, 0.5, 0.4)
 
+/particles/plasma_grenade_flame
+	icon = 'icons/halo/effects/plasma.dmi'
+	icon_state = list("shape_1" = 1, "shape_2" = 1, "shape_3" = 1, "shape_4" = 1)
+	width = 340
+	height = 340
+	count = 50
+	spawning = 0
+	gradient = list("#FFFFFF", "#9990ffff", "#3e308aff")
+	color_change = generator(GEN_NUM, 0.025, 0.01)
+	lifespan = 6
+	fade = generator(GEN_NUM, 5, 35)
+	grow = -0.065
+	position =  generator(GEN_CIRCLE, 2, 2, NORMAL_RAND)
+	velocity = list(0, 7.5)
+	scale = generator(GEN_NUM, 0.2, 0.35)
+	friction = generator(GEN_NUM, 0.1, 0.15)
+
 /obj/effect/temp_visual/plasma_incoming
 	icon = null
 	duration = 3 SECONDS
@@ -460,6 +478,11 @@
 	add_filter("pixel_outline", 1, outline_filter(1, outline_color, OUTLINE_SHARP))
 	add_filter("glow", 2, drop_shadow_filter(0, 0, 5, 1, outline_color))
 	addtimer(VARSET_CALLBACK(particles, count, 0), 0.25 SECONDS)
+
+/obj/effect/temp_visual/plasma_explosion/cyan
+	light_color = "#3decff"
+	particles_used = /particles/plasma_explosion
+	outline_color = "#3decff"
 
 /obj/effect/temp_visual/plasma_explosion/small
 	light_power = 2
