@@ -35,9 +35,6 @@
 	normal_image.plane = 900
 	under_image.alpha = 75
 
-/obj/structure/roof/pelican_roof/missing_l_wing/ex_act(severity, direction)
-	return
-
 /obj/structure/roof/pelican_roof/missing_l_wing
 	icon_state = "missing_l_wing2"
 
