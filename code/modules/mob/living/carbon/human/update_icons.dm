@@ -509,8 +509,8 @@ Applied by gun suicide and high impact bullet executions, removed by rejuvenate,
 
 //HALO PVE EDIT - START - Halo-specific Helmet Overlay things
 
-		if(istype(head, /obj/item/clothing/head/helmet/marine/unsc))
-			var/obj/item/clothing/head/helmet/marine/unsc/unsc_marine_helmet = head
+		if(istype(head, /obj/item/clothing/head/helmet/unsc))
+			var/obj/item/clothing/head/helmet/unsc/unsc_marine_helmet = head
 			if(assigned_squad && unsc_marine_helmet.flags_marine_helmet & HELMET_SQUAD_OVERLAY)
 				if(assigned_squad && assigned_squad.equipment_color && assigned_squad.use_stripe_overlay)
 					var/leader = assigned_squad.squad_leader

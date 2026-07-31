@@ -492,7 +492,7 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/odst(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/odst(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/unsc/odst(new_human), WEAR_BODY)
 	//jacket
@@ -672,7 +672,7 @@
 	if(!istype(new_human))
 		return
 	if(prob(90)) // if the marine wears a helmet or not
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 50, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 50))
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/unsc = 50, /obj/item/clothing/head/helmet/unsc/variant_2 = 50))
 		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
@@ -687,7 +687,7 @@
 	if(!istype(new_human))
 		return
 	if(prob(90)) // if the marine wears a helmet or not
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 25, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 50))
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/unsc = 25, /obj/item/clothing/head/helmet/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 50))
 		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
@@ -702,7 +702,7 @@
 	if(!istype(new_human))
 		return
 	if(prob(90)) // if the marine wears a helmet or not
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 25, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 25, , /obj/item/clothing/head/cmcap/boonie = 25))
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/unsc = 25, /obj/item/clothing/head/helmet/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 25, , /obj/item/clothing/head/cmcap/boonie = 25))
 		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
@@ -716,7 +716,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/variant_2(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/variant_2(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/neckguard(new_human), WEAR_ACCESSORY)
@@ -731,7 +731,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/pilot(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
@@ -743,7 +743,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot/weapons_operator(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/pilot/weapons_operator(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
@@ -755,7 +755,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot/navy(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/pilot/navy(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
