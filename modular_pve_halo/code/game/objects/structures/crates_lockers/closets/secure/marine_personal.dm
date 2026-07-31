@@ -22,7 +22,7 @@
 	job = JOB_SQUAD_LEADER
 
 /obj/structure/closet/secure_closet/marine_personal/odst/squad_leader/spawn_gear()
-	new /obj/item/clothing/under/marine/odst(src)
+	new /obj/item/clothing/under/marine/unsc/odst(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen/squadlead(src)
 
