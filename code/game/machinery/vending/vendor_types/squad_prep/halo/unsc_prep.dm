@@ -15,9 +15,15 @@
 		list("UNSC Patrol Cap", floor(scale * 15), /obj/item/clothing/head/cmcap/halo/unsc, VENDOR_ITEM_REGULAR),
 		list("Operations Cap", floor(scale * 15), /obj/item/clothing/head/cmcap/bridge, VENDOR_ITEM_REGULAR),
 		list("Boonie Hat", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie, VENDOR_ITEM_REGULAR),
+
+		list("HELMET GARB/EYE WEAR", -1, null, null, null),
+		list("UNSC Scouter", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor, VENDOR_ITEM_REGULAR),
+		list("Helmet Visor (Gold)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor/silver, VENDOR_ITEM_REGULAR),
+		list("Helmet Visor (Silver)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor/large, VENDOR_ITEM_REGULAR),
+		list("Large Helmet Visor (Gold)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor/large/silver, VENDOR_ITEM_REGULAR),
+		list("Large Helmet Visor (Silver)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor, VENDOR_ITEM_REGULAR),
 		list("Orange UNSC Shooting Shades", floor(scale * 15), /obj/item/clothing/glasses/sunglasses/big/unsc, VENDOR_ITEM_REGULAR),
 		list("Silver UNSC Shooting Shades", floor(scale * 15), /obj/item/clothing/glasses/sunglasses/big/unsc/silver, VENDOR_ITEM_REGULAR),
-		list("UNSC Scouter", floor(scale * 15), /obj/item/clothing/glasses/scouter, VENDOR_ITEM_REGULAR),
 
 		list("WEBBINGS", -1, null, null),
 		list("M52B Pattern Webbing", round(scale * 10), /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
@@ -151,9 +157,15 @@
 		list("Recon Boonie Hat", floor(scale * 15), /obj/item/clothing/head/cmcap/boonie/halo/unsc/forecon, VENDOR_ITEM_REGULAR),
 		list("Recon Bandana", floor(scale * 15), /obj/item/clothing/head/cmbandana/halo/unsc/forecon, VENDOR_ITEM_REGULAR),
 		list("Recon Headband", floor(scale * 15), /obj/item/clothing/head/headband/halo/unsc/forecon, VENDOR_ITEM_REGULAR),
+
+		list("HELMET GARB/EYE WEAR", -1, null, null, null),
+		list("UNSC Scouter", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor, VENDOR_ITEM_REGULAR),
+		list("Helmet Visor (Gold)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor/silver, VENDOR_ITEM_REGULAR),
+		list("Helmet Visor (Silver)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor/large, VENDOR_ITEM_REGULAR),
+		list("Large Helmet Visor (Gold)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor/large/silver, VENDOR_ITEM_REGULAR),
+		list("Large Helmet Visor (Silver)", floor(scale * 15), /obj/item/prop/helmetgarb/halo/visor, VENDOR_ITEM_REGULAR),
 		list("Orange UNSC Shooting Shades", floor(scale * 15), /obj/item/clothing/glasses/sunglasses/big/unsc, VENDOR_ITEM_REGULAR),
 		list("Silver UNSC Shooting Shades", floor(scale * 15), /obj/item/clothing/glasses/sunglasses/big/unsc/silver, VENDOR_ITEM_REGULAR),
-		list("UNSC Scouter", floor(scale * 15), /obj/item/clothing/glasses/scouter, VENDOR_ITEM_REGULAR),
 
 		list("WEBBINGS", -1, null, null),
 		list("M52B Pattern Webbing", 2, /obj/item/clothing/accessory/storage/webbing/m52b, VENDOR_ITEM_REGULAR),
