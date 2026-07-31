@@ -787,6 +787,12 @@
 	new /obj/item/tool/extinguisher/mini(src)
 	new /obj/item/bodybag/cryobag(src)
 
+/obj/item/storage/pouch/first_responder/unsc/fill_preset_inventory()
+	new /obj/item/stack/medical/ointment(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
+
 /obj/item/storage/pouch/first_responder/rmc
 	name = "advanced first aid pouch"
 	desc = "A pouch designed for carrying supplies to assist medical personnel and quickly respond to injuries on the battlefield without immediately treating them."
