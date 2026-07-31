@@ -1,3 +1,4 @@
+
 // ==ODST== //
 
 /obj/structure/closet/secure_closet/marine_personal/odst/spawn_gear()
