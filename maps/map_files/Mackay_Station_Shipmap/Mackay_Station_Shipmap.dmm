@@ -11,6 +11,93 @@
 /obj/item/tacmap_map,
 /turf/open/space/basic,
 /area/space)
+"aac" = (
+/obj/structure/flora/pottedplant{
+	pixel_x = -9;
+	pixel_y = -1
+	},
+/turf/open/floor/almayer/silver/southwest,
+/area/mackay_station/romeo/redtram1)
+"aad" = (
+/obj/structure/flora/pottedplant{
+	pixel_x = -8;
+	pixel_y = -1
+	},
+/turf/open/floor/almayer/silver/southwest,
+/area/mackay_station/romeo/redtram2)
+"aae" = (
+/obj/structure/flora/pottedplant{
+	pixel_x = 8;
+	pixel_y = -1
+	},
+/turf/open/floor/almayer/silver/southeast,
+/area/mackay_station/romeo/redtram2)
+"aaf" = (
+/obj/structure/machinery/computer/tech_control{
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/turf/open/floor/almayer/silver/west,
+/area/mackay_station/romeo/redtram1)
+"aag" = (
+/obj/structure/prop/almayer/computers/sensor_computer3{
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/turf/open/floor/almayer/silver/east,
+/area/mackay_station/romeo/redtram1)
+"aah" = (
+/obj/structure/machinery/computer/supply_drop_console/limited/alternate{
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/turf/open/floor/almayer/silver/west,
+/area/mackay_station/romeo/redtram2)
+"aai" = (
+/obj/structure/prop/almayer/computers/sensor_computer3{
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/obj/structure/machinery/door_control{
+	id = "romeotram2";
+	name = "Tramway Access Controls";
+	pixel_y = 12;
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/silver/east,
+/area/mackay_station/romeo/redtram2)
+"aaj" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = -8;
+	pixel_y = 13
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = -5;
+	pixel_y = -4
+	},
+/obj/item/ammo_box/magazine/misc/unsc/mre{
+	pixel_x = -5;
+	pixel_y = 8
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/mackay_station/golf/greenarmory)
+"aak" = (
+/obj/structure/surface/table/reinforced/almayer_B,
+/obj/item/ammo_box/magazine/misc/unsc/mre{
+	pixel_x = 6;
+	pixel_y = 7
+	},
+/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+	pixel_x = 9;
+	pixel_y = 14
+	},
+/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/turf/open/floor/almayer/pod_landing_floor,
+/area/mackay_station/golf/greenarmory)
 "aas" = (
 /obj/structure/platform{
 	dir = 4
@@ -1365,7 +1452,9 @@
 /area/mackay_station/romeo/redcommons2)
 "aUq" = (
 /obj/effect/decal/unsc/infirmary{
-	dir = 1
+	dir = 1;
+	pixel_x = -16;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenrec)
@@ -2365,15 +2454,11 @@
 "bCY" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/unsc/br55{
-	pixel_x = 0;
-	pixel_y = 17
-	},
-/obj/item/ammo_box/magazine/unsc/br55{
 	pixel_y = 4
 	},
-/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
+/obj/item/ammo_box/magazine/unsc/br55{
 	pixel_x = 0;
-	pixel_y = 21
+	pixel_y = 12
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -3847,19 +3932,14 @@
 	pixel_y = 16
 	},
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
-	pixel_x = 4;
-	pixel_y = 22;
+	pixel_x = -7;
+	pixel_y = -3;
 	layer = 3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade/launchable{
-	pixel_x = 11;
-	pixel_y = 12
 	},
 /obj/item/storage/pouch/shotgun/large{
 	pixel_x = 8;
 	pixel_y = -6
 	},
-/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "cAE" = (
@@ -4392,7 +4472,8 @@
 "cVw" = (
 /obj/effect/decal/unsc/armory{
 	dir = 1;
-	pixel_x = 15
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/greencorner/north,
 /area/mackay_station/golf/greenrec)
@@ -5741,7 +5822,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/space/basic,
+/turf/open/floor/almayer/plate,
 /area/mackay_station/romeo/redcommons2)
 "dWP" = (
 /obj/structure/machinery/light/double/blue,
@@ -6495,11 +6576,6 @@
 /obj/structure/machinery/camera/autoname,
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redcommons1)
-"eEW" = (
-/obj/structure/machinery/camera/autoname,
-/obj/structure/pipes/vents/pump,
-/turf/open/floor/almayer/green,
-/area/mackay_station/golf/greenquarters1)
 "eFf" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/machinery/prop/almayer/computer/PC{
@@ -9578,7 +9654,9 @@
 /area/mackay_station/romeo/redhangars)
 "gPq" = (
 /obj/effect/decal/unsc/commons{
-	dir = 1
+	dir = 1;
+	pixel_x = -16;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -10617,6 +10695,10 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/flora/pottedplant{
+	pixel_x = 9;
+	pixel_y = -1
+	},
 /turf/open/floor/almayer/silver/southeast,
 /area/mackay_station/romeo/redtram1)
 "hBO" = (
@@ -11516,12 +11598,9 @@
 /turf/open/shuttle/escapepod/floor2,
 /area/mackay_station/golf/greenrec)
 "ihz" = (
-/obj/structure/prop/almayer/computers/sensor_computer3,
-/obj/structure/machinery/door_control{
-	id = "romeotram2";
-	name = "Tramway Access Controls";
-	pixel_y = -4;
-	pixel_x = 1
+/obj/structure/machinery/computer/tech_control{
+	pixel_x = 0;
+	pixel_y = 16
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -12443,7 +12522,16 @@
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greentram)
 "iJT" = (
-/obj/structure/machinery/computer/tech_control,
+/obj/structure/prop/almayer/computers/sensor_computer2{
+	pixel_x = 0;
+	pixel_y = 16
+	},
+/obj/structure/machinery/door_control{
+	id = "romeotram1";
+	name = "Tramway Access Controls";
+	pixel_x = -9;
+	pixel_y = 12
+	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
 "iKc" = (
@@ -13130,10 +13218,6 @@
 "jlC" = (
 /obj/structure/bed/sofa/vert/grey/bot,
 /turf/open/floor/almayer/silver/east,
-/area/mackay_station/romeo/redtram1)
-"jlY" = (
-/obj/structure/prop/almayer/computers/sensor_computer1,
-/turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
 "jmg" = (
 /obj/structure/pipes/vents/pump,
@@ -14000,21 +14084,13 @@
 /area/mackay_station/golf/greenmedical)
 "jPu" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
+/obj/item/ammo_box/magazine/unsc/ma5c{
+	pixel_x = 1;
+	pixel_y = 6
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet{
 	pixel_x = 8;
-	pixel_y = 3
-	},
-/obj/item/ammo_box/magazine/misc/unsc/mre{
-	pixel_x = -4;
-	pixel_y = -1
-	},
-/obj/item/ammo_box/magazine/misc/unsc/mre{
-	pixel_x = 0;
-	pixel_y = 7
-	},
-/obj/item/ammo_box/magazine/misc/unsc/medical_packets{
-	pixel_x = -2;
-	pixel_y = 13
+	pixel_y = 4
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -16300,17 +16376,17 @@
 /area/mackay_station/bravo/bluebridge)
 "lvH" = (
 /obj/structure/surface/table/almayer,
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
 	pixel_x = -8;
-	pixel_y = 8
+	pixel_y = 1
 	},
-/obj/item/ammo_magazine/shotgun/buckshot/unsc{
-	pixel_x = 7;
-	pixel_y = 10
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
+	pixel_x = 11;
+	pixel_y = 11
 	},
 /obj/item/clothing/head/helmet/marine/unsc{
-	pixel_x = -7;
-	pixel_y = -8
+	pixel_x = -8;
+	pixel_y = 4
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/romeo/redcommons1)
@@ -17743,19 +17819,12 @@
 /area/mackay_station/romeo/redcommons2)
 "mwa" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_x = 2;
-	pixel_y = 17
-	},
 /obj/structure/machinery/light/double/blue,
-/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
-	pixel_x = 9;
-	pixel_y = 0
+/obj/item/ammo_box/magazine/shotgun/unsc/buckshot{
+	pixel_x = -20;
+	pixel_y = 16
 	},
-/obj/item/ammo_box/magazine/misc/unsc/grenade/smoke{
-	pixel_x = -8;
-	pixel_y = 0
-	},
+/obj/effect/landmark/personal_weapon,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
 "mwr" = (
@@ -19963,21 +20032,17 @@
 /area/mackay_station/golf/greenquarters2)
 "nVz" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
-	pixel_x = 6;
-	pixel_y = -7
-	},
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet{
-	pixel_x = 8;
-	pixel_y = 11
-	},
 /obj/item/ammo_box/magazine/misc/unsc/ma5_ammo_packet{
-	pixel_x = -9;
-	pixel_y = 10
+	pixel_x = 10;
+	pixel_y = -5
 	},
 /obj/item/ammo_box/magazine/misc/unsc/br55_ammo_packet{
-	pixel_x = -8;
-	pixel_y = -7
+	pixel_x = -7;
+	pixel_y = 2
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
+	pixel_x = 2;
+	pixel_y = 1
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -20218,7 +20283,10 @@
 /turf/open/shuttle/escapepod/west,
 /area/mackay_station/romeo/redtram2)
 "oda" = (
-/obj/structure/prop/almayer/computers/sensor_computer3,
+/obj/structure/prop/almayer/computers/sensor_computer1{
+	pixel_x = 0;
+	pixel_y = 16
+	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
 "odf" = (
@@ -20354,6 +20422,10 @@
 	pixel_x = -3;
 	color = "#b3b27d";
 	pixel_y = -6
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet{
+	pixel_x = 16;
+	pixel_y = 4
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redcommons1)
@@ -22758,10 +22830,6 @@
 /obj/structure/window/reinforced/toughened,
 /turf/open/floor/almayer/blue,
 /area/mackay_station/bravo/bluebridge)
-"pPy" = (
-/obj/structure/prop/almayer/computers/sensor_computer1,
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram2)
 "pQx" = (
 /obj/structure/barricade/handrail{
 	dir = 1
@@ -23714,7 +23782,10 @@
 /turf/open/floor/almayer/silverfull,
 /area/mackay_station/golf/greentram)
 "qzp" = (
-/obj/structure/machinery/computer/supply_drop_console/limited/alternate,
+/obj/structure/prop/almayer/computers/sensor_computer1{
+	pixel_x = 0;
+	pixel_y = 16
+	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
 "qzs" = (
@@ -24223,7 +24294,9 @@
 /area/mackay_station/romeo/redcommons2)
 "qOx" = (
 /obj/effect/decal/unsc/bridge{
-	dir = 1
+	dir = 1;
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -24462,11 +24535,13 @@
 /obj/structure/barricade/handrail{
 	dir = 8
 	},
-/turf/open/space/basic,
+/turf/open/floor/almayer/plate,
 /area/mackay_station/romeo/redcommons2)
 "qYe" = (
 /obj/effect/decal/unsc/commons{
-	dir = 1
+	dir = 1;
+	pixel_x = 16;
+	pixel_y = 0
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -25136,13 +25211,6 @@
 	},
 /turf/open/floor/prison/rampbottom/west,
 /area/mackay_station/romeo/redcommons2)
-"rsy" = (
-/obj/structure/machinery/computer/tech_control,
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram2)
 "rsG" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/prop/almayer/computer/PC{
@@ -25411,19 +25479,6 @@
 	},
 /turf/open/floor/almayer/silvercorner/east,
 /area/mackay_station/romeo/redtram2)
-"rDq" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo_arrow"
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram1)
 "rDL" = (
 /obj/structure/window/framed/almayer/aicore/white{
 	color = "#a1a1a1"
@@ -29630,16 +29685,6 @@
 "uyp" = (
 /turf/open/floor/almayer/silverfull,
 /area/mackay_station/bravo/bluetram)
-"uyA" = (
-/obj/structure/prop/almayer/computers/sensor_computer2,
-/obj/structure/machinery/door_control{
-	id = "romeotram1";
-	name = "Tramway Access Controls";
-	pixel_x = -9;
-	pixel_y = -4
-	},
-/turf/open/floor/almayer/research,
-/area/mackay_station/romeo/redtram1)
 "uyQ" = (
 /obj/structure/filingcabinet{
 	density = 0;
@@ -31560,19 +31605,6 @@
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redcommons2)
-"vSO" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/barricade/handrail{
-	dir = 1
-	},
-/turf/open/floor/almayer/silver/north,
-/area/mackay_station/romeo/redtram1)
 "vTc" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
 	pixel_x = -6;
@@ -35047,7 +35079,9 @@
 /area/mackay_station/bravo/blueengi)
 "ygY" = (
 /obj/effect/decal/unsc/recreation{
-	dir = 1
+	dir = 1;
+	pixel_x = -16;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
@@ -46065,7 +46099,7 @@ fjE
 piz
 wkm
 dgX
-eEW
+jqF
 fjE
 fjE
 bKZ
@@ -57095,9 +57129,9 @@ udL
 gZP
 dGo
 gZP
-gZP
 dGo
 gZP
+aaj
 udL
 kIa
 kIa
@@ -62801,9 +62835,9 @@ udL
 gZP
 dGo
 gZP
-gZP
 dGo
 gZP
+aak
 udL
 kIa
 kIa
@@ -68897,12 +68931,12 @@ gjb
 bFX
 wBt
 wBt
-hca
+aVf
 nJw
 nJw
 nJw
 ajZ
-gNA
+iNP
 dbM
 dqN
 gjb
@@ -88306,8 +88340,8 @@ hqz
 hqz
 gGl
 yfi
-waB
-fyO
+aaf
+aac
 gBS
 kIa
 gBS
@@ -88934,13 +88968,13 @@ kIa
 kIa
 hAB
 aXA
-cGa
+pro
 hqz
 hqz
 hqz
 hqz
-vSO
-uyA
+kLm
+siX
 meT
 gBS
 kIa
@@ -92109,7 +92143,7 @@ gnR
 gnR
 szb
 szb
-rDq
+kLm
 siX
 mwU
 gBS
@@ -92421,13 +92455,13 @@ kIa
 kIa
 hAB
 aXA
-cGa
+pro
 szb
 szb
 szb
 gnR
-kxw
-jlY
+kLm
+siX
 meT
 gBS
 gBS
@@ -93061,7 +93095,7 @@ szb
 szb
 szb
 wss
-cQu
+aag
 hBq
 gBS
 gBS
@@ -149487,8 +149521,8 @@ xmc
 xmc
 oAV
 gKV
-mXF
-xYS
+aah
+aad
 ptq
 ptq
 rUE
@@ -150115,13 +150149,13 @@ kIa
 kIa
 pnV
 pBV
-shb
+xpT
 xmc
 xmc
 xmc
 xmc
-gOC
-pPy
+ery
+fwu
 iZB
 ptq
 ptq
@@ -153602,13 +153636,13 @@ kIa
 kIa
 pnV
 pBV
-shb
+xpT
 eUu
 eUu
 eUu
 dpG
-gOC
-rsy
+ery
+yjL
 iZB
 ptq
 kIa
@@ -154242,8 +154276,8 @@ eUu
 eUu
 eUu
 mKq
-irW
-mHL
+aai
+aae
 ptq
 kIa
 ptq
@@ -173507,12 +173541,12 @@ qgJ
 jen
 jPw
 jPw
-kdQ
+vKy
 ntW
 ntW
 ntW
 ntW
-whc
+aHP
 gNk
 ybS
 qgJ
