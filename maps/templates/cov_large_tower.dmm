@@ -1,0 +1,146 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/covenant/smooth_plating/sides/southeast,
+/area/template_noop)
+"f" = (
+/turf/open/floor/covenant,
+/area/template_noop)
+"k" = (
+/turf/template_noop,
+/area/template_noop)
+"w" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "cargo"
+	},
+/turf/closed/wall/covenant/lights/brighter,
+/area/template_noop)
+"A" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4"
+	},
+/turf/closed/wall/covenant/lights/brighter,
+/area/template_noop)
+"E" = (
+/turf/open/floor/covenant/smooth_plating/sides/northwest,
+/area/template_noop)
+"H" = (
+/turf/open/floor/covenant/lane/horizontal,
+/area/template_noop)
+"I" = (
+/turf/closed/wall/covenant/lights/brighter,
+/area/template_noop)
+"J" = (
+/turf/open/floor/covenant/smooth_plating/sides/southwest,
+/area/template_noop)
+"T" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2"
+	},
+/turf/closed/wall/covenant/lights/brighter,
+/area/template_noop)
+"U" = (
+/turf/open/floor/covenant/smooth_plating/sides/northeast,
+/area/template_noop)
+"Y" = (
+/turf/open/floor/covenant/lane/vertical,
+/area/template_noop)
+
+(1,1,1) = {"
+k
+k
+E
+Y
+Y
+Y
+J
+k
+k
+"}
+(2,1,1) = {"
+k
+E
+a
+f
+A
+f
+U
+J
+k
+"}
+(3,1,1) = {"
+E
+a
+f
+f
+I
+f
+f
+U
+J
+"}
+(4,1,1) = {"
+H
+f
+f
+I
+w
+I
+f
+f
+H
+"}
+(5,1,1) = {"
+H
+T
+I
+w
+I
+w
+I
+I
+H
+"}
+(6,1,1) = {"
+H
+f
+f
+I
+w
+I
+f
+f
+H
+"}
+(7,1,1) = {"
+U
+J
+f
+f
+I
+f
+f
+E
+a
+"}
+(8,1,1) = {"
+k
+U
+J
+f
+A
+f
+E
+a
+k
+"}
+(9,1,1) = {"
+k
+k
+U
+Y
+Y
+Y
+a
+k
+k
+"}
