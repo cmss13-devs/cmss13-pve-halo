@@ -185,6 +185,8 @@
 		list("M65A Greaves", round(scale * 15), /obj/item/clothing/accessory/pads/unsc/greaves/forecon, VENDOR_ITEM_REGULAR),
 		list("M65A Arm Bracers", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/bracers/forecon, VENDOR_ITEM_REGULAR),
 		list("M65A Thigh Plates", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/thigh/forecon, VENDOR_ITEM_REGULAR),
+		list("M52B Thigh Pads", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/thigh, VENDOR_ITEM_REGULAR),
+		list("M52B Knee Pads", round(scale * 10), /obj/item/clothing/accessory/pads/unsc/knee, VENDOR_ITEM_REGULAR),
 
 		list("BACKPACK", -1, null, null, null),
 		list("UNSC Rucksack", floor(scale * 15), /obj/item/storage/backpack/marine/unsc, VENDOR_ITEM_REGULAR),
