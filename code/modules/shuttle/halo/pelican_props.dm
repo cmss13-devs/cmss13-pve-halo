@@ -35,6 +35,13 @@
 	normal_image.plane = 900
 	under_image.alpha = 75
 
+/obj/structure/roof/pelican_roof/missing_l_wing
+	icon_state = "missing_l_wing2"
+
+/obj/structure/roof/pelican_roof/missing_l_wing/Initialize()
+	. = ..()
+	normal_image = image(icon, src, "missing_l_wing2", layer = layer)
+	under_image = image(icon, src, "missing_l_wing", layer = layer)
 
 /obj/effect/roof_node/pelican
 	icon = 'icons/halo/landmarks.dmi'
