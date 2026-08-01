@@ -298,7 +298,7 @@
 	name = "\improper UNSC storage crate  (Flares x 14)"
 	desc = "A generic storage crate for the UNSC holding flares."
 	icon_state = "base_flare"
-	magazine_type = /obj/item/storage/box/flare
+	magazine_type = /obj/item/storage/box/flare/unsc
 	num_of_magazines = 14
 	overlay_content = "_flare"
 
@@ -309,11 +309,19 @@
 	name = "\improper UNSC storage crate - (Signal Flares x 14)"
 	desc = "A generic storage crate for the UNSC holding signal flares."
 	icon_state = "base_flare"
-	magazine_type = /obj/item/storage/box/flare/signal
+	magazine_type = /obj/item/storage/box/flare/signal/unsc
 	num_of_magazines = 14
 	overlay_content = "_signal"
 
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal/empty
+	empty = TRUE
+
+/obj/item/ammo_box/magazine/misc/unsc/flare/chemlight
+	name = "\improper UNSC storage crate  (Chemlight Packs x 14)"
+	desc = "A generic storage crate for the UNSC holding packs of chemical illumination sticks."
+	magazine_type = /obj/item/storage/box/flare/chemlight
+
+/obj/item/ammo_box/magazine/misc/unsc/flare/chemlight/empty
 	empty = TRUE
 
 /obj/item/ammo_box/magazine/misc/unsc/grenade
