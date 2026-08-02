@@ -18613,11 +18613,6 @@
 	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
-"dLU" = (
-/turf/open/gm/coast/beachcorner2/north_east{
-	color = #ADD8E6
-	},
-/area/slade_point/city/water)
 "dMc" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
@@ -118788,7 +118783,7 @@ aak
 rTj
 aCf
 pra
-dLU
+wWp
 nvY
 nvY
 sVy
