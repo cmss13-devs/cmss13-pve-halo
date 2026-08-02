@@ -232,7 +232,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/alpha_site/exterior)
 "aaP" = (
@@ -3005,7 +3007,9 @@
 /turf/open/floor/grass,
 /area/slade_point/kikowani_station/exterior)
 "ajG" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/city/water)
 "ajH" = (
@@ -8846,7 +8850,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northwest,
 /area/slade_point/alpha_site/exterior)
 "aAN" = (
@@ -10980,7 +10986,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/alpha_site/exterior)
 "aHa" = (
@@ -11049,7 +11057,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/alpha_site/exterior)
 "aHl" = (
@@ -11639,50 +11649,72 @@
 /turf/open/asphalt/cement,
 /area/slade_point/kikowani_station/exterior)
 "aIP" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner,
 /area/slade_point/alpha_site/exterior)
 "aIQ" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/north,
 /area/slade_point/alpha_site/exterior)
 "aIR" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/north,
 /area/slade_point/alpha_site/exterior)
 "aIS" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/slade_point/alpha_site/exterior)
 "aIT" = (
 /turf/closed/wall/prison,
 /area/slade_point/alpha_site/exterior)
 "aIU" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northwest,
 /area/slade_point/alpha_site/exterior)
 "aIV" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/alpha_site/exterior)
 "aIW" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/alpha_site/exterior)
 "aIX" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/east,
 /area/slade_point/alpha_site/exterior)
 "aIY" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southeast,
 /area/slade_point/alpha_site/exterior)
 "aIZ" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southwest,
 /area/slade_point/alpha_site/exterior)
 "aJa" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/west,
 /area/slade_point/alpha_site/exterior)
 "aJb" = (
@@ -12566,7 +12598,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aLM" = (
@@ -12576,7 +12610,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aLO" = (
@@ -12722,12 +12758,16 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMf" = (
 /obj/structure/platform_decoration,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMg" = (
@@ -12749,14 +12789,18 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMj" = (
 /obj/structure/platform{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMk" = (
@@ -12889,7 +12933,9 @@
 	dir = 8
 	},
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "aMI" = (
@@ -12901,7 +12947,9 @@
 /area/slade_point/data_center/sublevel_7)
 "aMJ" = (
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMK" = (
@@ -12939,14 +12987,18 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMR" = (
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "aMS" = (
@@ -13786,7 +13838,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "aOH" = (
@@ -15121,7 +15175,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northwest,
 /area/slade_point/alpha_site/exterior)
 "bfs" = (
@@ -15178,7 +15234,9 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "big" = (
@@ -15469,7 +15527,9 @@
 /area/slade_point/kizingo_boulevard/exterior)
 "brn" = (
 /obj/structure/platform_decoration,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/machinery/light/double{
 	dir = 4
 	},
@@ -15532,7 +15592,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/slade_point/alpha_site/exterior)
 "btm" = (
@@ -16162,7 +16224,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/slade_point/alpha_site/exterior)
 "bTK" = (
@@ -16674,7 +16738,9 @@
 /turf/open/floor/dark,
 /area/slade_point/tayari_plaza/spdp)
 "cmh" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/platform_decoration{
 	dir = 4
 	},
@@ -17959,7 +18025,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "dpg" = (
@@ -18647,7 +18715,9 @@
 /area/slade_point/alpha_site/exterior)
 "dMP" = (
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southeast,
 /area/slade_point/alpha_site/exterior)
 "dNj" = (
@@ -18996,7 +19066,9 @@
 /turf/open/asphalt/cement,
 /area/slade_point/kikowani_station/exterior)
 "eaW" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/city/water)
 "ebf" = (
@@ -19074,7 +19146,9 @@
 	dir = 4
 	},
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "eec" = (
@@ -19093,7 +19167,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "eez" = (
@@ -19520,7 +19596,9 @@
 	dir = 4
 	},
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "etz" = (
@@ -19859,7 +19937,9 @@
 /turf/open/asphalt/cement/cement3,
 /area/slade_point/city/structures)
 "eCa" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/platform_decoration{
 	dir = 8
 	},
@@ -20201,7 +20281,9 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/machinery/light/double{
 	dir = 8
 	},
@@ -20824,7 +20906,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/machinery/light/double{
 	dir = 1
 	},
@@ -21052,7 +21136,9 @@
 	dir = 8
 	},
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southwest,
 /area/slade_point/alpha_site/exterior)
 "fzB" = (
@@ -21580,7 +21666,9 @@
 /turf/open/asphalt/cement/cement3,
 /area/slade_point/kikowani_station/exterior)
 "fVj" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/west,
 /area/slade_point/city/water)
 "fVk" = (
@@ -21716,7 +21804,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/city/water)
 "fZl" = (
@@ -21734,7 +21824,9 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/machinery/light/double{
 	dir = 8
 	},
@@ -21919,7 +22011,9 @@
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "gjX" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southwest,
 /area/slade_point/city/water)
 "gkd" = (
@@ -22774,7 +22868,9 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "gPE" = (
@@ -22911,7 +23007,9 @@
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "gUw" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/north,
 /area/slade_point/city/water)
 "gUW" = (
@@ -23207,7 +23305,9 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/kizingo_boulevard/exterior)
 "hft" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner,
 /area/slade_point/city/water)
 "hfY" = (
@@ -23594,7 +23694,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "hyX" = (
@@ -25145,7 +25247,9 @@
 /area/slade_point/data_center/sublevel_8)
 "iLD" = (
 /obj/structure/platform_decoration,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "iLP" = (
@@ -26239,7 +26343,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/west,
 /area/slade_point/alpha_site/exterior)
 "jDs" = (
@@ -26369,7 +26475,9 @@
 /turf/open/gm/dirtgrassborder/grassdirt_corner2/north_west,
 /area/slade_point/uplift_reserve/exterior)
 "jHM" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "jId" = (
@@ -26520,7 +26628,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "jNp" = (
@@ -26584,7 +26694,9 @@
 	dir = 8
 	},
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/alpha_site/exterior)
 "jPY" = (
@@ -26998,7 +27110,9 @@
 /turf/open/floor/almayer_hull,
 /area/slade_point/kizingo_boulevard/exterior)
 "kgF" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/north,
 /area/slade_point/city/water)
 "kgJ" = (
@@ -27532,7 +27646,9 @@
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "kCn" = (
@@ -27561,7 +27677,9 @@
 /obj/structure/barricade/handrail/wire{
 	layer = 3.1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "kDE" = (
@@ -28089,7 +28207,9 @@
 /turf/open/floor/almayer_hull,
 /area/slade_point/kikowani_station/sp_hospital)
 "kZf" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/platform_decoration,
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
@@ -28544,7 +28664,9 @@
 /area/slade_point/data_center/sublevel_7)
 "lpb" = (
 /obj/structure/platform_decoration,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "lpd" = (
@@ -29275,7 +29397,9 @@
 	dir = 4
 	},
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/alpha_site/exterior)
 "lYQ" = (
@@ -29323,7 +29447,9 @@
 	dir = 8
 	},
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "lZC" = (
@@ -29501,7 +29627,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "mgp" = (
@@ -29670,11 +29798,15 @@
 /area/slade_point/data_center/sublevel_7)
 "mnf" = (
 /obj/structure/platform_decoration/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/east,
 /area/slade_point/alpha_site/exterior)
 "mnh" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge,
 /area/slade_point/alpha_site/exterior)
 "mnq" = (
@@ -29709,7 +29841,9 @@
 /obj/structure/platform_decoration{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "mnC" = (
@@ -30709,7 +30843,9 @@
 /turf/open/gm/dirtgrassborder/east,
 /area/slade_point/uplift_reserve/exterior)
 "neT" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northwest,
 /area/slade_point/city/water)
 "nfQ" = (
@@ -31221,7 +31357,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner,
 /area/slade_point/alpha_site/exterior)
 "nCq" = (
@@ -31237,7 +31375,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/north,
 /area/slade_point/alpha_site/exterior)
 "nDg" = (
@@ -31847,7 +31987,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northwest,
 /area/slade_point/alpha_site/exterior)
 "obK" = (
@@ -32529,7 +32671,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/machinery/light/double{
 	dir = 1
 	},
@@ -32677,7 +32821,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/slade_point/alpha_site/exterior)
 "oIQ" = (
@@ -32961,7 +33107,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/city/water)
 "oRS" = (
@@ -33360,7 +33508,9 @@
 /turf/open/gm/dirtgrassborder/desert0,
 /area/slade_point/uplift_reserve/exterior)
 "pgu" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/city/water)
 "pgY" = (
@@ -34253,7 +34403,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/alpha_site/exterior)
 "pST" = (
@@ -34263,7 +34415,9 @@
 /obj/structure/barricade/handrail/wire{
 	layer = 3.1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "pTD" = (
@@ -34503,7 +34657,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "qdX" = (
@@ -34701,7 +34857,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/alpha_site/exterior)
 "qlk" = (
@@ -34851,7 +35009,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southeast,
 /area/slade_point/alpha_site/exterior)
 "qqt" = (
@@ -35376,7 +35536,9 @@
 	dir = 8
 	},
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
 "qOW" = (
@@ -36467,7 +36629,9 @@
 /turf/open/floor/dark,
 /area/slade_point/kizingo_boulevard/vyrant_telecom)
 "rGa" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_corner/east,
 /area/slade_point/city/water)
 "rGc" = (
@@ -36868,7 +37032,9 @@
 /area/slade_point/city/waterfront_highway)
 "rWP" = (
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "rXj" = (
@@ -38030,7 +38196,9 @@
 /turf/open/floor/dark,
 /area/slade_point/kizingo_boulevard/vyrant_telecom)
 "sVy" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/northeast,
 /area/slade_point/city/water)
 "sVG" = (
@@ -38819,7 +38987,9 @@
 /area/slade_point/alpha_site/exterior)
 "tCd" = (
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/alpha_site/exterior)
 "tCX" = (
@@ -38980,7 +39150,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southwest,
 /area/slade_point/alpha_site/exterior)
 "tJy" = (
@@ -39281,7 +39453,9 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "tWy" = (
@@ -39326,7 +39500,9 @@
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/machinery/light/double{
 	dir = 4
 	},
@@ -39644,7 +39820,9 @@
 /obj/structure/platform{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "ujz" = (
@@ -40190,7 +40368,9 @@
 /obj/structure/platform_decoration/strata/metal{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/west,
 /area/slade_point/city/water)
 "uCW" = (
@@ -41913,7 +42093,9 @@
 	dir = 4
 	},
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southeast,
 /area/slade_point/alpha_site/exterior)
 "vTN" = (
@@ -41933,7 +42115,9 @@
 /area/slade_point/tayari_plaza/exterior)
 "vUg" = (
 /obj/structure/platform/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southwest,
 /area/slade_point/alpha_site/exterior)
 "vVv" = (
@@ -42251,7 +42435,9 @@
 /turf/open/auto_turf/ice,
 /area/slade_point/data_center/sublevel_8)
 "whC" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /obj/structure/platform_decoration{
 	dir = 1
 	},
@@ -42370,7 +42556,9 @@
 /obj/structure/platform/strata/metal{
 	dir = 1
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/alpha_site/exterior)
 "wpt" = (
@@ -42608,7 +42796,9 @@
 /obj/structure/platform_decoration{
 	dir = 8
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "wzM" = (
@@ -42840,7 +43030,9 @@
 /area/slade_point/kizingo_boulevard/exterior)
 "wJz" = (
 /obj/structure/platform_decoration/strata/metal,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/city/water)
 "wJN" = (
@@ -43492,7 +43684,9 @@
 /area/slade_point/kikowani_station/interior)
 "xif" = (
 /obj/structure/platform,
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/data_center/ai_core)
 "xjr" = (
@@ -44319,7 +44513,9 @@
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_9)
 "xPL" = (
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/southeast,
 /area/slade_point/city/water)
 "xPV" = (
@@ -44516,7 +44712,9 @@
 /obj/structure/platform_decoration{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/void,
 /area/slade_point/data_center/ai_core)
 "xUy" = (
@@ -44893,7 +45091,9 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/blocker/invisible_wall/water,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
 /turf/open/gm/river/desert/shallow_edge/east,
 /area/slade_point/alpha_site/exterior)
 "yiy" = (
