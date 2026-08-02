@@ -1,4 +1,63 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aaa" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	dir = 8;
+	pixel_y = 16
+	},
+/turf/open/asphalt/cement/cement1,
+/area/space)
+"aab" = (
+/obj/structure/machinery/light/double{
+	dir = 4;
+	pixel_y = 16
+	},
+/turf/open/asphalt/cement/cement3,
+/area/space)
+"aac" = (
+/obj/structure/machinery/light/double{
+	dir = 8;
+	pixel_y = 16
+	},
+/turf/open/asphalt/cement/cement1,
+/area/space)
+"aad" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/asphalt/cement,
+/area/space)
+"aae" = (
+/obj/structure/flora/bush/ausbushes/var3/sunnybush,
+/obj/structure/machinery/light/double{
+	pixel_x = 16
+	},
+/turf/open/floor/grass,
+/area/space)
+"aaf" = (
+/obj/structure/flora/bush/ausbushes/ppflowers,
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/floor/grass,
+/area/space)
+"aag" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	pixel_x = 16
+	},
+/turf/open/asphalt/cement,
+/area/space)
+"aah" = (
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/asphalt/cement,
+/area/space)
 "aai" = (
 /obj/structure/bed/chair/comfy/bench/mid,
 /obj/item/clothing/head/helmet/marine/unsc/police{
@@ -4290,6 +4349,9 @@
 	pixel_x = -6
 	},
 /obj/effect/decal/cleanable/blood/oil,
+/obj/structure/machinery/light/double{
+	pixel_x = 16
+	},
 /turf/open/asphalt/cement,
 /area/space)
 "dqk" = (
@@ -10281,9 +10343,6 @@
 	pixel_y = 10
 	},
 /obj/effect/decal/cleanable/blood/oil,
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
 /turf/open/asphalt/cement,
 /area/space)
 "hOy" = (
@@ -14322,13 +14381,6 @@
 	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/space)
-"kVC" = (
-/obj/effect/decal/cleanable/generic,
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/asphalt/cement/cement3,
-/area/space)
 "kWq" = (
 /obj/structure/machinery/light/double{
 	dir = 8
@@ -15961,11 +16013,6 @@
 	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/space)
-"mmV" = (
-/obj/structure/flora/bush/ausbushes/var3/ywflowers,
-/obj/structure/machinery/light/double,
-/turf/open/floor/grass,
-/area/space)
 "mnf" = (
 /obj/structure/platform_decoration/strata/metal,
 /obj/structure/blocker/invisible_wall/water,
@@ -17110,6 +17157,9 @@
 "nlQ" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 8
+	},
+/obj/structure/machinery/light/double{
+	pixel_x = 16
 	},
 /turf/open/asphalt/cement,
 /area/space)
@@ -18863,13 +18913,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement,
 /area/space)
-"oBG" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/asphalt/cement/cement3,
-/area/space)
 "oBM" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 1
@@ -19974,13 +20017,6 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/prison/sterile_white,
-/area/space)
-"pwb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
-/turf/open/asphalt/cement/cement1,
 /area/space)
 "pwh" = (
 /obj/structure/platform_decoration/kutjevo{
@@ -24707,9 +24743,6 @@
 	pixel_y = 16;
 	layer = 3.1;
 	density = 0
-	},
-/obj/structure/machinery/light/double{
-	dir = 4
 	},
 /turf/open/asphalt/cement,
 /area/space)
@@ -29645,13 +29678,6 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/space)
-"xbS" = (
-/obj/structure/flora/bush/ausbushes/grassybush,
-/obj/structure/machinery/light/double{
-	dir = 1
-	},
-/turf/open/floor/grass,
-/area/space)
 "xch" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo_arrow";
@@ -31223,14 +31249,6 @@
 	dir = 1
 	},
 /turf/open/asphalt/cement,
-/area/space)
-"yiO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/decal/cleanable/generic,
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
-/turf/open/asphalt/cement/cement1,
 /area/space)
 "yjk" = (
 /obj/structure/barricade/handrail/strata{
@@ -82166,7 +82184,7 @@ aLk
 nlQ
 abx
 abx
-wtA
+aad
 aLk
 aLk
 whO
@@ -82962,7 +82980,7 @@ dlh
 owD
 aLk
 aLk
-oyN
+wtA
 mZE
 wtA
 wtA
@@ -88173,7 +88191,7 @@ wvW
 wvW
 cKL
 cKL
-lLA
+aaa
 lLA
 sBI
 wvW
@@ -88192,7 +88210,7 @@ wvW
 wvW
 cKL
 cKL
-cKL
+aac
 cKL
 sBI
 nFq
@@ -88211,7 +88229,7 @@ wvW
 wvW
 cKL
 cKL
-lLA
+aaa
 lLA
 sBI
 sBI
@@ -90166,10 +90184,10 @@ dCQ
 biE
 biE
 biE
-vwT
 cuz
 cuz
-kVC
+aab
+xha
 dCQ
 dCQ
 dCQ
@@ -90185,10 +90203,10 @@ dCQ
 dCQ
 biE
 biE
-oBG
+iNc
 xha
+aab
 cuz
-vwT
 dCQ
 dCQ
 dCQ
@@ -90204,10 +90222,10 @@ dCQ
 dCQ
 dCQ
 biE
-oBG
+iNc
 xha
-cuz
-oBG
+aab
+iNc
 biE
 dCQ
 dCQ
@@ -90946,16 +90964,16 @@ sfw
 rvO
 ejG
 aLk
-wtA
+aag
 abx
-hFm
+aaf
 iIB
 qyV
 ero
 eEz
-eez
+aae
 abx
-wtA
+aad
 dUa
 bfh
 nDe
@@ -91347,12 +91365,12 @@ ejG
 aLk
 wtA
 abx
-xbS
+qyV
 eEz
 bGp
 dlh
 iIB
-mmV
+ero
 abx
 aLk
 raJ
@@ -92161,10 +92179,10 @@ wvW
 wvW
 wvW
 wvW
-yiO
+lMU
 lLA
+aaa
 lLA
-pwb
 wvW
 wvW
 wvW
@@ -92180,10 +92198,10 @@ sBI
 sBI
 sBI
 sBI
-onU
 cKL
 cKL
-onU
+aac
+cKL
 wvW
 wvW
 wvW
@@ -92199,10 +92217,10 @@ jSL
 wvW
 wvW
 wvW
-pwb
 lLA
 lLA
-onU
+aaa
+cKL
 wvW
 wvW
 wvW
@@ -94158,7 +94176,7 @@ dCQ
 dCQ
 cuz
 cuz
-cuz
+aab
 iNc
 biE
 biE
@@ -94177,7 +94195,7 @@ dCQ
 biE
 iNc
 cuz
-cuz
+aab
 iNc
 kfL
 dCQ
@@ -94196,7 +94214,7 @@ dCQ
 dCQ
 cuz
 cuz
-cuz
+aab
 cuz
 kfL
 biE
@@ -99722,7 +99740,7 @@ xIM
 dqg
 abx
 abx
-aLk
+aah
 aLk
 wtA
 whO
@@ -100519,7 +100537,7 @@ owD
 aLk
 aLk
 aLk
-gez
+aLk
 aLk
 aLk
 wtA
