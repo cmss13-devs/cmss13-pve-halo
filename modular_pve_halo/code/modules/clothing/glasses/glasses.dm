@@ -61,18 +61,59 @@
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
 
+
+
 /obj/item/clothing/glasses/scouter/clicked(mob/user, list/mods)
 	if(mods[ALT_CLICK])
 		if(!CAN_PICKUP(user, src))
 			return ..()
 		if(istypestrict(src, /obj/item/clothing/glasses/scouter))
+			qdel(src)
 			var/obj/item/clothing/glasses/scouter/flipped/new_scouter = new(user.loc)
+			if(!active)
+				new_scouter.toggle_glasses_effect()
 			user.put_in_active_hand(new_scouter)
 		else if(istypestrict(src, /obj/item/clothing/glasses/scouter/flipped))
+			qdel(src)
 			var/obj/item/clothing/glasses/scouter/new_scouter = new(user.loc)
+			if(!active)
+				new_scouter.toggle_glasses_effect()
 			user.put_in_active_hand(new_scouter)
-
 	return ..()
+
+/obj/item/clothing/glasses/scouter/toggle_glasses_effect()
+	active = !active
+	clothing_traits_active = !clothing_traits_active
+	update_icon()
+	if(ishuman(loc))
+		var/mob/living/carbon/human/H = loc
+		if(H.glasses == src  || H.wear_mask == src)
+			if(has_tint)
+				H.update_tint()
+			H.update_sight()
+			H.update_glass_vision(src)
+			update_clothing_icon()
+
+			if(hud_type)
+				for(var/type in hud_type)
+					var/datum/mob_hud/MH = GLOB.huds[type]
+					if(active)
+						MH.add_hud_to(H, src)
+						playsound(H, 'sound/handling/hud_on.ogg', 25, 1)
+					else
+						MH.remove_hud_from(H, src)
+						playsound(H, 'sound/handling/hud_off.ogg', 25, 1)
+			if(active) //turning it on? then add the traits
+				for(var/trait in clothing_traits)
+					ADD_TRAIT(H, trait, TRAIT_SOURCE_EQUIPMENT(flags_equip_slot))
+			else //turning it off - take away its traits
+				for(var/trait in clothing_traits)
+					REMOVE_TRAIT(H, trait, TRAIT_SOURCE_EQUIPMENT(flags_equip_slot))
+
+	for(var/X in actions)
+		var/datum/action/A = X
+		if(istype(A, /datum/action/item_action/toggle))
+			A.update_button_icon()
 
 /obj/item/clothing/glasses/scouter/flipped // i dont wanna fuck with all the code
 
