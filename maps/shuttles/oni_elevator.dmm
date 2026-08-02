@@ -5,81 +5,81 @@
 	pixel_x = -16
 	},
 /turf/open/shuttle/vehicle/floor_2,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "e" = (
 /turf/closed/shuttle/elevator{
 	dir = 9
 	},
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "n" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/glass{
-	dir = 1
+	dir = 1;
+	id = "oni"
 	},
 /turf/open/floor/almayer_hull,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "q" = (
 /turf/closed/shuttle/elevator{
 	dir = 10
 	},
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "s" = (
 /turf/closed/shuttle/elevator{
 	dir = 6
 	},
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "t" = (
 /turf/closed/shuttle/elevator{
 	dir = 4
 	},
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "y" = (
 /turf/closed/shuttle/elevator{
 	dir = 5
 	},
-/area/space)
-"A" = (
-/obj/structure/machinery/floodlight/landing/floor{
-	color = "#dae2ff";
-	light_color = "#dae2ff"
-	},
-/turf/open/floor/almayer_hull,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "K" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
 	pixel_x = 12
 	},
 /turf/open/shuttle/vehicle/floor_2,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "N" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
 	dir = 4
 	},
 /turf/open/floor/almayer_hull,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
+"P" = (
+/obj/structure/machinery/camera/autoname{
+	dir = 4
+	},
+/turf/open/floor/almayer_hull,
+/area/slade_point/elevator/oni_elevator)
 "Q" = (
 /turf/open/floor/almayer_hull,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "S" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
 	pixel_x = -16
 	},
-/obj/structure/machinery/computer/shuttle/elevator_controller{
-	pixel_y = 32;
-	pixel_x = 13
+/obj/structure/machinery/computer/shuttle/elevator_controller/oni_elevator{
+	pixel_x = 13;
+	pixel_y = 32
 	},
 /turf/open/shuttle/vehicle/floor_2,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "U" = (
 /turf/closed/shuttle/elevator{
 	dir = 8
 	},
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 "W" = (
 /turf/closed/shuttle/elevator,
-/area/space)
+/area/slade_point/elevator/oni_elevator)
 
 (1,1,1) = {"
 e
@@ -91,10 +91,10 @@ q
 "}
 (2,1,1) = {"
 t
-A
 Q
 Q
-A
+P
+Q
 t
 "}
 (3,1,1) = {"
