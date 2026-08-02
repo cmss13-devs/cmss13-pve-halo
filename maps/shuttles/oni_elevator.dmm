@@ -19,6 +19,7 @@
 /turf/open/floor/almayer_hull,
 /area/slade_point/elevator/oni_elevator)
 "q" = (
+/obj/docking_port/mobile/oni_elevator,
 /turf/closed/shuttle/elevator{
 	dir = 10
 	},
