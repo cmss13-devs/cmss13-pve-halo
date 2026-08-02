@@ -2595,7 +2595,6 @@
 #include "code\modules\shuttle\shuttles\mackay_station_elevators.dm"
 #include "code\modules\shuttle\shuttles\oni_digsite_elevator.dm"
 #include "code\modules\shuttle\shuttles\oni_elevator.dm"
-#include "code\modules\shuttle\shuttles\oni_elevator.dm"
 #include "code\modules\shuttle\shuttles\shipmap_elevator.dm"
 #include "code\modules\shuttle\shuttles\trijent_elevator.dm"
 #include "code\modules\shuttle\shuttles\crashable\crashable.dm"
