@@ -118,3 +118,9 @@ endmap
 
 map oni_digsite_451
 endmap
+
+map traxus_gamma_zone
+endmap
+
+map strategos_island
+endmap
