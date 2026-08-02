@@ -190,7 +190,7 @@
 	name = "\improper M65A Shoulder Pads"
 	desc = "A set shoulder pads attachable to the M65A armor."
 	icon_state = "pads_forecon"
-	item_state = "forecon_pads"
+	item_state = "pads_forecon"
 
 /obj/item/clothing/accessory/pads/unsc/greaves/forecon
 	name = "\improper M65A Greaves"
@@ -205,7 +205,7 @@
 	item_state = "bracers_forecon"
 
 /obj/item/clothing/accessory/pads/unsc/thigh/forecon
-	name = "\improper M56A Thigh Plates"
+	name = "\improper M65A Thigh Plates"
 	desc = "A set thigh plates attachable to the M56A body armor."
 	icon_state = "thigh_pads_forecon"
 	item_state = "thigh_pads_forecon"

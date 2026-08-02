@@ -59,6 +59,8 @@
 	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 
+//Halo CE plate-armor vest
+
 /obj/item/clothing/suit/marine/unsc/forecon
 	name = "\improper M65A Body Armour"
 	desc = "Advanced armour system seeing limited use with Marine-Special-Forces and other specialist troops within the UNSC. The primary features of M56A are heavier and more comprehensive armour plating paired with careful material developments to increase the overall 'toughness' of the armour. Developments that have given it mild resistance to Covenant plasma weaponry."
@@ -71,14 +73,58 @@
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
+//Halo CE soft-armor vest
+
 /obj/item/clothing/suit/marine/unsc/forecon_flakvest
 	name = "\improper M55-TAV Flak Vest"
-	desc = "The M55 Tactical Assault Vest (TAV) is a standard issue flak jacket worn by UNSC troops across most branches, either under their armour or alone. It is primarily made of ballistic soft armour materials, with rigid armour inserts covering the chest and back. The lack of significant armoring on the vest allows increased reaction times."
+	desc = "The M55 Tactical Assault Vest (TAV) is a standard issue flak jacket worn by UNSC troops across most branches, either under their armour or alone. It is primarily made of ballistic soft armour materials, with rigid armour inserts covering the chest and back. The lack of significant armoring on the vest allows increased reaction times. Lacks mounting points for a webbing system, but has some pouches for holding small bits of equipment."
 	desc_lore = "The real benefit of the M55 vest however is its built in cooling systems and redundant backups, like ballistic computers and a radio transceiver. This allows troopers who lose their helmet to retain combat efficiency. Thanks to the effectiveness of Covenant plasma weapons, some veterans will forgo wearing any armour at all, instead just using the M55-TAV alone."
 	icon_state = "flak"
 	item_state = "flak"
 	valid_accessory_slots = null
 	restricted_accessory_slots = null
+	var/obj/item/storage/internal/pockets
+	var/storage_slots = 4
+
+//It's redefine these here for this armor alone, or re-path the above to be a subtype of /suit/storage/marine, both are frankly a lot of tedious repetition
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/Initialize()
+	. = ..()
+	pockets = new/obj/item/storage/internal(src)
+	pockets.storage_slots = storage_slots
+	pockets.max_w_class = SIZE_SMALL //fit only small items
+	pockets.max_storage_space = 4
+
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/Destroy()
+	QDEL_NULL(pockets)
+	return ..()
+
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/get_pockets()
+	if(pockets)
+		return pockets
+	return ..()
+
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/attack_hand(mob/user, mods)
+	if(loc != user)
+		..(user) // If it's in a box (e.g. SG or spec gear), don't click the pockets pls
+		return
+
+	if(pockets.handle_attack_hand(user, mods))
+		..(user)
+
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/MouseDrop(obj/over_object)
+	if (pockets.handle_mousedrop(usr, over_object))
+		..(over_object)
+
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/attackby(obj/item/W, mob/user)
+	. = ..()
+	if(!.) //To prevent bugs with accessories being moved into storage slots after being attached.
+		return pockets.attackby(W, user)
+
+/obj/item/clothing/suit/marine/unsc/forecon_flakvest/emp_act(severity)
+	. = ..()
+	pockets.emp_act(severity)
+
+//ODST armor & subtypes
 
 /obj/item/clothing/suit/marine/unsc/odst
 	name = "\improper M70DT ODST BDU"
