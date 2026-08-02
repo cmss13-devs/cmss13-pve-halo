@@ -4052,6 +4052,11 @@
 /obj/structure/platform/stair_cut/alt,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
+"amQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/kizingo_boulevard/interior)
 "amR" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double{
@@ -10280,6 +10285,7 @@
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/dark,
 /area/slade_point/kikowani_station/interior)
 "aFe" = (
@@ -12999,6 +13005,11 @@
 	},
 /turf/open/void,
 /area/slade_point/data_center/sublevel_9)
+"aMS" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/west,
+/turf/open/floor/dark,
+/area/slade_point/kizingo_boulevard/vyrant_telecom)
 "aMT" = (
 /obj/structure/machinery/light/double,
 /turf/open/floor/prison/sterile_white,
@@ -13668,6 +13679,15 @@
 "aOl" = (
 /turf/closed/wall/almayer/white,
 /area/slade_point/data_center/sublevel_8)
+"aOm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/uplift_reserve/interior)
+"aOn" = (
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/city/structures)
 "aOo" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -14159,6 +14179,11 @@
 	},
 /turf/open/floor/podhatchfloor,
 /area/slade_point/data_center/sublevel_8)
+"aPA" = (
+/obj/structure/bed/sofa/south/white,
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/kikowani_station/interior)
 "aPB" = (
 /obj/item/storage/toolbox/traxus/big{
 	pixel_x = 6;
@@ -14187,6 +14212,11 @@
 	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_8)
+"aPE" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/wood,
+/area/slade_point/tayari_plaza/interior)
 "aPF" = (
 /obj/structure/machinery/computer/atmos_alert{
 	pixel_y = 14
@@ -14642,6 +14672,11 @@
 /obj/structure/platform_decoration,
 /turf/open/floor/almayer_hull,
 /area/slade_point/data_center/sublevel_8)
+"aQr" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/dark,
+/area/slade_point/tayari_plaza/spdp)
 "aQs" = (
 /obj/structure/machinery/light/double,
 /turf/open/floor/almayer_hull,
@@ -14803,6 +14838,11 @@
 /obj/structure/machinery/camera/autoname,
 /turf/open/floor/almayer/tcomms,
 /area/slade_point/data_center/ai_core)
+"aQO" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/tayari_plaza/interior)
 "aQP" = (
 /obj/structure/platform_decoration/kutjevo,
 /obj/effect/decal/cleanable/dirt,
@@ -14811,6 +14851,64 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/kizingo_boulevard/exterior)
+"aQQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/city/structures)
+"aQR" = (
+/obj/structure/machinery/power/apc/almayer/east,
+/turf/open/floor/almayer/sterile_green_side/east,
+/area/slade_point/kikowani_station/sp_hospital)
+"aQS" = (
+/obj/structure/extinguisher_cabinet/alt{
+	pixel_y = 29
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/west,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/tayari_plaza/interior)
+"aQT" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/west,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/city/structures)
+"aQU" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 8
+	},
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/prison/sterile_white,
+/area/slade_point/tayari_plaza/interior)
+"aQV" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = 12
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = -16
+	},
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/shuttle/vehicle/floor_2,
+/area/slade_point/data_center/sublevel_7)
+"aQW" = (
+/obj/structure/machinery/camera/autoname,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/power/apc/almayer/west,
+/turf/open/floor/almayer_hull,
+/area/slade_point/data_center/ai_core)
+"aQX" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = -16
+	},
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/shuttle/vehicle/floor_2,
+/area/slade_point/data_center/sublevel_8)
 "aRp" = (
 /obj/structure/surface/table/almayer,
 /obj/item/toy/deck/uno,
@@ -27093,6 +27191,7 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
+/obj/structure/machinery/power/apc/almayer/north,
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_9)
 "kfG" = (
@@ -29440,6 +29539,7 @@
 	pixel_y = 10;
 	pixel_x = 6
 	},
+/obj/structure/machinery/power/apc/almayer/west,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
 "lZx" = (
@@ -38550,6 +38650,7 @@
 	pixel_y = 1
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/east,
 /turf/open/floor/strata,
 /area/slade_point/alpha_site/interior)
 "tkX" = (
@@ -49648,7 +49749,7 @@ mVu
 mVu
 mVu
 ohb
-vNA
+aQV
 mmO
 vNA
 mmO
@@ -57416,7 +57517,7 @@ aBh
 ssh
 ivL
 anr
-azQ
+aQS
 azI
 mOK
 bcp
@@ -58685,7 +58786,7 @@ xlB
 tKz
 nwy
 nwy
-far
+aMS
 far
 far
 far
@@ -66211,7 +66312,7 @@ gLA
 mQM
 pCG
 pCG
-kfG
+aPE
 anr
 anr
 akm
@@ -71372,7 +71473,7 @@ anr
 azQ
 tOL
 anW
-azI
+aQU
 anr
 ayQ
 aBQ
@@ -77378,7 +77479,7 @@ blU
 tNK
 swz
 agR
-ahK
+aQr
 ahK
 agR
 agR
@@ -84228,7 +84329,7 @@ xoe
 uBG
 aPY
 wfa
-lHQ
+amQ
 vPY
 aar
 oRh
@@ -92139,7 +92240,7 @@ anr
 srd
 anr
 anr
-auE
+aQO
 auE
 anr
 avX
@@ -96910,7 +97011,7 @@ mwN
 eIN
 ahe
 ald
-ahQ
+aQT
 ahe
 qxt
 iSX
@@ -98151,7 +98252,7 @@ abx
 agq
 ahe
 gXt
-ahO
+aOn
 ahe
 ahe
 ahe
@@ -99507,7 +99608,7 @@ mVu
 mVu
 mVu
 aMp
-aNA
+aQX
 aMZ
 aOu
 aOu
@@ -111285,7 +111386,7 @@ ahe
 pJN
 aku
 aku
-ahQ
+aQQ
 ahe
 ahe
 agq
@@ -129706,7 +129807,7 @@ eoA
 tMH
 tMH
 abk
-abw
+aOm
 jht
 mLR
 abm
@@ -130038,7 +130139,7 @@ pjK
 qKB
 pjK
 wCJ
-vhR
+aQR
 vhR
 sCE
 pjK
@@ -136848,7 +136949,7 @@ aqU
 aqr
 apv
 lRJ
-shW
+aPA
 akK
 akK
 ajB
@@ -158165,7 +158266,7 @@ aPl
 aPl
 lGN
 vVQ
-vGp
+aQW
 aPl
 aOG
 kCe
