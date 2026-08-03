@@ -3813,13 +3813,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement3,
 /area/slade_point/city/streets)
-"amb" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/asphalt/cement,
-/area/slade_point/city/streets)
 "amc" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -4873,11 +4866,6 @@
 	pixel_x = 4
 	},
 /turf/open/floor/almayer_hull,
-/area/slade_point/city/streets)
-"api" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/machinery/light/double,
-/turf/open/asphalt/cement,
 /area/slade_point/city/streets)
 "apj" = (
 /obj/structure/platform{
@@ -6372,15 +6360,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/city/streets)
-"atu" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/machinery/light/double{
-	dir = 1
-	},
-/turf/open/asphalt/cement,
-/area/slade_point/city/streets)
 "atv" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full";
@@ -6491,6 +6470,10 @@
 "atN" = (
 /obj/structure/bed/chair/comfy/bench/south,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	dir = 4;
+	pixel_y = 16
+	},
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/city/streets)
 "atO" = (
@@ -6592,13 +6575,6 @@
 	},
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/tayari_plaza/exterior)
-"auh" = (
-/obj/structure/bed/chair/comfy/bench/north,
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/floor/plating/asteroidfloor,
-/area/slade_point/city/streets)
 "aui" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double{
@@ -15078,14 +15054,14 @@
 "aRs" = (
 /obj/structure/machinery/ai_status_display{
 	pixel_x = 30;
-	pixel_y = 16
+	pixel_y = 24
 	},
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
 "aRt" = (
 /obj/structure/machinery/ai_status_display{
 	pixel_x = -30;
-	pixel_y = 16
+	pixel_y = 24
 	},
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
@@ -15377,6 +15353,101 @@
 	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/data_center/ai_core)
+"aSi" = (
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/kizingo_boulevard/exterior)
+"aSj" = (
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/asphalt/cement,
+/area/slade_point/city/streets)
+"aSk" = (
+/obj/structure/machinery/light/double{
+	dir = 8;
+	pixel_y = 16
+	},
+/turf/open/asphalt/cement,
+/area/slade_point/city/streets)
+"aSl" = (
+/obj/structure/machinery/light/double{
+	dir = 4;
+	pixel_y = 16
+	},
+/turf/open/asphalt/cement,
+/area/slade_point/city/streets)
+"aSm" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/south,
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/kikowani_station/exterior)
+"aSn" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	pixel_x = 16
+	},
+/turf/open/asphalt/cement,
+/area/slade_point/city/streets)
+"aSo" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/structure/barricade/handrail/wire,
+/obj/structure/machinery/light/double{
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/city/streets)
+"aSp" = (
+/obj/structure/barricade/handrail/wire,
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	dir = 8;
+	pixel_y = 16
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/city/streets)
+"aSq" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/light/double{
+	pixel_x = 16
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/city/streets)
+"aSr" = (
+/obj/structure/machinery/light/double{
+	pixel_x = 16
+	},
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/city/streets)
+"aSs" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/city/streets)
+"aSt" = (
+/obj/structure/bed/sofa/pews{
+	dir = 4
+	},
+/obj/structure/machinery/newscaster{
+	pixel_x = 30
+	},
+/turf/open/floor/almayer/sterile_green_side/east,
+/area/slade_point/kikowani_station/sp_hospital)
+"aSu" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/machinery/power/apc/almayer/west,
+/turf/open/floor/plating/asteroidfloor,
+/area/slade_point/tayari_plaza/exterior)
+"aSv" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/obj/structure/machinery/power/apc/almayer/north,
+/turf/open/asphalt/cement,
+/area/slade_point/city/streets)
 "aSw" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/item/trash/tray{
@@ -18844,11 +18915,6 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/city/structures)
-"dwJ" = (
-/obj/effect/decal/cleanable/generic,
-/obj/structure/machinery/light/double,
-/turf/open/asphalt/cement,
-/area/slade_point/city/streets)
 "dwR" = (
 /obj/structure/phone_base{
 	layer = 3.1;
@@ -19364,12 +19430,6 @@
 /obj/structure/closet/secure_closet/freezer/fridge/full,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kizingo_boulevard/interior)
-"dPp" = (
-/obj/structure/machinery/light/double{
-	dir = 4
-	},
-/turf/open/asphalt/cement,
-/area/slade_point/city/streets)
 "dPq" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 4
@@ -20682,14 +20742,10 @@
 /turf/open/floor/strata,
 /area/slade_point/alpha_site/interior)
 "eGT" = (
-/obj/item/device/radio/intercom{
-	freerange = 1;
-	name = "General Listening Channel";
-	pixel_y = 26
-	},
 /obj/structure/machinery/light/double{
 	dir = 4
 	},
+/obj/structure/machinery/power/apc/almayer/north,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/alpha_site/exterior)
 "eHc" = (
@@ -22507,12 +22563,6 @@
 /obj/effect/overlay/palmtree_l,
 /turf/open/gm/dirtgrassborder/desert,
 /area/slade_point/uplift_reserve/exterior)
-"gez" = (
-/obj/structure/machinery/light/double{
-	dir = 8
-	},
-/turf/open/asphalt/cement,
-/area/slade_point/city/streets)
 "geL" = (
 /obj/structure/platform_decoration{
 	dir = 8
@@ -26609,12 +26659,6 @@
 	},
 /turf/open/asphalt/cement,
 /area/slade_point/kizingo_boulevard/exterior)
-"joO" = (
-/obj/structure/machinery/newscaster{
-	pixel_y = 30
-	},
-/turf/open/floor/almayer/sterile_green_side/north,
-/area/slade_point/kikowani_station/sp_hospital)
 "jpB" = (
 /obj/structure/machinery/vending/generic,
 /turf/open/floor/prison/sterile_white,
@@ -28452,7 +28496,8 @@
 "kMo" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double{
-	dir = 1
+	dir = 1;
+	pixel_x = 16
 	},
 /turf/open/asphalt/cement,
 /area/slade_point/city/streets)
@@ -30590,7 +30635,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/machinery/light/double{
-	dir = 8
+	dir = 8;
+	pixel_y = 16
 	},
 /turf/open/asphalt/cement,
 /area/slade_point/city/streets)
@@ -33749,7 +33795,8 @@
 	dir = 1
 	},
 /obj/structure/machinery/light/double{
-	dir = 4
+	dir = 4;
+	pixel_y = 16
 	},
 /turf/open/asphalt/cement,
 /area/slade_point/city/streets)
@@ -85986,8 +86033,8 @@ mzt
 mzt
 mzt
 niU
-hVd
-aar
+aao
+aSi
 aar
 aar
 aan
@@ -87117,7 +87164,7 @@ adm
 adc
 adc
 adc
-adc
+aAE
 adc
 adc
 adc
@@ -87516,7 +87563,7 @@ adm
 adc
 adc
 adc
-agl
+aSu
 sfR
 uWt
 aDt
@@ -101114,7 +101161,7 @@ aez
 aez
 aez
 aez
-auh
+aCt
 atN
 ahf
 asH
@@ -101125,7 +101172,7 @@ aqM
 apV
 afP
 agq
-dPp
+aSl
 afV
 alX
 afH
@@ -101515,14 +101562,14 @@ alk
 gxQ
 alh
 alh
-ahg
+aSo
 asJ
 asa
 aev
 ars
 aqM
 apV
-agq
+aSn
 alh
 alh
 anE
@@ -101914,14 +101961,14 @@ all
 amz
 amc
 alh
-atu
+ahT
 asK
 asa
 aev
 ars
 aqM
 apU
-dwJ
+aid
 alh
 aiG
 amy
@@ -103499,10 +103546,10 @@ ahf
 agn
 abx
 abx
-abx
-aeA
+alh
+aSs
 aez
-aed
+aSq
 alh
 aiG
 lYV
@@ -104321,8 +104368,8 @@ aev
 amT
 and
 afP
-gez
 afP
+aSk
 afP
 afP
 wwo
@@ -107114,8 +107161,8 @@ aev
 ane
 anf
 agq
-amb
-afP
+agq
+aSl
 afP
 afP
 drN
@@ -107492,7 +107539,7 @@ abx
 axW
 aez
 aez
-aez
+aSr
 alh
 alh
 anE
@@ -107515,7 +107562,7 @@ ang
 amD
 alh
 alh
-afP
+aSj
 afP
 xKa
 aiA
@@ -107891,7 +107938,7 @@ ayj
 ajw
 aez
 aez
-aed
+aeA
 alh
 akz
 akA
@@ -107914,7 +107961,7 @@ ykD
 amz
 amc
 alh
-kMo
+agq
 afP
 ajo
 aiA
@@ -109502,7 +109549,7 @@ aev
 ars
 aqM
 apV
-api
+aSn
 alh
 akA
 anI
@@ -110291,8 +110338,8 @@ pxp
 aez
 aez
 aez
-aui
-att
+aeA
+aSp
 agn
 asL
 asa
@@ -110302,7 +110349,7 @@ aqM
 apV
 agq
 agq
-gez
+aSk
 afP
 afE
 amE
@@ -113846,8 +113893,8 @@ mzt
 mzt
 mzt
 niU
-adI
-ahc
+aee
+aSv
 afP
 afP
 anD
@@ -115089,8 +115136,8 @@ aru
 aqV
 aqa
 agv
-alr
-abx
+aSm
+aAn
 abx
 ahe
 amf
@@ -129027,7 +129074,7 @@ awg
 awg
 ckq
 oWo
-oWo
+aSt
 lEU
 pEA
 sZj
@@ -129428,7 +129475,7 @@ awg
 awg
 awg
 awg
-joO
+vmO
 uSB
 awg
 awg
