@@ -3813,6 +3813,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/asphalt/cement/cement3,
 /area/slade_point/city/streets)
+"amb" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/prop/vehicles{
+	icon_state = "truck_cargo"
+	},
+/turf/open/floor/almayer_hull,
+/area/slade_point/kizingo_boulevard/interior)
 "amc" = (
 /obj/structure/flora/bush/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -4867,6 +4874,12 @@
 	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/city/streets)
+"api" = (
+/obj/structure/prop/vehicles{
+	icon_state = "truck"
+	},
+/turf/open/floor/almayer_hull,
+/area/slade_point/kikowani_station/exterior)
 "apj" = (
 /obj/structure/platform{
 	dir = 4
@@ -10432,9 +10445,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/vehicle/multitile/box_van/cop_car{
-	pixel_y = 0
-	},
+/obj/effect/vehicle_spawner/box_van/cop_car/decrepit,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
 "aFv" = (
@@ -11575,9 +11586,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/vehicle/multitile/box_van/cop_car{
-	pixel_y = 0
-	},
+/obj/effect/vehicle_spawner/box_van/cop_car/decrepit,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/tayari_plaza/interior)
 "aIB" = (
@@ -11972,13 +11981,6 @@
 	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/alpha_site/exterior)
-"aJQ" = (
-/obj/vehicle/multitile/box_van{
-	dir = 8;
-	pixel_x = -4
-	},
-/turf/open/floor/almayer_hull,
-/area/slade_point/kikowani_station/exterior)
 "aJR" = (
 /obj/structure/barricade/handrail/wire{
 	dir = 4
@@ -12211,9 +12213,7 @@
 /turf/open/asphalt/cement,
 /area/slade_point/alpha_site/exterior)
 "aKx" = (
-/obj/vehicle/multitile/box_van{
-	dir = 1
-	},
+/obj/effect/vehicle_spawner/box_van/decrepit,
 /turf/open/floor/almayer_hull,
 /area/slade_point/alpha_site/exterior)
 "aKy" = (
@@ -16608,7 +16608,7 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = -16
 	},
-/obj/vehicle/multitile/box_van,
+/obj/effect/vehicle_spawner/box_van/decrepit,
 /turf/open/floor/almayer_hull,
 /area/slade_point/kizingo_boulevard/interior)
 "bGy" = (
@@ -20691,13 +20691,11 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 8
 	},
-/obj/vehicle/multitile/box_van{
-	dir = 1
-	},
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
 	pixel_x = -16
 	},
+/obj/effect/vehicle_spawner/box_van/decrepit,
 /turf/open/floor/almayer_hull,
 /area/slade_point/alpha_site/exterior)
 "eFh" = (
@@ -21122,11 +21120,11 @@
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/city/structures)
 "eWp" = (
-/obj/vehicle/multitile/box_van,
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal4";
 	pixel_y = -16
 	},
+/obj/effect/vehicle_spawner/box_van/decrepit,
 /turf/open/floor/almayer_hull,
 /area/slade_point/alpha_site/exterior)
 "eXd" = (
@@ -27667,9 +27665,7 @@
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
 	},
-/obj/vehicle/multitile/box_van/cop_car{
-	pixel_y = 0
-	},
+/obj/effect/vehicle_spawner/box_van/cop_car/decrepit,
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/city/structures)
 "keK" = (
@@ -31777,9 +31773,7 @@
 /turf/open/floor/plating/plating_catwalk/strata,
 /area/slade_point/data_center/ai_core)
 "nuG" = (
-/obj/vehicle/multitile/box_van{
-	dir = 1
-	},
+/obj/effect/vehicle_spawner/box_van/decrepit,
 /turf/open/floor/almayer_hull,
 /area/slade_point/kizingo_boulevard/interior)
 "nvu" = (
@@ -34136,14 +34130,6 @@
 	},
 /turf/open/gm/river/desert/deep,
 /area/slade_point/city/water)
-"pgY" = (
-/obj/vehicle/multitile/box_van/cop_car{
-	dir = 4;
-	pixel_x = 4;
-	pixel_y = 0
-	},
-/turf/open/floor/almayer_hull,
-/area/slade_point/tayari_plaza/spdp)
 "php" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc{
 	dir = 1
@@ -34776,13 +34762,6 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kizingo_boulevard/interior)
-"pGt" = (
-/obj/vehicle/multitile/box_van/ambulance{
-	dir = 4;
-	pixel_x = 6
-	},
-/turf/open/floor/almayer_hull,
-/area/slade_point/kikowani_station/sp_hospital)
 "pGu" = (
 /obj/effect/decal/cleanable/generic,
 /turf/open/asphalt/cement/cement4,
@@ -36354,20 +36333,6 @@
 	},
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
-"qXb" = (
-/obj/structure/barricade/handrail/wire{
-	dir = 8
-	},
-/obj/vehicle/multitile/box_van{
-	dir = 4;
-	pixel_x = 4
-	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2";
-	pixel_x = -16
-	},
-/turf/open/floor/almayer_hull,
-/area/slade_point/kikowani_station/exterior)
 "qXW" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -39369,14 +39334,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/dark,
 /area/slade_point/kizingo_boulevard/vyrant_telecom)
-"trM" = (
-/obj/vehicle/multitile/box_van{
-	dir = 8;
-	pixel_x = -4
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/almayer_hull,
-/area/slade_point/kizingo_boulevard/interior)
 "tse" = (
 /obj/structure/platform{
 	dir = 1
@@ -40351,7 +40308,6 @@
 /obj/structure/barricade/handrail/wire{
 	dir = 8
 	},
-/obj/vehicle/multitile/box_van,
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
 	pixel_x = -16
@@ -40360,6 +40316,7 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = -16
 	},
+/obj/effect/vehicle_spawner/box_van/decrepit,
 /turf/open/floor/almayer_hull,
 /area/slade_point/alpha_site/exterior)
 "ugX" = (
@@ -63729,7 +63686,7 @@ aaC
 sVW
 vPY
 sSv
-sSv
+amb
 ook
 aaq
 aaq
@@ -64128,7 +64085,7 @@ aaH
 aaA
 vPY
 sSv
-trM
+sSv
 ioV
 dWs
 ljm
@@ -86794,7 +86751,7 @@ ntx
 awP
 awl
 avd
-pgY
+avx
 avd
 aUy
 pJb
@@ -131837,7 +131794,7 @@ aQY
 adr
 adr
 hPL
-qXb
+bJz
 eEc
 bJz
 eEc
@@ -133834,7 +133791,7 @@ asS
 dRn
 agB
 agB
-agB
+api
 agB
 agB
 agC
@@ -134233,7 +134190,7 @@ asQ
 dRn
 agB
 arv
-aJQ
+agB
 arv
 wvR
 ayE
@@ -139455,7 +139412,7 @@ ebf
 awg
 awg
 foA
-pGt
+ayv
 axK
 axK
 tDo
