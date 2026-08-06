@@ -479,7 +479,10 @@ Applied by gun suicide and high impact bullet executions, removed by rejuvenate,
 			for(var/i in 1 to length(marine_helmet.helmet_overlays))
 				// Add small numbers to the head garb layer so we don't have a layer conflict
 				// the i-1 bit is to make it 0-based, not 1-based like BYOND wants
-				overlays_standing[HEAD_GARB_LAYER + (i-1)] = image('icons/mob/humans/onmob/helmet_garb.dmi', src, marine_helmet.helmet_overlays[i])
+
+				// HALO PVE EDIT - START - .dmi change, changing the helmet type path from /marine is going to create a crazy amount of issues
+				overlays_standing[HEAD_GARB_LAYER + (i-1)] = image('icons/halo/mob/humans/onmob/helmet_garb.dmi', src, marine_helmet.helmet_overlays[i])
+				// HALO PVE EDIT - END
 				num_helmet_overlays++
 
 			// null out the rest of the space allocated for helmet overlays
@@ -506,39 +509,6 @@ Applied by gun suicide and high impact bullet executions, removed by rejuvenate,
 
 			for(var/i in HEAD_GARB_LAYER to (HEAD_GARB_LAYER + MAX_HEAD_GARB_ITEMS - 1))
 				apply_overlay(i)
-
-//HALO PVE EDIT - START - Halo-specific Helmet Overlay things
-
-		if(istype(head, /obj/item/clothing/head/helmet/unsc))
-			var/obj/item/clothing/head/helmet/unsc/unsc_marine_helmet = head
-			if(assigned_squad && unsc_marine_helmet.flags_marine_helmet & HELMET_SQUAD_OVERLAY)
-				if(assigned_squad && assigned_squad.equipment_color && assigned_squad.use_stripe_overlay)
-					var/leader = assigned_squad.squad_leader
-					var/image/helmet_overlay = image(unsc_marine_helmet.helmet_overlay_icon, icon_state = "std-helmet")
-					if(leader == src)
-						helmet_overlay = image(unsc_marine_helmet.helmet_overlay_icon, icon_state = "sql-helmet")
-					helmet_overlay.layer = -HEAD_SQUAD_LAYER
-					helmet_overlay.alpha = assigned_squad.armor_alpha
-					helmet_overlay.color = assigned_squad.equipment_color
-					overlays_standing[HEAD_SQUAD_LAYER] = helmet_overlay
-					apply_overlay(HEAD_SQUAD_LAYER)
-
-			var/num_helmet_overlays = 0
-			for(var/i in 1 to length(unsc_marine_helmet.helmet_overlays))
-				// Add small numbers to the head garb layer so we don't have a layer conflict
-				// the i-1 bit is to make it 0-based, not 1-based like BYOND wants
-				overlays_standing[HEAD_GARB_LAYER + (i-1)] = image('icons/halo/mob/humans/onmob/helmet_garb.dmi', src, unsc_marine_helmet.helmet_overlays[i])
-				num_helmet_overlays++
-
-			// null out the rest of the space allocated for helmet overlays
-			// God I hate 1-based indexing
-			for(var/i in num_helmet_overlays+1 to MAX_HEAD_GARB_ITEMS)
-				overlays_standing[HEAD_GARB_LAYER + (i-1)] = null
-
-			for(var/i in HEAD_GARB_LAYER to (HEAD_GARB_LAYER + MAX_HEAD_GARB_ITEMS - 1))
-				apply_overlay(i)
-
-//HALO PVE EDIT - END
 
 #undef MAX_HEAD_GARB_ITEMS
 

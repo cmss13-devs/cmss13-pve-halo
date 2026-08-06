@@ -263,9 +263,8 @@
 /datum/equipment_preset/unsc/pilot
 	name = "UNSC Marine Pilot"
 	flags = EQUIPMENT_PRESET_EXTRA|EQUIPMENT_PRESET_MARINE
-	idtype = /obj/item/card/id/dogtag
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
-	assignment = JOB_DROPSHIP_PILOT
+	assignment = "Pilot"
 	rank = JOB_DROPSHIP_PILOT
 	paygrades = list(PAY_SHORT_MO3 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Pilot"
@@ -273,13 +272,13 @@
 	minimap_icon = "pilot"
 
 /datum/equipment_preset/unsc/pilot/copilot
-	name = "UNSC Marine Co-Pilot"
+	name = "UNSC Marine Pilot (Co-Pilot)"
 	idtype = /obj/item/card/id/dogtag
 	access = list(ACCESS_MARINE_COMMAND, ACCESS_MARINE_DROPSHIP, ACCESS_MARINE_PILOT)
-	assignment = JOB_DROPSHIP_COPILOT
-	rank = JOB_DROPSHIP_COPILOT
+	assignment = "Pilot"
+	rank = JOB_DROPSHIP_PILOT
 	paygrades = list(PAY_SHORT_MO2 = JOB_PLAYTIME_TIER_0)
-	role_comm_title = "Co-Pilot"
+	role_comm_title = "Pilot"
 	skills = /datum/skills/pilot
 	minimap_icon = "pilot"
 
@@ -295,9 +294,12 @@
 	skills = /datum/skills/pilot
 	minimap_icon = "pilot"
 
-// ================== EQUIPPED ==================
+// =================================
+// EQUIPPED PRESETS
+// =================================
 
-//rifleman
+// ====================== RIFLEMAN ======================
+
 /datum/equipment_preset/unsc/pfc/equipped
 	name = parent_type::name + " (Equipped)"
 
@@ -316,7 +318,8 @@
 /datum/equipment_preset/unsc/pfc/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-//weapon spec (sniper)
+// ====================== SPEC (SNIPER) ======================
+
 /datum/equipment_preset/unsc/spec/equipped_sniper
 	name = parent_type::name + " (Sniper, Equipped)"
 
@@ -348,7 +351,8 @@
 /datum/equipment_preset/unsc/spec/equipped_sniper/ai_sniper/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-//weapon spec (spnkr)
+// ====================== SPEC (SPNKR) ======================
+
 /datum/equipment_preset/unsc/spec/equipped_spnkr
 	name = parent_type::name + " (SPNKr, Equipped)"
 
@@ -358,7 +362,7 @@
 	add_marine_backpack(new_human, "spnkr")
 	if(prob(50))
 		add_ma5c(new_human)
-	if(prob(50))
+	else
 		add_ma5b(new_human)
 
 /datum/equipment_preset/unsc/spec/equipped_spnkr/load_status(mob/living/carbon/human/new_human)
@@ -373,30 +377,31 @@
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/halo_launcher/spnkr(new_human), WEAR_BACK)
 	if(prob(50))
 		add_ma5c(new_human)
-	if(prob(50))
+	else
 		add_ma5b(new_human)
 
 /datum/equipment_preset/unsc/spec/equipped_spnkr/ai_man/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
+// ====================== CORPSMAN ======================
 
-//hospital corpsman
 /datum/equipment_preset/unsc/medic/equipped
 	name = parent_type::name + " (Equipped)"
 
 /datum/equipment_preset/unsc/medic/equipped/load_gear(mob/living/carbon/human/new_human)
 	add_marine_basics(new_human)
-	add_standard_marine_gear(new_human)
+	add_corpsman_marine_gear(new_human)
 	add_marine_backpack(new_human, "corpsman")
 	if(prob(50))
 		add_ma5c(new_human)
-	if(prob(50))
+	else
 		add_ma5b(new_human)
 
 /datum/equipment_preset/unsc/medic/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-//rto
+// ====================== RTO ======================
+
 /datum/equipment_preset/unsc/rto/equipped
 	name = parent_type::name + " (Equipped)"
 
@@ -406,13 +411,14 @@
 	add_marine_backpack(new_human, "rto")
 	if(prob(50))
 		add_ma5c(new_human)
-	if(prob(50))
+	else
 		add_ma5b(new_human)
 
 /datum/equipment_preset/unsc/rto/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-//fireteam leader
+// ====================== FTL ======================
+
 /datum/equipment_preset/unsc/tl/equipped
 	name = parent_type::name + " (Equipped)"
 
@@ -425,7 +431,7 @@
 /datum/equipment_preset/unsc/tl/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
-//squad leader
+// ====================== SQUAD LEADER ======================
 
 /datum/equipment_preset/unsc/leader/equipped
 	name = parent_type::name + " (Equipped)"
@@ -439,6 +445,8 @@
 /datum/equipment_preset/unsc/leader/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
+// ====================== PLATCO ======================
+
 /datum/equipment_preset/unsc/platco/equipped
 	name = parent_type::name + " (Equipped)"
 
@@ -451,6 +459,8 @@
 /datum/equipment_preset/unsc/platco/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
+// ====================== PILOTS ======================
+
 /datum/equipment_preset/unsc/pilot/equipped
 	name = parent_type::name + " (Equipped)"
 
@@ -462,12 +472,28 @@
 /datum/equipment_preset/unsc/pilot/equipped/load_status(mob/living/carbon/human/new_human)
 	new_human.nutrition = NUTRITION_HIGH
 
+/datum/equipment_preset/unsc/pilot/equipped_light
+	name = parent_type::name + " (Equipped, Light)"
+
+/datum/equipment_preset/unsc/pilot/equipped_light/load_gear(mob/living/carbon/human/new_human)
+	add_forecon_basics(new_human)
+	add_light_pilot_gear(new_human)
+	add_m7(new_human)
+
 /datum/equipment_preset/unsc/pilot/copilot/equipped
 	name = parent_type::name + " (Equipped)"
 
 /datum/equipment_preset/unsc/pilot/copilot/equipped/load_gear(mob/living/carbon/human/new_human)
 	add_forecon_basics(new_human)
 	add_copilot_gear(new_human)
+	add_m7(new_human)
+
+/datum/equipment_preset/unsc/pilot/copilot/equipped_light
+	name = parent_type::name + " (Equipped, Light)"
+
+/datum/equipment_preset/unsc/pilot/copilot/equipped_light/load_gear(mob/living/carbon/human/new_human)
+	add_forecon_basics(new_human)
+	add_light_copilot_gear(new_human)
 	add_m7(new_human)
 
 /datum/equipment_preset/unsc/pilot/navy/equipped
@@ -477,7 +503,6 @@
 	add_forecon_basics(new_human)
 	add_navy_pilot_gear(new_human)
 	add_m7(new_human)
-
 // ODST
 
 //rifleman
@@ -492,7 +517,7 @@
 	//face
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen(new_human), WEAR_L_EAR)
 	//head
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/odst(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/odst(new_human), WEAR_HEAD)
 	//uniform
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/unsc/odst(new_human), WEAR_BODY)
 	//jacket
@@ -563,19 +588,6 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
-/datum/equipment_preset/proc/add_forecon_basics(mob/living/carbon/human/new_human)
-	new_human.undershirt = "Marine Undershirt"
-	new_human.underwear = "Marine Boxers"
-	if(!istype(new_human))
-		return
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/unsc/forecon(new_human), WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
-
-	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
-
 /datum/equipment_preset/proc/add_oni_secfor_basics(mob/living/carbon/human/new_human)
 	new_human.undershirt = "Marine Undershirt"
 	new_human.underwear = "Marine Boxers"
@@ -602,26 +614,6 @@
 	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
 		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
 
-/datum/equipment_preset/proc/add_forecon_scout_basics(mob/living/carbon/human/new_human)
-	new_human.undershirt = "Marine Undershirt"
-	new_human.underwear = "Marine Boxers"
-	if(!istype(new_human))
-		return
-	var/obj/item/clothing/under/marine/unsc/forecon/uniform = new()
-	var/roll_uniform = pick_weight(list("standard" = 80, "rolled" = 15, "jacketless" = 5))
-	switch(roll_uniform)
-		if("rolled")
-			uniform.roll_suit_sleeves(new_human)
-		if("jacketless")
-			uniform.roll_suit_jacket(new_human)
-	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
-
-	if(SSmapping.configs[GROUND_MAP].environment_traits[MAP_COLD])
-		new_human.equip_to_slot_or_del(new /obj/item/clothing/mask/rebreather/scarf, WEAR_FACE)
-
 // equipment
 
 /datum/equipment_preset/proc/add_marine_backpack(mob/living/carbon/human/new_human, backpack_type)
@@ -631,11 +623,13 @@
 		if("corpsman")
 			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
-			new_human.equip_to_slot_or_del(new /obj/item/reagent_container/food/drinks/flask/canteen, WEAR_IN_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/surgical_line(new_human), WEAR_IN_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/tool/surgery/synthgraft(new_human), WEAR_IN_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/unsc/corpsman(new_human), WEAR_IN_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/unsc/corpsman(new_human), WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/device/healthanalyzer/halo(new_human), WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/unsc/field/corpsman(new_human), WEAR_IN_BACK)
+			new_human.equip_to_slot_or_del(new /obj/item/storage/firstaid/unsc/field/corpsman(new_human), WEAR_IN_BACK)
 		if("sergeant")
 			new_human.equip_to_slot_or_del(new /obj/item/storage/backpack/marine/satchel/unsc(new_human), WEAR_BACK)
 			new_human.equip_to_slot_or_del(new /obj/item/storage/box/mre(new_human), WEAR_IN_BACK)
@@ -672,8 +666,10 @@
 	if(!istype(new_human))
 		return
 	if(prob(90)) // if the marine wears a helmet or not
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/unsc = 50, /obj/item/clothing/head/helmet/unsc/variant_2 = 50))
-		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 50, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 50))
+		new_human.equip_to_slot_or_del(new pick_hat(new_human), WEAR_HEAD)
+		add_marine_accessory_visor(new_human)
+
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
@@ -683,12 +679,32 @@
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
 
+/datum/equipment_preset/proc/add_corpsman_marine_gear(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	if(prob(90)) // if the marine wears a helmet or not
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 50, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 50))
+		new_human.equip_to_slot_or_del(new pick_hat(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health/unsc(new_human), WEAR_EYES)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/neckguard(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/unsc/full(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
+
 /datum/equipment_preset/proc/add_sergeant_marine_gear(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
 	if(prob(90)) // if the marine wears a helmet or not
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/unsc = 25, /obj/item/clothing/head/helmet/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 50))
-		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 25, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 50))
+		new_human.equip_to_slot_or_del(new pick_hat(new_human), WEAR_HEAD)
+		if(istype(new_human.head, /obj/item/clothing/head/helmet/marine/unsc))
+			add_marine_accessory_visor(new_human)
+		else
+			add_marine_accessory_eyes(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
@@ -702,9 +718,15 @@
 	if(!istype(new_human))
 		return
 	if(prob(90)) // if the marine wears a helmet or not
-		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/unsc = 25, /obj/item/clothing/head/helmet/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 25, , /obj/item/clothing/head/cmcap/boonie = 25))
-		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
+		var/pick_hat = pick_weight(list(/obj/item/clothing/head/helmet/marine/unsc = 25, /obj/item/clothing/head/helmet/marine/unsc/variant_2 = 25, /obj/item/clothing/head/cmcap/halo/unsc = 25, , /obj/item/clothing/head/cmcap/boonie = 25))
+		new_human.equip_to_slot_or_del(new pick_hat(new_human), WEAR_HEAD)
+		if(istype(new_human.head, /obj/item/clothing/head/helmet/marine/unsc))
+			add_marine_accessory_visor(new_human)
+		else
+			add_marine_accessory_eyes(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
+	if(prob(25))
+		new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/neckguard(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
@@ -716,7 +738,8 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/variant_2(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/variant_2(new_human), WEAR_HEAD)
+	add_marine_accessory_visor(new_human)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/neckguard(new_human), WEAR_ACCESSORY)
@@ -731,9 +754,19 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/pilot(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/pistol/unsc(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/pistol/unsc/large/m6g(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/halo/m6g(new_human), WEAR_IN_R_STORE)
+
+/datum/equipment_preset/proc/add_light_pilot_gear(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/forecon_flakvest(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/pistol/unsc(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/pistol/unsc/large/m6g(new_human), WEAR_L_STORE)
@@ -743,9 +776,19 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/pilot/weapons_operator(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot/weapons_operator(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/pistol/unsc(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/pistol/unsc/large/m6g(new_human), WEAR_L_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/pistol/halo/m6g(new_human), WEAR_IN_R_STORE)
+
+/datum/equipment_preset/proc/add_light_copilot_gear(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/forecon_flakvest(new_human), WEAR_JACKET)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot/weapons_operator(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/pistol/unsc(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/magazine/pistol/unsc/large/m6g(new_human), WEAR_L_STORE)
@@ -755,7 +798,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc(new_human), WEAR_JACKET)
-	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/unsc/pilot/navy(new_human), WEAR_HEAD)
+	new_human.equip_to_slot_or_del(new /obj/item/clothing/head/helmet/marine/unsc/pilot/navy(new_human), WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/greaves(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
@@ -768,48 +811,27 @@
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5c(new_human), WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/mag/ma5c(new_human), WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
+	var/random_magcount = rand(6, 10)
+	for(var/i in 1 to random_magcount)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5c(new_human), WEAR_IN_BELT)
 
 /datum/equipment_preset/proc/add_ma5b(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/ma5b(new_human), WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/mag/ma5b(new_human), WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
+	var/random_magcount = rand(6, 10)
+	for(var/i in 1 to random_magcount)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/ma5b(new_human), WEAR_IN_BELT)
 
 /datum/equipment_preset/proc/add_br55(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/weapon/gun/rifle/halo/br55(new_human), WEAR_J_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/storage/webbing/m52b/mag/br55(new_human), WEAR_ACCESSORY)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
+	var/random_magcount = rand(6, 10)
+	for(var/i in 1 to random_magcount)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/rifle/halo/br55(new_human), WEAR_IN_BELT)
 
 /datum/equipment_preset/proc/add_srs99(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
@@ -821,14 +843,20 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/gun/m7/full(new_human), WEAR_J_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
-	new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
+	var/random_magcount = rand(6, 10)
+	for(var/i in 1 to random_magcount)
+		new_human.equip_to_slot_or_del(new /obj/item/ammo_magazine/smg/halo/m7(new_human), WEAR_IN_BELT)
+
+/datum/equipment_preset/proc/add_marine_accessory_visor(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	if(prob(75))
+		var/pick_visor = pick_weight(list(/obj/item/prop/helmetgarb/halo/visor = 60, /obj/item/prop/helmetgarb/halo/visor/silver = 15, /obj/item/prop/helmetgarb/halo/visor/large = 10, /obj/item/prop/helmetgarb/halo/visor/large/silver = 10, /obj/item/clothing/glasses/scouter = 5))
+		new_human.equip_to_slot_or_del(new pick_visor(new_human), WEAR_IN_HELMET)
+
+/datum/equipment_preset/proc/add_marine_accessory_eyes(mob/living/carbon/human/new_human)
+	if(!istype(new_human))
+		return
+	if(prob(75))
+		var/pick_eyes = pick_weight(list(/obj/item/clothing/glasses/scouter = 20, /obj/item/clothing/glasses/sunglasses/big/unsc = 60, /obj/item/clothing/glasses/sunglasses/big/unsc/silver = 20))
+		new_human.equip_to_slot_or_del(new pick_eyes(new_human), WEAR_EYES)

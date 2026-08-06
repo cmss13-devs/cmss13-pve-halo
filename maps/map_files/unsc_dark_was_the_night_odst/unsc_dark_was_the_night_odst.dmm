@@ -908,7 +908,7 @@
 /area/dark_was_the_night/armory)
 "cs" = (
 /obj/structure/closet/secure_closet/halo/job_locker/squad_leader,
-/obj/item/clothing/head/helmet/unsc/odst/motion,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
 /obj/item/tacmap_map,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
@@ -940,7 +940,7 @@
 /area/dark_was_the_night/lower_hallway)
 "cx" = (
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft1,
-/obj/item/clothing/head/helmet/unsc/odst/motion,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
 /obj/structure/sign/safety/one{
 	pixel_y = 24;
 	pixel_x = 8
@@ -957,7 +957,7 @@
 /area/dark_was_the_night/upper_hallway)
 "cz" = (
 /obj/structure/closet/secure_closet/halo/job_locker/fireteam_leader/ft2,
-/obj/item/clothing/head/helmet/unsc/odst/motion,
+/obj/item/clothing/head/helmet/marine/unsc/odst/motion,
 /obj/structure/sign/safety/two{
 	pixel_x = 8;
 	pixel_y = 24

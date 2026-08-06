@@ -371,6 +371,7 @@ GLOBAL_LIST_INIT(allowed_helmet_items, list(
 	//HALO PVE ITEMS
 	/obj/item/clothing/glasses/scouter = HELMET_GARB_RELAY_ICON_STATE,
 	/obj/item/prop/helmetgarb/halo/visor = HELMET_GARB_RELAY_ICON_STATE,
+	/obj/item/clothing/glasses/scouter/flipped = HELMET_GARB_RELAY_ICON_STATE,
 	/obj/item/prop/helmetgarb/halo/visor/silver = HELMET_GARB_RELAY_ICON_STATE,
 	/obj/item/prop/helmetgarb/halo/visor/black = HELMET_GARB_RELAY_ICON_STATE,
 	/obj/item/prop/helmetgarb/halo/visor/large = HELMET_GARB_RELAY_ICON_STATE,

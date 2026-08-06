@@ -16277,7 +16277,7 @@
 	pixel_x = 7;
 	pixel_y = 10
 	},
-/obj/item/clothing/head/helmet/unsc{
+/obj/item/clothing/head/helmet/marine/unsc{
 	pixel_x = -7;
 	pixel_y = -8
 	},
@@ -30966,7 +30966,7 @@
 /area/mackay_station/romeo/redtram1)
 "vzb" = (
 /obj/structure/surface/table/almayer,
-/obj/item/clothing/head/helmet/unsc{
+/obj/item/clothing/head/helmet/marine/unsc{
 	pixel_x = -5;
 	pixel_y = 6
 	},
