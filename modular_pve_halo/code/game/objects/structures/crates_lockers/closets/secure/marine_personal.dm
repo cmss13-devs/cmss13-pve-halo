@@ -1,7 +1,8 @@
+
 // ==ODST== //
 
 /obj/structure/closet/secure_closet/marine_personal/odst/spawn_gear()
-	new /obj/item/clothing/under/marine/odst(src)
+	new /obj/item/clothing/under/marine/unsc/odst(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen(src)
 
@@ -21,7 +22,7 @@
 	job = JOB_SQUAD_LEADER
 
 /obj/structure/closet/secure_closet/marine_personal/odst/squad_leader/spawn_gear()
-	new /obj/item/clothing/under/marine/odst(src)
+	new /obj/item/clothing/under/marine/unsc/odst(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen/squadlead(src)
 
@@ -31,7 +32,7 @@
 // ==UNSC== //
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/spawn_gear()
-	new /obj/item/clothing/under/marine(src)
+	new /obj/item/clothing/under/marine/unsc(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers(src)
 
@@ -57,3 +58,5 @@
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/rto
 	job = JOB_SQUAD_RTO
+
+//
