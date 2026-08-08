@@ -99,7 +99,7 @@
 	roundstart_template = /datum/map_template/shuttle/slade_point/oni_elevator
 
 /obj/docking_port/stationary/oni_elevator/exit
-	name = "Data Center - Sublevel 9"
+	name = "Data Center - Sublevel 7"
 	id=STAT_ONI_ELEVATOR_EXIT
 	airlock_area = /area/slade_point/elevator/oni_elevator/exit
 	airlock_exit = "oni"
