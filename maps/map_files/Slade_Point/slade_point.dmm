@@ -6422,6 +6422,11 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/city/streets)
+"atu" = (
+/turf/closed/wall/upp_wall/grey{
+	color = "#969696"
+	},
+/area/slade_point/city/structures)
 "atv" = (
 /obj/structure/stairs/perspective{
 	icon_state = "p_stair_full";
@@ -7159,7 +7164,9 @@
 /area/slade_point/kikowani_station/interior)
 "avN" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	pixel_x = -8
+	},
 /obj/structure/machinery/computer/card{
 	pixel_x = 9
 	},
@@ -13787,13 +13794,6 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_8)
-"aOp" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/computer/area_atmos,
-/turf/open/shuttle/vehicle/floor_2,
-/area/slade_point/data_center/sublevel_8)
 "aOq" = (
 /obj/structure/prop/invuln/lattice_prop{
 	icon_state = "lattice3";
@@ -13835,7 +13835,9 @@
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_8)
 "aOw" = (
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	pixel_y = 18
+	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_8)
 "aOx" = (
@@ -13977,7 +13979,10 @@
 /area/slade_point/data_center/sublevel_8)
 "aOP" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	pixel_x = 9;
+	dir = 1
+	},
 /obj/structure/machinery/computer/card{
 	dir = 1;
 	pixel_x = -8
@@ -14863,13 +14868,6 @@
 	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
-"aQI" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/computer/area_atmos,
-/turf/open/shuttle/vehicle/floor_2,
-/area/slade_point/data_center/sublevel_7)
 "aQJ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -15669,7 +15667,10 @@
 /obj/structure/platform{
 	dir = 4
 	},
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	dir = 4;
+	pixel_x = -14
+	},
 /turf/open/auto_turf/ice,
 /area/slade_point/data_center/sublevel_8)
 "aWD" = (
@@ -15723,7 +15724,10 @@
 "aYN" = (
 /obj/item/clothing/head/hardhat{
 	pixel_y = 4;
-	pixel_x = 4
+	pixel_x = 4;
+	desc = "A piece of headgear used in dangerous working conditions to protect the head. Comes with a built-in flashlight. The name 'Daniel Endesha' is printed on the back of it, and it appears to be stuck to the floor.";
+	name = "frozen hard hat";
+	anchored = 1
 	},
 /obj/effect/decal/cleanable/blood,
 /turf/open/auto_turf/ice,
@@ -19306,7 +19310,10 @@
 /turf/open/floor/prison/sterile_white,
 /area/slade_point/kikowani_station/interior)
 "dJq" = (
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	dir = 4;
+	pixel_x = -14
+	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/data_center/sublevel_8)
 "dJA" = (
@@ -19394,7 +19401,10 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = 12
 	},
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	dir = 8;
+	pixel_x = 14
+	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "dMe" = (
@@ -25673,7 +25683,10 @@
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_8)
 "iDA" = (
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	dir = 8;
+	pixel_x = 14
+	},
 /turf/open/auto_turf/ice,
 /area/slade_point/data_center/sublevel_8)
 "iDM" = (
@@ -32629,9 +32642,11 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/tayari_plaza/interior)
 "nYX" = (
-/obj/structure/machinery/computer/area_atmos,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/computer/area_atmos{
+	pixel_y = 18
 	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
@@ -33957,9 +33972,11 @@
 /area/slade_point/kizingo_boulevard/exterior)
 "oXB" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/computer/area_atmos,
 /obj/structure/machinery/computer/card{
 	pixel_x = 9
+	},
+/obj/structure/machinery/computer/area_atmos{
+	pixel_x = -8
 	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/data_center/sublevel_7)
@@ -36817,7 +36834,9 @@
 /obj/structure/prop/invuln/overhead_pipe{
 	pixel_x = -19
 	},
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	pixel_y = 18
+	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_8)
 "rlG" = (
@@ -36927,7 +36946,10 @@
 /obj/structure/platform{
 	dir = 8
 	},
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	dir = 8;
+	pixel_x = 14
+	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/data_center/sublevel_8)
 "rqe" = (
@@ -38531,7 +38553,6 @@
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/obj/structure/machinery/computer/area_atmos,
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "sFs" = (
@@ -39393,7 +39414,9 @@
 /turf/open/floor/plating/asteroidfloor,
 /area/slade_point/kizingo_boulevard/exterior)
 "trw" = (
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	pixel_y = 18
+	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "trK" = (
@@ -44628,7 +44651,9 @@
 /obj/structure/prop/invuln/overhead_pipe{
 	pixel_x = -19
 	},
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	pixel_y = 18
+	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "xuN" = (
@@ -45490,10 +45515,13 @@
 /area/slade_point/tayari_plaza/spdp)
 "xXV" = (
 /obj/structure/surface/table/reinforced/prison,
-/obj/structure/machinery/computer/area_atmos,
 /obj/structure/machinery/computer/card{
 	dir = 1;
 	pixel_x = -8
+	},
+/obj/structure/machinery/computer/area_atmos{
+	pixel_x = 9;
+	dir = 1
 	},
 /turf/open/floor/almayer_hull,
 /area/slade_point/data_center/sublevel_7)
@@ -45665,7 +45693,10 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = -16
 	},
-/obj/structure/machinery/computer/area_atmos,
+/obj/structure/machinery/computer/area_atmos{
+	dir = 8;
+	pixel_x = 14
+	},
 /turf/open/shuttle/vehicle/floor_2,
 /area/slade_point/data_center/sublevel_7)
 "yfI" = (
@@ -55778,7 +55809,7 @@ iRK
 mnt
 mdY
 gJD
-trw
+lBj
 ykH
 aHA
 aLG
@@ -72858,7 +72889,7 @@ wQf
 aMD
 aLI
 gJD
-trw
+lBj
 ykH
 aHA
 aLG
@@ -80110,14 +80141,14 @@ mVu
 aLG
 iHu
 oAI
-aQI
+nYX
 aMD
 aLI
 gJD
 aMD
 aLI
 eGv
-aQI
+aMl
 ykH
 iHu
 aLG
@@ -97607,7 +97638,7 @@ aOA
 aPb
 aMY
 aOy
-aOp
+aOr
 aOc
 aNB
 aMp
@@ -105293,7 +105324,7 @@ aOE
 aPi
 aOR
 aOE
-rlx
+aOv
 aOi
 aNN
 aNx
@@ -112746,7 +112777,7 @@ afF
 afG
 aez
 aeA
-ahe
+atu
 aiy
 ahO
 aRH
@@ -114687,7 +114718,7 @@ aPx
 aPk
 aMY
 aOA
-aOw
+aOa
 aOc
 aNB
 aMp
