@@ -10,11 +10,19 @@
 /area/lv522/outdoors/colony_streets/south_street)
 "ad" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/void,
 /area/dark_was_the_night/upper_hallway)
+"ae" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101;
+	alpha = 0
+	},
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer_hull/outerhull_dir/north,
+/area/lv522/outdoors/colony_streets/south_street)
 "aj" = (
 /obj/structure/filingcabinet/chestdrawer{
 	pixel_x = 8;
@@ -242,7 +250,7 @@
 	dir = 8
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/void,
@@ -384,7 +392,7 @@
 /area/dark_was_the_night/upper_hallway)
 "na" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/floor/almayer_hull,
@@ -418,7 +426,7 @@
 /area/dark_was_the_night/upper_hallway)
 "oQ" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/west,
@@ -545,7 +553,7 @@
 	dir = 8
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/void,
@@ -562,7 +570,7 @@
 	dir = 4
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/void,
@@ -719,7 +727,7 @@
 /area/dark_was_the_night/upper_hallway)
 "zP" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/northwest,
@@ -863,7 +871,7 @@
 /area/dark_was_the_night/upper_hallway)
 "GE" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/east,
@@ -1190,7 +1198,7 @@
 /area/dark_was_the_night/upper_hallway)
 "Ro" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/northeast,
@@ -1307,7 +1315,7 @@
 /area/dark_was_the_night/upper_hallway)
 "TR" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/north,
@@ -1354,7 +1362,7 @@
 	dir = 4
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1;
+	invisibility = 101;
 	alpha = 0
 	},
 /turf/open/void,
@@ -2041,7 +2049,7 @@ ac
 ac
 ac
 ac
-TR
+ae
 AH
 lB
 sR
@@ -2457,7 +2465,7 @@ ac
 ac
 ac
 ac
-TR
+ae
 AH
 Ct
 if
