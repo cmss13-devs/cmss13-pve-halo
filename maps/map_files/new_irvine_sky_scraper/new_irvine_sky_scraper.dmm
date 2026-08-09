@@ -8,6 +8,13 @@
 "ac" = (
 /turf/open/void,
 /area/lv522/outdoors/colony_streets/south_street)
+"ad" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 1;
+	alpha = 0
+	},
+/turf/open/void,
+/area/dark_was_the_night/upper_hallway)
 "aj" = (
 /obj/structure/filingcabinet/chestdrawer{
 	pixel_x = 8;
@@ -2670,7 +2677,7 @@ gA
 ZJ
 ao
 Hp
-FT
+ad
 tx
 qo
 AH
