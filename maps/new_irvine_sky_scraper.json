@@ -1,0 +1,8 @@
+{
+    "map_name": "New Irvine Sky Scraper",
+    "map_path": "map_files/new_irvine_sky_scraper",
+    "map_file": "new_irvine_sky_scraper.dmm",
+    "webmap_url": "DarkWasTheNight",
+    "traits": [{"Marine Main Ship": true}],
+    "platoon": "/datum/squad/marine/alpha"
+}
