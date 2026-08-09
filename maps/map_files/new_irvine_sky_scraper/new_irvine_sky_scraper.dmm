@@ -1,4 +1,10 @@
 //MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"aa" = (
+/turf/closed/wall/upp_wall/grey/hull,
+/area/dark_was_the_night/upper_hallway)
+"ab" = (
+/turf/closed/wall/upp_wall/grey/hull,
+/area/new_irvine/outdoors)
 "aj" = (
 /obj/structure/filingcabinet/chestdrawer{
 	pixel_x = 8;
@@ -1433,30 +1439,30 @@
 /area/dark_was_the_night/upper_hallway)
 
 (1,1,1) = {"
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-fN
-AH
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+aa
 AH
 AH
 AH
@@ -1485,7 +1491,7 @@ AH
 AH
 "}
 (2,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1537,7 +1543,7 @@ AH
 AH
 "}
 (3,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1589,7 +1595,7 @@ AH
 AH
 "}
 (4,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1641,7 +1647,7 @@ AH
 AH
 "}
 (5,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1693,7 +1699,7 @@ AH
 AH
 "}
 (6,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1745,7 +1751,7 @@ AH
 AH
 "}
 (7,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1797,7 +1803,7 @@ AH
 AH
 "}
 (8,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1849,7 +1855,7 @@ AH
 AH
 "}
 (9,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1901,7 +1907,7 @@ AH
 AH
 "}
 (10,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -1953,7 +1959,7 @@ AH
 AH
 "}
 (11,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2005,7 +2011,7 @@ AH
 AH
 "}
 (12,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2057,7 +2063,7 @@ AH
 AH
 "}
 (13,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2109,7 +2115,7 @@ oI
 oI
 "}
 (14,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2161,7 +2167,7 @@ XH
 oI
 "}
 (15,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2213,7 +2219,7 @@ XH
 oI
 "}
 (16,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2265,7 +2271,7 @@ XH
 oI
 "}
 (17,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2317,7 +2323,7 @@ XH
 oI
 "}
 (18,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2369,7 +2375,7 @@ XH
 oI
 "}
 (19,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2421,7 +2427,7 @@ oI
 oI
 "}
 (20,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2473,7 +2479,7 @@ oI
 oI
 "}
 (21,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2525,7 +2531,7 @@ oI
 oI
 "}
 (22,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2577,7 +2583,7 @@ QO
 QO
 "}
 (23,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2629,7 +2635,7 @@ WR
 QO
 "}
 (24,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2681,7 +2687,7 @@ WR
 QO
 "}
 (25,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2733,7 +2739,7 @@ WR
 QO
 "}
 (26,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2785,7 +2791,7 @@ WR
 QO
 "}
 (27,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2837,7 +2843,7 @@ WR
 QO
 "}
 (28,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2889,7 +2895,7 @@ WR
 QO
 "}
 (29,1,1) = {"
-VN
+ab
 VN
 VN
 VN
@@ -2941,30 +2947,30 @@ WR
 QO
 "}
 (30,1,1) = {"
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-VN
-fN
-AH
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+ab
+aa
 AH
 AH
 AH
