@@ -242,7 +242,8 @@
 	dir = 8
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/void,
 /area/dark_was_the_night/upper_hallway)
@@ -383,7 +384,8 @@
 /area/dark_was_the_night/upper_hallway)
 "na" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/floor/almayer_hull,
 /area/lv522/outdoors/colony_streets/south_street)
@@ -416,7 +418,8 @@
 /area/dark_was_the_night/upper_hallway)
 "oQ" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/west,
 /area/lv522/outdoors/colony_streets/south_street)
@@ -542,7 +545,8 @@
 	dir = 8
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/void,
 /area/dark_was_the_night/upper_hallway)
@@ -558,7 +562,8 @@
 	dir = 4
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/void,
 /area/dark_was_the_night/upper_hallway)
@@ -714,7 +719,8 @@
 /area/dark_was_the_night/upper_hallway)
 "zP" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/northwest,
 /area/lv522/outdoors/colony_streets/south_street)
@@ -855,15 +861,10 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/upp_wall/grey,
 /area/dark_was_the_night/upper_hallway)
-"FT" = (
-/obj/structure/blocker/forcefield/human{
-	invisibility = 1
-	},
-/turf/open/void,
-/area/dark_was_the_night/upper_hallway)
 "GE" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/east,
 /area/lv522/outdoors/colony_streets/south_street)
@@ -1189,7 +1190,8 @@
 /area/dark_was_the_night/upper_hallway)
 "Ro" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/northeast,
 /area/lv522/outdoors/colony_streets/south_street)
@@ -1305,7 +1307,8 @@
 /area/dark_was_the_night/upper_hallway)
 "TR" = (
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/floor/almayer_hull/outerhull_dir/north,
 /area/lv522/outdoors/colony_streets/south_street)
@@ -1351,7 +1354,8 @@
 	dir = 4
 	},
 /obj/structure/blocker/forcefield/human{
-	invisibility = 1
+	invisibility = 1;
+	alpha = 0
 	},
 /turf/open/void,
 /area/dark_was_the_night/upper_hallway)
@@ -2729,7 +2733,7 @@ gA
 ZJ
 Um
 Hp
-FT
+ad
 tx
 qo
 AH
