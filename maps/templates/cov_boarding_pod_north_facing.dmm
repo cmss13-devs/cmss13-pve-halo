@@ -1,0 +1,83 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/open/floor/covenant/lane/vertical,
+/area/dark_was_the_night/pod_bay)
+"e" = (
+/turf/open/floor/covenant/endcap/north,
+/area/dark_was_the_night/pod_bay)
+"o" = (
+/turf/open/floor/covenant/paneling,
+/area/dark_was_the_night/pod_bay)
+"s" = (
+/turf/closed/wall/covenant/lights/hull/brighter,
+/area/dark_was_the_night/pod_bay)
+"y" = (
+/turf/open/floor/covenant/lane/horizontal,
+/area/dark_was_the_night/pod_bay)
+"C" = (
+/turf/closed/wall/covenant/hull,
+/area/dark_was_the_night/pod_bay)
+"M" = (
+/turf/open/floor/covenant/endcap/south,
+/area/dark_was_the_night/pod_bay)
+
+(1,1,1) = {"
+C
+C
+C
+s
+C
+C
+s
+C
+C
+C
+"}
+(2,1,1) = {"
+C
+e
+a
+a
+a
+a
+a
+a
+M
+C
+"}
+(3,1,1) = {"
+y
+o
+o
+o
+o
+o
+o
+o
+o
+s
+"}
+(4,1,1) = {"
+C
+e
+a
+a
+a
+a
+a
+a
+M
+C
+"}
+(5,1,1) = {"
+C
+C
+C
+s
+C
+C
+s
+C
+C
+C
+"}
