@@ -87,6 +87,14 @@
 	name = "\improper Lower Hallway"
 	icon_state = "port"
 
+/area/dark_was_the_night/office
+	name = "\improper Admin Office"
+	icon_state = "alpha"
+
+/area/dark_was_the_night/office/medical
+	name = "\improper Sick Bay"
+	icon_state = "science"
+
 /area/dark_was_the_night/armory
 	name = "\improper Armory"
 	icon_state = "alpha"
@@ -118,3 +126,21 @@
 /area/dark_was_the_night/cargo_shuttle/upper
 	name = "\improper Cargo Elevator Upper Level"
 
+
+/area/dark_was_the_night/cargo_shuttle/ventral
+	name = "\improper cargo_shuttle"
+	icon_state = "lifeboat"
+
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator
+	name = "\improper Ventral Cargo Elevator"
+	unlimited_power = TRUE
+	requires_power = FALSE
+
+/area/dark_was_the_night/cargo_shuttle/ventral/lower
+	name = "\improper Ventral Cargo Elevator Lower Level"
+
+/area/dark_was_the_night/cargo_shuttle/ventral/upper
+	name = "\improper Ventral Cargo Elevator Upper Level"
+
+/area/dark_was_the_night/hangar/ventral
+	name = "\improper Ventral Hangar"

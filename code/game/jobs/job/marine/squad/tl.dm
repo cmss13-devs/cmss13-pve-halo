@@ -64,8 +64,8 @@
 		gear_preset = gear_preset_secondary
 
 /datum/job/marine/tl/ai/forecon
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	title = JOB_SQUAD_TEAM_LEADER_FORECON
 	gear_preset = /datum/equipment_preset/uscm/tl/forecon
 	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/sergeant

@@ -74,3 +74,9 @@
 	name = "Cargo Elevator"
 	height = 6
 	width = 8
+
+/obj/docking_port/stationary/trijent_elevator/shipmap_elevator/cargo/ventral
+	name = "Ventral Cargo Elevator"
+	height = 6
+	width = 7
+	area_type = /area/dark_was_the_night/cargo_shuttle/ventral/elevator

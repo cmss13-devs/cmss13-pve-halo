@@ -136,6 +136,7 @@
 #define STAT_DIGSITE_ELEVATOR "digsite"
 #define STAT_DIGSITE_ELEVATOR_EXIT "digsite_exit"
 
+
 #define DROPSHIP_MIDWAY "dropship_midway"
 #define DROPSHIP_ALAMO "dropship_alamo"
 #define DROPSHIP_NORMANDY "dropship_normandy"
@@ -183,3 +184,4 @@
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_ONE "garrow_vehicle_elevator_one"
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_TWO "garrow_vehicle_elevator_two"
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_CARGO "garrow_cargo_elevator"
+#define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_VENTRAL "ventral_cargo_elevator"

@@ -106,20 +106,8 @@
 
 /datum/job/marine/medic/ai/forecon
 	title = JOB_SQUAD_MEDIC_FORECON
-	gear_preset = /datum/equipment_preset/uscm/medic/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/medic/forecon/corporal
-	gear_preset_tertiary = /datum/equipment_preset/uscm/medic/forecon/lance_corporal
-	gear_preset_quaternary = /datum/equipment_preset/uscm/medic/forecon/pfc
-	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL", SGT_VARIANT = "SGT")
-
-/datum/job/marine/medic/ai/forecon/handle_job_options(option)
-	gear_preset = initial(gear_preset)
-	if(option == PFC_VARIANT)
-		gear_preset = gear_preset_quaternary
-	if(option == LCPL_VARIANT)
-		gear_preset = gear_preset_tertiary
-	if(option == CPL_VARIANT)
-		gear_preset = gear_preset_secondary
+	gear_preset = /datum/equipment_preset/unsc/medic/recon
+	gear_preset_secondary = /datum/equipment_preset/unsc/medic/recon/lesser_rank
 
 /obj/effect/landmark/start/marine/medic/upp
 	name = JOB_SQUAD_MEDIC_UPP

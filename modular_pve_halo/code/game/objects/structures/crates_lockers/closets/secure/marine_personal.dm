@@ -52,11 +52,38 @@
 	job = JOB_SQUAD_LEADER
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/squad_leader/spawn_gear()
-	new /obj/item/clothing/under/marine(src)
+	new /obj/item/clothing/under/marine/unsc(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers/squadlead(src)
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/rto
 	job = JOB_SQUAD_RTO
+
+// ==FORECON== //
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/spawn_gear()
+	new /obj/item/clothing/under/marine/unsc/forecon(src)
+	new /obj/item/clothing/shoes/marine/knife(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers(src)
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rifleman
+	job = JOB_SQUAD_MARINE_FORECON
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/specialist
+	job = JOB_SQUAD_SPECIALIST_FORECON
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/corpsman
+	job = JOB_SQUAD_MEDIC_FORECON
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader
+	job = JOB_SQUAD_LEADER_FORECON
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader/spawn_gear()
+	new /obj/item/clothing/under/marine/unsc/forecon(src)
+	new /obj/item/clothing/shoes/marine/knife(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers/squadlead(src)
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rto
+	job = JOB_SQUAD_RTO_FORECON
 
 //

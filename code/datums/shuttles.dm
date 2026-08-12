@@ -178,3 +178,12 @@
 	name = "Digsite Elevator"
 	shuttle_id = MOBILE_DIGSITE_ELEVATOR
 	elevator_network = "digsite"
+
+/datum/map_template/shuttle/dark_was_the_night
+	shuttle_id = "unused"
+	var/elevator_network
+
+/datum/map_template/shuttle/dark_was_the_night/cargo/ventral
+	name = "Ventral Cargo Elevator"
+	shuttle_id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_VENTRAL
+	elevator_network = "DWTNCargo"
