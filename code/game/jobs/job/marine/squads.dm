@@ -200,12 +200,13 @@
 /datum/squad/marine/forecon
 	name = SQUAD_LRRP
 	access = list(ACCESS_MARINE_ALPHA)
-	radio_freq = SOF_FREQ
+	radio_freq = FORECON_FREQ
 	use_stripe_overlay = FALSE
-	equipment_color = "#32CD32"
-	chat_color = "#32CD32"
-	minimap_color = "#32CD32"
+	equipment_color = "#e61919"	//Return to tradition, stands out from the other squad colours at least since ODSTs stole the original hex values
+	chat_color = "#e67d7d"
+	minimap_color = "#e61919"
 	usable = TRUE
+	fireteams = null
 
 /datum/squad/marine/odst
 	name = SQUAD_ODST

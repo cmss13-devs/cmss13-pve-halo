@@ -183,7 +183,12 @@
 	shuttle_id = "unused"
 	var/elevator_network
 
-/datum/map_template/shuttle/dark_was_the_night/cargo/ventral
+/datum/map_template/shuttle/dark_was_the_night/cargo
+	name = "Cargo Elevator"
+	shuttle_id = MOBILE_DWTN_CARGO_ELEVATOR
+	elevator_network = "dwtn_cargo"
+
+/datum/map_template/shuttle/dark_was_the_night/ventral
 	name = "Ventral Cargo Elevator"
-	shuttle_id = MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_VENTRAL
-	elevator_network = "DWTNCargo"
+	shuttle_id = MOBILE_DWTN_VENTRAL_ELEVATOR
+	elevator_network = "dwtn_ventral_cargo"

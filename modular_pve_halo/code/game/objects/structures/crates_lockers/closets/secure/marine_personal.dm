@@ -64,7 +64,7 @@
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/spawn_gear()
 	new /obj/item/clothing/under/marine/unsc/forecon(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
-	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers(src)
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rifleman
 	job = JOB_SQUAD_MARINE_FORECON
@@ -81,7 +81,7 @@
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader/spawn_gear()
 	new /obj/item/clothing/under/marine/unsc/forecon(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
-	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers/squadlead(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/squadlead(src)
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rto
 	job = JOB_SQUAD_RTO_FORECON
