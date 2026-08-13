@@ -279,6 +279,19 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
+"aH" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/orangefull,
+/area/dark_was_the_night/hangar/ventral)
 "aL" = (
 /obj/effect/decal/unsc/lifepods{
 	pixel_y = -32
@@ -685,10 +698,13 @@
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/cryo_bay/two)
 "dn" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 8
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
 	},
-/obj/structure/machinery/landinglight/ds1/delaythree,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
 /turf/open/floor/almayer/orangefull,
 /area/dark_was_the_night/hangar/ventral)
 "do" = (
@@ -1164,11 +1180,13 @@
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/two)
 "gn" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
-	dir = 1
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
 	},
-/obj/structure/machinery/landinglight/ds1/delayone{
-	dir = 8
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
 	},
 /turf/open/floor/almayer/orangefull,
 /area/dark_was_the_night/hangar/ventral)
@@ -1796,12 +1814,15 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 4
 	},
-/obj/structure/machinery/landinglight/ds1/delaythree,
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
 	},
 /turf/open/floor/almayer/orangefull,
 /area/dark_was_the_night/hangar/ventral)
@@ -3458,11 +3479,13 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "sL" = (
-/obj/structure/machinery/landinglight/ds1/delaythree{
-	dir = 1
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
 	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
 	},
 /turf/open/floor/almayer/orangefull,
 /area/dark_was_the_night/hangar/ventral)
@@ -6089,16 +6112,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
-"GY" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
-	},
-/obj/structure/machinery/landinglight/ds1/delaythree,
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
-	},
-/turf/open/floor/almayer/orangefull,
-/area/dark_was_the_night/hangar/ventral)
 "Ha" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -7529,15 +7542,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"OE" = (
-/obj/structure/machinery/landinglight/ds1/delayone{
-	dir = 1
-	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 8
-	},
-/turf/open/floor/almayer/orangefull,
-/area/dark_was_the_night/hangar/ventral)
 "OF" = (
 /obj/structure/machinery/autodoc_console{
 	dir = 4;
@@ -7823,9 +7827,12 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "Qa" = (
-/obj/structure/machinery/landinglight/ds1/delaythree,
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
 	},
 /turf/open/floor/almayer/orangefull,
 /area/dark_was_the_night/hangar/ventral)
@@ -17267,7 +17274,7 @@ AN
 hs
 hs
 Bk
-CQ
+Gs
 nQ
 Bk
 Bk
@@ -17755,7 +17762,7 @@ Gs
 Xq
 Bk
 Bd
-CQ
+Gs
 oH
 Bk
 ve
@@ -17877,7 +17884,7 @@ Gs
 Ag
 up
 Gs
-CQ
+Gs
 EJ
 ZA
 RK
@@ -22955,7 +22962,7 @@ rv
 iI
 iI
 iI
-GY
+Qa
 pZ
 pZ
 pZ
@@ -22983,7 +22990,7 @@ pZ
 sL
 fZ
 iI
-jL
+aH
 pZ
 pZ
 pZ
@@ -25175,7 +25182,7 @@ Wc
 Wc
 Wc
 Wc
-OE
+gn
 LO
 iI
 fZ
@@ -25203,7 +25210,7 @@ Wc
 Wc
 Wc
 NE
-OE
+gn
 nR
 fZ
 fZ
@@ -25231,7 +25238,7 @@ Wc
 Wc
 Wc
 NE
-OE
+gn
 nR
 fZ
 we
