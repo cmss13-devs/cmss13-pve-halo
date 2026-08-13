@@ -5189,7 +5189,7 @@
 /area/dark_was_the_night/armory)
 "AY" = (
 /obj/structure/window/framed/unsc,
-/turf/closed/wall/unsc/reinforced/hull,
+/turf/open/shuttle/escapepod/floor4,
 /area/dark_was_the_night/dorms)
 "Bd" = (
 /obj/structure/machinery/faxmachine/uscm/command/capt{
@@ -7472,16 +7472,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
-"Og" = (
-/obj/structure/fence/halo{
-	pixel_x = 0;
-	pixel_y = 18
-	},
-/turf/open/shuttle/escapepod/floor4{
-	pixel_x = 0;
-	pixel_y = 0
-	},
-/area/dark_was_the_night/cryo_hall)
 "Oh" = (
 /obj/structure/barricade/handrail{
 	dir = 8;
@@ -12620,7 +12610,7 @@ pE
 ox
 Wj
 WB
-Og
+Xp
 Yq
 ec
 ay
