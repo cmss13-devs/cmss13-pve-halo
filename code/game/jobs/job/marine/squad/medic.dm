@@ -106,6 +106,8 @@
 
 /datum/job/marine/medic/ai/forecon
 	title = JOB_SQUAD_MEDIC_FORECON
+	total_positions = 1
+	spawn_positions = 1
 	gear_preset = /datum/equipment_preset/unsc/medic/recon
 	gear_preset_secondary = /datum/equipment_preset/unsc/medic/recon/lesser_rank
 

@@ -51,7 +51,7 @@
 	name = "\improper Elevator Hatch";
 	dir = 4;
 	unacidable = 1;
-	id = "north"
+	id = "dwtn_cargo"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/cargo_shuttle/elevator)

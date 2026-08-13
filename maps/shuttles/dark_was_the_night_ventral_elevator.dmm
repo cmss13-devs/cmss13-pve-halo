@@ -44,7 +44,9 @@
 /turf/open/shuttle/elevator,
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator)
 "E" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass,
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass{
+	id = "dwtn_ventral_cargo"
+	},
 /turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator)
 "H" = (

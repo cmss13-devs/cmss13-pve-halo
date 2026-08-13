@@ -120,10 +120,10 @@
 	unlimited_power = TRUE
 	requires_power = FALSE
 
-/area/dark_was_the_night/cargo_shuttle/lower
+/area/dark_was_the_night/cargo_shuttle/elevator/lower
 	name = "\improper Cargo Elevator Lower Level"
 
-/area/dark_was_the_night/cargo_shuttle/upper
+/area/dark_was_the_night/cargo_shuttle/elevator/upper
 	name = "\improper Cargo Elevator Upper Level"
 
 
@@ -136,10 +136,10 @@
 	unlimited_power = TRUE
 	requires_power = FALSE
 
-/area/dark_was_the_night/cargo_shuttle/ventral/lower
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower
 	name = "\improper Ventral Cargo Elevator Lower Level"
 
-/area/dark_was_the_night/cargo_shuttle/ventral/upper
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper
 	name = "\improper Ventral Cargo Elevator Upper Level"
 
 /area/dark_was_the_night/hangar/ventral

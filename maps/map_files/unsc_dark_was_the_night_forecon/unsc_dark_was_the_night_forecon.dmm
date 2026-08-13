@@ -73,7 +73,7 @@
 /area/space)
 "aj" = (
 /turf/closed/wall/unsc/reinforced/hull,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "ak" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaltopright";
@@ -118,11 +118,11 @@
 	id = "w1"
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "ap" = (
 /obj/docking_port/stationary/dwtn_ventral_elevator/arrival,
 /turf/open/floor/almayer/empty/golden_arrow,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "aq" = (
 /obj/structure/machinery/vending/snack/packaged{
 	pixel_x = -7;
@@ -241,7 +241,7 @@
 /area/dark_was_the_night/medical)
 "aC" = (
 /turf/closed/wall/unsc/reinforced/hull,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "aD" = (
 /obj/structure/surface/table/almayer,
 /obj/item/reagent_container/food/drinks/cans/starkist{
@@ -266,11 +266,11 @@
 	height = -1
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "aF" = (
 /obj/docking_port/stationary/dwtn_ventral_elevator/exit,
 /turf/open/floor/corsat,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "aG" = (
 /obj/structure/gun_rack/halo/medkit{
 	dir = 4;
@@ -1549,7 +1549,7 @@
 	height = -1
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "iy" = (
 /turf/open/floor/almayer/plating/northeast,
 /area/dark_was_the_night/engineering)
@@ -1697,7 +1697,7 @@
 	height = -1
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "jk" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -3248,7 +3248,7 @@
 /area/dark_was_the_night/cryo_hall)
 "rn" = (
 /turf/open/floor/corsat,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "ro" = (
 /obj/structure/bed/chair/comfy/bench/mid/west,
 /turf/open/floor/almayer/edge/smooth/east,
@@ -4959,7 +4959,7 @@
 	id = "e2"
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "Ag" = (
 /obj/structure/bed,
 /obj/item/bedsheet/brown,
@@ -7464,7 +7464,7 @@
 	id = "w2"
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "Of" = (
 /obj/structure/machinery/firealarm{
 	dir = 8;
@@ -7577,7 +7577,7 @@
 /area/dark_was_the_night/cryo_bay/one)
 "OS" = (
 /turf/open/floor/almayer/empty/golden_arrow,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "OT" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -8995,7 +8995,7 @@
 	id = "e1"
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/upper)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
 "VN" = (
 /obj/structure/barricade/handrail{
 	dir = 4
@@ -9071,7 +9071,7 @@
 	id = "e1"
 	},
 /turf/open/floor/almayer/edge,
-/area/dark_was_the_night/cargo_shuttle/ventral/lower)
+/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
 "Wq" = (
 /obj/structure/phone_base{
 	phone_category = "Dark was the Night";
