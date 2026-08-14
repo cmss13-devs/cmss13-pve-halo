@@ -137,6 +137,12 @@
 	armor_bomb = CLOTHING_ARMOR_MEDIUMLOW
 	armor_internaldamage = CLOTHING_ARMOR_HIGH
 
+/obj/item/clothing/suit/marine/unsc/odst/oni
+	name = "\improper M70DT/S ODST BDU"
+	desc = "Utilized by ONI security forces and field agents, this is a slightly modified variant of the ODST M70DT BDU."
+	icon_state = "onist"
+	item_state = "onist"
+
 /obj/item/clothing/suit/marine/unsc/odst/insurrection
 	name = "\improper scavenged M70DT ODST BDU"
 	icon_state = "odst_insurgent"
