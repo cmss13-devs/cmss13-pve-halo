@@ -10,12 +10,6 @@
 	},
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator)
 "i" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_x = -9;
-	pixel_y = -6;
-	id = "lift";
-	name = "elevator hatch release"
-	},
 /turf/closed/shuttle/elevator{
 	dir = 4
 	},
@@ -51,7 +45,7 @@
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator)
 "E" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door{
-	id = "lift"
+	id = "ventral_lift"
 	},
 /turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator)

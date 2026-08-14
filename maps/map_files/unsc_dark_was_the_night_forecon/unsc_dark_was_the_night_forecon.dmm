@@ -54,6 +54,13 @@
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
+"ag" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator,
+/turf/closed/wall/unsc/reinforced/hull,
+/area/dark_was_the_night/hangar/ventral)
 "aj" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
@@ -260,12 +267,7 @@
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
 "aK" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_x = 0;
-	pixel_y = -6;
-	id = "lift";
-	name = "elevator hatch release"
-	},
+/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/elevator_call/dwtn_ventral_elevator/arrival,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/armory)
 "aL" = (
@@ -559,12 +561,7 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay/one)
 "bw" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_x = -2;
-	pixel_y = -6;
-	id = "lift";
-	name = "elevator hatch release"
-	},
+/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/elevator_call/dwtn_ventral_elevator/exit,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/hangar/ventral)
 "bx" = (
@@ -21568,7 +21565,7 @@ rn
 rn
 aC
 Sq
-iW
+ag
 Yt
 fZ
 iI

@@ -216,14 +216,14 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/dwtn_ventral_elevator))
 		var/obj/docking_port/mobile/dwtn_ventral_elevator/elevator = arriving_shuttle
-		elevator.door_control.control_doors("force-unlock", "dwtn_ventral_cargo_lift", TRUE)
-		elevator.door_control.control_doors("open", "dwtn_ventral_cargo_lift", TRUE)
+		elevator.door_control.control_doors("force-unlock", airlock_exit, TRUE)
+		elevator.door_control.control_doors("open", airlock_exit, TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("force-unlock", "dwtn_ventral_cargo_lift", TRUE)
-	door_control.control_doors("open", "dwtn_ventral_cargo_lift", TRUE)
+	door_control.control_doors("force-unlock", airlock_exit, TRUE)
+	door_control.control_doors("open", airlock_exit, TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -239,26 +239,26 @@
 /obj/docking_port/stationary/dwtn_ventral_elevator/occupied
 	name = "occupied"
 	id = STAT_DWTN_VENTRAL_OCCUPIED
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_exit = "ventral_lift"
 	roundstart_template = /datum/map_template/shuttle/dark_was_the_night/ventral
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/empty
 	name = "empty"
 	id = STAT_DWTN_VENTRAL_EMPTY
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_exit = "ventral_lift"
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/arrival
 	name = "Upper Deck"
 	id=STAT_DWTN_VENTRAL_ELEVATOR
 	airlock_area = /area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_exit = "ventral_lift"
 	roundstart_template = /datum/map_template/shuttle/dark_was_the_night/ventral
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/exit
 	name = "Lower Deck"
 	id=STAT_DWTN_VENTRAL_ELEVATOR_EXIT
 	airlock_area = /area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_exit = "ventral_lift"
 
 /datum/map_template/shuttle/dark_was_the_night/cargo/ventral/post_load(obj/docking_port/mobile/M)
 	. = ..()
