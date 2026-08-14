@@ -145,6 +145,8 @@
 
 /obj/item/clothing/head/helmet/marine/unsc/odst/oni
 	name = "\improper CH299/S helmet"
+	icon_state = "enclosed_oni"
+	item_state = "enclosed_oni"
 	desc = "A heavily modified variant of a standard helmet, developed for use by UEG strategic security personnel and the Office of Naval Intelligence. Modifications are primarily focused on a fully enclosed design with polarizing visor and an overall reinforced frame. Secondary modifications include advanced encryption/comms gear and proprietary VISR versions."
 	motion_tracker = TRUE
 
