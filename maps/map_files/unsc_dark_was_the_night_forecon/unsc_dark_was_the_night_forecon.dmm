@@ -66,7 +66,7 @@
 /turf/closed/wall/unsc/reinforced/hull,
 /area/space)
 "aj" = (
-/obj/docking_port/stationary/dwtn_ventral_elevator/exit,
+/obj/docking_port/stationary/dwtn_ventral_cargo_elevator/exit,
 /turf/open/floor/corsat,
 /area/dark_was_the_night/elevator/ventral/lower)
 "ak" = (
@@ -4700,7 +4700,7 @@
 /turf/open/floor/almayer/edge/smooth/southwest,
 /area/dark_was_the_night/hangar/ventral)
 "yY" = (
-/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/elevator_call/dwtn_ventral_elevator/arrival{
+/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_cargo_elevator/elevator_call/dwtn_ventral_cargo_elevator/arrival{
 	pixel_y = 34;
 	pixel_x = 3
 	},
@@ -4860,7 +4860,7 @@
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/dorms)
 "zX" = (
-/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/elevator_call/dwtn_ventral_elevator/exit{
+/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_cargo_elevator/elevator_call/dwtn_ventral_cargo_elevator/exit{
 	pixel_y = 34;
 	pixel_x = 3
 	},
@@ -4884,7 +4884,7 @@
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/hangar/ventral)
 "Ae" = (
-/obj/docking_port/stationary/dwtn_ventral_elevator/arrival,
+/obj/docking_port/stationary/dwtn_ventral_cargo_elevator/arrival,
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/dark_was_the_night/elevator/ventral/upper)
 "Ag" = (
