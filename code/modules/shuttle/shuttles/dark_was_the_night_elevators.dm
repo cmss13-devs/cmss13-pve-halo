@@ -8,7 +8,7 @@
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
-	/area/dark_was_the_night/elevator/cargo
+	area_type = /area/dark_was_the_night/elevator/cargo
 
 	// Shuttle timings
 	callTime = 30 SECONDS
@@ -159,7 +159,7 @@
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
-	/area/dark_was_the_night/elevator/ventral
+	area_type = /area/dark_was_the_night/elevator/ventral
 
 	// Shuttle timings
 	callTime = 30 SECONDS
