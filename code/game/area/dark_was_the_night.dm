@@ -115,31 +115,30 @@
 	name = "\improper cargo_shuttle"
 	icon_state = "lifeboat"
 
-/area/dark_was_the_night/cargo_shuttle/elevator
-	name = "\improper Cargo Elevator"
+/area/dark_was_the_night/elevator
+	name = "\improper Elevator shuttle"
+	icon_state = "red"
 	unlimited_power = TRUE
 	requires_power = FALSE
 
-/area/dark_was_the_night/cargo_shuttle/elevator/lower
-	name = "\improper Cargo Elevator Lower Level"
+/area/dark_was_the_night/elevator/cargo
+	name = "\improper Cargo Elevator"
+	base_lighting_alpha = 255
 
-/area/dark_was_the_night/cargo_shuttle/elevator/upper
+/area/dark_was_the_night/elevator/cargo/upper
 	name = "\improper Cargo Elevator Upper Level"
 
+/area/dark_was_the_night/elevator/cargo/lower
+	name = "\improper Cargo Elevator Lower Level"
 
-/area/dark_was_the_night/cargo_shuttle/ventral
-	name = "\improper cargo_shuttle"
-	icon_state = "lifeboat"
-
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator
+/area/dark_was_the_night/elevator/ventral
 	name = "\improper Ventral Cargo Elevator"
-	unlimited_power = TRUE
-	requires_power = FALSE
+	base_lighting_alpha = 255
 
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower
+/area/dark_was_the_night/elevator/ventral/lower
 	name = "\improper Ventral Cargo Elevator Lower Level"
 
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper
+/area/dark_was_the_night/elevator/ventral/upper
 	name = "\improper Ventral Cargo Elevator Upper Level"
 
 /area/dark_was_the_night/hangar/ventral

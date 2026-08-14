@@ -8,7 +8,7 @@
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
-	area_type = /area/dark_was_the_night/cargo_shuttle/elevator
+	/area/dark_was_the_night/elevator/cargo
 
 	// Shuttle timings
 	callTime = 30 SECONDS
@@ -41,12 +41,12 @@
 
 /obj/docking_port/stationary/dwtn_cargo_elevator
 	dir=NORTH
-	width=8
-	height=6
+	width=6
+	height=8
 	// shutters to clear the area
 	var/airlock_area
 	var/airlock_exit
-	var/elevator_network = "dwtn_cargo_lift"
+	var/elevator_network = "dwtn_cargo"
 
 /obj/docking_port/stationary/dwtn_cargo_elevator/proc/get_doors()
 	. = list()
@@ -60,14 +60,14 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/dwtn_cargo_elevator))
 		var/obj/docking_port/mobile/dwtn_cargo_elevator/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", "dwtn_cargo_lift", TRUE)
-		elevator.door_control.control_doors("open", "dwtn_cargo_lift", TRUE)
+		elevator.door_control.control_doors("unlock", "dwtn_cargo", TRUE)
+		elevator.door_control.control_doors("open", "dwtn_cargo", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", "dwtn_cargo_lift", TRUE)
-	door_control.control_doors("open", "dwtn_cargo_lift", TRUE)
+	door_control.control_doors("unlock", "dwtn_cargo", TRUE)
+	door_control.control_doors("open", "dwtn_cargo", TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -83,26 +83,26 @@
 /obj/docking_port/stationary/dwtn_cargo_elevator/occupied
 	name = "occupied"
 	id = STAT_DWTN_CARGO_OCCUPIED
-	airlock_exit = "dwtn_cargo_lift"
+	airlock_exit = "dwtn_cargo"
 	roundstart_template = /datum/map_template/shuttle/dark_was_the_night/cargo
 
 /obj/docking_port/stationary/dwtn_cargo_elevator/empty
 	name = "empty"
 	id = STAT_DWTN_CARGO_EMPTY
-	airlock_exit = "dwtn_cargo_lift"
+	airlock_exit = "dwtn_cargo"
 
 /obj/docking_port/stationary/dwtn_cargo_elevator/arrival
-	name = "Upper Deck"
+	name = "Upper Level"
 	id=STAT_DWTN_CARGO_ELEVATOR
-	airlock_area = /area/dark_was_the_night/cargo_shuttle/elevator/upper
-	airlock_exit = "dwtn_cargo_lift"
+	airlock_area = /area/dark_was_the_night/elevator/cargo/upper
+	airlock_exit = "dwtn_cargo"
 	roundstart_template = /datum/map_template/shuttle/dark_was_the_night/cargo
 
 /obj/docking_port/stationary/dwtn_cargo_elevator/exit
-	name = "Lower Deck"
+	name = "Lower Level"
 	id=STAT_DWTN_CARGO_ELEVATOR_EXIT
-	airlock_area = /area/dark_was_the_night/cargo_shuttle/elevator/lower
-	airlock_exit = "dwtn_cargo_lift"
+	airlock_area = /area/dark_was_the_night/elevator/cargo/lower
+	airlock_exit = "dwtn_cargo"
 
 /datum/map_template/shuttle/dark_was_the_night/cargo/post_load(obj/docking_port/mobile/M)
 	. = ..()
@@ -110,8 +110,8 @@
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
-/area/dark_was_the_night/cargo_shuttle/upper
-/area/dark_was_the_night/cargo_shuttle/lower
+/area/dark_was_the_night/elevator/cargo/upper
+/area/dark_was_the_night/elevator/cargo/lower
 
 /obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_cargo_elevator/get_landing_zones()
 	. = list()
@@ -149,13 +149,8 @@
 	dockId = STAT_DWTN_CARGO_ELEVATOR_EXIT
 
 
-
-//Ventral Elevator
-
-
-
 /obj/docking_port/mobile/dwtn_ventral_elevator
-	name="Ventral Cargo Elevator"
+	name="Cargo Elevator"
 	id=MOBILE_DWTN_VENTRAL_ELEVATOR
 
 	// Map information
@@ -164,7 +159,7 @@
 	preferred_direction = NORTH
 	port_direction = SOUTH
 
-	area_type = /area/dark_was_the_night/cargo_shuttle/ventral/elevator
+	/area/dark_was_the_night/elevator/ventral
 
 	// Shuttle timings
 	callTime = 30 SECONDS
@@ -202,7 +197,7 @@
 	// shutters to clear the area
 	var/airlock_area
 	var/airlock_exit
-	var/elevator_network = "dwtn_ventral_cargo_lift"
+	var/elevator_network = "dwtn_ventral"
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/proc/get_doors()
 	. = list()
@@ -216,14 +211,14 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/dwtn_ventral_elevator))
 		var/obj/docking_port/mobile/dwtn_ventral_elevator/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", "dwtn_ventral_cargo_lift", TRUE)
-		elevator.door_control.control_doors("open", "dwtn_ventral_cargo_lift", TRUE)
+		elevator.door_control.control_doors("unlock", "dwtn_ventral", TRUE)
+		elevator.door_control.control_doors("open", "dwtn_ventral", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", "dwtn_ventral_cargo_lift", TRUE)
-	door_control.control_doors("open", "dwtn_ventral_cargo_lift", TRUE)
+	door_control.control_doors("unlock", "dwtn_ventral", TRUE)
+	door_control.control_doors("open", "dwtn_ventral", TRUE)
 	qdel(door_control)
 
 	playsound(src, 'sound/machines/ping.ogg', 25, 1)
@@ -239,35 +234,35 @@
 /obj/docking_port/stationary/dwtn_ventral_elevator/occupied
 	name = "occupied"
 	id = STAT_DWTN_VENTRAL_OCCUPIED
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_exit = "dwtn_ventral"
 	roundstart_template = /datum/map_template/shuttle/dark_was_the_night/ventral
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/empty
 	name = "empty"
 	id = STAT_DWTN_VENTRAL_EMPTY
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_exit = "dwtn_ventral"
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/arrival
-	name = "Upper Deck"
+	name = "Upper Level"
 	id=STAT_DWTN_VENTRAL_ELEVATOR
-	airlock_area = /area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_area = /area/dark_was_the_night/elevator/ventral/upper
+	airlock_exit = "dwtn_ventral"
 	roundstart_template = /datum/map_template/shuttle/dark_was_the_night/ventral
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/exit
-	name = "Lower Deck"
+	name = "Lower Level"
 	id=STAT_DWTN_VENTRAL_ELEVATOR_EXIT
-	airlock_area = /area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower
-	airlock_exit = "dwtn_ventral_cargo_lift"
+	airlock_area = /area/dark_was_the_night/elevator/ventral/lower
+	airlock_exit = "dwtn_ventral"
 
-/datum/map_template/shuttle/dark_was_the_night/cargo/ventral/post_load(obj/docking_port/mobile/M)
+/datum/map_template/shuttle/dark_was_the_night/ventral/post_load(obj/docking_port/mobile/M)
 	. = ..()
-	var/datum/map_template/shuttle/dark_was_the_night/cargo/ventral/elev = M
+	var/datum/map_template/shuttle/dark_was_the_night/ventral/elev = M
 	elev.elevator_network = elevator_network
 	log_debug("Adding network [elevator_network] to [M.id]")
 
-/area/dark_was_the_night/cargo_shuttle/ventral/upper
-/area/dark_was_the_night/cargo_shuttle/ventral/lower
+/area/dark_was_the_night/elevator/ventral/upper
+/area/dark_was_the_night/elevator/ventral/lower
 
 /obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/get_landing_zones()
 	. = list()
@@ -296,7 +291,7 @@
 	dockId = STAT_DWTN_VENTRAL_OCCUPIED
 
 /obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/elevator_call/dwtn_ventral_elevator/empty
-	dockId = STAT_DWTN_VENTRAL_OCCUPIED
+	dockId = STAT_DWTN_VENTRAL_EMPTY
 
 /obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator/elevator_call/dwtn_ventral_elevator/arrival
 	dockId = STAT_DWTN_VENTRAL_ELEVATOR

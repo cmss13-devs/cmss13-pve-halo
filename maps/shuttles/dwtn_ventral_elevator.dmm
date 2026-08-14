@@ -3,21 +3,21 @@
 /turf/closed/shuttle/elevator{
 	dir = 5
 	},
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "e" = (
 /turf/closed/shuttle/elevator{
 	dir = 6
 	},
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "i" = (
 /turf/closed/shuttle/elevator{
 	dir = 4
 	},
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "m" = (
 /obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator,
 /turf/closed/shuttle/elevator/button/freight,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "n" = (
 /obj/structure/machinery/light/small/blue{
 	dir = 4;
@@ -25,36 +25,37 @@
 	light_power = 0.25
 	},
 /turf/open/floor/almayer/mono,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "o" = (
 /turf/closed/shuttle/elevator,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "q" = (
 /turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "t" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/elevator/grating,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "u" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/shuttle/elevator,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "A" = (
 /turf/open/shuttle/elevator,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "E" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass{
-	id = "dwtn_ventral_cargo"
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door{
+	id = "dwtn_ventral";
+	name = "Elevator Door"
 	},
 /turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "H" = (
 /turf/open/shuttle/elevator/grating,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "R" = (
 /turf/closed/shuttle/elevator/freight,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "S" = (
 /obj/structure/machinery/light/small/blue{
 	dir = 8;
@@ -62,21 +63,21 @@
 	light_power = 0.25
 	},
 /turf/open/floor/almayer/mono,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "T" = (
 /turf/closed/shuttle/elevator/gears,
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "W" = (
 /obj/docking_port/mobile/dwtn_ventral_elevator,
 /turf/closed/shuttle/elevator{
 	dir = 10
 	},
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 "X" = (
 /turf/closed/shuttle/elevator{
 	dir = 9
 	},
-/area/dark_was_the_night/cargo_shuttle/ventral/elevator)
+/area/dark_was_the_night/elevator/ventral)
 
 (1,1,1) = {"
 X
