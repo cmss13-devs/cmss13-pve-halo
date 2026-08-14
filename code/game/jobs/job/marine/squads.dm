@@ -206,7 +206,7 @@
 	chat_color = "#e67d7d"
 	minimap_color = "#e61919"
 	usable = TRUE
-	fireteams = null
+	faction = FACTION_UNSC
 
 /datum/squad/marine/odst
 	name = SQUAD_ODST

@@ -47,7 +47,7 @@
 #define JOB_SQUAD_SMARTGUN_UPP "Machinegunner"
 #define JOB_SO_UPP "UPP Platoon Commander"
 
-#define JOB_SQUAD_TEAM_LEADER_FORECON "Assistant Recon Squad Leader"
+#define JOB_SQUAD_TEAM_LEADER_FORECON "Recon Fireteam Leader"
 #define JOB_SQUAD_LEADER_FORECON  "Recon Squad Leader"
 #define JOB_SQUAD_MEDIC_FORECON "Recon Corpsman"
 #define JOB_SQUAD_RTO_FORECON "Recon Radio Telephone Operator"

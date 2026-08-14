@@ -67,16 +67,19 @@
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers(src)
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rifleman
-	job = JOB_SQUAD_MARINE_FORECON
+	job = JOB_SQUAD_MARINE
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/specialist
-	job = JOB_SQUAD_SPECIALIST_FORECON
+	job = JOB_SQUAD_SPECIALIST
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/corpsman
-	job = JOB_SQUAD_MEDIC_FORECON
+	job = JOB_SQUAD_MEDIC
+
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/team_leader
+	job = JOB_SQUAD_TEAM_LEADER
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader
-	job = JOB_SQUAD_LEADER_FORECON
+	job = JOB_SQUAD_LEADER
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader/spawn_gear()
 	new /obj/item/clothing/under/marine/unsc/forecon(src)
@@ -84,6 +87,6 @@
 	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/squadlead(src)
 
 /obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rto
-	job = JOB_SQUAD_RTO_FORECON
+	job = JOB_SQUAD_RTO
 
 //

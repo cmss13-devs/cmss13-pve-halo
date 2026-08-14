@@ -62,11 +62,6 @@ OverrideTimelock(/datum/job/marine/leader, list(
 	gear_preset = /datum/equipment_preset/unsc/leader/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/leader/odst/lesser_rank
 
-/datum/job/marine/leader/ai/forecon
-	title = JOB_SQUAD_LEADER_FORECON
-	gear_preset = /datum/equipment_preset/unsc/leader/recon
-	gear_preset_secondary = /datum/equipment_preset/unsc/leader/recon/lesser_rank
-
 /datum/job/marine/leader/ai/upp
 	title = JOB_SQUAD_LEADER_UPP
 	gear_preset = /datum/equipment_preset/uscm/leader/upp
@@ -81,15 +76,8 @@ OverrideTimelock(/datum/job/marine/leader, list(
 
 /datum/job/marine/leader/ai/forecon
 	title = JOB_SQUAD_LEADER_FORECON
-	gear_preset = /datum/equipment_preset/uscm/leader/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/leader/forecon/gunnery_sergeant
-	job_options = list(GYSGT_VARIANT = "GYSGT", MSSGT_VARIANT = "MSSGT")
-
-/datum/job/marine/leader/ai/forecon/handle_job_options(option)
-	if(option != GYSGT_VARIANT)
-		gear_preset = initial(gear_preset)
-	else
-		gear_preset = gear_preset_secondary
+	gear_preset = /datum/equipment_preset/unsc/leader/recon
+	gear_preset_secondary = /datum/equipment_preset/unsc/leader/recon/lesser_rank
 
 /obj/effect/landmark/start/marine/leader/upp
 	name = JOB_SQUAD_LEADER_UPP

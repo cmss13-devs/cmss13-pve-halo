@@ -167,9 +167,9 @@
 	area_type = /area/dark_was_the_night/cargo_shuttle/ventral/elevator
 
 	// Shuttle timings
-	callTime = 30 SECONDS
-	rechargeTime = 30 SECONDS
-	ignitionTime = 5 SECONDS
+	callTime = 8 SECONDS
+	rechargeTime = 5 SECONDS
+	ignitionTime = 3 SECONDS
 	ambience_flight = 'sound/vehicles/tank_driving.ogg'
 	ignition_sound = 'sound/mecha/powerup.ogg'
 
@@ -182,7 +182,7 @@
 	door_control = new()
 	door_control.label = "elevator"
 	for(var/area/shuttle_area in shuttle_areas)
-		for(var/obj/structure/machinery/door/door in shuttle_area)
+		for(var/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/door in shuttle_area)
 			if(istype(door, /obj/structure/machinery/door/poddoor/filler_object)) //poddoor filler was sneaking in
 				continue
 			door_control.add_door(door, door.id)
@@ -208,7 +208,7 @@
 	. = list()
 	for(var/area/target_area in world)
 		if(istype(target_area, airlock_area))
-			for(var/obj/structure/machinery/door/door in target_area)
+			for(var/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/door in target_area)
 				. += list(door)
 
 /obj/docking_port/stationary/dwtn_ventral_elevator/on_arrival(obj/docking_port/mobile/arriving_shuttle)
@@ -216,13 +216,13 @@
 	// open elevator doors
 	if(istype(arriving_shuttle, /obj/docking_port/mobile/dwtn_ventral_elevator))
 		var/obj/docking_port/mobile/dwtn_ventral_elevator/elevator = arriving_shuttle
-		elevator.door_control.control_doors("unlock", "dwtn_ventral_cargo_lift", TRUE)
+		elevator.door_control.control_doors("force-unlock", "dwtn_ventral_cargo_lift", TRUE)
 		elevator.door_control.control_doors("open", "dwtn_ventral_cargo_lift", TRUE)
 
 	// open dock doors
 	var/datum/door_controller/single/door_control = new()
 	door_control.doors = get_doors()
-	door_control.control_doors("unlock", "dwtn_ventral_cargo_lift", TRUE)
+	door_control.control_doors("force-unlock", "dwtn_ventral_cargo_lift", TRUE)
 	door_control.control_doors("open", "dwtn_ventral_cargo_lift", TRUE)
 	qdel(door_control)
 
