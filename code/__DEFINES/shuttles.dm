@@ -136,6 +136,17 @@
 #define STAT_DIGSITE_ELEVATOR "digsite"
 #define STAT_DIGSITE_ELEVATOR_EXIT "digsite_exit"
 
+#define MOBILE_DWTN_CARGO_ELEVATOR "dwtn_cargo_elevator"
+#define STAT_DWTN_CARGO_EMPTY "dwtn_cargo_empty"
+#define STAT_DWTN_CARGO_OCCUPIED "dwtn_cargo_occupied"
+#define STAT_DWTN_CARGO_ELEVATOR "dwtn_cargo"
+#define STAT_DWTN_CARGO_ELEVATOR_EXIT "dwtn_cargo_exit"
+
+#define MOBILE_DWTN_VENTRAL_ELEVATOR "dwtn_ventral_cargo_elevator"
+#define STAT_DWTN_VENTRAL_EMPTY "dwtn_ventral_cargo_empty"
+#define STAT_DWTN_VENTRAL_OCCUPIED "dwtn_ventral_cargo_occupied"
+#define STAT_DWTN_VENTRAL_ELEVATOR "dwtn_ventral_cargo"
+#define STAT_DWTN_VENTRAL_ELEVATOR_EXIT "dwtn_ventral_cargo_exit"
 
 #define DROPSHIP_MIDWAY "dropship_midway"
 #define DROPSHIP_ALAMO "dropship_alamo"
@@ -184,15 +195,3 @@
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_ONE "garrow_vehicle_elevator_one"
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_TWO "garrow_vehicle_elevator_two"
 #define MOBILE_SHUTTLE_SHIPMAP_ELEVATOR_CARGO "garrow_cargo_elevator"
-
-#define MOBILE_DWTN_CARGO_ELEVATOR "dwtn_cargo_elevator"
-#define STAT_DWTN_CARGO_EMPTY "dwtn_cargo_empty"
-#define STAT_DWTN_CARGO_OCCUPIED "dwtn_cargo_occupied"
-#define STAT_DWTN_CARGO_ELEVATOR "dwtn_cargo"
-#define STAT_DWTN_CARGO_ELEVATOR_EXIT "dwtn_cargo_exit"
-
-#define MOBILE_DWTN_VENTRAL_ELEVATOR "dwtn_ventral_cargo_elevator"
-#define STAT_DWTN_VENTRAL_EMPTY "dwtn_ventral_cargo_empty"
-#define STAT_DWTN_VENTRAL_OCCUPIED "dwtn_ventral_cargo_occupied"
-#define STAT_DWTN_VENTRAL_ELEVATOR "dwtn_ventral_cargo"
-#define STAT_DWTN_VENTRAL_ELEVATOR_EXIT "dwtn_ventral_cargo_exit"
