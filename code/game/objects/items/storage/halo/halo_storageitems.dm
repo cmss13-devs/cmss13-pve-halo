@@ -327,6 +327,23 @@
 	icon_state = "pistolmag_large"
 	storage_slots = 6
 
+/obj/item/storage/pouch/magazine/pistol/unsc/large/m6g/fill_preset_inventory()
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+
+/obj/item/storage/pouch/magazine/pistol/unsc/large/m6c/fill_preset_inventory()
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+
+
 //======================
 // BACKPACKS
 //======================

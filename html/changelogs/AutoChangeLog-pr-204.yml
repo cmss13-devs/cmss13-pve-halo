@@ -1,0 +1,15 @@
+author: "BonniePandora, Verbs"
+delete-after: True
+changes:
+  - rscadd: "Splits the marine helmet into 2 variants, the CH252 (Halo 2 helmet) and CH252/UA (halo 3 helmet)"
+  - rscadd: "Halo 2 shoulder pads"
+  - rscadd: "Knee pads from halo 2, thigh pads from halo 3"
+  - rscadd: "Enclosed CH252 helmet, enclosed ONI helmet, both resembling the halo 2 odst helmets somewhat."
+  - rscadd: "Halo accessories, namely helmet visors of various colors"
+  - rscadd: "Recon marines with Halo CE gear, alongside relevant presets"
+  - rscadd: "ONIST clothing"
+  - code_imp: "Completely redoes the marine select equipment presets with new procs to make creating new presets much easier, similar to Covenant presets"
+  - code_imp: "Shifts several files around to be modular now"
+  - bugfix: "Makes UNSC uniforms the proper sprite now"
+  - imagetweak: "Updates most UNSC marine armor sprites"
+  - imagetweak: "Updates all UNSC armor accessories"
