@@ -54,13 +54,6 @@
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
-"ag" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/computer/shuttle/elevator_controller/dwtn_ventral_elevator,
-/turf/closed/wall/unsc/reinforced/hull,
-/area/dark_was_the_night/hangar/ventral)
 "aj" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator/upper)
@@ -21565,7 +21558,7 @@ rn
 rn
 aC
 Sq
-ag
+iW
 Yt
 fZ
 iI
