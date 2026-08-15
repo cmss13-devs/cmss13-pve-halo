@@ -1264,7 +1264,7 @@
 /obj/structure/prop/unsc_crate/medium
 	name = "UNSC crate"
 	desc = "A moderately sized military-grade crate. It doesn't look easy to open."
-	icon = 'icons/halo/obj/structures/props/crates48x32.dmi
+	icon = 'icons/halo/obj/structures/props/crates48x32.dmi'
 	icon_state = "null"
 	pixel_x = -5
 
