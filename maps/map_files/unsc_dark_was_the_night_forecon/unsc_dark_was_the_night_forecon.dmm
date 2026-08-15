@@ -243,18 +243,6 @@
 "aC" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/cargo_shuttle/ventral/elevator/lower)
-"aD" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/drinks/cans/starkist{
-	pixel_x = -9;
-	pixel_y = -3
-	},
-/obj/item/reagent_container/food/drinks/cans/lemon_lime{
-	pixel_x = 7;
-	pixel_y = 11
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/dorms)
 "aE" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -1045,9 +1033,88 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/canteen)
+"cD" = (
+/obj/structure/bed/bedroll{
+	pixel_x = 1;
+	color = "#333333";
+	name = "gym mat";
+	buckle_lying = null;
+	can_buckle = 0;
+	foldabletype = null;
+	pixel_y = 17;
+	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
+"cE" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/bed/chair{
+	dir = 1
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
+"cF" = (
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/cans/pepsi{
+	pixel_x = -1;
+	pixel_y = 10
+	},
+/obj/item/reagent_container/food/drinks/flask/canteen{
+	pixel_x = 9;
+	pixel_y = -2
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/dorms)
+"cG" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/cans/lemon_lime{
+	pixel_x = 7;
+	pixel_y = 11
+	},
+/obj/item/reagent_container/food/drinks/cans/starkist{
+	pixel_x = -9;
+	pixel_y = -3
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/dorms)
+"cH" = (
+/obj/structure/surface/table/almayer,
+/obj/item/reagent_container/food/drinks/cans/cola{
+	pixel_x = 8;
+	pixel_y = 10
+	},
+/obj/item/ammo_magazine/handful/shotgun/halo/beanbag{
+	pixel_x = -8;
+	pixel_y = -6
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/dorms)
+"cI" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/structure/bed/chair,
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/dorms)
 "cJ" = (
 /turf/open/floor/almayer/edge/smooth/southwest,
 /area/dark_was_the_night/cryo_bay/one)
+"cK" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/prop/ice_colony/tiger_rug,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "cL" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3472,10 +3539,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar/ventral)
-"ql" = (
-/obj/structure/prop/ice_colony/tiger_rug,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/dorms)
 "qn" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3603,14 +3666,6 @@
 /obj/structure/cargo_container/unsc/main_2/c,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar/ventral)
-"rb" = (
-/obj/structure/barricade/handrail{
-	dir = 4;
-	pixel_x = 1;
-	pixel_y = 0
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/dorms)
 "re" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -3833,8 +3888,11 @@
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
 "so" = (
-/obj/structure/extinguisher_cabinet/alt{
-	pixel_y = 27
+/obj/structure/prop/broken_arcade{
+	pixel_x = 0;
+	pixel_y = 17;
+	name = "Slipspace Invaders";
+	desc = "This arcade machine's never been the same since that FNG from Bravo company spilt their soda all over it."
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
@@ -4760,14 +4818,32 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar/ventral)
 "xb" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/drinks/cans/pepsi{
-	pixel_x = -1;
-	pixel_y = 10
+/obj/structure/barricade/handrail{
+	dir = 4;
+	pixel_x = 1;
+	pixel_y = -10;
+	layer = 3.31;
+	density = 0;
+	name = "pull-up bar";
+	desc = "A suspended metal bar, commonly used for exercise. Works well for drying clothes too."
 	},
-/obj/item/reagent_container/food/drinks/flask/canteen{
-	pixel_x = 9;
-	pixel_y = -2
+/obj/structure/barricade/handrail{
+	dir = 8;
+	pixel_x = -3;
+	pixel_y = -10;
+	layer = 3.31;
+	density = 0;
+	desc = "A suspended metal bar, commonly used for exercise. Works well for drying clothes too.";
+	name = "pull-up bar"
+	},
+/obj/item/pipe{
+	dir = 4;
+	pixel_x = -1;
+	pixel_y = 3;
+	layer = 3.3;
+	anchored = 1;
+	desc = "A suspended metal bar, commonly used for exercise. Works well for drying clothes too.";
+	name = "pull-up bar"
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
@@ -4894,17 +4970,6 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/engineering)
 "xR" = (
-/obj/structure/surface/table/almayer,
-/obj/item/reagent_container/food/drinks/cans/cola{
-	pixel_x = 8;
-	pixel_y = 10
-	},
-/obj/item/ammo_box/rounds/unsc/m6{
-	opened = 1;
-	item_state = "ammo_packet_pistol_o";
-	pixel_x = -8;
-	pixel_y = -2
-	},
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
@@ -5322,6 +5387,22 @@
 	},
 /obj/structure/pipes/standard/simple/hidden/supply,
 /obj/structure/disposalpipe/segment,
+/obj/structure/surface/table/almayer,
+/obj/item/ammo_box/rounds/unsc/m6{
+	opened = 1;
+	item_state = "ammo_packet_pistol_o";
+	pixel_x = 5;
+	pixel_y = 7;
+	icon_state = "ammo_packet_pistol_o";
+	bullet_amount = 27
+	},
+/obj/item/book{
+	name = " A Soldier's Tale: Rainforest Wars";
+	desc = "We have come to a place far from home / Time long passed since we have seen the sun rise / A place where peace can finally come / A place where we can rest and laugh and sing and love once more.";
+	pixel_x = -6;
+	pixel_y = 3;
+	icon_state = "littleredbook"
+	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/dorms)
 "Aa" = (
@@ -9251,16 +9332,7 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/canteen)
 "Vp" = (
-/obj/structure/bed/bedroll{
-	pixel_x = -2;
-	color = "#333333";
-	name = "gym mat";
-	buckle_lying = null;
-	can_buckle = 0;
-	foldabletype = null;
-	pixel_y = -3;
-	desc = "A black gym mat, useful if you don't want to use the cold hard floor for exercise."
-	},
+/obj/structure/bed/chair,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/dorms)
 "Vr" = (
@@ -17239,7 +17311,7 @@ Oh
 UA
 Yp
 Bk
-jB
+Bk
 jw
 bD
 fL
@@ -17357,11 +17429,11 @@ oq
 FD
 Bk
 Bk
+jB
 Bk
 Bk
 Bk
-lk
-aD
+qP
 jw
 eP
 Xy
@@ -17478,11 +17550,11 @@ bp
 Gs
 UD
 Sz
-zW
-zW
+cI
+cG
 zW
 Sz
-lk
+qP
 xR
 jw
 uD
@@ -17601,10 +17673,10 @@ Gs
 so
 bM
 Vp
-cS
-cS
-bM
-lk
+cH
+cF
+cE
+Bk
 xb
 jw
 wj
@@ -17722,12 +17794,12 @@ EW
 gG
 PX
 Bk
-bM
-qP
-qP
-bM
+cK
 Bk
 hs
+bM
+Bk
+cD
 jw
 eP
 rq
@@ -17843,7 +17915,7 @@ uI
 Ms
 AY
 Bk
-ql
+Bk
 Bk
 Bk
 Bk
@@ -17966,7 +18038,7 @@ vx
 Gs
 he
 bM
-rb
+EQ
 DE
 EQ
 Bk
