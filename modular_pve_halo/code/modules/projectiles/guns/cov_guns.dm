@@ -92,7 +92,7 @@
 	if(!heat >= 1)
 		to_chat(user, SPAN_NOTICE("Your [src] doesn't need to be purged of heat."))
 		return
-	user.visible_message(SPAN_NOTICE("[user] manually vents their [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent your [src], carefully expelling the hot plasma into the air."))
+	user.visible_message(SPAN_NOTICE("[user] manually vents [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent [src], carefully expelling the hot plasma into the air."))
 	playsound(src, manual_vent_sound)
 	heat = 0
 	COOLDOWN_START(src, manual_cooldown, manual_dispersion_delay)
@@ -105,7 +105,7 @@
 
 /obj/item/weapon/gun/energy/plasma/proc/overheat()
 	COOLDOWN_START(src, cooldown, overheat_time)
-	gun_user.visible_message(SPAN_NOTICE("[gun_user]'s [src] overheats and vents scalding hot plasma from its side ports!"), SPAN_DANGER("Your [src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
+	gun_user.visible_message(SPAN_NOTICE("[src] overheats and vents scalding hot plasma from its side ports, burning [gun_user]!"), SPAN_DANGER("[src] overheats and expels hot plasma from its side ports! IT'S HOT!"))
 	if(ishuman(gun_user))
 		var/mob/living/carbon/human/human = gun_user
 		human.take_overall_armored_damage(30, ARMOR_LASER, BURN, 50)
@@ -225,13 +225,13 @@
 	if(!COOLDOWN_FINISHED(src, overcharge_cooldown))
 		return
 	if(overcharged)
-		user.visible_message(SPAN_NOTICE("[user] releases the trigger on the [src], no longer overcharging it!"), SPAN_DANGER("You stop overcharging the [src]!"))
+		user.visible_message(SPAN_NOTICE("[user] releases the trigger on [src], no longer overcharging it!"), SPAN_DANGER("You stop overcharging [src]!"))
 		overcharged = FALSE
 		toggle_ammo()
 		toggle_overcharge_overlay()
 		COOLDOWN_START(src, overcharge_cooldown, 1.5 SECONDS)
 	else if(!overcharged)
-		user.visible_message(SPAN_NOTICE("[user] holds down on the [src]'s trigger and begins to overcharge it!"), SPAN_DANGER("You hold down on the [src]'s trigger and begin to overcharge it!"))
+		user.visible_message(SPAN_NOTICE("[user] holds down on [src]'s trigger and begins to overcharge it!"), SPAN_DANGER("You hold down on [src]'s trigger and begin to overcharge it!"))
 		toggle_ammo()
 		overcharged = TRUE
 		toggle_overcharge_overlay()
