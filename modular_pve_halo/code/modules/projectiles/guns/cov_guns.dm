@@ -91,6 +91,7 @@
 		return
 	if(!heat >= 1)
 		to_chat(user, SPAN_NOTICE("Your [src] doesn't need to be purged of heat."))
+		return
 	user.visible_message(SPAN_NOTICE("[user] manually vents their [src], carefully expelling the hot plasma into the air."), SPAN_DANGER("You manually vent your [src], carefully expelling the hot plasma into the air."))
 	playsound(src, manual_vent_sound)
 	heat = 0
