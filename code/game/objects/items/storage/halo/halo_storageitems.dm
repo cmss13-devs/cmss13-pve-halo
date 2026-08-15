@@ -469,7 +469,7 @@
 	. = ..()
 	RegisterSignal(user, COMSIG_HUMAN_POST_MOVE_DELAY, PROC_REF(handle_movedelay))
 
-/obj/item/storage/box/guncase/heavy/proc/handle_movedelay(mob/user, list/movedata)
+/obj/item/storage/box/guncase/halo/heavy/proc/handle_movedelay(mob/user, list/movedata)
 	SIGNAL_HANDLER
 	if(locate(/obj/item/storage/box/guncase/heavy) in user.contents)
 		movedata["move_delay"] += move_delay_mult
