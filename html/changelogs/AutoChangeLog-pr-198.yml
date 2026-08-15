@@ -1,0 +1,6 @@
+author: "BonniePandora"
+delete-after: True
+changes:
+  - bugfix: "Fixes mismatched quantities with some ammo-packet types"
+  - qol: "Overhead text & allied faction-HUDs when invisible/cloaked will remain visible"
+  - qol: "Emotes will no longer autoreplace neutral terms (they/them) for gendered ones (he/she)"
