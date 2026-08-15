@@ -1261,6 +1261,16 @@
 /obj/structure/prop/unsc_crate/corrugated/green
 	icon_state = "c2_green"
 
+/obj/structure/prop/unsc_crate/medium
+	name = "UNSC crate"
+	desc = "A moderately sized military-grade crate. It doesn't look easy to open."
+	icon = 'icons/halo/obj/structures/props/crates_48x32.dmi'
+	icon_state = "null"
+	pixel_x = -5
+
+/obj/structure/prop/unsc_crate/medium/med
+	icon_state = "cbig_medical"
+
 /obj/structure/prop/unsc_crate/big
 	name = "UNSC crate"
 	desc = "A large military-grade crate. It doesn't look easy to open."
