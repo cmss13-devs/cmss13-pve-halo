@@ -370,6 +370,14 @@
 	opacity = FALSE
 	layer = 5
 
+/obj/structure/cargo_container/unsc/civ
+	desc = "A large industrial shipping container."
+
+/obj/structure/cargo_container/unsc/civ/traxus
+	name = "Traxus cargo container"
+	desc = "A large industrial shipping container.\nThis one is from Traxus Heavy Industries and likely originated from Reach."
+	icon_state =  "traxus"
+
 // container 1
 
 /obj/structure/cargo_container/unsc/main_1
