@@ -48,16 +48,6 @@
 	icon_state = "d_marine_jumpsuit"
 	item_state = "d_marine_jumpsuit"
 
-/obj/item/clothing/under/marine/odst
-	name = "ODST bodyglove"
-	icon = 'icons/halo/obj/items/clothing/undersuit.dmi'
-	icon_state = "odst"
-	worn_state = "odst"
-	flags_jumpsuit = null
-	flags_atom = NO_SNOW_TYPE|NO_NAME_OVERRIDE
-	item_icons = list(
-		WEAR_BODY = 'icons/halo/mob/humans/onmob/clothing/uniforms.dmi')
-
 /obj/item/clothing/under/marine/spartan
 	name = "\improper Mjolnir Mk IV Undersuit"
 	desc = "The undersuit of the Mjolnir Mk IV Powered Assault Armour. Despite appearances, this thick black undersuit employs extremely advanced technology; its material composition is primarily a titanium nanoncomposite overlayer. Beneath this is an advanced gel-layer which wicks sweat and waste such as dead skin, alongside regulating body-temperature. The gel-layer also responds to kinetic strikes against it, stiffening into a barrier capable of stopping bullets and breaking blades, sections of it can be manually adjusted as needed."

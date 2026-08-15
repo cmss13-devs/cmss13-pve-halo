@@ -1,5 +1,7 @@
 //===========================//CUSTOM ARMOR COSMETIC PLATES\\================================\\
 
+//standard
+
 /obj/item/clothing/accessory/pads/unsc
 	name = "\improper M52B Shoulder Pads"
 	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC."
@@ -14,6 +16,26 @@
 	. = ..()
 	inv_overlay = image("icon" = 'icons/halo/mob/humans/onmob/clothing/accessories/accessories.dmi', "icon_state" = "[item_state? "[item_state]" : "[icon_state]"]")
 
+/obj/item/clothing/accessory/pads/unsc/variant_2
+	name = "\improper M48A Shoulder Pads"
+	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC."
+	icon_state = "pads_2"
+	item_state = "pads_2"
+
+/obj/item/clothing/accessory/pads/unsc/thigh
+	name = "\improper UNSC Thigh Pads"
+	desc = "A set thigh pads attachable to the M52B armor set worn by the UNSC."
+	icon_state = "thigh_pads"
+	item_state = "thigh_pads"
+	slot = ACCESSORY_SLOT_DECORKNEE
+
+/obj/item/clothing/accessory/pads/unsc/knee
+	name = "\improper UNSC Knee Pads"
+	desc = "A set knee pads attachable to the M52B armor set worn by the UNSC."
+	icon_state = "knee_pads"
+	item_state = "knee_pads"
+	slot = ACCESSORY_SLOT_DECORKNEE
+
 /obj/item/clothing/accessory/pads/unsc/bracers
 	name = "\improper M52B Arm Bracers"
 	desc = "A set arm bracers worn in conjunction to the M52B body armor of the UNSC."
@@ -22,12 +44,6 @@
 	slot = ACCESSORY_SLOT_DECORBRACER
 	flags_atom = NO_SNOW_TYPE
 
-/obj/item/clothing/accessory/pads/unsc/bracers/police
-	name = "\improper Police Shoulder Bracers"
-	desc = "A set arm bracers worn in conjunction to an armoured vest, commonly issued to Police forces."
-	icon_state = "bracers_police"
-	item_state = "bracers_police"
-
 /obj/item/clothing/accessory/pads/unsc/neckguard
 	name = "\improper M52B Neck Guard"
 	desc = "An attachable neck guard option for the M52B body armor worn by the UNSC."
@@ -35,12 +51,6 @@
 	item_state = "neckguard"
 	slot = ACCESSORY_SLOT_DECORNECK
 	flags_atom = NO_SNOW_TYPE
-
-/obj/item/clothing/accessory/pads/unsc/neckguard/police
-	name = "\improper Police Neck Guard"
-	desc = "An attachable neck guard option for basic ballistic vests, commonly issued to the Police."
-	icon_state = "neckguard_police"
-	item_state = "neckguard_police"
 
 /obj/item/clothing/accessory/pads/unsc/greaves
 	name = "\improper M52B Shin Guards"
@@ -58,15 +68,35 @@
 	slot = ACCESSORY_SLOT_DECORGROIN
 	flags_atom = NO_SNOW_TYPE
 
+// police
+
+/obj/item/clothing/accessory/pads/unsc/bracers/police
+	name = "\improper Police Shoulder Bracers"
+	desc = "A set arm bracers worn in conjunction to an armoured vest, commonly issued to Police forces."
+	icon_state = "bracers_police"
+	item_state = "bracers_police"
+
+/obj/item/clothing/accessory/pads/unsc/neckguard/police
+	name = "\improper Police Neck Guard"
+	desc = "An attachable neck guard option for basic ballistic vests, commonly issued to the Police."
+	icon_state = "neckguard_police"
+	item_state = "neckguard_police"
+
 /obj/item/clothing/accessory/pads/unsc/groin/police
 	name = "\improper Police Groin Plate"
 	desc = "A plate designed to attach to an armoured Vest to protect the babymakers. Most commonly attached to Police Vests."
 	icon_state = "groinplate_police"
 	item_state = "groinplate_police"
 
+// insurrectionist
+
 /obj/item/clothing/accessory/pads/unsc/insurrection
 	icon_state = "pads_insurgent"
 	item_state = "pads_insurgent"
+
+/obj/item/clothing/accessory/pads/unsc/variant_2/insurrection
+	icon_state = "pads_insurgent_2"
+	item_state = "pads_insurgent_2"
 
 /obj/item/clothing/accessory/pads/unsc/bracers/insurrection
 	icon_state = "bracers_insurgent"
@@ -84,50 +114,101 @@
 	icon_state = "groinplate_insurgent"
 	item_state = "groinplate_insurgent"
 
+// oni
+
+/obj/item/clothing/accessory/pads/unsc/oni
+	name = "\improper ONI M52B Shoulder Pads"
+	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC. This set is painted black, matching ONI armor colorations."
+	icon_state = "pads_oni"
+	item_state = "pads_oni"
+
+/obj/item/clothing/accessory/pads/unsc/variant_2/oni
+	name = "\improper ONI M48A Shoulder Pads"
+	desc = "A set shoulder pads attachable to the M52B armor set worn by the UNSC. This set is painted black, matching ONI armor colorations."
+	icon_state = "pads_oni_2"
+	item_state = "pads_oni_2"
+
+/obj/item/clothing/accessory/pads/unsc/odst/oni
+	name = "\improper ONI M70DT Shoulder Pads"
+	desc = "A set shoulder pads attachable to the M70DT armor set worn by the ODSTs. This set is painted black, matching ONI armor colorations."
+	icon_state = "pads_onist"
+	item_state = "pads_onist"
+
+/obj/item/clothing/accessory/pads/unsc/greaves/oni
+	name = "\improper ONI M52B Shin Guards"
+	desc = "A set shinguards designed to be worn in conjuction with M52B body armor. This set is painted black, matching ONI armor colorations."
+	icon_state = "shinguards_oni"
+	item_state = "shinguards_oni"
+
+/obj/item/clothing/accessory/pads/unsc/neckguard/oni
+	name = "\improper ONI M52B Neck Guard"
+	desc = "An attachable neck guard option for the M52B body armor worn by the UNSC. This set is painted black, matching ONI armor colorations."
+	icon_state = "neckguard_oni"
+	item_state = "neckguard_oni"
+
+/obj/item/clothing/accessory/pads/unsc/bracers/oni
+	name = "\improper ONI M52B Arm Bracers"
+	desc = "A set arm bracers worn in conjunction to the M52B body armor of the UNSC. This set is painted black, matching ONI armor colorations."
+	icon_state = "bracers_oni"
+	item_state = "bracers_oni"
+
+/obj/item/clothing/accessory/pads/unsc/greaves/odst/oni
+	name = "\improper ONI M70DT Greaves"
+	desc = "A set greaves designed to be worn in conjuction with M70DT body armor. This set is painted black, matching ONI armor colorations."
+	icon_state = "shinguards_onist"
+	item_state = "shinguards_onist"
+
+// odst
+
 /obj/item/clothing/accessory/pads/unsc/odst
 	name = "\improper M70DT Shoulder Pads"
 	desc = "A set shoulder pads attachable to the M70DT armor set worn by the ODSTs."
-	icon_state = "odst_pads"
-	item_state = "odst_pads"
+	icon_state = "pads_odst"
+	item_state = "pads_odst"
 
 /obj/item/clothing/accessory/pads/unsc/bracers/odst
 	name = "\improper M70DT Bracers"
 	desc = "A set arm bracers worn in conjunction to the M70DT body armor of the ODSTs."
-	icon_state = "odst_bracers"
-	item_state = "odst_bracers"
+	icon_state = "bracers_odst"
+	item_state = "bracers_odst"
 
 /obj/item/clothing/accessory/pads/unsc/greaves/odst
 	name = "\improper M70DT Greaves"
 	desc = "A set greaves designed to be worn in conjuction with M70DT body armor."
-	icon_state = "odst_shinguards"
-	item_state = "odst_shinguards"
+	icon_state = "shinguards_odst"
+	item_state = "shinguards_odst"
 
 /obj/item/clothing/accessory/pads/unsc/groin/odst
 	name = "\improper M70DT Groin Plate"
 	desc = "A plate designed to attach to M70DT body armor to protect the babymakers of the Corps. Standardized protection of the ODSTs often seen worn more often than not."
-	icon_state = "odst_groinplate"
-	item_state = "odst_groinplate"
+	icon_state = "groinplate_odst"
+	item_state = "groinplate_odst"
 
+// forecon
 
-/obj/item/clothing/accessory/pads/unsc/oni
-	icon_state = "pads_oni"
-	item_state = "pads_oni"
+/obj/item/clothing/accessory/pads/unsc/forecon
+	name = "\improper M65A Shoulder Pads"
+	desc = "A set shoulder pads attachable to the M65A armor."
+	icon_state = "pads_forecon"
+	item_state = "pads_forecon"
 
-/obj/item/clothing/accessory/pads/unsc/bracers/oni
-	icon_state = "bracers_oni"
-	item_state = "bracers_oni"
+/obj/item/clothing/accessory/pads/unsc/greaves/forecon
+	name = "\improper M65A Greaves"
+	desc = "A set shoulder pads attachable to the M65A armor."
+	icon_state = "shinguards_forecon"
+	item_state = "shinguards_forecon"
 
-/obj/item/clothing/accessory/pads/unsc/neckguard/oni
-	icon_state = "neckguard_oni"
-	item_state = "neckguard_oni"
+/obj/item/clothing/accessory/pads/unsc/bracers/forecon
+	name = "\improper M65A Bracers"
+	desc = "A set arm bracers worn in conjunction to the M65A body armor."
+	icon_state = "bracers_forecon"
+	item_state = "bracers_forecon"
 
-/obj/item/clothing/accessory/pads/unsc/greaves/oni
-	icon_state = "shinguards_oni"
-	item_state = "shinguards_oni"
-
-/obj/item/clothing/accessory/pads/unsc/groin/insurrection
-	icon_state = "groinplate_insurgent"
-	item_state = "groinplate_insurgent"
+/obj/item/clothing/accessory/pads/unsc/thigh/forecon
+	name = "\improper M65A Thigh Plates"
+	desc = "A set thigh plates attachable to the M56A body armor."
+	icon_state = "thigh_pads_forecon"
+	item_state = "thigh_pads_forecon"
 
 //===========================//WEBBING & STORAGE\\================================\\
 
@@ -196,6 +277,36 @@
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 	new /obj/item/ammo_magazine/rifle/halo/ma5c(src)
 
+/obj/item/clothing/accessory/storage/webbing/m52b/mag/ma5b
+	hold = /obj/item/storage/internal/accessory/webbing/m52bmag/ma5b
+
+/obj/item/storage/internal/accessory/webbing/m52bmag/ma5b/fill_preset_inventory()
+	new /obj/item/ammo_magazine/rifle/halo/ma5b(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5b(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5b(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5b(src)
+	new /obj/item/ammo_magazine/rifle/halo/ma5b(src)
+
+/obj/item/clothing/accessory/storage/webbing/m52b/mag/br55
+	hold = /obj/item/storage/internal/accessory/webbing/m52bmag/br55
+
+/obj/item/storage/internal/accessory/webbing/m52bmag/br55/fill_preset_inventory()
+	new /obj/item/ammo_magazine/rifle/halo/br55(src)
+	new /obj/item/ammo_magazine/rifle/halo/br55(src)
+	new /obj/item/ammo_magazine/rifle/halo/br55(src)
+	new /obj/item/ammo_magazine/rifle/halo/br55(src)
+	new /obj/item/ammo_magazine/rifle/halo/br55(src)
+
+/obj/item/clothing/accessory/storage/webbing/m52b/mag/srs99
+	hold = /obj/item/storage/internal/accessory/webbing/m52bmag/srs99
+
+/obj/item/storage/internal/accessory/webbing/m52bmag/srs99/fill_preset_inventory()
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
+
 /obj/item/clothing/accessory/storage/webbing/m52b/mag/m7
 	hold = /obj/item/storage/internal/accessory/webbing/m52bmag/m7
 
@@ -244,8 +355,8 @@
 	)
 
 /obj/item/clothing/accessory/storage/webbing/m52b/grenade
-	name = "\improper M52B Pattern Grenade Webbing"
-	desc = "A variation of the M52B pattern webbing fitted with multiple small pouches for storing all manner of grenades."
+	name = "\improper M52B Pattern Grenade Pouch"
+	desc = "A butt-pouch for holding various types of grenades."
 	icon_state = "m52b_grenadewebbing"
 	hold = /obj/item/storage/internal/accessory/black_vest/m52bgrenade
 
