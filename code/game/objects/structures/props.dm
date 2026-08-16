@@ -1278,7 +1278,7 @@
 	icon = 'icons/halo/obj/structures/props/64x64crates.dmi'
 	icon_state = "crate"
 	bound_height = 64
-	pixel_x = -5
+	pixel_x = 8
 
 /obj/structure/prop/unsc_crate/big/stack
 	name = "UNSC crates"
