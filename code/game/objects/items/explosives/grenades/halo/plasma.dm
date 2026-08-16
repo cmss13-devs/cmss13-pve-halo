@@ -97,6 +97,7 @@
 /obj/item/explosive/grenade/high_explosive/plasma/launch_impact(atom/hit_atom)
 	. = ..()
 	if(active)
+		anchored = TRUE
 		for(var/atomtype in atoms_it_can_stick_to)
 			if(istype(hit_atom, atomtype))
 				var/zone
@@ -169,6 +170,8 @@
 	src.origin_nade.forceMove(parent_atom)
 	src.origin_nade.set_light_on(TRUE)
 	src.origin_nade.windup_sound_queued = FALSE
+	deltimer(src.origin_nade.det_timer)
+	src.origin_nade.det_timer = null
 	animation_flash_color(parent_atom, COLOR_BLUE)
 	time_running = (world.time - src.origin_nade.time_triggered) //fuse time minus cook time
 	if(time_running >= 0.5 SECONDS)
@@ -201,6 +204,9 @@
 
 /datum/component/status_effect/plasma_stuck/proc/unstuck()
 	if(prob(50))
+		if(src.origin_nade.windup)
+			to_chat(parent, SPAN_HIGHDANGER("Its too late!"))
+			return
 		var/atom/movable/parent_atom = parent
 		if(isliving(parent_atom))
 			var/mob/living/target = parent_atom
@@ -209,7 +215,7 @@
 		to_chat(parent, SPAN_HIGHDANGER("You fling the burning ball of light off!"))
 		src.origin_nade.forceMove(parent_atom.loc)
 		src.origin_nade.attached = FALSE
-		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), det_time_after_unstuck)
+		src.origin_nade.det_timer = addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, prime)), det_time_after_unstuck)
 		addtimer(CALLBACK(src.origin_nade, TYPE_PROC_REF(/obj/item/explosive/grenade/high_explosive/plasma, play_windup_sound)), det_time_after_unstuck-1.15 SECONDS)
 		src.origin_nade.windup_sound_queued = TRUE
 		INVOKE_ASYNC(src.origin_nade, TYPE_PROC_REF(/atom/movable, throw_atom), get_random_turf_in_range_unblocked(parent_atom, 3, 1), src.origin_nade.throw_range, SPEED_SLOW, parent_atom, HIGH_LAUNCH)
