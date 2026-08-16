@@ -333,11 +333,6 @@
 	// The flame_tint is applied multiplicatively to the greyscale animation
 	// However it represents levels within the flame, not the color of the flame as a whole.
 	// To get around this, we additively apply flame_base_tint for coloring.
-	// HALO PVE EDIT - START - Vars for flares
-	var/activation_sound = 'sound/handling/flare_activate_2.ogg'
-	var/watcher_activation_message = "activates the flare."
-	var/user_activation_message = "You pull the cord on the flare, activating it!"
-	// HALO PVE EDIT - END
 
 /obj/item/device/flashlight/flare/Initialize()
 	. = ..()
@@ -457,11 +452,8 @@
 	. = ..()
 	// All good, turn it on.
 	if(.)
-		// HALO PVE EDIT - START - Vars for flares
-		user.visible_message(SPAN_NOTICE("[user] [watcher_activation_message]"), SPAN_NOTICE("[user_activation_message]"))
-		if(activation_sound)
-			playsound(src,activation_sound, 50, 1) //cool guy sound
-		// HALO PVE EDIT - END
+		user.visible_message(SPAN_NOTICE("[user] activates the flare."), SPAN_NOTICE("You pull the cord on the flare, activating it!"))
+		playsound(src,'sound/handling/flare_activate_2.ogg', 50, 1) //cool guy sound
 		turn_on()
 		var/mob/living/carbon/enjoyer = user
 		if(istype(enjoyer) && !enjoyer.throw_mode)
@@ -486,9 +478,6 @@
 	mouse_opacity = MOUSE_OPACITY_TRANSPARENT
 	show_flame = FALSE
 	light_range = 7
-	// HALO PVE EDIT - START - Vars for flares
-	activation_sound = null
-	// HALO PVE EDIT - END
 
 /obj/item/device/flashlight/flare/on/illumination/Initialize()
 	. = ..()
@@ -515,9 +504,6 @@
 	ammo_datum = /datum/ammo/flare/starshell
 	show_flame = FALSE
 	light_range = 6
-	// HALO PVE EDIT - START - Vars for flares
-	activation_sound = null
-	// HALO PVE EDIT - END
 
 /obj/item/device/flashlight/flare/on/starshell_ash/Initialize(mapload, ...)
 	if(mapload)

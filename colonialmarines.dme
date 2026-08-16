@@ -2817,6 +2817,7 @@
 #include "modular_pve_halo\code\game\objects\items\props\helmetgarb.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\food\cans.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\food\snacks.dm"
+#include "modular_pve_halo\code\game\objects\items\storage\boxes.dm"
 #include "modular_pve_halo\code\game\objects\items\storage\fancy.dm"
 #include "modular_pve_halo\code\game\objects\items\storage\misc.dm"
 #include "modular_pve_halo\code\game\objects\items\storage\pouch.dm"
