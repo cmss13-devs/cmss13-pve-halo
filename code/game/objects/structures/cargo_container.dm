@@ -380,13 +380,13 @@
 
 // container traxus
 
-/obj/structure/cargo_container/unsc/civ/traxus_1
+/obj/structure/cargo_container/unsc/civ/traxus/traxus_1
 	icon_state = "trax_1"
 
-/obj/structure/cargo_container/unsc/civ/traxus_2
+/obj/structure/cargo_container/unsc/civ/traxus/traxus_2
 	icon_state = "trax_2"
 
-/obj/structure/cargo_container/unsc/civ/traxus_3
+/obj/structure/cargo_container/unsc/civ/traxus/traxus_3
 	icon_state = "trax_3"
 
 // container 1
