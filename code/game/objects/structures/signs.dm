@@ -707,3 +707,32 @@
 	desc = "An unbelievably creepy cat clock that surveys the room with every tick and every tock."
 	icon = 'icons/obj/structures/props/catclock.dmi'
 	icon_state = "cat_clock_motion"
+
+//=====================//
+//        HALO        //
+//===================//
+
+obj/structure/sign/safety/halo
+	name = "\improper UEG Semiotic"
+	desc = "A standard Semiotic of the UEG."
+	icon = 'icons/halo/obj/structures/props/semiotic_standard.dmi'
+
+obj/structure/sign/safety/halo/airlock
+	name = "airlock semiotic"
+	desc = "A semiotic denoting the presence of an airlock in the area."
+	icon_state = "airlock"
+
+obj/structure/sign/safety/halo/fighter
+	name = "hangar semiotic"
+	desc = "A semiotic denoting the presence of a hangar in the area."
+	icon_state = "fighter"
+
+obj/structure/sign/safety/halo/maint
+	name = "maintenance semiotic"
+	desc = "A semiotic denoting maintenance access in the area."
+	icon_state = "maint"
+
+obj/structure/sign/safety/halo/direction
+	name = "direction semiotic"
+	desc = "A semiotic denoting the direction of traffic in the area."
+	icon_state = "direction"
