@@ -1325,11 +1325,11 @@
 	bound_height = 64
 	bound_width = 288
 	icon = 'icons/halo/obj/structures/props/mac_rounds.dmi'
-	icon_state = 'mac_round'
+	icon_state = "mac_round"
 
 /obj/structure/prop/mac_round/carrier
 	name = "Stowed Magnetic Accelerator Projectile"
 	desc = "A multi-ton projectile fired out of the UNSC ship and station mounted MAC cannons. This one is secured to a semi-mobile carrier for transport and stowage."
-	icon_state = 'mac_round_carrier'
+	icon_state = "mac_round_carrier"
 	bound_height = 64
 	bound_width = 288
