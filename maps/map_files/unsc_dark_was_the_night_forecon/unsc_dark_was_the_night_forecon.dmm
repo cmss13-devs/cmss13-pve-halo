@@ -1247,11 +1247,16 @@
 /area/dark_was_the_night/armory)
 "dj" = (
 /obj/structure/bed,
+/obj/item/bedsheet/brown,
+/obj/item/prop/magazine/dirty/torn/alt{
+	pixel_x = 3;
+	pixel_y = 12;
+	layer = 4.11
+	},
 /obj/structure/bed{
 	layer = 4.1;
 	pixel_y = 12
 	},
-/obj/item/bedsheet/brown,
 /obj/item/bedsheet/brown{
 	layer = 4.2;
 	pixel_y = 12
@@ -4531,6 +4536,10 @@
 	pixel_y = -26;
 	pixel_x = -1
 	},
+/obj/item/prop/helmetgarb/prescription_bottle{
+	pixel_x = 6;
+	pixel_y = -9
+	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
 "vn" = (
@@ -4944,7 +4953,8 @@
 	layer = 3.3;
 	anchored = 1;
 	desc = "A suspended metal bar, commonly used for exercise. Works well for drying clothes too.";
-	name = "pull-up bar"
+	name = "pull-up bar";
+	randpixel = 0
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
@@ -6441,6 +6451,10 @@
 /obj/item/toy/deck{
 	pixel_x = 5;
 	pixel_y = 11
+	},
+/obj/item/clothing/glasses/sunglasses/big/unsc{
+	pixel_x = -11;
+	pixel_y = -4
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
