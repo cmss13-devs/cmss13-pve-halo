@@ -716,6 +716,7 @@ obj/structure/sign/safety/halo
 	name = "\improper UEG Semiotic"
 	desc = "A standard Semiotic of the UEG."
 	icon = 'icons/halo/obj/structures/props/semiotic_standard.dmi'
+	icon_state = "null"
 
 obj/structure/sign/safety/halo/airlock
 	name = "airlock semiotic"
@@ -735,4 +736,4 @@ obj/structure/sign/safety/halo/maint
 obj/structure/sign/safety/halo/direction
 	name = "direction semiotic"
 	desc = "A semiotic denoting the direction of traffic in the area."
-	icon_state = "direction"
+	icon_state = "directional"
