@@ -41,7 +41,7 @@
 
 /obj/item/storage/box/flare/chemlight
 	name = "\improper chemical illumination stick pack"
-	desc = "A packet of fourteen chemlights. Carried by UNSC soldiers to light dark areas or mark points of interest."
+	desc = "A packet of twenty one chemlights. Carried by UNSC soldiers to light dark areas or mark points of interest."
 	icon_state = "chemlight"
 	icon = 'icons/halo/obj/items/storage/packets.dmi'
 	w_class = SIZE_MEDIUM
