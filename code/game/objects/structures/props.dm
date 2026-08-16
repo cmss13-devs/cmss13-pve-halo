@@ -1324,10 +1324,10 @@
 	desc = "A multi-ton projectile fired out of the UNSC ship and station mounted MAC cannons. This one has a penetrator cap as well as additional core stages to cause catastrophic destruction of anything it impacts."
 	bound_height = 64
 	bound_width = 288
-	icon = 'icons/halo/obj/structures/mac_rounds'
+	icon = 'icons/halo/obj/structures/props/mac_rounds'
 	icon_state = 'mac_round'
 
-obj/structure/prop/mac_round/carrier
+/obj/structure/prop/mac_round/carrier
 	name = "Stowed Magnetic Accelerator Projectile"
 	desc = "A multi-ton projectile fired out of the UNSC ship and station mounted MAC cannons. This one is secured to a semi-mobile carrier for transport and stowage."
 	icon_state = 'mac_round_carrier'
