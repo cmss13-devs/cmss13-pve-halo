@@ -1266,7 +1266,7 @@
 	desc = "A moderately sized military-grade crate. It doesn't look easy to open."
 	icon = 'icons/halo/obj/structures/crates_48x32.dmi'
 	icon_state = "null"
-	pixel_x = 8
+	pixel_x = -8
 
 /obj/structure/prop/unsc_crate/medium/med
 	icon_state = "cbig_medical"
