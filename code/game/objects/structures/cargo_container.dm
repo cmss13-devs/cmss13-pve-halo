@@ -378,6 +378,17 @@
 	desc = "A large industrial shipping container.\nThis one is from Traxus Heavy Industries and likely originated from Reach."
 	icon_state =  "traxus"
 
+// container traxus
+
+/obj/structure/cargo_container/unsc/civ/traxus_1
+	icon_state = "trax_1"
+
+/obj/structure/cargo_container/unsc/civ/traxus_2
+	icon_state = "trax_2"
+
+/obj/structure/cargo_container/unsc/civ/traxus_3
+	icon_state = "trax_3"
+
 // container 1
 
 /obj/structure/cargo_container/unsc/main_1
