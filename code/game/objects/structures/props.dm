@@ -1267,6 +1267,7 @@
 	icon = 'icons/halo/obj/structures/crates_48x32.dmi'
 	icon_state = "null"
 	bound_width = 48
+	bound_height = 32
 	pixel_x = 8
 
 /obj/structure/prop/unsc_crate/medium/med
