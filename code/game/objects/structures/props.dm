@@ -1267,7 +1267,7 @@
 	icon = 'icons/halo/obj/structures/crates_48x32.dmi'
 	icon_state = "null"
 	bound_width = 48
-	pixel_x = -5
+	pixel_x = 8
 
 /obj/structure/prop/unsc_crate/medium/med
 	icon_state = "cbig_medical"
@@ -1278,7 +1278,7 @@
 	icon = 'icons/halo/obj/structures/props/64x64crates.dmi'
 	icon_state = "crate"
 	bound_height = 64
-	pixel_x = 8
+	pixel_x = -5
 
 /obj/structure/prop/unsc_crate/big/stack
 	name = "UNSC crates"
