@@ -1317,3 +1317,11 @@
 	desc = "A wing originating from a Pelican's airframe, which, whether intentional or not, it has been seperated from."
 	icon = 'icons/halo/obj/structures/pelican.dmi'
 	icon_state = "pelican_r_wing"
+
+/obj/structure/prop/mac_round
+	name = "Magnetic Accelerator Cannon Round"
+	desc = "A multi-ton projectile fired out of the UNSC ship and station mounted MAC cannons. This one has a penetrator cap as well as additional core stages to cause catastrophic destruction of anything it impacts."
+	bound_height = "64"
+	bound_width = "288"
+	icon = 'icons/halo/obj/structures/mac_rounds'
+	icon_state = 'mac_round'
