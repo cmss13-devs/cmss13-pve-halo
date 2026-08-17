@@ -24,7 +24,7 @@
 
 /obj/item/storage/box/flare/signal/unsc
 	name = "\improper M73-S signal flare pack"
-	desc = "A packet of fourteen M73-S Signal Flares. Capable of being locked onto by UNSCDF strike-craft for fire support, or dropships as LZ-markers."
+	desc = "A packet of fourteen M73-S Signal Flares. Capable of being locked onto by UNSC strike-craft for fire support, or dropships as LZ-markers."
 	icon = 'icons/halo/obj/items/storage/packets.dmi'
 	icon_state = "m73"
 
@@ -88,7 +88,7 @@
 
 /obj/item/storage/box/flare/chemlight/radioisotope
 	name = "\improper radioisotope chemical illumination stick pack"
-	desc = "A packet of fourteen high-illumination chemlights. Carried by UNSC soldiers to light dark areas or mark points of interest."
+	desc = "A packet of twenty one high-illumination chemlights. Carried by UNSC soldiers to light dark areas or mark points of interest."
 	icon_state = "chemlight"
 	icon = 'icons/halo/obj/items/storage/packets.dmi'
 	w_class = SIZE_MEDIUM
