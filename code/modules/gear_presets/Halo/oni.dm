@@ -82,7 +82,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
 	//pockets
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/firstaid/full/alternate(new_human), WEAR_L_STORE)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/unsc/full(new_human), WEAR_R_STORE)
 
 /datum/equipment_preset/oni/field/lesser_rank
 	name = "ONI Field Operative (Lesser Rank)"

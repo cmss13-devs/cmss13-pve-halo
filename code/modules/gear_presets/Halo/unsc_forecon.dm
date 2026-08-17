@@ -313,7 +313,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/bracers/forecon(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh/forecon(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/unsc/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
 
 /datum/equipment_preset/proc/add_forecon_corpsman_gear(mob/living/carbon/human/new_human)
@@ -328,7 +328,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/bracers/forecon(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh/forecon(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/unsc/full(new_human), WEAR_WAIST)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/unsc/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
 
 /datum/equipment_preset/proc/add_forecon_lighter_gear(mob/living/carbon/human/new_human)
@@ -342,7 +342,7 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/bracers/forecon(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/accessory/pads/unsc/thigh/forecon(new_human), WEAR_ACCESSORY)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/unsc/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
 
 /datum/equipment_preset/proc/add_forecon_scout_gear(mob/living/carbon/human/new_human)
@@ -353,7 +353,7 @@
 		new_human.equip_to_slot_or_del(new pick_hat, WEAR_HEAD)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/forecon_flakvest(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/marine(new_human), WEAR_WAIST)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/unsc/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
 
 
@@ -366,6 +366,6 @@
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/suit/marine/unsc/forecon_flakvest(new_human), WEAR_JACKET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health/unsc(new_human), WEAR_EYES)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/belt/medical/lifesaver/unsc/full(new_human), WEAR_WAIST)
-	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/full(new_human), WEAR_R_STORE)
+	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/flare/unsc/full(new_human), WEAR_R_STORE)
 	new_human.equip_to_slot_or_del(new /obj/item/storage/pouch/first_responder/unsc/(new_human), WEAR_L_STORE)
 
