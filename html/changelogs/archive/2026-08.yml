@@ -15,3 +15,19 @@
   - bugfix: Makes UNSC uniforms the proper sprite now
   - imagetweak: Updates most UNSC marine armor sprites
   - imagetweak: Updates all UNSC armor accessories
+2026-08-16:
+  BonniePandora:
+  - bugfix: Fixes mismatched quantities with some ammo-packet types
+  - qol: Overhead text & allied faction-HUDs when invisible/cloaked will remain visible
+  - qol: Emotes will no longer autoreplace neutral terms (they/them) for gendered
+      ones (he/she)
+  DexterDude:
+  - spellcheck: Makes MA5B mag say MA5B instead of MA5C
+  - rscadd: UNSC overwatch headset variant in recon and standard UNSC prep machines.
+  - balance: Adds more M6 flashlights to the vendors, also adds more sidearms
+  - rscdel: Removes roller beds from the vendors
+  - bugfix: No longer able to vent plasma weapons that don't need venting
+  - bugfix: Lets the UNSC marine recon flak vest attach some accessories
+  - imageadd: Adds a missing onmob icon for ONIST shoulder pads
+  - spellcheck: Fixes improper use of "the" in plasma weapon text
+  - bugfix: SPNKr not responding to all types of unique action inputs
