@@ -300,6 +300,9 @@
 	. = ..()
 	LAZYADD(GLOB.spawns_by_species[species], src)
 
+/obj/effect/landmark/species_start/Destroy()
+	LAZYREMOVE(GLOB.spawns_by_species[species], src)
+	return ..()
 //****************************************** MARINE ROLES ************************************************/
 /obj/effect/landmark/start/whiskey //category moment, indeed
 
