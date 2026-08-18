@@ -290,6 +290,15 @@
 /obj/effect/landmark/start/AISloc
 	name = "AI"
 
+/obj/effect/landmark/species_start
+	name = "species start"
+	icon_state = "x"
+	anchored = TRUE
+	var/species = SPECIES_HUMAN
+
+/obj/effect/landmark/species_start/Initialize(mapload, ...)
+	. = ..()
+	LAZYADD(GLOB.spawns_by_species[species], src)
 
 //****************************************** MARINE ROLES ************************************************/
 /obj/effect/landmark/start/whiskey //category moment, indeed

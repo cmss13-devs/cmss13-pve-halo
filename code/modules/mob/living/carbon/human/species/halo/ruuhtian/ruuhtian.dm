@@ -71,7 +71,9 @@
 	GLOB.alive_human_list -= ruuhtian
 
 	ruuhtian.blood_type = "K*"
-	ruuhtian.h_style = "Bald"
+	ruuhtian.body_type = "ruuht"
+	if(!(ruuhtian.skin_color in GLOB.skin_color_ruuht_list))
+		ruuhtian.skin_color = pick_weight(list("ruuht1" = 60, "ruuht2" = 20, "ruuht3" = 20))
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
 	GLOB.kigyar_mob_list += ruuhtian
 	#endif
@@ -92,9 +94,6 @@
 
 	ruuhtian.set_languages(list(LANGUAGE_SANGHEILI, LANGUAGE_RUUHTIAN))
 	return ..()
-
-/datum/species/ruuhtian/get_hairstyle(style)
-	return GLOB.ruuhtian_hair_styles_list[style]
 
 /datum/species/ruuhtian/heroic //Unlike elites this tier is for ultras and specops, grunts arent getting a full suite of heroic, legendary, etc
 	name = SPECIES_RUUHTIAN_HEROIC
