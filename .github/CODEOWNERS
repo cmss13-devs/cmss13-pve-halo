@@ -4,6 +4,10 @@
 # In the event that people are to be informed of changes
 # to the same file or dir, add them to the end of under Multiple Owners
 
+# Daniclus-W
+
+/code/modules/mob/living/carbon/human/ai/ @Danilcus-W
+
 # Fira
 
 /.dockerignore @Fira
@@ -26,4 +30,3 @@
 
 # MULTIPLE OWNERS
 
-/code/modules/mob/living/carbon/human/ai/ @Danilcus-W
