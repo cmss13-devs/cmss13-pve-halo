@@ -2875,14 +2875,14 @@
 	name = "General Listening Channel";
 	pixel_y = 26
 	},
-/obj/item/ammo_box/magazine/misc/unsc/m7_ammo{
-	pixel_x = -9;
-	pixel_y = 11
-	},
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/m6_ammo_packet{
 	pixel_x = 8;
 	pixel_y = -1
+	},
+/obj/item/ammo_box/magazine/misc/unsc/m7_ammo_packet{
+	pixel_x = -9;
+	pixel_y = 12
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
