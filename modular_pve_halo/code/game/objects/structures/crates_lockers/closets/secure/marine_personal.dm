@@ -59,32 +59,34 @@
 /obj/structure/closet/secure_closet/marine_personal/unsc/rto
 	job = JOB_SQUAD_RTO
 
-// ==RECON== //
+// ==FORECON== //
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/spawn_gear()
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/spawn_gear()
 	new /obj/item/clothing/under/marine/unsc/forecon(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
-	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers(src)
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/rifleman
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rifleman
 	job = JOB_SQUAD_MARINE
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/specialist
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/specialist
 	job = JOB_SQUAD_SPECIALIST
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/corpsman
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/corpsman
 	job = JOB_SQUAD_MEDIC
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/team_leader
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/team_leader
 	job = JOB_SQUAD_TEAM_LEADER
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/squad_leader
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader
 	job = JOB_SQUAD_LEADER
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/squad_leader/spawn_gear()
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/squad_leader/spawn_gear()
 	new /obj/item/clothing/under/marine/unsc/forecon(src)
 	new /obj/item/clothing/shoes/marine/knife(src)
-	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/rockhoppers/squadlead(src)
+	new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/squadlead(src)
 
-/obj/structure/closet/secure_closet/marine_personal/unsc_recon/rto
+/obj/structure/closet/secure_closet/marine_personal/unsc/forecon/rto
 	job = JOB_SQUAD_RTO
+
+//

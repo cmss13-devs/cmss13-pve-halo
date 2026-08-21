@@ -1,5 +1,6 @@
 /datum/equipment_preset/unsc/pfc/recon
 	name = "UNSC Recon Rifleman"
+	assignment = JOB_SQUAD_MARINE_FORECON
 	paygrades = list(PAY_SHORT_ME3 = JOB_PLAYTIME_TIER_0)
 	skills = /datum/skills/pfc/recon
 
@@ -9,6 +10,7 @@
 
 /datum/equipment_preset/unsc/medic/recon
 	name = "UNSC Recon Corpsman"
+	assignment = JOB_SQUAD_MEDIC_FORECON
 	skills = /datum/skills/combat_medic/recon
 
 /datum/equipment_preset/unsc/medic/recon/lesser_rank
@@ -17,6 +19,7 @@
 
 /datum/equipment_preset/unsc/rto/recon
 	name = "UNSC Recon Radio Telephone Operator"
+	assignment = JOB_SQUAD_RTO_FORECON
 	skills = /datum/skills/pfc/recon
 
 /datum/equipment_preset/unsc/rto/recon/lesser_rank
@@ -25,6 +28,7 @@
 
 /datum/equipment_preset/unsc/spec/recon
 	name = "UNSC Recon Weapons Specialist"
+	assignment = JOB_SQUAD_SPECIALIST_FORECON
 	skills = /datum/skills/specialist
 
 /datum/equipment_preset/unsc/spec/recon/lesser_rank
@@ -33,6 +37,7 @@
 
 /datum/equipment_preset/unsc/tl/recon
 	name = "UNSC Recon Fireteam Leader"
+	assignment = JOB_SQUAD_TEAM_LEADER_FORECON
 	skills = /datum/skills/tl/recon
 
 /datum/equipment_preset/unsc/tl/recon/lesser_rank
@@ -41,6 +46,7 @@
 
 /datum/equipment_preset/unsc/leader/recon
 	name = "UNSC Recon Squad Sergeant"
+	assignment = JOB_SQUAD_LEADER_FORECON
 
 /datum/equipment_preset/unsc/leader/recon/lesser_rank
 	name = parent_type::name + " (Lesser Rank)"
@@ -295,7 +301,7 @@
 	if(!istype(new_human))
 		return
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/under/marine/unsc/forecon(new_human), WEAR_BODY)
-	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc(new_human), WEAR_L_EAR)
+	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/cryo(new_human), WEAR_L_EAR)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/shoes/marine/knife(new_human), WEAR_FEET)
 	new_human.equip_to_slot_or_del(new /obj/item/clothing/gloves/marine, WEAR_HANDS)
 

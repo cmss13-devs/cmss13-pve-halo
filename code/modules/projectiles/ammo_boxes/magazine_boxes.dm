@@ -1493,3 +1493,6 @@
 	icon_state = "base_ammosmall3"
 	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6d
 	num_of_magazines = 22
+
+/obj/item/ammo_box/magazine/unsc/small/m6d/forecon
+	magazine_type = /obj/item/ammo_magazine/pistol/halo/m6d/forecon
