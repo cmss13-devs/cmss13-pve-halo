@@ -16,4 +16,7 @@
 
 #define HUMAN_AI_MAX_PATHFINDING_RANGE 45
 
+/// Grenade fumble delay before throwback.
+#define HUMAN_AI_THROWBACK_DELAY_DEFAULT (1 SECONDS)
+
 GLOBAL_LIST_EMPTY(ai_humans)
