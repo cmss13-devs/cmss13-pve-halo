@@ -335,6 +335,7 @@
 	icon_state = "banshee_rackless"
 	pixel_x = -64
 	pixel_y = -64
+
 /particles/plasma
 	icon = 'icons/halo/effects/plasma.dmi'
 	icon_state = "circle"
