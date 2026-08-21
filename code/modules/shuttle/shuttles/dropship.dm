@@ -150,6 +150,7 @@
 	dwidth = 4
 	dheight = 8
 
+
 /obj/docking_port/mobile/marine_dropship/cyclone/get_transit_path_type()
 	return /turf/open/space/transit/dropship/cyclone
 
