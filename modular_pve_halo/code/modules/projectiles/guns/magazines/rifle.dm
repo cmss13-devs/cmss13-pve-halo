@@ -29,7 +29,7 @@
 
 /obj/item/ammo_magazine/rifle/halo/ma5b
 	name = "\improper MA5B magazine (7.62x51mm FMJ)"
-	desc = "A rectangular box magazine for the MA5C holding 60 rounds of 7.62x51 FMJ ammunitions."
+	desc = "A rectangular box magazine for the MA5B holding 60 rounds of 7.62x51 FMJ ammunitions."
 	icon_state = "ma5b"
 	max_rounds = 60
 	gun_type = /obj/item/weapon/gun/rifle/halo/ma5b

@@ -780,6 +780,7 @@
 	arm_sound = 'sound/weapons/pinpull.ogg'
 	icon_state = "grenade_phos_clf"
 	item_state = "grenade_phos_clf"
+	caliber = "non-standard"
 
 /*
 //================================================

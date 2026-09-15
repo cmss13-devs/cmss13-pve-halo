@@ -81,8 +81,8 @@
 	desc_lore = "The real benefit of the M55 vest however is its built in cooling systems and redundant backups, like ballistic computers and a radio transceiver. This allows troopers who lose their helmet to retain combat efficiency. Thanks to the effectiveness of Covenant plasma weapons, some veterans will forgo wearing any armour at all, instead just using the M55-TAV alone."
 	icon_state = "flak"
 	item_state = "flak"
-	valid_accessory_slots = null
-	restricted_accessory_slots = null
+	valid_accessory_slots = list(ACCESSORY_SLOT_MEDAL, ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_PONCHO, ACCESSORY_SLOT_DECORKNEE)
+	restricted_accessory_slots = list(ACCESSORY_SLOT_DECORARMOR, ACCESSORY_SLOT_DECORBRACER, ACCESSORY_SLOT_DECORSHIN, ACCESSORY_SLOT_DECORKNEE)
 	var/obj/item/storage/internal/pockets
 	var/storage_slots = 4
 

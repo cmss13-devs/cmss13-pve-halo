@@ -2845,6 +2845,7 @@
 #include "modular_pve_halo\code\modules\clothing\under\marine_uniform.dm"
 #include "modular_pve_halo\code\modules\clothing\under\ties.dm"
 #include "modular_pve_halo\code\modules\clothing\under\unsc_ties.dm"
+#include "modular_pve_halo\code\modules\cm_marines\equipment\gear.dm"
 #include "modular_pve_halo\code\modules\cm_marines\equipment\maps.dm"
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
 #include "modular_pve_halo\code\modules\projectiles\cov_gun_attachables.dm"

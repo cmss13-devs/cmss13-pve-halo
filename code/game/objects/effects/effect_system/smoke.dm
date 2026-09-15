@@ -259,6 +259,7 @@
 	var/burn_damage = 40
 	var/applied_fire_stacks = 3
 	var/xeno_yautja_reduction = 0.75
+	contact_affects_synths = TRUE
 
 //WP mortar-shell smoke
 /obj/effect/particle_effect/smoke/phosphorus/strong

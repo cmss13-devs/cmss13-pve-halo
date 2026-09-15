@@ -368,7 +368,7 @@
 
 /obj/item/ammo_box/rounds/unsc/br55
 	name = "\improper M634 X-HP SAP-HE (9.5x40mm) ammunition packet"
-	desc = "A tear-open packet of ammo to refill spent magazines. This one reads \"M634, 9.5x40mm, X-HP SAP-HE, 96 RNDS\" on the packaging."
+	desc = "A tear-open packet of ammo to refill spent magazines. This one reads \"M634, 9.5x40mm, X-HP SAP-HE, 72 RNDS\" on the packaging."
 	icon_state = "ammo_packet_battle_rifle"
 	item_state = "ammo_packet_battle_rifle"
 	default_ammo = /datum/ammo/bullet/rifle/br55
@@ -381,7 +381,7 @@
 
 /obj/item/ammo_box/rounds/unsc/m6
 	name = "\improper M225 SAP-HE (12.7x40mm) ammunition packet"
-	desc = "A tear-open packet of ammo to refill spent magazines. This one reads \"M225, 12.7x40mm, SAP-HE, 72 RNDS\" on the packaging."
+	desc = "A tear-open packet of ammo to refill spent magazines. This one reads \"M225, 12.7x40mm, SAP-HE, 48 RNDS\" on the packaging."
 	icon_state = "ammo_packet_pistol"
 	item_state = "ammo_packet_pistol"
 	default_ammo = /datum/ammo/bullet/pistol/magnum

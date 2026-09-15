@@ -74,7 +74,6 @@
 		if(INTENT_HARM)
 			// See if they can attack, and which attacks to use.
 			var/datum/unarmed_attack/attack = attacking_mob.species.unarmed
-
 			if(!attack.is_usable(attacking_mob))
 				attack = attacking_mob.species.secondary_unarmed
 				return

@@ -177,7 +177,6 @@ GLOBAL_LIST_EMPTY(gear_datums_by_name)
 	display_name = "Gas mask"
 	path = /obj/item/clothing/mask/gas //Civ market gas-mask, no longer USCM locked
 	cost = 1
-	allowed_origins = USCM_ORIGINS
 
 /datum/gear/mask/scarf_black
 	display_name = "Scarf, black"
