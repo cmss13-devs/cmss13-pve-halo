@@ -50,3 +50,25 @@
 	explosion_power = 90
 	explosion_falloff = 8
 	falloff_mode = EXPLOSION_FALLOFF_SHAPE_EXPONENTIAL
+
+/obj/item/explosive/grenade/incendiary/unsc
+	name = "\improper TH-61 thermite grenade"
+	desc = "An explosive-incendiary grenade designed primarily for anti-materiel purposes, but is just as effective against organic matter too."
+	icon = 'icons/halo/obj/items/weapons/grenades.dmi'
+	icon_state = "thermite_grenade"
+	item_state = "thermite_grenade"
+	caliber = "non-standard"
+	underslug_launchable = FALSE
+	dual_purpose = FALSE
+	arm_sound = 'sound/weapons/pinpull.ogg'
+	flame_level = 20
+	burn_level = 60
+	flameshape = FLAMESHAPE_STAR
+	radius = 1
+	fire_type = FIRE_VARIANT_DEFAULT
+
+/obj/item/explosive/grenade/incendiary/unsc/prime(mob/living/user)
+	set waitfor = 0
+	INVOKE_ASYNC(GLOBAL_PROC, GLOBAL_PROC_REF(flame_radius), cause_data, radius, get_turf(src), flame_level, burn_level, flameshape, null, fire_type)
+	playsound(src.loc, 'sound/weapons/halo/gun_firebomb.ogg', 35, 1, 4)
+	qdel(src)

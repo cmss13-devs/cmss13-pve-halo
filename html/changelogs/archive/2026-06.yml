@@ -74,3 +74,6 @@
   - rscadd: subtype of medkits, field medkits. Regular medkits increase in size, field
       medkits remain medium size. Fixed all relevant vendors/item packages related
       to this
+2026-06-30:
+  banana-battery:
+  - mapadd: Covenant structure templates added to the Admin template loader.

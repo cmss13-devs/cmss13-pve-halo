@@ -1277,3 +1277,33 @@
 
 /obj/structure/prop/unsc_crate/big/stack/alt
 	icon_state = "pile2"
+
+/obj/structure/prop/pelican
+	name = "D77H-TCE \"Pelican\""
+	desc = "A D77H-TCE \"Pelican\" dropship, used by all branches of the UNSC. This one belongs to the \"troop carrier\" family of dropships. Being the TCE variant, this pelican comes with additional seating so that it may fit an entire squad, with the sacrifice of no capability for DCC personnel being aboard in most cases."
+	icon = 'icons/halo/obj/structures/pelican.dmi'
+	icon_state = "pelican"
+
+/obj/structure/prop/pelican/left_nacelle
+	name = "pelican nacelle"
+	desc = "A nacelle originating from a Pelican's airframe, which, whether intentional or not, it has been seperated from."
+	icon = 'icons/halo/obj/structures/pelican.dmi'
+	icon_state = "left_nacelle"
+
+/obj/structure/prop/pelican/right_nacelle
+	name = "pelican nacelle"
+	desc = "A nacelle originating from a Pelican's airframe, which, whether intentional or not, it has been seperated from."
+	icon = 'icons/halo/obj/structures/pelican.dmi'
+	icon_state = "right_nacelle"
+
+/obj/structure/prop/pelican/left_wing
+	name = "pelican wing"
+	desc = "A wing originating from a Pelican's airframe, which, whether intentional or not, it has been seperated from."
+	icon = 'icons/halo/obj/structures/pelican.dmi'
+	icon_state = "pelican_l_wing"
+
+/obj/structure/prop/pelican/right_wing
+	name = "pelican wing"
+	desc = "A wing originating from a Pelican's airframe, which, whether intentional or not, it has been seperated from."
+	icon = 'icons/halo/obj/structures/pelican.dmi'
+	icon_state = "pelican_r_wing"
