@@ -6913,8 +6913,8 @@
 "sJ" = (
 /obj/structure/closet/secure_closet/halo/job_locker/rto,
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
-/obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
+/obj/item/device/binoculars/fire_support/halo/unsc,
 /obj/item/tacmap_map,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/armory)

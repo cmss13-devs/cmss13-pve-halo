@@ -9,7 +9,7 @@
 		to_chat(usr, SPAN_WARNING("A mode hasn't been selected yet!"))
 		return
 
-	var/list/selectable = list(FIRESUPPORT_ARTY, FIRESUPPORT_CAS, FIRESUPPORT_ORBITAL, FIRESUPPORT_ARTY_UPP, FIRESUPPORT_CAS_UPP, FIRESUPPORT_ORBITAL_UPP)
+	var/list/selectable = list(FIRESUPPORT_CAS_WOMBAT, FIRESUPPORT_CAS_C712, FIRESUPPORT_CAS_C709, FIRESUPPORT_ARTY_UNSC, FIRESUPPORT_ORBITAL_UNSC)
 	var/callsign_to_change = tgui_input_list(src, "Choose fire support callsign to change.", "Callsign", selectable)
 	if(!callsign_to_change)
 		return
