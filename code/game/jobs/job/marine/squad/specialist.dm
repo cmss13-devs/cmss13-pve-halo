@@ -105,5 +105,17 @@
 	gear_preset = /datum/equipment_preset/unsc/spec/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/spec/odst/lesser_rank
 
+/datum/job/marine/specialist/ai/forecon
+	total_positions = 1
+	spawn_positions = 1
+	title = JOB_SQUAD_SPECIALIST_FORECON
+	gear_preset = /datum/equipment_preset/unsc/spec/recon
+	gear_preset_secondary = /datum/equipment_preset/unsc/spec/recon/lesser_rank
+
+/obj/effect/landmark/start/marine/spec/forecon
+	name = JOB_SQUAD_SPECIALIST_FORECON
+	squad = SQUAD_LRRP
+	job = /datum/job/marine/specialist/ai/forecon
+
 #undef PFC_VARIANT
 #undef LCPL_VARIANT

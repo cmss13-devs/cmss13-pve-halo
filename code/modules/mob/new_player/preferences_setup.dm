@@ -271,6 +271,19 @@
 			return /datum/equipment_preset/unsc/pfc/odst/equipped
 		if(JOB_SQUAD_RTO_ODST)
 			return /datum/equipment_preset/unsc/pfc/odst/equipped
+//RECON SECTION
+		if(JOB_SQUAD_MARINE_FORECON)
+			return /datum/equipment_preset/unsc/pfc/recon/equipped
+		if(JOB_SQUAD_LEADER_FORECON)
+			return /datum/equipment_preset/unsc/tl/recon/equipped
+		if(JOB_SQUAD_MEDIC_FORECON)
+			return /datum/equipment_preset/unsc/medic/recon/equipped
+		if(JOB_SQUAD_SPECIALIST_FORECON)
+			return /datum/equipment_preset/unsc/spec/recon/equipped_sniper_scout
+		if(JOB_SQUAD_TEAM_LEADER_FORECON)
+			return /datum/equipment_preset/unsc/leader/recon/equipped_scout
+		if(JOB_SQUAD_RTO_FORECON)
+			return /datum/equipment_preset/unsc/rto/recon/equipped_scout
 //USCM Aux forces (not part of pre-round role select normally)
 		if(JOB_SQUAD_SMARTGUN)
 			return /datum/equipment_preset/uscm/smartgunner_equipped

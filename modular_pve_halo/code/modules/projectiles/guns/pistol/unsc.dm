@@ -156,6 +156,32 @@
 	scope.hidden = TRUE
 	update_attachable(scope.slot)
 
+/obj/item/weapon/gun/pistol/halo/m6d/forecon
+
+	current_mag = /obj/item/ammo_magazine/pistol/halo/m6d/forecon
+	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6d, /obj/item/attachable/flashlight/m6)
+
+/obj/item/weapon/gun/pistol/halo/m6d/forecon/handle_starting_attachment()
+	. = ..()
+	var/obj/item/attachable/scope/mini/smartscope/m6d/scope = new(src)
+	scope.flags_attach_features &= ~ATTACH_REMOVABLE
+	var/obj/item/attachable/old_scope = attachments[scope.slot]
+	if(old_scope)
+		old_scope.Detach(detaching_gub = src, drop_attachment = FALSE)
+		qdel(old_scope)
+	scope.Attach(src)
+	scope.hidden = TRUE
+	update_attachable(scope.slot)
+
+	var/obj/item/attachable/flashlight/m6/lamp = new(src)
+	lamp.flags_attach_features &= ~ATTACH_REMOVABLE
+	lamp.Attach(src)
+	lamp.hidden = TRUE
+	update_attachable(lamp.slot)
+
+/obj/item/weapon/gun/pistol/halo/m6d/forecon/unloaded
+	current_mag = null
+
 /obj/item/weapon/gun/pistol/halo/m6a
 	name = "M6A service magnum"
 	desc = "The M6A is a semi-automatic 12.7x40mm recoil-operated handgun with a standard 12 round magazine. This variation is often given out to security and law enforcement firms as a more compact version of the standard template, though with less stopping power."
