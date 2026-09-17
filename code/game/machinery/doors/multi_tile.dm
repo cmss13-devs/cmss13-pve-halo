@@ -734,3 +734,14 @@
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass/prop
 	prop_door = TRUE
 	icon_state = "door_locked"
+
+
+/obj/structure/machinery/door/airlock/multi_tile/cov_door
+	name = "\improper covenant door"
+	icon = 'icons/halo/obj/structures/doors/2x1_covdoor.dmi'
+	openspeed = 10
+	width = 2
+
+/obj/structure/machinery/door/airlock/multi_tile/cov_door/prop
+	prop_door = TRUE
+	icon_state = "door_locked"
