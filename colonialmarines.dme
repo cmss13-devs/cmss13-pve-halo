@@ -2849,6 +2849,7 @@
 #include "modular_pve_halo\code\modules\economy\ATM.dm"
 #include "modular_pve_halo\code\modules\projectiles\cov_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\unsc_gun_attachables.dm"
+#include "modular_pve_halo\code\modules\projectiles\ammo_boxes\grenade_packets.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\cov_guns.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\cov_melee.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\magazines\cov_magazines.dm"

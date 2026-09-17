@@ -86,6 +86,7 @@
 /datum/species/sangheili/handle_post_spawn(mob/living/carbon/human/sangheili)
 	GLOB.alive_human_list -= sangheili
 
+	sangheili.mob_size = MOB_SIZE_XENO
 	sangheili.blood_type = "S*"
 	sangheili.h_style = "Bald"
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
