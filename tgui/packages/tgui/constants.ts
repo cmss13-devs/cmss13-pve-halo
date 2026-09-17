@@ -356,6 +356,21 @@ export const RADIO_CHANNELS = [
     freq: 1500,
     color: '#ff00ff',
   },
+  {
+    name: 'Lance 1',
+    freq: 1504,
+    color: '#5070D3',
+  },
+  {
+    name: 'Lance 2',
+    freq: 1505,
+    color: '#D1479F',
+  },
+  {
+    name: 'Covenant Command',
+    freq: 1506,
+    color: '#779cc2',
+  },
 ] as const;
 
 const GASES = [

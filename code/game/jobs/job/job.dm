@@ -46,6 +46,10 @@
 	/// Whether or not having enough playtime will allow you to primeroll
 	var/prime_priority = FALSE
 
+	var/allowed_species = list(SPECIES_HUMAN)
+	var/allowed_genders = list(MALE, FEMALE) //the chud era is upon us...
+	var/use_species_spawn
+
 /datum/job/New()
 	. = ..()
 
@@ -142,6 +146,16 @@
 			return_requirements[T] = time_required
 
 	return return_requirements
+
+/datum/job/proc/species_allowed(species)
+	if(species in allowed_species)
+		return TRUE
+	return FALSE
+
+/datum/job/proc/gender_allowed(gender)
+	if(gender in allowed_genders)
+		return TRUE
+	return FALSE
 
 /datum/job/proc/get_access()
 	if(!gear_preset)
@@ -295,6 +309,8 @@
 			join_turf = get_turf(pick(GLOB.latejoin_by_job[title]))
 		else
 			join_turf = get_turf(pick(GLOB.latejoin))
+		if(use_species_spawn)
+			join_turf = get_turf(pick(GLOB.spawns_by_species[use_species_spawn]))
 		human.forceMove(join_turf)
 
 		for(var/cardinal in GLOB.cardinals)

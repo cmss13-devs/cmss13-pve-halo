@@ -138,7 +138,12 @@ GLOBAL_LIST_INIT(platoon_to_jobs, list(/datum/squad/marine/alpha = list(/datum/j
 		/datum/job/marine/medic/ai/odst = JOB_SQUAD_MEDIC,\
 		/datum/job/marine/standard/ai/rto = JOB_SQUAD_RTO,\
 		/datum/job/marine/tl/ai/odst = JOB_SQUAD_TEAM_LEADER,\
-		/datum/job/marine/leader/ai/odst = JOB_SQUAD_LEADER)))
+		/datum/job/marine/leader/ai/odst = JOB_SQUAD_LEADER),\
+		/datum/squad/marine/covenant = list(/datum/job/covenant/lance_standard = JOB_COV_LANCE_STANDARD,\
+		/datum/job/covenant/lance_specialist = JOB_COV_LANCE_SPECIALIST,\
+		/datum/job/covenant/lance_obedientary = JOB_COV_LANCE_OBEDIENTARY,\
+		/datum/job/covenant/lance_ultra = JOB_COV_LANCE_ULTRA,\
+		/datum/job/covenant/lance_leader = JOB_COV_LANCE_LEADER)))
 
 GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI,\
 												/datum/squad/marine/upp = ROLES_AI_UPP,\
@@ -148,7 +153,8 @@ GLOBAL_LIST_INIT(platoon_to_role_list, list(/datum/squad/marine/alpha = ROLES_AI
 												/datum/squad/marine/rmc = ROLES_RMCTROOP,\
 												/datum/squad/marine/pmc = ROLES_PMCPLT,\
 												/datum/squad/marine/forecon = ROLES_AI_FORECON,\
-												/datum/squad/marine/odst = ROLES_ODST))
+												/datum/squad/marine/odst = ROLES_ODST,\
+												/datum/squad/marine/covenant = ROLES_COV))
 
 
 GLOBAL_LIST_INIT(personal_weapons_list, list("M90 CAWS shotgun" = /obj/effect/essentials_set/m90caws,\

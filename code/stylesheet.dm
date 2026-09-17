@@ -65,11 +65,13 @@ em {font-style: normal; font-weight: bold;}
 .cryoradio {color: #4a4740;}
 .hcradio {color: #318779;}
 .pvstradio {color: #9b0612;}
+.ciaradio {color: #e6754c;}
 .unscradio {color: #828cff;}
-.covradio {color: #d283ec;}
 .odstradio {color: #32CD32;}
 .oniradio {color: #6700d1;}
-.ciaradio {color: #e6754c;}
+.covsq1radio {color: #5070D3;}
+.covsq2radio {color: #D1479F;}
+.covcmdradio {color: #779cc2;}
 
 .medium { font-size: 2}
 .big { font-size: 2}

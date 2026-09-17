@@ -19,17 +19,7 @@
 
 /datum/equipment_preset/covenant/sangheili/load_race(mob/living/carbon/human/new_human, client/mob_client)
 	new_human.set_species(SPECIES_SANGHEILI)
-	random_name = capitalize(pick(GLOB.first_names_sangheili)) + " " + capitalize(pick(GLOB.last_names_sangheili))
-	var/final_name = random_name
-	new_human.change_real_name(new_human, final_name)
 	new_human.gender = MALE
-	new_human.body_type = "sang"
-	new_human.skin_color = pick("sang1", "sang2")
-	var/static/list/eye_color_list = list("Magenta" = list(141, 39, 85), "Orange" = list(158, 67, 28), "Green" = list(24, 105, 17))
-	eye_color = pick(eye_color_list)
-	new_human.r_eyes = eye_color_list[eye_color][1]
-	new_human.g_eyes = eye_color_list[eye_color][2]
-	new_human.b_eyes = eye_color_list[eye_color][3]
 
 /datum/equipment_preset/covenant/sangheili/load_id(mob/living/carbon/human/new_human)
 	. = ..()
@@ -38,15 +28,13 @@
 	random_name = capitalize(pick(GLOB.first_names_sangheili)) + " " + capitalize(pick(GLOB.last_names_sangheili))
 	var/final_name = random_name
 	new_human.change_real_name(new_human, final_name)
-	new_human.gender = MALE
-	new_human.body_type = "sang"
 	new_human.skin_color = pick("sang1", "sang2")
+	var/eye_color
 	var/static/list/eye_color_list = list("Magenta" = list(141, 39, 85), "Orange" = list(158, 67, 28), "Green" = list(24, 105, 17))
 	eye_color = pick(eye_color_list)
 	new_human.r_eyes = eye_color_list[eye_color][1]
 	new_human.g_eyes = eye_color_list[eye_color][2]
 	new_human.b_eyes = eye_color_list[eye_color][3]
-
 // =================================
 // Minor
 // =================================
@@ -58,7 +46,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_MINOR
 	rank = JOB_COV_MINOR
-	paygrades = list(PAY_SHORT_SANG_MINOR = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_S2 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Minor"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -102,7 +90,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_MAJOR
 	rank = JOB_COV_MAJOR
-	paygrades = list(PAY_SHORT_SANG_MAJOR = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_S4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Major"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -149,7 +137,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_ULTRA
 	rank = JOB_COV_ULTRA
-	paygrades = list(PAY_SHORT_SANG_ULTRA = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_U1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Ultra"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -188,7 +176,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_ZEALOT
 	rank = JOB_COV_ZEALOT
-	paygrades = list(PAY_SHORT_SANG_ZEALOT = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_Z1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Zealot"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -237,7 +225,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_SPECOPS
 	rank = JOB_COV_SPECOPS
-	paygrades = list(PAY_SHORT_SANG_MAJOR = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_S4 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -286,7 +274,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_SPECOPS_ULTRA
 	rank = JOB_COV_SPECOPS_ULTRA
-	paygrades = list(PAY_SHORT_COV_ULTRA = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_U1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "SpecOps Ultra"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -335,7 +323,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_STEALTH
 	rank = JOB_COV_STEALTH
-	paygrades = list(PAY_SHORT_COV_MAJOR = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_S5 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Stealth"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)
@@ -392,7 +380,7 @@
 	access = list(ACCESS_MARINE_PREP)
 	assignment = JOB_COV_HONOR_GUARD
 	rank = JOB_COV_HONOR_GUARD
-	paygrades = list(PAY_SHORT_SANG_HONOR_GUARD = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_H1 = JOB_PLAYTIME_TIER_0)
 	role_comm_title = "Honor Guard"
 	skills = /datum/skills/covenant/sangheili
 	languages = list(LANGUAGE_SANGHEILI)

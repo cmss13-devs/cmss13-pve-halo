@@ -48,11 +48,22 @@
 /proc/sanitize_skin_color(skin_color, default = "Pale 2")
 	if(skin_color in GLOB.skin_color_list)
 		return skin_color
-
+	if(skin_color in GLOB.skin_color_sang_list)
+		return skin_color
+	if(skin_color in GLOB.skin_color_ruuht_list)
+		return skin_color
+	if(skin_color in GLOB.skin_color_ung_list)
+		return skin_color
 	return default
 
 /proc/sanitize_body_type(body_type, default = "Lean")
 	if(body_type in GLOB.body_type_list)
+		return body_type
+	if(body_type in GLOB.body_type_sang_list)
+		return body_type
+	if(body_type in GLOB.body_type_ruuht_list)
+		return body_type
+	if(body_type in GLOB.body_type_ung_list)
 		return body_type
 
 	return default

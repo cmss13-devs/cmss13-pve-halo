@@ -198,7 +198,7 @@
 	if(refresh_limb_status)
 		for(var/obj/limb/L in preview_dummy.limbs)
 			L.status = LIMB_ORGANIC
-	preview_dummy.set_species()
+	preview_dummy.set_species(species)
 	copy_appearance_to(preview_dummy)
 	preview_dummy.update_body()
 	preview_dummy.update_hair()
@@ -220,6 +220,10 @@
 		preview_front.vis_contents += preview_dummy
 		preview_front.screen_loc = "preview:0,0"
 	preview_front.icon_state = bg_state
+	if(species != SPECIES_HUMAN)
+		preview_front.icon = 'icons/misc/preview_big.dmi'
+	else
+		preview_front.icon = initial(preview_front.icon)
 	owner.add_to_screen(preview_front)
 
 	if(isnull(rotate_left))
@@ -244,6 +248,14 @@
 			highest_priority_job = job
 			highest_priority = job_preference_list[job]
 
+	if(species != SPECIES_HUMAN)
+		switch(species)
+			if(SPECIES_SANGHEILI)
+				return /datum/equipment_preset/covenant/sangheili/minor
+			if(SPECIES_RUUHTIAN)
+				return /datum/equipment_preset/covenant/ruuhtian/minor
+			if(SPECIES_UNGGOY)
+				return /datum/equipment_preset/covenant/unggoy/minor
 	switch(highest_priority_job)
 //USCM Section
 		if(JOB_SQUAD_MARINE)
