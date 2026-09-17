@@ -1,0 +1,10 @@
+{
+    "map_name": "COP Brighton",
+    "map_path": "map_files/COP_Brighton",
+    "map_file": "COP_Brighton.dmm",
+    "webmap_url": "COP-Brighton",
+    "weather_holder": "/datum/weather_ss_map_holder/cop_brighton",
+    "map_item_type": "/obj/item/map/cop_brighton",
+    "traits": [{"Marine Main Ship": true}],
+    "platoon": "/datum/squad/marine/alpha"
+}

@@ -52,6 +52,10 @@ map mackay_station_shipmap
 
 endmap
 
+map cop_brighton
+
+endmap
+
 map uscss_obsidian_falk
 	disabled
 endmap
