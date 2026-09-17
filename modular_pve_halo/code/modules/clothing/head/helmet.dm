@@ -150,6 +150,12 @@
 	desc = "A heavily modified variant of a standard helmet, developed for use by UEG strategic security personnel and the Office of Naval Intelligence. Modifications are primarily focused on a fully enclosed design with polarizing visor and an overall reinforced frame. Secondary modifications include advanced encryption/comms gear and proprietary VISR versions."
 	motion_tracker = TRUE
 
+/obj/item/clothing/head/helmet/marine/unsc/odst/oni/recon
+	name = "\improper CH395/OR Recon helmet"
+	desc = "Developed by the ONI Materials Group in tandem with a matching armor-system for operatives of that organisation. Aiming to improve the wearers stealth capabilities without impacting endurance, the helmet achieves this by reducing IR signatures, reflective surfaces and radio-signal emissions. The visor of the helmet employs a cutting-edge optics suite."
+	icon_state = "s1-oni"
+	item_state = "s1-oni"
+
 /obj/item/clothing/head/uppcap/ushanka
 	name = "\improper ushanka"
 	desc = "An old-style cold weather hat favored by those hailing from old Russia, Eastern Europe, or colonies founded by settlers from there."
