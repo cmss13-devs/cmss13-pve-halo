@@ -178,3 +178,12 @@
 	name = "Digsite Elevator"
 	shuttle_id = MOBILE_DIGSITE_ELEVATOR
 	elevator_network = "digsite"
+
+/datum/map_template/shuttle/slade_point
+	shuttle_id = "unused"
+	var/elevator_network
+
+/datum/map_template/shuttle/slade_point/oni_elevator
+	name = "ONI Elevator"
+	shuttle_id = MOBILE_ONI_ELEVATOR
+	elevator_network = "oni"
