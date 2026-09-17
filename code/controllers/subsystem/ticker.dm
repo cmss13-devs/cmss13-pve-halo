@@ -409,7 +409,10 @@ SUBSYSTEM_DEF(ticker)
 
 /datum/controller/subsystem/ticker/proc/send_tip_of_the_round()
 	var/message
-	var/tip_file = pick("strings/pvetips.txt")
+// HALO PVE EDIT - START - HALO SPECIFIC ROUND TIPS
+	// var/tip_file = pick("strings/pvetips.txt")
+	var/tip_file = pick("strings/halotips.txt")
+// HALO PVE EDIT - END
 	var/list/tip_list = file2list(tip_file)
 	if(length(tip_file))
 		message = pick(tip_list)
