@@ -1,5 +1,5 @@
 /obj/structure/ladder/gravity_lift
-	name = "gravity projector EE"
+	name = "gravity projector"
 	desc = "A vertical gravity projector, capable of changing the direction of its gravitic beam."
 	icon = 'icons/halo/obj/structures/grav_lift.dmi'
 	icon_state = "generator"
@@ -52,8 +52,11 @@
 	visible_message(SPAN_NOTICE("[user] floats [ladder_dir_name] [src]."))
 	if(down)
 		flick("hatch_loop", src)
+	else if(ladder_dest.down)
+		flick("hatch_loop", ladder_dest)
 	playsound(src, 'modular_pve_halo/sound/machines/gravity_lift.ogg')
-	user.do_teleport(user, ladder_dest.loc)
+	playsound(ladder_dest, 'modular_pve_halo/sound/machines/gravity_lift.ogg')
+	user.loc = ladder_dest.loc
 	add_fingerprint(user)
 
 /obj/structure/ladder/gravity_lift/update_icon()
@@ -66,6 +69,7 @@
 		icon_state = "generator"
 		var/image/img = image(icon = 'icons/halo/obj/structures/grav_lift.dmi', icon_state = "generator_beam", layer = ABOVE_MOB_LAYER)
 		img.blend_mode = BLEND_ADD
+		img.mouse_opacity = FALSE
 		overlays += img
 	else
 		icon_state = "generator_off"
@@ -75,3 +79,10 @@
 
 /obj/structure/ladder/gravity_lift/attackby()
 	return // You can do this by throwing it on the lift itself
+
+/obj/structure/ladder/gravity_lift/test_1
+	id = 1
+	height = 1
+
+/obj/structure/ladder/gravity_lift/test_2
+	id = 1
