@@ -24,3 +24,42 @@
 
 /obj/item/prop/helmetgarb/flair_peace
 	desc = "Something to help suggest the duality of man, that jungian thing."
+
+// halo specific helmetgarbs
+
+/obj/item/prop/helmetgarb/halo
+	name = "halo helmetgarb"
+	desc = "Oh my god...it's the halo helmetgarb...but who the hell's spriting it?"
+	icon = 'icons/halo/obj/items/helmet_garb.dmi'
+	icon_state = null
+	flags_obj = OBJ_NO_HELMET_BAND|OBJ_IS_HELMET_GARB
+
+/obj/item/prop/helmetgarb/halo/visor
+	name = "gold UNSC helmet visor"
+	desc = "A golden visor that can attach to most UNSC helmets. Provides a limited heads-up-display to the user."
+	icon_state = "visor_gold"
+
+/obj/item/prop/helmetgarb/halo/visor/silver
+	name = "silver UNSC helmet visor"
+	desc = "A silver visor that can attach to most UNSC helmets. Provides a limited heads-up-display to the user."
+	icon_state = "visor_silver"
+
+/obj/item/prop/helmetgarb/halo/visor/black
+	name = "black UNSC helmet visor"
+	desc = "A black visor that can attach to most UNSC helmets. Provides a limited heads-up-display to the user. This one isn't standard issue."
+	icon_state = "visor_black"
+
+/obj/item/prop/helmetgarb/halo/visor/large
+	name = "large gold UNSC helmet visor"
+	desc = "A large golden visor that can attach to most UNSC helmets. Provides a limited heads-up-display to the user."
+	icon_state = "warsvisor_gold"
+
+/obj/item/prop/helmetgarb/halo/visor/large/silver
+	name = "large silver UNSC helmet visor"
+	desc = "A large silver visor that can attach to most UNSC helmets. Provides a limited heads-up-display to the user."
+	icon_state = "warsvisor_silver"
+
+/obj/item/prop/helmetgarb/halo/visor/large/black
+	name = "large black UNSC helmet visor"
+	desc = "A large black visor that can attach to most UNSC helmets. Provides a limited heads-up-display to the user. This one isn't standard issue."
+	icon_state = "warsvisor_black"

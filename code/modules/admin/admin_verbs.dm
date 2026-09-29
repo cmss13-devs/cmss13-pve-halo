@@ -96,6 +96,7 @@ GLOBAL_LIST_INIT(admin_verbs_default, list(
 	))
 
 
+
 GLOBAL_LIST_INIT(admin_verbs_admin, list(
 	/datum/admins/proc/togglejoin, /*toggles whether people can join the current game*/
 	/datum/admins/proc/announce, /*priority announce something to all clients.*/

@@ -82,7 +82,7 @@
 	QDEL_NULL(lockon)
 	. = ..()
 
-/obj/item/weapon/gun/halo_launcher/spnkr/use_unique_action()
+/obj/item/weapon/gun/halo_launcher/spnkr/unique_action()
 	var/mob/living/carbon/user = get_gun_user()
 	var/area/current_area = get_area(user)
 	cancel_sounds = FALSE// In case the user moves while while locking on
