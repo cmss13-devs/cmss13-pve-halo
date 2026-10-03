@@ -1,0 +1,14 @@
+2026-09-16:
+  BonniePandora:
+  - maptweak: McKay station had the armory rearranged slightly (mirrored between 'ship'
+      & 'ground' map versions)
+  - maptweak: Covered up some of the lingering space tiles beneath stairs on McKay
+      station (mirrored)
+  - maptweak: Fixed a floating camera, and adjusted some department/info floor decals
+      to line up with doors (mirrored)
+  - maptweak: ODST 'Night shipmap had the extra M7 mag-packet box swapped for an M7
+      round-packet box instead
+  Drathek:
+  - config: Added a WIKIURL_HOME_PAGE config that can override WIKIURL for the wiki
+      button
+  - bugfix: Foldout maps now do not attempt to load maps if the map has no url set
