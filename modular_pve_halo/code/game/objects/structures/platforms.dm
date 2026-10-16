@@ -1,7 +1,7 @@
 /*
  * Platforms
  */
-// ||COVENANT||
+// COVENANT
 
 /obj/structure/platform/covenant
 	name = "\improper raised nanolaminate platform"
