@@ -4,7 +4,7 @@
 // ||COVENANT||
 
 /obj/structure/platform/covenant
-	name = "Raised Nanolaminate Platform"
+	name = "\improper raised nanolaminate platform"
 	desc = "A raised piece of nanolaminate metal. You could probably climb it."
 	icon = 'icons/halo/obj/structures/props/cov_platforms.dmi'
 	icon_state = "cov_platform"
