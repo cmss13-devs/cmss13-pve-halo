@@ -293,6 +293,10 @@
 	attach_icon = "oracle_scope"
 	slot = "rail"
 
+/obj/item/attachable/scope/variable_zoom/oracle/New()
+	. = ..()
+
+
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
 	desc = "A smart-linked scope designed to attach to the M6D magnum. The Model II is much more precise and allows the scope to switch between 2x and 4x modes. Links with UNSC optics to provide the HUD a reticle and ammunition counter."
@@ -314,6 +318,20 @@
 	icon_state = "srs_bipod"
 	attach_icon = "srs_bipod"
 	flags_attach_features = NO_FLAGS
+
+/obj/item/attachable/bipod/srs_bipod/New()
+	..()
+
+	recoil_mod = RECOIL_AMOUNT_TIER_1
+
+/obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
+	. = ..()
+	recoil_mod = RECOIL_AMOUNT_TIER_1
+
+/obj/item/attachable/bipod/srs_bipod/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
+	. = ..()
+	if(user && bipod_deployed)
+		recoil_mod = -RECOIL_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
