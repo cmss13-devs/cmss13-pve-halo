@@ -8,10 +8,15 @@
 	var/light_str = input(usr, "Set the light power.", "Daytime Brightness", "0.3") as null|num
 	var/daytime_color = input(usr, "Please select the color to use.", "Daytime Color") as color|null
 	var/confirm = tgui_alert(usr, "Are you sure you wish to change daytime on the map to this settings?", "Confirm", list("Yes", "No"), 1 HOURS)
+// HALO PVE EDIT - START - SHIPMAP BRIGHTNESS VERB
+	var/z_level = 2
+// HALO PVE EDIT - END
 	if(confirm != "Yes")
 		return FALSE
 	message_admins("[key_name(usr)] changed lighting on map to [daytime_color] color with [light_str].")
-	lightturfs = block(locate(world.maxx, world.maxy, 2), locate(1, 1, 2))
+// HALO PVE EDIT - START - SHIPMAP BRIGHTNESS VERB
+	lightturfs = block(locate(world.maxx, world.maxy, z_level), locate(1, 1, 2))
+// HALO PVE EDIT - END
 	for(var/atom/A as anything in lightturfs)
 		if(istype(A.loc,/area/))
 			var/area/targeted = A.loc

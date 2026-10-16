@@ -285,6 +285,12 @@ GLOBAL_LIST_INIT(blocked_droppod_tiles, typecacheof(list(/turf/open/space/transi
 		log_game("[key_name(user)] launched pod [src] at [AREACOORD(target)]")
 
 	pod_state = POD_INFLIGHT
+
+	if(!(MODE_HAS_TOGGLEABLE_FLAG(MODE_DISABLE_INTRO_BLURB)))
+		if(SSticker?.mode && !(SSticker.mode.flags_round_type & MODE_DS_LANDED)) //Launching on first drop.
+			SSticker.mode.pod_first_drop()
+			SSticker.mode.flags_round_type |= MODE_DS_LANDED
+
 	var/random_delay = rand(0, 20)*0.1
 	addtimer(CALLBACK(src, PROC_REF(delay_pod), user), random_delay SECONDS)
 
