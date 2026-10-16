@@ -1,0 +1,5 @@
+author: "Gentlefood"
+delete-after: True
+changes:
+  - rscadd: "Added covenant platforms"
+  - code_imp: "modularized halo pve platform code"
