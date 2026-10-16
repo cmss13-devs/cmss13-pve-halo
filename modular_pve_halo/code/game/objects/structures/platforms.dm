@@ -1,6 +1,3 @@
-/*
- * Platforms
- */
 // COVENANT
 
 /obj/structure/platform/covenant
