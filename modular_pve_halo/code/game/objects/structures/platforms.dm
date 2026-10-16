@@ -10,7 +10,7 @@
 	icon_state = "cov_platform"
 
 /obj/structure/platform_decoration/covenant
-	name = "Raised Nanolaminate Corner"
+	name = "\improper raised nanolaminate corner"
 	desc = "A rounded corner of nanolaminate."
 	icon = 'icons/halo/obj/structures/props/cov_platforms.dmi'
 	icon_state = "cov_platform_deco"
