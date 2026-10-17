@@ -312,8 +312,7 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
-	while(using_scope = FALSE)
-		G.scatter += scatter_scoped_buff
+	G.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
@@ -340,7 +339,7 @@
 /obj/item/attachable/bipod/srs_bipod/New()
 	..()
 
-	recoil_mod = RECOIL_AMOUNT_TIER_1
+	recoil_mod = RECOIL_OFF
 	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
