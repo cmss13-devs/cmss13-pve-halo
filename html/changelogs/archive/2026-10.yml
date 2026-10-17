@@ -3,3 +3,7 @@
   - bugfix: USCM Uniform now appears with the correct name on the vendors
   - code_imp: Updated some code regarding dress vendor and snowflake vendor to satisfy
       new checks
+2026-10-17:
+  Gentlefood:
+  - rscadd: Added covenant platforms
+  - code_imp: modularized halo pve platform code
