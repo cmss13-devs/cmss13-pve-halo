@@ -251,6 +251,9 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/six
 	icon_state = "h_maptable6"
 
+/obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/seven
+	icon_state = "h_maptable7"
+
 //Nonpower using props
 
 /obj/structure/prop/almayer
