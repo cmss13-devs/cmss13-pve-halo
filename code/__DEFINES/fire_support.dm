@@ -109,6 +109,9 @@ GLOBAL_LIST_INIT(fire_support_points, list())
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK "glassing_beam_weak"
 #define FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT "glassing_beam_weak_instant"
 
+#define FIRESUPPORT_TYPE_SCARAB_BEAM "scarab_beam"
+#define FIRESUPPORT_TYPE_SCARAB_BEAM_INSTANT "scarab_beam_instant"
+
 #define FIRESUPPORT_TYPE_WOMBAT_GAU "wombat_gau"
 #define FIRESUPPORT_TYPE_WOMBAT_MISSILE "wombat_missile"
 #define FIRESUPPORT_TYPE_WOMBAT_INCENDIARY "wombat_incendiary"
@@ -189,6 +192,8 @@ GLOBAL_LIST_INIT(fire_support_types, list(
 	FIRESUPPORT_TYPE_GLASSING_BEAM_FAST = new /datum/fire_support/custom/glassing_beam/fast,
 	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK = new /datum/fire_support/custom/glassing_beam/weak,
 	FIRESUPPORT_TYPE_GLASSING_BEAM_WEAK_INSTANT = new /datum/fire_support/custom/glassing_beam/weak/instant,
+	FIRESUPPORT_TYPE_SCARAB_BEAM = new /datum/fire_support/custom/scarab_beam,
+	FIRESUPPORT_TYPE_SCARAB_BEAM_INSTANT = new /datum/fire_support/custom/scarab_beam/instant,
 	FIRESUPPORT_TYPE_WOMBAT_GAU = new /datum/fire_support/custom/wombat_gau,
 	FIRESUPPORT_TYPE_WOMBAT_MISSILE = new /datum/fire_support/custom/wombat_missile,
 	FIRESUPPORT_TYPE_WOMBAT_INCENDIARY = new /datum/fire_support/custom/wombat_incendiary_missile,
