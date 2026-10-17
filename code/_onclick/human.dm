@@ -164,4 +164,6 @@
 	target.Move(user.loc, get_dir(target.loc, user.loc))
 	target.update_transform(TRUE)
 
-
+///How an atom interacts when clicked on with superstrength ability.
+/atom/proc/superstrength_interaction(mob/user as mob)
+	return
