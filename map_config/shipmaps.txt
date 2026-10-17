@@ -63,3 +63,7 @@ endmap
 map hms_brynhild
 	disabled
 endmap
+
+map new_irvine_sky_scraper
+
+endmap
