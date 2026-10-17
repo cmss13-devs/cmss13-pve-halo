@@ -1,5 +1,5 @@
 
-//Covenant
+// Covenant
 #define JOB_COV_CIV "Civilian"
 #define JOB_COV_MINOR "Minor"
 #define JOB_COV_MAJOR "Major"
@@ -11,15 +11,16 @@
 #define JOB_COV_MARKSMAN "Marksman"
 #define JOB_COV_SNIPER "Sniper"
 
+// Lance Roles
+
+#define JOB_COV_LANCE_LEADER "Lance Leader"
+#define JOB_COV_LANCE_ULTRA "Lance Evocati"
+#define JOB_COV_LANCE_OBEDIENTARY "Lance Obedientary"
+#define JOB_COV_LANCE_SPECIALIST "Lance Specialist"
+#define JOB_COV_LANCE_STANDARD "Lance Warrior"
+
 // Ministry
 #define JOB_COV_DEACON "Deacon"
-
-
-// Platoon jobs
-#define JOB_COV_MENIAL "Menial"
-#define JOB_COV_OBEDIENTARY "Obedientary"
-#define JOB_COV_LANCE_ULTRA "Lance Ultra"
-#define JOB_COV_LANCE_LEADER "Lance Leader"
 
 // Special jobs
 #define JOB_COV_HEAVY "Heavy"

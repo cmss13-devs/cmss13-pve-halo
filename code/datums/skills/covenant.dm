@@ -32,6 +32,13 @@
 		SKILL_PILOT = SKILL_PILOT_TRAINED,
 		SKILL_ENDURANCE = SKILL_ENDURANCE_TRAINED,
 	)
+
+/datum/skills/covenant/obedientary
+	name = "Covenant, Obedientary"
+	skills = list(
+		SKILL_LEADERSHIP = SKILL_LEAD_TRAINED
+	)
+
 /datum/skills/covenant/sangheili
 	name = "Covenant, Sangheili"
 	skills = list(

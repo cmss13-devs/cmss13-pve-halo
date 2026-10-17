@@ -356,6 +356,8 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 			dat += "<h1><u><b>Name:</b></u> "
 			dat += "<a href='byond://?_src_=prefs;preference=name;task=input'><b>[real_name]</b></a>"
 			dat += "<a href='byond://?_src_=prefs;preference=name;task=random'>&reg</A></h1>"
+			dat += "<u><b>Species:</b></u> "
+			dat += "<a href='byond://?_src_=prefs;preference=pickspecies;task=input'><b>[species]</b></a><br> "
 			dat += "<u><b>Slot label:</b></u> "
 			dat += "<a href='byond://?_src_=prefs;preference=slot_label;task=input'><b>[slot_label ? "[slot_label]" : "---"]</b></a><br> "
 			dat += "<b>Always Pick Random Name:</b> <a href='byond://?_src_=prefs;preference=rand_name'><b>[be_random_name ? "Yes" : "No"]</b></a><br>"
@@ -748,6 +750,12 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 				var/datum/timelock/T = r
 				HTML += "<tr class='[job.selection_class]'><td width='40%' align='middle'>[T.name]</td><td width='10%' align='center'></td><td>[duration2text(missing_requirements[r])] Hours</td></tr>"
 			continue
+		else if(!job.species_allowed(species))
+			HTML += "<b><del>[job.disp_title]</del></b></td><td width='10%' align='center'></td><td>SPECIES LOCKED</td></tr>"
+			continue
+		else if(!job.gender_allowed(gender))
+			HTML += "<b><del>[job.disp_title]</del></b></td><td width='10%' align='center'></td><td>GENDER LOCKED</td></tr>"
+			continue
 
 		HTML += "<b>[job.disp_title]</b></td><td width='10%' align='center'>"
 
@@ -863,6 +871,12 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 			continue
 		else if(!job.can_play_role(user.client))
 			HTML += "<b><del>[job.disp_title]</del></b></td><td width='60%'>TIMELOCKED</td></tr>"
+			continue
+		else if(!job.species_allowed(species))
+			HTML += "<b><del>[job.disp_title]</del></b></td><td width='10%' align='center'></td><td>SPECIES LOCKED</td></tr>"
+			continue
+		else if(!job.gender_allowed(gender))
+			HTML += "<b><del>[job.disp_title]</del></b></td><td width='10%' align='center'></td><td>GENDER LOCKED</td></tr>"
 			continue
 
 		HTML += "<b>[job.disp_title]</b></td>"
@@ -1283,6 +1297,14 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 							slot_label = new_name
 						else
 							to_chat(user, "<font color='red'>Invalid name. Your slot name should be at least 2 and at most [MAX_NAME_LEN] characters long. It may only contain the characters A-Z, a-z, -, ' and .</font>")
+				if("pickspecies")
+					var/prev_species = species
+					var/new_species = tgui_input_list(user, "Choose your character species", "Character Species", list(SPECIES_SANGHEILI, SPECIES_UNGGOY, SPECIES_RUUHTIAN, SPECIES_HUMAN))
+					if(new_species)
+						species = new_species
+					if(species != prev_species)
+						on_species_change(species)
+					ShowChoices(user)
 
 				if("xeno_vision_level_pref")
 					var/static/list/vision_level_choices = list(XENO_VISION_LEVEL_NO_NVG, XENO_VISION_LEVEL_MID_NVG, XENO_VISION_LEVEL_FULL_NVG)
@@ -1641,7 +1663,17 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 						grad_style = new_h_gradient_style
 
 				if ("skin_color")
-					var/new_skin_color = tgui_input_list(user, "Choose your character's skin color:", "Character Preferences", GLOB.skin_color_list)
+					var/species_skin_color_list = GLOB.skin_color_list
+					switch(species)
+						if(SPECIES_HUMAN)
+							species_skin_color_list = GLOB.skin_color_list
+						if(SPECIES_SANGHEILI)
+							species_skin_color_list = GLOB.skin_color_sang_list
+						if(SPECIES_RUUHTIAN)
+							species_skin_color_list = GLOB.skin_color_ruuht_list
+						if(SPECIES_UNGGOY)
+							species_skin_color_list = GLOB.skin_color_ung_list
+					var/new_skin_color = tgui_input_list(user, "Choose your character's skin color:", "Character Preferences", species_skin_color_list)
 
 					if (new_skin_color)
 						skin_color = new_skin_color
@@ -1653,7 +1685,17 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 						body_size = new_body_size
 
 				if ("body_type")
-					var/new_body_type = tgui_input_list(user, "Choose your character's body type:", "Character Preferences", GLOB.body_type_list)
+					var/list/list_to_use = GLOB.body_type_list
+					switch(species)
+						if(SPECIES_HUMAN)
+							list_to_use = GLOB.body_type_list
+						if(SPECIES_SANGHEILI)
+							list_to_use = GLOB.body_type_sang_list
+						if(SPECIES_RUUHTIAN)
+							list_to_use = GLOB.body_type_ruuht_list
+						if(SPECIES_UNGGOY)
+							list_to_use = GLOB.body_type_ung_list
+					var/new_body_type = tgui_input_list(user, "Choose your character's body type:", "Character Preferences", list_to_use)
 
 					if (new_body_type)
 						body_type = new_body_type
@@ -1862,6 +1904,7 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 
 					SetChoices(user)
 					return
+
 		else
 			switch(href_list["preference"])
 				if("publicity")
@@ -2459,6 +2502,22 @@ GLOBAL_LIST_INIT(bgstate_options, list(
 /datum/preferences/proc/tutorial_savestring_to_list(savestring)
 	completed_tutorials = splittext(savestring, ";")
 	return completed_tutorials
+
+/datum/preferences/proc/on_species_change(new_species)
+	switch(new_species)
+		if(SPECIES_HUMAN)
+			body_type = pick(GLOB.body_type_list)
+			skin_color = pick(GLOB.skin_color_list)
+		if(SPECIES_SANGHEILI)
+			body_type = "sang"
+			skin_color = pick("sang1", "sang2")
+		if(SPECIES_RUUHTIAN)
+			body_type = "ruuht"
+			skin_color = pick("ruuht1", "ruuht2", "ruuht3")
+			h_style = "Ruffle - Slick"
+		if(SPECIES_UNGGOY)
+			body_type = "ung"
+			skin_color = "unggoy1"
 
 #undef MENU_MARINE
 #undef MENU_XENOMORPH
