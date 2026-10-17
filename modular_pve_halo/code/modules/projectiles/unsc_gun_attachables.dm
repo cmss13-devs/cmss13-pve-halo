@@ -293,6 +293,11 @@
 	attach_icon = "oracle_scope"
 	slot = "rail"
 
+/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
+	. = ..()
+	if(using_scope)
+		source.scatter += scatter_mod
+
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
 	if(G.zoom)
@@ -328,18 +333,15 @@
 	..()
 
 	recoil_mod = RECOIL_AMOUNT_TIER_1
-	scatter_mod = SCATTER_AMOUNT_TIER_10
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	. = ..()
 	recoil_mod = RECOIL_AMOUNT_TIER_1
-	scatter_mod = SCATTER_AMOUNT_TIER_10
 
 /obj/item/attachable/bipod/srs_bipod/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
 	. = ..()
 	if(user && bipod_deployed)
 		recoil_mod = -RECOIL_AMOUNT_TIER_1
-		scatter_mod = -SCATTER_AMOUNT_TIER_10
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
