@@ -293,9 +293,15 @@
 	attach_icon = "oracle_scope"
 	slot = "rail"
 
-/obj/item/attachable/scope/variable_zoom/oracle/New()
+/obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
+	if(G.zoom)
+		scatter_mod = -SCATTER_AMOUNT_TIER_4
+		LAZYADD(traits_to_give, list(BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_iff)))
 
+/obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	. = ..()
+	scatter_mod = SCATTER_AMOUNT_TIER_4
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
