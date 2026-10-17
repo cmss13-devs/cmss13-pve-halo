@@ -91,7 +91,7 @@
 	handful_state = "8g_shell"
 	bonus_projectiles_type = /datum/ammo/bullet/shotgun/spread/unsc
 	accurate_range = 8
-	max_range = 8
+	max_range = 11
 	damage = 70
 	bonus_projectiles_amount = EXTRA_PROJECTILES_TIER_8
 	firing_freq_offset = SOUND_FREQ_LOW
@@ -100,14 +100,14 @@
 /datum/ammo/bullet/shotgun/spread/unsc
 	name = "additional buckshot, USCM special type"
 	accurate_range = 8
-	max_range = 8
+	max_range = 11
 	damage = 70
 	firing_freq_offset = SOUND_FREQ_LOW
 
 /datum/ammo/bullet/shotgun/buckshot/unsc/on_hit_mob(mob/M,obj/projectile/P)
 	if(issangheili(M))
 		return
-	knockback(M, P, 3)
+	knockback(M, P, 4)
 
 /datum/ammo/bullet/shotgun/buckshot/unsc/knockback_effects(mob/living/living_mob, obj/projectile/fired_projectile)
 	if(iscarbonsizexeno(living_mob))
@@ -125,7 +125,7 @@
 /datum/ammo/bullet/shotgun/spread/unsc/on_hit_mob(mob/M,obj/projectile/P)
 	if(issangheili(M))
 		return
-	knockback(M, P, 3)
+	knockback(M, P, 4)
 
 /datum/ammo/bullet/shotgun/spread/unsc/knockback_effects(mob/living/living_mob, obj/projectile/fired_projectile)
 	if(iscarbonsizexeno(living_mob))
