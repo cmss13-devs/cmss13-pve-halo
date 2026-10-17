@@ -1,0 +1,12 @@
+{
+    "map_name": "Strategos Island",
+    "short_name": "Strategos",
+    "map_path": "map_files/strategos_island",
+    "map_file": "strategos_island.dmm",
+    "webmap_url": "Solaris",
+    "weather_holder": "/datum/weather_ss_map_holder/new_varadero",
+    "map_item_type": "/obj/item/map/lazarus_landing_map",
+
+    "camouflage": "jungle"
+
+}
