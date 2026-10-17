@@ -284,6 +284,7 @@
 /obj/item/attachable/srs_barrel/New()
 	..()
 	scatter_mod = SCATTER_AMOUNT_NONE
+	recoil_mod = RECOIL_OFF
 
 /obj/item/attachable/scope/variable_zoom/oracle
 	name = "\improper N-Variant oracle scope"
@@ -339,15 +340,18 @@
 	..()
 
 	recoil_mod = RECOIL_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	. = ..()
 	recoil_mod += RECOIL_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
 	. = ..()
 	if(user && bipod_deployed)
 		recoil_mod -= RECOIL_AMOUNT_TIER_1
+		scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
