@@ -64,7 +64,7 @@
 	accuracy_mult = BASE_ACCURACY_MULT * 3 //you HAVE to be able to hit
 	scatter = SCATTER_AMOUNT_TIER_3
 	damage_mult = BASE_BULLET_DAMAGE_MULT
-	recoil = RECOIL_AMOUNT_TIER_1
+	recoil = RECOIL_AMOUNT_TIER_5
 
 /obj/item/weapon/gun/rifle/sniper/halo/unloaded
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY

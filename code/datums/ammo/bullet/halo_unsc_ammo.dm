@@ -181,7 +181,7 @@
 	penetration = ARMOR_PENETRATION_TIER_8
 	accurate_range = 24
 	accuracy = HIT_ACCURACY_TIER_MAX
-	scatter = SCATTER_AMOUNT_NONE
+	scatter = SCATTER_AMOUNT_TIER_10
 	effective_range_max = 24
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
 	max_range = 48
