@@ -334,13 +334,11 @@
 	icon_state = "srs_bipod"
 	attach_icon = "srs_bipod"
 	flags_attach_features = NO_FLAGS
-	recoil_mod = RECOIL_OFF
-	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/New()
 	..()
 
-	recoil_mod = RECOIL_OFF
+	recoil_mod = RECOIL_AMOUNT_TIER_1
 	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
