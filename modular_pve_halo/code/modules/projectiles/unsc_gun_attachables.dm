@@ -312,7 +312,8 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
-	G.scatter += scatter_scoped_buff
+	while(using_scope = FALSE)
+		G.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
