@@ -2587,6 +2587,7 @@
 #include "code\modules\shuttle\halo\pelican_floors.dm"
 #include "code\modules\shuttle\halo\pelican_props.dm"
 #include "code\modules\shuttle\halo\pelican_walls.dm"
+#include "code\modules\shuttle\shuttles\dark_was_the_night_elevators.dm"
 #include "code\modules\shuttle\shuttles\dropship.dm"
 #include "code\modules\shuttle\shuttles\ert.dm"
 #include "code\modules\shuttle\shuttles\mackay_station_elevators.dm"

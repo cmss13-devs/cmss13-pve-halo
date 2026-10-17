@@ -67,15 +67,8 @@
 	total_positions = 1
 	spawn_positions = 1
 	title = JOB_SQUAD_TEAM_LEADER_FORECON
-	gear_preset = /datum/equipment_preset/uscm/tl/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/sergeant
-	job_options = list(SGT_VARIANT = "SGT", SSGT_VARIANT = "SSGT")
-
-/datum/job/marine/tl/ai/forecon/handle_job_options(option)
-	gear_preset = initial(gear_preset)
-	if(option == SGT_VARIANT)
-		gear_preset = gear_preset_secondary
-	gear_preset_secondary = /datum/equipment_preset/uscm/tl/forecon/sergeant
+	gear_preset = /datum/equipment_preset/unsc/tl/recon
+	gear_preset_secondary = /datum/equipment_preset/unsc/tl/recon/lesser_rank
 
 /datum/job/marine/tl/ai/odst
 	title = JOB_SQUAD_TEAM_LEADER_ODST

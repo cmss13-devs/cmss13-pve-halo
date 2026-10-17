@@ -47,3 +47,8 @@
 	gun_type = /obj/item/weapon/gun/pistol/halo/m6d
 	default_ammo = /datum/ammo/bullet/pistol/magnum
 	max_rounds = 12
+
+/obj/item/ammo_magazine/pistol/halo/m6d/forecon
+	desc = "A rectangular slanted magazine for the M6D, holding 7 rounds of 12.7x40mm SAP-HE ammunition. Chrome finish."
+	gun_type = /obj/item/weapon/gun/pistol/halo/m6d/forecon
+	max_rounds = 7

@@ -100,8 +100,8 @@
 
 /datum/job/marine/smartgunner/ai/forecon
 	title = JOB_SQUAD_SMARTGUN_FORECON
-	total_positions = 1
-	spawn_positions = 1
+	total_positions = 0
+	spawn_positions = 0
 	gear_preset = /datum/equipment_preset/uscm/sg/forecon
 	gear_preset_secondary = /datum/equipment_preset/uscm/sg/forecon/corporal
 	gear_preset_tertiary = /datum/equipment_preset/uscm/sg/forecon/lance_corporal
