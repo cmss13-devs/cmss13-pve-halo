@@ -283,7 +283,7 @@
 
 /obj/item/attachable/srs_barrel/New()
 	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/scope/variable_zoom/oracle
 	name = "\improper N-Variant oracle scope"
@@ -293,11 +293,11 @@
 	attach_icon = "oracle_scope"
 	slot = "rail"
 	var/scatter_scoped_buff = 0
-	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
+	scatter_scoped_buff = SCATTER_AMOUNT_TIER_2
 
 /obj/item/attachable/scope/variable_zoom/oracle/New()
 	..()
-	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
+	scatter_scoped_buff = SCATTER_AMOUNT_TIER_2
 
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
@@ -342,12 +342,12 @@
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	. = ..()
-	recoil_mod = RECOIL_AMOUNT_TIER_1
+	recoil_mod += RECOIL_AMOUNT_TIER_1
 
 /obj/item/attachable/bipod/srs_bipod/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
 	. = ..()
 	if(user && bipod_deployed)
-		recoil_mod = -RECOIL_AMOUNT_TIER_1
+		recoil_mod -= RECOIL_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
