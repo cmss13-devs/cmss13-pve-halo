@@ -294,11 +294,10 @@
 	attach_icon = "oracle_scope"
 	slot = "rail"
 	var/scatter_scoped_buff = 0
-	scatter_scoped_buff = SCATTER_AMOUNT_TIER_2
 
 /obj/item/attachable/scope/variable_zoom/oracle/New()
 	..()
-	scatter_scoped_buff = SCATTER_AMOUNT_TIER_2
+	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
@@ -335,6 +334,8 @@
 	icon_state = "srs_bipod"
 	attach_icon = "srs_bipod"
 	flags_attach_features = NO_FLAGS
+	recoil_mod = RECOIL_OFF
+	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/New()
 	..()
