@@ -296,12 +296,11 @@
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
 	if(G.zoom)
-		scatter_mod = -SCATTER_AMOUNT_TIER_4
-		LAZYADD(traits_to_give, list(BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_iff)))
+		scatter_mod = -SCATTER_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
-	scatter_mod = SCATTER_AMOUNT_TIER_4
+	scatter_mod = SCATTER_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
@@ -329,15 +328,18 @@
 	..()
 
 	recoil_mod = RECOIL_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_TIER_10
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	. = ..()
 	recoil_mod = RECOIL_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_TIER_10
 
 /obj/item/attachable/bipod/srs_bipod/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
 	. = ..()
 	if(user && bipod_deployed)
 		recoil_mod = -RECOIL_AMOUNT_TIER_1
+		scatter_mod = -SCATTER_AMOUNT_TIER_10
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"

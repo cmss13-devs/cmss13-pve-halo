@@ -193,6 +193,7 @@
 	. = ..()
 	LAZYADD(traits_to_give, list(
 		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_penetrating),
+		BULLET_TRAIT_ENTRY(/datum/element/bullet_trait_iff)
 	))
 
 // pistol ammo
