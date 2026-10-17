@@ -129,6 +129,7 @@
 	var/mob_flags = NO_FLAGS // The mob flags to give their mob
 	/// Status traits to give to the mob.
 	var/list/mob_inherent_traits
+	var/datum/human_ai_brain/ai_brain_type = /datum/human_ai_brain
 
 	var/ignores_stripdrag_flag = FALSE
 

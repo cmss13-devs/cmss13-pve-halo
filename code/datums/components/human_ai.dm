@@ -17,7 +17,8 @@
 		SSticker.mode.toggleable_flags ^= MODE_HUMAN_AI_TWEAKS
 		message_admins("Human AI tweaks have been enabled by spawning an AI. This can be disabled with the \"Toggle Human AI Tweaks\" verb.")
 
-	ai_brain = new(ai_human)
+	ai_brain = new ai_human.species.ai_brain_type(ai_human)
+
 	GLOB.ai_humans += ai_human
 	ai_human.mob_flags |= AI_CONTROLLED
 
