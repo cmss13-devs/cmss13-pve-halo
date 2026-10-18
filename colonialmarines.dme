@@ -2825,7 +2825,6 @@
 #include "modular_pve_halo\code\game\objects\items\devices\helmet_visors.dm"
 #include "modular_pve_halo\code\game\objects\items\explosives\grenades\unsc.dm"
 #include "modular_pve_halo\code\game\objects\items\props\helmetgarb.dm"
-#include "modular_pve_halo\code\game\objects\items\reagent_containers\cov_hypospray.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\cov_injectors.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\cov_medical_vials.dm"
 #include "modular_pve_halo\code\game\objects\items\reagent_containers\food\cans.dm"
