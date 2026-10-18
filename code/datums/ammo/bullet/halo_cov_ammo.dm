@@ -32,6 +32,16 @@
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_PLASMA_BLUE
 
+/datum/ammo/energy/halo_plasma/plasma_repeater
+	name = "plasma bolt"
+	icon_state = "plasma_blue"
+	shell_speed = AMMO_SPEED_TIER_3
+	accurate_range = 20
+	max_range = 24
+	damage = 32
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_PLASMA_BLUE
+
 /datum/ammo/energy/halo_plasma/phantom_plasma_turret
 	name = "plasma bolt"
 	icon_state = "plasma_blue"
@@ -104,8 +114,8 @@
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	icon_state = "carbine"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 50
-	penetration = ARMOR_PENETRATION_TIER_3
+	damage = 45
+	penetration = ARMOR_PENETRATION_TIER_2
 	accurate_range = 24
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = 1.5*AMMO_SPEED_TIER_6
@@ -115,3 +125,25 @@
 	shrapnel_chance = null
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_CARBINE_GREEN
+
+/datum/ammo/bullet/rifle/needle_rifle
+	name = "precision needle"
+	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	icon_state = "needle_rifle"
+	headshot_state = HEADSHOT_OVERLAY_MEDIUM
+	damage = 70
+	penetration = ARMOR_PENETRATION_TIER_3
+	accurate_range = 24
+	scatter = SCATTER_AMOUNT_TIER_10
+	shell_speed = 1.5*AMMO_SPEED_TIER_6
+	effective_range_max = 24
+	damage_falloff = DAMAGE_FALLOFF_TIER_7
+	max_range = 32
+	shrapnel_chance = null
+	ammo_glowing = TRUE
+	bullet_light_color = COLOR_NEEDLER_PINK
+
+/datum/ammo/bullet/rifle/needle_rifle/on_hit_mob(mob/M, obj/projectile/P)
+	. = ..()
+	if(ishuman(M))
+		M.AddComponent(/datum/component/supercombine, M, P.dir)
