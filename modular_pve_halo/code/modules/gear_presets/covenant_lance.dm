@@ -30,8 +30,8 @@
 
 /datum/equipment_preset/covenant/lance/lance_specialist
 	name = "Lance Specialist"
-	rank = JOB_COV_LANCE_OBEDIENTARY
-	assignment = JOB_COV_LANCE_OBEDIENTARY
+	rank = JOB_COV_LANCE_SPECIALIST
+	assignment = JOB_COV_LANCE_SPECIALIST
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_COV_3 = JOB_PLAYTIME_TIER_0)
 	faction_group = FACTION_LIST_COVENANT
@@ -69,7 +69,7 @@
 /datum/equipment_preset/covenant/lance/lance_ultra
 	name = "Lance Ultra"
 	rank = JOB_COV_LANCE_ULTRA
-	assignment = JOB_COV_LANCE_OBEDIENTARY
+	assignment = JOB_COV_LANCE_ULTRA
 	flags = EQUIPMENT_PRESET_EXTRA
 	paygrades = list(PAY_SHORT_COV_5 = JOB_PLAYTIME_TIER_0)
 	faction_group = FACTION_LIST_COVENANT
