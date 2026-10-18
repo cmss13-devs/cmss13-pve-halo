@@ -10,7 +10,7 @@
 	maptext_width = 32
 	maptext_x = 18
 	maptext_y = 3
-	w_class = SIZE_MEDIUM
+	w_class = SIZE_LARGE
 	var/maptext_label
 	var/display_maptext = TRUE
 
@@ -74,6 +74,40 @@
 /obj/item/storage/firstaid/unsc/empty
 
 /obj/item/storage/firstaid/unsc/empty/fill_preset_inventory()
+	return
+
+/obj/item/storage/firstaid/unsc/field
+	name = "UNSC health field pack"
+	desc = "First-class military medical aid is typically found in these octogon-shaped health packs. This one is specifically designed for field use, with a corpsman in mind."
+	w_class = SIZE_MEDIUM
+
+/obj/item/storage/firstaid/unsc/field/fill_preset_inventory()
+	new /obj/item/device/healthanalyzer/halo(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/bicaridine/halo(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/burnguard(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/tramadol/halo(src)
+
+/obj/item/storage/firstaid/unsc/field/corpsman/fill_preset_inventory()
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/bruise_pack(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/advanced/ointment(src)
+	new /obj/item/stack/medical/splint(src)
+	new /obj/item/reagent_container/blood/OMinus(src)
+	new /obj/item/reagent_container/blood/OMinus(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
+	new /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam(src)
+
+/obj/item/storage/firstaid/unsc/field/empty/fill_preset_inventory()
 	return
 
 /obj/item/storage/syringe_case/unsc

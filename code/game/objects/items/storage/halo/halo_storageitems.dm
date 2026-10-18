@@ -231,6 +231,23 @@
 	icon_state = "pistolmag_large"
 	storage_slots = 6
 
+/obj/item/storage/pouch/magazine/pistol/unsc/large/m6g/fill_preset_inventory()
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6g(src)
+
+/obj/item/storage/pouch/magazine/pistol/unsc/large/m6c/fill_preset_inventory()
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+	new /obj/item/ammo_magazine/pistol/halo/m6c(src)
+
+
 //======================
 // BACKPACKS
 //======================
@@ -424,6 +441,65 @@
 	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
 	new /obj/item/ammo_magazine/rifle/halo/sniper(src)
 
+//======================
+// GUN CASES
+//======================
+/obj/item/storage/box/guncase/halo
+	name = "\improper gun case"
+	desc = "It has space for firearm(s). Sometimes magazines or other munitions as well."
+	icon = 'icons/halo/obj/items/storage/kits.dmi'
+	icon_state = "personalcase"
+	w_class = SIZE_HUGE
+	max_w_class = SIZE_HUGE //shouldn't be a problem since we can only store the guns and ammo.
+	storage_slots = 1
+	slowdown = 1
+	can_hold = list()//define on a per case basis for the original firearm.
+	foldable = FALSE
+	ground_offset_y = 5
+
+//----------- heavy cases
+/obj/item/storage/box/guncase/halo/heavy
+	name = "heavy gun case"
+	desc = "You shouldn't be seeing this."
+	icon_state = null
+	use_sound = "toolbox"
+	var/move_delay_mult = 2
+
+/obj/item/storage/box/guncase/halo/heavy/pickup(mob/user, silent)
+	. = ..()
+	RegisterSignal(user, COMSIG_HUMAN_POST_MOVE_DELAY, PROC_REF(handle_movedelay))
+
+/obj/item/storage/box/guncase/halo/heavy/proc/handle_movedelay(mob/user, list/movedata)
+	SIGNAL_HANDLER
+	if(locate(/obj/item/storage/box/guncase/heavy) in user.contents)
+		movedata["move_delay"] += move_delay_mult
+
+/obj/item/storage/box/guncase/halo/heavy/dropped(mob/user, silent)
+	. = ..()
+	UnregisterSignal(user, COMSIG_HUMAN_POST_MOVE_DELAY)
+
+//SPNKr Ammo Box
+/obj/item/storage/box/guncase/halo/heavy/spnkrAmmo
+	name = "\improper SPNKr Rocket Hardcase"
+	desc = "An ammo crate containing two SPNKr Rockets in their linked package."
+	icon_state = "spnkrAmmoCase"
+	storage_slots = 1
+	can_hold = list(/obj/item/ammo_magazine/spnkr)
+	max_w_class = SIZE_HUGE
+
+/obj/item/storage/box/guncase/halo/heavy/spnkrAmmo/fill_preset_inventory()
+	new /obj/item/ammo_magazine/spnkr(src)
+
+/obj/item/storage/box/guncase/halo/heavy/spnkrAmmo/update_icon()
+	overlays.Cut()
+	if(opened)
+		overlays += image(icon, "spnkr_lid_open")
+	else
+		overlays += image(icon, "spnkr_lid")
+		return
+	if(locate(/obj/item/ammo_magazine/spnkr) in contents)
+		overlays += image(icon, "+spnkr_ammo")
+
 
 //======================
 // COVIE BELTS
@@ -457,6 +533,8 @@
 		/obj/item/ammo_magazine/needler_crystal,
 		/obj/item/ammo_magazine/carbine,
 	)
+
+// ================ ELITES ================
 
 /obj/item/storage/belt/marine/covenant/sangheili
 	name = "\improper Sangheili ammunition belt"
@@ -508,6 +586,8 @@
 	icon_state = "sang_honorguard"
 	item_state = "sang_honorguard"
 
+// ================ GRUNTS ================
+
 /obj/item/storage/belt/marine/covenant/unggoy
 	name = "\improper Unggoy ammunition belt"
 	icon_state = "unggoy_minor"
@@ -542,9 +622,46 @@
 	item_state = "unggoy_specops"
 
 /obj/item/storage/belt/marine/covenant/unggoy/specops_ultra
+
 	name = "\improper Unggoy Special Operations ammunition belt"
 	icon_state = "unggoy_specultra"
 	item_state = "unggoy_specultra"
+
+// ================ JACKALS ================
+
+/obj/item/storage/belt/marine/covenant/ruuhtian
+	name = "\improper Ruuhtian combat belt"
+	desc = "Common load bearing equipment given to Jackals, similar to models given to Grunts but featuring more complex construction and better 'fitting'. Examples captured in the field commonly show extensive personal modification."
+	icon_state = "ruuhtian_minor"
+	item_state = "belt_minor"
+	item_icons = list(
+		WEAR_WAIST = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/belts.dmi'
+		)
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/minor
+	name = "\improper Ruuhtian Minor combat belt"
+	icon_state = "ruuhtian_minor"
+	item_state = "ruuhtian_minor"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/major
+	name = "\improper Ruuhtian Major combat belt"
+	icon_state = "ruuhtian_major"
+	item_state = "ruuhtian_major"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/ultra
+	name = "\improper Ruuhtian Ultra combat belt"
+	icon_state = "ruuhtian_ultra"
+	item_state = "ruuhtian_ultra"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/specops
+	name = "\improper Ruuhtian Special Operations combat belt"
+	icon_state = "ruuhtian_specops"
+	item_state = "ruuhtian_specops"
+
+/obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra combat belt"
+	icon_state = "ruuhtian_specultra"
+	item_state = "ruuhtian_specultra"
 
 //======================
 // COVIE BACKPACKS

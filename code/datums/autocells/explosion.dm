@@ -244,7 +244,7 @@ as having entered the turf.
 	INVOKE_ASYNC(A, TYPE_PROC_REF(/atom, ex_act), power, null, explosion_cause_data)
 	log_explosion(A, src)
 
-// I'll admit most of the code from here on out is basically just copypasta from DORECz
+// I'll admit most of the code from here on out is basically just copypasta from DOREC
 
 // Spawns a cellular automaton of an explosion
 /proc/cell_explosion(turf/epicenter, power, falloff, falloff_shape = EXPLOSION_FALLOFF_SHAPE_LINEAR, direction, datum/cause_data/explosion_cause_data, explosion_sound = "explosion", explosion_sound_big = "bigboom", explosion_sound_lod = 'sound/effects/explosionfar.ogg')

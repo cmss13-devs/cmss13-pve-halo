@@ -87,6 +87,73 @@
 	armor_bomb = CLOTHING_ARMOR_GIGAHIGHDOUBLEPLUSGOOD
 
 //======================
+// KIGYAR
+//======================
+
+/obj/item/clothing/gloves/marine/ruuhtian
+	name = "\improper Ruuhtian vambrace"
+	desc = "A heavily armoured vambrace designed to provide protection to the weapon hand of a Kig'yar warrior when used in conjunction with a point defence gauntlet. The otherwise lesser protected limb is a common casualty to high intensity combat frontline Kig'yar find themselves in, this vambrace ensures that they cannot abandon their duty through the loss of a limb."
+	icon = 'icons/halo/obj/items/clothing/covenant/gloves.dmi'
+	icon_state = "ruuhtian_vambrace"
+	item_state = "ruuhtian_vambrace"
+
+	item_icons = list(
+		WEAR_HANDS = 'icons/halo/mob/humans/onmob/clothing/ruuhtian/gloves.dmi'
+	)
+
+	allowed_species_list = list(SPECIES_LIST_RUUHTIAN)
+
+	armor_melee = CLOTHING_ARMOR_MEDIUMLOW
+	armor_bullet = CLOTHING_ARMOR_MEDIUMLOW
+	armor_laser = CLOTHING_ARMOR_MEDIUMLOW
+
+/obj/item/clothing/gloves/marine/ruuhtian/minor
+	name = "\improper Ruuhtian Minor defense gauntlet"
+	desc = "A directional energy shield projector given to Jackals within the Covenant, the barrier is a light blue when deployed. Deceptively strong single-direction energy field that effortlessly deflects ballistic weapon fire or shrapnel and provides fair protection against plasma weapons, nearly every Jackal has one."
+	icon_state = "ruuhtian_minor"
+	item_state = "ruuhtian_minor"
+
+/obj/item/clothing/gloves/marine/ruuhtian/major
+	name = "\improper Ruuhtian Major defense gauntlet"
+	desc = "A superior model of directional energy shield given to Major ranked Jackals, glows an orange colour when deployed. These defense gauntlets show an improved capability at absorbing damage compared to more common blue variants, which seems to provide greater courage to he wielder."
+	icon_state = "ruuhtian_major"
+	item_state = "ruuhtian_major"
+
+/obj/item/clothing/gloves/marine/ruuhtian/ultra
+	name = "\improper Ruuhtian Ultra defense gauntlet"
+	desc = "A rarely spotted white coloured energy shield projector used exclusively by Jacakl Ultras. Shows significant defensive qualities compared to more common models, with reports suggesting the ability to dampen or deflect anti-tank weaponry."
+	icon_state = "ruuhtian_ultra"
+	item_state = "ruuhtian_ultra"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+
+/obj/item/clothing/gloves/marine/ruuhtian/specops
+	name = "\improper Ruuhtian Special Operations defense gauntlet"
+	desc = "Used by Jackal special operations troops, showing comparable defensive qualities to those used by more common Ultras. Improvements in recharge rate and the ability to be obscurbed by active-camouflage makes these dangerous pieces of equipment."
+	icon_state = "ruuhtian_specops"
+	item_state = "ruuhtian_specops"
+
+	armor_melee = CLOTHING_ARMOR_HIGH
+	armor_bullet = CLOTHING_ARMOR_HIGH
+	armor_laser = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_bomb = CLOTHING_ARMOR_MEDIUM
+	armor_bio = CLOTHING_ARMOR_MEDIUMHIGH
+	armor_rad = CLOTHING_ARMOR_MEDIUM
+	armor_internaldamage = CLOTHING_ARMOR_MEDIUMHIGH
+
+/obj/item/clothing/gloves/marine/ruuhtian/specops/specops_ultra
+	name = "\improper Ruuhtian Special Operations Ultra defense gauntlet"
+	icon_state = "ruuhtian_specultra"
+	item_state = "ruuhtian_specultra"
+
+
+//======================
 // UNGGOY
 //======================
 

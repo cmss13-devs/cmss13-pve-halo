@@ -412,12 +412,8 @@
 /datum/equipment_preset/proc/add_elite_basics(mob/living/carbon/human/new_human)
 	if(!istype(new_human))
 		return
-	var/obj/item/clothing/under/marine/covenant/sangheili/uniform = new()
-	var/random_uniform = rand(1,2)
-	switch(random_uniform)
-		if(1)
-			uniform.roll_suit_sleeves(new_human)
-	new_human.equip_to_slot_or_del(uniform, WEAR_BODY)
+	var/pick_under = pick_weight(list(/obj/item/clothing/under/marine/covenant/sangheili = 70, /obj/item/clothing/under/marine/covenant/sangheili/partial = 30))
+	new_human.equip_to_slot_or_del(new pick_under, WEAR_BODY)
 	new_human.equip_to_slot_or_del(new /obj/item/device/radio/headset/almayer/marine/covenant(new_human), WEAR_L_EAR)
 
 /datum/equipment_preset/proc/add_elite_basics_fullbody(mob/living/carbon/human/new_human)

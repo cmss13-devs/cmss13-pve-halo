@@ -355,6 +355,8 @@ GLOBAL_LIST_INIT(default_xeno_onmob_icons, list(
 #define SPECIES_SANGHEILI_MYTHIC "Sangheili Mythic"
 #define SPECIES_UNGGOY "Unggoy"
 #define SPECIES_UNGGOY_HEROIC "Unggoy Heroic"
+#define SPECIES_RUUHTIAN "Ruuhtian"
+#define SPECIES_RUUHTIAN_HEROIC "Ruuhtian Heroic"
 
 #define ALL_LIMBS list("head","chest","groin","l_leg","l_foot","r_leg","r_foot","l_arm","l_hand","r_arm","r_hand")
 #define MOVEMENT_LIMBS list("l_leg", "l_foot", "r_leg", "r_foot")

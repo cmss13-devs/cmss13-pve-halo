@@ -82,7 +82,7 @@
 	QDEL_NULL(lockon)
 	. = ..()
 
-/obj/item/weapon/gun/halo_launcher/spnkr/use_unique_action()
+/obj/item/weapon/gun/halo_launcher/spnkr/unique_action()
 	var/mob/living/carbon/user = get_gun_user()
 	var/area/current_area = get_area(user)
 	cancel_sounds = FALSE// In case the user moves while while locking on
@@ -140,6 +140,8 @@
 				to_chat(current_mob, SPAN_HIGHDANGER("You see the [missile_name] arc directly into the aircraft, hitting it with a powerful explosion and sending it crashing down!"))
 				if(current_mob.client)
 					playsound_client(current_mob.client, 'sound/weapons/halo/spnkr_locking/spnkr_aa_crash.ogg', src, 25)
+			if(hit_type == "miss") // redudant but i wasn't sure how best to get the random choice to work
+				to_chat(current_mob, SPAN_HIGHDANGER("You see the [missile_name] miss its target!"))
 
 //
 
