@@ -1017,3 +1017,12 @@
 
 /obj/structure/machinery/door/airlock/voi/prop/autoname
 	autoname = TRUE
+
+/obj/structure/machinery/door/airlock/cov_door
+	name = "\improper covenant door"
+	icon = 'icons/halo/obj/structures/doors/1x1_covdoor.dmi'
+	openspeed = 13
+
+/obj/structure/machinery/door/airlock/cov_door/prop
+	prop_door = TRUE
+	icon_state = "door_locked"

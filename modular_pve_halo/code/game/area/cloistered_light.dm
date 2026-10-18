@@ -6,7 +6,7 @@
 	powernet_name = "cloistered_light"
 	sound_environment = SOUND_ENVIRONMENT_ROOM
 	soundscape_interval = 30
-	ambience_exterior = AMBIENCE_SHIP
+	ambience_exterior = 'modular_pve_halo/sound/ambient/covship_ambience.ogg'
 	ceiling_muffle = FALSE
 
 /area/cloistered_light/hangar
