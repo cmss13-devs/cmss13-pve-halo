@@ -102,14 +102,14 @@
 
 /obj/item/reagent_container/glass/beaker/vial/covenant_vial/inaprovaline
 	name = "(inaprovaline) subcutaneous injector vial"
-	desc = "A magenta-tinted vial, storing a chemical agent that temporarily offsets the effects of organ damage."
+	desc = "A magenta-tinted vial, storing a chemical agent that temporarily offsets the effects of being in a critical state."
 	icon_state = "vial_magenta"
 	chemname = "inaprovaline"
 	maptext_label = "In"
 
-/obj/item/reagent_container/glass/beaker/vial/covenant_vial/iron
-	name = "(iron) subcutaneous injector vial"
-	desc = "A grey-tinted vial, storing a chemical agent that temporarily offsets the effects of organ damage."
+/obj/item/reagent_container/glass/beaker/vial/covenant_vial/blood_regen
+	name = "(blood-regenerator) subcutaneous injector vial"
+	desc = "A grey-tinted vial, storing a chemical agent that regenerates the blood and gives a fair amount of nutrition. Overdoses at 60u."
 	icon_state = "vial_gray"
-	chemname = "iron"
-	maptext_label = "Fe"
+	chemname = "bloodregen"
+	maptext_label = "BR"

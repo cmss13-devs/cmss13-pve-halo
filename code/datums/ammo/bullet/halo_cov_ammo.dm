@@ -131,8 +131,8 @@
 	icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	icon_state = "needle_rifle"
 	headshot_state = HEADSHOT_OVERLAY_MEDIUM
-	damage = 70
-	penetration = ARMOR_PENETRATION_TIER_3
+	damage = 80
+	penetration = ARMOR_PENETRATION_TIER_4
 	accurate_range = 24
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = 1.5*AMMO_SPEED_TIER_6

@@ -7,7 +7,7 @@
 /datum/reagent/nutriment/covenant/reaction_mob(mob/target_mob, method = INGEST, volume, permeable)
 	if(ishuman(target_mob))
 		var/mob/living/carbon/human/target_human = target_mob
-		if(designated_species && !(target_human.species in designated_species))
+		if(designated_species && !(target_human.species.name in designated_species))
 			to_chat(target_human, SPAN_ALERTWARNING("You feel uneasy...that food didn't quite taste right."))
 
 /datum/reagent/nutriment/covenant/sangheili
