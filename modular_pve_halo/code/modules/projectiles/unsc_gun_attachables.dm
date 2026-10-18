@@ -341,35 +341,7 @@
 	wield_delay_mod = WIELD_DELAY_FAST
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
 	recoil_mod = RECOIL_AMOUNT_TIER_1
-
-/obj/item/attachable/bipod/srs_bipod/Attach(obj/item/weapon/gun/gun, mob/user)
-	..()
-
-	if((GUN_FIREMODE_AUTOMATIC in gun.gun_firemode_list) || (gun.flags_gun_features & GUN_SUPPORT_PLATFORM))
-		var/given_action = FALSE
-		if(user && (gun == user.l_hand || gun == user.r_hand))
-			give_action(user, /datum/action/item_action/bipod/toggle_full_auto_switch, src, gun)
-			given_action = TRUE
-		if(!given_action)
-			new /datum/action/item_action/bipod/toggle_full_auto_switch(src, gun)
-
-	RegisterSignal(gun, COMSIG_ITEM_DROPPED, PROC_REF(handle_drop))
-
-/obj/item/attachable/bipod/srs_bipod/Detach(mob/user, obj/item/weapon/gun/detaching_gub, drop_attachment = TRUE)
-	UnregisterSignal(detaching_gub, COMSIG_ITEM_DROPPED)
-
-	//clear out anything related to full auto switching
-	full_auto_switch = FALSE
-	old_firemode = null
-	for(var/item_action in detaching_gub.actions)
-		var/datum/action/item_action/bipod/toggle_full_auto_switch/target_action = item_action
-		if(target_action.target == src)
-			qdel(item_action)
-			break
-
-	if(bipod_deployed)
-		undeploy_bipod(detaching_gub, user)
-	..()
+	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/update_icon()
 	if(bipod_deployed)
@@ -386,21 +358,13 @@
 			if(!istype(item_action, /datum/action/item_action/bipod/toggle_full_auto_switch))
 				item_action.update_button_icon()
 
-/obj/item/attachable/bipod/srs_bipod/proc/handle_drop(obj/item/weapon/gun/gun, mob/living/carbon/human/user)
-	SIGNAL_HANDLER
-
-	UnregisterSignal(user, COMSIG_MOB_MOVE_OR_LOOK)
-
-	if(bipod_deployed)
-		undeploy_bipod(gun, user)
-		user.apply_effect(1, SUPERSLOW)
-		user.apply_effect(2, SLOW)
-
-/obj/item/attachable/bipod/srs_bipod/proc/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
+/obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
+	. = ..()
 	REMOVE_TRAIT(gun, TRAIT_GUN_BIPODDED, "attached_bipod")
 	bipod_deployed = FALSE
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
 	recoil_mod = RECOIL_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_NONE
 	burst_scatter_mod = 0
 	//if we are no longer on full auto, don't bother switching back to the old firemode
 	if(full_auto_switch && gun.gun_firemode == GUN_FIREMODE_AUTOMATIC && gun.gun_firemode != old_firemode)
@@ -441,6 +405,7 @@
 				playsound(user,'sound/items/m56dauto_rotate.ogg', 55, 1)
 				accuracy_mod = HIT_ACCURACY_MULT_TIER_5
 				recoil_mod = -RECOIL_AMOUNT_TIER_1
+				scatter_mod = SCATTER_AMOUNT_NONE
 				burst_scatter_mod = -SCATTER_AMOUNT_TIER_8
 				if(istype(gun, /obj/item/weapon/gun/rifle/sniper/M42A || /obj/item/weapon/gun/rifle/sniper/halo))
 					delay_mod = -FIRE_DELAY_TIER_7
@@ -470,26 +435,6 @@
 	update_icon()
 
 	return 1
-
-/obj/item/attachable/bipod/srs_bipod/proc/handle_mob_move_or_look(mob/living/mover, actually_moving, direction, specific_direction)
-	SIGNAL_HANDLER
-
-	if(!actually_moving && (specific_direction & initial_mob_dir)) // if you're facing north, but you're shooting north-east and end up facing east, you won't lose your bipod
-		return
-	undeploy_bipod(loc, mover)
-	mover.apply_effect(1, SLOW)
-
-/obj/item/attachable/bipod/srs_bipod/check_bipod_support(obj/item/weapon/gun/gun, mob/living/user)
-	var/turf/T = get_turf(user)
-	for(var/obj/O in T)
-		if(O.throwpass && O.density && O.dir == user.dir && O.flags_atom & ON_BORDER)
-			return O
-	var/turf/T2 = get_step(T, user.dir)
-
-	for(var/obj/O2 in T2)
-		if(O2.throwpass && O2.density)
-			return O2
-	return 0
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
