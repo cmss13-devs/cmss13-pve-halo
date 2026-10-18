@@ -174,5 +174,5 @@
 	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/antitox(src)
 	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/peridaxon(src)
 	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/inaprovaline(src)
-	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/iron(src)
-	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/iron(src)
+	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/blood_regen(src)
+	new /obj/item/reagent_container/glass/beaker/vial/covenant_vial/blood_regen(src)

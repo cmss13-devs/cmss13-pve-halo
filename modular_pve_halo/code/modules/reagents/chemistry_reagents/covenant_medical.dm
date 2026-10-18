@@ -28,3 +28,15 @@
 		var/mob/living/carbon/human/human = living_mob
 		for(var/obj/limb/limbs in human.limbs)
 			limbs.remove_all_bleeding(FALSE, TRUE)
+
+/datum/reagent/medical/covenant/blood_regen
+	name = "Blood Regenerator"
+	id = "bloodregen"
+	description = "Synthetically engineered chemical designed to increase the speed at which the body regenerates its own blood. Also helps somewhat with nutrition levels."
+	reagent_state = LIQUID
+	color = COLOR_PURPLE
+	custom_metabolism = AMOUNT_PER_TIME(15, 10 MINUTES)
+	overdose = HIGH_REAGENTS_OVERDOSE
+	overdose_critical = HIGH_REAGENTS_OVERDOSE_CRITICAL
+	chemclass = CHEM_CLASS_UNCOMMON
+	properties = list(PROPERTY_HEMOGENIC = 3, PROPERTY_NUTRITIOUS = 2)

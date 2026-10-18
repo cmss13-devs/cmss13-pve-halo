@@ -8,9 +8,9 @@
 	icon_state = "sealant_mesh_full"
 	wrapped = FALSE
 	alien = TRUE
-	amount = 14
-	max_amount = 14
-	heal_brute = 14
+	amount = 20
+	max_amount = 20
+	heal_brute = 20
 	stack_id = "cov_bandage"
 
 /obj/item/stack/medical/bruise_pack/covenant/update_icon()
@@ -81,9 +81,9 @@
 	icon = 'icons/halo/obj/items/cov_medical.dmi'
 	icon_state = "burncream"
 	alien = TRUE
-	amount = 14
-	max_amount = 14
-	heal_brute = 14
+	amount = 20
+	max_amount = 20
+	heal_burn = 20
 	stack_id = "cov_ointment"
 	desc_lore = "The ancestors of modern thermal applicators were designed by San'Shyuum clerics before the founding of the Covenant, to treat burns earned during maintenance and exploration of the holy vessel. Later, during their war with the Sangheili, these earlier applicators were enhanced. A slow procession of development has led them to their current modern version."
 
@@ -157,8 +157,8 @@
 	desc = "A set of magnetic splints made to adjust to a variety of alien limbs."
 	icon = 'icons/halo/obj/items/cov_medical.dmi'
 	icon_state = "splints"
-	amount = 5
-	max_amount = 5
+	amount = 7
+	max_amount = 7
 	stack_id = "cov_splint"
 	alien = TRUE
 

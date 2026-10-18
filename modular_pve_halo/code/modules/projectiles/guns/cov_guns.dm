@@ -620,11 +620,11 @@
 	var/list/origin = .
 	var/insert_line
 	if(iscovenant(user))
-		origin[1] = "[icon2html(src, user)] This is a Vostu-pattern carbine"
-		insert_line = "One of the few ballistic weapons in use by the Covenant, the Vostu Pattern Carbine fires a 8x60mm caseless radioactive slug, which commonly fragments upon penetrating a target, potentially turning even minor wounds lethal with the toxic material left behind. Used by Sangheili warriors and many a Kig'yar marksmen who seek a cruel and precise weapon."
+		origin[1] = "[icon2html(src, user)] This is a Gadulo-Pattern Needle Rifle"
+		insert_line = "An extremely accurate and destructive Subanese-Crystal loaded marksmen rifle in use by the Covenant's holy legions. Lacks the magnetic auger that would allow for guided fire, relying on the users own merits to ensure its deadly shots hit their target. While not as easily used, it retains the ability to 'super-combine' an enemy to the usual horrifying result."
 	else
-		origin[1] = "[icon2html(src, user)] This is a Type-XX carbine"
-		insert_line = "An esoteric Covenant \"ballistic\" weapon firing bright pink-purple shards of energized crystal, which home in on targets through currently unknown means. A weapon seemingly developed out of pure cruelty, the \"Needler\"'s every shot is a nigh-lethal explosive, rending armour, flesh and bone, littering the body with microscopic shrapnel and significant burns. God help you if someone gets \"Super-Combined\", nothing but pink mist."
+		origin[1] = "[icon2html(src, user)] This is a Type-31 Needle Rifle"
+		insert_line = "A Covenant marksmen-rifle based on the same mechanics used in the Type-33 GML 'Needler'; shaved crystal shards of a larger piece are magnetically accelerated down the barrel and towards a target, though these seem to lack the guidance system of the Type-33. Seen less commonly than the radioactive carbines or beam rifles, the needle rifle serves as a specialist marksmen rifle used by snipers and specialists. Retains the ability to 'super-combine' a target."
 	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/rifle/needle_rifle/set_gun_attachment_offsets()

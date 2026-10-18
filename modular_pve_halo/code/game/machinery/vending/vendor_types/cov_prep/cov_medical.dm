@@ -35,5 +35,5 @@
 		list("Vial (Tramadol)", 20, /obj/item/reagent_container/glass/beaker/vial/covenant_vial/tramadol, VENDOR_ITEM_REGULAR),
 		list("Vial (Peridaxon)", 20, /obj/item/reagent_container/glass/beaker/vial/covenant_vial/peridaxon, VENDOR_ITEM_REGULAR),
 		list("Vial (Inaprovaline)", 20, /obj/item/reagent_container/glass/beaker/vial/covenant_vial/inaprovaline, VENDOR_ITEM_REGULAR),
-		list("Vial (Iron)", 20, /obj/item/reagent_container/glass/beaker/vial/covenant_vial/iron, VENDOR_ITEM_REGULAR),
+		list("Vial (Blood Regen)", 20, /obj/item/reagent_container/glass/beaker/vial/covenant_vial/blood_regen, VENDOR_ITEM_REGULAR),
 	)
