@@ -16,6 +16,25 @@
 	icon_state = "ammo"
 	max_w_class = SIZE_MEDIUM
 	storage_slots = 4
+	can_hold = list(
+		/obj/item/attachable/bayonet,
+		/obj/item/weapon/knife,
+		/obj/item/device/flashlight/flare,
+		/obj/item/ammo_magazine/rifle,
+		/obj/item/ammo_magazine/m60,
+		/obj/item/ammo_magazine/smg,
+		/obj/item/ammo_magazine/pistol,
+		/obj/item/ammo_magazine/revolver,
+		/obj/item/ammo_magazine/sniper,
+		/obj/item/ammo_magazine/handful,
+		/obj/item/explosive/grenade,
+		/obj/item/explosive/mine,
+		/obj/item/reagent_container/food/snacks,
+		/obj/item/ammo_magazine/plasma,
+		/obj/item/ammo_magazine/needler_crystal,
+		/obj/item/ammo_magazine/carbine,
+		/obj/item/ammo_magazine/needle_rifle,
+	)
 	bypass_w_limit = list(
 		/obj/item/ammo_magazine/rifle,
 		/obj/item/ammo_magazine/smg,
@@ -73,6 +92,7 @@
 		/obj/item/reagent_container/blood,
 		/obj/item/tool/surgery/FixOVein,
 		/obj/item/reagent_container/glass/beaker/vial/covenant_vial,
+		/obj/item/tool/covenant_tweezers,
 	)
 
 /obj/item/storage/pouch/medkit/covenant/full/fill_preset_inventory()

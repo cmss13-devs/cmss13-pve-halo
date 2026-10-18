@@ -4,6 +4,7 @@
 	icon = 'icons/halo/obj/items/food/covenant_food.dmi'
 	icon_state = "sangheili_mre"
 	trash = /obj/item/trash/covenant_ration
+	w_class = SIZE_TINY
 	var/designated_species
 	var/opened = FALSE
 

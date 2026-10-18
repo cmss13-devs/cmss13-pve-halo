@@ -55,7 +55,7 @@ GLOBAL_LIST_INIT(cm_vending_unggoy_minor, list(
 /obj/structure/machinery/cm_vending/covenant/unggoy/warrior
 	name = "\improper unggoy warrior equipment locker"
 	desc = "A nanolaminate equipment locker intended for low-rate unggoy warriors."
-	vendor_role = list(JOB_SQUAD_MARINE) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	vendor_role = list(JOB_COV_LANCE_STANDARD) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
 
 /obj/structure/machinery/cm_vending/covenant/unggoy/warrior/get_listed_products(mob/user)
 	return GLOB.cm_vending_unggoy_minor
@@ -65,7 +65,7 @@ GLOBAL_LIST_INIT(cm_vending_unggoy_minor, list(
 /obj/structure/machinery/cm_vending/covenant/unggoy/obedientary
 	name = "\improper unggoy obedientary equipment locker"
 	desc = "A nanolaminate equipment locker intended for mid-rate unggoy warriors."
-	vendor_role = list(JOB_SQUAD_MARINE) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	vendor_role = list(JOB_COV_LANCE_OBEDIENTARY) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
 
 /obj/structure/machinery/cm_vending/covenant/unggoy/obedientary/get_listed_products(mob/user)
 	return GLOB.cm_vending_unggoy_major
@@ -124,7 +124,7 @@ GLOBAL_LIST_INIT(cm_vending_unggoy_major, list(
 /obj/structure/machinery/cm_vending/covenant/unggoy/specialist
 	name = "\improper unggoy specialist equipment locker"
 	desc = "A nanolaminate equipment locker intended for unggoy specialists."
-	vendor_role = list(JOB_SQUAD_MARINE) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	vendor_role = list(JOB_COV_LANCE_SPECIALIST) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
 
 /obj/structure/machinery/cm_vending/covenant/unggoy/specialist/get_listed_products(mob/user)
 	return GLOB.cm_vending_unggoy_specialist
@@ -186,7 +186,7 @@ GLOBAL_LIST_INIT(cm_vending_unggoy_specialist, list(
 /obj/structure/machinery/cm_vending/covenant/unggoy/evocati
 	name = "\improper unggoy evocati equipment locker"
 	desc = "A nanolaminate equipment locker intended for unggoy within the Evocati order."
-	vendor_role = list(JOB_SQUAD_MARINE) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	vendor_role = list(JOB_COV_LANCE_ULTRA) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
 
 /obj/structure/machinery/cm_vending/covenant/unggoy/evocati/get_listed_products(mob/user)
 	return GLOB.cm_vending_unggoy_ultra
