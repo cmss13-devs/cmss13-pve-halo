@@ -118,6 +118,7 @@
 	penetration = ARMOR_PENETRATION_TIER_2
 	accurate_range = 24
 	scatter = SCATTER_AMOUNT_TIER_10
+	accuracy = HIT_ACCURACY_TIER_6
 	shell_speed = 1.5*AMMO_SPEED_TIER_6
 	effective_range_max = 24
 	damage_falloff = DAMAGE_FALLOFF_TIER_7
@@ -134,6 +135,7 @@
 	damage = 80
 	penetration = ARMOR_PENETRATION_TIER_4
 	accurate_range = 24
+	accuracy = HIT_ACCURACY_TIER_8
 	scatter = SCATTER_AMOUNT_TIER_10
 	shell_speed = 1.5*AMMO_SPEED_TIER_6
 	effective_range_max = 24
