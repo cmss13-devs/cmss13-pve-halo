@@ -4,6 +4,9 @@
 
 // ====== MINISTRY RANKS ======
 
+// Other
+#define PAY_SHORT_COV_MIN_D0 "MIN-D0" //Ministry Personnel
+
 // Deacons
 #define PAY_SHORT_COV_MIN_D1 "MIN-D1" // Sub-Deacon
 #define PAY_SHORT_COV_MIN_D2 "MIN-D2" // Deacon
