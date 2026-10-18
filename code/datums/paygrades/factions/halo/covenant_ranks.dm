@@ -11,7 +11,7 @@
 // ====== MINISTRY RANKS ======
 
 /datum/paygrade/covenant/ministry
-	paygrade = PAY_SHORT_COV_MIN_D1
+	paygrade = PAY_SHORT_COV_MIN_D0
 	name = "Ministry Personnel"
 	prefix = "Ministry Personnel"
 	ranking = 0
