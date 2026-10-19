@@ -1,0 +1,261 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"a" = (
+/turf/closed/wall/covenant/lights,
+/area/covenant/no_baselight)
+"c" = (
+/turf/open/floor/covenant/endcap/south,
+/area/covenant/no_baselight)
+"d" = (
+/turf/open/floor/covenant/paneling/rotated,
+/area/covenant/no_baselight)
+"g" = (
+/turf/template_noop,
+/area/template_noop)
+"h" = (
+/turf/open/floor/covenant/smooth_plating/sides/south,
+/area/covenant/no_baselight)
+"i" = (
+/turf/open/floor/covenant/smooth_plating/sides/east,
+/area/covenant/no_baselight)
+"l" = (
+/turf/open/floor/covenant/lane/vertical,
+/area/covenant/no_baselight)
+"m" = (
+/turf/open/floor/covenant/lane/horizontal,
+/area/covenant/no_baselight)
+"o" = (
+/turf/open/floor/covenant/smooth_plating/sides/southwest,
+/area/covenant/no_baselight)
+"p" = (
+/turf/open/floor/covenant/endcap/north,
+/area/covenant/no_baselight)
+"s" = (
+/obj/structure/machinery/recharger/covenant,
+/turf/open/floor/covenant/plating,
+/area/covenant/no_baselight)
+"z" = (
+/turf/open/floor/covenant/paneling,
+/area/covenant/no_baselight)
+"A" = (
+/turf/open/floor/covenant/smooth_plating/sides/southeast,
+/area/covenant/no_baselight)
+"C" = (
+/turf/open/floor/covenant,
+/area/covenant/no_baselight)
+"D" = (
+/turf/open/floor/covenant/smooth_plating/sides/northwest,
+/area/covenant/no_baselight)
+"F" = (
+/turf/open/floor/covenant/smooth_plating/sides/north,
+/area/covenant/no_baselight)
+"N" = (
+/turf/open/floor/covenant/smooth_plating/sides/west,
+/area/covenant/no_baselight)
+"O" = (
+/turf/open/floor/covenant/smooth_plating/sides/northeast,
+/area/covenant/no_baselight)
+"Q" = (
+/turf/template_noop,
+/area/covenant/no_baselight)
+"T" = (
+/turf/open/floor/covenant/endcap/east,
+/area/covenant/no_baselight)
+"U" = (
+/turf/open/floor/covenant/endcap/west,
+/area/covenant/no_baselight)
+
+(1,1,1) = {"
+g
+g
+g
+g
+p
+l
+l
+l
+c
+g
+g
+g
+g
+"}
+(2,1,1) = {"
+g
+g
+a
+a
+C
+C
+C
+C
+C
+a
+a
+Q
+g
+"}
+(3,1,1) = {"
+g
+a
+a
+C
+C
+D
+N
+o
+C
+C
+a
+a
+g
+"}
+(4,1,1) = {"
+g
+a
+C
+D
+N
+i
+i
+i
+N
+o
+C
+a
+g
+"}
+(5,1,1) = {"
+U
+C
+C
+F
+A
+d
+d
+d
+O
+h
+C
+C
+U
+"}
+(6,1,1) = {"
+m
+C
+D
+h
+z
+a
+a
+a
+z
+F
+o
+C
+m
+"}
+(7,1,1) = {"
+m
+C
+F
+h
+z
+s
+a
+s
+z
+F
+h
+C
+m
+"}
+(8,1,1) = {"
+m
+C
+O
+h
+z
+a
+a
+a
+z
+F
+A
+C
+m
+"}
+(9,1,1) = {"
+T
+C
+C
+F
+o
+d
+d
+d
+D
+h
+C
+C
+T
+"}
+(10,1,1) = {"
+g
+a
+C
+O
+i
+N
+N
+N
+i
+A
+C
+a
+g
+"}
+(11,1,1) = {"
+g
+a
+a
+C
+C
+O
+i
+A
+C
+C
+a
+a
+g
+"}
+(12,1,1) = {"
+g
+g
+a
+a
+C
+C
+C
+C
+C
+a
+a
+g
+g
+"}
+(13,1,1) = {"
+g
+g
+g
+g
+p
+l
+l
+l
+c
+g
+g
+g
+g
+"}

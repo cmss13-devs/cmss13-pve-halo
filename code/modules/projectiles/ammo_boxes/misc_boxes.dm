@@ -346,6 +346,14 @@
 	num_of_magazines = 9
 	overlay_content = "_defgre"
 
+/obj/item/ammo_box/magazine/misc/unsc/grenade/thermite
+	name = "\improper UNSC storage crate - (Thermite Grenades x 9)"
+	desc = "A generic storage crate for the UNSC holding thermite grenades."
+	icon_state = "base_thermite"
+	magazine_type = /obj/item/explosive/grenade/incendiary/unsc
+	num_of_magazines = 9
+	overlay_content = "_thermite"
+
 /obj/item/ammo_box/magazine/misc/unsc/grenade/blast/empty
 	empty = TRUE
 

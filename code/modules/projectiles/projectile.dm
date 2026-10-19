@@ -888,8 +888,12 @@
 			return FALSE
 		if(mobility_aura)
 			. -= mobility_aura * 5
+		// HALO PVE EDIT - START - Dodge stuff?
 		if(dodge_pool)
 			. -= dodge_pool * 8
+		if(istype(wear_suit, /obj/item/clothing/suit/marine/unsc/forecon_flakvest))
+			. -= 15
+		// HALO PVE EDIT - END
 		if(HAS_TRAIT(src, TRAIT_IN_OPEN_VEHICLE))
 			. *= 3/13
 		var/mob/living/carbon/human/shooter_human = P.firer

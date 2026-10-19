@@ -69,3 +69,11 @@
   - rscadd: MAIN_AI_SYSTEM references (Titan) now is called Voyager
   - rscadd: cryotech_online proc, so there's a voice on the tannoy when folks wake
       up from cryo instead of titan saying hello
+2026-06-28:
+  Yorkoh:
+  - rscadd: subtype of medkits, field medkits. Regular medkits increase in size, field
+      medkits remain medium size. Fixed all relevant vendors/item packages related
+      to this
+2026-06-30:
+  banana-battery:
+  - mapadd: Covenant structure templates added to the Admin template loader.
