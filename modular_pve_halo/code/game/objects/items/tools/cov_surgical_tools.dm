@@ -4,6 +4,7 @@
 	icon = 'icons/halo/obj/items/cov_medical.dmi'
 	icon_state = "tweezers"
 	attack_verb = list("pinched", "tweezed")
+	w_class = SIZE_SMALL
 	flags_item = CAN_DIG_SHRAPNEL
 
 /obj/item/tool/covenant_tweezers/advanced

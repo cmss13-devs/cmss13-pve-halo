@@ -3,11 +3,13 @@
 	desc = "A general-purpose shellcase made of nanolaminate. Intended to fit a variety of items."
 	icon = 'icons/halo/obj/items/clothing/covenant/pouches.dmi'
 	icon_state = "general"
+	max_storage_space = 4
 
 /obj/item/storage/pouch/general/covenant/large
 	name = "large covenant storage shellcase"
 	desc = "A general-purpose shellcase made of nanolaminate. Intended to fit a variety of items. This one is larger than most standard models."
 	icon_state = "generallarge"
+	max_storage_space = 6
 
 /obj/item/storage/pouch/magazine/covenant
 	name = "ammo storage shellcases"

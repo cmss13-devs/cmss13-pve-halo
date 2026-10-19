@@ -6,7 +6,7 @@
 /obj/structure/machinery/cm_vending/covenant/sangheili/minor
 	name = "\improper sangheili minor equipment locker"
 	desc = "A nanolaminate equipment locker intended for sangheili minors."
-	vendor_role = list(JOB_SQUAD_MARINE) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	vendor_role = list(JOB_COV_LANCE_LEADER) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
 
 /obj/structure/machinery/cm_vending/covenant/sangheili/minor/get_listed_products(mob/user)
 	return GLOB.cm_vending_sangheili_minor
@@ -64,7 +64,7 @@ GLOBAL_LIST_INIT(cm_vending_sangheili_minor, list(
 /obj/structure/machinery/cm_vending/covenant/sangheili/major
 	name = "\improper sangheili major equipment locker"
 	desc = "A nanolaminate equipment locker intended for sangheili majors."
-	vendor_role = list(JOB_SQUAD_MARINE) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	vendor_role = list(JOB_COV_LANCE_LEADER) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
 
 /obj/structure/machinery/cm_vending/covenant/sangheili/major/get_listed_products(mob/user)
 	return GLOB.cm_vending_sangheili_major

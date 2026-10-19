@@ -69,7 +69,7 @@
 	name = "(tricordrazine) subcutaneous injector vial"
 	desc = "An orange-tinted vial, storing a chemical agent that heals general damage."
 	icon_state = "vial_orange"
-	chemname = "kelotane"
+	chemname = "tricordrazine"
 	maptext_label = "Tc"
 
 /obj/item/reagent_container/glass/beaker/vial/covenant_vial/dexalin
@@ -83,7 +83,7 @@
 	name = "(dylovene) subcutaneous injector vial"
 	desc = "A green-tinted vial, storing a chemical agent that treats toxin-based damage."
 	icon_state = "vial_lightgreen"
-	chemname = "antitox"
+	chemname = "anti_tox"
 	maptext_label = "Dy"
 
 /obj/item/reagent_container/glass/beaker/vial/covenant_vial/tramadol

@@ -71,7 +71,7 @@
 	rank = JOB_COV_LANCE_ULTRA
 	assignment = JOB_COV_LANCE_ULTRA
 	flags = EQUIPMENT_PRESET_EXTRA
-	paygrades = list(PAY_SHORT_COV_5 = JOB_PLAYTIME_TIER_0)
+	paygrades = list(PAY_SHORT_COV_U1 = JOB_PLAYTIME_TIER_0)
 	faction_group = FACTION_LIST_COVENANT
 	skills = /datum/skills/covenant/obedientary
 
