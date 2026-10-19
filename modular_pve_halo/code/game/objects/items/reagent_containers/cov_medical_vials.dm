@@ -83,7 +83,7 @@
 	name = "(dylovene) subcutaneous injector vial"
 	desc = "A green-tinted vial, storing a chemical agent that treats toxin-based damage."
 	icon_state = "vial_lightgreen"
-	chemname = "anti_tox"
+	chemname = "anti_toxin"
 	maptext_label = "Dy"
 
 /obj/item/reagent_container/glass/beaker/vial/covenant_vial/tramadol

@@ -5,6 +5,7 @@
 	icon_state = "plasma_pistol"
 	flags_gun_features = GUN_CAN_POINTBLANK
 	works_in_recharger = FALSE
+	indestructible = TRUE
 	empty_click = null
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_pistol.dmi'
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
@@ -439,6 +440,7 @@
 	muzzleflash_iconstate = "muzzle_flash_pink"
 	muzzle_flash_color = LIGHT_COLOR_PINK
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/needler.dmi'
+	indestructible = TRUE
 	start_automatic = TRUE
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
@@ -523,6 +525,7 @@
 	empty_click = 'sound/weapons/halo/gun_carbine_dryfire.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AUTO_EJECTOR|GUN_AMMO_COUNTER
 	current_mag = /obj/item/ammo_magazine/carbine
+	indestructible = TRUE
 	map_specific_decoration = FALSE
 	attachable_allowed = list(/obj/item/attachable/carbine_muzzle, /obj/item/attachable/scope/mini/covenant)
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
@@ -598,6 +601,7 @@
 	empty_click = 'sound/weapons/halo/needle_rifle/gun_needler_dryfire.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AUTO_EJECTOR|GUN_AMMO_COUNTER
 	current_mag = /obj/item/ammo_magazine/needle_rifle
+	indestructible = TRUE
 	map_specific_decoration = FALSE
 	attachable_allowed = list(/obj/item/attachable/needle_rifle_muzzle, /obj/item/attachable/scope/variable_zoom/covenant, /obj/item/attachable/scope/variable_zoom/covenant)
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
