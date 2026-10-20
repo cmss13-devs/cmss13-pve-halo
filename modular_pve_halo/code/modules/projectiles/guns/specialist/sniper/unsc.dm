@@ -100,7 +100,7 @@
 		return
 	. = ..()
 
-/obj/item/weapon/gun/rifle/sniper/stealth/halo
+/obj/item/weapon/gun/rifle/sniper/halo/stealth
 	name = "SRS99-AM sniper rifle"
 	desc = "The SRS99-AM sniper rifle is the standard issue sniper rifle across all branches of the UNSC due to it's extreme capabilities. It has a 4 round detachable box magazine of 14.5x114mm APFSDS ammunition. This particular variant makes use of a barrel integrated flash hider/sound suppressor kit, alongside an enhanced Oracle optic suite."
 	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/scope/variable_zoom/oracle/night_vision, /obj/item/attachable/srs_barrel, /obj/item/attachable/srs_barrel/suppressed, /obj/item/attachable/bipod/srs_bipod)
