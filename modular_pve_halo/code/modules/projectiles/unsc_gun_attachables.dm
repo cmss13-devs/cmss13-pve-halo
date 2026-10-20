@@ -286,6 +286,15 @@
 	scatter_mod = SCATTER_AMOUNT_NONE
 	recoil_mod = RECOIL_OFF
 
+/obj/item/attachable/srs_barrel/suppressed
+	name = "\improper SRS99-AM suppressed sniper rifle barrel"
+	desc = "The detachable barrel of an SRS99-AM sniper rifle featuring an integrated flash hider/sound suppressor kit. Essential to the operation of the rifle. It's detachable nature allows it to be swapped out with other barrels featuring alternative integrated attachments. "
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "srs_barrel_suppressed"
+	attach_icon = "srs_barrel_suppressed"
+	var/new_fire_sound = "gun_silenced"
+	gun_traits = list(TRAIT_GUN_SILENCED)
+
 /obj/item/attachable/scope/variable_zoom/oracle
 	name = "\improper N-Variant oracle scope"
 	desc= "One of the most common sniper optic systems utilized by the UNSC. Able to switch between different zoom modes. Some models even provide night vision optics."
@@ -312,6 +321,49 @@
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
 	G.scatter += scatter_scoped_buff
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision
+	name = "\improper Oracle-N/2 'VERGIL'"
+	desc= "Modified variant of Oracle-N variant scopes found in universal use by UNSC sniper rifles. This variant employs an updated VISR derived software update and new sensor suite, allowing for enhanced night fighting capability and improved thermal visual quality."
+	var/lighting_alpha = 140
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
+	..()
+	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
+
+	user.add_client_color_matrix("nvg_visor", 90, color_matrix_multiply(color_matrix_saturation(0.02), color_matrix_from_string("#c4dbdf")))
+	user.overlay_fullscreen("nvg_visor", /atom/movable/screen/fullscreen/flash/noise/nvg)
+	//user.overlay_fullscreen("nvg_visor_blur", /atom/movable/screen/fullscreen/brute/nvg, 1)
+	user.update_sight()
+	START_PROCESSING(SSobj, src)
+	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW, PROC_REF(change_view))
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	..()
+	user.remove_client_color_matrix("nvg_visor", 1 SECONDS)
+	user.clear_fullscreen("nvg_visor", 0.5 SECONDS)
+	user.clear_fullscreen("nvg_visor_blur", 0.5 SECONDS)
+
+	UnregisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT)
+	UnregisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
+
+	user.update_sight()
+	STOP_PROCESSING(SSobj, src)
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/proc/on_update_sight(mob/user)
+	SIGNAL_HANDLER
+
+	if(lighting_alpha < 255)
+		user.see_in_dark = 12
+	user.lighting_alpha = lighting_alpha
+	user.sync_lighting_plane_alpha()
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/proc/change_view(mob/user, new_size)
+	SIGNAL_HANDLER
+	if(new_size > 7) // cannot use binos with NVO
+		var/datum/action/item_action/toggle_zoom_level/cycle_action = locate() in attachment_action_type
+		if(cycle_action)
+			cycle_action.action_activate()
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"

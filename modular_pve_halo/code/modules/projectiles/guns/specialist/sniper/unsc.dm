@@ -30,7 +30,7 @@
 	wield_delay = WIELD_DELAY_HORRIBLE
 	flags_equip_slot = SLOT_BLOCK_SUIT_STORE|SLOT_BACK
 	zoomdevicename = "scope"
-	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
+	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/scope/variable_zoom/oracle/night_vision, /obj/item/attachable/srs_barrel, /obj/item/attachable/srs_barrel/suppressed, /obj/item/attachable/bipod/srs_bipod)
 	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/srs_barrel, /obj/item/attachable/bipod/srs_bipod)
 	flags_gun_features = GUN_WIELDED_FIRING_ONLY|GUN_AMMO_COUNTER
 	map_specific_decoration = FALSE
@@ -99,3 +99,9 @@
 		to_chat(user, SPAN_WARNING("You can't fire the [src] without a barrel!"))
 		return
 	. = ..()
+
+/obj/item/weapon/gun/rifle/sniper/stealth/halo
+	name = "SRS99-AM sniper rifle"
+	desc = "The SRS99-AM sniper rifle is the standard issue sniper rifle across all branches of the UNSC due to it's extreme capabilities. It has a 4 round detachable box magazine of 14.5x114mm APFSDS ammunition. This particular variant makes use of a barrel integrated flash hider/sound suppressor kit, alongside an enhanced Oracle optic suite."
+	attachable_allowed = list(/obj/item/attachable/srs_assembly, /obj/item/attachable/scope/variable_zoom/oracle, /obj/item/attachable/scope/variable_zoom/oracle/night_vision, /obj/item/attachable/srs_barrel, /obj/item/attachable/srs_barrel/suppressed, /obj/item/attachable/bipod/srs_bipod)
+	starting_attachment_types = list(/obj/item/attachable/scope/variable_zoom/oracle/night_vision, /obj/item/attachable/srs_barrel/suppressed, /obj/item/attachable/bipod/srs_bipod)
