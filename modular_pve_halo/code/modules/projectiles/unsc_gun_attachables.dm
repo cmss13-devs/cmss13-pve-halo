@@ -310,10 +310,8 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
-
 	if(using_scope)
 		source.scatter += scatter_scoped_buff
-
 
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
@@ -414,7 +412,7 @@
 	if(full_auto_switch && gun.gun_firemode == GUN_FIREMODE_AUTOMATIC && gun.gun_firemode != old_firemode)
 		gun.do_toggle_firemode(user, null, old_firemode)
 	if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
-		delay_mod = FIRE_DELAY_TIER_12
+		delay_mod = FIRE_DELAY_TIER_13
 
 	gun.recalculate_attachment_bonuses()
 	gun.stop_fire()
@@ -454,7 +452,7 @@
 				scatter_mod = -SCATTER_AMOUNT_NONE
 				burst_scatter_mod = -SCATTER_AMOUNT_TIER_8
 				if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
-					delay_mod = -FIRE_DELAY_TIER_7
+					delay_mod = -FIRE_DELAY_TIER_6
 				else if(istype(gun,/obj/item/weapon/gun/rifle/lmg))
 					delay_mod = 0
 					fa_scatter_peak_mod = FULL_AUTO_SCATTER_PEAK_TIER_3
