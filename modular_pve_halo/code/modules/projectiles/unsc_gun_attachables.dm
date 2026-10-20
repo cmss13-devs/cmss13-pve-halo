@@ -307,6 +307,11 @@
 	..()
 	scatter_mod = SCATTER_AMOUNT_TIER_1
 
+/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
+	. = ..()
+	if(using_scope)
+		scatter_mod = -SCATTER_AMOUNT_TIER_1
+
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
 	if(G.zoom)
