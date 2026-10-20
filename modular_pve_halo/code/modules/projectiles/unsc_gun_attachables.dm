@@ -328,7 +328,7 @@
 	var/lighting_alpha = 140
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
-	..()
+	. = ..()
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
 
 	user.add_client_color_matrix("nvg_visor", 90, color_matrix_multiply(color_matrix_saturation(0.02), color_matrix_from_string("#c4dbdf")))
@@ -339,7 +339,7 @@
 	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW, PROC_REF(change_view))
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
-	..()
+	. = ..()
 	user.remove_client_color_matrix("nvg_visor", 1 SECONDS)
 	user.clear_fullscreen("nvg_visor", 0.5 SECONDS)
 	user.clear_fullscreen("nvg_visor_blur", 0.5 SECONDS)
