@@ -327,6 +327,11 @@
 	desc= "Modified variant of Oracle-N variant scopes found in universal use by UNSC sniper rifles. This variant employs an updated VISR derived software update and new sensor suite, allowing for enhanced night fighting capability and improved thermal visual quality."
 	var/lighting_alpha = 140
 
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/handle_attachment_recalc(obj/item/weapon/gun/source)
+	. = ..()
+	if(using_scope)
+		source.scatter += scatter_scoped_buff
+
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
