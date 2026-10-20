@@ -408,6 +408,7 @@
 	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/proc/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
+	. = ..()
 	if(turn_off)
 		if(bipod_deployed)
 			undeploy_bipod(gun, user)
