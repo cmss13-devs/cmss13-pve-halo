@@ -395,13 +395,6 @@
 	attach_icon = "srs_bipod"
 	flags_attach_features = NO_FLAGS
 
-/obj/item/attachable/bipod/srs_bipod/New()
-	..()
-
-	wield_delay_mod = WIELD_DELAY_FAST
-	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
-	scatter_mod = SCATTER_AMOUNT_NONE
-
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	REMOVE_TRAIT(gun, TRAIT_GUN_BIPODDED, "attached_bipod")
 	bipod_deployed = FALSE
