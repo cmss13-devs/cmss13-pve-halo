@@ -311,9 +311,6 @@
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
 
-	if(!source.zoom)
-		return
-
 	if(using_scope)
 		source.scatter += scatter_scoped_buff
 
@@ -322,34 +319,13 @@
 	. = ..()
 	if(G.zoom)
 		G.scatter -= scatter_scoped_buff
-		using_scope = TRUE
-		RegisterSignal(user, COMSIG_LIVING_ZOOM_OUT, PROC_REF(remove_scoped_buff))
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
-	UnregisterSignal(user, COMSIG_LIVING_ZOOM_OUT)
-	using_scope = FALSE
 	G.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/activate_attachment(obj/item/weapon/gun/G, mob/living/carbon/user, turn_off)
-	if(turn_off || G.zoom)
-		if(G.zoom)
-			G.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
-		return TRUE
-
-	if(!G.zoom)
-		if(!(G.flags_item & WIELDED))
-			if(user)
-				to_chat(user, SPAN_WARNING("You must hold [G] with two hands to use [src]."))
-			return FALSE
-		if(MODE_HAS_FLAG(MODE_FACTION_CLASH) && !ignore_clash_fog)
-			if(user)
-				to_chat(user, SPAN_DANGER("You peer into [src], but it seems to have fogged up. You can't use this!"))
-			return FALSE
-		else
-			G.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
-			apply_scoped_buff(G,user)
-	return TRUE
+	. = ..()
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision
 	name = "\improper Oracle-N/2 'VERGIL'"
@@ -381,6 +357,9 @@
 
 	user.update_sight()
 	STOP_PROCESSING(SSobj, src)
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/activate_attachment(obj/item/weapon/gun/G, mob/living/carbon/user, turn_off)
+	. = ..()
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/proc/on_update_sight(mob/user)
 	SIGNAL_HANDLER
@@ -424,24 +403,13 @@
 
 	wield_delay_mod = WIELD_DELAY_FAST
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
-	recoil_mod = RECOIL_AMOUNT_TIER_1
 	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/update_icon()
 	. = ..()
-	if(bipod_deployed)
-		icon_state = "[icon_state]-on"
-		attach_icon = "[attach_icon]-on"
-	else
-		icon_state = initial(icon_state)
-		attach_icon = initial(attach_icon)
 
-	if(istype(loc, /obj/item/weapon/gun))
-		var/obj/item/weapon/gun/gun = loc
-		gun.update_attachable(slot)
-		for(var/datum/action/item_action as anything in gun.actions)
-			if(!istype(item_action, /datum/action/item_action/bipod/toggle_full_auto_switch))
-				item_action.update_button_icon()
+/obj/item/attachable/bipod/srs_buipod/handle_drop(obj/item/weapon/gun/gun, mob/living/carbon/human/user)
+		. = ..()
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	. = ..()
@@ -450,7 +418,6 @@
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
 	recoil_mod = RECOIL_AMOUNT_TIER_1
 	scatter_mod = SCATTER_AMOUNT_NONE
-	burst_scatter_mod = 0
 	if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
 		delay_mod = FIRE_DELAY_TIER_7
 	//if we are no longer on full auto, don't bother switching back to the old firemode
@@ -492,8 +459,7 @@
 				playsound(user,'sound/items/m56dauto_rotate.ogg', 55, 1)
 				accuracy_mod = HIT_ACCURACY_MULT_TIER_5
 				recoil_mod = -RECOIL_AMOUNT_TIER_1
-				scatter_mod = SCATTER_AMOUNT_NONE
-				burst_scatter_mod = -SCATTER_AMOUNT_TIER_8
+				scatter_mod = -SCATTER_AMOUNT_NONE
 				if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
 					delay_mod = -FIRE_DELAY_TIER_7
 				else if(istype(gun,/obj/item/weapon/gun/rifle/lmg))
