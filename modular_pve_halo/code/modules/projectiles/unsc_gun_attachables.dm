@@ -308,19 +308,47 @@
 	..()
 	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
 
-/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
-	. = ..()
+/obj/item/attachable/scope/variable_zoom/oracle/proc/handle_attachment_recalc(obj/item/weapon/gun/source)
+	SIGNAL_HANDLER
+
+	if(!source.zoom)
+		return
+
 	if(using_scope)
 		source.scatter += scatter_scoped_buff
 
-/obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
-	. = ..()
+
+/obj/item/attachable/scope/variable_zoom/oracle/proc/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	if(G.zoom)
 		G.scatter -= scatter_scoped_buff
+		using_scope = TRUE
+		RegisterSignal(user, COMSIG_LIVING_ZOOM_OUT, PROC_REF(remove_scoped_buff))
 
-/obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
-	. = ..()
+/obj/item/attachable/scope/variable_zoom/oracle/proc/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	SIGNAL_HANDLER
+	UnregisterSignal(user, COMSIG_LIVING_ZOOM_OUT)
+	using_scope = FALSE
 	G.scatter += scatter_scoped_buff
+
+/obj/item/attachable/scope/variable_zoom/oracle/activate_attachment(obj/item/weapon/gun/G, mob/living/carbon/user, turn_off)
+	if(turn_off || G.zoom)
+		if(G.zoom)
+			G.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
+		return TRUE
+
+	if(!G.zoom)
+		if(!(G.flags_item & WIELDED))
+			if(user)
+				to_chat(user, SPAN_WARNING("You must hold [G] with two hands to use [src]."))
+			return FALSE
+		if(MODE_HAS_FLAG(MODE_FACTION_CLASH) && !ignore_clash_fog)
+			if(user)
+				to_chat(user, SPAN_DANGER("You peer into [src], but it seems to have fogged up. You can't use this!"))
+			return FALSE
+		else
+			G.zoom(user, zoom_offset, zoom_viewsize, allows_movement)
+			apply_scoped_buff(G,user)
+	return TRUE
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision
 	name = "\improper Oracle-N/2 'VERGIL'"
@@ -329,8 +357,6 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
-	if(using_scope)
-		source.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
@@ -424,6 +450,8 @@
 	recoil_mod = RECOIL_AMOUNT_TIER_1
 	scatter_mod = SCATTER_AMOUNT_NONE
 	burst_scatter_mod = 0
+	if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
+		delay_mod = FIRE_DELAY_TIER_7
 	//if we are no longer on full auto, don't bother switching back to the old firemode
 	if(full_auto_switch && gun.gun_firemode == GUN_FIREMODE_AUTOMATIC && gun.gun_firemode != old_firemode)
 		gun.do_toggle_firemode(user, null, old_firemode)
