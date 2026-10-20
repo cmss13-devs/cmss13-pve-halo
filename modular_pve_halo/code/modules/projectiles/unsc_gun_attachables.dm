@@ -319,8 +319,8 @@
 		G.scatter -= scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	. = ..()
 	G.scatter += scatter_scoped_buff
-	..()
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision
 	name = "\improper Oracle-N/2 'VERGIL'"
@@ -401,6 +401,7 @@
 	scatter_mod = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/bipod/srs_bipod/update_icon()
+	. = ..()
 	if(bipod_deployed)
 		icon_state = "[icon_state]-on"
 		attach_icon = "[attach_icon]-on"
@@ -464,7 +465,7 @@
 				recoil_mod = -RECOIL_AMOUNT_TIER_1
 				scatter_mod = SCATTER_AMOUNT_NONE
 				burst_scatter_mod = -SCATTER_AMOUNT_TIER_8
-				if(istype(gun, /obj/item/weapon/gun/rifle/sniper/M42A || /obj/item/weapon/gun/rifle/sniper/halo))
+				if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
 					delay_mod = -FIRE_DELAY_TIER_7
 				else if(istype(gun,/obj/item/weapon/gun/rifle/lmg))
 					delay_mod = 0
