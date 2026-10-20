@@ -319,8 +319,8 @@
 		G.scatter -= scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
-	. = ..()
 	G.scatter += scatter_scoped_buff
+	..()
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision
 	name = "\improper Oracle-N/2 'VERGIL'"
