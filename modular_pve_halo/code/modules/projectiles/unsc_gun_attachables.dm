@@ -308,8 +308,8 @@
 	..()
 	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
 
-/obj/item/attachable/scope/variable_zoom/oracle/proc/handle_attachment_recalc(obj/item/weapon/gun/source)
-	SIGNAL_HANDLER
+/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
+	. = ..()
 
 	if(!source.zoom)
 		return
@@ -318,14 +318,15 @@
 		source.scatter += scatter_scoped_buff
 
 
-/obj/item/attachable/scope/variable_zoom/oracle/proc/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
+/obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
+	. = ..()
 	if(G.zoom)
 		G.scatter -= scatter_scoped_buff
 		using_scope = TRUE
 		RegisterSignal(user, COMSIG_LIVING_ZOOM_OUT, PROC_REF(remove_scoped_buff))
 
-/obj/item/attachable/scope/variable_zoom/oracle/proc/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
-	SIGNAL_HANDLER
+/obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	. = ..()
 	UnregisterSignal(user, COMSIG_LIVING_ZOOM_OUT)
 	using_scope = FALSE
 	G.scatter += scatter_scoped_buff
