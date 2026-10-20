@@ -401,18 +401,20 @@
 	wield_delay_mod = WIELD_DELAY_FAST
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
 	scatter_mod = SCATTER_AMOUNT_NONE
-	recoil_mod = RECOIL_AMOUNT_TIER_1
+	recoil_mod = RECOIL_OFF
 
 /obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
 	REMOVE_TRAIT(gun, TRAIT_GUN_BIPODDED, "attached_bipod")
 	bipod_deployed = FALSE
 	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
 	scatter_mod = SCATTER_AMOUNT_NONE
-	recoil_mod = RECOIL_AMOUNT_TIER_1
+	recoil_mod = RECOIL_OFF
 	burst_scatter_mod = 0
 	//if we are no longer on full auto, don't bother switching back to the old firemode
 	if(full_auto_switch && gun.gun_firemode == GUN_FIREMODE_AUTOMATIC && gun.gun_firemode != old_firemode)
 		gun.do_toggle_firemode(user, null, old_firemode)
+	if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
+		delay_mod = FIRE_DELAY_TIER_12
 
 	gun.recalculate_attachment_bonuses()
 	gun.stop_fire()
