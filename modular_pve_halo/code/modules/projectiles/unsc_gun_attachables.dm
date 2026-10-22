@@ -306,24 +306,22 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/New()
 	..()
-	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
+	scatter_scoped_buff = SCATTER_AMOUNT_NONE
 
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
-	if(!source.zoom)
-		return
 
 	if(using_scope)
-		source.scatter -= scatter_scoped_buff
+		source.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
 	if(G.zoom)
-		G.scatter -= scatter_scoped_buff
+		G.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
-	G.scatter += scatter_scoped_buff
+	G.scatter -= scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision
 	name = "\improper Oracle-N/2 'VERGIL'"
