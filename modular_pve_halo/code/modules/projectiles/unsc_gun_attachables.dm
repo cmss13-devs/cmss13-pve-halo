@@ -310,8 +310,8 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
-	if(using_scope = FALSE)
-		source.scatter += scatter_scoped_buff
+	if(using_scope)
+		source.scatter
 
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
