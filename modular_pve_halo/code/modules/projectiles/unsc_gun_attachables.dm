@@ -339,7 +339,7 @@
 	//user.overlay_fullscreen("nvg_visor_blur", /atom/movable/screen/fullscreen/brute/nvg, 1)
 	user.update_sight()
 	START_PROCESSING(SSobj, src)
-	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW, PROC_REF(change_view))
+	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
@@ -363,13 +363,6 @@
 		user.see_in_dark = 12
 	user.lighting_alpha = lighting_alpha
 	user.sync_lighting_plane_alpha()
-
-/obj/item/attachable/scope/variable_zoom/oracle/night_vision/proc/change_view(mob/user, new_size)
-	SIGNAL_HANDLER
-	if(new_size > 7) // cannot use binos with NVO
-		var/datum/action/item_action/toggle_zoom_level/cycle_action = locate() in attachment_action_type
-		if(cycle_action)
-			cycle_action.action_activate()
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
