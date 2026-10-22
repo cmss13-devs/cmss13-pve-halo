@@ -310,6 +310,9 @@
 
 /obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
+	if(!source.zoom)
+		return
+
 	if(using_scope)
 		source.scatter -= scatter_scoped_buff
 
