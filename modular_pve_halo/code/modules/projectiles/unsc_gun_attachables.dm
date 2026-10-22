@@ -302,7 +302,15 @@
 	icon_state = "oracle_scope"
 	attach_icon = "oracle_scope"
 	slot = "rail"
+
+/obj/item/attachable/scope/variable_zoom/oracle/New()
+	..()
 	scatter_mod = SCATTER_AMOUNT_NONE
+
+/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
+	. = ..()
+	if(using_scope)
+		scatter_mod = -SCATTER_AMOUNT_TIER_1
 
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
