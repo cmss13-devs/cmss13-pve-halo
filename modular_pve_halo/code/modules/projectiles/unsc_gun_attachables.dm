@@ -308,9 +308,10 @@
 	..()
 	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
 
-/obj/item/attachable/scope/variable_zoom/oracle/Attach(obj/item/weapon/gun/gun)
+/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
 	. = ..()
-	RegisterSignal(gun, COMSIG_GUN_RECALCULATE_ATTACHMENT_BONUSES, PROC_REF(handle_attachment_recalc))
+	if(using_scope = FALSE)
+		source.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
