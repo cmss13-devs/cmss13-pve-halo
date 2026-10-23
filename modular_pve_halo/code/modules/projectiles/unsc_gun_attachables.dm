@@ -283,7 +283,17 @@
 
 /obj/item/attachable/srs_barrel/New()
 	..()
-	scatter_mod = -SCATTER_AMOUNT_TIER_1
+	scatter_mod = SCATTER_AMOUNT_NONE
+	recoil_mod = RECOIL_OFF
+
+/obj/item/attachable/srs_barrel/suppressed
+	name = "\improper SRS99-AM suppressed sniper rifle barrel"
+	desc = "The detachable barrel of an SRS99-AM sniper rifle featuring an integrated flash hider/sound suppressor kit. Essential to the operation of the rifle. It's detachable nature allows it to be swapped out with other barrels featuring alternative integrated attachments. "
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "srs_barrel_suppressed"
+	attach_icon = "srs_barrel_suppressed"
+	var/new_fire_sound = "gun_silenced"
+	gun_traits = list(TRAIT_GUN_SILENCED)
 
 /obj/item/attachable/scope/variable_zoom/oracle
 	name = "\improper N-Variant oracle scope"
@@ -292,6 +302,58 @@
 	icon_state = "oracle_scope"
 	attach_icon = "oracle_scope"
 	slot = "rail"
+	var/scatter_scoped_buff = 0
+
+/obj/item/attachable/scope/variable_zoom/oracle/New()
+	..()
+	scatter_scoped_buff = SCATTER_AMOUNT_TIER_1
+
+/obj/item/attachable/scope/variable_zoom/oracle/handle_attachment_recalc(obj/item/weapon/gun/source)
+	. = ..()
+	if(using_scope)
+		source.scatter -= scatter_scoped_buff
+
+/obj/item/attachable/scope/variable_zoom/oracle/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
+	. = ..()
+	if(G.zoom)
+		G.scatter -= scatter_scoped_buff
+
+/obj/item/attachable/scope/variable_zoom/oracle/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	. = ..()
+	G.scatter += scatter_scoped_buff
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision
+	name = "\improper Oracle-N/2 \"VERGIL\""
+	desc= "Modified variant of Oracle-N variant scopes found in universal use by UNSC sniper rifles. This variant employs an updated VISR derived software update and new sensor suite, allowing for enhanced night fighting capability and improved thermal visual quality."
+	var/lighting_alpha = 140
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/apply_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
+	. = ..()
+	if(G.zoom)
+		RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
+
+		user.add_client_color_matrix("nvg_visor", 90, color_matrix_multiply(color_matrix_saturation(0.02), color_matrix_from_string("#c4dbdf")))
+		user.update_sight()
+		START_PROCESSING(SSobj, src)
+		RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+	. = ..()
+	user.remove_client_color_matrix("nvg_visor", 0.5 SECONDS)
+
+	UnregisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT)
+	UnregisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
+
+	user.update_sight()
+	STOP_PROCESSING(SSobj, src)
+
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/proc/on_update_sight(mob/living/carbon/user)
+	SIGNAL_HANDLER
+
+	if(lighting_alpha < 255)
+		user.see_in_dark = 12
+	user.lighting_alpha = lighting_alpha
+	user.sync_lighting_plane_alpha()
 
 /obj/item/attachable/scope/variable_zoom/m6d
 	name = "\improper KFA-2/D Model II smart-linked scope"
@@ -314,6 +376,93 @@
 	icon_state = "srs_bipod"
 	attach_icon = "srs_bipod"
 	flags_attach_features = NO_FLAGS
+
+/obj/item/attachable/bipod/srs_bipod/New()
+	..()
+
+	wield_delay_mod = WIELD_DELAY_FAST
+	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
+	scatter_mod = SCATTER_AMOUNT_NONE
+	recoil_mod = RECOIL_OFF
+
+/obj/item/attachable/bipod/srs_bipod/undeploy_bipod(obj/item/weapon/gun/gun, mob/user)
+	REMOVE_TRAIT(gun, TRAIT_GUN_BIPODDED, "attached_bipod")
+	bipod_deployed = FALSE
+	accuracy_mod = -HIT_ACCURACY_MULT_TIER_5
+	scatter_mod = SCATTER_AMOUNT_NONE
+	recoil_mod = RECOIL_OFF
+	burst_scatter_mod = 0
+	//if we are no longer on full auto, don't bother switching back to the old firemode
+	if(full_auto_switch && gun.gun_firemode == GUN_FIREMODE_AUTOMATIC && gun.gun_firemode != old_firemode)
+		gun.do_toggle_firemode(user, null, old_firemode)
+	if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
+		delay_mod = FIRE_DELAY_TIER_13
+
+	gun.recalculate_attachment_bonuses()
+	gun.stop_fire()
+	SEND_SIGNAL(user, COMSIG_MOB_UNDEPLOYED_BIPOD)
+	UnregisterSignal(user, COMSIG_MOB_MOVE_OR_LOOK)
+
+	if(gun.flags_gun_features & GUN_SUPPORT_PLATFORM)
+		gun.remove_firemode(GUN_FIREMODE_AUTOMATIC)
+
+	if(heavy_bipod)
+		user.anchored = FALSE
+
+	if(!QDELETED(gun))
+		playsound(user,'sound/items/m56dauto_rotate.ogg', 55, 1)
+		update_icon()
+
+/obj/item/attachable/bipod/srs_bipod/activate_attachment(obj/item/weapon/gun/gun, mob/living/user, turn_off)
+	if(turn_off)
+		if(bipod_deployed)
+			undeploy_bipod(gun, user)
+	else
+		var/obj/support = check_bipod_support(gun, user)
+		if(!support&&!bipod_deployed)
+			to_chat(user, SPAN_NOTICE("You start deploying [src] on the ground."))
+			if(!do_after(user, 15, INTERRUPT_ALL, BUSY_ICON_HOSTILE, gun, INTERRUPT_DIFF_LOC))
+				return FALSE
+
+		bipod_deployed = !bipod_deployed
+		if(user)
+			if(bipod_deployed)
+				ADD_TRAIT(gun, TRAIT_GUN_BIPODDED, "attached_bipod")
+				to_chat(user, SPAN_NOTICE("You deploy [src] [support ? "on [support]" : "on the ground"]."))
+				SEND_SIGNAL(user, COMSIG_MOB_DEPLOYED_BIPOD)
+				playsound(user,'sound/items/m56dauto_rotate.ogg', 55, 1)
+				accuracy_mod = HIT_ACCURACY_MULT_TIER_5
+				recoil_mod = -RECOIL_AMOUNT_TIER_1
+				scatter_mod = -SCATTER_AMOUNT_NONE
+				burst_scatter_mod = -SCATTER_AMOUNT_TIER_8
+				if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
+					delay_mod = -FIRE_DELAY_TIER_6
+				else if(istype(gun,/obj/item/weapon/gun/rifle/lmg))
+					delay_mod = 0
+					fa_scatter_peak_mod = FULL_AUTO_SCATTER_PEAK_TIER_3
+				gun.recalculate_attachment_bonuses()
+				gun.stop_fire()
+
+				initial_mob_dir = user.dir
+				RegisterSignal(user, COMSIG_MOB_MOVE_OR_LOOK, PROC_REF(handle_mob_move_or_look))
+
+				if(gun.flags_gun_features & GUN_SUPPORT_PLATFORM)
+					gun.add_firemode(GUN_FIREMODE_AUTOMATIC)
+
+				if(heavy_bipod)
+					user.anchored = TRUE
+
+				old_firemode = gun.gun_firemode
+				if(full_auto_switch && gun.gun_firemode != GUN_FIREMODE_AUTOMATIC)
+					gun.do_toggle_firemode(user, null, GUN_FIREMODE_AUTOMATIC)
+
+			else
+				to_chat(user, SPAN_NOTICE("You retract [src]."))
+				undeploy_bipod(gun, user)
+
+	update_icon()
+
+	return 1
 
 /obj/item/attachable/scope/mini/smartscope
 	name = "\improper KFA-2 x2 smart-linked scope"
