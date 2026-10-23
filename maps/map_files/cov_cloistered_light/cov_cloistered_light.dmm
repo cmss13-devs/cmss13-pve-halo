@@ -289,36 +289,6 @@
 /obj/structure/machinery/light/covenant/invisible,
 /turf/open/floor/covenant,
 /area/cloistered_light/unggoy_quarters)
-"aW" = (
-/obj/effect/decal/covenant_trim/endcap_left{
-	dir = 1
-	},
-/turf/open/floor/covenant,
-/area/space)
-"aX" = (
-/obj/effect/decal/covenant_trim/seamless{
-	dir = 1
-	},
-/turf/open/floor/covenant,
-/area/space)
-"aY" = (
-/obj/effect/decal/covenant_trim/endcap_right{
-	dir = 1
-	},
-/turf/open/floor/covenant,
-/area/space)
-"aZ" = (
-/obj/effect/decal/covenant_trim/endcap_right{
-	dir = 4
-	},
-/turf/open/floor/covenant,
-/area/space)
-"ba" = (
-/obj/effect/decal/covenant_trim/seamless{
-	dir = 4
-	},
-/turf/open/floor/covenant,
-/area/space)
 "bb" = (
 /obj/effect/decal/covenant_trim/endcap_left{
 	dir = 1
@@ -719,6 +689,7 @@
 /turf/open/floor/covenant/smooth_plating/blue/sides/southwest,
 /area/cloistered_light/sangheili_quarters)
 "cw" = (
+/obj/structure/machinery/light/covenant/invisible,
 /turf/open/floor/covenant/smooth_plating/blue/corners/northeast,
 /area/cloistered_light/sangheili_quarters)
 "cx" = (
@@ -728,6 +699,7 @@
 /turf/open/floor/covenant/smooth_plating/blue/sides/northwest,
 /area/cloistered_light/sangheili_quarters)
 "cz" = (
+/obj/structure/machinery/light/covenant/invisible,
 /turf/open/floor/covenant/smooth_plating/blue/corners/southeast,
 /area/cloistered_light/sangheili_quarters)
 "cA" = (
@@ -813,6 +785,7 @@
 /turf/open/floor/covenant/smooth_plating/blue/sides/northwest,
 /area/cloistered_light/sangheili_quarters)
 "cP" = (
+/obj/structure/machinery/light/covenant/invisible,
 /turf/open/floor/covenant/smooth_plating/blue/corners/southwest,
 /area/cloistered_light/sangheili_quarters)
 "cQ" = (
@@ -831,6 +804,10 @@
 /obj/effect/decal/covenant_trim/seamless,
 /turf/open/floor/covenant/darker,
 /area/cloistered_light/sangheili_quarters)
+"cT" = (
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant,
+/area/cloistered_light/hallways)
 "cU" = (
 /obj/effect/decal/covenant_trim/endcap_right,
 /turf/open/floor/covenant/paneling,
@@ -845,12 +822,6 @@
 "cX" = (
 /turf/open/floor/covenant/endcap/south,
 /area/cloistered_light/hallways)
-"cY" = (
-/obj/effect/decal/covenant_trim/endcap_left{
-	dir = 4
-	},
-/turf/open/floor/covenant,
-/area/space)
 "cZ" = (
 /obj/effect/decal/covenant_trim/endcap_left,
 /turf/open/floor/covenant/paneling,
@@ -1357,6 +1328,12 @@
 	},
 /turf/open/floor/covenant,
 /area/cloistered_light/unggoy_quarters)
+"eT" = (
+/obj/structure/platform/covenant{
+	dir = 1
+	},
+/turf/open/floor/covenant,
+/area/cloistered_light/canteen)
 "eU" = (
 /obj/structure/surface/table/reinforced/covenant/alt,
 /turf/open/floor/covenant/smooth_plating/blue,
@@ -1479,6 +1456,12 @@
 	},
 /turf/open/floor/covenant/smooth_plating,
 /area/cloistered_light/hangar)
+"fp" = (
+/obj/structure/platform_decoration/covenant{
+	dir = 8
+	},
+/turf/open/floor/covenant,
+/area/cloistered_light/canteen)
 "fq" = (
 /obj/effect/decal/covenant_trim/corner/seamless,
 /turf/open/floor/covenant/darker,
@@ -1643,6 +1626,69 @@
 	},
 /obj/structure/machinery/light/covenant/invisible,
 /turf/open/floor/covenant/darker,
+/area/cloistered_light/sangheili_quarters)
+"fY" = (
+/obj/structure/machinery/cm_vending/covenant/unggoy/warrior{
+	color = "#4b6e7e"
+	},
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant/under_plating/greebles,
+/area/cloistered_light/armory)
+"fZ" = (
+/obj/structure/machinery/light/covenant/invisible,
+/turf/open/floor/covenant/darker/inverted,
+/area/cloistered_light/kigyar_quarters)
+"ga" = (
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant,
+/area/cloistered_light/armory)
+"gb" = (
+/obj/effect/decal/covenant_trim{
+	dir = 4
+	},
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant,
+/area/cloistered_light/armory)
+"gc" = (
+/obj/effect/decal/covenant_trim{
+	dir = 8
+	},
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant,
+/area/cloistered_light/armory)
+"gd" = (
+/obj/effect/decal/covenant_trim/seamless{
+	dir = 8
+	},
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant,
+/area/cloistered_light/hallways)
+"ge" = (
+/obj/structure/machinery/cm_vending/covenant/kigyar/warrior{
+	color = "#4b6e7e"
+	},
+/obj/structure/machinery/light/covenant/invisible/brighter,
+/turf/open/floor/covenant/under_plating/greebles,
+/area/cloistered_light/armory)
+"gf" = (
+/obj/structure/machinery/light/covenant/invisible,
+/turf/open/floor/covenant,
+/area/cloistered_light/sangheili_quarters)
+"gg" = (
+/obj/structure/platform/covenant{
+	dir = 4
+	},
+/turf/open/void,
+/area/cloistered_light/kigyar_quarters)
+"gh" = (
+/obj/structure/platform/covenant{
+	dir = 8
+	},
+/turf/open/void,
+/area/cloistered_light/kigyar_quarters)
+"gi" = (
+/obj/structure/machinery/light/covenant/invisible,
+/turf/open/floor/covenant/inverted,
 /area/cloistered_light/sangheili_quarters)
 "gj" = (
 /obj/structure/machinery/power/terminal{
@@ -1854,8 +1900,8 @@
 /turf/open/floor/covenant/plating/blue,
 /area/cloistered_light/hallways)
 "rE" = (
-/obj/structure/platform/shiva{
-	dir = 1
+/obj/structure/platform_decoration/covenant{
+	dir = 4
 	},
 /turf/open/floor/covenant,
 /area/cloistered_light/canteen)
@@ -1933,12 +1979,6 @@
 "vK" = (
 /turf/closed/wall/covenant,
 /area/cloistered_light/sangheili_quarters)
-"vN" = (
-/obj/structure/platform_decoration{
-	dir = 4
-	},
-/turf/open/floor/covenant,
-/area/cloistered_light/canteen)
 "wd" = (
 /turf/open/floor/covenant/smooth_plating/sides/south,
 /area/cloistered_light/hangar)
@@ -1971,7 +2011,7 @@
 /turf/open/floor/covenant/smooth_plating/blue/sides/south,
 /area/cloistered_light/sangheili_quarters)
 "yK" = (
-/obj/structure/platform/shiva{
+/obj/structure/platform/covenant{
 	dir = 8
 	},
 /turf/open/floor/covenant/paneling,
@@ -1995,12 +2035,6 @@
 "zx" = (
 /turf/open/floor/covenant/smooth_plating/sides/northwest,
 /area/cloistered_light/hangar)
-"zE" = (
-/obj/structure/platform_decoration{
-	dir = 8
-	},
-/turf/open/floor/covenant,
-/area/cloistered_light/canteen)
 "zJ" = (
 /turf/open/floor/covenant/smooth_plating/sides/northwest,
 /area/cloistered_light/canteen)
@@ -2312,7 +2346,7 @@
 /turf/open/floor/covenant/smooth_plating,
 /area/space)
 "QK" = (
-/obj/structure/platform/shiva{
+/obj/structure/platform/covenant{
 	dir = 4
 	},
 /turf/open/floor/covenant/paneling,
@@ -6957,7 +6991,7 @@ cu
 cp
 Dg
 Dg
-Dg
+gf
 ck
 rf
 bb
@@ -7097,7 +7131,7 @@ cS
 ii
 eG
 eG
-eG
+gi
 eG
 cV
 cu
@@ -7261,7 +7295,7 @@ cu
 cr
 Dg
 Dg
-Dg
+gf
 cm
 or
 bd
@@ -9713,9 +9747,9 @@ zb
 zb
 zb
 zb
+fZ
 zb
-zb
-zb
+fZ
 sU
 sU
 jX
@@ -9837,7 +9871,7 @@ rX
 sU
 sU
 XN
-sU
+GA
 er
 GA
 sU
@@ -9994,10 +10028,10 @@ zb
 fj
 sU
 GA
-fQ
-fQ
-fQ
-fQ
+gg
+gg
+gg
+gg
 sU
 ew
 cf
@@ -10166,7 +10200,7 @@ sU
 sU
 GA
 sU
-sU
+GA
 sU
 GA
 ha
@@ -10298,10 +10332,10 @@ zb
 fk
 sU
 GA
-fQ
-fQ
-fQ
-fQ
+gh
+gh
+gh
+gh
 sU
 ex
 cf
@@ -10445,7 +10479,7 @@ rX
 sU
 sU
 ca
-sU
+GA
 er
 GA
 sU
@@ -10625,9 +10659,9 @@ zb
 zb
 zb
 zb
+fZ
 zb
-zb
-zb
+fZ
 sU
 sU
 jX
@@ -15049,11 +15083,11 @@ rX
 rX
 rX
 rX
-xW
-cY
-ba
-aZ
-xW
+jX
+ax
+ar
+al
+jX
 rX
 rX
 rX
@@ -16124,7 +16158,7 @@ jX
 jX
 jX
 jX
-xW
+jX
 rX
 rX
 rX
@@ -16276,7 +16310,7 @@ Aj
 Ex
 be
 Di
-aW
+bb
 rX
 rX
 rX
@@ -16428,7 +16462,7 @@ Aj
 Ex
 bf
 tx
-aX
+bc
 rX
 rX
 rX
@@ -16580,7 +16614,7 @@ Aj
 Ex
 bg
 tx
-aY
+bd
 rX
 rX
 rX
@@ -16732,7 +16766,7 @@ jX
 jX
 jX
 jX
-xW
+jX
 rX
 rX
 rX
@@ -18070,7 +18104,7 @@ CC
 CC
 CC
 CC
-CC
+ga
 CC
 CC
 CC
@@ -18219,13 +18253,13 @@ WM
 WM
 nG
 CC
+ga
 CC
 CC
 CC
 CC
 CC
-CC
-CC
+ga
 CC
 nG
 nG
@@ -18675,13 +18709,13 @@ cd
 yt
 bG
 CC
-CC
+ga
 bY
 VS
 nG
 VS
 bC
-CC
+ga
 CC
 bA
 SA
@@ -18698,7 +18732,7 @@ fK
 dC
 Ua
 QK
-zE
+Ko
 cW
 tW
 tW
@@ -19002,7 +19036,7 @@ EM
 dD
 ia
 Bu
-rE
+eT
 dY
 fG
 dQ
@@ -19134,7 +19168,7 @@ CC
 CC
 CC
 CC
-CC
+ga
 CC
 CC
 CC
@@ -19154,7 +19188,7 @@ fK
 ea
 dC
 Bu
-rE
+eT
 fI
 dv
 dv
@@ -19283,13 +19317,13 @@ WM
 nG
 nG
 CC
-CC
+ga
 bW
 bQ
-bK
+gb
 bO
 bD
-CC
+ga
 CC
 nG
 nG
@@ -19306,7 +19340,7 @@ fK
 eb
 dC
 Bu
-rE
+eT
 fI
 tW
 tW
@@ -19458,7 +19492,7 @@ EM
 dB
 dy
 Bu
-rE
+eT
 dY
 fH
 Ca
@@ -19610,7 +19644,7 @@ Af
 dC
 TK
 cW
-rE
+fp
 dY
 dW
 dQ
@@ -19739,13 +19773,13 @@ WM
 fe
 Ka
 Be
-CC
+ga
 bA
 fc
 nG
 fa
 bG
-CC
+ga
 Be
 Ka
 eX
@@ -19762,7 +19796,7 @@ fL
 dC
 Ua
 yK
-vN
+Ko
 cW
 dv
 dv
@@ -19888,7 +19922,7 @@ fh
 ne
 ne
 WM
-fd
+ge
 Ka
 Be
 CC
@@ -19900,7 +19934,7 @@ bG
 CC
 Be
 Ka
-pJ
+fY
 ya
 bn
 fO
@@ -20195,13 +20229,13 @@ Js
 fg
 Ka
 Be
-CC
+ga
 bA
 sT
 nG
 fa
 bG
-CC
+ga
 Be
 Ka
 eZ
@@ -20496,7 +20530,7 @@ ne
 ne
 ne
 WM
-fd
+ge
 Ka
 Be
 CC
@@ -20508,7 +20542,7 @@ bE
 CC
 Be
 Ka
-pJ
+fY
 ya
 ya
 SV
@@ -20651,13 +20685,13 @@ WM
 fe
 Ka
 Be
-CC
+ga
 cb
 sT
 sT
 fa
 bH
-CC
+ga
 Be
 Ka
 eX
@@ -20806,7 +20840,7 @@ Be
 CC
 bX
 bV
-bN
+gc
 bP
 bJ
 CC
@@ -21107,13 +21141,13 @@ WM
 nG
 nG
 CC
-CC
+ga
 CC
 bA
 nG
 bG
 CC
-CC
+ga
 CC
 nG
 nG
@@ -21412,11 +21446,11 @@ nG
 nG
 nG
 CC
-CC
+ga
 bA
 nG
 bG
-CC
+ga
 CC
 nG
 nG
@@ -22022,7 +22056,7 @@ jX
 bL
 Ex
 aw
-aq
+gd
 ak
 Ex
 bL
@@ -22326,23 +22360,23 @@ Ex
 Ex
 Ex
 Ex
+cT
 Ex
 Ex
 Ex
 Ex
+cT
 Ex
 Ex
 Ex
+cT
 Ex
 Ex
 Ex
+cT
 Ex
 Ex
-Ex
-Ex
-Ex
-Ex
-Ex
+cT
 Ex
 Ex
 Ex
@@ -22352,10 +22386,10 @@ Ex
 Ex
 Ex
 pO
+cT
 Ex
 Ex
-Ex
-Ex
+cT
 Ex
 Ex
 Ex
