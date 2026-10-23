@@ -63,7 +63,7 @@
 
 /obj/item/clothing/suit/marine/unsc/forecon
 	name = "\improper M65A Body Armour"
-	desc = "Advanced armour system seeing limited use with Marine-Special-Forces and other specialist troops within the UNSC. The primary features of M56A are heavier and more comprehensive armour plating paired with careful material developments to increase the overall 'toughness' of the armour. Developments that have given it mild resistance to Covenant plasma weaponry."
+	desc = "Advanced armour system seeing limited use with Marine-Special-Forces and other specialist troops within the UNSC. The primary features of M65A are heavier and more comprehensive armour plating paired with careful material developments to increase the overall 'toughness' of the armour. Developments that have given it mild resistance to Covenant plasma weaponry."
 	desc_lore = "The M65 program was developed in response to increasingly violent and drawn out close quarters urban fighting against conventional insurrection forces, which saw most armour systems in use fail under significant combat fatigue. To offset the armour's increased mass, it was designed to be paired with pre-existing cooling/infrastructure vests, providing some comfort to potentially overheating marines."
 	icon_state = "forecon"
 	item_state = "forecon"

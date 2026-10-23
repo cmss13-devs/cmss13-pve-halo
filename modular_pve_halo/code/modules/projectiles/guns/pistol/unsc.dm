@@ -161,6 +161,13 @@
 	current_mag = /obj/item/ammo_magazine/pistol/halo/m6d/forecon
 	attachable_allowed = list(/obj/item/attachable/scope/mini/smartscope/m6d, /obj/item/attachable/flashlight/m6)
 
+/obj/item/weapon/gun/pistol/halo/m6d/forecon/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_7)
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	scatter = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+
 /obj/item/weapon/gun/pistol/halo/m6d/forecon/handle_starting_attachment()
 	. = ..()
 	var/obj/item/attachable/scope/mini/smartscope/m6d/scope = new(src)
