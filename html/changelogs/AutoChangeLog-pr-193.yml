@@ -1,7 +1,0 @@
-author: "BonniePandora"
-delete-after: True
-changes:
-  - maptweak: "McKay station had the armory rearranged slightly (mirrored between 'ship' & 'ground' map versions)"
-  - maptweak: "Covered up some of the lingering space tiles beneath stairs on McKay station (mirrored)"
-  - maptweak: "Fixed a floating camera, and adjusted some department/info floor decals to line up with doors (mirrored)"
-  - maptweak: "ODST 'Night shipmap had the extra M7 mag-packet box swapped for an M7 round-packet box instead"

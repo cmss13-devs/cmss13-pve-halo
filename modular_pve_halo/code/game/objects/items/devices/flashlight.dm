@@ -1,0 +1,258 @@
+/obj/item/device/flashlight/flare/unsc
+	name = "flare"
+	desc = "A UNSC issued flare, burns with a bright red light. There are instructions on the side, it reads 'pull cord, make light'."
+	icon = 'icons/halo/obj/items/lighting.dmi'
+	icon_state = "flare"
+	item_state = "flare"
+	actions = list() //just pull it manually, neckbeard.
+	raillight_compatible = 0
+	can_be_broken = FALSE
+	rotation_on_throw = TRUE
+
+/obj/item/device/flashlight/flare/unsc/update_icon()
+	overlays?.Cut()
+	. = ..()
+	if(on)
+		icon_state = "[initial(icon_state)]-on"
+		if(show_flame)
+			var/image/flame = image('icons/halo/obj/items/lighting.dmi', src, "flare_flame")
+			flame.color = flame_tint
+			flame.appearance_flags = KEEP_APART|RESET_COLOR|RESET_TRANSFORM
+			var/image/flame_base = image('icons/halo/obj/items/lighting.dmi', src, "flare_flame")
+			flame_base.color = flame_base_tint
+			flame_base.appearance_flags = KEEP_APART|RESET_COLOR
+			flame_base.blend_mode = BLEND_ADD
+			flame.overlays += flame_base
+			overlays += flame
+	else if(burnt_out)
+		icon_state = "[initial(icon_state)]-empty"
+	else
+		icon_state = "[initial(icon_state)]"
+
+/obj/item/device/flashlight/flare/signal/unsc
+	name = "signal flare"
+	desc = "A UNSC issued signal flare, burns with a bright green light. Commonly used for signalling and marking purposes thanks to the hotter flame emitted by this model."
+	icon = 'icons/halo/obj/items/lighting.dmi'
+	icon_state = "cas_flare"
+	item_state = "cas_flare"
+
+/obj/item/device/flashlight/flare/signal/unsc/update_icon()
+	overlays?.Cut()
+	. = ..()
+	if(on)
+		icon_state = "[initial(icon_state)]-on"
+		if(show_flame)
+			var/image/flame = image('icons/halo/obj/items/lighting.dmi', src, "flare_flame")
+			flame.color = flame_tint
+			flame.appearance_flags = KEEP_APART|RESET_COLOR|RESET_TRANSFORM
+			var/image/flame_base = image('icons/halo/obj/items/lighting.dmi', src, "flare_flame")
+			flame_base.color = flame_base_tint
+			flame_base.appearance_flags = KEEP_APART|RESET_COLOR
+			flame_base.blend_mode = BLEND_ADD
+			flame.overlays += flame_base
+			overlays += flame
+	else if(burnt_out)
+		icon_state = "[initial(icon_state)]-empty"
+	else
+		icon_state = "[initial(icon_state)]"
+
+//==========
+//Chemlights
+//==========
+
+/obj/item/device/flashlight/chemlight
+	name = "green glowstick"
+	desc = "A military-grade chemical light. Burns for much, much longer than a flare, but at the cost of luminosity."
+	w_class = SIZE_TINY
+	icon = 'icons/halo/obj/items/lighting.dmi'
+	light_color = "#49F37C"
+	var/glow_color = "green"
+	light_power = 0.7
+	light_range = 5
+	icon_state = "glowstick_green"
+	item_state = "flare"
+	raillight_compatible = 0
+	can_be_broken = FALSE
+	rotation_on_throw = TRUE
+	var/burnt_out = FALSE
+	var/fuel = 90 MINUTES
+	var/fuel_rate = AMOUNT_PER_TIME(1 SECONDS, 1 SECONDS)
+	var/on_damage = 7
+	var/activation_sound = 'sound/items/pen_click_off.ogg'
+	var/watcher_activation_message = "cracks and shakes the chemlight."
+	var/user_activation_message = "You crack and shake the chemlight, making it glow!"
+
+//=============
+//The proc wall
+//=============
+
+
+/obj/item/device/flashlight/chemlight/Initialize()
+	. = ..()
+	set_light_color(light_color)
+
+/obj/item/device/flashlight/chemlight/get_examine_text(mob/user)
+	. = ..()
+	if(!fuel)
+		. += SPAN_INFO("This one is cracked and spent!")
+	else
+		. += SPAN_INFO("This one is [glow_color] colored.")
+
+/obj/item/device/flashlight/chemlight/update_icon()
+	overlays?.Cut()
+	. = ..()
+	if(on)
+		icon_state = "[initial(icon_state)]-on"
+	else if(burnt_out)
+		icon_state = "[initial(icon_state)]-empty"
+	else
+		icon_state = "[initial(icon_state)]"
+
+/obj/item/device/flashlight/chemlight/dropped(mob/user)
+	. = ..()
+	if(iscarbon(user) && on)
+		var/mob/living/carbon/chemlight_user = user
+		chemlight_user.toggle_throw_mode(THROW_MODE_OFF)
+
+/obj/item/device/flashlight/chemlight/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/device/flashlight/chemlight/process(delta_time)
+	fuel -= fuel_rate * delta_time
+	chemlight_burn_down()
+	if(fuel <= 0 || !on)
+		burn_out()
+
+/obj/item/device/flashlight/chemlight/proc/chemlight_burn_down() //Pretty much a copy of the flare_burn_down proc
+	var/starting_light = initial(light_range)
+	switch(fuel)
+		if(72 MINUTES to 90 MINUTES)
+			set_light_range(starting_light)
+		if(54 MINUTES to 71.99 MINUTES)
+			set_light_range(starting_light-1)
+		if(36 MINUTES to 36.99 MINUTES)
+			set_light_range(starting_light-2)
+		if(18 MINUTES to 35.99 MINUTES)
+			set_light_range(starting_light-3)
+		if(0 MINUTES to 17.99 MINUTES)
+			set_light_range(starting_light-4)
+			set_light_power(0.3)
+
+// Causes flares to stop with a rotation offset for visual purposes
+/obj/item/device/flashlight/chemlight/animation_spin(speed = 5, loop_amount = -1, clockwise = TRUE, sections = 3, angular_offset = 0, pixel_fuzz = 0)
+	pixel_fuzz = 16
+	return ..()
+
+/obj/item/device/flashlight/chemlight/pickup()
+	if(transform)
+		apply_transform(matrix()) // reset rotation
+	pixel_x = 0
+	pixel_y = 0
+	return ..()
+
+/obj/item/device/flashlight/chemlight/proc/burn_out()
+	turn_off()
+	fuel = 0
+	burnt_out = TRUE
+	update_icon()
+	add_to_garbage(src)
+	STOP_PROCESSING(SSobj, src)
+
+/obj/item/device/flashlight/chemlight/proc/turn_on()
+	set_light_color(light_color)
+	on = TRUE
+	update_brightness()
+	START_PROCESSING(SSobj, src)
+
+/obj/item/device/flashlight/chemlight/proc/turn_off()
+	on = FALSE
+	force = initial(force)
+	damtype = initial(damtype)
+	if(ismob(loc))
+		var/mob/U = loc
+		update_brightness(U)
+	else
+		update_brightness(null)
+
+/obj/item/device/flashlight/chemlight/attack_self(mob/living/user)
+
+	// Usual checks
+	if(!fuel)
+		to_chat(user, SPAN_NOTICE("It's out of fuel."))
+		return FALSE
+
+	. = ..()
+	// All good, turn it on.
+	if(.)
+		user.visible_message(SPAN_NOTICE("[user] [watcher_activation_message]"), SPAN_NOTICE("[user_activation_message]"))
+		if(activation_sound)
+			playsound(src,activation_sound, 50, 1) //clicker-trained individuals in shambles
+		turn_on()
+		var/mob/living/carbon/enjoyer = user
+		if(istype(enjoyer) && !enjoyer.throw_mode)
+			enjoyer.toggle_throw_mode(THROW_MODE_NORMAL)
+
+/obj/item/device/flashlight/chemlight/proc/activate_signal(mob/living/carbon/human/user)
+	return
+//=================
+//Back to normality
+//=================
+
+/obj/item/device/flashlight/chemlight/red
+	name = "red glowstick"
+	glow_color = "red"
+	light_color = "#FC0F29"
+	icon_state = "glowstick_red"
+
+/obj/item/device/flashlight/chemlight/blue
+	name = "blue glowstick"
+	glow_color = "blue"
+	light_color = "#599DFF"
+	icon_state = "glowstick_blue"
+
+/obj/item/device/flashlight/chemlight/orange
+	name = "orange glowstick"
+	glow_color = "orange"
+	light_color = "#FA7C0B"
+	icon_state = "glowstick_orange"
+
+/obj/item/device/flashlight/chemlight/yellow
+	name = "yellow glowstick"
+	glow_color = "yellow"
+	light_color = "#FEF923"
+	icon_state = "glowstick_yellow"
+
+/obj/item/device/flashlight/chemlight/radioisotope
+	name = "radioisotope glowstick"
+	desc = "A radioisotope powered military-grade chemical light. Escaping particles light up the area far brighter on similar levels to flares and for longer. Inadvisable to ingest the contents of."
+	glow_color = "radioisotope-green"
+	icon_state = "glowstick_isotope"
+	light_color = "#49F37C"
+	light_range = 8
+	light_power = 1.5
+
+//Pre-cracked chemlights for GMs to use
+/obj/item/device/flashlight/chemlight/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/chemlight/red/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/chemlight/blue/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/chemlight/orange/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/chemlight/yellow/on/Initialize()
+	. = ..()
+	turn_on()
+
+/obj/item/device/flashlight/chemlight/radioisotope/on/Initialize()
+	. = ..()
+	turn_on()
