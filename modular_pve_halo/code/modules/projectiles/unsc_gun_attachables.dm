@@ -323,7 +323,7 @@
 	G.scatter += scatter_scoped_buff
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision
-	name = "\improper Oracle-N/2 'VERGIL'"
+	name = "\improper Oracle-N/2 \"VERGIL\""
 	desc= "Modified variant of Oracle-N variant scopes found in universal use by UNSC sniper rifles. This variant employs an updated VISR derived software update and new sensor suite, allowing for enhanced night fighting capability and improved thermal visual quality."
 	var/lighting_alpha = 140
 
