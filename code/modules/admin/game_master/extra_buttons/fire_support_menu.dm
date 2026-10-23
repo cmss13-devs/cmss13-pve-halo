@@ -7,6 +7,7 @@
 #define DROPSHIP_HOVERING list("Phantom", "Phantom (Unarmed)", "Spirit", "Spirit (Unarmed)", "Pelican", "Pelican (Unarmed)", "Pelican - Rocket Pods",)
 #define NAVAL_ORDNANCE list("MAC", "MAC - Atmospheric", "Coilguns")
 #define GLASSING_BEAMS list("Glassing Beam", "Glassing Fast", "Glassing Weak Fast", "Glassing Weak Instant")
+#define SCARAB_BEAMS list("Scarab Beam", "Scarab Beam Instant")
 #define MISSILE_ORDNANCE list("Banshee Missile", "Harpoon Missile", "Keeper Missile", "Napalm Missile", "Thermobaric Missile", "Widowmaker Missile")
 #define ORBITAL_ORDNANCE list("High Explosive OB", "Incendiary OB", "Cluster OB")
 #define MORTAR_ORDNANCE list("High Explosive Shell", "Incendiary Shell", "Fragmentation Shell", "Flare Shell", "Willy-Pete Shell", "Smoke Shell")
@@ -66,6 +67,7 @@
 	data["naval_ordnance_options"] = NAVAL_ORDNANCE
 	data["dropship_options"] = DROPSHIP_HOVERING
 	data["glassing_beam_options"] = GLASSING_BEAMS
+	data["scarab_beam_options"] = SCARAB_BEAMS
 	/* dont need this, its replaced with halo versions
 	data["missile_ordnance_options"] = MISSILE_ORDNANCE
 	data["orbital_ordnance_options"] = ORBITAL_ORDNANCE
@@ -534,6 +536,25 @@
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
 
+			//Scarab
+			if("Scarab Beam")
+				var/angle = tgui_input_number(user, "Beam Approach Angle")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SCARAB_BEAM]
+				selected_mode.initiate_fire_support(target_turf, angle)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
+			if("Scarab Beam Instant")
+				var/angle = tgui_input_number(user, "Beam Approach Angle")
+				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
+				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SCARAB_BEAM_INSTANT]
+				selected_mode.initiate_fire_support(target_turf, angle)
+
+				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
+				return TRUE
+
 			// Wombat
 			if("Wombat GAU")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
@@ -847,6 +868,8 @@
 	impact_sound = null
 	///sound ranges
 	var/sound_ranges = null
+	/// sound falloff
+	var/sound_falloff
 	var/datum/cause_data/cause_data
 	var/shadow_cooldown
 	var/has_shadow
@@ -858,7 +881,7 @@
 	if(initiate_visual)
 		new initiate_visual(target_turf)
 	if(initiate_sound)
-		playsound(target_turf, initiate_sound, 100, sound_range = sound_ranges)
+		playsound(target_turf, initiate_sound, 100, sound_range = sound_ranges, falloff = sound_falloff)
 
 	addtimer(CALLBACK(src, PROC_REF(early_warning), target_turf), delay_to_impact/4)
 	addtimer(CALLBACK(src, PROC_REF(late_warning), target_turf), delay_to_impact/2)
@@ -898,7 +921,7 @@
 		if(start_visual)
 			new start_visual(target_turf)
 	if(start_sound)
-		playsound(target_turf, start_sound, 100, sound_range = sound_ranges)
+		playsound(target_turf, start_sound, 100, sound_range = sound_ranges, falloff = sound_falloff)
 
 ///Selects the final target turf(s) and calls impact procs
 /datum/fire_support/custom/select_target(turf/target_turf, additional_variable)
@@ -914,7 +937,7 @@
 
 /datum/fire_support/custom/do_impact_effect(turf/target_turf)
 	if(impact_sound)
-		playsound(target_turf, impact_sound, 100, 1, sound_ranges)
+		playsound(target_turf, impact_sound, 100, 1, sound_ranges, falloff = sound_falloff)
 	if(impact_start_visual)
 		new impact_start_visual(target_turf)
 	return
@@ -1052,6 +1075,7 @@
 	warning_chat_message = "COVENANT SHIP"
 	warning_range = 30
 	sound_ranges = 85
+	sound_falloff = 5
 	var/clear_power = 1200
 	var/clear_falloff = 400
 	var/standard_power = 600
@@ -1108,6 +1132,44 @@
 		if(HAS_TRAIT(user, TRAIT_FLOORED))
 			continue
 		to_chat(user, SPAN_WARNING("You are thrown off balance and fall to the ground!"))
+
+/datum/fire_support/custom/scarab_beam
+	name = "scarab beam"
+	scatter_range = 0
+	initiate_sound = 'sound/weapons/halo/fire_support/scarab_roam.ogg'
+	start_sound = 'sound/weapons/halo/fire_support/scarab_windup.ogg'
+	impact_sound = 'sound/weapons/halo/fire_support/scarab_beam.ogg'
+	delay_to_impact = 7 SECONDS
+	impact_delay = 2 SECONDS
+	visual_impact_delay = 2 SECONDS
+	warning_chat_message = "SCARAB"
+	warning_range = 30
+	sound_ranges = 85
+	sound_falloff = 4
+	var/clear_power = 200
+	var/clear_falloff = 100
+	var/standard_power = 100
+	var/standard_falloff = 15
+	var/distance = 6
+	var/fire_level = 6
+	var/burn_level = 80
+	var/fire_color = LIGHT_COLOR_GREEN
+	var/fire_type = "green"
+
+/datum/fire_support/custom/scarab_beam/do_impact(turf/target_turf, additional_variable)
+	var/obj/visual_obj = new /obj/effect/temp_visual/glassing_beam/scarab(target_turf)
+	visual_obj.transform = matrix().Turn(additional_variable)
+
+	var/datum/cause_data/cause_data = create_cause_data("scarab beam")
+	cell_explosion(target_turf, clear_power, clear_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data) //break shit around
+	cell_explosion(target_turf, standard_power, standard_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data)
+	handle_shake(target_turf, 15, 3, 0)
+	fire_spread(target_turf, cause_data, distance, fire_level, burn_level, fire_color, fire_type, TURF_PROTECTION_OB)
+	return
+
+/datum/fire_support/custom/scarab_beam/instant
+	initiate_sound = null
+	delay_to_impact = 1 SECONDS
 
 // ============================ UNSC ORDNANCE ============================ \\
 
@@ -1682,6 +1744,7 @@
 #undef COVENANT_ORDNANCE
 #undef UNSC_ORDNANCE
 #undef GLASSING_BEAMS
+#undef SCARAB_BEAMS
 #undef ORBITAL_ORDNANCE
 #undef MORTAR_ORDNANCE
 #undef MISC_ORDNANCE
