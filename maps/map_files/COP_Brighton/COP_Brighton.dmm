@@ -1464,7 +1464,7 @@
 "es" = (
 /obj/structure/closet/secure_closet/halo/job_locker/rto,
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
-/obj/item/device/binoculars/range/designator/sergeant,
+/obj/item/device/binoculars/fire_support/halo/unsc,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
