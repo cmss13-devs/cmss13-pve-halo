@@ -337,7 +337,7 @@
 	START_PROCESSING(SSobj, src)
 	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
 
-/obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
+/obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(obj/item/weapon/gun/G, mob/living/carbon/user)
 	. = ..()
 	user.remove_client_color_matrix("nvg_visor", 0.5 SECONDS)
 	user.clear_fullscreen("nvg_visor", 0.5 SECONDS)
