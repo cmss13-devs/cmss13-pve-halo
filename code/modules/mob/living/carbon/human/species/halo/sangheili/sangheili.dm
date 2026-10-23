@@ -88,6 +88,9 @@
 
 	sangheili.blood_type = "S*"
 	sangheili.h_style = "Bald"
+	sangheili.body_type = "sang"
+	if(!(sangheili.skin_color in GLOB.body_type_sang_list))
+		sangheili.skin_color = pick("sang1", "sang2")
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
 	GLOB.sangheili_mob_list += sangheili
 	#endif
