@@ -1,0 +1,8 @@
+{
+    "map_name": "Slade Point",
+    "map_path": "map_files/Slade_Point",
+    "map_file": "slade_point.dmm",
+    "webmap_url": "SladePoint",
+    "weather_holder": "/datum/weather_ss_map_holder/slade_point",
+    "map_item_type": "/obj/item/map/slade_point"
+}

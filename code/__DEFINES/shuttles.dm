@@ -136,6 +136,12 @@
 #define STAT_DIGSITE_ELEVATOR "digsite"
 #define STAT_DIGSITE_ELEVATOR_EXIT "digsite_exit"
 
+#define MOBILE_ONI_ELEVATOR "oni_elevator"
+#define STAT_ONI_EMPTY "oni_empty"
+#define STAT_ONI_OCCUPIED "oni_occupied"
+#define STAT_ONI_ELEVATOR "oni"
+#define STAT_ONI_ELEVATOR_EXIT "oni_exit"
+
 #define DROPSHIP_MIDWAY "dropship_midway"
 #define DROPSHIP_ALAMO "dropship_alamo"
 #define DROPSHIP_NORMANDY "dropship_normandy"
