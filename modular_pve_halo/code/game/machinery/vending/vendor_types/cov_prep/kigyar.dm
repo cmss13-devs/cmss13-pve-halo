@@ -244,3 +244,126 @@ GLOBAL_LIST_INIT(cm_vending_kigyar_evocati, list(
 		list("Prybar", 0, /obj/item/tool/crowbar/tactical, null, VENDOR_ITEM_REGULAR),
 
 ))
+
+// ==========================
+// ==== SPECOPS KIGYAR ====
+// ==========================
+
+// ==== KIGYAR SPECOPS ====
+
+/obj/structure/machinery/cm_vending/covenant/kigyar/specops
+	name = "\improper kig-yar Special Operations equipment locker"
+	desc = "A nanolaminate equipment locker intended for kig-yar within the Special Warfarge Group, Special Operations."
+	vendor_role = list(JOB_COV_LANCE_STANDARD) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	color = COLOR_PURPLE
+
+/obj/structure/machinery/cm_vending/covenant/kigyar/specops/get_listed_products(mob/user)
+	return GLOB.cm_vending_kigyar_specops
+
+GLOBAL_LIST_INIT(cm_vending_kigyar_specops, list(
+		list("ESSENTIAL EQUIPMENT (TAKE ALL)", 0, null, null, null),
+		list("Headset", 0, /obj/item/device/radio/headset/almayer/marine/covenant, MARINE_CAN_BUY_EAR, VENDOR_ITEM_MANDATORY),
+		list("Undersuit (Sleeveless)", 0, /obj/item/clothing/under/marine/covenant/ruuhtian, MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_MANDATORY),
+		list("Undersuit (Sleeves)", 0, /obj/item/clothing/under/marine/covenant/ruuhtian/partial, MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_RECOMMENDED),
+		list("Undersuit (Full-Coverage)", 0, /obj/item/clothing/under/marine/covenant/ruuhtian/fullbody, MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_RECOMMENDED),
+		list("Liquid Sustainment Unit (FIELD RATION)", 0, /obj/item/reagent_container/food/snacks/covenant/ration/kigyar, MARINE_CAN_BUY_MRE, VENDOR_ITEM_RECOMMENDED),
+
+		list("ARMOR EQUIPMENT (TAKE ALL)", 0, null, null, null),
+		list("Combat Harness", 0, /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("Gauntlets", 0 , /obj/item/clothing/gloves/marine/ruuhtian/specops, MARINE_CAN_BUY_GLOVES, VENDOR_ITEM_RECOMMENDED),
+		list("Foot Guards", 0 , /obj/item/clothing/shoes/ruuhtian/specops, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_RECOMMENDED),
+
+		list("ARMOR ACCESSORIES", 0, null, null, null),
+		list("Shoulder Pads", 0, /obj/item/clothing/accessory/pads/ruuhtian/specops, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Shoulder Pads (Large)", 0, /obj/item/clothing/accessory/pads/ruuhtian/specops/variant_2, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Bicep Armor", 0, /obj/item/clothing/accessory/pads/ruuhtian/bicep/specops, MARINE_CAN_BUY_ATTACHMENT, VENDOR_ITEM_RECOMMENDED),
+
+		list("HELMET (BUY ONE)", 0, null, null, null),
+		list("Helmet", 0, /obj/item/clothing/head/helmet/marine/ruuhtian, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("Helmet (Superior)", 5, /obj/item/clothing/head/helmet/marine/ruuhtian/better, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("Assault Helmet", 25, /obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("Eye-Piece Headset", 0, /obj/item/clothing/head/helmet/marine/ruuhtian/headset, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+
+		list("BELT (TAKE ONE)", 0, null, null, null),
+		list("Standard Belt", 0, /obj/item/storage/belt/marine/covenant/ruuhtian/specops, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+
+		list("POUCHES (TAKE TWO)", 0, null, null, null),
+		list("Large General Shellcase", 0, /obj/item/storage/pouch/general/covenant/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Expanded Ammo Shellcases", 0, /obj/item/storage/pouch/magazine/covenant, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Tool Shellcases", 0, /obj/item/storage/pouch/tools/covenant/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Expanded Medical Shellcases", 0, /obj/item/storage/pouch/medkit/covenant/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Expanded Medical Shellcases (Full)", 0, /obj/item/storage/pouch/medkit/covenant/large/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Medical Vial Shellcases", 0, /obj/item/storage/pouch/medkit/covenant/vials, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Medical Vial Shellcases (Full)", 0, /obj/item/storage/pouch/medkit/covenant/vials/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+
+		list("WEAPONS", 0, null, null, null),
+		list("Needler", 0, list(/obj/item/weapon/gun/smg/covenant_needler, /obj/effect/essentials_set/needle_ammo), MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+		list("Plasma Rifle", 0, /obj/item/weapon/gun/energy/plasma/plasma_rifle, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+		list("Plasma Repeater", 20, /obj/item/weapon/gun/energy/plasma/plasma_repeater, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+		list("Carbine", 20, list(/obj/item/weapon/gun/smg/covenant_needler, /obj/effect/essentials_set/carbine_ammo), MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+
+		list("UTILITIES", 0, null, null, null),
+		list("Plasma Grenade", 5, /obj/item/explosive/grenade/high_explosive/plasma, null, VENDOR_ITEM_REGULAR),
+		list("Prybar", 0, /obj/item/tool/crowbar/tactical, null, VENDOR_ITEM_REGULAR),
+
+))
+
+// ==== KIGYAR SPECOPS ULTRA ====
+
+/obj/structure/machinery/cm_vending/covenant/kigyar/specops_ultra
+	name = "\improper kig-yar Special Operations Ultra equipment locker"
+	desc = "A nanolaminate equipment locker intended for kig-yar within Evocati Order and the Special Warfarge Group, Special Operations."
+	vendor_role = list(JOB_COV_LANCE_SPECIALIST) // placeholder for now. this can be changed in game during testing or whatever, but the role defines dont exist right now
+	color = COLOR_FLOORTILE_GRAY
+
+/obj/structure/machinery/cm_vending/covenant/kigyar/specops_ultra/get_listed_products(mob/user)
+	return GLOB.cm_vending_kigyar_specops_ultra
+
+GLOBAL_LIST_INIT(cm_vending_kigyar_specops_ultra, list(
+		list("ESSENTIAL EQUIPMENT (TAKE ALL)", 0, null, null, null),
+		list("Headset", 0, /obj/item/device/radio/headset/almayer/marine/covenant, MARINE_CAN_BUY_EAR, VENDOR_ITEM_MANDATORY),
+		list("Undersuit (Sleeveless)", 0, /obj/item/clothing/under/marine/covenant/ruuhtian, MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_MANDATORY),
+		list("Undersuit (Sleeves)", 0, /obj/item/clothing/under/marine/covenant/ruuhtian/partial, MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_RECOMMENDED),
+		list("Undersuit (Full-Coverage)", 0, /obj/item/clothing/under/marine/covenant/ruuhtian/fullbody, MARINE_CAN_BUY_UNIFORM, VENDOR_ITEM_RECOMMENDED),
+		list("Liquid Sustainment Unit (FIELD RATION)", 0, /obj/item/reagent_container/food/snacks/covenant/ration/kigyar, MARINE_CAN_BUY_MRE, VENDOR_ITEM_RECOMMENDED),
+
+		list("ARMOR EQUIPMENT (TAKE ALL)", 0, null, null, null),
+		list("Combat Harness", 0, /obj/item/clothing/suit/marine/ruuhtian/cloaking/specops_ultra, MARINE_CAN_BUY_ARMOR, VENDOR_ITEM_MANDATORY),
+		list("Gauntlets", 0 , /obj/item/clothing/gloves/marine/ruuhtian/specops/specops_ultra, MARINE_CAN_BUY_GLOVES, VENDOR_ITEM_RECOMMENDED),
+		list("Foot Guards", 0 , /obj/item/clothing/shoes/ruuhtian/specops/specops_ultra, MARINE_CAN_BUY_SHOES, VENDOR_ITEM_RECOMMENDED),
+
+		list("ARMOR ACCESSORIES", 0, null, null, null),
+		list("Shoulder Pads", 0, /obj/item/clothing/accessory/pads/ruuhtian/specops_ultra, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Shoulder Pads (Large)", 0, /obj/item/clothing/accessory/pads/ruuhtian/specops_ultra/variant_2, MARINE_CAN_BUY_ACCESSORY, VENDOR_ITEM_RECOMMENDED),
+		list("Bicep Armor", 0, /obj/item/clothing/accessory/pads/ruuhtian/bicep/specops_ultra, MARINE_CAN_BUY_ATTACHMENT, VENDOR_ITEM_RECOMMENDED),
+
+		list("HELMET (BUY ONE)", 0, null, null, null),
+		list("Helmet", 0, /obj/item/clothing/head/helmet/marine/ruuhtian, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("Helmet (Superior)", 5, /obj/item/clothing/head/helmet/marine/ruuhtian/better, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("Assault Helmet", 15, /obj/item/clothing/head/helmet/marine/ruuhtian/assault/specops_ultra, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+		list("Eye-Piece Headset", 0, /obj/item/clothing/head/helmet/marine/ruuhtian/headset, MARINE_CAN_BUY_HELMET, VENDOR_ITEM_REGULAR),
+
+		list("BELT (TAKE ONE)", 0, null, null, null),
+		list("Standard Belt", 0, /obj/item/storage/belt/marine/covenant/ruuhtian/specops_ultra, MARINE_CAN_BUY_BELT, VENDOR_ITEM_RECOMMENDED),
+
+		list("POUCHES (TAKE TWO)", 0, null, null, null),
+		list("Large General Shellcase", 0, /obj/item/storage/pouch/general/covenant/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Expanded Ammo Shellcases", 0, /obj/item/storage/pouch/magazine/covenant, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Tool Shellcases", 0, /obj/item/storage/pouch/tools/covenant/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Expanded Medical Shellcases", 0, /obj/item/storage/pouch/medkit/covenant/large, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Expanded Medical Shellcases (Full)", 0, /obj/item/storage/pouch/medkit/covenant/large/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Medical Vial Shellcases", 0, /obj/item/storage/pouch/medkit/covenant/vials, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+		list("Medical Vial Shellcases (Full)", 0, /obj/item/storage/pouch/medkit/covenant/vials/full, MARINE_CAN_BUY_POUCH, VENDOR_ITEM_REGULAR),
+
+		list("WEAPONS", 0, null, null, null),
+		list("Needler", 0, list(/obj/item/weapon/gun/smg/covenant_needler, /obj/effect/essentials_set/needle_ammo), MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+		list("Plasma Rifle", 0, /obj/item/weapon/gun/energy/plasma/plasma_rifle, MARINE_CAN_BUY_SECONDARY, VENDOR_ITEM_REGULAR),
+		list("Plasma Repeater", 10, /obj/item/weapon/gun/energy/plasma/plasma_repeater, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+		list("Carbine", 10, list(/obj/item/weapon/gun/smg/covenant_needler, /obj/effect/essentials_set/carbine_ammo), MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+		list("Needle Rifle", 25, list(/obj/item/weapon/gun/rifle/needle_rifle, /obj/effect/essentials_set/needle_rifle_ammo), MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+
+		list("UTILITIES", 0, null, null, null),
+		list("Plasma Grenade", 5, /obj/item/explosive/grenade/high_explosive/plasma, null, VENDOR_ITEM_REGULAR),
+		list("Prybar", 0, /obj/item/tool/crowbar/tactical, null, VENDOR_ITEM_REGULAR),
+
+))
