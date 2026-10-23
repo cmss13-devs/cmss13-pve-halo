@@ -335,17 +335,15 @@
 	RegisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT, PROC_REF(on_update_sight))
 
 	user.add_client_color_matrix("nvg_visor", 90, color_matrix_multiply(color_matrix_saturation(0.02), color_matrix_from_string("#c4dbdf")))
-	user.overlay_fullscreen("nvg_visor", /atom/movable/screen/fullscreen/flash/noise/nvg)
-	//user.overlay_fullscreen("nvg_visor_blur", /atom/movable/screen/fullscreen/brute/nvg, 1)
+	user.overlay_fullscreen("nvg_visor")
 	user.update_sight()
 	START_PROCESSING(SSobj, src)
 	RegisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
 
 /obj/item/attachable/scope/variable_zoom/oracle/night_vision/remove_scoped_buff(mob/living/carbon/user, obj/item/weapon/gun/G)
 	. = ..()
-	user.remove_client_color_matrix("nvg_visor", 1 SECONDS)
+	user.remove_client_color_matrix("nvg_visor", 0.5 SECONDS)
 	user.clear_fullscreen("nvg_visor", 0.5 SECONDS)
-	user.clear_fullscreen("nvg_visor_blur", 0.5 SECONDS)
 
 	UnregisterSignal(user, COMSIG_HUMAN_POST_UPDATE_SIGHT)
 	UnregisterSignal(user, COMSIG_MOB_CHANGE_VIEW)
