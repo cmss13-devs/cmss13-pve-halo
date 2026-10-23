@@ -21,7 +21,21 @@
 	item_state = "carbine_mag"
 	w_class = SIZE_MEDIUM
 	default_ammo = /datum/ammo/bullet/rifle/carbine
-	current_rounds = 18
-	max_rounds = 18
+	current_rounds = 24
+	max_rounds = 24
 	gun_type = /obj/item/weapon/gun/rifle/covenant_carbine
+	flags_magazine = NO_FLAGS
+
+/obj/item/ammo_magazine/needle_rifle
+	name = "\improper carbine magazine"
+	desc = "Holds 18 rounds of radioactive mayhem."
+	caliber = "8x60mm"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_magazines.dmi'
+	icon_state = "needlerifle_mag"
+	item_state = "needlerifle_mag"
+	w_class = SIZE_MEDIUM
+	default_ammo = /datum/ammo/bullet/rifle/needle_rifle
+	current_rounds = 12
+	max_rounds = 12
+	gun_type = /obj/item/weapon/gun/rifle/needle_rifle
 	flags_magazine = NO_FLAGS

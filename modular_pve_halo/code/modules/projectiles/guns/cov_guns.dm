@@ -5,6 +5,7 @@
 	icon_state = "plasma_pistol"
 	flags_gun_features = GUN_CAN_POINTBLANK
 	works_in_recharger = FALSE
+	indestructible = TRUE
 	empty_click = null
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_pistol.dmi'
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
@@ -266,7 +267,7 @@
 /obj/item/weapon/gun/energy/plasma/plasma_pistol/proc/toggle_ammo()
 	if(ammo == plasma_bolt)
 		ammo = overcharged_bolt
-		charge_cost = 1000
+		charge_cost = 250
 		fire_sound = "gun_plasma_overcharge"
 	else if(ammo == overcharged_bolt)
 		ammo = plasma_bolt
@@ -281,7 +282,7 @@
 	heat_per_shot = 3
 	charge_cost = 10
 	ammo = /datum/ammo/energy/halo_plasma/plasma_rifle
-	has_heat_overlay = TRUE
+	has_heat_overlay = FALSE // temporary change until i rework the overlay code...
 	has_overheat_icon_state = TRUE
 	fire_sound = 'sound/weapons/halo/gun_plasmarifle_1.ogg'
 	start_automatic = TRUE
@@ -315,6 +316,115 @@
 	recoil_unwielded = RECOIL_AMOUNT_TIER_5
 	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
 
+/obj/item/weapon/gun/energy/plasma/plasma_repeater
+	name = "\improper plasma repeater"
+	desc = null
+	icon_state = "plasma_repeater"
+	item_state = "plasma_rifle" // temporary
+	heat_per_shot = 3
+	charge_cost = 5
+	ammo = /datum/ammo/energy/halo_plasma/plasma_repeater
+	has_heat_overlay = FALSE
+	has_overheat_icon_state = TRUE
+	fire_sound = "gun_heavyplasmaburst"
+	firesound_volume = 30
+	attachable_allowed = list(/obj/item/attachable/repeater_stock)
+	start_automatic = TRUE
+	muzzleflash_iconstate = "muzzle_flash_blue"
+	muzzle_flash_color = COLOR_PLASMA_BLUE
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_repeater.dmi'
+	overheat_sound = 'sound/weapons/halo/repeater_overheat.ogg'
+	manual_vent_sound = 'sound/weapons/halo/repeater_overheat.ogg'
+	close_vent_sound = 'sound/weapons/halo/repeater_overheat_finish.ogg'
+
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 32, "muzzle_y" = 16,"rail_x" = 22, "rail_y" = 20, "under_x" = 32, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 0, "special_y" = 16)
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/repeater_stock/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(iscovenant(user))
+		origin[1] = "[icon2html(src, user)] This is a Nakata'vho-pattern plasma rifle"
+		insert_line = "An ancient and venerable weapon which has served the Covenant for many centuries in the hands of its most honoured warriors. A truly brutal tool, capable of immense kinetic and raw thermal damage, blasting armour to pieces and rendering flesh nothing but boiled mist. Most commonly seen in the hands of Sangheili warriors, or the veterans of lesser rates."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-XX plasma repeater"
+		insert_line = "A much larger variant of the Type-25 plasma rifle. Although not officially classified by ONI intelligence programs due to its uncommon usage in the Covenant military, this is not for lack of threat posed. Most compare it to being a LMG variant of the standard T-25 plasma rifle."
+	origin.Insert(2, insert_line)
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_8
+	scatter_unwielded = SCATTER_AMOUNT_TIER_7
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
+	fa_max_scatter = SCATTER_AMOUNT_TIER_5
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy
+	name = "\improper heavy plasma repeater"
+	desc = null
+	icon_state = "heavy_repeater"
+	item_state = "plasma_rifle" // temporary
+	heat_per_shot = 1.5
+	charge_cost = 5
+	ammo = /datum/ammo/energy/halo_plasma/plasma_repeater
+	has_heat_overlay = FALSE
+	has_overheat_icon_state = TRUE
+	fire_sound = "gun_heavyplasmaburst"
+	start_automatic = TRUE
+	muzzleflash_iconstate = "muzzle_flash_blue"
+	muzzle_flash_color = COLOR_PLASMA_BLUE
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/plasma_repeater.dmi'
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/repeater_stock/heavy/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(iscovenant(user))
+		origin[1] = "[icon2html(src, user)] This is a Orsu'vho-pattern plasma rifle"
+		insert_line = "An ancient and venerable weapon which has served the Covenant for many centuries in the hands of its most honoured warriors. A truly brutal tool, capable of immense kinetic and raw thermal damage, blasting armour to pieces and rendering flesh nothing but boiled mist. Most commonly seen in the hands of Sangheili warriors, or the veterans of lesser rates."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-XX plasma repeater"
+		insert_line = "A much larger variant of the Type-25 plasma rifle. Although not officially classified by ONI intelligence programs due to its uncommon usage in the Covenant military, this is not for lack of threat posed. Most compare it to being a LMG variant of the standard T-25 plasma rifle."
+	origin.Insert(2, insert_line)
+
+/obj/item/weapon/gun/energy/plasma/plasma_repeater/heavy/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_SMG)
+	set_burst_delay(FIRE_DELAY_TIER_12)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	accuracy_mult = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_3
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_9
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_8
+	scatter_unwielded = SCATTER_AMOUNT_TIER_7
+	damage_mult = BASE_BULLET_DAMAGE_MULT * 1.2
+	recoil_unwielded = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = FULL_AUTO_SCATTER_PEAK_TIER_2
+	fa_max_scatter = SCATTER_AMOUNT_TIER_5
+
 /obj/item/weapon/gun/smg/covenant_needler
 	name = "\improper needler"
 	desc = null
@@ -330,6 +440,7 @@
 	muzzleflash_iconstate = "muzzle_flash_pink"
 	muzzle_flash_color = LIGHT_COLOR_PINK
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/needler.dmi'
+	indestructible = TRUE
 	start_automatic = TRUE
 	empty_sound = null
 	current_mag = /obj/item/ammo_magazine/needler_crystal
@@ -349,7 +460,7 @@
 		insert_line = "Automatic guided munitions launcher, firing charged Subanese crystals shaved from a central core. The Eket'Vauh pattern is produced on High Charity, within the Sacred Promissory's Assembly-Forges. A less common variant used by those given favour by the High Council, the purple-pink shards fired by this weapon ensure efficient judgement in a violent detonation."
 	else
 		origin[1] = "[icon2html(src, user)] This is a Type-33 needler"
-		insert_line = "An esoteric Covenant \"ballistic\" weapon firing bright pink-purple shards of energized crystal, which home in on targets through currently unknown means. A weapon seemingly developed out of pure cruelty, the \"Needler\"'s every shot is a nigh-lethal explosive, rending armour, flesh and bone, littering the body with microscopic shrapnel and significant burns. God help you if someone gets \"Super-Combined\", nothing but pink mist."
+		insert_line = "An esoteric Covenant \"ballistic\" weapon firing bright pink-purple shards of energized crystal, which home in on targets through currently unknown means. A weapon seemingly developed out of pure cruelty, the needler's every shot is a nigh-lethal explosive, rending armour, flesh and bone. It litters the body with microscopic shrapnel and brutal burns. God help you if someone gets \"Super-Combined\", nothing but pink mist."
 	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/smg/covenant_needler/unique_action(mob/user)
@@ -411,11 +522,12 @@
 	reload_sound = 'sound/weapons/halo/gun_carbine_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_carbine_cocked.ogg'
 	unload_sound = 'sound/weapons/halo/gun_carbine_unload.ogg'
-	empty_sound = 'sound/weapons/halo/gun_carbine_dryfire.ogg'
+	empty_click = 'sound/weapons/halo/gun_carbine_dryfire.ogg'
 	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AUTO_EJECTOR|GUN_AMMO_COUNTER
 	current_mag = /obj/item/ammo_magazine/carbine
+	indestructible = TRUE
 	map_specific_decoration = FALSE
-	attachable_allowed = list(/obj/item/attachable/carbine_muzzle)
+	attachable_allowed = list(/obj/item/attachable/carbine_muzzle, /obj/item/attachable/scope/mini/covenant)
 	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
 	muzzleflash_iconstate = "muzzle_flash_green"
 	muzzle_flash_color = LIGHT_COLOR_GREEN
@@ -440,7 +552,7 @@
 		insert_line = "One of the few ballistic weapons in use by the Covenant, the Vostu Pattern Carbine fires a 8x60mm caseless radioactive slug, which commonly fragments upon penetrating a target, potentially turning even minor wounds lethal with the toxic material left behind. Used by Sangheili warriors and many a Kig'yar marksmen who seek a cruel and precise weapon."
 	else
 		origin[1] = "[icon2html(src, user)] This is a Type-XX carbine"
-		insert_line = "An esoteric Covenant \"ballistic\" weapon firing bright pink-purple shards of energized crystal, which home in on targets through currently unknown means. A weapon seemingly developed out of pure cruelty, the \"Needler\"'s every shot is a nigh-lethal explosive, rending armour, flesh and bone, littering the body with microscopic shrapnel and significant burns. God help you if someone gets \"Super-Combined\", nothing but pink mist."
+		insert_line = "One of the few actual \"guns\" the Covenant uses, fires a supersonic radioactive slug with extreme precision. The slugs have a tendency to shatter or fragment inside a target, leaving super heated and highly toxic shrapnel in the victims body, potentially killing wounded targets in minutes. It's mostly seen in the hands of Jackal marksmen and some Elites. Its shots give off a distinct snap-crack report and leave a trail of radioactive particles in-air."
 	origin.Insert(2, insert_line)
 
 /obj/item/weapon/gun/rifle/covenant_carbine/set_gun_attachment_offsets()
@@ -452,7 +564,7 @@
 	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
 	integrated.Attach(src)
 	update_attachable(integrated.slot)
-	var/obj/item/attachable/scope/variable_zoom/covenant/scope = new(src)
+	var/obj/item/attachable/scope/mini/covenant/scope = new(src)
 	scope.flags_attach_features &= ~ATTACH_REMOVABLE
 	scope.Attach(src)
 	scope.hidden = TRUE
@@ -475,3 +587,108 @@
 
 /obj/item/weapon/gun/rifle/covenant_carbine/unload_chamber(mob/user)
 	return
+
+/obj/item/weapon/gun/rifle/needle_rifle
+	name = "\improper needle rifle"
+	desc = null
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/covenant/covenant_weapons.dmi'
+	icon_state = "needle_rifle"
+	item_state = "needle_rifle"
+	fire_sound = "gun_needlerifle"
+	reload_sound = 'sound/weapons/halo/needle_rifle/gun_needlerifle_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/needle_rifle/gun_needlerifle_cock.ogg'
+	unload_sound = 'sound/weapons/halo/needle_rifle/gun_needlerifle_unload.ogg'
+	empty_click = 'sound/weapons/halo/needle_rifle/gun_needler_dryfire.ogg'
+	flags_gun_features = GUN_CAN_POINTBLANK|GUN_AUTO_EJECTOR|GUN_AMMO_COUNTER
+	current_mag = /obj/item/ammo_magazine/needle_rifle
+	indestructible = TRUE
+	map_specific_decoration = FALSE
+	attachable_allowed = list(/obj/item/attachable/needle_rifle_muzzle, /obj/item/attachable/scope/variable_zoom/covenant, /obj/item/attachable/scope/variable_zoom/covenant)
+	muzzleflash_icon = 'icons/halo/obj/items/weapons/halo_projectiles.dmi'
+	muzzleflash_iconstate = "muzzle_flash_pink"
+	muzzle_flash_color = LIGHT_COLOR_PINK
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/carbine.dmi'
+	inhand_x_dimension = 64
+	inhand_y_dimension = 64
+	worn_x_dimension = 64
+	worn_y_dimension = 64
+	item_icons = list(
+		WEAR_BACK = 'icons/halo/mob/humans/onmob/clothing/back/guns_by_type/rifles_32.dmi',
+		WEAR_J_STORE = 'icons/halo/mob/humans/onmob/clothing/suit_storage/suit_storage_by_faction/suit_slot_cov.dmi',
+		WEAR_L_HAND = 'icons/halo/mob/humans/onmob/items_lefthand_halo_64.dmi',
+		WEAR_R_HAND = 'icons/halo/mob/humans/onmob/items_righthand_halo_64.dmi'
+	)
+
+/obj/item/weapon/gun/rifle/needle_rifle/get_examine_text(mob/living/carbon/human/user)
+	. = ..()
+	var/list/origin = .
+	var/insert_line
+	if(iscovenant(user))
+		origin[1] = "[icon2html(src, user)] This is a Gadulo-Pattern Needle Rifle"
+		insert_line = "An extremely accurate and destructive Subanese-Crystal loaded marksmen rifle in use by the Covenant's holy legions. Lacks the magnetic auger that would allow for guided fire, relying on the users own merits to ensure its deadly shots hit their target. While not as easily used, it retains the ability to 'super-combine' an enemy to the usual horrifying result."
+	else
+		origin[1] = "[icon2html(src, user)] This is a Type-31 Needle Rifle"
+		insert_line = "A Covenant marksmen-rifle based on the same mechanics used in the Type-33 GML 'Needler'; shaved crystal shards of a larger piece are magnetically accelerated down the barrel and towards a target, though these seem to lack the guidance system of the Type-33. Seen less commonly than the radioactive carbines or beam rifles, the needle rifle serves as a specialist marksmen rifle used by snipers and specialists. Retains the ability to 'super-combine' a target."
+	origin.Insert(2, insert_line)
+
+/obj/item/weapon/gun/rifle/needle_rifle/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 22, "rail_y" = 20, "under_x" = 32, "under_y" = 16, "stock_x" = -16, "stock_y" = 16, "special_x" = 4, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/needle_rifle/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/needle_rifle_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+	var/obj/item/attachable/needle_rifle_stock/stock = new(src)
+	stock.flags_attach_features &= ~ATTACH_REMOVABLE
+	stock.Attach(src)
+	update_attachable(stock.slot)
+
+	var/obj/item/attachable/scope/variable_zoom/covenant/scope = new(src)
+	scope.flags_attach_features &= ~ATTACH_REMOVABLE
+	scope.Attach(src)
+	scope.hidden = TRUE
+	update_attachable(scope.slot)
+
+/obj/item/weapon/gun/rifle/needle_rifle/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_6)
+	set_burst_amount(BURST_AMOUNT_TIER_1)
+	accuracy_mult = BASE_ACCURACY_MULT
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT
+	scatter = SCATTER_AMOUNT_TIER_9
+	scatter_unwielded = SCATTER_AMOUNT_TIER_6
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_4
+	fa_scatter_peak = 16
+	fa_max_scatter = 2
+
+/obj/item/weapon/gun/rifle/needle_rifle/unique_action(mob/user)
+	return
+
+/obj/item/weapon/gun/rifle/needle_rifle/unload_chamber(mob/user)
+	return
+
+/obj/item/weapon/gun/rifle/needle_rifle/unload(mob/user, reload_override = 0, drop_override = 0, loc_override = 0) //Override for reloading mags after shooting, so it doesn't interrupt burst. Drop is for dropping the magazine on the ground.
+	if(!reload_override && (flags_gun_features & (GUN_BURST_FIRING|GUN_INTERNAL_MAG)))
+		return
+
+	if(!current_mag || QDELETED(current_mag) || (current_mag.loc != src && !loc_override))
+		current_mag = null
+		update_icon()
+		return
+
+	if(drop_override || !user) //If we want to drop it on the ground or there's no user.
+		current_mag.forceMove(get_turf(src))//Drop it on the ground.
+	else
+		user.put_in_hands(current_mag)
+
+	playsound(user, unload_sound, 25, 1, 5)
+	user.visible_message(SPAN_NOTICE("[user] unloads [current_mag] from [src]."),
+	SPAN_NOTICE("You unload [current_mag] from [src]."), null, 4, CHAT_TYPE_COMBAT_ACTION)
+	current_mag.update_icon()
+	current_mag = null
+
+	update_icon()

@@ -52,6 +52,10 @@ map mackay_station_shipmap
 
 endmap
 
+map cov_cloistered_light
+
+endmap
+
 map uscss_obsidian_falk
 	disabled
 endmap
