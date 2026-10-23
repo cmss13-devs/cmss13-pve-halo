@@ -2842,6 +2842,7 @@
 #include "modular_pve_halo\code\game\objects\structures\energy_barrier.dm"
 #include "modular_pve_halo\code\game\objects\structures\fence.dm"
 #include "modular_pve_halo\code\game\objects\structures\ladders.dm"
+#include "modular_pve_halo\code\game\objects\structures\platforms.dm"
 #include "modular_pve_halo\code\game\objects\structures\shower.dm"
 #include "modular_pve_halo\code\game\objects\structures\signs.dm"
 #include "modular_pve_halo\code\game\objects\structures\tables_racks.dm"
