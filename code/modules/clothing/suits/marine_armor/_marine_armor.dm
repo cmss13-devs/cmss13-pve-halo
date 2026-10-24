@@ -956,3 +956,4 @@
 	armor_internaldamage = CLOTHING_ARMOR_NONE
 	time_to_unequip = 10
 	time_to_equip = 10
+
