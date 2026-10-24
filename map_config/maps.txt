@@ -118,3 +118,12 @@ endmap
 
 map oni_digsite_451
 endmap
+
+map jungle_delta
+endmap
+
+map prospector_canyon
+endmap
+
+map arctic_valley
+endmap
