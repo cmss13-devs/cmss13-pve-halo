@@ -46,6 +46,8 @@ GLOBAL_LIST_INIT(sqrtTable, list(1, 1, 1, 2, 2, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 4,
 // min is inclusive, max is exclusive
 #define WRAP(val, min, max) clamp(( (min) == (max) ? (min) : (val) - (floor(((val) - (min))/((max) - (min))) * ((max) - (min))) ),(min),(max))
 
+//Rounds up. Wow.
+#define ROUND_UP(x) ( -round(-(x)))
 
 // MATH PROCS
 
