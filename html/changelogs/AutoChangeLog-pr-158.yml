@@ -1,6 +1,0 @@
-author: "Yorkoh"
-delete-after: True
-changes:
-  - rscadd: "backend setup for faction fire_support and specific halo firesupport binos"
-  - qol: "new ordnance tubes for mixed ammo delivery"
-  - qol: "fire support binos are indestructible"
