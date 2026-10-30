@@ -56,6 +56,10 @@ map cov_cloistered_light
 
 endmap
 
+map cop_brighton
+
+endmap
+
 map uscss_obsidian_falk
 	disabled
 endmap
