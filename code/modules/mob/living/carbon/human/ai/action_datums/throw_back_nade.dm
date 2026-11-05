@@ -17,7 +17,7 @@
 	if(!HAS_TRAIT(tied_mob, TRAIT_DEXTROUS))
 		return 0
 	if(HAS_TRAIT(tied_mob, TRAIT_DEXTROUS))
-		return 25
+		return ACTION_WEIGHT_THROW_BACK_GRENADE
 
 	return
 
