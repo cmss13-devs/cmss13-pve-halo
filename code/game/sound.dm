@@ -452,6 +452,8 @@
 				sound = pick('sound/weapons/halo/m6d/gun_m6d_1.ogg', 'sound/weapons/halo/m6d/gun_m6d_2.ogg', 'sound/weapons/halo/m6d/gun_m6d_3.ogg' ,'sound/weapons/halo/m6d/gun_m6d_4.ogg' ,'sound/weapons/halo/m6d/gun_m6d_5.ogg')
 			if("gun_srs99")
 				sound = pick('sound/weapons/halo/gun_srs99_1.ogg','sound/weapons/halo/gun_srs99_2.ogg','sound/weapons/halo/gun_srs99_3.ogg','sound/weapons/halo/gun_srs99_4.ogg')
+			if("gun_srs99_suppressed")
+				sound = pick('sound/weapons/halo/gun_srs99_suppressed.ogg')
 			if("gun_br55")
 				sound = pick('sound/weapons/halo/gun_br55_1.ogg','sound/weapons/halo/gun_br55_2.ogg','sound/weapons/halo/gun_br55_3.ogg','sound/weapons/halo/gun_br55_4.ogg')
 			if("gun_m90")
