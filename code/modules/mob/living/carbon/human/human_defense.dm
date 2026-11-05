@@ -101,6 +101,16 @@ Contains most of the procs that are called when a mob is attacked by something
 			src.visible_message(SPAN_NOTICE("[src]s energy shield shimmers from [attack_text]."), SPAN_DANGER("Your energy shield shimmers from [attack_text]!"))
 			return TRUE
 
+/mob/living/carbon/human/proc/armor_degrade(damage = 0)
+	if(istype(wear_suit, /obj/item/clothing/suit/marine/unsc/mjolnir))
+		var/obj/item/clothing/suit/marine/unsc/mjolnir/armor = wear_suit
+		if(armor.armor_status)
+			if(prob(50))
+				armor.armor_status -= 0.1
+			else
+				armor.armor_status -= 0.25
+			armor.armor_check()
+			return TRUE
 
 /mob/living/carbon/human/proc/check_shields(damage = 0, attack_text = "the attack", combistick=0)
 	if(l_hand && istype(l_hand, /obj/item/weapon))//Current base is the prob(50-d/3)

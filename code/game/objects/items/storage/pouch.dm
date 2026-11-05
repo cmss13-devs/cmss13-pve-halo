@@ -658,6 +658,10 @@
 	for(var/i = 1 to storage_slots)
 		new /obj/item/explosive/grenade/empgrenade/dutch(src)
 
+/obj/item/storage/pouch/explosive/unsc/fill_preset_inventory()
+	for(var/i = 1 to storage_slots)
+		new /obj/item/explosive/grenade/high_explosive/m15/unsc(src)
+
 /obj/item/storage/pouch/medical
 	name = "medical pouch"
 	desc = "It can carry small medical supplies."
