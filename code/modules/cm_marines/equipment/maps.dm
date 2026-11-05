@@ -166,6 +166,12 @@ GLOBAL_LIST_INIT(mapless_maps, list(MAP_RUNTIME, MAP_CHINOOK, MAIN_SHIP_DEFAULT_
 	html_link = ""
 	color = "white"
 
+/obj/item/map/slade_point
+	name = "\improper Slade Point Map"
+	desc = "A somewhat blurry view of the city from above, the image seems to have been taken from a Wombat drone's footage."
+	html_link = ""
+	color = "white"
+
 /obj/item/map/taipei
 	name = "\improper Taipei Way-Station map"
 	desc = "A labelled print out of the interior scan of Taipei Station, an unassuming waystation."
@@ -207,6 +213,7 @@ GLOBAL_LIST_INIT_TYPED(map_type_list, /obj/item/map, setup_all_maps())
 		MAP_CANYON_32B = new /obj/item/map/canyon_32b(),
 		MAP_MACKAY_STATION = new /obj/item/map/mackay_station(),
 		MAP_ONI_DIGSITE_451 = new /obj/item/map/oni_digsite_451(),
+		MAP_SLADE_POINT = new /obj/item/map/slade_point(),
 		MAP_BOSENMORI_BASHO = new /obj/item/map/lazarus_landing_map(),
 		MAP_BIG_BLUE = new/obj/item/map/big_red_map(),
 		MAP_CALLIOPE_HIGHWAY = new /obj/item/map/big_red_map(),
