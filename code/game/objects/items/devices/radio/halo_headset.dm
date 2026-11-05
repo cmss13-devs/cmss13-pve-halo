@@ -1,6 +1,7 @@
 /obj/item/device/radio/headset/almayer/marine/solardevils/unsc
 	name = "UNSC headset"
 	desc = "A special headset used by the United Nations Space Command for all branches of the military."
+	minimap_type = MINIMAP_FLAG_UNSC
 	frequency = CRYO_FREQ
 	has_hud = TRUE
 	hud_type = list(MOB_HUD_FACTION_UNSC)
