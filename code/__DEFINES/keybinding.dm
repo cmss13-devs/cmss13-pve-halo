@@ -100,6 +100,8 @@
 #define COMSIG_KB_LIVING_LOOKDOWN_DOWN "keybinding_living_lookdown_down"
 #define COMSIG_KB_LIVING_REST_DOWN "keybinding_living_rest_down"
 #define COMSIG_KB_LIVING_CANCEL_CAMERA_VIEW "keybinding_movement_cancel_camera_view"
+#define COMSIG_KB_LIVING_JUMP_DOWN "keybind_living_jump_down"
+#define COMSIG_KB_LIVING_JUMP_UP "keybind_living_jump_up"
 
 //Mob
 #define COMSIG_KB_MOB_FACENORTH_DOWN "keybinding_mob_facenorth_down"
