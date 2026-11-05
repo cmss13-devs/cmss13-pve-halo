@@ -151,11 +151,15 @@ Radiochat range: 1441 to 1489 (most devices refuse to be tune to other frequency
 
 #define AI_FREQ 1500
 
-//Halo channels
+//Halo Human channels
 #define UNSC_FREQ 1501
-#define COV_FREQ 1502
-#define ODST_FREQ 1503
-#define ONI_FREQ 1504
+#define ODST_FREQ 1502
+#define ONI_FREQ 1503
+
+//Halo Cov channels
+#define COV_SQ1_FREQ 1504
+#define COV_SQ2_FREQ 1505
+#define COV_CMD_FREQ 1506
 
 #define MAX_FREE_FREQ 1599 // -------------------------------------------------
 
@@ -228,9 +232,13 @@ GLOBAL_LIST_INIT(radiochannels, list(
 	RADIO_CHANNEL_REBEL_UA = PFA_FREQ,
 	RADIO_CHANNEL_REBEL_TWE = JSC_FREQ,
 
-	RADIO_CHANNEL_COV = COV_FREQ,
 	SQUAD_ODST = ODST_FREQ,
 	RADIO_CHANNEL_ONI_SEC = ONI_FREQ,
+
+	SQUAD_COVENANT = COV_SQ1_FREQ,
+	SQUAD_COVENANT_2 = COV_SQ2_FREQ,
+	RADIO_CHANNEL_COV_CMD = COV_CMD_FREQ,
+
 ))
 
 // Response Teams
@@ -336,9 +344,11 @@ SUBSYSTEM_DEF(radio)
 		"[PFA_FREQ]" = "pfaradio",
 		"[JSC_FREQ]" = "jscradio",
 		"[UNSC_FREQ]" = "unscradio",
-		"[COV_FREQ]" = "covradio",
 		"[ODST_FREQ]" = "odstradio",
 		"[ONI_FREQ]" = "oniradio",
+		"[COV_SQ1_FREQ]" = "covsq1radio",
+		"[COV_SQ2_FREQ]" = "covsq2radio",
+		"[COV_CMD_FREQ]" = "covcmdradio",
 	)
 
 /datum/controller/subsystem/radio/proc/add_object(obj/device as obj, new_frequency as num, filter = null as text|null)
