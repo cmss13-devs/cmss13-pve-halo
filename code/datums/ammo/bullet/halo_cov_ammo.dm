@@ -32,6 +32,9 @@
 	ammo_glowing = TRUE
 	bullet_light_color = COLOR_PLASMA_BLUE
 
+/datum/ammo/energy/halo_plasma/plasma_rifle/covenant_sentry_turret
+	shell_speed = AMMO_SPEED_TIER_3
+
 /datum/ammo/energy/halo_plasma/phantom_plasma_turret
 	name = "plasma bolt"
 	icon_state = "plasma_blue"
