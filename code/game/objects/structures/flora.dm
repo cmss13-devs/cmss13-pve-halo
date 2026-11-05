@@ -165,6 +165,9 @@ PLANT_CUT_MACHETE = 3 = Needs at least a machete to be cut down
 /obj/structure/flora/tree/jungle/bigtreeBOT
 	icon_state = "bigtreeBOT"
 
+/obj/structure/flora/tree/jungle/bigtreeBOT/nomac
+	icon_state = "bigtreeBOT_nomac"
+
 //grass
 /obj/structure/flora/grass
 	name = "grass"
