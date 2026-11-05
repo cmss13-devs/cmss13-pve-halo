@@ -43,6 +43,50 @@
 		var/mob/living/carbon/human/user = loc
 		update_mouse_pointer(user, TRUE)
 
+/obj/item/weapon/covenant/curveblade
+	name = "sangheili curveblade"
+	desc = "A curveblade, a traditional sangheili weapon."
+	icon_state = "curveblade"
+	item_state = null
+	sharp = IS_SHARP_ITEM_ACCURATE
+	edge = TRUE
+	flags_atom = FPRINT|QUICK_DRAWABLE
+	flags_equip_slot = SLOT_WAIST|SLOT_FACE|SLOT_STORE|SLOT_SUIT_STORE
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	force = MELEE_FORCE_TIER_10
+	throwforce = MELEE_FORCE_TIER_10
+	throw_speed = SPEED_VERY_FAST
+	throw_range = 6
+	attack_speed = 0.5 SECONDS
+	damtype = BRUTE
+	w_class = SIZE_SMALL
+	hitsound = 'sound/weapons/slash.ogg'
+
+/obj/item/weapon/covenant/blamite_dagger
+	name = "pain-glass knife"
+	desc = "A disposable knife of Subanese crystal formed into a dense blade capable of slashing."
+	icon_state = "blamite_standard"
+	item_state = null
+	sharp = IS_SHARP_ITEM_ACCURATE
+	edge = TRUE
+	flags_atom = FPRINT|QUICK_DRAWABLE
+	flags_equip_slot = SLOT_WAIST|SLOT_FACE|SLOT_STORE|SLOT_SUIT_STORE
+	attack_verb = list("slashed", "stabbed", "sliced", "torn", "ripped", "diced", "cut")
+	force = MELEE_FORCE_TIER_10
+	throwforce = MELEE_FORCE_TIER_10
+	throw_speed = SPEED_VERY_FAST
+	throw_range = 6
+	attack_speed = 0.5 SECONDS
+	damtype = BRUTE
+	w_class = SIZE_SMALL
+	hitsound = 'sound/weapons/slash.ogg'
+
+/obj/item/weapon/covenant/blamite_dagger/kigyar
+	name = "kig-yar pain-glass knife"
+	desc = "A disposable knife of Subanese crystal formed into a dense blade capable of slashing. The handle is shaped better for kig-yar hands."
+	icon_state = "blamite_kigyar"
+
+
 /obj/item/weapon/covenant/energy_sword
 	name = "energy sword"
 	desc = null

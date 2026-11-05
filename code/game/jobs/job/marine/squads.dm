@@ -149,6 +149,11 @@
 	var/squad_three_access = null
 	var/squad_four_access = null
 
+	var/num_ultra = 0
+	var/num_majors = 0
+	var/max_ultra = 0
+	var/max_majors = 0
+
 /datum/squad/marine
 	name = "Root"
 	active = TRUE
@@ -786,6 +791,36 @@
 		if(JOB_TWE_RMC_TROOPLEADER)
 			assignment = JOB_TWE_RMC_TROOPLEADER
 
+//covslop
+		if(JOB_COV_LANCE_STANDARD)
+			assignment = JOB_COV_LANCE_STANDARD
+			num_riflemen++
+			var/squad_number = (ceil(num_riflemen / 2) > 2) ? pick(1, 2) : ceil(num_riflemen / 2)
+			assign_fireteam("SQ[squad_number]", M)
+		if(JOB_COV_LANCE_SPECIALIST)
+			assignment = JOB_COV_LANCE_SPECIALIST
+			num_specialists++
+			var/squad_number = (num_specialists > 2) ? pick(1, 2) : num_specialists
+			assign_fireteam("SQ[squad_number]", M)
+		if(JOB_COV_LANCE_OBEDIENTARY)
+			assignment = JOB_COV_LANCE_OBEDIENTARY
+			M.important_radio_channels += radio_freq
+			num_majors++
+			var/squad_number = (num_tl > 2) ? pick(1, 2) : num_majors
+			assign_fireteam("SQ[squad_number]", M)
+			assign_ft_leader("SQ[squad_number]", M)
+		if(JOB_COV_LANCE_ULTRA)
+			assignment = JOB_COV_LANCE_ULTRA
+			M.important_radio_channels += radio_freq
+			num_ultra++
+		if(JOB_COV_LANCE_LEADER)
+			assignment = JOB_COV_LANCE_LEADER
+			num_leaders++
+			squad_leader = M
+			SStracking.set_leader(tracking_id, M)
+			SStracking.start_tracking("marine_sl", M)
+
+
 	RegisterSignal(M, COMSIG_PARENT_QDELETING, PROC_REF(personnel_deleted), override = TRUE)
 	if(assignment != JOB_SQUAD_LEADER)
 		SStracking.start_tracking(tracking_id, M)
@@ -867,6 +902,17 @@
 			num_tl--
 		if(JOB_SQUAD_LEADER)
 			num_leaders--
+		if(JOB_COV_LANCE_LEADER)
+			num_leaders--
+		if(JOB_COV_LANCE_ULTRA)
+			num_ultra--
+		if(JOB_COV_LANCE_OBEDIENTARY)
+			num_majors--
+		if(JOB_COV_LANCE_SPECIALIST)
+			num_specialists--
+		if(JOB_COV_LANCE_STANDARD)
+			num_riflemen--
+
 
 //proc for demoting current Squad Leader
 /datum/squad/proc/demote_squad_leader(leader_killed)

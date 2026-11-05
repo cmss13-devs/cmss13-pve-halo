@@ -190,7 +190,11 @@
 		if("xenoblood")
 			return "X*"
 		if("sangheiliblood")
-			return "S*"
+			return "*S"
+		if("ruuhtianblood")
+			return "*K"
+		if("unggoyblood")
+			return "*U"
 
 
 //returns the color of the mob's blood
@@ -272,6 +276,12 @@
 			return list("O-")
 		if("O+")
 			return list("O-", "O+")
+		if("*S")
+			return list("*S")
+		if("*K")
+			return list("*K")
+		if("*U")
+			return list("*U")
 
 
 /////////////////// add_splatter_floor ////////////////////////////////////////
