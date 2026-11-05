@@ -1,0 +1,8 @@
+{
+	"map_name": "LV-522 Featureless Barrens",
+	"map_path": "map_files/LV522_Featureless_Barrens",
+	"map_file": "LV522_Featureless_Barrens.dmm",
+    "weather_holder": "/datum/weather_ss_map_holder/lv522_chances_claim",
+    "traits": [{ "Ground": true }],
+    "camouflage": "jungle"
+}

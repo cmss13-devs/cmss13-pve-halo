@@ -113,8 +113,24 @@ endmap
 map halo_new_irvine
 endmap
 
+map lv818_featureless_jungle
+endmap
+
+map featureless_space
+endmap
+
+map lv295_featureless_arctic
+endmap
+
+map lv818_featureless_desert
+endmap
+
+map lv522_featureless_barrens
+endmap
+
 map mackay_station
 endmap
 
 map oni_digsite_451
 endmap
+
