@@ -313,6 +313,16 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
+"aN" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "aO" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -331,6 +341,24 @@
 	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/two)
+"aQ" = (
+/obj/structure/closet/secure_closet/marine_personal{
+	pixel_x = 8;
+	pixel_y = -24
+	},
+/obj/structure/closet/secure_closet/marine_personal{
+	pixel_x = -7;
+	pixel_y = -24
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/floodlight/landing/floor{
+	color = "#dae2ff";
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "aR" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer,
 /obj/structure/machinery/door/poddoor/almayer{
@@ -885,6 +913,24 @@
 /obj/structure/machinery/autolathe,
 /turf/open/floor/almayer/plating/northeast,
 /area/dark_was_the_night/engineering)
+"cq" = (
+/obj/structure/closet/secure_closet/marine_personal{
+	pixel_x = 8;
+	pixel_y = -24
+	},
+/obj/structure/closet/secure_closet/marine_personal{
+	pixel_x = -7;
+	pixel_y = -24
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "cr" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -1690,6 +1736,10 @@
 	pixel_y = 0;
 	pixel_x = 0
 	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
 "ec" = (
@@ -1858,23 +1908,29 @@
 	dir = 8
 	},
 /obj/item/clothing/under/marine/unsc{
-	pixel_x = 1;
-	pixel_y = -3
+	pixel_x = -1;
+	pixel_y = -6
 	},
 /obj/item/clothing/under/marine/unsc{
-	pixel_x = -4;
+	pixel_x = -5;
 	pixel_y = 9
 	},
 /obj/item/clothing/under/marine/unsc/forecon{
 	pixel_x = 17;
-	pixel_y = -1
+	pixel_y = -6
 	},
 /obj/item/clothing/head/helmet/marine/unsc/pilot/weapons_operator{
-	pixel_x = 10;
-	pixel_y = 9
+	pixel_x = 15;
+	pixel_y = 4
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1;
+	pixel_x = 0;
+	pixel_y = 0
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/dorms)
@@ -1948,7 +2004,7 @@
 	},
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 2;
-	id = "ship_armory2";
+	id = "ship_armory3";
 	name = "\improper Small Arms Storage"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -1956,7 +2012,7 @@
 "eA" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 2;
-	id = "ship_armory2";
+	id = "ship_armory3";
 	name = "\improper Small Arms Storage"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -2020,10 +2076,10 @@
 "eI" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 2;
-	id = "ship_armory2";
+	id = "ship_armory3";
 	name = "\improper Small Arms Storage"
 	},
-/turf/open/floor/almayer/edge/smooth/corner/east,
+/turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/armory)
 "eJ" = (
 /obj/structure/machinery/power/terminal{
@@ -2034,14 +2090,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/engineering)
-"eK" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 2;
-	id = "ship_armory2";
-	name = "\improper Small Arms Storage"
-	},
-/turf/open/floor/almayer/edge/smooth/corner,
-/area/dark_was_the_night/armory)
 "eL" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 2;
@@ -2052,7 +2100,7 @@
 /area/dark_was_the_night/armory)
 "eM" = (
 /obj/structure/sign/banners/halo/unsc{
-	pixel_x = 4;
+	pixel_x = 14;
 	pixel_y = -6
 	},
 /turf/closed/wall/unsc/reinforced/hull,
@@ -2404,7 +2452,7 @@
 "fH" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8;
-	id = "ship_armory2";
+	id = "ship_armory3";
 	name = "\improper Small Arms Storage"
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -2662,15 +2710,6 @@
 	},
 /turf/open/floor/almayer/orangefull,
 /area/dark_was_the_night/hangar/ventral)
-"go" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_y = 28;
-	id = "explosives";
-	name = "explosives lockup shutters control";
-	req_one_access_txt = "19;12"
-	},
-/turf/closed/wall/unsc/reinforced/hull,
-/area/dark_was_the_night/armory)
 "gp" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_x = 11;
@@ -2878,15 +2917,54 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/upper_hallway)
+"gO" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "gP" = (
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/cryo_bay/two)
+"gQ" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 2;
+	id = "ship_armory3";
+	name = "\improper Small Arms Storage"
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/dark_was_the_night/armory)
 "gR" = (
 /obj/structure/platform{
 	dir = 8
 	},
 /turf/open/shuttle/escapepod/floor1,
 /area/dark_was_the_night/cryo_bay/one)
+"gS" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 2;
+	id = "ship_armory3";
+	name = "\improper Small Arms Storage"
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/armory)
+"gT" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/corner,
+/area/dark_was_the_night/armory)
+"gU" = (
+/turf/open/floor/almayer/edge/smooth/corner/east,
+/area/dark_was_the_night/armory)
+"gV" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "gW" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -2897,6 +2975,13 @@
 "gX" = (
 /turf/open/floor/almayer/plating,
 /area/dark_was_the_night/medical)
+"gY" = (
+/obj/structure/machinery/light/double/blue,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/dorms)
 "gZ" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/almayer/mono,
@@ -14216,8 +14301,8 @@ fH
 Tc
 fo
 DR
-om
-eB
+gT
+gQ
 em
 dZ
 Ul
@@ -14338,8 +14423,8 @@ oZ
 fx
 Or
 DR
-YE
-eD
+DR
+gS
 DR
 DR
 nH
@@ -14461,7 +14546,7 @@ fy
 nH
 DR
 DR
-eD
+gS
 nH
 DR
 nH
@@ -14583,7 +14668,7 @@ fA
 fp
 fg
 nH
-eD
+gS
 Jt
 ON
 qR
@@ -14705,7 +14790,7 @@ Tc
 Tc
 XH
 nH
-eD
+gS
 nH
 DR
 nH
@@ -14827,7 +14912,7 @@ Tc
 fr
 mk
 nH
-eD
+gS
 nH
 DR
 DR
@@ -14948,7 +15033,7 @@ fK
 Tc
 fs
 qj
-DR
+gU
 eI
 hB
 ea
@@ -15070,7 +15155,7 @@ dJ
 Tc
 fs
 qj
-RD
+fK
 Tc
 Tc
 Tc
@@ -15192,8 +15277,8 @@ dJ
 Tc
 fs
 qj
-DR
-eK
+YE
+eB
 em
 dZ
 Ul
@@ -15924,7 +16009,7 @@ tw
 ww
 oZ
 KI
-nH
+gU
 eL
 hB
 ea
@@ -16046,7 +16131,7 @@ Tc
 Tc
 tD
 dr
-wL
+dJ
 Tc
 Tc
 Tc
@@ -16403,7 +16488,7 @@ uQ
 Tc
 Tc
 Tc
-go
+Tc
 gd
 Hv
 oZ
@@ -18249,7 +18334,7 @@ eb
 dU
 bM
 Bk
-bM
+aN
 Ag
 CQ
 Lc
@@ -18859,7 +18944,7 @@ Bk
 dV
 bM
 du
-dh
+aQ
 CQ
 CQ
 Lc
@@ -19461,7 +19546,7 @@ ID
 ID
 vI
 Bk
-bM
+aN
 EW
 eO
 ey
@@ -19587,11 +19672,11 @@ bM
 eY
 eQ
 PX
-Bk
+gO
 up
 dT
 dy
-dh
+cq
 CQ
 CQ
 Lc
@@ -19828,7 +19913,7 @@ CQ
 CQ
 bM
 eZ
-bM
+gV
 CQ
 ID
 ID
@@ -20314,9 +20399,9 @@ fW
 fW
 CQ
 CQ
-fu
+bM
 Bk
-fb
+gY
 CQ
 ID
 ID
@@ -20436,9 +20521,9 @@ fW
 fW
 CQ
 CQ
-CQ
-Ef
-fc
+fu
+Bk
+fb
 CQ
 ID
 ID
@@ -20559,8 +20644,8 @@ CQ
 CQ
 Gs
 CQ
-fd
-fd
+Ef
+fc
 CQ
 ID
 ID
@@ -20681,8 +20766,8 @@ ID
 ID
 ID
 CQ
-CQ
-CQ
+fd
+fd
 CQ
 ID
 ID
@@ -20802,10 +20887,10 @@ ID
 ID
 ID
 ID
-ID
-ID
-ID
-ID
+CQ
+CQ
+CQ
+CQ
 ID
 ID
 ID

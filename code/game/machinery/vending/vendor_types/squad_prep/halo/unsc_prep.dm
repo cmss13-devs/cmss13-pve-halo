@@ -518,34 +518,34 @@ GLOBAL_LIST_INIT(cm_vending_clothing_nco_forecon, list(
 	vend_flags = VEND_CLUTTER_PROTECTION | VEND_TO_HAND | VEND_CATEGORY_CHECK //Ensuring stuff goes into your hand, where available
 
 /obj/structure/machinery/cm_vending/clothing/unsc/nco/get_listed_products(mob/user)
+	if(!user)
+		return FALSE
 	if(user.job == JOB_SQUAD_LEADER)
 		return GLOB.cm_vending_clothing_snco_unsc
 	if(user.job == JOB_SQUAD_TEAM_LEADER)
 		return GLOB.cm_vending_clothing_nco_unsc
-	else
-		return
 
 /obj/structure/machinery/cm_vending/clothing/unsc/nco/odst
 	name = "\improper ODST NCO Equipment Rack"
 
 /obj/structure/machinery/cm_vending/clothing/unsc/nco/odst/get_listed_products(mob/user)
+	if(!user.job)
+		return
 	if(user.job == JOB_SQUAD_LEADER)
 		return GLOB.cm_vending_clothing_snco_odst
 	if(user.job == JOB_SQUAD_TEAM_LEADER)
 		return GLOB.cm_vending_clothing_nco_odst
-	else
-		return
 
 /obj/structure/machinery/cm_vending/clothing/unsc/nco/forecon
 	name = "\improper UNSC NCO Advanced Equipment Rack"
 
 /obj/structure/machinery/cm_vending/clothing/unsc/nco/forecon/get_listed_products(mob/user)
+	if(!user)
+		return FALSE
 	if(user.job == JOB_SQUAD_LEADER)
 		return GLOB.cm_vending_clothing_snco_forecon
 	if(user.job == JOB_SQUAD_TEAM_LEADER)
 		return GLOB.cm_vending_clothing_nco_forecon
-	else
-		return
 
 //===Regular marines essentials===\\
 
