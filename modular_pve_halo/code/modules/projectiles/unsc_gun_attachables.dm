@@ -334,6 +334,11 @@
 	icon_state = "m6c_smartscope_obj"
 	attach_icon = "m6c_smartscope"
 
+/obj/item/attachable/scope/mini/smartscope/m6d
+	name = "\improper KFA-2/D Model I smart-linked scope"
+	desc = "An early-model smart-linked scope designed to attach to the M6D magnum. Links with UNSC optics to provide the HUD a reticle and ammunition counter."
+	slot = "rail"
+
 /obj/item/attachable/flashlight/m6
 	name = "\improper M6 flashlight"
 	desc = "The M6 Flashlight. Not much can be said about it, it turns on and off."

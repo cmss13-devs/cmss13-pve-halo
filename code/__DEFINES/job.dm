@@ -21,10 +21,10 @@
 #define SQUAD_PMCPLT_2 "VIRIDIAN-22"
 #define SQUAD_PMCPLT_SMALL "AZURE-16"
 #define SQUAD_RMC "Gamma Troop"
-#define SQUAD_LRRP "Snake Eaters"
+#define SQUAD_LRRP "Home Wreckers"
 #define SQUAD_ODST "The Ferrymen"
 #define SQUAD_ODST_2 "The Ferrymen Sq. 2"
-#define SQUAD_LRRP_2 "Ocelot Grapplers"
+#define SQUAD_LRRP_2 "Bunny Boilers" //In keeping with the theme
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"
@@ -36,8 +36,9 @@
 #define JOB_SQUAD_LOADER "Weapons Loader"
 #define JOB_SQUAD_TEAM_LEADER "Fireteam Leader"
 #define JOB_SQUAD_SMARTGUN "Smartgunner"
+#define JOB_SQUAD_RTO "Radio Telephone Operator"
 #define JOB_SQUAD_ROLES /datum/timelock/squad
-#define JOB_SQUAD_ROLES_LIST list(JOB_SQUAD_MARINE, JOB_SQUAD_LEADER, JOB_SQUAD_ENGI, JOB_SQUAD_MEDIC, JOB_SQUAD_SPECIALIST, JOB_SQUAD_SMARTGUN, JOB_SQUAD_TEAM_LEADER)
+#define JOB_SQUAD_ROLES_LIST list(JOB_SQUAD_MARINE, JOB_SQUAD_RTO, JOB_SQUAD_LEADER, JOB_SQUAD_ENGI, JOB_SQUAD_MEDIC, JOB_SQUAD_SPECIALIST, JOB_SQUAD_SMARTGUN, JOB_SQUAD_TEAM_LEADER)
 
 #define JOB_SQUAD_MARINE_UPP "Infantryman"
 #define JOB_SQUAD_LEADER_UPP "Platoon Sergeant"
@@ -46,12 +47,13 @@
 #define JOB_SQUAD_SMARTGUN_UPP "Machinegunner"
 #define JOB_SO_UPP "UPP Platoon Commander"
 
-#define JOB_SQUAD_TEAM_LEADER_FORECON "Assistant Recon Squad Leader"
+#define JOB_SQUAD_TEAM_LEADER_FORECON "Recon Fireteam Leader"
 #define JOB_SQUAD_LEADER_FORECON  "Recon Squad Leader"
 #define JOB_SQUAD_MEDIC_FORECON "Recon Corpsman"
-#define JOB_SQUAD_RTO "Radio Telephone Operator"
+#define JOB_SQUAD_RTO_FORECON "Recon Radio Telephone Operator"
 #define JOB_SQUAD_MARINE_FORECON "Recon Rifleman"
 #define JOB_SQUAD_SMARTGUN_FORECON "Recon Smartgunner"
+#define JOB_SQUAD_SPECIALIST_FORECON "Recon Weapons Specialist"
 
 #define JOB_SQUAD_MARINE_ODST "ODST Rifleman"
 #define JOB_SQUAD_SPECIALIST_ODST "ODST Weapons Specialist"

@@ -55,13 +55,17 @@
 	eye_protection = EYE_PROTECTION_FLAVOR
 	garbage = FALSE
 	w_class = SIZE_TINY
+	var/motion_tracker = FALSE
 
 	item_icons = list(
 		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
 
-
+/obj/item/clothing/glasses/scouter/Initialize(mapload, list/new_protection)
+	. = ..()
+	if(motion_tracker)
+		AddComponent(/datum/component/motion_tracker_manager)
 
 /obj/item/clothing/glasses/scouter/clicked(mob/user, list/mods)
 	if(mods[ALT_CLICK])
@@ -133,3 +137,11 @@
 		WEAR_EYES = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi',
 		WEAR_FACE = 'icons/halo/mob/humans/onmob/clothing/eyes.dmi'
 	)
+
+
+// scouter, motion-tracker
+
+/obj/item/clothing/glasses/scouter/motion
+	name = "UNSC advanced scouter"
+	desc = "A green holographic UNSC HUD display, featuring a motion-tracker."
+	motion_tracker = TRUE
