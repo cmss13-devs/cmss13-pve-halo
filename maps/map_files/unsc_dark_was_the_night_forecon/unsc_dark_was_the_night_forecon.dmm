@@ -1686,7 +1686,6 @@
 /area/dark_was_the_night/armory)
 "eb" = (
 /obj/structure/surface/table/reinforced/almayer_B,
-/obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/faxmachine/uscm/command/capt{
 	pixel_y = 0;
 	pixel_x = 0
