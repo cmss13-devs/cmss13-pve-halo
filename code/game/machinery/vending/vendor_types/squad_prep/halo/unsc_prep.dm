@@ -529,7 +529,7 @@ GLOBAL_LIST_INIT(cm_vending_clothing_nco_forecon, list(
 	name = "\improper ODST NCO Equipment Rack"
 
 /obj/structure/machinery/cm_vending/clothing/unsc/nco/odst/get_listed_products(mob/user)
-	if(!user.job)
+	if(!user)
 		return
 	if(user.job == JOB_SQUAD_LEADER)
 		return GLOB.cm_vending_clothing_snco_odst
