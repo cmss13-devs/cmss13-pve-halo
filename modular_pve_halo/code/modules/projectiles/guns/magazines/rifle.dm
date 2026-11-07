@@ -91,3 +91,22 @@
 	default_ammo = /datum/ammo/bullet/rifle/dmr
 	caliber = "7.62x51"
 
+/obj/item/ammo_magazine/rifle/halo/ma5k
+	name = "\improper MA5K magazine (7.62x51mm FMJ)"
+	desc = "A rectangular box magazine for the MA5K holding 30 rounds of 7.62x51 FMJ ammunitions."
+	icon_state = "ma5k"
+	max_rounds = 30
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma5k
+	default_ammo = /datum/ammo/bullet/rifle/ma5
+	caliber = "7.62x51"
+	ammo_band_icon = "+ma5k_band"
+	ammo_band_icon_empty = "+ma5k_band_e"
+
+/obj/item/ammo_magazine/rifle/halo/ma5k/shredder
+	name = "\improper MA5K magazine (7.62x51mm Shredder)"
+	desc = "A rectangular box magazine for the MA5B holding 30 rounds of 7.62x51 shredder ammunitions, a specialized ammunition that pierces armor and splinters in the target."
+	max_rounds = 30
+	gun_type = /obj/item/weapon/gun/rifle/halo/ma5k
+	default_ammo = /datum/ammo/bullet/rifle/ma5/shredder
+	caliber = "7.62x51"
+	ammo_band_color = "#994545"

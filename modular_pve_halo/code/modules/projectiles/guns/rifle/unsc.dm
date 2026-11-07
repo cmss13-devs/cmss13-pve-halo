@@ -14,7 +14,7 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5c
 	name = "MA5C ICWS assault rifle"
-	desc = "Belonging to the MA5 individual combat weapons system platform and produced by Misriah Armory, the MA5C is a staple weapon among the UNSC marine corps. It uses a box magazine capable of holding 32 7.62x51mm full-metal-jacket rounds."
+	desc = "Belonging to the MA5 individual combat weapons system platform and produced by Misriah Armory, the MA5C is a staple weapon among the UNSC marine corps. It uses box magazines capable of holding 32 or 48 7.62x51mm full-metal-jacket rounds."
 	icon_state = "ma5c"
 	item_state = "ma5c"
 	caliber = "7.62x51mm"
@@ -348,5 +348,63 @@
 
 
 /obj/item/weapon/gun/rifle/halo/dmr/unloaded
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
+	current_mag = null
+
+/obj/item/weapon/gun/rifle/halo/ma5k
+	name = "MA5K ICWS carbine"
+	desc = "The little brother of the MA5 individual combat weapons system platform, produced by Misriah Armory like all the others, the MA5K is a weapon rarely seen outside the hands of UNSC special operations units. It takes smaller box magazines capable of holding 30 7.62x51mm full-metal-jacket rounds and features a carry-handle instead of the typical electronics housing."
+	icon_state = "ma5k"
+	item_state = "ma5k"
+	caliber = "7.62x51mm"
+	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5b.dmi'
+
+	fire_sound = "gun_ma5b"
+	fire_rattle = "gun_ma5b"
+	firesound_volume = 20
+	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
+	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
+	empty_click = "ma5b_dryfire"
+	empty_sound = null
+
+	current_mag = /obj/item/ammo_magazine/rifle/halo/ma5k
+	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER
+	start_automatic = TRUE
+	map_specific_decoration = FALSE
+
+	starting_attachment_types = list(/obj/item/attachable/flashlight/ma5k)
+	attachable_allowed = list(
+		/obj/item/attachable/flashlight/ma5k,
+		/obj/item/attachable/ma5k_muzzle,
+	)
+
+/obj/item/weapon/gun/rifle/halo/ma5k/set_gun_attachment_offsets()
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 25, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
+
+/obj/item/weapon/gun/rifle/halo/ma5k/handle_starting_attachment()
+	..()
+	var/obj/item/attachable/ma5k_muzzle/integrated = new(src)
+	integrated.flags_attach_features &= ~ATTACH_REMOVABLE
+	integrated.Attach(src)
+	update_attachable(integrated.slot)
+
+/obj/item/weapon/gun/rifle/halo/ma5k/set_gun_config_values()
+	..()
+	set_fire_delay(FIRE_DELAY_TIER_11)
+	set_burst_amount(BURST_AMOUNT_TIER_4)
+	set_burst_delay(FIRE_DELAY_TIER_11)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
+	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
+	scatter = SCATTER_AMOUNT_TIER_10
+	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
+	scatter_unwielded = SCATTER_AMOUNT_TIER_2
+	damage_mult = BASE_BULLET_DAMAGE_MULT
+	recoil_unwielded = RECOIL_AMOUNT_TIER_2
+	recoil = RECOIL_AMOUNT_TIER_5
+	fa_scatter_peak = 30
+	fa_max_scatter = SCATTER_AMOUNT_TIER_8
+
+/obj/item/weapon/gun/rifle/halo/ma5k/unloaded
 	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
 	current_mag = null

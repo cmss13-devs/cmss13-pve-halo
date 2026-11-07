@@ -13,6 +13,19 @@
 	size_mod = 0
 	hud_offset_mod = -3
 
+/obj/item/attachable/ma5k_muzzle
+	name = "\improper MA5K barrel"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma5k_muzzle"
+	attach_icon = "ma5k_muzzle"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -3
+
 /obj/item/attachable/attached_gun/grenade/ma5
 	name = "\improper M301 40mm grenade launcher"
 	desc = "A 40mm underslung grenade launcher. Replaces the standard-issue flashlight of the MA5 series of rifles. Fits both the MA5C and the MA5B."
@@ -141,6 +154,16 @@
 	attach_icon = "ma5_flashlight"
 	original_state = "ma5_flashlight"
 	original_attach = "ma5_flashlight"
+	slot = "under"
+
+/obj/item/attachable/flashlight/ma5k
+	name = "\improper MA5k integrated flashlight"
+	desc = "The MA5k integrated flashlight, smaller than the standard one seen on full-size MA5 rifles."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "ma5k_flashlight"
+	attach_icon = "ma5k_flashlight"
+	original_state = "ma5k_flashlight"
+	original_attach = "ma5k_flashlight"
 	slot = "under"
 
 /obj/item/attachable/flashlight/ma5/ma3a
