@@ -1449,7 +1449,7 @@
 	name = "UNSC magazine box (MA5K x 60)"
 	desc = "An ammo box storing 60 magazines of MA5K ammunition"
 	icon_state = "base_ammo3"
-	overlay_gun_type = "_ma5b"
+	overlay_gun_type = "_ma5k"
 	magazine_type = /obj/item/ammo_magazine/rifle/halo/ma5k
 	num_of_magazines = 60
 

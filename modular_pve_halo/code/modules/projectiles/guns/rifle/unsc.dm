@@ -359,12 +359,11 @@
 	caliber = "7.62x51mm"
 	mouse_pointer = 'icons/halo/effects/mouse_pointer/ma5b.dmi'
 
-	fire_sound = "gun_ma5b"
-	fire_rattle = "gun_ma5b"
-	firesound_volume = 20
-	reload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_reload.ogg'
-	cocked_sound = 'sound/weapons/halo/ma5b/gun_ma5b_cock.ogg'
-	unload_sound = 'sound/weapons/halo/ma5b/gun_ma5b_unload.ogg'
+	fire_sound = "gun_ma5k"
+	firesound_volume = 25
+	reload_sound = 'sound/weapons/halo/ma5k/gun_ma5k_reload.ogg'
+	cocked_sound = 'sound/weapons/halo/ma5k/gun_ma5k_cocked.ogg'
+	unload_sound = 'sound/weapons/halo/ma5k/gun_ma5k_unload.ogg'
 	empty_click = "ma5b_dryfire"
 	empty_sound = null
 
@@ -380,7 +379,7 @@
 	)
 
 /obj/item/weapon/gun/rifle/halo/ma5k/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 25, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 24, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
 
 /obj/item/weapon/gun/rifle/halo/ma5k/handle_starting_attachment()
 	..()
@@ -391,19 +390,16 @@
 
 /obj/item/weapon/gun/rifle/halo/ma5k/set_gun_config_values()
 	..()
-	set_fire_delay(FIRE_DELAY_TIER_11)
-	set_burst_amount(BURST_AMOUNT_TIER_4)
-	set_burst_delay(FIRE_DELAY_TIER_11)
-	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
+	set_fire_delay(FIRE_DELAY_TIER_SMG)
+	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4
 	accuracy_mult_unwielded = BASE_ACCURACY_MULT - HIT_ACCURACY_MULT_TIER_7
 	scatter = SCATTER_AMOUNT_TIER_10
-	burst_scatter_mult = SCATTER_AMOUNT_TIER_10
 	scatter_unwielded = SCATTER_AMOUNT_TIER_2
-	damage_mult = BASE_BULLET_DAMAGE_MULT
+	damage_mult = BASE_BULLET_DAMAGE_MULT + BULLET_DAMAGE_MULT_TIER_1
 	recoil_unwielded = RECOIL_AMOUNT_TIER_2
 	recoil = RECOIL_AMOUNT_TIER_5
-	fa_scatter_peak = 30
-	fa_max_scatter = SCATTER_AMOUNT_TIER_8
+	fa_scatter_peak = 15
+	fa_max_scatter = SCATTER_AMOUNT_TIER_6
 
 /obj/item/weapon/gun/rifle/halo/ma5k/unloaded
 	flags_gun_features = GUN_AUTO_EJECT_CASINGS|GUN_CAN_POINTBLANK|GUN_AMMO_COUNTER|GUN_TRIGGER_SAFETY
