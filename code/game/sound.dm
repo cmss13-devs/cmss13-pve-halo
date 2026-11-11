@@ -443,7 +443,7 @@
 			if("gun_ma5c")
 				sound = pick('sound/weapons/halo/gun_ma5c_1.ogg','sound/weapons/halo/gun_ma5c_2.ogg','sound/weapons/halo/gun_ma5c_3.ogg')
 			if("gun_ma5k")
-				sound = pick('sound/weapons/halo/ma5k/gun_ma5k_1.ogg','sound/weapons/halo/ma5k/gun_ma5k_2.ogg','sound/weapons/halo/ma5k/gun_ma5k_3.ogg')
+				sound = pick('sound/weapons/halo/ma5k/gun_ma5k_full_1.ogg','sound/weapons/halo/ma5k/gun_ma5k_full_2.ogg')
 			if("gun_ma5b")
 				sound = pick('sound/weapons/halo/ma5b/gun_ma5b_full_1.ogg', 'sound/weapons/halo/ma5b/gun_ma5b_full_2.ogg')
 			if("gun_m6c")
