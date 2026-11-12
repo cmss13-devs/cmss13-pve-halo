@@ -2,7 +2,7 @@
 	name = "Unknown"
 	icon_state = "x3"
 	var/equip_path = null
-	invisibility = SEE_INVISIBLE_OBSERVER
+	invisibility_value = INVISIBILITY_OBSERVER
 
 /obj/effect/landmark/halo_human_ai_spawner/Initialize(mapload, ...)
 	. = ..()
