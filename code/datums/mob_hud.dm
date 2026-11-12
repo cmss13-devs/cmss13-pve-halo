@@ -26,6 +26,13 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 	MOB_HUD_HUNTER_CLAN = new /datum/mob_hud/hunter_clan(),
 	MOB_HUD_EXECUTE = new /datum/mob_hud/execute_hud(),
 	MOB_HUD_FACTION_UNSC = new /datum/mob_hud/faction/unsc(),
+	MOB_HUD_FACTION_COV = new /datum/mob_hud/faction/covenant(),
+	MOB_HUD_FACTION_UNGGOY = new /datum/mob_hud/faction/unggoy(),
+	MOB_HUD_FACTION_KIGYAR = new /datum/mob_hud/faction/kigyar(),
+	MOB_HUD_FACTION_SANGHEILI = new /datum/mob_hud/faction/sangheili(),
+	MOB_HUD_FACTION_SPECOPS_UNGGOY = new /datum/mob_hud/faction/specops_unggoy(),
+	MOB_HUD_FACTION_SPECOPS_KIGYAR = new /datum/mob_hud/faction/specops_kigyar(),
+	MOB_HUD_FACTION_SPECOPS_SANGHEILI = new /datum/mob_hud/faction/specops_sangheili(),
 	)))
 
 /datum/mob_hud
@@ -232,6 +239,31 @@ GLOBAL_LIST_INIT_TYPED(huds, /datum/mob_hud, flatten_numeric_alist(alist(
 
 /datum/mob_hud/faction/unsc
 	faction_to_check = FACTION_UNSC
+
+// general cov
+
+/datum/mob_hud/faction/covenant
+	faction_to_check = FACTION_COVENANT
+
+/datum/mob_hud/faction/unggoy
+	faction_to_check = FACTION_UNGGOY
+
+/datum/mob_hud/faction/kigyar
+	faction_to_check = FACTION_KIGYAR
+
+/datum/mob_hud/faction/sangheili
+	faction_to_check = FACTION_SANGHEILI
+
+// specops cov
+
+/datum/mob_hud/faction/specops_unggoy
+	faction_to_check = FACTION_SPECOPS_UNGGOY
+
+/datum/mob_hud/faction/specops_kigyar
+	faction_to_check = FACTION_SPECOPS_KIGYAR
+
+/datum/mob_hud/faction/specops_sangheili
+	faction_to_check = FACTION_SPECOPS_SANGHEILI
 
 /datum/mob_hud/faction/observer
 	hud_icons = list(FACTION_HUD, ORDER_HUD, HUNTER_CLAN, HOLOCARD_HUD)

@@ -404,6 +404,36 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 				else
 					to_chat(user, "There are no [J.title] slots occupied in [sq.name] Squad.")
 					return
+			if(JOB_COV_LANCE_LEADER)
+				if(sq.num_leaders > 0)
+					sq.num_leaders--
+				else
+					to_chat(user, "There are no [J.title] slots occupied in [sq.name] Squad.")
+					return
+			if(JOB_COV_LANCE_ULTRA)
+				if(sq.num_ultra > 0)
+					sq.num_ultra--
+				else
+					to_chat(user, "There are no [J.title] slots occupied in [sq.name] Squad.")
+					return
+			if(JOB_COV_LANCE_OBEDIENTARY)
+				if(sq.num_majors > 0)
+					sq.num_majors--
+				else
+					to_chat(user, "There are no [J.title] slots occupied in [sq.name] Squad.")
+					return
+			if(JOB_COV_LANCE_SPECIALIST)
+				if(sq.num_specialists > 0)
+					sq.num_specialists--
+				else
+					to_chat(user, "There are no [J.title] slots occupied in [sq.name] Squad.")
+					return
+			if(JOB_COV_LANCE_STANDARD)
+				if(sq.num_riflemen > 0)
+					sq.num_riflemen--
+				else
+					to_chat(user, "There are no [J.title] slots occupied in [sq.name] Squad.")
+					return
 	J.current_positions--
 	message_admins("[key_name(user)] freed the [J.title] job slot[sq ? " in [sq.name] Squad" : ""].")
 	return 1
@@ -691,6 +721,66 @@ I hope it's easier to tell what the heck this proc is even doing, unlike previou
 
 						if(!lowest)
 							lowest = S
+			if(JOB_COV_LANCE_STANDARD)
+				var/datum/squad/given_squad = get_lowest_squad(H)
+				if(!given_squad || !istype(given_squad)) //Something went horribly wrong!
+					to_chat(H, "Something went wrong with randomize_squad()! Tell a coder!")
+					return
+				given_squad.put_marine_in_squad(H) //Found one, finish up
+				return
+
+			if(JOB_COV_LANCE_LEADER)
+				for(var/datum/squad/S in mixed_squads)
+					if(S.usable && S.roundstart)
+						if(!skip_limit && S.num_leaders >= S.max_leaders) continue
+						if(pref_squad_name && S.name == pref_squad_name)
+							S.put_marine_in_squad(H) //fav squad has a spot for us.
+							return
+
+						if(!lowest)
+							lowest = S
+						else if(S.num_leaders < lowest.num_leaders)
+							lowest = S
+
+			if(JOB_COV_LANCE_ULTRA)
+				for(var/datum/squad/S in mixed_squads)
+					if(S.usable && S.roundstart)
+						if(!skip_limit && S.num_ultra >= S.max_ultra) continue
+						if(pref_squad_name && S.name == pref_squad_name)
+							S.put_marine_in_squad(H) //fav squad has a spot for us.
+							return
+
+						if(!lowest)
+							lowest = S
+						else if(S.num_medics < lowest.num_ultra)
+							lowest = S
+
+			if(JOB_COV_LANCE_OBEDIENTARY)
+				for(var/datum/squad/S in mixed_squads)
+					if(S.usable && S.roundstart)
+						if(!skip_limit && S.num_majors >= S.max_majors) continue
+						if(pref_squad_name && S.name == pref_squad_name)
+							S.put_marine_in_squad(H) //fav squad has a spot for us.
+							return
+
+						if(!lowest)
+							lowest = S
+						else if(S.num_majors < lowest.num_majors)
+							lowest = S
+
+			if(JOB_COV_LANCE_SPECIALIST)
+				for(var/datum/squad/S in mixed_squads)
+					if(S.usable && S.roundstart)
+						if(!skip_limit && S.num_specialists >= S.max_specialists) continue
+						if(pref_squad_name && S.name == pref_squad_name)
+							S.put_marine_in_squad(H) //fav squad has a spot for us.
+							return
+
+						if(!lowest)
+							lowest = S
+						else if(S.num_specialists < lowest.num_specialists)
+							lowest = S
+
 		if(!lowest)
 			var/ranpick = rand(1,4)
 			lowest = mixed_squads[ranpick]

@@ -76,8 +76,11 @@
 /datum/species/unggoy/handle_post_spawn(mob/living/carbon/human/unggoy)
 	GLOB.alive_human_list -= unggoy
 
-	unggoy.blood_type = "U*"
+	unggoy.blood_type = "*U"
 	unggoy.h_style = "Bald"
+	unggoy.body_type = "ung"
+	if(!(unggoy.skin_color in GLOB.skin_color_ung_list))
+		unggoy.skin_color = "unggoy1"
 	#ifndef UNIT_TESTS // Since this is a hard ref, we shouldn't confuse create_and_destroy
 	GLOB.unggoy_mob_list += unggoy
 	#endif
