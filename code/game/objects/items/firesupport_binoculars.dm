@@ -120,7 +120,7 @@
 			continue
 		radial_options[mode_list[fire_support_type].name] = image(icon = 'icons/mob/radial.dmi', icon_state = mode_list[fire_support_type].icon_state)
 
-	var/mode_selected = show_radial_menu(user, src, radial_options, null, 48, null, TRUE, TRUE)
+	var/mode_selected = show_radial_menu(user, src, radial_options, null, 72, null, TRUE, TRUE)
 	for(var/option in mode_list)
 		if(mode_list[option].name != mode_selected)
 			continue
@@ -300,4 +300,32 @@
 	)
 
 /obj/item/device/binoculars/fire_support/pmc/usable_shipside
+	usable_shipside = TRUE
+
+/obj/item/device/binoculars/fire_support/halo
+	indestructible = TRUE
+
+/obj/item/device/binoculars/fire_support/halo/unsc
+	faction = FACTION_UNSC
+	mode_list = list(
+		FIRESUPPORT_TYPE_WOMBAT_GAU_CALL_IN,
+		FIRESUPPORT_TYPE_WOMBAT_MISSILE_CALL_IN,
+		FIRESUPPORT_TYPE_WOMBAT_INCENDIARY_CALL_IN,
+		FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP,
+		FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_SPEC,
+		FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_ODST,
+		FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_GRENADES,
+		FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_LAUNCHABLE_GRENADES,
+		FIRESUPPORT_TYPE_WOMBAT_SUPPLY_DROP_MEDICAL,
+		FIRESUPPORT_TYPE_C712_COILGUN_CALL_IN,
+		FIRESUPPORT_TYPE_C712_CLUSTER_CALL_IN,
+		FIRESUPPORT_TYPE_C712_MISSILE_CALL_IN,
+		FIRESUPPORT_TYPE_C709_CLUSTER,
+		FIRESUPPORT_TYPE_C709_MISSILE,
+		FIRESUPPORT_TYPE_C709_INCENDIARY,
+		FIRESUPPORT_TYPE_MAC_ATMOS_CALL_IN,
+		FIRESUPPORT_TYPE_COILGUNS,
+	)
+
+/obj/item/device/binoculars/fire_support/halo/unsc/usable_shipside
 	usable_shipside = TRUE
