@@ -3,6 +3,7 @@
 	icon_state = "x3"
 	var/equip_path = null
 	invisibility_value = INVISIBILITY_OBSERVER
+	layer = ABOVE_MOB_LAYER
 
 /obj/effect/landmark/halo_human_ai_spawner/Initialize(mapload, ...)
 	. = ..()

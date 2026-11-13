@@ -24,7 +24,7 @@
 #define SQUAD_LRRP "Snake Eaters"
 #define SQUAD_ODST "The Ferrymen"
 #define SQUAD_ODST_2 "The Ferrymen Sq. 2"
-#define SQUAD_LRRP_2 "Ocelot Grapplers"
+#define SQUAD_LRRP_2 "Ocelot Grapplesrs"
 
 // Job name defines
 #define JOB_SQUAD_MARINE "Rifleman"

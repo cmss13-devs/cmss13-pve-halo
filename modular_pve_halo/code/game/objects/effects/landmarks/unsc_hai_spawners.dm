@@ -2,7 +2,7 @@
 	name = "unsc spawner"
 
 /obj/effect/landmark/halo_human_ai_spawner/unsc/marine
-	name = "marine spawner"
+	name = "Marine spawner"
 
 /obj/effect/landmark/halo_human_ai_spawner/unsc/marine/rifleman
 	name = "Marine Rifleman"
@@ -29,7 +29,7 @@
 	equip_path = /datum/equipment_preset/unsc/leader/equipped
 
 /obj/effect/landmark/halo_human_ai_spawner/unsc/odst
-	name = "odst spawner"
+	name = "ODST spawner"
 
 /obj/effect/landmark/halo_human_ai_spawner/unsc/odst/rifleman
 	name = "ODST Rifleman"

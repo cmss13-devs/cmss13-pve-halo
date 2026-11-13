@@ -278,3 +278,118 @@
 /obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/minor/carbine
 	equip_path = /datum/equipment_preset/covenant/sangheili/minor/carbine
 	icon_state = "minor_carbine"
+
+// Sangheili Major
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/major
+	name = "Sangheili Major spawner"
+	equip_path = /datum/equipment_preset/covenant/sangheili/major
+	icon_state = "major"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/major/rifle
+	equip_path = /datum/equipment_preset/covenant/sangheili/major/plasma_rifle
+	icon_state = "major_rifle"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/major/needler
+	equip_path = /datum/equipment_preset/covenant/sangheili/major/needler
+	icon_state = "major_needler"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/major/carbine
+	equip_path = /datum/equipment_preset/covenant/sangheili/major/carbine
+	icon_state = "major_carbine"
+
+
+// Sangheili Ultra
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/ultra
+	name = "Sangheili Ultra spawner"
+	equip_path = /datum/equipment_preset/covenant/sangheili/ultra
+	icon_state = "ultra"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/ultra/rifle
+	equip_path = /datum/equipment_preset/covenant/sangheili/ultra/plasma_rifle
+	icon_state = "ultra_rifle"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/ultra/carbine
+	equip_path = /datum/equipment_preset/covenant/sangheili/ultra/carbine
+	icon_state = "ultra_carbine"
+
+// Sangheili Zealot
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/zealot
+	name = "Sangheili Zealot spawner"
+	equip_path = /datum/equipment_preset/covenant/sangheili/zealot
+	icon_state = "zealot"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/zealot/rifle
+	equip_path = /datum/equipment_preset/covenant/sangheili/zealot/plasma_rifle
+	icon_state = "zealot_rifle"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/zealot/carbine
+	equip_path = /datum/equipment_preset/covenant/sangheili/zealot/carbine
+	icon_state = "zealot_carbine"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/zealot/cloaked
+	equip_path = /datum/equipment_preset/covenant/sangheili/zealot/cloaking
+	icon_state = "zealot_cloaked"
+
+// Sangheili SpecOps
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops
+	name = "Sangheili SpecOps spawner"
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops
+	icon_state = "specops"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops/rifle
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops/plasma_rifle
+	icon_state = "specops_rifle"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops/carbine
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops/carbine
+	icon_state = "specops_carbine"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops/cloaked
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops/cloaking
+	icon_state = "specops_cloaked"
+
+// Sangheili SpecOps Ultra
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops_ultra
+	name = "Sangheili SpecOps Ultra spawner"
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops_ultra
+	icon_state = "specultra"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops_ultra/rifle
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops_ultra/plasma_rifle
+	icon_state = "specultra_rifle"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops_ultra/carbine
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops_ultra/carbine
+	icon_state = "specultra_carbine"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/specops_ultra/cloaked
+	equip_path = /datum/equipment_preset/covenant/sangheili/specops_ultra/cloaking
+	icon_state = "specultra_cloaked"
+
+// Sangheili Stealth
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/stealth
+	name = "Sangheili SpecOps Ultra spawner"
+	equip_path = /datum/equipment_preset/covenant/sangheili/stealth
+	icon_state = "stealth"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/stealth/rifle
+	equip_path = /datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle
+	icon_state = "stealth_rifle"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/stealth/rifle/cloaked
+	equip_path = /datum/equipment_preset/covenant/sangheili/stealth/plasma_rifle/cloaking
+	icon_state = "stealth_rifle_cloaked"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/stealth/needler
+	equip_path = /datum/equipment_preset/covenant/sangheili/stealth/needler
+	icon_state = "stealth_needler"
+
+/obj/effect/landmark/halo_human_ai_spawner/covenant/sangheili/stealth/needler/cloaked
+	equip_path = /datum/equipment_preset/covenant/sangheili/stealth/needler/cloaking
+	icon_state = "stealth_needler_cloaked"
