@@ -1,0 +1,1 @@
+GLOBAL_LIST_EMPTY(halo_human_ai_spawns)
