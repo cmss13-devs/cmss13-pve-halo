@@ -30,7 +30,10 @@
 	var/dual_purpose = FALSE
 	var/fuse_type = TIMED_FUSE
 	var/spent_case = null //For smokes & such that leave behind used up cases/shells
-
+	// HALO PVE EDIT START - Grenade timer
+	///Timer holder for grenade detonation
+	var/det_timer
+	// HALO PVE EDIT END
 
 /obj/item/explosive/grenade/Initialize()
 	. = ..()
@@ -106,7 +109,7 @@
 		activate_sensors()
 	else
 		active = TRUE
-		det_time ? addtimer(CALLBACK(src, PROC_REF(prime)), det_time) : prime()
+		det_timer = det_time ? addtimer(CALLBACK(src, PROC_REF(prime)), det_time) : prime()
 	w_class = SIZE_MASSIVE // We cheat a little, primed nades become massive so they cant be stored anywhere
 	update_icon()
 
