@@ -394,7 +394,7 @@
 	if(full_auto_switch && gun.gun_firemode == GUN_FIREMODE_AUTOMATIC && gun.gun_firemode != old_firemode)
 		gun.do_toggle_firemode(user, null, old_firemode)
 	if(istype(gun, /obj/item/weapon/gun/rifle/sniper/halo || /obj/item/weapon/gun/rifle/sniper/halo/stealth))
-		delay_mod = FIRE_DELAY_TIER_13
+		delay_mod = 0
 
 	gun.recalculate_attachment_bonuses()
 	gun.stop_fire()
