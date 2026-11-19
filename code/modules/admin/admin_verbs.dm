@@ -379,7 +379,7 @@ GLOBAL_LIST_INIT(roundstart_mod_verbs, list(
 		add_verb(src, /client/proc/toggle_rappel_menu)
 		add_verb(src, /client/proc/toggle_fire_support_menu)
 		add_verb(src, /client/proc/gm_lighting)
-		add_verb(src, /client/proc/toggle_droppod_menu)
+		add_verb(src, /client/proc/toggle_droppod_menu) // HALO PVE EDIT
 	if(CLIENT_HAS_RIGHTS(src, R_SERVER))
 		add_verb(src, GLOB.admin_verbs_server)
 	if(CLIENT_HAS_RIGHTS(src, R_DEBUG))
@@ -426,7 +426,7 @@ GLOBAL_LIST_INIT(roundstart_mod_verbs, list(
 		/client/proc/toggle_intro,
 		/client/proc/gm_lighting,
 		/client/proc/gm_base_lighting,
-		/client/proc/toggle_droppod_menu,
+		/client/proc/toggle_droppod_menu, // HALO PVE EDIT
 		GLOB.admin_verbs_admin,
 		GLOB.admin_verbs_ban,
 		GLOB.admin_verbs_minor_event,
