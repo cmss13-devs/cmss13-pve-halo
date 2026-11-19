@@ -34,28 +34,24 @@
 /area/mackay_station/romeo/redtram2)
 "aaf" = (
 /obj/structure/machinery/computer/tech_control{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/romeo/redtram1)
 "aag" = (
 /obj/structure/prop/almayer/computers/sensor_computer3{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/romeo/redtram1)
 "aah" = (
 /obj/structure/machinery/computer/supply_drop_console/limited/alternate{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/romeo/redtram2)
 "aai" = (
 /obj/structure/prop/almayer/computers/sensor_computer3{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /obj/structure/machinery/door_control{
@@ -755,8 +751,7 @@
 "awN" = (
 /obj/effect/decal/cleanable/blood/oil,
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/mackay_station/bravo/bluetram)
@@ -1453,8 +1448,7 @@
 "aUq" = (
 /obj/effect/decal/unsc/infirmary{
 	dir = 1;
-	pixel_x = -16;
-	pixel_y = 0
+	pixel_x = -16
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenrec)
@@ -1642,8 +1636,7 @@
 	layer = 2.52
 	},
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/bravo/bluetram)
@@ -1861,8 +1854,7 @@
 	dir = 8
 	},
 /obj/structure/bedsheetbin{
-	pixel_y = 16;
-	pixel_x = 0
+	pixel_y = 16
 	},
 /turf/open/floor/almayer/silver/north,
 /area/mackay_station/romeo/redtram2)
@@ -2457,7 +2449,6 @@
 	pixel_y = 4
 	},
 /obj/item/ammo_box/magazine/unsc/br55{
-	pixel_x = 0;
 	pixel_y = 12
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -2667,8 +2658,8 @@
 "bHZ" = (
 /obj/structure/closet/secure_closet/halo/job_locker/rto,
 /obj/item/storage/backpack/marine/satchel/rto/unsc,
-/obj/item/device/binoculars/range/designator/sergeant,
 /obj/item/ammo_box/magazine/misc/unsc/flare/signal,
+/obj/item/device/binoculars/fire_support/halo/unsc,
 /obj/item/tacmap_map,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/mackay_station/golf/greenarmory)
@@ -4457,7 +4448,6 @@
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 7;
-	pixel_y = 0;
 	layer = 5
 	},
 /turf/open/floor/almayer/edge/smooth/southeast,
@@ -4472,8 +4462,7 @@
 "cVw" = (
 /obj/effect/decal/unsc/armory{
 	dir = 1;
-	pixel_x = 16;
-	pixel_y = 0
+	pixel_x = 16
 	},
 /turf/open/floor/almayer/greencorner/north,
 /area/mackay_station/golf/greenrec)
@@ -4821,8 +4810,7 @@
 "dgu" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.4;
-	pixel_x = 0;
-	pixel_y = 0
+	pixel_x = 0
 	},
 /turf/open/floor/plating,
 /area/mackay_station/pathways)
@@ -5035,8 +5023,7 @@
 /obj/structure/surface/table/almayer,
 /obj/item/ashtray/glass{
 	icon_state = "ashtray_half_gl";
-	pixel_x = -4;
-	pixel_y = 0
+	pixel_x = -4
 	},
 /obj/structure/machinery/computer/cameras/wooden_tv/prop{
 	dir = 8;
@@ -6037,8 +6024,7 @@
 "efa" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.3;
-	pixel_x = 0;
-	pixel_y = 0
+	pixel_x = 0
 	},
 /turf/open/floor/plating,
 /area/mackay_station/pathways)
@@ -6089,7 +6075,6 @@
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 7;
-	pixel_y = 0;
 	layer = 5
 	},
 /turf/open/floor/almayer/research,
@@ -6115,8 +6100,7 @@
 	dir = 1
 	},
 /obj/structure/reagent_dispensers/watertank/unsc{
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /turf/open/floor/almayer/silver/northeast,
 /area/mackay_station/romeo/redtram1)
@@ -6417,7 +6401,6 @@
 	pixel_y = 2
 	},
 /obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_x = 0;
 	pixel_y = 12
 	},
 /obj/item/ammo_box/magazine/unsc/ma5c,
@@ -6970,7 +6953,6 @@
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 7;
-	pixel_y = 0;
 	layer = 5
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -7892,7 +7874,6 @@
 	},
 /obj/item/ashtray/glass{
 	icon_state = "ashtray_half_gl";
-	pixel_y = 0;
 	pixel_x = 6
 	},
 /obj/item/trash/eat{
@@ -9655,8 +9636,7 @@
 "gPq" = (
 /obj/effect/decal/unsc/commons{
 	dir = 1;
-	pixel_x = -16;
-	pixel_y = 0
+	pixel_x = -16
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -9727,8 +9707,7 @@
 /area/mackay_station/romeo/redcommons2)
 "gRW" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
-	pixel_x = -3;
-	pixel_y = 0
+	pixel_x = -3
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenarmory)
@@ -9917,8 +9896,7 @@
 /area/mackay_station/golf/greenmedical)
 "gYB" = (
 /obj/effect/decal/medical_decals{
-	icon_state = "triagedecaldir";
-	dir = 2
+	icon_state = "triagedecaldir"
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/golf/greenarmory)
@@ -10246,8 +10224,7 @@
 /area/mackay_station/golf/greenmedical)
 "hiA" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/silvercorner,
 /area/mackay_station/bravo/bluetram)
@@ -10550,8 +10527,7 @@
 "hwg" = (
 /obj/structure/sink{
 	pixel_y = -10;
-	dir = 1;
-	pixel_x = 0
+	dir = 1
 	},
 /turf/open/floor/almayer/sterile_green_corner/east,
 /area/mackay_station/golf/greenmedical)
@@ -10832,8 +10808,7 @@
 /area/mackay_station/romeo/redcommons1)
 "hFq" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/mackay_station/bravo/bluetram)
@@ -11559,8 +11534,7 @@
 "igr" = (
 /obj/structure/sink{
 	pixel_y = -13;
-	dir = 1;
-	pixel_x = 0
+	dir = 1
 	},
 /obj/structure/mirror{
 	pixel_y = -26;
@@ -11599,7 +11573,6 @@
 /area/mackay_station/golf/greenrec)
 "ihz" = (
 /obj/structure/machinery/computer/tech_control{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/research,
@@ -12302,8 +12275,7 @@
 "iCV" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
-	pixel_y = 19;
-	dir = 2
+	pixel_y = 19
 	},
 /turf/open/floor/almayer/silver/east,
 /area/mackay_station/golf/greenarmory)
@@ -12348,8 +12320,7 @@
 "iDY" = (
 /obj/structure/sink{
 	pixel_y = -13;
-	dir = 1;
-	pixel_x = 0
+	dir = 1
 	},
 /obj/structure/mirror{
 	pixel_y = -26;
@@ -12383,7 +12354,6 @@
 /obj/structure/surface/table/almayer,
 /obj/item/ashtray/glass{
 	icon_state = "ashtray_half_gl";
-	pixel_y = 0;
 	pixel_x = 6
 	},
 /obj/item/tool/lighter/random{
@@ -12523,7 +12493,6 @@
 /area/mackay_station/golf/greentram)
 "iJT" = (
 /obj/structure/prop/almayer/computers/sensor_computer2{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /obj/structure/machinery/door_control{
@@ -12958,9 +12927,7 @@
 /obj/item/tool/crowbar{
 	pixel_y = -4
 	},
-/obj/item/tool/wrench{
-	pixel_x = 0
-	},
+/obj/item/tool/wrench,
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -13685,7 +13652,6 @@
 /area/mackay_station/golf/greenmedical)
 "jyV" = (
 /obj/structure/machinery/door/poddoor/two_tile/four_tile/five_tile{
-	pixel_y = 0;
 	id = "golfarmory";
 	name = "Marine Armory"
 	},
@@ -14343,7 +14309,6 @@
 /area/mackay_station/golf/greenquarters2)
 "kaQ" = (
 /obj/structure/prop/unsc_crate/big{
-	pixel_x = -5;
 	pixel_y = -6;
 	layer = 5
 	},
@@ -14494,7 +14459,6 @@
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 7;
-	pixel_y = 0;
 	layer = 5
 	},
 /turf/open/shuttle/escapepod/east,
@@ -15247,7 +15211,6 @@
 	pixel_y = 12
 	},
 /obj/item/tool/wrench{
-	pixel_x = 0;
 	pixel_y = -8
 	},
 /turf/open/floor/almayer/edge/smooth/east,
@@ -16783,8 +16746,7 @@
 /area/mackay_station/golf/greenquarters1)
 "lLc" = (
 /obj/structure/bedsheetbin{
-	pixel_y = 10;
-	pixel_x = 0
+	pixel_y = 10
 	},
 /obj/structure/surface/table/almayer,
 /turf/open/floor/strata/white_cyan2/west,
@@ -17395,8 +17357,7 @@
 /obj/structure/cargo_container/unsc/vertical/south_3/endcap_2,
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.5;
-	pixel_x = 0;
-	pixel_y = 0
+	pixel_x = 0
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/mackay_station/bravo/blueengi)
@@ -18480,7 +18441,6 @@
 	},
 /obj/effect/decal/cleanable/blood/oil,
 /obj/item/tool/wrench{
-	pixel_x = 0;
 	pixel_y = -2
 	},
 /turf/open/floor/almayer/mono,
@@ -18768,8 +18728,7 @@
 /area/mackay_station/golf/greentram)
 "mXb" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
-	pixel_x = 7;
-	pixel_y = 0
+	pixel_x = 7
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -10;
@@ -18790,8 +18749,7 @@
 /area/mackay_station/romeo/redtram2)
 "mXO" = (
 /obj/structure/bedsheetbin{
-	pixel_y = 16;
-	pixel_x = 0
+	pixel_y = 16
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -20253,8 +20211,7 @@
 	layer = 2.52
 	},
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/bravo/bluetram)
@@ -20284,7 +20241,6 @@
 /area/mackay_station/romeo/redtram2)
 "oda" = (
 /obj/structure/prop/almayer/computers/sensor_computer1{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/research,
@@ -21620,8 +21576,7 @@
 /area/mackay_station/bravo/bluetram)
 "pbJ" = (
 /obj/structure/machinery/firealarm{
-	pixel_y = 23;
-	pixel_x = 0
+	pixel_y = 23
 	},
 /turf/open/floor/almayer,
 /area/mackay_station/golf/greenquarters2)
@@ -22102,7 +22057,6 @@
 /area/mackay_station/bravo/bluebridge)
 "ptS" = (
 /obj/structure/machinery/washing_machine{
-	pixel_y = 0;
 	pixel_x = 4
 	},
 /obj/structure/machinery/washing_machine{
@@ -22448,10 +22402,7 @@
 	icon_state = "N";
 	pixel_y = 1
 	},
-/obj/structure/cargo_container/unsc/main_2/b{
-	pixel_x = 0;
-	pixel_y = 0
-	},
+/obj/structure/cargo_container/unsc/main_2/b,
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/bravo/blueengi)
 "pDW" = (
@@ -23099,8 +23050,7 @@
 "pZi" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
-	pixel_y = 19;
-	dir = 2
+	pixel_y = 19
 	},
 /turf/open/shuttle/escapepod/north,
 /area/mackay_station/golf/greenarmory)
@@ -23314,8 +23264,7 @@
 "qif" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.5;
-	pixel_x = 0;
-	pixel_y = 0
+	pixel_x = 0
 	},
 /turf/open/floor/plating,
 /area/mackay_station/pathways)
@@ -23738,7 +23687,6 @@
 	pixel_y = 9
 	},
 /obj/item/ammo_box/magazine/unsc/ma5c{
-	pixel_x = 0;
 	pixel_y = 18
 	},
 /turf/open/floor/almayer/pod_landing_floor,
@@ -23783,7 +23731,6 @@
 /area/mackay_station/golf/greentram)
 "qzp" = (
 /obj/structure/prop/almayer/computers/sensor_computer1{
-	pixel_x = 0;
 	pixel_y = 16
 	},
 /turf/open/floor/almayer/research,
@@ -23842,8 +23789,7 @@
 "qAY" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/bedsheetbin{
-	pixel_y = 6;
-	pixel_x = 0
+	pixel_y = 6
 	},
 /turf/open/floor/almayer/green,
 /area/mackay_station/golf/greenquarters1)
@@ -23916,8 +23862,7 @@
 /area/mackay_station/golf/greenmedical)
 "qCU" = (
 /obj/structure/bedsheetbin{
-	pixel_y = 10;
-	pixel_x = 0
+	pixel_y = 10
 	},
 /obj/structure/surface/table/almayer,
 /turf/open/floor/strata/white_cyan2/west,
@@ -24097,7 +24042,6 @@
 	dir = 1
 	},
 /obj/structure/prop/unsc_crate/big{
-	pixel_x = -5;
 	pixel_y = -6;
 	layer = 5
 	},
@@ -24295,8 +24239,7 @@
 "qOx" = (
 /obj/effect/decal/unsc/bridge{
 	dir = 1;
-	pixel_x = 16;
-	pixel_y = 0
+	pixel_x = 16
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram2)
@@ -24506,8 +24449,7 @@
 "qXu" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
-	pixel_y = 19;
-	dir = 2
+	pixel_y = 19
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/golf/greenarmory)
@@ -24540,8 +24482,7 @@
 "qYe" = (
 /obj/effect/decal/unsc/commons{
 	dir = 1;
-	pixel_x = 16;
-	pixel_y = 0
+	pixel_x = 16
 	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -25983,8 +25924,7 @@
 /area/mackay_station/golf/greenmedical)
 "rTt" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/silvercorner/west,
 /area/mackay_station/bravo/bluetram)
@@ -26196,7 +26136,6 @@
 /area/space)
 "rYP" = (
 /obj/structure/machinery/washing_machine{
-	pixel_y = 0;
 	pixel_x = 4
 	},
 /obj/structure/machinery/washing_machine{
@@ -26384,8 +26323,7 @@
 	layer = 5
 	},
 /obj/structure/prop/unsc_crate/corrugated/red{
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/mackay_station/bravo/blueengi)
@@ -26398,8 +26336,7 @@
 "seS" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
-	pixel_y = 19;
-	dir = 2
+	pixel_y = 19
 	},
 /turf/open/floor/almayer/silver/west,
 /area/mackay_station/golf/greenarmory)
@@ -26475,7 +26412,6 @@
 /area/mackay_station/romeo/redcommons2)
 "sgN" = (
 /obj/structure/prop/unsc_crate/big{
-	pixel_x = -5;
 	pixel_y = -6;
 	layer = 5
 	},
@@ -27241,8 +27177,7 @@
 /area/mackay_station/pathways)
 "sNB" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
-	pixel_x = -3;
-	pixel_y = 0
+	pixel_x = -3
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/mackay_station/golf/greentram)
@@ -27720,8 +27655,7 @@
 	layer = 2.52
 	},
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/edge/smooth/southwest,
 /area/mackay_station/bravo/bluetram)
@@ -27946,8 +27880,7 @@
 "tnw" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 3.2;
-	pixel_x = 8;
-	pixel_y = 0
+	pixel_x = 8
 	},
 /turf/open/floor/plating,
 /area/mackay_station/pathways)
@@ -28349,13 +28282,6 @@
 "tFK" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/mackay_station/pathways)
-"tFP" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
-	},
-/turf/open/floor/almayer/silver/west,
-/area/mackay_station/bravo/bluetram)
 "tFT" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -28926,7 +28852,6 @@
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = 7;
-	pixel_y = 0;
 	layer = 5
 	},
 /turf/open/floor/plating/plating_catwalk,
@@ -29932,8 +29857,7 @@
 "uHq" = (
 /obj/structure/sink{
 	pixel_y = -13;
-	dir = 1;
-	pixel_x = 0
+	dir = 1
 	},
 /obj/structure/mirror{
 	pixel_y = -26;
@@ -30566,8 +30490,7 @@
 /area/mackay_station/firecontrol)
 "veR" = (
 /obj/effect/decal/medical_decals{
-	icon_state = "triagedecaldir";
-	dir = 2
+	icon_state = "triagedecaldir"
 	},
 /obj/structure/cable/heavyduty{
 	icon_state = "1-2"
@@ -33267,7 +33190,6 @@
 /area/mackay_station/bravo/blueengi)
 "wXe" = (
 /obj/structure/machinery/washing_machine{
-	pixel_y = 0;
 	pixel_x = 4
 	},
 /obj/structure/machinery/washing_machine{
@@ -33443,7 +33365,6 @@
 /obj/structure/surface/table/almayer,
 /obj/item/ashtray/glass{
 	icon_state = "ashtray_half_gl";
-	pixel_y = 0;
 	pixel_x = 6
 	},
 /obj/item/clothing/mask/cigarette{
@@ -34209,8 +34130,7 @@
 	layer = 2.52
 	},
 /obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	pixel_y = 0
+	icon_state = "door_warning"
 	},
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/mackay_station/bravo/bluetram)
@@ -34300,7 +34220,6 @@
 /area/mackay_station/romeo/redhangars)
 "xJY" = (
 /obj/structure/machinery/washing_machine{
-	pixel_y = 0;
 	pixel_x = 4
 	},
 /obj/structure/machinery/washing_machine{
@@ -34424,8 +34343,7 @@
 "xPX" = (
 /obj/effect/decal/medical_decals{
 	icon_state = "triagedecaldir";
-	pixel_y = 19;
-	dir = 2
+	pixel_y = 19
 	},
 /turf/open/shuttle/escapepod,
 /area/mackay_station/golf/greenarmory)
@@ -34753,8 +34671,7 @@
 	},
 /obj/structure/prop/unsc_crate/big/stack/alt{
 	layer = 5.11;
-	pixel_x = -5;
-	pixel_y = 0
+	pixel_x = -5
 	},
 /obj/structure/cargo_container/unsc/main_1,
 /turf/open/floor/plating/plating_catwalk,
@@ -35007,8 +34924,7 @@
 /area/mackay_station/romeo/redcommons1)
 "yeO" = (
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
-	pixel_x = 7;
-	pixel_y = 0
+	pixel_x = 7
 	},
 /obj/structure/reagent_dispensers/fueltank/liquidhydrogen{
 	pixel_x = -10;
@@ -35080,8 +34996,7 @@
 "ygY" = (
 /obj/effect/decal/unsc/recreation{
 	dir = 1;
-	pixel_x = -16;
-	pixel_y = 0
+	pixel_x = -16
 	},
 /turf/open/floor/almayer/research,
 /area/mackay_station/romeo/redtram1)
@@ -35168,8 +35083,7 @@
 /area/mackay_station/bravo/bluebridge)
 "ylm" = (
 /obj/structure/prop/unsc_crate/corrugated/red{
-	pixel_x = -7;
-	pixel_y = 0
+	pixel_x = -7
 	},
 /obj/structure/prop/unsc_crate/corrugated/blue{
 	pixel_x = -17;
@@ -180187,7 +180101,7 @@ qAG
 uQb
 oYz
 tCx
-tFP
+eyl
 cAa
 dUz
 iCE

@@ -1,8 +1,0 @@
-author: "BonniePandora"
-delete-after: True
-changes:
-  - rscadd: "Adds new UNSC subtypes of existing flares"
-  - rscadd: "Adds chemlights, a dimmer but longer lasting alternative to the above"
-  - rscadd: "Packets & crates for the above, available in the equipment vendors"
-  - rscadd: "UNSC subtype of the flare pouch, renamed to be a bit more generic of what kind of light stuff it takes"
-  - imageadd: "Sprites for the flares, glowsticks, illumination equipment pouch and packets."
