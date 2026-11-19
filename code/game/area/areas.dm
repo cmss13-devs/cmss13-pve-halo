@@ -104,13 +104,12 @@
 	GLOB.active_areas += src
 	GLOB.all_areas += src
 	reg_in_areas_in_z()
-// HALO PVE EDIT - START - SHIPMAP BRIGHTNESS VERB
-	//if(is_mainship_level(z))
-		//GLOB.ship_areas += src
+	if(is_mainship_level(z))
 	GLOB.ship_areas += src
-	if(is_mainship_level(z) && (ceiling > CEILING_GLASS))
-// HALO PVE EDIT - END
+		// HALO PVE EDIT - START - SHIPMAP BRIGHTNESS VERB
+		if(ceiling > CEILING_GLASS)
 		daytime_affected = FALSE
+		// HALO PVE EDIT - END
 	if(ceiling > CEILING_GLASS)
 		daytime_affected = FALSE
 
