@@ -22,3 +22,6 @@
 
 ///from base of /datum/turf_reservation/proc/Release: (datum/turf_reservation/reservation)
 #define COMSIG_TURF_RESERVATION_RELEASED "turf_reservation_released"
+
+///from datum/element/jump/end_jump(): (jumper)
+#define COMSIG_TURF_JUMP_ENDED_HERE "turf_jump_ended_here"
