@@ -82,17 +82,9 @@
 	title = JOB_SQUAD_MARINE_FORECON
 	total_positions = 2
 	spawn_positions = 2
-	gear_preset = /datum/equipment_preset/uscm/pfc/forecon
-	gear_preset_secondary = /datum/equipment_preset/uscm/pfc/forecon/pfc
-	gear_preset_tertiary = /datum/equipment_preset/uscm/pfc/forecon/corporal
-	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL", CPL_VARIANT = "CPL")
-
-/datum/job/marine/standard/ai/forecon/handle_job_options(option)
-	gear_preset = initial(gear_preset)
-	if(option == PFC_VARIANT)
-		gear_preset = gear_preset_secondary
-	if(option == CPL_VARIANT)
-		gear_preset = gear_preset_tertiary
+	gear_preset = /datum/equipment_preset/unsc/pfc/recon
+	gear_preset_secondary = /datum/equipment_preset/unsc/pfc/recon/lesser_rank
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /datum/job/marine/standard/ai/rto
 	title = JOB_SQUAD_RTO
@@ -112,6 +104,12 @@
 	title = JOB_SQUAD_RTO_ODST
 	gear_preset = /datum/equipment_preset/unsc/rto/odst
 	gear_preset_secondary = /datum/equipment_preset/unsc/rto/odst/lesser_rank
+	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
+
+/datum/job/marine/standard/ai/rto/forecon
+	title = JOB_SQUAD_RTO_FORECON
+	gear_preset = /datum/equipment_preset/unsc/rto/recon
+	gear_preset_secondary = /datum/equipment_preset/unsc/rto/recon/lesser_rank
 	job_options = list(PFC_VARIANT = "PFC", LCPL_VARIANT = "LCPL")
 
 /obj/effect/landmark/start/marine/upp
@@ -156,6 +154,11 @@
 	name = JOB_SQUAD_RTO
 	squad = SQUAD_MARINE_1
 	job = /datum/job/marine/standard/ai/rto
+
+/obj/effect/landmark/start/marine/rto/forecon
+	name = JOB_SQUAD_RTO_FORECON
+	squad = SQUAD_LRRP
+	job = /datum/job/marine/standard/ai/rto/forecon
 
 /obj/effect/landmark/start/marine/rto/odst
 	name = JOB_SQUAD_RTO_ODST
