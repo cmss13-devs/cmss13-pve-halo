@@ -1,0 +1,9 @@
+{
+	"map_name": "ONI Shieldbase",
+    "short_name": "Shieldbase",
+	"map_path": "map_files/oni_shield_base",
+    "map_file": "oni_shield_base.dmm",
+    "weather_holder": "/datum/weather_ss_map_holder/lv522_chances_claim",
+
+    "camouflage": "jungle"
+}
