@@ -41,3 +41,9 @@
 		to_chat(user, SPAN_WARNING("Somehow, as you take hold of the handlebars, [src] manages to glare at you. You back off. We didn't sign up for haunted motorbikes, man."))
 		return
 	..()
+
+
+/obj/vehicle/souto/mongoose
+	name = "M274 Ultra-Light All-Terrain Vehicle"
+	desc = "'Speed is the only protection this vehicle provides; it is unarmored, noisy, and prone to roll-over. It demands a level of skill from its operator that is impossible to expect from the rank and file during combat conditions. Those not qualified as expert need not apply.'"
+	color =  "#408000"
