@@ -380,6 +380,42 @@ export const RADIO_PREFIXES = {
     id: 'jsc',
     label: 'JSC',
   },
+  ':4 ': {
+    id: 'lance1',
+    label: 'Lance 1',
+  },
+  '.4 ': {
+    id: 'lance1',
+    label: 'Lance 1',
+  },
+  '#4 ': {
+    id: 'lance1',
+    label: 'Lance 1',
+  },
+  ':5 ': {
+    id: 'lance2',
+    label: 'Lance 2',
+  },
+  '.5 ': {
+    id: 'lance2',
+    label: 'Lance 2',
+  },
+  '#5 ': {
+    id: 'lance2',
+    label: 'Lance 2',
+  },
+  ':6 ': {
+    id: 'covcmd',
+    label: 'Cov. Cmd',
+  },
+  '.6 ': {
+    id: 'covcmd',
+    label: 'Cov. Cmd',
+  },
+  '#6 ': {
+    id: 'covcmd',
+    label: 'Cov. Cmd',
+  },
 } as const;
 
 export const LANGUAGE_PREFIXES = {

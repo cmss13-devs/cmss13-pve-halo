@@ -233,16 +233,21 @@ GLOBAL_LIST_INIT(poster_designs, subtypesof(/datum/poster))
 
 //Preferences stuff
 	// Skin colors
-GLOBAL_REFERENCE_LIST_INDEXED(skin_color_list, /datum/skin_color, name) // Stores /datum/skin_color indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(skin_color_list, /datum/skin_color/human, name) // Stores /datum/skin_color indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(skin_color_sang_list, /datum/skin_color/sangheili, name) // Stores /datum/skin_color indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(skin_color_ruuht_list, /datum/skin_color/ruuhtian, name) // Stores /datum/skin_color indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(skin_color_ung_list, /datum/skin_color/unggoy, name) // Stores /datum/skin_color indexed by name
 	// Body
-GLOBAL_REFERENCE_LIST_INDEXED(body_type_list, /datum/body_type, name) // Stores /datum/body_type indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(body_type_list, /datum/body_type/human, name) // Stores /datum/body_type indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(body_type_sang_list, /datum/body_type/sangheili, name) // Stores /datum/body_type indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(body_type_ruuht_list, /datum/body_type/ruuhtian, name) // Stores /datum/body_type indexed by name
+GLOBAL_REFERENCE_LIST_INDEXED(body_type_ung_list, /datum/body_type/unggoy, name) // Stores /datum/body_type indexed by name
 GLOBAL_REFERENCE_LIST_INDEXED(body_size_list, /datum/body_size, name) // Stores /datum/body_size indexed by name
 	//Hairstyles
 GLOBAL_REFERENCE_LIST_INDEXED(hair_styles_list, /datum/sprite_accessory/hair, name) //stores /datum/sprite_accessory/hair indexed by name
 GLOBAL_REFERENCE_LIST_INDEXED(facial_hair_styles_list, /datum/sprite_accessory/facial_hair, name) //stores /datum/sprite_accessory/facial_hair indexed by name
 GLOBAL_REFERENCE_LIST_INDEXED(hair_gradient_list, /datum/sprite_accessory/hair_gradient, name)
 GLOBAL_REFERENCE_LIST_INDEXED(yautja_hair_styles_list, /datum/sprite_accessory/yautja_hair, name)
-GLOBAL_REFERENCE_LIST_INDEXED(ruuhtian_hair_styles_list, /datum/sprite_accessory/ruuhtian_hair, name)
 	//Dropship camos
 
 GLOBAL_LIST_INIT(dropship_camos, list(DROPSHIP_CAMO_TAN, DROPSHIP_CAMO_NAVY, DROPSHIP_CAMO_URBAN, DROPSHIP_CAMO_JUNGLE))

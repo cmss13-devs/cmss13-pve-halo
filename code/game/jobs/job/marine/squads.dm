@@ -149,6 +149,11 @@
 	var/squad_three_access = null
 	var/squad_four_access = null
 
+	var/num_ultra = 0
+	var/num_majors = 0
+	var/max_ultra = 0
+	var/max_majors = 0
+
 /datum/squad/marine
 	name = "Root"
 	active = TRUE
@@ -786,6 +791,24 @@
 		if(JOB_TWE_RMC_TROOPLEADER)
 			assignment = JOB_TWE_RMC_TROOPLEADER
 
+//covslop
+		if(JOB_COV_LANCE_STANDARD)
+			assignment = JOB_COV_LANCE_STANDARD
+			num_riflemen++
+		if(JOB_COV_LANCE_SPECIALIST)
+			assignment = JOB_COV_LANCE_SPECIALIST
+			num_specialists++
+		if(JOB_COV_LANCE_OBEDIENTARY)
+			assignment = JOB_COV_LANCE_OBEDIENTARY
+			num_majors++
+		if(JOB_COV_LANCE_ULTRA)
+			assignment = JOB_COV_LANCE_ULTRA
+			num_ultra++
+		if(JOB_COV_LANCE_LEADER)
+			assignment = JOB_COV_LANCE_LEADER
+			num_leaders++
+
+
 	RegisterSignal(M, COMSIG_PARENT_QDELETING, PROC_REF(personnel_deleted), override = TRUE)
 	if(assignment != JOB_SQUAD_LEADER)
 		SStracking.start_tracking(tracking_id, M)
@@ -867,6 +890,17 @@
 			num_tl--
 		if(JOB_SQUAD_LEADER)
 			num_leaders--
+		if(JOB_COV_LANCE_LEADER)
+			num_leaders--
+		if(JOB_COV_LANCE_ULTRA)
+			num_ultra--
+		if(JOB_COV_LANCE_OBEDIENTARY)
+			num_majors--
+		if(JOB_COV_LANCE_SPECIALIST)
+			num_specialists--
+		if(JOB_COV_LANCE_STANDARD)
+			num_riflemen--
+
 
 //proc for demoting current Squad Leader
 /datum/squad/proc/demote_squad_leader(leader_killed)

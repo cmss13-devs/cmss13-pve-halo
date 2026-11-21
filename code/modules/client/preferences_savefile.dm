@@ -596,6 +596,7 @@
 	S["OOC_Notes"] >> metadata
 	S["real_name"] >> real_name
 	S["slot_label"] >> slot_label
+	S["species"] >> species
 	S["name_is_always_random"] >> be_random_name
 	S["body_is_always_random"] >> be_random_body
 	S["gender"] >> gender
@@ -688,6 +689,7 @@
 	if(isnull(language)) language = "None"
 	if(isnull(spawnpoint)) spawnpoint = "Arrivals Shuttle"
 	if(isnull(weyland_yutani_relation)) weyland_yutani_relation = initial(weyland_yutani_relation)
+	if(isnull(species)) species = SPECIES_HUMAN
 	if(!real_name) real_name = random_name(gender)
 	be_random_name = sanitize_integer(be_random_name, 0, 1, initial(be_random_name))
 	be_random_body = sanitize_integer(be_random_body, 0, 1, initial(be_random_body))
@@ -776,6 +778,7 @@
 	S["OOC_Notes"] << metadata
 	S["real_name"] << real_name
 	S["slot_label"] << slot_label
+	S["species"] << species
 	S["name_is_always_random"] << be_random_name
 	S["body_is_always_random"] << be_random_body
 	S["gender"] << gender
