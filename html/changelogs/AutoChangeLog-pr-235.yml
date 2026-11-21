@@ -1,5 +1,0 @@
-author: "Drathek"
-delete-after: True
-changes:
-  - bugfix: "Fixed some logic regarding mainship areas being added to globs"
-  - code_imp: "Moved droppod menu to modular folder"
