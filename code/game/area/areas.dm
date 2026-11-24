@@ -43,7 +43,7 @@
 	var/is_resin_allowed = TRUE // can xenos weed, place resin holes or dig tunnels at said areas
 	var/is_landing_zone = FALSE // primarily used to prevent mortars from hitting this location
 	var/resin_construction_allowed = TRUE // Allow construction of resin walls, and other special
-	var/no_droppod
+	var/no_droppod // HALO PVE EDIT
 
 	// Weather
 	var/weather_enabled = TRUE // Manual override for weather if set to false
@@ -104,13 +104,12 @@
 	GLOB.active_areas += src
 	GLOB.all_areas += src
 	reg_in_areas_in_z()
-// HALO PVE EDIT - START - SHIPMAP BRIGHTNESS VERB
-	//if(is_mainship_level(z))
-		//GLOB.ship_areas += src
-	GLOB.ship_areas += src
-	if(is_mainship_level(z) && (ceiling > CEILING_GLASS))
-// HALO PVE EDIT - END
-		daytime_affected = FALSE
+	if(is_mainship_level(z))
+		GLOB.ship_areas += src
+		// HALO PVE EDIT - START - SHIPMAP BRIGHTNESS VERB
+		if(ceiling > CEILING_GLASS)
+			daytime_affected = FALSE
+		// HALO PVE EDIT - END
 	if(ceiling > CEILING_GLASS)
 		daytime_affected = FALSE
 
