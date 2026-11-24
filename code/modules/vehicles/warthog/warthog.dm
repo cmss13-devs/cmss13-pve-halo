@@ -549,31 +549,6 @@
 	. = ..()
 	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan/gauss)
 
-/obj/effect/vehicle_spawner/warthog/marines/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
-	. = ..()
-	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan)
-
-/**
- * For easier debugging, a preset that has marines in it
- */
-
-/obj/effect/vehicle_spawner/warthog/marines/spawn_vehicle()
-	var/obj/vehicle/multitile/warthog/hog = ..()
-	var/mob/living/carbon/human/next_passenger = new /mob/living/carbon/human(loc)
-	arm_equipment(next_passenger, /datum/equipment_preset/unsc/pfc/equipped, TRUE, TRUE)
-	qdel(next_passenger.glasses)
-	hog.do_buckle(next_passenger, next_passenger, VEHICLE_DRIVER)
-
-	next_passenger = new /mob/living/carbon/human(loc)
-	arm_equipment(next_passenger, /datum/equipment_preset/unsc/leader/equipped, TRUE, TRUE)
-	hog.do_buckle(next_passenger, next_passenger, VEHICLE_GUNNER)
-
-	next_passenger = new /mob/living/carbon/human(loc)
-	arm_equipment(next_passenger, /datum/equipment_preset/unsc/medic/equipped, TRUE, TRUE)
-	qdel(next_passenger.glasses)
-	next_passenger.equip_to_slot_or_del(new /obj/item/clothing/glasses/hud/health, WEAR_EYES)
-	hog.do_buckle(next_passenger, next_passenger, VEHICLE_SUPPORT_GUNNER_ONE)
-
 // //PRESET: wheels installed
 /obj/effect/vehicle_spawner/warthog/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
 	. = ..()
