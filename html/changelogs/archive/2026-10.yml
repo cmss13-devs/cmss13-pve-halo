@@ -11,3 +11,21 @@
   Gentlefood:
   - rscadd: Spnkr Crates
   - code_imp: Added support for halo subtypes of guncrates
+2026-10-23:
+  WickedCybs:
+  - rscadd: Added awesome lore tidbits from Halo.
+2026-10-24:
+  BonniePandora:
+  - rscadd: Adds new UNSC subtypes of existing flares
+  - rscadd: Adds chemlights, a dimmer but longer lasting alternative to the above
+  - rscadd: Packets & crates for the above, available in the equipment vendors
+  - rscadd: UNSC subtype of the flare pouch, renamed to be a bit more generic of what
+      kind of light stuff it takes
+  - imageadd: Sprites for the flares, glowsticks, illumination equipment pouch and
+      packets.
+  Karmac:
+  - mapadd: COP Brighton
+  Yorkoh:
+  - rscadd: backend setup for faction fire_support and specific halo firesupport binos
+  - qol: new ordnance tubes for mixed ammo delivery
+  - qol: fire support binos are indestructible

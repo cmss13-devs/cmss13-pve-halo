@@ -1,0 +1,8 @@
+2026-11-19:
+  Drathek:
+  - admin: Added a Change Daytime Base Lighting GM proc
+  - code_imp: Optimized the Change Daytime GM proc
+2026-11-21:
+  Drathek:
+  - bugfix: Fixed some logic regarding mainship areas being added to globs
+  - code_imp: Moved droppod menu to modular folder
