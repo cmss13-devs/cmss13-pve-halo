@@ -1,0 +1,7 @@
+author: "Drathek, Basilherb"
+delete-after: True
+changes:
+  - rscadd: "Fun facts are now randomized (meaning just mentions first player meeting a minimum is mentioned - not a top stat) and are only displayed for currently connected players"
+  - rscadd: "Fun facts can now have whitelist/blacklists for role and faction. Namely this now prevents lessers and huggers from generating fun facts, and larva from generating kills fun facts (burst)"
+  - rscadd: "Added a minimum floor for most fun facts."
+  - rscadd: "Re-introduces the 'calories burned' fun fact, value of calories burnt increased from initial value along with minimum floor for the fact."
