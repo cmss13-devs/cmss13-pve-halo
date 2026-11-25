@@ -541,7 +541,7 @@
 				var/angle = tgui_input_number(user, "Beam Approach Angle")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SCARAB_BEAM]
-				selected_mode.initiate_fire_support(target_turf, angle)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE, angle)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -550,7 +550,7 @@
 				var/angle = tgui_input_number(user, "Beam Approach Angle")
 				var/obj/effect/overlay/temp/blinking_laser/target_lase = new(target_turf)
 				selected_mode = GLOB.fire_support_types[FIRESUPPORT_TYPE_SCARAB_BEAM_INSTANT]
-				selected_mode.initiate_fire_support(target_turf, angle)
+				selected_mode.initiate_fire_support(target_turf, user, TRUE, angle)
 
 				QDEL_IN(target_lase, 5 SECONDS)  //to stop "unused var" warnings
 				return TRUE
@@ -1197,10 +1197,15 @@
 	var/burn_level = 80
 	var/fire_color = LIGHT_COLOR_GREEN
 	var/fire_type = "green"
+	var/beam_angle = 0
 
-/datum/fire_support/custom/scarab_beam/do_impact(turf/target_turf, additional_variable)
+/datum/fire_support/custom/scarab_beam/initiate_fire_support(turf/target_turf, mob/user, ignore_availability = FALSE, angle)
+	. = ..()
+	beam_angle = angle
+
+/datum/fire_support/custom/scarab_beam/do_impact(turf/target_turf)
 	var/obj/visual_obj = new /obj/effect/temp_visual/glassing_beam/scarab(target_turf)
-	visual_obj.transform = matrix().Turn(additional_variable)
+	visual_obj.transform = matrix().Turn(beam_angle)
 
 	var/datum/cause_data/cause_data = create_cause_data("scarab beam")
 	cell_explosion(target_turf, clear_power, clear_falloff, EXPLOSION_FALLOFF_SHAPE_LINEAR, null, cause_data) //break shit around
