@@ -141,7 +141,7 @@
 	setDir(angle_to_cardinal(delta_to_angle(dx, dy)))
 	return ..()
 
-/obj/item/hardpoint/special/vulcan/angle_to_cardinal(degree)
+/obj/item/hardpoint/special/vulcan/proc/angle_to_cardinal(degree)
 	degree = ((degree+45)%365)
 	if(degree < 90) return NORTH
 	if(degree < 180) return EAST

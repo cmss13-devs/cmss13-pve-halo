@@ -736,14 +736,8 @@
 			muzzle_flash_x += H.px_offsets["[H.loc.dir]"][1]
 			muzzle_flash_y += H.px_offsets["[H.loc.dir]"][2]
 
-	if(use_mz_px_offsets)
-		if(LAZYLEN(px_offsets))
-			muzzle_flash_x += px_offsets["[loc.dir]"][1]
-			muzzle_flash_y += px_offsets["[loc.dir]"][2]
-
-	var/image_layer = owner.layer + muzzleflash_deviance
 	if(underlayer_north_muzzleflash && dir == NORTH)
-		image_layer = owner.layer - muzzleflash_deviance
+		image_layer = owner.layer - 0.1
 
 	if(!angle_muzzleflash)
 		angle = dir2angle(dir)
