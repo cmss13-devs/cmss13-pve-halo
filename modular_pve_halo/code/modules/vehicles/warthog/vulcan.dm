@@ -170,6 +170,16 @@
 	if(underlayer_north_muzzleflash && dir == NORTH)
 		image_layer = owner.layer - 0.6
 
+	if(!angle_muzzleflash)
+		angle = dir2angle(dir)
+
+	var/image/I = image('icons/obj/items/weapons/projectiles.dmi',src,muzzleflash_icon_state,image_layer)
+	var/matrix/rotate = matrix() //Change the flash angle.
+	rotate.Turn(angle)
+	rotate.Translate(muzzle_flash_x, muzzle_flash_y)
+	I.transform = rotate
+	I.flick_overlay(owner, 3)
+
 /obj/item/hardpoint/special/vulcan/get_icon_image(x_offset, y_offset, new_dir)
 	var/is_broken = health <= 0
 	var/image/chaingun_low = image(icon = disp_icon, icon_state = "[disp_icon_state]_[is_broken ? "1" : "0"]", pixel_x = x_offset, pixel_y = y_offset, dir = new_dir)
