@@ -76,7 +76,6 @@
 	var/muzzleflash_icon_state = "muzzle_flash"
 	var/underlayer_north_muzzleflash = FALSE
 	var/angle_muzzleflash = TRUE
-	var/muzzleflash_deviance = 0.1
 
 	//------AMMUNITION VARS----------
 

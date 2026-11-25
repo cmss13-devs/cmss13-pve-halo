@@ -13,7 +13,6 @@
 	firing_arc = 0
 
 	use_muzzle_flash = TRUE
-	muzzleflash_deviance = 0.6
 
 	allowed_seat = VEHICLE_GUNNER
 
@@ -167,9 +166,9 @@
 			muzzle_flash_x += px_offsets["[loc.dir]"][1]
 			muzzle_flash_y += px_offsets["[loc.dir]"][2]
 
-	var/image_layer = owner.layer + muzzleflash_deviance
+	var/image_layer = owner.layer + 0.6
 	if(underlayer_north_muzzleflash && dir == NORTH)
-		image_layer = owner.layer - muzzleflash_deviance
+		image_layer = owner.layer - 0.6
 
 /obj/item/hardpoint/special/vulcan/get_icon_image(x_offset, y_offset, new_dir)
 	var/is_broken = health <= 0
