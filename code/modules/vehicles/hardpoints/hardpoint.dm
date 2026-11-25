@@ -736,6 +736,7 @@
 			muzzle_flash_x += H.px_offsets["[H.loc.dir]"][1]
 			muzzle_flash_y += H.px_offsets["[H.loc.dir]"][2]
 
+	var/image_layer = owner.layer + 0.1
 	if(underlayer_north_muzzleflash && dir == NORTH)
 		image_layer = owner.layer - 0.1
 
