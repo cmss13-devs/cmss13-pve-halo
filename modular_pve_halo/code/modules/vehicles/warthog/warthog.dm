@@ -504,7 +504,7 @@
 
 	return ..()
 
-/obj/vehicle/multitile/warthog/handle_hardpoint_images()
+/obj/vehicle/multitile/warthog/proc/handle_hardpoint_images()
 	for(var/obj/item/hardpoint/hardpoint in hardpoints)
 		var/image/hardpoint_image = hardpoint.get_hardpoint_image()
 		if(islist(hardpoint_image))

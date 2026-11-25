@@ -2794,9 +2794,6 @@
 #include "code\modules\vehicles\van\interior.dm"
 #include "code\modules\vehicles\van\pizza_van.dm"
 #include "code\modules\vehicles\van\van.dm"
-#include "code\modules\vehicles\warthog\vulcan.dm"
-#include "code\modules\vehicles\warthog\warthog.dm"
-#include "code\modules\vehicles\warthog\wheels.dm"
 #include "code\modules\vox\vox.dm"
 #include "code\modules\vox\vox_tgui.dm"
 #include "code\modules\vox\vox_sounds\vox.dm"
@@ -2871,4 +2868,7 @@
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\sniper\unsc.dm"
 #include "modular_pve_halo\code\modules\shuttle\bumblebee.dm"
 #include "modular_pve_halo\code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
+#include "modular_pve_halo\code\modules\vehicles\warthog\vulcan.dm"
+#include "modular_pve_halo\code\modules\vehicles\warthog\warthog.dm"
+#include "modular_pve_halo\code\modules\vehicles\warthog\wheels.dm"
 // END_INCLUDE

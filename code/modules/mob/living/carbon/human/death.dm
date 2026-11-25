@@ -73,11 +73,12 @@
 
 	give_action(src, /datum/action/ghost)
 
+	// HALO PVE EDIT - Dying in some vehicles
 	if(buckled && HAS_TRAIT(src, TRAIT_IN_OPEN_VEHICLE))
 		if(prob(75) && istype(buckled, /obj/vehicle/multitile/warthog))
 			var/obj/vehicle/multitile/warthog/open_vehicle = buckled
 			open_vehicle.manual_unbuckle(src)
-
+	// HALO PVE EDIT END
 
 	if(!gibbed && species.death_sound)
 		playsound(loc, species.death_sound, 50, 1)

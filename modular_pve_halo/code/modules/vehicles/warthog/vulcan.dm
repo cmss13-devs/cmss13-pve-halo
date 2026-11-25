@@ -137,8 +137,39 @@
 	var/turf/origin_turf = get_origin_turf()
 	var/dx = (32 * (target.x - origin_turf.x)) - px_offsets["[loc.dir]"][1]
 	var/dy = (32 * (target.y - origin_turf.y)) - px_offsets["[loc.dir]"][2]
-	setDir(angle2cardinaldir(delta_to_angle(dx, dy)))
+
+	setDir(angle_to_cardinal(delta_to_angle(dx, dy)))
 	return ..()
+
+/obj/item/hardpoint/special/vulcan/angle_to_cardinal(degree)
+	degree = ((degree+45)%365)
+	if(degree < 90) return NORTH
+	if(degree < 180) return EAST
+	if(degree < 270) return SOUTH
+	return WEST
+
+/obj/item/hardpoint/special/vulcan/muzzle_flash(angle)
+	if(isnull(angle)) return
+
+	// The +48 and +64 centers the muzzle flash
+	var/muzzle_flash_x = muzzle_flash_pos["[dir]"][1] + 48
+	var/muzzle_flash_y = muzzle_flash_pos["[dir]"][2] + 64
+
+	// Account for turret rotation
+	if(istype(loc, /obj/item/hardpoint/holder))
+		var/obj/item/hardpoint/holder/H = loc
+		if(LAZYLEN(H.px_offsets))
+			muzzle_flash_x += H.px_offsets["[H.loc.dir]"][1]
+			muzzle_flash_y += H.px_offsets["[H.loc.dir]"][2]
+
+	if(use_mz_px_offsets)
+		if(LAZYLEN(px_offsets))
+			muzzle_flash_x += px_offsets["[loc.dir]"][1]
+			muzzle_flash_y += px_offsets["[loc.dir]"][2]
+
+	var/image_layer = owner.layer + muzzleflash_deviance
+	if(underlayer_north_muzzleflash && dir == NORTH)
+		image_layer = owner.layer - muzzleflash_deviance
 
 /obj/item/hardpoint/special/vulcan/get_icon_image(x_offset, y_offset, new_dir)
 	var/is_broken = health <= 0

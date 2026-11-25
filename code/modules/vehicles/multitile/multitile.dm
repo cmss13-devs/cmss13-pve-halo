@@ -244,22 +244,19 @@
 
 	var/amt_hardpoints = LAZYLEN(hardpoints)
 	if(amt_hardpoints)
-		handle_hardpoint_images()
+		for(var/obj/item/hardpoint/hardpoint in hardpoints)
+			var/image/hardpoint_image = hardpoint.get_hardpoint_image()
+			if(istype(hardpoint_image))
+				hardpoint_image.layer = layer + hardpoint.hdpt_layer * 0.1
+			else if(islist(hardpoint_image))
+				var/list/image/hardpoint_image_list = hardpoint_image // Linter will complain about iterating on "an image" otherwise
+				for(var/image/subimage in hardpoint_image_list)
+					subimage.layer = layer + hardpoint.hdpt_layer * 0.1
+			overlays += hardpoint_image
 
 	if(clamped)
 		var/image/J = image(icon, icon_state = "vehicle_clamp", layer = layer+0.1)
 		overlays += J
-
-/obj/vehicle/multitile/proc/handle_hardpoint_images()
-	for(var/obj/item/hardpoint/hardpoint in hardpoints)
-		var/image/hardpoint_image = hardpoint.get_hardpoint_image()
-		if(istype(hardpoint_image))
-			hardpoint_image.layer = layer + hardpoint.hdpt_layer * 0.1
-		else if(islist(hardpoint_image))
-			var/list/image/hardpoint_image_list = hardpoint_image // Linter will complain about iterating on "an image" otherwise
-			for(var/image/subimage in hardpoint_image_list)
-				subimage.layer = layer + hardpoint.hdpt_layer * 0.1
-		overlays += hardpoint_image
 
 //Normal examine() but tells the player what is installed and if it's broken
 /obj/vehicle/multitile/get_examine_text(mob/user)
