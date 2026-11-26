@@ -453,7 +453,7 @@
 			if(ishuman(M))
 				var/mob/living/carbon/human/user = M
 				if(!allowed(user) || !get_target_lock(user.faction_group)) //if we are human, we check access and faction
-					to_chat(user, SPAN_WARNING("\The [src] is lssocked!"))
+					to_chat(user, SPAN_WARNING("\The [src] is locked!"))
 					return
 			else
 				to_chat(M, SPAN_WARNING("\The [src] is locked!")) //animals are not allowed inside without supervision
