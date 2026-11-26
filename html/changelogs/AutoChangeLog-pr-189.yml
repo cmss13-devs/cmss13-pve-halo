@@ -1,0 +1,8 @@
+author: "tyeagg"
+delete-after: True
+changes:
+  - rscadd: "plasma grenade particles"
+  - code_imp: "particle holders"
+  - imageadd: "plasma grenade item sprites"
+  - soundadd: "plasma grenade sounds"
+  - bugfix: "you can roll off plasma grenades now"
