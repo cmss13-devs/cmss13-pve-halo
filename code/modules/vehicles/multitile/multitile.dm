@@ -170,6 +170,7 @@
 	icon_state = "cargo_engine"
 
 	var/move_on_turn = FALSE
+	var/silent_hardpoint_warning = FALSE
 
 /obj/vehicle/multitile/Initialize()
 	. = ..()
