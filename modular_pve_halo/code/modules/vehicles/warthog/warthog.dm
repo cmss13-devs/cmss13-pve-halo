@@ -4,23 +4,16 @@
 #define LAYER_OFFSET_HIGH 0.4
 #define LAYER_OFFSET_HIGHEST 0.5
 
-/**
- * Finish the machine gun
- * Fix pixel_w and z offsets not reseting on unbuckle
- * Animate client's pixel_w and z to make it less nausea inducing
- */
-
-
 /obj/vehicle/multitile/warthog
-	name = "M12 LRV \"Warthog\""
-	desc = "The M12 Light Reconnaissance Vehicle, or Warthog, is a lightly armoured all terrain reconnaissance and transport vehicle in use by the UNSC, first seeing service with the CMA in 2321. considerably versatile over any terrain and with numerous variants to meet any needs, the Warthog is said to be 'as much a part of the UNSC as boots, guns and tasteless coffee'."
+	name = "M12 FAV \"Warthog\""
+	desc = "The M12 Force Application Vehicle, interchangably called the Scout Hog or just Warthog, is a lightly armoured all terrain reconnaissance and transport vehicle in use by the UNSC, first seeing service with the CMA in 2321. considerably versatile over any terrain and with numerous variants to meet any needs, the Warthog is said to be 'as much a part of the UNSC as boots, guns and tasteless coffee'."
 	desc_lore = "Powered by a low profile liquid cooled hydrogen injected ICE, I/C powerplant and featuring a Graf/Hauptman solar/saline actuator, the M12 Warthog can turn even brackish and salty still water into usable fuel hydrogen, giving the warthog the ability to range over 790 kilometres without refuelling. Paired with an infinitely variable transmission and robust four wheel drive, the Warthog is the premier of off-road fighting vehicle."
 	layer = ABOVE_XENO_LAYER // its probably fine
 
 	icon = 'icons/halo/obj/vehicles/warthog.dmi'
 	icon_state = "warthog_base"
-	pixel_x = -16
-	pixel_y = -16
+	pixel_x = -32
+	pixel_y = -32
 
 	bound_width = 64
 	bound_height = 64
@@ -79,9 +72,22 @@
 
 	var/obj/item/steering_wheel/the_steering_wheel
 
+	var/view_size = 10
+
+/obj/vehicle/multitile/warthog/machinegun
+	name = "M12 LRV \"Warthog\""
+	desc = "The M12 Light Reconnaissance Vehicle, or Warthog, is a lightly armoured all terrain reconnaissance and transport vehicle in use by the UNSC, first seeing service with the CMA in 2321. considerably versatile over any terrain and with numerous variants to meet any needs, the Warthog is said to be 'as much a part of the UNSC as boots, guns and tasteless coffee'."
+
+/obj/vehicle/multitile/warthog/gauss
+	name = "M12G1 LAAV \"Warthog\""
+	desc = "The M12 Light Reconnaissance Vehicle, interchangably called the Gauss Hog or just Warthog, is a lightly armoured all terrain reconnaissance and transport vehicle in use by the UNSC, first seeing service with the CMA in 2321. considerably versatile over any terrain and with numerous variants to meet any needs, the Warthog is said to be 'as much a part of the UNSC as boots, guns and tasteless coffee'."
+
 /obj/vehicle/multitile/warthog/Initialize()
 	. = ..()
 
+	set_passenger_offsets()
+
+/obj/vehicle/multitile/warthog/proc/set_passenger_offsets()
 	buckled_offsets = list(
 		// position, direction, (x, y)
 		VEHICLE_DRIVER = list(
@@ -212,6 +218,7 @@
 	target.set_buckled(src)
 	target.forceMove(loc)
 	target.setDir(dir)
+	set_view(user, TRUE)
 	buckled_mob = null
 	set_seated_mob(seat, target)
 	add_fingerprint(user)
@@ -226,6 +233,17 @@
 				break
 	return TRUE
 
+/obj/vehicle/multitile/warthog/proc/set_view(mob/user, entering)
+	if(user.client)
+		if(entering)
+			user.client.pixel_x = 16
+			user.client.pixel_y = 16
+			user.client.change_view(view_size, src)
+		else
+			user.client.pixel_x = 0
+			user.client.pixel_y = 0
+			user.client.change_view(GLOB.world_view_size, src)
+
 /obj/vehicle/multitile/warthog/afterbuckle(mob/M)
 	. = ..()
 	update_mob_offsets()
@@ -235,7 +253,7 @@
 	overlays.Cut()
 
 	if(health <= initial(health))
-		var/image/damage_overlay = image(icon, icon_state = "damaged_frame", layer = layer+0.1)
+		var/image/damage_overlay = image(icon, icon_state = "damaged_frame", layer = src.layer + LAYER_OFFSET_HIGH + 0.1)
 		damage_overlay.alpha = 255 * (1 - (health / initial(health)))
 		overlays += damage_overlay
 
@@ -284,6 +302,7 @@
 		vehicle_faction = ""
 	the_mob.pixel_w = 0
 	the_mob.pixel_z = 0
+	set_view(the_mob, FALSE)
 	REMOVE_TRAIT(the_mob, TRAIT_IN_OPEN_VEHICLE, BUCKLED_TRAIT)
 	the_mob.layer = MOB_LAYER
 	set_seated_mob(unbuckle_seat, null)
@@ -364,6 +383,8 @@
 
 /obj/vehicle/multitile/warthog/relaymove(mob/user, direction)
 	if(user == seats[VEHICLE_GUNNER])
+		if(user.stat == DEAD || user.stat == UNCONSCIOUS)
+			return
 		for(var/obj/item/hardpoint/special/vulcan/vulcan in hardpoints)
 			if(!vulcan.target)
 				user.setDir(direction)
@@ -517,42 +538,6 @@
 		else if(istype(hardpoint_image))
 			hardpoint_image.layer = layer + hardpoint.hdpt_layer * 0.1
 		overlays += hardpoint_image
-
-/*
-** PRESETS SPAWNERS
-*/
-
-/obj/effect/vehicle_spawner/warthog
-	name = "Warthog Spawner"
-	icon = 'icons/halo/obj/vehicles/warthog.dmi'
-	icon_state = "warthog_base"
-	pixel_x = -16
-	pixel_y = -16
-
-/obj/effect/vehicle_spawner/warthog/Initialize()
-	. = ..()
-	spawn_vehicle()
-	qdel(src)
-
-/obj/effect/vehicle_spawner/warthog/spawn_vehicle()
-	var/obj/vehicle/multitile/warthog/hog = new (loc)
-
-	handle_direction(hog)
-	load_hardpoints(hog)
-	hog.update_icon()
-	. = hog
-
-/obj/effect/vehicle_spawner/warthog/load_hardpoints(obj/vehicle/multitile/warthog/V)
-	V.add_hardpoint(new /obj/item/hardpoint/locomotion/warthog_wheels)
-
-/obj/effect/vehicle_spawner/warthog/gausscannon/load_hardpoints(obj/vehicle/multitile/warthog/V)
-	. = ..()
-	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan/gauss)
-
-// //PRESET: wheels installed
-/obj/effect/vehicle_spawner/warthog/machinegun/load_hardpoints(obj/vehicle/multitile/warthog/V)
-	. = ..()
-	V.add_hardpoint(new /obj/item/hardpoint/special/vulcan)
 
 /obj/item/steering_wheel
 	name = "steering wheel"

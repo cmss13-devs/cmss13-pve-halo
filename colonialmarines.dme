@@ -2868,6 +2868,8 @@
 #include "modular_pve_halo\code\modules\projectiles\guns\specialist\sniper\unsc.dm"
 #include "modular_pve_halo\code\modules\shuttle\bumblebee.dm"
 #include "modular_pve_halo\code\modules\shuttle\shuttles\crashable\escape_shuttle.dm"
+#include "modular_pve_halo\code\modules\vehicles\warthog\gaussgun.dm"
+#include "modular_pve_halo\code\modules\vehicles\warthog\hog_spawners.dm"
 #include "modular_pve_halo\code\modules\vehicles\warthog\vulcan.dm"
 #include "modular_pve_halo\code\modules\vehicles\warthog\warthog.dm"
 #include "modular_pve_halo\code\modules\vehicles\warthog\wheels.dm"
