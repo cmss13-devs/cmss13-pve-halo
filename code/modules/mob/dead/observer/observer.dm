@@ -133,6 +133,10 @@
 	if(ishuman(body))
 		pixel_x = 0
 		pixel_y = 0
+		// HALO PVE EDIT - WARTHOG OFFSETS
+		pixel_w = 0
+		pixel_z = 0
+		// HALO PVE EDIT END
 
 	minimap = new
 	minimap.give_to(src)
