@@ -84,9 +84,9 @@
 	idle_power_usage = 2
 	var/datum/tacmap/map
 	///flags that we want to be shown when you interact with this table
-	var/minimap_type = MINIMAP_FLAG_USCM
+	var/minimap_type = MINIMAP_FLAG_UNSC
 	///The faction that is intended to use this structure (determines type of tacmap used)
-	var/faction = FACTION_MARINE
+	var/faction = FACTION_LIST_UNSC
 
 /obj/structure/machinery/prop/almayer/CICmap/Initialize()
 	. = ..()
