@@ -53,7 +53,7 @@ a.popt {
   background: #aaa;
   top: 0;
   right: 0;
-  color: #333;
+  color: #333333;
   text-decoration: none;
   z-index: 2;
   padding: 0 10px;
@@ -1071,16 +1071,24 @@ em {
   color: #828cff;
 }
 
-.covradio {
-  color: #d283ec;
-}
-
 .odstradio {
   color: #32cd32;
 }
 
 .oniradio {
   color: #6700d1;
+}
+
+.covsq1radio {
+  color: #5070D3;
+}
+
+.covsq2radio {
+  color: #D1479F;
+}
+
+.covcmdradio {
+  color: #779cc2;
 }
 
 .opforcmd {
