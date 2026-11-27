@@ -17,3 +17,12 @@
   - rscadd: Added a minimum floor for most fun facts.
   - rscadd: Re-introduces the 'calories burned' fun fact, value of calories burnt
       increased from initial value along with minimum floor for the fact.
+2026-11-27:
+  Contrabang, Verbs, Noctis/Crow, Pandora:
+  - rscadd: Gauss and chaingun warthogs
+  tyeagg:
+  - rscadd: plasma grenade particles
+  - code_imp: particle holders
+  - imageadd: plasma grenade item sprites
+  - soundadd: plasma grenade sounds
+  - bugfix: you can roll off plasma grenades now
