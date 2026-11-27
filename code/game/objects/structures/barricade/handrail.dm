@@ -206,3 +206,9 @@
 	can_be_reinforced = FALSE
 	projectile_coverage = PROJECTILE_COVERAGE_LOW
 	layer = MOB_LAYER + 0.01
+
+/obj/structure/barricade/handrail/type_nv
+	icon_state = "handrail_nv"
+
+/obj/structure/barricade/handrail/type_nv_chain
+	icon_state = "handrail_chain_nv"
