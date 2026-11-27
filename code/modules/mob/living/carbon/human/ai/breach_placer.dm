@@ -5,6 +5,7 @@
 		/obj/item/explosive/plastic/breaching_charge::name = /obj/item/explosive/plastic/breaching_charge,
 		/obj/item/explosive/plastic/breaching_charge/rubber::name = /obj/item/explosive/plastic/breaching_charge/rubber,
 		/obj/item/explosive/plastic/breaching_charge/plasma::name = /obj/item/explosive/plastic/breaching_charge/plasma,
+		/obj/item/explosive/plastic/breaching_charge/plasma/halo::name = /obj/item/explosive/plastic/breaching_charge/plasma/halo,
 	)
 	var/static/list/acceptable_place_types = list(
 		/turf/closed/wall,
