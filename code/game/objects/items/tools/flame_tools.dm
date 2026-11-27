@@ -189,6 +189,9 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 	var/lastHolder = null
 	var/smoketime = 10 MINUTES
 	var/chem_volume = 15
+	// HALO PVE EDIT - START - SELF IGNITING CIGARETTES
+	var/safety = TRUE
+	// HALO PVE EDIT - END
 
 /obj/item/clothing/mask/cigarette/Initialize()
 	. = ..()
@@ -297,6 +300,11 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 		if(fixture.is_broken())
 			light(SPAN_NOTICE("[user] lights their [src] from the broken light."))
 
+// HALO PVE EDIT - START - SELF IGNITING CIGARETTES
+	else if(!safety)
+		light(SPAN_ROSE("[user] ignites their [src] by tapping it against [target]."))
+// HALO PVE EDIT - END
+
 /obj/item/clothing/mask/cigarette/proc/light(flavor_text)
 	SIGNAL_HANDLER
 
@@ -357,6 +365,14 @@ CIGARETTE PACKETS ARE IN FANCY.DM
 /obj/item/clothing/mask/cigarette/attack_self(mob/user)
 	if(heat_source)
 		go_out(user)
+// HALO PVE EDIT - START - SELF IGNITING CIGARETTES
+	else
+		if(safety)
+			safety = FALSE
+			user.visible_message(SPAN_NOTICE("[user] pulls the safety strip off their [src]."))
+		else
+			light(SPAN_ROSE("[user] taps the end of their [src], igniting it."))
+// HALO PVE EDIT - END
 	return ..()
 
 /obj/item/clothing/mask/cigarette/proc/go_out(mob/user, silent = FALSE)
