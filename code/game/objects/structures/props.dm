@@ -1261,6 +1261,16 @@
 /obj/structure/prop/unsc_crate/corrugated/green
 	icon_state = "c2_green"
 
+/obj/structure/prop/unsc_crate/medium
+	name = "UNSC crate"
+	desc = "A moderately sized military-grade crate. It doesn't look easy to open."
+	icon = 'icons/halo/obj/structures/crates_48x32.dmi'
+	icon_state = "null"
+	pixel_x = -8
+
+/obj/structure/prop/unsc_crate/medium/med
+	icon_state = "cbig_medical"
+
 /obj/structure/prop/unsc_crate/big
 	name = "UNSC crate"
 	desc = "A large military-grade crate. It doesn't look easy to open."
@@ -1307,3 +1317,19 @@
 	desc = "A wing originating from a Pelican's airframe, which, whether intentional or not, it has been seperated from."
 	icon = 'icons/halo/obj/structures/pelican.dmi'
 	icon_state = "pelican_r_wing"
+
+/obj/structure/prop/mac_round
+	name = "Magnetic Accelerator Projectile"
+	desc = "A multi-ton projectile fired out of the UNSC ship and station mounted MAC cannons. This one has a penetrator cap as well as additional core stages to cause catastrophic destruction of anything it impacts."
+	density = TRUE
+	bound_height = 64
+	bound_width = 288
+	icon = 'icons/halo/obj/structures/props/mac_rounds.dmi'
+	icon_state = "mac_round"
+
+/obj/structure/prop/mac_round/carrier
+	name = "Stowed Magnetic Accelerator Projectile"
+	desc = "A multi-ton projectile fired out of the UNSC ship and station mounted MAC cannons. This one is secured to a semi-mobile carrier for transport and stowage."
+	icon_state = "mac_round_carrier"
+	bound_height = 64
+	bound_width = 288
