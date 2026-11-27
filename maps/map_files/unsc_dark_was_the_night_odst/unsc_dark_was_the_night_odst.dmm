@@ -625,15 +625,17 @@
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/upper_hallway)
 "bF" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	layer = 3.3
+/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
+	pixel_x = 16;
+	pixel_y = 16
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
+/obj/structure/roof/cargocrane_tracks/horizontal{
+	pixel_y = 16
 	},
-/turf/open/floor/almayer/mono,
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
 "bG" = (
 /turf/open/floor/almayer/edge/smooth/corner,
@@ -1026,8 +1028,17 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"cT" = (
-/obj/structure/platform,
+"cM" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_x = -1;
+	pixel_y = 15
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = 11;
+	pixel_y = 1
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "cZ" = (
@@ -1072,9 +1083,6 @@
 	},
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/golden_arrow/cargo_shuttle/upper)
-"du" = (
-/turf/open/floor/almayer/cargo_arrow/north,
-/area/dark_was_the_night/hangar)
 "dx" = (
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/dorms)
@@ -1136,22 +1144,6 @@
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
-"dK" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/machinery/light/double/blue{
-	pixel_x = -16
-	},
-/turf/open/shuttle/escapepod/east,
-/area/dark_was_the_night/hangar)
-"dQ" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "dS" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -1274,22 +1266,23 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/engineering)
+"ff" = (
+/obj/structure/barricade/handrail,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "fi" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/upper_hallway)
-"fq" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
 "fx" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/lower_hallway)
@@ -1316,6 +1309,15 @@
 "fH" = (
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/briefing/two)
+"fJ" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "fM" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/structure/machinery/light/double/blue{
@@ -1330,21 +1332,6 @@
 	dir = 8
 	},
 /turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
-"fU" = (
-/obj/structure/machinery/camera/autoname/golden_arrow,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
-"ga" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/hangar)
 "gb" = (
 /obj/structure/machinery/power/reactor{
@@ -1375,19 +1362,6 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/upper_hallway)
-"gp" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_x = -1;
-	pixel_y = 15
-	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2";
-	pixel_x = 11;
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "gs" = (
 /obj/structure/bed/chair{
 	dir = 4
@@ -1430,20 +1404,9 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
-"gK" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "hangar_door_vehicle"
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
 "gL" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
-"gM" = (
-/obj/structure/barricade/handrail,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "gO" = (
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/upper_hallway)
@@ -1496,18 +1459,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/upper_hallway)
-"hh" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
 "hk" = (
 /obj/structure/machinery/light/double/blue,
 /obj/effect/decal/cleanable/dirt{
@@ -1578,13 +1529,15 @@
 "hX" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/upper_hallway)
-"hZ" = (
-/obj/structure/platform/stair_cut,
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
+"hY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
+	},
+/obj/structure/barricade/handrail{
 	dir = 4
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/hangar)
 "ia" = (
 /obj/structure/platform{
@@ -1597,33 +1550,44 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/upper_hallway)
+"ie" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/shuttle/escapepod/east,
+/area/dark_was_the_night/ready_bay)
 "if" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left,
 /area/dark_was_the_night/lower_hallway)
+"ig" = (
+/obj/structure/barricade/handrail,
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
+"ih" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	layer = 3.3
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "ii" = (
 /obj/structure/barricade/handrail,
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/upper_hallway)
-"ij" = (
-/obj/structure/platform,
-/obj/structure/barricade/handrail{
-	layer = 4
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1
-	},
-/turf/open/shuttle/escapepod/west,
-/area/dark_was_the_night/hangar)
 "il" = (
 /turf/open/floor/almayer/plate,
 /area/golden_arrow/cargo_shuttle/lower)
-"ir" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
 "iw" = (
 /obj/structure/platform{
 	dir = 4;
@@ -1632,13 +1596,17 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "iy" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
 	},
-/obj/structure/platform_decoration{
-	dir = 4
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
 	},
-/turf/open/floor/almayer/test_floor4,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "iE" = (
 /obj/structure/machinery/door/airlock/unsc{
@@ -1646,23 +1614,25 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/dorms)
-"iF" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8
-	},
-/obj/structure/platform_decoration{
-	dir = 1
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
 "iH" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = 11;
+	pixel_y = 1
 	},
-/obj/structure/machinery/landinglight/ds1/delaytwo{
-	dir = 4
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_x = -1;
+	pixel_y = 15
 	},
 /turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
+"iI" = (
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 4
+	},
+/turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "iK" = (
 /obj/structure/machinery/door_control/brbutton{
@@ -1673,13 +1643,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
-"iL" = (
-/obj/structure/prop/unsc_crate/corrugated/blue{
-	pixel_x = -4;
-	pixel_y = 2
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "iN" = (
 /obj/structure/platform{
 	dir = 8;
@@ -1695,6 +1658,13 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/dorms)
+"iS" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/dark_was_the_night/hangar)
 "iU" = (
 /obj/structure/machinery/landinglight/ds1/delayone,
 /obj/structure/machinery/landinglight/ds1/delaytwo{
@@ -1742,10 +1712,19 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/ready_bay)
-"jf" = (
-/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
-	pixel_x = -16;
-	pixel_y = -16
+"je" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/west,
+/area/dark_was_the_night/hangar)
+"jj" = (
+/obj/structure/roof/cargocrane_tracks/horizontal{
+	pixel_y = 16
+	},
+/obj/structure/roof/cargocrane_tracks/tjoint3{
+	pixel_y = 16;
+	pixel_x = -16
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
@@ -1777,6 +1756,14 @@
 "jv" = (
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/cryo_hall)
+"jw" = (
+/obj/structure/platform/stair_cut,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "jz" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NW-out";
@@ -1793,26 +1780,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_left/north,
 /area/dark_was_the_night/ready_bay)
-"jA" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8";
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	pixel_y = 16
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
+"jG" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
 	dir = 8
 	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_y = 15
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/hangar)
 "jH" = (
 /obj/structure/stairs,
@@ -1872,6 +1848,12 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/lower_hallway)
+"kc" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "kf" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/shower{
@@ -1880,6 +1862,10 @@
 /obj/structure/curtain/shower,
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
+"kh" = (
+/obj/structure/prop/unsc_crate/stack,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "kl" = (
 /turf/open/floor/almayer/redcorner/north,
 /area/dark_was_the_night/lower_hallway)
@@ -1891,31 +1877,19 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
-"kp" = (
-/obj/structure/machinery/door/firedoor/border_only/almayer,
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "hangar_door_vehicle"
+"kn" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc{
+	dir = 2;
+	name = "\improper pod bay"
 	},
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/pod_bay)
 "kr" = (
 /obj/structure/platform{
 	dir = 1
 	},
 /turf/open/shuttle/escapepod/east,
 /area/dark_was_the_night/pod_bay)
-"ks" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/prop/unsc_crate/big/stack/alt{
-	pixel_x = -9;
-	pixel_y = 2;
-	layer = 3.01
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
 "kB" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/grenade{
@@ -1928,13 +1902,13 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"kE" = (
-/obj/structure/prop/unsc_crate/stack,
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 4
+"kD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1;
+	pixel_x = -1
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/redcorner/north,
 /area/dark_was_the_night/hangar)
 "kJ" = (
 /obj/effect/decal/cleanable/dirt{
@@ -1958,10 +1932,6 @@
 "kR" = (
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/ready_bay)
-"kT" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass/prop,
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/ready_bay)
 "kY" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -1969,12 +1939,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/ready_bay)
-"lb" = (
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
 "lc" = (
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/upper_hallway)
@@ -2003,6 +1967,12 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
+"lo" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
 "lp" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1;
@@ -2013,15 +1983,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
-"lr" = (
-/obj/structure/roof/cargocrane_tracks/horizontal{
-	pixel_y = 16
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
 "ls" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/plate,
@@ -2035,13 +1996,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
-"lz" = (
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 4
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "lB" = (
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
@@ -2051,6 +2005,15 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
+"lF" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 8
+	},
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/hangar)
 "lG" = (
 /obj/item/stack/catwalk{
 	pixel_x = -6;
@@ -2065,13 +2028,6 @@
 /obj/structure/machinery/landinglight/ds1/delaytwo,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
-"lU" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/turf/open/floor/almayer/edge/smooth/west,
-/area/dark_was_the_night/hangar)
 "lZ" = (
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2,
 /obj/structure/machinery/iv_drip{
@@ -2080,14 +2036,6 @@
 	},
 /turf/open/floor/almayer/sterile_green_corner/east,
 /area/dark_was_the_night/medical)
-"ma" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
 "mf" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/engineering)
@@ -2103,6 +2051,13 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/dorms)
+"mo" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/southeast,
+/area/dark_was_the_night/hangar)
 "mp" = (
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer/plate,
@@ -2115,12 +2070,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
-"mu" = (
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal3"
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "mw" = (
 /obj/structure/machinery/power/terminal{
 	dir = 4
@@ -2219,6 +2168,21 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
+"no" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "nr" = (
 /obj/structure/barricade/handrail{
 	dir = 4
@@ -2243,6 +2207,12 @@
 "ny" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
+"nz" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "nB" = (
 /obj/structure/machinery/power/terminal{
 	dir = 4
@@ -2278,6 +2248,14 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
+"nP" = (
+/obj/structure/prop/unsc_crate/stack,
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "nQ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2285,6 +2263,12 @@
 /obj/effect/step_trigger/clone_cleaner,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/engineering)
+"nR" = (
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "nS" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/four,
 /turf/open/floor/almayer/mono,
@@ -2293,6 +2277,14 @@
 /obj/structure/bed/chair/comfy/bench/south/west,
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/canteen)
+"nU" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/ready_bay)
 "nV" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
@@ -2301,6 +2293,17 @@
 	dir = 8
 	},
 /turf/open/floor/almayer/red/northwest,
+/area/dark_was_the_night/hangar)
+"nW" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/hangar)
 "nY" = (
 /turf/open/floor/almayer/redfull,
@@ -2324,10 +2327,7 @@
 /turf/open/floor/almayer/edge/smooth/endcap_left,
 /area/dark_was_the_night/ready_bay)
 "op" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/cargo_arrow,
 /area/dark_was_the_night/hangar)
 "or" = (
 /turf/open/floor/almayer/edge/smooth/east,
@@ -2345,6 +2345,44 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
+"oC" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
+"oD" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/prop/unsc_crate/corrugated/red{
+	pixel_y = 13;
+	layer = 3.1
+	},
+/turf/open/floor/almayer/edge/smooth/north,
+/area/dark_was_the_night/hangar)
+"oH" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
+"oL" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_left/east,
+/area/dark_was_the_night/ready_bay)
 "oR" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/tool/hand_labeler{
@@ -2353,30 +2391,22 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"oS" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "door_warning";
-	dir = 1
-	},
-/obj/structure/machinery/light/double/blue,
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "oU" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /turf/open/floor/almayer/red/east,
 /area/dark_was_the_night/lower_hallway)
-"oV" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/turf/open/shuttle/escapepod/east,
-/area/dark_was_the_night/hangar)
 "oX" = (
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
+"oY" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/hangar)
 "pa" = (
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
@@ -2392,11 +2422,12 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
-"pg" = (
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 1
-	},
-/turf/open/floor/almayer/plate,
+"ph" = (
+/obj/structure/barricade/handrail,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/ready_bay)
+"pk" = (
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "pn" = (
 /obj/structure/machinery/computer/cameras/wooden_tv/prop{
@@ -2430,19 +2461,8 @@
 "py" = (
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/hangar)
-"pz" = (
-/obj/structure/barricade/handrail,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/ready_bay)
-"pB" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	layer = 3.3
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/mono,
+"pD" = (
+/turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/hangar)
 "pE" = (
 /obj/structure/machinery/door/airlock/hatch/colony,
@@ -2500,10 +2520,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_bay)
-"qf" = (
-/obj/structure/prop/unsc_crate/corrugated/blue,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "qi" = (
 /obj/structure/prop/invuln/darkness{
 	layer = 4.01
@@ -2555,11 +2571,22 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"qC" = (
+"qE" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
-/turf/open/floor/almayer/redcorner/west,
+/obj/structure/disposalpipe/segment,
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/ready_bay)
+"qH" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
 "qJ" = (
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst,
@@ -2568,12 +2595,14 @@
 "qL" = (
 /turf/open/floor/almayer,
 /area/dark_was_the_night/armory)
-"qM" = (
-/obj/structure/barricade/handrail{
-	dir = 8
+"qO" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8;
+	pixel_y = 15
 	},
-/turf/open/floor/almayer/edge/smooth/endcap_right/east,
-/area/dark_was_the_night/ready_bay)
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
 "qP" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -2581,22 +2610,11 @@
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/dark_was_the_night/lower_hallway)
 "qU" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/obj/structure/barricade/handrail,
-/turf/open/floor/almayer/edge/smooth,
+/turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/hangar)
 "qV" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/armory)
-"re" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
 "rf" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "W"
@@ -2607,6 +2625,12 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/armory)
+"rh" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/dark_was_the_night/ready_bay)
 "rk" = (
 /obj/effect/decal/unsc/engi{
 	dir = 1;
@@ -2620,16 +2644,6 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/ready_bay)
-"rn" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
 "rt" = (
 /obj/structure/machinery/power/apc/almayer/north,
 /obj/item/ammo_box/magazine/unsc/br55{
@@ -2689,15 +2703,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/lower_hallway)
-"rX" = (
-/obj/structure/platform{
-	dir = 8
-	},
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/hangar)
 "rY" = (
 /obj/structure/machinery/floodlight/landing/floor{
 	color = "#dae2ff";
@@ -2750,15 +2755,6 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/engineering)
-"sp" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/prop/unsc_crate/big{
-	layer = 5.1
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "sr" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/canteen)
@@ -2783,13 +2779,16 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/ready_bay)
-"sy" = (
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal3";
-	pixel_y = 3
+"sz" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
 	},
-/obj/structure/machinery/light/double/blue,
-/turf/open/floor/almayer/plate,
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
 "sD" = (
 /obj/structure/surface/table/almayer,
@@ -2803,15 +2802,14 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/armory)
-"sG" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+"sH" = (
+/obj/structure/platform{
+	dir = 1
 	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_y = 15
+/obj/structure/machinery/light/double/blue{
+	pixel_x = -16
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/shuttle/escapepod/east,
 /area/dark_was_the_night/hangar)
 "sI" = (
 /turf/open/floor/almayer/edge/smooth/corner,
@@ -2849,6 +2847,12 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/upper_hallway)
+"sT" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/dark_was_the_night/hangar)
 "sU" = (
 /obj/structure/machinery/cm_vending/sorted/uniform_supply/squad_prep/unsc/odst,
 /turf/open/floor/almayer,
@@ -2865,8 +2869,20 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
-"ti" = (
-/turf/open/floor/almayer/edge/smooth/east,
+"tb" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_right/east,
+/area/dark_was_the_night/ready_bay)
+"tc" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8
+	},
+/obj/structure/platform_decoration{
+	dir = 4
+	},
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "tn" = (
 /obj/effect/decal/cleanable/dirt{
@@ -2916,6 +2932,22 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
+"tC" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass/prop,
+/turf/open/floor/almayer/test_floor4,
+/area/dark_was_the_night/hangar)
+"tD" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	layer = 4
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
 "tE" = (
 /turf/closed/wall/unsc,
 /area/golden_arrow/cargo_shuttle/lower)
@@ -2925,9 +2957,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/canteen)
-"tK" = (
-/turf/open/floor/almayer/edge/smooth/corner/west,
-/area/dark_was_the_night/hangar)
 "tL" = (
 /obj/structure/bookcase{
 	icon_state = "book-5";
@@ -2943,18 +2972,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/dorms)
-"tQ" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/hangar)
-"tT" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
 "tU" = (
 /obj/structure/surface/table/reinforced/prison,
 /obj/structure/machinery/power/apc/almayer/north,
@@ -2971,6 +2988,27 @@
 "tX" = (
 /turf/open/floor/almayer/sterile_green_side,
 /area/dark_was_the_night/medical)
+"tY" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8";
+	pixel_y = 16
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	pixel_y = 16
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = 15
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "ug" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -2991,6 +3029,13 @@
 	},
 /turf/open/floor/almayer/plating_striped/north,
 /area/dark_was_the_night/engineering)
+"uo" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "ut" = (
 /obj/structure/barricade/handrail{
 	dir = 4
@@ -3001,10 +3046,10 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
 "uu" = (
-/obj/structure/platform{
-	dir = 4
+/obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo{
+	name = "Hangar Storage Bay"
 	},
-/turf/open/shuttle/escapepod/west,
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "uv" = (
 /obj/structure/barricade/handrail{
@@ -3016,12 +3061,22 @@
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/dark_was_the_night/lower_hallway)
 "ux" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8
+/obj/structure/prop/unsc_crate/corrugated/blue{
+	pixel_x = -4;
+	pixel_y = 2
 	},
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
+"uB" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/hangar)
 "uE" = (
 /obj/structure/machinery/computer/cameras/wooden_tv/prop{
 	dir = 8;
@@ -3076,14 +3131,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/lower_hallway)
-"uR" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "NW-out";
-	pixel_y = 1;
-	pixel_x = -1
-	},
-/turf/open/floor/almayer/redcorner/north,
-/area/dark_was_the_night/hangar)
 "uW" = (
 /obj/effect/step_trigger/clone_cleaner,
 /turf/closed/wall/unsc/reinforced/hull,
@@ -3134,20 +3181,10 @@
 /turf/open/floor/almayer/edge/smooth/endcap_right/north,
 /area/dark_was_the_night/ready_bay)
 "vz" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+/obj/structure/barricade/handrail{
+	dir = 4
 	},
-/obj/structure/gun_rack/halo/medkit{
-	pixel_y = 25
-	},
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/hangar)
-"vB" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/edge/smooth/north,
+/turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/hangar)
 "vD" = (
 /turf/open/floor/almayer/redcorner/east,
@@ -3192,12 +3229,14 @@
 "vO" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/west,
 /area/dark_was_the_night/lower_hallway)
-"vQ" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
+"vP" = (
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
+	layer = 2.9
 	},
-/turf/open/floor/almayer/plate,
+/obj/structure/prop/unsc_crate/stack{
+	pixel_x = 8
+	},
+/turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "vU" = (
 /obj/effect/decal/warning_stripes{
@@ -3212,29 +3251,22 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/upper_hallway)
+"vW" = (
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
 "wh" = (
 /obj/structure/machinery/power/apc/almayer/east,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/briefing/one)
 "wi" = (
 /turf/open/floor/almayer,
-/area/dark_was_the_night/ready_bay)
-"wl" = (
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
-"wm" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
 "wp" = (
 /obj/structure/machinery/light/double/blue{
@@ -3243,6 +3275,15 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
+"wr" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 25
+	},
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/hangar)
 "ws" = (
 /obj/structure/platform{
 	dir = 1
@@ -3283,15 +3324,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/upper_hallway)
-"wP" = (
-/obj/structure/toilet{
-	dir = 4
-	},
-/obj/structure/machinery/light/small/blue{
-	dir = 8
-	},
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "wQ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3370,6 +3402,16 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
+"xm" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal3"
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "xq" = (
 /obj/structure/gun_rack/halo/medkit{
 	pixel_y = 25
@@ -3379,28 +3421,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/briefing/one)
-"xr" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "hangar_door_vehicle"
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
 "xt" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/upper_hallway)
-"xw" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+"xu" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal3";
+	pixel_y = 3
 	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/barricade/handrail,
-/turf/open/floor/almayer/edge/smooth,
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "xz" = (
 /obj/structure/machinery/light/double/blue,
@@ -3476,29 +3505,30 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/ready_bay)
+"xQ" = (
+/obj/structure/roof/cargocrane_tracks/horizontal{
+	pixel_y = 16
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/hangar)
 "xR" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/bathroom)
 "xT" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
+	icon_state = "cargo"
 	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
+"yl" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "E";
+	icon_state = "SE-out";
 	pixel_x = 1
 	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
-"xY" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
-	},
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/west,
+/turf/open/floor/almayer/edge/smooth/corner/east,
 /area/dark_was_the_night/hangar)
 "ym" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
@@ -3534,27 +3564,45 @@
 "yz" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/dark_was_the_night/dorms)
+"yA" = (
+/turf/open/floor/almayer/cargo_arrow/north,
+/area/dark_was_the_night/hangar)
 "yD" = (
 /obj/structure/barricade/handrail{
 	dir = 4
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/lower_hallway)
+"yF" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
 "yM" = (
 /obj/structure/barricade/handrail{
 	dir = 8
 	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/upper_hallway)
-"yO" = (
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal3"
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1
+"yN" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_x = -1;
+	pixel_y = 15
 	},
 /turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
+"yR" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/hangar)
 "yT" = (
 /obj/effect/decal/warning_stripes{
@@ -3565,20 +3613,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/armory)
-"yV" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff"
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
-"yW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "NE-out";
-	pixel_y = 1;
-	pixel_x = 1
-	},
-/turf/open/floor/almayer/edge/smooth/corner/north,
-/area/dark_was_the_night/hangar)
 "yX" = (
 /obj/structure/machinery/light/double/blue,
 /obj/structure/cargo_container/unsc/main_2{
@@ -3588,18 +3622,12 @@
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
-"zb" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+"yZ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
 	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_y = 15
-	},
-/obj/effect/decal/unsc/hangar{
-	dir = 4
-	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/hangar)
 "zc" = (
 /obj/structure/barricade/handrail{
@@ -3607,6 +3635,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/lower_hallway)
+"zd" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_right/west,
+/area/dark_was_the_night/ready_bay)
 "ze" = (
 /obj/structure/surface/table/almayer,
 /obj/structure/machinery/light/double/blue{
@@ -3655,27 +3692,13 @@
 "zv" = (
 /turf/open/floor/almayer/redcorner,
 /area/dark_was_the_night/hangar)
-"zw" = (
-/obj/structure/machinery/light/double/blue,
+"zy" = (
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 4
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
-"zy" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "NW-out";
-	pixel_y = 1;
-	pixel_x = -1
-	},
-/turf/open/floor/almayer/edge/southwest,
-/area/dark_was_the_night/hangar)
-"zA" = (
-/obj/structure/platform{
-	dir = 1
-	},
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/north,
-/area/dark_was_the_night/ready_bay)
 "zC" = (
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/lower_hallway)
@@ -3699,19 +3722,17 @@
 "zO" = (
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/dark_was_the_night/lower_hallway)
+"zX" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/hangar)
 "zZ" = (
 /turf/open/floor/almayer/redfull,
 /area/dark_was_the_night/engineering)
-"Aa" = (
-/obj/structure/machinery/landinglight/ds1/delaytwo,
-/obj/structure/machinery/landinglight/ds1/delaythree{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/red/southeast,
-/area/dark_was_the_night/hangar)
 "Ae" = (
 /obj/structure/platform{
 	dir = 1
@@ -3724,27 +3745,13 @@
 "Ah" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
-"Al" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8";
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	pixel_y = 16
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_y = 15
+"Am" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass/prop,
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/ready_bay)
+"Ao" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff"
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
@@ -3754,6 +3761,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/lower_hallway)
+"Ax" = (
+/obj/structure/platform,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "Ay" = (
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/briefing/one)
@@ -3764,18 +3775,6 @@
 /obj/structure/pipes/vents/pump,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
-"AG" = (
-/obj/structure/platform,
-/obj/structure/barricade/handrail{
-	layer = 4
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1;
-	pixel_x = 16
-	},
-/turf/open/shuttle/escapepod/west,
-/area/dark_was_the_night/hangar)
 "AH" = (
 /obj/structure/stairs,
 /obj/structure/platform{
@@ -3802,7 +3801,13 @@
 /turf/open/floor/almayer/sterile_green,
 /area/dark_was_the_night/medical)
 "AO" = (
-/obj/structure/prop/unsc_crate/stack,
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "AP" = (
@@ -3834,23 +3839,6 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/upper_hallway)
-"AV" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1;
-	pixel_x = 16
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
-"AW" = (
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_left/west,
-/area/dark_was_the_night/ready_bay)
 "AZ" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/canteen)
@@ -3870,6 +3858,12 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
+"Bh" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/hangar)
 "Bm" = (
 /obj/structure/machinery/power/terminal{
 	dir = 4
@@ -3896,13 +3890,12 @@
 "Bv" = (
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/briefing/two)
-"BD" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_x = -1;
-	pixel_y = 15
+"By" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "BE" = (
 /obj/effect/decal/cleanable/dirt{
@@ -3916,13 +3909,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/lower_hallway)
-"BH" = (
-/obj/effect/decal/unsc/engi{
-	dir = 1;
-	pixel_x = 16
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "BI" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -3992,16 +3978,6 @@
 /obj/structure/machinery/power/apc/almayer/south,
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/canteen)
-"Ci" = (
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 4
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "Cl" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/dark_was_the_night/ready_bay)
@@ -4052,14 +4028,10 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
 "CD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
+/obj/structure/platform{
+	dir = 4
 	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/turf/open/floor/almayer/mono,
+/turf/open/shuttle/escapepod/west,
 /area/dark_was_the_night/hangar)
 "CF" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -4071,18 +4043,23 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_hall)
-"CH" = (
-/obj/structure/platform{
-	dir = 4
+"CQ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 4
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = 15
 	},
-/turf/open/shuttle/escapepod,
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "CR" = (
 /turf/open/floor/almayer/red/east,
 /area/dark_was_the_night/armory)
+"CT" = (
+/obj/structure/prop/unsc_crate/corrugated/blue,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "CX" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right,
 /area/dark_was_the_night/medical)
@@ -4097,18 +4074,6 @@
 	},
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/medical)
-"Dd" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
-"Dg" = (
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/corner/west,
-/area/dark_was_the_night/ready_bay)
 "Dh" = (
 /obj/structure/platform{
 	dir = 8
@@ -4118,14 +4083,6 @@
 "Di" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/dorms)
-"Dj" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/machinery/light/double/blue,
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
 "Dl" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -4165,13 +4122,6 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/upper_hallway)
-"Ds" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "SE-out";
-	pixel_x = 1
-	},
-/turf/open/floor/almayer/edge/smooth/corner/east,
-/area/dark_was_the_night/hangar)
 "Dy" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
 	desc = "An olive drab barrel containing water. Better not mix it up with the hydrogen tank. Someone put this one in the canteen, just in case you're tasting metal flavored water as opposed to metal and plastic flavored water.";
@@ -4205,46 +4155,43 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
-"DG" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1
-	},
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/hangar)
 "DI" = (
 /obj/structure/machinery/cm_vending/sorted/marine_food/unsc/alt,
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/canteen)
+"DK" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1;
+	pixel_x = -1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/corner/west,
+/area/dark_was_the_night/hangar)
 "DP" = (
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/canteen)
-"DR" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+"DQ" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	layer = 3.3
 	},
-/obj/structure/machinery/door/firedoor/border_only/almayer,
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "hangar_door_vehicle"
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
 	},
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
-"DT" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "DW" = (
 /turf/open/floor/almayer/edge/smooth/northeast,
 /area/dark_was_the_night/dorms)
+"Ea" = (
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
 "Em" = (
 /obj/structure/platform{
 	dir = 4
@@ -4256,10 +4203,7 @@
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
 "Er" = (
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer,
+/turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/hangar)
 "Es" = (
 /obj/structure/pipes/vents/pump,
@@ -4268,15 +4212,8 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/canteen)
-"Ev" = (
-/turf/open/floor/almayer/cargo_arrow,
-/area/dark_was_the_night/hangar)
 "Ey" = (
 /turf/open/floor/almayer/redcorner/west,
-/area/dark_was_the_night/hangar)
-"EB" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/glass/prop,
-/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "ED" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -4289,29 +4226,16 @@
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/briefing/two)
 "EM" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/open/floor/almayer/red/north,
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "EN" = (
 /obj/structure/machinery/door/airlock/unsc,
 /obj/structure/machinery/door/firedoor/border_only/almayer,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/bathroom)
-"EO" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "EP" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/dark_was_the_night/lower_hallway)
@@ -4362,16 +4286,6 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/ready_bay)
-"Fl" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "cargo"
-	},
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 4
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "Fx" = (
 /obj/structure/prop/invuln/overhead_pipe{
 	icon = 'icons/obj/structures/props/almayer_props.dmi';
@@ -4392,18 +4306,23 @@
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/ready_bay)
 "FA" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc{
-	dir = 2;
-	name = "\improper pod bay"
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/pod_bay)
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	pixel_x = -9;
+	pixel_y = 2;
+	layer = 3.01
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "FI" = (
 /turf/open/floor/almayer/sterile_green_corner,
 /area/dark_was_the_night/medical)
-"FN" = (
-/turf/open/floor/almayer/edge/smooth,
-/area/dark_was_the_night/hangar)
 "FQ" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -4413,18 +4332,16 @@
 	},
 /turf/open/floor/almayer/plating_striped/north,
 /area/dark_was_the_night/engineering)
-"FR" = (
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal2";
-	pixel_x = 11;
-	pixel_y = 1
+"FS" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_x = -1;
-	pixel_y = 15
+/obj/structure/machinery/door/firedoor/border_only/almayer,
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "hangar_door_vehicle"
 	},
-/turf/open/floor/almayer/plate,
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "FT" = (
 /obj/structure/machinery/light/double/blue,
@@ -4460,22 +4377,17 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/ready_bay)
-"Gf" = (
-/obj/structure/machinery/door/poddoor/almayer/locked,
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
-"Gh" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	layer = 3.3
+"Gi" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
 	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
-"Gl" = (
-/obj/structure/barricade/handrail{
+/obj/structure/pipes/standard/simple/hidden/supply{
 	dir = 4
 	},
-/turf/open/floor/almayer/edge/smooth/west,
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "Gm" = (
 /obj/effect/decal/cleanable/dirt{
@@ -4491,7 +4403,21 @@
 /obj/structure/machinery/cryopod/big/halo/flipped,
 /turf/open/floor/almayer/plating_striped/east,
 /area/dark_was_the_night/cryo_bay)
-"GA" = (
+"Gs" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8";
+	pixel_y = 16
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	pixel_y = 16
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
@@ -4499,11 +4425,13 @@
 	icon_state = "road_edge_decal4";
 	pixel_y = 15
 	},
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8;
-	id = "hangar_door_vehicle"
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/hangar)
+"GB" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/open/floor/almayer/test_floor4,
+/turf/open/floor/almayer/redcorner/west,
 /area/dark_was_the_night/hangar)
 "GD" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/six,
@@ -4576,16 +4504,16 @@
 "GV" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/medical)
-"GW" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
+"GX" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
 	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/disposalpipe/segment,
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
 	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "Hh" = (
 /obj/structure/machinery/door/poddoor/shutters/almayer{
@@ -4601,6 +4529,55 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
+"Hk" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/turf/open/floor/almayer/red/north,
+/area/dark_was_the_night/hangar)
+"Hm" = (
+/obj/structure/barricade/handrail{
+	dir = 8
+	},
+/turf/open/floor/almayer/edge/smooth/corner/east,
+/area/dark_was_the_night/hangar)
+"Hn" = (
+/obj/structure/prop/invuln/lifeboat_hatch_placeholder{
+	layer = 2.9
+	},
+/obj/structure/prop/unsc_crate/stack{
+	pixel_x = 8
+	},
+/obj/structure/prop/unsc_crate/corrugated/blue{
+	pixel_y = 17;
+	pixel_x = 7;
+	layer = 5.1
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
+"Hp" = (
+/obj/structure/roof/cargocrane_tracks/vertical/endcap2{
+	pixel_x = -16;
+	pixel_y = -16
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
+"Hs" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/barricade/handrail,
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/hangar)
+"HA" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "HD" = (
 /obj/structure/stairs,
 /obj/structure/platform{
@@ -4637,38 +4614,13 @@
 "HM" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/briefing/one)
-"HO" = (
-/obj/structure/machinery/light/double/blue{
-	dir = 4
-	},
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "HQ" = (
 /obj/structure/surface/table/almayer,
 /turf/open/floor/almayer/silverfull,
 /area/dark_was_the_night/dorms)
-"HR" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
-"Ic" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
+"Ia" = (
+/turf/open/floor/almayer/edge/smooth/endcap_left/west,
+/area/dark_was_the_night/ready_bay)
 "Ie" = (
 /obj/structure/bed/chair/comfy/bench/north/west,
 /turf/open/floor/almayer/edge/smooth/east,
@@ -4679,6 +4631,16 @@
 	},
 /turf/open/floor/almayer/plating_striped,
 /area/dark_was_the_night/engineering)
+"Ii" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "Im" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -4721,6 +4683,14 @@
 /obj/structure/pipes/standard/simple/hidden/supply,
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/lower_hallway)
+"IF" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1;
+	pixel_x = -1
+	},
+/turf/open/floor/almayer/edge/southwest,
+/area/dark_was_the_night/hangar)
 "IJ" = (
 /obj/docking_port/stationary/marine_dropship/pelican_lz/hangar,
 /turf/open/floor/almayer/plate,
@@ -4741,6 +4711,9 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/armory)
+"IQ" = (
+/turf/open/floor/almayer/edge/smooth/corner/north,
+/area/dark_was_the_night/hangar)
 "IS" = (
 /obj/effect/decal/unsc/maint{
 	pixel_y = -32
@@ -4754,13 +4727,6 @@
 /area/dark_was_the_night/cryo_hall)
 "IT" = (
 /turf/open/floor/almayer/redfull,
-/area/dark_was_the_night/hangar)
-"IU" = (
-/obj/structure/barricade/handrail{
-	dir = 8;
-	layer = 4
-	},
-/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "IX" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/two,
@@ -4793,25 +4759,18 @@
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/engineering)
-"Jw" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
 "JD" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/lower_hallway)
-"JK" = (
-/obj/structure/platform{
+"JG" = (
+/obj/structure/machinery/light/double/blue{
 	dir = 4
 	},
-/turf/open/shuttle/escapepod,
-/area/dark_was_the_night/hangar)
+/turf/open/floor/strata/white_cyan2/west,
+/area/dark_was_the_night/bathroom)
 "JL" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "NE-out";
@@ -4825,14 +4784,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/upper_hallway)
-"JN" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8;
-	pixel_y = 15
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "JQ" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 1
@@ -4864,12 +4815,24 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/engineering)
+"Kb" = (
+/obj/structure/gun_rack/halo/medkit{
+	pixel_y = 23
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/dark_was_the_night/bathroom)
 "Kc" = (
 /obj/structure/platform{
 	dir = 4
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/lower_hallway)
+"Kd" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal3"
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "Ke" = (
 /obj/structure/surface/table/reinforced/almayer_B,
 /obj/item/ammo_box/magazine/misc/unsc/medical_packets{
@@ -4882,12 +4845,22 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
+"Kj" = (
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "Kk" = (
 /obj/structure/platform_decoration{
 	dir = 8
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/upper_hallway)
+"Kl" = (
+/obj/effect/decal/unsc/engi{
+	dir = 1;
+	pixel_x = 16
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "Km" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning"
@@ -4957,9 +4930,6 @@
 	},
 /turf/open/shuttle/escapepod/north,
 /area/dark_was_the_night/cryo_bay)
-"KI" = (
-/turf/open/floor/almayer/edge/smooth/endcap_left/west,
-/area/dark_was_the_night/ready_bay)
 "KL" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -4979,44 +4949,17 @@
 "KR" = (
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
-"KS" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8";
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	pixel_y = 16
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_y = 15
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
-"KW" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
+"KY" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
-	dir = 1
+	dir = 1;
+	pixel_x = 16
 	},
-/turf/open/floor/almayer/mono,
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
+"KZ" = (
+/obj/structure/machinery/door/poddoor/almayer/locked,
+/turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "Lc" = (
 /obj/effect/decal/warning_stripes{
@@ -5043,6 +4986,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/armory)
+"Li" = (
+/obj/structure/platform{
+	dir = 4
+	},
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 4
+	},
+/turf/open/shuttle/escapepod,
+/area/dark_was_the_night/hangar)
 "Ll" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -5061,23 +5013,6 @@
 	},
 /turf/open/floor/strata/white_cyan2/west,
 /area/dark_was_the_night/bathroom)
-"Lo" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/structure/prop/unsc_crate/corrugated/red{
-	pixel_y = 13;
-	layer = 3.1
-	},
-/turf/open/floor/almayer/edge/smooth/north,
-/area/dark_was_the_night/hangar)
-"Lq" = (
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_left/west,
-/area/dark_was_the_night/ready_bay)
 "Lr" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -5102,6 +5037,15 @@
 /obj/structure/machinery/door/airlock/unsc/prop,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/upper_hallway)
+"LG" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff"
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "LI" = (
 /obj/structure/machinery/door/firedoor/border_only/almayer{
 	dir = 2
@@ -5128,6 +5072,12 @@
 "LP" = (
 /turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/dorms)
+"LQ" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "LT" = (
 /obj/structure/pipes/vents/pump,
 /obj/structure/machinery/shower{
@@ -5138,9 +5088,9 @@
 /area/dark_was_the_night/bathroom)
 "LV" = (
 /obj/structure/platform{
-	dir = 8
+	dir = 4
 	},
-/turf/open/shuttle/escapepod/north,
+/turf/open/shuttle/escapepod,
 /area/dark_was_the_night/hangar)
 "LW" = (
 /obj/structure/cable/heavyduty{
@@ -5176,6 +5126,16 @@
 "Me" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
+"Mf" = (
+/obj/structure/machinery/landinglight/ds1/delaytwo,
+/obj/structure/machinery/landinglight/ds1/delaythree{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/red/southeast,
+/area/dark_was_the_night/hangar)
 "Mi" = (
 /obj/structure/barricade/handrail{
 	dir = 4
@@ -5201,6 +5161,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/briefing/one)
+"Mm" = (
+/obj/structure/barricade/handrail,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "Mq" = (
 /obj/structure/platform{
 	dir = 8
@@ -5253,6 +5217,10 @@
 	},
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/engineering)
+"My" = (
+/obj/structure/prop/unsc_crate/corrugated/green,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "MB" = (
 /obj/structure/cargo_container/unsc/main_2/b{
 	density = 0;
@@ -5265,12 +5233,6 @@
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/three,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/briefing/two)
-"MD" = (
-/obj/structure/machinery/door/poddoor/two_tile/four_tile/vertical/halo{
-	name = "Hangar Storage Bay"
-	},
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
 "MJ" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/cryo_bay)
@@ -5292,33 +5254,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/lower_hallway)
-"MT" = (
-/obj/structure/roof/cargocrane_tracks/horizontal/endcap2{
-	pixel_x = 16;
-	pixel_y = 16
-	},
-/obj/structure/roof/cargocrane_tracks/horizontal{
-	pixel_y = 16
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
-"MW" = (
-/obj/structure/prop/invuln/lifeboat_hatch_placeholder{
-	layer = 2.9
-	},
-/obj/structure/prop/unsc_crate/stack{
-	pixel_x = 8
-	},
-/obj/structure/prop/unsc_crate/corrugated/blue{
-	pixel_y = 17;
-	pixel_x = 7;
-	layer = 5.1
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
 "MX" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/dorms)
@@ -5367,17 +5302,9 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"Nk" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "NW-out";
-	pixel_y = 1;
-	pixel_x = -1
-	},
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/corner/west,
-/area/dark_was_the_night/hangar)
+"Ny" = (
+/turf/open/floor/almayer/pod_landing_floor,
+/area/dark_was_the_night/pod_bay)
 "Nz" = (
 /obj/structure/closet/secure_closet/halo/job_locker/weapons_spec/ft2,
 /obj/structure/machinery/light/small/blue/golden_arrow{
@@ -5388,14 +5315,6 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
-"NA" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4;
-	pixel_y = -16
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_left/west,
-/area/dark_was_the_night/ready_bay)
 "NF" = (
 /obj/structure/machinery/landinglight/ds1/delaytwo{
 	dir = 4
@@ -5422,6 +5341,14 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/ready_bay)
+"NN" = (
+/obj/structure/desertdam/decals/road_stop{
+	icon_state = "stop_decal3";
+	pixel_y = 3
+	},
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "NP" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/engineering)
@@ -5436,17 +5363,6 @@
 /obj/structure/disposalpipe/segment,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/lower_hallway)
-"NX" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/disposalpipe/segment,
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/ready_bay)
 "NY" = (
 /obj/structure/prop/almayer/whiteboard/clear,
 /turf/open/floor/almayer,
@@ -5465,26 +5381,18 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
-"Of" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
+"Og" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
 	dir = 8
 	},
-/obj/structure/platform{
-	dir = 4
+/obj/structure/platform_decoration{
+	dir = 1
 	},
-/turf/open/shuttle/escapepod/west,
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "Oh" = (
 /turf/open/floor/almayer/redfull,
 /area/dark_was_the_night/lower_hallway)
-"Op" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/west,
-/area/dark_was_the_night/hangar)
 "Or" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -5495,16 +5403,19 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/dorms)
-"Ou" = (
-/obj/structure/gun_rack/halo/medkit{
-	pixel_y = 23
-	},
-/turf/open/floor/strata/white_cyan2/west,
-/area/dark_was_the_night/bathroom)
 "OB" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/five,
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/briefing/one)
+"OF" = (
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "OG" = (
 /obj/structure/prop/unsc_crate/stack{
 	pixel_y = 17;
@@ -5515,14 +5426,11 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"OK" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
+"OH" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff"
-	},
-/turf/open/floor/almayer/mono,
+/turf/open/floor/almayer/redcorner,
 /area/dark_was_the_night/hangar)
 "ON" = (
 /obj/structure/surface/table/reinforced/almayer_B,
@@ -5545,6 +5453,34 @@
 	},
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
+"OP" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/dark_was_the_night/bathroom)
+"OQ" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8";
+	pixel_y = 16
+	},
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	pixel_y = 16
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = 15
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/hangar)
 "OS" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -5578,35 +5514,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/dorms)
-"OY" = (
-/obj/structure/machinery/camera/autoname/golden_arrow{
-	dir = 8
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
-"Pb" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/southeast,
-/area/dark_was_the_night/hangar)
-"Pd" = (
-/obj/structure/prop/invuln/lifeboat_hatch_placeholder/terminal{
-	layer = 2.9
-	},
-/obj/structure/prop/unsc_crate/stack{
-	pixel_x = 8
-	},
-/turf/open/floor/almayer,
-/area/dark_was_the_night/hangar)
-"Pe" = (
-/obj/structure/desertdam/decals/road_stop{
-	icon_state = "stop_decal3";
-	pixel_y = 3
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "Pf" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/lower_hallway)
@@ -5617,6 +5524,16 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/lower_hallway)
+"Pl" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
 "Po" = (
 /obj/structure/gun_rack/halo/medkit{
 	dir = 8;
@@ -5625,6 +5542,14 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
+"Ps" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/turf/open/floor/almayer/edge/smooth/corner/north,
+/area/dark_was_the_night/hangar)
 "Pw" = (
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
@@ -5641,12 +5566,6 @@
 "PB" = (
 /turf/open/floor/almayer/edge/smooth/endcap_right/east,
 /area/dark_was_the_night/lower_hallway)
-"PG" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
 "PH" = (
 /obj/effect/decal/cleanable/dirt{
 	layer = 2.52
@@ -5702,6 +5621,21 @@
 	},
 /turf/open/floor/almayer/red/northeast,
 /area/dark_was_the_night/hangar)
+"PS" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	layer = 4
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
+"PV" = (
+/obj/structure/machinery/camera/autoname/golden_arrow,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "Qg" = (
 /turf/closed/wall/unsc,
 /area/dark_was_the_night/bathroom)
@@ -5734,25 +5668,16 @@
 "Qp" = (
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/upper_hallway)
-"Qq" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "Qt" = (
 /turf/open/floor/almayer/red/west,
 /area/dark_was_the_night/hangar)
-"Qx" = (
-/obj/structure/barricade/handrail{
-	dir = 8
+"Qv" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	pixel_x = -1
 	},
-/turf/open/floor/almayer/edge/smooth/endcap_left/east,
-/area/dark_was_the_night/ready_bay)
+/turf/open/floor/almayer/red/west,
+/area/dark_was_the_night/hangar)
 "Qz" = (
 /obj/item/device/radio/intercom{
 	freerange = 1;
@@ -5767,6 +5692,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/upper_hallway)
+"QD" = (
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_left/west,
+/area/dark_was_the_night/ready_bay)
 "QI" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -5817,19 +5751,30 @@
 	},
 /turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/lower_hallway)
-"QZ" = (
-/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/prop,
-/turf/open/floor/almayer/test_floor4,
-/area/dark_was_the_night/hangar)
 "Rb" = (
-/obj/structure/platform{
-	dir = 1
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
 	},
-/obj/structure/platform{
-	dir = 4
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8";
+	pixel_y = 16
 	},
-/turf/open/shuttle/escapepod/east,
-/area/dark_was_the_night/ready_bay)
+/obj/structure/disposalpipe/segment{
+	dir = 8;
+	pixel_y = 16
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = 15
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "Rm" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "door_warning";
@@ -5858,15 +5803,6 @@
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/upper_hallway)
-"Rt" = (
-/obj/structure/barricade/handrail{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/edge/smooth/endcap_right/west,
-/area/dark_was_the_night/ready_bay)
 "Ru" = (
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
@@ -5874,6 +5810,22 @@
 /obj/effect/step_trigger/clone_cleaner,
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/cryo_hall)
+"Ry" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_x = -1
+	},
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/hangar)
+"RA" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/hangar)
 "RB" = (
 /obj/structure/machinery/power/apc/almayer/west,
 /turf/open/floor/almayer,
@@ -5927,19 +5879,15 @@
 "RM" = (
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/golden_arrow/cargo_shuttle/lower)
+"RN" = (
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "hangar_door_vehicle"
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/dark_was_the_night/hangar)
 "RQ" = (
 /turf/open/floor/almayer/edge/smooth/west,
-/area/dark_was_the_night/hangar)
-"RT" = (
-/obj/structure/barricade/handrail,
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "RV" = (
 /obj/structure/barricade/handrail{
@@ -5982,29 +5930,6 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
-"Sj" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "S"
-	},
-/obj/effect/decal/warning_stripes{
-	icon_state = "E";
-	pixel_x = 1
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff"
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
-"Sl" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/obj/structure/platform{
-	dir = 8
-	},
-/turf/open/shuttle/escapepod/west,
-/area/dark_was_the_night/hangar)
 "Sn" = (
 /turf/open/floor/almayer/edge/smooth/southeast,
 /area/dark_was_the_night/canteen)
@@ -6014,13 +5939,17 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
-"Ss" = (
-/obj/structure/machinery/door_control/brbutton{
-	pixel_x = 1;
-	pixel_y = 27;
-	id = "hangar_door_vehicle"
+"Sr" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "4-8"
 	},
-/turf/open/floor/almayer/plate,
+/obj/structure/pipes/standard/simple/hidden/supply{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/hangar)
 "St" = (
 /obj/structure/machinery/landinglight/ds1/delaythree,
@@ -6028,13 +5957,6 @@
 	dir = 4
 	},
 /turf/open/floor/almayer/red/southeast,
-/area/dark_was_the_night/hangar)
-"SD" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "SW-out";
-	pixel_x = -1
-	},
-/turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/hangar)
 "SG" = (
 /obj/structure/machinery/light/small/red,
@@ -6053,28 +5975,15 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
-"SJ" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/turf/open/floor/almayer/redcorner,
-/area/dark_was_the_night/hangar)
-"SM" = (
-/obj/structure/roof/cargocrane_tracks/horizontal{
-	pixel_y = 16
-	},
-/obj/structure/roof/cargocrane_tracks/tjoint3{
-	pixel_y = 16;
-	pixel_x = -16
-	},
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "SN" = (
 /obj/effect/decal/warning_stripes{
-	icon_state = "W";
-	pixel_x = -1
+	icon_state = "cargo"
 	},
-/turf/open/floor/almayer/red/west,
+/obj/structure/barricade/handrail{
+	dir = 8;
+	layer = 4
+	},
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "SS" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
@@ -6113,13 +6022,11 @@
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/lower_hallway)
 "Tm" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/pipes/standard/simple/hidden/supply,
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
+/obj/structure/machinery/camera/autoname/golden_arrow{
+	dir = 8
 	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/ready_bay)
+/turf/open/floor/almayer/edge/smooth/east,
+/area/dark_was_the_night/hangar)
 "Tn" = (
 /obj/structure/reagent_dispensers/watertank/unsc{
 	pixel_x = 5;
@@ -6134,6 +6041,20 @@
 /obj/structure/machinery/landinglight/ds1/delaythree,
 /turf/open/floor/almayer/red/southwest,
 /area/dark_was_the_night/hangar)
+"Tu" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = 15
+	},
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "hangar_door_vehicle"
+	},
+/turf/open/floor/almayer/test_floor4,
+/area/dark_was_the_night/hangar)
 "Tz" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -6145,10 +6066,11 @@
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/upper_hallway)
 "TG" = (
-/obj/structure/machinery/door/poddoor/shutters/almayer{
-	dir = 8
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
 	},
-/turf/open/floor/almayer/test_floor4,
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "TI" = (
 /obj/effect/decal/unsc/commons{
@@ -6279,10 +6201,12 @@
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/armory)
 "Ut" = (
-/obj/structure/barricade/handrail{
-	dir = 4
+/obj/structure/machinery/door/firedoor/border_only/almayer,
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "hangar_door_vehicle"
 	},
-/turf/open/floor/almayer/edge/smooth/corner,
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "Uy" = (
 /turf/open/floor/almayer/edge/smooth/west,
@@ -6318,11 +6242,22 @@
 "UM" = (
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/medical)
-"UR" = (
-/obj/structure/platform{
-	dir = 8
+"UN" = (
+/obj/structure/barricade/handrail{
+	dir = 4
 	},
-/turf/open/shuttle/escapepod/west,
+/turf/open/floor/almayer/edge/smooth/endcap_left/west,
+/area/dark_was_the_night/ready_bay)
+"UO" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/prop/unsc_crate/big/stack/alt{
+	pixel_x = -9;
+	pixel_y = 2;
+	layer = 3.01
+	},
+/turf/open/floor/almayer/edge/smooth/east,
 /area/dark_was_the_night/hangar)
 "US" = (
 /obj/structure/cargo_container/unsc/main_2/c{
@@ -6332,12 +6267,6 @@
 /obj/structure/blocker/invisible_wall,
 /turf/open/floor/almayer/red/north,
 /area/dark_was_the_night/lower_hallway)
-"UV" = (
-/obj/structure/barricade/handrail{
-	dir = 8
-	},
-/turf/open/floor/almayer/edge/smooth/corner/east,
-/area/dark_was_the_night/hangar)
 "Vb" = (
 /obj/structure/machinery/prop/almayer/CICmap{
 	density = 0;
@@ -6351,14 +6280,20 @@
 "Vc" = (
 /turf/closed/wall/unsc/reinforced/hull,
 /area/dark_was_the_night/pod_bay)
-"Ve" = (
-/obj/structure/disposalpipe/segment,
-/obj/structure/disposalpipe/segment,
-/obj/structure/cable/heavyduty{
-	icon_state = "1-2"
+"Vd" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "door_warning";
+	dir = 1
 	},
-/obj/structure/pipes/standard/simple/hidden/supply,
-/turf/open/floor/almayer/edge/smooth,
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/strata/white_cyan2/west,
+/area/dark_was_the_night/bathroom)
+"Ve" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
 "Vh" = (
 /obj/effect/decal/cleanable/dirt{
@@ -6382,15 +6317,25 @@
 /obj/structure/machinery/door/airlock/unsc/glass,
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/canteen)
-"VC" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
+"Vz" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
 	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 4
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
 	},
-/turf/open/floor/plating/plating_catwalk,
+/turf/open/floor/almayer/edge/smooth,
 /area/dark_was_the_night/hangar)
+"VC" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/obj/structure/platform{
+	dir = 8
+	},
+/turf/open/shuttle/escapepod/north,
+/area/dark_was_the_night/ready_bay)
 "VJ" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/prop{
 	dir = 1
@@ -6401,9 +6346,12 @@
 /obj/structure/bed/chair/comfy/bench/mid/east,
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/canteen)
-"VO" = (
+"VP" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "cargo"
+	},
+/obj/structure/prop/unsc_crate/big{
+	layer = 5.1
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
@@ -6435,14 +6383,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/hangar)
-"VY" = (
-/obj/structure/barricade/handrail,
-/obj/effect/decal/warning_stripes{
-	icon_state = "N";
-	pixel_y = 1
-	},
-/turf/open/floor/almayer/mono,
-/area/dark_was_the_night/hangar)
 "VZ" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -6453,6 +6393,12 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/ready_bay)
+"Wa" = (
+/obj/structure/platform{
+	dir = 1
+	},
+/turf/open/shuttle/escapepod/east,
+/area/dark_was_the_night/hangar)
 "Wb" = (
 /obj/structure/platform{
 	dir = 8
@@ -6477,6 +6423,10 @@
 	},
 /turf/open/floor/almayer/empty/golden_arrow,
 /area/golden_arrow/cargo_shuttle/lower)
+"Wn" = (
+/obj/structure/machinery/door/airlock/multi_tile/unsc/blast_door/prop,
+/turf/open/floor/almayer/test_floor4,
+/area/dark_was_the_night/hangar)
 "Wq" = (
 /obj/effect/decal/warning_stripes{
 	icon_state = "E";
@@ -6496,10 +6446,27 @@
 /obj/effect/landmark/late_join/odst,
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/cryo_bay)
+"Ws" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 4;
+	pixel_y = -16
+	},
+/turf/open/floor/almayer/edge/smooth/endcap_left/west,
+/area/dark_was_the_night/ready_bay)
 "Wv" = (
 /obj/structure/machinery/door/airlock/multi_tile/unsc/prop,
 /turf/open/floor/almayer,
 /area/dark_was_the_night/cryo_bay)
+"WG" = (
+/obj/structure/disposalpipe/segment,
+/obj/structure/disposalpipe/segment,
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/turf/open/floor/almayer/edge/smooth,
+/area/dark_was_the_night/hangar)
 "WJ" = (
 /obj/structure/barricade/handrail{
 	dir = 8
@@ -6528,13 +6495,6 @@
 "Xd" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/north,
 /area/dark_was_the_night/lower_hallway)
-"Xe" = (
-/turf/open/floor/almayer/pod_landing_floor,
-/area/dark_was_the_night/pod_bay)
-"Xh" = (
-/obj/structure/prop/unsc_crate/corrugated/green,
-/turf/open/floor/almayer/plate,
-/area/dark_was_the_night/hangar)
 "Xj" = (
 /obj/structure/bed/chair/comfy/bench/north/east,
 /turf/open/floor/almayer/edge/smooth/west,
@@ -6555,29 +6515,11 @@
 	},
 /turf/open/floor/almayer/plate,
 /area/dark_was_the_night/hangar)
-"Xt" = (
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8"
-	},
-/obj/structure/cable/heavyduty{
-	icon_state = "4-8";
-	pixel_y = 16
-	},
-/obj/structure/disposalpipe/segment{
-	dir = 8;
-	pixel_y = 16
-	},
-/obj/structure/pipes/standard/simple/hidden/supply{
-	dir = 8
-	},
-/obj/structure/desertdam/decals/road_edge{
-	icon_state = "road_edge_decal4";
-	pixel_y = 15
-	},
-/turf/open/floor/plating/plating_catwalk,
-/area/dark_was_the_night/hangar)
 "Xw" = (
-/turf/closed/wall/unsc/reinforced/hull,
+/obj/effect/decal/warning_stripes{
+	icon_state = "S"
+	},
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 "XE" = (
 /obj/structure/machinery/door/airlock/unsc/prop{
@@ -6589,12 +6531,33 @@
 /obj/effect/step_trigger/clone_cleaner,
 /turf/open/floor/plating/plating_catwalk,
 /area/dark_was_the_night/cryo_hall)
+"XJ" = (
+/obj/structure/machinery/door_control/brbutton{
+	pixel_x = 1;
+	pixel_y = 27;
+	id = "hangar_door_vehicle"
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "XM" = (
 /obj/structure/machinery/door/airlock/unsc{
 	dir = 1
 	},
 /turf/open/floor/almayer/pod_landing_floor,
 /area/dark_was_the_night/medical)
+"XP" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal4";
+	pixel_y = 15
+	},
+/obj/effect/decal/unsc/hangar{
+	dir = 4
+	},
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "XS" = (
 /obj/effect/step_trigger/clone_cleaner,
 /turf/open/floor/almayer/pod_landing_floor,
@@ -6603,16 +6566,15 @@
 /obj/structure/surface/table/reinforced/almayer_B,
 /turf/open/floor/almayer/sterile,
 /area/dark_was_the_night/canteen)
-"Yb" = (
-/obj/effect/decal/warning_stripes{
-	icon_state = "SW-out";
-	pixel_x = -1
-	},
-/obj/structure/barricade/handrail{
+"XV" = (
+/obj/structure/toilet{
 	dir = 4
 	},
-/turf/open/floor/almayer/edge/smooth/corner,
-/area/dark_was_the_night/hangar)
+/obj/structure/machinery/light/small/blue{
+	dir = 8
+	},
+/turf/open/floor/strata/white_cyan2/west,
+/area/dark_was_the_night/bathroom)
 "Yd" = (
 /obj/structure/machinery/light/small/red,
 /turf/open/floor/almayer,
@@ -6647,9 +6609,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/west,
 /area/dark_was_the_night/upper_hallway)
-"YE" = (
-/turf/open/floor/almayer/edge/smooth/corner/north,
-/area/dark_was_the_night/hangar)
 "YG" = (
 /obj/structure/platform{
 	dir = 1
@@ -6674,6 +6633,10 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner/west,
 /area/dark_was_the_night/lower_hallway)
+"YO" = (
+/obj/structure/machinery/light/double/blue,
+/turf/open/floor/almayer/plate,
+/area/dark_was_the_night/hangar)
 "YQ" = (
 /obj/structure/bed/roller/hospital_empty/bigrollerempty2,
 /obj/structure/machinery/light/double/blue{
@@ -6695,7 +6658,33 @@
 /obj/structure/machinery/light/double/blue,
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/briefing/two)
-"YZ" = (
+"Za" = (
+/obj/structure/platform,
+/obj/structure/barricade/handrail{
+	layer = 4
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
+"Zb" = (
+/obj/structure/cable/heavyduty{
+	icon_state = "1-2"
+	},
+/obj/structure/pipes/standard/simple/hidden/supply,
+/obj/structure/disposalpipe/segment,
+/turf/open/floor/plating/plating_catwalk,
+/area/dark_was_the_night/ready_bay)
+"Zd" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "N";
+	pixel_y = 1
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 1
+	},
+/turf/open/floor/almayer/mono,
+/area/dark_was_the_night/hangar)
+"Zl" = (
 /obj/structure/desertdam/decals/road_edge{
 	icon_state = "road_edge_decal2";
 	pixel_x = 11;
@@ -6717,12 +6706,15 @@
 	},
 /turf/open/floor/almayer/edge/smooth/endcap_right/west,
 /area/dark_was_the_night/lower_hallway)
-"Zq" = (
-/obj/structure/platform,
-/obj/structure/barricade/handrail{
-	layer = 4
+"Zr" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
 	},
-/turf/open/shuttle/escapepod/west,
+/obj/structure/machinery/door/poddoor/shutters/almayer{
+	dir = 8;
+	id = "hangar_door_vehicle"
+	},
+/turf/open/floor/almayer/test_floor4,
 /area/dark_was_the_night/hangar)
 "Zw" = (
 /obj/structure/prop/unsc_crate/big/stack/alt{
@@ -6739,6 +6731,16 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
+"Zx" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out";
+	pixel_x = -1
+	},
+/obj/structure/barricade/handrail{
+	dir = 4
+	},
+/turf/open/floor/almayer/edge/smooth/corner,
+/area/dark_was_the_night/hangar)
 "ZE" = (
 /obj/structure/gun_rack/halo/big/br55/unloaded,
 /obj/structure/machinery/light/small/blue/golden_arrow{
@@ -6753,26 +6755,15 @@
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/canteen)
-"ZJ" = (
-/obj/effect/decal/cleanable/dirt{
-	layer = 2.52
-	},
-/obj/structure/prop/unsc_crate/big/stack/alt{
-	pixel_x = -9;
-	pixel_y = 2;
-	layer = 3.01
-	},
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 4
-	},
-/turf/open/floor/almayer/edge/smooth/east,
-/area/dark_was_the_night/hangar)
 "ZK" = (
 /turf/open/floor/almayer/edge/smooth/corner/north,
 /area/dark_was_the_night/upper_hallway)
 "ZL" = (
-/turf/open/floor/almayer/test_floor4,
+/obj/effect/decal/warning_stripes{
+	icon_state = "W";
+	layer = 3.3
+	},
+/turf/open/floor/almayer/mono,
 /area/dark_was_the_night/hangar)
 
 (1,1,1) = {"
@@ -7118,12 +7109,12 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+qU
 rR
 rR
 rR
@@ -7296,12 +7287,12 @@ rR
 rR
 rR
 rR
-Xw
+qU
 Ah
 Ah
 Ah
 Ah
-Xw
+qU
 rR
 rR
 rR
@@ -7473,14 +7464,14 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-xr
-gK
-GA
-gK
-Xw
-Xw
+qU
+qU
+Zr
+RN
+Tu
+RN
+qU
+qU
 rR
 rR
 rR
@@ -7651,14 +7642,14 @@ rR
 rR
 rR
 rR
-Xw
-AG
-op
+qU
+tD
+nz
 Ah
-sG
-gM
-oV
-Xw
+CQ
+Mm
+Wa
+qU
 rR
 rR
 rR
@@ -7829,14 +7820,14 @@ rR
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 Ah
-DT
-Al
-gM
-dK
-Xw
+fJ
+Rb
+Mm
+sH
+qU
 rR
 rR
 rR
@@ -8007,14 +7998,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-fU
-VC
-KS
+PV
+RA
+Gs
 Ah
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -8185,14 +8176,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
 Ah
-hh
-KS
+Sr
+Gs
 Ah
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -8363,14 +8354,14 @@ rR
 rR
 rR
 rR
-Xw
-AG
+qU
+tD
 Ah
-EO
-Al
-gM
-oV
-Xw
+Gi
+Rb
+Mm
+Wa
+qU
 rR
 rR
 rR
@@ -8541,14 +8532,14 @@ rR
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 Ah
-EO
-jA
-gM
-dK
-Xw
+Gi
+tY
+Mm
+sH
+qU
 rR
 rR
 rR
@@ -8719,14 +8710,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-op
-hh
-Xt
+nz
+Sr
+OQ
 Ah
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -8897,14 +8888,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-Qq
-hh
-Xt
-zw
+AO
+Sr
+OQ
+YO
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -9075,14 +9066,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-op
-hh
-KS
+nz
+Sr
+Gs
 Ah
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -9253,14 +9244,14 @@ rR
 rR
 rR
 rR
-Xw
-AG
-op
-DT
-Al
-gM
-oV
-Xw
+qU
+tD
+nz
+fJ
+Rb
+Mm
+Wa
+qU
 rR
 rR
 rR
@@ -9431,14 +9422,14 @@ rR
 rR
 rR
 rR
-Xw
-Zq
-op
-DT
-Al
-gM
-dK
-Xw
+qU
+Za
+nz
+fJ
+Rb
+Mm
+sH
+qU
 rR
 rR
 rR
@@ -9489,9 +9480,9 @@ Vl
 fE
 AZ
 Qg
-wP
+XV
 Qg
-wP
+XV
 Qg
 kf
 kf
@@ -9609,14 +9600,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
 Ah
-hh
-KS
+Sr
+Gs
 Ah
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -9671,11 +9662,11 @@ VS
 Qg
 VS
 Qg
-Ou
+Kb
 lB
 lB
 lB
-ux
+OP
 LT
 xR
 rR
@@ -9787,14 +9778,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
 Ah
-hh
-KS
-pg
+Sr
+Gs
+nR
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -9849,7 +9840,7 @@ Nb
 wR
 dy
 Ln
-oS
+Vd
 Qg
 Cm
 rT
@@ -9965,14 +9956,14 @@ rR
 rR
 rR
 rR
-Xw
-AG
+qU
+tD
 Ah
-EO
-Al
-gM
-oV
-Xw
+Gi
+Rb
+Mm
+Wa
+qU
 rR
 rR
 rR
@@ -10031,7 +10022,7 @@ lB
 lB
 lB
 lB
-HO
+JG
 LT
 xR
 rR
@@ -10143,14 +10134,14 @@ rR
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 Ah
-op
-sG
-gM
-dK
-Xw
+nz
+CQ
+Mm
+sH
+qU
 rR
 rR
 rR
@@ -10321,14 +10312,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-Ss
-op
-zb
+XJ
+nz
+XP
 Ah
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -10499,14 +10490,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-kp
-DR
-DR
-kp
+Ut
+FS
+FS
+Ut
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -10677,14 +10668,14 @@ rR
 rR
 rR
 rR
-Xw
+qU
 hb
-yO
-YZ
-FR
-sy
+xm
+Zl
+iH
+NN
 hb
-Xw
+qU
 rR
 rR
 rR
@@ -10855,14 +10846,14 @@ rR
 rR
 rR
 rR
-Xw
 qU
+Hs
 Ah
 Ah
-BD
+yN
 Ah
-RT
-Xw
+ff
+qU
 rR
 rR
 rR
@@ -11033,14 +11024,14 @@ rR
 rR
 rR
 rR
-Xw
 qU
+Hs
 Ah
 Ah
-BD
+yN
 Ah
-RT
-Xw
+ff
+qU
 rR
 rR
 rR
@@ -11211,14 +11202,14 @@ rR
 rR
 rR
 rR
-Xw
-DG
+qU
+Vz
 Ah
 Ah
-BD
+yN
 Ah
-Dj
-Xw
+HA
+qU
 rR
 rR
 rR
@@ -11389,14 +11380,14 @@ rR
 rR
 rR
 rR
-Xw
-vz
+qU
+wr
 Ah
 Ah
-BD
+yN
 Ah
-re
-Xw
+TG
+qU
 rR
 rR
 rR
@@ -11538,44 +11529,44 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+qU
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-rR
-rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+qU
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-xw
+qU
+qU
+qU
+qU
+qU
+qU
+rR
+rR
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+uB
 Ah
 Ah
-BD
+yN
 Ah
-VY
-Xw
-Xw
+ig
+qU
+qU
 rR
 rR
 rR
@@ -11715,45 +11706,45 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-uu
-uu
-Of
-uu
-Xw
-Xw
-Xw
-uu
-uu
-Of
-uu
-Xw
-Xw
-Xw
-Xw
-uu
-uu
-Of
-uu
-Xw
-Xw
-Xw
-Xw
-uu
-uu
-Of
-uu
-Xw
-Xw
 qU
+qU
+CD
+CD
+yF
+CD
+qU
+qU
+qU
+CD
+CD
+yF
+CD
+qU
+qU
+qU
+qU
+CD
+CD
+yF
+CD
+qU
+qU
+qU
+qU
+CD
+CD
+yF
+CD
+qU
+qU
+Hs
 Ah
 Ah
-BD
+yN
 Ah
-VY
+ig
 MN
-Xw
+qU
 rR
 rR
 rR
@@ -11893,45 +11884,45 @@ rR
 rR
 rR
 rR
-Xw
-Zq
-Fl
-IU
-kE
-Fl
-EM
+qU
+Za
+SN
+zy
+nP
+SN
+Hk
 fQ
 Od
-Ci
-Ci
-lz
-lz
+vW
+vW
+iI
+iI
 MN
 MN
-JN
+qO
 MN
-lz
-lz
-lz
-lz
+iI
+iI
+iI
+iI
 MN
 MN
-JN
+qO
 MN
-lz
-lz
-lz
-lz
+iI
+iI
+iI
+iI
 Od
 Od
-qU
+Hs
 Ah
 Ah
-BD
+yN
 Ah
-VY
+ig
 Xl
-Xw
+qU
 rR
 rR
 rR
@@ -12071,13 +12062,13 @@ rR
 rR
 rR
 rR
-Xw
-ij
-Xh
+qU
+PS
+My
 Ah
 Ah
-AO
-EM
+kh
+Hk
 MN
 MN
 MN
@@ -12102,14 +12093,14 @@ mx
 mx
 vD
 RQ
-qU
-mu
-YZ
-gp
-Pe
-VY
+Hs
+Kd
+Zl
+cM
+xu
+ig
 MN
-Xw
+qU
 rR
 rR
 rR
@@ -12249,13 +12240,13 @@ rR
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 Ah
-qf
+CT
 Ah
 Ah
-EM
+Hk
 MN
 MN
 zv
@@ -12280,17 +12271,17 @@ dI
 dI
 NF
 vD
-SD
-lU
-lU
-lU
-lU
-zy
+Ry
+yZ
+yZ
+yZ
+yZ
+IF
 RQ
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
 rR
 "}
 (32,1,1) = {"
@@ -12419,21 +12410,21 @@ SW
 rD
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Zq
-sp
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+Za
+VP
 Ah
 Ah
-VO
-EM
+xT
+Hk
 MN
 zv
 St
@@ -12464,11 +12455,11 @@ VX
 VX
 RQ
 RQ
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (33,1,1) = {"
@@ -12596,22 +12587,22 @@ xD
 YG
 rD
 rR
-Xw
-Xw
-CH
-JK
+qU
+qU
+Li
+LV
 hb
 hb
-JK
-CH
-Xw
-Xw
-Xw
-SN
-SN
-SN
-SN
-uR
+LV
+Li
+qU
+qU
+qU
+Qv
+Qv
+Qv
+Qv
+kD
 zv
 Bp
 Ah
@@ -12639,14 +12630,14 @@ Ah
 uL
 vD
 Od
-Dd
+EM
 VX
 RQ
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (34,1,1) = {"
@@ -12775,17 +12766,17 @@ SW
 rD
 rR
 IT
-QZ
-UV
-lb
-ti
-fq
-lb
-lb
-YE
+Wn
+Hm
+kc
+Kj
+jG
+kc
+kc
+IQ
 Ah
-EB
-BH
+tC
+Kl
 MN
 MN
 MN
@@ -12820,11 +12811,11 @@ vD
 MN
 Od
 RQ
-FN
-yV
-Gf
+Er
+Ao
+KZ
 IT
-Xw
+qU
 rR
 "}
 (35,1,1) = {"
@@ -12953,20 +12944,20 @@ SW
 rD
 rR
 IT
-ZL
-Ve
-ma
-ma
-ma
-ma
-GW
-ga
+pk
+WG
+zX
+zX
+zX
+zX
+sz
+nW
 Ah
-ZL
+pk
 Ah
 MN
 Od
-SJ
+OH
 St
 Ah
 Ah
@@ -12998,11 +12989,11 @@ PR
 vD
 MN
 RQ
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (36,1,1) = {"
@@ -13131,20 +13122,20 @@ rD
 rD
 rR
 IT
-ZL
-Ut
-Gl
+pk
+vz
+je
 RQ
-Op
-Gl
-Gl
-tK
+yR
+je
+je
+pD
 Ah
-ZL
+pk
 Ah
 MN
-SJ
-Aa
+OH
+Mf
 Ah
 Ah
 Ah
@@ -13176,11 +13167,11 @@ Ah
 uL
 vD
 RQ
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (37,1,1) = {"
@@ -13308,21 +13299,21 @@ xD
 SW
 rD
 rR
-Xw
-Xw
-rX
-LV
+qU
+qU
+lF
+Bh
 hb
 hb
-LV
-rX
-Xw
-Xw
-Xw
-AV
+Bh
+lF
+qU
+qU
+qU
+KY
 zv
 iU
-op
+nz
 Ah
 Ah
 Ah
@@ -13354,11 +13345,11 @@ Ah
 Ah
 NF
 vD
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (38,1,1) = {"
@@ -13487,16 +13478,16 @@ YG
 rD
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
 MN
 ht
 JQ
@@ -13532,11 +13523,11 @@ Ah
 rY
 lR
 py
-FN
-yV
-Gf
+Er
+Ao
+KZ
 IT
-Xw
+qU
 rR
 "}
 (39,1,1) = {"
@@ -13674,7 +13665,7 @@ rD
 rD
 rD
 rD
-Xw
+qU
 tA
 ht
 JQ
@@ -13710,11 +13701,11 @@ Ah
 Ah
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (40,1,1) = {"
@@ -13839,7 +13830,7 @@ sh
 Fy
 wi
 xD
-Rb
+ie
 rD
 rD
 rD
@@ -13852,7 +13843,7 @@ rm
 Ga
 rm
 rm
-Xw
+qU
 MN
 ht
 JQ
@@ -13888,11 +13879,11 @@ Ah
 Ah
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (41,1,1) = {"
@@ -14019,18 +14010,18 @@ wi
 Cl
 qA
 wA
-kT
+Am
 eW
 eW
 bK
 bL
 bK
 wA
-qM
-Qx
-qM
+tb
+oL
+tb
 bI
-EB
+tC
 MN
 ht
 JQ
@@ -14066,11 +14057,11 @@ Ah
 Ah
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (42,1,1) = {"
@@ -14199,16 +14190,16 @@ wi
 wA
 cj
 wi
-wm
-Tm
-Tm
-Tm
+Zb
+nU
+nU
+nU
 NM
-Tm
-Tm
-NX
+nU
+nU
+qE
 wQ
-ZL
+pk
 MN
 ht
 JQ
@@ -14244,11 +14235,11 @@ Ah
 Ah
 lR
 py
-FN
-yV
-Gf
+Er
+Ao
+KZ
 IT
-Xw
+qU
 rR
 "}
 (43,1,1) = {"
@@ -14376,17 +14367,17 @@ yq
 wi
 wA
 cj
-NA
-KI
+Ws
+Ia
 wi
 wi
-Lq
+UN
 wA
-Lq
-Rt
-AW
-Dg
-ZL
+UN
+zd
+QD
+rh
+pk
 MN
 ht
 JQ
@@ -14422,11 +14413,11 @@ Ah
 Ah
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (44,1,1) = {"
@@ -14557,15 +14548,15 @@ Fy
 Fy
 Fy
 wi
-pz
-zA
+ph
+VC
 Fy
 Dh
 Wb
 Dh
 Dh
-Xw
-AV
+qU
+KY
 ht
 JQ
 Ah
@@ -14600,11 +14591,11 @@ Ah
 Ah
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (45,1,1) = {"
@@ -14727,22 +14718,22 @@ Fy
 Fy
 Fy
 xK
-Xe
-FA
+Ny
+kn
 Vc
 xK
 xK
 xK
 xK
-Xe
-FA
+Ny
+kn
 Vc
 rD
 rD
 rD
 rD
 rD
-Xw
+qU
 MN
 ht
 JQ
@@ -14778,11 +14769,11 @@ Ah
 Ah
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (46,1,1) = {"
@@ -14919,8 +14910,8 @@ Vc
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 MN
 ht
 JQ
@@ -14956,11 +14947,11 @@ Ah
 Ah
 lR
 py
-FN
-yV
-Gf
+Er
+Ao
+KZ
 IT
-Xw
+qU
 rR
 "}
 (47,1,1) = {"
@@ -15097,8 +15088,8 @@ Vc
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 MN
 ht
 JQ
@@ -15134,11 +15125,11 @@ Ah
 rY
 lR
 py
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (48,1,1) = {"
@@ -15275,8 +15266,8 @@ Vc
 rR
 rR
 rR
-Xw
-ij
+qU
+PS
 MN
 Ey
 YI
@@ -15312,11 +15303,11 @@ Ah
 Ah
 TZ
 nc
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (49,1,1) = {"
@@ -15453,11 +15444,11 @@ Vc
 rR
 rR
 rR
-Xw
-Zq
+qU
+Za
 MN
 MN
-qC
+GB
 Bc
 Ah
 Ah
@@ -15490,11 +15481,11 @@ Ah
 Ne
 nc
 MN
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (50,1,1) = {"
@@ -15631,7 +15622,7 @@ Vc
 rR
 rR
 rR
-Xw
+qU
 hb
 MN
 MN
@@ -15668,11 +15659,11 @@ nV
 nc
 MN
 MN
-FN
-yV
-Gf
+Er
+Ao
+KZ
 IT
-Xw
+qU
 rR
 "}
 (51,1,1) = {"
@@ -15809,7 +15800,7 @@ Vc
 rR
 rR
 rR
-Xw
+qU
 hb
 MN
 MN
@@ -15836,7 +15827,7 @@ Ah
 Ah
 Ah
 Ah
-op
+nz
 Ah
 Ah
 Ah
@@ -15846,11 +15837,11 @@ nc
 MN
 MN
 MN
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (52,1,1) = {"
@@ -15987,11 +15978,11 @@ Vc
 rR
 rR
 rR
-Xw
-Zq
-Ds
-Jw
-yW
+qU
+Za
+yl
+uo
+Ps
 Od
 Od
 Ey
@@ -16024,11 +16015,11 @@ MN
 MN
 MN
 MN
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (53,1,1) = {"
@@ -16165,11 +16156,11 @@ Vc
 rR
 rR
 rR
-Xw
-ij
-tQ
-MW
-vB
+qU
+PS
+oY
+Hn
+iS
 MN
 Od
 Od
@@ -16200,13 +16191,13 @@ nc
 MN
 MN
 Ru
-Dd
+EM
 MN
-FN
+Er
 Ah
-Gf
+KZ
 IT
-Xw
+qU
 rR
 "}
 (54,1,1) = {"
@@ -16343,11 +16334,11 @@ Vc
 rR
 rR
 rR
-Xw
-Zq
-tQ
-Pd
-Lo
+qU
+Za
+oY
+vP
+oD
 MN
 Ru
 MN
@@ -16364,7 +16355,7 @@ Xn
 Xn
 Xn
 Xn
-iH
+Xn
 Xn
 Xn
 Xn
@@ -16380,11 +16371,11 @@ MN
 MN
 Od
 Od
-FN
-yV
-Gf
+Er
+Ao
+KZ
 IT
-Xw
+qU
 rR
 "}
 (55,1,1) = {"
@@ -16521,15 +16512,15 @@ Vc
 rR
 rR
 rR
-Xw
-Zq
-Yb
-xY
-Nk
-Er
+qU
+Za
+Zx
+hY
+DK
+lo
 MN
 Od
-iL
+ux
 MN
 Ey
 Qt
@@ -16559,10 +16550,10 @@ MN
 Od
 Od
 RQ
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
 rR
 "}
 (56,1,1) = {"
@@ -16699,15 +16690,15 @@ Vc
 rR
 rR
 rR
-Xw
-Xw
-UR
-Sl
-UR
-UR
-Xw
-PG
-ZJ
+qU
+qU
+Ea
+oH
+Ea
+Ea
+qU
+LQ
+FA
 Od
 Od
 MN
@@ -16737,8 +16728,8 @@ MN
 MN
 MN
 MN
-Xw
-Xw
+qU
+qU
 rR
 rR
 rR
@@ -16878,45 +16869,45 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-PG
-wl
-PG
-ti
-ti
-ti
-ti
-ti
-ti
-OY
-ti
-ti
-ti
-ti
-ti
-PG
-PG
-PG
-PG
-wl
-PG
-ks
-ti
-ti
-ti
-ti
-ti
-Pb
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+LQ
+OF
+LQ
+Kj
+Kj
+Kj
+Kj
+Kj
+Kj
+Tm
+Kj
+Kj
+Kj
+Kj
+Kj
+LQ
+LQ
+LQ
+LQ
+OF
+LQ
+UO
+Kj
+Kj
+Kj
+Kj
+Kj
+mo
+qU
+qU
+qU
 rR
 rR
 rR
@@ -17063,38 +17054,38 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-hZ
+qU
+qU
+qU
+qU
+jw
 Ah
 Ah
 Ah
-cT
-vQ
-Xw
-Xw
-Xw
-vQ
+Ax
+Ve
+qU
+qU
+qU
+Ve
 Ah
-op
-op
-op
+nz
+nz
+nz
 Ah
-vQ
-Xw
-Xw
-Xw
-vQ
-Ah
-Ah
+Ve
+qU
+qU
+qU
+Ve
 Ah
 Ah
-Xw
-Xw
-Xw
-Xw
+Ah
+Ah
+qU
+qU
+qU
+qU
 rR
 rR
 rR
@@ -17241,38 +17232,38 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-ZL
-ZL
-ZL
-MD
-Xw
-Xw
-Xw
-Xw
-Xw
-iy
-TG
-TG
-TG
-iF
-Xw
-Xw
-Xw
-Xw
-Xw
-ZL
-ZL
-ZL
-MD
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+pk
+pk
+pk
+uu
+qU
+qU
+qU
+qU
+qU
+tc
+sT
+sT
+sT
+Og
+qU
+qU
+qU
+qU
+qU
+pk
+pk
+pk
+uu
+qU
+qU
+qU
+qU
 rR
 rR
 rR
@@ -17420,37 +17411,37 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
 Ah
 Ah
 Ah
 Ah
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
 Ah
 Ah
 Ah
 Ah
 Ah
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
 Ah
 Ah
 Ah
 Ah
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
 rR
 rR
 rR
@@ -17598,37 +17589,37 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-bF
-pB
-du
-ir
-ir
-Ev
-bF
-pB
-Xw
-bF
-Gh
-pB
-du
-ir
-Ev
-bF
-Gh
-pB
-Xw
-bF
-pB
-du
-ir
-ir
-Ev
-bF
-pB
-Xw
-Xw
+qU
+qU
+ih
+DQ
+yA
+qH
+qH
+op
+ih
+DQ
+qU
+ih
+ZL
+DQ
+yA
+qH
+op
+ih
+ZL
+DQ
+qU
+ih
+DQ
+yA
+qH
+qH
+op
+ih
+DQ
+qU
+qU
 rR
 rR
 rR
@@ -17776,37 +17767,37 @@ rR
 rR
 rR
 rR
+qU
+qU
+Zd
 Xw
+yA
+qH
+qH
+op
+TG
+LG
+qU
+no
+By
+Pl
+yA
+qH
+op
+oC
+By
+iy
+qU
+TG
 Xw
-HR
-tT
-du
-ir
-ir
-Ev
-re
-OK
+yA
+qH
+qH
+op
+TG
 Xw
-KW
-dQ
-rn
-du
-ir
-Ev
-xT
-dQ
-Sj
-Xw
-re
-tT
-du
-ir
-ir
-Ev
-re
-tT
-Xw
-Xw
+qU
+qU
 rR
 rR
 rR
@@ -17954,17 +17945,17 @@ rR
 rR
 rR
 rR
+qU
+qU
+TG
 Xw
+yA
+qH
+qH
+op
+TG
 Xw
-re
-tT
-du
-ir
-ir
-Ev
-re
-tT
-Xw
+qU
 hb
 Ah
 Ah
@@ -17974,17 +17965,17 @@ Ah
 Ah
 Ah
 hb
+qU
+TG
 Xw
-re
-tT
-du
-ir
-ir
-Ev
-re
-tT
+yA
+qH
+qH
+op
+TG
 Xw
-Xw
+qU
+qU
 rR
 rR
 rR
@@ -18132,37 +18123,37 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-xT
-CD
-du
-ir
-ir
-Ev
-xT
-CD
-Xw
-bF
-Gh
-pB
-du
-ir
-Ev
-bF
-Gh
-pB
-Xw
-xT
-CD
-du
-ir
-ir
-Ev
-xT
-CD
-Xw
-Xw
+qU
+qU
+oC
+Ii
+yA
+qH
+qH
+op
+oC
+Ii
+qU
+ih
+ZL
+DQ
+yA
+qH
+op
+ih
+ZL
+DQ
+qU
+oC
+Ii
+yA
+qH
+qH
+op
+oC
+Ii
+qU
+qU
 rR
 rR
 rR
@@ -18310,8 +18301,8 @@ rR
 rR
 rR
 rR
-Xw
-Xw
+qU
+qU
 Ah
 Ah
 Ah
@@ -18320,17 +18311,17 @@ Ah
 Ah
 Ah
 Ah
-Xw
-re
+qU
+TG
 Ru
-tT
-du
-ir
-Ev
-re
+Xw
+yA
+qH
+op
+TG
 Ru
-tT
 Xw
+qU
 Ah
 Ah
 Ah
@@ -18339,8 +18330,8 @@ Ah
 Ah
 Ah
 Ah
-Xw
-Xw
+qU
+qU
 rR
 rR
 rR
@@ -18488,37 +18479,37 @@ rR
 rR
 rR
 rR
-Xw
-Xw
+qU
+qU
 Ah
 Ah
 Ah
 Ah
-SM
+jj
 Ah
 Ah
-jf
-Xw
-Ic
-dQ
-CD
-du
-ir
-Ev
-Ic
-dQ
-CD
-Xw
+Hp
+qU
+GX
+By
+Ii
+yA
+qH
+op
+GX
+By
+Ii
+qU
 Ah
 Ah
 Ah
 Ah
-SM
+jj
 Ah
 Ah
-jf
-Xw
-Xw
+Hp
+qU
+qU
 rR
 rR
 rR
@@ -18666,17 +18657,17 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-bF
-pB
-du
-ir
-lr
-Ev
-bF
-pB
-Xw
+qU
+qU
+ih
+DQ
+yA
+qH
+xQ
+op
+ih
+DQ
+qU
 hb
 Ah
 Ah
@@ -18686,17 +18677,17 @@ Ah
 Ah
 Ah
 hb
-Xw
-bF
-pB
-du
-ir
-lr
-Ev
-bF
-pB
-Xw
-Xw
+qU
+ih
+DQ
+yA
+qH
+xQ
+op
+ih
+DQ
+qU
+qU
 rR
 rR
 rR
@@ -18844,37 +18835,37 @@ rR
 rR
 rR
 rR
+qU
+qU
+TG
 Xw
+yA
+qH
+xQ
+op
+TG
 Xw
-re
-tT
-du
-ir
-lr
-Ev
-re
-tT
+qU
+ih
+ZL
+DQ
+yA
+qH
+op
+ih
+ZL
+DQ
+qU
+TG
 Xw
-bF
-Gh
-pB
-du
-ir
-Ev
-bF
-Gh
-pB
+yA
+qH
+xQ
+op
+TG
 Xw
-re
-tT
-du
-ir
-lr
-Ev
-re
-tT
-Xw
-Xw
+qU
+qU
 rR
 rR
 rR
@@ -19022,37 +19013,37 @@ rR
 rR
 rR
 rR
+qU
+qU
+TG
 Xw
+yA
+qH
+bF
+op
+TG
 Xw
-re
-tT
-du
-ir
-MT
-Ev
-re
-tT
-Xw
-HR
+qU
+Zd
 Ru
-tT
-du
-ir
-Ev
-re
+Xw
+yA
+qH
+op
+TG
 Ru
-OK
+LG
+qU
+TG
 Xw
-re
-tT
-du
-ir
-MT
-Ev
-re
-tT
+yA
+qH
+bF
+op
+TG
 Xw
-Xw
+qU
+qU
 rR
 rR
 rR
@@ -19200,37 +19191,37 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-xT
-CD
-du
+qU
+qU
+oC
+Ii
+yA
 hb
 hb
-Ev
-xT
-CD
-Xw
-Ic
-dQ
-CD
-du
+op
+oC
+Ii
+qU
+GX
+By
+Ii
+yA
 hb
-Ev
-Ic
-dQ
-CD
-Xw
-xT
-CD
-du
+op
+GX
+By
+Ii
+qU
+oC
+Ii
+yA
 hb
 hb
-Ev
-xT
-CD
-Xw
-Xw
+op
+oC
+Ii
+qU
+qU
 rR
 rR
 rR
@@ -19379,35 +19370,35 @@ rR
 rR
 rR
 rR
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
-Xw
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+qU
 rR
 rR
 rR
