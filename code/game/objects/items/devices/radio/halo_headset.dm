@@ -34,6 +34,18 @@
 /obj/item/device/radio/headset/almayer/marine/solardevils/unsc/ferrymen/squadlead
 	initial_keys = list(/obj/item/device/encryptionkey/squadlead)
 
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers
+	frequency = FORECON_FREQ
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/squadlead
+	initial_keys = list(/obj/item/device/encryptionkey/squadlead)
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/cryo
+	frequency = SOF_FREQ
+
+/obj/item/device/radio/headset/almayer/marine/solardevils/unsc/homewreckers/cryo/squadlead
+	initial_keys = list(/obj/item/device/encryptionkey/squadlead)
+
 /obj/item/device/radio/headset/distress/oni
 	name = "ONI security headset"
 	desc = "A headset utilized by ONI security forces."

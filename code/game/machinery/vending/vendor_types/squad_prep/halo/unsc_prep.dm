@@ -204,7 +204,8 @@
 
 		list("POUCHES", -1, null, null, null),
 		list("First Responder Pouch", floor(scale * 15), /obj/item/storage/pouch/first_responder, VENDOR_ITEM_REGULAR),
-		list("Flare Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/full, VENDOR_ITEM_REGULAR),
+		list("Illum. Equipment Pouch (Empty)", floor(scale * 15), /obj/item/storage/pouch/flare/unsc, VENDOR_ITEM_REGULAR),
+		list("Chemlight Pouch (Full)", floor(scale * 15), /obj/item/storage/pouch/flare/unsc/chemlight/full, VENDOR_ITEM_REGULAR),
 		list("Large Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/large, VENDOR_ITEM_REGULAR),
 		list("Medium General Pouch", floor(scale * 15), /obj/item/storage/pouch/general/medium, VENDOR_ITEM_REGULAR),
 		list("Pistol Magazine Pouch", floor(scale * 15), /obj/item/storage/pouch/magazine/pistol/unsc, VENDOR_ITEM_REGULAR),
@@ -229,6 +230,60 @@
 		list("Firearm Lubricant", round(scale * 15), /obj/item/prop/helmetgarb/gunoil, VENDOR_ITEM_REGULAR),
 		list("LRRP Bedroll", round(scale * 15), /obj/item/roller/bedroll, VENDOR_ITEM_REGULAR),
 		list("Marine Issue Compass", round(scale * 15), /obj/item/prop/helmetgarb/compass, VENDOR_ITEM_REGULAR),
+		)
+
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/forecon
+	name = "\improper Advanced Utilities Vendor"
+
+/obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/forecon/populate_product_list(scale)
+	listed_products = list(
+		list("FOOD", -1, null, null),
+		list("MRE", floor(scale * 5), /obj/item/storage/box/mre, VENDOR_ITEM_REGULAR),
+		list("MRE Box", floor(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/mre, VENDOR_ITEM_REGULAR),
+
+		list("MEDICAL", -1, null, null),
+		list("Gauze", round(scale * 15), /obj/item/stack/medical/bruise_pack, VENDOR_ITEM_REGULAR),
+		list("Ointment", round(scale * 15), /obj/item/stack/medical/ointment, VENDOR_ITEM_REGULAR),
+		list("Splints", round(scale * 15), /obj/item/stack/medical/splint, VENDOR_ITEM_REGULAR),
+		list("Biofoam Pen", round(scale * 4), /obj/item/reagent_container/hypospray/autoinjector/primeable/biofoam/small, VENDOR_ITEM_REGULAR),
+
+		list("TOOLS", -1, null, null),
+		list("Entrenching Tool (ET)", round(scale * 2), /obj/item/tool/shovel/etool/folded, VENDOR_ITEM_REGULAR),
+		list("Screwdriver", round(scale * 5), /obj/item/tool/screwdriver/tactical, VENDOR_ITEM_REGULAR),
+		list("Wirecutters", round(scale * 5), /obj/item/tool/wirecutters/tactical, VENDOR_ITEM_REGULAR),
+		list("Prybar", round(scale * 5), /obj/item/tool/crowbar/tactical, VENDOR_ITEM_REGULAR),
+		list("Wrench", round(scale * 5), /obj/item/tool/wrench, VENDOR_ITEM_REGULAR),
+		list("Multitool", round(scale * 1), /obj/item/device/multitool/upp, VENDOR_ITEM_REGULAR),
+		list("Welding Tool", round(scale * 1), /obj/item/tool/weldingtool/largetank, VENDOR_ITEM_REGULAR),
+
+		list("EXPLOSIVES", -1, null, null),
+		list("Plastic Explosives", round(scale * 2), /obj/item/explosive/plastic, VENDOR_ITEM_REGULAR),
+		list("Breaching Charge", round(scale * 2), /obj/item/explosive/plastic/breaching_charge, VENDOR_ITEM_REGULAR),
+
+		list("FLARE AND LIGHT", -1, null, null),
+		list("Combat Flashlight", round(scale * 5), /obj/item/device/flashlight/combat, VENDOR_ITEM_REGULAR),
+		list("Box of Flashlights", round(scale * 1), /obj/item/ammo_box/magazine/misc/flashlight, VENDOR_ITEM_REGULAR),
+		list("Box of Illumination Flares", round(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/flare, VENDOR_ITEM_REGULAR),
+		list("Box of Chemlight Packs", round(scale * 1), /obj/item/ammo_box/magazine/misc/unsc/flare/chemlight, VENDOR_ITEM_REGULAR),
+		list("M62 Illumination Flare Pack", round(scale * 10), /obj/item/storage/box/flare/unsc, VENDOR_ITEM_REGULAR),
+		list("Chemical Illumination Stick Pack", round(scale * 10), /obj/item/storage/box/flare/chemlight, VENDOR_ITEM_REGULAR),
+		list("M73-S Signal Flare Pack", round(scale * 1), /obj/item/storage/box/flare/signal/unsc, VENDOR_ITEM_REGULAR),
+
+		list("SIDEARMS", -1, null, null),
+		list("M6C Service Magnum", round(scale * 10), /obj/item/weapon/gun/pistol/halo/m6c/unloaded, VENDOR_ITEM_REGULAR),
+		list("M6D Service Magnum", round(scale * 5), /obj/item/weapon/gun/pistol/halo/m6d/forecon/unloaded, VENDOR_ITEM_REGULAR),
+		list("M6G Service Magnum", round(scale * 10), /obj/item/weapon/gun/pistol/halo/m6g/unloaded, VENDOR_ITEM_REGULAR),
+		list("KFA-2/C smart-linked scope", round(scale * 10), /obj/item/attachable/scope/mini/smartscope/m6c, VENDOR_ITEM_REGULAR),
+		list("KFA-2/G smart-linked scope", round(scale * 10), /obj/item/attachable/scope/mini/smartscope/m6g, VENDOR_ITEM_REGULAR),
+		list("M6 flashlight", round(scale * 10), /obj/item/attachable/flashlight/m6, VENDOR_ITEM_REGULAR),
+		list("M82F Flare Gun", round(scale * 1), /obj/item/weapon/gun/flare, VENDOR_ITEM_REGULAR),
+
+		list("MISCELLANEOUS", -1, null, null),
+		list("Extinguisher", round(scale * 5), /obj/item/tool/extinguisher, VENDOR_ITEM_REGULAR),
+		list("Fire Extinguisher (Portable)", round(scale * 1), /obj/item/tool/extinguisher/mini, VENDOR_ITEM_REGULAR),
+		list("Machete Scabbard (Full)", round(scale * 5), /obj/item/storage/large_holster/machete/full, VENDOR_ITEM_REGULAR),
+		list("Tactical Monocular", round(scale * 2), /obj/item/device/binoculars/range/monocular, VENDOR_ITEM_REGULAR),
+		list("M1 Combat Knife", round(scale * 25), /obj/item/weapon/knife/marine, VENDOR_ITEM_REGULAR),
 		)
 
 //===========================//ODST PREP\\================================\\
@@ -297,7 +352,7 @@
 		)
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst
-	name = "\improper Squad Utilities Vendor"
+	name = "\improper ODST Utilities Vendor"
 
 /obj/structure/machinery/cm_vending/sorted/cargo_guns/squad/unsc/odst/populate_product_list(scale)
 	listed_products = list(
@@ -386,6 +441,140 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 /obj/structure/machinery/cm_vending/clothing/medic/unsc/get_listed_products(mob/user)
 	return GLOB.cm_vending_clothing_medic_unsc
 
+//===========================//SQUAD/FIRETEAM LEADER\\================================\\
+
+//===Regulars options===\\
+GLOBAL_LIST_INIT(cm_vending_clothing_snco_unsc, list(
+
+		list("JOB ESSENTIALS", 0, null, null, null),
+		list("Squad Leader Equipment", 0, /obj/effect/essentials_set/leader/unsc, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("LIMITED ISSUE EQUIPMENT", 0, null, null, null),
+		list("CH252-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+		list("CH252/UA-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/variant_2/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+	))
+
+GLOBAL_LIST_INIT(cm_vending_clothing_nco_unsc, list(
+
+		list("JOB ESSENTIALS", 0, null, null, null),
+		list("Fireteam Leader Equipment", 0, /obj/effect/essentials_set/leader/unsc/fireteam, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("LIMITED ISSUE EQUIPMENT", 0, null, null, null),
+		list("CH252-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+		list("CH252/UA-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/variant_2/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+	))
+
+//===ODSTs options===\\
+
+GLOBAL_LIST_INIT(cm_vending_clothing_snco_odst, list(
+
+		list("JOB ESSENTIALS", 0, null, null, null),
+		list("Squad Leader Equipment", 0, /obj/effect/essentials_set/leader/unsc/nonregular, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("LIMITED ISSUE EQUIPMENT", 0, null, null, null),
+		list("CH381-M ODST Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/odst/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+		list("M70DT/S Armor Kit", 0, /obj/item/storage/box/guncase/onistarmor, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+	))
+
+GLOBAL_LIST_INIT(cm_vending_clothing_nco_odst, list(
+
+		list("JOB ESSENTIALS", 0, null, null, null),
+		list("Fireteam Leader Equipment", 0, /obj/effect/essentials_set/leader/unsc/fireteam/nonregular, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("LIMITED ISSUE EQUIPMENT", 0, null, null, null),
+		list("CH381-M ODST Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/odst/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+		list("M70DT/S Armor Kit", 0, /obj/item/storage/box/guncase/onistarmor, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+	))
+
+//===Recon marines options===\\
+
+GLOBAL_LIST_INIT(cm_vending_clothing_snco_forecon, list(
+
+		list("JOB ESSENTIALS", 0, null, null, null),
+		list("Squad Leader Equipment", 0, /obj/effect/essentials_set/leader/unsc/nonregular, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("LIMITED ISSUE EQUIPMENT", 0, null, null, null),
+		list("CH288-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/forecon/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+		list("ECH288-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/forecon/enclosed/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+		list("Advanced Scouter Eyepiece", 0, /obj/item/clothing/glasses/scouter/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+	))
+
+GLOBAL_LIST_INIT(cm_vending_clothing_nco_forecon, list(
+
+		list("JOB ESSENTIALS", 0, null, null, null),
+		list("Fireteam Leader Equipment", 0, /obj/effect/essentials_set/leader/unsc/fireteam/nonregular, MARINE_CAN_BUY_ESSENTIALS, VENDOR_ITEM_MANDATORY),
+
+		list("LIMITED ISSUE EQUIPMENT", 0, null, null, null),
+		list("CH288-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/forecon/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+		list("ECH288-M Helmet", 0, /obj/item/clothing/head/helmet/marine/unsc/forecon/enclosed/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_REGULAR),
+		list("Advanced Scouter Eyepiece", 0, /obj/item/clothing/glasses/scouter/motion, MARINE_CAN_BUY_KIT, VENDOR_ITEM_RECOMMENDED),
+	))
+
+//===Vendors themselves===\\
+
+/obj/structure/machinery/cm_vending/clothing/unsc/nco
+	name = "\improper UNSC NCO Equipment Rack"
+	req_one_access = list(ACCESS_MARINE_LEADER, ACCESS_MARINE_TL_PREP)
+	vend_flags = VEND_CLUTTER_PROTECTION | VEND_TO_HAND | VEND_CATEGORY_CHECK //Ensuring stuff goes into your hand, where available
+
+/obj/structure/machinery/cm_vending/clothing/unsc/nco/get_listed_products(mob/user)
+	if(!user)
+		return FALSE
+	if(user.job == JOB_SQUAD_LEADER)
+		return GLOB.cm_vending_clothing_snco_unsc
+	if(user.job == JOB_SQUAD_TEAM_LEADER)
+		return GLOB.cm_vending_clothing_nco_unsc
+
+/obj/structure/machinery/cm_vending/clothing/unsc/nco/odst
+	name = "\improper ODST NCO Equipment Rack"
+
+/obj/structure/machinery/cm_vending/clothing/unsc/nco/odst/get_listed_products(mob/user)
+	if(!user)
+		return
+	if(user.job == JOB_SQUAD_LEADER)
+		return GLOB.cm_vending_clothing_snco_odst
+	if(user.job == JOB_SQUAD_TEAM_LEADER)
+		return GLOB.cm_vending_clothing_nco_odst
+
+/obj/structure/machinery/cm_vending/clothing/unsc/nco/forecon
+	name = "\improper UNSC NCO Advanced Equipment Rack"
+
+/obj/structure/machinery/cm_vending/clothing/unsc/nco/forecon/get_listed_products(mob/user)
+	if(!user)
+		return FALSE
+	if(user.job == JOB_SQUAD_LEADER)
+		return GLOB.cm_vending_clothing_snco_forecon
+	if(user.job == JOB_SQUAD_TEAM_LEADER)
+		return GLOB.cm_vending_clothing_nco_forecon
+
+//===Regular marines essentials===\\
+
+/obj/effect/essentials_set/leader/unsc
+	spawned_gear_list = list(
+		/obj/item/tacmap_map,
+		/obj/item/device/binoculars/range/designator/sergeant,
+		/obj/item/weapon/gun/rifle/halo/br55/unloaded,
+	)
+
+/obj/effect/essentials_set/leader/unsc/fireteam
+	spawned_gear_list = list(
+		/obj/item/device/binoculars/range/monocular,
+		/obj/item/weapon/gun/rifle/halo/br55/unloaded,
+	)
+
+//===ODST & forecon essentials===\\
+
+/obj/effect/essentials_set/leader/unsc/nonregular
+	spawned_gear_list = list(
+		/obj/item/tacmap_map,
+		/obj/item/device/binoculars/range/designator/sergeant,
+	)
+
+/obj/effect/essentials_set/leader/unsc/fireteam/nonregular
+	spawned_gear_list = list(
+		/obj/item/device/binoculars/range/monocular,
+	)
+
 //===========================//PRESETS\\================================\\
 
 /obj/effect/essentials_set/medic/unsc
@@ -438,3 +627,15 @@ GLOBAL_LIST_INIT(cm_vending_clothing_medic_unsc, list(
 	new /obj/item/clothing/accessory/pads/unsc/greaves/forecon(src)
 	new /obj/item/clothing/accessory/pads/unsc/bracers/forecon(src)
 	new /obj/item/clothing/accessory/pads/unsc/thigh/forecon(src)
+
+/obj/item/storage/box/guncase/onistarmor //there is no forgiveness at this point
+	name = "\improper M70DT/S ODST BDU case"
+	desc = "A case containing parts of the M70DT/S ODST BDU set of the UNSC, along with matching helmet. No parts sold separately. NDA and ONI-secondment not included."
+	can_hold = list(/obj/item/clothing/head/helmet/marine/unsc/odst/oni, /obj/item/clothing/suit/marine/unsc/odst/oni, /obj/item/clothing/accessory/pads/unsc/odst/oni, /obj/item/clothing/accessory/pads/unsc/greaves/odst/oni)
+	storage_slots = 4
+
+/obj/item/storage/box/guncase/onistarmor/fill_preset_inventory()
+	new /obj/item/clothing/head/helmet/marine/unsc/odst/oni(src)
+	new /obj/item/clothing/suit/marine/unsc/odst/oni(src)
+	new /obj/item/clothing/accessory/pads/unsc/odst/oni(src)
+	new /obj/item/clothing/accessory/pads/unsc/greaves/odst/oni(src)
