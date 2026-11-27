@@ -1334,7 +1334,8 @@
 "fQ" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
-	dir = 8
+	dir = 8;
+	pixel_y = -1
 	},
 /turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
@@ -2043,6 +2044,17 @@
 	},
 /turf/open/floor/almayer/mono,
 /area/dark_was_the_night/lower_hallway)
+"lm" = (
+/obj/effect/decal/cleanable/dirt{
+	layer = 2.52
+	},
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8;
+	pixel_y = 13
+	},
+/turf/open/floor/almayer,
+/area/dark_was_the_night/hangar)
 "lp" = (
 /obj/structure/bed/chair/office/light{
 	dir = 1;
@@ -2685,9 +2697,6 @@
 	},
 /turf/open/floor/almayer/edge/smooth/north,
 /area/dark_was_the_night/dorms)
-"rx" = (
-/turf/closed/wall/unsc/reinforced/hull,
-/area/space)
 "ry" = (
 /obj/structure/machinery/light/double/blue{
 	light_color = "#dae2ff";
@@ -3528,6 +3537,17 @@
 	},
 /turf/open/floor/almayer/edge/smooth/corner,
 /area/dark_was_the_night/hangar)
+"yh" = (
+/obj/structure/machinery/light/double/blue{
+	light_color = "#dae2ff";
+	dir = 8;
+	pixel_y = 17
+	},
+/obj/structure/platform{
+	dir = 4
+	},
+/turf/open/shuttle/escapepod/west,
+/area/dark_was_the_night/hangar)
 "ym" = (
 /obj/structure/machinery/prop/almayer/CICmap/table/horizontal/segment/one,
 /turf/open/floor/almayer/mono,
@@ -3559,17 +3579,6 @@
 	},
 /turf/open/shuttle/escapepod,
 /area/dark_was_the_night/upper_hallway)
-"yu" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8;
-	pixel_y = 17
-	},
-/obj/structure/platform{
-	dir = 4
-	},
-/turf/open/shuttle/escapepod/west,
-/area/dark_was_the_night/hangar)
 "yz" = (
 /turf/open/floor/almayer/edge/smooth/endcap_left/east,
 /area/dark_was_the_night/dorms)
@@ -5916,14 +5925,6 @@
 	dir = 4
 	},
 /turf/open/floor/almayer/red/southeast,
-/area/dark_was_the_night/hangar)
-"SC" = (
-/obj/structure/machinery/light/double/blue{
-	light_color = "#dae2ff";
-	dir = 8;
-	pixel_y = -1
-	},
-/turf/open/floor/almayer,
 /area/dark_was_the_night/hangar)
 "SG" = (
 /obj/structure/machinery/light/small/red,
@@ -11386,14 +11387,6 @@ rR
 rR
 rR
 rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
-rR
 qU
 qU
 qU
@@ -11401,13 +11394,21 @@ qU
 qU
 qU
 rR
+qU
+qU
+qU
+qU
+qU
+qU
+qU
+rR
 rR
 qU
 qU
 qU
 qU
 qU
-rx
+qU
 qU
 vA
 Ah
@@ -11563,19 +11564,19 @@ qU
 qU
 qU
 qU
-rR
-qU
-qU
-qU
-qU
-qU
-qU
-rR
 qU
 qU
 Tl
 Tl
-yu
+Kx
+Tl
+qU
+qU
+qU
+qU
+Tl
+Tl
+yh
 Tl
 qU
 qU
@@ -11586,7 +11587,7 @@ Tl
 Kx
 Tl
 qU
-qU
+MN
 wt
 Ah
 Ah
@@ -11741,15 +11742,15 @@ Tl
 Kx
 Tl
 qU
-qU
-qU
-Tl
-Tl
-Kx
-Tl
-qU
-qU
-qU
+MN
+lm
+sE
+sE
+iy
+iy
+MN
+fQ
+MN
 MN
 iy
 iy
@@ -11919,14 +11920,14 @@ kO
 gq
 SN
 Am
-fQ
-Od
-sE
-sE
-iy
-iy
 MN
-SC
+MN
+MN
+MN
+MN
+MN
+MN
+MN
 MN
 MN
 MN
