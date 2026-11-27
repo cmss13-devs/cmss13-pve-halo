@@ -1,0 +1,2074 @@
+//MAP CONVERTED BY dmm2tgm.py THIS HEADER COMMENT PREVENTS RECONVERSION, DO NOT REMOVE
+"am" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"an" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"as" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NW-out";
+	pixel_y = 1
+	},
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"aw" = (
+/obj/structure/platform/strata/metal{
+	dir = 8;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_corner/east,
+/area/slade_point/alpha_site/exterior)
+"aT" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/floor/damaged4,
+/area/slade_point/alpha_site/exterior)
+"bt" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform/strata/metal,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/west,
+/area/slade_point/alpha_site/exterior)
+"bx" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/structure/machinery/colony_floodlight{
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"ej" = (
+/turf/closed/wall/prison,
+/area/slade_point/alpha_site/exterior)
+"eL" = (
+/obj/structure/platform/strata/metal{
+	dir = 4;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_corner/north,
+/area/slade_point/alpha_site/exterior)
+"eO" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"gT" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"hl" = (
+/obj/item/prop/scrap{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_edge/west,
+/area/slade_point/alpha_site/exterior)
+"hL" = (
+/turf/open/floor/damaged3,
+/area/slade_point/alpha_site/exterior)
+"iS" = (
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"ja" = (
+/obj/structure/platform_decoration/strata/metal{
+	dir = 1
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner/west,
+/area/slade_point/alpha_site/exterior)
+"jb" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner/west,
+/area/slade_point/alpha_site/exterior)
+"jm" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/floor/damaged3,
+/area/slade_point/alpha_site/exterior)
+"ju" = (
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"jw" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner/west,
+/area/slade_point/alpha_site/exterior)
+"jX" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"kC" = (
+/turf/open/floor/damaged4,
+/area/slade_point/alpha_site/exterior)
+"kO" = (
+/turf/open/gm/river/desert/shallow_edge/northwest,
+/area/slade_point/alpha_site/exterior)
+"lg" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = 12
+	},
+/obj/structure/prop/invuln/fire,
+/turf/open/floor/damaged5,
+/area/slade_point/alpha_site/exterior)
+"li" = (
+/obj/item/prop/scrap{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"lT" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner/north,
+/area/slade_point/alpha_site/exterior)
+"nv" = (
+/turf/open/gm/river/desert/shallow_edge/north,
+/area/slade_point/alpha_site/exterior)
+"oR" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "E";
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"oU" = (
+/obj/structure/prop/invuln/fire,
+/turf/open/floor/damaged3,
+/area/slade_point/alpha_site/exterior)
+"py" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner,
+/area/slade_point/alpha_site/exterior)
+"qb" = (
+/obj/structure/prop/invuln/fire,
+/turf/closed/wall/prison,
+/area/slade_point/alpha_site/exterior)
+"qk" = (
+/obj/structure/platform/strata/metal{
+	dir = 4;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_edge/north,
+/area/slade_point/alpha_site/exterior)
+"qs" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform/strata/metal,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/southeast,
+/area/slade_point/alpha_site/exterior)
+"rK" = (
+/turf/open/gm/river/desert/shallow_edge/southwest,
+/area/slade_point/alpha_site/exterior)
+"sf" = (
+/turf/open/gm/river/desert/shallow_corner/east,
+/area/slade_point/alpha_site/exterior)
+"sN" = (
+/obj/structure/barricade/handrail/wire,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"sT" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"tK" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SE-out";
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"ua" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"uX" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/turf/open/floor/damaged4,
+/area/slade_point/alpha_site/exterior)
+"vJ" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"vP" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = -16
+	},
+/turf/open/floor/almayer_hull,
+/area/slade_point/alpha_site/exterior)
+"vS" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = 14
+	},
+/turf/open/floor/almayer_hull,
+/area/slade_point/alpha_site/exterior)
+"wc" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"wy" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = -16
+	},
+/obj/structure/prop/invuln/fire,
+/turf/open/floor/damaged3,
+/area/slade_point/alpha_site/exterior)
+"xG" = (
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"xP" = (
+/turf/open/gm/river/desert/shallow_edge/west,
+/area/slade_point/alpha_site/exterior)
+"yr" = (
+/obj/item/stack/rods{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"zx" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/obj/item/prop/scrap{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"zK" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"AV" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/obj/structure/prop/invuln/lattice_prop,
+/turf/open/gm/river/desert/shallow_corner/east,
+/area/slade_point/alpha_site/exterior)
+"BF" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge,
+/area/slade_point/alpha_site/exterior)
+"BN" = (
+/obj/item/stack/rods{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_edge/west,
+/area/slade_point/alpha_site/exterior)
+"Ch" = (
+/obj/structure/girder,
+/obj/structure/prop/invuln/fire,
+/turf/open/floor/plating,
+/area/slade_point/alpha_site/exterior)
+"Cy" = (
+/turf/open/gm/river/desert/shallow_corner/west,
+/area/slade_point/alpha_site/exterior)
+"CU" = (
+/turf/open/floor/damaged5,
+/area/slade_point/alpha_site/exterior)
+"Di" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"Eu" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/west,
+/area/slade_point/alpha_site/exterior)
+"Ev" = (
+/turf/open/gm/river/desert/shallow_edge/northeast,
+/area/slade_point/alpha_site/exterior)
+"Gl" = (
+/obj/structure/prop/invuln/lattice_prop,
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"GJ" = (
+/obj/item/prop/scrap{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_corner/west,
+/area/slade_point/alpha_site/exterior)
+"Hu" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"Ii" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"Ij" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/structure/machinery/colony_floodlight,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"Iw" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner/east,
+/area/slade_point/alpha_site/exterior)
+"IA" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"IP" = (
+/obj/structure/platform/strata/metal,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"Jq" = (
+/obj/structure/platform/strata/metal{
+	dir = 8;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"Lc" = (
+/obj/structure/platform/strata/metal{
+	dir = 8;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_corner,
+/area/slade_point/alpha_site/exterior)
+"Lg" = (
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/platform/strata/metal,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"LB" = (
+/obj/structure/barricade/handrail/wire,
+/obj/effect/decal/cleanable/generic,
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"Mj" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"Mz" = (
+/obj/structure/girder,
+/turf/open/floor/plating,
+/area/slade_point/alpha_site/exterior)
+"Of" = (
+/turf/open/gm/river/desert/shallow_edge,
+/area/slade_point/alpha_site/exterior)
+"OB" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "SW-out"
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"Py" = (
+/turf/open/gm/river/desert/shallow_corner/north,
+/area/slade_point/alpha_site/exterior)
+"Qi" = (
+/obj/structure/barricade/handrail/wire,
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"QH" = (
+/obj/effect/decal/warning_stripes{
+	icon_state = "W"
+	},
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"QQ" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/west,
+/area/slade_point/alpha_site/exterior)
+"RX" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/structure/machinery/colony_floodlight,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"SK" = (
+/obj/structure/desertdam/decals/road_edge{
+	icon_state = "road_edge_decal2";
+	pixel_x = 12
+	},
+/turf/open/floor/almayer_hull,
+/area/slade_point/alpha_site/exterior)
+"Th" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 8
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/asphalt/cement/cement1,
+/area/slade_point/alpha_site/exterior)
+"Tp" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/obj/structure/prop/invuln/lattice_prop,
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"TW" = (
+/obj/structure/platform/strata/metal{
+	dir = 8;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"Uf" = (
+/obj/structure/platform/strata/metal{
+	dir = 8
+	},
+/obj/structure/platform/strata/metal,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/southwest,
+/area/slade_point/alpha_site/exterior)
+"Us" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"UB" = (
+/obj/item/stack/rods{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"UV" = (
+/obj/structure/prop/invuln/fire,
+/turf/open/floor/damaged5,
+/area/slade_point/alpha_site/exterior)
+"VA" = (
+/obj/item/prop/scrap{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+"VB" = (
+/obj/structure/platform/strata/metal{
+	dir = 1
+	},
+/obj/structure/platform/strata/metal{
+	dir = 4
+	},
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_edge/east,
+/area/slade_point/alpha_site/exterior)
+"Wc" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/generic,
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"Wk" = (
+/obj/structure/platform_decoration/strata/metal,
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner/east,
+/area/slade_point/alpha_site/exterior)
+"Wm" = (
+/turf/open/gm/river/desert/shallow_edge/southeast,
+/area/slade_point/alpha_site/exterior)
+"Xx" = (
+/obj/structure/prop/invuln/fire,
+/turf/open/floor/damaged4,
+/area/slade_point/alpha_site/exterior)
+"XC" = (
+/obj/item/stack/rods{
+	alpha = 150
+	},
+/turf/open/gm/river/desert/shallow_corner/west,
+/area/slade_point/alpha_site/exterior)
+"XZ" = (
+/turf/open/floor/almayer_hull,
+/area/slade_point/alpha_site/exterior)
+"YF" = (
+/obj/structure/barricade/handrail/wire{
+	dir = 4
+	},
+/obj/effect/decal/warning_stripes{
+	icon_state = "NE-out";
+	pixel_y = 1;
+	pixel_x = 1
+	},
+/turf/open/asphalt/cement/cement3,
+/area/slade_point/alpha_site/exterior)
+"YH" = (
+/turf/open/floor/corrugated/alt,
+/area/slade_point/alpha_site/exterior)
+"Zc" = (
+/obj/structure/blocker/forcefield/human{
+	invisibility = 101
+	},
+/turf/open/gm/river/desert/shallow_corner,
+/area/slade_point/alpha_site/exterior)
+"Ze" = (
+/turf/open/gm/river/desert/shallow_corner,
+/area/slade_point/alpha_site/exterior)
+"Zx" = (
+/obj/structure/platform/strata/metal{
+	dir = 4;
+	alpha = 150
+	},
+/turf/open/gm/river/desert/deep,
+/area/slade_point/alpha_site/exterior)
+
+(1,1,1) = {"
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+"}
+(2,1,1) = {"
+iS
+iS
+iS
+iS
+iS
+sf
+ju
+ju
+Ze
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+sf
+ju
+ju
+Ze
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+sf
+ju
+ju
+Ze
+iS
+iS
+iS
+iS
+iS
+iS
+"}
+(3,1,1) = {"
+iS
+iS
+iS
+iS
+sf
+Wm
+ej
+ej
+nv
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+sf
+Wm
+qb
+ej
+Ev
+Ze
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Of
+ej
+ej
+Ev
+Ze
+iS
+iS
+iS
+iS
+iS
+"}
+(4,1,1) = {"
+iS
+iS
+iS
+iS
+Of
+Ch
+ej
+Mz
+Ev
+Ze
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Of
+Ch
+Mz
+qb
+ej
+nv
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+sf
+Wm
+Mz
+qb
+ej
+nv
+iS
+iS
+iS
+iS
+Wk
+"}
+(5,1,1) = {"
+IA
+py
+Di
+iS
+GJ
+xP
+xP
+rK
+Ch
+qk
+iS
+iS
+Di
+Iw
+IA
+IA
+IA
+IA
+IA
+IA
+IA
+IA
+py
+jb
+xP
+xP
+xP
+xP
+eL
+Di
+Iw
+IA
+IA
+IA
+IA
+IA
+IA
+IA
+IA
+IA
+Di
+Zx
+Of
+Ch
+kO
+hl
+xP
+eL
+iS
+iS
+Di
+IA
+qs
+"}
+(6,1,1) = {"
+Th
+oU
+Tp
+Gl
+Zx
+iS
+UB
+Cy
+xP
+Py
+Gl
+Gl
+Tp
+hL
+wc
+jX
+bx
+Th
+Th
+wc
+wc
+oU
+CU
+Tp
+iS
+Zx
+VA
+iS
+iS
+Tp
+UV
+wc
+wc
+wc
+wc
+bx
+jX
+Th
+Th
+CU
+Tp
+Gl
+XC
+xP
+Py
+iS
+iS
+iS
+VA
+iS
+Tp
+oU
+kC
+"}
+(7,1,1) = {"
+kC
+kC
+Tp
+Gl
+Gl
+iS
+Zx
+iS
+VA
+iS
+UB
+iS
+Tp
+Xx
+vP
+vP
+vP
+vP
+vP
+vP
+oU
+kC
+Tp
+zx
+iS
+iS
+iS
+UB
+iS
+Tp
+kC
+oU
+vP
+vP
+vP
+vP
+vP
+vP
+vP
+oU
+Tp
+Tp
+Gl
+iS
+Zx
+iS
+iS
+UB
+Gl
+Gl
+Tp
+Tp
+CU
+"}
+(8,1,1) = {"
+Xx
+Tp
+Tp
+UB
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Tp
+Tp
+hL
+vS
+XZ
+XZ
+XZ
+XZ
+vS
+CU
+Tp
+Tp
+Gl
+UB
+iS
+iS
+iS
+VA
+Di
+Tp
+CU
+XZ
+XZ
+XZ
+XZ
+XZ
+vS
+XZ
+kC
+UV
+Tp
+iS
+VA
+iS
+iS
+iS
+Gl
+Gl
+Gl
+Tp
+Tp
+hL
+"}
+(9,1,1) = {"
+hL
+Tp
+iS
+iS
+iS
+VA
+iS
+iS
+iS
+Gl
+Tp
+Tp
+hL
+Xx
+XZ
+XZ
+XZ
+XZ
+XZ
+XZ
+CU
+Tp
+iS
+UB
+iS
+VA
+iS
+iS
+iS
+Di
+Tp
+CU
+XZ
+XZ
+XZ
+XZ
+XZ
+XZ
+kC
+hL
+Tp
+Tp
+Gl
+iS
+UB
+iS
+iS
+VA
+iS
+Di
+Tp
+Xx
+CU
+"}
+(10,1,1) = {"
+hL
+Tp
+Tp
+Gl
+iS
+iS
+iS
+iS
+iS
+UB
+Tp
+CU
+kC
+SK
+SK
+SK
+SK
+SK
+SK
+SK
+Xx
+Tp
+Di
+iS
+iS
+iS
+UB
+iS
+Gl
+Tp
+Tp
+Xx
+SK
+SK
+SK
+SK
+SK
+SK
+lg
+Tp
+Tp
+iS
+iS
+iS
+iS
+iS
+UB
+iS
+Gl
+Tp
+oU
+CU
+SK
+"}
+(11,1,1) = {"
+CU
+UV
+Tp
+VA
+iS
+UB
+iS
+iS
+TW
+VA
+Di
+Tp
+UV
+eO
+an
+oR
+oR
+am
+YF
+sT
+hL
+kC
+Tp
+VA
+TW
+iS
+iS
+VA
+iS
+Tp
+kC
+hL
+sT
+tK
+am
+am
+oR
+Ii
+CU
+Tp
+iS
+UB
+iS
+TW
+iS
+VA
+iS
+iS
+iS
+Tp
+kC
+sT
+zK
+"}
+(12,1,1) = {"
+Eu
+lT
+Di
+iS
+aw
+ju
+Ze
+VA
+iS
+iS
+iS
+Di
+jw
+Eu
+bt
+Us
+ua
+Qi
+QQ
+Eu
+Eu
+lT
+Di
+iS
+iS
+VA
+sf
+Jq
+Ze
+Di
+jw
+Eu
+Eu
+bt
+Hu
+YH
+sN
+QQ
+Eu
+Di
+iS
+TW
+iS
+iS
+sf
+ju
+Ze
+TW
+iS
+Di
+Eu
+Eu
+Uf
+"}
+(13,1,1) = {"
+iS
+iS
+iS
+iS
+Of
+Mz
+Ev
+ju
+Ze
+iS
+iS
+iS
+iS
+iS
+IP
+Us
+YH
+Qi
+vJ
+iS
+iS
+iS
+iS
+sf
+ju
+ju
+Wm
+qb
+nv
+iS
+iS
+iS
+iS
+IP
+Hu
+ua
+Qi
+vJ
+iS
+iS
+iS
+iS
+VA
+sf
+Wm
+qb
+nv
+iS
+iS
+iS
+iS
+iS
+ja
+"}
+(14,1,1) = {"
+iS
+iS
+iS
+iS
+Cy
+rK
+Mz
+qb
+nv
+iS
+iS
+iS
+iS
+iS
+IP
+Us
+YH
+Qi
+vJ
+iS
+iS
+iS
+iS
+Of
+ej
+Ch
+ej
+ej
+nv
+iS
+iS
+iS
+iS
+IP
+Hu
+YH
+LB
+vJ
+iS
+iS
+iS
+iS
+sf
+Wm
+qb
+Mz
+nv
+iS
+iS
+iS
+iS
+iS
+Wk
+"}
+(15,1,1) = {"
+IA
+IA
+IA
+py
+Di
+GJ
+xP
+xP
+Py
+Zx
+iS
+Di
+Iw
+IA
+Lg
+Hu
+xG
+Qi
+VB
+IA
+IA
+py
+Di
+Cy
+xP
+rK
+Mz
+kO
+eL
+iS
+Di
+Iw
+IA
+Lg
+Hu
+YH
+Qi
+VB
+IA
+IA
+Di
+iS
+Of
+ej
+Mz
+kO
+Py
+iS
+Di
+IA
+IA
+IA
+qs
+"}
+(16,1,1) = {"
+wc
+wc
+hL
+CU
+Tp
+iS
+Zx
+UB
+Mj
+iS
+iS
+Tp
+UV
+hL
+gT
+QH
+QH
+QH
+as
+wc
+CU
+hL
+Tp
+VA
+Zx
+Cy
+xP
+Py
+iS
+UB
+Tp
+hL
+Th
+OB
+QH
+QH
+QH
+as
+wc
+uX
+Tp
+Gl
+Cy
+BN
+xP
+eL
+VA
+Gl
+Tp
+Xx
+CU
+wc
+wc
+"}
+(17,1,1) = {"
+vP
+vP
+UV
+Tp
+Tp
+Gl
+iS
+iS
+VA
+UB
+Gl
+Tp
+Tp
+kC
+vP
+vP
+vP
+vP
+vP
+vP
+Xx
+Tp
+Di
+iS
+iS
+UB
+iS
+iS
+VA
+Gl
+Tp
+Xx
+vP
+vP
+vP
+vP
+vP
+vP
+wy
+CU
+Tp
+VA
+Zx
+iS
+iS
+iS
+iS
+UB
+Tp
+Tp
+hL
+vP
+vP
+"}
+(18,1,1) = {"
+XZ
+CU
+Xx
+Tp
+Gl
+iS
+VA
+iS
+iS
+iS
+iS
+Di
+Tp
+UV
+XZ
+XZ
+vS
+vS
+XZ
+CU
+oU
+Tp
+Gl
+Gl
+iS
+iS
+iS
+UB
+iS
+Di
+Tp
+hL
+XZ
+XZ
+vS
+vS
+XZ
+XZ
+CU
+Tp
+Tp
+Gl
+Gl
+iS
+VA
+iS
+iS
+iS
+VA
+Tp
+kC
+CU
+vS
+"}
+(19,1,1) = {"
+XZ
+kC
+Tp
+Tp
+iS
+UB
+iS
+iS
+iS
+Gl
+Gl
+Tp
+UV
+hL
+XZ
+XZ
+XZ
+XZ
+XZ
+hL
+Tp
+Tp
+UB
+iS
+iS
+VA
+iS
+iS
+iS
+Tp
+oU
+CU
+XZ
+XZ
+XZ
+XZ
+XZ
+XZ
+hL
+Tp
+iS
+UB
+iS
+iS
+iS
+iS
+iS
+Gl
+Gl
+Tp
+Tp
+UV
+XZ
+"}
+(20,1,1) = {"
+SK
+oU
+hL
+Tp
+Tp
+Gl
+iS
+iS
+VA
+Di
+Tp
+Tp
+kC
+SK
+SK
+SK
+SK
+SK
+SK
+UV
+kC
+Tp
+Di
+iS
+iS
+iS
+iS
+Gl
+Tp
+Tp
+Xx
+SK
+SK
+SK
+SK
+SK
+SK
+SK
+UV
+Tp
+Tp
+Gl
+iS
+iS
+iS
+iS
+UB
+iS
+Gl
+Di
+Tp
+hL
+SK
+"}
+(21,1,1) = {"
+eO
+eO
+CU
+Xx
+AV
+li
+Ze
+TW
+UB
+Tp
+Xx
+hL
+CU
+sT
+Wc
+eO
+RX
+eO
+sT
+sT
+UV
+kC
+Tp
+aw
+yr
+Ze
+iS
+VA
+Tp
+hL
+CU
+sT
+sT
+sT
+sT
+RX
+eO
+eO
+jm
+aT
+Tp
+iS
+VA
+iS
+iS
+TW
+VA
+iS
+iS
+Tp
+oU
+kC
+Ij
+"}
+(22,1,1) = {"
+Eu
+Eu
+Eu
+lT
+BF
+Ch
+Ev
+ju
+ju
+Zc
+jw
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+lT
+Di
+Of
+ej
+Ev
+Lc
+iS
+Di
+jw
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Eu
+Di
+TW
+iS
+UB
+sf
+ju
+ju
+Lc
+iS
+Di
+Eu
+Eu
+Uf
+"}
+(23,1,1) = {"
+iS
+iS
+iS
+iS
+Cy
+rK
+Mz
+qb
+Mz
+nv
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Of
+qb
+Mz
+Ev
+Ze
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+sf
+Wm
+Mz
+Mz
+nv
+iS
+iS
+iS
+iS
+ja
+"}
+(24,1,1) = {"
+iS
+iS
+iS
+iS
+iS
+Of
+ej
+ej
+kO
+Py
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Cy
+rK
+ej
+Ch
+nv
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Of
+qb
+qb
+kO
+Py
+iS
+iS
+iS
+iS
+iS
+"}
+(25,1,1) = {"
+iS
+iS
+iS
+iS
+iS
+Cy
+xP
+xP
+Py
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Cy
+xP
+xP
+Py
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+Cy
+xP
+xP
+Py
+iS
+iS
+iS
+iS
+iS
+iS
+"}
+(26,1,1) = {"
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+iS
+"}
