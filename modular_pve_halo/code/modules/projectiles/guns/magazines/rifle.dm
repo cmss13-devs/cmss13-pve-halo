@@ -91,3 +91,19 @@
 	default_ammo = /datum/ammo/bullet/rifle/dmr
 	caliber = "7.62x51"
 
+/obj/item/ammo_magazine/rifle/halo/m247
+	name = "\improper M247 GPMG magazine (7.62x51mm FMJ)"
+	desc = "A rectangular box magazine for the M247 GPMG holding 150 rounds of 7.62x51 FMJ ammunitions."
+	icon_state = "m247_mag"
+	max_rounds = 150
+	gun_type = /obj/item/weapon/gun/rifle/halo/m247
+	default_ammo = /datum/ammo/bullet/rifle/ma5
+	caliber = "7.62x51"
+	bonus_overlay = "m247_mag_overlay"
+
+/obj/item/ammo_magazine/rifle/halo/m247/belt
+	name = "\improper M247 GPMG magazine (7.62x51mm FMJ)"
+	desc = "An ammunition belt for the M247 GPMG linking 75 rounds of 7.62x51 FMJ ammunitions together."
+	icon_state = "m247_belt"
+	max_rounds = 75
+	bonus_overlay = "m247_belt_overlay"

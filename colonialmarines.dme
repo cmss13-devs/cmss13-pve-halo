@@ -2857,6 +2857,7 @@
 #include "modular_pve_halo\code\modules\projectiles\unsc_gun_attachables.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\cov_guns.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\cov_melee.dm"
+#include "modular_pve_halo\code\modules\projectiles\guns\machinegun\m247.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\magazines\cov_magazines.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\magazines\pistol.dm"
 #include "modular_pve_halo\code\modules\projectiles\guns\magazines\rifle.dm"
