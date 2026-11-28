@@ -39,7 +39,7 @@
 	)
 
 /obj/item/weapon/gun/rifle/halo/ma5c/set_gun_attachment_offsets()
-	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 48, "under_y" = 16, "stock_x" = 16, "stock_y" = 16, "special_x" = 48, "special_y" = 16)
+	attachable_offset = list("muzzle_x" = 48, "muzzle_y" = 16,"rail_x" = 0, "rail_y" = 0, "under_x" = 27, "under_y" = 16, "stock_x" = 0, "stock_y" = 0, "special_x" = 48, "special_y" = 16)
 
 /obj/item/weapon/gun/rifle/halo/ma5c/handle_starting_attachment()
 	..()
