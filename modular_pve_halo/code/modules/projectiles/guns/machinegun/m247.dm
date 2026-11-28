@@ -5,7 +5,7 @@
 	item_state = "m247"
 	caliber = "7.62x51mm"
 
-	fire_sound = ""
+	fire_sound = "gun_m247_burst"
 	reload_sound = 'sound/weapons/handling/gun_sg_reload.ogg'
 	cocked_sound = 'sound/weapons/halo/gun_ma5c_cocked.ogg'
 	unload_sound = 'sound/weapons/handling/gun_sg_unload.ogg'
@@ -42,7 +42,7 @@
 	scope.hidden = TRUE
 	update_attachable(scope.slot)
 
-/obj/item/weapon/gun/smartgun/set_gun_config_values()
+/obj/item/weapon/gun/rifle/halo/m247/set_gun_config_values()
 	..()
 	set_fire_delay(FIRE_DELAY_TIER_SG)
 	accuracy_mult = BASE_ACCURACY_MULT + HIT_ACCURACY_MULT_TIER_4 + 2*HIT_ACCURACY_MULT_TIER_1
