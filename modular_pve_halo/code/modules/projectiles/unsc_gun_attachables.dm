@@ -107,6 +107,48 @@
 	size_mod = 0
 	hud_offset_mod = -7
 
+/obj/item/attachable/m247_muzzle
+	name = "\improper M247 GPMG muzzle"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m247_muzzle"
+	attach_icon = "m247_muzzle"
+	slot = "special"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = -8
+
+/obj/item/attachable/m247_stock
+	name = "\improper M247 GPMG stock"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m247_stock"
+	attach_icon = "m247_stock"
+	slot = "stock"
+	wield_delay_mod = WIELD_DELAY_NONE
+	flags_attach_features = NO_FLAGS
+	melee_mod = 0 //Integrated attachment for visuals, stats handled on main gun.
+	size_mod = 0
+	hud_offset_mod = 0
+
+/obj/item/attachable/bipod/m247_bipod
+	name = "\improper M247 GPMG bipod"
+	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "m247_bipod"
+	attach_icon = "m247_bipod"
+	flags_attach_features = NO_FLAGS
+
+/obj/item/attachable/scope/variable_zoom/m247
+	name = "\improper M247 GPMG integrated scope"
+	desc= "A smart-link scope integrated somewhere on the M247 GPMG."
+	icon = 'icons/halo/obj/items/weapons/guns_by_faction/unsc/unsc_attachments.dmi'
+	icon_state = "oracle_scope"
+	attach_icon = "oracle_scope"
+	slot = "rail"
+
 /obj/item/attachable/m90_muzzle
 	name = "\improper M90 CAWS muzzle"
 	desc = "This isn't supposed to be separated from the gun, how'd this happen?"
